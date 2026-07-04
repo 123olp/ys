@@ -18,14 +18,100 @@
   },
   "upstreamDomainIndicatorDiagnostic": {
     "path": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhanes_public_lmf_domain_indicator_diagnostic.json",
-    "sha256": "9242c75084073cb1e5d6329912362329ff99c804c97507892d41801ab251f74a",
+    "sha256": "51e2ff68eb5ec3b23aa0f960c3dfe899c00bfbc9229a6574c893db17a540c4b4",
     "validationPath": "web/src/data/life-path-nhanes-public-lmf-domain-indicator-diagnostic-validation.json"
+  },
+  "upstreamDofSparseDomainDiagnostic": {
+    "path": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhanes_public_lmf_dof_sparse_domain_diagnostic.json",
+    "sha256": "3e17d5b2923a1a06c32cbe172ba22412fffe16c33bf1a241061eee142d50612a",
+    "validationPath": "web/src/data/life-path-nhanes-public-lmf-dof-sparse-domain-diagnostic-validation.json"
+  },
+  "upstreamDisclosureOutputEnvelope": {
+    "policyPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhanes_public_lmf_disclosure_output_envelope_policy.json",
+    "policySha256": "eb305bac0ddcac013d0c039a43341c603565d179b3f78122f91b8dd6a84864fa",
+    "testCasesPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhanes_public_lmf_disclosure_output_envelope_test_cases.json",
+    "testCasesSha256": "e509f144e3cc7d7ec3b9e68a3397757b05671f668d1ac6750fafaef4f9790463",
+    "validationPath": "web/src/data/life-path-nhanes-public-lmf-disclosure-output-envelope-validation.json"
+  },
+  "upstreamEffectiveSampleCiPublicationReview": {
+    "policyPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhanes_public_lmf_effective_sample_ci_publication_policy.json",
+    "policySha256": "0c9d8ca43ee6dacf905f32e2f7eebfcd4df69faf1b4e9e79dbddfba46679cb8d",
+    "testCasesPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhanes_public_lmf_effective_sample_ci_publication_test_cases.json",
+    "testCasesSha256": "3cedca83b405c6ffcb9f4ff0a669c2d0b8cf9888de66bdfcdf42a4fd27b2a814",
+    "validationPath": "web/src/data/life-path-nhanes-public-lmf-effective-sample-ci-publication-validation.json"
+  },
+  "upstreamWeightedOutputImplementationPreflight": {
+    "policyPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhanes_public_lmf_weighted_output_implementation_preflight_policy.json",
+    "policySha256": "422499d82c9491b8b634f44f6a22396bde967740608222835c9e20e74a003ca2",
+    "testCasesPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhanes_public_lmf_weighted_output_implementation_preflight_test_cases.json",
+    "testCasesSha256": "cabbf239c8757ad8c807deaea0af6e137258ba5be6845905ba60430360569ab3",
+    "validationPath": "web/src/data/life-path-nhanes-public-lmf-weighted-output-implementation-preflight-validation.json"
+  },
+  "upstreamDisclosureReviewTemplate": {
+    "path": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhanes_public_lmf_disclosure_review_template.json",
+    "sha256": "79e387ee1eda9d889f937c7fd9217a5d40c0b052705eda5f883d52f566831e01",
+    "validationPath": "web/src/data/life-path-nhanes-public-lmf-disclosure-review-template-validation.json"
+  },
+  "upstreamDisclosureReviewExecutionRegister": {
+    "path": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhanes_public_lmf_disclosure_review_execution_register.json",
+    "sha256": "efeecd410e8aa9577b94ac7594c2c507985393867dd32db094a196abdb54b1aa",
+    "validationPath": "web/src/data/life-path-nhanes-public-lmf-disclosure-review-execution-validation.json"
+  },
+  "localOnlyWeightedDomainOutputRunway": {
+    "status": "local-runway-ready-public-output-still-blocked",
+    "runScriptPath": "domains/c1-boundary-rewriting/longevity-evidence/scripts/run_nhanes_public_lmf_weighted_domain_output_local.py",
+    "validationScriptPath": "domains/c1-boundary-rewriting/longevity-evidence/scripts/validate_nhanes_public_lmf_weighted_domain_output_local_run.py",
+    "defaultIgnoredReportPath": "build/reports/nhanes-public-lmf-weighted-domain-output-local/validation.json",
+    "makeTarget": "nhanes-public-lmf-weighted-domain-output-local-run-audit",
+    "requiredForDefaultCheck": false,
+    "defaultCheckIncludesLocalRun": false,
+    "defaultCheckReadsIgnoredReport": false,
+    "ignoredReportMustExistForDefaultCheck": false,
+    "localRunMayBeAbsentInCleanCheckout": true,
+    "cleanCheckoutDefaultCheckIndependent": true,
+    "generatesRealWeightedRatesLocally": true,
+    "generatesRealDesignBasedIntervalsLocally": true,
+    "trackedOutputAllowed": false,
+    "webOutputAllowed": false,
+    "rawRowsPersistedAfterRun": false,
+    "publicDisclosureReviewComplete": false,
+    "publicWeightedDomainOutputAllowed": false,
+    "calibrationAllowed": false,
+    "individualPredictionAllowed": false
+  },
+  "localDisclosureReviewPacketRunway": {
+    "status": "local-packet-ready-public-release-still-blocked",
+    "buildScriptPath": "domains/c1-boundary-rewriting/longevity-evidence/scripts/build_nhanes_public_lmf_local_disclosure_review_packet.py",
+    "validationScriptPath": "domains/c1-boundary-rewriting/longevity-evidence/scripts/validate_nhanes_public_lmf_local_disclosure_review_packet.py",
+    "defaultIgnoredPacketPath": "build/reports/nhanes-public-lmf-local-disclosure-review-packet/validation.json",
+    "defaultIgnoredPacketValidationPath": "build/reports/nhanes-public-lmf-local-disclosure-review-packet/packet-validation.json",
+    "makeTarget": "nhanes-public-lmf-local-disclosure-review-packet-audit",
+    "requiredForDefaultCheck": false,
+    "defaultCheckIncludesLocalPacket": false,
+    "defaultCheckReadsIgnoredPacket": false,
+    "ignoredPacketMustExistForDefaultCheck": false,
+    "ignoredPacketValidationMustExistForDefaultCheck": false,
+    "localPacketMayBeAbsentInCleanCheckout": true,
+    "cleanCheckoutDefaultCheckIndependent": true,
+    "packetValidationGeneratedByLocalAudit": true,
+    "bindsLocalWeightedOutputHash": true,
+    "packetContainsRealWeightedValues": false,
+    "packetContainsRealDesignBasedIntervals": false,
+    "trackedOutputAllowed": false,
+    "webOutputAllowed": false,
+    "publicDisclosureReviewComplete": false,
+    "publicWeightedDomainOutputAllowed": false,
+    "calibrationAllowed": false,
+    "individualPredictionAllowed": false
   },
   "officialSourceTrace": {
     "varianceEstimationTutorial": "https://wwwn.cdc.gov/nchs/nhanes/tutorials/varianceestimation.aspx",
     "weightingTutorial": "https://wwwn.cdc.gov/nchs/nhanes/tutorials/weighting.aspx",
     "surveySubsetDocumentation": "https://r-survey.r-forge.r-project.org/survey/html/subset.survey.design.html",
-    "linkedMortalityPage": "https://www.cdc.gov/nchs/linked-data/mortality-files/index.html"
+    "nchsDataPresentationStandardsForProportions": "https://www.cdc.gov/nchs/data/series/sr_02/sr02_175.pdf",
+    "linkedMortalityPage": "https://www.cdc.gov/nchs/linked-data/mortality-files/index.html",
+    "nhanesReliabilityTutorial": "https://wwwn.cdc.gov/nchs/nhanes/tutorials/reliabilityofestimates.aspx",
+    "nchsDataPresentationStandardsForRatesAndCounts": "https://www.cdc.gov/nchs/data/series/sr_02/sr02-200.pdf"
   },
   "sourceFindings": [
     {
@@ -44,13 +130,55 @@
       "id": "NHANES-DOMAIN-DOF-WARNING",
       "sourceUrl": "https://wwwn.cdc.gov/nchs/nhanes/tutorials/varianceestimation.aspx",
       "observedFact": "CDC/NCHS warns that subgroup degrees of freedom can differ when not all PSUs and strata are represented in a subgroup.",
-      "modelConsequence": "Public weighted domain output must remain blocked until domain degrees-of-freedom, lonely PSU, empty domain and sparse-domain behavior are reviewed."
+      "modelConsequence": "Public weighted domain output must bind every future output to represented degrees-of-freedom, lonely PSU, empty domain and sparse-domain review before disclosure."
     },
     {
       "id": "HUMAN-INFRA-DOMAIN-INDICATOR-METADATA-DIAGNOSTIC",
       "sourceUrl": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhanes_public_lmf_domain_indicator_diagnostic.json",
       "observedFact": "The local domain indicator metadata diagnostic verifies all 8 sex × ageBand aggregate domain combinations without repeating public record counts, death counts, weighted sums, rates, intervals, raw rows or individual rows.",
-      "modelConsequence": "The public-data domain indicator gate can move to ready, while weighted domain output remains blocked by degrees of freedom, sparse-domain, disclosure and implementation gates."
+      "modelConsequence": "The public-data domain indicator gate can move to ready, while weighted domain output remains blocked by DOF/sparse-domain, disclosure and implementation gates."
+    },
+    {
+      "id": "HUMAN-INFRA-DOF-SPARSE-DOMAIN-DIAGNOSTIC",
+      "sourceUrl": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhanes_public_lmf_dof_sparse_domain_diagnostic.json",
+      "observedFact": "The local DOF/sparse-domain diagnostic reviews 8 sex × ageBand public aggregate domains, minimum observed domain degrees of freedom 15, no lonely represented strata, no empty domains and no configured sparse-domain flags, without persisting rows, per-domain counts or per-domain weighted sums.",
+      "modelConsequence": "The public-data DOF/sparse-domain metadata gate can move to ready, while disclosure review, effective-sample-size publication review, confidence intervals and weighted-domain output implementation remain blocked."
+    },
+    {
+      "id": "HUMAN-INFRA-DISCLOSURE-OUTPUT-ENVELOPE",
+      "sourceUrl": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhanes_public_lmf_disclosure_output_envelope_policy.json",
+      "observedFact": "The local NHANES disclosure output envelope validator passes 8 synthetic cases: safe aggregate-shaped synthetic outputs are allowed, while unsuppressed small cells, low-DOF unsuppressed cells, row-level flags, identifier-like keys, public AI upload and forbidden real-output types are blocked.",
+      "modelConsequence": "The disclosure-envelope shape gate can move to ready for synthetic validation only; real public weighted-domain output, real confidence intervals, effective sample size publication review and calibration remain blocked."
+    },
+    {
+      "id": "HUMAN-INFRA-EFFECTIVE-SAMPLE-CI-PUBLICATION",
+      "sourceUrl": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhanes_public_lmf_effective_sample_ci_publication_policy.json",
+      "observedFact": "The local effective sample / confidence interval publication validator passes 9 synthetic cases: publication-ready synthetic cells are allowed, while low effective sample size, unacceptable RSE, unacceptable CI width, low DOF, real CI claims, public AI upload and forbidden real-output types are blocked.",
+      "modelConsequence": "The publication-reliability shape gate can move to ready for synthetic validation only; real weighted-domain output, real confidence intervals, real disclosure review, calibration and individual prediction remain blocked."
+    },
+    {
+      "id": "HUMAN-INFRA-WEIGHTED-OUTPUT-IMPLEMENTATION-PREFLIGHT",
+      "sourceUrl": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhanes_public_lmf_weighted_output_implementation_preflight_policy.json",
+      "observedFact": "The local weighted-output implementation preflight validator passes 8 synthetic cases: complete estimator preflight shapes are allowed, while row-level flags, row-drop-before-design, real weighted-rate claims, public AI upload, public count keys and individual prediction output types are blocked.",
+      "modelConsequence": "The implementation-preflight gate can move to ready for synthetic validation only; it still does not implement real weighted-domain rates, design-based confidence intervals, disclosure review, calibration or individual prediction."
+    },
+    {
+      "id": "HUMAN-INFRA-DISCLOSURE-REVIEW-TEMPLATE",
+      "sourceUrl": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhanes_public_lmf_disclosure_review_template.json",
+      "observedFact": "The local disclosure review template validator passes with 15 required review slots and a no-real-output boundary: all slots remain pending, public disclosure review is not complete, and public weighted-domain output remains disallowed.",
+      "modelConsequence": "The disclosure-review-template gate can move to ready as a future review packet scaffold only; real disclosure review, real weighted-domain output, design-based intervals, calibration and individual prediction remain blocked."
+    },
+    {
+      "id": "HUMAN-INFRA-DISCLOSURE-REVIEW-EXECUTION-REGISTER",
+      "sourceUrl": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhanes_public_lmf_disclosure_review_execution_register.json",
+      "observedFact": "The disclosure review execution register validator passes with 15 required slots, 8 machine-prefill-eligible slots, 0 completed human-review slots, no reviewed output hash, no second reviewer signoff and releaseDecision blocked-pending-human-disclosure-review.",
+      "modelConsequence": "The execution-register gate can move to ready as a machine-auditable human-review state model, while real disclosure review completion, public weighted-domain output, calibration and individual prediction remain blocked."
+    },
+    {
+      "id": "HUMAN-INFRA-LOCAL-DISCLOSURE-REVIEW-PACKET-RUNWAY",
+      "sourceUrl": "domains/c1-boundary-rewriting/longevity-evidence/scripts/build_nhanes_public_lmf_local_disclosure_review_packet.py",
+      "observedFact": "The local disclosure packet runway can bind the ignored local weighted-domain output hash and review slots while omitting real weighted rates, standard errors and design-based confidence intervals from the packet.",
+      "modelConsequence": "The local disclosure packet improves auditability of real local output, but it is not human disclosure review completion and does not authorize public weighted-domain output, calibration or individual prediction."
     }
   ],
   "outputSafetyContract": {
@@ -72,14 +200,40 @@
       "lonelyPsuPolicyRequired": true,
       "emptyDomainPolicyRequired": true,
       "sparseDomainSuppressionPolicyRequired": true,
-      "publicDataDofSparseReviewComplete": false
+      "dofSparseDomainDiagnosticPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhanes_public_lmf_dof_sparse_domain_diagnostic.json",
+      "publicDataDofSparseReviewComplete": true,
+      "minimumDomainDegreesOfFreedomObserved": 15,
+      "dfReviewThreshold": 8,
+      "domainsBelowDfReviewThreshold": 0,
+      "domainsWithLonelyRepresentedStrata": 0,
+      "emptyDomainCombinationCount": 0,
+      "domainsBelowLocalMinimumUnweightedRecords": 0,
+      "effectiveSampleSizeComputed": false,
+      "confidenceIntervalsComputed": false
     },
     "disclosureContract": {
       "publicOutputDisclosureReviewRequired": true,
       "cellCountDisclosureDiagnosticRequired": true,
       "dominanceOrIdentifiabilityReviewRequired": true,
       "publicOutputSuppressionPolicyRequired": true,
-      "publicDisclosureReviewComplete": false
+      "disclosureOutputEnvelopePolicyPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhanes_public_lmf_disclosure_output_envelope_policy.json",
+      "disclosureOutputEnvelopeTestCasesPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhanes_public_lmf_disclosure_output_envelope_test_cases.json",
+      "disclosureOutputEnvelopeValidationPath": "web/src/data/life-path-nhanes-public-lmf-disclosure-output-envelope-validation.json",
+      "disclosureOutputEnvelopeValidated": true,
+      "syntheticOnlyEnvelopeValidation": true,
+      "disclosureReviewTemplateRequired": true,
+      "disclosureReviewTemplatePath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhanes_public_lmf_disclosure_review_template.json",
+      "disclosureReviewTemplateValidationPath": "web/src/data/life-path-nhanes-public-lmf-disclosure-review-template-validation.json",
+      "disclosureReviewTemplateValidated": true,
+      "templateOnlyDisclosureReview": true,
+      "disclosureReviewExecutionRegisterRequired": true,
+      "disclosureReviewExecutionRegisterPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhanes_public_lmf_disclosure_review_execution_register.json",
+      "disclosureReviewExecutionValidationPath": "web/src/data/life-path-nhanes-public-lmf-disclosure-review-execution-validation.json",
+      "disclosureReviewExecutionRegistered": true,
+      "disclosureReviewExecutionCompletedSlotCount": 0,
+      "disclosureReviewExecutionReleaseDecision": "blocked-pending-human-disclosure-review",
+      "publicDisclosureReviewComplete": false,
+      "realWeightedOutputDisclosureReviewComplete": false
     },
     "outputState": {
       "weightedDomainOutputImplemented": false,
@@ -89,6 +243,32 @@
       "calibrationAllowed": false,
       "individualPredictionAllowed": false,
       "medicalAdviceAllowed": false
+    },
+    "publicationReliabilityContract": {
+      "effectiveSampleSizeReviewRequired": true,
+      "confidenceIntervalWidthReviewRequired": true,
+      "relativeStandardErrorReviewRequired": true,
+      "domainDofReviewRequired": true,
+      "effectiveSampleCiPublicationPolicyPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhanes_public_lmf_effective_sample_ci_publication_policy.json",
+      "effectiveSampleCiPublicationTestCasesPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhanes_public_lmf_effective_sample_ci_publication_test_cases.json",
+      "effectiveSampleCiPublicationValidationPath": "web/src/data/life-path-nhanes-public-lmf-effective-sample-ci-publication-validation.json",
+      "effectiveSampleCiPublicationCriteriaValidated": true,
+      "syntheticOnlyPublicationCriteriaValidation": true,
+      "realEffectiveSampleSizeComputed": false,
+      "realConfidenceIntervalsComputed": false,
+      "realPublicationReviewComplete": false
+    },
+    "implementationPreflightContract": {
+      "weightedOutputImplementationPreflightRequired": true,
+      "weightedOutputImplementationPreflightPolicyPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhanes_public_lmf_weighted_output_implementation_preflight_policy.json",
+      "weightedOutputImplementationPreflightTestCasesPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhanes_public_lmf_weighted_output_implementation_preflight_test_cases.json",
+      "weightedOutputImplementationPreflightValidationPath": "web/src/data/life-path-nhanes-public-lmf-weighted-output-implementation-preflight-validation.json",
+      "weightedOutputImplementationPreflightValidated": true,
+      "syntheticOnlyImplementationPreflight": true,
+      "realWeightedOutputImplemented": false,
+      "realDesignBasedIntervalsImplemented": false,
+      "rowDropBeforeDesignAllowed": false,
+      "rawRowPersistenceAllowed": false
     }
   },
   "readinessGates": [
@@ -129,10 +309,40 @@
       "evidence": "The public NHANES domain indicator metadata diagnostic verifies aggregate domain coverage without repeating row counts, death counts, weighted sums, rates, intervals or individual rows."
     },
     {
-      "id": "public-data-dof-sparse-review-not-complete",
-      "status": "blocked",
-      "blocksWeightedDomainOutput": true,
-      "evidence": "No public NHANES domain DOF, lonely PSU, empty domain or sparse-domain diagnostic has been reviewed for release."
+      "id": "public-data-dof-sparse-review-complete",
+      "status": "ready",
+      "blocksWeightedDomainOutput": false,
+      "evidence": "The public NHANES DOF/sparse-domain diagnostic reviews 8 sex × ageBand domains, minimum observed domain df 15, no lonely represented strata, no empty domains and no configured sparse-domain flags without persisting rows, counts, weighted sums, rates or intervals."
+    },
+    {
+      "id": "public-disclosure-output-envelope-validated",
+      "status": "ready",
+      "blocksWeightedDomainOutput": false,
+      "evidence": "The NHANES disclosure output envelope validator passes 8 synthetic cases and blocks unsuppressed small cells, low-DOF unsuppressed cells, row-level flags, identifier-like keys, public AI upload and forbidden real-output types."
+    },
+    {
+      "id": "public-effective-sample-ci-publication-validated",
+      "status": "ready",
+      "blocksWeightedDomainOutput": false,
+      "evidence": "The NHANES effective sample / CI publication validator passes 9 synthetic cases and blocks low effective sample class, unacceptable RSE, unacceptable CI width, low DOF, real CI claims, public AI upload and forbidden real-output types."
+    },
+    {
+      "id": "public-weighted-output-implementation-preflight-validated",
+      "status": "ready",
+      "blocksWeightedDomainOutput": false,
+      "evidence": "The NHANES weighted-output implementation preflight validator passes 8 synthetic cases and blocks row-level flags, row-drop-before-design, real weighted-rate claims, public AI upload, public count keys and individual prediction output types."
+    },
+    {
+      "id": "public-disclosure-review-template-validated",
+      "status": "ready",
+      "blocksWeightedDomainOutput": false,
+      "evidence": "The NHANES disclosure review template validator passes with 15 required review slots, all pending, and keeps public disclosure review incomplete and weighted-domain output disallowed."
+    },
+    {
+      "id": "public-disclosure-review-execution-registered",
+      "status": "ready",
+      "blocksWeightedDomainOutput": false,
+      "evidence": "The NHANES disclosure review execution register validator passes with all 15 slots present, 0 completed human-review slots, no reviewed output hash, no second reviewer signoff and release still blocked."
     },
     {
       "id": "public-output-disclosure-not-reviewed",
@@ -148,20 +358,31 @@
     }
   ],
   "gateSummary": {
-    "requiredGateCount": 9,
-    "readyGateCount": 6,
+    "requiredGateCount": 14,
+    "readyGateCount": 12,
     "partialGateCount": 0,
-    "blockedGateCount": 3,
+    "blockedGateCount": 2,
     "controlledRuntimeSmokePassed": true,
     "syntheticDomainSubsetSmokePassed": true,
     "publicDataDomainIndicatorEvaluated": true,
-    "publicDataDofSparseReviewComplete": false,
+    "publicDataDofSparseReviewComplete": true,
+    "publicDisclosureOutputEnvelopeValidated": true,
+    "publicEffectiveSampleCiPublicationCriteriaValidated": true,
+    "publicWeightedOutputImplementationPreflightValidated": true,
+    "publicDisclosureReviewTemplateValidated": true,
+    "publicDisclosureReviewExecutionRegistered": true,
     "publicDisclosureReviewComplete": false,
     "weightedDomainOutputAllowed": false
   },
   "allowedUses": [
     "weighted-domain output safety gate audit",
     "public domain-indicator metadata diagnostic gate audit",
+    "public DOF and sparse-domain metadata diagnostic gate audit",
+    "public disclosure output envelope synthetic gate audit",
+    "public effective sample and confidence interval publication synthetic gate audit",
+    "weighted-output implementation preflight synthetic gate audit",
+    "public disclosure review template audit",
+    "public disclosure review execution-state audit",
     "proof that controlled synthetic R survey smoke is separated from public-data output permission",
     "pre-output checklist for future NHANES weighted domain work"
   ],
@@ -177,8 +398,10 @@
     "medical advice"
   ],
   "nextWork": [
-    "Add domain DOF, lonely PSU, empty-domain and sparse-domain diagnostics before any weighted output.",
-    "Add a disclosure-reviewed output envelope that blocks small or identifiable domain cells.",
-    "Only after these gates pass, consider a separate weighted domain output implementation gate."
+    "Use the synthetic disclosure output envelope, synthetic publication criteria gate, synthetic implementation preflight and disclosure review template as shape contracts for any future real public weighted-domain output.",
+    "Use the disclosure review execution register to track reviewed output hash, human-review slot completion, second reviewer signoff and release decision without storing real weighted values in tracked artifacts.",
+    "Complete the disclosure review template with reviewed output hash, second reviewer signoff, suppression review, effective sample / CI review, forbidden-field scan and release decision before any real public output.",
+    "Implement the separate real weighted-domain output gate only after disclosure review is available; it must compute statistic-specific effective sample size, confidence intervals and reliability diagnostics without exposing row-level data.",
+    "Only after real disclosure review and real output implementation pass, consider publication of bounded aggregate weighted-domain outputs."
   ]
 }

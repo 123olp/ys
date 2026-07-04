@@ -12,7 +12,7 @@
   },
   "scope": {
     "coverageLevel": "domain-claim-evidence-matrix-seed-v0.1",
-    "coveredDomainCount": 26,
+    "coveredDomainCount": 30,
     "selectionRule": "Cover all domains currently present in the domain falsifier register and source-card backfill domainCoverage map.",
     "currentLimitations": [
       "This is a seed join matrix, not a full per-paper extraction table.",
@@ -277,10 +277,46 @@
         "SA-TARGET-TRIAL-2022",
         "SA-WHO-CONSTITUTION"
       ]
+    },
+    {
+      "domainClaimId": "HIDOM-CL027",
+      "domainId": "superhuman-intelligence-threshold",
+      "sourceCardIds": [
+        "SA-NIST-AI-RMF-2023",
+        "SA-CAPABILITY-APPROACH",
+        "SA-EXTENDED-MIND-1998"
+      ]
+    },
+    {
+      "domainClaimId": "HIDOM-CL028",
+      "domainId": "recursive-self-improvement-intelligence-explosion",
+      "sourceCardIds": [
+        "SA-NIST-AI-RMF-2023",
+        "SA-TRIPOD-AI-2024",
+        "SA-CAPABILITY-APPROACH"
+      ]
+    },
+    {
+      "domainClaimId": "HIDOM-CL029",
+      "domainId": "accelerating-returns-technology-convergence",
+      "sourceCardIds": [
+        "SA-TRIPOD-AI-2024",
+        "SA-NIST-AI-RMF-2023",
+        "SA-CAPABILITY-APPROACH"
+      ]
+    },
+    {
+      "domainClaimId": "HIDOM-CL030",
+      "domainId": "singularity-control-interpretability-boundary",
+      "sourceCardIds": [
+        "SA-NIST-AI-RMF-2023",
+        "SA-TRIPOD-AI-2024",
+        "SA-CAPABILITY-APPROACH"
+      ]
     }
   ],
   "coverageSummary": {
-    "coveredDomainCount": 26,
+    "coveredDomainCount": 30,
     "coveredSourceAnchorCount": 20,
     "domainRegisterStatus": "active-priority-domain-gate",
     "sourceCardExtractionStatus": "active-field-source-card-extraction-gate",

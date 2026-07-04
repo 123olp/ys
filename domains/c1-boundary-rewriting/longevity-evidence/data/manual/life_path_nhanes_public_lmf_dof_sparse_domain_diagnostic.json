@@ -1,0 +1,195 @@
+{
+  "schemaVersion": "human-infra.nhanes-public-lmf-dof-sparse-domain-diagnostic.v1",
+  "diagnosticId": "nhanes-public-lmf-2017-2018-dof-sparse-domain-diagnostic",
+  "status": "public-real-data-dof-sparse-domain-diagnostic-no-weighted-output",
+  "sourceId": "nhanes-public-lmf-2017-2018",
+  "sourceAuthority": "CDC/NCHS NHANES public-use DEMO_J plus public-use Linked Mortality File; Human Infra DOF/sparse-domain summary boundary.",
+  "lastReviewedDate": "2026-07-03",
+  "upstreamAggregate": {
+    "path": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhanes_public_lmf_aggregate_pilot.json",
+    "sha256": "d817c2907d71a820baac846f5a41c28db6eeee5cb8e57ed20a47d87aa9efce0f",
+    "validationPath": "web/src/data/life-path-nhanes-public-lmf-aggregate-pilot-validation.json"
+  },
+  "upstreamDomainIndicatorDiagnostic": {
+    "path": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhanes_public_lmf_domain_indicator_diagnostic.json",
+    "sha256": "51e2ff68eb5ec3b23aa0f960c3dfe899c00bfbc9229a6574c893db17a540c4b4",
+    "validationPath": "web/src/data/life-path-nhanes-public-lmf-domain-indicator-diagnostic-validation.json"
+  },
+  "officialSourceTrace": {
+    "varianceEstimationTutorial": "https://wwwn.cdc.gov/nchs/nhanes/tutorials/varianceestimation.aspx",
+    "nchsDataPresentationStandardsForProportions": "https://www.cdc.gov/nchs/data/series/sr_02/sr02_175.pdf",
+    "linkedMortalityPage": "https://www.cdc.gov/nchs/linked-data/mortality-files/index.html"
+  },
+  "sourceFindings": [
+    {
+      "id": "NHANES-SUBGROUP-DOF-FORMULA",
+      "sourceUrl": "https://wwwn.cdc.gov/nchs/nhanes/tutorials/varianceestimation.aspx",
+      "observedFact": "CDC/NCHS states that subgroup degrees of freedom should be based on the number of PSUs and strata represented in the subgroup: represented PSUs minus represented strata.",
+      "modelConsequence": "The Human Infra diagnostic must evaluate represented PSU/strata coverage for every future public domain before allowing weighted-domain output."
+    },
+    {
+      "id": "NHANES-FULL-DESIGN-BEFORE-DOMAIN",
+      "sourceUrl": "https://wwwn.cdc.gov/nchs/nhanes/tutorials/varianceestimation.aspx",
+      "observedFact": "CDC/NCHS warns not to drop records before complex-survey procedures and recommends using software subpopulation/domain mechanisms.",
+      "modelConsequence": "The diagnostic can summarize domain DOF and sparse-domain flags, but future estimation must still use a post-design domain mechanism rather than pre-design row filtering."
+    },
+    {
+      "id": "NCHS-DF-UNDER-EIGHT-REVIEW-FLAG",
+      "sourceUrl": "https://www.cdc.gov/nchs/data/series/sr_02/sr02_175.pdf",
+      "observedFact": "NCHS data presentation standards say complex-survey proportions with fewer than 8 degrees of freedom should be flagged for statistical review.",
+      "modelConsequence": "Human Infra treats any domain with fewer than 8 represented degrees of freedom as blocked from automatic public weighted-domain output."
+    },
+    {
+      "id": "NCHS-MINIMUM-DENOMINATOR-SAMPLE-SIZE",
+      "sourceUrl": "https://www.cdc.gov/nchs/data/series/sr_02/sr02_175.pdf",
+      "observedFact": "NCHS data presentation standards for proportions use a minimum denominator and effective denominator sample size of 30 where applicable.",
+      "modelConsequence": "Human Infra records the NCHS publication standard as a release-review threshold while keeping all public weighted estimates blocked until disclosure review."
+    },
+    {
+      "id": "HUMAN-INFRA-PUBLIC-DATA-DOF-SPARSE-SUMMARY",
+      "sourceUrl": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhanes_public_lmf_aggregate_pilot.json",
+      "observedFact": "A temporary public CDC/NCHS DEMO_J plus public-use LMF join can verify that all 8 sex × ageBand domains are non-empty, have no lonely represented strata, and meet the configured DOF and sparse-domain flags without persisting rows.",
+      "modelConsequence": "The DOF/sparse-domain gate can move to ready as a metadata-only public-data diagnostic, while disclosure and weighted-output implementation remain blocked."
+    }
+  ],
+  "calculationTrace": {
+    "calculationMode": "temporary-public-data-summary-no-row-persistence",
+    "sourceHashesFromAggregatePilot": {
+      "nhanesPublicLmf2017_2018Sha256": "42989d4fe35754d696b770f26553b0a309c110a9e26ab0ee504be3eae5987523",
+      "nhanesDemo2017_2018Sha256": "c0b46e0345ea19404928656277c8b0d10b0cca348a9b2fe4fc3c67e8b7ee73ec",
+      "cdcRReadInProgramSha256": "04c514fd6b798ceb7eeed1afea61f42c6cdd270734c1483e1803027ff9066ac3"
+    },
+    "rawRowsPersisted": false,
+    "individualRowsInOutput": false,
+    "domainRowsPersisted": false,
+    "perDomainRecordCountsPersisted": false,
+    "perDomainDeathsPersisted": false,
+    "perDomainWeightedSumsPersisted": false,
+    "weightedEstimatorExecuted": false,
+    "designBasedVarianceEstimated": false,
+    "publicWeightedDomainRatesAllowed": false,
+    "publicDesignBasedIntervalsAllowed": false
+  },
+  "dofSparseDomainDiagnostic": {
+    "diagnosticMode": "domain-dof-sparse-summary-only",
+    "domainAxes": [
+      "sex",
+      "ageBand"
+    ],
+    "expectedDomainCombinationCount": 8,
+    "domainCombinationCountReviewed": 8,
+    "allExpectedDomainCombinationsPresent": true,
+    "allDomainsNonEmpty": true,
+    "domainDofFormula": "represented_psu_count - represented_strata_count",
+    "overallPositiveWeightDesignStrataInTemp": 15,
+    "overallPositiveWeightDesignPsuPairsInTemp": 30,
+    "overallDesignDegreesOfFreedomInTemp": 15,
+    "minimumDomainDegreesOfFreedomObserved": 15,
+    "dfReviewThreshold": 8,
+    "domainsBelowDfReviewThreshold": 0,
+    "minimumPsuPerRepresentedDomainStratumObserved": 2,
+    "domainsWithLonelyRepresentedStrata": 0,
+    "emptyDomainCombinationCount": 0,
+    "sparseDomainPolicy": {
+      "localMinimumUnweightedRecordsPerDomain": 20,
+      "nchsMinimumDenominatorSampleSizeForProportions": 30,
+      "nchsEffectiveDenominatorSampleSizeReviewRequiredBeforePublication": true,
+      "domainsBelowLocalMinimumUnweightedRecords": 0,
+      "effectiveSampleSizeComputed": false,
+      "confidenceIntervalsComputed": false
+    },
+    "publicDataDofSparseReviewComplete": true,
+    "publicOutputDisclosureReviewComplete": false,
+    "weightedDomainOutputImplemented": false,
+    "weightedDomainOutputAllowed": false,
+    "calibrationAllowed": false,
+    "individualPredictionAllowed": false,
+    "medicalAdviceAllowed": false
+  },
+  "readinessGates": [
+    {
+      "id": "upstream-aggregate-validation-passed",
+      "status": "ready",
+      "blocksWeightedDomainOutput": false,
+      "evidence": "Aggregate pilot validation passes and preserves aggregate-only, no-row-persistence boundaries."
+    },
+    {
+      "id": "upstream-domain-indicator-diagnostic-validated",
+      "status": "ready",
+      "blocksWeightedDomainOutput": false,
+      "evidence": "Domain indicator diagnostic validation passes and still blocks weighted output."
+    },
+    {
+      "id": "nhanes-subgroup-dof-formula-registered",
+      "status": "ready",
+      "blocksWeightedDomainOutput": false,
+      "evidence": "Official NHANES variance guidance gives subgroup DOF as represented PSUs minus represented strata."
+    },
+    {
+      "id": "nchs-df-under-eight-review-rule-registered",
+      "status": "ready",
+      "blocksWeightedDomainOutput": false,
+      "evidence": "NCHS data-presentation standards flag complex-survey proportions with fewer than 8 df for statistical review."
+    },
+    {
+      "id": "public-domain-dof-summary-reviewed",
+      "status": "ready",
+      "blocksWeightedDomainOutput": false,
+      "evidence": "All 8 public aggregate domains meet the configured DOF summary rule without persisting per-domain rows."
+    },
+    {
+      "id": "public-domain-lonely-psu-summary-reviewed",
+      "status": "ready",
+      "blocksWeightedDomainOutput": false,
+      "evidence": "No reviewed public aggregate domain has a lonely represented stratum in the temporary calculation summary."
+    },
+    {
+      "id": "public-domain-sparse-summary-reviewed",
+      "status": "ready",
+      "blocksWeightedDomainOutput": false,
+      "evidence": "All reviewed public aggregate domains are non-empty and meet the configured local minimum unweighted-record policy; no counts are repeated in this diagnostic."
+    },
+    {
+      "id": "public-output-disclosure-not-reviewed",
+      "status": "blocked",
+      "blocksWeightedDomainOutput": true,
+      "evidence": "No public weighted domain cells, rates, intervals or subgroup summaries have passed disclosure review."
+    },
+    {
+      "id": "weighted-domain-output-not-implemented",
+      "status": "blocked",
+      "blocksWeightedDomainOutput": true,
+      "evidence": "No repository artifact computes or stores public NHANES weighted domain rates or design-based intervals."
+    }
+  ],
+  "gateSummary": {
+    "requiredGateCount": 9,
+    "readyGateCount": 7,
+    "partialGateCount": 0,
+    "blockedGateCount": 2,
+    "publicDataDofSparseReviewComplete": true,
+    "publicDisclosureReviewComplete": false,
+    "weightedDomainOutputAllowed": false
+  },
+  "allowedUses": [
+    "DOF and sparse-domain metadata diagnostic gate audit",
+    "proof that public aggregate domain DOF/sparse flags can be summarized without row persistence",
+    "pre-disclosure checklist input for future NHANES weighted domain work"
+  ],
+  "blockedUses": [
+    "survey-population inference",
+    "weighted domain mortality rate publication",
+    "design-based confidence interval output",
+    "calibrated Human Infra prediction",
+    "intervention effect estimation",
+    "causal claim",
+    "individual prediction",
+    "individual death-date output",
+    "medical advice"
+  ],
+  "nextWork": [
+    "Add a disclosure-reviewed output envelope that blocks small or identifiable domain cells.",
+    "Only after disclosure review passes, consider a separate weighted domain output implementation gate.",
+    "If weighted output is later implemented, compute effective sample size and confidence interval criteria inside the disclosure-reviewed output envelope."
+  ]
+}

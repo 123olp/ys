@@ -200,6 +200,22 @@ DEFAULT_NHATS_REGISTRATION_EVIDENCE_TEMPLATE_VALIDATION = (
     / "data"
     / "life-path-nhats-registration-evidence-template-validation.json"
 )
+DEFAULT_NHATS_REGISTRATION_EVIDENCE_PACKET_VALIDATOR_TEST_CASES = (
+    REPO_ROOT
+    / "domains"
+    / "c1-boundary-rewriting"
+    / "longevity-evidence"
+    / "data"
+    / "manual"
+    / "life_path_nhats_registration_evidence_packet_validator_test_cases.json"
+)
+DEFAULT_NHATS_REGISTRATION_EVIDENCE_PACKET_VALIDATOR_VALIDATION = (
+    REPO_ROOT
+    / "web"
+    / "src"
+    / "data"
+    / "life-path-nhats-registration-evidence-packet-validator-validation.json"
+)
 DEFAULT_NHATS_CONTROLLED_STORAGE_DESTRUCTION_PLAN = (
     REPO_ROOT
     / "domains"
@@ -434,6 +450,47 @@ DEFAULT_NHATS_COLECTICA_CAPTURE_TASK_REGISTER_VALIDATION = (
     / "data"
     / "life-path-nhats-colectica-capture-task-register-validation.json"
 )
+DEFAULT_NHATS_COLECTICA_CAPTURE_PACKET_REVIEW_EXECUTION_REGISTER = (
+    REPO_ROOT
+    / "domains"
+    / "c1-boundary-rewriting"
+    / "longevity-evidence"
+    / "data"
+    / "manual"
+    / "life_path_nhats_colectica_capture_packet_review_execution_register.json"
+)
+DEFAULT_NHATS_ROUTE_VALUE_CROSSWALK_ASSEMBLY_PROTOCOL = (
+    REPO_ROOT
+    / "domains"
+    / "c1-boundary-rewriting"
+    / "longevity-evidence"
+    / "data"
+    / "manual"
+    / "life_path_nhats_route_value_crosswalk_assembly_protocol.json"
+)
+DEFAULT_NHATS_ROUTE_VALUE_CROSSWALK_ASSEMBLY_VALIDATION = (
+    REPO_ROOT
+    / "web"
+    / "src"
+    / "data"
+    / "life-path-nhats-route-value-crosswalk-assembly-validation.json"
+)
+DEFAULT_NHATS_ROUTE_VALUE_CROSSWALK_ENTRY_VALIDATOR_TEST_CASES = (
+    REPO_ROOT
+    / "domains"
+    / "c1-boundary-rewriting"
+    / "longevity-evidence"
+    / "data"
+    / "manual"
+    / "life_path_nhats_route_value_crosswalk_entry_validator_test_cases.json"
+)
+DEFAULT_NHATS_ROUTE_VALUE_CROSSWALK_ENTRY_VALIDATOR_VALIDATION = (
+    REPO_ROOT
+    / "web"
+    / "src"
+    / "data"
+    / "life-path-nhats-route-value-crosswalk-entry-validator-validation.json"
+)
 DEFAULT_NHATS_ROUTE_CLASSIFIER_READINESS = (
     REPO_ROOT
     / "domains"
@@ -449,6 +506,13 @@ DEFAULT_NHATS_ROUTE_CLASSIFIER_READINESS_VALIDATION = (
     / "src"
     / "data"
     / "life-path-nhats-route-classifier-readiness-validation.json"
+)
+DEFAULT_NHATS_ROUTE_CLASSIFIER_SYNTHETIC_DRY_RUN_VALIDATION = (
+    REPO_ROOT
+    / "web"
+    / "src"
+    / "data"
+    / "life-path-nhats-route-classifier-synthetic-dry-run-validation.json"
 )
 DEFAULT_NHATS_L2_VARIABLE_FAMILY_ADMISSION_REGISTER = (
     REPO_ROOT
@@ -490,6 +554,73 @@ DEFAULT_MODEL_ADMISSION_CANDIDATE_REGISTRY = (
     / "docs"
     / "reference"
     / "human-infra-model-admission-candidate-registry.json"
+)
+DEFAULT_QUANTITATIVE_CAPABILITY_LADDER = (
+    REPO_ROOT / "docs" / "reference" / "human-infra-quantitative-capability-ladder.json"
+)
+DEFAULT_QUANTITATIVE_CAPABILITY_LADDER_VALIDATION = (
+    REPO_ROOT
+    / "web"
+    / "src"
+    / "data"
+    / "human-infra-quantitative-capability-ladder-validation.json"
+)
+DEFAULT_RESEARCH_STANDARDS_SOURCE_ANCHOR_REGISTER = (
+    REPO_ROOT
+    / "docs"
+    / "reference"
+    / "human-infra-research-standards-source-anchor-register.json"
+)
+DEFAULT_RESEARCH_STANDARDS_SOURCE_ANCHOR_VALIDATION = (
+    REPO_ROOT
+    / "web"
+    / "src"
+    / "data"
+    / "human-infra-research-standards-source-anchor-validation.json"
+)
+DEFAULT_DOMAIN_TO_MODEL_BRIDGE_CONTRACT = (
+    REPO_ROOT / "docs" / "reference" / "human-infra-domain-to-model-bridge-contract.json"
+)
+DEFAULT_DOMAIN_TO_MODEL_BRIDGE_REGISTER = (
+    REPO_ROOT / "docs" / "reference" / "human-infra-domain-to-model-bridge-register.json"
+)
+DEFAULT_DOMAIN_TO_MODEL_BRIDGE_VALIDATION = (
+    REPO_ROOT
+    / "web"
+    / "src"
+    / "data"
+    / "human-infra-domain-to-model-bridge-validation.json"
+)
+DEFAULT_L4_MODEL_READINESS_BLOCKER_MATRIX = (
+    REPO_ROOT
+    / "docs"
+    / "reference"
+    / "human-infra-l4-model-readiness-blocker-matrix.json"
+)
+DEFAULT_L4_UNBLOCK_EXECUTION_PLAN = (
+    REPO_ROOT / "docs" / "reference" / "human-infra-l4-unblock-execution-plan.json"
+)
+DEFAULT_L4_EVIDENCE_INTAKE_REGISTER = (
+    REPO_ROOT / "docs" / "reference" / "human-infra-l4-evidence-intake-register.json"
+)
+DEFAULT_L4_VALIDATION_CALIBRATION_REPORTING_CONTRACT = (
+    REPO_ROOT
+    / "docs"
+    / "reference"
+    / "human-infra-l4-validation-calibration-reporting-contract.json"
+)
+DEFAULT_L4_VALIDATION_CALIBRATION_REPORT_EXECUTION_REGISTER = (
+    REPO_ROOT
+    / "docs"
+    / "reference"
+    / "human-infra-l4-validation-calibration-report-execution-register.json"
+)
+DEFAULT_L4_VALIDATION_CALIBRATION_REPORT_EXECUTION_VALIDATION = (
+    REPO_ROOT
+    / "web"
+    / "src"
+    / "data"
+    / "life-path-l4-validation-calibration-report-execution-validation.json"
 )
 REQUIRED_MODEL_CARD_FIELDS = {
     "modelName",
@@ -3170,6 +3301,132 @@ def audit_nhats_registration_evidence_template_validation(
     return {
         "path": str(validation_path.relative_to(REPO_ROOT)),
         "sha256": sha256_file(validation_path) if exists else None,
+        "status": "PASS" if summarize_checks(checks)["fail"] == 0 else "FAIL",
+        "checks": checks,
+        "summary": summarize_checks(checks),
+    }
+
+
+def audit_nhats_registration_evidence_packet_validator(
+    test_cases_path: Path,
+    validation_path: Path,
+    template_path: Path,
+) -> dict[str, Any]:
+    checks: list[dict[str, Any]] = []
+    test_cases_exists = test_cases_path.exists()
+    validation_exists = validation_path.exists()
+    add_check(
+        checks,
+        "nhats-registration-evidence-packet-validator-test-cases-exist",
+        status_from_bool(test_cases_exists),
+        str(test_cases_path.relative_to(REPO_ROOT)),
+    )
+    add_check(
+        checks,
+        "nhats-registration-evidence-packet-validator-validation-exists",
+        status_from_bool(validation_exists),
+        str(validation_path.relative_to(REPO_ROOT)),
+    )
+    test_cases = load_json(test_cases_path) if test_cases_exists else {}
+    validation = load_json(validation_path) if validation_exists else {}
+
+    test_schema_ok = (
+        test_cases.get("schemaVersion")
+        == "human-infra.life-path-nhats-registration-evidence-packet-validator-test-cases.v1"
+        and test_cases.get("status")
+        == "synthetic-validator-test-cases-only-registration-still-blocked"
+        and isinstance(test_cases.get("testCases"), list)
+        and len(test_cases.get("testCases", [])) >= 5
+    )
+    add_check(
+        checks,
+        "nhats-registration-evidence-packet-validator-test-cases-schema",
+        status_from_bool(test_cases_exists and test_schema_ok),
+        "test cases must be synthetic-only with at least five cases",
+    )
+
+    validation_schema_ok = (
+        validation.get("schemaVersion")
+        == "human-infra.life-path-nhats-registration-evidence-packet-validator-validation.v1"
+    )
+    add_check(
+        checks,
+        "nhats-registration-evidence-packet-validator-validation-schema",
+        status_from_bool(validation_exists and validation_schema_ok),
+        f"schemaVersion={validation.get('schemaVersion')!r}",
+    )
+
+    refs = validation.get("sourceRefs")
+    source_ok = (
+        isinstance(refs, dict)
+        and refs.get("testCasesPath") == str(test_cases_path.relative_to(REPO_ROOT))
+        and refs.get("testCasesSha256") == sha256_file(test_cases_path)
+        and refs.get("registrationEvidenceTemplatePath") == str(template_path.relative_to(REPO_ROOT))
+        and refs.get("registrationEvidenceTemplateSha256") == sha256_file(template_path)
+    )
+    add_check(
+        checks,
+        "nhats-registration-evidence-packet-validator-source-hash",
+        status_from_bool(validation_exists and test_cases_exists and template_path.exists() and source_ok),
+        "validation must hash-bind test cases and registration evidence template",
+    )
+
+    decision = validation.get("currentDecision")
+    decision_ok = (
+        validation.get("status") == "pass"
+        and isinstance(decision, dict)
+        and decision.get("validatorReady") is True
+        and decision.get("testCaseCount", 0) >= 5
+        and decision.get("reviewableButStillBlockedCount", 0) >= 1
+        and decision.get("cannotEvaluateCount", 0) >= 1
+        and decision.get("rejectedCount", 0) >= 3
+        and decision.get("realRegistrationEvidenceAttached") is False
+        and decision.get("registrationGateClosureAllowed") is False
+        and decision.get("downloadAllowed") is False
+        and decision.get("extractionScriptAllowed") is False
+        and decision.get("rawDataAllowedInRepository") is False
+        and decision.get("publicAiUploadAllowed") is False
+        and decision.get("calibrationAllowed") is False
+        and decision.get("individualPredictionAllowed") is False
+    )
+    add_check(
+        checks,
+        "nhats-registration-evidence-packet-validator-decision-boundary",
+        status_from_bool(validation_exists and decision_ok),
+        f"status={validation.get('status')!r} decision={decision!r}",
+    )
+
+    cases = validation.get("caseResults")
+    cases_ok = (
+        isinstance(cases, list)
+        and len(cases) >= 5
+        and all(isinstance(case, dict) and case.get("passed") is True for case in cases)
+    )
+    add_check(
+        checks,
+        "nhats-registration-evidence-packet-validator-case-results",
+        status_from_bool(validation_exists and cases_ok),
+        "all synthetic case expectations must pass",
+    )
+
+    boundaries = validation.get("hardBoundaries")
+    boundary_ok = (
+        has_text(boundaries, "does not prove NHATS registration")
+        and has_text(boundaries, "authorize download")
+        and has_text(boundaries, "individual prediction")
+    )
+    add_check(
+        checks,
+        "nhats-registration-evidence-packet-validator-non-proof-boundary",
+        status_from_bool(validation_exists and boundary_ok),
+        "validation must state that it does not prove registration, download, extraction, calibration or individual use",
+    )
+
+    return {
+        "testCasesPath": str(test_cases_path.relative_to(REPO_ROOT)),
+        "testCasesSha256": sha256_file(test_cases_path) if test_cases_exists else None,
+        "validationPath": str(validation_path.relative_to(REPO_ROOT)),
+        "validationSha256": sha256_file(validation_path) if validation_exists else None,
         "status": "PASS" if summarize_checks(checks)["fail"] == 0 else "FAIL",
         "checks": checks,
         "summary": summarize_checks(checks),
@@ -6821,6 +7078,478 @@ def audit_nhats_colectica_capture_task_register(
     }
 
 
+def audit_nhats_route_value_crosswalk_assembly(
+    protocol_path: Path,
+    validation_path: Path,
+) -> dict[str, Any]:
+    checks: list[dict[str, Any]] = []
+    protocol_exists = protocol_path.exists()
+    validation_exists = validation_path.exists()
+    add_check(
+        checks,
+        "nhats-route-value-crosswalk-assembly-protocol-exists",
+        status_from_bool(protocol_exists),
+        str(protocol_path.relative_to(REPO_ROOT)),
+    )
+    add_check(
+        checks,
+        "nhats-route-value-crosswalk-assembly-validation-exists",
+        status_from_bool(validation_exists),
+        str(validation_path.relative_to(REPO_ROOT)),
+    )
+
+    protocol = load_json(protocol_path) if protocol_exists else {}
+    validation = load_json(validation_path) if validation_exists else {}
+
+    schema_ok = (
+        protocol.get("schemaVersion")
+        == "human-infra.life-path-nhats-route-value-crosswalk-assembly-protocol.v1"
+    )
+    add_check(
+        checks,
+        "nhats-route-value-crosswalk-assembly-schema",
+        status_from_bool(protocol_exists and schema_ok),
+        f"schemaVersion={protocol.get('schemaVersion')!r}",
+    )
+
+    identity_ok = (
+        protocol.get("sourceId") == "nhats"
+        and protocol.get("protocolId")
+        == "nhats-r13-r14-route-value-crosswalk-assembly-protocol-2026-07-04"
+        and protocol.get("status") == "protocol-only-crosswalk-not-assembled"
+    )
+    add_check(
+        checks,
+        "nhats-route-value-crosswalk-assembly-identity",
+        status_from_bool(protocol_exists and identity_ok),
+        "assembly protocol must remain protocol-only and must not claim a built crosswalk",
+    )
+
+    decision = protocol.get("currentDecision")
+    boundary_ok = (
+        isinstance(decision, dict)
+        and decision.get("assemblyProtocolReady") is True
+        and decision.get("sensitiveDeathDateFieldsExcluded") is True
+        and decision.get("reviewedCapturePacketsAttached") is False
+        and decision.get("valueLabelsConfirmed") is False
+        and decision.get("questionTextConfirmed") is False
+        and decision.get("universeSkipLogicConfirmed") is False
+        and decision.get("routeValueCrosswalkConfirmed") is False
+        and decision.get("variableSpecificMissingCodeMapConfirmed") is False
+        and decision.get("secondReviewerSignoff") is False
+        and decision.get("routeClassifierAllowed") is False
+        and decision.get("realExtractionAllowed") is False
+        and decision.get("aggregateCohortFlowAllowed") is False
+        and decision.get("weightedRouteCountsAllowed") is False
+        and decision.get("publicExportAllowed") is False
+        and decision.get("calibrationAllowed") is False
+        and decision.get("individualPredictionAllowed") is False
+    )
+    add_check(
+        checks,
+        "nhats-route-value-crosswalk-assembly-boundary",
+        status_from_bool(protocol_exists and boundary_ok),
+        "assembly protocol may be ready, but packets, labels, crosswalk rows, maps, classifier, extraction, export, calibration and individual prediction must remain blocked",
+    )
+
+    summary = protocol.get("summary")
+    summary_ok = (
+        isinstance(summary, dict)
+        and summary.get("assemblyUnitCount") == 9
+        and summary.get("routeFieldFamiliesCovered") == 9
+        and summary.get("reviewedCapturePacketsAttached") == 0
+        and summary.get("routeValueRowsConfirmed") == 0
+        and summary.get("variableSpecificMissingCodeMapsConfirmed") == 0
+        and summary.get("secondReviewerSignoffs") == 0
+        and summary.get("routeClassifierAdmissions") == 0
+        and summary.get("realExtractionAdmissions") == 0
+        and summary.get("calibrationAdmissions") == 0
+        and summary.get("individualPredictionAdmissions") == 0
+    )
+    add_check(
+        checks,
+        "nhats-route-value-crosswalk-assembly-zero-admissions",
+        status_from_bool(protocol_exists and summary_ok),
+        "assembly summary must cover 9 units and keep all evidence/admission counts at zero",
+    )
+
+    units = protocol.get("assemblyUnits")
+    units_ok = isinstance(units, list) and len(units) == 9 and all(
+        isinstance(unit, dict)
+        and unit.get("assemblyStatus") == "pending-reviewed-capture-packets"
+        and unit.get("reviewedCapturePacketRequired") is True
+        and unit.get("valueLabelRowsAttached") is False
+        and unit.get("routeValueRowsAttached") is False
+        and unit.get("variableSpecificMissingCodeRowsAttached") is False
+        and unit.get("secondReviewerSignoff") is False
+        and unit.get("routeClassifierAllowed") is False
+        for unit in units
+    )
+    add_check(
+        checks,
+        "nhats-route-value-crosswalk-assembly-units",
+        status_from_bool(protocol_exists and units_ok),
+        f"assembly_unit_count={len(units) if isinstance(units, list) else 'invalid'}",
+    )
+
+    source_bindings = protocol.get("sourceBindings")
+    binding_ids = {
+        row.get("id")
+        for row in source_bindings
+        if isinstance(row, dict) and isinstance(row.get("id"), str)
+    } if isinstance(source_bindings, list) else set()
+    required_bindings = {
+        "capture-packet-review-execution",
+        "capture-task-register",
+        "route-classifier-readiness",
+        "missingness-route-protocol",
+        "value-label-review-execution",
+    }
+    add_check(
+        checks,
+        "nhats-route-value-crosswalk-assembly-source-bindings",
+        status_from_bool(protocol_exists and required_bindings.issubset(binding_ids)),
+        f"missing={sorted(required_bindings - binding_ids)}",
+    )
+
+    prohibited = protocol.get("prohibitedActions")
+    prohibited_ok = (
+        has_text(prohibited, "route-classifier code")
+        and has_text(prohibited, "individual-level prediction")
+        and has_text(prohibited, "death month")
+        and has_text(prohibited, "credentials")
+    )
+    add_check(
+        checks,
+        "nhats-route-value-crosswalk-assembly-prohibited-actions",
+        status_from_bool(protocol_exists and prohibited_ok),
+        "protocol must explicitly block classifier code, individual prediction, sensitive death fields and restricted materials",
+    )
+
+    validation_schema_ok = (
+        validation.get("schemaVersion") == "human-infra.validation-report.v1"
+    )
+    add_check(
+        checks,
+        "nhats-route-value-crosswalk-assembly-validation-schema",
+        status_from_bool(validation_exists and validation_schema_ok),
+        f"schemaVersion={validation.get('schemaVersion')!r}",
+    )
+
+    validation_protocol = validation.get("protocol")
+    validation_source_ok = (
+        isinstance(validation_protocol, dict)
+        and validation_protocol.get("path") == str(protocol_path.relative_to(REPO_ROOT))
+        and validation_protocol.get("sha256") == sha256_file(protocol_path)
+        and validation_protocol.get("protocolId") == protocol.get("protocolId")
+        and validation_protocol.get("status") == protocol.get("status")
+    )
+    add_check(
+        checks,
+        "nhats-route-value-crosswalk-assembly-validation-source-hash",
+        status_from_bool(validation_exists and protocol_exists and validation_source_ok),
+        "validation must point back to current assembly protocol path, hash, id and status",
+    )
+
+    upstreams = validation.get("upstreams")
+    upstream_ids = {
+        row.get("id")
+        for row in upstreams
+        if isinstance(row, dict) and isinstance(row.get("id"), str)
+    } if isinstance(upstreams, list) else set()
+    required_upstreams = {
+        "nhats-r13-r14-colectica-capture-packet-review-execution-2026-07-04",
+        "nhats-r13-r14-colectica-capture-task-register-2026-07-03",
+        "nhats-r13-r14-route-classifier-readiness-2026-07-03",
+    }
+    add_check(
+        checks,
+        "nhats-route-value-crosswalk-assembly-validation-upstreams",
+        status_from_bool(validation_exists and required_upstreams.issubset(upstream_ids)),
+        f"missing={sorted(required_upstreams - upstream_ids)}",
+    )
+
+    validation_summary = validation.get("summary")
+    validation_assembly_summary = validation.get("assemblySummary")
+    validation_summary_ok = (
+        validation.get("overallStatus") == "PASS"
+        and isinstance(validation_summary, dict)
+        and validation_summary.get("fail") == 0
+        and isinstance(validation_assembly_summary, dict)
+        and validation_assembly_summary.get("assemblyUnitCount") == 9
+        and validation_assembly_summary.get("reviewedCapturePacketsAttached") == 0
+        and validation_assembly_summary.get("routeValueRowsConfirmed") == 0
+        and validation_assembly_summary.get("variableSpecificMissingCodeMapsConfirmed") == 0
+        and validation_assembly_summary.get("secondReviewerSignoffs") == 0
+        and validation_assembly_summary.get("routeClassifierAdmissions") == 0
+        and validation_assembly_summary.get("realExtractionAdmissions") == 0
+        and validation_assembly_summary.get("calibrationAdmissions") == 0
+        and validation_assembly_summary.get("individualPredictionAdmissions") == 0
+    )
+    add_check(
+        checks,
+        "nhats-route-value-crosswalk-assembly-validation-zero-admissions",
+        status_from_bool(validation_exists and validation_summary_ok),
+        "validation must pass while preserving zero crosswalk, map, signoff, classifier, extraction, calibration and individual-prediction admissions",
+    )
+
+    validation_boundary_ok = (
+        has_text(validation.get("boundary"), "blocked route-value crosswalk")
+        and has_text(validation.get("boundary"), "individual prediction")
+        and has_text(validation.get("boundary"), "zero")
+    )
+    add_check(
+        checks,
+        "nhats-route-value-crosswalk-assembly-validation-boundary",
+        status_from_bool(validation_exists and validation_boundary_ok),
+        "validation boundary must state that crosswalk assembly remains blocked and admits no individual prediction",
+    )
+
+    return {
+        "protocolPath": str(protocol_path.relative_to(REPO_ROOT)),
+        "protocolSha256": sha256_file(protocol_path) if protocol_exists else None,
+        "validationPath": str(validation_path.relative_to(REPO_ROOT)),
+        "validationSha256": sha256_file(validation_path) if validation_exists else None,
+        "status": "PASS" if summarize_checks(checks)["fail"] == 0 else "FAIL",
+        "checks": checks,
+        "summary": summarize_checks(checks),
+    }
+
+
+def audit_nhats_route_value_crosswalk_entry_validator(
+    test_cases_path: Path,
+    validation_path: Path,
+    assembly_protocol_path: Path,
+    capture_review_execution_path: Path,
+    capture_task_register_path: Path,
+    route_classifier_readiness_path: Path,
+) -> dict[str, Any]:
+    checks: list[dict[str, Any]] = []
+    test_cases_exists = test_cases_path.exists()
+    validation_exists = validation_path.exists()
+    add_check(
+        checks,
+        "nhats-route-value-crosswalk-entry-validator-test-cases-exist",
+        status_from_bool(test_cases_exists),
+        str(test_cases_path.relative_to(REPO_ROOT)),
+    )
+    add_check(
+        checks,
+        "nhats-route-value-crosswalk-entry-validator-validation-exists",
+        status_from_bool(validation_exists),
+        str(validation_path.relative_to(REPO_ROOT)),
+    )
+
+    test_cases = load_json(test_cases_path) if test_cases_exists else {}
+    validation = load_json(validation_path) if validation_exists else {}
+
+    schema_ok = (
+        test_cases.get("schemaVersion")
+        == "human-infra.life-path-nhats-route-value-crosswalk-entry-validator-test-cases.v1"
+    )
+    add_check(
+        checks,
+        "nhats-route-value-crosswalk-entry-validator-test-cases-schema",
+        status_from_bool(test_cases_exists and schema_ok),
+        f"schemaVersion={test_cases.get('schemaVersion')!r}",
+    )
+
+    identity_ok = (
+        test_cases.get("sourceId") == "nhats"
+        and test_cases.get("testSetId")
+        == "nhats-r13-r14-route-value-crosswalk-entry-validator-test-cases-2026-07-04"
+        and test_cases.get("status")
+        == "synthetic-entry-validator-test-cases-only-model-g4-blocked"
+    )
+    add_check(
+        checks,
+        "nhats-route-value-crosswalk-entry-validator-test-cases-identity",
+        status_from_bool(test_cases_exists and identity_ok),
+        "test cases must remain synthetic fixtures and keep MODEL-G4 blocked",
+    )
+
+    source_bindings = test_cases.get("sourceBindings")
+    binding_ok = (
+        isinstance(source_bindings, dict)
+        and source_bindings.get("assemblyProtocolPath")
+        == str(assembly_protocol_path.relative_to(REPO_ROOT))
+        and source_bindings.get("captureReviewExecutionPath")
+        == str(capture_review_execution_path.relative_to(REPO_ROOT))
+        and source_bindings.get("captureTaskRegisterPath")
+        == str(capture_task_register_path.relative_to(REPO_ROOT))
+        and source_bindings.get("routeClassifierReadinessPath")
+        == str(route_classifier_readiness_path.relative_to(REPO_ROOT))
+    )
+    add_check(
+        checks,
+        "nhats-route-value-crosswalk-entry-validator-source-bindings",
+        status_from_bool(test_cases_exists and binding_ok),
+        "test cases must bind to assembly protocol, capture review execution, capture task register and route-classifier readiness",
+    )
+
+    hard_boundaries = test_cases.get("hardBoundaries")
+    boundary_ok = (
+        has_text(hard_boundaries, "synthetic fixtures")
+        and has_text(hard_boundaries, "credential")
+        and has_text(hard_boundaries, "death date")
+        and has_text(hard_boundaries, "still blocked")
+        and has_text(hard_boundaries, "cannot promote")
+    )
+    add_check(
+        checks,
+        "nhats-route-value-crosswalk-entry-validator-hard-boundaries",
+        status_from_bool(test_cases_exists and boundary_ok),
+        "hard boundaries must block credentials, sensitive death fields, assembly closure and downstream promotion",
+    )
+
+    cases = test_cases.get("testCases")
+    verdicts = [
+        case.get("expectedVerdict")
+        for case in cases
+        if isinstance(case, dict) and isinstance(case.get("expectedVerdict"), str)
+    ] if isinstance(cases, list) else []
+    cases_ok = (
+        isinstance(cases, list)
+        and len(cases) == 6
+        and verdicts.count("reviewable-but-still-blocked") == 1
+        and verdicts.count("cannot-evaluate") == 1
+        and verdicts.count("rejected") == 4
+    )
+    add_check(
+        checks,
+        "nhats-route-value-crosswalk-entry-validator-case-verdict-shape",
+        status_from_bool(test_cases_exists and cases_ok),
+        f"case_count={len(cases) if isinstance(cases, list) else 'invalid'} verdicts={verdicts}",
+    )
+
+    validation_schema_ok = (
+        validation.get("schemaVersion")
+        == "human-infra.life-path-nhats-route-value-crosswalk-entry-validator-validation.v1"
+    )
+    add_check(
+        checks,
+        "nhats-route-value-crosswalk-entry-validator-validation-schema",
+        status_from_bool(validation_exists and validation_schema_ok),
+        f"schemaVersion={validation.get('schemaVersion')!r}",
+    )
+
+    validation_test_cases = validation.get("testCases")
+    validation_test_cases_ok = (
+        isinstance(validation_test_cases, dict)
+        and validation_test_cases.get("path") == str(test_cases_path.relative_to(REPO_ROOT))
+        and validation_test_cases.get("sha256") == sha256_file(test_cases_path)
+        and validation_test_cases.get("testSetId") == test_cases.get("testSetId")
+        and validation_test_cases.get("status") == test_cases.get("status")
+    )
+    add_check(
+        checks,
+        "nhats-route-value-crosswalk-entry-validator-validation-source-hash",
+        status_from_bool(validation_exists and test_cases_exists and validation_test_cases_ok),
+        "validation must point back to current test-case path, hash, id and status",
+    )
+
+    upstreams = validation.get("upstreams")
+    upstream_map = {
+        row.get("path"): row.get("sha256")
+        for row in upstreams
+        if isinstance(row, dict) and isinstance(row.get("path"), str)
+    } if isinstance(upstreams, list) else {}
+    required_upstream_paths = [
+        assembly_protocol_path,
+        capture_review_execution_path,
+        capture_task_register_path,
+        route_classifier_readiness_path,
+    ]
+    upstream_hashes_ok = all(
+        upstream_map.get(str(path.relative_to(REPO_ROOT))) == sha256_file(path)
+        for path in required_upstream_paths
+    )
+    add_check(
+        checks,
+        "nhats-route-value-crosswalk-entry-validator-validation-upstream-hashes",
+        status_from_bool(validation_exists and upstream_hashes_ok),
+        f"upstream_count={len(upstream_map)}",
+    )
+
+    summary = validation.get("summary")
+    summary_ok = (
+        validation.get("overallStatus") == "PASS"
+        and isinstance(summary, dict)
+        and summary.get("caseCount") == 6
+        and summary.get("reviewableButStillBlockedCount") == 1
+        and summary.get("cannotEvaluateCount") == 1
+        and summary.get("rejectedCount") == 4
+        and summary.get("failureCount") == 0
+    )
+    add_check(
+        checks,
+        "nhats-route-value-crosswalk-entry-validator-validation-summary",
+        status_from_bool(validation_exists and summary_ok),
+        "validation must pass all six synthetic cases while preserving the blocked reviewable verdict",
+    )
+
+    decision = validation.get("decision")
+    decision_ok = (
+        isinstance(decision, dict)
+        and decision.get("modelG4Status") == "blocked"
+        and decision.get("assemblyUnitClosureAllowed") is False
+        and decision.get("routeClassifierAllowed") is False
+        and decision.get("realExtractionAllowed") is False
+        and decision.get("publicExportAllowed") is False
+        and decision.get("calibrationAllowed") is False
+        and decision.get("individualPredictionAllowed") is False
+    )
+    add_check(
+        checks,
+        "nhats-route-value-crosswalk-entry-validator-decision-boundary",
+        status_from_bool(validation_exists and decision_ok),
+        "entry validator may preflight future rows, but must keep G4, classifier, extraction, export, calibration and individual prediction blocked",
+    )
+
+    result_rows = validation.get("results")
+    result_boundary_ok = isinstance(result_rows, list) and all(
+        isinstance(row, dict)
+        and row.get("realEntryAttached") is False
+        and row.get("assemblyUnitClosureAllowed") is False
+        and row.get("routeClassifierAllowed") is False
+        and row.get("realExtractionAllowed") is False
+        and row.get("aggregateCohortFlowAllowed") is False
+        and row.get("weightedRouteCountsAllowed") is False
+        and row.get("publicExportAllowed") is False
+        and row.get("calibrationAllowed") is False
+        and row.get("individualPredictionAllowed") is False
+        for row in result_rows
+    )
+    add_check(
+        checks,
+        "nhats-route-value-crosswalk-entry-validator-result-boundaries",
+        status_from_bool(validation_exists and result_boundary_ok),
+        "every synthetic result must keep real entry, assembly closure and downstream use disabled",
+    )
+
+    validation_boundary_ok = (
+        has_text(validation.get("boundary"), "reviewable-but-still-blocked")
+        and has_text(validation.get("boundary"), "closes no assembly unit")
+        and has_text(validation.get("boundary"), "individual prediction")
+    )
+    add_check(
+        checks,
+        "nhats-route-value-crosswalk-entry-validator-validation-boundary",
+        status_from_bool(validation_exists and validation_boundary_ok),
+        "validation boundary must state reviewable entries remain blocked and close no assembly unit",
+    )
+
+    return {
+        "testCasesPath": str(test_cases_path.relative_to(REPO_ROOT)),
+        "testCasesSha256": sha256_file(test_cases_path) if test_cases_exists else None,
+        "validationPath": str(validation_path.relative_to(REPO_ROOT)),
+        "validationSha256": sha256_file(validation_path) if validation_exists else None,
+        "status": "PASS" if summarize_checks(checks)["fail"] == 0 else "FAIL",
+        "checks": checks,
+        "summary": summarize_checks(checks),
+    }
+
+
 def audit_nhats_route_classifier_readiness(
     readiness_path: Path,
     validation_path: Path,
@@ -6995,6 +7724,117 @@ def audit_nhats_route_classifier_readiness(
     return {
         "readinessPath": str(readiness_path.relative_to(REPO_ROOT)),
         "readinessSha256": sha256_file(readiness_path) if readiness_exists else None,
+        "validationPath": str(validation_path.relative_to(REPO_ROOT)),
+        "validationSha256": sha256_file(validation_path) if validation_exists else None,
+        "status": "PASS" if summarize_checks(checks)["fail"] == 0 else "FAIL",
+        "checks": checks,
+        "summary": summarize_checks(checks),
+    }
+
+
+def audit_nhats_route_classifier_synthetic_dry_run(
+    validation_path: Path,
+    readiness_path: Path,
+    missingness_route_protocol_path: Path,
+    missingness_route_test_cases_path: Path,
+) -> dict[str, Any]:
+    checks: list[dict[str, Any]] = []
+    validation_exists = validation_path.exists()
+    add_check(
+        checks,
+        "nhats-route-classifier-synthetic-dry-run-validation-exists",
+        status_from_bool(validation_exists),
+        str(validation_path.relative_to(REPO_ROOT)),
+    )
+    validation = load_json(validation_path) if validation_exists else {}
+
+    schema_ok = (
+        validation.get("schemaVersion")
+        == "human-infra.life-path-nhats-route-classifier-synthetic-dry-run-validation.v1"
+    )
+    add_check(
+        checks,
+        "nhats-route-classifier-synthetic-dry-run-validation-schema",
+        status_from_bool(validation_exists and schema_ok),
+        f"schemaVersion={validation.get('schemaVersion')!r}",
+    )
+
+    source_refs = validation.get("sourceRefs")
+    source_ok = (
+        isinstance(source_refs, dict)
+        and source_refs.get("routeClassifierReadinessPath")
+        == str(readiness_path.relative_to(REPO_ROOT))
+        and source_refs.get("routeClassifierReadinessSha256")
+        == sha256_file(readiness_path)
+        and source_refs.get("missingnessRouteProtocolPath")
+        == str(missingness_route_protocol_path.relative_to(REPO_ROOT))
+        and source_refs.get("missingnessRouteProtocolSha256")
+        == sha256_file(missingness_route_protocol_path)
+        and source_refs.get("missingnessRouteTestCasesPath")
+        == str(missingness_route_test_cases_path.relative_to(REPO_ROOT))
+        and source_refs.get("missingnessRouteTestCasesSha256")
+        == sha256_file(missingness_route_test_cases_path)
+    )
+    add_check(
+        checks,
+        "nhats-route-classifier-synthetic-dry-run-source-hash",
+        status_from_bool(validation_exists and source_ok),
+        "dry-run validation must point back to current readiness, missingness protocol and synthetic test cases",
+    )
+
+    summary = validation.get("summary")
+    summary_ok = (
+        validation.get("status") == "PASS"
+        and isinstance(summary, dict)
+        and summary.get("caseCount") == 8
+        and summary.get("pass") == 8
+        and summary.get("fail") == 0
+        and summary.get("allowedCount") == 5
+        and summary.get("blockedCount") == 3
+    )
+    add_check(
+        checks,
+        "nhats-route-classifier-synthetic-dry-run-summary",
+        status_from_bool(validation_exists and summary_ok),
+        "dry-run validation must pass 8 synthetic cases with 5 allowed and 3 blocked route decisions",
+    )
+
+    decision = validation.get("currentDecision")
+    decision_ok = (
+        isinstance(decision, dict)
+        and decision.get("syntheticRouteClassifierLogicRunnable") is True
+        and decision.get("routeClassifierReady") is False
+        and decision.get("classifierCodeAllowed") is False
+        and decision.get("realExtractionAllowed") is False
+        and decision.get("aggregateCohortFlowAllowed") is False
+        and decision.get("weightedRouteCountsAllowed") is False
+        and decision.get("publicExportAllowed") is False
+        and decision.get("calibrationAllowed") is False
+        and decision.get("individualPredictionAllowed") is False
+        and decision.get("modelG4") == "blocked"
+    )
+    add_check(
+        checks,
+        "nhats-route-classifier-synthetic-dry-run-boundary",
+        status_from_bool(validation_exists and decision_ok),
+        "synthetic route-classifier dry-run may be runnable, but real classifier, extraction, aggregation, export, calibration and individual prediction must remain blocked",
+    )
+
+    case_results = validation.get("caseResults")
+    cases_ok = (
+        isinstance(case_results, list)
+        and len(case_results) == 8
+        and all(isinstance(row, dict) and row.get("status") == "PASS" for row in case_results)
+        and not any(str(row).lower().find("death date") >= 0 for row in case_results)
+    )
+    add_check(
+        checks,
+        "nhats-route-classifier-synthetic-dry-run-cases",
+        status_from_bool(validation_exists and cases_ok),
+        "tracked dry-run summary may contain only synthetic pass/fail case decisions and no real death-date output",
+    )
+
+    return {
         "validationPath": str(validation_path.relative_to(REPO_ROOT)),
         "validationSha256": sha256_file(validation_path) if validation_exists else None,
         "status": "PASS" if summarize_checks(checks)["fail"] == 0 else "FAIL",
@@ -7316,6 +8156,794 @@ def audit_nhats_preoutcome_aggregation_protocol(
     }
 
 
+def false_decisions_ok(decision: Any, keys: set[str]) -> bool:
+    return isinstance(decision, dict) and all(decision.get(key) is False for key in keys)
+
+
+L4_COMMON_FALSE_DECISION_KEYS = {
+    "l4AggregateCalibratedAdmissionAllowed",
+    "publicWeightedDomainOutputAllowed",
+    "calibratedPredictionAvailable",
+    "individualUseAllowed",
+}
+L4_EVIDENCE_FALSE_DECISION_KEYS = L4_COMMON_FALSE_DECISION_KEYS | {
+    "directEvidenceAttached",
+    "humanReviewEvidenceAttached",
+    "externalGovernedAccessEvidenceAttached",
+}
+L4_REPORTING_FALSE_DECISION_KEYS = L4_COMMON_FALSE_DECISION_KEYS | {
+    "realValidationReportAttached",
+    "developmentValidationDesignComplete",
+    "calibrationDiagnosticsAvailable",
+    "realParameterSensitivityAvailable",
+    "biasApplicabilityReviewComplete",
+    "tripodProbastReportingPacketComplete",
+}
+L4_EXECUTION_FALSE_DECISION_KEYS = L4_COMMON_FALSE_DECISION_KEYS | {
+    "realValidationReportPacketAttached",
+    "realCalibrationDiagnosticsPacketAttached",
+    "realParameterSensitivityPacketAttached",
+    "biasApplicabilityReviewPacketAttached",
+    "tripodProbastReportingPacketAttached",
+    "allRequiredSectionsCompleted",
+    "allRequiredSlotsCompleted",
+    "humanReviewerSignoffPresent",
+    "secondReviewerSignoffPresent",
+    "medicalAdviceAllowed",
+}
+
+
+def audit_model_governance_control_plane(
+    model_admission_contract_path: Path,
+    model_admission_candidate_registry_path: Path,
+    quantitative_capability_ladder_path: Path,
+    quantitative_capability_ladder_validation_path: Path,
+    research_standards_source_anchor_register_path: Path,
+    research_standards_source_anchor_validation_path: Path,
+    domain_to_model_bridge_contract_path: Path,
+    domain_to_model_bridge_register_path: Path,
+    domain_to_model_bridge_validation_path: Path,
+    l4_validation_calibration_reporting_contract_path: Path,
+) -> dict[str, Any]:
+    checks: list[dict[str, Any]] = []
+
+    paths = {
+        "modelAdmissionContract": model_admission_contract_path,
+        "modelAdmissionCandidateRegistry": model_admission_candidate_registry_path,
+        "quantitativeCapabilityLadder": quantitative_capability_ladder_path,
+        "quantitativeCapabilityLadderValidation": (
+            quantitative_capability_ladder_validation_path
+        ),
+        "researchStandardsSourceAnchorRegister": (
+            research_standards_source_anchor_register_path
+        ),
+        "researchStandardsSourceAnchorValidation": (
+            research_standards_source_anchor_validation_path
+        ),
+        "domainToModelBridgeContract": domain_to_model_bridge_contract_path,
+        "domainToModelBridgeRegister": domain_to_model_bridge_register_path,
+        "domainToModelBridgeValidation": domain_to_model_bridge_validation_path,
+    }
+    existing: dict[str, bool] = {}
+    for key, path in paths.items():
+        exists = path.exists()
+        existing[key] = exists
+        add_check(
+            checks,
+            f"model-governance-{key}-exists",
+            status_from_bool(exists),
+            str(path.relative_to(REPO_ROOT)),
+        )
+
+    contract = (
+        load_json(model_admission_contract_path)
+        if existing["modelAdmissionContract"]
+        else {}
+    )
+    registry = (
+        load_json(model_admission_candidate_registry_path)
+        if existing["modelAdmissionCandidateRegistry"]
+        else {}
+    )
+    ladder = (
+        load_json(quantitative_capability_ladder_path)
+        if existing["quantitativeCapabilityLadder"]
+        else {}
+    )
+    ladder_validation = (
+        load_json(quantitative_capability_ladder_validation_path)
+        if existing["quantitativeCapabilityLadderValidation"]
+        else {}
+    )
+    standards_register = (
+        load_json(research_standards_source_anchor_register_path)
+        if existing["researchStandardsSourceAnchorRegister"]
+        else {}
+    )
+    standards_validation = (
+        load_json(research_standards_source_anchor_validation_path)
+        if existing["researchStandardsSourceAnchorValidation"]
+        else {}
+    )
+    domain_bridge_contract = (
+        load_json(domain_to_model_bridge_contract_path)
+        if existing["domainToModelBridgeContract"]
+        else {}
+    )
+    domain_bridge_register = (
+        load_json(domain_to_model_bridge_register_path)
+        if existing["domainToModelBridgeRegister"]
+        else {}
+    )
+    domain_bridge_validation = (
+        load_json(domain_to_model_bridge_validation_path)
+        if existing["domainToModelBridgeValidation"]
+        else {}
+    )
+
+    contract_decision = contract.get("currentRepositoryDecision")
+    contract_source = contract.get("sourceOfTruth")
+    contract_reviewed_registers = (
+        contract_source.get("reviewedArtifactRegisters", [])
+        if isinstance(contract_source, dict)
+        else []
+    )
+    contract_ok = (
+        contract.get("schemaVersion") == "human-infra.model-admission-contract.v1"
+        and contract.get("status")
+        == "active-model-admission-contract-calibrated-admission-blocked"
+        and isinstance(contract_reviewed_registers, list)
+        and len(contract_reviewed_registers) >= 11
+        and any(
+            isinstance(path, str)
+            and path.endswith(
+                "human-infra-c2-longtail-ninth-batch-manual-fulltext-reviewed-card-artifact-register.json"
+            )
+            for path in contract_reviewed_registers
+        )
+        and isinstance(contract.get("admissionLevels"), list)
+        and len(contract["admissionLevels"]) == 6
+        and isinstance(contract.get("minimumAdmissionGates"), list)
+        and len(contract["minimumAdmissionGates"]) >= 8
+        and isinstance(contract.get("hardAbortGates"), list)
+        and len(contract["hardAbortGates"]) >= 6
+        and isinstance(contract_decision, dict)
+        and contract_decision.get("overallAdmission")
+        == "blocked-for-calibrated-model"
+        and contract_decision.get("highestAllowedLevel") == "L3"
+        and contract_decision.get("currentC2ReviewedArtifactsAdmission")
+        == "L1/L2-only"
+        and contract_decision.get("calibratedPredictionAvailable") is False
+        and contract_decision.get("individualUseAllowed") is False
+    )
+    add_check(
+        checks,
+        "model-governance-admission-contract-blocked",
+        status_from_bool(existing["modelAdmissionContract"] and contract_ok),
+        "model admission contract must keep calibrated prediction blocked and current maximum at L3",
+    )
+
+    registry_source = registry.get("sourceOfTruth")
+    registry_aggregate = registry.get("aggregateDecision")
+    registry_l3 = registry.get("existingL3Decisions")
+    registry_l4 = registry.get("blockedL4Candidates")
+    registry_ok = (
+        registry.get("schemaVersion")
+        == "human-infra.model-admission-candidate-registry.v1"
+        and registry.get("status")
+        == "active-model-admission-candidate-registry-calibrated-blocked"
+        and isinstance(registry_source, dict)
+        and registry_source.get("modelAdmissionContract")
+        == str(model_admission_contract_path.relative_to(REPO_ROOT))
+        and registry_source.get("reviewedArtifactRegisters")
+        == contract_reviewed_registers
+        and isinstance(registry_aggregate, dict)
+        and registry_aggregate.get("reviewedArtifactRegisters")
+        == len(contract_reviewed_registers)
+        and registry_aggregate.get("reviewedArtifactRegisters", 0) >= 11
+        and registry_aggregate.get("reviewedArtifactsCovered", 0) >= 1386
+        and registry_aggregate.get("blockedRowsPreserved", 0) >= 66
+        and registry_aggregate.get("highestReviewedArtifactLevel") == "L2"
+        and registry_aggregate.get("highestCurrentModelLevel") == "L3"
+        and registry_aggregate.get("l4AggregateCalibratedAdmissions") == 0
+        and registry_aggregate.get("l5IndividualAdmissions") == 0
+        and registry_aggregate.get("calibratedPredictionAvailable") is False
+        and registry_aggregate.get("individualUseAllowed") is False
+        and isinstance(registry.get("reviewedArtifactAdmissionDecisions"), list)
+        and len(registry["reviewedArtifactAdmissionDecisions"])
+        == registry_aggregate.get("reviewedArtifactRegisters")
+        and isinstance(registry_l3, list)
+        and len(registry_l3) >= 2
+        and all(
+            isinstance(decision, dict) and decision.get("calibrated") is False
+            for decision in registry_l3
+        )
+        and isinstance(registry_l4, list)
+        and len(registry_l4) >= 5
+        and all(
+            isinstance(candidate, dict)
+            and isinstance(candidate.get("blockedAt"), list)
+            and len(candidate["blockedAt"]) >= 3
+            for candidate in registry_l4
+        )
+    )
+    add_check(
+        checks,
+        "model-governance-candidate-registry-blocked",
+        status_from_bool(existing["modelAdmissionCandidateRegistry"] and registry_ok),
+        "candidate registry must keep reviewed artifacts L1/L2-only, current model at L3, and L4/L5 admissions at zero",
+    )
+
+    ladder_source = ladder.get("sourceOfTruth")
+    ladder_decision = ladder.get("currentDecision")
+    ladder_validation_ok = (
+        ladder_validation.get("schemaVersion")
+        == "human-infra.quantitative-capability-ladder-validation.v1"
+        and ladder_validation.get("status") == "pass-q3-current-q4-q5-blocked"
+        and ladder_validation.get("source")
+        == str(quantitative_capability_ladder_path.relative_to(REPO_ROOT))
+        and ladder_validation.get("highestCurrentQuantitativeCapability")
+        == "Q3-synthetic-life-path-model"
+        and ladder_validation.get("mappedModelAdmissionLevel") == "L3"
+        and ladder_validation.get("q4AggregateCalibratedResearchModelAllowed") is False
+        and ladder_validation.get("q5IndividualDecisionSupportAllowed") is False
+        and ladder_validation.get("individualDeathDateOutputAllowed") is False
+        and ladder_validation.get("medicalAdviceAllowed") is False
+        and ladder_validation.get("interventionRankingAllowed") is False
+    )
+    ladder_ok = (
+        ladder.get("schemaVersion")
+        == "human-infra.quantitative-capability-ladder.v1"
+        and ladder.get("status")
+        == "active-quantitative-capability-ladder-q3-current-q4-q5-blocked"
+        and isinstance(ladder_source, dict)
+        and ladder_source.get("modelAdmissionContract")
+        == str(model_admission_contract_path.relative_to(REPO_ROOT))
+        and ladder_source.get("modelAdmissionCandidateRegistry")
+        == str(model_admission_candidate_registry_path.relative_to(REPO_ROOT))
+        and ladder_source.get("researchStandardsSourceAnchorRegister")
+        == str(research_standards_source_anchor_register_path.relative_to(REPO_ROOT))
+        and isinstance(ladder_decision, dict)
+        and ladder_decision.get("highestCurrentQuantitativeCapability")
+        == "Q3-synthetic-life-path-model"
+        and ladder_decision.get("mappedModelAdmissionLevel") == "L3"
+        and ladder_decision.get("q3SyntheticCurvesAllowed") is True
+        and ladder_decision.get("q4AggregateCalibratedResearchModelAllowed") is False
+        and ladder_decision.get("q5IndividualDecisionSupportAllowed") is False
+        and ladder_decision.get("individualDeathDateOutputAllowed") is False
+        and ladder_decision.get("medicalAdviceAllowed") is False
+        and ladder_decision.get("interventionRankingAllowed") is False
+        and isinstance(ladder.get("capabilityLevels"), list)
+        and len(ladder["capabilityLevels"]) == 6
+        and isinstance(ladder.get("outputFamilyMatrix"), list)
+        and len(ladder["outputFamilyMatrix"]) == 12
+        and ladder_validation_ok
+    )
+    add_check(
+        checks,
+        "model-governance-quantitative-capability-q3-only",
+        status_from_bool(
+            existing["quantitativeCapabilityLadder"]
+            and existing["quantitativeCapabilityLadderValidation"]
+            and ladder_ok
+        ),
+        "quantitative capability ladder must keep current capability at Q3/L3 and block Q4/Q5, individual prediction, medical advice and intervention ranking",
+    )
+
+    standards_source = standards_register.get("sourceOfTruth")
+    standards_decisions = standards_register.get("currentDecisions")
+    standards_validation_ok = (
+        standards_validation.get("schemaVersion")
+        == "human-infra.research-standards-source-anchor-validation.v1"
+        and standards_validation.get("status") == "pass-no-model-admission"
+        and standards_validation.get("sourceRegister")
+        == str(research_standards_source_anchor_register_path.relative_to(REPO_ROOT))
+        and standards_validation.get("anchorCount") == 15
+        and standards_validation.get("modelAdmission") == "blocked"
+        and standards_validation.get("publicWeightedDomainOutput") == "blocked"
+        and standards_validation.get("individualPrediction") == "blocked"
+        and standards_validation.get("medicalAdvice") == "blocked"
+        and standards_validation.get("longevityEscapeVelocityClaim") == "blocked"
+    )
+    standards_ok = (
+        standards_register.get("schemaVersion")
+        == "human-infra.research-standards-source-anchor-register.v1"
+        and standards_register.get("status") == "active-standards-anchor-register-no-model-admission"
+        and isinstance(standards_source, dict)
+        and standards_source.get("modelAdmissionContract")
+        == str(model_admission_contract_path.relative_to(REPO_ROOT))
+        and standards_source.get("modelAdmissionCandidateRegistry")
+        == str(model_admission_candidate_registry_path.relative_to(REPO_ROOT))
+        and standards_source.get("l4ValidationCalibrationReportingContract")
+        == str(l4_validation_calibration_reporting_contract_path.relative_to(REPO_ROOT))
+        and isinstance(standards_decisions, dict)
+        and all(value is False for value in standards_decisions.values())
+        and isinstance(standards_register.get("standardAnchors"), list)
+        and len(standards_register["standardAnchors"]) == 15
+        and standards_validation_ok
+    )
+    add_check(
+        checks,
+        "model-governance-research-standards-no-admission",
+        status_from_bool(
+            existing["researchStandardsSourceAnchorRegister"]
+            and existing["researchStandardsSourceAnchorValidation"]
+            and standards_ok
+        ),
+        "research standards anchors may guide reporting and bias gates but must not grant model admission, intervention effects, individual prediction or medical advice",
+    )
+
+    domain_bridge_contract_decision = domain_bridge_contract.get("currentDecision")
+    domain_bridge_register_decision = domain_bridge_register.get("currentDecision")
+    domain_bridge_validation_ok = (
+        domain_bridge_validation.get("schemaVersion")
+        == "human-infra.domain-to-model-bridge-validation.v1"
+        and domain_bridge_validation.get("status") == "pass-q2-only-q4-q5-blocked"
+        and domain_bridge_validation.get("contractPath")
+        == str(domain_to_model_bridge_contract_path.relative_to(REPO_ROOT))
+        and domain_bridge_validation.get("contractSha256")
+        == (
+            sha256_file(domain_to_model_bridge_contract_path)
+            if existing["domainToModelBridgeContract"]
+            else None
+        )
+        and domain_bridge_validation.get("registerPath")
+        == str(domain_to_model_bridge_register_path.relative_to(REPO_ROOT))
+        and domain_bridge_validation.get("registerSha256")
+        == (
+            sha256_file(domain_to_model_bridge_register_path)
+            if existing["domainToModelBridgeRegister"]
+            else None
+        )
+        and domain_bridge_validation.get("rowCount") == 14
+        and domain_bridge_validation.get("tierCoverage")
+        == ["C1", "C2", "C3", "C4", "C5", "C6"]
+        and isinstance(domain_bridge_validation.get("modelLocationCoverage"), list)
+        and len(domain_bridge_validation["modelLocationCoverage"]) >= 10
+        and domain_bridge_validation.get("mappedAdmissionLevel") == "L2"
+        and domain_bridge_validation.get("mappedQuantitativeCapability") == "Q2"
+        and domain_bridge_validation.get("candidateVariablesAllowed") is True
+        and domain_bridge_validation.get("aggregateCalibratedUseAllowed") is False
+        and domain_bridge_validation.get("individualUseAllowed") is False
+        and domain_bridge_validation.get("coefficientOutputAllowed") is False
+        and domain_bridge_validation.get("causalEffectOutputAllowed") is False
+        and domain_bridge_validation.get("interventionRankingAllowed") is False
+        and domain_bridge_validation.get("medicalAdviceAllowed") is False
+        and domain_bridge_validation.get("individualDeathDateOutputAllowed") is False
+    )
+    domain_bridge_ok = (
+        domain_bridge_contract.get("schemaVersion")
+        == "human-infra.domain-to-model-bridge-contract.v1"
+        and domain_bridge_contract.get("status")
+        == "active-domain-to-model-bridge-q2-current-q4-q5-blocked"
+        and isinstance(domain_bridge_contract.get("sourceOfTruth"), dict)
+        and domain_bridge_contract["sourceOfTruth"].get("modelAdmissionContract")
+        == str(model_admission_contract_path.relative_to(REPO_ROOT))
+        and domain_bridge_contract["sourceOfTruth"].get("modelAdmissionCandidateRegistry")
+        == str(model_admission_candidate_registry_path.relative_to(REPO_ROOT))
+        and domain_bridge_contract["sourceOfTruth"].get("quantitativeCapabilityLadder")
+        == str(quantitative_capability_ladder_path.relative_to(REPO_ROOT))
+        and isinstance(domain_bridge_contract_decision, dict)
+        and domain_bridge_contract_decision.get("domainBridgeReady") is True
+        and domain_bridge_contract_decision.get("highestCurrentBridgeLevel")
+        == "B2-model-candidate-variable"
+        and domain_bridge_contract_decision.get("mappedAdmissionLevel") == "L2"
+        and domain_bridge_contract_decision.get("mappedQuantitativeCapability") == "Q2"
+        and domain_bridge_contract_decision.get("candidateVariablesAllowed") is True
+        and domain_bridge_contract_decision.get("aggregateCalibratedUseAllowed") is False
+        and domain_bridge_contract_decision.get("individualUseAllowed") is False
+        and domain_bridge_contract_decision.get("coefficientOutputAllowed") is False
+        and domain_bridge_contract_decision.get("causalEffectOutputAllowed") is False
+        and domain_bridge_contract_decision.get("interventionRankingAllowed") is False
+        and domain_bridge_contract_decision.get("medicalAdviceAllowed") is False
+        and domain_bridge_contract_decision.get("individualDeathDateOutputAllowed") is False
+        and domain_bridge_register.get("schemaVersion")
+        == "human-infra.domain-to-model-bridge-register.v1"
+        and domain_bridge_register.get("status")
+        == "active-representative-domain-bridge-q2-only"
+        and isinstance(domain_bridge_register.get("sourceOfTruth"), dict)
+        and domain_bridge_register["sourceOfTruth"].get("bridgeContract")
+        == str(domain_to_model_bridge_contract_path.relative_to(REPO_ROOT))
+        and isinstance(domain_bridge_register_decision, dict)
+        and domain_bridge_register_decision.get("representativeRowsReady") is True
+        and domain_bridge_register_decision.get("rowCount") == 14
+        and domain_bridge_register_decision.get("highestCurrentBridgeLevel")
+        == "B2-model-candidate-variable"
+        and domain_bridge_register_decision.get("mappedAdmissionLevel") == "L2"
+        and domain_bridge_register_decision.get("mappedQuantitativeCapability") == "Q2"
+        and domain_bridge_register_decision.get("syntheticScenarioInputsOpened") is False
+        and domain_bridge_register_decision.get("aggregateCalibratedInputsOpened")
+        is False
+        and domain_bridge_register_decision.get("individualUseOpened") is False
+        and isinstance(domain_bridge_register.get("bridgeRows"), list)
+        and len(domain_bridge_register["bridgeRows"]) == 14
+        and all(
+            isinstance(row, dict)
+            and row.get("mappedAdmissionLevel") == "L2"
+            and row.get("mappedQuantitativeCapability") == "Q2"
+            and row.get("currentDecision") == "candidate-only"
+            for row in domain_bridge_register["bridgeRows"]
+        )
+        and domain_bridge_validation_ok
+    )
+    add_check(
+        checks,
+        "model-governance-domain-to-model-bridge-q2-only",
+        status_from_bool(
+            existing["domainToModelBridgeContract"]
+            and existing["domainToModelBridgeRegister"]
+            and existing["domainToModelBridgeValidation"]
+            and domain_bridge_ok
+        ),
+        "domain-to-model bridge must keep C1-C6 domains at Q2/L2 candidate vocabulary only and block coefficients, causal effects, calibrated prediction, individual use, medical advice, intervention ranking and death-date output",
+    )
+
+    return {
+        "modelAdmissionContractPath": str(
+            model_admission_contract_path.relative_to(REPO_ROOT)
+        ),
+        "modelAdmissionContractSha256": (
+            sha256_file(model_admission_contract_path)
+            if existing["modelAdmissionContract"]
+            else None
+        ),
+        "modelAdmissionCandidateRegistryPath": str(
+            model_admission_candidate_registry_path.relative_to(REPO_ROOT)
+        ),
+        "modelAdmissionCandidateRegistrySha256": (
+            sha256_file(model_admission_candidate_registry_path)
+            if existing["modelAdmissionCandidateRegistry"]
+            else None
+        ),
+        "quantitativeCapabilityLadderPath": str(
+            quantitative_capability_ladder_path.relative_to(REPO_ROOT)
+        ),
+        "quantitativeCapabilityLadderSha256": (
+            sha256_file(quantitative_capability_ladder_path)
+            if existing["quantitativeCapabilityLadder"]
+            else None
+        ),
+        "quantitativeCapabilityLadderValidationPath": str(
+            quantitative_capability_ladder_validation_path.relative_to(REPO_ROOT)
+        ),
+        "quantitativeCapabilityLadderValidationSha256": (
+            sha256_file(quantitative_capability_ladder_validation_path)
+            if existing["quantitativeCapabilityLadderValidation"]
+            else None
+        ),
+        "researchStandardsSourceAnchorRegisterPath": str(
+            research_standards_source_anchor_register_path.relative_to(REPO_ROOT)
+        ),
+        "researchStandardsSourceAnchorRegisterSha256": (
+            sha256_file(research_standards_source_anchor_register_path)
+            if existing["researchStandardsSourceAnchorRegister"]
+            else None
+        ),
+        "researchStandardsSourceAnchorValidationPath": str(
+            research_standards_source_anchor_validation_path.relative_to(REPO_ROOT)
+        ),
+        "researchStandardsSourceAnchorValidationSha256": (
+            sha256_file(research_standards_source_anchor_validation_path)
+            if existing["researchStandardsSourceAnchorValidation"]
+            else None
+        ),
+        "domainToModelBridgeContractPath": str(
+            domain_to_model_bridge_contract_path.relative_to(REPO_ROOT)
+        ),
+        "domainToModelBridgeContractSha256": (
+            sha256_file(domain_to_model_bridge_contract_path)
+            if existing["domainToModelBridgeContract"]
+            else None
+        ),
+        "domainToModelBridgeRegisterPath": str(
+            domain_to_model_bridge_register_path.relative_to(REPO_ROOT)
+        ),
+        "domainToModelBridgeRegisterSha256": (
+            sha256_file(domain_to_model_bridge_register_path)
+            if existing["domainToModelBridgeRegister"]
+            else None
+        ),
+        "domainToModelBridgeValidationPath": str(
+            domain_to_model_bridge_validation_path.relative_to(REPO_ROOT)
+        ),
+        "domainToModelBridgeValidationSha256": (
+            sha256_file(domain_to_model_bridge_validation_path)
+            if existing["domainToModelBridgeValidation"]
+            else None
+        ),
+        "status": "PASS" if summarize_checks(checks)["fail"] == 0 else "FAIL",
+        "checks": checks,
+        "summary": summarize_checks(checks),
+    }
+
+
+def audit_l4_control_plane(
+    blocker_matrix_path: Path,
+    unblock_execution_plan_path: Path,
+    evidence_intake_register_path: Path,
+    validation_calibration_reporting_contract_path: Path,
+    validation_calibration_report_execution_register_path: Path,
+    validation_calibration_report_execution_validation_path: Path,
+) -> dict[str, Any]:
+    checks: list[dict[str, Any]] = []
+
+    paths = {
+        "blockerMatrix": blocker_matrix_path,
+        "unblockExecutionPlan": unblock_execution_plan_path,
+        "evidenceIntakeRegister": evidence_intake_register_path,
+        "validationCalibrationReportingContract": validation_calibration_reporting_contract_path,
+        "validationCalibrationReportExecutionRegister": (
+            validation_calibration_report_execution_register_path
+        ),
+        "validationCalibrationReportExecutionValidation": (
+            validation_calibration_report_execution_validation_path
+        ),
+    }
+    existing: dict[str, bool] = {}
+    for key, path in paths.items():
+        exists = path.exists()
+        existing[key] = exists
+        add_check(
+            checks,
+            f"l4-control-plane-{key}-exists",
+            status_from_bool(exists),
+            str(path.relative_to(REPO_ROOT)),
+        )
+
+    blocker_matrix = load_json(blocker_matrix_path) if existing["blockerMatrix"] else {}
+    unblock_plan = load_json(unblock_execution_plan_path) if existing["unblockExecutionPlan"] else {}
+    evidence_intake = (
+        load_json(evidence_intake_register_path) if existing["evidenceIntakeRegister"] else {}
+    )
+    reporting_contract = (
+        load_json(validation_calibration_reporting_contract_path)
+        if existing["validationCalibrationReportingContract"]
+        else {}
+    )
+    execution_register = (
+        load_json(validation_calibration_report_execution_register_path)
+        if existing["validationCalibrationReportExecutionRegister"]
+        else {}
+    )
+    execution_validation = (
+        load_json(validation_calibration_report_execution_validation_path)
+        if existing["validationCalibrationReportExecutionValidation"]
+        else {}
+    )
+
+    blocker_decision = blocker_matrix.get("currentDecision")
+    blocker_ok = (
+        blocker_matrix.get("schemaVersion")
+        == "human-infra.l4-model-readiness-blocker-matrix.v1"
+        and blocker_matrix.get("status") == "active-l4-admission-blocked-readiness-matrix"
+        and isinstance(blocker_decision, dict)
+        and "L3" in str(blocker_decision.get("highestCurrentModelLevel", ""))
+        and false_decisions_ok(blocker_decision, L4_COMMON_FALSE_DECISION_KEYS)
+        and isinstance(blocker_matrix.get("candidatePaths"), list)
+        and len(blocker_matrix["candidatePaths"]) == 2
+        and all(
+            isinstance(candidate, dict) and candidate.get("admissionAllowed") is False
+            for candidate in blocker_matrix["candidatePaths"]
+        )
+        and isinstance(blocker_matrix.get("blockers"), list)
+        and len(blocker_matrix["blockers"]) == 6
+        and all(
+            isinstance(blocker, dict)
+            and blocker.get("status") == "blocked"
+            and blocker.get("blocksAdmission") is True
+            for blocker in blocker_matrix["blockers"]
+        )
+    )
+    add_check(
+        checks,
+        "l4-control-plane-blocker-matrix-still-blocked",
+        status_from_bool(existing["blockerMatrix"] and blocker_ok),
+        "blocker matrix must keep two L4 candidates blocked by six admission blockers",
+    )
+
+    plan_source = unblock_plan.get("sourceOfTruth")
+    plan_decision = unblock_plan.get("currentDecision")
+    plan_source_ok = (
+        isinstance(plan_source, dict)
+        and plan_source.get("l4ReadinessBlockerMatrix")
+        == str(blocker_matrix_path.relative_to(REPO_ROOT))
+        and plan_source.get("l4EvidenceIntakeRegister")
+        == str(evidence_intake_register_path.relative_to(REPO_ROOT))
+        and plan_source.get("l4ValidationCalibrationReportingContract")
+        == str(validation_calibration_reporting_contract_path.relative_to(REPO_ROOT))
+    )
+    plan_orders = unblock_plan.get("executionWorkOrders")
+    plan_ok = (
+        unblock_plan.get("schemaVersion") == "human-infra.l4-unblock-execution-plan.v1"
+        and unblock_plan.get("status") == "active-execution-plan-l4-still-blocked"
+        and plan_source_ok
+        and isinstance(plan_decision, dict)
+        and "L3" in str(plan_decision.get("highestCurrentModelLevel", ""))
+        and plan_decision.get("humanOnlyEvidenceStillRequired") is True
+        and plan_decision.get("externalGovernedAccessStillRequired") is True
+        and false_decisions_ok(plan_decision, L4_COMMON_FALSE_DECISION_KEYS)
+        and isinstance(plan_orders, list)
+        and len(plan_orders) == 5
+        and all(
+            isinstance(order, dict) and "blocked" in str(order.get("status", ""))
+            for order in plan_orders
+        )
+    )
+    add_check(
+        checks,
+        "l4-control-plane-unblock-plan-still-blocked",
+        status_from_bool(existing["unblockExecutionPlan"] and plan_ok),
+        "execution plan must bind blocker matrix, evidence intake and reporting contract while keeping all L4 work orders blocked",
+    )
+
+    intake_decision = evidence_intake.get("currentDecision")
+    slot_summary = evidence_intake.get("slotStatusSummary")
+    slot_groups = evidence_intake.get("evidenceSlotGroups")
+    packet_contract = evidence_intake.get("evidencePacketContract")
+    slot_shape_ok = (
+        isinstance(slot_groups, list)
+        and len(slot_groups) == 5
+        and all(
+            isinstance(group, dict)
+            and group.get("status") == "pending-no-direct-evidence"
+            and isinstance(group.get("slots"), list)
+            and all(
+                isinstance(slot, dict)
+                and slot.get("status") == "pending"
+                and slot.get("evidenceRef") is None
+                and slot.get("reviewerSignoff") is None
+                and slot.get("blocksL4") is True
+                for slot in group["slots"]
+            )
+            for group in slot_groups
+        )
+    )
+    intake_ok = (
+        evidence_intake.get("schemaVersion") == "human-infra.l4-evidence-intake-register.v1"
+        and evidence_intake.get("status")
+        == "active-intake-register-no-direct-evidence-l4-blocked"
+        and isinstance(intake_decision, dict)
+        and intake_decision.get("evidenceIntakeRegisterReady") is True
+        and false_decisions_ok(intake_decision, L4_EVIDENCE_FALSE_DECISION_KEYS)
+        and isinstance(slot_summary, dict)
+        and slot_summary.get("workOrderCount") == 5
+        and slot_summary.get("totalSlotCount") == 24
+        and slot_summary.get("pendingSlotCount") == 24
+        and slot_summary.get("evidenceAttachedCount") == 0
+        and slot_summary.get("humanSignoffCount") == 0
+        and slot_summary.get("l4ReviewOpen") is False
+        and isinstance(packet_contract, dict)
+        and packet_contract.get("packetCount") == 0
+        and packet_contract.get("closedSlotCount") == 0
+        and slot_shape_ok
+    )
+    add_check(
+        checks,
+        "l4-control-plane-evidence-intake-zero-evidence",
+        status_from_bool(existing["evidenceIntakeRegister"] and intake_ok),
+        "evidence intake must keep 24 slots pending, zero evidence packets, zero signoffs and L4 review closed",
+    )
+
+    reporting_decision = reporting_contract.get("currentDecision")
+    reporting_ok = (
+        reporting_contract.get("schemaVersion")
+        == "human-infra.l4-validation-calibration-reporting-contract.v1"
+        and reporting_contract.get("status") == "template-only-no-validation-report-l4-blocked"
+        and isinstance(reporting_decision, dict)
+        and "L3" in str(reporting_decision.get("highestCurrentModelLevel", ""))
+        and reporting_decision.get("reportTemplateReady") is True
+        and false_decisions_ok(reporting_decision, L4_REPORTING_FALSE_DECISION_KEYS)
+        and isinstance(reporting_contract.get("reportPacketSections"), list)
+        and len(reporting_contract["reportPacketSections"]) == 12
+        and isinstance(reporting_contract.get("slotMapping"), list)
+        and len(reporting_contract["slotMapping"]) == 5
+    )
+    add_check(
+        checks,
+        "l4-control-plane-reporting-contract-template-only",
+        status_from_bool(existing["validationCalibrationReportingContract"] and reporting_ok),
+        "reporting contract must expose 12 report sections and 5 slots while keeping real validation, calibration and L4 admission blocked",
+    )
+
+    execution_decision = execution_register.get("currentDecision")
+    validation_sources = execution_validation.get("sourceRefs")
+    validation_summary = execution_validation.get("summary")
+    validation_source_ok = (
+        isinstance(validation_sources, dict)
+        and isinstance(validation_sources.get("executionRegister"), dict)
+        and validation_sources["executionRegister"].get("path")
+        == str(validation_calibration_report_execution_register_path.relative_to(REPO_ROOT))
+        and validation_sources["executionRegister"].get("sha256")
+        == sha256_file(validation_calibration_report_execution_register_path)
+        and isinstance(validation_sources.get("reportingContract"), dict)
+        and validation_sources["reportingContract"].get("path")
+        == str(validation_calibration_reporting_contract_path.relative_to(REPO_ROOT))
+        and validation_sources["reportingContract"].get("sha256")
+        == sha256_file(validation_calibration_reporting_contract_path)
+    )
+    execution_ok = (
+        execution_register.get("schemaVersion")
+        == "human-infra.l4-validation-calibration-report-execution-register.v1"
+        and execution_register.get("status")
+        == "execution-register-ready-no-real-report-packet-l4-blocked"
+        and isinstance(execution_decision, dict)
+        and execution_decision.get("executionRegisterValidated") is True
+        and execution_decision.get("reportingContractValidated") is True
+        and execution_decision.get("syntheticDryRunAvailable") is True
+        and false_decisions_ok(execution_decision, L4_EXECUTION_FALSE_DECISION_KEYS)
+        and execution_validation.get("schemaVersion")
+        == "human-infra.l4-validation-calibration-report-execution-validation.v1"
+        and execution_validation.get("status") == "PASS"
+        and validation_source_ok
+        and isinstance(validation_summary, dict)
+        and validation_summary.get("realReportPacketCount") == 0
+        and validation_summary.get("humanReviewedPacketCount") == 0
+        and validation_summary.get("secondReviewedPacketCount") == 0
+        and validation_summary.get("pendingRealSectionCount") == 12
+        and validation_summary.get("pendingRealSlotCount") == 5
+        and validation_summary.get("downstreamDecision") == "l4-still-blocked"
+        and validation_summary.get("l4AggregateCalibratedAdmissionAllowed") is False
+        and validation_summary.get("calibratedPredictionAvailable") is False
+        and validation_summary.get("individualUseAllowed") is False
+    )
+    add_check(
+        checks,
+        "l4-control-plane-validation-execution-zero-real-report",
+        status_from_bool(
+            existing["validationCalibrationReportExecutionRegister"]
+            and existing["validationCalibrationReportExecutionValidation"]
+            and execution_ok
+        ),
+        "execution validation must pass while preserving zero real report packets, zero human signoffs and l4-still-blocked downstream decision",
+    )
+
+    return {
+        "blockerMatrixPath": str(blocker_matrix_path.relative_to(REPO_ROOT)),
+        "blockerMatrixSha256": (
+            sha256_file(blocker_matrix_path) if existing["blockerMatrix"] else None
+        ),
+        "unblockExecutionPlanPath": str(unblock_execution_plan_path.relative_to(REPO_ROOT)),
+        "unblockExecutionPlanSha256": (
+            sha256_file(unblock_execution_plan_path)
+            if existing["unblockExecutionPlan"]
+            else None
+        ),
+        "evidenceIntakeRegisterPath": str(evidence_intake_register_path.relative_to(REPO_ROOT)),
+        "evidenceIntakeRegisterSha256": (
+            sha256_file(evidence_intake_register_path)
+            if existing["evidenceIntakeRegister"]
+            else None
+        ),
+        "validationCalibrationReportingContractPath": str(
+            validation_calibration_reporting_contract_path.relative_to(REPO_ROOT)
+        ),
+        "validationCalibrationReportingContractSha256": (
+            sha256_file(validation_calibration_reporting_contract_path)
+            if existing["validationCalibrationReportingContract"]
+            else None
+        ),
+        "validationCalibrationReportExecutionRegisterPath": str(
+            validation_calibration_report_execution_register_path.relative_to(REPO_ROOT)
+        ),
+        "validationCalibrationReportExecutionRegisterSha256": (
+            sha256_file(validation_calibration_report_execution_register_path)
+            if existing["validationCalibrationReportExecutionRegister"]
+            else None
+        ),
+        "validationCalibrationReportExecutionValidationPath": str(
+            validation_calibration_report_execution_validation_path.relative_to(REPO_ROOT)
+        ),
+        "validationCalibrationReportExecutionValidationSha256": (
+            sha256_file(validation_calibration_report_execution_validation_path)
+            if existing["validationCalibrationReportExecutionValidation"]
+            else None
+        ),
+        "status": "PASS" if summarize_checks(checks)["fail"] == 0 else "FAIL",
+        "checks": checks,
+        "summary": summarize_checks(checks),
+    }
+
+
 def audit_sensitivity_analysis(
     sensitivity_path: Path,
     model_data: dict[str, Any],
@@ -7570,6 +9198,8 @@ def audit_model(
     nhats_acquisition_readiness_validation_path: Path,
     nhats_registration_evidence_template_path: Path,
     nhats_registration_evidence_template_validation_path: Path,
+    nhats_registration_evidence_packet_validator_test_cases_path: Path,
+    nhats_registration_evidence_packet_validator_validation_path: Path,
     nhats_controlled_storage_destruction_plan_path: Path,
     nhats_controlled_storage_destruction_validation_path: Path,
     nhats_synthetic_storage_destruction_drill_path: Path,
@@ -7600,12 +9230,33 @@ def audit_model(
     nhats_colectica_authenticated_capture_template_validation_path: Path,
     nhats_colectica_capture_task_register_path: Path,
     nhats_colectica_capture_task_register_validation_path: Path,
+    nhats_colectica_capture_packet_review_execution_register_path: Path,
+    nhats_route_value_crosswalk_assembly_protocol_path: Path,
+    nhats_route_value_crosswalk_assembly_validation_path: Path,
+    nhats_route_value_crosswalk_entry_validator_test_cases_path: Path,
+    nhats_route_value_crosswalk_entry_validator_validation_path: Path,
     nhats_route_classifier_readiness_path: Path,
     nhats_route_classifier_readiness_validation_path: Path,
+    nhats_route_classifier_synthetic_dry_run_validation_path: Path,
     nhats_l2_variable_family_admission_register_path: Path,
     nhats_l2_variable_family_admission_validation_path: Path,
     nhats_preoutcome_aggregation_protocol_path: Path,
     nhats_preoutcome_aggregation_validation_path: Path,
+    model_admission_contract_path: Path,
+    model_admission_candidate_registry_path: Path,
+    quantitative_capability_ladder_path: Path,
+    quantitative_capability_ladder_validation_path: Path,
+    research_standards_source_anchor_register_path: Path,
+    research_standards_source_anchor_validation_path: Path,
+    domain_to_model_bridge_contract_path: Path,
+    domain_to_model_bridge_register_path: Path,
+    domain_to_model_bridge_validation_path: Path,
+    l4_model_readiness_blocker_matrix_path: Path,
+    l4_unblock_execution_plan_path: Path,
+    l4_evidence_intake_register_path: Path,
+    l4_validation_calibration_reporting_contract_path: Path,
+    l4_validation_calibration_report_execution_register_path: Path,
+    l4_validation_calibration_report_execution_validation_path: Path,
 ) -> dict[str, Any]:
     checks: list[dict[str, Any]] = []
     schema_version = data.get("schemaVersion")
@@ -7834,6 +9485,13 @@ def audit_model(
             nhats_registration_evidence_template_path,
         )
     )
+    nhats_registration_evidence_packet_validator_audit = (
+        audit_nhats_registration_evidence_packet_validator(
+            nhats_registration_evidence_packet_validator_test_cases_path,
+            nhats_registration_evidence_packet_validator_validation_path,
+            nhats_registration_evidence_template_path,
+        )
+    )
     nhats_controlled_storage_destruction_audit = (
         audit_nhats_controlled_storage_destruction_validation(
             nhats_controlled_storage_destruction_validation_path,
@@ -7923,6 +9581,22 @@ def audit_model(
             nhats_route_classifier_readiness_path,
         )
     )
+    nhats_route_value_crosswalk_assembly_audit = (
+        audit_nhats_route_value_crosswalk_assembly(
+            nhats_route_value_crosswalk_assembly_protocol_path,
+            nhats_route_value_crosswalk_assembly_validation_path,
+        )
+    )
+    nhats_route_value_crosswalk_entry_validator_audit = (
+        audit_nhats_route_value_crosswalk_entry_validator(
+            nhats_route_value_crosswalk_entry_validator_test_cases_path,
+            nhats_route_value_crosswalk_entry_validator_validation_path,
+            nhats_route_value_crosswalk_assembly_protocol_path,
+            nhats_colectica_capture_packet_review_execution_register_path,
+            nhats_colectica_capture_task_register_path,
+            nhats_route_classifier_readiness_path,
+        )
+    )
     nhats_route_classifier_readiness_audit = audit_nhats_route_classifier_readiness(
         nhats_route_classifier_readiness_path,
         nhats_route_classifier_readiness_validation_path,
@@ -7932,13 +9606,21 @@ def audit_model(
         nhats_missingness_route_protocol_path,
         nhats_preoutcome_aggregation_protocol_path,
     )
+    nhats_route_classifier_synthetic_dry_run_audit = (
+        audit_nhats_route_classifier_synthetic_dry_run(
+            nhats_route_classifier_synthetic_dry_run_validation_path,
+            nhats_route_classifier_readiness_path,
+            nhats_missingness_route_protocol_path,
+            nhats_missingness_route_test_cases_path,
+        )
+    )
     nhats_l2_variable_family_admission_audit = audit_nhats_l2_variable_family_admission(
         nhats_l2_variable_family_admission_register_path,
         nhats_l2_variable_family_admission_validation_path,
         nhats_first_estimand_protocol_path,
         nhats_variable_confirmation_matrix_path,
-        DEFAULT_MODEL_ADMISSION_CONTRACT,
-        DEFAULT_MODEL_ADMISSION_CANDIDATE_REGISTRY,
+        model_admission_contract_path,
+        model_admission_candidate_registry_path,
         nhats_colectica_authenticated_capture_template_path,
     )
     nhats_preoutcome_aggregation_audit = audit_nhats_preoutcome_aggregation_protocol(
@@ -7950,6 +9632,26 @@ def audit_model(
         nhats_cohort_flow_endpoint_protocol_path,
         nhats_survey_design_protocol_path,
         nhats_disclosure_policy_path,
+    )
+    l4_control_plane_audit = audit_l4_control_plane(
+        l4_model_readiness_blocker_matrix_path,
+        l4_unblock_execution_plan_path,
+        l4_evidence_intake_register_path,
+        l4_validation_calibration_reporting_contract_path,
+        l4_validation_calibration_report_execution_register_path,
+        l4_validation_calibration_report_execution_validation_path,
+    )
+    model_governance_control_plane_audit = audit_model_governance_control_plane(
+        model_admission_contract_path,
+        model_admission_candidate_registry_path,
+        quantitative_capability_ladder_path,
+        quantitative_capability_ladder_validation_path,
+        research_standards_source_anchor_register_path,
+        research_standards_source_anchor_validation_path,
+        domain_to_model_bridge_contract_path,
+        domain_to_model_bridge_register_path,
+        domain_to_model_bridge_validation_path,
+        l4_validation_calibration_reporting_contract_path,
     )
     sensitivity_audit = audit_sensitivity_analysis(sensitivity_path, data, model_path)
     checks.extend(readiness_audit["checks"])
@@ -7967,6 +9669,7 @@ def audit_model(
     checks.extend(nhats_acquisition_readiness_validation_audit["checks"])
     checks.extend(nhats_registration_evidence_template_audit["checks"])
     checks.extend(nhats_registration_evidence_template_validation_audit["checks"])
+    checks.extend(nhats_registration_evidence_packet_validator_audit["checks"])
     checks.extend(nhats_controlled_storage_destruction_audit["checks"])
     checks.extend(nhats_synthetic_storage_destruction_drill_audit["checks"])
     checks.extend(nhats_file_tier_table_audit["checks"])
@@ -7983,9 +9686,14 @@ def audit_model(
     checks.extend(nhats_colectica_access_route_probe_audit["checks"])
     checks.extend(nhats_colectica_authenticated_capture_template_audit["checks"])
     checks.extend(nhats_colectica_capture_task_register_audit["checks"])
+    checks.extend(nhats_route_value_crosswalk_assembly_audit["checks"])
+    checks.extend(nhats_route_value_crosswalk_entry_validator_audit["checks"])
     checks.extend(nhats_route_classifier_readiness_audit["checks"])
+    checks.extend(nhats_route_classifier_synthetic_dry_run_audit["checks"])
     checks.extend(nhats_l2_variable_family_admission_audit["checks"])
     checks.extend(nhats_preoutcome_aggregation_audit["checks"])
+    checks.extend(model_governance_control_plane_audit["checks"])
+    checks.extend(l4_control_plane_audit["checks"])
     checks.extend(sensitivity_audit["checks"])
     failed = [check for check in checks if check["status"] == "FAIL"]
     overall = "PASS" if not failed else "FAIL"
@@ -8013,6 +9721,7 @@ def audit_model(
         "nhatsAcquisitionReadinessValidation": nhats_acquisition_readiness_validation_audit,
         "nhatsRegistrationEvidenceTemplate": nhats_registration_evidence_template_audit,
         "nhatsRegistrationEvidenceTemplateValidation": nhats_registration_evidence_template_validation_audit,
+        "nhatsRegistrationEvidencePacketValidator": nhats_registration_evidence_packet_validator_audit,
         "nhatsControlledStorageDestruction": nhats_controlled_storage_destruction_audit,
         "nhatsSyntheticStorageDestructionDrill": nhats_synthetic_storage_destruction_drill_audit,
         "nhatsFileTierTable": nhats_file_tier_table_audit,
@@ -8029,9 +9738,14 @@ def audit_model(
         "nhatsColecticaAccessRouteProbe": nhats_colectica_access_route_probe_audit,
         "nhatsColecticaAuthenticatedCaptureTemplate": nhats_colectica_authenticated_capture_template_audit,
         "nhatsColecticaCaptureTaskRegister": nhats_colectica_capture_task_register_audit,
+        "nhatsRouteValueCrosswalkAssembly": nhats_route_value_crosswalk_assembly_audit,
+        "nhatsRouteValueCrosswalkEntryValidator": nhats_route_value_crosswalk_entry_validator_audit,
         "nhatsRouteClassifierReadiness": nhats_route_classifier_readiness_audit,
+        "nhatsRouteClassifierSyntheticDryRun": nhats_route_classifier_synthetic_dry_run_audit,
         "nhatsL2VariableFamilyAdmission": nhats_l2_variable_family_admission_audit,
         "nhatsPreoutcomeAggregation": nhats_preoutcome_aggregation_audit,
+        "modelGovernanceControlPlane": model_governance_control_plane_audit,
+        "l4ControlPlane": l4_control_plane_audit,
         "sensitivityAnalysis": sensitivity_audit,
     }
 
@@ -8164,6 +9878,15 @@ def render_markdown(audit: dict[str, Any]) -> str:
             f"- Registration evidence template status: `{audit['nhatsRegistrationEvidenceTemplate']['status']}`",
             "- Boundary: the template defines redacted evidence slots for registration and access governance; it does not prove registration, authorize download, authorize extraction, or open calibration.",
             "",
+            "## NHATS Registration Evidence Packet Validator",
+            "",
+            f"- Registration packet test cases path: `{audit['nhatsRegistrationEvidencePacketValidator']['testCasesPath']}`",
+            f"- Registration packet test cases SHA-256: `{audit['nhatsRegistrationEvidencePacketValidator']['testCasesSha256']}`",
+            f"- Registration packet validation path: `{audit['nhatsRegistrationEvidencePacketValidator']['validationPath']}`",
+            f"- Registration packet validation SHA-256: `{audit['nhatsRegistrationEvidencePacketValidator']['validationSha256']}`",
+            f"- Registration packet validator status: `{audit['nhatsRegistrationEvidencePacketValidator']['status']}`",
+            "- Boundary: the validator exercises only synthetic future packet semantics; it does not prove NHATS registration, close the registration gate, authorize download, create extraction scripts, store raw data, open calibration or support individual prediction.",
+            "",
             "## NHATS Controlled Storage / Destruction",
             "",
             f"- Storage/destruction validation path: `{audit['nhatsControlledStorageDestruction']['path']}`",
@@ -8287,6 +10010,24 @@ def render_markdown(audit: dict[str, Any]) -> str:
             f"- Colectica authenticated capture template validation status: `{audit['nhatsColecticaAuthenticatedCaptureTemplate']['status']}`",
             "- Boundary: authenticated capture template validation proves only that the next capture evidence slots are complete; it still blocks account status, login, authenticated variable pages, value labels, question text, universe/skip logic, route classifiers, public export, calibration and individual prediction.",
             "",
+            "## NHATS Route-Value Crosswalk Assembly",
+            "",
+            f"- Route-value crosswalk assembly protocol path: `{audit['nhatsRouteValueCrosswalkAssembly']['protocolPath']}`",
+            f"- Route-value crosswalk assembly protocol SHA-256: `{audit['nhatsRouteValueCrosswalkAssembly']['protocolSha256']}`",
+            f"- Route-value crosswalk assembly validation path: `{audit['nhatsRouteValueCrosswalkAssembly']['validationPath']}`",
+            f"- Route-value crosswalk assembly validation SHA-256: `{audit['nhatsRouteValueCrosswalkAssembly']['validationSha256']}`",
+            f"- Route-value crosswalk assembly validation status: `{audit['nhatsRouteValueCrosswalkAssembly']['status']}`",
+            "- Boundary: assembly validation proves only that the crosswalk assembly protocol is ready as a blocked review frame; it still has zero reviewed capture packets, zero confirmed route-value rows, zero variable-specific missing-code maps, zero second-reviewer signoffs and no classifier, extraction, export, calibration or individual prediction admission.",
+            "",
+            "## NHATS Route-Value Crosswalk Entry Validator",
+            "",
+            f"- Route-value crosswalk entry validator test cases path: `{audit['nhatsRouteValueCrosswalkEntryValidator']['testCasesPath']}`",
+            f"- Route-value crosswalk entry validator test cases SHA-256: `{audit['nhatsRouteValueCrosswalkEntryValidator']['testCasesSha256']}`",
+            f"- Route-value crosswalk entry validator validation path: `{audit['nhatsRouteValueCrosswalkEntryValidator']['validationPath']}`",
+            f"- Route-value crosswalk entry validator validation SHA-256: `{audit['nhatsRouteValueCrosswalkEntryValidator']['validationSha256']}`",
+            f"- Route-value crosswalk entry validator validation status: `{audit['nhatsRouteValueCrosswalkEntryValidator']['status']}`",
+            "- Boundary: entry validator validation proves only that synthetic future crosswalk-entry shapes can be rejected, marked cannot-evaluate or marked reviewable-but-still-blocked; it closes no assembly unit, confirms no real route-value row, confirms no real missing-code map and allows no classifier, extraction, export, calibration or individual prediction.",
+            "",
             "## NHATS Route Classifier Readiness",
             "",
             f"- Route-classifier readiness path: `{audit['nhatsRouteClassifierReadiness']['readinessPath']}`",
@@ -8295,6 +10036,13 @@ def render_markdown(audit: dict[str, Any]) -> str:
             f"- Route-classifier readiness validation SHA-256: `{audit['nhatsRouteClassifierReadiness']['validationSha256']}`",
             f"- Route-classifier readiness validation status: `{audit['nhatsRouteClassifierReadiness']['status']}`",
             "- Boundary: route-classifier readiness validation proves only that a blocked gate exists between route-field candidates and any real classifier; it still blocks Colectica value labels, route-value crosswalks, variable-specific missing maps, real extraction, aggregation, weighted counts, public export, calibration and individual prediction.",
+            "",
+            "## NHATS Route Classifier Synthetic Dry-Run",
+            "",
+            f"- Route-classifier synthetic dry-run validation path: `{audit['nhatsRouteClassifierSyntheticDryRun']['validationPath']}`",
+            f"- Route-classifier synthetic dry-run validation SHA-256: `{audit['nhatsRouteClassifierSyntheticDryRun']['validationSha256']}`",
+            f"- Route-classifier synthetic dry-run validation status: `{audit['nhatsRouteClassifierSyntheticDryRun']['status']}`",
+            "- Boundary: route-classifier synthetic dry-run validation proves only that synthetic route-envelope logic can run fail-closed; it still blocks real NHATS rows, real classifier code admission, weighted route counts, public export, calibration and individual prediction.",
             "",
             "## NHATS L2 Variable Family Admission",
             "",
@@ -8313,6 +10061,46 @@ def render_markdown(audit: dict[str, Any]) -> str:
             f"- Pre-outcome aggregation validation SHA-256: `{audit['nhatsPreoutcomeAggregation']['validationSha256']}`",
             f"- Pre-outcome aggregation validation status: `{audit['nhatsPreoutcomeAggregation']['status']}`",
             "- Boundary: pre-outcome aggregation validation proves only that L2 aggregation rules are frozen before outcome inspection; it still blocks real aggregation, weighted estimates, public export, L4 admission, calibration and individual prediction.",
+            "",
+            "## Model Governance Control Plane",
+            "",
+            f"- Model admission contract path: `{audit['modelGovernanceControlPlane']['modelAdmissionContractPath']}`",
+            f"- Model admission contract SHA-256: `{audit['modelGovernanceControlPlane']['modelAdmissionContractSha256']}`",
+            f"- Model admission candidate registry path: `{audit['modelGovernanceControlPlane']['modelAdmissionCandidateRegistryPath']}`",
+            f"- Model admission candidate registry SHA-256: `{audit['modelGovernanceControlPlane']['modelAdmissionCandidateRegistrySha256']}`",
+            f"- Quantitative capability ladder path: `{audit['modelGovernanceControlPlane']['quantitativeCapabilityLadderPath']}`",
+            f"- Quantitative capability ladder SHA-256: `{audit['modelGovernanceControlPlane']['quantitativeCapabilityLadderSha256']}`",
+            f"- Quantitative capability ladder validation path: `{audit['modelGovernanceControlPlane']['quantitativeCapabilityLadderValidationPath']}`",
+            f"- Quantitative capability ladder validation SHA-256: `{audit['modelGovernanceControlPlane']['quantitativeCapabilityLadderValidationSha256']}`",
+            f"- Research standards source-anchor register path: `{audit['modelGovernanceControlPlane']['researchStandardsSourceAnchorRegisterPath']}`",
+            f"- Research standards source-anchor register SHA-256: `{audit['modelGovernanceControlPlane']['researchStandardsSourceAnchorRegisterSha256']}`",
+            f"- Research standards source-anchor validation path: `{audit['modelGovernanceControlPlane']['researchStandardsSourceAnchorValidationPath']}`",
+            f"- Research standards source-anchor validation SHA-256: `{audit['modelGovernanceControlPlane']['researchStandardsSourceAnchorValidationSha256']}`",
+            f"- Domain-to-model bridge contract path: `{audit['modelGovernanceControlPlane']['domainToModelBridgeContractPath']}`",
+            f"- Domain-to-model bridge contract SHA-256: `{audit['modelGovernanceControlPlane']['domainToModelBridgeContractSha256']}`",
+            f"- Domain-to-model bridge register path: `{audit['modelGovernanceControlPlane']['domainToModelBridgeRegisterPath']}`",
+            f"- Domain-to-model bridge register SHA-256: `{audit['modelGovernanceControlPlane']['domainToModelBridgeRegisterSha256']}`",
+            f"- Domain-to-model bridge validation path: `{audit['modelGovernanceControlPlane']['domainToModelBridgeValidationPath']}`",
+            f"- Domain-to-model bridge validation SHA-256: `{audit['modelGovernanceControlPlane']['domainToModelBridgeValidationSha256']}`",
+            f"- Model governance control-plane status: `{audit['modelGovernanceControlPlane']['status']}`",
+            "- Boundary: the model governance control plane proves only that admission levels, candidate registry, Q0-Q5 capability ladder, external research-standard anchors and the C1-C6 domain-to-model bridge are wired into the total audit; it keeps current capability at Q3/L3, keeps domain bridge rows at Q2/L2 candidate vocabulary only, and blocks coefficients, causal effects, Q4 calibrated aggregate prediction, Q5 individual use, death-date output, medical advice and intervention ranking.",
+            "",
+            "## L4 Control Plane",
+            "",
+            f"- Blocker matrix path: `{audit['l4ControlPlane']['blockerMatrixPath']}`",
+            f"- Blocker matrix SHA-256: `{audit['l4ControlPlane']['blockerMatrixSha256']}`",
+            f"- Unblock execution plan path: `{audit['l4ControlPlane']['unblockExecutionPlanPath']}`",
+            f"- Unblock execution plan SHA-256: `{audit['l4ControlPlane']['unblockExecutionPlanSha256']}`",
+            f"- Evidence intake register path: `{audit['l4ControlPlane']['evidenceIntakeRegisterPath']}`",
+            f"- Evidence intake register SHA-256: `{audit['l4ControlPlane']['evidenceIntakeRegisterSha256']}`",
+            f"- Validation/calibration reporting contract path: `{audit['l4ControlPlane']['validationCalibrationReportingContractPath']}`",
+            f"- Validation/calibration reporting contract SHA-256: `{audit['l4ControlPlane']['validationCalibrationReportingContractSha256']}`",
+            f"- Validation/calibration report execution register path: `{audit['l4ControlPlane']['validationCalibrationReportExecutionRegisterPath']}`",
+            f"- Validation/calibration report execution register SHA-256: `{audit['l4ControlPlane']['validationCalibrationReportExecutionRegisterSha256']}`",
+            f"- Validation/calibration report execution validation path: `{audit['l4ControlPlane']['validationCalibrationReportExecutionValidationPath']}`",
+            f"- Validation/calibration report execution validation SHA-256: `{audit['l4ControlPlane']['validationCalibrationReportExecutionValidationSha256']}`",
+            f"- L4 control-plane status: `{audit['l4ControlPlane']['status']}`",
+            "- Boundary: the L4 control plane proves only that blockers, work orders, evidence slots and validation/calibration report packets are explicitly tracked; it preserves 24 pending evidence slots, zero real report packets, zero human signoffs, `l4-still-blocked`, no public weighted output, no calibrated prediction and no individual prediction.",
             "",
             "## Sensitivity Analysis",
             "",
@@ -8441,6 +10229,16 @@ def parse_args() -> argparse.Namespace:
         "--nhats-registration-evidence-template-validation",
         type=Path,
         default=DEFAULT_NHATS_REGISTRATION_EVIDENCE_TEMPLATE_VALIDATION,
+    )
+    parser.add_argument(
+        "--nhats-registration-evidence-packet-validator-test-cases",
+        type=Path,
+        default=DEFAULT_NHATS_REGISTRATION_EVIDENCE_PACKET_VALIDATOR_TEST_CASES,
+    )
+    parser.add_argument(
+        "--nhats-registration-evidence-packet-validator-validation",
+        type=Path,
+        default=DEFAULT_NHATS_REGISTRATION_EVIDENCE_PACKET_VALIDATOR_VALIDATION,
     )
     parser.add_argument(
         "--nhats-controlled-storage-destruction-plan",
@@ -8593,6 +10391,31 @@ def parse_args() -> argparse.Namespace:
         default=DEFAULT_NHATS_COLECTICA_CAPTURE_TASK_REGISTER_VALIDATION,
     )
     parser.add_argument(
+        "--nhats-colectica-capture-packet-review-execution-register",
+        type=Path,
+        default=DEFAULT_NHATS_COLECTICA_CAPTURE_PACKET_REVIEW_EXECUTION_REGISTER,
+    )
+    parser.add_argument(
+        "--nhats-route-value-crosswalk-assembly-protocol",
+        type=Path,
+        default=DEFAULT_NHATS_ROUTE_VALUE_CROSSWALK_ASSEMBLY_PROTOCOL,
+    )
+    parser.add_argument(
+        "--nhats-route-value-crosswalk-assembly-validation",
+        type=Path,
+        default=DEFAULT_NHATS_ROUTE_VALUE_CROSSWALK_ASSEMBLY_VALIDATION,
+    )
+    parser.add_argument(
+        "--nhats-route-value-crosswalk-entry-validator-test-cases",
+        type=Path,
+        default=DEFAULT_NHATS_ROUTE_VALUE_CROSSWALK_ENTRY_VALIDATOR_TEST_CASES,
+    )
+    parser.add_argument(
+        "--nhats-route-value-crosswalk-entry-validator-validation",
+        type=Path,
+        default=DEFAULT_NHATS_ROUTE_VALUE_CROSSWALK_ENTRY_VALIDATOR_VALIDATION,
+    )
+    parser.add_argument(
         "--nhats-route-classifier-readiness",
         type=Path,
         default=DEFAULT_NHATS_ROUTE_CLASSIFIER_READINESS,
@@ -8601,6 +10424,11 @@ def parse_args() -> argparse.Namespace:
         "--nhats-route-classifier-readiness-validation",
         type=Path,
         default=DEFAULT_NHATS_ROUTE_CLASSIFIER_READINESS_VALIDATION,
+    )
+    parser.add_argument(
+        "--nhats-route-classifier-synthetic-dry-run-validation",
+        type=Path,
+        default=DEFAULT_NHATS_ROUTE_CLASSIFIER_SYNTHETIC_DRY_RUN_VALIDATION,
     )
     parser.add_argument(
         "--nhats-l2-variable-family-admission-register",
@@ -8621,6 +10449,81 @@ def parse_args() -> argparse.Namespace:
         "--nhats-preoutcome-aggregation-validation",
         type=Path,
         default=DEFAULT_NHATS_PREOUTCOME_AGGREGATION_VALIDATION,
+    )
+    parser.add_argument(
+        "--model-admission-contract",
+        type=Path,
+        default=DEFAULT_MODEL_ADMISSION_CONTRACT,
+    )
+    parser.add_argument(
+        "--model-admission-candidate-registry",
+        type=Path,
+        default=DEFAULT_MODEL_ADMISSION_CANDIDATE_REGISTRY,
+    )
+    parser.add_argument(
+        "--quantitative-capability-ladder",
+        type=Path,
+        default=DEFAULT_QUANTITATIVE_CAPABILITY_LADDER,
+    )
+    parser.add_argument(
+        "--quantitative-capability-ladder-validation",
+        type=Path,
+        default=DEFAULT_QUANTITATIVE_CAPABILITY_LADDER_VALIDATION,
+    )
+    parser.add_argument(
+        "--research-standards-source-anchor-register",
+        type=Path,
+        default=DEFAULT_RESEARCH_STANDARDS_SOURCE_ANCHOR_REGISTER,
+    )
+    parser.add_argument(
+        "--research-standards-source-anchor-validation",
+        type=Path,
+        default=DEFAULT_RESEARCH_STANDARDS_SOURCE_ANCHOR_VALIDATION,
+    )
+    parser.add_argument(
+        "--domain-to-model-bridge-contract",
+        type=Path,
+        default=DEFAULT_DOMAIN_TO_MODEL_BRIDGE_CONTRACT,
+    )
+    parser.add_argument(
+        "--domain-to-model-bridge-register",
+        type=Path,
+        default=DEFAULT_DOMAIN_TO_MODEL_BRIDGE_REGISTER,
+    )
+    parser.add_argument(
+        "--domain-to-model-bridge-validation",
+        type=Path,
+        default=DEFAULT_DOMAIN_TO_MODEL_BRIDGE_VALIDATION,
+    )
+    parser.add_argument(
+        "--l4-model-readiness-blocker-matrix",
+        type=Path,
+        default=DEFAULT_L4_MODEL_READINESS_BLOCKER_MATRIX,
+    )
+    parser.add_argument(
+        "--l4-unblock-execution-plan",
+        type=Path,
+        default=DEFAULT_L4_UNBLOCK_EXECUTION_PLAN,
+    )
+    parser.add_argument(
+        "--l4-evidence-intake-register",
+        type=Path,
+        default=DEFAULT_L4_EVIDENCE_INTAKE_REGISTER,
+    )
+    parser.add_argument(
+        "--l4-validation-calibration-reporting-contract",
+        type=Path,
+        default=DEFAULT_L4_VALIDATION_CALIBRATION_REPORTING_CONTRACT,
+    )
+    parser.add_argument(
+        "--l4-validation-calibration-report-execution-register",
+        type=Path,
+        default=DEFAULT_L4_VALIDATION_CALIBRATION_REPORT_EXECUTION_REGISTER,
+    )
+    parser.add_argument(
+        "--l4-validation-calibration-report-execution-validation",
+        type=Path,
+        default=DEFAULT_L4_VALIDATION_CALIBRATION_REPORT_EXECUTION_VALIDATION,
     )
     parser.add_argument("--json-out", type=Path, default=DEFAULT_JSON_OUT)
     parser.add_argument("--md-out", type=Path, default=DEFAULT_MD_OUT)
@@ -8683,6 +10586,12 @@ def main() -> int:
     )
     nhats_registration_evidence_template_validation_path = (
         args.nhats_registration_evidence_template_validation.resolve()
+    )
+    nhats_registration_evidence_packet_validator_test_cases_path = (
+        args.nhats_registration_evidence_packet_validator_test_cases.resolve()
+    )
+    nhats_registration_evidence_packet_validator_validation_path = (
+        args.nhats_registration_evidence_packet_validator_validation.resolve()
     )
     nhats_controlled_storage_destruction_plan_path = (
         args.nhats_controlled_storage_destruction_plan.resolve()
@@ -8758,11 +10667,29 @@ def main() -> int:
     nhats_colectica_capture_task_register_validation_path = (
         args.nhats_colectica_capture_task_register_validation.resolve()
     )
+    nhats_colectica_capture_packet_review_execution_register_path = (
+        args.nhats_colectica_capture_packet_review_execution_register.resolve()
+    )
+    nhats_route_value_crosswalk_assembly_protocol_path = (
+        args.nhats_route_value_crosswalk_assembly_protocol.resolve()
+    )
+    nhats_route_value_crosswalk_assembly_validation_path = (
+        args.nhats_route_value_crosswalk_assembly_validation.resolve()
+    )
+    nhats_route_value_crosswalk_entry_validator_test_cases_path = (
+        args.nhats_route_value_crosswalk_entry_validator_test_cases.resolve()
+    )
+    nhats_route_value_crosswalk_entry_validator_validation_path = (
+        args.nhats_route_value_crosswalk_entry_validator_validation.resolve()
+    )
     nhats_route_classifier_readiness_path = (
         args.nhats_route_classifier_readiness.resolve()
     )
     nhats_route_classifier_readiness_validation_path = (
         args.nhats_route_classifier_readiness_validation.resolve()
+    )
+    nhats_route_classifier_synthetic_dry_run_validation_path = (
+        args.nhats_route_classifier_synthetic_dry_run_validation.resolve()
     )
     nhats_l2_variable_family_admission_register_path = (
         args.nhats_l2_variable_family_admission_register.resolve()
@@ -8775,6 +10702,43 @@ def main() -> int:
     )
     nhats_preoutcome_aggregation_validation_path = (
         args.nhats_preoutcome_aggregation_validation.resolve()
+    )
+    model_admission_contract_path = args.model_admission_contract.resolve()
+    model_admission_candidate_registry_path = (
+        args.model_admission_candidate_registry.resolve()
+    )
+    quantitative_capability_ladder_path = args.quantitative_capability_ladder.resolve()
+    quantitative_capability_ladder_validation_path = (
+        args.quantitative_capability_ladder_validation.resolve()
+    )
+    research_standards_source_anchor_register_path = (
+        args.research_standards_source_anchor_register.resolve()
+    )
+    research_standards_source_anchor_validation_path = (
+        args.research_standards_source_anchor_validation.resolve()
+    )
+    domain_to_model_bridge_contract_path = (
+        args.domain_to_model_bridge_contract.resolve()
+    )
+    domain_to_model_bridge_register_path = (
+        args.domain_to_model_bridge_register.resolve()
+    )
+    domain_to_model_bridge_validation_path = (
+        args.domain_to_model_bridge_validation.resolve()
+    )
+    l4_model_readiness_blocker_matrix_path = (
+        args.l4_model_readiness_blocker_matrix.resolve()
+    )
+    l4_unblock_execution_plan_path = args.l4_unblock_execution_plan.resolve()
+    l4_evidence_intake_register_path = args.l4_evidence_intake_register.resolve()
+    l4_validation_calibration_reporting_contract_path = (
+        args.l4_validation_calibration_reporting_contract.resolve()
+    )
+    l4_validation_calibration_report_execution_register_path = (
+        args.l4_validation_calibration_report_execution_register.resolve()
+    )
+    l4_validation_calibration_report_execution_validation_path = (
+        args.l4_validation_calibration_report_execution_validation.resolve()
     )
     audit = audit_model(
         load_json(model_path),
@@ -8803,6 +10767,8 @@ def main() -> int:
         nhats_acquisition_readiness_validation_path,
         nhats_registration_evidence_template_path,
         nhats_registration_evidence_template_validation_path,
+        nhats_registration_evidence_packet_validator_test_cases_path,
+        nhats_registration_evidence_packet_validator_validation_path,
         nhats_controlled_storage_destruction_plan_path,
         nhats_controlled_storage_destruction_validation_path,
         nhats_synthetic_storage_destruction_drill_path,
@@ -8833,12 +10799,33 @@ def main() -> int:
         nhats_colectica_authenticated_capture_template_validation_path,
         nhats_colectica_capture_task_register_path,
         nhats_colectica_capture_task_register_validation_path,
+        nhats_colectica_capture_packet_review_execution_register_path,
+        nhats_route_value_crosswalk_assembly_protocol_path,
+        nhats_route_value_crosswalk_assembly_validation_path,
+        nhats_route_value_crosswalk_entry_validator_test_cases_path,
+        nhats_route_value_crosswalk_entry_validator_validation_path,
         nhats_route_classifier_readiness_path,
         nhats_route_classifier_readiness_validation_path,
+        nhats_route_classifier_synthetic_dry_run_validation_path,
         nhats_l2_variable_family_admission_register_path,
         nhats_l2_variable_family_admission_validation_path,
         nhats_preoutcome_aggregation_protocol_path,
         nhats_preoutcome_aggregation_validation_path,
+        model_admission_contract_path,
+        model_admission_candidate_registry_path,
+        quantitative_capability_ladder_path,
+        quantitative_capability_ladder_validation_path,
+        research_standards_source_anchor_register_path,
+        research_standards_source_anchor_validation_path,
+        domain_to_model_bridge_contract_path,
+        domain_to_model_bridge_register_path,
+        domain_to_model_bridge_validation_path,
+        l4_model_readiness_blocker_matrix_path,
+        l4_unblock_execution_plan_path,
+        l4_evidence_intake_register_path,
+        l4_validation_calibration_reporting_contract_path,
+        l4_validation_calibration_report_execution_register_path,
+        l4_validation_calibration_report_execution_validation_path,
     )
     args.json_out.parent.mkdir(parents=True, exist_ok=True)
     with args.json_out.open("w", encoding="utf-8") as handle:

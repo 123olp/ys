@@ -1,0 +1,38 @@
+{
+  "schemaVersion": "human-infra.nhanes-public-lmf-public-output-implementation-review-template-validation.v1",
+  "status": "PASS",
+  "generatedAt": "2026-07-04T20:22:38.538134+00:00",
+  "templatePath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhanes_public_lmf_public_output_implementation_review_template.json",
+  "templateSha256": "7df903dfaa7007a54f977a1de63191850607cf811322ef1c60077ba0b90540c3",
+  "validationPath": "web/src/data/life-path-nhanes-public-lmf-public-output-implementation-review-template-validation.json",
+  "summary": {
+    "sourceId": "nhanes-public-lmf-2017-2018",
+    "reviewSlotTotal": 12,
+    "pendingReviewSlotTotal": 12,
+    "completedReviewSlotTotal": 0,
+    "implementationReviewComplete": false,
+    "publicOutputImplementationAllowed": false,
+    "publicWeightedDomainOutputAllowed": false,
+    "realWeightedOutputImplemented": false,
+    "realWeightedOutputReviewed": false,
+    "realWeightedOutputReleased": false,
+    "calibrationAllowed": false,
+    "individualPredictionAllowed": false,
+    "medicalAdviceAllowed": false,
+    "blockedPublishedValueNameTotal": 22
+  },
+  "boundary": {
+    "templateValidated": true,
+    "containsRealNhanesOutput": false,
+    "implementationReviewComplete": false,
+    "publicOutputImplementationAllowed": false,
+    "publicWeightedDomainOutputAllowed": false,
+    "realWeightedOutputImplemented": false,
+    "realWeightedOutputReviewed": false,
+    "realWeightedOutputReleased": false,
+    "calibrationAllowed": false,
+    "individualPredictionAllowed": false,
+    "medicalAdviceAllowed": false
+  },
+  "errors": []
+}

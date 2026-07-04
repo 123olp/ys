@@ -1,10 +1,10 @@
 {
   "schemaVersion": "human-infra.life-path-nhats-colectica-authenticated-capture-template-validation.v1",
-  "generatedAt": "2026-07-03T10:00:37.280317+00:00",
+  "generatedAt": "2026-07-04T20:22:39.088306+00:00",
   "templatePath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_authenticated_capture_template.json",
   "templateSha256": "dc097acfcb44007b42a25ce500c6cb1d23b1154f6620a7797445293817313eeb",
   "accessRouteProbeRegisterPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_access_route_probe_register.json",
-  "accessRouteProbeRegisterSha256": "58941fde2c6a1c5488437a1ad447cb3dae2032739ef1ed579e29da98b96aaa89",
+  "accessRouteProbeRegisterSha256": "650a4c8d6747a722055cf417b40da4f0b011b97fe7465b44586493daf16c006d",
   "executionRegisterPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_value_label_review_execution_register.json",
   "executionRegisterSha256": "de6d17f9470a563346f92884cead1eec35cf5a954245751b0135efc60672b042",
   "protocolPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_value_label_review_protocol.json",

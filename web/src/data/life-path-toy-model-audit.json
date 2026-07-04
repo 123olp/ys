@@ -1,8 +1,8 @@
 {
   "schemaVersion": "human-infra.life-path-toy-audit.v1",
-  "generatedAt": "2026-07-03T09:40:24.923635+00:00",
+  "generatedAt": "2026-07-04T20:22:40.011119+00:00",
   "modelPath": "web/src/data/life-path-toy-model.json",
-  "modelSha256": "a4c92209d79d20579bf1f575d5ebf07ffe5be9ccaf6bf3f3eef08efa287b5377",
+  "modelSha256": "26c01c702ae5369dd8194a9c399edbe9771a660819b3edfc1950ddc94577a6f6",
   "overallStatus": "PASS",
   "checks": [
     {
@@ -779,6 +779,46 @@
       "id": "nhats-registration-evidence-template-validation-non-proof-note",
       "status": "PASS",
       "detail": "validation must state that it does not prove NHATS registration, data access, workspace execution or model readiness"
+    },
+    {
+      "id": "nhats-registration-evidence-packet-validator-test-cases-exist",
+      "status": "PASS",
+      "detail": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_registration_evidence_packet_validator_test_cases.json"
+    },
+    {
+      "id": "nhats-registration-evidence-packet-validator-validation-exists",
+      "status": "PASS",
+      "detail": "web/src/data/life-path-nhats-registration-evidence-packet-validator-validation.json"
+    },
+    {
+      "id": "nhats-registration-evidence-packet-validator-test-cases-schema",
+      "status": "PASS",
+      "detail": "test cases must be synthetic-only with at least five cases"
+    },
+    {
+      "id": "nhats-registration-evidence-packet-validator-validation-schema",
+      "status": "PASS",
+      "detail": "schemaVersion='human-infra.life-path-nhats-registration-evidence-packet-validator-validation.v1'"
+    },
+    {
+      "id": "nhats-registration-evidence-packet-validator-source-hash",
+      "status": "PASS",
+      "detail": "validation must hash-bind test cases and registration evidence template"
+    },
+    {
+      "id": "nhats-registration-evidence-packet-validator-decision-boundary",
+      "status": "PASS",
+      "detail": "status='pass' decision={'validatorReady': True, 'testCaseCount': 6, 'reviewableButStillBlockedCount': 1, 'cannotEvaluateCount': 1, 'rejectedCount': 4, 'realRegistrationEvidenceAttached': False, 'registrationGateClosureAllowed': False, 'downloadAllowed': False, 'extractionScriptAllowed': False, 'rawDataAllowedInRepository': False, 'publicAiUploadAllowed': False, 'calibrationAllowed': False, 'individualPredictionAllowed': False, 'reason': 'This validator only checks synthetic future NHATS registration evidence packet shapes. It does not attach real registration proof, close registration gates, authorize download, create extraction scripts, store raw data, calibrate a model or support individual use.'}"
+    },
+    {
+      "id": "nhats-registration-evidence-packet-validator-case-results",
+      "status": "PASS",
+      "detail": "all synthetic case expectations must pass"
+    },
+    {
+      "id": "nhats-registration-evidence-packet-validator-non-proof-boundary",
+      "status": "PASS",
+      "detail": "validation must state that it does not prove registration, download, extraction, calibration or individual use"
     },
     {
       "id": "nhats-controlled-storage-validation-exists",
@@ -1806,6 +1846,146 @@
       "detail": "validation must prove task readiness while keeping authenticated capture and model admission blocked"
     },
     {
+      "id": "nhats-route-value-crosswalk-assembly-protocol-exists",
+      "status": "PASS",
+      "detail": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_route_value_crosswalk_assembly_protocol.json"
+    },
+    {
+      "id": "nhats-route-value-crosswalk-assembly-validation-exists",
+      "status": "PASS",
+      "detail": "web/src/data/life-path-nhats-route-value-crosswalk-assembly-validation.json"
+    },
+    {
+      "id": "nhats-route-value-crosswalk-assembly-schema",
+      "status": "PASS",
+      "detail": "schemaVersion='human-infra.life-path-nhats-route-value-crosswalk-assembly-protocol.v1'"
+    },
+    {
+      "id": "nhats-route-value-crosswalk-assembly-identity",
+      "status": "PASS",
+      "detail": "assembly protocol must remain protocol-only and must not claim a built crosswalk"
+    },
+    {
+      "id": "nhats-route-value-crosswalk-assembly-boundary",
+      "status": "PASS",
+      "detail": "assembly protocol may be ready, but packets, labels, crosswalk rows, maps, classifier, extraction, export, calibration and individual prediction must remain blocked"
+    },
+    {
+      "id": "nhats-route-value-crosswalk-assembly-zero-admissions",
+      "status": "PASS",
+      "detail": "assembly summary must cover 9 units and keep all evidence/admission counts at zero"
+    },
+    {
+      "id": "nhats-route-value-crosswalk-assembly-units",
+      "status": "PASS",
+      "detail": "assembly_unit_count=9"
+    },
+    {
+      "id": "nhats-route-value-crosswalk-assembly-source-bindings",
+      "status": "PASS",
+      "detail": "missing=[]"
+    },
+    {
+      "id": "nhats-route-value-crosswalk-assembly-prohibited-actions",
+      "status": "PASS",
+      "detail": "protocol must explicitly block classifier code, individual prediction, sensitive death fields and restricted materials"
+    },
+    {
+      "id": "nhats-route-value-crosswalk-assembly-validation-schema",
+      "status": "PASS",
+      "detail": "schemaVersion='human-infra.validation-report.v1'"
+    },
+    {
+      "id": "nhats-route-value-crosswalk-assembly-validation-source-hash",
+      "status": "PASS",
+      "detail": "validation must point back to current assembly protocol path, hash, id and status"
+    },
+    {
+      "id": "nhats-route-value-crosswalk-assembly-validation-upstreams",
+      "status": "PASS",
+      "detail": "missing=[]"
+    },
+    {
+      "id": "nhats-route-value-crosswalk-assembly-validation-zero-admissions",
+      "status": "PASS",
+      "detail": "validation must pass while preserving zero crosswalk, map, signoff, classifier, extraction, calibration and individual-prediction admissions"
+    },
+    {
+      "id": "nhats-route-value-crosswalk-assembly-validation-boundary",
+      "status": "PASS",
+      "detail": "validation boundary must state that crosswalk assembly remains blocked and admits no individual prediction"
+    },
+    {
+      "id": "nhats-route-value-crosswalk-entry-validator-test-cases-exist",
+      "status": "PASS",
+      "detail": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_route_value_crosswalk_entry_validator_test_cases.json"
+    },
+    {
+      "id": "nhats-route-value-crosswalk-entry-validator-validation-exists",
+      "status": "PASS",
+      "detail": "web/src/data/life-path-nhats-route-value-crosswalk-entry-validator-validation.json"
+    },
+    {
+      "id": "nhats-route-value-crosswalk-entry-validator-test-cases-schema",
+      "status": "PASS",
+      "detail": "schemaVersion='human-infra.life-path-nhats-route-value-crosswalk-entry-validator-test-cases.v1'"
+    },
+    {
+      "id": "nhats-route-value-crosswalk-entry-validator-test-cases-identity",
+      "status": "PASS",
+      "detail": "test cases must remain synthetic fixtures and keep MODEL-G4 blocked"
+    },
+    {
+      "id": "nhats-route-value-crosswalk-entry-validator-source-bindings",
+      "status": "PASS",
+      "detail": "test cases must bind to assembly protocol, capture review execution, capture task register and route-classifier readiness"
+    },
+    {
+      "id": "nhats-route-value-crosswalk-entry-validator-hard-boundaries",
+      "status": "PASS",
+      "detail": "hard boundaries must block credentials, sensitive death fields, assembly closure and downstream promotion"
+    },
+    {
+      "id": "nhats-route-value-crosswalk-entry-validator-case-verdict-shape",
+      "status": "PASS",
+      "detail": "case_count=6 verdicts=['reviewable-but-still-blocked', 'cannot-evaluate', 'rejected', 'rejected', 'rejected', 'rejected']"
+    },
+    {
+      "id": "nhats-route-value-crosswalk-entry-validator-validation-schema",
+      "status": "PASS",
+      "detail": "schemaVersion='human-infra.life-path-nhats-route-value-crosswalk-entry-validator-validation.v1'"
+    },
+    {
+      "id": "nhats-route-value-crosswalk-entry-validator-validation-source-hash",
+      "status": "PASS",
+      "detail": "validation must point back to current test-case path, hash, id and status"
+    },
+    {
+      "id": "nhats-route-value-crosswalk-entry-validator-validation-upstream-hashes",
+      "status": "PASS",
+      "detail": "upstream_count=4"
+    },
+    {
+      "id": "nhats-route-value-crosswalk-entry-validator-validation-summary",
+      "status": "PASS",
+      "detail": "validation must pass all six synthetic cases while preserving the blocked reviewable verdict"
+    },
+    {
+      "id": "nhats-route-value-crosswalk-entry-validator-decision-boundary",
+      "status": "PASS",
+      "detail": "entry validator may preflight future rows, but must keep G4, classifier, extraction, export, calibration and individual prediction blocked"
+    },
+    {
+      "id": "nhats-route-value-crosswalk-entry-validator-result-boundaries",
+      "status": "PASS",
+      "detail": "every synthetic result must keep real entry, assembly closure and downstream use disabled"
+    },
+    {
+      "id": "nhats-route-value-crosswalk-entry-validator-validation-boundary",
+      "status": "PASS",
+      "detail": "validation boundary must state reviewable entries remain blocked and close no assembly unit"
+    },
+    {
       "id": "nhats-route-classifier-readiness-exists",
       "status": "PASS",
       "detail": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_route_classifier_readiness.json"
@@ -1854,6 +2034,36 @@
       "id": "nhats-route-classifier-readiness-validation-boundary",
       "status": "PASS",
       "detail": "validation boundary must keep classifier, extraction, aggregation, weighted counts, export, calibration and individual prediction blocked"
+    },
+    {
+      "id": "nhats-route-classifier-synthetic-dry-run-validation-exists",
+      "status": "PASS",
+      "detail": "web/src/data/life-path-nhats-route-classifier-synthetic-dry-run-validation.json"
+    },
+    {
+      "id": "nhats-route-classifier-synthetic-dry-run-validation-schema",
+      "status": "PASS",
+      "detail": "schemaVersion='human-infra.life-path-nhats-route-classifier-synthetic-dry-run-validation.v1'"
+    },
+    {
+      "id": "nhats-route-classifier-synthetic-dry-run-source-hash",
+      "status": "PASS",
+      "detail": "dry-run validation must point back to current readiness, missingness protocol and synthetic test cases"
+    },
+    {
+      "id": "nhats-route-classifier-synthetic-dry-run-summary",
+      "status": "PASS",
+      "detail": "dry-run validation must pass 8 synthetic cases with 5 allowed and 3 blocked route decisions"
+    },
+    {
+      "id": "nhats-route-classifier-synthetic-dry-run-boundary",
+      "status": "PASS",
+      "detail": "synthetic route-classifier dry-run may be runnable, but real classifier, extraction, aggregation, export, calibration and individual prediction must remain blocked"
+    },
+    {
+      "id": "nhats-route-classifier-synthetic-dry-run-cases",
+      "status": "PASS",
+      "detail": "tracked dry-run summary may contain only synthetic pass/fail case decisions and no real death-date output"
     },
     {
       "id": "nhats-l2-variable-family-admission-register-exists",
@@ -1936,6 +2146,131 @@
       "detail": "validation must prove only pre-outcome L2 rule freezing while keeping real aggregation, L4, calibration and individual prediction blocked"
     },
     {
+      "id": "model-governance-modelAdmissionContract-exists",
+      "status": "PASS",
+      "detail": "docs/reference/human-infra-model-admission-contract.json"
+    },
+    {
+      "id": "model-governance-modelAdmissionCandidateRegistry-exists",
+      "status": "PASS",
+      "detail": "docs/reference/human-infra-model-admission-candidate-registry.json"
+    },
+    {
+      "id": "model-governance-quantitativeCapabilityLadder-exists",
+      "status": "PASS",
+      "detail": "docs/reference/human-infra-quantitative-capability-ladder.json"
+    },
+    {
+      "id": "model-governance-quantitativeCapabilityLadderValidation-exists",
+      "status": "PASS",
+      "detail": "web/src/data/human-infra-quantitative-capability-ladder-validation.json"
+    },
+    {
+      "id": "model-governance-researchStandardsSourceAnchorRegister-exists",
+      "status": "PASS",
+      "detail": "docs/reference/human-infra-research-standards-source-anchor-register.json"
+    },
+    {
+      "id": "model-governance-researchStandardsSourceAnchorValidation-exists",
+      "status": "PASS",
+      "detail": "web/src/data/human-infra-research-standards-source-anchor-validation.json"
+    },
+    {
+      "id": "model-governance-domainToModelBridgeContract-exists",
+      "status": "PASS",
+      "detail": "docs/reference/human-infra-domain-to-model-bridge-contract.json"
+    },
+    {
+      "id": "model-governance-domainToModelBridgeRegister-exists",
+      "status": "PASS",
+      "detail": "docs/reference/human-infra-domain-to-model-bridge-register.json"
+    },
+    {
+      "id": "model-governance-domainToModelBridgeValidation-exists",
+      "status": "PASS",
+      "detail": "web/src/data/human-infra-domain-to-model-bridge-validation.json"
+    },
+    {
+      "id": "model-governance-admission-contract-blocked",
+      "status": "PASS",
+      "detail": "model admission contract must keep calibrated prediction blocked and current maximum at L3"
+    },
+    {
+      "id": "model-governance-candidate-registry-blocked",
+      "status": "PASS",
+      "detail": "candidate registry must keep reviewed artifacts L1/L2-only, current model at L3, and L4/L5 admissions at zero"
+    },
+    {
+      "id": "model-governance-quantitative-capability-q3-only",
+      "status": "PASS",
+      "detail": "quantitative capability ladder must keep current capability at Q3/L3 and block Q4/Q5, individual prediction, medical advice and intervention ranking"
+    },
+    {
+      "id": "model-governance-research-standards-no-admission",
+      "status": "PASS",
+      "detail": "research standards anchors may guide reporting and bias gates but must not grant model admission, intervention effects, individual prediction or medical advice"
+    },
+    {
+      "id": "model-governance-domain-to-model-bridge-q2-only",
+      "status": "PASS",
+      "detail": "domain-to-model bridge must keep C1-C6 domains at Q2/L2 candidate vocabulary only and block coefficients, causal effects, calibrated prediction, individual use, medical advice, intervention ranking and death-date output"
+    },
+    {
+      "id": "l4-control-plane-blockerMatrix-exists",
+      "status": "PASS",
+      "detail": "docs/reference/human-infra-l4-model-readiness-blocker-matrix.json"
+    },
+    {
+      "id": "l4-control-plane-unblockExecutionPlan-exists",
+      "status": "PASS",
+      "detail": "docs/reference/human-infra-l4-unblock-execution-plan.json"
+    },
+    {
+      "id": "l4-control-plane-evidenceIntakeRegister-exists",
+      "status": "PASS",
+      "detail": "docs/reference/human-infra-l4-evidence-intake-register.json"
+    },
+    {
+      "id": "l4-control-plane-validationCalibrationReportingContract-exists",
+      "status": "PASS",
+      "detail": "docs/reference/human-infra-l4-validation-calibration-reporting-contract.json"
+    },
+    {
+      "id": "l4-control-plane-validationCalibrationReportExecutionRegister-exists",
+      "status": "PASS",
+      "detail": "docs/reference/human-infra-l4-validation-calibration-report-execution-register.json"
+    },
+    {
+      "id": "l4-control-plane-validationCalibrationReportExecutionValidation-exists",
+      "status": "PASS",
+      "detail": "web/src/data/life-path-l4-validation-calibration-report-execution-validation.json"
+    },
+    {
+      "id": "l4-control-plane-blocker-matrix-still-blocked",
+      "status": "PASS",
+      "detail": "blocker matrix must keep two L4 candidates blocked by six admission blockers"
+    },
+    {
+      "id": "l4-control-plane-unblock-plan-still-blocked",
+      "status": "PASS",
+      "detail": "execution plan must bind blocker matrix, evidence intake and reporting contract while keeping all L4 work orders blocked"
+    },
+    {
+      "id": "l4-control-plane-evidence-intake-zero-evidence",
+      "status": "PASS",
+      "detail": "evidence intake must keep 24 slots pending, zero evidence packets, zero signoffs and L4 review closed"
+    },
+    {
+      "id": "l4-control-plane-reporting-contract-template-only",
+      "status": "PASS",
+      "detail": "reporting contract must expose 12 report sections and 5 slots while keeping real validation, calibration and L4 admission blocked"
+    },
+    {
+      "id": "l4-control-plane-validation-execution-zero-real-report",
+      "status": "PASS",
+      "detail": "execution validation must pass while preserving zero real report packets, zero human signoffs and l4-still-blocked downstream decision"
+    },
+    {
       "id": "sensitivity-analysis-exists",
       "status": "PASS",
       "detail": "web/src/data/life-path-sensitivity-analysis.json"
@@ -1992,7 +2327,7 @@
     }
   ],
   "summary": {
-    "pass": 397,
+    "pass": 464,
     "warn": 0,
     "fail": 0
   },
@@ -2134,7 +2469,7 @@
     "aggregatePath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhanes_public_lmf_aggregate_pilot.json",
     "aggregateSha256": "d817c2907d71a820baac846f5a41c28db6eeee5cb8e57ed20a47d87aa9efce0f",
     "validationPath": "web/src/data/life-path-nhanes-public-lmf-aggregate-pilot-validation.json",
-    "validationSha256": "25305a004c48b74582db560edcd7fa710e656e72e547f6809811a4ab422b9d8c",
+    "validationSha256": "da06a2544ca2039b5cdd06b7557769ee75bd8ea4350d3f68520c0a02ded286a0",
     "status": "PASS",
     "checks": [
       {
@@ -2193,7 +2528,7 @@
     "readinessPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhanes_public_lmf_survey_design_readiness.json",
     "readinessSha256": "0c914cdecd72587bf62ea0b59c4445ac5bfa72c587cc845264f79c5363935170",
     "validationPath": "web/src/data/life-path-nhanes-public-lmf-survey-design-readiness-validation.json",
-    "validationSha256": "b41d55bce7c52610a86768e6924d654fe971bc4b3726caac69c5dcaf7937e815",
+    "validationSha256": "b313508b770121e5027f34c78f37240395c41e2e7dc3eb52a84caf8afac156ae",
     "status": "PASS",
     "checks": [
       {
@@ -2247,7 +2582,7 @@
     "readinessPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhanes_public_lmf_domain_subpopulation_rule_readiness.json",
     "readinessSha256": "4a7cb6d07dd55b12253c06640e124cc9948c8403b2107b6148e85b504a43e8d5",
     "validationPath": "web/src/data/life-path-nhanes-public-lmf-domain-subpopulation-rule-readiness-validation.json",
-    "validationSha256": "8ba5367d49e266cd4f67f8530b5ccca3471f36fb2811b3a2d56089939e8f28ad",
+    "validationSha256": "00e28fa16e64b31ceb5a7dd633afdf78246e7634f4deb34acd8217846238ca3b",
     "status": "PASS",
     "checks": [
       {
@@ -2301,7 +2636,7 @@
     "readinessPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhanes_public_lmf_eligible_base_readiness.json",
     "readinessSha256": "2abd4af214d1bbe6eb8c4c5109b33864fd9025e55ada972b8bcb51d13d97674b",
     "validationPath": "web/src/data/life-path-nhanes-public-lmf-eligible-base-readiness-validation.json",
-    "validationSha256": "2203d30427b706e372e1310fb715bc4b709bf83fd7451cf0151c1427f1de00b5",
+    "validationSha256": "66af130a9ee3eb7df3f8e3878ef247b0cd56383f74bc9a0b7014582e473d0e9b",
     "status": "PASS",
     "checks": [
       {
@@ -2365,7 +2700,7 @@
     "readinessPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhanes_public_lmf_weighted_estimator_readiness.json",
     "readinessSha256": "469d6cdcdc846bfed97a449f9a8a3bd2e197bfe214b996cb121c800979f5ef4a",
     "validationPath": "web/src/data/life-path-nhanes-public-lmf-weighted-estimator-readiness-validation.json",
-    "validationSha256": "7c81113149ba671b798102624341a21f55a64f228d555fa89a87a44af6a6c8d9",
+    "validationSha256": "d6397b8cdc32ca3668936e0e02e5220df1d77cef56a571c32b3abdfe2a9979ba",
     "status": "PASS",
     "checks": [
       {
@@ -2429,7 +2764,7 @@
     "readinessPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhanes_public_lmf_r_survey_runtime_smoke_readiness.json",
     "readinessSha256": "117e03dfd6cfec882f1b3c0587323478d9b8cae1e277a6cbe119b166fb22b0d5",
     "validationPath": "web/src/data/life-path-nhanes-public-lmf-r-survey-runtime-smoke-validation.json",
-    "validationSha256": "354d9fff071df5a0644ccd9f6d99f400a5a66c2347ac3dd093822678a72e53f2",
+    "validationSha256": "4ee88a279fd58f0179669a3d6a9a330be4e531211b7470a4303c4d6466bc6d4f",
     "status": "PASS",
     "runtimeSmokeStatus": "blocked-no-rscript",
     "checks": [
@@ -2796,7 +3131,7 @@
   },
   "nhatsAcquisitionReadinessValidation": {
     "path": "web/src/data/life-path-nhats-acquisition-readiness-validation.json",
-    "sha256": "7722d969cbca7b2cbc23848391e3d343362cfd88fe08e435073eb4192d30db2e",
+    "sha256": "f4c6bbf62293e284c51cc56c4c8c0ebcf92a4d33abd7fd8acc45c8006be61f6a",
     "status": "PASS",
     "checks": [
       {
@@ -2890,7 +3225,7 @@
   },
   "nhatsRegistrationEvidenceTemplateValidation": {
     "path": "web/src/data/life-path-nhats-registration-evidence-template-validation.json",
-    "sha256": "2bd7fb461cb4256fa22233c3c161f25d3e5359aa78fc1faa2923553956022f83",
+    "sha256": "6a858233a964e60711a0159a10b41ba8241f778f42b284c586fc3ffb8ed75f2d",
     "status": "PASS",
     "checks": [
       {
@@ -2930,9 +3265,63 @@
       "fail": 0
     }
   },
+  "nhatsRegistrationEvidencePacketValidator": {
+    "testCasesPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_registration_evidence_packet_validator_test_cases.json",
+    "testCasesSha256": "38c2398b69afdb1ea6417fcb0baebb27ae139579b092adb285630d221d5942de",
+    "validationPath": "web/src/data/life-path-nhats-registration-evidence-packet-validator-validation.json",
+    "validationSha256": "79cad74acf4e5fd42217e63c44239f4eca4e13e42dbbe0c47a23a5aec7897e97",
+    "status": "PASS",
+    "checks": [
+      {
+        "id": "nhats-registration-evidence-packet-validator-test-cases-exist",
+        "status": "PASS",
+        "detail": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_registration_evidence_packet_validator_test_cases.json"
+      },
+      {
+        "id": "nhats-registration-evidence-packet-validator-validation-exists",
+        "status": "PASS",
+        "detail": "web/src/data/life-path-nhats-registration-evidence-packet-validator-validation.json"
+      },
+      {
+        "id": "nhats-registration-evidence-packet-validator-test-cases-schema",
+        "status": "PASS",
+        "detail": "test cases must be synthetic-only with at least five cases"
+      },
+      {
+        "id": "nhats-registration-evidence-packet-validator-validation-schema",
+        "status": "PASS",
+        "detail": "schemaVersion='human-infra.life-path-nhats-registration-evidence-packet-validator-validation.v1'"
+      },
+      {
+        "id": "nhats-registration-evidence-packet-validator-source-hash",
+        "status": "PASS",
+        "detail": "validation must hash-bind test cases and registration evidence template"
+      },
+      {
+        "id": "nhats-registration-evidence-packet-validator-decision-boundary",
+        "status": "PASS",
+        "detail": "status='pass' decision={'validatorReady': True, 'testCaseCount': 6, 'reviewableButStillBlockedCount': 1, 'cannotEvaluateCount': 1, 'rejectedCount': 4, 'realRegistrationEvidenceAttached': False, 'registrationGateClosureAllowed': False, 'downloadAllowed': False, 'extractionScriptAllowed': False, 'rawDataAllowedInRepository': False, 'publicAiUploadAllowed': False, 'calibrationAllowed': False, 'individualPredictionAllowed': False, 'reason': 'This validator only checks synthetic future NHATS registration evidence packet shapes. It does not attach real registration proof, close registration gates, authorize download, create extraction scripts, store raw data, calibrate a model or support individual use.'}"
+      },
+      {
+        "id": "nhats-registration-evidence-packet-validator-case-results",
+        "status": "PASS",
+        "detail": "all synthetic case expectations must pass"
+      },
+      {
+        "id": "nhats-registration-evidence-packet-validator-non-proof-boundary",
+        "status": "PASS",
+        "detail": "validation must state that it does not prove registration, download, extraction, calibration or individual use"
+      }
+    ],
+    "summary": {
+      "pass": 8,
+      "warn": 0,
+      "fail": 0
+    }
+  },
   "nhatsControlledStorageDestruction": {
     "path": "web/src/data/life-path-nhats-controlled-storage-destruction-validation.json",
-    "sha256": "51e2d6b397d489312488108ab6a26210fb30ac9305a577cb878c87c645b30e53",
+    "sha256": "db04780c8484063ce3482d88cffbc53d29f6928d04032ac247f56e29972bfe8c",
     "status": "PASS",
     "checks": [
       {
@@ -2979,7 +3368,7 @@
   },
   "nhatsSyntheticStorageDestructionDrill": {
     "path": "web/src/data/life-path-nhats-synthetic-storage-destruction-drill-validation.json",
-    "sha256": "025865d0a7206866f6db1ad04bc5b08fa41c0bb6b96b62bc143c96f52baf5870",
+    "sha256": "b93867ebf395569d564d498c6fd0e76ebc8036504b1e8578303a4973b3c3a343",
     "status": "PASS",
     "checks": [
       {
@@ -3108,7 +3497,7 @@
   },
   "nhatsFileTierTableValidation": {
     "path": "web/src/data/life-path-nhats-file-tier-table-validation.json",
-    "sha256": "072c6412131502ad20e6acc868ada9396b59c4e6f6741baa211034d811a14b88",
+    "sha256": "4ff110808c41ec4b700a17ee66979d1967660ec6f72112d0d9ab65c160a8bbd3",
     "status": "PASS",
     "checks": [
       {
@@ -3410,7 +3799,7 @@
     "testCasesPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_disclosure_control_test_cases.json",
     "testCasesSha256": "0a9cccdbfbd951ba6d04eeb762b9387ba50a13336e4ee4ade43ed976acb4c9c5",
     "validationPath": "web/src/data/life-path-nhats-disclosure-control-validation.json",
-    "validationSha256": "c1bc971c6064a4ee8000ae3691f960af72b3aea33a237d0bb6c6deadc1bfd7d0",
+    "validationSha256": "ea3bc5e7b9fe267b4ef5e1b2af6e57a1283d143474aaa0926486f3feb12f8526",
     "status": "PASS",
     "checks": [
       {
@@ -3511,7 +3900,7 @@
     "testCasesPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_survey_design_test_cases.json",
     "testCasesSha256": "a0d106ff0e70450ae96a4d8749037839cae27bfb7feb68bf2636681c46f500cc",
     "validationPath": "web/src/data/life-path-nhats-survey-design-validation.json",
-    "validationSha256": "3afff74b49a15379c6eb70ebcd8b39b7ce0412ff41fd09c144988876abfffd4c",
+    "validationSha256": "de3efc846b385e9f01f869bf0021ee2df34ad30fab4ac3fc338257d45d1a0b35",
     "status": "PASS",
     "checks": [
       {
@@ -3632,7 +4021,7 @@
     "testCasesPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_missingness_route_test_cases.json",
     "testCasesSha256": "38928543b47a1f950de5925c2bb329fc544df4516aa882015240e7047674b4be",
     "validationPath": "web/src/data/life-path-nhats-missingness-route-validation.json",
-    "validationSha256": "10fc4ca5760aec925407ec9d8dd0787e473cc5d69bea2fa0b54401e5b6c59655",
+    "validationSha256": "921629e9b5b0fdb67ed1447fff6d6380ea3e03edb0e69f234ecdbb71b28f8e89",
     "status": "PASS",
     "checks": [
       {
@@ -3766,7 +4155,7 @@
     "registerPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_route_field_discovery_register.json",
     "registerSha256": "32d86995a0438e2104e6850334eefa63b30176b0767dd2229bc73a517ef5ade4",
     "validationPath": "web/src/data/life-path-nhats-route-field-discovery-validation.json",
-    "validationSha256": "22e5faa3168d6ef011b9bb5eb3809e5a61f1697aab1cf3d264bca8a324506eb6",
+    "validationSha256": "407adc63c367311220988c8b32bcd1e627ce34bb164f31daeaba3e731c08336b",
     "status": "PASS",
     "checks": [
       {
@@ -3855,7 +4244,7 @@
     "protocolPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_value_label_review_protocol.json",
     "protocolSha256": "bd5130152b3c57d5a6d8cdc767df85bc8a10e19e1225738f13940bd3734ff416",
     "validationPath": "web/src/data/life-path-nhats-colectica-value-label-validation.json",
-    "validationSha256": "e72ab12450051a95dcfd394d11e391c62f0ca3f0f87ecb900e3ca43f5baa7c7b",
+    "validationSha256": "b9157bcca8c908c334c7a677d6532909091d6c17239edfb3ae24241b1ff79ca3",
     "status": "PASS",
     "checks": [
       {
@@ -3954,7 +4343,7 @@
     "registerPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_value_label_review_execution_register.json",
     "registerSha256": "de6d17f9470a563346f92884cead1eec35cf5a954245751b0135efc60672b042",
     "validationPath": "web/src/data/life-path-nhats-colectica-value-label-review-execution-validation.json",
-    "validationSha256": "f3fef11de89ffced7445ca292ab6fae3cb4fc7d6240847076f06e9417f21ad41",
+    "validationSha256": "36fa823a8714a4d78bd64dbdba78a42e02edaa6bd78a4b17717aec1ecf1cbda0",
     "status": "PASS",
     "checks": [
       {
@@ -4016,9 +4405,9 @@
   },
   "nhatsColecticaAccessRouteProbe": {
     "registerPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_access_route_probe_register.json",
-    "registerSha256": "58941fde2c6a1c5488437a1ad447cb3dae2032739ef1ed579e29da98b96aaa89",
+    "registerSha256": "650a4c8d6747a722055cf417b40da4f0b011b97fe7465b44586493daf16c006d",
     "validationPath": "web/src/data/life-path-nhats-colectica-access-route-probe-validation.json",
-    "validationSha256": "2b15df48f795d0eb1b01f965c25901778f87f3c069882863fd10134ac895aff1",
+    "validationSha256": "eaea88ed4d46c4defa408df219f5322f3a98df49e16fc40045d2ce19df6201b5",
     "status": "PASS",
     "checks": [
       {
@@ -4067,7 +4456,7 @@
     "templatePath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_authenticated_capture_template.json",
     "templateSha256": "dc097acfcb44007b42a25ce500c6cb1d23b1154f6620a7797445293817313eeb",
     "validationPath": "web/src/data/life-path-nhats-colectica-authenticated-capture-template-validation.json",
-    "validationSha256": "5985eb460e5acfb039cba664b57244a61eee11fd12c7a5001cb0dca3f151780e",
+    "validationSha256": "6efa4ede754845142c8a9d6836f747ec8d4d95bf7240aa21810b361075a43483",
     "status": "PASS",
     "checks": [
       {
@@ -4116,7 +4505,7 @@
     "registerPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_capture_task_register.json",
     "registerSha256": "57764c73e38ecd6d3303d36a172d6b794671d34c3dcf1718e07fbe76c54720e0",
     "validationPath": "web/src/data/life-path-nhats-colectica-capture-task-register-validation.json",
-    "validationSha256": "b41e0296344e38dc22f455365060062dc8a28d3cb942337d44be713020525c4f",
+    "validationSha256": "9b51ce38d79f7c32c982170eab6f600b416a23ec318ac8ca7af735408cb8ab07",
     "status": "PASS",
     "checks": [
       {
@@ -4171,11 +4560,179 @@
       "fail": 0
     }
   },
+  "nhatsRouteValueCrosswalkAssembly": {
+    "protocolPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_route_value_crosswalk_assembly_protocol.json",
+    "protocolSha256": "4208789a51d29d9b8155811ba98d193e841df121d9e2a244a02bd094bd4562c7",
+    "validationPath": "web/src/data/life-path-nhats-route-value-crosswalk-assembly-validation.json",
+    "validationSha256": "38b8bc754484f944255dc9a2a987f621f041d8d5d7c06f71377f2913285dcb4f",
+    "status": "PASS",
+    "checks": [
+      {
+        "id": "nhats-route-value-crosswalk-assembly-protocol-exists",
+        "status": "PASS",
+        "detail": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_route_value_crosswalk_assembly_protocol.json"
+      },
+      {
+        "id": "nhats-route-value-crosswalk-assembly-validation-exists",
+        "status": "PASS",
+        "detail": "web/src/data/life-path-nhats-route-value-crosswalk-assembly-validation.json"
+      },
+      {
+        "id": "nhats-route-value-crosswalk-assembly-schema",
+        "status": "PASS",
+        "detail": "schemaVersion='human-infra.life-path-nhats-route-value-crosswalk-assembly-protocol.v1'"
+      },
+      {
+        "id": "nhats-route-value-crosswalk-assembly-identity",
+        "status": "PASS",
+        "detail": "assembly protocol must remain protocol-only and must not claim a built crosswalk"
+      },
+      {
+        "id": "nhats-route-value-crosswalk-assembly-boundary",
+        "status": "PASS",
+        "detail": "assembly protocol may be ready, but packets, labels, crosswalk rows, maps, classifier, extraction, export, calibration and individual prediction must remain blocked"
+      },
+      {
+        "id": "nhats-route-value-crosswalk-assembly-zero-admissions",
+        "status": "PASS",
+        "detail": "assembly summary must cover 9 units and keep all evidence/admission counts at zero"
+      },
+      {
+        "id": "nhats-route-value-crosswalk-assembly-units",
+        "status": "PASS",
+        "detail": "assembly_unit_count=9"
+      },
+      {
+        "id": "nhats-route-value-crosswalk-assembly-source-bindings",
+        "status": "PASS",
+        "detail": "missing=[]"
+      },
+      {
+        "id": "nhats-route-value-crosswalk-assembly-prohibited-actions",
+        "status": "PASS",
+        "detail": "protocol must explicitly block classifier code, individual prediction, sensitive death fields and restricted materials"
+      },
+      {
+        "id": "nhats-route-value-crosswalk-assembly-validation-schema",
+        "status": "PASS",
+        "detail": "schemaVersion='human-infra.validation-report.v1'"
+      },
+      {
+        "id": "nhats-route-value-crosswalk-assembly-validation-source-hash",
+        "status": "PASS",
+        "detail": "validation must point back to current assembly protocol path, hash, id and status"
+      },
+      {
+        "id": "nhats-route-value-crosswalk-assembly-validation-upstreams",
+        "status": "PASS",
+        "detail": "missing=[]"
+      },
+      {
+        "id": "nhats-route-value-crosswalk-assembly-validation-zero-admissions",
+        "status": "PASS",
+        "detail": "validation must pass while preserving zero crosswalk, map, signoff, classifier, extraction, calibration and individual-prediction admissions"
+      },
+      {
+        "id": "nhats-route-value-crosswalk-assembly-validation-boundary",
+        "status": "PASS",
+        "detail": "validation boundary must state that crosswalk assembly remains blocked and admits no individual prediction"
+      }
+    ],
+    "summary": {
+      "pass": 14,
+      "warn": 0,
+      "fail": 0
+    }
+  },
+  "nhatsRouteValueCrosswalkEntryValidator": {
+    "testCasesPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_route_value_crosswalk_entry_validator_test_cases.json",
+    "testCasesSha256": "f3f8395e1798ac97ee2af5740fa9fc381fdcc29ff196abdd9bb866f8fcd2454a",
+    "validationPath": "web/src/data/life-path-nhats-route-value-crosswalk-entry-validator-validation.json",
+    "validationSha256": "c3c7297852185818cc8b66c1e2621bdbd8fdb38f4b249c47b81116e1b4507985",
+    "status": "PASS",
+    "checks": [
+      {
+        "id": "nhats-route-value-crosswalk-entry-validator-test-cases-exist",
+        "status": "PASS",
+        "detail": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_route_value_crosswalk_entry_validator_test_cases.json"
+      },
+      {
+        "id": "nhats-route-value-crosswalk-entry-validator-validation-exists",
+        "status": "PASS",
+        "detail": "web/src/data/life-path-nhats-route-value-crosswalk-entry-validator-validation.json"
+      },
+      {
+        "id": "nhats-route-value-crosswalk-entry-validator-test-cases-schema",
+        "status": "PASS",
+        "detail": "schemaVersion='human-infra.life-path-nhats-route-value-crosswalk-entry-validator-test-cases.v1'"
+      },
+      {
+        "id": "nhats-route-value-crosswalk-entry-validator-test-cases-identity",
+        "status": "PASS",
+        "detail": "test cases must remain synthetic fixtures and keep MODEL-G4 blocked"
+      },
+      {
+        "id": "nhats-route-value-crosswalk-entry-validator-source-bindings",
+        "status": "PASS",
+        "detail": "test cases must bind to assembly protocol, capture review execution, capture task register and route-classifier readiness"
+      },
+      {
+        "id": "nhats-route-value-crosswalk-entry-validator-hard-boundaries",
+        "status": "PASS",
+        "detail": "hard boundaries must block credentials, sensitive death fields, assembly closure and downstream promotion"
+      },
+      {
+        "id": "nhats-route-value-crosswalk-entry-validator-case-verdict-shape",
+        "status": "PASS",
+        "detail": "case_count=6 verdicts=['reviewable-but-still-blocked', 'cannot-evaluate', 'rejected', 'rejected', 'rejected', 'rejected']"
+      },
+      {
+        "id": "nhats-route-value-crosswalk-entry-validator-validation-schema",
+        "status": "PASS",
+        "detail": "schemaVersion='human-infra.life-path-nhats-route-value-crosswalk-entry-validator-validation.v1'"
+      },
+      {
+        "id": "nhats-route-value-crosswalk-entry-validator-validation-source-hash",
+        "status": "PASS",
+        "detail": "validation must point back to current test-case path, hash, id and status"
+      },
+      {
+        "id": "nhats-route-value-crosswalk-entry-validator-validation-upstream-hashes",
+        "status": "PASS",
+        "detail": "upstream_count=4"
+      },
+      {
+        "id": "nhats-route-value-crosswalk-entry-validator-validation-summary",
+        "status": "PASS",
+        "detail": "validation must pass all six synthetic cases while preserving the blocked reviewable verdict"
+      },
+      {
+        "id": "nhats-route-value-crosswalk-entry-validator-decision-boundary",
+        "status": "PASS",
+        "detail": "entry validator may preflight future rows, but must keep G4, classifier, extraction, export, calibration and individual prediction blocked"
+      },
+      {
+        "id": "nhats-route-value-crosswalk-entry-validator-result-boundaries",
+        "status": "PASS",
+        "detail": "every synthetic result must keep real entry, assembly closure and downstream use disabled"
+      },
+      {
+        "id": "nhats-route-value-crosswalk-entry-validator-validation-boundary",
+        "status": "PASS",
+        "detail": "validation boundary must state reviewable entries remain blocked and close no assembly unit"
+      }
+    ],
+    "summary": {
+      "pass": 14,
+      "warn": 0,
+      "fail": 0
+    }
+  },
   "nhatsRouteClassifierReadiness": {
     "readinessPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_route_classifier_readiness.json",
     "readinessSha256": "f0c0224317c9ee20e8de56dcddeadba85ae24d67b736782ba22de90e83109296",
     "validationPath": "web/src/data/life-path-nhats-route-classifier-readiness-validation.json",
-    "validationSha256": "1e077c3c5c1e8d7faf7bf4baba4aa8181dfbe049d181f6c59c4ad6b514702a1d",
+    "validationSha256": "7be290cde18ffb3778cb3b9b951f4f476a863bf1fd17fd6065a79a1c3c8b1e6c",
     "status": "PASS",
     "checks": [
       {
@@ -4235,11 +4792,53 @@
       "fail": 0
     }
   },
+  "nhatsRouteClassifierSyntheticDryRun": {
+    "validationPath": "web/src/data/life-path-nhats-route-classifier-synthetic-dry-run-validation.json",
+    "validationSha256": "12af12e37a7e27ea124c5a8b9c9efaf7dee0503af39547782028a386f61b6d0f",
+    "status": "PASS",
+    "checks": [
+      {
+        "id": "nhats-route-classifier-synthetic-dry-run-validation-exists",
+        "status": "PASS",
+        "detail": "web/src/data/life-path-nhats-route-classifier-synthetic-dry-run-validation.json"
+      },
+      {
+        "id": "nhats-route-classifier-synthetic-dry-run-validation-schema",
+        "status": "PASS",
+        "detail": "schemaVersion='human-infra.life-path-nhats-route-classifier-synthetic-dry-run-validation.v1'"
+      },
+      {
+        "id": "nhats-route-classifier-synthetic-dry-run-source-hash",
+        "status": "PASS",
+        "detail": "dry-run validation must point back to current readiness, missingness protocol and synthetic test cases"
+      },
+      {
+        "id": "nhats-route-classifier-synthetic-dry-run-summary",
+        "status": "PASS",
+        "detail": "dry-run validation must pass 8 synthetic cases with 5 allowed and 3 blocked route decisions"
+      },
+      {
+        "id": "nhats-route-classifier-synthetic-dry-run-boundary",
+        "status": "PASS",
+        "detail": "synthetic route-classifier dry-run may be runnable, but real classifier, extraction, aggregation, export, calibration and individual prediction must remain blocked"
+      },
+      {
+        "id": "nhats-route-classifier-synthetic-dry-run-cases",
+        "status": "PASS",
+        "detail": "tracked dry-run summary may contain only synthetic pass/fail case decisions and no real death-date output"
+      }
+    ],
+    "summary": {
+      "pass": 6,
+      "warn": 0,
+      "fail": 0
+    }
+  },
   "nhatsL2VariableFamilyAdmission": {
     "registerPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_l2_variable_family_admission_register.json",
     "registerSha256": "da1d444f452482f37aa7d7d12cd97c9deb0b2d6006540f76c5d2588389dffce3",
     "validationPath": "web/src/data/life-path-nhats-l2-variable-family-admission-validation.json",
-    "validationSha256": "52b7aa691c7fc0bf129d903aaddd3f3c99d1cef75007e33f33fb567a5a5b5d3f",
+    "validationSha256": "75bddee3c1d73f60bb6d2507c38b5d5636df391ecb2acbd0e74cdf57fef7b99a",
     "status": "PASS",
     "checks": [
       {
@@ -4293,7 +4892,7 @@
     "protocolPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_preoutcome_aggregation_protocol.json",
     "protocolSha256": "a2917d4bbb1682f5de6251fe919afae5da5bad681168475845a3a9c0a9a0747d",
     "validationPath": "web/src/data/life-path-nhats-preoutcome-aggregation-validation.json",
-    "validationSha256": "fdf31f00afb240f33bc2016c5f90cbe1faf7c3a47392626814f01df4c4e72c2e",
+    "validationSha256": "de068a74cb1f8b53d2e0e99d1f023c4ae962dc374d931b6ae4b423e1f9ef8b5a",
     "status": "PASS",
     "checks": [
       {
@@ -4343,9 +4942,184 @@
       "fail": 0
     }
   },
+  "modelGovernanceControlPlane": {
+    "modelAdmissionContractPath": "docs/reference/human-infra-model-admission-contract.json",
+    "modelAdmissionContractSha256": "82146a5b0b85e330c64e17380cf9f6b35c97198de28d61bba7cc7eb4ab3b7692",
+    "modelAdmissionCandidateRegistryPath": "docs/reference/human-infra-model-admission-candidate-registry.json",
+    "modelAdmissionCandidateRegistrySha256": "9f82f7fd443aa6c04a2ccb2ec8ab962c9ee6648076f294b8c4a523c35564db4a",
+    "quantitativeCapabilityLadderPath": "docs/reference/human-infra-quantitative-capability-ladder.json",
+    "quantitativeCapabilityLadderSha256": "6c92c0874525980c914e478efa31967e49506ad483c42e8b033e36b0b1089dff",
+    "quantitativeCapabilityLadderValidationPath": "web/src/data/human-infra-quantitative-capability-ladder-validation.json",
+    "quantitativeCapabilityLadderValidationSha256": "19097086f40f0eaca035800b652bbcaa024e520a5e96247df19b5b3aed193d38",
+    "researchStandardsSourceAnchorRegisterPath": "docs/reference/human-infra-research-standards-source-anchor-register.json",
+    "researchStandardsSourceAnchorRegisterSha256": "cf96352d4b4b7c510b125984b23c768c8c83c556a686afb3416cbfc7ba8da3f1",
+    "researchStandardsSourceAnchorValidationPath": "web/src/data/human-infra-research-standards-source-anchor-validation.json",
+    "researchStandardsSourceAnchorValidationSha256": "13c765ac22563c9c8e9634a07ce7db610a84e9fa4c03284165f8216002a472f0",
+    "domainToModelBridgeContractPath": "docs/reference/human-infra-domain-to-model-bridge-contract.json",
+    "domainToModelBridgeContractSha256": "97337f50212823f5f8d86e52ccc522991c0777d8ef016bbc02109d282aa6844f",
+    "domainToModelBridgeRegisterPath": "docs/reference/human-infra-domain-to-model-bridge-register.json",
+    "domainToModelBridgeRegisterSha256": "e8b369557f06ad4caeca58cf19acca3ee9f0eec764c85f91fea7df80773ada14",
+    "domainToModelBridgeValidationPath": "web/src/data/human-infra-domain-to-model-bridge-validation.json",
+    "domainToModelBridgeValidationSha256": "69c259bc2105b19493ae9c48e783ef15c6ebc9abb86947dea772f1d6592610f9",
+    "status": "PASS",
+    "checks": [
+      {
+        "id": "model-governance-modelAdmissionContract-exists",
+        "status": "PASS",
+        "detail": "docs/reference/human-infra-model-admission-contract.json"
+      },
+      {
+        "id": "model-governance-modelAdmissionCandidateRegistry-exists",
+        "status": "PASS",
+        "detail": "docs/reference/human-infra-model-admission-candidate-registry.json"
+      },
+      {
+        "id": "model-governance-quantitativeCapabilityLadder-exists",
+        "status": "PASS",
+        "detail": "docs/reference/human-infra-quantitative-capability-ladder.json"
+      },
+      {
+        "id": "model-governance-quantitativeCapabilityLadderValidation-exists",
+        "status": "PASS",
+        "detail": "web/src/data/human-infra-quantitative-capability-ladder-validation.json"
+      },
+      {
+        "id": "model-governance-researchStandardsSourceAnchorRegister-exists",
+        "status": "PASS",
+        "detail": "docs/reference/human-infra-research-standards-source-anchor-register.json"
+      },
+      {
+        "id": "model-governance-researchStandardsSourceAnchorValidation-exists",
+        "status": "PASS",
+        "detail": "web/src/data/human-infra-research-standards-source-anchor-validation.json"
+      },
+      {
+        "id": "model-governance-domainToModelBridgeContract-exists",
+        "status": "PASS",
+        "detail": "docs/reference/human-infra-domain-to-model-bridge-contract.json"
+      },
+      {
+        "id": "model-governance-domainToModelBridgeRegister-exists",
+        "status": "PASS",
+        "detail": "docs/reference/human-infra-domain-to-model-bridge-register.json"
+      },
+      {
+        "id": "model-governance-domainToModelBridgeValidation-exists",
+        "status": "PASS",
+        "detail": "web/src/data/human-infra-domain-to-model-bridge-validation.json"
+      },
+      {
+        "id": "model-governance-admission-contract-blocked",
+        "status": "PASS",
+        "detail": "model admission contract must keep calibrated prediction blocked and current maximum at L3"
+      },
+      {
+        "id": "model-governance-candidate-registry-blocked",
+        "status": "PASS",
+        "detail": "candidate registry must keep reviewed artifacts L1/L2-only, current model at L3, and L4/L5 admissions at zero"
+      },
+      {
+        "id": "model-governance-quantitative-capability-q3-only",
+        "status": "PASS",
+        "detail": "quantitative capability ladder must keep current capability at Q3/L3 and block Q4/Q5, individual prediction, medical advice and intervention ranking"
+      },
+      {
+        "id": "model-governance-research-standards-no-admission",
+        "status": "PASS",
+        "detail": "research standards anchors may guide reporting and bias gates but must not grant model admission, intervention effects, individual prediction or medical advice"
+      },
+      {
+        "id": "model-governance-domain-to-model-bridge-q2-only",
+        "status": "PASS",
+        "detail": "domain-to-model bridge must keep C1-C6 domains at Q2/L2 candidate vocabulary only and block coefficients, causal effects, calibrated prediction, individual use, medical advice, intervention ranking and death-date output"
+      }
+    ],
+    "summary": {
+      "pass": 14,
+      "warn": 0,
+      "fail": 0
+    }
+  },
+  "l4ControlPlane": {
+    "blockerMatrixPath": "docs/reference/human-infra-l4-model-readiness-blocker-matrix.json",
+    "blockerMatrixSha256": "9f22a7c79f872a3c9f1de9e236847a1be32eef33a1be7637049925b7a7d367cd",
+    "unblockExecutionPlanPath": "docs/reference/human-infra-l4-unblock-execution-plan.json",
+    "unblockExecutionPlanSha256": "c737e8c81dfd53c1bb77eabb90e0d54101939de5feae4fcaf59841f6df4db501",
+    "evidenceIntakeRegisterPath": "docs/reference/human-infra-l4-evidence-intake-register.json",
+    "evidenceIntakeRegisterSha256": "cde068abb5911ea5acbf5d9d55de94f06dc512528b5ea90af36484cea6cde7de",
+    "validationCalibrationReportingContractPath": "docs/reference/human-infra-l4-validation-calibration-reporting-contract.json",
+    "validationCalibrationReportingContractSha256": "c183428ba2b2e339d8ba2bdc22f6f401cef126769a0129e124c359e73305db6f",
+    "validationCalibrationReportExecutionRegisterPath": "docs/reference/human-infra-l4-validation-calibration-report-execution-register.json",
+    "validationCalibrationReportExecutionRegisterSha256": "cb8ccb0a86ab2a94b9e3dab914354652f32878c9006be6ebe1f8970a466e483a",
+    "validationCalibrationReportExecutionValidationPath": "web/src/data/life-path-l4-validation-calibration-report-execution-validation.json",
+    "validationCalibrationReportExecutionValidationSha256": "8c9021d7d826193639976e9e16ecec47f04fc9a23e1411d2f0f759036ae031c8",
+    "status": "PASS",
+    "checks": [
+      {
+        "id": "l4-control-plane-blockerMatrix-exists",
+        "status": "PASS",
+        "detail": "docs/reference/human-infra-l4-model-readiness-blocker-matrix.json"
+      },
+      {
+        "id": "l4-control-plane-unblockExecutionPlan-exists",
+        "status": "PASS",
+        "detail": "docs/reference/human-infra-l4-unblock-execution-plan.json"
+      },
+      {
+        "id": "l4-control-plane-evidenceIntakeRegister-exists",
+        "status": "PASS",
+        "detail": "docs/reference/human-infra-l4-evidence-intake-register.json"
+      },
+      {
+        "id": "l4-control-plane-validationCalibrationReportingContract-exists",
+        "status": "PASS",
+        "detail": "docs/reference/human-infra-l4-validation-calibration-reporting-contract.json"
+      },
+      {
+        "id": "l4-control-plane-validationCalibrationReportExecutionRegister-exists",
+        "status": "PASS",
+        "detail": "docs/reference/human-infra-l4-validation-calibration-report-execution-register.json"
+      },
+      {
+        "id": "l4-control-plane-validationCalibrationReportExecutionValidation-exists",
+        "status": "PASS",
+        "detail": "web/src/data/life-path-l4-validation-calibration-report-execution-validation.json"
+      },
+      {
+        "id": "l4-control-plane-blocker-matrix-still-blocked",
+        "status": "PASS",
+        "detail": "blocker matrix must keep two L4 candidates blocked by six admission blockers"
+      },
+      {
+        "id": "l4-control-plane-unblock-plan-still-blocked",
+        "status": "PASS",
+        "detail": "execution plan must bind blocker matrix, evidence intake and reporting contract while keeping all L4 work orders blocked"
+      },
+      {
+        "id": "l4-control-plane-evidence-intake-zero-evidence",
+        "status": "PASS",
+        "detail": "evidence intake must keep 24 slots pending, zero evidence packets, zero signoffs and L4 review closed"
+      },
+      {
+        "id": "l4-control-plane-reporting-contract-template-only",
+        "status": "PASS",
+        "detail": "reporting contract must expose 12 report sections and 5 slots while keeping real validation, calibration and L4 admission blocked"
+      },
+      {
+        "id": "l4-control-plane-validation-execution-zero-real-report",
+        "status": "PASS",
+        "detail": "execution validation must pass while preserving zero real report packets, zero human signoffs and l4-still-blocked downstream decision"
+      }
+    ],
+    "summary": {
+      "pass": 11,
+      "warn": 0,
+      "fail": 0
+    }
+  },
   "sensitivityAnalysis": {
     "path": "web/src/data/life-path-sensitivity-analysis.json",
-    "sha256": "4082f5733581f64d33af499f09abaa4cb6bb4e276078abc386f18fccf1385737",
+    "sha256": "62d962d4f247d48a0f77734f352da066f8930b043725f9084848be62a0c54ba3",
     "status": "PASS",
     "checks": [
       {

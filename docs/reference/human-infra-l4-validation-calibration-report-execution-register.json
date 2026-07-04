@@ -1,0 +1,288 @@
+{
+  "schemaVersion": "human-infra.l4-validation-calibration-report-execution-register.v1",
+  "registerId": "human-infra-l4-validation-calibration-report-execution-register-2026-07-04",
+  "status": "execution-register-ready-no-real-report-packet-l4-blocked",
+  "owner": "tradecatlabs",
+  "purpose": "Record the machine-auditable execution state for the L4 validation/calibration reporting contract. This register is not a validation report, not a calibration report, not a calibrated prediction model, not public weighted-domain release permission, not individual prediction and not medical advice.",
+  "sourceOfTruth": {
+    "reportingContract": "docs/reference/human-infra-l4-validation-calibration-reporting-contract.json",
+    "syntheticDryRun": "web/src/data/life-path-synthetic-validation-calibration-report.json",
+    "l4EvidenceIntakeRegister": "docs/reference/human-infra-l4-evidence-intake-register.json",
+    "l4EvidencePacketReviewPlaybook": "docs/reference/human-infra-l4-evidence-packet-review-playbook.md",
+    "l4UnblockExecutionPlan": "docs/reference/human-infra-l4-unblock-execution-plan.json",
+    "modelAdmissionCandidateRegistry": "docs/reference/human-infra-model-admission-candidate-registry.json"
+  },
+  "workOrderBinding": {
+    "workOrderId": "L4WO-05-validation-calibration-diagnostics",
+    "candidatePath": "L4C-NHANES-PUBLIC-LMF-WEIGHTED-DOMAIN",
+    "blocks": [
+      "L4B-06-validation-calibration"
+    ],
+    "requiredContractSections": 12,
+    "requiredL4Slots": 5
+  },
+  "currentDecision": {
+    "executionRegisterValidated": true,
+    "reportingContractValidated": true,
+    "syntheticDryRunAvailable": true,
+    "realValidationReportPacketAttached": false,
+    "realCalibrationDiagnosticsPacketAttached": false,
+    "realParameterSensitivityPacketAttached": false,
+    "biasApplicabilityReviewPacketAttached": false,
+    "tripodProbastReportingPacketAttached": false,
+    "allRequiredSectionsCompleted": false,
+    "allRequiredSlotsCompleted": false,
+    "humanReviewerSignoffPresent": false,
+    "secondReviewerSignoffPresent": false,
+    "l4AggregateCalibratedAdmissionAllowed": false,
+    "publicWeightedDomainOutputAllowed": false,
+    "calibratedPredictionAvailable": false,
+    "individualUseAllowed": false,
+    "medicalAdviceAllowed": false,
+    "downstreamDecision": "l4-still-blocked",
+    "reason": "The reporting contract and synthetic dry-run are present, but no real validation/calibration report packet, calibration diagnostic packet, real-parameter sensitivity packet, bias/applicability review, TRIPOD+AI / PROBAST+AI reporting packet, human reviewer signoff or second reviewer signoff exists."
+  },
+  "sectionExecution": [
+    {
+      "sectionId": "study-question-and-intended-use",
+      "contractStatus": "defined",
+      "executionStatus": "pending-real-report-packet",
+      "syntheticDryRunStatus": "filled-not-evidence",
+      "realEvidenceRef": null,
+      "reviewerSignoff": null,
+      "completedAt": null,
+      "blocksL4": true
+    },
+    {
+      "sectionId": "data-source-governance-and-cohort",
+      "contractStatus": "defined",
+      "executionStatus": "pending-real-report-packet",
+      "syntheticDryRunStatus": "filled-not-evidence",
+      "realEvidenceRef": null,
+      "reviewerSignoff": null,
+      "completedAt": null,
+      "blocksL4": true
+    },
+    {
+      "sectionId": "time-zero-horizons-outcomes",
+      "contractStatus": "defined",
+      "executionStatus": "pending-real-report-packet",
+      "syntheticDryRunStatus": "filled-not-evidence",
+      "realEvidenceRef": null,
+      "reviewerSignoff": null,
+      "completedAt": null,
+      "blocksL4": true
+    },
+    {
+      "sectionId": "predictors-measurement-and-missingness",
+      "contractStatus": "defined",
+      "executionStatus": "pending-real-report-packet",
+      "syntheticDryRunStatus": "filled-not-evidence",
+      "realEvidenceRef": null,
+      "reviewerSignoff": null,
+      "completedAt": null,
+      "blocksL4": true
+    },
+    {
+      "sectionId": "model-specification-and-update-status",
+      "contractStatus": "defined",
+      "executionStatus": "pending-real-report-packet",
+      "syntheticDryRunStatus": "filled-not-evidence",
+      "realEvidenceRef": null,
+      "reviewerSignoff": null,
+      "completedAt": null,
+      "blocksL4": true
+    },
+    {
+      "sectionId": "development-validation-design",
+      "contractStatus": "defined",
+      "executionStatus": "pending-real-report-packet",
+      "syntheticDryRunStatus": "filled-not-evidence",
+      "realEvidenceRef": null,
+      "reviewerSignoff": null,
+      "completedAt": null,
+      "blocksL4": true
+    },
+    {
+      "sectionId": "performance-discrimination-and-overall-error",
+      "contractStatus": "defined",
+      "executionStatus": "pending-real-report-packet",
+      "syntheticDryRunStatus": "filled-not-evidence",
+      "realEvidenceRef": null,
+      "reviewerSignoff": null,
+      "completedAt": null,
+      "blocksL4": true
+    },
+    {
+      "sectionId": "calibration-diagnostics",
+      "contractStatus": "defined",
+      "executionStatus": "pending-real-report-packet",
+      "syntheticDryRunStatus": "filled-not-evidence",
+      "realEvidenceRef": null,
+      "reviewerSignoff": null,
+      "completedAt": null,
+      "blocksL4": true
+    },
+    {
+      "sectionId": "uncertainty-sensitivity-and-stability",
+      "contractStatus": "defined",
+      "executionStatus": "pending-real-report-packet",
+      "syntheticDryRunStatus": "filled-not-evidence",
+      "realEvidenceRef": null,
+      "reviewerSignoff": null,
+      "completedAt": null,
+      "blocksL4": true
+    },
+    {
+      "sectionId": "bias-applicability-and-subgroup-review",
+      "contractStatus": "defined",
+      "executionStatus": "pending-real-report-packet",
+      "syntheticDryRunStatus": "filled-not-evidence",
+      "realEvidenceRef": null,
+      "reviewerSignoff": null,
+      "completedAt": null,
+      "blocksL4": true
+    },
+    {
+      "sectionId": "traceability-reproducibility-and-human-review",
+      "contractStatus": "defined",
+      "executionStatus": "pending-real-report-packet",
+      "syntheticDryRunStatus": "filled-not-evidence",
+      "realEvidenceRef": null,
+      "reviewerSignoff": null,
+      "completedAt": null,
+      "blocksL4": true
+    },
+    {
+      "sectionId": "limitations-prohibited-uses-and-downstream-decision",
+      "contractStatus": "defined",
+      "executionStatus": "pending-real-report-packet",
+      "syntheticDryRunStatus": "filled-not-evidence",
+      "realEvidenceRef": null,
+      "reviewerSignoff": null,
+      "completedAt": null,
+      "blocksL4": true
+    }
+  ],
+  "slotExecution": [
+    {
+      "slotId": "development-validation-design",
+      "contractStatus": "defined",
+      "executionStatus": "pending-real-report-packet",
+      "requiredEvidenceClass": "redacted-artifact-hash",
+      "repositoryPolicy": "study-design-summary-only",
+      "evidencePacketRef": null,
+      "firstReviewerRole": null,
+      "secondReviewerRole": null,
+      "closedAt": null,
+      "blocksL4": true
+    },
+    {
+      "slotId": "calibration-diagnostics-report",
+      "contractStatus": "defined",
+      "executionStatus": "pending-real-report-packet",
+      "requiredEvidenceClass": "calibration-diagnostic-report",
+      "repositoryPolicy": "reviewed-aggregate-diagnostics-only",
+      "evidencePacketRef": null,
+      "firstReviewerRole": null,
+      "secondReviewerRole": null,
+      "closedAt": null,
+      "blocksL4": true
+    },
+    {
+      "slotId": "real-parameter-sensitivity-analysis",
+      "contractStatus": "defined",
+      "executionStatus": "pending-real-report-packet",
+      "requiredEvidenceClass": "calibration-diagnostic-report",
+      "repositoryPolicy": "reviewed-aggregate-diagnostics-only",
+      "evidencePacketRef": null,
+      "firstReviewerRole": null,
+      "secondReviewerRole": null,
+      "closedAt": null,
+      "blocksL4": true
+    },
+    {
+      "slotId": "bias-applicability-review",
+      "contractStatus": "defined",
+      "executionStatus": "pending-real-report-packet",
+      "requiredEvidenceClass": "bias-applicability-review",
+      "repositoryPolicy": "reviewed-report-summary-only",
+      "evidencePacketRef": null,
+      "firstReviewerRole": null,
+      "secondReviewerRole": null,
+      "closedAt": null,
+      "blocksL4": true
+    },
+    {
+      "slotId": "tripod-probast-reporting-packet",
+      "contractStatus": "defined",
+      "executionStatus": "pending-real-report-packet",
+      "requiredEvidenceClass": "bias-applicability-review",
+      "repositoryPolicy": "reporting-packet-hash-only",
+      "evidencePacketRef": null,
+      "firstReviewerRole": null,
+      "secondReviewerRole": null,
+      "closedAt": null,
+      "blocksL4": true
+    }
+  ],
+  "completionState": {
+    "requiredSectionCount": 12,
+    "syntheticFilledSectionCount": 12,
+    "realCompletedSectionCount": 0,
+    "pendingRealSectionCount": 12,
+    "requiredSlotCount": 5,
+    "syntheticFilledSlotCount": 5,
+    "realClosedSlotCount": 0,
+    "pendingRealSlotCount": 5,
+    "realReportPacketCount": 0,
+    "humanReviewedPacketCount": 0,
+    "secondReviewedPacketCount": 0,
+    "l4AggregateCalibratedAdmissionAllowed": false,
+    "publicWeightedDomainOutputAllowed": false,
+    "calibratedPredictionAvailable": false,
+    "individualUseAllowed": false
+  },
+  "stateMachine": {
+    "currentState": "l4-still-blocked-no-real-report-packet",
+    "allowedNextStates": [
+      "real-report-packet-attached-pending-human-review",
+      "cannot-evaluate"
+    ],
+    "forbiddenDirectTransitions": [
+      "l4-review-open",
+      "calibrated-prediction-available",
+      "public-weighted-domain-output-allowed",
+      "individual-use-allowed"
+    ],
+    "minimumL4Path": [
+      "governed-aggregate-output-reviewed",
+      "real-validation-design-hash-attached",
+      "calibration-diagnostics-packet-human-reviewed",
+      "real-parameter-sensitivity-packet-human-reviewed",
+      "bias-applicability-review-human-reviewed",
+      "tripod-probast-reporting-packet-human-reviewed",
+      "second-reviewer-signoff-present",
+      "model-admission-review-passes"
+    ]
+  },
+  "nonProofBoundary": {
+    "confirms": [
+      "the L4 validation/calibration reporting execution state is machine-auditable",
+      "all 12 report sections are present and still block L4 until real reviewed evidence exists",
+      "all 5 L4WO-05 slots are present and still block L4 until reviewed packets close",
+      "the synthetic dry-run cannot be used as real validation or calibration evidence"
+    ],
+    "doesNotConfirm": [
+      "real validation report completion",
+      "real calibration diagnostics",
+      "real parameter sensitivity",
+      "bias/applicability review completion",
+      "TRIPOD+AI / PROBAST+AI packet completion",
+      "L4 aggregate calibrated model admission",
+      "public weighted-domain output permission",
+      "individual prediction",
+      "medical advice"
+    ]
+  }
+}

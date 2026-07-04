@@ -1,0 +1,103 @@
+{
+  "schemaVersion": "human-infra.nhanes-public-lmf-weighted-output-implementation-preflight-validation.v1",
+  "generatedAt": "2026-07-04T20:22:38.398421+00:00",
+  "policyPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhanes_public_lmf_weighted_output_implementation_preflight_policy.json",
+  "policySha256": "422499d82c9491b8b634f44f6a22396bde967740608222835c9e20e74a003ca2",
+  "testCasesPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhanes_public_lmf_weighted_output_implementation_preflight_test_cases.json",
+  "testCasesSha256": "cabbf239c8757ad8c807deaea0af6e137258ba5be6845905ba60430360569ab3",
+  "overallStatus": "PASS",
+  "boundary": {
+    "containsRealNhanesData": false,
+    "containsSyntheticOnly": true,
+    "implementationPreflightOnly": true,
+    "weightedDomainOutputImplemented": false,
+    "realWeightedRatesComputed": false,
+    "realDesignBasedIntervalsComputed": false,
+    "publicWeightedDomainOutputAllowed": false,
+    "calibrationAllowed": false,
+    "individualPredictionAllowed": false,
+    "note": "This report validates synthetic implementation preflight shape only; it does not implement or validate real NHANES weighted rates, intervals, calibration, causal inference, clinical use or individual prediction."
+  },
+  "summary": {
+    "caseCount": 8,
+    "pass": 8,
+    "fail": 0,
+    "allowedCount": 2,
+    "blockedCount": 6,
+    "policyIssueCount": 0,
+    "boundaryIssueCount": 0
+  },
+  "cases": [
+    {
+      "id": "synthetic-complete-preflight-shape",
+      "expectedDecision": "allow-preflight-shape",
+      "observedDecision": "allow-preflight-shape",
+      "status": "PASS",
+      "reasons": []
+    },
+    {
+      "id": "synthetic-estimator-pipeline-contract",
+      "expectedDecision": "allow-preflight-shape",
+      "observedDecision": "allow-preflight-shape",
+      "status": "PASS",
+      "reasons": []
+    },
+    {
+      "id": "block-row-level-data",
+      "expectedDecision": "block-preflight-shape",
+      "observedDecision": "block-preflight-shape",
+      "status": "PASS",
+      "reasons": [
+        "containsRowLevelData must be false"
+      ]
+    },
+    {
+      "id": "block-row-drop-before-design",
+      "expectedDecision": "block-preflight-shape",
+      "observedDecision": "block-preflight-shape",
+      "status": "PASS",
+      "reasons": [
+        "estimatorPlan.domainSubsettingFunction must be 'survey::subset'",
+        "estimatorPlan.domainIndicatorTiming must be 'after design object creation'",
+        "estimatorPlan.rowDropBeforeDesign must be False"
+      ]
+    },
+    {
+      "id": "block-real-weighted-rate",
+      "expectedDecision": "block-preflight-shape",
+      "observedDecision": "block-preflight-shape",
+      "status": "PASS",
+      "reasons": [
+        "containsRealWeightedRates must be false"
+      ]
+    },
+    {
+      "id": "block-public-ai-upload",
+      "expectedDecision": "block-preflight-shape",
+      "observedDecision": "block-preflight-shape",
+      "status": "PASS",
+      "reasons": [
+        "publicAiUploadRequested must be false"
+      ]
+    },
+    {
+      "id": "block-unweighted-count-key",
+      "expectedDecision": "block-preflight-shape",
+      "observedDecision": "block-preflight-shape",
+      "status": "PASS",
+      "reasons": [
+        "prohibited keys present: ['recordCount']"
+      ]
+    },
+    {
+      "id": "block-individual-prediction-type",
+      "expectedDecision": "block-preflight-shape",
+      "observedDecision": "block-preflight-shape",
+      "status": "PASS",
+      "reasons": [
+        "outputType 'individual_risk_score' is not allowed",
+        "outputType 'individual_risk_score' is explicitly forbidden"
+      ]
+    }
+  ]
+}

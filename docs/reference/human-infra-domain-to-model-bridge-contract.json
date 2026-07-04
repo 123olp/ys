@@ -1,0 +1,387 @@
+{
+  "schemaVersion": "human-infra.domain-to-model-bridge-contract.v1",
+  "contractId": "human-infra-domain-to-model-bridge-contract-2026-07-04",
+  "status": "active-domain-to-model-bridge-q2-current-q4-q5-blocked",
+  "owner": "tradecatlabs",
+  "purpose": "Define the bridge from Human Infra research domains to quantitative model candidate variables. The bridge prevents domains, route narratives, reviewed artifacts or enabling-resource discussions from being silently promoted into coefficients, causal effects, calibrated predictions or individual advice.",
+  "sourceOfTruth": {
+    "domainClassification": "domains/_possibility-space-control/classification.tsv",
+    "modelAdmissionContract": "docs/reference/human-infra-model-admission-contract.json",
+    "modelAdmissionCandidateRegistry": "docs/reference/human-infra-model-admission-candidate-registry.json",
+    "quantitativeCapabilityLadder": "docs/reference/human-infra-quantitative-capability-ladder.json",
+    "maturityGapRegister": "docs/reference/human-infra-maturity-gap-register.json",
+    "lifePathPredictionModelContract": "docs/reference/life-path-prediction-model-contract.md",
+    "lifePathPredictionModelGovernance": "docs/reference/life-path-prediction-model-governance.md",
+    "domainClaimEvidenceMatrix": "docs/reference/human-infra-domain-claim-evidence-matrix.json",
+    "domainSourceCardFieldExtraction": "docs/reference/human-infra-domain-source-card-field-extraction.json"
+  },
+  "currentDecision": {
+    "domainBridgeReady": true,
+    "representativeRegisterRequired": true,
+    "highestCurrentBridgeLevel": "B2-model-candidate-variable",
+    "mappedAdmissionLevel": "L2",
+    "mappedQuantitativeCapability": "Q2",
+    "candidateVariablesAllowed": true,
+    "syntheticScenarioUseAllowedOnlyWithSeparateQ3Scenario": true,
+    "aggregateCalibratedUseAllowed": false,
+    "individualUseAllowed": false,
+    "coefficientOutputAllowed": false,
+    "causalEffectOutputAllowed": false,
+    "interventionRankingAllowed": false,
+    "medicalAdviceAllowed": false,
+    "individualDeathDateOutputAllowed": false,
+    "reason": "The bridge can name where a domain could enter a future model, but it does not estimate parameters, assert causal effects, calibrate against real cohorts or support individual use."
+  },
+  "bridgeLevels": [
+    {
+      "bridgeLevel": "B0",
+      "name": "domain-only",
+      "mappedAdmissionLevel": "L0",
+      "mappedQuantitativeCapability": "Q0",
+      "allowedUse": "A domain may be listed as part of the Human Infra possibility-space map.",
+      "blockedUse": [
+        "variable-candidate",
+        "coefficient",
+        "effect-size",
+        "prediction"
+      ],
+      "minimumEvidence": [
+        "domain path",
+        "tier",
+        "non-goal boundary"
+      ]
+    },
+    {
+      "bridgeLevel": "B1",
+      "name": "reviewed-evidence-anchor",
+      "mappedAdmissionLevel": "L1",
+      "mappedQuantitativeCapability": "Q1",
+      "allowedUse": "A domain may point to bounded reviewed artifacts, source cards, claim evidence rows or downgrade triggers.",
+      "blockedUse": [
+        "model coefficient",
+        "causal effect",
+        "calibrated predictor",
+        "individual recommendation"
+      ],
+      "minimumEvidence": [
+        "source identity",
+        "exact claim use",
+        "transfer boundary",
+        "blocked uses"
+      ]
+    },
+    {
+      "bridgeLevel": "B2",
+      "name": "model-candidate-variable",
+      "mappedAdmissionLevel": "L2",
+      "mappedQuantitativeCapability": "Q2",
+      "allowedUse": "A domain may be represented as a candidate state variable, intervention family, observation process, time-accounting channel, action-policy input, access probability, option-value component, governance boundary or uncertainty channel.",
+      "blockedUse": [
+        "parameter estimate",
+        "calibrated coefficient",
+        "causal effect",
+        "survival prediction",
+        "individual advice"
+      ],
+      "minimumEvidence": [
+        "domain path",
+        "tier",
+        "subject-continuity function",
+        "model location",
+        "variable family",
+        "mechanism statement",
+        "measurement proxy",
+        "population or setting",
+        "endpoint or outcome family",
+        "uncertainty channel",
+        "downgrade trigger",
+        "prohibited-use boundary"
+      ]
+    },
+    {
+      "bridgeLevel": "B3",
+      "name": "synthetic-scenario-input",
+      "mappedAdmissionLevel": "L3",
+      "mappedQuantitativeCapability": "Q3",
+      "allowedUse": "A candidate may enter synthetic toy scenarios only when the scenario file, model card and output explicitly label it synthetic and uncalibrated.",
+      "blockedUse": [
+        "real cohort estimate",
+        "calibrated prediction",
+        "clinical validity claim",
+        "individual output"
+      ],
+      "minimumEvidence": [
+        "B2 bridge row",
+        "versioned synthetic scenario",
+        "synthetic-only label",
+        "sanity checks",
+        "no individual rows"
+      ]
+    },
+    {
+      "bridgeLevel": "B4",
+      "name": "aggregate-calibrated-input",
+      "mappedAdmissionLevel": "L4",
+      "mappedQuantitativeCapability": "Q4",
+      "allowedUse": "Blocked until governed data access, exact field confirmation, extraction, disclosure review, validation and calibration diagnostics exist.",
+      "blockedUse": [
+        "current repository use",
+        "individual death date",
+        "individual advice",
+        "unreviewed public output"
+      ],
+      "minimumEvidence": [
+        "governed data access",
+        "pre-registered estimand",
+        "exact variables and value labels",
+        "cohort flow",
+        "survey or sampling design",
+        "validation report",
+        "calibration diagnostics",
+        "disclosure review"
+      ]
+    },
+    {
+      "bridgeLevel": "B5",
+      "name": "individual-use",
+      "mappedAdmissionLevel": "L5",
+      "mappedQuantitativeCapability": "Q5",
+      "allowedUse": "Blocked by default in this repository.",
+      "blockedUse": [
+        "individual death date",
+        "individual life expectancy",
+        "medical advice",
+        "intervention ranking",
+        "automated eligibility or insurance decision"
+      ],
+      "minimumEvidence": [
+        "out of current project scope",
+        "external clinical governance",
+        "external ethics and regulatory review",
+        "prospective validation",
+        "human accountability model"
+      ]
+    }
+  ],
+  "modelLocations": [
+    {
+      "modelLocation": "state-variable",
+      "meaning": "A domain changes or describes the subject state X_t, such as biological condition, cognitive capacity, resource state or environment."
+    },
+    {
+      "modelLocation": "action-or-intervention",
+      "meaning": "A domain describes an action A_t, technology, treatment, tool, policy or practice that may alter the next state or observation process."
+    },
+    {
+      "modelLocation": "state-transition",
+      "meaning": "A domain may affect P(X_{t+1} | X_t, A_t), such as repair rate, decline rate, recovery rate or learning rate."
+    },
+    {
+      "modelLocation": "hazard-function",
+      "meaning": "A domain may affect lambda(t | X_t, A_t), including mortality, catastrophic failure, disease onset or acute risk."
+    },
+    {
+      "modelLocation": "observation-process",
+      "meaning": "A domain may affect what can be measured, detected, verified or monitored before a decision is made."
+    },
+    {
+      "modelLocation": "time-accounting",
+      "meaning": "A domain may affect calendar time, effective time, subjective time, relative/proper time or waiting cost."
+    },
+    {
+      "modelLocation": "action-policy",
+      "meaning": "A domain may affect decision quality, attention, executive control, learning, adherence, prioritization or task selection."
+    },
+    {
+      "modelLocation": "access-adoption-probability",
+      "meaning": "A domain may affect whether the subject can discover, afford, reach, understand, adopt or persist with an intervention."
+    },
+    {
+      "modelLocation": "option-value",
+      "meaning": "A domain may affect future choice sets, reversibility, waiting value, opportunity cost or possibility-space expansion."
+    },
+    {
+      "modelLocation": "governance-boundary",
+      "meaning": "A domain may affect what outputs, claims, data flows, public releases or uses are permitted."
+    },
+    {
+      "modelLocation": "uncertainty-channel",
+      "meaning": "A domain may identify uncertainty, bias, transfer limits, missingness, measurement error or downgrade conditions."
+    }
+  ],
+  "requiredRegisterFields": [
+    "bridgeId",
+    "domainId",
+    "domainPath",
+    "tier",
+    "tierName",
+    "bridgeLevel",
+    "mappedAdmissionLevel",
+    "mappedQuantitativeCapability",
+    "subjectContinuityFunction",
+    "modelLocation",
+    "variableFamily",
+    "candidateModelRole",
+    "mechanismStatement",
+    "measurementProxy",
+    "populationOrSetting",
+    "endpointOrOutcomeFamily",
+    "causalStatus",
+    "evidenceAnchor",
+    "uncertaintyChannel",
+    "downgradeTrigger",
+    "prohibitedUse",
+    "nextEvidenceNeeded",
+    "currentDecision"
+  ],
+  "bridgeGates": [
+    {
+      "gateId": "DMB-G1-domain-path",
+      "name": "Domain path and tier",
+      "requiredForBridgeLevels": [
+        "B1",
+        "B2",
+        "B3",
+        "B4"
+      ],
+      "passCondition": "domainPath exists in the repository and tier matches the possibility-space classification."
+    },
+    {
+      "gateId": "DMB-G2-model-location",
+      "name": "Model location",
+      "requiredForBridgeLevels": [
+        "B2",
+        "B3",
+        "B4"
+      ],
+      "passCondition": "The row names a valid modelLocation and explains how the domain enters the life-path model without producing a coefficient."
+    },
+    {
+      "gateId": "DMB-G3-mechanism",
+      "name": "Mechanism statement",
+      "requiredForBridgeLevels": [
+        "B2",
+        "B3",
+        "B4"
+      ],
+      "passCondition": "The row states the domain-to-variable-to-state/risk/time/access mechanism without claiming a quantified effect."
+    },
+    {
+      "gateId": "DMB-G4-measurement-proxy",
+      "name": "Measurement proxy",
+      "requiredForBridgeLevels": [
+        "B2",
+        "B3",
+        "B4"
+      ],
+      "passCondition": "The row identifies observable proxy fields, instruments, registries, biomarkers, survey items or governance artifacts that could later be checked."
+    },
+    {
+      "gateId": "DMB-G5-endpoint-or-outcome",
+      "name": "Endpoint or outcome family",
+      "requiredForBridgeLevels": [
+        "B2",
+        "B3",
+        "B4"
+      ],
+      "passCondition": "The row names the outcome family it could inform, such as survival, healthspan, effective time, future option value, adoption probability, calibration quality or governance safety."
+    },
+    {
+      "gateId": "DMB-G6-causal-status",
+      "name": "Causal status",
+      "requiredForBridgeLevels": [
+        "B2",
+        "B3",
+        "B4"
+      ],
+      "passCondition": "The row distinguishes causal hypothesis, association, mechanism, measurement, access/gating or governance boundary."
+    },
+    {
+      "gateId": "DMB-G7-downgrade-trigger",
+      "name": "Downgrade trigger",
+      "requiredForBridgeLevels": [
+        "B2",
+        "B3",
+        "B4"
+      ],
+      "passCondition": "The row declares what evidence failure, transfer issue or safety boundary would downgrade or block the candidate."
+    },
+    {
+      "gateId": "DMB-G8-prohibited-use",
+      "name": "Prohibited-use boundary",
+      "requiredForBridgeLevels": [
+        "B0",
+        "B1",
+        "B2",
+        "B3",
+        "B4",
+        "B5"
+      ],
+      "passCondition": "The row explicitly blocks coefficients, causal effects, calibrated prediction, medical advice, intervention ranking and individual death-date output unless a higher external governance process exists."
+    }
+  ],
+  "hardAbortGates": [
+    {
+      "abortId": "DMB-ABORT-1-no-domain-path",
+      "condition": "The domain path does not exist or tier cannot be reconciled with the classification table.",
+      "result": "blocked"
+    },
+    {
+      "abortId": "DMB-ABORT-2-no-model-location",
+      "condition": "The row cannot state whether the domain affects state, action, transition, hazard, observation, time accounting, policy, access, option value, governance or uncertainty.",
+      "result": "cannot-evaluate"
+    },
+    {
+      "abortId": "DMB-ABORT-3-narrative-to-coefficient-leap",
+      "condition": "A domain narrative is treated as a coefficient, effect size, calibrated predictor or scenario parameter without Q3/Q4 evidence.",
+      "result": "blocked"
+    },
+    {
+      "abortId": "DMB-ABORT-4-association-to-intervention-effect-leap",
+      "condition": "An association, biomarker, endpoint, access metric or observational claim is interpreted as a causal intervention effect without causal design.",
+      "result": "blocked"
+    },
+    {
+      "abortId": "DMB-ABORT-5-individual-output",
+      "condition": "The bridge is used to output an individual death date, individual life expectancy, personal medical advice, treatment selection or intervention ranking.",
+      "result": "blocked"
+    },
+    {
+      "abortId": "DMB-ABORT-6-raw-or-sensitive-data",
+      "condition": "The bridge row requires raw individual data, credentials, restricted files, personal identifiers or public AI upload of sensitive data.",
+      "result": "blocked"
+    }
+  ],
+  "minimumRepresentativeRegister": {
+    "requiredRows": 12,
+    "requiredTiers": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "requiredModelLocations": [
+      "state-variable",
+      "state-transition",
+      "hazard-function",
+      "observation-process",
+      "time-accounting",
+      "action-policy",
+      "access-adoption-probability",
+      "option-value",
+      "governance-boundary",
+      "uncertainty-channel"
+    ],
+    "maximumCurrentBridgeLevel": "B2",
+    "maximumCurrentAdmissionLevel": "L2",
+    "maximumCurrentQuantitativeCapability": "Q2"
+  },
+  "nonGoals": [
+    "This contract does not estimate model parameters.",
+    "This contract does not validate causal intervention effects.",
+    "This contract does not open aggregate calibrated research modeling.",
+    "This contract does not support individual prediction, individual death dates, medical advice or intervention ranking."
+  ]
+}

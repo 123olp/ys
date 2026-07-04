@@ -1,0 +1,82 @@
+{
+  "schemaVersion": "human-infra.nhanes-public-lmf-public-web-data-no-real-values-validation.v1",
+  "status": "PASS",
+  "generatedAt": "2026-07-04T20:22:38.642893+00:00",
+  "scanScope": {
+    "glob": "web/src/data/life-path-nhanes-public-lmf-*.json",
+    "fileCount": 20,
+    "files": [
+      "web/src/data/life-path-nhanes-public-lmf-aggregate-pilot-validation.json",
+      "web/src/data/life-path-nhanes-public-lmf-disclosure-output-envelope-validation.json",
+      "web/src/data/life-path-nhanes-public-lmf-disclosure-review-execution-validation.json",
+      "web/src/data/life-path-nhanes-public-lmf-disclosure-review-template-validation.json",
+      "web/src/data/life-path-nhanes-public-lmf-dof-sparse-domain-diagnostic-validation.json",
+      "web/src/data/life-path-nhanes-public-lmf-domain-indicator-diagnostic-validation.json",
+      "web/src/data/life-path-nhanes-public-lmf-domain-subpopulation-rule-readiness-validation.json",
+      "web/src/data/life-path-nhanes-public-lmf-effective-sample-ci-publication-validation.json",
+      "web/src/data/life-path-nhanes-public-lmf-eligible-base-readiness-validation.json",
+      "web/src/data/life-path-nhanes-public-lmf-local-run-evidence-manifest-validation.json",
+      "web/src/data/life-path-nhanes-public-lmf-public-output-implementation-review-execution-validation.json",
+      "web/src/data/life-path-nhanes-public-lmf-public-output-implementation-review-template-validation.json",
+      "web/src/data/life-path-nhanes-public-lmf-public-release-gate-validation.json",
+      "web/src/data/life-path-nhanes-public-lmf-public-web-data-no-real-values-validation.json",
+      "web/src/data/life-path-nhanes-public-lmf-r-survey-controlled-runtime-smoke-validation.json",
+      "web/src/data/life-path-nhanes-public-lmf-r-survey-runtime-smoke-validation.json",
+      "web/src/data/life-path-nhanes-public-lmf-survey-design-readiness-validation.json",
+      "web/src/data/life-path-nhanes-public-lmf-weighted-domain-output-readiness-validation.json",
+      "web/src/data/life-path-nhanes-public-lmf-weighted-estimator-readiness-validation.json",
+      "web/src/data/life-path-nhanes-public-lmf-weighted-output-implementation-preflight-validation.json"
+    ]
+  },
+  "policy": {
+    "forbiddenValueKeys": [
+      "RIAGENDR",
+      "RIDAGEYR",
+      "SEQN",
+      "ciLower",
+      "ciUpper",
+      "confidenceInterval95",
+      "confidenceIntervalLower",
+      "confidenceIntervalUpper",
+      "deathCount",
+      "deathDate",
+      "individualRiskScore",
+      "rawRows",
+      "recordCount",
+      "relativeStandardError",
+      "rowLevelData",
+      "standardError",
+      "unweightedCount",
+      "unweightedDeaths",
+      "weightSum",
+      "weightedDeaths",
+      "weightedMortalityRate",
+      "weightedRate"
+    ],
+    "mustBeFalseIfPresent": [
+      "calibrationAllowed",
+      "individualPredictionAllowed",
+      "medicalAdviceAllowed",
+      "publicWeightedDomainOutputAllowed",
+      "realWeightedOutputImplemented",
+      "realWeightedOutputPresent",
+      "realWeightedOutputReleased",
+      "realWeightedOutputReviewed",
+      "realWeightedRatesComputed"
+    ],
+    "mustBeTrueIfPresent": [
+      "trackedValuesOmitted"
+    ],
+    "ignoredLocalOutputsAllowed": false,
+    "publicWeightedDomainOutputAllowed": false,
+    "calibrationAllowed": false,
+    "individualPredictionAllowed": false
+  },
+  "summary": {
+    "forbiddenKeyHitCount": 0,
+    "booleanBoundaryIssueCount": 0,
+    "publicWebDataContainsRealWeightedValues": false,
+    "publicWebDataContainsRowLevelValues": false
+  },
+  "errors": []
+}

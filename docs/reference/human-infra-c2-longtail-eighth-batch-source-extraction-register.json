@@ -1,0 +1,1140 @@
+{
+  "schemaVersion": "human-infra.c2-longtail-eighth-batch-source-extraction-register.v1",
+  "registerId": "C2-LT-B8-SOURCE-EXTRACTION-REGISTER",
+  "status": "active-c2ltb8-source-extractions-pending-local-review-and-fresh-review",
+  "purpose": "Record bounded field-level source-context extraction for the eighth C2 long-tail batch covering pain, trauma recovery, neurodevelopment, sensory communication, autonomic regulation, BCI governance and living neural computation domains while keeping local review, independent fresh review, reviewed artifacts and model admission blocked.",
+  "sourceOfTruth": {
+    "sourceExtractionQueue": "docs/reference/human-infra-c2-longtail-eighth-batch-source-extraction-queue.json",
+    "promotionQueue": "docs/reference/human-infra-c2-longtail-eighth-batch-promotion-queue.json",
+    "sourceCardSystem": "docs/reference/source-card-system.md",
+    "maturityGapRegister": "docs/reference/human-infra-maturity-gap-register.json",
+    "maturityRoadmap": "docs/reference/human-infra-maturity-roadmap.md"
+  },
+  "scope": {
+    "batchId": "C2-LT-B8",
+    "queueTaskCount": 24,
+    "extractedTaskCount": 24,
+    "remainingTaskCount": 0,
+    "coveredDomainCount": 12,
+    "selectedTaskIds": [
+      "C2LTB8-EXT-001",
+      "C2LTB8-EXT-002",
+      "C2LTB8-EXT-003",
+      "C2LTB8-EXT-004",
+      "C2LTB8-EXT-005",
+      "C2LTB8-EXT-006",
+      "C2LTB8-EXT-007",
+      "C2LTB8-EXT-008",
+      "C2LTB8-EXT-009",
+      "C2LTB8-EXT-010",
+      "C2LTB8-EXT-011",
+      "C2LTB8-EXT-012",
+      "C2LTB8-EXT-013",
+      "C2LTB8-EXT-014",
+      "C2LTB8-EXT-015",
+      "C2LTB8-EXT-016",
+      "C2LTB8-EXT-017",
+      "C2LTB8-EXT-018",
+      "C2LTB8-EXT-019",
+      "C2LTB8-EXT-020",
+      "C2LTB8-EXT-021",
+      "C2LTB8-EXT-022",
+      "C2LTB8-EXT-023",
+      "C2LTB8-EXT-024"
+    ],
+    "extractionDepth": "bounded-source-context-field-extraction-before-local-review",
+    "currentLimitations": [
+      "This register records local field extraction only; it does not complete local source-context review or independent fresh review.",
+      "PubMed abstract routes, practice-portal pages, policy instruments and guideline pages may still require manual/fulltext or route-specific context review before artifact promotion.",
+      "Living neural computation and organoid intelligence rows are explicitly bounded as research-domain context, not evidence for network effects, scalable intelligence, consciousness or human-surpassing capability.",
+      "No row may be used for clinical advice, neurotechnology advice, biocomputing capability claims, calibrated prediction, individual death-date output, intervention ranking or domain-claim upgrade."
+    ]
+  },
+  "sourceAccessNotes": [
+    "Candidate URLs were inherited from the C2-LT-B8 promotion queue sourceCheck records created on 2026-07-03; this register does not perform independent fresh review.",
+    "PubMed routes are treated as bibliographic/abstract routes pending full source-context review when the exact guideline/article text is needed.",
+    "Official CDC, WHO, VA, ASHA, NIDCD, NEI, OECD and Frontiers routes remain bounded to their page/report/policy/article roles until local review confirms extractable claim scope.",
+    "Synthetic biological intelligence rows must remain blocked for network-effect, consciousness, sentience, deployable-computing or human-surpassing intelligence claims."
+  ],
+  "extractedRows": [
+    {
+      "taskId": "C2LTB8-EXT-001",
+      "domainId": "pain-suffering-control",
+      "localDomainPath": "domains/c2-source-maintenance/pain-suffering-control",
+      "sourceRefId": "C2LTB8-SRC-01-1",
+      "sourceTitle": "CDC Clinical Practice Guideline for Prescribing Opioids for Pain — United States, 2022",
+      "sourceUrl": "https://www.cdc.gov/mmwr/volumes/71/rr/rr7103a1.htm",
+      "extractionStatus": "completed-c2ltb8-source-context-extraction",
+      "sourceAccessStatus": "cdc-official-page-web-checked-2026-07-03-status-200-pending-local-context-review",
+      "sourceRole": "pain-treatment-opioid-risk-benefit-guideline",
+      "exactClaimUse": "Can support bounded framing that pain management requires explicit risk-benefit review, functional goals, nonopioid and opioid safety boundaries, follow-up and harm-mitigation rather than a simple analgesic-maximization target.",
+      "endpointDefinition": "Candidate endpoints include pain interference, pain intensity, functional restoration, opioid exposure, adverse events, overdose or misuse risk, sleep disruption and follow-up continuity.",
+      "populationOrSetting": "Adults with acute, subacute or chronic pain in outpatient care contexts covered by the CDC opioid prescribing guideline; not cancer pain, palliative care or end-of-life care as a generalized rule.",
+      "effectOrMechanismSignal": "Mechanism signal is risk-governed treatment: unmanaged pain consumes attention and action capacity, while poorly bounded opioid treatment can add overdose, dependence, sedation and care-fragmentation risks.",
+      "uncertaintyOrBias": "Guideline recommendations are not individual treatment instructions; evidence certainty varies by condition, opioid history, comorbidity, access to nonopioid care and local implementation.",
+      "transferBoundary": "Transfer only to pain domain endpoint design, analgesic-risk boundary and care-continuity framing; do not use to rank treatments or infer individual benefit, harm or lifespan effects.",
+      "downgradeTriggers": [
+        "source is used for individual advice, intervention ranking, clinical-validity claims, individual prognosis, individual death-date output or calibrated prediction",
+        "source is used beyond its guideline, review, public-health page, policy-instrument, article-route or practice-portal role without local source-context review and independent fresh review",
+        "later review cannot extract exact source text, endpoint definition, population/setting boundary, uncertainty and transfer boundary needed for bounded artifact fill",
+        "source is used to claim human longevity escape velocity, effective immortality, neurotechnology capability, living-neural-computation scalability, network-effect intelligence or human-surpassing intelligence"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 eighth-batch pain, trauma, neurodevelopment, sensory-communication, autonomic, BCI and living-neural-computation source extraction register",
+        "variables": [
+          "pain-interference",
+          "functional-restoration",
+          "opioid-exposure-risk",
+          "harm-mitigation-follow-up",
+          "sleep-disruption"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local source-context review, issue routing where flagged, and independent fresh review before any bounded artifact fill"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, route PubMed/fulltext/policy/practice-portal/living-neural-computation boundary issues as needed, then send eligible rows to independent fresh review before bounded artifact promotion."
+    },
+    {
+      "taskId": "C2LTB8-EXT-002",
+      "domainId": "pain-suffering-control",
+      "localDomainPath": "domains/c2-source-maintenance/pain-suffering-control",
+      "sourceRefId": "C2LTB8-SRC-01-2",
+      "sourceTitle": "WHO guideline for non-surgical management of chronic primary low back pain in adults in primary and community care settings",
+      "sourceUrl": "https://www.who.int/publications/i/item/9789240081789",
+      "extractionStatus": "completed-c2ltb8-source-context-extraction",
+      "sourceAccessStatus": "who-official-publication-page-web-checked-2026-07-03-status-200-pending-local-context-review",
+      "sourceRole": "chronic-low-back-pain-nonsurgical-management-guideline",
+      "exactClaimUse": "Can support bounded framing that chronic primary low back pain management should be evaluated through function, participation, pain experience and non-surgical care pathways in primary and community settings.",
+      "endpointDefinition": "Candidate endpoints include pain-related functioning, mobility, activities of daily living, quality of life, treatment burden, self-management support and care access.",
+      "populationOrSetting": "Adults with chronic primary low back pain in primary and community care settings; not all chronic pain syndromes or specialist surgical pathways.",
+      "effectOrMechanismSignal": "Mechanism signal is functional restoration and burden reduction: back pain can reduce mobility, sleep, work capacity and participation, while guideline-concordant non-surgical care targets function and self-management.",
+      "uncertaintyOrBias": "The guideline scope is condition-specific; intervention effects vary by setting, severity, comorbidities, care access and evidence certainty.",
+      "transferBoundary": "Transfer only to chronic low-back-pain function endpoints and conservative-care infrastructure; do not generalize to all pain, all spine disease or calibrated longevity gain.",
+      "downgradeTriggers": [
+        "source is used for individual advice, intervention ranking, clinical-validity claims, individual prognosis, individual death-date output or calibrated prediction",
+        "source is used beyond its guideline, review, public-health page, policy-instrument, article-route or practice-portal role without local source-context review and independent fresh review",
+        "later review cannot extract exact source text, endpoint definition, population/setting boundary, uncertainty and transfer boundary needed for bounded artifact fill",
+        "source is used to claim human longevity escape velocity, effective immortality, neurotechnology capability, living-neural-computation scalability, network-effect intelligence or human-surpassing intelligence"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 eighth-batch pain, trauma, neurodevelopment, sensory-communication, autonomic, BCI and living-neural-computation source extraction register",
+        "variables": [
+          "back-pain-function",
+          "mobility-participation",
+          "quality-of-life",
+          "self-management-access",
+          "care-burden"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local source-context review, issue routing where flagged, and independent fresh review before any bounded artifact fill"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, route PubMed/fulltext/policy/practice-portal/living-neural-computation boundary issues as needed, then send eligible rows to independent fresh review before bounded artifact promotion."
+    },
+    {
+      "taskId": "C2LTB8-EXT-003",
+      "domainId": "trauma-ptsd-adversity-recovery-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/trauma-ptsd-adversity-recovery-continuity",
+      "sourceRefId": "C2LTB8-SRC-02-1",
+      "sourceTitle": "VA/DoD Clinical Practice Guideline for Management of Posttraumatic Stress Disorder and Acute Stress Disorder",
+      "sourceUrl": "https://www.healthquality.va.gov/guidelines/MH/ptsd/",
+      "extractionStatus": "completed-c2ltb8-source-context-extraction",
+      "sourceAccessStatus": "va-official-route-web-checked-2026-07-03-status-200-pending-local-context-review",
+      "sourceRole": "ptsd-acute-stress-clinical-practice-guideline-route",
+      "exactClaimUse": "Can support bounded framing that PTSD and acute stress disorder require structured assessment and evidence-based management pathways because symptoms can impair sleep, social functioning, avoidance, cognition and long-term recovery.",
+      "endpointDefinition": "Candidate endpoints include PTSD symptom severity, nightmares or sleep disruption, functional impairment, trauma-focused treatment access, social reintegration and comorbid risk tracking.",
+      "populationOrSetting": "People with PTSD or acute stress disorder within VA/DoD guideline scope and adjacent adult clinical contexts; not all adversity or all mental health outcomes.",
+      "effectOrMechanismSignal": "Mechanism signal is trauma-response disruption: intrusive symptoms, avoidance, hyperarousal and comorbidity can reduce effective time, learning and social participation; guideline care offers a structured recovery pathway.",
+      "uncertaintyOrBias": "Guideline routes may require PDF/manual section review; recommendation strength and population fit vary, and VA/DoD context may not transfer cleanly to every care system.",
+      "transferBoundary": "Transfer only to trauma-recovery endpoint selection and care-pathway context; do not infer individual prognosis, treatment choice or mortality change.",
+      "downgradeTriggers": [
+        "source is used for individual advice, intervention ranking, clinical-validity claims, individual prognosis, individual death-date output or calibrated prediction",
+        "source is used beyond its guideline, review, public-health page, policy-instrument, article-route or practice-portal role without local source-context review and independent fresh review",
+        "later review cannot extract exact source text, endpoint definition, population/setting boundary, uncertainty and transfer boundary needed for bounded artifact fill",
+        "source is used to claim human longevity escape velocity, effective immortality, neurotechnology capability, living-neural-computation scalability, network-effect intelligence or human-surpassing intelligence"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 eighth-batch pain, trauma, neurodevelopment, sensory-communication, autonomic, BCI and living-neural-computation source extraction register",
+        "variables": [
+          "ptsd-symptom-severity",
+          "sleep-nightmares",
+          "functional-impairment",
+          "treatment-access",
+          "social-reintegration"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local source-context review, issue routing where flagged, and independent fresh review before any bounded artifact fill"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, route PubMed/fulltext/policy/practice-portal/living-neural-computation boundary issues as needed, then send eligible rows to independent fresh review before bounded artifact promotion."
+    },
+    {
+      "taskId": "C2LTB8-EXT-004",
+      "domainId": "trauma-ptsd-adversity-recovery-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/trauma-ptsd-adversity-recovery-continuity",
+      "sourceRefId": "C2LTB8-SRC-02-2",
+      "sourceTitle": "Clinician's Guide to Medications for PTSD",
+      "sourceUrl": "https://www.ptsd.va.gov/professional/treat/txessentials/clinician_guide_meds.asp",
+      "extractionStatus": "completed-c2ltb8-source-context-extraction",
+      "sourceAccessStatus": "va-official-route-web-checked-2026-07-03-status-200-pending-local-context-review",
+      "sourceRole": "ptsd-pharmacotherapy-boundary-guide",
+      "exactClaimUse": "Can support bounded framing that PTSD medication evidence must be separated from trauma-focused psychotherapy and broader recovery infrastructure, with medication choices constrained by indication, evidence and adverse-effect profile.",
+      "endpointDefinition": "Candidate endpoints include medication class, symptom response, adverse effects, sleep/nightmare treatment context, comorbidity interaction and adherence or discontinuation burden.",
+      "populationOrSetting": "Clinicians considering medications for PTSD within VA professional education context; not a full PTSD treatment guideline and not a patient-specific prescribing instruction.",
+      "effectOrMechanismSignal": "Mechanism signal is treatment-specific modulation of symptom burden, sleep and comorbidity, with adverse effects and incomplete response remaining central constraints.",
+      "uncertaintyOrBias": "Educational guide status and medication-specific evidence require local review; medication response is heterogeneous and may not address social, cognitive or trauma-processing dimensions.",
+      "transferBoundary": "Transfer only to pharmacotherapy boundary, medication-risk and PTSD symptom-burden variables; do not use for treatment ranking or advice.",
+      "downgradeTriggers": [
+        "source is used for individual advice, intervention ranking, clinical-validity claims, individual prognosis, individual death-date output or calibrated prediction",
+        "source is used beyond its guideline, review, public-health page, policy-instrument, article-route or practice-portal role without local source-context review and independent fresh review",
+        "later review cannot extract exact source text, endpoint definition, population/setting boundary, uncertainty and transfer boundary needed for bounded artifact fill",
+        "source is used to claim human longevity escape velocity, effective immortality, neurotechnology capability, living-neural-computation scalability, network-effect intelligence or human-surpassing intelligence"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 eighth-batch pain, trauma, neurodevelopment, sensory-communication, autonomic, BCI and living-neural-computation source extraction register",
+        "variables": [
+          "ptsd-medication-class",
+          "symptom-response",
+          "adverse-effect-burden",
+          "sleep-nightmare-treatment",
+          "adherence-continuity"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local source-context review, issue routing where flagged, and independent fresh review before any bounded artifact fill"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, route PubMed/fulltext/policy/practice-portal/living-neural-computation boundary issues as needed, then send eligible rows to independent fresh review before bounded artifact promotion."
+    },
+    {
+      "taskId": "C2LTB8-EXT-005",
+      "domainId": "adhd-executive-function-neurodevelopment-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/adhd-executive-function-neurodevelopment-continuity",
+      "sourceRefId": "C2LTB8-SRC-03-1",
+      "sourceTitle": "CDC ADHD Treatment",
+      "sourceUrl": "https://www.cdc.gov/adhd/treatment/index.html",
+      "extractionStatus": "completed-c2ltb8-source-context-extraction",
+      "sourceAccessStatus": "cdc-official-page-web-checked-2026-07-03-status-200-pending-local-context-review",
+      "sourceRole": "adhd-treatment-public-health-information-page",
+      "exactClaimUse": "Can support bounded framing that ADHD treatment can involve behavioral support, medication, school or family supports and care coordination aimed at reducing impairment in attention, impulse control and daily functioning.",
+      "endpointDefinition": "Candidate endpoints include ADHD symptoms, functional impairment, school or work performance, behavioral support access, medication management boundary and family or caregiver support.",
+      "populationOrSetting": "Children, adolescents or adults described by CDC public health information; not a specialty diagnostic protocol or individualized treatment recommendation.",
+      "effectOrMechanismSignal": "Mechanism signal is executive-function support: ADHD-related inattention, impulsivity and hyperactivity can raise task friction, reduce follow-through and consume caregiver or institutional resources.",
+      "uncertaintyOrBias": "CDC page is public information and may summarize rather than adjudicate evidence; treatment fit differs by age, comorbidity, school context and access.",
+      "transferBoundary": "Transfer only to ADHD resource and endpoint framing; do not infer diagnosis, medication need, individual productivity gain or lifespan effects.",
+      "downgradeTriggers": [
+        "source is used for individual advice, intervention ranking, clinical-validity claims, individual prognosis, individual death-date output or calibrated prediction",
+        "source is used beyond its guideline, review, public-health page, policy-instrument, article-route or practice-portal role without local source-context review and independent fresh review",
+        "later review cannot extract exact source text, endpoint definition, population/setting boundary, uncertainty and transfer boundary needed for bounded artifact fill",
+        "source is used to claim human longevity escape velocity, effective immortality, neurotechnology capability, living-neural-computation scalability, network-effect intelligence or human-surpassing intelligence"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 eighth-batch pain, trauma, neurodevelopment, sensory-communication, autonomic, BCI and living-neural-computation source extraction register",
+        "variables": [
+          "attention-symptoms",
+          "impulse-control",
+          "functional-impairment",
+          "behavioral-support-access",
+          "medication-management-boundary"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local source-context review, issue routing where flagged, and independent fresh review before any bounded artifact fill"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, route PubMed/fulltext/policy/practice-portal/living-neural-computation boundary issues as needed, then send eligible rows to independent fresh review before bounded artifact promotion."
+    },
+    {
+      "taskId": "C2LTB8-EXT-006",
+      "domainId": "adhd-executive-function-neurodevelopment-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/adhd-executive-function-neurodevelopment-continuity",
+      "sourceRefId": "C2LTB8-SRC-03-2",
+      "sourceTitle": "Clinical Practice Guideline for the Diagnosis, Evaluation, and Treatment of ADHD in Children and Adolescents",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/31570648/",
+      "extractionStatus": "completed-c2ltb8-source-context-extraction",
+      "sourceAccessStatus": "pubmed-abstract-route-web-checked-2026-07-03-status-200-pending-full-context-review",
+      "sourceRole": "pediatric-adhd-clinical-practice-guideline-pubmed-route",
+      "exactClaimUse": "Can support bounded framing that pediatric ADHD diagnosis, evaluation and treatment require structured guideline-based assessment of symptoms, impairment, comorbidities and treatment planning.",
+      "endpointDefinition": "Candidate endpoints include symptom criteria, impairment across settings, comorbidity assessment, treatment response, school functioning and follow-up continuity.",
+      "populationOrSetting": "Children and adolescents within the AAP pediatric guideline scope; not adult ADHD or unsupported self-diagnosis contexts.",
+      "effectOrMechanismSignal": "Mechanism signal is developmental executive-function impairment moderated by diagnosis quality, multimodal treatment planning and continuity of care.",
+      "uncertaintyOrBias": "PubMed route provides bibliographic/abstract access and requires guideline fulltext/context review before stronger claims; pediatric scope limits transfer.",
+      "transferBoundary": "Transfer only to pediatric ADHD guideline anchoring and endpoint design; do not use for adult claims, intervention ranking or calibrated model input.",
+      "downgradeTriggers": [
+        "source is used for individual advice, intervention ranking, clinical-validity claims, individual prognosis, individual death-date output or calibrated prediction",
+        "source is used beyond its guideline, review, public-health page, policy-instrument, article-route or practice-portal role without local source-context review and independent fresh review",
+        "later review cannot extract exact source text, endpoint definition, population/setting boundary, uncertainty and transfer boundary needed for bounded artifact fill",
+        "source is used to claim human longevity escape velocity, effective immortality, neurotechnology capability, living-neural-computation scalability, network-effect intelligence or human-surpassing intelligence",
+        "PubMed abstract route is treated as full guideline/article evidence before manual/fulltext context review"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 eighth-batch pain, trauma, neurodevelopment, sensory-communication, autonomic, BCI and living-neural-computation source extraction register",
+        "variables": [
+          "pediatric-adhd-diagnosis",
+          "cross-setting-impairment",
+          "comorbidity-assessment",
+          "school-function",
+          "treatment-follow-up"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local source-context review, issue routing where flagged, and independent fresh review before any bounded artifact fill"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, route PubMed/fulltext/policy/practice-portal/living-neural-computation boundary issues as needed, then send eligible rows to independent fresh review before bounded artifact promotion."
+    },
+    {
+      "taskId": "C2LTB8-EXT-007",
+      "domainId": "autism-neurodiversity-support-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/autism-neurodiversity-support-continuity",
+      "sourceRefId": "C2LTB8-SRC-04-1",
+      "sourceTitle": "CDC Treatment and Intervention Services for Autism Spectrum Disorder",
+      "sourceUrl": "https://www.cdc.gov/autism/treatment/index.html",
+      "extractionStatus": "completed-c2ltb8-source-context-extraction",
+      "sourceAccessStatus": "cdc-official-page-web-checked-2026-07-03-status-200-pending-local-context-review",
+      "sourceRole": "autism-treatment-intervention-public-health-page",
+      "exactClaimUse": "Can support bounded framing that autism support should be organized around intervention services, developmental support and functional needs rather than cure claims.",
+      "endpointDefinition": "Candidate endpoints include communication support, social/adaptive functioning, developmental service access, behavioral support, family support and co-occurring-condition navigation.",
+      "populationOrSetting": "Autistic people and families using CDC public health information; not a full clinical guideline or evidence ranking of all autism interventions.",
+      "effectOrMechanismSignal": "Mechanism signal is support-mediated participation: appropriate services can reduce barriers in communication, learning, daily living and caregiver burden.",
+      "uncertaintyOrBias": "Public information page does not calibrate intervention effect sizes; needs vary by age, profile, co-occurring conditions and service environment.",
+      "transferBoundary": "Transfer only to autism support infrastructure and endpoint framing; do not use for cure claims, normalization claims, individual intervention advice or productivity scoring.",
+      "downgradeTriggers": [
+        "source is used for individual advice, intervention ranking, clinical-validity claims, individual prognosis, individual death-date output or calibrated prediction",
+        "source is used beyond its guideline, review, public-health page, policy-instrument, article-route or practice-portal role without local source-context review and independent fresh review",
+        "later review cannot extract exact source text, endpoint definition, population/setting boundary, uncertainty and transfer boundary needed for bounded artifact fill",
+        "source is used to claim human longevity escape velocity, effective immortality, neurotechnology capability, living-neural-computation scalability, network-effect intelligence or human-surpassing intelligence"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 eighth-batch pain, trauma, neurodevelopment, sensory-communication, autonomic, BCI and living-neural-computation source extraction register",
+        "variables": [
+          "communication-support",
+          "adaptive-function",
+          "developmental-service-access",
+          "behavioral-support",
+          "family-support"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local source-context review, issue routing where flagged, and independent fresh review before any bounded artifact fill"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, route PubMed/fulltext/policy/practice-portal/living-neural-computation boundary issues as needed, then send eligible rows to independent fresh review before bounded artifact promotion."
+    },
+    {
+      "taskId": "C2LTB8-EXT-008",
+      "domainId": "autism-neurodiversity-support-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/autism-neurodiversity-support-continuity",
+      "sourceRefId": "C2LTB8-SRC-04-2",
+      "sourceTitle": "Identification, Evaluation, and Management of Children With Autism Spectrum Disorder",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/31843864/",
+      "extractionStatus": "completed-c2ltb8-source-context-extraction",
+      "sourceAccessStatus": "pubmed-abstract-route-web-checked-2026-07-03-status-200-pending-full-context-review",
+      "sourceRole": "pediatric-autism-clinical-report-pubmed-route",
+      "exactClaimUse": "Can support bounded framing that autism identification, evaluation and management in children require developmental surveillance, diagnostic assessment, co-occurring condition review and service coordination.",
+      "endpointDefinition": "Candidate endpoints include early identification, diagnostic evaluation, adaptive functioning, communication development, co-occurring conditions and family/service coordination.",
+      "populationOrSetting": "Children within pediatric autism clinical-report scope; not adult autism services or generic neurodiversity policy.",
+      "effectOrMechanismSignal": "Mechanism signal is early and coordinated support: recognition and management pathways can affect developmental support access, family burden and functional participation.",
+      "uncertaintyOrBias": "PubMed route needs full clinical report context before detailed claims; pediatric scope and service availability constrain transfer.",
+      "transferBoundary": "Transfer only to pediatric autism identification/management source context and endpoint design; do not use as treatment ranking or individual prediction evidence.",
+      "downgradeTriggers": [
+        "source is used for individual advice, intervention ranking, clinical-validity claims, individual prognosis, individual death-date output or calibrated prediction",
+        "source is used beyond its guideline, review, public-health page, policy-instrument, article-route or practice-portal role without local source-context review and independent fresh review",
+        "later review cannot extract exact source text, endpoint definition, population/setting boundary, uncertainty and transfer boundary needed for bounded artifact fill",
+        "source is used to claim human longevity escape velocity, effective immortality, neurotechnology capability, living-neural-computation scalability, network-effect intelligence or human-surpassing intelligence",
+        "PubMed abstract route is treated as full guideline/article evidence before manual/fulltext context review"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 eighth-batch pain, trauma, neurodevelopment, sensory-communication, autonomic, BCI and living-neural-computation source extraction register",
+        "variables": [
+          "early-identification",
+          "diagnostic-evaluation",
+          "adaptive-function",
+          "communication-development",
+          "service-coordination"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local source-context review, issue routing where flagged, and independent fresh review before any bounded artifact fill"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, route PubMed/fulltext/policy/practice-portal/living-neural-computation boundary issues as needed, then send eligible rows to independent fresh review before bounded artifact promotion."
+    },
+    {
+      "taskId": "C2LTB8-EXT-009",
+      "domainId": "brain-computer-interface-neurotechnology-governance",
+      "localDomainPath": "domains/c2-source-maintenance/brain-computer-interface-neurotechnology-governance",
+      "sourceRefId": "C2LTB8-SRC-05-1",
+      "sourceTitle": "Ethical aspects of brain computer interfaces: a scoping review",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5699990/",
+      "extractionStatus": "completed-c2ltb8-source-context-extraction",
+      "sourceAccessStatus": "pmc-open-article-route-web-checked-2026-07-03-status-200-pending-local-context-review",
+      "sourceRole": "bci-ethics-scoping-review",
+      "exactClaimUse": "Can support bounded framing that brain-computer interfaces raise governance-relevant ethical issues around privacy, autonomy, identity, agency, consent, safety, responsibility and equitable access.",
+      "endpointDefinition": "Candidate endpoints include consent quality, neural-data privacy, autonomy safeguards, agency/identity risk, safety reporting, access equity and oversight process.",
+      "populationOrSetting": "BCI research, clinical or assistive neurotechnology contexts covered by the ethics review; not a performance benchmark or device approval source.",
+      "effectOrMechanismSignal": "Mechanism signal is governance-mediated tool coupling: neural interfaces can change action capacity and communication but also create new risks at the subject-boundary layer.",
+      "uncertaintyOrBias": "Scoping-review coverage depends on included literature and date; ethical categories do not provide calibrated device benefit or safety estimates.",
+      "transferBoundary": "Transfer only to BCI governance, consent and subject-boundary artifact design; do not use to claim BCI efficacy, mind uploading or intelligence enhancement.",
+      "downgradeTriggers": [
+        "source is used for individual advice, intervention ranking, clinical-validity claims, individual prognosis, individual death-date output or calibrated prediction",
+        "source is used beyond its guideline, review, public-health page, policy-instrument, article-route or practice-portal role without local source-context review and independent fresh review",
+        "later review cannot extract exact source text, endpoint definition, population/setting boundary, uncertainty and transfer boundary needed for bounded artifact fill",
+        "source is used to claim human longevity escape velocity, effective immortality, neurotechnology capability, living-neural-computation scalability, network-effect intelligence or human-surpassing intelligence"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 eighth-batch pain, trauma, neurodevelopment, sensory-communication, autonomic, BCI and living-neural-computation source extraction register",
+        "variables": [
+          "neural-data-privacy",
+          "consent-quality",
+          "agency-autonomy",
+          "identity-boundary",
+          "safety-oversight"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local source-context review, issue routing where flagged, and independent fresh review before any bounded artifact fill"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, route PubMed/fulltext/policy/practice-portal/living-neural-computation boundary issues as needed, then send eligible rows to independent fresh review before bounded artifact promotion."
+    },
+    {
+      "taskId": "C2LTB8-EXT-010",
+      "domainId": "brain-computer-interface-neurotechnology-governance",
+      "localDomainPath": "domains/c2-source-maintenance/brain-computer-interface-neurotechnology-governance",
+      "sourceRefId": "C2LTB8-SRC-05-2",
+      "sourceTitle": "OECD Recommendation on Responsible Innovation in Neurotechnology",
+      "sourceUrl": "https://legalinstruments.oecd.org/en/instruments/OECD-LEGAL-0457",
+      "extractionStatus": "completed-c2ltb8-source-context-extraction",
+      "sourceAccessStatus": "oecd-policy-instrument-route-web-checked-2026-07-03-status-200-pending-local-context-review",
+      "sourceRole": "responsible-neurotechnology-policy-instrument",
+      "exactClaimUse": "Can support bounded framing that neurotechnology innovation should be governed through responsible innovation principles covering safety, privacy, agency, inclusiveness, transparency and societal values.",
+      "endpointDefinition": "Candidate endpoints include responsible-innovation process, risk assessment, transparency, data governance, user agency, stakeholder engagement and oversight accountability.",
+      "populationOrSetting": "Neurotechnology policy and governance contexts addressed by OECD legal instrument; not a clinical trial or engineering performance source.",
+      "effectOrMechanismSignal": "Mechanism signal is institutional constraint: neurotechnology can affect subject capacities, so governance quality becomes part of Human Infra conversion and boundary protection.",
+      "uncertaintyOrBias": "Policy instruments define normative expectations, not empirical effect sizes; national implementation and technology class differ.",
+      "transferBoundary": "Transfer only to governance contract, review checklist and BCI/neurotechnology policy artifacts; do not use as evidence of neurotechnology effectiveness.",
+      "downgradeTriggers": [
+        "source is used for individual advice, intervention ranking, clinical-validity claims, individual prognosis, individual death-date output or calibrated prediction",
+        "source is used beyond its guideline, review, public-health page, policy-instrument, article-route or practice-portal role without local source-context review and independent fresh review",
+        "later review cannot extract exact source text, endpoint definition, population/setting boundary, uncertainty and transfer boundary needed for bounded artifact fill",
+        "source is used to claim human longevity escape velocity, effective immortality, neurotechnology capability, living-neural-computation scalability, network-effect intelligence or human-surpassing intelligence"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 eighth-batch pain, trauma, neurodevelopment, sensory-communication, autonomic, BCI and living-neural-computation source extraction register",
+        "variables": [
+          "responsible-innovation",
+          "risk-assessment",
+          "data-governance",
+          "user-agency",
+          "oversight-accountability"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local source-context review, issue routing where flagged, and independent fresh review before any bounded artifact fill"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, route PubMed/fulltext/policy/practice-portal/living-neural-computation boundary issues as needed, then send eligible rows to independent fresh review before bounded artifact promotion."
+    },
+    {
+      "taskId": "C2LTB8-EXT-011",
+      "domainId": "synthetic-biological-intelligence-organoid-computing-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/synthetic-biological-intelligence-organoid-computing-continuity",
+      "sourceRefId": "C2LTB8-SRC-06-1",
+      "sourceTitle": "In vitro neurons learn and exhibit sentience when embodied in a simulated game-world",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/36208624/",
+      "extractionStatus": "completed-c2ltb8-source-context-extraction",
+      "sourceAccessStatus": "pubmed-abstract-route-web-checked-2026-07-03-status-200-pending-full-context-review",
+      "sourceRole": "living-neural-computation-closed-loop-learning-paper-pubmed-route",
+      "exactClaimUse": "Can support bounded framing that cultured neurons in a closed-loop simulated game environment can exhibit adaptive electrophysiological responses under feedback, making living-neural computation a candidate research object.",
+      "endpointDefinition": "Candidate endpoints include closed-loop feedback response, electrophysiological adaptation, task performance proxy, stimulation-response coupling and culture viability.",
+      "populationOrSetting": "In vitro neuronal cultures embodied in a simulated game-world research setup; not human cognition, consciousness or deployable computing infrastructure.",
+      "effectOrMechanismSignal": "Mechanism signal is embodied feedback-driven adaptation: living neural tissue can change activity patterns in response to structured stimulation and feedback.",
+      "uncertaintyOrBias": "PubMed route and article interpretation require careful local review; terminology such as sentience is controversial and must not be converted into consciousness or intelligence claims.",
+      "transferBoundary": "Transfer only to synthetic biological intelligence candidate-domain framing and closed-loop adaptation variables; do not claim network effects, scalable intelligence, human-level intelligence or human-surpassing capability.",
+      "downgradeTriggers": [
+        "source is used for individual advice, intervention ranking, clinical-validity claims, individual prognosis, individual death-date output or calibrated prediction",
+        "source is used beyond its guideline, review, public-health page, policy-instrument, article-route or practice-portal role without local source-context review and independent fresh review",
+        "later review cannot extract exact source text, endpoint definition, population/setting boundary, uncertainty and transfer boundary needed for bounded artifact fill",
+        "source is used to claim human longevity escape velocity, effective immortality, neurotechnology capability, living-neural-computation scalability, network-effect intelligence or human-surpassing intelligence",
+        "living neural computation source is used to infer consciousness, sentience-as-moral-status, deployable AI replacement, network scaling law or superhuman capability rather than bounded research-domain context",
+        "PubMed abstract route is treated as full guideline/article evidence before manual/fulltext context review"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 eighth-batch pain, trauma, neurodevelopment, sensory-communication, autonomic, BCI and living-neural-computation source extraction register",
+        "variables": [
+          "closed-loop-feedback",
+          "electrophysiological-adaptation",
+          "task-performance-proxy",
+          "culture-viability",
+          "stimulation-response-coupling"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local source-context review, issue routing where flagged, and independent fresh review before any bounded artifact fill"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, route PubMed/fulltext/policy/practice-portal/living-neural-computation boundary issues as needed, then send eligible rows to independent fresh review before bounded artifact promotion."
+    },
+    {
+      "taskId": "C2LTB8-EXT-012",
+      "domainId": "synthetic-biological-intelligence-organoid-computing-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/synthetic-biological-intelligence-organoid-computing-continuity",
+      "sourceRefId": "C2LTB8-SRC-06-2",
+      "sourceTitle": "Organoid intelligence (OI): the new frontier in biocomputing and intelligence-in-a-dish",
+      "sourceUrl": "https://www.frontiersin.org/journals/science/articles/10.3389/fsci.2023.1017235/full",
+      "extractionStatus": "completed-c2ltb8-source-context-extraction",
+      "sourceAccessStatus": "frontiers-open-article-route-web-checked-2026-07-03-status-200-pending-local-context-review",
+      "sourceRole": "organoid-intelligence-biocomputing-research-agenda",
+      "exactClaimUse": "Can support bounded framing that organoid intelligence is proposed as a research agenda connecting brain organoids, interfaces, learning assays, computation and ethics rather than a mature computing platform.",
+      "endpointDefinition": "Candidate endpoints include organoid maturation, input-output interface quality, learning assay design, viability, scalability limits, ethical oversight and benchmarking readiness.",
+      "populationOrSetting": "Brain-organoid or organoid-computing research agenda contexts; not current deployable AI replacement or human-equivalent cognition.",
+      "effectOrMechanismSignal": "Mechanism signal is bio-computational substrate exploration: living neural tissue may provide adaptive properties, but measurement, scaling, ethics and reproducibility remain central blockers.",
+      "uncertaintyOrBias": "Frontiers article is agenda/review framing and cannot prove capability; definitions, benchmarks, scalability and ethical governance remain unsettled.",
+      "transferBoundary": "Transfer only to C2/C3 candidate research-domain mapping for living computation; do not infer network effects, intelligence scaling law, superhuman cognition or practical replacement of silicon AI.",
+      "downgradeTriggers": [
+        "source is used for individual advice, intervention ranking, clinical-validity claims, individual prognosis, individual death-date output or calibrated prediction",
+        "source is used beyond its guideline, review, public-health page, policy-instrument, article-route or practice-portal role without local source-context review and independent fresh review",
+        "later review cannot extract exact source text, endpoint definition, population/setting boundary, uncertainty and transfer boundary needed for bounded artifact fill",
+        "source is used to claim human longevity escape velocity, effective immortality, neurotechnology capability, living-neural-computation scalability, network-effect intelligence or human-surpassing intelligence",
+        "living neural computation source is used to infer consciousness, sentience-as-moral-status, deployable AI replacement, network scaling law or superhuman capability rather than bounded research-domain context"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 eighth-batch pain, trauma, neurodevelopment, sensory-communication, autonomic, BCI and living-neural-computation source extraction register",
+        "variables": [
+          "organoid-maturation",
+          "interface-quality",
+          "learning-assay-readiness",
+          "scalability-limit",
+          "ethical-oversight"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local source-context review, issue routing where flagged, and independent fresh review before any bounded artifact fill"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, route PubMed/fulltext/policy/practice-portal/living-neural-computation boundary issues as needed, then send eligible rows to independent fresh review before bounded artifact promotion."
+    },
+    {
+      "taskId": "C2LTB8-EXT-013",
+      "domainId": "autonomic-nervous-system-homeostasis",
+      "localDomainPath": "domains/c2-source-maintenance/autonomic-nervous-system-homeostasis",
+      "sourceRefId": "C2LTB8-SRC-07-1",
+      "sourceTitle": "2015 Heart Rhythm Society Expert Consensus Statement on POTS, IST, and Vasovagal Syncope",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5267948/",
+      "extractionStatus": "completed-c2ltb8-source-context-extraction",
+      "sourceAccessStatus": "pmc-open-article-route-web-checked-2026-07-03-status-200-pending-local-context-review",
+      "sourceRole": "autonomic-disorder-consensus-statement-open-route",
+      "exactClaimUse": "Can support bounded framing that autonomic disorders such as POTS, inappropriate sinus tachycardia and vasovagal syncope require consensus diagnosis and management pathways because orthostatic intolerance can impair mobility, cognition and daily function.",
+      "endpointDefinition": "Candidate endpoints include heart-rate response, orthostatic symptoms, syncope or presyncope, functional limitation, symptom burden and treatment-management continuity.",
+      "populationOrSetting": "Patients with POTS, inappropriate sinus tachycardia or vasovagal syncope within expert-consensus scope; not all dysautonomia or fatigue conditions.",
+      "effectOrMechanismSignal": "Mechanism signal is autonomic homeostasis disruption: posture, circulation and heart-rate regulation failures can reduce standing time, activity, cognitive bandwidth and reliability of action.",
+      "uncertaintyOrBias": "Consensus statements combine evidence and expert judgment; diagnostic heterogeneity and comorbidity limit direct quantitative transfer.",
+      "transferBoundary": "Transfer only to autonomic endpoint definition and care-pathway context; do not use for individual diagnosis, treatment advice or calibrated risk prediction.",
+      "downgradeTriggers": [
+        "source is used for individual advice, intervention ranking, clinical-validity claims, individual prognosis, individual death-date output or calibrated prediction",
+        "source is used beyond its guideline, review, public-health page, policy-instrument, article-route or practice-portal role without local source-context review and independent fresh review",
+        "later review cannot extract exact source text, endpoint definition, population/setting boundary, uncertainty and transfer boundary needed for bounded artifact fill",
+        "source is used to claim human longevity escape velocity, effective immortality, neurotechnology capability, living-neural-computation scalability, network-effect intelligence or human-surpassing intelligence"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 eighth-batch pain, trauma, neurodevelopment, sensory-communication, autonomic, BCI and living-neural-computation source extraction register",
+        "variables": [
+          "orthostatic-symptoms",
+          "heart-rate-response",
+          "syncope-presyncope",
+          "functional-limitation",
+          "management-continuity"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local source-context review, issue routing where flagged, and independent fresh review before any bounded artifact fill"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, route PubMed/fulltext/policy/practice-portal/living-neural-computation boundary issues as needed, then send eligible rows to independent fresh review before bounded artifact promotion."
+    },
+    {
+      "taskId": "C2LTB8-EXT-014",
+      "domainId": "autonomic-nervous-system-homeostasis",
+      "localDomainPath": "domains/c2-source-maintenance/autonomic-nervous-system-homeostasis",
+      "sourceRefId": "C2LTB8-SRC-07-2",
+      "sourceTitle": "Autonomic dysfunction in long COVID: rationale, physiology and management strategies",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/34384200/",
+      "extractionStatus": "completed-c2ltb8-source-context-extraction",
+      "sourceAccessStatus": "pubmed-abstract-route-web-checked-2026-07-03-status-200-pending-full-context-review",
+      "sourceRole": "long-covid-autonomic-dysfunction-review-pubmed-route",
+      "exactClaimUse": "Can support bounded framing that autonomic dysfunction is a plausible management-relevant component in some long-COVID presentations, especially where orthostatic intolerance, palpitations, fatigue or exercise intolerance appear.",
+      "endpointDefinition": "Candidate endpoints include orthostatic intolerance, heart-rate or blood-pressure response, fatigue, palpitations, exercise intolerance and management strategy boundaries.",
+      "populationOrSetting": "Long-COVID or post-acute COVID contexts discussed by the review; not all long-COVID cases or all autonomic disorders.",
+      "effectOrMechanismSignal": "Mechanism signal is post-infectious autonomic disruption affecting energy, posture tolerance and activity reliability.",
+      "uncertaintyOrBias": "PubMed route and review status require context review; mechanisms and prevalence remain uncertain, and management strategies may be extrapolated from related dysautonomia contexts.",
+      "transferBoundary": "Transfer only to long-COVID autonomic hypothesis and endpoint framing; do not infer causal certainty, prevalence, individual diagnosis or treatment ranking.",
+      "downgradeTriggers": [
+        "source is used for individual advice, intervention ranking, clinical-validity claims, individual prognosis, individual death-date output or calibrated prediction",
+        "source is used beyond its guideline, review, public-health page, policy-instrument, article-route or practice-portal role without local source-context review and independent fresh review",
+        "later review cannot extract exact source text, endpoint definition, population/setting boundary, uncertainty and transfer boundary needed for bounded artifact fill",
+        "source is used to claim human longevity escape velocity, effective immortality, neurotechnology capability, living-neural-computation scalability, network-effect intelligence or human-surpassing intelligence",
+        "PubMed abstract route is treated as full guideline/article evidence before manual/fulltext context review"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 eighth-batch pain, trauma, neurodevelopment, sensory-communication, autonomic, BCI and living-neural-computation source extraction register",
+        "variables": [
+          "orthostatic-intolerance",
+          "fatigue",
+          "palpitations",
+          "exercise-intolerance",
+          "blood-pressure-heart-rate-response"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local source-context review, issue routing where flagged, and independent fresh review before any bounded artifact fill"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, route PubMed/fulltext/policy/practice-portal/living-neural-computation boundary issues as needed, then send eligible rows to independent fresh review before bounded artifact promotion."
+    },
+    {
+      "taskId": "C2LTB8-EXT-015",
+      "domainId": "speech-language-communication-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/speech-language-communication-continuity",
+      "sourceRefId": "C2LTB8-SRC-08-1",
+      "sourceTitle": "ASHA Practice Portal: Spoken Language Disorders",
+      "sourceUrl": "https://www.asha.org/practice-portal/clinical-topics/spoken-language-disorders/",
+      "extractionStatus": "completed-c2ltb8-source-context-extraction",
+      "sourceAccessStatus": "asha-practice-portal-web-checked-2026-07-03-status-200-pending-local-context-review",
+      "sourceRole": "spoken-language-disorders-practice-portal",
+      "exactClaimUse": "Can support bounded framing that spoken-language disorders affect comprehension, expression, social participation, learning and service needs, making communication capacity part of subject-continuity infrastructure.",
+      "endpointDefinition": "Candidate endpoints include expressive language, receptive language, pragmatic communication, educational participation, social participation and speech-language service access.",
+      "populationOrSetting": "People with spoken language disorders in ASHA practice-portal context; not a single disease mechanism or mortality model.",
+      "effectOrMechanismSignal": "Mechanism signal is communication-mediated participation: language impairment can block education, relationships, care navigation and task execution even when other capacities remain intact.",
+      "uncertaintyOrBias": "Practice portal is professional guidance context and does not provide a single effect estimate; assessment and intervention vary by age, etiology, culture and language.",
+      "transferBoundary": "Transfer only to communication endpoint and support-infrastructure framing; do not use to rank therapies or infer individual developmental outcome.",
+      "downgradeTriggers": [
+        "source is used for individual advice, intervention ranking, clinical-validity claims, individual prognosis, individual death-date output or calibrated prediction",
+        "source is used beyond its guideline, review, public-health page, policy-instrument, article-route or practice-portal role without local source-context review and independent fresh review",
+        "later review cannot extract exact source text, endpoint definition, population/setting boundary, uncertainty and transfer boundary needed for bounded artifact fill",
+        "source is used to claim human longevity escape velocity, effective immortality, neurotechnology capability, living-neural-computation scalability, network-effect intelligence or human-surpassing intelligence"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 eighth-batch pain, trauma, neurodevelopment, sensory-communication, autonomic, BCI and living-neural-computation source extraction register",
+        "variables": [
+          "expressive-language",
+          "receptive-language",
+          "pragmatic-communication",
+          "service-access",
+          "participation"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local source-context review, issue routing where flagged, and independent fresh review before any bounded artifact fill"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, route PubMed/fulltext/policy/practice-portal/living-neural-computation boundary issues as needed, then send eligible rows to independent fresh review before bounded artifact promotion."
+    },
+    {
+      "taskId": "C2LTB8-EXT-016",
+      "domainId": "speech-language-communication-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/speech-language-communication-continuity",
+      "sourceRefId": "C2LTB8-SRC-08-2",
+      "sourceTitle": "NIDCD Speech and Language Developmental Milestones",
+      "sourceUrl": "https://www.nidcd.nih.gov/health/speech-and-language",
+      "extractionStatus": "completed-c2ltb8-source-context-extraction",
+      "sourceAccessStatus": "nidcd-official-page-web-checked-2026-07-03-status-200-pending-local-context-review",
+      "sourceRole": "speech-language-developmental-milestone-public-health-page",
+      "exactClaimUse": "Can support bounded framing that speech and language milestones provide a developmental observation route for identifying possible communication delays and referral needs.",
+      "endpointDefinition": "Candidate endpoints include age-linked speech milestones, language comprehension, expressive vocabulary, referral signal, caregiver observation and developmental follow-up.",
+      "populationOrSetting": "Infants, children and caregivers using NIDCD milestone information; not a diagnostic test or complete developmental assessment.",
+      "effectOrMechanismSignal": "Mechanism signal is early detection: delayed speech-language signals can affect learning, social participation and access to early support.",
+      "uncertaintyOrBias": "Milestone variation is normal and culturally/language dependent; page-level information does not diagnose disorders or quantify intervention effects.",
+      "transferBoundary": "Transfer only to developmental communication screening and referral-route framing; do not use for diagnosis, prognosis or individual intervention advice.",
+      "downgradeTriggers": [
+        "source is used for individual advice, intervention ranking, clinical-validity claims, individual prognosis, individual death-date output or calibrated prediction",
+        "source is used beyond its guideline, review, public-health page, policy-instrument, article-route or practice-portal role without local source-context review and independent fresh review",
+        "later review cannot extract exact source text, endpoint definition, population/setting boundary, uncertainty and transfer boundary needed for bounded artifact fill",
+        "source is used to claim human longevity escape velocity, effective immortality, neurotechnology capability, living-neural-computation scalability, network-effect intelligence or human-surpassing intelligence"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 eighth-batch pain, trauma, neurodevelopment, sensory-communication, autonomic, BCI and living-neural-computation source extraction register",
+        "variables": [
+          "speech-milestones",
+          "language-comprehension",
+          "expressive-vocabulary",
+          "referral-signal",
+          "developmental-follow-up"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local source-context review, issue routing where flagged, and independent fresh review before any bounded artifact fill"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, route PubMed/fulltext/policy/practice-portal/living-neural-computation boundary issues as needed, then send eligible rows to independent fresh review before bounded artifact promotion."
+    },
+    {
+      "taskId": "C2LTB8-EXT-017",
+      "domainId": "hearing-auditory-communication-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/hearing-auditory-communication-continuity",
+      "sourceRefId": "C2LTB8-SRC-09-1",
+      "sourceTitle": "WHO World report on hearing",
+      "sourceUrl": "https://www.who.int/publications/i/item/9789240020481",
+      "extractionStatus": "completed-c2ltb8-source-context-extraction",
+      "sourceAccessStatus": "who-official-publication-page-web-checked-2026-07-03-status-200-pending-local-context-review",
+      "sourceRole": "global-hearing-public-health-report",
+      "exactClaimUse": "Can support bounded framing that hearing loss affects communication, education, work participation and social connection, and that ear and hearing care is a public-health infrastructure issue.",
+      "endpointDefinition": "Candidate endpoints include hearing loss prevalence, hearing thresholds, communication participation, hearing-care access, assistive technology access and social/educational impact.",
+      "populationOrSetting": "Global populations and health-system contexts described in WHO World Report on Hearing; not a patient-specific audiology report.",
+      "effectOrMechanismSignal": "Mechanism signal is sensory communication access: hearing impairment can reduce information intake, social participation, safety awareness and education/work continuity.",
+      "uncertaintyOrBias": "Global report estimates and recommendations need local context; burden and intervention access vary by country, age, income and service infrastructure.",
+      "transferBoundary": "Transfer only to hearing as a communication-continuity and public-health domain; do not infer individual prognosis or device choice.",
+      "downgradeTriggers": [
+        "source is used for individual advice, intervention ranking, clinical-validity claims, individual prognosis, individual death-date output or calibrated prediction",
+        "source is used beyond its guideline, review, public-health page, policy-instrument, article-route or practice-portal role without local source-context review and independent fresh review",
+        "later review cannot extract exact source text, endpoint definition, population/setting boundary, uncertainty and transfer boundary needed for bounded artifact fill",
+        "source is used to claim human longevity escape velocity, effective immortality, neurotechnology capability, living-neural-computation scalability, network-effect intelligence or human-surpassing intelligence"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 eighth-batch pain, trauma, neurodevelopment, sensory-communication, autonomic, BCI and living-neural-computation source extraction register",
+        "variables": [
+          "hearing-threshold",
+          "communication-participation",
+          "hearing-care-access",
+          "assistive-technology-access",
+          "social-educational-impact"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local source-context review, issue routing where flagged, and independent fresh review before any bounded artifact fill"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, route PubMed/fulltext/policy/practice-portal/living-neural-computation boundary issues as needed, then send eligible rows to independent fresh review before bounded artifact promotion."
+    },
+    {
+      "taskId": "C2LTB8-EXT-018",
+      "domainId": "hearing-auditory-communication-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/hearing-auditory-communication-continuity",
+      "sourceRefId": "C2LTB8-SRC-09-2",
+      "sourceTitle": "NIDCD Age-Related Hearing Loss",
+      "sourceUrl": "https://www.nidcd.nih.gov/health/age-related-hearing-loss",
+      "extractionStatus": "completed-c2ltb8-source-context-extraction",
+      "sourceAccessStatus": "nidcd-official-page-web-checked-2026-07-03-status-200-pending-local-context-review",
+      "sourceRole": "age-related-hearing-loss-public-health-page",
+      "exactClaimUse": "Can support bounded framing that age-related hearing loss can impair conversation, safety cues and social participation, making auditory continuity a source-maintenance and participation issue.",
+      "endpointDefinition": "Candidate endpoints include age-related hearing difficulty, speech-in-noise difficulty, communication limitation, social withdrawal risk, hearing evaluation and assistive-support route.",
+      "populationOrSetting": "Adults with age-related hearing concerns using NIDCD health information; not all hearing disorders or individualized audiology guidance.",
+      "effectOrMechanismSignal": "Mechanism signal is progressive auditory access loss affecting communication bandwidth, relationship maintenance and task safety.",
+      "uncertaintyOrBias": "Educational health page does not quantify effect size or prescribe devices; causes and management differ across individuals.",
+      "transferBoundary": "Transfer only to age-related hearing-loss endpoint framing and care-navigation context; do not use for device ranking or clinical advice.",
+      "downgradeTriggers": [
+        "source is used for individual advice, intervention ranking, clinical-validity claims, individual prognosis, individual death-date output or calibrated prediction",
+        "source is used beyond its guideline, review, public-health page, policy-instrument, article-route or practice-portal role without local source-context review and independent fresh review",
+        "later review cannot extract exact source text, endpoint definition, population/setting boundary, uncertainty and transfer boundary needed for bounded artifact fill",
+        "source is used to claim human longevity escape velocity, effective immortality, neurotechnology capability, living-neural-computation scalability, network-effect intelligence or human-surpassing intelligence"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 eighth-batch pain, trauma, neurodevelopment, sensory-communication, autonomic, BCI and living-neural-computation source extraction register",
+        "variables": [
+          "age-related-hearing-difficulty",
+          "speech-in-noise",
+          "communication-limitation",
+          "hearing-evaluation-route",
+          "assistive-support"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local source-context review, issue routing where flagged, and independent fresh review before any bounded artifact fill"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, route PubMed/fulltext/policy/practice-portal/living-neural-computation boundary issues as needed, then send eligible rows to independent fresh review before bounded artifact promotion."
+    },
+    {
+      "taskId": "C2LTB8-EXT-019",
+      "domainId": "vision-eye-health-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/vision-eye-health-continuity",
+      "sourceRefId": "C2LTB8-SRC-10-1",
+      "sourceTitle": "WHO World report on vision",
+      "sourceUrl": "https://www.who.int/publications/i/item/9789241516570",
+      "extractionStatus": "completed-c2ltb8-source-context-extraction",
+      "sourceAccessStatus": "who-official-publication-page-web-checked-2026-07-03-status-200-pending-local-context-review",
+      "sourceRole": "global-vision-public-health-report",
+      "exactClaimUse": "Can support bounded framing that vision impairment affects independence, learning, mobility, work and safety, and that eye care is a health-system and public-health infrastructure domain.",
+      "endpointDefinition": "Candidate endpoints include visual acuity/impairment, eye-care access, mobility limitation, education/work impact, assistive support and preventable/treatable vision loss category.",
+      "populationOrSetting": "Global populations and health-system contexts described in WHO World Report on Vision; not individual ophthalmology advice.",
+      "effectOrMechanismSignal": "Mechanism signal is visual information access and mobility: impaired vision can reduce navigation, task completion, learning and risk detection.",
+      "uncertaintyOrBias": "Global report evidence varies by region and service capacity; endpoints need local eye-care and socioeconomic context.",
+      "transferBoundary": "Transfer only to vision as a subject-continuity endpoint and health-system access domain; do not infer individual diagnosis, treatment or calibrated survival effect.",
+      "downgradeTriggers": [
+        "source is used for individual advice, intervention ranking, clinical-validity claims, individual prognosis, individual death-date output or calibrated prediction",
+        "source is used beyond its guideline, review, public-health page, policy-instrument, article-route or practice-portal role without local source-context review and independent fresh review",
+        "later review cannot extract exact source text, endpoint definition, population/setting boundary, uncertainty and transfer boundary needed for bounded artifact fill",
+        "source is used to claim human longevity escape velocity, effective immortality, neurotechnology capability, living-neural-computation scalability, network-effect intelligence or human-surpassing intelligence"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 eighth-batch pain, trauma, neurodevelopment, sensory-communication, autonomic, BCI and living-neural-computation source extraction register",
+        "variables": [
+          "visual-impairment",
+          "eye-care-access",
+          "mobility-limitation",
+          "education-work-impact",
+          "assistive-support"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local source-context review, issue routing where flagged, and independent fresh review before any bounded artifact fill"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, route PubMed/fulltext/policy/practice-portal/living-neural-computation boundary issues as needed, then send eligible rows to independent fresh review before bounded artifact promotion."
+    },
+    {
+      "taskId": "C2LTB8-EXT-020",
+      "domainId": "vision-eye-health-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/vision-eye-health-continuity",
+      "sourceRefId": "C2LTB8-SRC-10-2",
+      "sourceTitle": "National Eye Institute Low Vision",
+      "sourceUrl": "https://www.nei.nih.gov/eye-health-information/eye-conditions-and-diseases/low-vision",
+      "extractionStatus": "completed-c2ltb8-source-context-extraction",
+      "sourceAccessStatus": "nei-official-page-web-checked-2026-07-03-status-200-pending-local-context-review",
+      "sourceRole": "low-vision-functional-support-public-page",
+      "exactClaimUse": "Can support bounded framing that low vision is persistent visual limitation that interferes with everyday tasks and may require rehabilitation, assistive devices, environmental adaptation and support.",
+      "endpointDefinition": "Candidate endpoints include reading difficulty, mobility difficulty, daily task limitation, low-vision rehabilitation access, assistive device use and environmental adaptation.",
+      "populationOrSetting": "People with low vision as described by NEI health information; not all eye disease or treatment-specific evidence.",
+      "effectOrMechanismSignal": "Mechanism signal is functional vision adaptation: even when vision cannot be fully corrected, support and adaptation can preserve task execution and independence.",
+      "uncertaintyOrBias": "Educational source does not quantify rehabilitation effects or prescribe devices; functional impact depends on diagnosis, environment and support access.",
+      "transferBoundary": "Transfer only to low-vision function and adaptation endpoint framing; do not use for individual diagnosis or intervention ranking.",
+      "downgradeTriggers": [
+        "source is used for individual advice, intervention ranking, clinical-validity claims, individual prognosis, individual death-date output or calibrated prediction",
+        "source is used beyond its guideline, review, public-health page, policy-instrument, article-route or practice-portal role without local source-context review and independent fresh review",
+        "later review cannot extract exact source text, endpoint definition, population/setting boundary, uncertainty and transfer boundary needed for bounded artifact fill",
+        "source is used to claim human longevity escape velocity, effective immortality, neurotechnology capability, living-neural-computation scalability, network-effect intelligence or human-surpassing intelligence"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 eighth-batch pain, trauma, neurodevelopment, sensory-communication, autonomic, BCI and living-neural-computation source extraction register",
+        "variables": [
+          "reading-difficulty",
+          "mobility-difficulty",
+          "daily-task-limitation",
+          "low-vision-rehabilitation",
+          "assistive-device-use"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local source-context review, issue routing where flagged, and independent fresh review before any bounded artifact fill"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, route PubMed/fulltext/policy/practice-portal/living-neural-computation boundary issues as needed, then send eligible rows to independent fresh review before bounded artifact promotion."
+    },
+    {
+      "taskId": "C2LTB8-EXT-021",
+      "domainId": "vestibular-balance-spatial-orientation",
+      "localDomainPath": "domains/c2-source-maintenance/vestibular-balance-spatial-orientation",
+      "sourceRefId": "C2LTB8-SRC-11-1",
+      "sourceTitle": "Vestibular Rehabilitation for Peripheral Vestibular Hypofunction: Clinical Practice Guideline",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/34864777/",
+      "extractionStatus": "completed-c2ltb8-source-context-extraction",
+      "sourceAccessStatus": "pubmed-abstract-route-web-checked-2026-07-03-status-200-pending-full-context-review",
+      "sourceRole": "vestibular-rehabilitation-clinical-practice-guideline-pubmed-route",
+      "exactClaimUse": "Can support bounded framing that vestibular rehabilitation for peripheral vestibular hypofunction targets dizziness, gaze instability, balance, mobility and participation through structured therapy recommendations.",
+      "endpointDefinition": "Candidate endpoints include dizziness handicap, gaze stability, balance, gait/mobility, falls risk, participation and therapy adherence.",
+      "populationOrSetting": "People with peripheral vestibular hypofunction within clinical practice guideline scope; not all dizziness, central vestibular disorders or nonspecific imbalance.",
+      "effectOrMechanismSignal": "Mechanism signal is sensorimotor compensation and balance training: vestibular deficits can impair spatial orientation and action reliability, while rehabilitation can target adaptation and substitution.",
+      "uncertaintyOrBias": "PubMed route needs guideline context review; recommendation strength and transfer vary by diagnosis, chronicity, age and comorbidity.",
+      "transferBoundary": "Transfer only to vestibular hypofunction rehabilitation endpoint design; do not generalize to all balance disorders or individual therapy advice.",
+      "downgradeTriggers": [
+        "source is used for individual advice, intervention ranking, clinical-validity claims, individual prognosis, individual death-date output or calibrated prediction",
+        "source is used beyond its guideline, review, public-health page, policy-instrument, article-route or practice-portal role without local source-context review and independent fresh review",
+        "later review cannot extract exact source text, endpoint definition, population/setting boundary, uncertainty and transfer boundary needed for bounded artifact fill",
+        "source is used to claim human longevity escape velocity, effective immortality, neurotechnology capability, living-neural-computation scalability, network-effect intelligence or human-surpassing intelligence",
+        "PubMed abstract route is treated as full guideline/article evidence before manual/fulltext context review"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 eighth-batch pain, trauma, neurodevelopment, sensory-communication, autonomic, BCI and living-neural-computation source extraction register",
+        "variables": [
+          "dizziness-handicap",
+          "gaze-stability",
+          "balance",
+          "gait-mobility",
+          "falls-risk"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local source-context review, issue routing where flagged, and independent fresh review before any bounded artifact fill"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, route PubMed/fulltext/policy/practice-portal/living-neural-computation boundary issues as needed, then send eligible rows to independent fresh review before bounded artifact promotion."
+    },
+    {
+      "taskId": "C2LTB8-EXT-022",
+      "domainId": "vestibular-balance-spatial-orientation",
+      "localDomainPath": "domains/c2-source-maintenance/vestibular-balance-spatial-orientation",
+      "sourceRefId": "C2LTB8-SRC-11-2",
+      "sourceTitle": "Clinical Practice Guideline: Benign Paroxysmal Positional Vertigo (Update)",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/28248609/",
+      "extractionStatus": "completed-c2ltb8-source-context-extraction",
+      "sourceAccessStatus": "pubmed-abstract-route-web-checked-2026-07-03-status-200-pending-full-context-review",
+      "sourceRole": "bppv-clinical-practice-guideline-pubmed-route",
+      "exactClaimUse": "Can support bounded framing that benign paroxysmal positional vertigo has specific diagnostic and management pathways, including positional assessment and appropriate repositioning treatment boundaries.",
+      "endpointDefinition": "Candidate endpoints include positional vertigo episodes, diagnostic maneuver result, dizziness burden, fall risk, treatment resolution and inappropriate-testing avoidance.",
+      "populationOrSetting": "Patients with suspected or diagnosed BPPV within guideline scope; not all vertigo or vestibular disorders.",
+      "effectOrMechanismSignal": "Mechanism signal is episodic position-triggered vestibular mismatch that disrupts orientation, mobility and safety but may be addressed by condition-specific maneuvers.",
+      "uncertaintyOrBias": "PubMed route requires full guideline context; differential diagnosis and red flags limit transfer.",
+      "transferBoundary": "Transfer only to BPPV-specific vestibular endpoint and care-pathway context; do not infer all dizziness treatment or individual clinical decisions.",
+      "downgradeTriggers": [
+        "source is used for individual advice, intervention ranking, clinical-validity claims, individual prognosis, individual death-date output or calibrated prediction",
+        "source is used beyond its guideline, review, public-health page, policy-instrument, article-route or practice-portal role without local source-context review and independent fresh review",
+        "later review cannot extract exact source text, endpoint definition, population/setting boundary, uncertainty and transfer boundary needed for bounded artifact fill",
+        "source is used to claim human longevity escape velocity, effective immortality, neurotechnology capability, living-neural-computation scalability, network-effect intelligence or human-surpassing intelligence",
+        "PubMed abstract route is treated as full guideline/article evidence before manual/fulltext context review"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 eighth-batch pain, trauma, neurodevelopment, sensory-communication, autonomic, BCI and living-neural-computation source extraction register",
+        "variables": [
+          "positional-vertigo",
+          "diagnostic-maneuver",
+          "dizziness-burden",
+          "fall-risk",
+          "treatment-resolution"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local source-context review, issue routing where flagged, and independent fresh review before any bounded artifact fill"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, route PubMed/fulltext/policy/practice-portal/living-neural-computation boundary issues as needed, then send eligible rows to independent fresh review before bounded artifact promotion."
+    },
+    {
+      "taskId": "C2LTB8-EXT-023",
+      "domainId": "oropharyngeal-dysphagia-swallow-safety-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/oropharyngeal-dysphagia-swallow-safety-continuity",
+      "sourceRefId": "C2LTB8-SRC-12-1",
+      "sourceTitle": "ASHA Practice Portal: Adult Dysphagia",
+      "sourceUrl": "https://www.asha.org/practice-portal/clinical-topics/adult-dysphagia/",
+      "extractionStatus": "completed-c2ltb8-source-context-extraction",
+      "sourceAccessStatus": "asha-practice-portal-web-checked-2026-07-03-status-200-pending-local-context-review",
+      "sourceRole": "adult-dysphagia-practice-portal",
+      "exactClaimUse": "Can support bounded framing that adult dysphagia affects swallowing safety, nutrition, hydration, respiratory risk, communication/social participation around meals and care planning.",
+      "endpointDefinition": "Candidate endpoints include aspiration risk, swallowing efficiency, nutrition/hydration status, pneumonia risk, diet modification, instrumental assessment and participation in meals.",
+      "populationOrSetting": "Adults with dysphagia in ASHA practice-portal context; not pediatric dysphagia or condition-specific guideline alone.",
+      "effectOrMechanismSignal": "Mechanism signal is intake and airway-protection failure: swallowing impairment can threaten nutrition, hydration, pulmonary safety and social participation.",
+      "uncertaintyOrBias": "Professional portal guidance does not provide one effect size; assessment route and treatment depend on etiology, cognitive status, setting and goals of care.",
+      "transferBoundary": "Transfer only to adult dysphagia endpoint, assessment and safety framing; do not use for individual diet prescription or therapy ranking.",
+      "downgradeTriggers": [
+        "source is used for individual advice, intervention ranking, clinical-validity claims, individual prognosis, individual death-date output or calibrated prediction",
+        "source is used beyond its guideline, review, public-health page, policy-instrument, article-route or practice-portal role without local source-context review and independent fresh review",
+        "later review cannot extract exact source text, endpoint definition, population/setting boundary, uncertainty and transfer boundary needed for bounded artifact fill",
+        "source is used to claim human longevity escape velocity, effective immortality, neurotechnology capability, living-neural-computation scalability, network-effect intelligence or human-surpassing intelligence"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 eighth-batch pain, trauma, neurodevelopment, sensory-communication, autonomic, BCI and living-neural-computation source extraction register",
+        "variables": [
+          "aspiration-risk",
+          "swallowing-efficiency",
+          "nutrition-hydration",
+          "pneumonia-risk",
+          "diet-modification"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local source-context review, issue routing where flagged, and independent fresh review before any bounded artifact fill"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, route PubMed/fulltext/policy/practice-portal/living-neural-computation boundary issues as needed, then send eligible rows to independent fresh review before bounded artifact promotion."
+    },
+    {
+      "taskId": "C2LTB8-EXT-024",
+      "domainId": "oropharyngeal-dysphagia-swallow-safety-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/oropharyngeal-dysphagia-swallow-safety-continuity",
+      "sourceRefId": "C2LTB8-SRC-12-2",
+      "sourceTitle": "Screening and clinical management of dysphagia in adult patients with stroke: an European Stroke Organisation and European Society for Swallowing Disorders guideline",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/30993445/",
+      "extractionStatus": "completed-c2ltb8-source-context-extraction",
+      "sourceAccessStatus": "pubmed-abstract-route-web-checked-2026-07-03-status-200-pending-full-context-review",
+      "sourceRole": "stroke-dysphagia-screening-management-guideline-pubmed-route",
+      "exactClaimUse": "Can support bounded framing that dysphagia screening and management after adult stroke is a safety-critical pathway because swallowing impairment can affect aspiration, pneumonia, nutrition, hydration and recovery.",
+      "endpointDefinition": "Candidate endpoints include swallow screening completion, aspiration, pneumonia, nutrition/hydration status, instrumental assessment, diet texture modification and rehabilitation management.",
+      "populationOrSetting": "Adult stroke patients within European Stroke Organisation and swallowing-disorders guideline scope; not all dysphagia etiologies.",
+      "effectOrMechanismSignal": "Mechanism signal is post-stroke airway and nutrition risk: early identification and management of dysphagia can shape safety and recovery pathways.",
+      "uncertaintyOrBias": "PubMed route needs guideline context review; recommendations depend on stroke setting, severity, available screening tools and multidisciplinary capacity.",
+      "transferBoundary": "Transfer only to adult stroke dysphagia screening/management endpoint design; do not use for all swallowing disorders or individual clinical advice.",
+      "downgradeTriggers": [
+        "source is used for individual advice, intervention ranking, clinical-validity claims, individual prognosis, individual death-date output or calibrated prediction",
+        "source is used beyond its guideline, review, public-health page, policy-instrument, article-route or practice-portal role without local source-context review and independent fresh review",
+        "later review cannot extract exact source text, endpoint definition, population/setting boundary, uncertainty and transfer boundary needed for bounded artifact fill",
+        "source is used to claim human longevity escape velocity, effective immortality, neurotechnology capability, living-neural-computation scalability, network-effect intelligence or human-surpassing intelligence",
+        "PubMed abstract route is treated as full guideline/article evidence before manual/fulltext context review"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 eighth-batch pain, trauma, neurodevelopment, sensory-communication, autonomic, BCI and living-neural-computation source extraction register",
+        "variables": [
+          "swallow-screening",
+          "aspiration",
+          "pneumonia",
+          "nutrition-hydration",
+          "rehabilitation-management"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local source-context review, issue routing where flagged, and independent fresh review before any bounded artifact fill"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Run local source-context review, route PubMed/fulltext/policy/practice-portal/living-neural-computation boundary issues as needed, then send eligible rows to independent fresh review before bounded artifact promotion."
+    }
+  ],
+  "nonClaims": [
+    "This register does not complete local source-context review or independent fresh review.",
+    "This register does not create reviewed Source Cards, variable cards, endpoint cards, uncertainty cards, transfer-boundary cards or downgrade-check artifacts.",
+    "This register does not authorize clinical advice, neurotechnology advice, BCI use advice, biocomputing capability claims, individual prediction, intervention ranking, calibrated model admission or individual death-date output.",
+    "This register does not claim that any B8 source proves human longevity escape velocity, effective immortality, disease cure, cognitive enhancement, living neural computation scalability, network-effect intelligence or human-surpassing intelligence.",
+    "This register does not resolve any prior B1-B7 blocked row."
+  ],
+  "indexRequirements": [
+    "README.md",
+    "docs/AGENTS.md",
+    "docs/reference/README.md",
+    "docs/reference/human-infra-maturity-roadmap.md",
+    "tools/README.md"
+  ]
+}

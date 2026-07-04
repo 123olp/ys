@@ -1,0 +1,80 @@
+{
+  "schemaVersion": "human-infra.nhanes-public-lmf-local-run-evidence-manifest.v1",
+  "manifestId": "nhanes-public-lmf-2017-2018-local-weighted-domain-run-evidence",
+  "status": "tracked-redacted-evidence-for-local-run-public-release-blocked",
+  "sourceId": "nhanes-public-lmf-2017-2018",
+  "evidencePurpose": "Record a versioned, redacted proof that the explicit local-only NHANES public-use LMF weighted-domain run and local disclosure packet have executed successfully, without tracking real weighted rates, standard errors, confidence intervals, row-level data or public output.",
+  "lastLocalRunEvidence": {
+    "weightedDomainReportPath": "build/reports/nhanes-public-lmf-weighted-domain-output-local/validation.json",
+    "weightedDomainReportSha256": "9528aba354684e420abe59c57d6787a043aef4e30fafb0f17c3cc01843cdda36",
+    "weightedDomainReportStatus": "local-real-weighted-domain-output-generated-not-public-not-reviewed",
+    "weightedDomainReportGeneratedAt": "2026-07-03T14:07:18.889416+00:00",
+    "localDisclosurePacketPath": "build/reports/nhanes-public-lmf-local-disclosure-review-packet/validation.json",
+    "localDisclosurePacketSha256": "f43e3bc50e819f01a590e487c53940f01305e413557c3bcc4eadcf5fc1a26749",
+    "localDisclosurePacketStatus": "local-disclosure-packet-generated-public-release-blocked",
+    "localDisclosurePacketValidationPath": "build/reports/nhanes-public-lmf-local-disclosure-review-packet/packet-validation.json",
+    "localDisclosurePacketValidationSha256": "687b836593169198c3b694a5fbb8dcf8b68263aa5a2f5909f6dd3b381fb6d6e0",
+    "localDisclosurePacketValidationStatus": "pass"
+  },
+  "redactedSummary": {
+    "cellCount": 8,
+    "grouping": [
+      "sex",
+      "ageBand"
+    ],
+    "minimumDomainDof": 15,
+    "qualityPassCellCount": 8,
+    "machinePrefilledReviewSlotCount": 8,
+    "requiredReviewSlotCount": 15,
+    "humanReviewedSlotCount": 0,
+    "containsRealNhanesPublicUseData": true,
+    "containsRealWeightedRatesInIgnoredReport": true,
+    "containsRealDesignBasedIntervalsInIgnoredReport": true,
+    "realWeightedValuesOmittedFromTrackedManifest": true,
+    "realIntervalValuesOmittedFromTrackedManifest": true,
+    "rowLevelDataPresentInTrackedManifest": false,
+    "identifierPresentInTrackedManifest": false,
+    "webDataWritten": false,
+    "publicDisclosureReviewComplete": false,
+    "publicWeightedDomainOutputAllowed": false,
+    "calibrationAllowed": false,
+    "individualPredictionAllowed": false,
+    "medicalAdviceAllowed": false
+  },
+  "runtimeTrace": {
+    "estimatorBackend": "R survey",
+    "designFunction": "svydesign",
+    "domainSubsettingFunction": "survey::subset",
+    "varianceMethod": "Taylor linearization",
+    "domainIndicatorTiming": "post-design subset via survey::subset",
+    "rowDropBeforeDesign": false,
+    "controlledRuntimePath": ".runtime/nhanes-r-survey/bin/Rscript",
+    "rVersion": "R version 4.3.3 (2024-02-29)",
+    "surveyVersion": "4.4.8"
+  },
+  "reproductionTargets": {
+    "localWeightedRunTarget": "nhanes-public-lmf-weighted-domain-output-local-run-audit",
+    "localDisclosurePacketTarget": "nhanes-public-lmf-local-disclosure-review-packet-audit",
+    "trackedManifestAuditTarget": "nhanes-public-lmf-local-run-evidence-manifest-audit"
+  },
+  "trackedArtifactBoundary": {
+    "allowedUse": [
+      "prove explicit local-only weighted-domain run has executed",
+      "prove local disclosure packet can bind the ignored report hash",
+      "prove tracked artifacts can carry only redacted summaries and hashes"
+    ],
+    "forbiddenUse": [
+      "public weighted-domain mortality publication",
+      "public design-based confidence interval release",
+      "calibrated Human Infra prediction",
+      "intervention effect estimation",
+      "causal claim",
+      "individual prediction",
+      "individual death-date output",
+      "medical advice"
+    ],
+    "defaultCheckDependency": "This tracked manifest audit must not require build/reports to exist in a clean checkout; rerunning the explicit local targets may refresh ignored evidence hashes.",
+    "modelAdmissionDecision": "blocked"
+  },
+  "nextAction": "Use this manifest as tracked redacted proof of a successful local-only public-data weighted-domain run; complete human disclosure review and a separate public output implementation gate before any public weighted-domain output, calibration or model admission."
+}

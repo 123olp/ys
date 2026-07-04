@@ -1,0 +1,240 @@
+{
+  "schemaVersion": "human-infra.nhanes-public-lmf-disclosure-review-execution-register.v1",
+  "registerId": "nhanes-public-lmf-2017-2018-disclosure-review-execution-register",
+  "status": "execution-register-ready-public-review-not-complete-release-blocked",
+  "sourceId": "nhanes-public-lmf-2017-2018",
+  "reviewType": "real-public-weighted-domain-output-disclosure-review-execution",
+  "lastReviewedDate": "2026-07-03",
+  "reviewer": "tradecatlabs",
+  "executionPurpose": "Record the machine-auditable state required before a real NHANES public-use LMF weighted-domain output could be disclosure reviewed, without copying real weighted rates, standard errors, design-based confidence intervals, row counts or identifiers into tracked artifacts.",
+  "upstreamTemplate": {
+    "path": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhanes_public_lmf_disclosure_review_template.json",
+    "validationPath": "web/src/data/life-path-nhanes-public-lmf-disclosure-review-template-validation.json"
+  },
+  "localPacketRunway": {
+    "defaultIgnoredPacketPath": "build/reports/nhanes-public-lmf-local-disclosure-review-packet/validation.json",
+    "makeTarget": "nhanes-public-lmf-local-disclosure-review-packet-audit",
+    "packetRequiredForRealReview": true,
+    "packetRequiredForDefaultCheck": false,
+    "packetMayBindRealLocalOutputHash": true,
+    "packetMayContainRealWeightedValues": false,
+    "packetMayContainRealDesignBasedIntervals": false,
+    "trackedPacketAllowed": false,
+    "webPacketAllowed": false
+  },
+  "currentDecision": {
+    "executionRegisterValidated": true,
+    "reviewTemplateValidated": true,
+    "localPacketRunwayAvailable": true,
+    "reviewedOutputArtifactHashPresent": false,
+    "allRequiredSlotsCompleted": false,
+    "humanReviewedSlotCount": 0,
+    "secondReviewerSignoffPresent": false,
+    "releaseDecision": "blocked-pending-human-disclosure-review",
+    "publicDisclosureReviewComplete": false,
+    "realWeightedOutputReviewed": false,
+    "realWeightedOutputReleased": false,
+    "publicWeightedDomainOutputAllowed": false,
+    "realDesignBasedIntervalsAllowed": false,
+    "publicOutputImplementationAllowed": false,
+    "calibrationAllowed": false,
+    "individualPredictionAllowed": false,
+    "medicalAdviceAllowed": false,
+    "reason": "The execution register, template and local packet runway are ready, but no human disclosure review, second reviewer signoff, reviewed output hash or final release decision exists."
+  },
+  "reviewSlotExecution": [
+    {
+      "slotId": "output-artifact-identity",
+      "templateStatus": "defined",
+      "executionStatus": "machine-prefill-allowed-pending-human-review",
+      "reviewEvidenceRef": null,
+      "reviewerSignoff": null,
+      "blocksRelease": true
+    },
+    {
+      "slotId": "source-and-cycle-binding",
+      "templateStatus": "defined",
+      "executionStatus": "machine-prefill-allowed-pending-human-review",
+      "reviewEvidenceRef": null,
+      "reviewerSignoff": null,
+      "blocksRelease": true
+    },
+    {
+      "slotId": "survey-design-trace",
+      "templateStatus": "defined",
+      "executionStatus": "machine-prefill-allowed-pending-human-review",
+      "reviewEvidenceRef": null,
+      "reviewerSignoff": null,
+      "blocksRelease": true
+    },
+    {
+      "slotId": "domain-and-dof-trace",
+      "templateStatus": "defined",
+      "executionStatus": "machine-prefill-allowed-pending-human-review",
+      "reviewEvidenceRef": null,
+      "reviewerSignoff": null,
+      "blocksRelease": true
+    },
+    {
+      "slotId": "effective-sample-ci-trace",
+      "templateStatus": "defined",
+      "executionStatus": "pending-human-review",
+      "reviewEvidenceRef": null,
+      "reviewerSignoff": null,
+      "blocksRelease": true
+    },
+    {
+      "slotId": "disclosure-envelope-trace",
+      "templateStatus": "defined",
+      "executionStatus": "pending-human-review",
+      "reviewEvidenceRef": null,
+      "reviewerSignoff": null,
+      "blocksRelease": true
+    },
+    {
+      "slotId": "small-cell-suppression-review",
+      "templateStatus": "defined",
+      "executionStatus": "pending-human-review",
+      "reviewEvidenceRef": null,
+      "reviewerSignoff": null,
+      "blocksRelease": true
+    },
+    {
+      "slotId": "low-dof-suppression-review",
+      "templateStatus": "defined",
+      "executionStatus": "pending-human-review",
+      "reviewEvidenceRef": null,
+      "reviewerSignoff": null,
+      "blocksRelease": true
+    },
+    {
+      "slotId": "rse-ci-width-review",
+      "templateStatus": "defined",
+      "executionStatus": "pending-human-review",
+      "reviewEvidenceRef": null,
+      "reviewerSignoff": null,
+      "blocksRelease": true
+    },
+    {
+      "slotId": "forbidden-field-scan",
+      "templateStatus": "defined",
+      "executionStatus": "machine-prefill-allowed-pending-human-review",
+      "reviewEvidenceRef": null,
+      "reviewerSignoff": null,
+      "blocksRelease": true
+    },
+    {
+      "slotId": "row-level-and-identifier-scan",
+      "templateStatus": "defined",
+      "executionStatus": "machine-prefill-allowed-pending-human-review",
+      "reviewEvidenceRef": null,
+      "reviewerSignoff": null,
+      "blocksRelease": true
+    },
+    {
+      "slotId": "public-ai-and-third-party-upload-scan",
+      "templateStatus": "defined",
+      "executionStatus": "machine-prefill-allowed-pending-human-review",
+      "reviewEvidenceRef": null,
+      "reviewerSignoff": null,
+      "blocksRelease": true
+    },
+    {
+      "slotId": "output-hash-and-retention-plan",
+      "templateStatus": "defined",
+      "executionStatus": "machine-prefill-allowed-pending-human-review",
+      "reviewEvidenceRef": null,
+      "reviewerSignoff": null,
+      "blocksRelease": true
+    },
+    {
+      "slotId": "second-reviewer-signoff",
+      "templateStatus": "defined",
+      "executionStatus": "pending-human-review",
+      "reviewEvidenceRef": null,
+      "reviewerSignoff": null,
+      "blocksRelease": true
+    },
+    {
+      "slotId": "release-decision-record",
+      "templateStatus": "defined",
+      "executionStatus": "pending-human-review",
+      "reviewEvidenceRef": null,
+      "reviewerSignoff": null,
+      "blocksRelease": true
+    }
+  ],
+  "completionState": {
+    "requiredSlotCount": 15,
+    "machinePrefillAllowedSlotCount": 8,
+    "humanReviewedSlotCount": 0,
+    "completedSlotCount": 0,
+    "pendingHumanReviewSlotCount": 15,
+    "reviewedOutputArtifactHash": null,
+    "secondReviewerSignoffPresent": false,
+    "releaseDecision": "blocked-pending-human-disclosure-review",
+    "publicDisclosureReviewComplete": false,
+    "publicWeightedDomainOutputAllowed": false,
+    "calibrationAllowed": false,
+    "individualPredictionAllowed": false
+  },
+  "releaseStateMachine": {
+    "currentState": "blocked-pending-human-disclosure-review",
+    "allowedNextStates": [
+      "packet-attached-pending-human-review",
+      "cannot-evaluate"
+    ],
+    "forbiddenDirectTransitions": [
+      "release-approved",
+      "public-weighted-output-implemented",
+      "calibration-enabled",
+      "individual-prediction-enabled"
+    ],
+    "minimumReleasePath": [
+      "packet-attached-pending-human-review",
+      "all-slots-human-reviewed",
+      "second-reviewer-signed",
+      "suppression-and-reliability-approved",
+      "explicit-release-decision-recorded",
+      "separate-public-output-implementation-reviewed"
+    ]
+  },
+  "forbiddenTrackedFields": [
+    "SEQN",
+    "recordCount",
+    "deathCount",
+    "unweightedCount",
+    "weightedCount",
+    "weightedSum",
+    "weightedRate",
+    "weightedMortalityRate",
+    "mortalityRate",
+    "standardError",
+    "relativeStandardError",
+    "confidenceInterval95",
+    "ciLower",
+    "ciUpper",
+    "individualRiskScore",
+    "deathDate",
+    "rawRows",
+    "publicAiPrompt",
+    "publicAiResponse"
+  ],
+  "nonProofBoundary": {
+    "confirms": [
+      "the disclosure review execution state is machine-auditable",
+      "all required review slots are present and still block release",
+      "local packet runway can be used for future human review without tracked real values",
+      "public weighted-domain output remains blocked"
+    ],
+    "doesNotConfirm": [
+      "public disclosure review completion",
+      "real weighted-domain output permission",
+      "public design-based interval release",
+      "effective sample adequacy for publication",
+      "calibration",
+      "individual prediction",
+      "medical advice"
+    ]
+  }
+}

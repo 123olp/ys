@@ -1,0 +1,234 @@
+{
+  "schemaVersion": "human-infra.c2-longtail-eighth-batch-local-review-register.v1",
+  "registerId": "human-infra-c2-longtail-eighth-batch-local-review-register-2026-07-03",
+  "status": "complete-local-source-context-review-independent-fresh-review-required",
+  "purpose": "Record local source-context review for all 24 C2-LT-B8 source extraction rows. This register verifies structural readiness for independent fresh review while preserving PubMed/fulltext, policy, practice-portal, BCI governance and living neural computation overclaim boundaries.",
+  "sourceOfTruth": {
+    "sourceExtractionQueue": "docs/reference/human-infra-c2-longtail-eighth-batch-source-extraction-queue.json",
+    "sourceExtractionRegister": "docs/reference/human-infra-c2-longtail-eighth-batch-source-extraction-register.json",
+    "sourceCardSystem": "docs/reference/source-card-system.md",
+    "maturityGapRegister": "docs/reference/human-infra-maturity-gap-register.json"
+  },
+  "scope": {
+    "batchId": "C2-LT-B8",
+    "reviewLevel": "source-extraction-row-local-context-review",
+    "sourceExtractionTaskCount": 24,
+    "localReviewedExtractionTaskCount": 24,
+    "coveredDomainCount": 12,
+    "reviewBatchCount": 2,
+    "sourceResolutionIssueCount": 7,
+    "selectionRule": "Review all C2-LT-B8 source extraction rows after field-level extraction, without promoting any row to reviewed artifact fill or calibrated model admission.",
+    "reviewedExtractionTaskIds": [
+      "C2LTB8-EXT-001",
+      "C2LTB8-EXT-002",
+      "C2LTB8-EXT-003",
+      "C2LTB8-EXT-004",
+      "C2LTB8-EXT-005",
+      "C2LTB8-EXT-006",
+      "C2LTB8-EXT-007",
+      "C2LTB8-EXT-008",
+      "C2LTB8-EXT-009",
+      "C2LTB8-EXT-010",
+      "C2LTB8-EXT-011",
+      "C2LTB8-EXT-012",
+      "C2LTB8-EXT-013",
+      "C2LTB8-EXT-014",
+      "C2LTB8-EXT-015",
+      "C2LTB8-EXT-016",
+      "C2LTB8-EXT-017",
+      "C2LTB8-EXT-018",
+      "C2LTB8-EXT-019",
+      "C2LTB8-EXT-020",
+      "C2LTB8-EXT-021",
+      "C2LTB8-EXT-022",
+      "C2LTB8-EXT-023",
+      "C2LTB8-EXT-024"
+    ],
+    "currentLimitations": [
+      "This is local structural review only and is not independent fresh review.",
+      "Rows with PubMed abstract routes require manual/fulltext or stable route review before bounded artifact use.",
+      "Practice-portal, public-health-page and policy-instrument rows require source-context fresh review before they can become reviewed artifacts.",
+      "BCI and neurotechnology rows are governance/ethics context only and do not establish device effectiveness, safety, enhancement capability or individual recommendation.",
+      "Living neural computation and organoid intelligence rows remain research-domain context only; they do not support network-effect intelligence, scalability law, consciousness, sentience-as-moral-status, human-level capability or human-surpassing intelligence claims.",
+      "No row admits calibrated prediction, intervention ranking, individual advice, clinical-validity claim, individual death-date output or domain-claim upgrade."
+    ]
+  },
+  "requiredExtractionFieldsReviewed": [
+    "taskId",
+    "domainId",
+    "localDomainPath",
+    "sourceRefId",
+    "sourceTitle",
+    "sourceUrl",
+    "sourceRole",
+    "exactClaimUse",
+    "endpointDefinition",
+    "populationOrSetting",
+    "effectOrMechanismSignal",
+    "uncertaintyOrBias",
+    "transferBoundary",
+    "downgradeTriggers",
+    "modelPosition",
+    "modelAdmissionDecision",
+    "blockedUses",
+    "nextAction"
+  ],
+  "localReviewVerdict": "local-review-pass-for-independent-fresh-review-only-with-seven-pubmed-fulltext-and-living-neural-computation-issue-flags-preserved",
+  "promotionDecision": "eligible-non-issue-rows-for-independent-fresh-review-only-not-reviewed-artifact-fill; issue-rows-require-source-resolution-or-manual-fulltext-review-before-fresh-review-or-artifact-fill",
+  "sourceResolutionDecision": "seven-pubmed-route-rows-require-manual-fulltext-stable-route-or-source-lineage-handling-before-domain-claim-support",
+  "modelAdmissionDecision": "blocked-pending-independent-fresh-review-reviewed-artifacts-source-resolution-and-model-gates",
+  "blockedUses": [
+    "calibrated-prediction",
+    "individual-advice",
+    "individual-death-date-output",
+    "intervention-ranking",
+    "clinical-validity-claim",
+    "domain-claim-upgrade"
+  ],
+  "requiredNextArtifacts": [
+    "c2ltb8-independent-fresh-review-protocol",
+    "c2ltb8-independent-fresh-review-verdict-register",
+    "c2ltb8-source-resolution-register-for-pubmed-fulltext-issue-rows",
+    "reviewed-source-card",
+    "variable-card",
+    "endpoint-card",
+    "uncertainty-card",
+    "transfer-boundary-card",
+    "downgrade-check-row"
+  ],
+  "localReviewChecks": [
+    "Every reviewed task is present in the C2-LT-B8 source extraction queue.",
+    "Every reviewed task has a completed extraction row in the C2-LT-B8 source extraction register.",
+    "Every extraction row preserves exact claim use, endpoint, population or setting, mechanism or effect, uncertainty, transfer boundary, downgrade triggers and model position.",
+    "Every extraction row keeps model admission blocked and prohibited uses complete.",
+    "Every local domain path exists and exposes README.md and AGENTS.md.",
+    "Rows with PubMed abstract routes are explicitly preserved in sourceResolutionFindings for manual/fulltext or stable route handling.",
+    "BCI governance rows remain governance/ethics context and are not converted into neurotechnology capability or clinical advice claims.",
+    "Living neural computation rows preserve network-effect, scalability, consciousness, sentience and human-surpassing-intelligence overclaim blockers.",
+    "The register routes non-issue rows to independent fresh review and issue rows to source-resolution/manual-fulltext review before Source Card promotion."
+  ],
+  "sourceResolutionFindings": [
+    {
+      "taskId": "C2LTB8-EXT-006",
+      "issueType": "pubmed-adhd-guideline-fulltext-context-required",
+      "reviewDisposition": "manual-fulltext-or-guideline-route-required-before-bounded-fresh-review",
+      "correctionCandidate": "Resolve the AAP ADHD guideline full text or stable guideline route before using beyond PubMed bibliographic/abstract context.",
+      "reason": "The extraction row is a PubMed abstract route for a pediatric guideline; it cannot support detailed endpoint, recommendation or intervention-boundary claims until full context is reviewed."
+    },
+    {
+      "taskId": "C2LTB8-EXT-008",
+      "issueType": "pubmed-autism-clinical-report-fulltext-context-required",
+      "reviewDisposition": "manual-fulltext-or-guideline-route-required-before-bounded-fresh-review",
+      "correctionCandidate": "Resolve the AAP autism clinical report full text or stable report route before artifact fill.",
+      "reason": "The extraction row is a PubMed abstract route for a pediatric clinical report; it cannot support detailed management or service-pathway claims without full report context."
+    },
+    {
+      "taskId": "C2LTB8-EXT-011",
+      "issueType": "pubmed-living-neural-computation-fulltext-and-overclaim-risk",
+      "reviewDisposition": "manual-fulltext-context-required-and-living-neural-computation-overclaim-boundary-preserved",
+      "correctionCandidate": "Resolve full article context and preserve the controversial sentience/network-effect/superhuman-capability boundary before any bounded artifact use.",
+      "reason": "The source title and abstract route can easily be overread as consciousness, scalable intelligence or human-surpassing AI evidence; local review must keep it as closed-loop adaptation context only."
+    },
+    {
+      "taskId": "C2LTB8-EXT-014",
+      "issueType": "pubmed-long-covid-autonomic-review-fulltext-context-required",
+      "reviewDisposition": "manual-fulltext-or-review-route-required-before-bounded-fresh-review",
+      "correctionCandidate": "Resolve full review context before using the row beyond autonomic dysfunction hypothesis and endpoint framing.",
+      "reason": "The extraction row is a PubMed abstract route; long-COVID dysautonomia mechanisms, prevalence and management transfer remain uncertain without full context review."
+    },
+    {
+      "taskId": "C2LTB8-EXT-021",
+      "issueType": "pubmed-vestibular-rehabilitation-guideline-fulltext-context-required",
+      "reviewDisposition": "manual-fulltext-or-guideline-route-required-before-bounded-fresh-review",
+      "correctionCandidate": "Resolve the vestibular rehabilitation guideline full text or stable guideline route before artifact fill.",
+      "reason": "The PubMed route alone cannot support detailed rehabilitation recommendations, diagnostic scope, chronicity or population boundaries."
+    },
+    {
+      "taskId": "C2LTB8-EXT-022",
+      "issueType": "pubmed-bppv-guideline-fulltext-context-required",
+      "reviewDisposition": "manual-fulltext-or-guideline-route-required-before-bounded-fresh-review",
+      "correctionCandidate": "Resolve the BPPV guideline full text or stable guideline route before artifact fill.",
+      "reason": "The PubMed route alone cannot support differential diagnosis, red-flag, procedure or individual clinical decision claims."
+    },
+    {
+      "taskId": "C2LTB8-EXT-024",
+      "issueType": "pubmed-stroke-dysphagia-guideline-fulltext-context-required",
+      "reviewDisposition": "manual-fulltext-or-guideline-route-required-before-bounded-fresh-review",
+      "correctionCandidate": "Resolve the stroke dysphagia guideline full text or stable guideline route before artifact fill.",
+      "reason": "The PubMed route alone cannot support screening, management, multidisciplinary capacity or individual care-pathway claims for dysphagia."
+    }
+  ],
+  "reviewBatches": [
+    {
+      "reviewBatchId": "C2LTB8-LR-01-pain-trauma-neurodevelopment-bci-sbi",
+      "reviewLabel": "疼痛、创伤恢复、ADHD、自闭支持、BCI 治理与活性算力/类器官智能连续性域",
+      "taskIds": [
+        "C2LTB8-EXT-001",
+        "C2LTB8-EXT-002",
+        "C2LTB8-EXT-003",
+        "C2LTB8-EXT-004",
+        "C2LTB8-EXT-005",
+        "C2LTB8-EXT-006",
+        "C2LTB8-EXT-007",
+        "C2LTB8-EXT-008",
+        "C2LTB8-EXT-009",
+        "C2LTB8-EXT-010",
+        "C2LTB8-EXT-011",
+        "C2LTB8-EXT-012"
+      ],
+      "nextReviewMode": "independent fresh review must verify CDC/WHO/VA/DoD guideline scope, pediatric ADHD/autism PubMed fulltext routes, BCI ethics/governance boundaries and living neural computation / organoid intelligence overclaim controls before artifact promotion",
+      "taskCount": 12,
+      "domainIds": [
+        "adhd-executive-function-neurodevelopment-continuity",
+        "autism-neurodiversity-support-continuity",
+        "brain-computer-interface-neurotechnology-governance",
+        "pain-suffering-control",
+        "synthetic-biological-intelligence-organoid-computing-continuity",
+        "trauma-ptsd-adversity-recovery-continuity"
+      ],
+      "reviewDecision": "local-review-pass-for-independent-fresh-review-only"
+    },
+    {
+      "reviewBatchId": "C2LTB8-LR-02-autonomic-speech-hearing-vision-vestibular-swallow",
+      "reviewLabel": "自主神经、语言沟通、听觉、视觉、前庭平衡与吞咽安全连续性域",
+      "taskIds": [
+        "C2LTB8-EXT-013",
+        "C2LTB8-EXT-014",
+        "C2LTB8-EXT-015",
+        "C2LTB8-EXT-016",
+        "C2LTB8-EXT-017",
+        "C2LTB8-EXT-018",
+        "C2LTB8-EXT-019",
+        "C2LTB8-EXT-020",
+        "C2LTB8-EXT-021",
+        "C2LTB8-EXT-022",
+        "C2LTB8-EXT-023",
+        "C2LTB8-EXT-024"
+      ],
+      "nextReviewMode": "independent fresh review must verify autonomic consensus/review scope, ASHA/NIDCD/WHO/NEI public-health and practice-portal boundaries, vestibular guideline PubMed fulltext routes and stroke dysphagia guideline route before artifact promotion",
+      "taskCount": 12,
+      "domainIds": [
+        "autonomic-nervous-system-homeostasis",
+        "hearing-auditory-communication-continuity",
+        "oropharyngeal-dysphagia-swallow-safety-continuity",
+        "speech-language-communication-continuity",
+        "vestibular-balance-spatial-orientation",
+        "vision-eye-health-continuity"
+      ],
+      "reviewDecision": "local-review-pass-for-independent-fresh-review-only"
+    }
+  ],
+  "nonClaims": [
+    "This register does not complete independent fresh review.",
+    "This register does not create reviewed Source Cards, variable cards, endpoint cards, uncertainty cards or transfer-boundary cards.",
+    "This register does not admit any B8 row into calibrated prediction, intervention ranking, individual advice, neurotechnology advice, clinical-validity claims or individual death-date output.",
+    "This register does not claim living neural computation has network-effect scalability, consciousness, moral status, human-level intelligence or human-surpassing intelligence.",
+    "This register does not prove longevity escape velocity, effective immortality or model-ready quantitative variables for any B8 domain."
+  ],
+  "indexRequirements": [
+    "README.md links this local review register.",
+    "docs/reference/README.md describes this local review register.",
+    "docs/reference/human-infra-maturity-roadmap.md records this register and its remaining gates.",
+    "tools/README.md lists the corresponding audit command."
+  ]
+}

@@ -7,7 +7,6 @@ import argparse
 import hashlib
 import json
 import math
-from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
@@ -23,6 +22,7 @@ DEFAULT_INPUT = (
     / "life_path_toy_model_scenarios.json"
 )
 DEFAULT_OUTPUT = REPO_ROOT / "web" / "src" / "data" / "life-path-toy-model.json"
+GENERATED_AT = "2026-07-04T00:00:00+00:00"
 
 
 def load_json(path: Path) -> dict[str, Any]:
@@ -286,7 +286,7 @@ def build_output(config: dict[str, Any], source_path: Path) -> dict[str, Any]:
     sanity = run_sanity_checks(scenario_outputs)
     return {
         "schemaVersion": "human-infra.life-path-toy-results.v1",
-        "generatedAt": datetime.now(timezone.utc).isoformat(),
+        "generatedAt": GENERATED_AT,
         "source": {
             "path": str(source_path.relative_to(REPO_ROOT)),
             "sha256": sha256_file(source_path),

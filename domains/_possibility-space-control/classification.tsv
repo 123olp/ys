@@ -2,6 +2,7 @@ domain	tier	tier_name	control_axis	physical_path	rationale	review_status
 academic-advising-degree-progress-continuity	C6	局部可能性解锁层	局部阻塞解除	domains/c6-local-unlocking/academic-advising-degree-progress-continuity	未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。	heuristic-v0.1
 access-functional-needs-emergency-registry-continuity	C4	可能性转换通道层	路径转换接口	domains/c4-conversion-channel/access-functional-needs-emergency-registry-continuity	关键词显示该域主要处理研究、数据、模型、服务入口、身份记录、转化或治理接口。	heuristic-v0.1
 access-to-justice-legal-aid	C5	可能性生态承载层	外部生态承载	domains/c5-ecological-substrate/access-to-justice-legal-aid	主要提供主体展开未来所需的基础环境、资源、治理或基础设施。	heuristic-v0.1
+accelerating-returns-technology-convergence	C1	可能性边界改写层	技术窗口边界	domains/c1-boundary-rewriting/accelerating-returns-technology-convergence	研究 AI、算力、生物技术、纳米技术、脑机接口和自动科研的收敛是否压缩技术窗口并改写长寿逃逸速度条件。	heuristic-v0.1
 acromegaly-growth-hormone-cardiometabolic-continuity	C2	可能性源体维护层	生命载体维护	domains/c2-source-maintenance/acromegaly-growth-hormone-cardiometabolic-continuity	关键词显示该域主要维护身体、脑、器官、细胞、急性生命风险或衰老损伤控制。	heuristic-v0.1
 acute-coronary-syndrome-reperfusion-continuity	C2	可能性源体维护层	生命载体维护	domains/c2-source-maintenance/acute-coronary-syndrome-reperfusion-continuity	关键词显示该域主要维护身体、脑、器官、细胞、急性生命风险或衰老损伤控制。	heuristic-v0.1
 acute-gastrointestinal-bleeding-endoscopy-continuity	C2	可能性源体维护层	生命载体维护	domains/c2-source-maintenance/acute-gastrointestinal-bleeding-endoscopy-continuity	关键词显示该域主要维护身体、脑、器官、细胞、急性生命风险或衰老损伤控制。	heuristic-v0.1
@@ -757,6 +758,7 @@ reproductive-fertility-continuity	C2	可能性源体维护层	生命载体维护
 reproductive-tissue-donor-screening-traceability-continuity	C2	可能性源体维护层	生命载体维护	domains/c2-source-maintenance/reproductive-tissue-donor-screening-traceability-continuity	关键词显示该域主要维护身体、脑、器官、细胞、急性生命风险或衰老损伤控制。	heuristic-v0.1
 reptile-amphibian-backyard-poultry-salmonella-continuity	C6	局部可能性解锁层	局部阻塞解除	domains/c6-local-unlocking/reptile-amphibian-backyard-poultry-salmonella-continuity	未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。	heuristic-v0.1
 reputation-defamation-public-trust-repair-continuity	C4	可能性转换通道层	路径转换接口	domains/c4-conversion-channel/reputation-defamation-public-trust-repair-continuity	关键词显示该域主要处理研究、数据、模型、服务入口、身份记录、转化或治理接口。	heuristic-v0.1
+recursive-self-improvement-intelligence-explosion	C1	可能性边界改写层	递归智能边界	domains/c1-boundary-rewriting/recursive-self-improvement-intelligence-explosion	研究 AI 改进自身能力是否触发递归增强，从而改写技术进步速度、控制权和未来可达边界。	heuristic-v0.1
 research-artifact-archive-retention-preservation-continuity	C4	可能性转换通道层	路径转换接口	domains/c4-conversion-channel/research-artifact-archive-retention-preservation-continuity	关键词显示该域主要处理研究、数据、模型、服务入口、身份记录、转化或治理接口。	heuristic-v0.1
 research-data-repository-fair-sharing-continuity	C4	可能性转换通道层	路径转换接口	domains/c4-conversion-channel/research-data-repository-fair-sharing-continuity	关键词显示该域主要处理研究、数据、模型、服务入口、身份记录、转化或治理接口。	heuristic-v0.1
 research-infrastructure-open-science-translation	C4	可能性转换通道层	路径转换接口	domains/c4-conversion-channel/research-infrastructure-open-science-translation	主要把科学、医疗、数据、制度或技术从潜在能力转成真实可用路径。	heuristic-v0.1
@@ -820,6 +822,7 @@ shellfish-biotoxin-harmful-algal-bloom-food-continuity	C5	可能性生态承载�
 shelter-in-place-clean-air-room-indoor-protection-continuity	C3	可能性生成引擎层	主体能力生成	domains/c3-generation-engine/shelter-in-place-clean-air-room-indoor-protection-continuity	关键词显示该域主要增强认知、学习、工具、AI、技能或沟通能力。	heuristic-v0.1
 shift-work-long-hours-fatigue-continuity	C6	局部可能性解锁层	局部阻塞解除	domains/c6-local-unlocking/shift-work-long-hours-fatigue-continuity	未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。	heuristic-v0.1
 sidewalk-curb-ramp-maintenance-access-continuity	C6	局部可能性解锁层	局部阻塞解除	domains/c6-local-unlocking/sidewalk-curb-ramp-maintenance-access-continuity	未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。	heuristic-v0.1
+singularity-control-interpretability-boundary	C1	可能性边界改写层	控制/解释权边界	domains/c1-boundary-rewriting/singularity-control-interpretability-boundary	研究超人 AI 或奇点式系统出现后，人类解释、控制、治理和未来选择权是否发生边界断裂。	heuristic-v0.1
 situational-awareness-decision-environment-continuity	C6	局部可能性解锁层	局部阻塞解除	domains/c6-local-unlocking/situational-awareness-decision-environment-continuity	未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。	heuristic-v0.1
 skills-competency-credentialing-continuity	C3	可能性生成引擎层	主体能力生成	domains/c3-generation-engine/skills-competency-credentialing-continuity	关键词显示该域主要增强认知、学习、工具、AI、技能或沟通能力。	heuristic-v0.1
 skin-barrier-wound-healing	C2	可能性源体维护层	生命载体维护	domains/c2-source-maintenance/skin-barrier-wound-healing	直接维护身体、脑、器官、衰老、损伤或生命系统这些可能性源体。	heuristic-v0.1
@@ -872,6 +875,7 @@ suicide-crisis-response-continuity	C6	局部可能性解锁层	局部阻塞解�
 summer-ebt-sun-bucks-school-break-food-continuity	C5	可能性生态承载层	外部生态承载	domains/c5-ecological-substrate/summer-ebt-sun-bucks-school-break-food-continuity	关键词显示该域主要承载能源、水、食物、住房、治理、经济、通信、灾害或基础设施环境。	heuristic-v0.1
 summer-food-service-program-site-access-continuity	C5	可能性生态承载层	外部生态承载	domains/c5-ecological-substrate/summer-food-service-program-site-access-continuity	关键词显示该域主要承载能源、水、食物、住房、治理、经济、通信、灾害或基础设施环境。	heuristic-v0.1
 supply-chain-continuity	C5	可能性生态承载层	外部生态承载	domains/c5-ecological-substrate/supply-chain-continuity	关键词显示该域主要承载能源、水、食物、住房、治理、经济、通信、灾害或基础设施环境。	heuristic-v0.1
+superhuman-intelligence-threshold	C1	可能性边界改写层	智能边界改写	domains/c1-boundary-rewriting/superhuman-intelligence-threshold	研究技术系统何时产生超人智能并直接改写人类可理解、可进入和可选择的未来边界。	heuristic-v0.1
 supported-decision-making-guardianship-rights	C6	局部可能性解锁层	局部阻塞解除	domains/c6-local-unlocking/supported-decision-making-guardianship-rights	未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。	heuristic-v0.1
 surgical-anesthesia-perioperative-safety	C6	局部可能性解锁层	局部阻塞解除	domains/c6-local-unlocking/surgical-anesthesia-perioperative-safety	未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。	heuristic-v0.1
 surgical-wound-dehiscence-ssi-continuity	C2	可能性源体维护层	生命载体维护	domains/c2-source-maintenance/surgical-wound-dehiscence-ssi-continuity	关键词显示该域主要维护身体、脑、器官、细胞、急性生命风险或衰老损伤控制。	heuristic-v0.1

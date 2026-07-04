@@ -515,7 +515,10 @@
         "domainIds": [
           "longevity-evidence",
           "biological-age-clocks-biomarker-validation",
-          "future-waiting"
+          "future-waiting",
+          "recursive-self-improvement-intelligence-explosion",
+          "accelerating-returns-technology-convergence",
+          "singularity-control-interpretability-boundary"
         ],
         "paperClaimIds": [
           "HIPAPER-CL2",
@@ -580,7 +583,11 @@
           "future-waiting",
           "brain-preservation-connectomics-emulation",
           "neuro-continuity",
-          "biostasis-cryopreservation"
+          "biostasis-cryopreservation",
+          "superhuman-intelligence-threshold",
+          "recursive-self-improvement-intelligence-explosion",
+          "accelerating-returns-technology-convergence",
+          "singularity-control-interpretability-boundary"
         ],
         "paperClaimIds": [
           "HIPAPER-CL3",
@@ -948,7 +955,8 @@
           "memory-editing",
           "neuro-continuity",
           "brain-preservation-connectomics-emulation",
-          "disembodied-cns"
+          "disembodied-cns",
+          "superhuman-intelligence-threshold"
         ],
         "paperClaimIds": [
           "HIPAPER-CL3",
@@ -1188,7 +1196,11 @@
           "longevity-evidence",
           "neuro-continuity",
           "future-waiting",
-          "brain-preservation-connectomics-emulation"
+          "brain-preservation-connectomics-emulation",
+          "superhuman-intelligence-threshold",
+          "recursive-self-improvement-intelligence-explosion",
+          "accelerating-returns-technology-convergence",
+          "singularity-control-interpretability-boundary"
         ],
         "paperClaimIds": [
           "HIPAPER-CL4",

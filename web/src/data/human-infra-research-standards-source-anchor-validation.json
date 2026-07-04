@@ -1,0 +1,29 @@
+{
+  "schemaVersion": "human-infra.research-standards-source-anchor-validation.v1",
+  "status": "pass-no-model-admission",
+  "generatedAt": "2026-07-04T20:22:37+00:00",
+  "sourceRegister": "docs/reference/human-infra-research-standards-source-anchor-register.json",
+  "anchorCount": 15,
+  "standardFamilies": [
+    "ai-trial-protocol-reporting",
+    "ai-trial-reporting",
+    "causal-emulation-design",
+    "evidence-certainty",
+    "model-transparency-validation",
+    "nonrandomized-intervention-risk-of-bias",
+    "observational-reporting",
+    "prediction-model-bias-applicability",
+    "prediction-model-reporting",
+    "randomized-risk-of-bias",
+    "randomized-trial-reporting",
+    "real-world-evidence-planning-reporting",
+    "routinely-collected-data-reporting",
+    "systematic-review-reporting",
+    "trial-protocol-reporting"
+  ],
+  "modelAdmission": "blocked",
+  "publicWeightedDomainOutput": "blocked",
+  "individualPrediction": "blocked",
+  "medicalAdvice": "blocked",
+  "longevityEscapeVelocityClaim": "blocked"
+}

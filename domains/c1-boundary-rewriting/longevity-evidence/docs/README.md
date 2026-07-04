@@ -13,11 +13,15 @@ This directory stores the Longevity Evidence domain model, data source plans, co
 - `lev-route-card-template.md`: reusable route-card contract for new LEV routes.
 - `lev-source-cards.md`: first source-card batch for LEV higher-order effect modeling.
 - `lev-mainstream-routes.md`: mainstream longevity escape velocity route map, source signals, and cross-domain routing.
+- `ai-automated-science-technology-window-compression.md`: C1-level AI automated science route note, mapping AlphaFold, AlphaMissense, GNoME, A-Lab and RoboChem into LEV technology-window compression while preserving fact boundaries.
+- `ai-automated-science-source-cards.md`: first source-card batch for the AI automated science route, recording pulled literature, local hashes, claim boundaries, correction constraints, and model-admission rules.
+- `ai-automated-science-research-results.md`: research-result synthesis for the AI automated science route, connecting source cards to variables, LEV implications, positive/negative chains, and next protocols.
 - `life-path-data-source-cards.md`: candidate source cards for HRS, NCHS linked mortality, UK Biobank, All of Us, NHATS, ELSA, SHARE, and Framingham before real model calibration.
 - `life-path-data-card-template.md`: required governance and study-design template before any candidate source can be used for calibration, validation, benchmarking, or display.
 - `life-path-data-card-nhats.md`: first NHATS Data Card draft for late-life functional-survival and effective-time modeling admission review.
 - `life-path-variable-dictionary-nhats.md`: first NHATS variable-family dictionary draft mapping function, cognition, support, environment, design and endpoint fields to Human Infra model roles.
 - `life-path-extraction-manifest-nhats-draft.md`: pre-extraction NHATS manifest draft that blocks scripts and downloads until file names, variables, weights, missing codes, access tiers, endpoints and output rules are governed.
+- `nhats-colectica-capture-packet-runbook.md`: human-executable NHATS Colectica capture packet runbook that explains how to produce the first redacted `reviewable-but-still-blocked` packet without storing raw metadata, credentials, row-level data, exports, calibration evidence, or individual prediction material.
 - `../data/manual/life_path_nhats_official_source_refresh_register.json`: machine-readable NHATS official-source refresh register that records current public official page/PDF reachability and hashes without authorizing download, extraction, calibration, or individual prediction.
 - `../data/manual/life_path_nhats_registration_evidence_template.json`: machine-readable NHATS registration/access evidence template that fixes required redacted account, permitted-user, conditions-of-use, file-tier, controlled-workspace and second-reviewer slots before any real registration proof can be accepted.
 - `../data/manual/life_path_nhats_acquisition_readiness.json`: machine-readable NHATS acquisition-readiness contract that keeps official-source refresh, registration, file-tier, Colectica, survey-design, endpoint, disclosure-control, AI-boundary and storage gates auditable before any extraction work.

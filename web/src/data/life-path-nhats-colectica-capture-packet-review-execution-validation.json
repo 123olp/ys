@@ -1,0 +1,99 @@
+{
+  "schemaVersion": "human-infra.life-path-nhats-colectica-capture-packet-review-execution-validation.v1",
+  "generatedAt": "2026-07-04T20:22:39.419256+00:00",
+  "registerPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_capture_packet_review_execution_register.json",
+  "registerSha256": "adefba18ccad157301d4c8879a38b48a451a1b2edf5b70e3ca2ccb548a04e3c3",
+  "captureTaskRegisterPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_capture_task_register.json",
+  "captureTaskRegisterSha256": "57764c73e38ecd6d3303d36a172d6b794671d34c3dcf1718e07fbe76c54720e0",
+  "packetValidatorTestCasesPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_capture_packet_validator_test_cases.json",
+  "packetValidatorTestCasesSha256": "fb8c27303ece1c9be4391e4160c0fad8364942cdc7690cea41173065c6e3262d",
+  "routeClassifierReadinessPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_route_classifier_readiness.json",
+  "routeClassifierReadinessSha256": "f0c0224317c9ee20e8de56dcddeadba85ae24d67b736782ba22de90e83109296",
+  "overallStatus": "PASS",
+  "summary": {
+    "pass": 10,
+    "fail": 0
+  },
+  "reviewExecutionSummary": {
+    "reviewSlotCount": 39,
+    "packetsReceived": 0,
+    "humanReviewsComplete": 0,
+    "secondReviewsComplete": 0,
+    "slotsClosed": 0,
+    "routeClassifierAdmissions": 0,
+    "realExtractionAdmissions": 0,
+    "calibrationAdmissions": 0,
+    "individualPredictionAdmissions": 0
+  },
+  "boundary": {
+    "reviewExecutionRegisterReady": true,
+    "realCapturePacketsAttached": false,
+    "humanReviewComplete": false,
+    "secondReviewerSignoff": false,
+    "captureSlotClosureAllowed": false,
+    "valueLabelsConfirmed": false,
+    "questionTextConfirmed": false,
+    "universeSkipLogicConfirmed": false,
+    "routeValueCrosswalkReady": false,
+    "variableSpecificMissingCodeMapReady": false,
+    "routeClassifierAllowed": false,
+    "realExtractionAllowed": false,
+    "aggregateCohortFlowAllowed": false,
+    "weightedRouteCountsAllowed": false,
+    "publicExportAllowed": false,
+    "calibrationAllowed": false,
+    "individualPredictionAllowed": false
+  },
+  "checks": [
+    {
+      "id": "schema-version",
+      "status": "PASS",
+      "detail": "schemaVersion='human-infra.life-path-nhats-colectica-capture-packet-review-execution-register.v1'"
+    },
+    {
+      "id": "identity-and-upstream-bindings",
+      "status": "PASS",
+      "detail": "execution register must bind task register, packet validator cases and route-classifier readiness"
+    },
+    {
+      "id": "source-bindings",
+      "status": "PASS",
+      "detail": "source bindings must point to current upstream records"
+    },
+    {
+      "id": "decision-boundary",
+      "status": "PASS",
+      "detail": "only reviewExecutionRegisterReady may be true; capture, slot closure, classifier, extraction, export, calibration and individual prediction must remain false"
+    },
+    {
+      "id": "review-slot-task-coverage",
+      "status": "PASS",
+      "detail": "expected=39 observed=39 missing=[] extra=[]"
+    },
+    {
+      "id": "review-slot-shape-and-blocked-state",
+      "status": "PASS",
+      "detail": "every task slot must be pending, have no packet/hash/verdict, and keep slot closure plus route classifier blocked"
+    },
+    {
+      "id": "summary-counts",
+      "status": "PASS",
+      "detail": "summary={'reviewSlotCount': 39, 'packetsReceived': 0, 'humanReviewsComplete': 0, 'secondReviewsComplete': 0, 'slotsClosed': 0, 'routeClassifierAdmissions': 0, 'realExtractionAdmissions': 0, 'calibrationAdmissions': 0, 'individualPredictionAdmissions': 0}"
+    },
+    {
+      "id": "blocked-until",
+      "status": "PASS",
+      "detail": "blockedUntil must require login, hashes, human review, second review, labels, route crosswalk and missing-code map"
+    },
+    {
+      "id": "prohibited-actions",
+      "status": "PASS",
+      "detail": "prohibited actions must block credentials, AI-only signoff, slot closure, route classifier and individual prediction"
+    },
+    {
+      "id": "no-secret-or-individual-output-keys",
+      "status": "PASS",
+      "detail": "prohibited_keys=[]"
+    }
+  ]
+}

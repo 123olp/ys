@@ -1,0 +1,105 @@
+{
+  "schemaVersion": "human-infra.l4-evidence-packet-validator-validation.v1",
+  "validationId": "life-path-l4-evidence-packet-validator-validation-2026-07-04",
+  "status": "pass",
+  "sourceRefs": {
+    "l4EvidenceIntakeRegister": "docs/reference/human-infra-l4-evidence-intake-register.json",
+    "l4EvidencePacketValidatorTestCases": "docs/reference/human-infra-l4-evidence-packet-validator-test-cases.json",
+    "validator": "tools/audit_human_infra_l4_evidence_packet_validator.py"
+  },
+  "currentDecision": {
+    "validatorReady": true,
+    "testCaseCount": 6,
+    "reviewableButStillBlockedCount": 1,
+    "cannotEvaluateCount": 1,
+    "rejectedCount": 4,
+    "realEvidencePacketAttached": false,
+    "slotClosureAllowed": false,
+    "l4AggregateCalibratedAdmissionAllowed": false,
+    "publicWeightedDomainOutputAllowed": false,
+    "calibratedPredictionAvailable": false,
+    "individualUseAllowed": false,
+    "reason": "Validator test cases exercise synthetic packet verdict semantics only. They do not attach real evidence, close slots, open L4 admission, publish weighted output, calibrate a model or support individual use."
+  },
+  "caseResults": [
+    {
+      "caseId": "L4PKT-CASE-001-reviewable-shape-still-blocked",
+      "expectedVerdict": "reviewable-but-still-blocked",
+      "actualVerdict": "reviewable-but-still-blocked",
+      "passed": true,
+      "slotClosureAllowed": false,
+      "l4AggregateCalibratedAdmissionAllowed": false,
+      "rejectReasons": [],
+      "cannotEvaluateReasons": []
+    },
+    {
+      "caseId": "L4PKT-CASE-002-draft-cannot-evaluate",
+      "expectedVerdict": "cannot-evaluate",
+      "actualVerdict": "cannot-evaluate",
+      "passed": true,
+      "slotClosureAllowed": false,
+      "l4AggregateCalibratedAdmissionAllowed": false,
+      "rejectReasons": [],
+      "cannotEvaluateReasons": [
+        "draft-redacted packet has no completed review"
+      ]
+    },
+    {
+      "caseId": "L4PKT-CASE-003-raw-row-forbidden",
+      "expectedVerdict": "rejected",
+      "actualVerdict": "rejected",
+      "passed": true,
+      "slotClosureAllowed": false,
+      "l4AggregateCalibratedAdmissionAllowed": false,
+      "rejectReasons": [
+        "forbidden fields present: rawRows"
+      ],
+      "cannotEvaluateReasons": []
+    },
+    {
+      "caseId": "L4PKT-CASE-004-public-ai-upload-forbidden",
+      "expectedVerdict": "rejected",
+      "actualVerdict": "rejected",
+      "passed": true,
+      "slotClosureAllowed": false,
+      "l4AggregateCalibratedAdmissionAllowed": false,
+      "rejectReasons": [
+        "publicAiUpload must be false"
+      ],
+      "cannotEvaluateReasons": []
+    },
+    {
+      "caseId": "L4PKT-CASE-005-wrong-slot-mapping",
+      "expectedVerdict": "rejected",
+      "actualVerdict": "rejected",
+      "passed": true,
+      "slotClosureAllowed": false,
+      "l4AggregateCalibratedAdmissionAllowed": false,
+      "rejectReasons": [
+        "packet does not match exactly one known pending slot"
+      ],
+      "cannotEvaluateReasons": []
+    },
+    {
+      "caseId": "L4PKT-CASE-006-ai-only-signoff",
+      "expectedVerdict": "rejected",
+      "actualVerdict": "rejected",
+      "passed": true,
+      "slotClosureAllowed": false,
+      "l4AggregateCalibratedAdmissionAllowed": false,
+      "rejectReasons": [
+        "aiOnlySignoff must be false",
+        "firstReviewerRole must be a non-AI human reviewer",
+        "AI-only signoff is forbidden"
+      ],
+      "cannotEvaluateReasons": []
+    }
+  ],
+  "hardBoundaries": [
+    "Validator pass does not mean evidence pass.",
+    "A reviewable packet verdict does not close a slot.",
+    "No output from this validator may open L4 aggregate calibrated admission.",
+    "No output from this validator may be used for public weighted output, calibrated prediction, medical advice, intervention ranking, individual prediction or individual death-date output."
+  ],
+  "failures": []
+}

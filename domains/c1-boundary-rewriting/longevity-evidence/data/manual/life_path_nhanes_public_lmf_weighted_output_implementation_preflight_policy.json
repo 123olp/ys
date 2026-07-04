@@ -1,0 +1,177 @@
+{
+  "schemaVersion": "human-infra.nhanes-public-lmf-weighted-output-implementation-preflight-policy.v1",
+  "sourceId": "nhanes-public-lmf-2017-2018",
+  "sourceName": "NHANES 2017-2018 public-use linked mortality aggregate pilot",
+  "policyId": "life-path-nhanes-public-lmf-weighted-output-implementation-preflight",
+  "reviewDate": "2026-07-03",
+  "reviewer": "tradecatlabs",
+  "status": "synthetic-implementation-preflight-ready-no-real-weighted-output",
+  "policyPurpose": "Define the minimum machine-checkable envelope a future NHANES public-use LMF weighted-domain output implementation must satisfy before any real weighted output can be implemented or exported.",
+  "currentDecision": {
+    "syntheticImplementationPreflightAllowed": true,
+    "realWeightedOutputImplemented": false,
+    "realWeightedOutputPresent": false,
+    "realDesignBasedIntervalsPresent": false,
+    "publicRealOutputExportAllowed": false,
+    "rowLevelExportAllowed": false,
+    "identifierExportAllowed": false,
+    "publicAiUploadAllowed": false,
+    "calibrationAllowed": false,
+    "individualPredictionAllowed": false
+  },
+  "rules": {
+    "syntheticOnlyUntilRealOutputImplementationGate": true,
+    "aggregateOnly": true,
+    "requiredEstimatorBackend": "R survey",
+    "requiredDesignFunction": "svydesign",
+    "requiredDomainSubsettingFunction": "survey::subset",
+    "requiredVarianceMethod": "Taylor linearization",
+    "requiredWeightVariable": "WTMEC2YR",
+    "requiredStrataVariable": "SDMVSTRA",
+    "requiredPsuVariable": "SDMVPSU",
+    "domainIndicatorTiming": "after design object creation",
+    "rowDropBeforeDesignAllowed": false,
+    "rawRowPersistenceAllowed": false,
+    "unweightedCountPublicOutputAllowed": false,
+    "realConfidenceIntervalPublicOutputAllowed": false,
+    "publicDisclosureReviewRequiredBeforeRealOutput": true,
+    "effectiveSampleCiPublicationReviewRequiredBeforeRealOutput": true,
+    "allowedOutputTypes": [
+      "synthetic_weighted_output_implementation_preflight",
+      "synthetic_estimator_pipeline_contract"
+    ],
+    "forbiddenOutputTypes": [
+      "real_public_weighted_domain_rates",
+      "real_public_design_based_intervals",
+      "real_public_weighted_counts",
+      "individual_death_date_prediction",
+      "individual_risk_score",
+      "medical_advice"
+    ],
+    "requiredReportFields": [
+      "schemaVersion",
+      "sourceId",
+      "outputId",
+      "outputType",
+      "implementationStatus",
+      "containsRealNhanesData",
+      "containsRowLevelData",
+      "containsIdentifiers",
+      "containsRealWeightedRates",
+      "containsRealDesignBasedIntervals",
+      "containsUnweightedCounts",
+      "publicExportRequested",
+      "publicAiUploadRequested",
+      "disclosureReviewStatus",
+      "publicationReliabilityStatus",
+      "estimatorPlan",
+      "cells"
+    ],
+    "requiredEstimatorPlanFields": [
+      "estimatorBackend",
+      "designFunction",
+      "domainSubsettingFunction",
+      "varianceMethod",
+      "weightVariable",
+      "strataVariable",
+      "psuVariable",
+      "domainIndicatorTiming",
+      "rawRowsPersisted",
+      "rowDropBeforeDesign",
+      "publicDisclosureReviewRequired",
+      "effectiveSampleCiPublicationReviewRequired"
+    ],
+    "cellFields": [
+      "id",
+      "syntheticDomainLabel",
+      "syntheticMeasureLabel",
+      "suppressionPolicyApplied",
+      "domainDofReviewRequired",
+      "effectiveSampleReviewRequired",
+      "confidenceIntervalReviewRequired",
+      "implementationDecision"
+    ],
+    "implementationDecisionVocabulary": [
+      "preflight-pass-shape-only",
+      "preflight-block-shape"
+    ],
+    "prohibitedKeys": [
+      "SEQN",
+      "RIDAGEYR",
+      "RIAGENDR",
+      "RIDRETH3",
+      "WTMEC2YR_VALUE",
+      "SDMVSTRA_VALUE",
+      "SDMVPSU_VALUE",
+      "recordCount",
+      "deathCount",
+      "unweightedCount",
+      "weightedRate",
+      "weightedCount",
+      "confidenceIntervalLower",
+      "confidenceIntervalUpper",
+      "deathDate",
+      "mortalityStatus",
+      "individualRiskScore",
+      "prediction"
+    ]
+  },
+  "upstreamContracts": [
+    "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhanes_public_lmf_weighted_estimator_readiness.json",
+    "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhanes_public_lmf_domain_indicator_diagnostic.json",
+    "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhanes_public_lmf_dof_sparse_domain_diagnostic.json",
+    "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhanes_public_lmf_disclosure_output_envelope_policy.json",
+    "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhanes_public_lmf_effective_sample_ci_publication_policy.json"
+  ],
+  "validatorContract": {
+    "script": "domains/c1-boundary-rewriting/longevity-evidence/scripts/validate_nhanes_public_lmf_weighted_output_implementation_preflight.py",
+    "webOutput": "web/src/data/life-path-nhanes-public-lmf-weighted-output-implementation-preflight-validation.json",
+    "expectedCaseCount": 8,
+    "expectedAllowedCount": 2,
+    "expectedBlockedCount": 6,
+    "realWeightedOutputImplemented": false
+  },
+  "sourceTrace": [
+    "https://wwwn.cdc.gov/nchs/nhanes/tutorials/varianceestimation.aspx",
+    "https://wwwn.cdc.gov/nchs/nhanes/tutorials/weighting.aspx",
+    "https://wwwn.cdc.gov/nchs/nhanes/tutorials/reliabilityofestimates.aspx",
+    "https://www.cdc.gov/nchs/data/series/sr_02/sr02_175.pdf",
+    "https://www.cdc.gov/nchs/data/series/sr_02/sr02-200.pdf",
+    "https://www.cdc.gov/nchs/linked-data/mortality-files/index.html",
+    "https://r-survey.r-forge.r-project.org/survey/html/svydesign.html",
+    "https://r-survey.r-forge.r-project.org/survey/html/subset.survey.design.html"
+  ],
+  "sourceAnchors": [
+    {
+      "id": "NHANES-WEIGHTING-DESIGN",
+      "sourceUrl": "https://wwwn.cdc.gov/nchs/nhanes/tutorials/weighting.aspx",
+      "observedFact": "NHANES analysis uses sample weights and complex survey design variables for population estimates.",
+      "modelConsequence": "Future weighted output implementation must bind weight, strata and PSU variables before any domain output."
+    },
+    {
+      "id": "NHANES-VARIANCE-DOMAIN",
+      "sourceUrl": "https://wwwn.cdc.gov/nchs/nhanes/tutorials/varianceestimation.aspx",
+      "observedFact": "NHANES variance guidance distinguishes complex survey variance estimation and subgroup/domain analysis requirements.",
+      "modelConsequence": "Future implementation must create the design object before domain subsetting and must not row-drop before design creation."
+    },
+    {
+      "id": "R-SURVEY-SUBSET",
+      "sourceUrl": "https://r-survey.r-forge.r-project.org/survey/html/subset.survey.design.html",
+      "observedFact": "The survey package provides a subset method for survey design objects.",
+      "modelConsequence": "Future implementation should use design-object subsetting rather than pre-design row filtering."
+    },
+    {
+      "id": "NCHS-RELIABILITY",
+      "sourceUrl": "https://wwwn.cdc.gov/nchs/nhanes/tutorials/reliabilityofestimates.aspx",
+      "observedFact": "NCHS reliability guidance requires review of estimate stability before publication.",
+      "modelConsequence": "Future implementation must keep disclosure and reliability review as separate gates before public output."
+    }
+  ],
+  "prohibitedActions": [
+    "Do not implement real weighted NHANES public-use LMF domain output in this preflight.",
+    "Do not compute or expose real design-based confidence intervals in this preflight.",
+    "Do not persist row-level NHANES records, identifiers, raw counts, weighted counts or individual mortality fields.",
+    "Do not export outputs to public AI systems.",
+    "Do not use this preflight as calibration, causal, medical or individual prediction evidence."
+  ]
+}

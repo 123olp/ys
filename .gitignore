@@ -21,6 +21,7 @@ dist/
 **/.observablehq/
 
 # 数据产物
+build/
 **/data/raw/
 **/data/processed/
 *.sqlite

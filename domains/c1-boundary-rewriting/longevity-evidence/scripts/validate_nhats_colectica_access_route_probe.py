@@ -50,6 +50,12 @@ REQUIRED_ROUTE_FIELDS = {
     "disclosure_cell_count",
 }
 REQUIRED_CAPTURE_STEPS = {"CXP-01", "CXP-02", "CXP-03", "CXP-04"}
+REQUIRED_LIVE_REPROBE_IDS = {
+    "colectica-root-get-follow",
+    "colectica-search-r14status-get-follow",
+    "nhats-cross-year-search-public-get",
+}
+TECHNICAL_GUIDE_EVIDENCE_ID = "nhats-colectica-technical-guide"
 REQUIRED_TRUE_DECISIONS = {
     "officialAccessRouteProbed",
     "technicalGuideCaptured",
@@ -204,6 +210,90 @@ def validate_register(register: dict[str, Any], execution_register: dict[str, An
         "anonymous-access-probe",
         probe_ok,
         "anonymous root and search probes must resolve to login boundary without metadata capture",
+    )
+
+    live_reprobe = register.get("latestAnonymousLiveReprobe")
+    live_observations = live_reprobe.get("observations") if isinstance(live_reprobe, dict) else None
+    live_observation_ids = row_ids(live_observations)
+    live_decision = live_reprobe.get("decisionImpact") if isinstance(live_reprobe, dict) else None
+    live_by_id = {
+        str(row.get("id")): row
+        for row in live_observations or []
+        if isinstance(row, dict) and isinstance(row.get("id"), str)
+    }
+    root_live = live_by_id.get("colectica-root-get-follow", {})
+    search_live = live_by_id.get("colectica-search-r14status-get-follow", {})
+    public_live = live_by_id.get("nhats-cross-year-search-public-get", {})
+    live_ok = (
+        isinstance(live_reprobe, dict)
+        and live_reprobe.get("observedAt") == "2026-07-04"
+        and has_text(live_reprobe.get("methodBoundary"), "No account credentials")
+        and REQUIRED_LIVE_REPROBE_IDS.issubset(live_observation_ids)
+        and root_live.get("finalStatus") == 200
+        and root_live.get("finalUrl") == "https://nhats.colectica.org/Account/Login?returnUrl=%2F"
+        and root_live.get("htmlTitle") == "Log in - NHATS"
+        and search_live.get("finalStatus") == 200
+        and search_live.get("finalUrl") == "https://nhats.colectica.org/Account/Login?returnUrl=%2Fsearch"
+        and search_live.get("htmlTitle") == "Log in - NHATS"
+        and public_live.get("finalStatus") == 200
+        and public_live.get("finalUrl") == "https://www.nhats.org/data-access/cross-year-search"
+        and public_live.get("htmlTitle") == "Cross Year Search | NHATS"
+        and isinstance(live_decision, dict)
+        and live_decision.get("officialAccessRouteStillReachable") is True
+        and live_decision.get("anonymousColecticaStillLoginGated") is True
+        and live_decision.get("anonymousVariableSearchStillBlocked") is True
+        and live_decision.get("controlledAccountStillRequired") is True
+        and live_decision.get("valueLabelsConfirmed") is False
+        and live_decision.get("questionTextConfirmed") is False
+        and live_decision.get("routeValueCrosswalkReady") is False
+        and live_decision.get("routeClassifierAllowed") is False
+        and live_decision.get("calibrationAllowed") is False
+        and live_decision.get("individualPredictionAllowed") is False
+    )
+    add_check(
+        checks,
+        "latest-anonymous-live-reprobe",
+        live_ok,
+        "2026-07-04 live reprobe must prove public Cross-Year page reachability and anonymous Colectica login gating without confirming labels or classifier inputs",
+    )
+
+    evidence_by_id = {
+        str(row.get("id")): row
+        for row in evidence or []
+        if isinstance(row, dict) and isinstance(row.get("id"), str)
+    }
+    registered_guide = evidence_by_id.get(TECHNICAL_GUIDE_EVIDENCE_ID, {})
+    guide_freshness = register.get("latestTechnicalGuideFreshnessProbe")
+    guide_freshness_decision = (
+        guide_freshness.get("decisionImpact") if isinstance(guide_freshness, dict) else None
+    )
+    guide_freshness_ok = (
+        isinstance(guide_freshness, dict)
+        and guide_freshness.get("observedAt") == "2026-07-04"
+        and guide_freshness.get("httpStatus") == 200
+        and guide_freshness.get("finalUrl") == registered_guide.get("url")
+        and guide_freshness.get("contentType") == "application/pdf"
+        and guide_freshness.get("contentLengthBytes") == registered_guide.get("contentLengthBytes")
+        and guide_freshness.get("sha256") == registered_guide.get("sha256")
+        and guide_freshness.get("matchesRegisteredSourceEvidence") is True
+        and isinstance(guide_freshness_decision, dict)
+        and guide_freshness_decision.get("technicalGuideStillReachable") is True
+        and guide_freshness_decision.get("technicalGuideHashStable") is True
+        and guide_freshness_decision.get("detailsBasketWorkflowStillSourceAnchored") is True
+        and guide_freshness_decision.get("colecticaAccountCreated") is False
+        and guide_freshness_decision.get("colecticaLoginCompleted") is False
+        and guide_freshness_decision.get("valueLabelsConfirmed") is False
+        and guide_freshness_decision.get("questionTextConfirmed") is False
+        and guide_freshness_decision.get("routeValueCrosswalkReady") is False
+        and guide_freshness_decision.get("routeClassifierAllowed") is False
+        and guide_freshness_decision.get("calibrationAllowed") is False
+        and guide_freshness_decision.get("individualPredictionAllowed") is False
+    )
+    add_check(
+        checks,
+        "latest-technical-guide-freshness-probe",
+        guide_freshness_ok,
+        "2026-07-04 technical guide freshness probe must match registered PDF hash and keep authenticated capture, labels, classifier and calibration blocked",
     )
 
     guide = register.get("technicalGuideRoute")

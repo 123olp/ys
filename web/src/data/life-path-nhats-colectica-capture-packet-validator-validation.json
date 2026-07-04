@@ -1,0 +1,155 @@
+{
+  "schemaVersion": "human-infra.life-path-nhats-colectica-capture-packet-validator-validation.v1",
+  "validationId": "nhats-r13-r14-colectica-capture-packet-validator-validation-2026-07-04",
+  "generatedAt": "2026-07-04T20:22:39.167088+00:00",
+  "status": "pass",
+  "sourceRefs": {
+    "testCasesPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_capture_packet_validator_test_cases.json",
+    "testCasesSha256": "fb8c27303ece1c9be4391e4160c0fad8364942cdc7690cea41173065c6e3262d",
+    "authenticatedCaptureTemplatePath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_authenticated_capture_template.json",
+    "authenticatedCaptureTemplateSha256": "dc097acfcb44007b42a25ce500c6cb1d23b1154f6620a7797445293817313eeb",
+    "captureTaskRegisterPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_capture_task_register.json",
+    "captureTaskRegisterSha256": "57764c73e38ecd6d3303d36a172d6b794671d34c3dcf1718e07fbe76c54720e0",
+    "routeClassifierReadinessPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_route_classifier_readiness.json",
+    "routeClassifierReadinessSha256": "f0c0224317c9ee20e8de56dcddeadba85ae24d67b736782ba22de90e83109296",
+    "validator": "domains/c1-boundary-rewriting/longevity-evidence/scripts/validate_nhats_colectica_capture_packet_validator.py"
+  },
+  "currentDecision": {
+    "validatorReady": true,
+    "testCaseCount": 6,
+    "reviewableButStillBlockedCount": 1,
+    "cannotEvaluateCount": 1,
+    "rejectedCount": 4,
+    "realCaptureAttached": false,
+    "captureSlotClosureAllowed": false,
+    "routeClassifierAllowed": false,
+    "realExtractionAllowed": false,
+    "aggregateCohortFlowAllowed": false,
+    "weightedRouteCountsAllowed": false,
+    "publicExportAllowed": false,
+    "calibrationAllowed": false,
+    "individualPredictionAllowed": false,
+    "reason": "This validator only checks synthetic future Colectica capture packet shapes. It does not attach real captures, close slots, promote route classifier, extract NHATS rows, publish weighted output, calibrate a model or support individual use."
+  },
+  "caseResults": [
+    {
+      "caseId": "valid-redacted-second-reviewed-capture-still-blocked",
+      "expectedVerdict": "reviewable-but-still-blocked",
+      "actualVerdict": "reviewable-but-still-blocked",
+      "passed": true,
+      "rejectReasons": [],
+      "cannotEvaluateReasons": [],
+      "matchedTask": {
+        "requiredRouteFieldId": "identity_join_key",
+        "taskId": "identity_join_key-spid",
+        "variableName": "spid",
+        "round": "both",
+        "taskStatus": "pending",
+        "groupPromotionAllowed": false
+      }
+    },
+    {
+      "caseId": "missing-source-capture-hash-cannot-evaluate",
+      "expectedVerdict": "cannot-evaluate",
+      "actualVerdict": "cannot-evaluate",
+      "passed": true,
+      "rejectReasons": [],
+      "cannotEvaluateReasons": [
+        "missing required fields: sourceCaptureSha256"
+      ],
+      "matchedTask": {
+        "requiredRouteFieldId": "identity_join_key",
+        "taskId": "identity_join_key-spid",
+        "variableName": "spid",
+        "round": "both",
+        "taskStatus": "pending",
+        "groupPromotionAllowed": false
+      }
+    },
+    {
+      "caseId": "credential-bearing-packet-rejected",
+      "expectedVerdict": "rejected",
+      "actualVerdict": "rejected",
+      "passed": true,
+      "rejectReasons": [
+        "forbidden keys present: sessionCookie",
+        "artifactDescriptionRedacted appears to describe forbidden raw or individual material"
+      ],
+      "cannotEvaluateReasons": [
+        "review flags must all be true for a reviewable packet: concordanceReviewed, publicUseTierReviewed, questionTextReviewed, sensitiveRestrictedExclusionReviewed, universeSkipLogicReviewed, valueLabelsReviewed, variableSpecificMissingCodesReviewed"
+      ],
+      "matchedTask": {
+        "requiredRouteFieldId": "identity_join_key",
+        "taskId": "identity_join_key-spid",
+        "variableName": "spid",
+        "round": "both",
+        "taskStatus": "pending",
+        "groupPromotionAllowed": false
+      }
+    },
+    {
+      "caseId": "unknown-task-and-variable-rejected",
+      "expectedVerdict": "rejected",
+      "actualVerdict": "rejected",
+      "passed": true,
+      "rejectReasons": [
+        "packet does not match a registered capture task"
+      ],
+      "cannotEvaluateReasons": [
+        "review flags must all be true for a reviewable packet: concordanceReviewed, publicUseTierReviewed, questionTextReviewed, sensitiveRestrictedExclusionReviewed, universeSkipLogicReviewed, valueLabelsReviewed, variableSpecificMissingCodesReviewed"
+      ],
+      "matchedTask": null
+    },
+    {
+      "caseId": "public-ai-upload-and-ai-only-signoff-rejected",
+      "expectedVerdict": "rejected",
+      "actualVerdict": "rejected",
+      "passed": true,
+      "rejectReasons": [
+        "publicAiUpload must be false",
+        "aiOnlySignoff must be false",
+        "reviewerRole must identify a human reviewer",
+        "secondReviewerRole must identify an independent human reviewer",
+        "secondReviewerRole must differ from reviewerRole"
+      ],
+      "cannotEvaluateReasons": [
+        "review flags must all be true for a reviewable packet: concordanceReviewed, publicUseTierReviewed, questionTextReviewed, sensitiveRestrictedExclusionReviewed, universeSkipLogicReviewed, valueLabelsReviewed, variableSpecificMissingCodesReviewed"
+      ],
+      "matchedTask": {
+        "requiredRouteFieldId": "identity_join_key",
+        "taskId": "identity_join_key-spid",
+        "variableName": "spid",
+        "round": "both",
+        "taskStatus": "pending",
+        "groupPromotionAllowed": false
+      }
+    },
+    {
+      "caseId": "premature-promotion-rejected",
+      "expectedVerdict": "rejected",
+      "actualVerdict": "rejected",
+      "passed": true,
+      "rejectReasons": [
+        "promotionAllowed must be false",
+        "routeClassifierAllowed must be false"
+      ],
+      "cannotEvaluateReasons": [
+        "review flags must all be true for a reviewable packet: concordanceReviewed, publicUseTierReviewed, questionTextReviewed, sensitiveRestrictedExclusionReviewed, universeSkipLogicReviewed, valueLabelsReviewed, variableSpecificMissingCodesReviewed"
+      ],
+      "matchedTask": {
+        "requiredRouteFieldId": "identity_join_key",
+        "taskId": "identity_join_key-spid",
+        "variableName": "spid",
+        "round": "both",
+        "taskStatus": "pending",
+        "groupPromotionAllowed": false
+      }
+    }
+  ],
+  "hardBoundaries": [
+    "Validator pass does not mean a real Colectica capture exists.",
+    "A reviewable packet remains blocked until governed access, redacted source hashes, human review and second-reviewer signoff are externally evidenced.",
+    "No output from this validator can close a capture slot or open route classifier, extraction, aggregate cohort flow, public export, calibration or individual prediction."
+  ],
+  "failures": []
+}

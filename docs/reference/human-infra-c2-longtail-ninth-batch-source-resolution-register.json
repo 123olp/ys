@@ -1,0 +1,297 @@
+{
+  "schemaVersion": "human-infra.c2-longtail-ninth-batch-source-resolution-register.v1",
+  "registerId": "human-infra-c2-longtail-ninth-batch-source-resolution-register-2026-07-04",
+  "status": "active-c2ltb9-source-resolution-register-independent-fresh-review-required",
+  "purpose": "Resolve the two C2-LT-B9 local-review issue rows into stable official, PubMed, DOI or canonical route candidates without changing reviewed artifact, advice or model admission status.",
+  "sourceOfTruth": {
+    "sourceExtractionQueue": "docs/reference/human-infra-c2-longtail-ninth-batch-source-extraction-queue.json",
+    "sourceExtractionRegister": "docs/reference/human-infra-c2-longtail-ninth-batch-source-extraction-register.json",
+    "localReviewRegister": "docs/reference/human-infra-c2-longtail-ninth-batch-local-review-register.json",
+    "evidencePolicy": "docs/reference/evidence-policy.md",
+    "maturityGapRegister": "docs/reference/human-infra-maturity-gap-register.json"
+  },
+  "scope": {
+    "batchId": "C2-LT-B9",
+    "resolutionLevel": "c2ltb9-local-review-issue-row-source-resolution-v0.1",
+    "totalLocalReviewRowCount": 24,
+    "issueRowCount": 2,
+    "manualRouteIssueCount": 2,
+    "idsaHttp525IssueCount": 1,
+    "medicaidHttp403IssueCount": 1,
+    "resolutionCandidateCount": 8,
+    "nonClaims": [
+      "This source-resolution register does not change any extraction row into reviewed evidence.",
+      "This source-resolution register does not create reviewed artifacts, Source Cards, variable cards, endpoint cards, transfer-boundary cards or downgrade cards.",
+      "This source-resolution register does not authorize medical, dental, rehabilitation, respiratory-equipment, vaccine, environmental-health or benefits advice.",
+      "This source-resolution register does not open calibrated prediction, intervention ranking, individual advice, individual death-date output or model admission."
+    ]
+  },
+  "verificationSources": [
+    {
+      "verificationId": "C2LTB9-SR-VERIFY-IDSA-GUIDELINE-PAGE-20260704",
+      "title": "IWGDF/IDSA Guidelines on the Diagnosis and Treatment of Diabetes-Related Foot Infections",
+      "url": "https://www.idsociety.org/practice-guideline/diabetic-foot-infections/",
+      "sourceType": "idsa-official-guideline-page-route-check",
+      "useBoundary": "Use only to resolve route identity and prepare manual-route or independent fresh review; no artifact fill, individual advice, intervention ranking, calibrated prediction, clinical-validity claim or model admission."
+    },
+    {
+      "verificationId": "C2LTB9-SR-VERIFY-IDSA-PUBMED-CIAD527-20260704",
+      "title": "IWGDF/IDSA Guidelines on the Diagnosis and Treatment of Diabetes-related Foot Infections (IWGDF/IDSA 2023)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37779457/",
+      "sourceType": "ncbi-pubmed-title-doi-route-check",
+      "useBoundary": "Use only to resolve source identity and DOI route before independent fresh review; no artifact fill, medical advice, calibrated prediction or model admission."
+    },
+    {
+      "verificationId": "C2LTB9-SR-VERIFY-IDSA-DOI-CIAD527-20260704",
+      "title": "DOI route for Clinical Infectious Diseases ciad527",
+      "url": "https://doi.org/10.1093/cid/ciad527",
+      "sourceType": "doi-publisher-route-check",
+      "useBoundary": "Use only as a publisher-route candidate; automated access may be challenged, so no fulltext claim extraction before manual/fulltext review."
+    },
+    {
+      "verificationId": "C2LTB9-SR-VERIFY-IWGDF-COMPANION-PUBMED-20260704",
+      "title": "IWGDF/IDSA guidelines on the diagnosis and treatment of diabetes-related foot infections (IWGDF/IDSA 2023)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37779323/",
+      "sourceType": "ncbi-pubmed-companion-route-check",
+      "useBoundary": "Use only as a companion bibliographic route candidate for manual route review; no artifact fill, medical advice, calibrated prediction or model admission."
+    },
+    {
+      "verificationId": "C2LTB9-SR-VERIFY-MEDICAID-DENTAL-CANONICAL-20260704",
+      "title": "Dental Care | Medicaid",
+      "url": "https://www.medicaid.gov/medicaid/benefits/dental-care",
+      "sourceType": "medicaid-official-canonical-page-route-check",
+      "useBoundary": "Use only to resolve the Medicaid dental-care route and prepare manual-route or independent fresh review; no benefits advice, dental advice, individual eligibility inference, calibrated prediction or model admission."
+    },
+    {
+      "verificationId": "C2LTB9-SR-VERIFY-MEDICAID-DENTAL-INDEX-REDIRECT-20260704",
+      "title": "Medicaid Dental Care index route redirects to canonical Dental Care page",
+      "url": "https://www.medicaid.gov/medicaid/benefits/dental-care/index.html",
+      "sourceType": "medicaid-official-redirect-route-check",
+      "useBoundary": "Use only to document original registered route normalization; do not use as evidence of benefit design, access, eligibility or model variables before fresh review."
+    },
+    {
+      "verificationId": "C2LTB9-SR-VERIFY-MEDICAID-ORAL-HEALTH-FACTSHEET-20260704",
+      "title": "2010 Medicaid/CHIP Oral Health Services fact sheet",
+      "url": "https://www.medicaid.gov/sites/default/files/2019-12/2010-dental-factsheet.pdf",
+      "sourceType": "medicaid-official-pdf-route-candidate",
+      "useBoundary": "Use only as an official linked PDF route candidate for source-context review; no dental benefits advice, individual advice, calibrated prediction or model admission."
+    },
+    {
+      "verificationId": "C2LTB9-SR-VERIFY-MEDICAID-EPSDT-20260704",
+      "title": "Early and Periodic Screening, Diagnostic, and Treatment",
+      "url": "https://www.medicaid.gov/medicaid/benefits/early-and-periodic-screening-diagnostic-and-treatment",
+      "sourceType": "medicaid-official-related-policy-route-candidate",
+      "useBoundary": "Use only as related official context for pediatric dental/EPSDT route review; no eligibility advice, benefit advice, dental advice, calibrated prediction or model admission."
+    }
+  ],
+  "blockedUses": [
+    "calibrated-prediction",
+    "individual-advice",
+    "individual-death-date-output",
+    "intervention-ranking",
+    "clinical-validity-claim",
+    "domain-claim-upgrade",
+    "medical-advice",
+    "dental-advice",
+    "rehabilitation-advice",
+    "respiratory-equipment-advice",
+    "vaccine-advice",
+    "environmental-health-advice"
+  ],
+  "resolutionRows": [
+    {
+      "resolutionId": "C2LTB9-SRR-001",
+      "taskId": "C2LTB9-EXT-008",
+      "domainId": "chronic-wound-venous-diabetic-pressure-ulcer-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/chronic-wound-venous-diabetic-pressure-ulcer-continuity",
+      "sourceRefId": "C2LTB9-SRC-04-2",
+      "originalRegisteredTitle": "IDSA guideline: Diabetic Foot Infections",
+      "originalRegisteredUrl": "https://www.idsociety.org/practice-guideline/diabetic-foot-infections/",
+      "localReviewIssueType": "automated-access-http-525-idsa-diabetic-foot-infection-route",
+      "currentSourceCheck": {
+        "observedTitle": "IDSA official guideline page is currently reachable and exposes the title IWGDF/IDSA Guidelines on the Diagnosis and Treatment of Diabetes-Related Foot Infections; PubMed PMID 37779457 matches the Clinical Infectious Diseases ciad527 route and exposes DOI 10.1093/cid/ciad527.",
+        "verificationEvidence": [
+          "C2LTB9-SR-VERIFY-IDSA-GUIDELINE-PAGE-20260704",
+          "C2LTB9-SR-VERIFY-IDSA-PUBMED-CIAD527-20260704",
+          "C2LTB9-SR-VERIFY-IDSA-DOI-CIAD527-20260704",
+          "C2LTB9-SR-VERIFY-IWGDF-COMPANION-PUBMED-20260704"
+        ],
+        "result": "idsa-official-pubmed-doi-companion-candidates-prepared-not-fresh-reviewed"
+      },
+      "sourceResolutionDecision": "Resolve EXT-008 from the formerly blocked IDSA automated route into official IDSA page, PubMed and DOI/publisher candidates before independent fresh review.",
+      "sourceResolutionStatus": "candidate-resolution-prepared-not-fresh-reviewed",
+      "sourceResolutionCandidates": [
+        {
+          "candidateId": "C2LTB9-SRR-001-CAND-01",
+          "candidateRole": "idsa-official-guideline-page",
+          "title": "IWGDF/IDSA Guidelines on the Diagnosis and Treatment of Diabetes-Related Foot Infections",
+          "url": "https://www.idsociety.org/practice-guideline/diabetic-foot-infections/",
+          "sourceType": "official-guideline-page-route",
+          "sourceIdentityStatus": "official-route-reachable-not-fresh-reviewed",
+          "verificationEvidence": "C2LTB9-SR-VERIFY-IDSA-GUIDELINE-PAGE-20260704",
+          "resolutionFinding": "Official IDSA route is reachable and identifies the intended guideline page, but content has not been independently reviewed for extraction boundaries.",
+          "useBoundary": "Use only for source-route resolution, manual/fulltext preparation and independent fresh review; no wound care advice, infection management advice, calibrated risk, intervention ranking, clinical validity claim or model admission."
+        },
+        {
+          "candidateId": "C2LTB9-SRR-001-CAND-02",
+          "candidateRole": "pubmed-primary-cid-record",
+          "title": "IWGDF/IDSA Guidelines on the Diagnosis and Treatment of Diabetes-related Foot Infections (IWGDF/IDSA 2023)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/37779457/",
+          "sourceType": "pubmed-record-route",
+          "sourceIdentityStatus": "pubmed-title-and-doi-verified-not-fresh-reviewed",
+          "verificationEvidence": "C2LTB9-SR-VERIFY-IDSA-PUBMED-CIAD527-20260704",
+          "resolutionFinding": "PMID 37779457 matches the Clinical Infectious Diseases guideline title and exposes DOI 10.1093/cid/ciad527.",
+          "useBoundary": "Use only for source-route resolution, manual/fulltext preparation and independent fresh review; no wound care advice, infection management advice, calibrated risk, intervention ranking, clinical validity claim or model admission."
+        },
+        {
+          "candidateId": "C2LTB9-SRR-001-CAND-03",
+          "candidateRole": "doi-publisher-route",
+          "title": "IWGDF/IDSA Guidelines on the Diagnosis and Treatment of Diabetes-related Foot Infections (IWGDF/IDSA 2023)",
+          "url": "https://doi.org/10.1093/cid/ciad527",
+          "sourceType": "doi-publisher-route",
+          "sourceIdentityStatus": "doi-identified-publisher-route-may-require-manual-access-not-fresh-reviewed",
+          "verificationEvidence": "C2LTB9-SR-VERIFY-IDSA-DOI-CIAD527-20260704",
+          "resolutionFinding": "DOI route resolves to publisher context but automated access may be challenged; manual/fulltext review is still required.",
+          "useBoundary": "Use only for source-route resolution, manual/fulltext preparation and independent fresh review; no wound care advice, infection management advice, calibrated risk, intervention ranking, clinical validity claim or model admission."
+        },
+        {
+          "candidateId": "C2LTB9-SRR-001-CAND-04",
+          "candidateRole": "iwgdf-companion-pubmed-route",
+          "title": "IWGDF/IDSA guidelines on the diagnosis and treatment of diabetes-related foot infections (IWGDF/IDSA 2023)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/37779323/",
+          "sourceType": "pubmed-companion-record-route",
+          "sourceIdentityStatus": "pubmed-companion-title-and-doi-verified-not-fresh-reviewed",
+          "verificationEvidence": "C2LTB9-SR-VERIFY-IWGDF-COMPANION-PUBMED-20260704",
+          "resolutionFinding": "PMID 37779323 identifies a companion IWGDF/IDSA 2023 bibliographic route with DOI 10.1002/dmrr.3687; it is a route candidate, not a substitute for reviewing the intended IDSA/Clinical Infectious Diseases source context.",
+          "useBoundary": "Use only for source-route resolution and companion-lineage checking during independent fresh review; no wound care advice, infection management advice, calibrated risk, intervention ranking, clinical validity claim or model admission."
+        }
+      ],
+      "requiredFreshReviewActions": [
+        "Verify IDSA, PubMed and DOI route identity against the intended diabetic-foot-infection guideline.",
+        "Extract only guideline scope, wound/infection variable boundaries, endpoint limits and downgrade triggers from full context.",
+        "Prevent use as wound care instructions, infection management, antibiotic choice, offloading decisions, amputation-risk advice or calibrated prediction.",
+        "Run independent fresh review before bounded artifact creation.",
+        "Keep model admission and prohibited individual uses blocked."
+      ],
+      "artifactPromotionDecision": "blocked-pending-source-resolution-manual-route-independent-fresh-review-and-reviewed-artifact-gates",
+      "modelAdmissionDecision": "blocked-pending-source-resolution-independent-fresh-review-reviewed-artifact-and-model-admission-gates",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade",
+        "medical-advice",
+        "dental-advice",
+        "rehabilitation-advice",
+        "respiratory-equipment-advice",
+        "vaccine-advice",
+        "environmental-health-advice"
+      ]
+    },
+    {
+      "resolutionId": "C2LTB9-SRR-002",
+      "taskId": "C2LTB9-EXT-011",
+      "domainId": "dental-care-access-insurance-workforce-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/dental-care-access-insurance-workforce-continuity",
+      "sourceRefId": "C2LTB9-SRC-06-1",
+      "originalRegisteredTitle": "Medicaid Dental Care benefits",
+      "originalRegisteredUrl": "https://www.medicaid.gov/medicaid/benefits/dental-care/index.html",
+      "localReviewIssueType": "automated-access-http-403-medicaid-dental-care-benefits-route",
+      "currentSourceCheck": {
+        "observedTitle": "The original Medicaid index route redirects to the canonical Dental Care page; the canonical page is reachable and links official oral-health, EPSDT and dental-benefit context routes.",
+        "verificationEvidence": [
+          "C2LTB9-SR-VERIFY-MEDICAID-DENTAL-CANONICAL-20260704",
+          "C2LTB9-SR-VERIFY-MEDICAID-DENTAL-INDEX-REDIRECT-20260704",
+          "C2LTB9-SR-VERIFY-MEDICAID-ORAL-HEALTH-FACTSHEET-20260704",
+          "C2LTB9-SR-VERIFY-MEDICAID-EPSDT-20260704"
+        ],
+        "result": "medicaid-canonical-pdf-epsdt-candidates-prepared-not-fresh-reviewed"
+      },
+      "sourceResolutionDecision": "Resolve EXT-011 from the formerly blocked Medicaid index route into canonical Medicaid page, redirect provenance, oral-health PDF and EPSDT related-route candidates before independent fresh review.",
+      "sourceResolutionStatus": "candidate-resolution-prepared-not-fresh-reviewed",
+      "sourceResolutionCandidates": [
+        {
+          "candidateId": "C2LTB9-SRR-002-CAND-01",
+          "candidateRole": "medicaid-canonical-dental-care-page",
+          "title": "Dental Care | Medicaid",
+          "url": "https://www.medicaid.gov/medicaid/benefits/dental-care",
+          "sourceType": "official-canonical-policy-page-route",
+          "sourceIdentityStatus": "canonical-official-route-reachable-not-fresh-reviewed",
+          "verificationEvidence": "C2LTB9-SR-VERIFY-MEDICAID-DENTAL-CANONICAL-20260704",
+          "resolutionFinding": "Canonical Medicaid page is reachable and identifies the intended Dental Care route, but page content has not been independently reviewed for source-card boundaries.",
+          "useBoundary": "Use only for route resolution, manual/fulltext preparation and independent fresh review; no dental advice, benefits advice, eligibility inference, billing advice, calibrated prediction or model admission."
+        },
+        {
+          "candidateId": "C2LTB9-SRR-002-CAND-02",
+          "candidateRole": "medicaid-original-index-redirect-provenance",
+          "title": "Medicaid Dental Care index route",
+          "url": "https://www.medicaid.gov/medicaid/benefits/dental-care/index.html",
+          "sourceType": "official-redirect-provenance-route",
+          "sourceIdentityStatus": "redirect-to-canonical-documented-not-fresh-reviewed",
+          "verificationEvidence": "C2LTB9-SR-VERIFY-MEDICAID-DENTAL-INDEX-REDIRECT-20260704",
+          "resolutionFinding": "Original registered URL redirects to the canonical Dental Care page; retain only as lineage/provenance route.",
+          "useBoundary": "Use only to explain URL normalization; no claim extraction from redirect provenance, no dental advice, no benefits advice, no calibrated prediction and no model admission."
+        },
+        {
+          "candidateId": "C2LTB9-SRR-002-CAND-03",
+          "candidateRole": "medicaid-oral-health-factsheet-pdf",
+          "title": "2010 Medicaid/CHIP Oral Health Services fact sheet",
+          "url": "https://www.medicaid.gov/sites/default/files/2019-12/2010-dental-factsheet.pdf",
+          "sourceType": "official-linked-pdf-route",
+          "sourceIdentityStatus": "linked-pdf-route-identified-not-fresh-reviewed",
+          "verificationEvidence": "C2LTB9-SR-VERIFY-MEDICAID-ORAL-HEALTH-FACTSHEET-20260704",
+          "resolutionFinding": "Official Dental Care page links this oral-health services fact sheet as a candidate manual/fulltext route.",
+          "useBoundary": "Use only for source-route resolution and manual/fulltext review; no dental advice, benefits advice, eligibility inference, billing advice, calibrated prediction or model admission."
+        },
+        {
+          "candidateId": "C2LTB9-SRR-002-CAND-04",
+          "candidateRole": "medicaid-epsdt-related-policy-route",
+          "title": "Early and Periodic Screening, Diagnostic, and Treatment",
+          "url": "https://www.medicaid.gov/medicaid/benefits/early-and-periodic-screening-diagnostic-and-treatment",
+          "sourceType": "official-related-policy-page-route",
+          "sourceIdentityStatus": "related-official-route-identified-not-fresh-reviewed",
+          "verificationEvidence": "C2LTB9-SR-VERIFY-MEDICAID-EPSDT-20260704",
+          "resolutionFinding": "EPSDT route is related pediatric coverage context and must not be conflated with adult Medicaid dental benefit design.",
+          "useBoundary": "Use only as related official context during manual/fulltext review; no eligibility advice, benefits advice, dental advice, calibrated prediction or model admission."
+        }
+      ],
+      "requiredFreshReviewActions": [
+        "Verify canonical Medicaid Dental Care page, redirect lineage, linked oral-health fact sheet and EPSDT route identity.",
+        "Extract only dental access, coverage-boundary, cost/friction, workforce/access and delayed-care variables that survive source-context review.",
+        "Prevent use as eligibility advice, benefits advice, billing advice, adult-benefit guarantee, provider recommendation or calibrated prediction.",
+        "Run independent fresh review before bounded artifact creation.",
+        "Keep model admission and prohibited individual uses blocked."
+      ],
+      "artifactPromotionDecision": "blocked-pending-source-resolution-manual-route-independent-fresh-review-and-reviewed-artifact-gates",
+      "modelAdmissionDecision": "blocked-pending-source-resolution-independent-fresh-review-reviewed-artifact-and-model-admission-gates",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade",
+        "medical-advice",
+        "dental-advice",
+        "rehabilitation-advice",
+        "respiratory-equipment-advice",
+        "vaccine-advice",
+        "environmental-health-advice"
+      ]
+    }
+  ],
+  "requiredNextArtifacts": [
+    "c2ltb9-manual-route-extraction-register",
+    "c2ltb9-independent-fresh-review-protocol",
+    "c2ltb9-independent-fresh-review-verdict-register",
+    "reviewed-source-card",
+    "variable-card",
+    "endpoint-card",
+    "uncertainty-card",
+    "transfer-boundary-card",
+    "downgrade-check-row"
+  ],
+  "modelAdmissionDecision": "blocked-source-resolution-prepared-but-manual-route-extraction-independent-fresh-review-reviewed-artifacts-and-model-admission-gates-incomplete"
+}

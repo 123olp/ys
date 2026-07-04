@@ -1,0 +1,277 @@
+{
+  "schemaVersion": "human-infra.l4-model-readiness-blocker-matrix.v1",
+  "matrixId": "human-infra-l4-model-readiness-blocker-matrix-2026-07-04",
+  "status": "active-l4-admission-blocked-readiness-matrix",
+  "owner": "tradecatlabs",
+  "purpose": "Collapse the remaining path from local/synthetic model evidence to L4 aggregate calibrated research-model admission into one auditable blocker matrix. This file does not authorize public weighted output, calibration, individual prediction, intervention ranking or medical advice.",
+  "sourceOfTruth": {
+    "modelAdmissionContract": "docs/reference/human-infra-model-admission-contract.json",
+    "modelAdmissionCandidateRegistry": "docs/reference/human-infra-model-admission-candidate-registry.json",
+    "l4UnblockExecutionPlan": "docs/reference/human-infra-l4-unblock-execution-plan.json",
+    "maturityGapRegister": "docs/reference/human-infra-maturity-gap-register.json",
+    "maturityRoadmap": "docs/reference/human-infra-maturity-roadmap.md",
+    "nhanesWeightedDomainOutputReadiness": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhanes_public_lmf_weighted_domain_output_readiness.json",
+    "nhanesLocalRunEvidenceManifest": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhanes_public_lmf_local_run_evidence_manifest.json",
+    "nhanesDisclosureReviewExecutionRegister": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhanes_public_lmf_disclosure_review_execution_register.json",
+    "nhatsL4ReadinessRunway": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_l4_readiness_runway.json",
+    "publicWebNoRealValuesGate": "web/src/data/life-path-nhanes-public-lmf-public-web-data-no-real-values-validation.json"
+  },
+  "currentDecision": {
+    "highestCurrentModelLevel": "L3-local-or-synthetic-only",
+    "l4AggregateCalibratedAdmissionAllowed": false,
+    "publicWeightedDomainOutputAllowed": false,
+    "calibratedPredictionAvailable": false,
+    "individualUseAllowed": false,
+    "reason": "NHANES public-use LMF can support a local-only ignored weighted-domain run and redacted hash manifest, and NHATS has an auditable L4 runway, but public disclosure review, public weighted output implementation, governed NHATS access, exact field/value confirmation, real aggregate extraction, external validation and calibration diagnostics are still missing."
+  },
+  "candidatePaths": [
+    {
+      "candidateId": "L4C-NHANES-PUBLIC-LMF-WEIGHTED-DOMAIN",
+      "candidateName": "NHANES public-use LMF weighted domain aggregate path",
+      "currentLevel": "L3-local-only-public-data-smoke",
+      "targetLevel": "L4-aggregate-calibrated-research-model",
+      "evidencePaths": [
+        "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhanes_public_lmf_weighted_domain_output_readiness.json",
+        "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhanes_public_lmf_local_run_evidence_manifest.json",
+        "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhanes_public_lmf_disclosure_review_execution_register.json",
+        "web/src/data/life-path-nhanes-public-lmf-public-web-data-no-real-values-validation.json"
+      ],
+      "admissionAllowed": false,
+      "blockingReason": "Real weighted rates and design-based intervals are generated only in ignored local reports; tracked artifacts omit real values, human disclosure review has zero completed slots, public output implementation is not approved, and no calibration/validation diagnostics exist."
+    },
+    {
+      "candidateId": "L4C-NHATS-R13-R14-FUNCTIONAL-SURVIVAL",
+      "candidateName": "NHATS R13/R14 functional-survival aggregate runway",
+      "currentLevel": "L2-runway-only",
+      "targetLevel": "L4-aggregate-calibrated-research-model",
+      "evidencePaths": [
+        "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_l4_readiness_runway.json",
+        "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_first_estimand_protocol.json",
+        "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_l2_variable_family_admission_register.json",
+        "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_preoutcome_aggregation_protocol.json"
+      ],
+      "admissionAllowed": false,
+      "blockingReason": "The estimand, L2 variable families and pre-outcome aggregation rules are frozen, but governed access, controlled workspace execution, Colectica captures, exact variables/value labels, real extraction, survey design, disclosure review, validation and calibration are absent."
+    }
+  ],
+  "blockers": [
+    {
+      "blockerId": "L4B-01-governed-data-access",
+      "status": "blocked",
+      "blocksAdmission": true,
+      "appliesToCandidates": [
+        "L4C-NHATS-R13-R14-FUNCTIONAL-SURVIVAL"
+      ],
+      "admissionGateRefs": [
+        "MAC-G4-data-access",
+        "MODEL-G3-real-data-access"
+      ],
+      "evidencePaths": [
+        "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_l4_readiness_runway.json",
+        "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_acquisition_readiness.json",
+        "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_registration_evidence_template.json"
+      ],
+      "requiredBeforeUnblock": [
+        "redacted governed-access proof",
+        "controlled workspace path outside repository",
+        "access and inventory log",
+        "real storage/destruction evidence"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-prediction",
+        "individual-death-date-output",
+        "public-output-release"
+      ]
+    },
+    {
+      "blockerId": "L4B-02-exact-field-value-confirmation",
+      "status": "blocked",
+      "blocksAdmission": true,
+      "appliesToCandidates": [
+        "L4C-NHATS-R13-R14-FUNCTIONAL-SURVIVAL"
+      ],
+      "admissionGateRefs": [
+        "MAC-G5-variable-confirmation",
+        "MODEL-G4-field-and-value-confirmation"
+      ],
+      "evidencePaths": [
+        "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_l4_readiness_runway.json",
+        "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_variable_confirmation_matrix.json",
+        "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_value_label_review_execution_register.json"
+      ],
+      "requiredBeforeUnblock": [
+        "authenticated Colectica variable page hashes",
+        "exact field names",
+        "value labels and negative-code maps",
+        "question text, universe and skip logic",
+        "second reviewer signoff"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-prediction",
+        "individual-death-date-output",
+        "model-variable-admission"
+      ]
+    },
+    {
+      "blockerId": "L4B-03-real-extraction-cohort-flow",
+      "status": "blocked",
+      "blocksAdmission": true,
+      "appliesToCandidates": [
+        "L4C-NHATS-R13-R14-FUNCTIONAL-SURVIVAL"
+      ],
+      "admissionGateRefs": [
+        "MAC-G6-extraction-and-cohort-flow",
+        "MODEL-G5-real-extraction-and-cohort-flow"
+      ],
+      "evidencePaths": [
+        "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_l4_readiness_runway.json",
+        "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_cohort_flow_endpoint_protocol.json",
+        "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_preoutcome_aggregation_protocol.json"
+      ],
+      "requiredBeforeUnblock": [
+        "governed aggregate-only extractor",
+        "cohort-flow aggregate table",
+        "endpoint route counts",
+        "missingness table",
+        "suppression report"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-prediction",
+        "individual-death-date-output",
+        "raw-row-output"
+      ]
+    },
+    {
+      "blockerId": "L4B-04-disclosure-review-public-output",
+      "status": "blocked",
+      "blocksAdmission": true,
+      "appliesToCandidates": [
+        "L4C-NHANES-PUBLIC-LMF-WEIGHTED-DOMAIN",
+        "L4C-NHATS-R13-R14-FUNCTIONAL-SURVIVAL"
+      ],
+      "admissionGateRefs": [
+        "MAC-G8-governance-boundary",
+        "MODEL-G6-survey-design-and-weighted-estimates"
+      ],
+      "evidencePaths": [
+        "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhanes_public_lmf_disclosure_review_execution_register.json",
+        "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhanes_public_lmf_local_run_evidence_manifest.json",
+        "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_l4_readiness_runway.json"
+      ],
+      "requiredBeforeUnblock": [
+        "reviewed output artifact hash",
+        "all required human disclosure review slots complete",
+        "second reviewer signoff",
+        "suppression and reliability approval",
+        "separate public-output implementation review"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-prediction",
+        "individual-death-date-output",
+        "public-output-release"
+      ]
+    },
+    {
+      "blockerId": "L4B-05-survey-design-weighted-estimates",
+      "status": "blocked",
+      "blocksAdmission": true,
+      "appliesToCandidates": [
+        "L4C-NHANES-PUBLIC-LMF-WEIGHTED-DOMAIN",
+        "L4C-NHATS-R13-R14-FUNCTIONAL-SURVIVAL"
+      ],
+      "admissionGateRefs": [
+        "MODEL-G6-survey-design-and-weighted-estimates"
+      ],
+      "evidencePaths": [
+        "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhanes_public_lmf_weighted_domain_output_readiness.json",
+        "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhanes_public_lmf_local_run_evidence_manifest.json",
+        "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_l4_readiness_runway.json"
+      ],
+      "requiredBeforeUnblock": [
+        "public weighted-domain output implementation review",
+        "real effective sample and CI publication review",
+        "variance method validation",
+        "public suppression review"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-prediction",
+        "individual-death-date-output",
+        "unreviewed-weighted-output"
+      ]
+    },
+    {
+      "blockerId": "L4B-06-validation-calibration",
+      "status": "blocked",
+      "blocksAdmission": true,
+      "appliesToCandidates": [
+        "L4C-NHANES-PUBLIC-LMF-WEIGHTED-DOMAIN",
+        "L4C-NHATS-R13-R14-FUNCTIONAL-SURVIVAL"
+      ],
+      "admissionGateRefs": [
+        "MAC-G7-validation-calibration",
+        "MODEL-G7-external-validation-and-calibration"
+      ],
+      "evidencePaths": [
+        "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_calibration_readiness.json",
+        "docs/reference/human-infra-model-admission-candidate-registry.json",
+        "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_l4_readiness_runway.json"
+      ],
+      "requiredBeforeUnblock": [
+        "development cohort or aggregate training design",
+        "validation cohort, resampling plan or external validation plan",
+        "calibration diagnostics",
+        "real-parameter sensitivity analysis",
+        "bias and applicability review"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-prediction",
+        "individual-death-date-output",
+        "intervention-ranking"
+      ]
+    }
+  ],
+  "nextWorkOrders": [
+    {
+      "priority": 1,
+      "item": "Complete controlled Colectica capture and exact value-label confirmation for the first NHATS variable families before any NHATS extractor exists.",
+      "unblocks": [
+        "L4B-02-exact-field-value-confirmation"
+      ]
+    },
+    {
+      "priority": 2,
+      "item": "Run human disclosure review on the local NHANES disclosure packet, record reviewed output hash and second-reviewer signoff, and keep public output blocked until a separate implementation review passes.",
+      "unblocks": [
+        "L4B-04-disclosure-review-public-output",
+        "L4B-05-survey-design-weighted-estimates"
+      ]
+    },
+    {
+      "priority": 3,
+      "item": "Execute governed NHATS access and controlled workspace evidence outside the repository, tracking only redacted hashes and no raw rows.",
+      "unblocks": [
+        "L4B-01-governed-data-access"
+      ]
+    },
+    {
+      "priority": 4,
+      "item": "After access, field confirmation, extraction, survey design and disclosure gates pass, create validation/calibration diagnostics and TRIPOD-style reporting packet.",
+      "unblocks": [
+        "L4B-06-validation-calibration"
+      ]
+    }
+  ],
+  "hardBoundaries": [
+    "No individual death-date output.",
+    "No individual medical advice.",
+    "No public weighted-domain output before disclosure review and implementation review.",
+    "No calibration claim before validation and calibration diagnostics.",
+    "No raw rows, identifiers or real weighted rates in tracked public Web data."
+  ]
+}

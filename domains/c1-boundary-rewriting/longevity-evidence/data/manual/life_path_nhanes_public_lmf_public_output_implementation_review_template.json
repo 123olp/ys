@@ -1,0 +1,199 @@
+{
+  "schemaVersion": "human-infra.nhanes-public-lmf-public-output-implementation-review-template.v1",
+  "templateId": "nhanes-public-lmf-2017-2018-public-output-implementation-review-template",
+  "status": "template-ready-review-not-complete-no-public-output",
+  "sourceId": "nhanes-public-lmf-2017-2018",
+  "reviewType": "public-output-implementation-review-template",
+  "createdAt": "2026-07-04",
+  "purpose": "Define the required implementation-review slots that must be completed after disclosure approval and before any NHANES public-use LMF weighted-domain output can be exposed through tracked Web data or public pages.",
+  "reviewPrerequisites": {
+    "disclosureReviewExecutionValidationPath": "web/src/data/life-path-nhanes-public-lmf-disclosure-review-execution-validation.json",
+    "publicWebNoRealValuesValidationPath": "web/src/data/life-path-nhanes-public-lmf-public-web-data-no-real-values-validation.json",
+    "localRunEvidenceManifestValidationPath": "web/src/data/life-path-nhanes-public-lmf-local-run-evidence-manifest-validation.json",
+    "weightedDomainOutputReadinessValidationPath": "web/src/data/life-path-nhanes-public-lmf-weighted-domain-output-readiness-validation.json"
+  },
+  "currentDecision": {
+    "templateValidationAllowed": true,
+    "implementationReviewComplete": false,
+    "approvedOutputArtifactBound": false,
+    "reviewedOutputArtifactHashBound": false,
+    "frontEndArtifactReviewed": false,
+    "publicOutputImplementationAllowed": false,
+    "publicWeightedDomainOutputAllowed": false,
+    "realWeightedOutputImplemented": false,
+    "realWeightedOutputReviewed": false,
+    "realWeightedOutputReleased": false,
+    "calibrationAllowed": false,
+    "individualPredictionAllowed": false,
+    "medicalAdviceAllowed": false
+  },
+  "requiredImplementationReviewSlots": [
+    {
+      "slotId": "reviewed-artifact-binding",
+      "status": "pending",
+      "requiredForCompletion": true,
+      "expectedEvidence": "A redacted reviewed output artifact identifier and hash bound to the human disclosure approval record."
+    },
+    {
+      "slotId": "redacted-summary-binding",
+      "status": "pending",
+      "requiredForCompletion": true,
+      "expectedEvidence": "A public-safe summary record proving that no raw rows, identifiers, forbidden value fields or unreviewed values are copied into tracked Web data."
+    },
+    {
+      "slotId": "front-end-json-source-binding",
+      "status": "pending",
+      "requiredForCompletion": true,
+      "expectedEvidence": "A manifest mapping every public front-end JSON file to the reviewed redacted source artifact and approved release decision."
+    },
+    {
+      "slotId": "no-real-values-scan-binding",
+      "status": "pending",
+      "requiredForCompletion": true,
+      "expectedEvidence": "A fresh no-real-values scan generated after the candidate public implementation artifact is staged."
+    },
+    {
+      "slotId": "static-build-artifact-review",
+      "status": "pending",
+      "requiredForCompletion": true,
+      "expectedEvidence": "A static build review showing that generated pages and bundled assets only expose reviewed aggregate display fields."
+    },
+    {
+      "slotId": "page-rendering-boundary-review",
+      "status": "pending",
+      "requiredForCompletion": true,
+      "expectedEvidence": "A page-level review confirming that labels, tooltips, tables and charts do not imply individual prediction, calibration, medical advice or unreviewed certainty."
+    },
+    {
+      "slotId": "cache-and-cdn-invalidation-plan",
+      "status": "pending",
+      "requiredForCompletion": true,
+      "expectedEvidence": "A deployment cache and invalidation plan for removing or replacing a public artifact if a disclosure or rendering issue is found."
+    },
+    {
+      "slotId": "rollback-and-removal-plan",
+      "status": "pending",
+      "requiredForCompletion": true,
+      "expectedEvidence": "A tested rollback or removal path that can withdraw public NHANES-LMF display artifacts without touching ignored local outputs."
+    },
+    {
+      "slotId": "accessibility-and-labeling-review",
+      "status": "pending",
+      "requiredForCompletion": true,
+      "expectedEvidence": "A reviewer note confirming that public labels are clear, accessible and do not hide uncertainty or disclosure boundaries."
+    },
+    {
+      "slotId": "user-facing-boundary-copy-review",
+      "status": "pending",
+      "requiredForCompletion": true,
+      "expectedEvidence": "A copy review confirming that user-facing text states aggregate-only, public-use, non-medical and no-individual-prediction boundaries."
+    },
+    {
+      "slotId": "second-reviewer-implementation-signoff",
+      "status": "pending",
+      "requiredForCompletion": true,
+      "expectedEvidence": "Independent implementation reviewer signoff separate from the disclosure reviewer."
+    },
+    {
+      "slotId": "final-public-implementation-decision",
+      "status": "pending",
+      "requiredForCompletion": true,
+      "expectedEvidence": "An explicit final implementation decision that either allows a specific public artifact version or keeps public implementation blocked."
+    }
+  ],
+  "implementationReviewRules": {
+    "reviewTemplateOnly": true,
+    "requiresCompletedDisclosureReview": true,
+    "requiresReviewedArtifactHash": true,
+    "requiresFrontEndJsonSourceBinding": true,
+    "requiresFreshNoRealValuesScan": true,
+    "requiresStaticBuildReview": true,
+    "requiresPageRenderingBoundaryReview": true,
+    "requiresSecondReviewer": true,
+    "requiresRollbackPlan": true,
+    "allowsPublicImplementationWithoutAllSlotsComplete": false,
+    "allowsUnreviewedTrackedOutput": false,
+    "allowsIgnoredLocalOutputRead": false,
+    "allowsCalibrationInput": false,
+    "allowsIndividualPrediction": false,
+    "allowsMedicalAdvice": false
+  },
+  "blockedPublishedValueNames": [
+    "SEQN",
+    "RIDAGEYR",
+    "RIAGENDR",
+    "rawRows",
+    "rowLevelData",
+    "deathDate",
+    "individualRiskScore",
+    "weightedMortalityRate",
+    "weightedRate",
+    "weightedDeaths",
+    "weightSum",
+    "standardError",
+    "confidenceInterval95",
+    "confidenceIntervalLower",
+    "confidenceIntervalUpper",
+    "ciLower",
+    "ciUpper",
+    "relativeStandardError",
+    "recordCount",
+    "deathCount",
+    "unweightedCount",
+    "unweightedDeaths"
+  ],
+  "implementationCompletionCriteria": {
+    "requiredSlotTotal": 12,
+    "requiredCompletedSlotTotal": 12,
+    "currentCompletedSlotTotal": 0,
+    "currentPendingSlotTotal": 12,
+    "requiresAllSlotsComplete": true,
+    "requiresApprovedOutputArtifactHash": true,
+    "requiresSecondReviewer": true,
+    "requiresNoRealValuesScanPass": true,
+    "requiresRollbackPlan": true,
+    "implementationReviewComplete": false,
+    "publicImplementationAllowed": false
+  },
+  "allowedTemplateFields": [
+    "schemaVersion",
+    "templateId",
+    "status",
+    "sourceId",
+    "reviewType",
+    "createdAt",
+    "purpose",
+    "reviewPrerequisites",
+    "currentDecision",
+    "requiredImplementationReviewSlots",
+    "implementationReviewRules",
+    "blockedPublishedValueNames",
+    "implementationCompletionCriteria",
+    "allowedTemplateFields",
+    "sourceTrace",
+    "nonProofBoundary"
+  ],
+  "sourceTrace": [
+    "web/src/data/life-path-nhanes-public-lmf-disclosure-review-execution-validation.json",
+    "web/src/data/life-path-nhanes-public-lmf-public-web-data-no-real-values-validation.json",
+    "web/src/data/life-path-nhanes-public-lmf-local-run-evidence-manifest-validation.json",
+    "web/src/data/life-path-nhanes-public-lmf-weighted-domain-output-readiness-validation.json"
+  ],
+  "nonProofBoundary": {
+    "confirms": [
+      "public output implementation review template exists",
+      "12 required implementation review slots are registered",
+      "the template contains no real NHANES output values",
+      "public implementation remains blocked until all slots are completed"
+    ],
+    "doesNotConfirm": [
+      "human disclosure review completion",
+      "reviewed public output artifact approval",
+      "public weighted-domain output permission",
+      "public design-based interval release",
+      "calibration",
+      "individual prediction",
+      "medical advice"
+    ]
+  }
+}

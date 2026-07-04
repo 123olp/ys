@@ -1,0 +1,1170 @@
+{
+  "schemaVersion": "human-infra.life-path-synthetic-validation-calibration-report.v1",
+  "reportId": "life-path-synthetic-validation-calibration-report-2026-07-04",
+  "status": "synthetic-dry-run-l4-blocked",
+  "generatedAt": "2026-07-04T00:00:00+00:00",
+  "owner": "tradecatlabs",
+  "sourceRefs": {
+    "toyModel": {
+      "path": "web/src/data/life-path-toy-model.json",
+      "sha256": "26c01c702ae5369dd8194a9c399edbe9771a660819b3edfc1950ddc94577a6f6"
+    },
+    "sensitivityAnalysis": {
+      "path": "web/src/data/life-path-sensitivity-analysis.json",
+      "sha256": "62d962d4f247d48a0f77734f352da066f8930b043725f9084848be62a0c54ba3"
+    },
+    "l4ReportingContract": {
+      "path": "docs/reference/human-infra-l4-validation-calibration-reporting-contract.json",
+      "sha256": "c183428ba2b2e339d8ba2bdc22f6f401cef126769a0129e124c359e73305db6f"
+    }
+  },
+  "currentDecision": {
+    "syntheticReportGenerated": true,
+    "contractSectionsExercised": true,
+    "contractSlotsExercised": true,
+    "realValidationReportAttached": false,
+    "realCalibrationDiagnosticsAvailable": false,
+    "realParameterSensitivityAvailable": false,
+    "biasApplicabilityReviewComplete": false,
+    "tripodProbastReportingPacketComplete": false,
+    "l4AggregateCalibratedAdmissionAllowed": false,
+    "publicWeightedDomainOutputAllowed": false,
+    "calibratedPredictionAvailable": false,
+    "individualUseAllowed": false,
+    "reason": "The report is generated only from synthetic toy and synthetic sensitivity artifacts. It demonstrates report shape and blocking behavior, not real validation or calibration."
+  },
+  "reportBoundary": {
+    "modelClass": "synthetic validation/calibration report dry-run",
+    "allowedUse": "machine-readable L4 report-shape rehearsal and web explanation",
+    "evidenceBoundary": "No real cohort, no observed outcomes, no calibration target, no validation cohort, no individual records and no public weighted-domain release are present.",
+    "nonUses": [
+      "real validation report",
+      "real calibration report",
+      "clinical prediction model",
+      "medical advice",
+      "treatment selection",
+      "insurance or eligibility decision",
+      "individual death-date prediction",
+      "claim that any technology achieves longevity escape velocity"
+    ]
+  },
+  "contractCoverage": {
+    "contractId": "human-infra-l4-validation-calibration-reporting-contract-2026-07-04",
+    "requiredSectionCount": 12,
+    "syntheticSectionCount": 12,
+    "requiredSlotCount": 5,
+    "syntheticSlotCount": 5,
+    "syntheticReportPacketCount": 1,
+    "realReportPacketCount": 0
+  },
+  "modelSummary": {
+    "scenarioCount": 4,
+    "curvePointCount": 324,
+    "openBoundaryScenarioIds": [
+      "escape"
+    ],
+    "modelClass": "synthetic cohort toy model",
+    "modelEvidenceBoundary": "All scenarios are synthetic. Values are illustrative until calibrated with real cohorts, target-trial emulation, external validation, and bias assessment."
+  },
+  "sensitivitySummary": {
+    "resultCount": 48,
+    "stabilitySummaryCount": 4,
+    "mostVariableSyntheticScenarioId": "escape",
+    "maxSyntheticEffectiveTimeRangeWidth": 9.608,
+    "analysisBoundary": {
+      "modelClass": "synthetic one-factor-at-a-time sensitivity analysis",
+      "evidenceBoundary": "Synthetic toy model only; no real cohort, calibration, validation, causal effect, or individual prediction is claimed.",
+      "nonUses": [
+        "individual death-date prediction",
+        "medical advice",
+        "treatment selection",
+        "claims that any parameter value is empirically estimated",
+        "claims that scenario ordering is stable outside this synthetic toy model"
+      ],
+      "upgradeGate": "A calibrated sensitivity report requires governed cohort extraction, exact endpoint definitions, missingness tables, calibration diagnostics, external validation, and prespecified perturbation ranges."
+    }
+  },
+  "sections": [
+    {
+      "sectionId": "study-question-and-intended-use",
+      "contractPurpose": "State the model question, target population, prediction horizon, outcome and strictly bounded intended use.",
+      "dryRunStatus": "synthetic-filled-not-evidence",
+      "blocksIfRealPacketMissing": true,
+      "requiredFieldStatus": [
+        {
+          "field": "candidatePath",
+          "dryRunFilled": true,
+          "realEvidenceAttached": false,
+          "l4ClosureAllowed": false,
+          "valueClass": "synthetic-placeholder-or-derived-toy-summary"
+        },
+        {
+          "field": "targetPopulation",
+          "dryRunFilled": true,
+          "realEvidenceAttached": false,
+          "l4ClosureAllowed": false,
+          "valueClass": "synthetic-placeholder-or-derived-toy-summary"
+        },
+        {
+          "field": "predictionHorizon",
+          "dryRunFilled": true,
+          "realEvidenceAttached": false,
+          "l4ClosureAllowed": false,
+          "valueClass": "synthetic-placeholder-or-derived-toy-summary"
+        },
+        {
+          "field": "outcomeDefinition",
+          "dryRunFilled": true,
+          "realEvidenceAttached": false,
+          "l4ClosureAllowed": false,
+          "valueClass": "synthetic-placeholder-or-derived-toy-summary"
+        },
+        {
+          "field": "intendedUse",
+          "dryRunFilled": true,
+          "realEvidenceAttached": false,
+          "l4ClosureAllowed": false,
+          "valueClass": "synthetic-placeholder-or-derived-toy-summary"
+        },
+        {
+          "field": "prohibitedUses",
+          "dryRunFilled": true,
+          "realEvidenceAttached": false,
+          "l4ClosureAllowed": false,
+          "valueClass": "synthetic-placeholder-or-derived-toy-summary"
+        }
+      ],
+      "syntheticEvidence": {
+        "toyModelScenarioSummary": {
+          "scenarioCount": 4,
+          "curvePointCount": 324,
+          "openBoundaryScenarioIds": [
+            "escape"
+          ],
+          "modelClass": "synthetic cohort toy model",
+          "modelEvidenceBoundary": "All scenarios are synthetic. Values are illustrative until calibrated with real cohorts, target-trial emulation, external validation, and bias assessment."
+        },
+        "sensitivitySummary": {
+          "resultCount": 48,
+          "stabilitySummaryCount": 4,
+          "mostVariableSyntheticScenarioId": "escape",
+          "maxSyntheticEffectiveTimeRangeWidth": 9.608,
+          "analysisBoundary": {
+            "modelClass": "synthetic one-factor-at-a-time sensitivity analysis",
+            "evidenceBoundary": "Synthetic toy model only; no real cohort, calibration, validation, causal effect, or individual prediction is claimed.",
+            "nonUses": [
+              "individual death-date prediction",
+              "medical advice",
+              "treatment selection",
+              "claims that any parameter value is empirically estimated",
+              "claims that scenario ordering is stable outside this synthetic toy model"
+            ],
+            "upgradeGate": "A calibrated sensitivity report requires governed cohort extraction, exact endpoint definitions, missingness tables, calibration diagnostics, external validation, and prespecified perturbation ranges."
+          }
+        }
+      },
+      "realEvidenceAttached": false,
+      "l4ClosureAllowed": false,
+      "sectionDecision": "usable-as-report-shape-demo-only"
+    },
+    {
+      "sectionId": "data-source-governance-and-cohort",
+      "contractPurpose": "Bind the model to approved data sources, governance status, cohort flow and repository-safe disclosure state.",
+      "dryRunStatus": "synthetic-filled-not-evidence",
+      "blocksIfRealPacketMissing": true,
+      "requiredFieldStatus": [
+        {
+          "field": "dataSource",
+          "dryRunFilled": true,
+          "realEvidenceAttached": false,
+          "l4ClosureAllowed": false,
+          "valueClass": "synthetic-placeholder-or-derived-toy-summary"
+        },
+        {
+          "field": "governanceApproval",
+          "dryRunFilled": true,
+          "realEvidenceAttached": false,
+          "l4ClosureAllowed": false,
+          "valueClass": "synthetic-placeholder-or-derived-toy-summary"
+        },
+        {
+          "field": "cohortFlow",
+          "dryRunFilled": true,
+          "realEvidenceAttached": false,
+          "l4ClosureAllowed": false,
+          "valueClass": "synthetic-placeholder-or-derived-toy-summary"
+        },
+        {
+          "field": "inclusionExclusionRules",
+          "dryRunFilled": true,
+          "realEvidenceAttached": false,
+          "l4ClosureAllowed": false,
+          "valueClass": "synthetic-placeholder-or-derived-toy-summary"
+        },
+        {
+          "field": "disclosureReview",
+          "dryRunFilled": true,
+          "realEvidenceAttached": false,
+          "l4ClosureAllowed": false,
+          "valueClass": "synthetic-placeholder-or-derived-toy-summary"
+        },
+        {
+          "field": "artifactHashes",
+          "dryRunFilled": true,
+          "realEvidenceAttached": false,
+          "l4ClosureAllowed": false,
+          "valueClass": "synthetic-placeholder-or-derived-toy-summary"
+        }
+      ],
+      "syntheticEvidence": {
+        "toyModelScenarioSummary": {
+          "scenarioCount": 4,
+          "curvePointCount": 324,
+          "openBoundaryScenarioIds": [
+            "escape"
+          ],
+          "modelClass": "synthetic cohort toy model",
+          "modelEvidenceBoundary": "All scenarios are synthetic. Values are illustrative until calibrated with real cohorts, target-trial emulation, external validation, and bias assessment."
+        },
+        "sensitivitySummary": {
+          "resultCount": 48,
+          "stabilitySummaryCount": 4,
+          "mostVariableSyntheticScenarioId": "escape",
+          "maxSyntheticEffectiveTimeRangeWidth": 9.608,
+          "analysisBoundary": {
+            "modelClass": "synthetic one-factor-at-a-time sensitivity analysis",
+            "evidenceBoundary": "Synthetic toy model only; no real cohort, calibration, validation, causal effect, or individual prediction is claimed.",
+            "nonUses": [
+              "individual death-date prediction",
+              "medical advice",
+              "treatment selection",
+              "claims that any parameter value is empirically estimated",
+              "claims that scenario ordering is stable outside this synthetic toy model"
+            ],
+            "upgradeGate": "A calibrated sensitivity report requires governed cohort extraction, exact endpoint definitions, missingness tables, calibration diagnostics, external validation, and prespecified perturbation ranges."
+          }
+        }
+      },
+      "realEvidenceAttached": false,
+      "l4ClosureAllowed": false,
+      "sectionDecision": "usable-as-report-shape-demo-only"
+    },
+    {
+      "sectionId": "time-zero-horizons-outcomes",
+      "contractPurpose": "Define time zero, follow-up windows, censoring, competing events and outcome ascertainment.",
+      "dryRunStatus": "synthetic-filled-not-evidence",
+      "blocksIfRealPacketMissing": true,
+      "requiredFieldStatus": [
+        {
+          "field": "timeZero",
+          "dryRunFilled": true,
+          "realEvidenceAttached": false,
+          "l4ClosureAllowed": false,
+          "valueClass": "synthetic-placeholder-or-derived-toy-summary"
+        },
+        {
+          "field": "horizons",
+          "dryRunFilled": true,
+          "realEvidenceAttached": false,
+          "l4ClosureAllowed": false,
+          "valueClass": "synthetic-placeholder-or-derived-toy-summary"
+        },
+        {
+          "field": "outcomeSource",
+          "dryRunFilled": true,
+          "realEvidenceAttached": false,
+          "l4ClosureAllowed": false,
+          "valueClass": "synthetic-placeholder-or-derived-toy-summary"
+        },
+        {
+          "field": "censoringRules",
+          "dryRunFilled": true,
+          "realEvidenceAttached": false,
+          "l4ClosureAllowed": false,
+          "valueClass": "synthetic-placeholder-or-derived-toy-summary"
+        },
+        {
+          "field": "competingEvents",
+          "dryRunFilled": true,
+          "realEvidenceAttached": false,
+          "l4ClosureAllowed": false,
+          "valueClass": "synthetic-placeholder-or-derived-toy-summary"
+        },
+        {
+          "field": "followupCompleteness",
+          "dryRunFilled": true,
+          "realEvidenceAttached": false,
+          "l4ClosureAllowed": false,
+          "valueClass": "synthetic-placeholder-or-derived-toy-summary"
+        }
+      ],
+      "syntheticEvidence": {
+        "toyModelScenarioSummary": {
+          "scenarioCount": 4,
+          "curvePointCount": 324,
+          "openBoundaryScenarioIds": [
+            "escape"
+          ],
+          "modelClass": "synthetic cohort toy model",
+          "modelEvidenceBoundary": "All scenarios are synthetic. Values are illustrative until calibrated with real cohorts, target-trial emulation, external validation, and bias assessment."
+        },
+        "sensitivitySummary": {
+          "resultCount": 48,
+          "stabilitySummaryCount": 4,
+          "mostVariableSyntheticScenarioId": "escape",
+          "maxSyntheticEffectiveTimeRangeWidth": 9.608,
+          "analysisBoundary": {
+            "modelClass": "synthetic one-factor-at-a-time sensitivity analysis",
+            "evidenceBoundary": "Synthetic toy model only; no real cohort, calibration, validation, causal effect, or individual prediction is claimed.",
+            "nonUses": [
+              "individual death-date prediction",
+              "medical advice",
+              "treatment selection",
+              "claims that any parameter value is empirically estimated",
+              "claims that scenario ordering is stable outside this synthetic toy model"
+            ],
+            "upgradeGate": "A calibrated sensitivity report requires governed cohort extraction, exact endpoint definitions, missingness tables, calibration diagnostics, external validation, and prespecified perturbation ranges."
+          }
+        }
+      },
+      "realEvidenceAttached": false,
+      "l4ClosureAllowed": false,
+      "sectionDecision": "usable-as-report-shape-demo-only"
+    },
+    {
+      "sectionId": "predictors-measurement-and-missingness",
+      "contractPurpose": "Describe every predictor family, exact measurement route, missingness handling and non-row-persisting aggregate boundary.",
+      "dryRunStatus": "synthetic-filled-not-evidence",
+      "blocksIfRealPacketMissing": true,
+      "requiredFieldStatus": [
+        {
+          "field": "predictorList",
+          "dryRunFilled": true,
+          "realEvidenceAttached": false,
+          "l4ClosureAllowed": false,
+          "valueClass": "synthetic-placeholder-or-derived-toy-summary"
+        },
+        {
+          "field": "measurementTiming",
+          "dryRunFilled": true,
+          "realEvidenceAttached": false,
+          "l4ClosureAllowed": false,
+          "valueClass": "synthetic-placeholder-or-derived-toy-summary"
+        },
+        {
+          "field": "valueLabels",
+          "dryRunFilled": true,
+          "realEvidenceAttached": false,
+          "l4ClosureAllowed": false,
+          "valueClass": "synthetic-placeholder-or-derived-toy-summary"
+        },
+        {
+          "field": "missingnessMap",
+          "dryRunFilled": true,
+          "realEvidenceAttached": false,
+          "l4ClosureAllowed": false,
+          "valueClass": "synthetic-placeholder-or-derived-toy-summary"
+        },
+        {
+          "field": "imputationOrExclusionRules",
+          "dryRunFilled": true,
+          "realEvidenceAttached": false,
+          "l4ClosureAllowed": false,
+          "valueClass": "synthetic-placeholder-or-derived-toy-summary"
+        },
+        {
+          "field": "leakageCheck",
+          "dryRunFilled": true,
+          "realEvidenceAttached": false,
+          "l4ClosureAllowed": false,
+          "valueClass": "synthetic-placeholder-or-derived-toy-summary"
+        }
+      ],
+      "syntheticEvidence": {
+        "toyModelScenarioSummary": {
+          "scenarioCount": 4,
+          "curvePointCount": 324,
+          "openBoundaryScenarioIds": [
+            "escape"
+          ],
+          "modelClass": "synthetic cohort toy model",
+          "modelEvidenceBoundary": "All scenarios are synthetic. Values are illustrative until calibrated with real cohorts, target-trial emulation, external validation, and bias assessment."
+        },
+        "sensitivitySummary": {
+          "resultCount": 48,
+          "stabilitySummaryCount": 4,
+          "mostVariableSyntheticScenarioId": "escape",
+          "maxSyntheticEffectiveTimeRangeWidth": 9.608,
+          "analysisBoundary": {
+            "modelClass": "synthetic one-factor-at-a-time sensitivity analysis",
+            "evidenceBoundary": "Synthetic toy model only; no real cohort, calibration, validation, causal effect, or individual prediction is claimed.",
+            "nonUses": [
+              "individual death-date prediction",
+              "medical advice",
+              "treatment selection",
+              "claims that any parameter value is empirically estimated",
+              "claims that scenario ordering is stable outside this synthetic toy model"
+            ],
+            "upgradeGate": "A calibrated sensitivity report requires governed cohort extraction, exact endpoint definitions, missingness tables, calibration diagnostics, external validation, and prespecified perturbation ranges."
+          }
+        }
+      },
+      "realEvidenceAttached": false,
+      "l4ClosureAllowed": false,
+      "sectionDecision": "usable-as-report-shape-demo-only"
+    },
+    {
+      "sectionId": "model-specification-and-update-status",
+      "contractPurpose": "Specify whether the model is developed, updated, recalibrated or externally validated, and freeze all model inputs.",
+      "dryRunStatus": "synthetic-filled-not-evidence",
+      "blocksIfRealPacketMissing": true,
+      "requiredFieldStatus": [
+        {
+          "field": "modelType",
+          "dryRunFilled": true,
+          "realEvidenceAttached": false,
+          "l4ClosureAllowed": false,
+          "valueClass": "synthetic-placeholder-or-derived-toy-summary"
+        },
+        {
+          "field": "estimand",
+          "dryRunFilled": true,
+          "realEvidenceAttached": false,
+          "l4ClosureAllowed": false,
+          "valueClass": "synthetic-placeholder-or-derived-toy-summary"
+        },
+        {
+          "field": "candidateLevel",
+          "dryRunFilled": true,
+          "realEvidenceAttached": false,
+          "l4ClosureAllowed": false,
+          "valueClass": "synthetic-placeholder-or-derived-toy-summary"
+        },
+        {
+          "field": "trainingProcedure",
+          "dryRunFilled": true,
+          "realEvidenceAttached": false,
+          "l4ClosureAllowed": false,
+          "valueClass": "synthetic-placeholder-or-derived-toy-summary"
+        },
+        {
+          "field": "updateStatus",
+          "dryRunFilled": true,
+          "realEvidenceAttached": false,
+          "l4ClosureAllowed": false,
+          "valueClass": "synthetic-placeholder-or-derived-toy-summary"
+        },
+        {
+          "field": "frozenInputs",
+          "dryRunFilled": true,
+          "realEvidenceAttached": false,
+          "l4ClosureAllowed": false,
+          "valueClass": "synthetic-placeholder-or-derived-toy-summary"
+        }
+      ],
+      "syntheticEvidence": {
+        "toyModelScenarioSummary": {
+          "scenarioCount": 4,
+          "curvePointCount": 324,
+          "openBoundaryScenarioIds": [
+            "escape"
+          ],
+          "modelClass": "synthetic cohort toy model",
+          "modelEvidenceBoundary": "All scenarios are synthetic. Values are illustrative until calibrated with real cohorts, target-trial emulation, external validation, and bias assessment."
+        },
+        "sensitivitySummary": {
+          "resultCount": 48,
+          "stabilitySummaryCount": 4,
+          "mostVariableSyntheticScenarioId": "escape",
+          "maxSyntheticEffectiveTimeRangeWidth": 9.608,
+          "analysisBoundary": {
+            "modelClass": "synthetic one-factor-at-a-time sensitivity analysis",
+            "evidenceBoundary": "Synthetic toy model only; no real cohort, calibration, validation, causal effect, or individual prediction is claimed.",
+            "nonUses": [
+              "individual death-date prediction",
+              "medical advice",
+              "treatment selection",
+              "claims that any parameter value is empirically estimated",
+              "claims that scenario ordering is stable outside this synthetic toy model"
+            ],
+            "upgradeGate": "A calibrated sensitivity report requires governed cohort extraction, exact endpoint definitions, missingness tables, calibration diagnostics, external validation, and prespecified perturbation ranges."
+          }
+        }
+      },
+      "realEvidenceAttached": false,
+      "l4ClosureAllowed": false,
+      "sectionDecision": "usable-as-report-shape-demo-only"
+    },
+    {
+      "sectionId": "development-validation-design",
+      "contractPurpose": "Record the development cohort, validation cohort, resampling plan or external validation design.",
+      "dryRunStatus": "synthetic-filled-not-evidence",
+      "blocksIfRealPacketMissing": true,
+      "requiredFieldStatus": [
+        {
+          "field": "developmentCohort",
+          "dryRunFilled": true,
+          "realEvidenceAttached": false,
+          "l4ClosureAllowed": false,
+          "valueClass": "synthetic-placeholder-or-derived-toy-summary"
+        },
+        {
+          "field": "validationCohort",
+          "dryRunFilled": true,
+          "realEvidenceAttached": false,
+          "l4ClosureAllowed": false,
+          "valueClass": "synthetic-placeholder-or-derived-toy-summary"
+        },
+        {
+          "field": "splitOrResamplingPlan",
+          "dryRunFilled": true,
+          "realEvidenceAttached": false,
+          "l4ClosureAllowed": false,
+          "valueClass": "synthetic-placeholder-or-derived-toy-summary"
+        },
+        {
+          "field": "externalValidationPlan",
+          "dryRunFilled": true,
+          "realEvidenceAttached": false,
+          "l4ClosureAllowed": false,
+          "valueClass": "synthetic-placeholder-or-derived-toy-summary"
+        },
+        {
+          "field": "sampleSizeRationale",
+          "dryRunFilled": true,
+          "realEvidenceAttached": false,
+          "l4ClosureAllowed": false,
+          "valueClass": "synthetic-placeholder-or-derived-toy-summary"
+        },
+        {
+          "field": "reviewedDesignHash",
+          "dryRunFilled": true,
+          "realEvidenceAttached": false,
+          "l4ClosureAllowed": false,
+          "valueClass": "synthetic-placeholder-or-derived-toy-summary"
+        }
+      ],
+      "syntheticEvidence": {
+        "toyModelScenarioSummary": {
+          "scenarioCount": 4,
+          "curvePointCount": 324,
+          "openBoundaryScenarioIds": [
+            "escape"
+          ],
+          "modelClass": "synthetic cohort toy model",
+          "modelEvidenceBoundary": "All scenarios are synthetic. Values are illustrative until calibrated with real cohorts, target-trial emulation, external validation, and bias assessment."
+        },
+        "sensitivitySummary": {
+          "resultCount": 48,
+          "stabilitySummaryCount": 4,
+          "mostVariableSyntheticScenarioId": "escape",
+          "maxSyntheticEffectiveTimeRangeWidth": 9.608,
+          "analysisBoundary": {
+            "modelClass": "synthetic one-factor-at-a-time sensitivity analysis",
+            "evidenceBoundary": "Synthetic toy model only; no real cohort, calibration, validation, causal effect, or individual prediction is claimed.",
+            "nonUses": [
+              "individual death-date prediction",
+              "medical advice",
+              "treatment selection",
+              "claims that any parameter value is empirically estimated",
+              "claims that scenario ordering is stable outside this synthetic toy model"
+            ],
+            "upgradeGate": "A calibrated sensitivity report requires governed cohort extraction, exact endpoint definitions, missingness tables, calibration diagnostics, external validation, and prespecified perturbation ranges."
+          }
+        }
+      },
+      "realEvidenceAttached": false,
+      "l4ClosureAllowed": false,
+      "sectionDecision": "usable-as-report-shape-demo-only"
+    },
+    {
+      "sectionId": "performance-discrimination-and-overall-error",
+      "contractPurpose": "Report horizon-bound model performance without individual outputs.",
+      "dryRunStatus": "synthetic-filled-not-evidence",
+      "blocksIfRealPacketMissing": true,
+      "requiredFieldStatus": [
+        {
+          "field": "performanceHorizon",
+          "dryRunFilled": true,
+          "realEvidenceAttached": false,
+          "l4ClosureAllowed": false,
+          "valueClass": "synthetic-placeholder-or-derived-toy-summary"
+        },
+        {
+          "field": "discriminationMetric",
+          "dryRunFilled": true,
+          "realEvidenceAttached": false,
+          "l4ClosureAllowed": false,
+          "valueClass": "synthetic-placeholder-or-derived-toy-summary"
+        },
+        {
+          "field": "overallPerformanceMetric",
+          "dryRunFilled": true,
+          "realEvidenceAttached": false,
+          "l4ClosureAllowed": false,
+          "valueClass": "synthetic-placeholder-or-derived-toy-summary"
+        },
+        {
+          "field": "eventRateOrOutcomeAnchor",
+          "dryRunFilled": true,
+          "realEvidenceAttached": false,
+          "l4ClosureAllowed": false,
+          "valueClass": "synthetic-placeholder-or-derived-toy-summary"
+        },
+        {
+          "field": "uncertaintyInterval",
+          "dryRunFilled": true,
+          "realEvidenceAttached": false,
+          "l4ClosureAllowed": false,
+          "valueClass": "synthetic-placeholder-or-derived-toy-summary"
+        },
+        {
+          "field": "aggregateOnlyOutput",
+          "dryRunFilled": true,
+          "realEvidenceAttached": false,
+          "l4ClosureAllowed": false,
+          "valueClass": "synthetic-placeholder-or-derived-toy-summary"
+        }
+      ],
+      "syntheticEvidence": {
+        "toyModelScenarioSummary": {
+          "scenarioCount": 4,
+          "curvePointCount": 324,
+          "openBoundaryScenarioIds": [
+            "escape"
+          ],
+          "modelClass": "synthetic cohort toy model",
+          "modelEvidenceBoundary": "All scenarios are synthetic. Values are illustrative until calibrated with real cohorts, target-trial emulation, external validation, and bias assessment."
+        },
+        "sensitivitySummary": {
+          "resultCount": 48,
+          "stabilitySummaryCount": 4,
+          "mostVariableSyntheticScenarioId": "escape",
+          "maxSyntheticEffectiveTimeRangeWidth": 9.608,
+          "analysisBoundary": {
+            "modelClass": "synthetic one-factor-at-a-time sensitivity analysis",
+            "evidenceBoundary": "Synthetic toy model only; no real cohort, calibration, validation, causal effect, or individual prediction is claimed.",
+            "nonUses": [
+              "individual death-date prediction",
+              "medical advice",
+              "treatment selection",
+              "claims that any parameter value is empirically estimated",
+              "claims that scenario ordering is stable outside this synthetic toy model"
+            ],
+            "upgradeGate": "A calibrated sensitivity report requires governed cohort extraction, exact endpoint definitions, missingness tables, calibration diagnostics, external validation, and prespecified perturbation ranges."
+          }
+        }
+      },
+      "realEvidenceAttached": false,
+      "l4ClosureAllowed": false,
+      "sectionDecision": "usable-as-report-shape-demo-only"
+    },
+    {
+      "sectionId": "calibration-diagnostics",
+      "contractPurpose": "Report calibration diagnostics by horizon and subgroup/domain where allowed.",
+      "dryRunStatus": "synthetic-filled-not-evidence",
+      "blocksIfRealPacketMissing": true,
+      "requiredFieldStatus": [
+        {
+          "field": "calibrationPlotOrTable",
+          "dryRunFilled": true,
+          "realEvidenceAttached": false,
+          "l4ClosureAllowed": false,
+          "valueClass": "synthetic-placeholder-or-derived-toy-summary"
+        },
+        {
+          "field": "calibrationInTheLarge",
+          "dryRunFilled": true,
+          "realEvidenceAttached": false,
+          "l4ClosureAllowed": false,
+          "valueClass": "synthetic-placeholder-or-derived-toy-summary"
+        },
+        {
+          "field": "calibrationSlopeOrEquivalent",
+          "dryRunFilled": true,
+          "realEvidenceAttached": false,
+          "l4ClosureAllowed": false,
+          "valueClass": "synthetic-placeholder-or-derived-toy-summary"
+        },
+        {
+          "field": "observedExpectedByRiskGroup",
+          "dryRunFilled": true,
+          "realEvidenceAttached": false,
+          "l4ClosureAllowed": false,
+          "valueClass": "synthetic-placeholder-or-derived-toy-summary"
+        },
+        {
+          "field": "horizonSpecificDiagnostics",
+          "dryRunFilled": true,
+          "realEvidenceAttached": false,
+          "l4ClosureAllowed": false,
+          "valueClass": "synthetic-placeholder-or-derived-toy-summary"
+        },
+        {
+          "field": "reviewedDiagnosticHash",
+          "dryRunFilled": true,
+          "realEvidenceAttached": false,
+          "l4ClosureAllowed": false,
+          "valueClass": "synthetic-placeholder-or-derived-toy-summary"
+        }
+      ],
+      "syntheticEvidence": {
+        "toyModelScenarioSummary": {
+          "scenarioCount": 4,
+          "curvePointCount": 324,
+          "openBoundaryScenarioIds": [
+            "escape"
+          ],
+          "modelClass": "synthetic cohort toy model",
+          "modelEvidenceBoundary": "All scenarios are synthetic. Values are illustrative until calibrated with real cohorts, target-trial emulation, external validation, and bias assessment."
+        },
+        "sensitivitySummary": {
+          "resultCount": 48,
+          "stabilitySummaryCount": 4,
+          "mostVariableSyntheticScenarioId": "escape",
+          "maxSyntheticEffectiveTimeRangeWidth": 9.608,
+          "analysisBoundary": {
+            "modelClass": "synthetic one-factor-at-a-time sensitivity analysis",
+            "evidenceBoundary": "Synthetic toy model only; no real cohort, calibration, validation, causal effect, or individual prediction is claimed.",
+            "nonUses": [
+              "individual death-date prediction",
+              "medical advice",
+              "treatment selection",
+              "claims that any parameter value is empirically estimated",
+              "claims that scenario ordering is stable outside this synthetic toy model"
+            ],
+            "upgradeGate": "A calibrated sensitivity report requires governed cohort extraction, exact endpoint definitions, missingness tables, calibration diagnostics, external validation, and prespecified perturbation ranges."
+          }
+        }
+      },
+      "realEvidenceAttached": false,
+      "l4ClosureAllowed": false,
+      "sectionDecision": "usable-as-report-shape-demo-only"
+    },
+    {
+      "sectionId": "uncertainty-sensitivity-and-stability",
+      "contractPurpose": "Stress-test uncertainty, parameter sensitivity, missingness assumptions, cohort definitions and prediction horizons.",
+      "dryRunStatus": "synthetic-filled-not-evidence",
+      "blocksIfRealPacketMissing": true,
+      "requiredFieldStatus": [
+        {
+          "field": "parameterUncertainty",
+          "dryRunFilled": true,
+          "realEvidenceAttached": false,
+          "l4ClosureAllowed": false,
+          "valueClass": "synthetic-placeholder-or-derived-toy-summary"
+        },
+        {
+          "field": "missingnessSensitivity",
+          "dryRunFilled": true,
+          "realEvidenceAttached": false,
+          "l4ClosureAllowed": false,
+          "valueClass": "synthetic-placeholder-or-derived-toy-summary"
+        },
+        {
+          "field": "cohortDefinitionSensitivity",
+          "dryRunFilled": true,
+          "realEvidenceAttached": false,
+          "l4ClosureAllowed": false,
+          "valueClass": "synthetic-placeholder-or-derived-toy-summary"
+        },
+        {
+          "field": "horizonSensitivity",
+          "dryRunFilled": true,
+          "realEvidenceAttached": false,
+          "l4ClosureAllowed": false,
+          "valueClass": "synthetic-placeholder-or-derived-toy-summary"
+        },
+        {
+          "field": "stabilityAcrossDomains",
+          "dryRunFilled": true,
+          "realEvidenceAttached": false,
+          "l4ClosureAllowed": false,
+          "valueClass": "synthetic-placeholder-or-derived-toy-summary"
+        },
+        {
+          "field": "reviewedSensitivityHash",
+          "dryRunFilled": true,
+          "realEvidenceAttached": false,
+          "l4ClosureAllowed": false,
+          "valueClass": "synthetic-placeholder-or-derived-toy-summary"
+        }
+      ],
+      "syntheticEvidence": {
+        "toyModelScenarioSummary": {
+          "scenarioCount": 4,
+          "curvePointCount": 324,
+          "openBoundaryScenarioIds": [
+            "escape"
+          ],
+          "modelClass": "synthetic cohort toy model",
+          "modelEvidenceBoundary": "All scenarios are synthetic. Values are illustrative until calibrated with real cohorts, target-trial emulation, external validation, and bias assessment."
+        },
+        "sensitivitySummary": {
+          "resultCount": 48,
+          "stabilitySummaryCount": 4,
+          "mostVariableSyntheticScenarioId": "escape",
+          "maxSyntheticEffectiveTimeRangeWidth": 9.608,
+          "analysisBoundary": {
+            "modelClass": "synthetic one-factor-at-a-time sensitivity analysis",
+            "evidenceBoundary": "Synthetic toy model only; no real cohort, calibration, validation, causal effect, or individual prediction is claimed.",
+            "nonUses": [
+              "individual death-date prediction",
+              "medical advice",
+              "treatment selection",
+              "claims that any parameter value is empirically estimated",
+              "claims that scenario ordering is stable outside this synthetic toy model"
+            ],
+            "upgradeGate": "A calibrated sensitivity report requires governed cohort extraction, exact endpoint definitions, missingness tables, calibration diagnostics, external validation, and prespecified perturbation ranges."
+          }
+        }
+      },
+      "realEvidenceAttached": false,
+      "l4ClosureAllowed": false,
+      "sectionDecision": "usable-as-report-shape-demo-only"
+    },
+    {
+      "sectionId": "bias-applicability-and-subgroup-review",
+      "contractPurpose": "Assess bias, applicability, subgroup coverage, transport boundary and population mismatch before any L4 review opens.",
+      "dryRunStatus": "synthetic-filled-not-evidence",
+      "blocksIfRealPacketMissing": true,
+      "requiredFieldStatus": [
+        {
+          "field": "riskOfBiasAssessment",
+          "dryRunFilled": true,
+          "realEvidenceAttached": false,
+          "l4ClosureAllowed": false,
+          "valueClass": "synthetic-placeholder-or-derived-toy-summary"
+        },
+        {
+          "field": "applicabilityAssessment",
+          "dryRunFilled": true,
+          "realEvidenceAttached": false,
+          "l4ClosureAllowed": false,
+          "valueClass": "synthetic-placeholder-or-derived-toy-summary"
+        },
+        {
+          "field": "subgroupCoverage",
+          "dryRunFilled": true,
+          "realEvidenceAttached": false,
+          "l4ClosureAllowed": false,
+          "valueClass": "synthetic-placeholder-or-derived-toy-summary"
+        },
+        {
+          "field": "transportBoundary",
+          "dryRunFilled": true,
+          "realEvidenceAttached": false,
+          "l4ClosureAllowed": false,
+          "valueClass": "synthetic-placeholder-or-derived-toy-summary"
+        },
+        {
+          "field": "excludedPopulationReview",
+          "dryRunFilled": true,
+          "realEvidenceAttached": false,
+          "l4ClosureAllowed": false,
+          "valueClass": "synthetic-placeholder-or-derived-toy-summary"
+        },
+        {
+          "field": "reviewedBiasApplicabilityHash",
+          "dryRunFilled": true,
+          "realEvidenceAttached": false,
+          "l4ClosureAllowed": false,
+          "valueClass": "synthetic-placeholder-or-derived-toy-summary"
+        }
+      ],
+      "syntheticEvidence": {
+        "toyModelScenarioSummary": {
+          "scenarioCount": 4,
+          "curvePointCount": 324,
+          "openBoundaryScenarioIds": [
+            "escape"
+          ],
+          "modelClass": "synthetic cohort toy model",
+          "modelEvidenceBoundary": "All scenarios are synthetic. Values are illustrative until calibrated with real cohorts, target-trial emulation, external validation, and bias assessment."
+        },
+        "sensitivitySummary": {
+          "resultCount": 48,
+          "stabilitySummaryCount": 4,
+          "mostVariableSyntheticScenarioId": "escape",
+          "maxSyntheticEffectiveTimeRangeWidth": 9.608,
+          "analysisBoundary": {
+            "modelClass": "synthetic one-factor-at-a-time sensitivity analysis",
+            "evidenceBoundary": "Synthetic toy model only; no real cohort, calibration, validation, causal effect, or individual prediction is claimed.",
+            "nonUses": [
+              "individual death-date prediction",
+              "medical advice",
+              "treatment selection",
+              "claims that any parameter value is empirically estimated",
+              "claims that scenario ordering is stable outside this synthetic toy model"
+            ],
+            "upgradeGate": "A calibrated sensitivity report requires governed cohort extraction, exact endpoint definitions, missingness tables, calibration diagnostics, external validation, and prespecified perturbation ranges."
+          }
+        }
+      },
+      "realEvidenceAttached": false,
+      "l4ClosureAllowed": false,
+      "sectionDecision": "usable-as-report-shape-demo-only"
+    },
+    {
+      "sectionId": "traceability-reproducibility-and-human-review",
+      "contractPurpose": "Bind the report to redacted artifacts, reproducible commands, reviewer roles and evidence packet decisions.",
+      "dryRunStatus": "synthetic-filled-not-evidence",
+      "blocksIfRealPacketMissing": true,
+      "requiredFieldStatus": [
+        {
+          "field": "artifactHashes",
+          "dryRunFilled": true,
+          "realEvidenceAttached": false,
+          "l4ClosureAllowed": false,
+          "valueClass": "synthetic-placeholder-or-derived-toy-summary"
+        },
+        {
+          "field": "validationCommands",
+          "dryRunFilled": true,
+          "realEvidenceAttached": false,
+          "l4ClosureAllowed": false,
+          "valueClass": "synthetic-placeholder-or-derived-toy-summary"
+        },
+        {
+          "field": "softwareEnvironment",
+          "dryRunFilled": true,
+          "realEvidenceAttached": false,
+          "l4ClosureAllowed": false,
+          "valueClass": "synthetic-placeholder-or-derived-toy-summary"
+        },
+        {
+          "field": "firstReviewerRole",
+          "dryRunFilled": true,
+          "realEvidenceAttached": false,
+          "l4ClosureAllowed": false,
+          "valueClass": "synthetic-placeholder-or-derived-toy-summary"
+        },
+        {
+          "field": "secondReviewerRole",
+          "dryRunFilled": true,
+          "realEvidenceAttached": false,
+          "l4ClosureAllowed": false,
+          "valueClass": "synthetic-placeholder-or-derived-toy-summary"
+        },
+        {
+          "field": "packetVerdicts",
+          "dryRunFilled": true,
+          "realEvidenceAttached": false,
+          "l4ClosureAllowed": false,
+          "valueClass": "synthetic-placeholder-or-derived-toy-summary"
+        }
+      ],
+      "syntheticEvidence": {
+        "toyModelScenarioSummary": {
+          "scenarioCount": 4,
+          "curvePointCount": 324,
+          "openBoundaryScenarioIds": [
+            "escape"
+          ],
+          "modelClass": "synthetic cohort toy model",
+          "modelEvidenceBoundary": "All scenarios are synthetic. Values are illustrative until calibrated with real cohorts, target-trial emulation, external validation, and bias assessment."
+        },
+        "sensitivitySummary": {
+          "resultCount": 48,
+          "stabilitySummaryCount": 4,
+          "mostVariableSyntheticScenarioId": "escape",
+          "maxSyntheticEffectiveTimeRangeWidth": 9.608,
+          "analysisBoundary": {
+            "modelClass": "synthetic one-factor-at-a-time sensitivity analysis",
+            "evidenceBoundary": "Synthetic toy model only; no real cohort, calibration, validation, causal effect, or individual prediction is claimed.",
+            "nonUses": [
+              "individual death-date prediction",
+              "medical advice",
+              "treatment selection",
+              "claims that any parameter value is empirically estimated",
+              "claims that scenario ordering is stable outside this synthetic toy model"
+            ],
+            "upgradeGate": "A calibrated sensitivity report requires governed cohort extraction, exact endpoint definitions, missingness tables, calibration diagnostics, external validation, and prespecified perturbation ranges."
+          }
+        }
+      },
+      "realEvidenceAttached": false,
+      "l4ClosureAllowed": false,
+      "sectionDecision": "usable-as-report-shape-demo-only"
+    },
+    {
+      "sectionId": "limitations-prohibited-uses-and-downstream-decision",
+      "contractPurpose": "Record limits, prohibited uses, residual blockers and the downstream admission decision.",
+      "dryRunStatus": "synthetic-filled-not-evidence",
+      "blocksIfRealPacketMissing": true,
+      "requiredFieldStatus": [
+        {
+          "field": "limitations",
+          "dryRunFilled": true,
+          "realEvidenceAttached": false,
+          "l4ClosureAllowed": false,
+          "valueClass": "synthetic-placeholder-or-derived-toy-summary"
+        },
+        {
+          "field": "prohibitedClaims",
+          "dryRunFilled": true,
+          "realEvidenceAttached": false,
+          "l4ClosureAllowed": false,
+          "valueClass": "synthetic-placeholder-or-derived-toy-summary"
+        },
+        {
+          "field": "remainingBlockers",
+          "dryRunFilled": true,
+          "realEvidenceAttached": false,
+          "l4ClosureAllowed": false,
+          "valueClass": "synthetic-placeholder-or-derived-toy-summary"
+        },
+        {
+          "field": "downstreamDecision",
+          "dryRunFilled": true,
+          "realEvidenceAttached": false,
+          "l4ClosureAllowed": false,
+          "valueClass": "synthetic-placeholder-or-derived-toy-summary"
+        },
+        {
+          "field": "publicOutputDecision",
+          "dryRunFilled": true,
+          "realEvidenceAttached": false,
+          "l4ClosureAllowed": false,
+          "valueClass": "synthetic-placeholder-or-derived-toy-summary"
+        },
+        {
+          "field": "individualUseDecision",
+          "dryRunFilled": true,
+          "realEvidenceAttached": false,
+          "l4ClosureAllowed": false,
+          "valueClass": "synthetic-placeholder-or-derived-toy-summary"
+        }
+      ],
+      "syntheticEvidence": {
+        "toyModelScenarioSummary": {
+          "scenarioCount": 4,
+          "curvePointCount": 324,
+          "openBoundaryScenarioIds": [
+            "escape"
+          ],
+          "modelClass": "synthetic cohort toy model",
+          "modelEvidenceBoundary": "All scenarios are synthetic. Values are illustrative until calibrated with real cohorts, target-trial emulation, external validation, and bias assessment."
+        },
+        "sensitivitySummary": {
+          "resultCount": 48,
+          "stabilitySummaryCount": 4,
+          "mostVariableSyntheticScenarioId": "escape",
+          "maxSyntheticEffectiveTimeRangeWidth": 9.608,
+          "analysisBoundary": {
+            "modelClass": "synthetic one-factor-at-a-time sensitivity analysis",
+            "evidenceBoundary": "Synthetic toy model only; no real cohort, calibration, validation, causal effect, or individual prediction is claimed.",
+            "nonUses": [
+              "individual death-date prediction",
+              "medical advice",
+              "treatment selection",
+              "claims that any parameter value is empirically estimated",
+              "claims that scenario ordering is stable outside this synthetic toy model"
+            ],
+            "upgradeGate": "A calibrated sensitivity report requires governed cohort extraction, exact endpoint definitions, missingness tables, calibration diagnostics, external validation, and prespecified perturbation ranges."
+          }
+        }
+      },
+      "realEvidenceAttached": false,
+      "l4ClosureAllowed": false,
+      "sectionDecision": "usable-as-report-shape-demo-only"
+    }
+  ],
+  "slotOutcomes": [
+    {
+      "slotId": "development-validation-design",
+      "evidenceClass": "redacted-artifact-hash",
+      "repositoryPolicy": "study-design-summary-only",
+      "requiredSections": [
+        "study-question-and-intended-use",
+        "data-source-governance-and-cohort",
+        "time-zero-horizons-outcomes",
+        "predictors-measurement-and-missingness",
+        "model-specification-and-update-status",
+        "development-validation-design"
+      ],
+      "missingSections": [],
+      "dryRunExercised": true,
+      "realEvidenceAttached": false,
+      "slotCloseAllowed": false,
+      "reason": "Synthetic report dry-run exercises the slot shape but cannot close any L4 slot."
+    },
+    {
+      "slotId": "calibration-diagnostics-report",
+      "evidenceClass": "calibration-diagnostic-report",
+      "repositoryPolicy": "reviewed-aggregate-diagnostics-only",
+      "requiredSections": [
+        "performance-discrimination-and-overall-error",
+        "calibration-diagnostics"
+      ],
+      "missingSections": [],
+      "dryRunExercised": true,
+      "realEvidenceAttached": false,
+      "slotCloseAllowed": false,
+      "reason": "Synthetic report dry-run exercises the slot shape but cannot close any L4 slot."
+    },
+    {
+      "slotId": "real-parameter-sensitivity-analysis",
+      "evidenceClass": "calibration-diagnostic-report",
+      "repositoryPolicy": "reviewed-aggregate-diagnostics-only",
+      "requiredSections": [
+        "uncertainty-sensitivity-and-stability"
+      ],
+      "missingSections": [],
+      "dryRunExercised": true,
+      "realEvidenceAttached": false,
+      "slotCloseAllowed": false,
+      "reason": "Synthetic report dry-run exercises the slot shape but cannot close any L4 slot."
+    },
+    {
+      "slotId": "bias-applicability-review",
+      "evidenceClass": "bias-applicability-review",
+      "repositoryPolicy": "reviewed-report-summary-only",
+      "requiredSections": [
+        "bias-applicability-and-subgroup-review"
+      ],
+      "missingSections": [],
+      "dryRunExercised": true,
+      "realEvidenceAttached": false,
+      "slotCloseAllowed": false,
+      "reason": "Synthetic report dry-run exercises the slot shape but cannot close any L4 slot."
+    },
+    {
+      "slotId": "tripod-probast-reporting-packet",
+      "evidenceClass": "bias-applicability-review",
+      "repositoryPolicy": "reporting-packet-hash-only",
+      "requiredSections": [
+        "traceability-reproducibility-and-human-review",
+        "limitations-prohibited-uses-and-downstream-decision"
+      ],
+      "missingSections": [],
+      "dryRunExercised": true,
+      "realEvidenceAttached": false,
+      "slotCloseAllowed": false,
+      "reason": "Synthetic report dry-run exercises the slot shape but cannot close any L4 slot."
+    }
+  ],
+  "minimumDiagnosticStatus": {
+    "discrimination": "synthetic-toy-output-only",
+    "calibration": "blocked-no-observed-outcomes",
+    "overallPerformance": "synthetic-toy-output-only",
+    "sensitivity": "synthetic-one-factor-at-a-time-only",
+    "biasApplicability": "blocked-no-real-population-review"
+  },
+  "prohibitedClaims": [
+    "public-weighted-domain-output",
+    "calibrated-prediction",
+    "individual-prediction",
+    "individual-death-date-output",
+    "medical-advice",
+    "intervention-ranking",
+    "causal-effect-claim",
+    "longevity-escape-velocity-proof"
+  ],
+  "auditSummary": {
+    "deathDateSuppressed": true,
+    "individualPredictionSuppressed": true,
+    "rawRowsAbsent": true,
+    "l4StillBlocked": true
+  }
+}

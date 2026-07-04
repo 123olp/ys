@@ -3,6 +3,7 @@ import ResearchLayout from "../layouts/ResearchLayout.astro";
 import Hero from "../components/Hero.astro";
 import SectionHeader from "../components/SectionHeader.astro";
 import MetricGrid from "../components/MetricGrid.astro";
+import maturityGapRegister from "../../../docs/reference/human-infra-maturity-gap-register.json";
 
 const metrics = [
   {label: "核心对象", value: "主体持续性", note: "能够继续存在、行动、学习和修正的主体"},
@@ -10,6 +11,23 @@ const metrics = [
   {label: "图表工具", value: "D3", note: "定制机制图和预测曲线"},
   {label: "页面框架", value: "Astro", note: "长文叙事、静态发布和组件化页面"}
 ];
+
+const maturityAxes = maturityGapRegister.axes.map((axis) => {
+  const gateCounts = axis.gates.reduce(
+    (counts, gate) => {
+      counts[gate.status] = (counts[gate.status] ?? 0) + 1;
+      return counts;
+    },
+    {pass: 0, partial: 0, blocked: 0}
+  );
+  return {
+    ...axis,
+    gateCounts,
+    incompleteGates: axis.gates.filter((gate) => gate.status !== "pass")
+  };
+});
+
+const nextWorkOrders = maturityGapRegister.nextWorkOrder;
 ---
 <ResearchLayout
   title="Human Infra × 奇点更近"
@@ -26,6 +44,58 @@ const metrics = [
     />
 
     <MetricGrid items={metrics} />
+
+    <section class="section" id="maturity">
+      <SectionHeader
+        kicker="Maturity Gap"
+        title="距离 100% 还差什么"
+        lead={`当前成熟度来自 ${maturityGapRegister.sourceRoadmap} 和缺口账本 ${maturityGapRegister.registerId}。这里展示的是仓库当前真相源，不沿用早期 70% / 35% / 10% 的旧评估。`}
+      />
+      <div class="maturity-grid">
+        {maturityAxes.map((axis) => (
+          <article class="maturity-card">
+            <div class="maturity-card-head">
+              <span>{axis.axisName}</span>
+              <strong>{axis.currentPercent}%</strong>
+            </div>
+            <div class="maturity-meter" aria-label={`${axis.axisName} 当前成熟度 ${axis.currentPercent}%`}>
+              <span style={`width: ${axis.currentPercent}%`}></span>
+            </div>
+            <p>{axis.definitionOfDone}</p>
+            <div class="maturity-gates">
+              <span>通过 {axis.gateCounts.pass}</span>
+              <span>部分 {axis.gateCounts.partial}</span>
+              <span>阻塞 {axis.gateCounts.blocked}</span>
+            </div>
+            {axis.incompleteGates.length > 0 ? (
+              <ul class="gate-list">
+                {axis.incompleteGates.slice(0, 3).map((gate) => (
+                  <li>
+                    <strong>{gate.gateId}</strong>
+                    <span>{gate.status}</span>
+                    <p>{gate.requirement}</p>
+                  </li>
+                ))}
+              </ul>
+            ) : (
+              <div class="maturity-pass">当前轴线 gate 全部通过；后续重点是防止页面和主张漂移。</div>
+            )}
+          </article>
+        ))}
+      </div>
+      <div class="paper-panel maturity-work">
+        <h3>下一步 work orders</h3>
+        <ol>
+          {nextWorkOrders.map((item) => (
+            <li>
+              <strong>WO-{item.priority}</strong>
+              <p>{item.item}</p>
+              <span>解锁：{item.unblocks.join(" / ")}</span>
+            </li>
+          ))}
+        </ol>
+      </div>
+    </section>
 
     <section class="section" id="claim-spine">
       <SectionHeader
@@ -64,6 +134,7 @@ const metrics = [
         <aside class="side-index">
           <strong>阅读索引</strong>
           <a href="#thesis">核心命题</a>
+          <a href="#maturity">成熟度缺口</a>
           <a href="#signals">六组信号</a>
           <a href="#translation">模型转译</a>
           <a href="#routes">页面路径</a>

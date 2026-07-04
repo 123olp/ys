@@ -1,0 +1,208 @@
+{
+  "schemaVersion": "human-infra.c2-longtail-ninth-batch-local-review-register.v1",
+  "registerId": "human-infra-c2-longtail-ninth-batch-local-review-register-2026-07-04",
+  "status": "complete-local-source-context-review-independent-fresh-review-required",
+  "purpose": "Record local structural source-context review for all 24 C2-LT-B9 source extraction rows, route two access-error rows to source-resolution/manual-route handling, and keep independent fresh review, reviewed artifacts, clinical/dental/equipment/vaccine/environmental-health advice and calibrated model admission blocked.",
+  "sourceOfTruth": {
+    "sourceExtractionQueue": "docs/reference/human-infra-c2-longtail-ninth-batch-source-extraction-queue.json",
+    "sourceExtractionRegister": "docs/reference/human-infra-c2-longtail-ninth-batch-source-extraction-register.json",
+    "sourceCardSystem": "docs/reference/source-card-system.md",
+    "maturityGapRegister": "docs/reference/human-infra-maturity-gap-register.json"
+  },
+  "scope": {
+    "batchId": "C2-LT-B9",
+    "reviewLevel": "source-extraction-row-local-context-review",
+    "sourceExtractionTaskCount": 24,
+    "localReviewedExtractionTaskCount": 24,
+    "coveredDomainCount": 12,
+    "reviewBatchCount": 2,
+    "sourceResolutionIssueCount": 2,
+    "selectionRule": "Review all C2-LT-B9 source extraction rows after field-level extraction, without promoting any row to reviewed artifact fill, advice, intervention ranking or calibrated model admission.",
+    "reviewedExtractionTaskIds": [
+      "C2LTB9-EXT-001",
+      "C2LTB9-EXT-002",
+      "C2LTB9-EXT-003",
+      "C2LTB9-EXT-004",
+      "C2LTB9-EXT-005",
+      "C2LTB9-EXT-006",
+      "C2LTB9-EXT-007",
+      "C2LTB9-EXT-008",
+      "C2LTB9-EXT-009",
+      "C2LTB9-EXT-010",
+      "C2LTB9-EXT-011",
+      "C2LTB9-EXT-012",
+      "C2LTB9-EXT-013",
+      "C2LTB9-EXT-014",
+      "C2LTB9-EXT-015",
+      "C2LTB9-EXT-016",
+      "C2LTB9-EXT-017",
+      "C2LTB9-EXT-018",
+      "C2LTB9-EXT-019",
+      "C2LTB9-EXT-020",
+      "C2LTB9-EXT-021",
+      "C2LTB9-EXT-022",
+      "C2LTB9-EXT-023",
+      "C2LTB9-EXT-024"
+    ],
+    "currentLimitations": [
+      "This is local structural review only and is not independent fresh review.",
+      "Guideline, public-health, coverage, patient-education, review, equipment, immunization and environmental-exposure rows require independent source-context fresh review before bounded artifact use.",
+      "C2LTB9-EXT-008 returned automated HTTP 525 on the IDSA route and requires source-resolution/manual-route review before bounded fresh review.",
+      "C2LTB9-EXT-011 returned automated HTTP 403 on the Medicaid dental route and requires source-resolution/manual-route review before bounded fresh review.",
+      "GOLD 2026 redirected to the report-and-pocket-guide route and remains acceptable only as a route-normalized candidate for independent fresh review.",
+      "No row admits calibrated prediction, intervention ranking, individual advice, medical advice, dental advice, rehabilitation advice, respiratory-equipment advice, vaccine advice, environmental-health advice, clinical-validity claim, individual death-date output or domain-claim upgrade."
+    ]
+  },
+  "requiredExtractionFieldsReviewed": [
+    "taskId",
+    "domainId",
+    "localDomainPath",
+    "sourceRefId",
+    "sourceTitle",
+    "sourceUrl",
+    "sourceRole",
+    "exactClaimUse",
+    "endpointDefinition",
+    "populationOrSetting",
+    "effectOrMechanismSignal",
+    "uncertaintyOrBias",
+    "transferBoundary",
+    "downgradeTriggers",
+    "modelPosition",
+    "modelAdmissionDecision",
+    "blockedUses",
+    "nextAction"
+  ],
+  "localReviewVerdict": "24/24 C2-LT-B9 extraction rows are locally structurally reviewed for required field presence, source-route status, domain path existence, blocked-use preservation and model-admission blocking; non-issue rows may proceed only to independent-fresh-review protocol, while two issue rows require source-resolution/manual-route handling first.",
+  "promotionDecision": "Do not promote any C2-LT-B9 row to reviewed artifacts, clinical/dental/equipment/vaccine/environmental-health advice or model admission. Route non-issue rows to c2ltb9 independent-fresh-review protocol, and route C2LTB9-EXT-008 plus C2LTB9-EXT-011 to source-resolution/manual-route review before fresh review.",
+  "sourceResolutionDecision": "C2LTB9-EXT-008 and C2LTB9-EXT-011 remain source-resolution/manual-route blocked because automated access returned HTTP 525 and HTTP 403 respectively; both require stable source-route resolution or manual source-context capture before bounded fresh review.",
+  "modelAdmissionDecision": "blocked: C2-LT-B9 remains pre-artifact and pre-fresh-review. It cannot feed calibrated prediction, intervention ranking, individual advice, clinical-validity claims, domain upgrades or any medical/dental/equipment/vaccine/environmental-health recommendation.",
+  "blockedUses": [
+    "calibrated-prediction",
+    "individual-advice",
+    "individual-death-date-output",
+    "intervention-ranking",
+    "clinical-validity-claim",
+    "domain-claim-upgrade",
+    "medical-advice",
+    "dental-advice",
+    "rehabilitation-advice",
+    "respiratory-equipment-advice",
+    "vaccine-advice",
+    "environmental-health-advice"
+  ],
+  "requiredNextArtifacts": [
+    "c2ltb9-independent-fresh-review-protocol",
+    "c2ltb9-independent-fresh-review-verdict-register",
+    "c2ltb9-source-resolution-register-for-manual-route-issue-rows",
+    "reviewed-source-card",
+    "variable-card",
+    "endpoint-card",
+    "uncertainty-card",
+    "transfer-boundary-card",
+    "downgrade-check-row"
+  ],
+  "localReviewChecks": [
+    "Verified that 24/24 extraction rows exist and are ordered as C2LTB9-EXT-001 through C2LTB9-EXT-024.",
+    "Verified each extraction row keeps required claim, endpoint, population, effect/mechanism, uncertainty, transfer-boundary, downgrade and model-position fields.",
+    "Verified each extraction row matches the C2-LT-B9 source extraction queue for domainId, localDomainPath, sourceRefId, sourceTitle and sourceUrl.",
+    "Verified localDomainPath values exist and contain README.md plus AGENTS.md ownership files.",
+    "Verified all rows preserve blockedUses covering prediction, individual advice, clinical validity, domain upgrade, medical, dental, rehabilitation, respiratory-equipment, vaccine and environmental-health advice.",
+    "Verified C2LTB9-EXT-008 IDSA HTTP 525 route is not treated as resolved and remains source-resolution/manual-route blocked.",
+    "Verified C2LTB9-EXT-011 Medicaid HTTP 403 route is not treated as resolved and remains source-resolution/manual-route blocked.",
+    "Verified GOLD redirect status is preserved as route-normalized context and does not create artifact or model admission.",
+    "Verified no row opens reviewed artifact fill, calibrated model admission, individual recommendation, equipment advice, vaccine advice or environmental-health advice."
+  ],
+  "sourceResolutionFindings": [
+    {
+      "taskId": "C2LTB9-EXT-008",
+      "issueType": "automated-access-http-525-idsa-diabetic-foot-infection-route",
+      "reviewDisposition": "source-resolution/manual-route-review-required-before-independent-fresh-review-or-artifact-fill",
+      "correctionCandidate": "Resolve a stable IDSA diabetic-foot-infection guideline route, alternate accessible guideline page, publisher route, DOI/PubMed/PMC route, or manual source-context capture before bounded fresh review.",
+      "reason": "The extraction row records automated-web-check-http-525 for the IDSA route on 2026-07-04; local review cannot treat the route as independently reviewed source context."
+    },
+    {
+      "taskId": "C2LTB9-EXT-011",
+      "issueType": "automated-access-http-403-medicaid-dental-care-benefits-route",
+      "reviewDisposition": "source-resolution/manual-route-review-required-before-independent-fresh-review-or-artifact-fill",
+      "correctionCandidate": "Resolve a stable Medicaid dental benefits route, CMS/Medicaid.gov alternate page, archived route, official coverage context, or manual source-context capture before bounded fresh review.",
+      "reason": "The extraction row records automated-web-check-http-403 for the Medicaid route on 2026-07-04; local review cannot treat the route as independently reviewed source context."
+    }
+  ],
+  "reviewBatches": [
+    {
+      "reviewBatchId": "C2LTB9-LR-BATCH-01",
+      "reviewLabel": "Musculoskeletal, chronic wound, dental caries and dental-access source rows",
+      "taskIds": [
+        "C2LTB9-EXT-001",
+        "C2LTB9-EXT-002",
+        "C2LTB9-EXT-003",
+        "C2LTB9-EXT-004",
+        "C2LTB9-EXT-005",
+        "C2LTB9-EXT-006",
+        "C2LTB9-EXT-007",
+        "C2LTB9-EXT-008",
+        "C2LTB9-EXT-009",
+        "C2LTB9-EXT-010",
+        "C2LTB9-EXT-011",
+        "C2LTB9-EXT-012"
+      ],
+      "taskCount": 12,
+      "domainIds": [
+        "chronic-wound-venous-diabetic-pressure-ulcer-continuity",
+        "dental-care-access-insurance-workforce-continuity",
+        "dental-caries-prevention-restoration-continuity",
+        "low-back-pain-spine-function-continuity",
+        "osteoporosis-fracture-prevention-bone-health-continuity",
+        "resistance-training-muscle-strength-sarcopenia-continuity"
+      ],
+      "reviewDecision": "local-review-pass-for-independent-fresh-review-only",
+      "nextReviewMode": "Independent fresh review for non-issue rows; source-resolution/manual-route review must precede fresh review for C2LTB9-EXT-008 and C2LTB9-EXT-011."
+    },
+    {
+      "reviewBatchId": "C2LTB9-LR-BATCH-02",
+      "reviewLabel": "Oral health, xerostomia, respiratory, oxygen, immune-aging and wildfire-smoke source rows",
+      "taskIds": [
+        "C2LTB9-EXT-013",
+        "C2LTB9-EXT-014",
+        "C2LTB9-EXT-015",
+        "C2LTB9-EXT-016",
+        "C2LTB9-EXT-017",
+        "C2LTB9-EXT-018",
+        "C2LTB9-EXT-019",
+        "C2LTB9-EXT-020",
+        "C2LTB9-EXT-021",
+        "C2LTB9-EXT-022",
+        "C2LTB9-EXT-023",
+        "C2LTB9-EXT-024"
+      ],
+      "taskCount": 12,
+      "domainIds": [
+        "asthma-copd-maintenance-control-continuity",
+        "home-oxygen-respiratory-equipment-supply-continuity",
+        "immune-repertoire-vaccine-response-aging-continuity",
+        "oral-health-continuity",
+        "wildfire-smoke-clean-air-respiratory-continuity",
+        "xerostomia-salivary-function-oral-medication-continuity"
+      ],
+      "reviewDecision": "local-review-pass-for-independent-fresh-review-only",
+      "nextReviewMode": "Independent fresh review for non-issue rows; source-resolution/manual-route review must precede fresh review for C2LTB9-EXT-008 and C2LTB9-EXT-011."
+    }
+  ],
+  "nonClaims": [
+    "This register is not independent fresh review.",
+    "This register does not create reviewed Source Cards, variable cards, endpoint cards, uncertainty cards, transfer-boundary cards or downgrade rows.",
+    "This register does not resolve the IDSA HTTP 525 or Medicaid HTTP 403 access-route issues.",
+    "This register does not provide medical, dental, rehabilitation, respiratory-equipment, vaccine or environmental-health advice.",
+    "This register does not support individual death-date output, calibrated prediction, intervention ranking, clinical validity claims or domain-claim upgrades.",
+    "This register does not mark any prior C2-LT-B1/B2/B3/B4/B5/B6/B7/B8 blocked, downgrade, source-resolution, manual-access or model-blocked row as resolved."
+  ],
+  "indexRequirements": [
+    "README.md must link the C2-LT-B9 local review register near the ninth-batch quick-entry rows.",
+    "docs/reference/README.md must list the C2-LT-B9 local review register.",
+    "docs/reference/human-infra-maturity-roadmap.md must describe the C2-LT-B9 local review state and remaining source-resolution/fresh-review gates.",
+    "tools/README.md must list the C2-LT-B9 local review audit command.",
+    "tools/AGENTS.md must document the C2-LT-B9 local review audit boundary.",
+    "docs/reference/human-infra-maturity-gap-register.json must preserve B9 fresh-review, reviewed-artifact and model-admission gaps."
+  ]
+}

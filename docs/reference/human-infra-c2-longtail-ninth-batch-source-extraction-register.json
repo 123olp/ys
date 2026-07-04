@@ -1,0 +1,1302 @@
+{
+  "schemaVersion": "human-infra.c2-longtail-ninth-batch-source-extraction-register.v1",
+  "registerId": "C2-LT-B9-SOURCE-EXTRACTION-REGISTER",
+  "status": "active-c2ltb9-source-extractions-pending-local-review-and-fresh-review",
+  "purpose": "Record bounded field-level source-context extraction for the ninth C2 long-tail batch covering musculoskeletal, oral, dental-access, respiratory, immune-aging and environmental respiratory exposure domains while keeping local review, independent fresh review, reviewed artifacts, clinical advice and model admission blocked.",
+  "sourceOfTruth": {
+    "sourceExtractionQueue": "docs/reference/human-infra-c2-longtail-ninth-batch-source-extraction-queue.json",
+    "promotionQueue": "docs/reference/human-infra-c2-longtail-ninth-batch-promotion-queue.json",
+    "sourceCardSystem": "docs/reference/source-card-system.md",
+    "maturityGapRegister": "docs/reference/human-infra-maturity-gap-register.json",
+    "maturityRoadmap": "docs/reference/human-infra-maturity-roadmap.md"
+  },
+  "scope": {
+    "batchId": "C2-LT-B9",
+    "queueTaskCount": 24,
+    "extractedTaskCount": 24,
+    "remainingTaskCount": 0,
+    "coveredDomainCount": 12,
+    "selectedTaskIds": [
+      "C2LTB9-EXT-001",
+      "C2LTB9-EXT-002",
+      "C2LTB9-EXT-003",
+      "C2LTB9-EXT-004",
+      "C2LTB9-EXT-005",
+      "C2LTB9-EXT-006",
+      "C2LTB9-EXT-007",
+      "C2LTB9-EXT-008",
+      "C2LTB9-EXT-009",
+      "C2LTB9-EXT-010",
+      "C2LTB9-EXT-011",
+      "C2LTB9-EXT-012",
+      "C2LTB9-EXT-013",
+      "C2LTB9-EXT-014",
+      "C2LTB9-EXT-015",
+      "C2LTB9-EXT-016",
+      "C2LTB9-EXT-017",
+      "C2LTB9-EXT-018",
+      "C2LTB9-EXT-019",
+      "C2LTB9-EXT-020",
+      "C2LTB9-EXT-021",
+      "C2LTB9-EXT-022",
+      "C2LTB9-EXT-023",
+      "C2LTB9-EXT-024"
+    ],
+    "extractionDepth": "bounded-source-context-field-extraction-before-local-review",
+    "currentLimitations": [
+      "This register records local field extraction only; it does not complete local source-context review or independent fresh review.",
+      "Guideline pages, public-health pages, coverage pages, patient education pages, review articles and clinical practice guidelines may still require manual/fulltext or route-specific context review before artifact promotion.",
+      "IDSA diabetic-foot-infection and Medicaid dental-care routes returned automated access errors in this pass and must remain manual-route-review blocked until resolved.",
+      "No row may be used for medical, dental, rehabilitation, respiratory-equipment, vaccine, environmental-health, individual, intervention-ranking, clinical-validity, calibrated-prediction or domain-claim-upgrade advice."
+    ]
+  },
+  "sourceAccessNotes": [
+    "Automated URL checks were run on 2026-07-04 with a human-infra-source-check user agent to record rough access state only; this is not independent fresh review.",
+    "22/24 candidate URLs returned HTTP 200 or a final HTTP 200 route during automated check.",
+    "C2LTB9-EXT-008 returned HTTP 525 for the IDSA route and remains manual-route-review blocked.",
+    "C2LTB9-EXT-011 returned HTTP 403 for the Medicaid route and remains manual-route-review blocked.",
+    "GOLD 2026 redirected from /2026-gold-report/ to /2026-gold-report-and-pocket-guide/ and remains pending local context review."
+  ],
+  "extractedRows": [
+    {
+      "taskId": "C2LTB9-EXT-001",
+      "domainId": "low-back-pain-spine-function-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/low-back-pain-spine-function-continuity",
+      "sourceRefId": "C2LTB9-SRC-01-1",
+      "sourceTitle": "NICE guideline: Low back pain and sciatica in over 16s: assessment and management",
+      "sourceUrl": "https://www.nice.org.uk/guidance/ng59",
+      "extractionStatus": "completed-c2ltb9-source-context-extraction",
+      "sourceAccessStatus": "automated-web-check-status-200-on-2026-07-04; pending-local-context-review",
+      "sourceRole": "guideline-context; evidenceRole=low-back-pain-assessment-management-guideline",
+      "exactClaimUse": "Can support bounded source-context framing for `low-back-pain-spine-function-continuity` by connecting the domain claim seed to source-specific low-back-pain-assessment-management-guideline; exact endorsement strength remains pending local review and independent fresh review.",
+      "endpointDefinition": "Candidate observable variables: pain-interference, spine-function, activity-limitation, work-disability, non-surgical-management-boundary.",
+      "populationOrSetting": "Adults with low back pain or sciatica in assessment, primary care, community care or non-surgical management contexts.",
+      "effectOrMechanismSignal": "Source can frame low back pain as a functional-continuity domain through pain interference, activity limitation, disability, sleep/work disruption and non-surgical care pathway boundaries.",
+      "uncertaintyOrBias": "Guideline scope, recommendation strength, population exclusions, chronicity definitions and local health-system implementation may limit transfer to Human Infra variables.",
+      "transferBoundary": "Use only for pain/function endpoint design and spine-function continuity framing, not for treatment selection, diagnosis, rehabilitation advice or lifespan prediction.",
+      "downgradeTriggers": [
+        "source context does not directly support the domain claim seed",
+        "source scope is guideline-route, coverage-route, public-health-route, patient-education-route, review-route or article-route rather than endpoint-ready evidence",
+        "endpoint, population, condition, exposure, equipment, schedule, access or setting definition cannot be bounded after local review",
+        "claim would require individual advice, treatment selection, equipment recommendation, vaccine recommendation, environmental-health instruction, clinical validity or calibrated prediction",
+        "source access is blocked, redirected, route-only, stale, duplicate, or requires manual/fulltext review before claim extraction"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 ninth-batch musculoskeletal, oral, respiratory, immune-aging and environmental-exposure source extraction register",
+        "variables": [
+          "pain-interference",
+          "spine-function",
+          "activity-limitation",
+          "work-disability",
+          "non-surgical-management-boundary"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local source-context review before independent fresh review and bounded artifact consideration"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade",
+        "medical-advice",
+        "dental-advice",
+        "rehabilitation-advice",
+        "respiratory-equipment-advice",
+        "vaccine-advice",
+        "environmental-health-advice"
+      ],
+      "nextAction": "Run local source-context review, resolve blocked/manual routes, then run independent fresh review before any bounded reviewed artifact or model-admission consideration."
+    },
+    {
+      "taskId": "C2LTB9-EXT-002",
+      "domainId": "low-back-pain-spine-function-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/low-back-pain-spine-function-continuity",
+      "sourceRefId": "C2LTB9-SRC-01-2",
+      "sourceTitle": "WHO guideline for non-surgical management of chronic primary low back pain in adults in primary and community care settings",
+      "sourceUrl": "https://www.who.int/publications/i/item/9789240081789",
+      "extractionStatus": "completed-c2ltb9-source-context-extraction",
+      "sourceAccessStatus": "automated-web-check-status-200-on-2026-07-04; pending-local-context-review",
+      "sourceRole": "global-guideline-context; evidenceRole=chronic-low-back-pain-function-guideline",
+      "exactClaimUse": "Can support bounded source-context framing for `low-back-pain-spine-function-continuity` by connecting the domain claim seed to source-specific chronic-low-back-pain-function-guideline; exact endorsement strength remains pending local review and independent fresh review.",
+      "endpointDefinition": "Candidate observable variables: pain-interference, spine-function, activity-limitation, work-disability, non-surgical-management-boundary.",
+      "populationOrSetting": "Adults with low back pain or sciatica in assessment, primary care, community care or non-surgical management contexts.",
+      "effectOrMechanismSignal": "Source can frame low back pain as a functional-continuity domain through pain interference, activity limitation, disability, sleep/work disruption and non-surgical care pathway boundaries.",
+      "uncertaintyOrBias": "Guideline scope, recommendation strength, population exclusions, chronicity definitions and local health-system implementation may limit transfer to Human Infra variables.",
+      "transferBoundary": "Use only for pain/function endpoint design and spine-function continuity framing, not for treatment selection, diagnosis, rehabilitation advice or lifespan prediction.",
+      "downgradeTriggers": [
+        "source context does not directly support the domain claim seed",
+        "source scope is guideline-route, coverage-route, public-health-route, patient-education-route, review-route or article-route rather than endpoint-ready evidence",
+        "endpoint, population, condition, exposure, equipment, schedule, access or setting definition cannot be bounded after local review",
+        "claim would require individual advice, treatment selection, equipment recommendation, vaccine recommendation, environmental-health instruction, clinical validity or calibrated prediction",
+        "source access is blocked, redirected, route-only, stale, duplicate, or requires manual/fulltext review before claim extraction"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 ninth-batch musculoskeletal, oral, respiratory, immune-aging and environmental-exposure source extraction register",
+        "variables": [
+          "pain-interference",
+          "spine-function",
+          "activity-limitation",
+          "work-disability",
+          "non-surgical-management-boundary"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local source-context review before independent fresh review and bounded artifact consideration"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade",
+        "medical-advice",
+        "dental-advice",
+        "rehabilitation-advice",
+        "respiratory-equipment-advice",
+        "vaccine-advice",
+        "environmental-health-advice"
+      ],
+      "nextAction": "Run local source-context review, resolve blocked/manual routes, then run independent fresh review before any bounded reviewed artifact or model-admission consideration."
+    },
+    {
+      "taskId": "C2LTB9-EXT-003",
+      "domainId": "resistance-training-muscle-strength-sarcopenia-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/resistance-training-muscle-strength-sarcopenia-continuity",
+      "sourceRefId": "C2LTB9-SRC-02-1",
+      "sourceTitle": "WHO guidelines on physical activity and sedentary behaviour",
+      "sourceUrl": "https://www.who.int/publications/i/item/9789240015128",
+      "extractionStatus": "completed-c2ltb9-source-context-extraction",
+      "sourceAccessStatus": "automated-web-check-status-200-on-2026-07-04; pending-local-context-review",
+      "sourceRole": "global-guideline-context; evidenceRole=physical-activity-strength-guideline",
+      "exactClaimUse": "Can support bounded source-context framing for `resistance-training-muscle-strength-sarcopenia-continuity` by connecting the domain claim seed to source-specific physical-activity-strength-guideline; exact endorsement strength remains pending local review and independent fresh review.",
+      "endpointDefinition": "Candidate observable variables: muscle-strength, resistance-training-dose, mobility-function, fall-risk, sarcopenia-boundary.",
+      "populationOrSetting": "Adults and older adults in physical activity, sedentary behaviour, strengthening activity or community health guideline settings.",
+      "effectOrMechanismSignal": "Source can frame muscle strength and resistance activity as mobility, fall-risk, metabolic and independent-action capacity variables.",
+      "uncertaintyOrBias": "Population health guidance does not equal individual exercise prescription; sarcopenia case definitions, baseline frailty, contraindications and adherence are unresolved.",
+      "transferBoundary": "Use only for variable naming around strength, mobility and functional capacity, not for individual exercise dosing, clinical advice or model calibration.",
+      "downgradeTriggers": [
+        "source context does not directly support the domain claim seed",
+        "source scope is guideline-route, coverage-route, public-health-route, patient-education-route, review-route or article-route rather than endpoint-ready evidence",
+        "endpoint, population, condition, exposure, equipment, schedule, access or setting definition cannot be bounded after local review",
+        "claim would require individual advice, treatment selection, equipment recommendation, vaccine recommendation, environmental-health instruction, clinical validity or calibrated prediction",
+        "source access is blocked, redirected, route-only, stale, duplicate, or requires manual/fulltext review before claim extraction"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 ninth-batch musculoskeletal, oral, respiratory, immune-aging and environmental-exposure source extraction register",
+        "variables": [
+          "muscle-strength",
+          "resistance-training-dose",
+          "mobility-function",
+          "fall-risk",
+          "sarcopenia-boundary"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local source-context review before independent fresh review and bounded artifact consideration"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade",
+        "medical-advice",
+        "dental-advice",
+        "rehabilitation-advice",
+        "respiratory-equipment-advice",
+        "vaccine-advice",
+        "environmental-health-advice"
+      ],
+      "nextAction": "Run local source-context review, resolve blocked/manual routes, then run independent fresh review before any bounded reviewed artifact or model-admission consideration."
+    },
+    {
+      "taskId": "C2LTB9-EXT-004",
+      "domainId": "resistance-training-muscle-strength-sarcopenia-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/resistance-training-muscle-strength-sarcopenia-continuity",
+      "sourceRefId": "C2LTB9-SRC-02-2",
+      "sourceTitle": "CDC Physical Activity Guidelines for Older Adults",
+      "sourceUrl": "https://www.cdc.gov/physical-activity-basics/guidelines/older-adults.html",
+      "extractionStatus": "completed-c2ltb9-source-context-extraction",
+      "sourceAccessStatus": "automated-web-check-status-200-on-2026-07-04; pending-local-context-review",
+      "sourceRole": "public-health-guidance-context; evidenceRole=older-adult-strength-balance-guideline",
+      "exactClaimUse": "Can support bounded source-context framing for `resistance-training-muscle-strength-sarcopenia-continuity` by connecting the domain claim seed to source-specific older-adult-strength-balance-guideline; exact endorsement strength remains pending local review and independent fresh review.",
+      "endpointDefinition": "Candidate observable variables: muscle-strength, resistance-training-dose, mobility-function, fall-risk, sarcopenia-boundary.",
+      "populationOrSetting": "Adults and older adults in physical activity, sedentary behaviour, strengthening activity or community health guideline settings.",
+      "effectOrMechanismSignal": "Source can frame muscle strength and resistance activity as mobility, fall-risk, metabolic and independent-action capacity variables.",
+      "uncertaintyOrBias": "Population health guidance does not equal individual exercise prescription; sarcopenia case definitions, baseline frailty, contraindications and adherence are unresolved.",
+      "transferBoundary": "Use only for variable naming around strength, mobility and functional capacity, not for individual exercise dosing, clinical advice or model calibration.",
+      "downgradeTriggers": [
+        "source context does not directly support the domain claim seed",
+        "source scope is guideline-route, coverage-route, public-health-route, patient-education-route, review-route or article-route rather than endpoint-ready evidence",
+        "endpoint, population, condition, exposure, equipment, schedule, access or setting definition cannot be bounded after local review",
+        "claim would require individual advice, treatment selection, equipment recommendation, vaccine recommendation, environmental-health instruction, clinical validity or calibrated prediction",
+        "source access is blocked, redirected, route-only, stale, duplicate, or requires manual/fulltext review before claim extraction"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 ninth-batch musculoskeletal, oral, respiratory, immune-aging and environmental-exposure source extraction register",
+        "variables": [
+          "muscle-strength",
+          "resistance-training-dose",
+          "mobility-function",
+          "fall-risk",
+          "sarcopenia-boundary"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local source-context review before independent fresh review and bounded artifact consideration"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade",
+        "medical-advice",
+        "dental-advice",
+        "rehabilitation-advice",
+        "respiratory-equipment-advice",
+        "vaccine-advice",
+        "environmental-health-advice"
+      ],
+      "nextAction": "Run local source-context review, resolve blocked/manual routes, then run independent fresh review before any bounded reviewed artifact or model-admission consideration."
+    },
+    {
+      "taskId": "C2LTB9-EXT-005",
+      "domainId": "osteoporosis-fracture-prevention-bone-health-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/osteoporosis-fracture-prevention-bone-health-continuity",
+      "sourceRefId": "C2LTB9-SRC-03-1",
+      "sourceTitle": "USPSTF Recommendation: Osteoporosis to Prevent Fractures: Screening",
+      "sourceUrl": "https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/osteoporosis-screening",
+      "extractionStatus": "completed-c2ltb9-source-context-extraction",
+      "sourceAccessStatus": "automated-web-check-status-200-on-2026-07-04; pending-local-context-review",
+      "sourceRole": "screening-recommendation-context; evidenceRole=osteoporosis-screening-recommendation",
+      "exactClaimUse": "Can support bounded source-context framing for `osteoporosis-fracture-prevention-bone-health-continuity` by connecting the domain claim seed to source-specific osteoporosis-screening-recommendation; exact endorsement strength remains pending local review and independent fresh review.",
+      "endpointDefinition": "Candidate observable variables: bone-density, fragility-fracture-risk, screening-eligibility, fall-fracture-cascade, fracture-recovery-burden.",
+      "populationOrSetting": "Adults considered for osteoporosis screening, fracture risk assessment, prevention or treatment guidance; exact age/sex/risk groups are source-specific.",
+      "effectOrMechanismSignal": "Source can frame bone density and fragility fracture risk as continuity variables linking falls, pain, surgery, hospitalization, rehabilitation and long-term care burden.",
+      "uncertaintyOrBias": "Screening recommendation populations, treatment thresholds, fracture-risk tools and clinical guideline evidence grades may not transfer across age, sex, country or care settings.",
+      "transferBoundary": "Use only for bone-health endpoint and fracture-cascade modeling slots, not for screening decisions, medication decisions or individual fracture prediction.",
+      "downgradeTriggers": [
+        "source context does not directly support the domain claim seed",
+        "source scope is guideline-route, coverage-route, public-health-route, patient-education-route, review-route or article-route rather than endpoint-ready evidence",
+        "endpoint, population, condition, exposure, equipment, schedule, access or setting definition cannot be bounded after local review",
+        "claim would require individual advice, treatment selection, equipment recommendation, vaccine recommendation, environmental-health instruction, clinical validity or calibrated prediction",
+        "source access is blocked, redirected, route-only, stale, duplicate, or requires manual/fulltext review before claim extraction"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 ninth-batch musculoskeletal, oral, respiratory, immune-aging and environmental-exposure source extraction register",
+        "variables": [
+          "bone-density",
+          "fragility-fracture-risk",
+          "screening-eligibility",
+          "fall-fracture-cascade",
+          "fracture-recovery-burden"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local source-context review before independent fresh review and bounded artifact consideration"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade",
+        "medical-advice",
+        "dental-advice",
+        "rehabilitation-advice",
+        "respiratory-equipment-advice",
+        "vaccine-advice",
+        "environmental-health-advice"
+      ],
+      "nextAction": "Run local source-context review, resolve blocked/manual routes, then run independent fresh review before any bounded reviewed artifact or model-admission consideration."
+    },
+    {
+      "taskId": "C2LTB9-EXT-006",
+      "domainId": "osteoporosis-fracture-prevention-bone-health-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/osteoporosis-fracture-prevention-bone-health-continuity",
+      "sourceRefId": "C2LTB9-SRC-03-2",
+      "sourceTitle": "The clinician's guide to prevention and treatment of osteoporosis",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9546973/",
+      "extractionStatus": "completed-c2ltb9-source-context-extraction",
+      "sourceAccessStatus": "automated-web-check-status-200-on-2026-07-04; pending-local-context-review",
+      "sourceRole": "clinical-guide-context; evidenceRole=osteoporosis-prevention-treatment-review",
+      "exactClaimUse": "Can support bounded source-context framing for `osteoporosis-fracture-prevention-bone-health-continuity` by connecting the domain claim seed to source-specific osteoporosis-prevention-treatment-review; exact endorsement strength remains pending local review and independent fresh review.",
+      "endpointDefinition": "Candidate observable variables: bone-density, fragility-fracture-risk, screening-eligibility, fall-fracture-cascade, fracture-recovery-burden.",
+      "populationOrSetting": "Adults considered for osteoporosis screening, fracture risk assessment, prevention or treatment guidance; exact age/sex/risk groups are source-specific.",
+      "effectOrMechanismSignal": "Source can frame bone density and fragility fracture risk as continuity variables linking falls, pain, surgery, hospitalization, rehabilitation and long-term care burden.",
+      "uncertaintyOrBias": "Screening recommendation populations, treatment thresholds, fracture-risk tools and clinical guideline evidence grades may not transfer across age, sex, country or care settings.",
+      "transferBoundary": "Use only for bone-health endpoint and fracture-cascade modeling slots, not for screening decisions, medication decisions or individual fracture prediction.",
+      "downgradeTriggers": [
+        "source context does not directly support the domain claim seed",
+        "source scope is guideline-route, coverage-route, public-health-route, patient-education-route, review-route or article-route rather than endpoint-ready evidence",
+        "endpoint, population, condition, exposure, equipment, schedule, access or setting definition cannot be bounded after local review",
+        "claim would require individual advice, treatment selection, equipment recommendation, vaccine recommendation, environmental-health instruction, clinical validity or calibrated prediction",
+        "source access is blocked, redirected, route-only, stale, duplicate, or requires manual/fulltext review before claim extraction"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 ninth-batch musculoskeletal, oral, respiratory, immune-aging and environmental-exposure source extraction register",
+        "variables": [
+          "bone-density",
+          "fragility-fracture-risk",
+          "screening-eligibility",
+          "fall-fracture-cascade",
+          "fracture-recovery-burden"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local source-context review before independent fresh review and bounded artifact consideration"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade",
+        "medical-advice",
+        "dental-advice",
+        "rehabilitation-advice",
+        "respiratory-equipment-advice",
+        "vaccine-advice",
+        "environmental-health-advice"
+      ],
+      "nextAction": "Run local source-context review, resolve blocked/manual routes, then run independent fresh review before any bounded reviewed artifact or model-admission consideration."
+    },
+    {
+      "taskId": "C2LTB9-EXT-007",
+      "domainId": "chronic-wound-venous-diabetic-pressure-ulcer-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/chronic-wound-venous-diabetic-pressure-ulcer-continuity",
+      "sourceRefId": "C2LTB9-SRC-04-1",
+      "sourceTitle": "NICE guideline: Pressure ulcers: prevention and management",
+      "sourceUrl": "https://www.nice.org.uk/guidance/cg179",
+      "extractionStatus": "completed-c2ltb9-source-context-extraction",
+      "sourceAccessStatus": "automated-web-check-status-200-on-2026-07-04; pending-local-context-review",
+      "sourceRole": "guideline-context; evidenceRole=pressure-ulcer-prevention-management-guideline",
+      "exactClaimUse": "Can support bounded source-context framing for `chronic-wound-venous-diabetic-pressure-ulcer-continuity` by connecting the domain claim seed to source-specific pressure-ulcer-prevention-management-guideline; exact endorsement strength remains pending local review and independent fresh review.",
+      "endpointDefinition": "Candidate observable variables: wound-duration, infection-risk, offloading-or-pressure-relief, healing-endpoint, care-burden.",
+      "populationOrSetting": "People with or at risk of pressure ulcers, diabetic foot wounds or wound infection in clinical, community or long-term care settings.",
+      "effectOrMechanismSignal": "Source can frame chronic wounds as continuity threats through wound duration, infection, offloading/pressure relief, pain, care burden, amputation risk and healing endpoints.",
+      "uncertaintyOrBias": "Guideline scope differs by wound type; infection severity, vascular status, diabetes status, pressure context and care resources can change endpoint interpretation.",
+      "transferBoundary": "Use only for wound-burden variables and downgrade triggers, not for wound care instructions, infection management, offloading decisions or amputation-risk advice.",
+      "downgradeTriggers": [
+        "source context does not directly support the domain claim seed",
+        "source scope is guideline-route, coverage-route, public-health-route, patient-education-route, review-route or article-route rather than endpoint-ready evidence",
+        "endpoint, population, condition, exposure, equipment, schedule, access or setting definition cannot be bounded after local review",
+        "claim would require individual advice, treatment selection, equipment recommendation, vaccine recommendation, environmental-health instruction, clinical validity or calibrated prediction",
+        "source access is blocked, redirected, route-only, stale, duplicate, or requires manual/fulltext review before claim extraction"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 ninth-batch musculoskeletal, oral, respiratory, immune-aging and environmental-exposure source extraction register",
+        "variables": [
+          "wound-duration",
+          "infection-risk",
+          "offloading-or-pressure-relief",
+          "healing-endpoint",
+          "care-burden"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local source-context review before independent fresh review and bounded artifact consideration"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade",
+        "medical-advice",
+        "dental-advice",
+        "rehabilitation-advice",
+        "respiratory-equipment-advice",
+        "vaccine-advice",
+        "environmental-health-advice"
+      ],
+      "nextAction": "Run local source-context review, resolve blocked/manual routes, then run independent fresh review before any bounded reviewed artifact or model-admission consideration."
+    },
+    {
+      "taskId": "C2LTB9-EXT-008",
+      "domainId": "chronic-wound-venous-diabetic-pressure-ulcer-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/chronic-wound-venous-diabetic-pressure-ulcer-continuity",
+      "sourceRefId": "C2LTB9-SRC-04-2",
+      "sourceTitle": "IDSA guideline: Diabetic Foot Infections",
+      "sourceUrl": "https://www.idsociety.org/practice-guideline/diabetic-foot-infections/",
+      "extractionStatus": "completed-c2ltb9-source-context-extraction",
+      "sourceAccessStatus": "automated-web-check-http-525-for-idsa-route-on-2026-07-04; manual-route-review-required-before-local-review",
+      "sourceRole": "infectious-disease-guideline-route-context; evidenceRole=diabetic-foot-infection-guideline",
+      "exactClaimUse": "Can support bounded source-context framing for `chronic-wound-venous-diabetic-pressure-ulcer-continuity` by connecting the domain claim seed to source-specific diabetic-foot-infection-guideline; exact endorsement strength remains pending local review and independent fresh review.",
+      "endpointDefinition": "Candidate observable variables: wound-duration, infection-risk, offloading-or-pressure-relief, healing-endpoint, care-burden.",
+      "populationOrSetting": "People with or at risk of pressure ulcers, diabetic foot wounds or wound infection in clinical, community or long-term care settings.",
+      "effectOrMechanismSignal": "Source can frame chronic wounds as continuity threats through wound duration, infection, offloading/pressure relief, pain, care burden, amputation risk and healing endpoints.",
+      "uncertaintyOrBias": "Guideline scope differs by wound type; infection severity, vascular status, diabetes status, pressure context and care resources can change endpoint interpretation.",
+      "transferBoundary": "Use only for wound-burden variables and downgrade triggers, not for wound care instructions, infection management, offloading decisions or amputation-risk advice.",
+      "downgradeTriggers": [
+        "source context does not directly support the domain claim seed",
+        "source scope is guideline-route, coverage-route, public-health-route, patient-education-route, review-route or article-route rather than endpoint-ready evidence",
+        "endpoint, population, condition, exposure, equipment, schedule, access or setting definition cannot be bounded after local review",
+        "claim would require individual advice, treatment selection, equipment recommendation, vaccine recommendation, environmental-health instruction, clinical validity or calibrated prediction",
+        "source access is blocked, redirected, route-only, stale, duplicate, or requires manual/fulltext review before claim extraction"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 ninth-batch musculoskeletal, oral, respiratory, immune-aging and environmental-exposure source extraction register",
+        "variables": [
+          "wound-duration",
+          "infection-risk",
+          "offloading-or-pressure-relief",
+          "healing-endpoint",
+          "care-burden"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local source-context review before independent fresh review and bounded artifact consideration"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade",
+        "medical-advice",
+        "dental-advice",
+        "rehabilitation-advice",
+        "respiratory-equipment-advice",
+        "vaccine-advice",
+        "environmental-health-advice"
+      ],
+      "nextAction": "Run local source-context review, resolve blocked/manual routes, then run independent fresh review before any bounded reviewed artifact or model-admission consideration."
+    },
+    {
+      "taskId": "C2LTB9-EXT-009",
+      "domainId": "dental-caries-prevention-restoration-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/dental-caries-prevention-restoration-continuity",
+      "sourceRefId": "C2LTB9-SRC-05-1",
+      "sourceTitle": "CDC Oral Health: Preventing Oral Diseases",
+      "sourceUrl": "https://www.cdc.gov/oral-health/prevention/index.html",
+      "extractionStatus": "completed-c2ltb9-source-context-extraction",
+      "sourceAccessStatus": "automated-web-check-status-200-on-2026-07-04; pending-local-context-review",
+      "sourceRole": "public-health-education-context; evidenceRole=oral-disease-prevention-public-health-source",
+      "exactClaimUse": "Can support bounded source-context framing for `dental-caries-prevention-restoration-continuity` by connecting the domain claim seed to source-specific oral-disease-prevention-public-health-source; exact endorsement strength remains pending local review and independent fresh review.",
+      "endpointDefinition": "Candidate observable variables: caries-burden, tooth-pain, preventive-fluoride-sealant-boundary, restoration-access, school-work-absence.",
+      "populationOrSetting": "Children, families, dental/public-health settings and preventive oral-health programs depending on source scope.",
+      "effectOrMechanismSignal": "Source can frame dental caries as an effective-time and function domain through tooth pain, infection, chewing limits, preventive services, restoration access and school/work absence.",
+      "uncertaintyOrBias": "Age range, preventive modality, local fluoridation/sealant programs, insurance access and dental workforce availability constrain transfer.",
+      "transferBoundary": "Use only for caries burden, pain and access-variable design, not for dental treatment advice or individual prevention plans.",
+      "downgradeTriggers": [
+        "source context does not directly support the domain claim seed",
+        "source scope is guideline-route, coverage-route, public-health-route, patient-education-route, review-route or article-route rather than endpoint-ready evidence",
+        "endpoint, population, condition, exposure, equipment, schedule, access or setting definition cannot be bounded after local review",
+        "claim would require individual advice, treatment selection, equipment recommendation, vaccine recommendation, environmental-health instruction, clinical validity or calibrated prediction",
+        "source access is blocked, redirected, route-only, stale, duplicate, or requires manual/fulltext review before claim extraction"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 ninth-batch musculoskeletal, oral, respiratory, immune-aging and environmental-exposure source extraction register",
+        "variables": [
+          "caries-burden",
+          "tooth-pain",
+          "preventive-fluoride-sealant-boundary",
+          "restoration-access",
+          "school-work-absence"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local source-context review before independent fresh review and bounded artifact consideration"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade",
+        "medical-advice",
+        "dental-advice",
+        "rehabilitation-advice",
+        "respiratory-equipment-advice",
+        "vaccine-advice",
+        "environmental-health-advice"
+      ],
+      "nextAction": "Run local source-context review, resolve blocked/manual routes, then run independent fresh review before any bounded reviewed artifact or model-admission consideration."
+    },
+    {
+      "taskId": "C2LTB9-EXT-010",
+      "domainId": "dental-caries-prevention-restoration-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/dental-caries-prevention-restoration-continuity",
+      "sourceRefId": "C2LTB9-SRC-05-2",
+      "sourceTitle": "USPSTF Recommendation: Prevention of Dental Caries in Children Younger Than 5 Years",
+      "sourceUrl": "https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/prevention-of-dental-caries-in-children-younger-than-age-5-years-screening-and-interventions1",
+      "extractionStatus": "completed-c2ltb9-source-context-extraction",
+      "sourceAccessStatus": "automated-web-check-status-200-on-2026-07-04; pending-local-context-review",
+      "sourceRole": "screening-recommendation-context; evidenceRole=child-caries-prevention-recommendation",
+      "exactClaimUse": "Can support bounded source-context framing for `dental-caries-prevention-restoration-continuity` by connecting the domain claim seed to source-specific child-caries-prevention-recommendation; exact endorsement strength remains pending local review and independent fresh review.",
+      "endpointDefinition": "Candidate observable variables: caries-burden, tooth-pain, preventive-fluoride-sealant-boundary, restoration-access, school-work-absence.",
+      "populationOrSetting": "Children, families, dental/public-health settings and preventive oral-health programs depending on source scope.",
+      "effectOrMechanismSignal": "Source can frame dental caries as an effective-time and function domain through tooth pain, infection, chewing limits, preventive services, restoration access and school/work absence.",
+      "uncertaintyOrBias": "Age range, preventive modality, local fluoridation/sealant programs, insurance access and dental workforce availability constrain transfer.",
+      "transferBoundary": "Use only for caries burden, pain and access-variable design, not for dental treatment advice or individual prevention plans.",
+      "downgradeTriggers": [
+        "source context does not directly support the domain claim seed",
+        "source scope is guideline-route, coverage-route, public-health-route, patient-education-route, review-route or article-route rather than endpoint-ready evidence",
+        "endpoint, population, condition, exposure, equipment, schedule, access or setting definition cannot be bounded after local review",
+        "claim would require individual advice, treatment selection, equipment recommendation, vaccine recommendation, environmental-health instruction, clinical validity or calibrated prediction",
+        "source access is blocked, redirected, route-only, stale, duplicate, or requires manual/fulltext review before claim extraction"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 ninth-batch musculoskeletal, oral, respiratory, immune-aging and environmental-exposure source extraction register",
+        "variables": [
+          "caries-burden",
+          "tooth-pain",
+          "preventive-fluoride-sealant-boundary",
+          "restoration-access",
+          "school-work-absence"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local source-context review before independent fresh review and bounded artifact consideration"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade",
+        "medical-advice",
+        "dental-advice",
+        "rehabilitation-advice",
+        "respiratory-equipment-advice",
+        "vaccine-advice",
+        "environmental-health-advice"
+      ],
+      "nextAction": "Run local source-context review, resolve blocked/manual routes, then run independent fresh review before any bounded reviewed artifact or model-admission consideration."
+    },
+    {
+      "taskId": "C2LTB9-EXT-011",
+      "domainId": "dental-care-access-insurance-workforce-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/dental-care-access-insurance-workforce-continuity",
+      "sourceRefId": "C2LTB9-SRC-06-1",
+      "sourceTitle": "Medicaid Dental Care benefits",
+      "sourceUrl": "https://www.medicaid.gov/medicaid/benefits/dental-care/index.html",
+      "extractionStatus": "completed-c2ltb9-source-context-extraction",
+      "sourceAccessStatus": "automated-web-check-http-403-for-medicaid-route-on-2026-07-04; manual-route-review-required-before-local-review",
+      "sourceRole": "coverage-route-context; evidenceRole=dental-coverage-policy-source",
+      "exactClaimUse": "Can support bounded source-context framing for `dental-care-access-insurance-workforce-continuity` by connecting the domain claim seed to source-specific dental-coverage-policy-source; exact endorsement strength remains pending local review and independent fresh review.",
+      "endpointDefinition": "Candidate observable variables: dental-coverage, out-of-pocket-cost, workforce-shortage, appointment-access, delayed-care.",
+      "populationOrSetting": "Public insurance, dental benefit, oral-health objective or service access contexts; populations vary by program and jurisdiction.",
+      "effectOrMechanismSignal": "Source can frame dental coverage, cost, workforce and appointment access as conversion barriers between oral-health need and executed care.",
+      "uncertaintyOrBias": "Benefit design, state policy, provider participation, workforce geography and survey objective definitions limit generalization.",
+      "transferBoundary": "Use only for access/friction variables and coverage-boundary mapping, not for eligibility advice, benefit advice, billing advice or service recommendation.",
+      "downgradeTriggers": [
+        "source context does not directly support the domain claim seed",
+        "source scope is guideline-route, coverage-route, public-health-route, patient-education-route, review-route or article-route rather than endpoint-ready evidence",
+        "endpoint, population, condition, exposure, equipment, schedule, access or setting definition cannot be bounded after local review",
+        "claim would require individual advice, treatment selection, equipment recommendation, vaccine recommendation, environmental-health instruction, clinical validity or calibrated prediction",
+        "source access is blocked, redirected, route-only, stale, duplicate, or requires manual/fulltext review before claim extraction"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 ninth-batch musculoskeletal, oral, respiratory, immune-aging and environmental-exposure source extraction register",
+        "variables": [
+          "dental-coverage",
+          "out-of-pocket-cost",
+          "workforce-shortage",
+          "appointment-access",
+          "delayed-care"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local source-context review before independent fresh review and bounded artifact consideration"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade",
+        "medical-advice",
+        "dental-advice",
+        "rehabilitation-advice",
+        "respiratory-equipment-advice",
+        "vaccine-advice",
+        "environmental-health-advice"
+      ],
+      "nextAction": "Run local source-context review, resolve blocked/manual routes, then run independent fresh review before any bounded reviewed artifact or model-admission consideration."
+    },
+    {
+      "taskId": "C2LTB9-EXT-012",
+      "domainId": "dental-care-access-insurance-workforce-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/dental-care-access-insurance-workforce-continuity",
+      "sourceRefId": "C2LTB9-SRC-06-2",
+      "sourceTitle": "Healthy People 2030 Oral Conditions objectives",
+      "sourceUrl": "https://odphp.health.gov/healthypeople/objectives-and-data/browse-objectives/oral-conditions",
+      "extractionStatus": "completed-c2ltb9-source-context-extraction",
+      "sourceAccessStatus": "automated-web-check-status-200-on-2026-07-04; pending-local-context-review",
+      "sourceRole": "public-health-objective-context; evidenceRole=oral-health-access-objectives",
+      "exactClaimUse": "Can support bounded source-context framing for `dental-care-access-insurance-workforce-continuity` by connecting the domain claim seed to source-specific oral-health-access-objectives; exact endorsement strength remains pending local review and independent fresh review.",
+      "endpointDefinition": "Candidate observable variables: dental-coverage, out-of-pocket-cost, workforce-shortage, appointment-access, delayed-care.",
+      "populationOrSetting": "Public insurance, dental benefit, oral-health objective or service access contexts; populations vary by program and jurisdiction.",
+      "effectOrMechanismSignal": "Source can frame dental coverage, cost, workforce and appointment access as conversion barriers between oral-health need and executed care.",
+      "uncertaintyOrBias": "Benefit design, state policy, provider participation, workforce geography and survey objective definitions limit generalization.",
+      "transferBoundary": "Use only for access/friction variables and coverage-boundary mapping, not for eligibility advice, benefit advice, billing advice or service recommendation.",
+      "downgradeTriggers": [
+        "source context does not directly support the domain claim seed",
+        "source scope is guideline-route, coverage-route, public-health-route, patient-education-route, review-route or article-route rather than endpoint-ready evidence",
+        "endpoint, population, condition, exposure, equipment, schedule, access or setting definition cannot be bounded after local review",
+        "claim would require individual advice, treatment selection, equipment recommendation, vaccine recommendation, environmental-health instruction, clinical validity or calibrated prediction",
+        "source access is blocked, redirected, route-only, stale, duplicate, or requires manual/fulltext review before claim extraction"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 ninth-batch musculoskeletal, oral, respiratory, immune-aging and environmental-exposure source extraction register",
+        "variables": [
+          "dental-coverage",
+          "out-of-pocket-cost",
+          "workforce-shortage",
+          "appointment-access",
+          "delayed-care"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local source-context review before independent fresh review and bounded artifact consideration"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade",
+        "medical-advice",
+        "dental-advice",
+        "rehabilitation-advice",
+        "respiratory-equipment-advice",
+        "vaccine-advice",
+        "environmental-health-advice"
+      ],
+      "nextAction": "Run local source-context review, resolve blocked/manual routes, then run independent fresh review before any bounded reviewed artifact or model-admission consideration."
+    },
+    {
+      "taskId": "C2LTB9-EXT-013",
+      "domainId": "oral-health-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/oral-health-continuity",
+      "sourceRefId": "C2LTB9-SRC-07-1",
+      "sourceTitle": "WHO Global oral health status report",
+      "sourceUrl": "https://www.who.int/publications/i/item/9789240061484",
+      "extractionStatus": "completed-c2ltb9-source-context-extraction",
+      "sourceAccessStatus": "automated-web-check-status-200-on-2026-07-04; pending-local-context-review",
+      "sourceRole": "global-burden-report-context; evidenceRole=global-oral-health-burden-source",
+      "exactClaimUse": "Can support bounded source-context framing for `oral-health-continuity` by connecting the domain claim seed to source-specific global-oral-health-burden-source; exact endorsement strength remains pending local review and independent fresh review.",
+      "endpointDefinition": "Candidate observable variables: oral-disease-burden, chewing-function, oral-pain, infection-burden, service-access.",
+      "populationOrSetting": "General population, public-health oral disease burden, oral health service access and prevention contexts.",
+      "effectOrMechanismSignal": "Source can frame oral health as a C2 source-maintenance domain through chewing, nutrition, speech, pain, infection, self-regard and service access.",
+      "uncertaintyOrBias": "Global/public-health burden statements differ from local clinical endpoints; disease categories, surveillance systems and service models vary.",
+      "transferBoundary": "Use only for oral-health domain framing and burden variables, not for dental diagnosis, treatment advice or individual risk ranking.",
+      "downgradeTriggers": [
+        "source context does not directly support the domain claim seed",
+        "source scope is guideline-route, coverage-route, public-health-route, patient-education-route, review-route or article-route rather than endpoint-ready evidence",
+        "endpoint, population, condition, exposure, equipment, schedule, access or setting definition cannot be bounded after local review",
+        "claim would require individual advice, treatment selection, equipment recommendation, vaccine recommendation, environmental-health instruction, clinical validity or calibrated prediction",
+        "source access is blocked, redirected, route-only, stale, duplicate, or requires manual/fulltext review before claim extraction"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 ninth-batch musculoskeletal, oral, respiratory, immune-aging and environmental-exposure source extraction register",
+        "variables": [
+          "oral-disease-burden",
+          "chewing-function",
+          "oral-pain",
+          "infection-burden",
+          "service-access"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local source-context review before independent fresh review and bounded artifact consideration"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade",
+        "medical-advice",
+        "dental-advice",
+        "rehabilitation-advice",
+        "respiratory-equipment-advice",
+        "vaccine-advice",
+        "environmental-health-advice"
+      ],
+      "nextAction": "Run local source-context review, resolve blocked/manual routes, then run independent fresh review before any bounded reviewed artifact or model-admission consideration."
+    },
+    {
+      "taskId": "C2LTB9-EXT-014",
+      "domainId": "oral-health-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/oral-health-continuity",
+      "sourceRefId": "C2LTB9-SRC-07-2",
+      "sourceTitle": "CDC Oral Health: About Oral Health",
+      "sourceUrl": "https://www.cdc.gov/oral-health/about/index.html",
+      "extractionStatus": "completed-c2ltb9-source-context-extraction",
+      "sourceAccessStatus": "automated-web-check-status-200-on-2026-07-04; pending-local-context-review",
+      "sourceRole": "public-health-education-context; evidenceRole=oral-health-conditions-source",
+      "exactClaimUse": "Can support bounded source-context framing for `oral-health-continuity` by connecting the domain claim seed to source-specific oral-health-conditions-source; exact endorsement strength remains pending local review and independent fresh review.",
+      "endpointDefinition": "Candidate observable variables: oral-disease-burden, chewing-function, oral-pain, infection-burden, service-access.",
+      "populationOrSetting": "General population, public-health oral disease burden, oral health service access and prevention contexts.",
+      "effectOrMechanismSignal": "Source can frame oral health as a C2 source-maintenance domain through chewing, nutrition, speech, pain, infection, self-regard and service access.",
+      "uncertaintyOrBias": "Global/public-health burden statements differ from local clinical endpoints; disease categories, surveillance systems and service models vary.",
+      "transferBoundary": "Use only for oral-health domain framing and burden variables, not for dental diagnosis, treatment advice or individual risk ranking.",
+      "downgradeTriggers": [
+        "source context does not directly support the domain claim seed",
+        "source scope is guideline-route, coverage-route, public-health-route, patient-education-route, review-route or article-route rather than endpoint-ready evidence",
+        "endpoint, population, condition, exposure, equipment, schedule, access or setting definition cannot be bounded after local review",
+        "claim would require individual advice, treatment selection, equipment recommendation, vaccine recommendation, environmental-health instruction, clinical validity or calibrated prediction",
+        "source access is blocked, redirected, route-only, stale, duplicate, or requires manual/fulltext review before claim extraction"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 ninth-batch musculoskeletal, oral, respiratory, immune-aging and environmental-exposure source extraction register",
+        "variables": [
+          "oral-disease-burden",
+          "chewing-function",
+          "oral-pain",
+          "infection-burden",
+          "service-access"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local source-context review before independent fresh review and bounded artifact consideration"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade",
+        "medical-advice",
+        "dental-advice",
+        "rehabilitation-advice",
+        "respiratory-equipment-advice",
+        "vaccine-advice",
+        "environmental-health-advice"
+      ],
+      "nextAction": "Run local source-context review, resolve blocked/manual routes, then run independent fresh review before any bounded reviewed artifact or model-admission consideration."
+    },
+    {
+      "taskId": "C2LTB9-EXT-015",
+      "domainId": "xerostomia-salivary-function-oral-medication-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/xerostomia-salivary-function-oral-medication-continuity",
+      "sourceRefId": "C2LTB9-SRC-08-1",
+      "sourceTitle": "NIDCR Dry Mouth",
+      "sourceUrl": "https://www.nidcr.nih.gov/health-info/dry-mouth",
+      "extractionStatus": "completed-c2ltb9-source-context-extraction",
+      "sourceAccessStatus": "automated-web-check-status-200-on-2026-07-04; pending-local-context-review",
+      "sourceRole": "patient-education-context; evidenceRole=dry-mouth-patient-education-source",
+      "exactClaimUse": "Can support bounded source-context framing for `xerostomia-salivary-function-oral-medication-continuity` by connecting the domain claim seed to source-specific dry-mouth-patient-education-source; exact endorsement strength remains pending local review and independent fresh review.",
+      "endpointDefinition": "Candidate observable variables: dry-mouth-severity, salivary-function, medication-burden, swallow-speech-comfort, caries-infection-risk.",
+      "populationOrSetting": "People experiencing dry mouth, medication-related oral symptoms or salivary-function concerns in patient education or dental-topic contexts.",
+      "effectOrMechanismSignal": "Source can frame salivary function as a continuity variable affecting swallowing, speech comfort, oral pain, sleep, caries/infection risk and medication burden.",
+      "uncertaintyOrBias": "Patient education and topic pages may summarize causes and symptoms without quantified causal effects; medication lists, comorbidities and diagnosis routes need review.",
+      "transferBoundary": "Use only for xerostomia endpoint and mechanism vocabulary, not for medication changes, diagnosis, dental treatment or clinical recommendations.",
+      "downgradeTriggers": [
+        "source context does not directly support the domain claim seed",
+        "source scope is guideline-route, coverage-route, public-health-route, patient-education-route, review-route or article-route rather than endpoint-ready evidence",
+        "endpoint, population, condition, exposure, equipment, schedule, access or setting definition cannot be bounded after local review",
+        "claim would require individual advice, treatment selection, equipment recommendation, vaccine recommendation, environmental-health instruction, clinical validity or calibrated prediction",
+        "source access is blocked, redirected, route-only, stale, duplicate, or requires manual/fulltext review before claim extraction"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 ninth-batch musculoskeletal, oral, respiratory, immune-aging and environmental-exposure source extraction register",
+        "variables": [
+          "dry-mouth-severity",
+          "salivary-function",
+          "medication-burden",
+          "swallow-speech-comfort",
+          "caries-infection-risk"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local source-context review before independent fresh review and bounded artifact consideration"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade",
+        "medical-advice",
+        "dental-advice",
+        "rehabilitation-advice",
+        "respiratory-equipment-advice",
+        "vaccine-advice",
+        "environmental-health-advice"
+      ],
+      "nextAction": "Run local source-context review, resolve blocked/manual routes, then run independent fresh review before any bounded reviewed artifact or model-admission consideration."
+    },
+    {
+      "taskId": "C2LTB9-EXT-016",
+      "domainId": "xerostomia-salivary-function-oral-medication-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/xerostomia-salivary-function-oral-medication-continuity",
+      "sourceRefId": "C2LTB9-SRC-08-2",
+      "sourceTitle": "ADA Oral Health Topics: Xerostomia",
+      "sourceUrl": "https://www.ada.org/resources/ada-library/oral-health-topics/xerostomia",
+      "extractionStatus": "completed-c2ltb9-source-context-extraction",
+      "sourceAccessStatus": "automated-web-check-status-200-on-2026-07-04; pending-local-context-review",
+      "sourceRole": "professional-topic-page-context; evidenceRole=xerostomia-clinical-topic-source",
+      "exactClaimUse": "Can support bounded source-context framing for `xerostomia-salivary-function-oral-medication-continuity` by connecting the domain claim seed to source-specific xerostomia-clinical-topic-source; exact endorsement strength remains pending local review and independent fresh review.",
+      "endpointDefinition": "Candidate observable variables: dry-mouth-severity, salivary-function, medication-burden, swallow-speech-comfort, caries-infection-risk.",
+      "populationOrSetting": "People experiencing dry mouth, medication-related oral symptoms or salivary-function concerns in patient education or dental-topic contexts.",
+      "effectOrMechanismSignal": "Source can frame salivary function as a continuity variable affecting swallowing, speech comfort, oral pain, sleep, caries/infection risk and medication burden.",
+      "uncertaintyOrBias": "Patient education and topic pages may summarize causes and symptoms without quantified causal effects; medication lists, comorbidities and diagnosis routes need review.",
+      "transferBoundary": "Use only for xerostomia endpoint and mechanism vocabulary, not for medication changes, diagnosis, dental treatment or clinical recommendations.",
+      "downgradeTriggers": [
+        "source context does not directly support the domain claim seed",
+        "source scope is guideline-route, coverage-route, public-health-route, patient-education-route, review-route or article-route rather than endpoint-ready evidence",
+        "endpoint, population, condition, exposure, equipment, schedule, access or setting definition cannot be bounded after local review",
+        "claim would require individual advice, treatment selection, equipment recommendation, vaccine recommendation, environmental-health instruction, clinical validity or calibrated prediction",
+        "source access is blocked, redirected, route-only, stale, duplicate, or requires manual/fulltext review before claim extraction"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 ninth-batch musculoskeletal, oral, respiratory, immune-aging and environmental-exposure source extraction register",
+        "variables": [
+          "dry-mouth-severity",
+          "salivary-function",
+          "medication-burden",
+          "swallow-speech-comfort",
+          "caries-infection-risk"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local source-context review before independent fresh review and bounded artifact consideration"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade",
+        "medical-advice",
+        "dental-advice",
+        "rehabilitation-advice",
+        "respiratory-equipment-advice",
+        "vaccine-advice",
+        "environmental-health-advice"
+      ],
+      "nextAction": "Run local source-context review, resolve blocked/manual routes, then run independent fresh review before any bounded reviewed artifact or model-admission consideration."
+    },
+    {
+      "taskId": "C2LTB9-EXT-017",
+      "domainId": "asthma-copd-maintenance-control-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/asthma-copd-maintenance-control-continuity",
+      "sourceRefId": "C2LTB9-SRC-09-1",
+      "sourceTitle": "NHLBI 2020 Focused Updates to the Asthma Management Guidelines",
+      "sourceUrl": "https://www.nhlbi.nih.gov/health-topics/asthma-management-guidelines-2020-updates",
+      "extractionStatus": "completed-c2ltb9-source-context-extraction",
+      "sourceAccessStatus": "automated-web-check-status-200-on-2026-07-04; pending-local-context-review",
+      "sourceRole": "guideline-update-context; evidenceRole=asthma-management-guideline-source",
+      "exactClaimUse": "Can support bounded source-context framing for `asthma-copd-maintenance-control-continuity` by connecting the domain claim seed to source-specific asthma-management-guideline-source; exact endorsement strength remains pending local review and independent fresh review.",
+      "endpointDefinition": "Candidate observable variables: symptom-control, exacerbation-frequency, inhaler-access, activity-limitation, lung-function-boundary.",
+      "populationOrSetting": "People with asthma, COPD or chronic respiratory symptoms in guideline, report or long-term maintenance-control settings.",
+      "effectOrMechanismSignal": "Source can frame respiratory maintenance control through symptom control, exacerbation frequency, inhaler/access pathway, activity limitation and lung-function boundaries.",
+      "uncertaintyOrBias": "Asthma and COPD evidence bases, severity groups, treatment pathways, report updates and local access constraints are not interchangeable.",
+      "transferBoundary": "Use only for respiratory-control variables and exacerbation-boundary design, not for inhaler choice, diagnosis, treatment advice, equipment advice or calibrated mortality prediction.",
+      "downgradeTriggers": [
+        "source context does not directly support the domain claim seed",
+        "source scope is guideline-route, coverage-route, public-health-route, patient-education-route, review-route or article-route rather than endpoint-ready evidence",
+        "endpoint, population, condition, exposure, equipment, schedule, access or setting definition cannot be bounded after local review",
+        "claim would require individual advice, treatment selection, equipment recommendation, vaccine recommendation, environmental-health instruction, clinical validity or calibrated prediction",
+        "source access is blocked, redirected, route-only, stale, duplicate, or requires manual/fulltext review before claim extraction"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 ninth-batch musculoskeletal, oral, respiratory, immune-aging and environmental-exposure source extraction register",
+        "variables": [
+          "symptom-control",
+          "exacerbation-frequency",
+          "inhaler-access",
+          "activity-limitation",
+          "lung-function-boundary"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local source-context review before independent fresh review and bounded artifact consideration"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade",
+        "medical-advice",
+        "dental-advice",
+        "rehabilitation-advice",
+        "respiratory-equipment-advice",
+        "vaccine-advice",
+        "environmental-health-advice"
+      ],
+      "nextAction": "Run local source-context review, resolve blocked/manual routes, then run independent fresh review before any bounded reviewed artifact or model-admission consideration."
+    },
+    {
+      "taskId": "C2LTB9-EXT-018",
+      "domainId": "asthma-copd-maintenance-control-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/asthma-copd-maintenance-control-continuity",
+      "sourceRefId": "C2LTB9-SRC-09-2",
+      "sourceTitle": "GOLD 2026 Report and Pocket Guide",
+      "sourceUrl": "https://goldcopd.org/2026-gold-report/",
+      "extractionStatus": "completed-c2ltb9-source-context-extraction",
+      "sourceAccessStatus": "automated-web-check-status-200-on-2026-07-04-with-final-url-https://goldcopd.org/2026-gold-report-and-pocket-guide/; pending-local-context-review",
+      "sourceRole": "professional-report-context; evidenceRole=copd-management-report-source",
+      "exactClaimUse": "Can support bounded source-context framing for `asthma-copd-maintenance-control-continuity` by connecting the domain claim seed to source-specific copd-management-report-source; exact endorsement strength remains pending local review and independent fresh review.",
+      "endpointDefinition": "Candidate observable variables: symptom-control, exacerbation-frequency, inhaler-access, activity-limitation, lung-function-boundary.",
+      "populationOrSetting": "People with asthma, COPD or chronic respiratory symptoms in guideline, report or long-term maintenance-control settings.",
+      "effectOrMechanismSignal": "Source can frame respiratory maintenance control through symptom control, exacerbation frequency, inhaler/access pathway, activity limitation and lung-function boundaries.",
+      "uncertaintyOrBias": "Asthma and COPD evidence bases, severity groups, treatment pathways, report updates and local access constraints are not interchangeable.",
+      "transferBoundary": "Use only for respiratory-control variables and exacerbation-boundary design, not for inhaler choice, diagnosis, treatment advice, equipment advice or calibrated mortality prediction.",
+      "downgradeTriggers": [
+        "source context does not directly support the domain claim seed",
+        "source scope is guideline-route, coverage-route, public-health-route, patient-education-route, review-route or article-route rather than endpoint-ready evidence",
+        "endpoint, population, condition, exposure, equipment, schedule, access or setting definition cannot be bounded after local review",
+        "claim would require individual advice, treatment selection, equipment recommendation, vaccine recommendation, environmental-health instruction, clinical validity or calibrated prediction",
+        "source access is blocked, redirected, route-only, stale, duplicate, or requires manual/fulltext review before claim extraction"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 ninth-batch musculoskeletal, oral, respiratory, immune-aging and environmental-exposure source extraction register",
+        "variables": [
+          "symptom-control",
+          "exacerbation-frequency",
+          "inhaler-access",
+          "activity-limitation",
+          "lung-function-boundary"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local source-context review before independent fresh review and bounded artifact consideration"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade",
+        "medical-advice",
+        "dental-advice",
+        "rehabilitation-advice",
+        "respiratory-equipment-advice",
+        "vaccine-advice",
+        "environmental-health-advice"
+      ],
+      "nextAction": "Run local source-context review, resolve blocked/manual routes, then run independent fresh review before any bounded reviewed artifact or model-admission consideration."
+    },
+    {
+      "taskId": "C2LTB9-EXT-019",
+      "domainId": "home-oxygen-respiratory-equipment-supply-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/home-oxygen-respiratory-equipment-supply-continuity",
+      "sourceRefId": "C2LTB9-SRC-10-1",
+      "sourceTitle": "Medicare Oxygen equipment and accessories coverage",
+      "sourceUrl": "https://www.medicare.gov/coverage/oxygen-equipment-accessories",
+      "extractionStatus": "completed-c2ltb9-source-context-extraction",
+      "sourceAccessStatus": "automated-web-check-status-200-on-2026-07-04; pending-local-context-review",
+      "sourceRole": "coverage-route-context; evidenceRole=oxygen-equipment-coverage-source",
+      "exactClaimUse": "Can support bounded source-context framing for `home-oxygen-respiratory-equipment-supply-continuity` by connecting the domain claim seed to source-specific oxygen-equipment-coverage-source; exact endorsement strength remains pending local review and independent fresh review.",
+      "endpointDefinition": "Candidate observable variables: oxygen-equipment-access, chronic-hypoxemia, portable-oxygen-mobility, coverage-boundary, equipment-reliability.",
+      "populationOrSetting": "Adults with chronic lung disease or chronic hypoxemia, and coverage/equipment access contexts for home oxygen.",
+      "effectOrMechanismSignal": "Source can frame home oxygen as a continuity interface linking hypoxemia, equipment reliability, portable mobility, payment coverage, electricity dependence and safety.",
+      "uncertaintyOrBias": "Coverage rules, clinical indications, equipment types, adherence, safety hazards and disease-specific effects require route-specific review.",
+      "transferBoundary": "Use only for oxygen-equipment access and reliability variables, not for oxygen prescribing, equipment configuration, coverage advice or individual safety advice.",
+      "downgradeTriggers": [
+        "source context does not directly support the domain claim seed",
+        "source scope is guideline-route, coverage-route, public-health-route, patient-education-route, review-route or article-route rather than endpoint-ready evidence",
+        "endpoint, population, condition, exposure, equipment, schedule, access or setting definition cannot be bounded after local review",
+        "claim would require individual advice, treatment selection, equipment recommendation, vaccine recommendation, environmental-health instruction, clinical validity or calibrated prediction",
+        "source access is blocked, redirected, route-only, stale, duplicate, or requires manual/fulltext review before claim extraction"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 ninth-batch musculoskeletal, oral, respiratory, immune-aging and environmental-exposure source extraction register",
+        "variables": [
+          "oxygen-equipment-access",
+          "chronic-hypoxemia",
+          "portable-oxygen-mobility",
+          "coverage-boundary",
+          "equipment-reliability"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local source-context review before independent fresh review and bounded artifact consideration"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade",
+        "medical-advice",
+        "dental-advice",
+        "rehabilitation-advice",
+        "respiratory-equipment-advice",
+        "vaccine-advice",
+        "environmental-health-advice"
+      ],
+      "nextAction": "Run local source-context review, resolve blocked/manual routes, then run independent fresh review before any bounded reviewed artifact or model-admission consideration."
+    },
+    {
+      "taskId": "C2LTB9-EXT-020",
+      "domainId": "home-oxygen-respiratory-equipment-supply-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/home-oxygen-respiratory-equipment-supply-continuity",
+      "sourceRefId": "C2LTB9-SRC-10-2",
+      "sourceTitle": "ATS Clinical Practice Guideline: Home Oxygen Therapy for Adults with Chronic Lung Disease",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7667898/",
+      "extractionStatus": "completed-c2ltb9-source-context-extraction",
+      "sourceAccessStatus": "automated-web-check-status-200-on-2026-07-04; pending-local-context-review",
+      "sourceRole": "clinical-practice-guideline-context; evidenceRole=home-oxygen-clinical-guideline-source",
+      "exactClaimUse": "Can support bounded source-context framing for `home-oxygen-respiratory-equipment-supply-continuity` by connecting the domain claim seed to source-specific home-oxygen-clinical-guideline-source; exact endorsement strength remains pending local review and independent fresh review.",
+      "endpointDefinition": "Candidate observable variables: oxygen-equipment-access, chronic-hypoxemia, portable-oxygen-mobility, coverage-boundary, equipment-reliability.",
+      "populationOrSetting": "Adults with chronic lung disease or chronic hypoxemia, and coverage/equipment access contexts for home oxygen.",
+      "effectOrMechanismSignal": "Source can frame home oxygen as a continuity interface linking hypoxemia, equipment reliability, portable mobility, payment coverage, electricity dependence and safety.",
+      "uncertaintyOrBias": "Coverage rules, clinical indications, equipment types, adherence, safety hazards and disease-specific effects require route-specific review.",
+      "transferBoundary": "Use only for oxygen-equipment access and reliability variables, not for oxygen prescribing, equipment configuration, coverage advice or individual safety advice.",
+      "downgradeTriggers": [
+        "source context does not directly support the domain claim seed",
+        "source scope is guideline-route, coverage-route, public-health-route, patient-education-route, review-route or article-route rather than endpoint-ready evidence",
+        "endpoint, population, condition, exposure, equipment, schedule, access or setting definition cannot be bounded after local review",
+        "claim would require individual advice, treatment selection, equipment recommendation, vaccine recommendation, environmental-health instruction, clinical validity or calibrated prediction",
+        "source access is blocked, redirected, route-only, stale, duplicate, or requires manual/fulltext review before claim extraction"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 ninth-batch musculoskeletal, oral, respiratory, immune-aging and environmental-exposure source extraction register",
+        "variables": [
+          "oxygen-equipment-access",
+          "chronic-hypoxemia",
+          "portable-oxygen-mobility",
+          "coverage-boundary",
+          "equipment-reliability"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local source-context review before independent fresh review and bounded artifact consideration"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade",
+        "medical-advice",
+        "dental-advice",
+        "rehabilitation-advice",
+        "respiratory-equipment-advice",
+        "vaccine-advice",
+        "environmental-health-advice"
+      ],
+      "nextAction": "Run local source-context review, resolve blocked/manual routes, then run independent fresh review before any bounded reviewed artifact or model-admission consideration."
+    },
+    {
+      "taskId": "C2LTB9-EXT-021",
+      "domainId": "immune-repertoire-vaccine-response-aging-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/immune-repertoire-vaccine-response-aging-continuity",
+      "sourceRefId": "C2LTB9-SRC-11-1",
+      "sourceTitle": "CDC Adult Immunization Schedule by Age",
+      "sourceUrl": "https://www.cdc.gov/vaccines/hcp/imz-schedules/adult-age.html",
+      "extractionStatus": "completed-c2ltb9-source-context-extraction",
+      "sourceAccessStatus": "automated-web-check-status-200-on-2026-07-04; pending-local-context-review",
+      "sourceRole": "schedule-route-context; evidenceRole=adult-immunization-schedule-source",
+      "exactClaimUse": "Can support bounded source-context framing for `immune-repertoire-vaccine-response-aging-continuity` by connecting the domain claim seed to source-specific adult-immunization-schedule-source; exact endorsement strength remains pending local review and independent fresh review.",
+      "endpointDefinition": "Candidate observable variables: immunosenescence, vaccine-response, adult-immunization-schedule, infection-risk, protection-duration-uncertainty.",
+      "populationOrSetting": "Adults in immunization schedule contexts and aging/immune-response literature; populations vary by age, health status and vaccine type.",
+      "effectOrMechanismSignal": "Source can frame immune aging and adult immunization as continuity variables affecting infection risk, severe disease risk, protection duration and social participation.",
+      "uncertaintyOrBias": "Schedule pages are policy/practice references, while immunosenescence reviews are mechanistic summaries; neither alone proves individual vaccine response or lifespan effect.",
+      "transferBoundary": "Use only for immunization schedule, immune-aging and infection-risk variable slots, not for vaccine advice, contraindication decisions, individual protection estimates or model calibration.",
+      "downgradeTriggers": [
+        "source context does not directly support the domain claim seed",
+        "source scope is guideline-route, coverage-route, public-health-route, patient-education-route, review-route or article-route rather than endpoint-ready evidence",
+        "endpoint, population, condition, exposure, equipment, schedule, access or setting definition cannot be bounded after local review",
+        "claim would require individual advice, treatment selection, equipment recommendation, vaccine recommendation, environmental-health instruction, clinical validity or calibrated prediction",
+        "source access is blocked, redirected, route-only, stale, duplicate, or requires manual/fulltext review before claim extraction"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 ninth-batch musculoskeletal, oral, respiratory, immune-aging and environmental-exposure source extraction register",
+        "variables": [
+          "immunosenescence",
+          "vaccine-response",
+          "adult-immunization-schedule",
+          "infection-risk",
+          "protection-duration-uncertainty"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local source-context review before independent fresh review and bounded artifact consideration"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade",
+        "medical-advice",
+        "dental-advice",
+        "rehabilitation-advice",
+        "respiratory-equipment-advice",
+        "vaccine-advice",
+        "environmental-health-advice"
+      ],
+      "nextAction": "Run local source-context review, resolve blocked/manual routes, then run independent fresh review before any bounded reviewed artifact or model-admission consideration."
+    },
+    {
+      "taskId": "C2LTB9-EXT-022",
+      "domainId": "immune-repertoire-vaccine-response-aging-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/immune-repertoire-vaccine-response-aging-continuity",
+      "sourceRefId": "C2LTB9-SRC-11-2",
+      "sourceTitle": "Immunosenescence and vaccine responses review",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7151786/",
+      "extractionStatus": "completed-c2ltb9-source-context-extraction",
+      "sourceAccessStatus": "automated-web-check-status-200-on-2026-07-04; pending-local-context-review",
+      "sourceRole": "review-article-context; evidenceRole=immune-aging-vaccine-response-review",
+      "exactClaimUse": "Can support bounded source-context framing for `immune-repertoire-vaccine-response-aging-continuity` by connecting the domain claim seed to source-specific immune-aging-vaccine-response-review; exact endorsement strength remains pending local review and independent fresh review.",
+      "endpointDefinition": "Candidate observable variables: immunosenescence, vaccine-response, adult-immunization-schedule, infection-risk, protection-duration-uncertainty.",
+      "populationOrSetting": "Adults in immunization schedule contexts and aging/immune-response literature; populations vary by age, health status and vaccine type.",
+      "effectOrMechanismSignal": "Source can frame immune aging and adult immunization as continuity variables affecting infection risk, severe disease risk, protection duration and social participation.",
+      "uncertaintyOrBias": "Schedule pages are policy/practice references, while immunosenescence reviews are mechanistic summaries; neither alone proves individual vaccine response or lifespan effect.",
+      "transferBoundary": "Use only for immunization schedule, immune-aging and infection-risk variable slots, not for vaccine advice, contraindication decisions, individual protection estimates or model calibration.",
+      "downgradeTriggers": [
+        "source context does not directly support the domain claim seed",
+        "source scope is guideline-route, coverage-route, public-health-route, patient-education-route, review-route or article-route rather than endpoint-ready evidence",
+        "endpoint, population, condition, exposure, equipment, schedule, access or setting definition cannot be bounded after local review",
+        "claim would require individual advice, treatment selection, equipment recommendation, vaccine recommendation, environmental-health instruction, clinical validity or calibrated prediction",
+        "source access is blocked, redirected, route-only, stale, duplicate, or requires manual/fulltext review before claim extraction"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 ninth-batch musculoskeletal, oral, respiratory, immune-aging and environmental-exposure source extraction register",
+        "variables": [
+          "immunosenescence",
+          "vaccine-response",
+          "adult-immunization-schedule",
+          "infection-risk",
+          "protection-duration-uncertainty"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local source-context review before independent fresh review and bounded artifact consideration"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade",
+        "medical-advice",
+        "dental-advice",
+        "rehabilitation-advice",
+        "respiratory-equipment-advice",
+        "vaccine-advice",
+        "environmental-health-advice"
+      ],
+      "nextAction": "Run local source-context review, resolve blocked/manual routes, then run independent fresh review before any bounded reviewed artifact or model-admission consideration."
+    },
+    {
+      "taskId": "C2LTB9-EXT-023",
+      "domainId": "wildfire-smoke-clean-air-respiratory-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/wildfire-smoke-clean-air-respiratory-continuity",
+      "sourceRefId": "C2LTB9-SRC-12-1",
+      "sourceTitle": "AirNow Wildfire Smoke Guide Publications",
+      "sourceUrl": "https://www.airnow.gov/wildfire-smoke-guide-publications/",
+      "extractionStatus": "completed-c2ltb9-source-context-extraction",
+      "sourceAccessStatus": "automated-web-check-status-200-on-2026-07-04; pending-local-context-review",
+      "sourceRole": "public-health-environmental-guidance-route-context; evidenceRole=wildfire-smoke-public-health-guide-source",
+      "exactClaimUse": "Can support bounded source-context framing for `wildfire-smoke-clean-air-respiratory-continuity` by connecting the domain claim seed to source-specific wildfire-smoke-public-health-guide-source; exact endorsement strength remains pending local review and independent fresh review.",
+      "endpointDefinition": "Candidate observable variables: pm25-smoke-exposure, clean-air-room-access, respiratory-symptoms, vulnerable-group-risk, indoor-filtration-boundary.",
+      "populationOrSetting": "People exposed to wildfire smoke, PM2.5 or indoor/outdoor air quality hazards; vulnerable groups vary by source definition.",
+      "effectOrMechanismSignal": "Source can frame wildfire smoke and clean-air access as an ecological exposure boundary affecting respiratory symptoms, chronic disease exacerbation, mobility limits and shelter/filtering costs.",
+      "uncertaintyOrBias": "Public-health guidance, exposure intensity, indoor filtration conditions, building quality, geography and vulnerable-group definitions limit transfer.",
+      "transferBoundary": "Use only for environmental exposure, clean-air-room and respiratory-continuity variables, not for emergency instructions, device recommendations, evacuation advice or individual risk prediction.",
+      "downgradeTriggers": [
+        "source context does not directly support the domain claim seed",
+        "source scope is guideline-route, coverage-route, public-health-route, patient-education-route, review-route or article-route rather than endpoint-ready evidence",
+        "endpoint, population, condition, exposure, equipment, schedule, access or setting definition cannot be bounded after local review",
+        "claim would require individual advice, treatment selection, equipment recommendation, vaccine recommendation, environmental-health instruction, clinical validity or calibrated prediction",
+        "source access is blocked, redirected, route-only, stale, duplicate, or requires manual/fulltext review before claim extraction"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 ninth-batch musculoskeletal, oral, respiratory, immune-aging and environmental-exposure source extraction register",
+        "variables": [
+          "pm25-smoke-exposure",
+          "clean-air-room-access",
+          "respiratory-symptoms",
+          "vulnerable-group-risk",
+          "indoor-filtration-boundary"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local source-context review before independent fresh review and bounded artifact consideration"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade",
+        "medical-advice",
+        "dental-advice",
+        "rehabilitation-advice",
+        "respiratory-equipment-advice",
+        "vaccine-advice",
+        "environmental-health-advice"
+      ],
+      "nextAction": "Run local source-context review, resolve blocked/manual routes, then run independent fresh review before any bounded reviewed artifact or model-admission consideration."
+    },
+    {
+      "taskId": "C2LTB9-EXT-024",
+      "domainId": "wildfire-smoke-clean-air-respiratory-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/wildfire-smoke-clean-air-respiratory-continuity",
+      "sourceRefId": "C2LTB9-SRC-12-2",
+      "sourceTitle": "CDC Wildfire Smoke Risk Factors",
+      "sourceUrl": "https://www.cdc.gov/wildfires/risk-factors/index.html",
+      "extractionStatus": "completed-c2ltb9-source-context-extraction",
+      "sourceAccessStatus": "automated-web-check-status-200-on-2026-07-04; pending-local-context-review",
+      "sourceRole": "public-health-risk-factor-context; evidenceRole=wildfire-smoke-risk-factor-source",
+      "exactClaimUse": "Can support bounded source-context framing for `wildfire-smoke-clean-air-respiratory-continuity` by connecting the domain claim seed to source-specific wildfire-smoke-risk-factor-source; exact endorsement strength remains pending local review and independent fresh review.",
+      "endpointDefinition": "Candidate observable variables: pm25-smoke-exposure, clean-air-room-access, respiratory-symptoms, vulnerable-group-risk, indoor-filtration-boundary.",
+      "populationOrSetting": "People exposed to wildfire smoke, PM2.5 or indoor/outdoor air quality hazards; vulnerable groups vary by source definition.",
+      "effectOrMechanismSignal": "Source can frame wildfire smoke and clean-air access as an ecological exposure boundary affecting respiratory symptoms, chronic disease exacerbation, mobility limits and shelter/filtering costs.",
+      "uncertaintyOrBias": "Public-health guidance, exposure intensity, indoor filtration conditions, building quality, geography and vulnerable-group definitions limit transfer.",
+      "transferBoundary": "Use only for environmental exposure, clean-air-room and respiratory-continuity variables, not for emergency instructions, device recommendations, evacuation advice or individual risk prediction.",
+      "downgradeTriggers": [
+        "source context does not directly support the domain claim seed",
+        "source scope is guideline-route, coverage-route, public-health-route, patient-education-route, review-route or article-route rather than endpoint-ready evidence",
+        "endpoint, population, condition, exposure, equipment, schedule, access or setting definition cannot be bounded after local review",
+        "claim would require individual advice, treatment selection, equipment recommendation, vaccine recommendation, environmental-health instruction, clinical validity or calibrated prediction",
+        "source access is blocked, redirected, route-only, stale, duplicate, or requires manual/fulltext review before claim extraction"
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 ninth-batch musculoskeletal, oral, respiratory, immune-aging and environmental-exposure source extraction register",
+        "variables": [
+          "pm25-smoke-exposure",
+          "clean-air-room-access",
+          "respiratory-symptoms",
+          "vulnerable-group-risk",
+          "indoor-filtration-boundary"
+        ],
+        "admissibleUse": "source-context framing only; eligible for local source-context review before independent fresh review and bounded artifact consideration"
+      },
+      "modelAdmissionDecision": "blocked-source-context-extracted-but-local-review-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade",
+        "medical-advice",
+        "dental-advice",
+        "rehabilitation-advice",
+        "respiratory-equipment-advice",
+        "vaccine-advice",
+        "environmental-health-advice"
+      ],
+      "nextAction": "Run local source-context review, resolve blocked/manual routes, then run independent fresh review before any bounded reviewed artifact or model-admission consideration."
+    }
+  ],
+  "nonClaims": [
+    "This register does not complete Source Cards.",
+    "This register does not complete local source-context review or independent fresh review.",
+    "This register does not create reviewed artifacts, model variables, endpoint cards or calibrated model inputs.",
+    "This register does not provide medical, dental, rehabilitation, respiratory-equipment, vaccine, environmental-health, individual or intervention-ranking advice.",
+    "This register does not admit any C2-LT-B9 row into calibrated prediction, lifespan prediction, healthspan prediction or individual decision support.",
+    "This register does not resolve any B1-B8 blocked, source-resolution, manual-access, local-review, fresh-review or model-admission row."
+  ],
+  "indexRequirements": [
+    "README.md must link the ninth-batch source extraction register in the core claim spine and quick entry table.",
+    "docs/reference/README.md must describe the ninth-batch source extraction register.",
+    "docs/AGENTS.md must include the register in the reference tree and responsibility list.",
+    "docs/reference/human-infra-maturity-roadmap.md must record the register and audit target.",
+    "docs/reference/human-infra-maturity-gap-register.json must list the register as evidence while keeping local review, fresh review, reviewed artifacts and model admission blocked.",
+    "tools/README.md and tools/AGENTS.md must describe the audit script."
+  ]
+}

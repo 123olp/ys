@@ -1,0 +1,266 @@
+{
+  "schemaVersion": "human-infra.l4-unblock-execution-plan.v1",
+  "planId": "human-infra-l4-unblock-execution-plan-2026-07-04",
+  "status": "active-execution-plan-l4-still-blocked",
+  "owner": "tradecatlabs",
+  "purpose": "Translate the L4 model readiness blockers into ordered, auditable work orders. This plan records what evidence would be required to unblock L4 aggregate calibrated research-model admission, but it does not itself unblock admission, public weighted output, calibration, individual prediction, intervention ranking or medical advice.",
+  "sourceOfTruth": {
+    "l4ReadinessBlockerMatrix": "docs/reference/human-infra-l4-model-readiness-blocker-matrix.json",
+    "l4EvidenceIntakeRegister": "docs/reference/human-infra-l4-evidence-intake-register.json",
+    "l4ValidationCalibrationReportingContract": "docs/reference/human-infra-l4-validation-calibration-reporting-contract.json",
+    "modelAdmissionContract": "docs/reference/human-infra-model-admission-contract.json",
+    "modelAdmissionCandidateRegistry": "docs/reference/human-infra-model-admission-candidate-registry.json",
+    "maturityGapRegister": "docs/reference/human-infra-maturity-gap-register.json",
+    "nhanesDisclosureReviewExecutionRegister": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhanes_public_lmf_disclosure_review_execution_register.json",
+    "nhanesLocalRunEvidenceManifest": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhanes_public_lmf_local_run_evidence_manifest.json",
+    "nhanesPublicWebNoRealValuesGate": "web/src/data/life-path-nhanes-public-lmf-public-web-data-no-real-values-validation.json",
+    "nhatsL4ReadinessRunway": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_l4_readiness_runway.json",
+    "calibrationReadiness": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_calibration_readiness.json"
+  },
+  "currentDecision": {
+    "highestCurrentModelLevel": "L3-local-or-synthetic-only",
+    "l4AggregateCalibratedAdmissionAllowed": false,
+    "publicWeightedDomainOutputAllowed": false,
+    "calibratedPredictionAvailable": false,
+    "individualUseAllowed": false,
+    "humanOnlyEvidenceStillRequired": true,
+    "externalGovernedAccessStillRequired": true,
+    "reason": "The repository has an executable toy/synthetic pipeline, public aggregate smoke tests, local-only NHANES weighted-domain evidence hashes, a NHATS L4 runway and an L4 blocker matrix. It still lacks human disclosure review, governed NHATS access, exact variable/value confirmation, real aggregate extraction, public output implementation review, validation and calibration diagnostics."
+  },
+  "executionWorkOrders": [
+    {
+      "workOrderId": "L4WO-01-nhats-governed-access-and-workspace",
+      "priority": 1,
+      "status": "blocked-external-governance-required",
+      "candidatePath": "L4C-NHATS-R13-R14-FUNCTIONAL-SURVIVAL",
+      "blocks": [
+        "L4B-01-governed-data-access"
+      ],
+      "dependsOn": [],
+      "executionMode": "external-controlled-workspace",
+      "requiredDirectEvidence": [
+        "redacted governed-access proof",
+        "controlled workspace path outside repository",
+        "access and inventory log",
+        "storage and destruction evidence",
+        "proof that no raw rows, identifiers or restricted files enter the repository"
+      ],
+      "notSufficientEvidence": [
+        "registration template alone",
+        "official source refresh alone",
+        "public webpage hash",
+        "manual statement without access or inventory evidence"
+      ],
+      "validationCommands": [
+        "make nhats-registration-evidence-template-audit",
+        "make nhats-acquisition-readiness-audit",
+        "make nhats-controlled-storage-destruction-audit",
+        "make nhats-l4-readiness-runway-audit"
+      ],
+      "allowedAfterEvidence": [
+        "begin controlled variable-page and file inventory review"
+      ],
+      "stillForbiddenAfterEvidence": [
+        "calibrated prediction",
+        "individual prediction",
+        "individual death-date output",
+        "raw row output"
+      ]
+    },
+    {
+      "workOrderId": "L4WO-02-nhats-exact-field-value-confirmation",
+      "priority": 2,
+      "status": "blocked-external-login-and-human-review-required",
+      "candidatePath": "L4C-NHATS-R13-R14-FUNCTIONAL-SURVIVAL",
+      "blocks": [
+        "L4B-02-exact-field-value-confirmation"
+      ],
+      "dependsOn": [
+        "L4WO-01-nhats-governed-access-and-workspace"
+      ],
+      "executionMode": "authenticated-capture-plus-second-reviewer",
+      "requiredDirectEvidence": [
+        "authenticated Colectica variable page hashes",
+        "exact variable names",
+        "value labels and negative-code maps",
+        "question text, universe and skip logic",
+        "round or file binding",
+        "second reviewer signoff"
+      ],
+      "notSufficientEvidence": [
+        "variable-family label only",
+        "unreviewed Colectica route probe",
+        "AI-extracted variable guess",
+        "citation to questionnaire without value-label capture"
+      ],
+      "validationCommands": [
+        "make nhats-colectica-access-route-probe-audit",
+        "make nhats-colectica-authenticated-capture-template-audit",
+        "make nhats-colectica-capture-task-register-audit",
+        "make nhats-colectica-value-label-review-execution-audit",
+        "make nhats-l2-variable-family-admission-audit",
+        "make nhats-l4-readiness-runway-audit"
+      ],
+      "allowedAfterEvidence": [
+        "build governed aggregate extractor specification",
+        "freeze variable-level missingness and route classifier inputs"
+      ],
+      "stillForbiddenAfterEvidence": [
+        "calibrated prediction",
+        "individual prediction",
+        "individual death-date output",
+        "public real output"
+      ]
+    },
+    {
+      "workOrderId": "L4WO-03-nhats-real-extraction-cohort-flow",
+      "priority": 3,
+      "status": "blocked-depends-on-access-and-field-confirmation",
+      "candidatePath": "L4C-NHATS-R13-R14-FUNCTIONAL-SURVIVAL",
+      "blocks": [
+        "L4B-03-real-extraction-cohort-flow"
+      ],
+      "dependsOn": [
+        "L4WO-01-nhats-governed-access-and-workspace",
+        "L4WO-02-nhats-exact-field-value-confirmation"
+      ],
+      "executionMode": "governed-aggregate-only-extraction",
+      "requiredDirectEvidence": [
+        "governed aggregate-only extractor",
+        "cohort-flow aggregate table",
+        "endpoint route counts",
+        "missingness table",
+        "suppression report",
+        "hash-bound run manifest"
+      ],
+      "notSufficientEvidence": [
+        "synthetic pre-outcome aggregation protocol",
+        "cohort-flow endpoint protocol alone",
+        "unweighted draft table",
+        "raw-row notebook"
+      ],
+      "validationCommands": [
+        "make nhats-preoutcome-aggregation-audit",
+        "make nhats-route-classifier-readiness-audit",
+        "make nhats-l4-readiness-runway-audit"
+      ],
+      "allowedAfterEvidence": [
+        "prepare disclosure-review packet for aggregate NHATS output"
+      ],
+      "stillForbiddenAfterEvidence": [
+        "public output release",
+        "calibrated prediction",
+        "individual prediction",
+        "individual death-date output"
+      ]
+    },
+    {
+      "workOrderId": "L4WO-04-nhanes-human-disclosure-review",
+      "priority": 4,
+      "status": "blocked-human-review-required",
+      "candidatePath": "L4C-NHANES-PUBLIC-LMF-WEIGHTED-DOMAIN",
+      "blocks": [
+        "L4B-04-disclosure-review-public-output",
+        "L4B-05-survey-design-weighted-estimates"
+      ],
+      "dependsOn": [],
+      "executionMode": "human-disclosure-review-plus-separate-public-output-implementation-review",
+      "requiredDirectEvidence": [
+        "reviewed local packet hash",
+        "all 15 required review slots completed",
+        "second reviewer signoff",
+        "suppression and reliability review",
+        "forbidden-field scan",
+        "explicit release decision",
+        "separate public weighted-output implementation review"
+      ],
+      "notSufficientEvidence": [
+        "machine-prefill allowed slots",
+        "local run evidence manifest alone",
+        "local packet hash without human review",
+        "public Web no-real-values scan alone",
+        "synthetic disclosure envelope"
+      ],
+      "validationCommands": [
+        "make nhanes-public-lmf-local-run-evidence-manifest-audit",
+        "make nhanes-public-lmf-disclosure-review-execution-audit",
+        "make nhanes-public-lmf-public-web-data-no-real-values-audit",
+        "make nhanes-public-lmf-weighted-domain-output-readiness-audit"
+      ],
+      "allowedAfterEvidence": [
+        "consider public aggregate weighted-domain output implementation under suppression and reliability constraints"
+      ],
+      "stillForbiddenAfterEvidence": [
+        "calibrated prediction",
+        "individual prediction",
+        "individual death-date output",
+        "medical advice"
+      ]
+    },
+    {
+      "workOrderId": "L4WO-05-validation-calibration-diagnostics",
+      "priority": 5,
+      "status": "blocked-depends-on-real-reviewed-aggregate-output",
+      "candidatePath": "L4C-NHANES-PUBLIC-LMF-WEIGHTED-DOMAIN",
+      "blocks": [
+        "L4B-06-validation-calibration"
+      ],
+      "dependsOn": [
+        "L4WO-03-nhats-real-extraction-cohort-flow",
+        "L4WO-04-nhanes-human-disclosure-review"
+      ],
+      "executionMode": "post-extraction-validation-and-reporting",
+      "requiredDirectEvidence": [
+        "development cohort or aggregate training design",
+        "validation cohort, resampling plan or external validation plan",
+        "calibration diagnostics",
+        "real-parameter sensitivity analysis",
+        "bias and applicability review",
+        "TRIPOD/PROBAST-style reporting packet"
+      ],
+      "notSufficientEvidence": [
+        "toy model audit",
+        "synthetic sensitivity analysis",
+        "public aggregate mortality anchor alone",
+        "local-only unreviewed weighted-domain output"
+      ],
+      "validationCommands": [
+        "make model-admission-contract-audit",
+        "make model-admission-candidate-registry-audit",
+        "make l4-model-readiness-blocker-matrix-audit"
+      ],
+      "allowedAfterEvidence": [
+        "open a new candidate for L4 aggregate calibrated research-model review"
+      ],
+      "stillForbiddenAfterEvidence": [
+        "individual prediction",
+        "individual death-date output",
+        "individual medical advice",
+        "unreviewed intervention ranking"
+      ]
+    }
+  ],
+  "admissionReadinessRule": {
+    "minimumToOpenL4Review": [
+      "all executionWorkOrders have status evidence-complete or reviewed-complete",
+      "l4 model readiness blocker matrix is updated and passes audit",
+      "model-admission candidate registry records a new L4 candidate with direct evidence paths",
+      "maturity gap MODEL-G gates reference direct evidence, not protocol-only placeholders",
+      "public Web data no-real-values gate remains pass unless explicit public aggregate release is separately reviewed"
+    ],
+    "mustRemainFalseUntilReview": [
+      "l4AggregateCalibratedAdmissionAllowed",
+      "publicWeightedDomainOutputAllowed",
+      "calibratedPredictionAvailable",
+      "individualUseAllowed"
+    ]
+  },
+  "hardBoundaries": [
+    "No individual death-date output.",
+    "No individual medical advice.",
+    "No public weighted-domain output before human disclosure review and separate implementation review.",
+    "No calibration claim before validation and calibration diagnostics.",
+    "No raw rows, identifiers, real weighted rates, standard errors or design-based intervals in tracked public Web data.",
+    "No AI-only signoff for human disclosure review, governed access, second reviewer review or public release."
+  ]
+}

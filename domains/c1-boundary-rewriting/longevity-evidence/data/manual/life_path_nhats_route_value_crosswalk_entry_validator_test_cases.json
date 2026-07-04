@@ -1,0 +1,354 @@
+{
+  "schemaVersion": "human-infra.life-path-nhats-route-value-crosswalk-entry-validator-test-cases.v1",
+  "testSetId": "nhats-r13-r14-route-value-crosswalk-entry-validator-test-cases-2026-07-04",
+  "sourceId": "nhats",
+  "status": "synthetic-entry-validator-test-cases-only-model-g4-blocked",
+  "purpose": "Exercise future NHATS route-value crosswalk entry preflight semantics before any route-value row, variable-specific missing-code map, route classifier, extraction, public output, calibration or individual prediction is allowed.",
+  "sourceBindings": {
+    "assemblyProtocolPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_route_value_crosswalk_assembly_protocol.json",
+    "captureReviewExecutionPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_capture_packet_review_execution_register.json",
+    "captureTaskRegisterPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_capture_task_register.json",
+    "routeClassifierReadinessPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_route_classifier_readiness.json"
+  },
+  "hardBoundaries": [
+    "These entries are synthetic fixtures, not real NHATS route-value crosswalk rows.",
+    "No credential, account identity, session token, cookie, raw value-label export, row-level record, death month, death year, death date or individual prediction field may enter an entry.",
+    "A reviewable entry is still blocked and cannot close a route-value assembly unit.",
+    "Validator success cannot promote route classifier, real extraction, aggregate cohort flow, weighted route counts, public export, calibration or individual prediction."
+  ],
+  "testCases": [
+    {
+      "caseId": "valid-redacted-crosswalk-entry-still-blocked",
+      "expectedVerdict": "reviewable-but-still-blocked",
+      "entry": {
+        "entrySchema": "human-infra.life-path-nhats-route-value-crosswalk-entry.v1",
+        "entryId": "synthetic-nhats-route-value-crosswalk-entry-001",
+        "sourceId": "nhats",
+        "assemblyProtocolId": "nhats-r13-r14-route-value-crosswalk-assembly-protocol-2026-07-04",
+        "capturePacketReviewExecutionRegisterId": "nhats-r13-r14-colectica-capture-packet-review-execution-2026-07-04",
+        "captureTaskRegisterId": "nhats-r13-r14-colectica-capture-task-register-2026-07-03",
+        "routeClassifierReadinessId": "nhats-r13-r14-route-classifier-readiness-2026-07-03",
+        "requiredRouteFieldId": "identity_join_key",
+        "sourceTaskIds": [
+          "identity_join_key-spid",
+          "identity_join_key-spidr12"
+        ],
+        "reviewedCapturePacketIds": [
+          "synthetic-nhats-colectica-capture-packet-001"
+        ],
+        "sourceCaptureSha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "routeValueRowsRedacted": [
+          {
+            "variableName": "spid",
+            "sourceValueHash": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+            "routeClass": "identity-join-key",
+            "labelMeaningRedacted": "synthetic stable person identifier evidence"
+          }
+        ],
+        "variableSpecificMissingCodeRowsRedacted": [
+          {
+            "variableName": "spid",
+            "missingCodeFamily": "not-applicable-for-identifier",
+            "sourceValueHash": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+            "handlingRule": "do-not-infer-missingness-route-from-identifier"
+          }
+        ],
+        "valueLabelsReviewed": true,
+        "questionTextReviewed": true,
+        "universeSkipLogicReviewed": true,
+        "routeValueRowsReviewed": true,
+        "variableSpecificMissingCodesReviewed": true,
+        "sensitiveRestrictedExclusionReviewed": true,
+        "sensitiveDeathDateFieldsExcluded": true,
+        "reviewerRole": "human-domain-reviewer",
+        "secondReviewerRole": "independent-human-reviewer",
+        "aiOnlySignoff": false,
+        "publicAiUpload": false,
+        "assemblyUnitClosureAllowed": false,
+        "routeClassifierAllowed": false,
+        "realExtractionAllowed": false,
+        "aggregateCohortFlowAllowed": false,
+        "weightedRouteCountsAllowed": false,
+        "publicExportAllowed": false,
+        "calibrationAllowed": false,
+        "individualPredictionAllowed": false
+      }
+    },
+    {
+      "caseId": "missing-route-value-rows-cannot-evaluate",
+      "expectedVerdict": "cannot-evaluate",
+      "entry": {
+        "entrySchema": "human-infra.life-path-nhats-route-value-crosswalk-entry.v1",
+        "entryId": "synthetic-nhats-route-value-crosswalk-entry-002",
+        "sourceId": "nhats",
+        "assemblyProtocolId": "nhats-r13-r14-route-value-crosswalk-assembly-protocol-2026-07-04",
+        "capturePacketReviewExecutionRegisterId": "nhats-r13-r14-colectica-capture-packet-review-execution-2026-07-04",
+        "captureTaskRegisterId": "nhats-r13-r14-colectica-capture-task-register-2026-07-03",
+        "routeClassifierReadinessId": "nhats-r13-r14-route-classifier-readiness-2026-07-03",
+        "requiredRouteFieldId": "identity_join_key",
+        "sourceTaskIds": [
+          "identity_join_key-spid",
+          "identity_join_key-spidr12"
+        ],
+        "reviewedCapturePacketIds": [
+          "synthetic-nhats-colectica-capture-packet-001"
+        ],
+        "sourceCaptureSha256": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd",
+        "variableSpecificMissingCodeRowsRedacted": [
+          {
+            "variableName": "spid",
+            "missingCodeFamily": "not-applicable-for-identifier",
+            "sourceValueHash": "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+            "handlingRule": "do-not-infer-missingness-route-from-identifier"
+          }
+        ],
+        "valueLabelsReviewed": true,
+        "questionTextReviewed": true,
+        "universeSkipLogicReviewed": true,
+        "routeValueRowsReviewed": true,
+        "variableSpecificMissingCodesReviewed": true,
+        "sensitiveRestrictedExclusionReviewed": true,
+        "sensitiveDeathDateFieldsExcluded": true,
+        "reviewerRole": "human-domain-reviewer",
+        "secondReviewerRole": "independent-human-reviewer",
+        "aiOnlySignoff": false,
+        "publicAiUpload": false,
+        "assemblyUnitClosureAllowed": false,
+        "routeClassifierAllowed": false,
+        "realExtractionAllowed": false,
+        "aggregateCohortFlowAllowed": false,
+        "weightedRouteCountsAllowed": false,
+        "publicExportAllowed": false,
+        "calibrationAllowed": false,
+        "individualPredictionAllowed": false
+      }
+    },
+    {
+      "caseId": "unknown-route-field-rejected",
+      "expectedVerdict": "rejected",
+      "entry": {
+        "entrySchema": "human-infra.life-path-nhats-route-value-crosswalk-entry.v1",
+        "entryId": "synthetic-nhats-route-value-crosswalk-entry-003",
+        "sourceId": "nhats",
+        "assemblyProtocolId": "nhats-r13-r14-route-value-crosswalk-assembly-protocol-2026-07-04",
+        "capturePacketReviewExecutionRegisterId": "nhats-r13-r14-colectica-capture-packet-review-execution-2026-07-04",
+        "captureTaskRegisterId": "nhats-r13-r14-colectica-capture-task-register-2026-07-03",
+        "routeClassifierReadinessId": "nhats-r13-r14-route-classifier-readiness-2026-07-03",
+        "requiredRouteFieldId": "unregistered_route_field",
+        "sourceTaskIds": [
+          "unknown-task"
+        ],
+        "reviewedCapturePacketIds": [
+          "synthetic-nhats-colectica-capture-packet-001"
+        ],
+        "sourceCaptureSha256": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+        "routeValueRowsRedacted": [
+          {
+            "variableName": "unknown",
+            "sourceValueHash": "1111111111111111111111111111111111111111111111111111111111111111",
+            "routeClass": "unknown",
+            "labelMeaningRedacted": "synthetic unknown route"
+          }
+        ],
+        "variableSpecificMissingCodeRowsRedacted": [
+          {
+            "variableName": "unknown",
+            "missingCodeFamily": "unknown",
+            "sourceValueHash": "2222222222222222222222222222222222222222222222222222222222222222",
+            "handlingRule": "unknown"
+          }
+        ],
+        "valueLabelsReviewed": true,
+        "questionTextReviewed": true,
+        "universeSkipLogicReviewed": true,
+        "routeValueRowsReviewed": true,
+        "variableSpecificMissingCodesReviewed": true,
+        "sensitiveRestrictedExclusionReviewed": true,
+        "sensitiveDeathDateFieldsExcluded": true,
+        "reviewerRole": "human-domain-reviewer",
+        "secondReviewerRole": "independent-human-reviewer",
+        "aiOnlySignoff": false,
+        "publicAiUpload": false,
+        "assemblyUnitClosureAllowed": false,
+        "routeClassifierAllowed": false,
+        "realExtractionAllowed": false,
+        "aggregateCohortFlowAllowed": false,
+        "weightedRouteCountsAllowed": false,
+        "publicExportAllowed": false,
+        "calibrationAllowed": false,
+        "individualPredictionAllowed": false
+      }
+    },
+    {
+      "caseId": "death-timing-field-rejected",
+      "expectedVerdict": "rejected",
+      "entry": {
+        "entrySchema": "human-infra.life-path-nhats-route-value-crosswalk-entry.v1",
+        "entryId": "synthetic-nhats-route-value-crosswalk-entry-004",
+        "sourceId": "nhats",
+        "assemblyProtocolId": "nhats-r13-r14-route-value-crosswalk-assembly-protocol-2026-07-04",
+        "capturePacketReviewExecutionRegisterId": "nhats-r13-r14-colectica-capture-packet-review-execution-2026-07-04",
+        "captureTaskRegisterId": "nhats-r13-r14-colectica-capture-task-register-2026-07-03",
+        "routeClassifierReadinessId": "nhats-r13-r14-route-classifier-readiness-2026-07-03",
+        "requiredRouteFieldId": "death_decedent_indicator",
+        "sourceTaskIds": [
+          "death_decedent_indicator-r13died",
+          "death_decedent_indicator-r14died"
+        ],
+        "reviewedCapturePacketIds": [
+          "synthetic-nhats-colectica-capture-packet-001"
+        ],
+        "sourceCaptureSha256": "3333333333333333333333333333333333333333333333333333333333333333",
+        "routeValueRowsRedacted": [
+          {
+            "variableName": "dm13mthdied",
+            "sourceValueHash": "4444444444444444444444444444444444444444444444444444444444444444",
+            "routeClass": "death-month",
+            "labelMeaningRedacted": "synthetic death month timing field"
+          }
+        ],
+        "variableSpecificMissingCodeRowsRedacted": [
+          {
+            "variableName": "dm13mthdied",
+            "missingCodeFamily": "death-date-sensitive",
+            "sourceValueHash": "5555555555555555555555555555555555555555555555555555555555555555",
+            "handlingRule": "reject-sensitive-death-timing"
+          }
+        ],
+        "valueLabelsReviewed": true,
+        "questionTextReviewed": true,
+        "universeSkipLogicReviewed": true,
+        "routeValueRowsReviewed": true,
+        "variableSpecificMissingCodesReviewed": true,
+        "sensitiveRestrictedExclusionReviewed": true,
+        "sensitiveDeathDateFieldsExcluded": false,
+        "reviewerRole": "human-domain-reviewer",
+        "secondReviewerRole": "independent-human-reviewer",
+        "aiOnlySignoff": false,
+        "publicAiUpload": false,
+        "assemblyUnitClosureAllowed": false,
+        "routeClassifierAllowed": false,
+        "realExtractionAllowed": false,
+        "aggregateCohortFlowAllowed": false,
+        "weightedRouteCountsAllowed": false,
+        "publicExportAllowed": false,
+        "calibrationAllowed": false,
+        "individualPredictionAllowed": false
+      }
+    },
+    {
+      "caseId": "ai-only-review-rejected",
+      "expectedVerdict": "rejected",
+      "entry": {
+        "entrySchema": "human-infra.life-path-nhats-route-value-crosswalk-entry.v1",
+        "entryId": "synthetic-nhats-route-value-crosswalk-entry-005",
+        "sourceId": "nhats",
+        "assemblyProtocolId": "nhats-r13-r14-route-value-crosswalk-assembly-protocol-2026-07-04",
+        "capturePacketReviewExecutionRegisterId": "nhats-r13-r14-colectica-capture-packet-review-execution-2026-07-04",
+        "captureTaskRegisterId": "nhats-r13-r14-colectica-capture-task-register-2026-07-03",
+        "routeClassifierReadinessId": "nhats-r13-r14-route-classifier-readiness-2026-07-03",
+        "requiredRouteFieldId": "identity_join_key",
+        "sourceTaskIds": [
+          "identity_join_key-spid",
+          "identity_join_key-spidr12"
+        ],
+        "reviewedCapturePacketIds": [
+          "synthetic-nhats-colectica-capture-packet-001"
+        ],
+        "sourceCaptureSha256": "6666666666666666666666666666666666666666666666666666666666666666",
+        "routeValueRowsRedacted": [
+          {
+            "variableName": "spid",
+            "sourceValueHash": "7777777777777777777777777777777777777777777777777777777777777777",
+            "routeClass": "identity-join-key",
+            "labelMeaningRedacted": "synthetic stable person identifier evidence"
+          }
+        ],
+        "variableSpecificMissingCodeRowsRedacted": [
+          {
+            "variableName": "spid",
+            "missingCodeFamily": "not-applicable-for-identifier",
+            "sourceValueHash": "8888888888888888888888888888888888888888888888888888888888888888",
+            "handlingRule": "do-not-infer-missingness-route-from-identifier"
+          }
+        ],
+        "valueLabelsReviewed": true,
+        "questionTextReviewed": true,
+        "universeSkipLogicReviewed": true,
+        "routeValueRowsReviewed": true,
+        "variableSpecificMissingCodesReviewed": true,
+        "sensitiveRestrictedExclusionReviewed": true,
+        "sensitiveDeathDateFieldsExcluded": true,
+        "reviewerRole": "ai-only",
+        "secondReviewerRole": "ai-only",
+        "aiOnlySignoff": true,
+        "publicAiUpload": false,
+        "assemblyUnitClosureAllowed": false,
+        "routeClassifierAllowed": false,
+        "realExtractionAllowed": false,
+        "aggregateCohortFlowAllowed": false,
+        "weightedRouteCountsAllowed": false,
+        "publicExportAllowed": false,
+        "calibrationAllowed": false,
+        "individualPredictionAllowed": false
+      }
+    },
+    {
+      "caseId": "premature-classifier-promotion-rejected",
+      "expectedVerdict": "rejected",
+      "entry": {
+        "entrySchema": "human-infra.life-path-nhats-route-value-crosswalk-entry.v1",
+        "entryId": "synthetic-nhats-route-value-crosswalk-entry-006",
+        "sourceId": "nhats",
+        "assemblyProtocolId": "nhats-r13-r14-route-value-crosswalk-assembly-protocol-2026-07-04",
+        "capturePacketReviewExecutionRegisterId": "nhats-r13-r14-colectica-capture-packet-review-execution-2026-07-04",
+        "captureTaskRegisterId": "nhats-r13-r14-colectica-capture-task-register-2026-07-03",
+        "routeClassifierReadinessId": "nhats-r13-r14-route-classifier-readiness-2026-07-03",
+        "requiredRouteFieldId": "identity_join_key",
+        "sourceTaskIds": [
+          "identity_join_key-spid",
+          "identity_join_key-spidr12"
+        ],
+        "reviewedCapturePacketIds": [
+          "synthetic-nhats-colectica-capture-packet-001"
+        ],
+        "sourceCaptureSha256": "9999999999999999999999999999999999999999999999999999999999999999",
+        "routeValueRowsRedacted": [
+          {
+            "variableName": "spid",
+            "sourceValueHash": "abababababababababababababababababababababababababababababababab",
+            "routeClass": "identity-join-key",
+            "labelMeaningRedacted": "synthetic stable person identifier evidence"
+          }
+        ],
+        "variableSpecificMissingCodeRowsRedacted": [
+          {
+            "variableName": "spid",
+            "missingCodeFamily": "not-applicable-for-identifier",
+            "sourceValueHash": "babababababababababababababababababababababababababababababababa",
+            "handlingRule": "do-not-infer-missingness-route-from-identifier"
+          }
+        ],
+        "valueLabelsReviewed": true,
+        "questionTextReviewed": true,
+        "universeSkipLogicReviewed": true,
+        "routeValueRowsReviewed": true,
+        "variableSpecificMissingCodesReviewed": true,
+        "sensitiveRestrictedExclusionReviewed": true,
+        "sensitiveDeathDateFieldsExcluded": true,
+        "reviewerRole": "human-domain-reviewer",
+        "secondReviewerRole": "independent-human-reviewer",
+        "aiOnlySignoff": false,
+        "publicAiUpload": false,
+        "assemblyUnitClosureAllowed": true,
+        "routeClassifierAllowed": true,
+        "realExtractionAllowed": true,
+        "aggregateCohortFlowAllowed": true,
+        "weightedRouteCountsAllowed": true,
+        "publicExportAllowed": true,
+        "calibrationAllowed": true,
+        "individualPredictionAllowed": true
+      }
+    }
+  ]
+}

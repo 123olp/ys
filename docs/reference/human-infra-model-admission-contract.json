@@ -2,7 +2,7 @@
   "schemaVersion": "human-infra.model-admission-contract.v1",
   "contractId": "human-infra-model-admission-contract",
   "status": "active-model-admission-contract-calibrated-admission-blocked",
-  "reviewDate": "2026-07-03",
+  "reviewDate": "2026-07-04",
   "owner": "tradecatlabs",
   "purpose": "Define the gate between reviewed evidence artifacts and any Human Infra quantitative model input. The contract prevents Source/variable/endpoint/uncertainty/transfer/downgrade artifacts from being silently promoted into calibrated predictors, intervention effects or individual claims.",
   "scope": {
@@ -10,7 +10,7 @@
       "admission levels for narrative evidence, bounded reviewed artifacts, variable candidates, synthetic toy models, aggregate calibrated research models and individual decision support",
       "minimum gates for converting reviewed artifacts into model variables or scenario parameters",
       "hard abort gates that keep evidence out of any model regardless of narrative value",
-      "current repository decision for B1-B7 reviewed artifacts and the life-path model pipeline"
+      "current repository decision for B1-B9 reviewed artifacts and the life-path model pipeline"
     ],
     "excluded": [
       "new statistical estimator",
@@ -39,7 +39,9 @@
       "docs/reference/human-infra-c2-longtail-fourth-batch-manual-fulltext-reviewed-card-artifact-register.json",
       "docs/reference/human-infra-c2-longtail-fifth-batch-reviewed-card-artifact-register.json",
       "docs/reference/human-infra-c2-longtail-sixth-batch-reviewed-card-artifact-register.json",
-      "docs/reference/human-infra-c2-longtail-seventh-batch-manual-fulltext-reviewed-card-artifact-register.json"
+      "docs/reference/human-infra-c2-longtail-seventh-batch-manual-fulltext-reviewed-card-artifact-register.json",
+      "docs/reference/human-infra-c2-longtail-eighth-batch-manual-fulltext-reviewed-card-artifact-register.json",
+      "docs/reference/human-infra-c2-longtail-ninth-batch-manual-fulltext-reviewed-card-artifact-register.json"
     ]
   },
   "admissionLevels": [
@@ -273,10 +275,10 @@
     "calibratedPredictionAvailable": false,
     "individualUseAllowed": false,
     "currentC2ReviewedArtifactsAdmission": "L1/L2-only",
-    "currentC2ReviewedArtifactsBoundary": "B1-B7 reviewed artifacts can define candidate variables, endpoints, uncertainty channels, transfer boundaries and downgrade triggers, but none is admitted as a calibrated model parameter or intervention effect.",
+    "currentC2ReviewedArtifactsBoundary": "B1-B9 reviewed artifacts can define candidate variables, endpoints, uncertainty channels, transfer boundaries and downgrade triggers, but none is admitted as a calibrated model parameter or intervention effect.",
     "publicMortalityAnchorAdmission": "L3-baseline-plausibility-only",
     "nhatsAdmission": "pre-extraction-protocol-only",
-    "nextDecisionNeeded": "Keep the model-admission candidate registry synchronized as reviewed artifacts expand, but require narrow estimands, governed data, exact variables, cohort flow, survey design and validation before any L4 admission."
+    "nextDecisionNeeded": "Keep the model-admission candidate registry synchronized as reviewed artifacts expand, and keep human-infra-quantitative-capability-ladder.json aligned with the current highest output capability; require narrow estimands, governed data, exact variables, cohort flow, survey design and validation before any L4 admission."
   },
   "artifactBridge": {
     "reviewedArtifactDefaultLevel": "L1",

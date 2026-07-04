@@ -13,9 +13,9 @@
   "scope": {
     "coverageLevel": "derived-domain-source-reading-queue-v0.1",
     "derivedTaskUnit": "domainId + sourceCardId",
-    "coveredDomainCount": 26,
-    "coveredFieldRowCount": 26,
-    "expectedTaskCount": 81,
+    "coveredDomainCount": 30,
+    "coveredFieldRowCount": 30,
+    "expectedTaskCount": 93,
     "expectedUniqueSourceAnchorCount": 20,
     "selectionRule": "Derive one task for every sourceCardId attached to every field row in the domain Source Card field-extraction register.",
     "currentLimitations": [
@@ -52,9 +52,9 @@
     "minimumExtractionQuestion": "For this domain-source pair, what exact claim, endpoint, population, uncertainty and transfer boundary can this source support without overclaiming?"
   },
   "derivedQueueSummary": {
-    "coveredDomainCount": 26,
-    "coveredFieldRowCount": 26,
-    "derivedTaskCount": 81,
+    "coveredDomainCount": 30,
+    "coveredFieldRowCount": 30,
+    "derivedTaskCount": 93,
     "uniqueSourceAnchorCount": 20,
     "fieldCompletionState": "queue-derived-not-source-specific-extracted",
     "remainingWork": [

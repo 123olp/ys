@@ -6,13 +6,13 @@ This is the v0.1 classification summary for formal research domains under `domai
 
 | Tier | Physical directory | Name | Count |
 | --- | --- | --- | ---: |
-| C1 | `domains/c1-boundary-rewriting/` | 可能性边界改写层 | 6 |
+| C1 | `domains/c1-boundary-rewriting/` | 可能性边界改写层 | 10 |
 | C2 | `domains/c2-source-maintenance/` | 可能性源体维护层 | 204 |
 | C3 | `domains/c3-generation-engine/` | 可能性生成引擎层 | 82 |
 | C4 | `domains/c4-conversion-channel/` | 可能性转换通道层 | 140 |
 | C5 | `domains/c5-ecological-substrate/` | 可能性生态承载层 | 225 |
 | C6 | `domains/c6-local-unlocking/` | 局部可能性解锁层 | 333 |
-| Total | C1-C6 tier directories | Formal research domains | 990 |
+| Total | C1-C6 tier directories | Formal research domains | 994 |
 
 ## Review Status
 
@@ -22,12 +22,16 @@ This is the v0.1 classification summary for formal research domains under `domai
 
 ## C1 Boundary-Rewriting Domains
 
+- `domains/c1-boundary-rewriting/accelerating-returns-technology-convergence`
 - `domains/c1-boundary-rewriting/biostasis-cryopreservation`
 - `domains/c1-boundary-rewriting/brain-preservation-connectomics-emulation`
 - `domains/c1-boundary-rewriting/disembodied-cns`
 - `domains/c1-boundary-rewriting/future-waiting`
 - `domains/c1-boundary-rewriting/longevity-evidence`
 - `domains/c1-boundary-rewriting/memory-editing`
+- `domains/c1-boundary-rewriting/recursive-self-improvement-intelligence-explosion`
+- `domains/c1-boundary-rewriting/singularity-control-interpretability-boundary`
+- `domains/c1-boundary-rewriting/superhuman-intelligence-threshold`
 
 ## Next Manual Review Queue
 

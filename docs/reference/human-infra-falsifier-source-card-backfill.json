@@ -633,6 +633,54 @@
       "transferBoundary": "Single hormone-marker optimization is not a net subject-continuity claim.",
       "remainingGap": "Needs axis-specific deficiency/excess, replacement/suppression, monitoring and adverse-outcome Source Cards.",
       "nextAction": "Create endocrine axis cards separating context, feedback and adverse tradeoffs."
+    },
+    {
+      "domainId": "superhuman-intelligence-threshold",
+      "sourceAnchors": [
+        "SA-NIST-AI-RMF-2023",
+        "SA-CAPABILITY-APPROACH",
+        "SA-EXTENDED-MIND-1998"
+      ],
+      "supportedUse": "Frame superhuman intelligence as a C1 boundary-rewriting hypothesis about agency, tool integration, option value and AI risk governance.",
+      "transferBoundary": "Conceptual and governance anchors do not prove a superhuman threshold has been reached or that it improves subject continuity.",
+      "remainingGap": "Needs Vinge, Good, Chalmers, Bostrom, Russell and frontier-evaluation Source Cards before any threshold claim can move beyond seed framing.",
+      "nextAction": "Create exact Source Cards for superhuman-capability definitions, evaluation limits, loss-of-control channels and human-option-value effects."
+    },
+    {
+      "domainId": "recursive-self-improvement-intelligence-explosion",
+      "sourceAnchors": [
+        "SA-NIST-AI-RMF-2023",
+        "SA-TRIPOD-AI-2024",
+        "SA-CAPABILITY-APPROACH"
+      ],
+      "supportedUse": "Treat recursive self-improvement as a conditional acceleration route requiring reporting discipline, governance gates and value-boundary checks.",
+      "transferBoundary": "AI risk and reporting sources do not prove autonomous recursive self-improvement, intelligence explosion or positive continuity gain.",
+      "remainingGap": "Needs Good-Chalmers recursive-improvement Source Cards, empirical autonomy evidence, compute/data constraints and shutdown-control falsifiers.",
+      "nextAction": "Separate recursive capability-improvement claims from model-reporting, governance, control and effective-option-value claims."
+    },
+    {
+      "domainId": "accelerating-returns-technology-convergence",
+      "sourceAnchors": [
+        "SA-TRIPOD-AI-2024",
+        "SA-NIST-AI-RMF-2023",
+        "SA-CAPABILITY-APPROACH"
+      ],
+      "supportedUse": "Use as seed support for turning automated-science and technology-window-compression narratives into bounded model, risk and option-value claims.",
+      "transferBoundary": "Reporting and governance anchors do not validate Kurzweil-style timelines, exponential trend persistence or longevity escape velocity.",
+      "remainingGap": "Needs AlphaFold, AlphaMissense, A-Lab, RoboChem, GNoME, Kurzweil and trend-break Source Cards with correction history and counterexamples.",
+      "nextAction": "Build technology-window-compression cards separating observed automation, extrapolated acceleration, bottlenecks and Human Infra adoption gates."
+    },
+    {
+      "domainId": "singularity-control-interpretability-boundary",
+      "sourceAnchors": [
+        "SA-NIST-AI-RMF-2023",
+        "SA-TRIPOD-AI-2024",
+        "SA-CAPABILITY-APPROACH"
+      ],
+      "supportedUse": "Model the singularity boundary as a control, interpretability, accountability and human-option-value failure surface.",
+      "transferBoundary": "Governance and reporting sources do not prove loss of control, solve alignment or certify any AI system as subject-support infrastructure.",
+      "remainingGap": "Needs AI control, interpretability, frontier-risk, evaluation, incident and governance Source Cards before control-boundary claims are mature.",
+      "nextAction": "Create control-boundary cards for interpretability, agency loss, oversight failure, misuse, dependency, rollback and human-in-the-loop limits."
     }
   ],
   "paperClaimCoverage": [

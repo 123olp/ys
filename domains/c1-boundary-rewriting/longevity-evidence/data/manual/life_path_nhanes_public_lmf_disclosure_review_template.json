@@ -1,0 +1,215 @@
+{
+  "schemaVersion": "human-infra.nhanes-public-lmf-disclosure-review-template.v1",
+  "templateId": "nhanes-public-lmf-2017-2018-disclosure-review-template",
+  "status": "template-ready-review-not-complete-no-real-output",
+  "sourceId": "nhanes-public-lmf-2017-2018",
+  "reviewType": "real-public-weighted-domain-output-disclosure-review-template",
+  "lastReviewedDate": "2026-07-03",
+  "currentDecision": {
+    "templateValidationAllowed": true,
+    "publicDisclosureReviewComplete": false,
+    "realWeightedOutputReviewed": false,
+    "realWeightedOutputReleased": false,
+    "publicWeightedDomainOutputAllowed": false,
+    "realDesignBasedIntervalsAllowed": false,
+    "rowLevelExportAllowed": false,
+    "identifierExportAllowed": false,
+    "publicAiUploadAllowed": false,
+    "calibrationAllowed": false,
+    "individualPredictionAllowed": false
+  },
+  "reviewPrerequisites": {
+    "disclosureOutputEnvelopeValidationPath": "web/src/data/life-path-nhanes-public-lmf-disclosure-output-envelope-validation.json",
+    "effectiveSampleCiPublicationValidationPath": "web/src/data/life-path-nhanes-public-lmf-effective-sample-ci-publication-validation.json",
+    "weightedOutputImplementationPreflightValidationPath": "web/src/data/life-path-nhanes-public-lmf-weighted-output-implementation-preflight-validation.json",
+    "weightedDomainOutputReadinessPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhanes_public_lmf_weighted_domain_output_readiness.json"
+  },
+  "reviewRules": {
+    "aggregateOnly": true,
+    "reviewTemplateOnly": true,
+    "requiresOutputArtifactHash": true,
+    "requiresSecondReviewer": true,
+    "requiresSuppressionReview": true,
+    "requiresEffectiveSampleCiReview": true,
+    "requiresDofSparseDomainReview": true,
+    "requiresForbiddenFieldScan": true,
+    "requiresRetentionPlan": true,
+    "publicReleaseAllowedWithoutCompletedReview": false,
+    "realWeightedValuesAllowedInTemplate": false,
+    "rowLevelDataAllowedInTemplate": false,
+    "identifierAllowedInTemplate": false,
+    "publicAiUploadAllowed": false
+  },
+  "requiredReviewSlots": [
+    {
+      "slotId": "output-artifact-identity",
+      "status": "pending",
+      "requiredForCompletion": true,
+      "expectedEvidence": "Output artifact id, version, producer script hash and non-row-level output family."
+    },
+    {
+      "slotId": "source-and-cycle-binding",
+      "status": "pending",
+      "requiredForCompletion": true,
+      "expectedEvidence": "NHANES DEMO_J and public-use LMF source hashes, cycle id and source retrieval trace."
+    },
+    {
+      "slotId": "survey-design-trace",
+      "status": "pending",
+      "requiredForCompletion": true,
+      "expectedEvidence": "R survey design trace with WTMEC2YR, SDMVSTRA, SDMVPSU, nest=true and no row-drop-before-design evidence."
+    },
+    {
+      "slotId": "domain-and-dof-trace",
+      "status": "pending",
+      "requiredForCompletion": true,
+      "expectedEvidence": "Domain indicator, represented strata/PSU, domain degrees-of-freedom and sparse-domain review trace."
+    },
+    {
+      "slotId": "effective-sample-ci-trace",
+      "status": "pending",
+      "requiredForCompletion": true,
+      "expectedEvidence": "Statistic-specific effective sample size, RSE, CI width and reliability classification trace."
+    },
+    {
+      "slotId": "disclosure-envelope-trace",
+      "status": "pending",
+      "requiredForCompletion": true,
+      "expectedEvidence": "Disclosure envelope validation trace proving aggregate-only output shape and suppression rules."
+    },
+    {
+      "slotId": "small-cell-suppression-review",
+      "status": "pending",
+      "requiredForCompletion": true,
+      "expectedEvidence": "Reviewer confirmation that small cells and cells failing local suppression policy are suppressed before release."
+    },
+    {
+      "slotId": "low-dof-suppression-review",
+      "status": "pending",
+      "requiredForCompletion": true,
+      "expectedEvidence": "Reviewer confirmation that low-DOF or lonely-PSU domains are suppressed or blocked before release."
+    },
+    {
+      "slotId": "rse-ci-width-review",
+      "status": "pending",
+      "requiredForCompletion": true,
+      "expectedEvidence": "Reviewer confirmation that RSE and CI width meet publication criteria or are blocked/suppressed."
+    },
+    {
+      "slotId": "forbidden-field-scan",
+      "status": "pending",
+      "requiredForCompletion": true,
+      "expectedEvidence": "Machine and human scan confirming no forbidden keys, record counts, death counts, weighted sums or raw identifiers are present."
+    },
+    {
+      "slotId": "row-level-and-identifier-scan",
+      "status": "pending",
+      "requiredForCompletion": true,
+      "expectedEvidence": "Reviewer confirmation that the output artifact contains no rows, direct identifiers, quasi-identifiers or record-level flags."
+    },
+    {
+      "slotId": "public-ai-and-third-party-upload-scan",
+      "status": "pending",
+      "requiredForCompletion": true,
+      "expectedEvidence": "Reviewer confirmation that no raw, restricted, row-level or unsuppressed output was uploaded to public AI or third-party systems."
+    },
+    {
+      "slotId": "output-hash-and-retention-plan",
+      "status": "pending",
+      "requiredForCompletion": true,
+      "expectedEvidence": "SHA-256 of the reviewed output artifact plus retention, destruction and re-review trigger plan."
+    },
+    {
+      "slotId": "second-reviewer-signoff",
+      "status": "pending",
+      "requiredForCompletion": true,
+      "expectedEvidence": "Independent second reviewer signoff with redacted reviewer identity and date."
+    },
+    {
+      "slotId": "release-decision-record",
+      "status": "pending",
+      "requiredForCompletion": true,
+      "expectedEvidence": "Final release decision: release, suppress, revise, block or cannot-evaluate, with reason."
+    }
+  ],
+  "forbiddenPersistedFields": [
+    "SEQN",
+    "recordId",
+    "participantId",
+    "recordCount",
+    "deathCount",
+    "unweightedCount",
+    "weightedCount",
+    "weightedSum",
+    "weightedRate",
+    "mortalityRate",
+    "ciLower",
+    "ciUpper",
+    "standardError",
+    "relativeStandardError",
+    "individualRiskScore",
+    "deathDate",
+    "rawRows",
+    "publicAiPrompt",
+    "publicAiResponse"
+  ],
+  "allowedTemplateFields": [
+    "schemaVersion",
+    "templateId",
+    "status",
+    "sourceId",
+    "reviewType",
+    "lastReviewedDate",
+    "currentDecision",
+    "reviewPrerequisites",
+    "reviewRules",
+    "requiredReviewSlots",
+    "forbiddenPersistedFields",
+    "allowedTemplateFields",
+    "reviewCompletionCriteria",
+    "sourceTrace",
+    "nonProofBoundary"
+  ],
+  "reviewCompletionCriteria": {
+    "requiredSlotCount": 15,
+    "requiredCompletedSlotCount": 15,
+    "requiresAllSlotsComplete": true,
+    "requiresSecondReviewer": true,
+    "requiresNoForbiddenPersistedFields": true,
+    "requiresNoUnsuppressedSmallCells": true,
+    "requiresNoLowDofUnsuppressedCells": true,
+    "requiresNoRowLevelData": true,
+    "requiresNoPublicAiUpload": true,
+    "requiresReviewedOutputHash": true,
+    "requiresExplicitReleaseDecision": true,
+    "currentCompletedSlotCount": 0,
+    "publicDisclosureReviewComplete": false
+  },
+  "sourceTrace": [
+    "https://wwwn.cdc.gov/nchs/nhanes/tutorials/varianceestimation.aspx",
+    "https://wwwn.cdc.gov/nchs/nhanes/tutorials/reliabilityofestimates.aspx",
+    "https://www.cdc.gov/nchs/data/series/sr_02/sr02_175.pdf",
+    "https://www.cdc.gov/nchs/data/series/sr_02/sr02-200.pdf",
+    "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhanes_public_lmf_disclosure_output_envelope_policy.json",
+    "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhanes_public_lmf_effective_sample_ci_publication_policy.json",
+    "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhanes_public_lmf_weighted_output_implementation_preflight_policy.json"
+  ],
+  "nonProofBoundary": {
+    "confirms": [
+      "the disclosure review template exists",
+      "the template contains all required review slots",
+      "the template blocks public release until review completion",
+      "the template contains no real weighted-domain output values"
+    ],
+    "doesNotConfirm": [
+      "real public disclosure review completion",
+      "real public weighted-domain output permission",
+      "real weighted rates",
+      "real design-based confidence intervals",
+      "effective sample adequacy for any real statistic",
+      "calibration",
+      "individual prediction",
+      "medical advice"
+    ]
+  }
+}

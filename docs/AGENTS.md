@@ -229,6 +229,29 @@ docs/
 │   ├── human-infra-c2-longtail-seventh-batch-manual-fulltext-extraction-register.json
 │   ├── human-infra-c2-longtail-seventh-batch-manual-fulltext-fresh-review-verdict-register.json
 │   ├── human-infra-c2-longtail-seventh-batch-manual-fulltext-reviewed-card-artifact-register.json
+│   ├── human-infra-c2-longtail-eighth-batch-promotion-queue.json
+│   ├── human-infra-c2-longtail-eighth-batch-source-extraction-queue.json
+│   ├── human-infra-c2-longtail-eighth-batch-source-extraction-register.json
+│   ├── human-infra-c2-longtail-eighth-batch-local-review-register.json
+│   ├── human-infra-c2-longtail-eighth-batch-source-resolution-register.json
+│   ├── human-infra-c2-longtail-eighth-batch-manual-fulltext-extraction-register.json
+│   ├── human-infra-c2-longtail-eighth-batch-manual-fulltext-fresh-review-verdict-register.json
+│   ├── human-infra-c2-longtail-eighth-batch-manual-fulltext-reviewed-card-artifact-register.json
+│   ├── human-infra-c2-longtail-ninth-batch-promotion-queue.json
+│   ├── human-infra-c2-longtail-ninth-batch-source-extraction-queue.json
+│   ├── human-infra-c2-longtail-ninth-batch-source-extraction-register.json
+│   ├── human-infra-c2-longtail-ninth-batch-local-review-register.json
+│   ├── human-infra-c2-longtail-ninth-batch-source-resolution-register.json
+│   ├── human-infra-c2-longtail-ninth-batch-manual-fulltext-extraction-register.json
+│   ├── human-infra-c2-longtail-ninth-batch-manual-fulltext-fresh-review-verdict-register.json
+│   ├── human-infra-c2-longtail-ninth-batch-manual-fulltext-reviewed-card-artifact-register.json
+│   ├── human-infra-c2-longtail-tenth-batch-promotion-queue.json
+│   ├── human-infra-c2-longtail-tenth-batch-source-extraction-queue.json
+│   ├── human-infra-c2-longtail-tenth-batch-source-extraction-register.json
+│   ├── human-infra-c2-longtail-tenth-batch-local-review-register.json
+│   ├── human-infra-c2-longtail-tenth-batch-independent-fresh-review-protocol.json
+│   ├── human-infra-c2-longtail-tenth-batch-independent-fresh-review-verdict-register.json
+│   ├── human-infra-c2-longtail-tenth-batch-reviewed-card-artifact-register.json
 │   ├── human-infra-c2-longtail-sixth-batch-source-extraction-queue.json
 │   ├── human-infra-c2-longtail-sixth-batch-source-extraction-register.json
 │   ├── human-infra-c2-longtail-sixth-batch-local-review-register.json
@@ -251,6 +274,17 @@ docs/
 │   ├── human-infra-maturity-roadmap.md
 │   ├── human-infra-model-admission-contract.json
 │   ├── human-infra-model-admission-candidate-registry.json
+│   ├── human-infra-quantitative-capability-ladder.json
+│   ├── human-infra-domain-to-model-bridge-contract.json
+│   ├── human-infra-domain-to-model-bridge-register.json
+│   ├── human-infra-l4-model-readiness-blocker-matrix.json
+│   ├── human-infra-l4-unblock-execution-plan.json
+│   ├── human-infra-l4-evidence-intake-register.json
+│   ├── human-infra-l4-evidence-packet-review-playbook.md
+│   ├── human-infra-l4-evidence-packet-validator-test-cases.json
+│   ├── human-infra-l4-validation-calibration-reporting-contract.json
+│   ├── human-infra-research-standards-source-anchor-register.json
+│   ├── human-infra-l4-validation-calibration-report-execution-register.json
 │   ├── life-path-prediction-model-contract.md
 │   ├── life-path-prediction-model-governance.md
 │   ├── project-boundary-v0.1.md
@@ -304,8 +338,27 @@ docs/
 - `reference/human-infra-independent-fresh-review-verdict-register.json`：登记 FRB-01 到 FRB-04 全部批次 20 个来源锚点和 81 个晋升包的独立 fresh review verdict；它只允许 bounded artifact filling，不代表卡片填充、模型准入或个体预测。
 - `reference/human-infra-reviewed-card-artifact-register.json`：登记 486 个 reviewed card artifact 实体，把 fresh review verdict 晋升为 Source/变量/endpoint/uncertainty/transfer/downgrade 可审计卡片层；它仍不代表模型准入或个体用途许可。
 - `reference/human-infra-future-boundary-route-card-register.json`：登记未来等待、生物停滞、神经身份连续性和 AI 加速四条 future-boundary route card，统一概率门、中止门、正负链路和禁止外推边界。
-- `reference/human-infra-model-admission-contract.json`：定义 L0-L5 证据到模型准入层级、MAC gates、hard abort gates 和 B1-B7 reviewed artifacts 的 L1/L2-only 边界，防止 reviewed artifact 被误升格为校准预测参数、干预效果或个体用途。
-- `reference/human-infra-model-admission-candidate-registry.json`：登记 reviewed artifacts、synthetic toy model、public aggregate mortality anchor 和 NHATS draft candidates 的当前准入层级，确认 1332 个 reviewed artifacts 只允许 L1/L2，48 个 blocked rows 和 L4/L5 继续阻塞。
+- `reference/human-infra-model-admission-contract.json`：定义 L0-L5 证据到模型准入层级、MAC gates、hard abort gates 和 B1-B9 reviewed artifacts 的 L1/L2-only 边界，防止 reviewed artifact 被误升格为校准预测参数、干预效果或个体用途。
+- `reference/human-infra-model-admission-candidate-registry.json`：登记 reviewed artifacts、synthetic toy model、public aggregate mortality anchor 和 NHATS draft candidates 的当前准入层级，确认 1386 个 reviewed artifacts 只允许 L1/L2，66 个 blocked rows 和 L4/L5 继续阻塞。
+- `reference/human-infra-quantitative-capability-ladder.json`：定义 Q0-Q5 定量模型输出能力分层，确认当前最高只允许 Q3/L3 synthetic 曲线、敏感性、报告形状和证据包 dry-run；Q4 聚合校准研究模型、Q5 个体决策支持、个人死亡日期、医学建议和干预排序继续阻塞。
+- `reference/human-infra-domain-to-model-bridge-contract.json`：定义 C1-C6 研究域进入模型语言的桥接边界，当前只允许 B2/L2/Q2 候选变量、候选机制和模型位置说明，不允许输出系数、因果效应、校准预测、个体用途、医学建议、干预排序或个人死亡日期。
+- `reference/human-infra-domain-to-model-bridge-register.json`：登记代表性 C1-C6 研究域如何进入状态变量、状态转移、风险函数、观测过程、时间核算、行动策略、采用概率、选项价值、治理边界和不确定性通道。
+- `reference/human-infra-l4-model-readiness-blocker-matrix.json`：汇总 NHANES 本地加权域输出、NHATS L4 runway、模型准入契约、披露审查和校准诊断之间的 L4 阻塞门，明确从 L3/local-only 到 L4 calibrated research model 仍缺哪些直接证据。
+- `reference/human-infra-l4-unblock-execution-plan.json`：把 L4 阻塞门转换为有顺序、有依赖、有直接证据要求的 work orders，明确哪些动作必须由人工审查、受控访问或外部治理完成，不能由文档或 AI-only signoff 替代。
+- `reference/human-infra-l4-evidence-intake-register.json`：登记 L4 work orders 对应的待填证据槽位和 evidence packet 契约，要求所有 evidenceRef、reviewerSignoff、packetCount、closedSlotCount 和 L4 许可在直接证据进入前保持空值、0 或 false。
+- `reference/human-infra-l4-evidence-packet-review-playbook.md`：说明 L4 evidence packet 的人工审查生命周期、角色、verdict、abort gates、slot-closure rule 和 safe consumption，确保证据包只能进入 bounded L4 evidence review 且仍保持 L4 blocked。
+- `reference/human-infra-l4-evidence-packet-validator-test-cases.json`：登记 L4 evidence packet validator 的 synthetic verdict 测试用例，覆盖 `reviewable-but-still-blocked`、`cannot-evaluate` 和 `rejected`，只验证未来证据包准入预检规则，不代表真实 evidence packet、人审完成、slot closure 或 L4 准入。
+- `reference/human-infra-l4-validation-calibration-reporting-contract.json`：定义 L4WO-05 的验证/校准报告包、TRIPOD+AI / PROBAST+AI 风格报告段落、校准诊断、偏倚适用性审查和零报告包阻塞边界；它不代表已有真实验证、校准或 L4 准入。
+- `reference/human-infra-research-standards-source-anchor-register.json`：登记 TRIPOD+AI、PROBAST+AI、STROBE、RECORD、CONSORT、SPIRIT、CONSORT-AI、SPIRIT-AI、PRISMA、GRADE、RoB 2、ROBINS-I、target trial emulation、STaRT-RWE 和 ISPOR-SMDM 外部标准锚点，只用于报告、偏倚、证据等级、因果设计和模型透明度门禁，不证明外部文献真实性、模型准入、医学建议或长寿逃逸速度。
+- `reference/human-infra-l4-validation-calibration-report-execution-register.json`：登记 L4 验证/校准报告执行状态，要求 12 个报告段落和 5 个 L4WO-05 槽位在真实报告包、人审和二审签名前全部保持 pending，并继续阻塞 L4、公开输出和个体用途。
+- `../web/src/data/human-infra-research-standards-source-anchor-validation.json`：从外部科研标准锚点注册表生成的 Web validation summary，只证明标准锚点可被机器审计，不打开模型准入、公开输出、个体预测、医学建议或长寿逃逸速度声明。
+- `../web/src/data/human-infra-quantitative-capability-ladder-validation.json`：从定量能力分层契约生成的 Web validation summary，只证明 Q0-Q5 输出边界可审计，不打开 Q4/L4 聚合校准模型、Q5 个体用途、医学建议或干预排序。
+- `../web/src/data/human-infra-domain-to-model-bridge-validation.json`：从域到模型桥接契约生成的 Web validation summary，只证明 C1-C6 研究域可以作为 Q2/L2 候选模型词汇被审计，不打开系数、因果效应、校准预测、个体用途、医学建议、干预排序或个人死亡日期输出。
+- `../web/src/data/life-path-l4-evidence-packet-validator-validation.json`：从 L4 evidence packet validator 测试用例生成的 Web validation summary，只证明 synthetic packet verdict 规则可审计，不打开真实 evidence packet、人审签名、slot closure、L4 准入或个体预测。
+- `../web/src/data/life-path-l4-synthetic-evidence-packet-dry-run.json`：从 L4 intake register、playbook 和合成验证/校准报告生成 24 个 hash-only 合成证据包形状；它只演练 packet schema 和 abort 边界，不代表 direct evidence、人审完成、slot closure、L4 准入或个体预测。
+- `../web/src/data/life-path-nhanes-public-lmf-public-output-implementation-review-template-validation.json`：验证 NHANES public-use LMF public-output implementation review template，登记 12 个 pending implementation review slots、前端 JSON source binding、fresh no-real-values scan、static build review、rollback plan 和 second reviewer signoff；它不公开真实 weighted rates、design-based intervals、校准输入或个体预测。
+- `../web/src/data/life-path-nhanes-public-lmf-public-output-implementation-review-execution-validation.json`：验证 NHANES public-use LMF public-output implementation review execution register，登记 12 个 implementation review execution slots 仍 pending、0 个 human-reviewed slots、无 reviewed artifact hash、无 second reviewer signoff 和 blocked public implementation 边界；它不公开真实 weighted rates、design-based intervals、校准输入或个体预测。
+- `../web/src/data/life-path-nhanes-public-lmf-public-release-gate-validation.json`：汇合 NHANES public-use LMF disclosure review execution、public Web no-real-values scan、local-run evidence manifest、weighted-domain readiness、public-output implementation review template 和 public-output implementation review execution register，输出仍 blocked 的公开发布决策；它不公开真实 weighted rates、design-based intervals、校准输入或个体预测。
 - `reference/life-path-prediction-model-contract.md`：定义干预、状态转移、风险函数、生存曲线、有效时间、主观时间、相对时间和未来选择权的预测模型契约。
 - `reference/life-path-prediction-model-governance.md`：定义定量预测模型的证据准入、偏差审查、验证、报告和禁止用途门禁。
 - `reference/project-boundary-v0.1.md`：定义当前公开版本边界、纳入范围、排除范围、材料落点和后续版本方向。
@@ -478,6 +531,29 @@ docs/
 - `reference/human-infra-c2-longtail-seventh-batch-manual-fulltext-extraction-register.json`：记录 C2-LT-B7 7 个 source-resolution 候选的有界路线/全文上下文抽取，区分 3 个 bounded fresh-review 候选和 4 个动态注册、访问受限、重复或 index/provenance 阻塞行；它仍不创建 reviewed artifacts 或打开模型准入。
 - `reference/human-infra-c2-longtail-seventh-batch-manual-fulltext-fresh-review-verdict-register.json`：记录 C2-LT-B7 7/7 个 manual/fulltext 行的 independent fresh-review 判定，3 行只允许进入 bounded reviewed artifact prep，4 行继续动态注册、访问受限、重复或 index/provenance 阻塞；它仍不创建 reviewed artifacts 或打开模型准入。
 - `reference/human-infra-c2-longtail-seventh-batch-manual-fulltext-reviewed-card-artifact-register.json`：记录 C2-LT-B7 3 个 eligible manual/fulltext fresh-review rows 晋升出的 18 个有界 Source/变量/endpoint/uncertainty/transfer/downgrade artifacts，并保留 4 个 blocked rows；它只进入 L1/L2-only 候选层，不打开校准模型或个体用途。
+- `reference/human-infra-c2-longtail-eighth-batch-promotion-queue.json`：从剩余 C2 长尾域中选择 12 个疼痛、创伤恢复、神经发育、感觉通信、自主神经、BCI 和活性算力域，并绑定 24 个 web-checked 候选来源；它只是 source-specific 深读入口，不等于 Source Card、fresh review、reviewed artifact 或模型准入。
+- `reference/human-infra-c2-longtail-eighth-batch-source-extraction-queue.json`：把 C2-LT-B8 的 24 个候选来源派生成 source-specific 深读任务，定义 exact claim、endpoint、population、uncertainty、transfer-boundary、downgrade 和 model-position 抽取槽位；活性算力来源只进入 living neural computation / organoid intelligence 审查，不直接支持网络效应或超越人类结论。
+- `reference/human-infra-c2-longtail-eighth-batch-source-extraction-register.json`：记录 C2-LT-B8 24/24 个来源的本地字段级抽取，覆盖疼痛、创伤恢复、ADHD、自闭支持、BCI 治理、活性算力、自主神经、语言、听觉、视觉、平衡和吞咽安全；它显式阻塞 local review、fresh review、reviewed artifacts、模型准入、临床建议、神经技术建议和活性算力能力外推。
+- `reference/human-infra-c2-longtail-eighth-batch-local-review-register.json`：记录 C2-LT-B8 24/24 个来源抽取行的本地来源语境复核，确认非问题行只可进入 independent fresh review，7 个 PubMed/fulltext 或活性算力外推高风险行必须先 source-resolution/manual fulltext；它仍不等于 reviewed artifacts、Source Card 晋升完成或模型准入。
+- `reference/human-infra-c2-longtail-eighth-batch-source-resolution-register.json`：记录 C2-LT-B8 7 个本地复核问题行的来源路线解析，整理 19 个 PubMed、PMC、DOI 或纠偏 PMID 候选，并显式标出 3 个原始 PMID 与标题错配行；它只准备 manual/fulltext extraction 与 independent fresh review，不等于 reviewed artifacts、Source Card 晋升完成或模型准入。
+- `reference/human-infra-c2-longtail-eighth-batch-manual-fulltext-extraction-register.json`：记录 C2-LT-B8 19 个 source-resolution 候选的有界路线/全文上下文抽取，区分 5 个 PMC 开放全文 bounded fresh-review 候选和 14 个 PubMed、纠偏 PubMed、DOI 或 route-only 阻塞行；它仍不创建 reviewed artifacts 或打开模型准入。
+- `reference/human-infra-c2-longtail-eighth-batch-manual-fulltext-fresh-review-verdict-register.json`：记录 C2-LT-B8 19/19 个 manual/fulltext 行的 independent fresh review 判定，允许 5 个 PMC 可读全文行进入 bounded reviewed artifact prep，保留 14 个 route-only 或 publisher-route 阻塞行；它仍不创建 reviewed artifacts 或打开模型准入。
+- `reference/human-infra-c2-longtail-eighth-batch-manual-fulltext-reviewed-card-artifact-register.json`：记录 C2-LT-B8 5 个 eligible manual/fulltext fresh-review rows 晋升出的 30 个有界 Source/变量/endpoint/uncertainty/transfer/downgrade artifacts，并保留 14 个 blocked rows；它只进入 bounded evidence 层，不打开校准模型或个体用途。
+- `reference/human-infra-c2-longtail-ninth-batch-promotion-queue.json`：从剩余 C2 长尾域中选择 12 个肌骨、口腔、呼吸、免疫老化和环境暴露域，并绑定 24 个 web-checked 候选来源；它只是 source-specific 深读入口，不等于 Source Card、fresh review、reviewed artifact、临床建议、设备建议、疫苗建议、环境健康建议或模型准入。
+- `reference/human-infra-c2-longtail-ninth-batch-source-extraction-queue.json`：把 C2-LT-B9 的 24 个候选来源派生成 source-specific 深读任务，定义 exact claim、endpoint、population、uncertainty、transfer-boundary、downgrade 和 model-position 抽取槽位；它仍不等于本地复核、fresh review、reviewed artifacts、临床建议、设备建议、疫苗建议、环境健康建议或模型准入。
+- `reference/human-infra-c2-longtail-ninth-batch-source-extraction-register.json`：记录 C2-LT-B9 24/24 个来源的本地字段级抽取，覆盖肌骨、口腔、牙科可及、呼吸、免疫老化和野火烟雾/清洁空气路径；它显式阻塞 local review、fresh review、reviewed artifacts、模型准入、临床建议、牙科建议、康复建议、设备建议、疫苗建议和环境健康建议。
+- `reference/human-infra-c2-longtail-ninth-batch-local-review-register.json`：记录 C2-LT-B9 24/24 个来源抽取行的本地来源语境复核，确认非问题行只可进入 independent fresh review，IDSA 525 和 Medicaid 403 两个路线问题必须先 source-resolution/manual-route；它仍不等于 reviewed artifacts、Source Card 晋升完成、临床/牙科/设备/疫苗/环境健康建议或模型准入。
+- `reference/human-infra-c2-longtail-ninth-batch-source-resolution-register.json`：记录 C2-LT-B9 的 2 个 manual-route 问题行 source-resolution，准备 8 个 IDSA、PubMed、DOI、Medicaid canonical、redirect provenance、官方 PDF 和 EPSDT 候选路线；它只解除“没有候选路线”的阻塞，不等于 manual-route extraction、fresh review、reviewed artifacts、临床/牙科建议或模型准入。
+- `reference/human-infra-c2-longtail-ninth-batch-manual-fulltext-extraction-register.json`：记录 C2-LT-B9 8 个 source-resolution 候选的有界路线/全文语境抽取，4 行可进入 bounded fresh review，4 行继续 route-only 或 redirect-provenance 阻塞；它仍不等于 reviewed artifacts、临床/牙科/设备/疫苗/环境健康建议或模型准入。
+- `reference/human-infra-c2-longtail-ninth-batch-manual-fulltext-fresh-review-verdict-register.json`：记录 C2-LT-B9 8/8 个 manual/fulltext 行的 independent fresh review 判定，允许 4 个官方页/PDF/相关政策行进入 bounded reviewed artifact prep，保留 4 个 PubMed、DOI 或 redirect-provenance 阻塞行；它仍不创建 reviewed artifacts、临床/牙科/设备/疫苗/环境健康建议或模型准入。
+- `reference/human-infra-c2-longtail-ninth-batch-manual-fulltext-reviewed-card-artifact-register.json`：记录 C2-LT-B9 4 个 eligible manual/fulltext fresh-review rows 晋升出的 24 个有界 Source/变量/endpoint/uncertainty/transfer/downgrade artifacts，并保留 4 个 PubMed、DOI 或 redirect-provenance blocked rows；它只进入 bounded evidence 层，不打开校准模型、临床/牙科/设备/疫苗/环境健康建议或个体用途。
+- `reference/human-infra-c2-longtail-tenth-batch-promotion-queue.json`：从剩余 C2 长尾域中选择 12 个设备感染、居家透析、感觉输入、伤口边界、温度稳态、烧伤、糖尿病视网膜病变、照护者健康、窒息和神经退行性吞咽障碍域，并绑定 24 个 web-checked 候选来源；它只是 source-specific 深读入口，不等于 Source Card、fresh review、reviewed artifact、临床/设备/肾脏/视听/康复/伤口/急救/照护/营养/吞咽建议或模型准入。
+- `reference/human-infra-c2-longtail-tenth-batch-source-extraction-queue.json`：把 C2-LT-B10 的 24 个候选来源派生成 source-specific 深读任务，定义 exact claim、endpoint、population、uncertainty、transfer-boundary、downgrade 和 model-position 抽取槽位；它仍不等于来源已读完、本地复核、fresh review、reviewed artifacts、临床/设备/肾脏/视听/康复/伤口/急救/照护/营养/吞咽建议或模型准入。
+- `reference/human-infra-c2-longtail-tenth-batch-source-extraction-register.json`：记录 C2-LT-B10 24/24 个来源的本地字段级抽取，覆盖设备感染、居家透析、感觉输入、伤口/烧伤/温度边界、照护者、窒息和吞咽营养路径；它显式阻塞 local review、fresh review、reviewed artifacts、模型准入、临床/设备/肾脏/视听/康复/伤口/急救/照护/营养和吞咽建议。
+- `reference/human-infra-c2-longtail-tenth-batch-local-review-register.json`：记录 C2-LT-B10 24/24 个来源抽取行的本地结构复核，确认所有行只可进入 independent fresh review，0 个本地 source-resolution issue；它仍不等于 reviewed artifacts、Source Card 晋升完成、临床/设备/透析/视听/康复/伤口/急救/照护/营养/吞咽建议或模型准入。
+- `reference/human-infra-c2-longtail-tenth-batch-independent-fresh-review-protocol.json`：定义 C2-LT-B10 24/24 个本地复核行的 independent fresh review 字段、判定分类、晋升决策和 B10 专属禁止用途；它不存 verdict，不创建 reviewed artifacts，也不打开临床/设备/透析/视听/伤口/急救/照护/营养/吞咽建议或模型准入。
+- `reference/human-infra-c2-longtail-tenth-batch-independent-fresh-review-verdict-register.json`：记录 C2-LT-B10 24/24 个来源抽取行的 independent fresh review 判定，全部只允许进入 bounded reviewed artifact prep；它仍不打开临床/设备/透析/视听/伤口/急救/照护/营养/吞咽建议、干预排序、个体预测或模型准入。
+- `reference/human-infra-c2-longtail-tenth-batch-reviewed-card-artifact-register.json`：记录 C2-LT-B10 24 个 eligible fresh-review rows 晋升出的 144 个有界 Source/变量/endpoint/uncertainty/transfer/downgrade artifacts；它只进入 bounded evidence vocabulary，不打开校准模型、个体建议或临床用途。
 - `reference/human-infra-c2-longtail-sixth-batch-source-extraction-queue.json`：把 C2-LT-B6 的 24 个候选来源派生成 source-specific 深读任务，定义 exact claim、endpoint、population、uncertainty、transfer-boundary、downgrade 和 model-position 抽取槽位；它仍不等于本地复核、fresh review、reviewed artifacts 或模型准入。
 - `reference/human-infra-c2-longtail-sixth-batch-source-extraction-register.json`：记录 C2-LT-B6 24/24 个来源的本地字段级抽取，显式保留 guideline route、publisher/manual review、source-lineage、降级触发和模型阻塞边界；它仍不等于本地复核、fresh review、reviewed artifacts 或模型准入。
 - `reference/human-infra-c2-longtail-sixth-batch-local-review-register.json`：记录 C2-LT-B6 24/24 个来源抽取行的本地来源语境复核，确认非问题行只可进入 independent fresh review，7 个 guideline route、publisher/manual review 或 source-lineage 问题行必须先 source-resolution/manual fulltext；它仍不等于 reviewed artifacts、Source Card 晋升完成或模型准入。

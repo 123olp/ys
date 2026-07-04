@@ -1,0 +1,133 @@
+{
+  "schemaVersion": "human-infra.nhanes-public-lmf-public-release-gate-validation.v1",
+  "status": "pass",
+  "generatedAt": "2026-07-04T20:22:38.613323+00:00",
+  "sourceId": "nhanes-public-lmf-2017-2018",
+  "validationPath": "web/src/data/life-path-nhanes-public-lmf-public-release-gate-validation.json",
+  "inputs": [
+    {
+      "path": "web/src/data/life-path-nhanes-public-lmf-disclosure-review-execution-validation.json",
+      "status": "pass",
+      "sha256": "9918509fbcfc92b04b718169b8002367f86b65cc71c05eccf1737f260258b98c"
+    },
+    {
+      "path": "web/src/data/life-path-nhanes-public-lmf-public-web-data-no-real-values-validation.json",
+      "status": "PASS"
+    },
+    {
+      "path": "web/src/data/life-path-nhanes-public-lmf-local-run-evidence-manifest-validation.json",
+      "status": "PASS",
+      "sha256": "534b73e0b91bc79400d3b001ff463e40100eb3df8165eb3fa06993dd1a1981ac"
+    },
+    {
+      "path": "web/src/data/life-path-nhanes-public-lmf-weighted-domain-output-readiness-validation.json",
+      "status": "pass",
+      "sha256": "d09b76e652814a38af649a785e40a78773cd065d11d683985c970f57511a8c09"
+    },
+    {
+      "path": "web/src/data/life-path-nhanes-public-lmf-public-output-implementation-review-template-validation.json",
+      "status": "PASS",
+      "sha256": "61b3e1f62b50942c23248ef4b2b0af655cae67c22ae02c3818719a6a1eedb88e"
+    },
+    {
+      "path": "web/src/data/life-path-nhanes-public-lmf-public-output-implementation-review-execution-validation.json",
+      "status": "PASS",
+      "sha256": "237b875ce273bbead01a20c1bac532e0bc71e6c3b17cb05a76bbcf6e82316595"
+    }
+  ],
+  "currentDecision": {
+    "releaseGateEvaluated": true,
+    "releaseDecision": "blocked-pending-human-disclosure-review",
+    "publicReleaseAllowed": false,
+    "publicWeightedDomainOutputAllowed": false,
+    "realDesignBasedIntervalsAllowed": false,
+    "publicOutputImplementationAllowed": false,
+    "calibrationAllowed": false,
+    "individualPredictionAllowed": false,
+    "medicalAdviceAllowed": false
+  },
+  "gateSummary": {
+    "upstreamReadyGateCount": 12,
+    "upstreamBlockedGateCount": 2,
+    "requiredDisclosureSlotTotal": 15,
+    "completedDisclosureSlotTotal": 0,
+    "humanReviewedSlotTotal": 0,
+    "publicWebForbiddenKeyHits": 0,
+    "publicWebBoundaryIssues": 0,
+    "localRunCellTotal": 8,
+    "localManifestTrackedValuesOmitted": true,
+    "ignoredLocalRealValuesExist": true,
+    "publicImplementationReviewSlotTotal": 12,
+    "pendingPublicImplementationReviewSlotTotal": 12,
+    "completedPublicImplementationReviewSlotTotal": 0,
+    "publicImplementationReviewComplete": false,
+    "publicImplementationExecutionSlotTotal": 12,
+    "pendingPublicImplementationExecutionSlotTotal": 12,
+    "completedPublicImplementationExecutionSlotTotal": 0,
+    "publicImplementationExecutionComplete": false,
+    "publicWebDataClean": true
+  },
+  "releaseBlockers": [
+    {
+      "blockerId": "human-disclosure-review",
+      "status": "missing",
+      "required": true,
+      "evidenceNeeded": "All 15 disclosure review slots completed by a human reviewer."
+    },
+    {
+      "blockerId": "second-reviewer-signoff",
+      "status": "missing",
+      "required": true,
+      "evidenceNeeded": "Independent second reviewer signoff attached to the release record."
+    },
+    {
+      "blockerId": "reviewed-output-hash",
+      "status": "missing",
+      "required": true,
+      "evidenceNeeded": "Reviewed output artifact hash bound to a release decision."
+    },
+    {
+      "blockerId": "suppression-and-reliability-review",
+      "status": "missing",
+      "required": true,
+      "evidenceNeeded": "Suppression, domain DOF, effective sample, RSE and interval-width review."
+    },
+    {
+      "blockerId": "public-output-implementation-review",
+      "status": "missing",
+      "required": true,
+      "evidenceNeeded": "All 12 public-output implementation review execution slots completed after disclosure approval, with reviewed artifact binding, fresh no-real-values scan, static build review, rollback plan and second reviewer signoff."
+    }
+  ],
+  "allowedNextStates": [
+    "packet-attached-pending-human-review",
+    "cannot-evaluate"
+  ],
+  "forbiddenDirectTransitions": [
+    "release-approved",
+    "public-weighted-output-implemented",
+    "calibration-enabled",
+    "individual-prediction-enabled"
+  ],
+  "nonProofBoundary": {
+    "confirms": [
+      "tracked public Web data has no real weighted values or row-level values",
+      "the local weighted-domain output path remains ignored and redacted in tracked artifacts",
+      "the public-output implementation review template is present and still pending",
+      "the public-output implementation review execution register is present and still pending",
+      "the release gate is machine-readable and still blocks public release"
+    ],
+    "doesNotConfirm": [
+      "human disclosure review completion",
+      "second reviewer signoff",
+      "public output implementation review completion",
+      "public weighted-domain output permission",
+      "public design-based interval release",
+      "external validation",
+      "calibration",
+      "individual prediction",
+      "medical advice"
+    ]
+  },
+  "errors": []
+}

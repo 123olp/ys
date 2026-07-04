@@ -1,0 +1,251 @@
+{
+  "schemaVersion": "human-infra.nhanes-public-lmf-disclosure-output-envelope-test-cases.v1",
+  "sourceId": "nhanes-public-lmf-2017-2018",
+  "policyId": "nhanes-public-lmf-2017-2018-disclosure-output-envelope-policy",
+  "status": "synthetic-only-no-real-nhanes-output",
+  "currentBoundary": {
+    "containsRealNhanesData": false,
+    "containsSyntheticOnly": true,
+    "publicExportProofOnly": true,
+    "weightedDomainOutputImplemented": false,
+    "calibrationAllowed": false,
+    "individualPredictionAllowed": false,
+    "reason": "These cases test disclosure envelope allow/block behavior with synthetic cells only. They are not NHANES domain counts, mortality counts, rates, intervals or participant data."
+  },
+  "cases": [
+    {
+      "id": "synthetic-safe-weighted-domain-table",
+      "expectedDecision": "allow-export",
+      "why": "Synthetic aggregate-shaped output, no row-level data, no identifiers, no unweighted counts, no public AI upload, sufficient domain DOF and all cells at or above the local small-cell threshold.",
+      "output": {
+        "schemaVersion": "human-infra.synthetic-nhanes-disclosure-output.v1",
+        "sourceId": "nhanes-public-lmf-2017-2018",
+        "outputId": "synthetic-safe-weighted-domain-table",
+        "outputType": "synthetic_weighted_domain_rate_table",
+        "containsRowLevelData": false,
+        "containsIdentifiers": false,
+        "containsUnweightedCounts": false,
+        "publicExportRequested": true,
+        "publicAiUploadRequested": false,
+        "disclosureReviewStatus": "synthetic-envelope-only",
+        "cells": [
+          {
+            "id": "female_40_64_synthetic_rate",
+            "count": 20,
+            "suppressed": false,
+            "sensitivityTier": "aggregate-public-synthetic",
+            "domainDof": 15,
+            "effectiveSampleSizeClass": "synthetic-threshold-met",
+            "confidenceIntervalStatus": "synthetic-not-real-ci"
+          },
+          {
+            "id": "male_65_plus_synthetic_rate",
+            "count": 18,
+            "suppressed": false,
+            "sensitivityTier": "aggregate-public-synthetic",
+            "domainDof": 15,
+            "effectiveSampleSizeClass": "synthetic-threshold-met",
+            "confidenceIntervalStatus": "synthetic-not-real-ci"
+          }
+        ]
+      }
+    },
+    {
+      "id": "synthetic-small-cell-unsuppressed",
+      "expectedDecision": "block-export",
+      "why": "Public export contains an unsuppressed synthetic count below the local n < 5 threshold.",
+      "output": {
+        "schemaVersion": "human-infra.synthetic-nhanes-disclosure-output.v1",
+        "sourceId": "nhanes-public-lmf-2017-2018",
+        "outputId": "synthetic-small-cell-unsuppressed",
+        "outputType": "synthetic_weighted_domain_rate_table",
+        "containsRowLevelData": false,
+        "containsIdentifiers": false,
+        "containsUnweightedCounts": false,
+        "publicExportRequested": true,
+        "publicAiUploadRequested": false,
+        "disclosureReviewStatus": "synthetic-envelope-only",
+        "cells": [
+          {
+            "id": "small_cell_candidate",
+            "count": 3,
+            "suppressed": false,
+            "sensitivityTier": "small-cell-synthetic",
+            "domainDof": 15,
+            "effectiveSampleSizeClass": "synthetic-threshold-not-met",
+            "confidenceIntervalStatus": "synthetic-not-real-ci"
+          }
+        ]
+      }
+    },
+    {
+      "id": "synthetic-small-cell-suppressed",
+      "expectedDecision": "allow-export",
+      "why": "Synthetic cell below threshold is explicitly suppressed before public export.",
+      "output": {
+        "schemaVersion": "human-infra.synthetic-nhanes-disclosure-output.v1",
+        "sourceId": "nhanes-public-lmf-2017-2018",
+        "outputId": "synthetic-small-cell-suppressed",
+        "outputType": "synthetic_disclosure_control_report",
+        "containsRowLevelData": false,
+        "containsIdentifiers": false,
+        "containsUnweightedCounts": false,
+        "publicExportRequested": true,
+        "publicAiUploadRequested": false,
+        "disclosureReviewStatus": "synthetic-envelope-only",
+        "cells": [
+          {
+            "id": "small_cell_suppressed_candidate",
+            "count": 3,
+            "suppressed": true,
+            "sensitivityTier": "small-cell-synthetic",
+            "domainDof": 15,
+            "effectiveSampleSizeClass": "synthetic-threshold-not-met",
+            "confidenceIntervalStatus": "suppressed"
+          }
+        ]
+      }
+    },
+    {
+      "id": "synthetic-low-dof-unsuppressed",
+      "expectedDecision": "block-export",
+      "why": "Synthetic public cell has domain DOF below 8 and is not suppressed.",
+      "output": {
+        "schemaVersion": "human-infra.synthetic-nhanes-disclosure-output.v1",
+        "sourceId": "nhanes-public-lmf-2017-2018",
+        "outputId": "synthetic-low-dof-unsuppressed",
+        "outputType": "synthetic_design_based_interval_table",
+        "containsRowLevelData": false,
+        "containsIdentifiers": false,
+        "containsUnweightedCounts": false,
+        "publicExportRequested": true,
+        "publicAiUploadRequested": false,
+        "disclosureReviewStatus": "synthetic-envelope-only",
+        "cells": [
+          {
+            "id": "low_dof_candidate",
+            "count": 30,
+            "suppressed": false,
+            "sensitivityTier": "statistical-review-synthetic",
+            "domainDof": 7,
+            "effectiveSampleSizeClass": "publication-review-required",
+            "confidenceIntervalStatus": "synthetic-not-real-ci"
+          }
+        ]
+      }
+    },
+    {
+      "id": "synthetic-row-level-leak",
+      "expectedDecision": "block-export",
+      "why": "Output envelope declares row-level data.",
+      "output": {
+        "schemaVersion": "human-infra.synthetic-nhanes-disclosure-output.v1",
+        "sourceId": "nhanes-public-lmf-2017-2018",
+        "outputId": "synthetic-row-level-leak",
+        "outputType": "synthetic_weighted_domain_rate_table",
+        "containsRowLevelData": true,
+        "containsIdentifiers": false,
+        "containsUnweightedCounts": false,
+        "publicExportRequested": true,
+        "publicAiUploadRequested": false,
+        "disclosureReviewStatus": "synthetic-envelope-only",
+        "cells": [
+          {
+            "id": "row_level_like_cell",
+            "count": 12,
+            "suppressed": false,
+            "sensitivityTier": "unsafe-synthetic",
+            "domainDof": 15,
+            "effectiveSampleSizeClass": "synthetic-threshold-met",
+            "confidenceIntervalStatus": "synthetic-not-real-ci"
+          }
+        ]
+      }
+    },
+    {
+      "id": "synthetic-identifier-key-leak",
+      "expectedDecision": "block-export",
+      "why": "Output envelope contains an identifier-like prohibited key.",
+      "output": {
+        "schemaVersion": "human-infra.synthetic-nhanes-disclosure-output.v1",
+        "sourceId": "nhanes-public-lmf-2017-2018",
+        "outputId": "synthetic-identifier-key-leak",
+        "outputType": "synthetic_weighted_domain_rate_table",
+        "containsRowLevelData": false,
+        "containsIdentifiers": true,
+        "containsUnweightedCounts": false,
+        "publicExportRequested": true,
+        "publicAiUploadRequested": false,
+        "disclosureReviewStatus": "synthetic-envelope-only",
+        "SEQN": "synthetic-prohibited-key",
+        "cells": [
+          {
+            "id": "identifier_leak_candidate",
+            "count": 20,
+            "suppressed": false,
+            "sensitivityTier": "unsafe-synthetic",
+            "domainDof": 15,
+            "effectiveSampleSizeClass": "synthetic-threshold-met",
+            "confidenceIntervalStatus": "synthetic-not-real-ci"
+          }
+        ]
+      }
+    },
+    {
+      "id": "synthetic-public-ai-upload",
+      "expectedDecision": "block-export",
+      "why": "Policy blocks public AI upload requests.",
+      "output": {
+        "schemaVersion": "human-infra.synthetic-nhanes-disclosure-output.v1",
+        "sourceId": "nhanes-public-lmf-2017-2018",
+        "outputId": "synthetic-public-ai-upload",
+        "outputType": "synthetic_effective_sample_size_review",
+        "containsRowLevelData": false,
+        "containsIdentifiers": false,
+        "containsUnweightedCounts": false,
+        "publicExportRequested": true,
+        "publicAiUploadRequested": true,
+        "disclosureReviewStatus": "synthetic-envelope-only",
+        "cells": [
+          {
+            "id": "ai_upload_candidate",
+            "count": 20,
+            "suppressed": false,
+            "sensitivityTier": "aggregate-public-synthetic",
+            "domainDof": 15,
+            "effectiveSampleSizeClass": "synthetic-threshold-met",
+            "confidenceIntervalStatus": "synthetic-not-real-ci"
+          }
+        ]
+      }
+    },
+    {
+      "id": "synthetic-forbidden-real-output-type",
+      "expectedDecision": "block-export",
+      "why": "Policy blocks real public weighted-domain output types until a separate implementation and disclosure review gate exists.",
+      "output": {
+        "schemaVersion": "human-infra.synthetic-nhanes-disclosure-output.v1",
+        "sourceId": "nhanes-public-lmf-2017-2018",
+        "outputId": "synthetic-forbidden-real-output-type",
+        "outputType": "real_public_weighted_domain_rates",
+        "containsRowLevelData": false,
+        "containsIdentifiers": false,
+        "containsUnweightedCounts": false,
+        "publicExportRequested": true,
+        "publicAiUploadRequested": false,
+        "disclosureReviewStatus": "synthetic-envelope-only",
+        "cells": [
+          {
+            "id": "forbidden_real_output_placeholder",
+            "count": 99,
+            "suppressed": false,
+            "sensitivityTier": "forbidden-output-synthetic",
+            "domainDof": 15,
+            "effectiveSampleSizeClass": "synthetic-threshold-met",
+            "confidenceIntervalStatus": "synthetic-not-real-ci"
+          }
+        ]
+      }
+    }
+  ]
+}

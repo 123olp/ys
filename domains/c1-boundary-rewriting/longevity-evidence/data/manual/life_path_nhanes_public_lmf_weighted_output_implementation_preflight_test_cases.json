@@ -1,0 +1,350 @@
+{
+  "schemaVersion": "human-infra.nhanes-public-lmf-weighted-output-implementation-preflight-test-cases.v1",
+  "sourceId": "nhanes-public-lmf-2017-2018",
+  "policyId": "life-path-nhanes-public-lmf-weighted-output-implementation-preflight",
+  "status": "synthetic-only-no-real-nhanes-output",
+  "currentBoundary": {
+    "containsRealNhanesData": false,
+    "containsSyntheticOnly": true,
+    "weightedDomainOutputImplemented": false,
+    "realWeightedRatesComputed": false,
+    "realDesignBasedIntervalsComputed": false,
+    "calibrationAllowed": false,
+    "individualPredictionAllowed": false
+  },
+  "cases": [
+    {
+      "id": "synthetic-complete-preflight-shape",
+      "expectedDecision": "allow-preflight-shape",
+      "output": {
+        "schemaVersion": "synthetic.nhanes.weighted-output-preflight.v1",
+        "sourceId": "nhanes-public-lmf-2017-2018",
+        "outputId": "synthetic-complete-preflight-shape",
+        "outputType": "synthetic_weighted_output_implementation_preflight",
+        "implementationStatus": "synthetic-preflight-only",
+        "containsRealNhanesData": false,
+        "containsRowLevelData": false,
+        "containsIdentifiers": false,
+        "containsRealWeightedRates": false,
+        "containsRealDesignBasedIntervals": false,
+        "containsUnweightedCounts": false,
+        "publicExportRequested": false,
+        "publicAiUploadRequested": false,
+        "disclosureReviewStatus": "not-real-output-preflight",
+        "publicationReliabilityStatus": "not-real-output-preflight",
+        "estimatorPlan": {
+          "estimatorBackend": "R survey",
+          "designFunction": "svydesign",
+          "domainSubsettingFunction": "survey::subset",
+          "varianceMethod": "Taylor linearization",
+          "weightVariable": "WTMEC2YR",
+          "strataVariable": "SDMVSTRA",
+          "psuVariable": "SDMVPSU",
+          "domainIndicatorTiming": "after design object creation",
+          "rawRowsPersisted": false,
+          "rowDropBeforeDesign": false,
+          "publicDisclosureReviewRequired": true,
+          "effectiveSampleCiPublicationReviewRequired": true
+        },
+        "cells": [
+          {
+            "id": "cell-a",
+            "syntheticDomainLabel": "sex-age-band-a",
+            "syntheticMeasureLabel": "mortality-rate-placeholder",
+            "suppressionPolicyApplied": true,
+            "domainDofReviewRequired": true,
+            "effectiveSampleReviewRequired": true,
+            "confidenceIntervalReviewRequired": true,
+            "implementationDecision": "preflight-pass-shape-only"
+          }
+        ]
+      }
+    },
+    {
+      "id": "synthetic-estimator-pipeline-contract",
+      "expectedDecision": "allow-preflight-shape",
+      "output": {
+        "schemaVersion": "synthetic.nhanes.weighted-output-preflight.v1",
+        "sourceId": "nhanes-public-lmf-2017-2018",
+        "outputId": "synthetic-estimator-pipeline-contract",
+        "outputType": "synthetic_estimator_pipeline_contract",
+        "implementationStatus": "synthetic-preflight-only",
+        "containsRealNhanesData": false,
+        "containsRowLevelData": false,
+        "containsIdentifiers": false,
+        "containsRealWeightedRates": false,
+        "containsRealDesignBasedIntervals": false,
+        "containsUnweightedCounts": false,
+        "publicExportRequested": true,
+        "publicAiUploadRequested": false,
+        "disclosureReviewStatus": "not-real-output-preflight",
+        "publicationReliabilityStatus": "not-real-output-preflight",
+        "estimatorPlan": {
+          "estimatorBackend": "R survey",
+          "designFunction": "svydesign",
+          "domainSubsettingFunction": "survey::subset",
+          "varianceMethod": "Taylor linearization",
+          "weightVariable": "WTMEC2YR",
+          "strataVariable": "SDMVSTRA",
+          "psuVariable": "SDMVPSU",
+          "domainIndicatorTiming": "after design object creation",
+          "rawRowsPersisted": false,
+          "rowDropBeforeDesign": false,
+          "publicDisclosureReviewRequired": true,
+          "effectiveSampleCiPublicationReviewRequired": true
+        },
+        "cells": [
+          {
+            "id": "cell-b",
+            "syntheticDomainLabel": "sex-age-band-b",
+            "syntheticMeasureLabel": "design-interval-placeholder",
+            "suppressionPolicyApplied": true,
+            "domainDofReviewRequired": true,
+            "effectiveSampleReviewRequired": true,
+            "confidenceIntervalReviewRequired": true,
+            "implementationDecision": "preflight-pass-shape-only"
+          }
+        ]
+      }
+    },
+    {
+      "id": "block-row-level-data",
+      "expectedDecision": "block-preflight-shape",
+      "output": {
+        "schemaVersion": "synthetic.nhanes.weighted-output-preflight.v1",
+        "sourceId": "nhanes-public-lmf-2017-2018",
+        "outputId": "block-row-level-data",
+        "outputType": "synthetic_weighted_output_implementation_preflight",
+        "implementationStatus": "synthetic-preflight-only",
+        "containsRealNhanesData": false,
+        "containsRowLevelData": true,
+        "containsIdentifiers": false,
+        "containsRealWeightedRates": false,
+        "containsRealDesignBasedIntervals": false,
+        "containsUnweightedCounts": false,
+        "publicExportRequested": false,
+        "publicAiUploadRequested": false,
+        "disclosureReviewStatus": "not-real-output-preflight",
+        "publicationReliabilityStatus": "not-real-output-preflight",
+        "estimatorPlan": {
+          "estimatorBackend": "R survey",
+          "designFunction": "svydesign",
+          "domainSubsettingFunction": "survey::subset",
+          "varianceMethod": "Taylor linearization",
+          "weightVariable": "WTMEC2YR",
+          "strataVariable": "SDMVSTRA",
+          "psuVariable": "SDMVPSU",
+          "domainIndicatorTiming": "after design object creation",
+          "rawRowsPersisted": false,
+          "rowDropBeforeDesign": false,
+          "publicDisclosureReviewRequired": true,
+          "effectiveSampleCiPublicationReviewRequired": true
+        },
+        "cells": []
+      }
+    },
+    {
+      "id": "block-row-drop-before-design",
+      "expectedDecision": "block-preflight-shape",
+      "output": {
+        "schemaVersion": "synthetic.nhanes.weighted-output-preflight.v1",
+        "sourceId": "nhanes-public-lmf-2017-2018",
+        "outputId": "block-row-drop-before-design",
+        "outputType": "synthetic_weighted_output_implementation_preflight",
+        "implementationStatus": "synthetic-preflight-only",
+        "containsRealNhanesData": false,
+        "containsRowLevelData": false,
+        "containsIdentifiers": false,
+        "containsRealWeightedRates": false,
+        "containsRealDesignBasedIntervals": false,
+        "containsUnweightedCounts": false,
+        "publicExportRequested": false,
+        "publicAiUploadRequested": false,
+        "disclosureReviewStatus": "not-real-output-preflight",
+        "publicationReliabilityStatus": "not-real-output-preflight",
+        "estimatorPlan": {
+          "estimatorBackend": "R survey",
+          "designFunction": "svydesign",
+          "domainSubsettingFunction": "row-filter",
+          "varianceMethod": "Taylor linearization",
+          "weightVariable": "WTMEC2YR",
+          "strataVariable": "SDMVSTRA",
+          "psuVariable": "SDMVPSU",
+          "domainIndicatorTiming": "before design object creation",
+          "rawRowsPersisted": false,
+          "rowDropBeforeDesign": true,
+          "publicDisclosureReviewRequired": true,
+          "effectiveSampleCiPublicationReviewRequired": true
+        },
+        "cells": []
+      }
+    },
+    {
+      "id": "block-real-weighted-rate",
+      "expectedDecision": "block-preflight-shape",
+      "output": {
+        "schemaVersion": "synthetic.nhanes.weighted-output-preflight.v1",
+        "sourceId": "nhanes-public-lmf-2017-2018",
+        "outputId": "block-real-weighted-rate",
+        "outputType": "synthetic_weighted_output_implementation_preflight",
+        "implementationStatus": "synthetic-preflight-only",
+        "containsRealNhanesData": false,
+        "containsRowLevelData": false,
+        "containsIdentifiers": false,
+        "containsRealWeightedRates": true,
+        "containsRealDesignBasedIntervals": false,
+        "containsUnweightedCounts": false,
+        "publicExportRequested": false,
+        "publicAiUploadRequested": false,
+        "disclosureReviewStatus": "not-real-output-preflight",
+        "publicationReliabilityStatus": "not-real-output-preflight",
+        "estimatorPlan": {
+          "estimatorBackend": "R survey",
+          "designFunction": "svydesign",
+          "domainSubsettingFunction": "survey::subset",
+          "varianceMethod": "Taylor linearization",
+          "weightVariable": "WTMEC2YR",
+          "strataVariable": "SDMVSTRA",
+          "psuVariable": "SDMVPSU",
+          "domainIndicatorTiming": "after design object creation",
+          "rawRowsPersisted": false,
+          "rowDropBeforeDesign": false,
+          "publicDisclosureReviewRequired": true,
+          "effectiveSampleCiPublicationReviewRequired": true
+        },
+        "cells": [
+          {
+            "id": "cell-c",
+            "syntheticDomainLabel": "sex-age-band-c",
+            "syntheticMeasureLabel": "real-output-claim",
+            "suppressionPolicyApplied": true,
+            "domainDofReviewRequired": true,
+            "effectiveSampleReviewRequired": true,
+            "confidenceIntervalReviewRequired": true,
+            "implementationDecision": "preflight-pass-shape-only"
+          }
+        ]
+      }
+    },
+    {
+      "id": "block-public-ai-upload",
+      "expectedDecision": "block-preflight-shape",
+      "output": {
+        "schemaVersion": "synthetic.nhanes.weighted-output-preflight.v1",
+        "sourceId": "nhanes-public-lmf-2017-2018",
+        "outputId": "block-public-ai-upload",
+        "outputType": "synthetic_estimator_pipeline_contract",
+        "implementationStatus": "synthetic-preflight-only",
+        "containsRealNhanesData": false,
+        "containsRowLevelData": false,
+        "containsIdentifiers": false,
+        "containsRealWeightedRates": false,
+        "containsRealDesignBasedIntervals": false,
+        "containsUnweightedCounts": false,
+        "publicExportRequested": true,
+        "publicAiUploadRequested": true,
+        "disclosureReviewStatus": "not-real-output-preflight",
+        "publicationReliabilityStatus": "not-real-output-preflight",
+        "estimatorPlan": {
+          "estimatorBackend": "R survey",
+          "designFunction": "svydesign",
+          "domainSubsettingFunction": "survey::subset",
+          "varianceMethod": "Taylor linearization",
+          "weightVariable": "WTMEC2YR",
+          "strataVariable": "SDMVSTRA",
+          "psuVariable": "SDMVPSU",
+          "domainIndicatorTiming": "after design object creation",
+          "rawRowsPersisted": false,
+          "rowDropBeforeDesign": false,
+          "publicDisclosureReviewRequired": true,
+          "effectiveSampleCiPublicationReviewRequired": true
+        },
+        "cells": []
+      }
+    },
+    {
+      "id": "block-unweighted-count-key",
+      "expectedDecision": "block-preflight-shape",
+      "output": {
+        "schemaVersion": "synthetic.nhanes.weighted-output-preflight.v1",
+        "sourceId": "nhanes-public-lmf-2017-2018",
+        "outputId": "block-unweighted-count-key",
+        "outputType": "synthetic_weighted_output_implementation_preflight",
+        "implementationStatus": "synthetic-preflight-only",
+        "containsRealNhanesData": false,
+        "containsRowLevelData": false,
+        "containsIdentifiers": false,
+        "containsRealWeightedRates": false,
+        "containsRealDesignBasedIntervals": false,
+        "containsUnweightedCounts": false,
+        "publicExportRequested": false,
+        "publicAiUploadRequested": false,
+        "disclosureReviewStatus": "not-real-output-preflight",
+        "publicationReliabilityStatus": "not-real-output-preflight",
+        "estimatorPlan": {
+          "estimatorBackend": "R survey",
+          "designFunction": "svydesign",
+          "domainSubsettingFunction": "survey::subset",
+          "varianceMethod": "Taylor linearization",
+          "weightVariable": "WTMEC2YR",
+          "strataVariable": "SDMVSTRA",
+          "psuVariable": "SDMVPSU",
+          "domainIndicatorTiming": "after design object creation",
+          "rawRowsPersisted": false,
+          "rowDropBeforeDesign": false,
+          "publicDisclosureReviewRequired": true,
+          "effectiveSampleCiPublicationReviewRequired": true
+        },
+        "cells": [
+          {
+            "id": "cell-d",
+            "syntheticDomainLabel": "sex-age-band-d",
+            "syntheticMeasureLabel": "bad-count",
+            "recordCount": 11,
+            "suppressionPolicyApplied": true,
+            "domainDofReviewRequired": true,
+            "effectiveSampleReviewRequired": true,
+            "confidenceIntervalReviewRequired": true,
+            "implementationDecision": "preflight-pass-shape-only"
+          }
+        ]
+      }
+    },
+    {
+      "id": "block-individual-prediction-type",
+      "expectedDecision": "block-preflight-shape",
+      "output": {
+        "schemaVersion": "synthetic.nhanes.weighted-output-preflight.v1",
+        "sourceId": "nhanes-public-lmf-2017-2018",
+        "outputId": "block-individual-prediction-type",
+        "outputType": "individual_risk_score",
+        "implementationStatus": "synthetic-preflight-only",
+        "containsRealNhanesData": false,
+        "containsRowLevelData": false,
+        "containsIdentifiers": false,
+        "containsRealWeightedRates": false,
+        "containsRealDesignBasedIntervals": false,
+        "containsUnweightedCounts": false,
+        "publicExportRequested": false,
+        "publicAiUploadRequested": false,
+        "disclosureReviewStatus": "not-real-output-preflight",
+        "publicationReliabilityStatus": "not-real-output-preflight",
+        "estimatorPlan": {
+          "estimatorBackend": "R survey",
+          "designFunction": "svydesign",
+          "domainSubsettingFunction": "survey::subset",
+          "varianceMethod": "Taylor linearization",
+          "weightVariable": "WTMEC2YR",
+          "strataVariable": "SDMVSTRA",
+          "psuVariable": "SDMVPSU",
+          "domainIndicatorTiming": "after design object creation",
+          "rawRowsPersisted": false,
+          "rowDropBeforeDesign": false,
+          "publicDisclosureReviewRequired": true,
+          "effectiveSampleCiPublicationReviewRequired": true
+        },
+        "cells": []
+      }
+    }
+  ]
+}

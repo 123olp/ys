@@ -7,7 +7,6 @@ import argparse
 import copy
 import hashlib
 import json
-from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
@@ -34,6 +33,7 @@ DEFAULT_INPUT = (
 )
 DEFAULT_MODEL = REPO_ROOT / "web" / "src" / "data" / "life-path-toy-model.json"
 DEFAULT_OUTPUT = REPO_ROOT / "web" / "src" / "data" / "life-path-sensitivity-analysis.json"
+GENERATED_AT = "2026-07-04T00:00:00+00:00"
 
 
 PERTURBATION_PLAN = [
@@ -309,7 +309,7 @@ def build_sensitivity_output(config: dict[str, Any], input_path: Path, model_pat
     attach_deltas(rows, nominal_map)
     return {
         "schemaVersion": "human-infra.life-path-sensitivity.v1",
-        "generatedAt": datetime.now(timezone.utc).isoformat(),
+        "generatedAt": GENERATED_AT,
         "source": {
             "path": str(input_path.relative_to(REPO_ROOT)),
             "sha256": sha256_file(input_path),

@@ -1,0 +1,108 @@
+{
+  "schemaVersion": "human-infra.validation-report.v1",
+  "validationId": "life-path-nhats-route-value-crosswalk-assembly-validation",
+  "generatedAt": "2026-07-04T20:22:39.463452+00:00",
+  "overallStatus": "PASS",
+  "summary": {
+    "pass": 12,
+    "fail": 0
+  },
+  "protocol": {
+    "path": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_route_value_crosswalk_assembly_protocol.json",
+    "sha256": "4208789a51d29d9b8155811ba98d193e841df121d9e2a244a02bd094bd4562c7",
+    "protocolId": "nhats-r13-r14-route-value-crosswalk-assembly-protocol-2026-07-04",
+    "status": "protocol-only-crosswalk-not-assembled"
+  },
+  "upstreams": [
+    {
+      "path": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_capture_packet_review_execution_register.json",
+      "sha256": "adefba18ccad157301d4c8879a38b48a451a1b2edf5b70e3ca2ccb548a04e3c3",
+      "id": "nhats-r13-r14-colectica-capture-packet-review-execution-2026-07-04"
+    },
+    {
+      "path": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_capture_task_register.json",
+      "sha256": "57764c73e38ecd6d3303d36a172d6b794671d34c3dcf1718e07fbe76c54720e0",
+      "id": "nhats-r13-r14-colectica-capture-task-register-2026-07-03"
+    },
+    {
+      "path": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_route_classifier_readiness.json",
+      "sha256": "f0c0224317c9ee20e8de56dcddeadba85ae24d67b736782ba22de90e83109296",
+      "id": "nhats-r13-r14-route-classifier-readiness-2026-07-03"
+    }
+  ],
+  "assemblySummary": {
+    "assemblyUnitCount": 9,
+    "routeFieldFamiliesCovered": 9,
+    "reviewedCapturePacketsAttached": 0,
+    "routeValueRowsConfirmed": 0,
+    "variableSpecificMissingCodeMapsConfirmed": 0,
+    "secondReviewerSignoffs": 0,
+    "routeClassifierAdmissions": 0,
+    "realExtractionAdmissions": 0,
+    "calibrationAdmissions": 0,
+    "individualPredictionAdmissions": 0
+  },
+  "checks": [
+    {
+      "id": "schema-version",
+      "status": "PASS",
+      "detail": "schemaVersion='human-infra.life-path-nhats-route-value-crosswalk-assembly-protocol.v1'"
+    },
+    {
+      "id": "protocol-identity-and-upstreams",
+      "status": "PASS",
+      "detail": "protocol must bind NHATS, capture review execution, capture task register and route-classifier readiness"
+    },
+    {
+      "id": "decision-boundary",
+      "status": "PASS",
+      "detail": "only the assembly protocol and sensitive death-field exclusion may be true; every data/model action must remain false"
+    },
+    {
+      "id": "source-bindings",
+      "status": "PASS",
+      "detail": "source bindings must include the five upstream NHATS route/capture/value-label records"
+    },
+    {
+      "id": "assembly-units-cover-route-fields",
+      "status": "PASS",
+      "detail": "missing=[]"
+    },
+    {
+      "id": "death-sensitive-field-exclusion",
+      "status": "PASS",
+      "detail": "death/decedent unit must explicitly exclude sensitive month/year timing fields"
+    },
+    {
+      "id": "summary-counts-stay-blocked",
+      "status": "PASS",
+      "detail": "summary must keep reviewed packets, rows, maps, signoffs and all admissions at zero"
+    },
+    {
+      "id": "blocked-until-evidence",
+      "status": "PASS",
+      "detail": "blockedUntil must require packets, labels, crosswalk rows, variable-specific missing-code maps and second review"
+    },
+    {
+      "id": "prohibited-actions",
+      "status": "PASS",
+      "detail": "protocol must prohibit inference from names, negative-code overuse, credential/raw storage, sensitive death fields and model actions"
+    },
+    {
+      "id": "no-prohibited-key-shapes",
+      "status": "PASS",
+      "detail": "prohibited_keys_found=[]"
+    },
+    {
+      "id": "inherits-empty-capture-review",
+      "status": "PASS",
+      "detail": "upstream capture review execution must still have zero packets and zero closed slots"
+    },
+    {
+      "id": "downstream-route-classifier-stays-blocked",
+      "status": "PASS",
+      "detail": "downstream route-classifier readiness must remain blocked by crosswalk and missing-code map gates"
+    }
+  ],
+  "boundary": "This validation proves only that a blocked route-value crosswalk assembly protocol exists, covers the nine route-field families, and keeps all rows, maps, signoffs, classifier, extraction, calibration and individual prediction admissions at zero. It does not prove Colectica login, reviewed packets, value labels, route values, real missing-code maps, route classifier readiness or model validity."
+}

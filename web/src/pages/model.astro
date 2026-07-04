@@ -3,6 +3,10 @@ import ResearchLayout from "../layouts/ResearchLayout.astro";
 import SectionHeader from "../components/SectionHeader.astro";
 import lifePathToyModel from "../data/life-path-toy-model.json";
 import lifePathSensitivity from "../data/life-path-sensitivity-analysis.json";
+import lifePathToyModelAudit from "../data/life-path-toy-model-audit.json";
+import l4EvidencePacketValidator from "../data/life-path-l4-evidence-packet-validator-validation.json";
+import l4ValidationCalibrationExecution from "../data/life-path-l4-validation-calibration-report-execution-validation.json";
+import nhatsRouteClassifierDryRun from "../data/life-path-nhats-route-classifier-synthetic-dry-run-validation.json";
 
 const defaultScenario = lifePathToyModel.scenarios.find((scenario) => scenario.id === "convergence") ?? lifePathToyModel.scenarios[0];
 const defaultControls = defaultScenario.controlValues;
@@ -12,6 +16,11 @@ const topSensitivitySummaries = [...sensitivitySummaries]
   .sort((left, right) => right.maxEffectiveTimeDelta - left.maxEffectiveTimeDelta)
   .slice(0, 3);
 const sensitivityResultCount = lifePathSensitivity.sanityChecks.resultCount;
+const auditSummary = lifePathToyModelAudit.summary;
+const l4ExecutionSummary = l4ValidationCalibrationExecution.summary;
+const l4EvidenceDecision = l4EvidencePacketValidator.currentDecision;
+const nhatsDryRunSummary = nhatsRouteClassifierDryRun.summary;
+const nhatsDryRunDecision = nhatsRouteClassifierDryRun.currentDecision;
 ---
 <ResearchLayout title="预测模型" description="Human Infra life-path prediction model visualization" section="Life-Path Model">
   <div class="page" data-model-lab>
@@ -170,6 +179,31 @@ const sensitivityResultCount = lifePathSensitivity.sanityChecks.resultCount;
               ，有效时间最大扰动 {summary.maxEffectiveTimeDelta.toFixed(3)} 年
             </p>
           ))}
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <SectionHeader
+        kicker="Admission Gates"
+        title="当前模型准入状态：Q3/L3 可展示，L4 仍被阻塞"
+        lead="页面中的曲线和指标来自合成 toy model。审计链已经能验证模型外壳、敏感性分析、证据包预检和 NHATS 合成路由，但真实队列、真实校准、公开加权输出和个体用途仍没有打开。"
+      />
+      <div class="dense-grid">
+        <article class="paper-panel">
+          <h3>总审计</h3>
+          <p><strong>{lifePathToyModelAudit.overallStatus}</strong>：{auditSummary.pass} 项通过，{auditSummary.fail} 项失败。</p>
+          <p>覆盖模型卡、曲线范围、合成敏感性、科研标准、域到模型桥接、NHANES/NHATS 控制面和 L4 阻塞状态。</p>
+        </article>
+        <article class="paper-panel">
+          <h3>NHATS 路由 dry-run</h3>
+          <p><strong>{nhatsDryRunSummary.pass}/{nhatsDryRunSummary.caseCount} 合成用例通过</strong>，其中 {nhatsDryRunSummary.allowedCount} 个允许、{nhatsDryRunSummary.blockedCount} 个阻塞。</p>
+          <p>当前判定：真实分类器 {nhatsDryRunDecision.routeClassifierReady ? "已开放" : "未开放"}，G4/L4 模型准入 {nhatsDryRunDecision.modelG4}。</p>
+        </article>
+        <article class="paper-panel">
+          <h3>L4 证据与校准</h3>
+          <p><strong>{l4ExecutionSummary.downstreamDecision}</strong>：{l4ExecutionSummary.pendingRealSlotCount} 个真实槽位待关闭，真实报告包 {l4ExecutionSummary.realReportPacketCount} 个，人审签名 {l4ExecutionSummary.humanReviewedPacketCount} 个。</p>
+          <p>证据包预检只验证拒绝语义：{l4EvidenceDecision.rejectedCount} 个 rejected，{l4EvidenceDecision.cannotEvaluateCount} 个 cannot-evaluate，{l4EvidenceDecision.reviewableButStillBlockedCount} 个 reviewable-but-still-blocked。</p>
         </article>
       </div>
     </section>

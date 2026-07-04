@@ -1,0 +1,288 @@
+{
+  "schemaVersion": "human-infra.nhanes-public-lmf-effective-sample-ci-publication-test-cases.v1",
+  "sourceId": "nhanes-public-lmf-2017-2018",
+  "policyId": "nhanes-public-lmf-2017-2018-effective-sample-ci-publication-policy",
+  "status": "synthetic-only-no-real-nhanes-output",
+  "currentBoundary": {
+    "containsRealNhanesData": false,
+    "containsSyntheticOnly": true,
+    "publicExportProofOnly": true,
+    "weightedDomainOutputImplemented": false,
+    "realConfidenceIntervalsComputed": false,
+    "calibrationAllowed": false,
+    "individualPredictionAllowed": false,
+    "reason": "These cases test publication reliability allow/block behavior with synthetic cells only. They are not NHANES domain counts, mortality counts, rates, intervals, participant records or clearance decisions."
+  },
+  "cases": [
+    {
+      "id": "synthetic-publication-ready-cell",
+      "expectedDecision": "allow-publication-shape",
+      "why": "Synthetic aggregate-shaped publication review with threshold-met denominator and effective sample classes, acceptable RSE, acceptable CI width and sufficient domain DOF.",
+      "output": {
+        "schemaVersion": "human-infra.synthetic-nhanes-publication-criteria-output.v1",
+        "sourceId": "nhanes-public-lmf-2017-2018",
+        "outputId": "synthetic-publication-ready-cell",
+        "outputType": "synthetic_effective_sample_ci_publication_review",
+        "containsRealNhanesData": false,
+        "containsRowLevelData": false,
+        "containsIdentifiers": false,
+        "containsRealConfidenceIntervals": false,
+        "publicExportRequested": true,
+        "publicAiUploadRequested": false,
+        "publicationReviewStatus": "synthetic-publication-criteria-only",
+        "cells": [
+          {
+            "id": "female_40_64_publication_shape",
+            "suppressed": false,
+            "syntheticDenominatorClass": "threshold-met",
+            "syntheticEffectiveSampleSizeClass": "threshold-met",
+            "relativeStandardErrorClass": "acceptable",
+            "confidenceIntervalWidthClass": "acceptable",
+            "domainDof": 15,
+            "publicationDecision": "presentable-synthetic"
+          }
+        ]
+      }
+    },
+    {
+      "id": "synthetic-low-effective-sample-unsuppressed",
+      "expectedDecision": "block-publication-shape",
+      "why": "Unsuppressed public cell fails the synthetic effective sample size class.",
+      "output": {
+        "schemaVersion": "human-infra.synthetic-nhanes-publication-criteria-output.v1",
+        "sourceId": "nhanes-public-lmf-2017-2018",
+        "outputId": "synthetic-low-effective-sample-unsuppressed",
+        "outputType": "synthetic_effective_sample_ci_publication_review",
+        "containsRealNhanesData": false,
+        "containsRowLevelData": false,
+        "containsIdentifiers": false,
+        "containsRealConfidenceIntervals": false,
+        "publicExportRequested": true,
+        "publicAiUploadRequested": false,
+        "publicationReviewStatus": "synthetic-publication-criteria-only",
+        "cells": [
+          {
+            "id": "low_ess_candidate",
+            "suppressed": false,
+            "syntheticDenominatorClass": "threshold-met",
+            "syntheticEffectiveSampleSizeClass": "threshold-not-met",
+            "relativeStandardErrorClass": "acceptable",
+            "confidenceIntervalWidthClass": "acceptable",
+            "domainDof": 15,
+            "publicationDecision": "presentable-synthetic"
+          }
+        ]
+      }
+    },
+    {
+      "id": "synthetic-low-effective-sample-suppressed",
+      "expectedDecision": "allow-publication-shape",
+      "why": "Synthetic cell with low effective sample class is suppressed before public presentation.",
+      "output": {
+        "schemaVersion": "human-infra.synthetic-nhanes-publication-criteria-output.v1",
+        "sourceId": "nhanes-public-lmf-2017-2018",
+        "outputId": "synthetic-low-effective-sample-suppressed",
+        "outputType": "synthetic_reliability_standards_report",
+        "containsRealNhanesData": false,
+        "containsRowLevelData": false,
+        "containsIdentifiers": false,
+        "containsRealConfidenceIntervals": false,
+        "publicExportRequested": true,
+        "publicAiUploadRequested": false,
+        "publicationReviewStatus": "synthetic-publication-criteria-only",
+        "cells": [
+          {
+            "id": "low_ess_suppressed_candidate",
+            "suppressed": true,
+            "syntheticDenominatorClass": "not-applicable-suppressed",
+            "syntheticEffectiveSampleSizeClass": "not-applicable-suppressed",
+            "relativeStandardErrorClass": "not-applicable-suppressed",
+            "confidenceIntervalWidthClass": "not-applicable-suppressed",
+            "domainDof": 15,
+            "publicationDecision": "suppress-synthetic"
+          }
+        ]
+      }
+    },
+    {
+      "id": "synthetic-high-rse-unsuppressed",
+      "expectedDecision": "block-publication-shape",
+      "why": "Unsuppressed public cell has unacceptable synthetic relative standard error class.",
+      "output": {
+        "schemaVersion": "human-infra.synthetic-nhanes-publication-criteria-output.v1",
+        "sourceId": "nhanes-public-lmf-2017-2018",
+        "outputId": "synthetic-high-rse-unsuppressed",
+        "outputType": "synthetic_reliability_standards_report",
+        "containsRealNhanesData": false,
+        "containsRowLevelData": false,
+        "containsIdentifiers": false,
+        "containsRealConfidenceIntervals": false,
+        "publicExportRequested": true,
+        "publicAiUploadRequested": false,
+        "publicationReviewStatus": "synthetic-publication-criteria-only",
+        "cells": [
+          {
+            "id": "high_rse_candidate",
+            "suppressed": false,
+            "syntheticDenominatorClass": "threshold-met",
+            "syntheticEffectiveSampleSizeClass": "threshold-met",
+            "relativeStandardErrorClass": "unacceptable",
+            "confidenceIntervalWidthClass": "acceptable",
+            "domainDof": 15,
+            "publicationDecision": "presentable-synthetic"
+          }
+        ]
+      }
+    },
+    {
+      "id": "synthetic-ci-width-unacceptable-unsuppressed",
+      "expectedDecision": "block-publication-shape",
+      "why": "Unsuppressed public cell has unacceptable synthetic confidence interval width class.",
+      "output": {
+        "schemaVersion": "human-infra.synthetic-nhanes-publication-criteria-output.v1",
+        "sourceId": "nhanes-public-lmf-2017-2018",
+        "outputId": "synthetic-ci-width-unacceptable-unsuppressed",
+        "outputType": "synthetic_effective_sample_ci_publication_review",
+        "containsRealNhanesData": false,
+        "containsRowLevelData": false,
+        "containsIdentifiers": false,
+        "containsRealConfidenceIntervals": false,
+        "publicExportRequested": true,
+        "publicAiUploadRequested": false,
+        "publicationReviewStatus": "synthetic-publication-criteria-only",
+        "cells": [
+          {
+            "id": "wide_ci_candidate",
+            "suppressed": false,
+            "syntheticDenominatorClass": "threshold-met",
+            "syntheticEffectiveSampleSizeClass": "threshold-met",
+            "relativeStandardErrorClass": "acceptable",
+            "confidenceIntervalWidthClass": "unacceptable",
+            "domainDof": 15,
+            "publicationDecision": "presentable-synthetic"
+          }
+        ]
+      }
+    },
+    {
+      "id": "synthetic-low-dof-unsuppressed",
+      "expectedDecision": "block-publication-shape",
+      "why": "Unsuppressed public cell has fewer synthetic domain degrees of freedom than the review threshold.",
+      "output": {
+        "schemaVersion": "human-infra.synthetic-nhanes-publication-criteria-output.v1",
+        "sourceId": "nhanes-public-lmf-2017-2018",
+        "outputId": "synthetic-low-dof-unsuppressed",
+        "outputType": "synthetic_effective_sample_ci_publication_review",
+        "containsRealNhanesData": false,
+        "containsRowLevelData": false,
+        "containsIdentifiers": false,
+        "containsRealConfidenceIntervals": false,
+        "publicExportRequested": true,
+        "publicAiUploadRequested": false,
+        "publicationReviewStatus": "synthetic-publication-criteria-only",
+        "cells": [
+          {
+            "id": "low_dof_candidate",
+            "suppressed": false,
+            "syntheticDenominatorClass": "threshold-met",
+            "syntheticEffectiveSampleSizeClass": "threshold-met",
+            "relativeStandardErrorClass": "acceptable",
+            "confidenceIntervalWidthClass": "acceptable",
+            "domainDof": 7,
+            "publicationDecision": "presentable-synthetic"
+          }
+        ]
+      }
+    },
+    {
+      "id": "synthetic-real-ci-present",
+      "expectedDecision": "block-publication-shape",
+      "why": "Synthetic policy blocks reports that claim real confidence intervals exist.",
+      "output": {
+        "schemaVersion": "human-infra.synthetic-nhanes-publication-criteria-output.v1",
+        "sourceId": "nhanes-public-lmf-2017-2018",
+        "outputId": "synthetic-real-ci-present",
+        "outputType": "synthetic_effective_sample_ci_publication_review",
+        "containsRealNhanesData": false,
+        "containsRowLevelData": false,
+        "containsIdentifiers": false,
+        "containsRealConfidenceIntervals": true,
+        "publicExportRequested": true,
+        "publicAiUploadRequested": false,
+        "publicationReviewStatus": "synthetic-publication-criteria-only",
+        "cells": [
+          {
+            "id": "real_ci_placeholder",
+            "suppressed": false,
+            "syntheticDenominatorClass": "threshold-met",
+            "syntheticEffectiveSampleSizeClass": "threshold-met",
+            "relativeStandardErrorClass": "acceptable",
+            "confidenceIntervalWidthClass": "computed-real-public",
+            "domainDof": 15,
+            "publicationDecision": "presentable-synthetic"
+          }
+        ]
+      }
+    },
+    {
+      "id": "synthetic-public-ai-upload",
+      "expectedDecision": "block-publication-shape",
+      "why": "Public AI upload requests remain blocked.",
+      "output": {
+        "schemaVersion": "human-infra.synthetic-nhanes-publication-criteria-output.v1",
+        "sourceId": "nhanes-public-lmf-2017-2018",
+        "outputId": "synthetic-public-ai-upload",
+        "outputType": "synthetic_effective_sample_ci_publication_review",
+        "containsRealNhanesData": false,
+        "containsRowLevelData": false,
+        "containsIdentifiers": false,
+        "containsRealConfidenceIntervals": false,
+        "publicExportRequested": true,
+        "publicAiUploadRequested": true,
+        "publicationReviewStatus": "synthetic-publication-criteria-only",
+        "cells": [
+          {
+            "id": "ai_upload_candidate",
+            "suppressed": false,
+            "syntheticDenominatorClass": "threshold-met",
+            "syntheticEffectiveSampleSizeClass": "threshold-met",
+            "relativeStandardErrorClass": "acceptable",
+            "confidenceIntervalWidthClass": "acceptable",
+            "domainDof": 15,
+            "publicationDecision": "presentable-synthetic"
+          }
+        ]
+      }
+    },
+    {
+      "id": "synthetic-forbidden-real-output-type",
+      "expectedDecision": "block-publication-shape",
+      "why": "Real public weighted-domain rates remain forbidden until a separate real output implementation and review gate exists.",
+      "output": {
+        "schemaVersion": "human-infra.synthetic-nhanes-publication-criteria-output.v1",
+        "sourceId": "nhanes-public-lmf-2017-2018",
+        "outputId": "synthetic-forbidden-real-output-type",
+        "outputType": "real_public_weighted_domain_rates",
+        "containsRealNhanesData": false,
+        "containsRowLevelData": false,
+        "containsIdentifiers": false,
+        "containsRealConfidenceIntervals": false,
+        "publicExportRequested": true,
+        "publicAiUploadRequested": false,
+        "publicationReviewStatus": "synthetic-publication-criteria-only",
+        "cells": [
+          {
+            "id": "forbidden_real_output_placeholder",
+            "suppressed": false,
+            "syntheticDenominatorClass": "threshold-met",
+            "syntheticEffectiveSampleSizeClass": "threshold-met",
+            "relativeStandardErrorClass": "acceptable",
+            "confidenceIntervalWidthClass": "acceptable",
+            "domainDof": 15,
+            "publicationDecision": "presentable-synthetic"
+          }
+        ]
+      }
+    }
+  ]
+}

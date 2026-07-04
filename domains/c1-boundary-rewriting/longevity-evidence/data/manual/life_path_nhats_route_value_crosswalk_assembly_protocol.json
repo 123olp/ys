@@ -1,0 +1,218 @@
+{
+  "schemaVersion": "human-infra.life-path-nhats-route-value-crosswalk-assembly-protocol.v1",
+  "sourceId": "nhats",
+  "sourceName": "National Health and Aging Trends Study",
+  "protocolId": "nhats-r13-r14-route-value-crosswalk-assembly-protocol-2026-07-04",
+  "capturePacketReviewExecutionRegisterId": "nhats-r13-r14-colectica-capture-packet-review-execution-2026-07-04",
+  "captureTaskRegisterId": "nhats-r13-r14-colectica-capture-task-register-2026-07-03",
+  "routeClassifierReadinessId": "nhats-r13-r14-route-classifier-readiness-2026-07-03",
+  "missingnessRouteProtocolId": "nhats-r13-r14-missingness-route-protocol-draft",
+  "valueLabelExecutionRegisterId": "nhats-r13-r14-colectica-value-label-review-execution-2026-07-03",
+  "reviewDate": "2026-07-04",
+  "reviewer": "tradecatlabs",
+  "status": "protocol-only-crosswalk-not-assembled",
+  "purpose": "Define the exact review gate that must assemble route-value crosswalk rows and variable-specific missing-code maps from reviewed Colectica capture packets before NHATS route-classifier code, extraction, aggregation, calibration or individual prediction can be considered.",
+  "sourceBindings": [
+    {
+      "id": "capture-packet-review-execution",
+      "path": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_capture_packet_review_execution_register.json",
+      "requiredRole": "review-slot execution ledger",
+      "requiredStatus": "execution-register-empty-controlled-capture-not-started"
+    },
+    {
+      "id": "capture-task-register",
+      "path": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_capture_task_register.json",
+      "requiredRole": "task source for selected route-field capture slots",
+      "requiredStatus": "task-register-only-controlled-capture-not-started"
+    },
+    {
+      "id": "route-classifier-readiness",
+      "path": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_route_classifier_readiness.json",
+      "requiredRole": "downstream blocked classifier gate",
+      "requiredStatus": "blocked-colectica-and-real-data-required"
+    },
+    {
+      "id": "missingness-route-protocol",
+      "path": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_missingness_route_protocol.json",
+      "requiredRole": "route class and dominance-rule source",
+      "requiredStatus": "protocol-only-cannot-route-yet"
+    },
+    {
+      "id": "value-label-review-execution",
+      "path": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_value_label_review_execution_register.json",
+      "requiredRole": "field-level source trace and standard negative-code family source",
+      "requiredStatus": "partial-executed-official-source-trace-ready-colectica-login-required"
+    }
+  ],
+  "currentDecision": {
+    "assemblyProtocolReady": true,
+    "reviewedCapturePacketsAttached": false,
+    "valueLabelsConfirmed": false,
+    "questionTextConfirmed": false,
+    "universeSkipLogicConfirmed": false,
+    "routeValueCrosswalkConfirmed": false,
+    "variableSpecificMissingCodeMapConfirmed": false,
+    "sensitiveDeathDateFieldsExcluded": true,
+    "secondReviewerSignoff": false,
+    "routeClassifierAllowed": false,
+    "realExtractionAllowed": false,
+    "aggregateCohortFlowAllowed": false,
+    "weightedRouteCountsAllowed": false,
+    "publicExportAllowed": false,
+    "calibrationAllowed": false,
+    "individualPredictionAllowed": false,
+    "reason": "Only the assembly protocol is ready. No reviewed capture packets, value labels, route-value rows, variable-specific missing-code rows or second-reviewer signoff exist, so the route classifier and all downstream model actions remain blocked."
+  },
+  "assemblyUnits": [
+    {
+      "unitId": "rvx-identity-join-key",
+      "requiredRouteFieldId": "identity_join_key",
+      "sourceTaskIds": ["identity_join_key-spid", "identity_join_key-spidr12"],
+      "assemblyStatus": "pending-reviewed-capture-packets",
+      "reviewedCapturePacketRequired": true,
+      "valueLabelRowsAttached": false,
+      "routeValueRowsAttached": false,
+      "variableSpecificMissingCodeRowsAttached": false,
+      "secondReviewerSignoff": false,
+      "routeClassifierAllowed": false,
+      "notes": "Canonical public-use join keys must be confirmed without committing identifiers or restricted linkage material."
+    },
+    {
+      "unitId": "rvx-round13-baseline-eligibility",
+      "requiredRouteFieldId": "round13_baseline_eligibility",
+      "sourceTaskIds": ["round13_baseline_eligibility-r13status", "round13_baseline_eligibility-r13statuscat", "round13_baseline_eligibility-r13dcontnew", "round13_baseline_eligibility-fl13newsample", "round13_baseline_eligibility-fl13facility"],
+      "assemblyStatus": "pending-reviewed-capture-packets",
+      "reviewedCapturePacketRequired": true,
+      "valueLabelRowsAttached": false,
+      "routeValueRowsAttached": false,
+      "variableSpecificMissingCodeRowsAttached": false,
+      "secondReviewerSignoff": false,
+      "routeClassifierAllowed": false,
+      "notes": "Round 13 denominator and facility-entry routes require source-confirmed labels before any baseline eligibility route is computed."
+    },
+    {
+      "unitId": "rvx-round14-interview-status",
+      "requiredRouteFieldId": "round14_interview_status",
+      "sourceTaskIds": ["round14_interview_status-r14status", "round14_interview_status-r14statuscat", "round14_interview_status-r14dcontnew", "round14_interview_status-r14breakoffst", "round14_interview_status-r14breakoffqt", "round14_interview_status-fl14pt2miss", "round14_interview_status-r14dlmlint"],
+      "assemblyStatus": "pending-reviewed-capture-packets",
+      "reviewedCapturePacketRequired": true,
+      "valueLabelRowsAttached": false,
+      "routeValueRowsAttached": false,
+      "variableSpecificMissingCodeRowsAttached": false,
+      "secondReviewerSignoff": false,
+      "routeClassifierAllowed": false,
+      "notes": "Round 14 completion, breakoff and continuation values must be mapped before endpoint routing."
+    },
+    {
+      "unitId": "rvx-proxy-status",
+      "requiredRouteFieldId": "proxy_status",
+      "sourceTaskIds": ["proxy_status-is13resptype", "proxy_status-op13proxy", "proxy_status-op13whyproxy", "proxy_status-is14resptype", "proxy_status-op14proxy", "proxy_status-op14whyproxy"],
+      "assemblyStatus": "pending-reviewed-capture-packets",
+      "reviewedCapturePacketRequired": true,
+      "valueLabelRowsAttached": false,
+      "routeValueRowsAttached": false,
+      "variableSpecificMissingCodeRowsAttached": false,
+      "secondReviewerSignoff": false,
+      "routeClassifierAllowed": false,
+      "notes": "Self and proxy interview routes must remain separate because proxy response changes interpretation of function and cognition variables."
+    },
+    {
+      "unitId": "rvx-facility-residential-status",
+      "requiredRouteFieldId": "facility_residential_status",
+      "sourceTaskIds": ["facility_residential_status-r13dresid", "facility_residential_status-fl13facility", "facility_residential_status-r14dresid", "facility_residential_status-fl14facility"],
+      "assemblyStatus": "pending-reviewed-capture-packets",
+      "reviewedCapturePacketRequired": true,
+      "valueLabelRowsAttached": false,
+      "routeValueRowsAttached": false,
+      "variableSpecificMissingCodeRowsAttached": false,
+      "secondReviewerSignoff": false,
+      "routeClassifierAllowed": false,
+      "notes": "Facility and residential-care paths are not interchangeable with community self/proxy routes."
+    },
+    {
+      "unitId": "rvx-death-decedent-indicator",
+      "requiredRouteFieldId": "death_decedent_indicator",
+      "sourceTaskIds": ["death_decedent_indicator-fl13spdied", "death_decedent_indicator-fl14spdied", "death_decedent_indicator-r13dlmlint", "death_decedent_indicator-r14dlmlint"],
+      "assemblyStatus": "pending-reviewed-capture-packets",
+      "reviewedCapturePacketRequired": true,
+      "valueLabelRowsAttached": false,
+      "routeValueRowsAttached": false,
+      "variableSpecificMissingCodeRowsAttached": false,
+      "sensitiveDeathDateFieldsExcluded": true,
+      "secondReviewerSignoff": false,
+      "routeClassifierAllowed": false,
+      "notes": "Only public decedent boundary indicators may be mapped; death month/year or other sensitive timing fields remain excluded."
+    },
+    {
+      "unitId": "rvx-nonresponse-missing-code",
+      "requiredRouteFieldId": "nonresponse_missing_code",
+      "sourceTaskIds": ["nonresponse_missing_code-r13breakoffst", "nonresponse_missing_code-r13breakoffqt", "nonresponse_missing_code-fl13pt2miss", "nonresponse_missing_code-r14breakoffst", "nonresponse_missing_code-r14breakoffqt", "nonresponse_missing_code-fl14pt2miss"],
+      "assemblyStatus": "pending-reviewed-capture-packets",
+      "reviewedCapturePacketRequired": true,
+      "valueLabelRowsAttached": false,
+      "routeValueRowsAttached": false,
+      "variableSpecificMissingCodeRowsAttached": false,
+      "secondReviewerSignoff": false,
+      "routeClassifierAllowed": false,
+      "notes": "Standard negative-code family is known, but variable-specific missing-code interpretation remains blocked until source-confirmed."
+    },
+    {
+      "unitId": "rvx-design-weight-linkage",
+      "requiredRouteFieldId": "design_weight_linkage",
+      "sourceTaskIds": ["design_weight_linkage-w13varstrat", "design_weight_linkage-w13varunit", "design_weight_linkage-w14varstrat", "design_weight_linkage-w14varunit"],
+      "assemblyStatus": "pending-reviewed-capture-packets",
+      "reviewedCapturePacketRequired": true,
+      "valueLabelRowsAttached": false,
+      "routeValueRowsAttached": false,
+      "variableSpecificMissingCodeRowsAttached": false,
+      "secondReviewerSignoff": false,
+      "routeClassifierAllowed": false,
+      "notes": "Design variables must be confirmed before weighted route counts or public aggregate outputs are considered."
+    },
+    {
+      "unitId": "rvx-disclosure-cell-count",
+      "requiredRouteFieldId": "disclosure_cell_count",
+      "sourceTaskIds": ["disclosure_cell_count-computed_output_cell_n"],
+      "assemblyStatus": "pending-reviewed-capture-packets",
+      "reviewedCapturePacketRequired": true,
+      "valueLabelRowsAttached": false,
+      "routeValueRowsAttached": false,
+      "variableSpecificMissingCodeRowsAttached": false,
+      "secondReviewerSignoff": false,
+      "routeClassifierAllowed": false,
+      "notes": "This unit is aggregate-output-only and cannot be used to store row-level counts in public artifacts."
+    }
+  ],
+  "summary": {
+    "assemblyUnitCount": 9,
+    "routeFieldFamiliesCovered": 9,
+    "reviewedCapturePacketsAttached": 0,
+    "routeValueRowsConfirmed": 0,
+    "variableSpecificMissingCodeMapsConfirmed": 0,
+    "secondReviewerSignoffs": 0,
+    "routeClassifierAdmissions": 0,
+    "realExtractionAdmissions": 0,
+    "calibrationAdmissions": 0,
+    "individualPredictionAdmissions": 0
+  },
+  "blockedUntil": [
+    "Every relevant Colectica capture task has a redacted capture packet accepted by the packet validator.",
+    "Human review confirms value labels, question text, universe and skip logic for each selected route field.",
+    "Route-value rows are assembled with source hashes, route class, dominance rule and reviewer decision.",
+    "Variable-specific missing-code maps are assembled without overusing standard negative-code family defaults.",
+    "A second reviewer signs off on concordance, public-use tier, sensitive field exclusion and route-classifier readiness."
+  ],
+  "prohibitedActions": [
+    "Do not infer route values from candidate variable names or official crosswalk field names alone.",
+    "Do not treat the standard -1/-7/-8/-9 negative-code family as a variable-specific missing-code map.",
+    "Do not store raw NHATS rows, raw Colectica exports, credentials, cookies, session tokens or restricted materials in this repository.",
+    "Do not include death month, death year, exact dates, small-cell real counts or individual-level prediction targets.",
+    "Do not run route-classifier code, real extraction, weighted route counts, public export, calibration or individual prediction from this protocol."
+  ],
+  "nextEvidenceRequired": [
+    "Reviewed capture packets with source hashes for each task slot.",
+    "Route-value crosswalk rows with source task ID, variable name, value code, label, route class, dominance rule and reviewer signoff.",
+    "Variable-specific missing-code map rows with variable name, code, label, route treatment and reviewer signoff.",
+    "Second-reviewer signoff and conflict-resolution record before route-classifier promotion."
+  ]
+}

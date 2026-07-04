@@ -334,6 +334,203 @@
       "nextEvidenceAction": "Build a memory intervention boundary table separating therapeutic, enhancement, coercive and evidentiary contexts."
     },
     {
+      "domainId": "accelerating-returns-technology-convergence",
+      "tier": "C1",
+      "path": "domains/c1-boundary-rewriting/accelerating-returns-technology-convergence",
+      "requiredClaims": [
+        "HI-CL2",
+        "HI-CL3",
+        "HI-CL4",
+        "HI-CL5",
+        "HI-CL6",
+        "HI-CL7"
+      ],
+      "strongClaim": "Accelerating returns and technology convergence can affect subject continuity only if discovery speed, validation, translation, access and governance all improve enough to change real technology-window probabilities.",
+      "modelPosition": "technology-window-boundary-screening",
+      "variables": {
+        "inputs": [
+          "AI-and-compute-capability",
+          "biotech-materials-BCI-convergence",
+          "automated-research-throughput"
+        ],
+        "mediators": [
+          "discovery-rate",
+          "validation-lag",
+          "translation-and-access-probability"
+        ],
+        "outputs": [
+          "technology-window-shift",
+          "LEV-condition-status",
+          "future-option-access"
+        ]
+      },
+      "falsifiers": [
+        {
+          "condition": "Discovery or prediction speed increases but validation, translation, safety or access does not improve.",
+          "downgradeAction": "downgrade to candidate-generation acceleration only",
+          "evidenceNeeded": "route card separating discovery, validation, translation, deployment, access and safety gates"
+        },
+        {
+          "condition": "A single-domain exponential trend is used to claim system-wide medical, social or governance acceleration.",
+          "downgradeAction": "block C1 boundary-rewriting claim and require domain-specific evidence",
+          "evidenceNeeded": "multi-domain convergence matrix with independent evidence and negative cases"
+        }
+      ],
+      "prohibitedUses": [
+        "不把未来学时间表写成事实",
+        "不证明长寿逃逸速度已经实现",
+        "不把自动科研速度替代临床或治理证据"
+      ],
+      "nextEvidenceAction": "Promote AI automated science Source Cards into a technology-window convergence matrix with positive, negative and correction-risk rows."
+    },
+    {
+      "domainId": "recursive-self-improvement-intelligence-explosion",
+      "tier": "C1",
+      "path": "domains/c1-boundary-rewriting/recursive-self-improvement-intelligence-explosion",
+      "requiredClaims": [
+        "HI-CL2",
+        "HI-CL3",
+        "HI-CL4",
+        "HI-CL6",
+        "HI-CL7"
+      ],
+      "strongClaim": "Recursive self-improvement can be treated as a boundary-rewriting hypothesis only when AI contribution to AI R&D, iteration compression, feedback quality and oversight latency are explicitly evidenced and gated.",
+      "modelPosition": "recursive-capability-screening",
+      "variables": {
+        "inputs": [
+          "AI-RD-automation-capability",
+          "model-and-tool-stack-modifiability",
+          "compute-data-experiment-access"
+        ],
+        "mediators": [
+          "self-improvement-depth",
+          "RD-cycle-compression",
+          "human-oversight-latency"
+        ],
+        "outputs": [
+          "capability-growth-rate",
+          "control-failure-risk",
+          "technology-window-acceleration"
+        ]
+      },
+      "falsifiers": [
+        {
+          "condition": "AI improves isolated coding or benchmark tasks but cannot materially improve model design, training, evaluation or deployment pipelines.",
+          "downgradeAction": "downgrade to ordinary automation or C3 tool augmentation",
+          "evidenceNeeded": "AI-RD task evidence separating code assistance, experiment design, model improvement and deployment autonomy"
+        },
+        {
+          "condition": "Iteration speed increases while oversight, interpretability, evaluation and rollback capacity fall behind.",
+          "downgradeAction": "classify as risk-amplifying recursive route, not net-continuity gain",
+          "evidenceNeeded": "oversight latency and abort-gate evidence for recursive development loops"
+        }
+      ],
+      "prohibitedUses": [
+        "不提供自主复制或逃逸监管路径",
+        "不把代码生成等同于智能爆炸",
+        "不把递归增强自动写成正收益"
+      ],
+      "nextEvidenceAction": "Build an AI-RD automation evidence table connecting METR-style task horizons to self-improvement depth and oversight latency."
+    },
+    {
+      "domainId": "singularity-control-interpretability-boundary",
+      "tier": "C1",
+      "path": "domains/c1-boundary-rewriting/singularity-control-interpretability-boundary",
+      "requiredClaims": [
+        "HI-CL2",
+        "HI-CL3",
+        "HI-CL4",
+        "HI-CL6",
+        "HI-CL7"
+      ],
+      "strongClaim": "Singularity-scale systems can only be treated as subject-continuity infrastructure if control, interpretability, rollback, distribution and governance boundaries remain strong enough to preserve human future choice.",
+      "modelPosition": "control-and-interpretability-boundary-screening",
+      "variables": {
+        "inputs": [
+          "frontier-system-capability",
+          "deployment-scope",
+          "governance-and-audit-capacity"
+        ],
+        "mediators": [
+          "interpretability-gap",
+          "control-latency",
+          "distribution-control"
+        ],
+        "outputs": [
+          "future-choice-preservation",
+          "tail-risk-exposure",
+          "governance-abort-status"
+        ]
+      },
+      "falsifiers": [
+        {
+          "condition": "System benefits depend on outputs that humans cannot explain, test, reproduce, contest or roll back in time.",
+          "downgradeAction": "classify as opaque high-risk infrastructure and block positive continuity claim",
+          "evidenceNeeded": "interpretability, reproducibility, audit, rollback and incident-response evidence"
+        },
+        {
+          "condition": "Control of compute, data, models, interfaces or distribution is concentrated such that subjects lose practical choice or access.",
+          "downgradeAction": "downgrade from human-infra gain to governance-and-distribution risk",
+          "evidenceNeeded": "power, access, opt-out, accountability and distribution-control assessment"
+        }
+      ],
+      "prohibitedUses": [
+        "不提供绕过安全或监管的方法",
+        "不把 AI 风险叙事替代事实证据",
+        "不把不可解释系统自动写成可接受基础设施"
+      ],
+      "nextEvidenceAction": "Create Source Cards for AI control, interpretability, incident reporting, system cards and frontier model governance."
+    },
+    {
+      "domainId": "superhuman-intelligence-threshold",
+      "tier": "C1",
+      "path": "domains/c1-boundary-rewriting/superhuman-intelligence-threshold",
+      "requiredClaims": [
+        "HI-CL2",
+        "HI-CL3",
+        "HI-CL4",
+        "HI-CL6",
+        "HI-CL7"
+      ],
+      "strongClaim": "Superhuman intelligence becomes a Human Infra boundary condition only when technical systems exceed human capability across consequential domains and alter what humans can understand, choose or reach.",
+      "modelPosition": "capability-threshold-screening",
+      "variables": {
+        "inputs": [
+          "frontier-AI-capability",
+          "task-domain-coverage",
+          "autonomy-and-tool-access"
+        ],
+        "mediators": [
+          "expert-baseline-exceedance",
+          "cross-domain-transfer",
+          "human-participation-window"
+        ],
+        "outputs": [
+          "future-boundary-shift",
+          "human-agency-retention",
+          "technology-window-access"
+        ]
+      },
+      "falsifiers": [
+        {
+          "condition": "Capability evidence is limited to narrow benchmarks, demos or isolated expert tasks without robust cross-domain transfer.",
+          "downgradeAction": "downgrade to C3 capability augmentation signal",
+          "evidenceNeeded": "task coverage evidence comparing models, human experts, organizations and real-world deployment constraints"
+        },
+        {
+          "condition": "The system exceeds human performance but remains fully reviewable, controllable and bounded to local use cases.",
+          "downgradeAction": "keep as high-capability tool rather than C1 boundary-rewriting threshold",
+          "evidenceNeeded": "capability, autonomy, tool access, reviewability and external impact assessment"
+        }
+      ],
+      "prohibitedUses": [
+        "不把单个模型榜单写成超人智能",
+        "不证明奇点已经发生",
+        "不提供危险能力扩散方法"
+      ],
+      "nextEvidenceAction": "Build a capability-threshold matrix separating benchmark superiority, expert replacement, cross-domain transfer and external boundary impact."
+    },
+    {
       "domainId": "cellular-reprogramming",
       "tier": "C2",
       "path": "domains/c2-source-maintenance/cellular-reprogramming",

@@ -1,0 +1,988 @@
+{
+  "schemaVersion": "human-infra.c2-longtail-ninth-batch-promotion-queue.v1",
+  "queueId": "human-infra-c2-longtail-ninth-batch-promotion-queue",
+  "status": "active-ninth-batch-queue-model-blocked",
+  "purpose": "Select the ninth C2 long-tail batch for source-specific review, prioritizing high-frequency source-maintenance domains where pain-free movement, muscle and bone integrity, oral function, respiratory reserve, immune aging, clean air and home respiratory equipment determine whether the subject can keep acting, recovering and using future options over long horizons.",
+  "sourceOfTruth": {
+    "c2LongtailCoverageRegister": "docs/reference/human-infra-c2-longtail-coverage-register.json",
+    "firstBatchPromotionQueue": "docs/reference/human-infra-c2-longtail-first-batch-promotion-queue.json",
+    "secondBatchPromotionQueue": "docs/reference/human-infra-c2-longtail-second-batch-promotion-queue.json",
+    "thirdBatchPromotionQueue": "docs/reference/human-infra-c2-longtail-third-batch-promotion-queue.json",
+    "fourthBatchPromotionQueue": "docs/reference/human-infra-c2-longtail-fourth-batch-promotion-queue.json",
+    "fifthBatchPromotionQueue": "docs/reference/human-infra-c2-longtail-fifth-batch-promotion-queue.json",
+    "sixthBatchPromotionQueue": "docs/reference/human-infra-c2-longtail-sixth-batch-promotion-queue.json",
+    "seventhBatchPromotionQueue": "docs/reference/human-infra-c2-longtail-seventh-batch-promotion-queue.json",
+    "eighthBatchPromotionQueue": "docs/reference/human-infra-c2-longtail-eighth-batch-promotion-queue.json",
+    "domainClassification": "domains/_possibility-space-control/classification.tsv",
+    "sourceCardSystem": "docs/reference/source-card-system.md",
+    "maturityGapRegister": "docs/reference/human-infra-maturity-gap-register.json",
+    "maturityRoadmap": "docs/reference/human-infra-maturity-roadmap.md"
+  },
+  "scope": {
+    "batchId": "C2-LT-B9",
+    "batchDomainCount": 12,
+    "selectionRule": "Prioritize still-uncovered C2 domains whose failure creates large, repeated, cross-task loss of effective time: musculoskeletal function, chronic wounds, oral function, respiratory control/equipment, immune aging and environmental respiratory exposure. This is importance/long-horizon/fundamentality oriented, not feasibility, market maturity or intervention hype oriented.",
+    "requiredArtifactClasses": [
+      "domain-claim-evidence-row",
+      "domain-source-card-field-extraction",
+      "domain-source-specific-deep-read",
+      "source-context-local-review",
+      "independent-fresh-review-verdict",
+      "reviewed-source-card",
+      "variable-card",
+      "endpoint-card",
+      "uncertainty-card",
+      "transfer-boundary-card",
+      "downgrade-check"
+    ],
+    "nonClaims": [
+      "This queue does not complete Source Cards.",
+      "This queue does not complete independent fresh review.",
+      "This queue does not upgrade any domain claim.",
+      "This queue does not admit any domain into calibrated prediction.",
+      "This queue does not provide medical, dental, rehabilitation, respiratory-equipment, vaccine, environmental-health, individual, or intervention-ranking advice.",
+      "This queue does not mark any C2-LT-B1/B2/B3/B4/B5/B6/B7/B8 blocked, downgrade, source-resolution, manual-access or model-blocked row as resolved."
+    ]
+  },
+  "blockedUses": [
+    "calibrated-prediction",
+    "individual-advice",
+    "individual-death-date-output",
+    "intervention-ranking",
+    "clinical-validity-claim",
+    "domain-claim-upgrade"
+  ],
+  "batchRows": [
+    {
+      "domainId": "low-back-pain-spine-function-continuity",
+      "triageBucket": "barrier-function-mobility",
+      "selectionReason": "低背痛和脊柱功能问题会持续消耗行动能力、睡眠、工作能力和注意力预算，是长期有效时间损失的高频入口。",
+      "claimSeed": "低背痛通过疼痛干扰、活动受限、工作缺勤、睡眠破坏和照护路径摩擦影响主体行动窗口与恢复能力。",
+      "variableSeed": [
+        "pain-interference",
+        "spine-function",
+        "activity-limitation",
+        "work-disability",
+        "non-surgical-management-boundary"
+      ],
+      "batchId": "C2-LT-B9",
+      "priorityRank": 1,
+      "localDomainPath": "domains/c2-source-maintenance/low-back-pain-spine-function-continuity",
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB9-SRC-01-1",
+          "title": "NICE guideline: Low back pain and sciatica in over 16s: assessment and management",
+          "url": "https://www.nice.org.uk/guidance/ng59",
+          "evidenceRole": "low-back-pain-assessment-management-guideline",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-04",
+          "sourceCheck": {
+            "checkedAt": "2026-07-04",
+            "method": "python-requests-get",
+            "statusCode": 200,
+            "contentLengthBytes": 22820
+          }
+        },
+        {
+          "sourceRefId": "C2LTB9-SRC-01-2",
+          "title": "WHO guideline for non-surgical management of chronic primary low back pain in adults in primary and community care settings",
+          "url": "https://www.who.int/publications/i/item/9789240081789",
+          "evidenceRole": "chronic-low-back-pain-function-guideline",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-04",
+          "sourceCheck": {
+            "checkedAt": "2026-07-04",
+            "method": "python-requests-get",
+            "statusCode": 200,
+            "contentLengthBytes": 93032
+          }
+        }
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "modelAdmissionDecision": "blocked-until-c2ltb9-source-specific-fields-local-review-independent-fresh-review-and-reviewed-artifacts-exist",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ]
+    },
+    {
+      "domainId": "resistance-training-muscle-strength-sarcopenia-continuity",
+      "triageBucket": "barrier-function-mobility",
+      "selectionReason": "肌肉力量和抗阻训练决定移动、跌倒风险、代谢韧性和独立生活能力，是健康寿命从“存活”转向“可行动”的关键底座。",
+      "claimSeed": "力量、平衡和抗阻活动通过肌肉功能、跌倒风险、日常活动能力和代谢健康改变长期行动密度与照护依赖。",
+      "variableSeed": [
+        "muscle-strength",
+        "resistance-training-dose",
+        "mobility-function",
+        "fall-risk",
+        "sarcopenia-boundary"
+      ],
+      "batchId": "C2-LT-B9",
+      "priorityRank": 2,
+      "localDomainPath": "domains/c2-source-maintenance/resistance-training-muscle-strength-sarcopenia-continuity",
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB9-SRC-02-1",
+          "title": "WHO guidelines on physical activity and sedentary behaviour",
+          "url": "https://www.who.int/publications/i/item/9789240015128",
+          "evidenceRole": "physical-activity-strength-guideline",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-04",
+          "sourceCheck": {
+            "checkedAt": "2026-07-04",
+            "method": "python-requests-get",
+            "statusCode": 200,
+            "contentLengthBytes": 88453
+          }
+        },
+        {
+          "sourceRefId": "C2LTB9-SRC-02-2",
+          "title": "CDC Physical Activity Guidelines for Older Adults",
+          "url": "https://www.cdc.gov/physical-activity-basics/guidelines/older-adults.html",
+          "evidenceRole": "older-adult-strength-balance-guideline",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-04",
+          "sourceCheck": {
+            "checkedAt": "2026-07-04",
+            "method": "python-requests-get",
+            "statusCode": 200,
+            "contentLengthBytes": 57775
+          }
+        }
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "modelAdmissionDecision": "blocked-until-c2ltb9-source-specific-fields-local-review-independent-fresh-review-and-reviewed-artifacts-exist",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ]
+    },
+    {
+      "domainId": "osteoporosis-fracture-prevention-bone-health-continuity",
+      "triageBucket": "acute-life-risk-and-recovery",
+      "selectionReason": "骨质疏松和骨折会把可逆行动能力迅速转化为长期失能、疼痛、住院和照护依赖，是源体承载结构的高杠杆风险。",
+      "claimSeed": "骨密度、跌倒和骨折风险通过疼痛、移动受限、手术/住院、康复和长期照护需求影响主体持续行动能力。",
+      "variableSeed": [
+        "bone-density",
+        "fragility-fracture-risk",
+        "screening-eligibility",
+        "fall-fracture-cascade",
+        "fracture-recovery-burden"
+      ],
+      "batchId": "C2-LT-B9",
+      "priorityRank": 3,
+      "localDomainPath": "domains/c2-source-maintenance/osteoporosis-fracture-prevention-bone-health-continuity",
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB9-SRC-03-1",
+          "title": "USPSTF Recommendation: Osteoporosis to Prevent Fractures: Screening",
+          "url": "https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/osteoporosis-screening",
+          "evidenceRole": "osteoporosis-screening-recommendation",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-04",
+          "sourceCheck": {
+            "checkedAt": "2026-07-04",
+            "method": "python-requests-get",
+            "statusCode": 200,
+            "contentLengthBytes": 160816
+          }
+        },
+        {
+          "sourceRefId": "C2LTB9-SRC-03-2",
+          "title": "The clinician's guide to prevention and treatment of osteoporosis",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9546973/",
+          "evidenceRole": "osteoporosis-prevention-treatment-review",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-04",
+          "sourceCheck": {
+            "checkedAt": "2026-07-04",
+            "method": "python-requests-get",
+            "statusCode": 200,
+            "contentLengthBytes": 764719
+          }
+        }
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "modelAdmissionDecision": "blocked-until-c2ltb9-source-specific-fields-local-review-independent-fresh-review-and-reviewed-artifacts-exist",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ]
+    },
+    {
+      "domainId": "chronic-wound-venous-diabetic-pressure-ulcer-continuity",
+      "triageBucket": "barrier-function-mobility",
+      "selectionReason": "慢性伤口把皮肤边界、血管代谢、感染风险、疼痛和照护负担耦合在一起，会长期吞噬行动与恢复能力。",
+      "claimSeed": "慢性伤口通过疼痛、感染、换药负担、行动限制、截肢风险和照护资源消耗影响主体持续性。",
+      "variableSeed": [
+        "wound-duration",
+        "infection-risk",
+        "offloading-or-pressure-relief",
+        "healing-endpoint",
+        "care-burden"
+      ],
+      "batchId": "C2-LT-B9",
+      "priorityRank": 4,
+      "localDomainPath": "domains/c2-source-maintenance/chronic-wound-venous-diabetic-pressure-ulcer-continuity",
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB9-SRC-04-1",
+          "title": "NICE guideline: Pressure ulcers: prevention and management",
+          "url": "https://www.nice.org.uk/guidance/cg179",
+          "evidenceRole": "pressure-ulcer-prevention-management-guideline",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-04",
+          "sourceCheck": {
+            "checkedAt": "2026-07-04",
+            "method": "python-requests-get",
+            "statusCode": 200,
+            "contentLengthBytes": 22492
+          }
+        },
+        {
+          "sourceRefId": "C2LTB9-SRC-04-2",
+          "title": "IDSA guideline: Diabetic Foot Infections",
+          "url": "https://www.idsociety.org/practice-guideline/diabetic-foot-infections/",
+          "evidenceRole": "diabetic-foot-infection-guideline",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-04",
+          "sourceCheck": {
+            "checkedAt": "2026-07-04",
+            "method": "python-requests-get",
+            "statusCode": 200,
+            "contentLengthBytes": 194763
+          }
+        }
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "modelAdmissionDecision": "blocked-until-c2ltb9-source-specific-fields-local-review-independent-fresh-review-and-reviewed-artifacts-exist",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ]
+    },
+    {
+      "domainId": "dental-caries-prevention-restoration-continuity",
+      "triageBucket": "other-c2-source-maintenance",
+      "selectionReason": "龋病是可预防但高频的疼痛、感染、缺课缺勤、营养和费用摩擦入口，直接影响学习、工作和家庭时间。",
+      "claimSeed": "龋病通过疼痛、感染、咀嚼受限、治疗可及性、儿童学习缺勤和成人工作损失改变有效时间与恢复预算。",
+      "variableSeed": [
+        "caries-burden",
+        "tooth-pain",
+        "preventive-fluoride-sealant-boundary",
+        "restoration-access",
+        "school-work-absence"
+      ],
+      "batchId": "C2-LT-B9",
+      "priorityRank": 5,
+      "localDomainPath": "domains/c2-source-maintenance/dental-caries-prevention-restoration-continuity",
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB9-SRC-05-1",
+          "title": "CDC Oral Health: Preventing Oral Diseases",
+          "url": "https://www.cdc.gov/oral-health/prevention/index.html",
+          "evidenceRole": "oral-disease-prevention-public-health-source",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-04",
+          "sourceCheck": {
+            "checkedAt": "2026-07-04",
+            "method": "python-requests-get",
+            "statusCode": 200,
+            "contentLengthBytes": 59551
+          }
+        },
+        {
+          "sourceRefId": "C2LTB9-SRC-05-2",
+          "title": "USPSTF Recommendation: Prevention of Dental Caries in Children Younger Than 5 Years",
+          "url": "https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/prevention-of-dental-caries-in-children-younger-than-age-5-years-screening-and-interventions1",
+          "evidenceRole": "child-caries-prevention-recommendation",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-04",
+          "sourceCheck": {
+            "checkedAt": "2026-07-04",
+            "method": "python-requests-get",
+            "statusCode": 200,
+            "contentLengthBytes": 117877
+          }
+        }
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "modelAdmissionDecision": "blocked-until-c2ltb9-source-specific-fields-local-review-independent-fresh-review-and-reviewed-artifacts-exist",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ]
+    },
+    {
+      "domainId": "dental-care-access-insurance-workforce-continuity",
+      "triageBucket": "other-c2-source-maintenance",
+      "selectionReason": "牙科服务可及性决定预防、修复和急性疼痛处置能否从制度存在转成真实入口，是口腔持续性的转换瓶颈。",
+      "claimSeed": "牙科保险、服务覆盖、劳动力短缺和费用摩擦通过延迟治疗、急诊替代、疼痛持续和经济负担影响主体任务完成。",
+      "variableSeed": [
+        "dental-coverage",
+        "out-of-pocket-cost",
+        "workforce-shortage",
+        "appointment-access",
+        "delayed-care"
+      ],
+      "batchId": "C2-LT-B9",
+      "priorityRank": 6,
+      "localDomainPath": "domains/c2-source-maintenance/dental-care-access-insurance-workforce-continuity",
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB9-SRC-06-1",
+          "title": "Medicaid Dental Care benefits",
+          "url": "https://www.medicaid.gov/medicaid/benefits/dental-care/index.html",
+          "evidenceRole": "dental-coverage-policy-source",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-04",
+          "sourceCheck": {
+            "checkedAt": "2026-07-04",
+            "method": "python-requests-get",
+            "statusCode": 200,
+            "contentLengthBytes": 166303
+          }
+        },
+        {
+          "sourceRefId": "C2LTB9-SRC-06-2",
+          "title": "Healthy People 2030 Oral Conditions objectives",
+          "url": "https://odphp.health.gov/healthypeople/objectives-and-data/browse-objectives/oral-conditions",
+          "evidenceRole": "oral-health-access-objectives",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-04",
+          "sourceCheck": {
+            "checkedAt": "2026-07-04",
+            "method": "python-requests-get",
+            "statusCode": 200,
+            "contentLengthBytes": 49238
+          }
+        }
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "modelAdmissionDecision": "blocked-until-c2ltb9-source-specific-fields-local-review-independent-fresh-review-and-reviewed-artifacts-exist",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ]
+    },
+    {
+      "domainId": "oral-health-continuity",
+      "triageBucket": "other-c2-source-maintenance",
+      "selectionReason": "口腔健康连接进食、沟通、疼痛、感染、社交尊严和慢病负担，是身体边界与社会行动的交叉域。",
+      "claimSeed": "口腔疾病通过咀嚼、营养、疼痛、感染、言语、自尊和服务可及性影响主体的日常执行能力和长期恢复能力。",
+      "variableSeed": [
+        "oral-disease-burden",
+        "chewing-function",
+        "oral-pain",
+        "infection-burden",
+        "service-access"
+      ],
+      "batchId": "C2-LT-B9",
+      "priorityRank": 7,
+      "localDomainPath": "domains/c2-source-maintenance/oral-health-continuity",
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB9-SRC-07-1",
+          "title": "WHO Global oral health status report",
+          "url": "https://www.who.int/publications/i/item/9789240061484",
+          "evidenceRole": "global-oral-health-burden-source",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-04",
+          "sourceCheck": {
+            "checkedAt": "2026-07-04",
+            "method": "python-requests-get",
+            "statusCode": 200,
+            "contentLengthBytes": 87183
+          }
+        },
+        {
+          "sourceRefId": "C2LTB9-SRC-07-2",
+          "title": "CDC Oral Health: About Oral Health",
+          "url": "https://www.cdc.gov/oral-health/about/index.html",
+          "evidenceRole": "oral-health-conditions-source",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-04",
+          "sourceCheck": {
+            "checkedAt": "2026-07-04",
+            "method": "python-requests-get",
+            "statusCode": 200,
+            "contentLengthBytes": 66690
+          }
+        }
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "modelAdmissionDecision": "blocked-until-c2ltb9-source-specific-fields-local-review-independent-fresh-review-and-reviewed-artifacts-exist",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ]
+    },
+    {
+      "domainId": "xerostomia-salivary-function-oral-medication-continuity",
+      "triageBucket": "other-c2-source-maintenance",
+      "selectionReason": "口干和唾液功能失衡会放大龋病、吞咽、言语、感染和药物负担，是老年、放疗和多药使用场景下的隐性失效点。",
+      "claimSeed": "唾液功能不足通过进食、吞咽、说话、睡眠、龋病风险、黏膜不适和药物副作用改变有效时间与照护需求。",
+      "variableSeed": [
+        "dry-mouth-severity",
+        "salivary-function",
+        "medication-burden",
+        "swallow-speech-comfort",
+        "caries-infection-risk"
+      ],
+      "batchId": "C2-LT-B9",
+      "priorityRank": 8,
+      "localDomainPath": "domains/c2-source-maintenance/xerostomia-salivary-function-oral-medication-continuity",
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB9-SRC-08-1",
+          "title": "NIDCR Dry Mouth",
+          "url": "https://www.nidcr.nih.gov/health-info/dry-mouth",
+          "evidenceRole": "dry-mouth-patient-education-source",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-04",
+          "sourceCheck": {
+            "checkedAt": "2026-07-04",
+            "method": "python-requests-get",
+            "statusCode": 200,
+            "contentLengthBytes": 65617
+          }
+        },
+        {
+          "sourceRefId": "C2LTB9-SRC-08-2",
+          "title": "ADA Oral Health Topics: Xerostomia",
+          "url": "https://www.ada.org/resources/ada-library/oral-health-topics/xerostomia",
+          "evidenceRole": "xerostomia-clinical-topic-source",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-04",
+          "sourceCheck": {
+            "checkedAt": "2026-07-04",
+            "method": "python-requests-get",
+            "statusCode": 200,
+            "contentLengthBytes": 77401
+          }
+        }
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "modelAdmissionDecision": "blocked-until-c2ltb9-source-specific-fields-local-review-independent-fresh-review-and-reviewed-artifacts-exist",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ]
+    },
+    {
+      "domainId": "asthma-copd-maintenance-control-continuity",
+      "triageBucket": "other-c2-source-maintenance",
+      "selectionReason": "哮喘和 COPD 的日常控制决定呼吸储备、睡眠、运动、急性加重和医疗挤兑风险，是行动能力的基础氧合通道。",
+      "claimSeed": "慢性气道疾病控制通过症状、急性加重、吸入药可及性、空气暴露、体力活动和住院风险影响主体持续行动。",
+      "variableSeed": [
+        "symptom-control",
+        "exacerbation-frequency",
+        "inhaler-access",
+        "activity-limitation",
+        "lung-function-boundary"
+      ],
+      "batchId": "C2-LT-B9",
+      "priorityRank": 9,
+      "localDomainPath": "domains/c2-source-maintenance/asthma-copd-maintenance-control-continuity",
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB9-SRC-09-1",
+          "title": "NHLBI 2020 Focused Updates to the Asthma Management Guidelines",
+          "url": "https://www.nhlbi.nih.gov/health-topics/asthma-management-guidelines-2020-updates",
+          "evidenceRole": "asthma-management-guideline-source",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-04",
+          "sourceCheck": {
+            "checkedAt": "2026-07-04",
+            "method": "python-requests-get",
+            "statusCode": 200,
+            "contentLengthBytes": 67998
+          }
+        },
+        {
+          "sourceRefId": "C2LTB9-SRC-09-2",
+          "title": "GOLD 2026 Report and Pocket Guide",
+          "url": "https://goldcopd.org/2026-gold-report/",
+          "evidenceRole": "copd-management-report-source",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-04",
+          "sourceCheck": {
+            "checkedAt": "2026-07-04",
+            "method": "python-requests-get",
+            "statusCode": 200,
+            "contentLengthBytes": 66820
+          }
+        }
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "modelAdmissionDecision": "blocked-until-c2ltb9-source-specific-fields-local-review-independent-fresh-review-and-reviewed-artifacts-exist",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ]
+    },
+    {
+      "domainId": "home-oxygen-respiratory-equipment-supply-continuity",
+      "triageBucket": "organ-system-homeostasis",
+      "selectionReason": "家庭氧疗和呼吸设备供应把临床处方转化为居家生命支持能力，设备、供电和耗材中断会直接压缩活动半径和安全边界。",
+      "claimSeed": "家庭氧疗通过设备可靠性、支付覆盖、供电、便携性、依从性和慢性肺病缺氧负担影响主体居家行动与安全。",
+      "variableSeed": [
+        "oxygen-equipment-access",
+        "chronic-hypoxemia",
+        "portable-oxygen-mobility",
+        "coverage-boundary",
+        "equipment-reliability"
+      ],
+      "batchId": "C2-LT-B9",
+      "priorityRank": 10,
+      "localDomainPath": "domains/c2-source-maintenance/home-oxygen-respiratory-equipment-supply-continuity",
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB9-SRC-10-1",
+          "title": "Medicare Oxygen equipment and accessories coverage",
+          "url": "https://www.medicare.gov/coverage/oxygen-equipment-accessories",
+          "evidenceRole": "oxygen-equipment-coverage-source",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-04",
+          "sourceCheck": {
+            "checkedAt": "2026-07-04",
+            "method": "python-requests-get",
+            "statusCode": 200,
+            "contentLengthBytes": 114959
+          }
+        },
+        {
+          "sourceRefId": "C2LTB9-SRC-10-2",
+          "title": "ATS Clinical Practice Guideline: Home Oxygen Therapy for Adults with Chronic Lung Disease",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7667898/",
+          "evidenceRole": "home-oxygen-clinical-guideline-source",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-04",
+          "sourceCheck": {
+            "checkedAt": "2026-07-04",
+            "method": "python-requests-get",
+            "statusCode": 200,
+            "contentLengthBytes": 375576
+          }
+        }
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "modelAdmissionDecision": "blocked-until-c2ltb9-source-specific-fields-local-review-independent-fresh-review-and-reviewed-artifacts-exist",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ]
+    },
+    {
+      "domainId": "immune-repertoire-vaccine-response-aging-continuity",
+      "triageBucket": "infection-immune-resilience",
+      "selectionReason": "免疫老化和疫苗反应决定老年主体抵御感染、维持社会活动和等待未来技术窗口的风险水平。",
+      "claimSeed": "免疫储备、疫苗建议和免疫衰老通过感染风险、重症风险、公共卫生接入和免疫保护持续性影响主体持续存在与社会参与。",
+      "variableSeed": [
+        "immunosenescence",
+        "vaccine-response",
+        "adult-immunization-schedule",
+        "infection-risk",
+        "protection-duration-uncertainty"
+      ],
+      "batchId": "C2-LT-B9",
+      "priorityRank": 11,
+      "localDomainPath": "domains/c2-source-maintenance/immune-repertoire-vaccine-response-aging-continuity",
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB9-SRC-11-1",
+          "title": "CDC Adult Immunization Schedule by Age",
+          "url": "https://www.cdc.gov/vaccines/hcp/imz-schedules/adult-age.html",
+          "evidenceRole": "adult-immunization-schedule-source",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-04",
+          "sourceCheck": {
+            "checkedAt": "2026-07-04",
+            "method": "python-requests-get",
+            "statusCode": 200,
+            "contentLengthBytes": 81176
+          }
+        },
+        {
+          "sourceRefId": "C2LTB9-SRC-11-2",
+          "title": "Immunosenescence and vaccine responses review",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7151786/",
+          "evidenceRole": "immune-aging-vaccine-response-review",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-04",
+          "sourceCheck": {
+            "checkedAt": "2026-07-04",
+            "method": "python-requests-get",
+            "statusCode": 200,
+            "contentLengthBytes": 197229
+          }
+        }
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "modelAdmissionDecision": "blocked-until-c2ltb9-source-specific-fields-local-review-independent-fresh-review-and-reviewed-artifacts-exist",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ]
+    },
+    {
+      "domainId": "wildfire-smoke-clean-air-respiratory-continuity",
+      "triageBucket": "organ-system-homeostasis",
+      "selectionReason": "野火烟雾和清洁空气可及性会把环境暴露转化为呼吸、心血管、睡眠和室内活动边界问题，是气候风险下的源体维护域。",
+      "claimSeed": "颗粒物烟雾暴露、室内过滤、风险沟通和脆弱人群保护通过急性症状、慢病加重、行动限制和避难成本影响主体持续性。",
+      "variableSeed": [
+        "pm25-smoke-exposure",
+        "clean-air-room-access",
+        "respiratory-symptoms",
+        "vulnerable-group-risk",
+        "indoor-filtration-boundary"
+      ],
+      "batchId": "C2-LT-B9",
+      "priorityRank": 12,
+      "localDomainPath": "domains/c2-source-maintenance/wildfire-smoke-clean-air-respiratory-continuity",
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB9-SRC-12-1",
+          "title": "AirNow Wildfire Smoke Guide Publications",
+          "url": "https://www.airnow.gov/wildfire-smoke-guide-publications/",
+          "evidenceRole": "wildfire-smoke-public-health-guide-source",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-04",
+          "sourceCheck": {
+            "checkedAt": "2026-07-04",
+            "method": "python-requests-get",
+            "statusCode": 200,
+            "contentLengthBytes": 60825
+          }
+        },
+        {
+          "sourceRefId": "C2LTB9-SRC-12-2",
+          "title": "CDC Wildfire Smoke Risk Factors",
+          "url": "https://www.cdc.gov/wildfires/risk-factors/index.html",
+          "evidenceRole": "wildfire-smoke-risk-factor-source",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-04",
+          "sourceCheck": {
+            "checkedAt": "2026-07-04",
+            "method": "python-requests-get",
+            "statusCode": 200,
+            "contentLengthBytes": 47067
+          }
+        }
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "modelAdmissionDecision": "blocked-until-c2ltb9-source-specific-fields-local-review-independent-fresh-review-and-reviewed-artifacts-exist",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ]
+    }
+  ],
+  "aggregateDecision": {
+    "selectedDomainCount": 12,
+    "candidateSourceCount": 24,
+    "modelAdmission": "blocked",
+    "nextRequiredArtifact": "human-infra-c2-longtail-ninth-batch-source-extraction-queue.json",
+    "reason": "The ninth batch only selects source-specific review targets and web-checked candidate sources. It does not complete field extraction, local review, independent fresh review, reviewed artifacts or model admission."
+  }
+}

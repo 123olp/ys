@@ -2,8 +2,8 @@
 
 - Overall status: `PASS`
 - Model path: `web/src/data/life-path-toy-model.json`
-- Model SHA-256: `a4c92209d79d20579bf1f575d5ebf07ffe5be9ccaf6bf3f3eef08efa287b5377`
-- Generated at: `2026-07-03T09:40:24.923635+00:00`
+- Model SHA-256: `26c01c702ae5369dd8194a9c399edbe9771a660819b3edfc1950ddc94577a6f6`
+- Generated at: `2026-07-04T20:22:40.011119+00:00`
 
 ## Checks
 
@@ -164,6 +164,14 @@
 | `nhats-registration-evidence-template-validation-pass` | `PASS` | overallStatus='PASS' summary={'pass': 11, 'fail': 0} |
 | `nhats-registration-evidence-template-validation-boundary` | `PASS` | validation must keep registration, download, extraction, raw data, public AI upload, calibration and individual prediction blocked |
 | `nhats-registration-evidence-template-validation-non-proof-note` | `PASS` | validation must state that it does not prove NHATS registration, data access, workspace execution or model readiness |
+| `nhats-registration-evidence-packet-validator-test-cases-exist` | `PASS` | domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_registration_evidence_packet_validator_test_cases.json |
+| `nhats-registration-evidence-packet-validator-validation-exists` | `PASS` | web/src/data/life-path-nhats-registration-evidence-packet-validator-validation.json |
+| `nhats-registration-evidence-packet-validator-test-cases-schema` | `PASS` | test cases must be synthetic-only with at least five cases |
+| `nhats-registration-evidence-packet-validator-validation-schema` | `PASS` | schemaVersion='human-infra.life-path-nhats-registration-evidence-packet-validator-validation.v1' |
+| `nhats-registration-evidence-packet-validator-source-hash` | `PASS` | validation must hash-bind test cases and registration evidence template |
+| `nhats-registration-evidence-packet-validator-decision-boundary` | `PASS` | status='pass' decision={'validatorReady': True, 'testCaseCount': 6, 'reviewableButStillBlockedCount': 1, 'cannotEvaluateCount': 1, 'rejectedCount': 4, 'realRegistrationEvidenceAttached': False, 'registrationGateClosureAllowed': False, 'downloadAllowed': False, 'extractionScriptAllowed': False, 'rawDataAllowedInRepository': False, 'publicAiUploadAllowed': False, 'calibrationAllowed': False, 'individualPredictionAllowed': False, 'reason': 'This validator only checks synthetic future NHATS registration evidence packet shapes. It does not attach real registration proof, close registration gates, authorize download, create extraction scripts, store raw data, calibrate a model or support individual use.'} |
+| `nhats-registration-evidence-packet-validator-case-results` | `PASS` | all synthetic case expectations must pass |
+| `nhats-registration-evidence-packet-validator-non-proof-boundary` | `PASS` | validation must state that it does not prove registration, download, extraction, calibration or individual use |
 | `nhats-controlled-storage-validation-exists` | `PASS` | web/src/data/life-path-nhats-controlled-storage-destruction-validation.json |
 | `nhats-controlled-storage-validation-schema` | `PASS` | schemaVersion='human-infra.life-path-nhats-controlled-storage-destruction-plan-validation.v1' |
 | `nhats-controlled-storage-validation-source-hash` | `PASS` | validation must point back to current storage/destruction plan and acquisition-readiness hashes |
@@ -369,6 +377,34 @@
 | `nhats-colectica-capture-task-register-validation-schema` | `PASS` | schemaVersion='human-infra.life-path-nhats-colectica-capture-task-register-validation.v1' |
 | `nhats-colectica-capture-task-register-validation-source-hash` | `PASS` | capture-task validation must point back to current register, route-field, capture-template and route-classifier readiness hashes |
 | `nhats-colectica-capture-task-register-validation-boundary` | `PASS` | validation must prove task readiness while keeping authenticated capture and model admission blocked |
+| `nhats-route-value-crosswalk-assembly-protocol-exists` | `PASS` | domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_route_value_crosswalk_assembly_protocol.json |
+| `nhats-route-value-crosswalk-assembly-validation-exists` | `PASS` | web/src/data/life-path-nhats-route-value-crosswalk-assembly-validation.json |
+| `nhats-route-value-crosswalk-assembly-schema` | `PASS` | schemaVersion='human-infra.life-path-nhats-route-value-crosswalk-assembly-protocol.v1' |
+| `nhats-route-value-crosswalk-assembly-identity` | `PASS` | assembly protocol must remain protocol-only and must not claim a built crosswalk |
+| `nhats-route-value-crosswalk-assembly-boundary` | `PASS` | assembly protocol may be ready, but packets, labels, crosswalk rows, maps, classifier, extraction, export, calibration and individual prediction must remain blocked |
+| `nhats-route-value-crosswalk-assembly-zero-admissions` | `PASS` | assembly summary must cover 9 units and keep all evidence/admission counts at zero |
+| `nhats-route-value-crosswalk-assembly-units` | `PASS` | assembly_unit_count=9 |
+| `nhats-route-value-crosswalk-assembly-source-bindings` | `PASS` | missing=[] |
+| `nhats-route-value-crosswalk-assembly-prohibited-actions` | `PASS` | protocol must explicitly block classifier code, individual prediction, sensitive death fields and restricted materials |
+| `nhats-route-value-crosswalk-assembly-validation-schema` | `PASS` | schemaVersion='human-infra.validation-report.v1' |
+| `nhats-route-value-crosswalk-assembly-validation-source-hash` | `PASS` | validation must point back to current assembly protocol path, hash, id and status |
+| `nhats-route-value-crosswalk-assembly-validation-upstreams` | `PASS` | missing=[] |
+| `nhats-route-value-crosswalk-assembly-validation-zero-admissions` | `PASS` | validation must pass while preserving zero crosswalk, map, signoff, classifier, extraction, calibration and individual-prediction admissions |
+| `nhats-route-value-crosswalk-assembly-validation-boundary` | `PASS` | validation boundary must state that crosswalk assembly remains blocked and admits no individual prediction |
+| `nhats-route-value-crosswalk-entry-validator-test-cases-exist` | `PASS` | domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_route_value_crosswalk_entry_validator_test_cases.json |
+| `nhats-route-value-crosswalk-entry-validator-validation-exists` | `PASS` | web/src/data/life-path-nhats-route-value-crosswalk-entry-validator-validation.json |
+| `nhats-route-value-crosswalk-entry-validator-test-cases-schema` | `PASS` | schemaVersion='human-infra.life-path-nhats-route-value-crosswalk-entry-validator-test-cases.v1' |
+| `nhats-route-value-crosswalk-entry-validator-test-cases-identity` | `PASS` | test cases must remain synthetic fixtures and keep MODEL-G4 blocked |
+| `nhats-route-value-crosswalk-entry-validator-source-bindings` | `PASS` | test cases must bind to assembly protocol, capture review execution, capture task register and route-classifier readiness |
+| `nhats-route-value-crosswalk-entry-validator-hard-boundaries` | `PASS` | hard boundaries must block credentials, sensitive death fields, assembly closure and downstream promotion |
+| `nhats-route-value-crosswalk-entry-validator-case-verdict-shape` | `PASS` | case_count=6 verdicts=['reviewable-but-still-blocked', 'cannot-evaluate', 'rejected', 'rejected', 'rejected', 'rejected'] |
+| `nhats-route-value-crosswalk-entry-validator-validation-schema` | `PASS` | schemaVersion='human-infra.life-path-nhats-route-value-crosswalk-entry-validator-validation.v1' |
+| `nhats-route-value-crosswalk-entry-validator-validation-source-hash` | `PASS` | validation must point back to current test-case path, hash, id and status |
+| `nhats-route-value-crosswalk-entry-validator-validation-upstream-hashes` | `PASS` | upstream_count=4 |
+| `nhats-route-value-crosswalk-entry-validator-validation-summary` | `PASS` | validation must pass all six synthetic cases while preserving the blocked reviewable verdict |
+| `nhats-route-value-crosswalk-entry-validator-decision-boundary` | `PASS` | entry validator may preflight future rows, but must keep G4, classifier, extraction, export, calibration and individual prediction blocked |
+| `nhats-route-value-crosswalk-entry-validator-result-boundaries` | `PASS` | every synthetic result must keep real entry, assembly closure and downstream use disabled |
+| `nhats-route-value-crosswalk-entry-validator-validation-boundary` | `PASS` | validation boundary must state reviewable entries remain blocked and close no assembly unit |
 | `nhats-route-classifier-readiness-exists` | `PASS` | domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_route_classifier_readiness.json |
 | `nhats-route-classifier-readiness-validation-exists` | `PASS` | web/src/data/life-path-nhats-route-classifier-readiness-validation.json |
 | `nhats-route-classifier-readiness-schema` | `PASS` | schemaVersion='human-infra.life-path-nhats-route-classifier-readiness.v1' |
@@ -379,6 +415,12 @@
 | `nhats-route-classifier-readiness-validation-source-hash` | `PASS` | readiness validation must point back to current readiness and upstream source hashes |
 | `nhats-route-classifier-readiness-validation-summary` | `PASS` | readiness validation must pass with zero failures and preserve input-family/gate counts |
 | `nhats-route-classifier-readiness-validation-boundary` | `PASS` | validation boundary must keep classifier, extraction, aggregation, weighted counts, export, calibration and individual prediction blocked |
+| `nhats-route-classifier-synthetic-dry-run-validation-exists` | `PASS` | web/src/data/life-path-nhats-route-classifier-synthetic-dry-run-validation.json |
+| `nhats-route-classifier-synthetic-dry-run-validation-schema` | `PASS` | schemaVersion='human-infra.life-path-nhats-route-classifier-synthetic-dry-run-validation.v1' |
+| `nhats-route-classifier-synthetic-dry-run-source-hash` | `PASS` | dry-run validation must point back to current readiness, missingness protocol and synthetic test cases |
+| `nhats-route-classifier-synthetic-dry-run-summary` | `PASS` | dry-run validation must pass 8 synthetic cases with 5 allowed and 3 blocked route decisions |
+| `nhats-route-classifier-synthetic-dry-run-boundary` | `PASS` | synthetic route-classifier dry-run may be runnable, but real classifier, extraction, aggregation, export, calibration and individual prediction must remain blocked |
+| `nhats-route-classifier-synthetic-dry-run-cases` | `PASS` | tracked dry-run summary may contain only synthetic pass/fail case decisions and no real death-date output |
 | `nhats-l2-variable-family-admission-register-exists` | `PASS` | domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_l2_variable_family_admission_register.json |
 | `nhats-l2-variable-family-admission-validation-exists` | `PASS` | web/src/data/life-path-nhats-l2-variable-family-admission-validation.json |
 | `nhats-l2-variable-family-admission-schema` | `PASS` | schemaVersion='human-infra.life-path-nhats-l2-variable-family-admission.v1' |
@@ -395,6 +437,31 @@
 | `nhats-preoutcome-aggregation-validation-schema` | `PASS` | schemaVersion='human-infra.life-path-nhats-preoutcome-aggregation-validation.v1' |
 | `nhats-preoutcome-aggregation-validation-source-hash` | `PASS` | pre-outcome aggregation validation must point back to current upstream protocol hashes |
 | `nhats-preoutcome-aggregation-validation-boundary` | `PASS` | validation must prove only pre-outcome L2 rule freezing while keeping real aggregation, L4, calibration and individual prediction blocked |
+| `model-governance-modelAdmissionContract-exists` | `PASS` | docs/reference/human-infra-model-admission-contract.json |
+| `model-governance-modelAdmissionCandidateRegistry-exists` | `PASS` | docs/reference/human-infra-model-admission-candidate-registry.json |
+| `model-governance-quantitativeCapabilityLadder-exists` | `PASS` | docs/reference/human-infra-quantitative-capability-ladder.json |
+| `model-governance-quantitativeCapabilityLadderValidation-exists` | `PASS` | web/src/data/human-infra-quantitative-capability-ladder-validation.json |
+| `model-governance-researchStandardsSourceAnchorRegister-exists` | `PASS` | docs/reference/human-infra-research-standards-source-anchor-register.json |
+| `model-governance-researchStandardsSourceAnchorValidation-exists` | `PASS` | web/src/data/human-infra-research-standards-source-anchor-validation.json |
+| `model-governance-domainToModelBridgeContract-exists` | `PASS` | docs/reference/human-infra-domain-to-model-bridge-contract.json |
+| `model-governance-domainToModelBridgeRegister-exists` | `PASS` | docs/reference/human-infra-domain-to-model-bridge-register.json |
+| `model-governance-domainToModelBridgeValidation-exists` | `PASS` | web/src/data/human-infra-domain-to-model-bridge-validation.json |
+| `model-governance-admission-contract-blocked` | `PASS` | model admission contract must keep calibrated prediction blocked and current maximum at L3 |
+| `model-governance-candidate-registry-blocked` | `PASS` | candidate registry must keep reviewed artifacts L1/L2-only, current model at L3, and L4/L5 admissions at zero |
+| `model-governance-quantitative-capability-q3-only` | `PASS` | quantitative capability ladder must keep current capability at Q3/L3 and block Q4/Q5, individual prediction, medical advice and intervention ranking |
+| `model-governance-research-standards-no-admission` | `PASS` | research standards anchors may guide reporting and bias gates but must not grant model admission, intervention effects, individual prediction or medical advice |
+| `model-governance-domain-to-model-bridge-q2-only` | `PASS` | domain-to-model bridge must keep C1-C6 domains at Q2/L2 candidate vocabulary only and block coefficients, causal effects, calibrated prediction, individual use, medical advice, intervention ranking and death-date output |
+| `l4-control-plane-blockerMatrix-exists` | `PASS` | docs/reference/human-infra-l4-model-readiness-blocker-matrix.json |
+| `l4-control-plane-unblockExecutionPlan-exists` | `PASS` | docs/reference/human-infra-l4-unblock-execution-plan.json |
+| `l4-control-plane-evidenceIntakeRegister-exists` | `PASS` | docs/reference/human-infra-l4-evidence-intake-register.json |
+| `l4-control-plane-validationCalibrationReportingContract-exists` | `PASS` | docs/reference/human-infra-l4-validation-calibration-reporting-contract.json |
+| `l4-control-plane-validationCalibrationReportExecutionRegister-exists` | `PASS` | docs/reference/human-infra-l4-validation-calibration-report-execution-register.json |
+| `l4-control-plane-validationCalibrationReportExecutionValidation-exists` | `PASS` | web/src/data/life-path-l4-validation-calibration-report-execution-validation.json |
+| `l4-control-plane-blocker-matrix-still-blocked` | `PASS` | blocker matrix must keep two L4 candidates blocked by six admission blockers |
+| `l4-control-plane-unblock-plan-still-blocked` | `PASS` | execution plan must bind blocker matrix, evidence intake and reporting contract while keeping all L4 work orders blocked |
+| `l4-control-plane-evidence-intake-zero-evidence` | `PASS` | evidence intake must keep 24 slots pending, zero evidence packets, zero signoffs and L4 review closed |
+| `l4-control-plane-reporting-contract-template-only` | `PASS` | reporting contract must expose 12 report sections and 5 slots while keeping real validation, calibration and L4 admission blocked |
+| `l4-control-plane-validation-execution-zero-real-report` | `PASS` | execution validation must pass while preserving zero real report packets, zero human signoffs and l4-still-blocked downstream decision |
 | `sensitivity-analysis-exists` | `PASS` | web/src/data/life-path-sensitivity-analysis.json |
 | `sensitivity-schema-version` | `PASS` | schemaVersion='human-infra.life-path-sensitivity.v1' |
 | `sensitivity-source-model-hash` | `PASS` | sensitivity output must point back to the generated model path and sha256 |
@@ -419,7 +486,7 @@
 - Aggregate path: `domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhanes_public_lmf_aggregate_pilot.json`
 - Aggregate SHA-256: `d817c2907d71a820baac846f5a41c28db6eeee5cb8e57ed20a47d87aa9efce0f`
 - Validation path: `web/src/data/life-path-nhanes-public-lmf-aggregate-pilot-validation.json`
-- Validation SHA-256: `25305a004c48b74582db560edcd7fa710e656e72e547f6809811a4ab422b9d8c`
+- Validation SHA-256: `da06a2544ca2039b5cdd06b7557769ee75bd8ea4350d3f68520c0a02ded286a0`
 - Aggregate pilot status: `PASS`
 - Boundary: this proves only a public real-data aggregate join and endpoint smoke test; it does not prove calibrated prediction, survey-weighted inference, causal effects, medical advice or individual usefulness.
 
@@ -428,7 +495,7 @@
 - Readiness path: `domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhanes_public_lmf_survey_design_readiness.json`
 - Readiness SHA-256: `0c914cdecd72587bf62ea0b59c4445ac5bfa72c587cc845264f79c5363935170`
 - Validation path: `web/src/data/life-path-nhanes-public-lmf-survey-design-readiness-validation.json`
-- Validation SHA-256: `b41d55bce7c52610a86768e6924d654fe971bc4b3726caac69c5dcaf7937e815`
+- Validation SHA-256: `b313508b770121e5027f34c78f37240395c41e2e7dc3eb52a84caf8afac156ae`
 - Readiness status: `PASS`
 - Boundary: official WTMEC2YR, SDMVPSU and SDMVSTRA readiness is documented, but weighted population inference, design-based intervals, calibration and individual prediction remain blocked.
 
@@ -437,7 +504,7 @@
 - Readiness path: `domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhanes_public_lmf_domain_subpopulation_rule_readiness.json`
 - Readiness SHA-256: `4a7cb6d07dd55b12253c06640e124cc9948c8403b2107b6148e85b504a43e8d5`
 - Validation path: `web/src/data/life-path-nhanes-public-lmf-domain-subpopulation-rule-readiness-validation.json`
-- Validation SHA-256: `8ba5367d49e266cd4f67f8530b5ccca3471f36fb2811b3a2d56089939e8f28ad`
+- Validation SHA-256: `00e28fa16e64b31ceb5a7dd633afdf78246e7634f4deb34acd8217846238ca3b`
 - Readiness status: `PASS`
 - Boundary: official domain/subpopulation analysis mechanisms are documented, but row-drop subgroup filtering is not an estimator and weighted domain inference remains blocked until a reviewed estimator, eligible-base rule, DOF review and disclosure gate exist.
 
@@ -446,7 +513,7 @@
 - Readiness path: `domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhanes_public_lmf_eligible_base_readiness.json`
 - Readiness SHA-256: `2abd4af214d1bbe6eb8c4c5109b33864fd9025e55ada972b8bcb51d13d97674b`
 - Validation path: `web/src/data/life-path-nhanes-public-lmf-eligible-base-readiness-validation.json`
-- Validation SHA-256: `2203d30427b706e372e1310fb715bc4b709bf83fd7451cf0151c1427f1de00b5`
+- Validation SHA-256: `66af130a9ee3eb7df3f8e3878ef247b0cd56383f74bc9a0b7014582e473d0e9b`
 - Readiness status: `PASS`
 - Boundary: positive WTMEC2YR eligible-base diagnostics are recorded without persisting rows, but weighted domain inference, design-based intervals, calibration and individual prediction remain blocked.
 
@@ -455,7 +522,7 @@
 - Readiness path: `domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhanes_public_lmf_weighted_estimator_readiness.json`
 - Readiness SHA-256: `469d6cdcdc846bfed97a449f9a8a3bd2e197bfe214b996cb121c800979f5ef4a`
 - Validation path: `web/src/data/life-path-nhanes-public-lmf-weighted-estimator-readiness-validation.json`
-- Validation SHA-256: `7c81113149ba671b798102624341a21f55a64f228d555fa89a87a44af6a6c8d9`
+- Validation SHA-256: `d6397b8cdc32ca3668936e0e02e5220df1d77cef56a571c32b3abdfe2a9979ba`
 - Readiness status: `PASS`
 - Boundary: R survey/svydesign is selected as the mature complex-survey backend and the design-object contract is bound, but runtime smoke, domain indicator tests, DOF/sparse-domain review, public disclosure review, weighted outputs, calibration and individual prediction remain blocked.
 
@@ -464,7 +531,7 @@
 - Readiness path: `domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhanes_public_lmf_r_survey_runtime_smoke_readiness.json`
 - Readiness SHA-256: `117e03dfd6cfec882f1b3c0587323478d9b8cae1e277a6cbe119b166fb22b0d5`
 - Validation path: `web/src/data/life-path-nhanes-public-lmf-r-survey-runtime-smoke-validation.json`
-- Validation SHA-256: `354d9fff071df5a0644ccd9f6d99f400a5a66c2347ac3dd093822678a72e53f2`
+- Validation SHA-256: `4ee88a279fd58f0179669a3d6a9a330be4e531211b7470a4303c4d6466bc6d4f`
 - Runtime smoke status: `blocked-no-rscript`
 - Audit status: `PASS`
 - Boundary: this gate probes whether the current environment can run R survey/svydesign on synthetic data only; it still does not authorize NHANES weighted domain output, confidence intervals, calibration, causal claims, medical advice or individual prediction.
@@ -515,17 +582,26 @@
 - Registration evidence template status: `PASS`
 - Boundary: the template defines redacted evidence slots for registration and access governance; it does not prove registration, authorize download, authorize extraction, or open calibration.
 
+## NHATS Registration Evidence Packet Validator
+
+- Registration packet test cases path: `domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_registration_evidence_packet_validator_test_cases.json`
+- Registration packet test cases SHA-256: `38c2398b69afdb1ea6417fcb0baebb27ae139579b092adb285630d221d5942de`
+- Registration packet validation path: `web/src/data/life-path-nhats-registration-evidence-packet-validator-validation.json`
+- Registration packet validation SHA-256: `79cad74acf4e5fd42217e63c44239f4eca4e13e42dbbe0c47a23a5aec7897e97`
+- Registration packet validator status: `PASS`
+- Boundary: the validator exercises only synthetic future packet semantics; it does not prove NHATS registration, close the registration gate, authorize download, create extraction scripts, store raw data, open calibration or support individual prediction.
+
 ## NHATS Controlled Storage / Destruction
 
 - Storage/destruction validation path: `web/src/data/life-path-nhats-controlled-storage-destruction-validation.json`
-- Storage/destruction validation SHA-256: `51e2d6b397d489312488108ab6a26210fb30ac9305a577cb878c87c645b30e53`
+- Storage/destruction validation SHA-256: `db04780c8484063ce3482d88cffbc53d29f6928d04032ac247f56e29972bfe8c`
 - Storage/destruction validation status: `PASS`
 - Boundary: the controlled storage/destruction plan is machine-validated but real governed workspace execution, download, extraction, calibration and individual prediction remain blocked.
 
 ## NHATS Synthetic Storage / Destruction Drill
 
 - Synthetic drill validation path: `web/src/data/life-path-nhats-synthetic-storage-destruction-drill-validation.json`
-- Synthetic drill validation SHA-256: `025865d0a7206866f6db1ad04bc5b08fa41c0bb6b96b62bc143c96f52baf5870`
+- Synthetic drill validation SHA-256: `b93867ebf395569d564d498c6fd0e76ebc8036504b1e8578303a4973b3c3a343`
 - Synthetic drill validation status: `PASS`
 - Boundary: the synthetic create-hash-delete drill proves only dry-run mechanics; it does not prove NHATS registration, governed workspace provisioning, data access, extraction, calibration or individual prediction.
 
@@ -535,7 +611,7 @@
 - File-tier table SHA-256: `18c151512ffb6e075a134765e13d5b4b07252be10b9e55a211f7d890cefdc6f1`
 - File-tier table status: `PASS`
 - File-tier validation path: `web/src/data/life-path-nhats-file-tier-table-validation.json`
-- File-tier validation SHA-256: `072c6412131502ad20e6acc868ada9396b59c4e6f6741baa211034d811a14b88`
+- File-tier validation SHA-256: `4ff110808c41ec4b700a17ee66979d1967660ec6f72112d0d9ab65c160a8bbd3`
 - File-tier validation status: `PASS`
 - Boundary: the file-tier table maps official R13/R14 public and sensitive file families, and the validator binds it to current upstream access records while still blocking download, extraction, repository storage, public AI upload, calibration and individual prediction.
 
@@ -567,7 +643,7 @@
 - Disclosure test cases path: `domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_disclosure_control_test_cases.json`
 - Disclosure test cases SHA-256: `0a9cccdbfbd951ba6d04eeb762b9387ba50a13336e4ee4ade43ed976acb4c9c5`
 - Disclosure validation path: `web/src/data/life-path-nhats-disclosure-control-validation.json`
-- Disclosure validation SHA-256: `c1bc971c6064a4ee8000ae3691f960af72b3aea33a237d0bb6c6deadc1bfd7d0`
+- Disclosure validation SHA-256: `ea3bc5e7b9fe267b4ef5e1b2af6e57a1283d143474aaa0926486f3feb12f8526`
 - Disclosure validation status: `PASS`
 - Boundary: disclosure-control validation proves only that synthetic output envelopes obey aggregate-only, n<5 suppression, row-level blocking, public-AI blocking and forbidden-output rules; it does not authorize real NHATS extraction, public export, calibration, validation or individual prediction.
 
@@ -578,7 +654,7 @@
 - Survey-design test cases path: `domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_survey_design_test_cases.json`
 - Survey-design test cases SHA-256: `a0d106ff0e70450ae96a4d8749037839cae27bfb7feb68bf2636681c46f500cc`
 - Survey-design validation path: `web/src/data/life-path-nhats-survey-design-validation.json`
-- Survey-design validation SHA-256: `3afff74b49a15379c6eb70ebcd8b39b7ce0412ff41fd09c144988876abfffd4c`
+- Survey-design validation SHA-256: `de3efc846b385e9f01f869bf0021ee2df34ad30fab4ac3fc338257d45d1a0b35`
 - Survey-design validation status: `PASS`
 - Boundary: survey-design validation proves only that synthetic design-plan envelopes enforce weights, strata, PSU/variance-unit, variance-method, route-map and disclosure prerequisites; it does not authorize real NHATS weighted estimates, population inference, calibration, validation or individual prediction.
 
@@ -589,7 +665,7 @@
 - Missingness-route test cases path: `domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_missingness_route_test_cases.json`
 - Missingness-route test cases SHA-256: `38928543b47a1f950de5925c2bb329fc544df4516aa882015240e7047674b4be`
 - Missingness-route validation path: `web/src/data/life-path-nhats-missingness-route-validation.json`
-- Missingness-route validation SHA-256: `10fc4ca5760aec925407ec9d8dd0787e473cc5d69bea2fa0b54401e5b6c59655`
+- Missingness-route validation SHA-256: `921629e9b5b0fdb67ed1447fff6d6380ea3e03edb0e69f234ecdbb71b28f8e89`
 - Missingness-route validation status: `PASS`
 - Boundary: missingness-route validation proves only that synthetic route envelopes separate death, self interview, proxy interview, facility route, missingness, conflicts and small-cell suppression; it does not authorize real NHATS route classification, weighted route counts, calibration, validation or individual prediction.
 
@@ -598,7 +674,7 @@
 - Route-field discovery register path: `domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_route_field_discovery_register.json`
 - Route-field discovery register SHA-256: `32d86995a0438e2104e6850334eefa63b30176b0767dd2229bc73a517ef5ade4`
 - Route-field discovery validation path: `web/src/data/life-path-nhats-route-field-discovery-validation.json`
-- Route-field discovery validation SHA-256: `22e5faa3168d6ef011b9bb5eb3809e5a61f1697aab1cf3d264bca8a324506eb6`
+- Route-field discovery validation SHA-256: `407adc63c367311220988c8b32bcd1e627ce34bb164f31daeaba3e731c08336b`
 - Route-field discovery validation status: `PASS`
 - Boundary: route-field discovery records official R13/R14 crosswalk candidates, but it does not replace Colectica value-label confirmation, governed file access, classifier review, disclosure review, weighted route counts, calibration, validation or individual prediction.
 
@@ -607,7 +683,7 @@
 - Colectica value-label protocol path: `domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_value_label_review_protocol.json`
 - Colectica value-label protocol SHA-256: `bd5130152b3c57d5a6d8cdc767df85bc8a10e19e1225738f13940bd3734ff416`
 - Colectica value-label validation path: `web/src/data/life-path-nhats-colectica-value-label-validation.json`
-- Colectica value-label validation SHA-256: `e72ab12450051a95dcfd394d11e391c62f0ca3f0f87ecb900e3ca43f5baa7c7b`
+- Colectica value-label validation SHA-256: `b9157bcca8c908c334c7a677d6532909091d6c17239edfb3ae24241b1ff79ca3`
 - Colectica value-label validation status: `PASS`
 - Boundary: Colectica value-label review protocol defines the next evidence gate, but it does not contain confirmed value-label maps, question text, skip logic, route-value crosswalks, classifier promotion, weighted route counts, public export, calibration, validation or individual prediction.
 
@@ -616,16 +692,16 @@
 - Colectica execution register path: `domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_value_label_review_execution_register.json`
 - Colectica execution register SHA-256: `de6d17f9470a563346f92884cead1eec35cf5a954245751b0135efc60672b042`
 - Colectica execution validation path: `web/src/data/life-path-nhats-colectica-value-label-review-execution-validation.json`
-- Colectica execution validation SHA-256: `f3fef11de89ffced7445ca292ab6fae3cb4fc7d6240847076f06e9417f21ad41`
+- Colectica execution validation SHA-256: `36fa823a8714a4d78bd64dbdba78a42e02edaa6bd78a4b17717aec1ecf1cbda0`
 - Colectica execution validation status: `PASS`
 - Boundary: Colectica execution now records official source trace, field-level source-trace skeleton and standard negative-code family only; it still blocks login-derived value labels, question text, universe/skip logic, route-value maps, classifier promotion, weighted route counts, public export, calibration, validation and individual prediction.
 
 ## NHATS Colectica Access-Route Probe
 
 - Colectica access-route probe register path: `domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_access_route_probe_register.json`
-- Colectica access-route probe register SHA-256: `58941fde2c6a1c5488437a1ad447cb3dae2032739ef1ed579e29da98b96aaa89`
+- Colectica access-route probe register SHA-256: `650a4c8d6747a722055cf417b40da4f0b011b97fe7465b44586493daf16c006d`
 - Colectica access-route probe validation path: `web/src/data/life-path-nhats-colectica-access-route-probe-validation.json`
-- Colectica access-route probe validation SHA-256: `2b15df48f795d0eb1b01f965c25901778f87f3c069882863fd10134ac895aff1`
+- Colectica access-route probe validation SHA-256: `eaea88ed4d46c4defa408df219f5322f3a98df49e16fc40045d2ce19df6201b5`
 - Colectica access-route probe validation status: `PASS`
 - Boundary: access-route probing verifies the public entry point, anonymous login boundary and technical-guide workflow only; it still blocks account status, authenticated variable page capture, value labels, question text, exports, calibration and individual prediction.
 
@@ -634,25 +710,50 @@
 - Colectica authenticated capture template path: `domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_authenticated_capture_template.json`
 - Colectica authenticated capture template SHA-256: `dc097acfcb44007b42a25ce500c6cb1d23b1154f6620a7797445293817313eeb`
 - Colectica authenticated capture template validation path: `web/src/data/life-path-nhats-colectica-authenticated-capture-template-validation.json`
-- Colectica authenticated capture template validation SHA-256: `5985eb460e5acfb039cba664b57244a61eee11fd12c7a5001cb0dca3f151780e`
+- Colectica authenticated capture template validation SHA-256: `6efa4ede754845142c8a9d6836f747ec8d4d95bf7240aa21810b361075a43483`
 - Colectica authenticated capture template validation status: `PASS`
 - Boundary: authenticated capture template validation proves only that the next capture evidence slots are complete; it still blocks account status, login, authenticated variable pages, value labels, question text, universe/skip logic, route classifiers, public export, calibration and individual prediction.
+
+## NHATS Route-Value Crosswalk Assembly
+
+- Route-value crosswalk assembly protocol path: `domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_route_value_crosswalk_assembly_protocol.json`
+- Route-value crosswalk assembly protocol SHA-256: `4208789a51d29d9b8155811ba98d193e841df121d9e2a244a02bd094bd4562c7`
+- Route-value crosswalk assembly validation path: `web/src/data/life-path-nhats-route-value-crosswalk-assembly-validation.json`
+- Route-value crosswalk assembly validation SHA-256: `38b8bc754484f944255dc9a2a987f621f041d8d5d7c06f71377f2913285dcb4f`
+- Route-value crosswalk assembly validation status: `PASS`
+- Boundary: assembly validation proves only that the crosswalk assembly protocol is ready as a blocked review frame; it still has zero reviewed capture packets, zero confirmed route-value rows, zero variable-specific missing-code maps, zero second-reviewer signoffs and no classifier, extraction, export, calibration or individual prediction admission.
+
+## NHATS Route-Value Crosswalk Entry Validator
+
+- Route-value crosswalk entry validator test cases path: `domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_route_value_crosswalk_entry_validator_test_cases.json`
+- Route-value crosswalk entry validator test cases SHA-256: `f3f8395e1798ac97ee2af5740fa9fc381fdcc29ff196abdd9bb866f8fcd2454a`
+- Route-value crosswalk entry validator validation path: `web/src/data/life-path-nhats-route-value-crosswalk-entry-validator-validation.json`
+- Route-value crosswalk entry validator validation SHA-256: `c3c7297852185818cc8b66c1e2621bdbd8fdb38f4b249c47b81116e1b4507985`
+- Route-value crosswalk entry validator validation status: `PASS`
+- Boundary: entry validator validation proves only that synthetic future crosswalk-entry shapes can be rejected, marked cannot-evaluate or marked reviewable-but-still-blocked; it closes no assembly unit, confirms no real route-value row, confirms no real missing-code map and allows no classifier, extraction, export, calibration or individual prediction.
 
 ## NHATS Route Classifier Readiness
 
 - Route-classifier readiness path: `domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_route_classifier_readiness.json`
 - Route-classifier readiness SHA-256: `f0c0224317c9ee20e8de56dcddeadba85ae24d67b736782ba22de90e83109296`
 - Route-classifier readiness validation path: `web/src/data/life-path-nhats-route-classifier-readiness-validation.json`
-- Route-classifier readiness validation SHA-256: `1e077c3c5c1e8d7faf7bf4baba4aa8181dfbe049d181f6c59c4ad6b514702a1d`
+- Route-classifier readiness validation SHA-256: `7be290cde18ffb3778cb3b9b951f4f476a863bf1fd17fd6065a79a1c3c8b1e6c`
 - Route-classifier readiness validation status: `PASS`
 - Boundary: route-classifier readiness validation proves only that a blocked gate exists between route-field candidates and any real classifier; it still blocks Colectica value labels, route-value crosswalks, variable-specific missing maps, real extraction, aggregation, weighted counts, public export, calibration and individual prediction.
+
+## NHATS Route Classifier Synthetic Dry-Run
+
+- Route-classifier synthetic dry-run validation path: `web/src/data/life-path-nhats-route-classifier-synthetic-dry-run-validation.json`
+- Route-classifier synthetic dry-run validation SHA-256: `12af12e37a7e27ea124c5a8b9c9efaf7dee0503af39547782028a386f61b6d0f`
+- Route-classifier synthetic dry-run validation status: `PASS`
+- Boundary: route-classifier synthetic dry-run validation proves only that synthetic route-envelope logic can run fail-closed; it still blocks real NHATS rows, real classifier code admission, weighted route counts, public export, calibration and individual prediction.
 
 ## NHATS L2 Variable Family Admission
 
 - L2 variable-family admission register path: `domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_l2_variable_family_admission_register.json`
 - L2 variable-family admission register SHA-256: `da1d444f452482f37aa7d7d12cd97c9deb0b2d6006540f76c5d2588389dffce3`
 - L2 variable-family admission validation path: `web/src/data/life-path-nhats-l2-variable-family-admission-validation.json`
-- L2 variable-family admission validation SHA-256: `52b7aa691c7fc0bf129d903aaddd3f3c99d1cef75007e33f33fb567a5a5b5d3f`
+- L2 variable-family admission validation SHA-256: `75bddee3c1d73f60bb6d2507c38b5d5636df391ecb2acbd0e74cdf57fef7b99a`
 - L2 variable-family admission validation status: `PASS`
 - Boundary: L2 variable-family admission validation proves only that the narrow estimand is mapped to six candidate families; it still blocks exact variables, governed data access, extraction, L4 admission, calibration and individual prediction.
 
@@ -661,14 +762,54 @@
 - Pre-outcome aggregation protocol path: `domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_preoutcome_aggregation_protocol.json`
 - Pre-outcome aggregation protocol SHA-256: `a2917d4bbb1682f5de6251fe919afae5da5bad681168475845a3a9c0a9a0747d`
 - Pre-outcome aggregation validation path: `web/src/data/life-path-nhats-preoutcome-aggregation-validation.json`
-- Pre-outcome aggregation validation SHA-256: `fdf31f00afb240f33bc2016c5f90cbe1faf7c3a47392626814f01df4c4e72c2e`
+- Pre-outcome aggregation validation SHA-256: `de068a74cb1f8b53d2e0e99d1f023c4ae962dc374d931b6ae4b423e1f9ef8b5a`
 - Pre-outcome aggregation validation status: `PASS`
 - Boundary: pre-outcome aggregation validation proves only that L2 aggregation rules are frozen before outcome inspection; it still blocks real aggregation, weighted estimates, public export, L4 admission, calibration and individual prediction.
+
+## Model Governance Control Plane
+
+- Model admission contract path: `docs/reference/human-infra-model-admission-contract.json`
+- Model admission contract SHA-256: `82146a5b0b85e330c64e17380cf9f6b35c97198de28d61bba7cc7eb4ab3b7692`
+- Model admission candidate registry path: `docs/reference/human-infra-model-admission-candidate-registry.json`
+- Model admission candidate registry SHA-256: `9f82f7fd443aa6c04a2ccb2ec8ab962c9ee6648076f294b8c4a523c35564db4a`
+- Quantitative capability ladder path: `docs/reference/human-infra-quantitative-capability-ladder.json`
+- Quantitative capability ladder SHA-256: `6c92c0874525980c914e478efa31967e49506ad483c42e8b033e36b0b1089dff`
+- Quantitative capability ladder validation path: `web/src/data/human-infra-quantitative-capability-ladder-validation.json`
+- Quantitative capability ladder validation SHA-256: `19097086f40f0eaca035800b652bbcaa024e520a5e96247df19b5b3aed193d38`
+- Research standards source-anchor register path: `docs/reference/human-infra-research-standards-source-anchor-register.json`
+- Research standards source-anchor register SHA-256: `cf96352d4b4b7c510b125984b23c768c8c83c556a686afb3416cbfc7ba8da3f1`
+- Research standards source-anchor validation path: `web/src/data/human-infra-research-standards-source-anchor-validation.json`
+- Research standards source-anchor validation SHA-256: `13c765ac22563c9c8e9634a07ce7db610a84e9fa4c03284165f8216002a472f0`
+- Domain-to-model bridge contract path: `docs/reference/human-infra-domain-to-model-bridge-contract.json`
+- Domain-to-model bridge contract SHA-256: `97337f50212823f5f8d86e52ccc522991c0777d8ef016bbc02109d282aa6844f`
+- Domain-to-model bridge register path: `docs/reference/human-infra-domain-to-model-bridge-register.json`
+- Domain-to-model bridge register SHA-256: `e8b369557f06ad4caeca58cf19acca3ee9f0eec764c85f91fea7df80773ada14`
+- Domain-to-model bridge validation path: `web/src/data/human-infra-domain-to-model-bridge-validation.json`
+- Domain-to-model bridge validation SHA-256: `69c259bc2105b19493ae9c48e783ef15c6ebc9abb86947dea772f1d6592610f9`
+- Model governance control-plane status: `PASS`
+- Boundary: the model governance control plane proves only that admission levels, candidate registry, Q0-Q5 capability ladder, external research-standard anchors and the C1-C6 domain-to-model bridge are wired into the total audit; it keeps current capability at Q3/L3, keeps domain bridge rows at Q2/L2 candidate vocabulary only, and blocks coefficients, causal effects, Q4 calibrated aggregate prediction, Q5 individual use, death-date output, medical advice and intervention ranking.
+
+## L4 Control Plane
+
+- Blocker matrix path: `docs/reference/human-infra-l4-model-readiness-blocker-matrix.json`
+- Blocker matrix SHA-256: `9f22a7c79f872a3c9f1de9e236847a1be32eef33a1be7637049925b7a7d367cd`
+- Unblock execution plan path: `docs/reference/human-infra-l4-unblock-execution-plan.json`
+- Unblock execution plan SHA-256: `c737e8c81dfd53c1bb77eabb90e0d54101939de5feae4fcaf59841f6df4db501`
+- Evidence intake register path: `docs/reference/human-infra-l4-evidence-intake-register.json`
+- Evidence intake register SHA-256: `cde068abb5911ea5acbf5d9d55de94f06dc512528b5ea90af36484cea6cde7de`
+- Validation/calibration reporting contract path: `docs/reference/human-infra-l4-validation-calibration-reporting-contract.json`
+- Validation/calibration reporting contract SHA-256: `c183428ba2b2e339d8ba2bdc22f6f401cef126769a0129e124c359e73305db6f`
+- Validation/calibration report execution register path: `docs/reference/human-infra-l4-validation-calibration-report-execution-register.json`
+- Validation/calibration report execution register SHA-256: `cb8ccb0a86ab2a94b9e3dab914354652f32878c9006be6ebe1f8970a466e483a`
+- Validation/calibration report execution validation path: `web/src/data/life-path-l4-validation-calibration-report-execution-validation.json`
+- Validation/calibration report execution validation SHA-256: `8c9021d7d826193639976e9e16ecec47f04fc9a23e1411d2f0f759036ae031c8`
+- L4 control-plane status: `PASS`
+- Boundary: the L4 control plane proves only that blockers, work orders, evidence slots and validation/calibration report packets are explicitly tracked; it preserves 24 pending evidence slots, zero real report packets, zero human signoffs, `l4-still-blocked`, no public weighted output, no calibrated prediction and no individual prediction.
 
 ## Sensitivity Analysis
 
 - Sensitivity path: `web/src/data/life-path-sensitivity-analysis.json`
-- Sensitivity SHA-256: `4082f5733581f64d33af499f09abaa4cb6bb4e276078abc386f18fccf1385737`
+- Sensitivity SHA-256: `62d962d4f247d48a0f77734f352da066f8930b043725f9084848be62a0c54ba3`
 - Sensitivity status: `PASS`
 - Boundary: sensitivity analysis is synthetic one-factor-at-a-time stress testing; it does not prove empirical parameter values, causal effects, calibrated prediction, or individual usefulness.
 

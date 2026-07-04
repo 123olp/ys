@@ -1,0 +1,126 @@
+{
+  "schemaVersion": "human-infra.nhanes-public-lmf-disclosure-output-envelope-policy.v1",
+  "sourceId": "nhanes-public-lmf-2017-2018",
+  "sourceName": "NHANES 2017-2018 public-use Linked Mortality File pilot",
+  "policyId": "nhanes-public-lmf-2017-2018-disclosure-output-envelope-policy",
+  "reviewDate": "2026-07-03",
+  "reviewer": "tradecatlabs",
+  "status": "synthetic-envelope-policy-ready-no-real-output",
+  "policyPurpose": "Define the minimum disclosure-safe output envelope for future NHANES public-use LMF weighted-domain tables before any public weighted rates, intervals or domain summaries can enter the Human Infra Web layer.",
+  "currentDecision": {
+    "realWeightedOutputPresent": false,
+    "publicRealOutputExportAllowed": false,
+    "syntheticEnvelopeValidationAllowed": true,
+    "rowLevelExportAllowed": false,
+    "identifierExportAllowed": false,
+    "publicAiUploadAllowed": false,
+    "unweightedCountExportAllowed": false,
+    "calibrationAllowed": false,
+    "individualPredictionAllowed": false,
+    "reason": "The policy and synthetic validator are ready, but no real public NHANES weighted-domain output has been implemented or reviewed. The policy is an output-shape gate only."
+  },
+  "rules": {
+    "aggregateOnly": true,
+    "syntheticOnlyUntilImplementationGate": true,
+    "smallCellThreshold": 5,
+    "smallCellRule": "For public export, every synthetic test cell with count below 5 must be suppressed. Real output must pass a separate disclosure review before any count-like or rate-like value is published.",
+    "dfReviewThreshold": 8,
+    "dfReviewRule": "Any future public output cell with domain degrees of freedom below 8 must be suppressed or sent to manual statistical review before publication.",
+    "rowLevelRule": "Row-level records, SEQN, design fields, join keys, mortality linkage fields and record-level extracts cannot appear in the public output envelope.",
+    "identifierRule": "The envelope must declare that it contains no identifiers and must not contain identifier-like keys.",
+    "unweightedCountRule": "The public envelope cannot expose unweighted record counts or death counts from the public LMF pilot unless a future disclosure review explicitly allows them.",
+    "publicAiUploadRule": "NHANES-derived output envelopes cannot be uploaded to public AI systems unless they contain only synthetic validation data.",
+    "allowedOutputTypes": [
+      "synthetic_weighted_domain_rate_table",
+      "synthetic_design_based_interval_table",
+      "synthetic_effective_sample_size_review",
+      "synthetic_disclosure_control_report"
+    ],
+    "forbiddenOutputTypes": [
+      "row_level_records",
+      "individual_death_date_prediction",
+      "personal_medical_advice",
+      "personal_longevity_ranking",
+      "calibration_claim",
+      "validation_claim",
+      "treatment_effect_claim",
+      "real_public_weighted_domain_rates"
+    ],
+    "requiredReportFields": [
+      "schemaVersion",
+      "sourceId",
+      "outputId",
+      "outputType",
+      "containsRowLevelData",
+      "containsIdentifiers",
+      "containsUnweightedCounts",
+      "publicExportRequested",
+      "publicAiUploadRequested",
+      "disclosureReviewStatus",
+      "cells"
+    ],
+    "cellFields": [
+      "id",
+      "count",
+      "suppressed",
+      "sensitivityTier",
+      "domainDof",
+      "effectiveSampleSizeClass",
+      "confidenceIntervalStatus"
+    ],
+    "prohibitedKeys": [
+      "SEQN",
+      "seqn",
+      "RIDAGEYR",
+      "RIAGENDR",
+      "RIDRETH3",
+      "WTMEC2YR",
+      "SDMVSTRA",
+      "SDMVPSU",
+      "MORTSTAT",
+      "UCOD_LEADING",
+      "personId",
+      "participantId",
+      "rowRecords",
+      "recordRows",
+      "deathDate",
+      "death_date",
+      "individualDeathDate",
+      "individual_death_date",
+      "predictedDeathDate",
+      "predicted_death_date"
+    ]
+  },
+  "upstreamContracts": {
+    "domainIndicatorDiagnosticPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhanes_public_lmf_domain_indicator_diagnostic.json",
+    "dofSparseDomainDiagnosticPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhanes_public_lmf_dof_sparse_domain_diagnostic.json",
+    "weightedDomainOutputReadinessPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhanes_public_lmf_weighted_domain_output_readiness.json"
+  },
+  "validatorContract": {
+    "validatorScript": "domains/c1-boundary-rewriting/longevity-evidence/scripts/validate_nhanes_public_lmf_disclosure_output_envelope.py",
+    "testCases": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhanes_public_lmf_disclosure_output_envelope_test_cases.json",
+    "generatedReport": "web/src/data/life-path-nhanes-public-lmf-disclosure-output-envelope-validation.json",
+    "requiredDecisionVocabulary": [
+      "allow-export",
+      "block-export"
+    ],
+    "currentBoundary": "synthetic validator only; no real NHANES weighted rates, intervals, unweighted counts, weighted sums, row-level records or mortality cells are present in this policy"
+  },
+  "sourceTrace": [
+    "https://wwwn.cdc.gov/nchs/nhanes/tutorials/varianceestimation.aspx",
+    "https://www.cdc.gov/nchs/data/series/sr_02/sr02_175.pdf",
+    "https://www.cdc.gov/nchs/linked-data/mortality-files/index.html"
+  ],
+  "prohibitedActions": [
+    "Do not export row-level NHANES records or identifier-like fields.",
+    "Do not publish real weighted domain rates, intervals or count-like values from this policy alone.",
+    "Do not treat synthetic envelope validation as a disclosure review of real NHANES output.",
+    "Do not use disclosure validation as evidence of calibration, predictive validity, causal effect or individual usefulness.",
+    "Do not output individual death dates, personal medical advice or personal longevity rankings."
+  ],
+  "nextWork": [
+    "Run the synthetic envelope validator and publish only the generated validator report.",
+    "After weighted-domain output implementation exists, bind every real output envelope to this policy and run a separate disclosure review.",
+    "Keep output envelope validation separate from effective sample size review, confidence interval review, calibration and external validation."
+  ]
+}

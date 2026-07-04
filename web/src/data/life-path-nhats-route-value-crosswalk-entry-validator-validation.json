@@ -1,0 +1,190 @@
+{
+  "schemaVersion": "human-infra.life-path-nhats-route-value-crosswalk-entry-validator-validation.v1",
+  "validationId": "life-path-nhats-route-value-crosswalk-entry-validator-validation",
+  "generatedAt": "2026-07-04T20:22:39.511247+00:00",
+  "overallStatus": "PASS",
+  "summary": {
+    "caseCount": 6,
+    "reviewableButStillBlockedCount": 1,
+    "cannotEvaluateCount": 1,
+    "rejectedCount": 4,
+    "failureCount": 0
+  },
+  "testCases": {
+    "path": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_route_value_crosswalk_entry_validator_test_cases.json",
+    "sha256": "f3f8395e1798ac97ee2af5740fa9fc381fdcc29ff196abdd9bb866f8fcd2454a",
+    "testSetId": "nhats-r13-r14-route-value-crosswalk-entry-validator-test-cases-2026-07-04",
+    "status": "synthetic-entry-validator-test-cases-only-model-g4-blocked"
+  },
+  "upstreams": [
+    {
+      "path": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_route_value_crosswalk_assembly_protocol.json",
+      "sha256": "4208789a51d29d9b8155811ba98d193e841df121d9e2a244a02bd094bd4562c7",
+      "id": "nhats-r13-r14-route-value-crosswalk-assembly-protocol-2026-07-04"
+    },
+    {
+      "path": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_capture_packet_review_execution_register.json",
+      "sha256": "adefba18ccad157301d4c8879a38b48a451a1b2edf5b70e3ca2ccb548a04e3c3",
+      "id": "nhats-r13-r14-colectica-capture-packet-review-execution-2026-07-04"
+    },
+    {
+      "path": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_capture_task_register.json",
+      "sha256": "57764c73e38ecd6d3303d36a172d6b794671d34c3dcf1718e07fbe76c54720e0",
+      "id": "nhats-r13-r14-colectica-capture-task-register-2026-07-03"
+    },
+    {
+      "path": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_route_classifier_readiness.json",
+      "sha256": "f0c0224317c9ee20e8de56dcddeadba85ae24d67b736782ba22de90e83109296",
+      "id": "nhats-r13-r14-route-classifier-readiness-2026-07-03"
+    }
+  ],
+  "results": [
+    {
+      "caseId": "valid-redacted-crosswalk-entry-still-blocked",
+      "expectedVerdict": "reviewable-but-still-blocked",
+      "realEntryAttached": false,
+      "assemblyUnitClosureAllowed": false,
+      "routeClassifierAllowed": false,
+      "realExtractionAllowed": false,
+      "aggregateCohortFlowAllowed": false,
+      "weightedRouteCountsAllowed": false,
+      "publicExportAllowed": false,
+      "calibrationAllowed": false,
+      "individualPredictionAllowed": false,
+      "entryId": "synthetic-nhats-route-value-crosswalk-entry-001",
+      "verdict": "reviewable-but-still-blocked",
+      "rejectReasons": [],
+      "cannotEvaluateReasons": [],
+      "matchedField": "identity_join_key"
+    },
+    {
+      "caseId": "missing-route-value-rows-cannot-evaluate",
+      "expectedVerdict": "cannot-evaluate",
+      "realEntryAttached": false,
+      "assemblyUnitClosureAllowed": false,
+      "routeClassifierAllowed": false,
+      "realExtractionAllowed": false,
+      "aggregateCohortFlowAllowed": false,
+      "weightedRouteCountsAllowed": false,
+      "publicExportAllowed": false,
+      "calibrationAllowed": false,
+      "individualPredictionAllowed": false,
+      "entryId": "synthetic-nhats-route-value-crosswalk-entry-002",
+      "verdict": "cannot-evaluate",
+      "rejectReasons": [],
+      "cannotEvaluateReasons": [
+        "missing required fields: routeValueRowsRedacted",
+        "routeValueRowsRedacted must be a non-empty list"
+      ],
+      "matchedField": "identity_join_key"
+    },
+    {
+      "caseId": "unknown-route-field-rejected",
+      "expectedVerdict": "rejected",
+      "realEntryAttached": false,
+      "assemblyUnitClosureAllowed": false,
+      "routeClassifierAllowed": false,
+      "realExtractionAllowed": false,
+      "aggregateCohortFlowAllowed": false,
+      "weightedRouteCountsAllowed": false,
+      "publicExportAllowed": false,
+      "calibrationAllowed": false,
+      "individualPredictionAllowed": false,
+      "entryId": "synthetic-nhats-route-value-crosswalk-entry-003",
+      "verdict": "rejected",
+      "rejectReasons": [
+        "requiredRouteFieldId is not registered in assembly protocol"
+      ],
+      "cannotEvaluateReasons": [],
+      "matchedField": null
+    },
+    {
+      "caseId": "death-timing-field-rejected",
+      "expectedVerdict": "rejected",
+      "realEntryAttached": false,
+      "assemblyUnitClosureAllowed": false,
+      "routeClassifierAllowed": false,
+      "realExtractionAllowed": false,
+      "aggregateCohortFlowAllowed": false,
+      "weightedRouteCountsAllowed": false,
+      "publicExportAllowed": false,
+      "calibrationAllowed": false,
+      "individualPredictionAllowed": false,
+      "entryId": "synthetic-nhats-route-value-crosswalk-entry-004",
+      "verdict": "rejected",
+      "rejectReasons": [
+        "sourceTaskIds must exactly match registered tasks",
+        "sensitive death timing fields must be excluded"
+      ],
+      "cannotEvaluateReasons": [
+        "sensitiveDeathDateFieldsExcluded must be true before entry review"
+      ],
+      "matchedField": "death_decedent_indicator"
+    },
+    {
+      "caseId": "ai-only-review-rejected",
+      "expectedVerdict": "rejected",
+      "realEntryAttached": false,
+      "assemblyUnitClosureAllowed": false,
+      "routeClassifierAllowed": false,
+      "realExtractionAllowed": false,
+      "aggregateCohortFlowAllowed": false,
+      "weightedRouteCountsAllowed": false,
+      "publicExportAllowed": false,
+      "calibrationAllowed": false,
+      "individualPredictionAllowed": false,
+      "entryId": "synthetic-nhats-route-value-crosswalk-entry-005",
+      "verdict": "rejected",
+      "rejectReasons": [
+        "aiOnlySignoff must remain false",
+        "AI-only signoff and public AI upload are prohibited",
+        "reviewerRole must identify a human reviewer",
+        "secondReviewerRole must identify an independent human reviewer",
+        "secondReviewerRole must differ from reviewerRole"
+      ],
+      "cannotEvaluateReasons": [],
+      "matchedField": "identity_join_key"
+    },
+    {
+      "caseId": "premature-classifier-promotion-rejected",
+      "expectedVerdict": "rejected",
+      "realEntryAttached": false,
+      "assemblyUnitClosureAllowed": false,
+      "routeClassifierAllowed": false,
+      "realExtractionAllowed": false,
+      "aggregateCohortFlowAllowed": false,
+      "weightedRouteCountsAllowed": false,
+      "publicExportAllowed": false,
+      "calibrationAllowed": false,
+      "individualPredictionAllowed": false,
+      "entryId": "synthetic-nhats-route-value-crosswalk-entry-006",
+      "verdict": "rejected",
+      "rejectReasons": [
+        "assemblyUnitClosureAllowed must remain false",
+        "weightedRouteCountsAllowed must remain false",
+        "routeClassifierAllowed must remain false",
+        "realExtractionAllowed must remain false",
+        "individualPredictionAllowed must remain false",
+        "publicExportAllowed must remain false",
+        "aggregateCohortFlowAllowed must remain false",
+        "calibrationAllowed must remain false"
+      ],
+      "cannotEvaluateReasons": [],
+      "matchedField": "identity_join_key"
+    }
+  ],
+  "failures": [],
+  "decision": {
+    "modelG4Status": "blocked",
+    "realEntryAttached": false,
+    "assemblyUnitClosureAllowed": false,
+    "routeClassifierAllowed": false,
+    "realExtractionAllowed": false,
+    "aggregateCohortFlowAllowed": false,
+    "weightedRouteCountsAllowed": false,
+    "publicExportAllowed": false,
+    "calibrationAllowed": false,
+    "individualPredictionAllowed": false
+  },
+  "boundary": "This validation proves only that synthetic future route-value crosswalk entry shapes are classified as rejected, cannot-evaluate or reviewable-but-still-blocked. It closes no assembly unit, confirms no real route-value row, confirms no real variable-specific missing-code map, and does not allow route classifier, extraction, public output, calibration or individual prediction."
+}

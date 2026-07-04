@@ -121,7 +121,7 @@
       "id": "domain-dof-sparse-review-not-complete",
       "status": "blocked",
       "blocksWeightedDomainOutput": true,
-      "evidence": "Domain degrees-of-freedom, lonely PSU, empty-domain and sparse-domain diagnostics remain absent."
+      "evidence": "This domain-indicator diagnostic does not itself evaluate domain degrees-of-freedom, lonely PSU, empty-domain or sparse-domain adequacy; those checks are handled by the downstream DOF/sparse-domain metadata diagnostic."
     },
     {
       "id": "public-output-disclosure-not-reviewed",

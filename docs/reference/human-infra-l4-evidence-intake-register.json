@@ -1,0 +1,454 @@
+{
+  "schemaVersion": "human-infra.l4-evidence-intake-register.v1",
+  "registerId": "human-infra-l4-evidence-intake-register-2026-07-04",
+  "status": "active-intake-register-no-direct-evidence-l4-blocked",
+  "owner": "tradecatlabs",
+  "purpose": "Define the repository-safe intake slots for evidence that could later support L4 aggregate calibrated research-model review. This register is empty by design: it records where redacted hashes, human signoffs, governed access logs, aggregate manifests and calibration diagnostics must be attached, while keeping L4 admission blocked.",
+  "sourceOfTruth": {
+    "l4UnblockExecutionPlan": "docs/reference/human-infra-l4-unblock-execution-plan.json",
+    "l4ReadinessBlockerMatrix": "docs/reference/human-infra-l4-model-readiness-blocker-matrix.json",
+    "l4EvidencePacketReviewPlaybook": "docs/reference/human-infra-l4-evidence-packet-review-playbook.md",
+    "modelAdmissionCandidateRegistry": "docs/reference/human-infra-model-admission-candidate-registry.json",
+    "nhanesDisclosureReviewExecutionRegister": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhanes_public_lmf_disclosure_review_execution_register.json",
+    "nhanesLocalRunEvidenceManifest": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhanes_public_lmf_local_run_evidence_manifest.json",
+    "nhatsL4ReadinessRunway": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_l4_readiness_runway.json",
+    "calibrationReadiness": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_calibration_readiness.json"
+  },
+  "currentDecision": {
+    "highestCurrentModelLevel": "L3-local-or-synthetic-only",
+    "evidenceIntakeRegisterReady": true,
+    "directEvidenceAttached": false,
+    "humanReviewEvidenceAttached": false,
+    "externalGovernedAccessEvidenceAttached": false,
+    "l4AggregateCalibratedAdmissionAllowed": false,
+    "publicWeightedDomainOutputAllowed": false,
+    "calibratedPredictionAvailable": false,
+    "individualUseAllowed": false,
+    "reason": "The intake schema exists, but no direct evidence has been attached to any L4 work-order slot. All slots remain pending and all L4/public/calibrated/individual uses remain blocked."
+  },
+  "acceptedEvidenceClasses": [
+    "redacted-artifact-hash",
+    "human-review-signoff",
+    "second-reviewer-signoff",
+    "governed-access-log",
+    "controlled-workspace-inventory",
+    "storage-destruction-evidence",
+    "authenticated-variable-page-capture-hash",
+    "aggregate-only-run-manifest",
+    "suppression-review-record",
+    "calibration-diagnostic-report",
+    "bias-applicability-review"
+  ],
+  "rejectedEvidenceClasses": [
+    "raw-row-file",
+    "identifier-bearing-file",
+    "restricted-data-copy",
+    "public-ai-upload",
+    "ai-only-signoff",
+    "natural-language-claim-without-artifact-hash",
+    "unreviewed-notebook",
+    "screenshot-with-sensitive-values",
+    "public-web-json-with-real-weighted-values"
+  ],
+  "evidencePacketContract": {
+    "schemaName": "human-infra.l4-evidence-packet.v1",
+    "contractStatus": "template-only-no-packets-accepted",
+    "packetCardinality": "one-reviewed-packet-per-evidence-slot-before-slot-can-close",
+    "requiredPacketFields": [
+      "packetId",
+      "workOrderId",
+      "slotId",
+      "candidatePath",
+      "evidenceClass",
+      "evidenceStatus",
+      "repositoryPolicy",
+      "artifactHash",
+      "artifactHashAlgorithm",
+      "artifactDescriptionRedacted",
+      "producerRole",
+      "firstReviewerRole",
+      "secondReviewerRole",
+      "reviewDate",
+      "sensitivityClass",
+      "rawDataTracked",
+      "restrictedDataTracked",
+      "identifierTracked",
+      "publicAiUpload",
+      "aiOnlySignoff",
+      "allowedUse",
+      "prohibitedUse",
+      "downstreamDecision"
+    ],
+    "forbiddenPacketFields": [
+      "rawRows",
+      "identifiers",
+      "restrictedFilePath",
+      "realWeightedRate",
+      "realStandardError",
+      "realConfidenceInterval",
+      "individualPrediction",
+      "individualDeathDate",
+      "secretToken",
+      "screenshotWithSensitiveValues"
+    ],
+    "allowedPacketStatuses": [
+      "draft-redacted",
+      "human-reviewed-redacted",
+      "second-reviewed-redacted",
+      "rejected"
+    ],
+    "requiredBooleanDefaults": {
+      "rawDataTracked": false,
+      "restrictedDataTracked": false,
+      "identifierTracked": false,
+      "publicAiUpload": false,
+      "aiOnlySignoff": false
+    },
+    "hashAlgorithms": [
+      "sha256"
+    ],
+    "acceptanceRules": [
+      "packet.workOrderId must match an existing evidenceSlotGroups[].workOrderId",
+      "packet.slotId must match a slot inside the matching work order",
+      "packet.candidatePath must match the matching work order candidatePath",
+      "packet.evidenceClass must match the matching slot evidenceClass",
+      "packet.repositoryPolicy must match the matching slot repositoryPolicy",
+      "packet.artifactHash must be a sha256 hash of a redacted artifact or redacted external-evidence summary",
+      "packet.evidenceStatus must be human-reviewed-redacted or second-reviewed-redacted before the slot can close",
+      "packet.firstReviewerRole must not be ai-only",
+      "packet.rawDataTracked, restrictedDataTracked, identifierTracked, publicAiUpload and aiOnlySignoff must all be false",
+      "packet.allowedUse must remain bounded L4 evidence review only",
+      "packet.downstreamDecision must remain l4-still-blocked until every required slot closes and model-admission gates pass"
+    ],
+    "prohibitedPacketUses": [
+      "public-weighted-domain-output",
+      "calibrated-prediction",
+      "individual-prediction",
+      "individual-death-date-output",
+      "medical-advice",
+      "intervention-ranking",
+      "raw-row-reconstruction"
+    ],
+    "packetCount": 0,
+    "closedSlotCount": 0
+  },
+  "evidenceSlotGroups": [
+    {
+      "workOrderId": "L4WO-01-nhats-governed-access-and-workspace",
+      "status": "pending-no-direct-evidence",
+      "candidatePath": "L4C-NHATS-R13-R14-FUNCTIONAL-SURVIVAL",
+      "slots": [
+        {
+          "slotId": "governed-access-proof-redacted",
+          "evidenceClass": "redacted-artifact-hash",
+          "requiredHumanSignoff": true,
+          "externalOnly": true,
+          "repositoryPolicy": "redacted-hash-only",
+          "status": "pending",
+          "evidenceRef": null,
+          "reviewerSignoff": null,
+          "blocksL4": true
+        },
+        {
+          "slotId": "controlled-workspace-path-proof",
+          "evidenceClass": "controlled-workspace-inventory",
+          "requiredHumanSignoff": true,
+          "externalOnly": true,
+          "repositoryPolicy": "path-label-and-hash-only",
+          "status": "pending",
+          "evidenceRef": null,
+          "reviewerSignoff": null,
+          "blocksL4": true
+        },
+        {
+          "slotId": "access-inventory-log-redacted",
+          "evidenceClass": "governed-access-log",
+          "requiredHumanSignoff": true,
+          "externalOnly": true,
+          "repositoryPolicy": "redacted-summary-only",
+          "status": "pending",
+          "evidenceRef": null,
+          "reviewerSignoff": null,
+          "blocksL4": true
+        },
+        {
+          "slotId": "storage-destruction-evidence",
+          "evidenceClass": "storage-destruction-evidence",
+          "requiredHumanSignoff": true,
+          "externalOnly": true,
+          "repositoryPolicy": "redacted-hash-only",
+          "status": "pending",
+          "evidenceRef": null,
+          "reviewerSignoff": null,
+          "blocksL4": true
+        }
+      ]
+    },
+    {
+      "workOrderId": "L4WO-02-nhats-exact-field-value-confirmation",
+      "status": "pending-no-direct-evidence",
+      "candidatePath": "L4C-NHATS-R13-R14-FUNCTIONAL-SURVIVAL",
+      "slots": [
+        {
+          "slotId": "colectica-variable-page-capture-hashes",
+          "evidenceClass": "authenticated-variable-page-capture-hash",
+          "requiredHumanSignoff": true,
+          "externalOnly": true,
+          "repositoryPolicy": "hash-and-page-identity-only",
+          "status": "pending",
+          "evidenceRef": null,
+          "reviewerSignoff": null,
+          "blocksL4": true
+        },
+        {
+          "slotId": "exact-field-name-table",
+          "evidenceClass": "redacted-artifact-hash",
+          "requiredHumanSignoff": true,
+          "externalOnly": false,
+          "repositoryPolicy": "non-sensitive-field-map-only",
+          "status": "pending",
+          "evidenceRef": null,
+          "reviewerSignoff": null,
+          "blocksL4": true
+        },
+        {
+          "slotId": "value-label-negative-code-map",
+          "evidenceClass": "redacted-artifact-hash",
+          "requiredHumanSignoff": true,
+          "externalOnly": false,
+          "repositoryPolicy": "non-row-codebook-summary-only",
+          "status": "pending",
+          "evidenceRef": null,
+          "reviewerSignoff": null,
+          "blocksL4": true
+        },
+        {
+          "slotId": "question-universe-skip-logic-table",
+          "evidenceClass": "redacted-artifact-hash",
+          "requiredHumanSignoff": true,
+          "externalOnly": false,
+          "repositoryPolicy": "non-row-protocol-summary-only",
+          "status": "pending",
+          "evidenceRef": null,
+          "reviewerSignoff": null,
+          "blocksL4": true
+        },
+        {
+          "slotId": "second-reviewer-field-confirmation",
+          "evidenceClass": "second-reviewer-signoff",
+          "requiredHumanSignoff": true,
+          "externalOnly": false,
+          "repositoryPolicy": "signoff-metadata-only",
+          "status": "pending",
+          "evidenceRef": null,
+          "reviewerSignoff": null,
+          "blocksL4": true
+        }
+      ]
+    },
+    {
+      "workOrderId": "L4WO-03-nhats-real-extraction-cohort-flow",
+      "status": "pending-no-direct-evidence",
+      "candidatePath": "L4C-NHATS-R13-R14-FUNCTIONAL-SURVIVAL",
+      "slots": [
+        {
+          "slotId": "aggregate-only-extractor-hash",
+          "evidenceClass": "aggregate-only-run-manifest",
+          "requiredHumanSignoff": true,
+          "externalOnly": true,
+          "repositoryPolicy": "script-hash-and-redacted-run-metadata-only",
+          "status": "pending",
+          "evidenceRef": null,
+          "reviewerSignoff": null,
+          "blocksL4": true
+        },
+        {
+          "slotId": "cohort-flow-aggregate-table-hash",
+          "evidenceClass": "redacted-artifact-hash",
+          "requiredHumanSignoff": true,
+          "externalOnly": true,
+          "repositoryPolicy": "suppressed-aggregate-summary-only",
+          "status": "pending",
+          "evidenceRef": null,
+          "reviewerSignoff": null,
+          "blocksL4": true
+        },
+        {
+          "slotId": "endpoint-route-counts-hash",
+          "evidenceClass": "redacted-artifact-hash",
+          "requiredHumanSignoff": true,
+          "externalOnly": true,
+          "repositoryPolicy": "suppressed-aggregate-summary-only",
+          "status": "pending",
+          "evidenceRef": null,
+          "reviewerSignoff": null,
+          "blocksL4": true
+        },
+        {
+          "slotId": "missingness-and-suppression-report",
+          "evidenceClass": "suppression-review-record",
+          "requiredHumanSignoff": true,
+          "externalOnly": true,
+          "repositoryPolicy": "redacted-report-hash-only",
+          "status": "pending",
+          "evidenceRef": null,
+          "reviewerSignoff": null,
+          "blocksL4": true
+        }
+      ]
+    },
+    {
+      "workOrderId": "L4WO-04-nhanes-human-disclosure-review",
+      "status": "pending-no-direct-evidence",
+      "candidatePath": "L4C-NHANES-PUBLIC-LMF-WEIGHTED-DOMAIN",
+      "slots": [
+        {
+          "slotId": "reviewed-local-packet-hash",
+          "evidenceClass": "redacted-artifact-hash",
+          "requiredHumanSignoff": true,
+          "externalOnly": false,
+          "repositoryPolicy": "reviewed-packet-hash-only",
+          "status": "pending",
+          "evidenceRef": null,
+          "reviewerSignoff": null,
+          "blocksL4": true
+        },
+        {
+          "slotId": "all-disclosure-slots-human-reviewed",
+          "evidenceClass": "human-review-signoff",
+          "requiredHumanSignoff": true,
+          "externalOnly": false,
+          "repositoryPolicy": "slot-status-and-signoff-only",
+          "status": "pending",
+          "evidenceRef": null,
+          "reviewerSignoff": null,
+          "blocksL4": true
+        },
+        {
+          "slotId": "second-reviewer-release-signoff",
+          "evidenceClass": "second-reviewer-signoff",
+          "requiredHumanSignoff": true,
+          "externalOnly": false,
+          "repositoryPolicy": "signoff-metadata-only",
+          "status": "pending",
+          "evidenceRef": null,
+          "reviewerSignoff": null,
+          "blocksL4": true
+        },
+        {
+          "slotId": "suppression-reliability-review",
+          "evidenceClass": "suppression-review-record",
+          "requiredHumanSignoff": true,
+          "externalOnly": false,
+          "repositoryPolicy": "review-status-no-real-values",
+          "status": "pending",
+          "evidenceRef": null,
+          "reviewerSignoff": null,
+          "blocksL4": true
+        },
+        {
+          "slotId": "explicit-release-decision",
+          "evidenceClass": "human-review-signoff",
+          "requiredHumanSignoff": true,
+          "externalOnly": false,
+          "repositoryPolicy": "decision-metadata-only",
+          "status": "pending",
+          "evidenceRef": null,
+          "reviewerSignoff": null,
+          "blocksL4": true
+        },
+        {
+          "slotId": "public-output-implementation-review",
+          "evidenceClass": "human-review-signoff",
+          "requiredHumanSignoff": true,
+          "externalOnly": false,
+          "repositoryPolicy": "review-status-no-real-values",
+          "status": "pending",
+          "evidenceRef": null,
+          "reviewerSignoff": null,
+          "blocksL4": true
+        }
+      ]
+    },
+    {
+      "workOrderId": "L4WO-05-validation-calibration-diagnostics",
+      "status": "pending-no-direct-evidence",
+      "candidatePath": "L4C-NHANES-PUBLIC-LMF-WEIGHTED-DOMAIN",
+      "slots": [
+        {
+          "slotId": "development-validation-design",
+          "evidenceClass": "redacted-artifact-hash",
+          "requiredHumanSignoff": true,
+          "externalOnly": false,
+          "repositoryPolicy": "study-design-summary-only",
+          "status": "pending",
+          "evidenceRef": null,
+          "reviewerSignoff": null,
+          "blocksL4": true
+        },
+        {
+          "slotId": "calibration-diagnostics-report",
+          "evidenceClass": "calibration-diagnostic-report",
+          "requiredHumanSignoff": true,
+          "externalOnly": false,
+          "repositoryPolicy": "reviewed-aggregate-diagnostics-only",
+          "status": "pending",
+          "evidenceRef": null,
+          "reviewerSignoff": null,
+          "blocksL4": true
+        },
+        {
+          "slotId": "real-parameter-sensitivity-analysis",
+          "evidenceClass": "calibration-diagnostic-report",
+          "requiredHumanSignoff": true,
+          "externalOnly": false,
+          "repositoryPolicy": "reviewed-aggregate-diagnostics-only",
+          "status": "pending",
+          "evidenceRef": null,
+          "reviewerSignoff": null,
+          "blocksL4": true
+        },
+        {
+          "slotId": "bias-applicability-review",
+          "evidenceClass": "bias-applicability-review",
+          "requiredHumanSignoff": true,
+          "externalOnly": false,
+          "repositoryPolicy": "reviewed-report-summary-only",
+          "status": "pending",
+          "evidenceRef": null,
+          "reviewerSignoff": null,
+          "blocksL4": true
+        },
+        {
+          "slotId": "tripod-probast-reporting-packet",
+          "evidenceClass": "bias-applicability-review",
+          "requiredHumanSignoff": true,
+          "externalOnly": false,
+          "repositoryPolicy": "reporting-packet-hash-only",
+          "status": "pending",
+          "evidenceRef": null,
+          "reviewerSignoff": null,
+          "blocksL4": true
+        }
+      ]
+    }
+  ],
+  "slotStatusSummary": {
+    "workOrderCount": 5,
+    "totalSlotCount": 24,
+    "pendingSlotCount": 24,
+    "evidenceAttachedCount": 0,
+    "humanSignoffCount": 0,
+    "externalEvidenceSlotCount": 9,
+    "l4ReviewOpen": false
+  },
+  "hardBoundaries": [
+    "No raw rows, identifiers, restricted data copies or screenshots with sensitive values may be tracked.",
+    "No AI-only signoff can satisfy human disclosure review, second reviewer review, governed access, storage/destruction evidence or calibration diagnostics.",
+    "No individual death-date output.",
+    "No individual medical advice.",
+    "No public weighted-domain output before human disclosure review and separate implementation review.",
+    "No calibration claim before validation and calibration diagnostics.",
+    "No L4 candidate review can open while any slot remains pending."
+  ]
+}

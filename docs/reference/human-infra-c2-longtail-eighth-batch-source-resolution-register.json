@@ -1,0 +1,559 @@
+{
+  "schemaVersion": "human-infra.c2-longtail-eighth-batch-source-resolution-register.v1",
+  "registerId": "human-infra-c2-longtail-eighth-batch-source-resolution-register-2026-07-03",
+  "status": "active-c2ltb8-source-resolution-register-independent-fresh-review-required",
+  "purpose": "Resolve the seven C2-LT-B8 local-review issue rows into PubMed, PMC, DOI or corrected source-route candidates without changing reviewed artifact or model admission status.",
+  "sourceOfTruth": {
+    "sourceExtractionQueue": "docs/reference/human-infra-c2-longtail-eighth-batch-source-extraction-queue.json",
+    "sourceExtractionRegister": "docs/reference/human-infra-c2-longtail-eighth-batch-source-extraction-register.json",
+    "localReviewRegister": "docs/reference/human-infra-c2-longtail-eighth-batch-local-review-register.json",
+    "evidencePolicy": "docs/reference/evidence-policy.md",
+    "maturityGapRegister": "docs/reference/human-infra-maturity-gap-register.json"
+  },
+  "scope": {
+    "batchId": "C2-LT-B8",
+    "resolutionLevel": "c2ltb8-local-review-issue-row-source-resolution-v0.1",
+    "totalLocalReviewRowCount": 24,
+    "issueRowCount": 7,
+    "pubmedFulltextRouteIssueCount": 4,
+    "sourceIdMismatchIssueCount": 3,
+    "livingNeuralComputationOverclaimIssueCount": 1,
+    "resolutionCandidateCount": 19,
+    "nonClaims": [
+      "This source-resolution register does not change any extraction row into reviewed evidence.",
+      "This source-resolution register does not create reviewed artifacts, Source Cards, variable cards, endpoint cards, transfer-boundary cards or downgrade cards.",
+      "This source-resolution register does not authorize clinical, neurotechnology, living neural computation capability, network-effect intelligence or human-surpassing intelligence claims.",
+      "This source-resolution register does not open calibrated prediction, intervention ranking, individual advice, individual death-date output or model admission."
+    ]
+  },
+  "verificationSources": [
+    {
+      "verificationId": "C2LTB8-SR-VERIFY-AAP-ADHD-GUIDELINE-20260703",
+      "title": "Clinical Practice Guideline for the Diagnosis, Evaluation, and Treatment of Attention-Deficit/Hyperactivity Disorder in Children and Adolescents",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31570648/",
+      "sourceType": "ncbi-pubmed-esummary-title-articleid-route-check",
+      "useBoundary": "Use only to resolve source identity and prepare manual/fulltext or independent fresh review; no artifact fill, individual advice, intervention ranking, calibrated prediction, clinical-validity claim or model admission."
+    },
+    {
+      "verificationId": "C2LTB8-SR-VERIFY-AAP-AUTISM-CLINICAL-REPORT-20260703",
+      "title": "Identification, Evaluation, and Management of Children With Autism Spectrum Disorder",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31843864/",
+      "sourceType": "ncbi-pubmed-esummary-title-articleid-route-check",
+      "useBoundary": "Use only to resolve source identity and prepare manual/fulltext or independent fresh review; no artifact fill, individual advice, intervention ranking, calibrated prediction, clinical-validity claim or model admission."
+    },
+    {
+      "verificationId": "C2LTB8-SR-VERIFY-LIVING-NEURAL-COMPUTATION-CORRECTED-PMID-20260703",
+      "title": "In vitro neurons learn and exhibit sentience when embodied in a simulated game-world",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/36228614/",
+      "sourceType": "ncbi-pubmed-esummary-title-articleid-route-check",
+      "useBoundary": "Use only to resolve source identity and prepare manual/fulltext or independent fresh review; no artifact fill, individual advice, intervention ranking, calibrated prediction, clinical-validity claim or model admission."
+    },
+    {
+      "verificationId": "C2LTB8-SR-VERIFY-LONG-COVID-AUTONOMIC-CORRECTED-PMID-20260703",
+      "title": "Autonomic dysfunction in long COVID: rationale, physiology and management strategies",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/33243837/",
+      "sourceType": "ncbi-pubmed-esummary-title-articleid-route-check",
+      "useBoundary": "Use only to resolve source identity and prepare manual/fulltext or independent fresh review; no artifact fill, individual advice, intervention ranking, calibrated prediction, clinical-validity claim or model admission."
+    },
+    {
+      "verificationId": "C2LTB8-SR-VERIFY-VESTIBULAR-REHAB-GUIDELINE-20260703",
+      "title": "Vestibular Rehabilitation for Peripheral Vestibular Hypofunction: An Updated Clinical Practice Guideline From the Academy of Neurologic Physical Therapy of the American Physical Therapy Association",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/34864777/",
+      "sourceType": "ncbi-pubmed-esummary-title-articleid-route-check",
+      "useBoundary": "Use only to resolve source identity and prepare manual/fulltext or independent fresh review; no artifact fill, individual advice, intervention ranking, calibrated prediction, clinical-validity claim or model admission."
+    },
+    {
+      "verificationId": "C2LTB8-SR-VERIFY-BPPV-GUIDELINE-20260703",
+      "title": "Clinical Practice Guideline: Benign Paroxysmal Positional Vertigo (Update)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/28248609/",
+      "sourceType": "ncbi-pubmed-esummary-title-articleid-route-check",
+      "useBoundary": "Use only to resolve source identity and prepare manual/fulltext or independent fresh review; no artifact fill, individual advice, intervention ranking, calibrated prediction, clinical-validity claim or model admission."
+    },
+    {
+      "verificationId": "C2LTB8-SR-VERIFY-STROKE-DYSPHAGIA-CORRECTED-PMID-20260703",
+      "title": "European Stroke Organisation and European Society for Swallowing Disorders guideline for the diagnosis and treatment of post-stroke dysphagia",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/34746431/",
+      "sourceType": "ncbi-pubmed-esummary-title-articleid-route-check",
+      "useBoundary": "Use only to resolve source identity and prepare manual/fulltext or independent fresh review; no artifact fill, individual advice, intervention ranking, calibrated prediction, clinical-validity claim or model admission."
+    }
+  ],
+  "blockedUses": [
+    "calibrated-prediction",
+    "individual-advice",
+    "individual-death-date-output",
+    "intervention-ranking",
+    "clinical-validity-claim",
+    "domain-claim-upgrade"
+  ],
+  "resolutionRows": [
+    {
+      "resolutionId": "C2LTB8-SRR-001",
+      "taskId": "C2LTB8-EXT-006",
+      "domainId": "adhd-executive-function-neurodevelopment-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/adhd-executive-function-neurodevelopment-continuity",
+      "sourceRefId": "C2LTB8-SRC-03-2",
+      "originalRegisteredTitle": "Clinical Practice Guideline for the Diagnosis, Evaluation, and Treatment of ADHD in Children and Adolescents",
+      "originalRegisteredUrl": "https://pubmed.ncbi.nlm.nih.gov/31570648/",
+      "localReviewIssueType": "pubmed-adhd-guideline-fulltext-context-required",
+      "currentSourceCheck": {
+        "observedTitle": "NCBI PubMed record PMID 31570648 matches the registered ADHD guideline title and exposes PMCID PMC7067282 plus DOI 10.1542/peds.2019-2528.",
+        "verificationEvidence": "C2LTB8-SR-VERIFY-AAP-ADHD-GUIDELINE-20260703",
+        "result": "pubmed-pmc-doi-candidates-prepared-not-fresh-reviewed"
+      },
+      "sourceResolutionDecision": "Resolve EXT-006 from PubMed abstract route into PubMed, PMC fulltext and DOI/publisher candidates before independent fresh review.",
+      "sourceResolutionStatus": "candidate-resolution-prepared-not-fresh-reviewed",
+      "sourceResolutionCandidates": [
+        {
+          "candidateId": "C2LTB8-SRR-001-CAND-01",
+          "candidateRole": "pubmed-primary-guideline-record",
+          "title": "Clinical Practice Guideline for the Diagnosis, Evaluation, and Treatment of Attention-Deficit/Hyperactivity Disorder in Children and Adolescents",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/31570648/",
+          "sourceType": "pubmed-record-route",
+          "sourceIdentityStatus": "pubmed-title-and-articleids-verified-not-fresh-reviewed",
+          "verificationEvidence": "C2LTB8-SR-VERIFY-AAP-ADHD-GUIDELINE-20260703",
+          "resolutionFinding": "PMID matches registered title; articleids expose PMCID and DOI for full-context review.",
+          "useBoundary": "Use only for source-route resolution, manual/fulltext preparation and independent fresh review; no artifact fill, no individual advice, no calibrated risk, no intervention ranking, no clinical/neurotechnology advice and no model admission."
+        },
+        {
+          "candidateId": "C2LTB8-SRR-001-CAND-02",
+          "candidateRole": "pmc-open-fulltext-route",
+          "title": "Clinical Practice Guideline for the Diagnosis, Evaluation, and Treatment of Attention-Deficit/Hyperactivity Disorder in Children and Adolescents",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7067282/",
+          "sourceType": "pmc-open-fulltext-route",
+          "sourceIdentityStatus": "pmcid-identified-not-fresh-reviewed",
+          "verificationEvidence": "C2LTB8-SR-VERIFY-AAP-ADHD-GUIDELINE-20260703",
+          "resolutionFinding": "PMC route is a candidate full-context route, not yet independently reviewed for recommendations or transfer boundaries.",
+          "useBoundary": "Use only for source-route resolution, manual/fulltext preparation and independent fresh review; no artifact fill, no individual advice, no calibrated risk, no intervention ranking, no clinical/neurotechnology advice and no model admission."
+        },
+        {
+          "candidateId": "C2LTB8-SRR-001-CAND-03",
+          "candidateRole": "doi-publisher-route",
+          "title": "Clinical Practice Guideline for the Diagnosis, Evaluation, and Treatment of Attention-Deficit/Hyperactivity Disorder in Children and Adolescents",
+          "url": "https://doi.org/10.1542/peds.2019-2528",
+          "sourceType": "doi-publisher-route",
+          "sourceIdentityStatus": "doi-identified-not-fresh-reviewed",
+          "verificationEvidence": "C2LTB8-SR-VERIFY-AAP-ADHD-GUIDELINE-20260703",
+          "resolutionFinding": "DOI route is a candidate publisher route for fresh review and citation lineage checking.",
+          "useBoundary": "Use only for source-route resolution, manual/fulltext preparation and independent fresh review; no artifact fill, no individual advice, no calibrated risk, no intervention ranking, no clinical/neurotechnology advice and no model admission."
+        }
+      ],
+      "requiredFreshReviewActions": [
+        "Verify PubMed, PMC and DOI route identity against the AAP guideline record.",
+        "Extract guideline scope, age range, endpoint definitions and recommendation boundaries from full context.",
+        "Prevent use as adult ADHD, intervention ranking, individual advice or calibrated prediction.",
+        "Run independent fresh review before bounded artifact creation.",
+        "Keep model admission and prohibited individual uses blocked."
+      ],
+      "artifactPromotionDecision": "blocked-pending-source-resolution-manual-fulltext-or-independent-fresh-review",
+      "modelAdmissionDecision": "blocked-pending-source-resolution-independent-fresh-review-reviewed-artifact-and-model-admission-gates",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ]
+    },
+    {
+      "resolutionId": "C2LTB8-SRR-002",
+      "taskId": "C2LTB8-EXT-008",
+      "domainId": "autism-neurodiversity-support-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/autism-neurodiversity-support-continuity",
+      "sourceRefId": "C2LTB8-SRC-04-2",
+      "originalRegisteredTitle": "Identification, Evaluation, and Management of Children With Autism Spectrum Disorder",
+      "originalRegisteredUrl": "https://pubmed.ncbi.nlm.nih.gov/31843864/",
+      "localReviewIssueType": "pubmed-autism-clinical-report-fulltext-context-required",
+      "currentSourceCheck": {
+        "observedTitle": "NCBI PubMed record PMID 31843864 matches the registered autism clinical report title and exposes DOI 10.1542/peds.2019-3447; no PMCID was present in the checked summary.",
+        "verificationEvidence": "C2LTB8-SR-VERIFY-AAP-AUTISM-CLINICAL-REPORT-20260703",
+        "result": "pubmed-doi-candidates-prepared-not-fresh-reviewed"
+      },
+      "sourceResolutionDecision": "Resolve EXT-008 from PubMed abstract route into PubMed and DOI/publisher candidates before independent fresh review.",
+      "sourceResolutionStatus": "candidate-resolution-prepared-not-fresh-reviewed",
+      "sourceResolutionCandidates": [
+        {
+          "candidateId": "C2LTB8-SRR-002-CAND-01",
+          "candidateRole": "pubmed-primary-clinical-report-record",
+          "title": "Identification, Evaluation, and Management of Children With Autism Spectrum Disorder",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/31843864/",
+          "sourceType": "pubmed-record-route",
+          "sourceIdentityStatus": "pubmed-title-and-doi-verified-not-fresh-reviewed",
+          "verificationEvidence": "C2LTB8-SR-VERIFY-AAP-AUTISM-CLINICAL-REPORT-20260703",
+          "resolutionFinding": "PMID matches registered title and exposes DOI for publisher route review.",
+          "useBoundary": "Use only for source-route resolution, manual/fulltext preparation and independent fresh review; no artifact fill, no individual advice, no calibrated risk, no intervention ranking, no clinical/neurotechnology advice and no model admission."
+        },
+        {
+          "candidateId": "C2LTB8-SRR-002-CAND-02",
+          "candidateRole": "doi-publisher-route",
+          "title": "Identification, Evaluation, and Management of Children With Autism Spectrum Disorder",
+          "url": "https://doi.org/10.1542/peds.2019-3447",
+          "sourceType": "doi-publisher-route",
+          "sourceIdentityStatus": "doi-identified-not-fresh-reviewed",
+          "verificationEvidence": "C2LTB8-SR-VERIFY-AAP-AUTISM-CLINICAL-REPORT-20260703",
+          "resolutionFinding": "DOI route is a candidate publisher route; full clinical report context still needs review.",
+          "useBoundary": "Use only for source-route resolution, manual/fulltext preparation and independent fresh review; no artifact fill, no individual advice, no calibrated risk, no intervention ranking, no clinical/neurotechnology advice and no model admission."
+        }
+      ],
+      "requiredFreshReviewActions": [
+        "Verify PubMed and DOI route identity against the AAP clinical report.",
+        "Extract pediatric scope, evaluation/management boundary, service context and uncertainty from full context.",
+        "Prevent use as treatment ranking, adult autism inference, individual advice or calibrated prediction.",
+        "Run independent fresh review before bounded artifact creation.",
+        "Keep model admission and prohibited individual uses blocked."
+      ],
+      "artifactPromotionDecision": "blocked-pending-source-resolution-manual-fulltext-or-independent-fresh-review",
+      "modelAdmissionDecision": "blocked-pending-source-resolution-independent-fresh-review-reviewed-artifact-and-model-admission-gates",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ]
+    },
+    {
+      "resolutionId": "C2LTB8-SRR-003",
+      "taskId": "C2LTB8-EXT-011",
+      "domainId": "synthetic-biological-intelligence-organoid-computing-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/synthetic-biological-intelligence-organoid-computing-continuity",
+      "sourceRefId": "C2LTB8-SRC-06-1",
+      "originalRegisteredTitle": "In vitro neurons learn and exhibit sentience when embodied in a simulated game-world",
+      "originalRegisteredUrl": "https://pubmed.ncbi.nlm.nih.gov/36208624/",
+      "localReviewIssueType": "pubmed-living-neural-computation-fulltext-and-overclaim-risk",
+      "currentSourceCheck": {
+        "observedTitle": "NCBI PubMed check showed original registered PMID 36208624 is an optic-cup cell-migration paper, while corrected PMID 36228614 matches the living neural computation title and exposes PMCID PMC9747182 plus DOI 10.1016/j.neuron.2022.09.001.",
+        "verificationEvidence": "C2LTB8-SR-VERIFY-LIVING-NEURAL-COMPUTATION-CORRECTED-PMID-20260703",
+        "result": "source-id-mismatch-corrected-pubmed-pmc-doi-candidates-prepared-not-fresh-reviewed"
+      },
+      "sourceResolutionDecision": "Treat EXT-011 as a source-ID mismatch: preserve original route as wrong-PMID provenance, use corrected PMID 36228614 plus PMC/DOI candidates only for independent fresh review, and keep all sentience/network-effect claims blocked.",
+      "sourceResolutionStatus": "candidate-resolution-prepared-not-fresh-reviewed",
+      "sourceResolutionCandidates": [
+        {
+          "candidateId": "C2LTB8-SRR-003-CAND-01",
+          "candidateRole": "corrected-pubmed-primary-record",
+          "title": "In vitro neurons learn and exhibit sentience when embodied in a simulated game-world",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/36228614/",
+          "sourceType": "corrected-pubmed-record-route",
+          "sourceIdentityStatus": "corrected-pmid-identified-not-fresh-reviewed",
+          "verificationEvidence": "C2LTB8-SR-VERIFY-LIVING-NEURAL-COMPUTATION-CORRECTED-PMID-20260703",
+          "resolutionFinding": "Corrected PMID matches registered title; original PMID 36208624 is title-mismatched and must not be counted as evidence.",
+          "useBoundary": "Use only for source-route resolution, manual/fulltext preparation and independent fresh review; no artifact fill, no individual advice, no calibrated risk, no intervention ranking, no clinical/neurotechnology advice and no model admission."
+        },
+        {
+          "candidateId": "C2LTB8-SRR-003-CAND-02",
+          "candidateRole": "pmc-open-fulltext-route",
+          "title": "In vitro neurons learn and exhibit sentience when embodied in a simulated game-world",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9747182/",
+          "sourceType": "pmc-open-fulltext-route",
+          "sourceIdentityStatus": "pmcid-identified-not-fresh-reviewed",
+          "verificationEvidence": "C2LTB8-SR-VERIFY-LIVING-NEURAL-COMPUTATION-CORRECTED-PMID-20260703",
+          "resolutionFinding": "PMC fulltext route is candidate context for closed-loop adaptation claims, not consciousness or deployable intelligence claims.",
+          "useBoundary": "Use only for source-route resolution, manual/fulltext preparation and independent fresh review; no artifact fill, no individual advice, no calibrated risk, no intervention ranking, no clinical/neurotechnology advice and no model admission."
+        },
+        {
+          "candidateId": "C2LTB8-SRR-003-CAND-03",
+          "candidateRole": "doi-publisher-route",
+          "title": "In vitro neurons learn and exhibit sentience when embodied in a simulated game-world",
+          "url": "https://doi.org/10.1016/j.neuron.2022.09.001",
+          "sourceType": "doi-publisher-route",
+          "sourceIdentityStatus": "doi-identified-not-fresh-reviewed",
+          "verificationEvidence": "C2LTB8-SR-VERIFY-LIVING-NEURAL-COMPUTATION-CORRECTED-PMID-20260703",
+          "resolutionFinding": "DOI route is candidate publisher route; terminology such as sentience must be reviewed with overclaim controls.",
+          "useBoundary": "Use only for source-route resolution, manual/fulltext preparation and independent fresh review; no artifact fill, no individual advice, no calibrated risk, no intervention ranking, no clinical/neurotechnology advice and no model admission."
+        }
+      ],
+      "requiredFreshReviewActions": [
+        "Correct source identity from original PMID 36208624 to candidate PMID 36228614 before any evidence counting.",
+        "Extract only closed-loop adaptation, embodied neural culture interface and experimental setting variables from full context.",
+        "Preserve downgrade triggers against consciousness, moral status, network-effect scaling, human-level or human-surpassing intelligence claims.",
+        "Run independent fresh review before bounded artifact creation.",
+        "Keep model admission and prohibited individual uses blocked."
+      ],
+      "artifactPromotionDecision": "blocked-pending-source-resolution-manual-fulltext-or-independent-fresh-review",
+      "modelAdmissionDecision": "blocked-pending-source-resolution-independent-fresh-review-reviewed-artifact-and-model-admission-gates",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ]
+    },
+    {
+      "resolutionId": "C2LTB8-SRR-004",
+      "taskId": "C2LTB8-EXT-014",
+      "domainId": "autonomic-nervous-system-homeostasis",
+      "localDomainPath": "domains/c2-source-maintenance/autonomic-nervous-system-homeostasis",
+      "sourceRefId": "C2LTB8-SRC-07-2",
+      "originalRegisteredTitle": "Autonomic dysfunction in long COVID: rationale, physiology and management strategies",
+      "originalRegisteredUrl": "https://pubmed.ncbi.nlm.nih.gov/34384200/",
+      "localReviewIssueType": "pubmed-long-covid-autonomic-review-fulltext-context-required",
+      "currentSourceCheck": {
+        "observedTitle": "NCBI PubMed check showed original registered PMID 34384200 is a QT-prolongation ICU risk-score article, while corrected PMID 33243837 matches the long-COVID autonomic dysfunction title and exposes PMCID PMC7850225 plus DOI 10.7861/clinmed.2020-0896.",
+        "verificationEvidence": "C2LTB8-SR-VERIFY-LONG-COVID-AUTONOMIC-CORRECTED-PMID-20260703",
+        "result": "source-id-mismatch-corrected-pubmed-pmc-doi-candidates-prepared-not-fresh-reviewed"
+      },
+      "sourceResolutionDecision": "Treat EXT-014 as a source-ID mismatch: use corrected PMID 33243837 plus PMC/DOI candidates for fresh review and do not use original PMID 34384200 as autonomic dysfunction evidence.",
+      "sourceResolutionStatus": "candidate-resolution-prepared-not-fresh-reviewed",
+      "sourceResolutionCandidates": [
+        {
+          "candidateId": "C2LTB8-SRR-004-CAND-01",
+          "candidateRole": "corrected-pubmed-primary-record",
+          "title": "Autonomic dysfunction in long COVID: rationale, physiology and management strategies",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/33243837/",
+          "sourceType": "corrected-pubmed-record-route",
+          "sourceIdentityStatus": "corrected-pmid-identified-not-fresh-reviewed",
+          "verificationEvidence": "C2LTB8-SR-VERIFY-LONG-COVID-AUTONOMIC-CORRECTED-PMID-20260703",
+          "resolutionFinding": "Corrected PMID matches registered title; original PMID 34384200 is title-mismatched and must not be counted as evidence.",
+          "useBoundary": "Use only for source-route resolution, manual/fulltext preparation and independent fresh review; no artifact fill, no individual advice, no calibrated risk, no intervention ranking, no clinical/neurotechnology advice and no model admission."
+        },
+        {
+          "candidateId": "C2LTB8-SRR-004-CAND-02",
+          "candidateRole": "pmc-open-fulltext-route",
+          "title": "Autonomic dysfunction in long COVID: rationale, physiology and management strategies",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7850225/",
+          "sourceType": "pmc-open-fulltext-route",
+          "sourceIdentityStatus": "pmcid-identified-not-fresh-reviewed",
+          "verificationEvidence": "C2LTB8-SR-VERIFY-LONG-COVID-AUTONOMIC-CORRECTED-PMID-20260703",
+          "resolutionFinding": "PMC fulltext route is candidate context for autonomic symptom/mechanism framing, not causal certainty or individual treatment ranking.",
+          "useBoundary": "Use only for source-route resolution, manual/fulltext preparation and independent fresh review; no artifact fill, no individual advice, no calibrated risk, no intervention ranking, no clinical/neurotechnology advice and no model admission."
+        },
+        {
+          "candidateId": "C2LTB8-SRR-004-CAND-03",
+          "candidateRole": "doi-publisher-route",
+          "title": "Autonomic dysfunction in long COVID: rationale, physiology and management strategies",
+          "url": "https://doi.org/10.7861/clinmed.2020-0896",
+          "sourceType": "doi-publisher-route",
+          "sourceIdentityStatus": "doi-identified-not-fresh-reviewed",
+          "verificationEvidence": "C2LTB8-SR-VERIFY-LONG-COVID-AUTONOMIC-CORRECTED-PMID-20260703",
+          "resolutionFinding": "DOI route is candidate publisher route for source-context verification.",
+          "useBoundary": "Use only for source-route resolution, manual/fulltext preparation and independent fresh review; no artifact fill, no individual advice, no calibrated risk, no intervention ranking, no clinical/neurotechnology advice and no model admission."
+        }
+      ],
+      "requiredFreshReviewActions": [
+        "Correct source identity from original PMID 34384200 to candidate PMID 33243837 before evidence counting.",
+        "Extract review scope, autonomic mechanism hypotheses, management uncertainty and population boundary from full context.",
+        "Prevent use as prevalence estimate, individual diagnosis, intervention ranking, individual advice or calibrated prediction.",
+        "Run independent fresh review before bounded artifact creation.",
+        "Keep model admission and prohibited individual uses blocked."
+      ],
+      "artifactPromotionDecision": "blocked-pending-source-resolution-manual-fulltext-or-independent-fresh-review",
+      "modelAdmissionDecision": "blocked-pending-source-resolution-independent-fresh-review-reviewed-artifact-and-model-admission-gates",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ]
+    },
+    {
+      "resolutionId": "C2LTB8-SRR-005",
+      "taskId": "C2LTB8-EXT-021",
+      "domainId": "vestibular-balance-spatial-orientation",
+      "localDomainPath": "domains/c2-source-maintenance/vestibular-balance-spatial-orientation",
+      "sourceRefId": "C2LTB8-SRC-11-1",
+      "originalRegisteredTitle": "Vestibular Rehabilitation for Peripheral Vestibular Hypofunction: Clinical Practice Guideline",
+      "originalRegisteredUrl": "https://pubmed.ncbi.nlm.nih.gov/34864777/",
+      "localReviewIssueType": "pubmed-vestibular-rehabilitation-guideline-fulltext-context-required",
+      "currentSourceCheck": {
+        "observedTitle": "NCBI PubMed record PMID 34864777 matches the vestibular rehabilitation guideline title and exposes PMCID PMC8920012 plus DOI 10.1097/NPT.0000000000000382.",
+        "verificationEvidence": "C2LTB8-SR-VERIFY-VESTIBULAR-REHAB-GUIDELINE-20260703",
+        "result": "pubmed-pmc-doi-candidates-prepared-not-fresh-reviewed"
+      },
+      "sourceResolutionDecision": "Resolve EXT-021 into PubMed, PMC fulltext and DOI/publisher candidates before independent fresh review.",
+      "sourceResolutionStatus": "candidate-resolution-prepared-not-fresh-reviewed",
+      "sourceResolutionCandidates": [
+        {
+          "candidateId": "C2LTB8-SRR-005-CAND-01",
+          "candidateRole": "pubmed-primary-guideline-record",
+          "title": "Vestibular Rehabilitation for Peripheral Vestibular Hypofunction: An Updated Clinical Practice Guideline From the Academy of Neurologic Physical Therapy of the American Physical Therapy Association",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/34864777/",
+          "sourceType": "pubmed-record-route",
+          "sourceIdentityStatus": "pubmed-title-and-articleids-verified-not-fresh-reviewed",
+          "verificationEvidence": "C2LTB8-SR-VERIFY-VESTIBULAR-REHAB-GUIDELINE-20260703",
+          "resolutionFinding": "PMID matches updated guideline title and exposes PMCID and DOI.",
+          "useBoundary": "Use only for source-route resolution, manual/fulltext preparation and independent fresh review; no artifact fill, no individual advice, no calibrated risk, no intervention ranking, no clinical/neurotechnology advice and no model admission."
+        },
+        {
+          "candidateId": "C2LTB8-SRR-005-CAND-02",
+          "candidateRole": "pmc-open-fulltext-route",
+          "title": "Vestibular Rehabilitation for Peripheral Vestibular Hypofunction: An Updated Clinical Practice Guideline",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8920012/",
+          "sourceType": "pmc-open-fulltext-route",
+          "sourceIdentityStatus": "pmcid-identified-not-fresh-reviewed",
+          "verificationEvidence": "C2LTB8-SR-VERIFY-VESTIBULAR-REHAB-GUIDELINE-20260703",
+          "resolutionFinding": "PMC route is candidate full guideline context for vestibular hypofunction endpoints and recommendation boundaries.",
+          "useBoundary": "Use only for source-route resolution, manual/fulltext preparation and independent fresh review; no artifact fill, no individual advice, no calibrated risk, no intervention ranking, no clinical/neurotechnology advice and no model admission."
+        },
+        {
+          "candidateId": "C2LTB8-SRR-005-CAND-03",
+          "candidateRole": "doi-publisher-route",
+          "title": "Vestibular Rehabilitation for Peripheral Vestibular Hypofunction: An Updated Clinical Practice Guideline",
+          "url": "https://doi.org/10.1097/NPT.0000000000000382",
+          "sourceType": "doi-publisher-route",
+          "sourceIdentityStatus": "doi-identified-not-fresh-reviewed",
+          "verificationEvidence": "C2LTB8-SR-VERIFY-VESTIBULAR-REHAB-GUIDELINE-20260703",
+          "resolutionFinding": "DOI route is candidate publisher route for full-context verification.",
+          "useBoundary": "Use only for source-route resolution, manual/fulltext preparation and independent fresh review; no artifact fill, no individual advice, no calibrated risk, no intervention ranking, no clinical/neurotechnology advice and no model admission."
+        }
+      ],
+      "requiredFreshReviewActions": [
+        "Verify PubMed, PMC and DOI route identity against the updated vestibular rehabilitation guideline.",
+        "Extract vestibular hypofunction population, recommendation strength, diagnosis boundary and functional endpoint context.",
+        "Prevent generalization to all dizziness/balance disorders, individual therapy advice or calibrated prediction.",
+        "Run independent fresh review before bounded artifact creation.",
+        "Keep model admission and prohibited individual uses blocked."
+      ],
+      "artifactPromotionDecision": "blocked-pending-source-resolution-manual-fulltext-or-independent-fresh-review",
+      "modelAdmissionDecision": "blocked-pending-source-resolution-independent-fresh-review-reviewed-artifact-and-model-admission-gates",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ]
+    },
+    {
+      "resolutionId": "C2LTB8-SRR-006",
+      "taskId": "C2LTB8-EXT-022",
+      "domainId": "vestibular-balance-spatial-orientation",
+      "localDomainPath": "domains/c2-source-maintenance/vestibular-balance-spatial-orientation",
+      "sourceRefId": "C2LTB8-SRC-11-2",
+      "originalRegisteredTitle": "Clinical Practice Guideline: Benign Paroxysmal Positional Vertigo (Update)",
+      "originalRegisteredUrl": "https://pubmed.ncbi.nlm.nih.gov/28248609/",
+      "localReviewIssueType": "pubmed-bppv-guideline-fulltext-context-required",
+      "currentSourceCheck": {
+        "observedTitle": "NCBI PubMed record PMID 28248609 matches the BPPV guideline update title and exposes DOI 10.1177/0194599816689667; no PMCID was present in the checked summary.",
+        "verificationEvidence": "C2LTB8-SR-VERIFY-BPPV-GUIDELINE-20260703",
+        "result": "pubmed-doi-candidates-prepared-not-fresh-reviewed"
+      },
+      "sourceResolutionDecision": "Resolve EXT-022 into PubMed and DOI/publisher candidates before independent fresh review.",
+      "sourceResolutionStatus": "candidate-resolution-prepared-not-fresh-reviewed",
+      "sourceResolutionCandidates": [
+        {
+          "candidateId": "C2LTB8-SRR-006-CAND-01",
+          "candidateRole": "pubmed-primary-guideline-record",
+          "title": "Clinical Practice Guideline: Benign Paroxysmal Positional Vertigo (Update)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/28248609/",
+          "sourceType": "pubmed-record-route",
+          "sourceIdentityStatus": "pubmed-title-and-doi-verified-not-fresh-reviewed",
+          "verificationEvidence": "C2LTB8-SR-VERIFY-BPPV-GUIDELINE-20260703",
+          "resolutionFinding": "PMID matches guideline update title and exposes DOI.",
+          "useBoundary": "Use only for source-route resolution, manual/fulltext preparation and independent fresh review; no artifact fill, no individual advice, no calibrated risk, no intervention ranking, no clinical/neurotechnology advice and no model admission."
+        },
+        {
+          "candidateId": "C2LTB8-SRR-006-CAND-02",
+          "candidateRole": "doi-publisher-route",
+          "title": "Clinical Practice Guideline: Benign Paroxysmal Positional Vertigo (Update)",
+          "url": "https://doi.org/10.1177/0194599816689667",
+          "sourceType": "doi-publisher-route",
+          "sourceIdentityStatus": "doi-identified-not-fresh-reviewed",
+          "verificationEvidence": "C2LTB8-SR-VERIFY-BPPV-GUIDELINE-20260703",
+          "resolutionFinding": "DOI route is candidate publisher route for full guideline context and red-flag boundary review.",
+          "useBoundary": "Use only for source-route resolution, manual/fulltext preparation and independent fresh review; no artifact fill, no individual advice, no calibrated risk, no intervention ranking, no clinical/neurotechnology advice and no model admission."
+        }
+      ],
+      "requiredFreshReviewActions": [
+        "Verify PubMed and DOI route identity against the BPPV guideline update.",
+        "Extract BPPV-specific population, diagnostic scope, procedure boundary, red flags and uncertainty from full context.",
+        "Prevent use as all-dizziness treatment evidence, individual clinical advice or calibrated prediction.",
+        "Run independent fresh review before bounded artifact creation.",
+        "Keep model admission and prohibited individual uses blocked."
+      ],
+      "artifactPromotionDecision": "blocked-pending-source-resolution-manual-fulltext-or-independent-fresh-review",
+      "modelAdmissionDecision": "blocked-pending-source-resolution-independent-fresh-review-reviewed-artifact-and-model-admission-gates",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ]
+    },
+    {
+      "resolutionId": "C2LTB8-SRR-007",
+      "taskId": "C2LTB8-EXT-024",
+      "domainId": "oropharyngeal-dysphagia-swallow-safety-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/oropharyngeal-dysphagia-swallow-safety-continuity",
+      "sourceRefId": "C2LTB8-SRC-12-2",
+      "originalRegisteredTitle": "Screening and clinical management of dysphagia in adult patients with stroke: an European Stroke Organisation and European Society for Swallowing Disorders guideline",
+      "originalRegisteredUrl": "https://pubmed.ncbi.nlm.nih.gov/30993445/",
+      "localReviewIssueType": "pubmed-stroke-dysphagia-guideline-fulltext-context-required",
+      "currentSourceCheck": {
+        "observedTitle": "NCBI PubMed check showed original registered PMID 30993445 is a dental-age estimation article, while corrected PMID 34746431 matches an ESO/ESSD post-stroke dysphagia guideline route and exposes PMCID PMC8564153 plus DOI 10.1177/23969873211039721.",
+        "verificationEvidence": "C2LTB8-SR-VERIFY-STROKE-DYSPHAGIA-CORRECTED-PMID-20260703",
+        "result": "source-id-mismatch-corrected-pubmed-pmc-doi-candidates-prepared-not-fresh-reviewed"
+      },
+      "sourceResolutionDecision": "Treat EXT-024 as a source-ID mismatch: use corrected PMID 34746431 plus PMC/DOI candidates for fresh review and do not use original PMID 30993445 as stroke dysphagia evidence.",
+      "sourceResolutionStatus": "candidate-resolution-prepared-not-fresh-reviewed",
+      "sourceResolutionCandidates": [
+        {
+          "candidateId": "C2LTB8-SRR-007-CAND-01",
+          "candidateRole": "corrected-pubmed-primary-guideline-record",
+          "title": "European Stroke Organisation and European Society for Swallowing Disorders guideline for the diagnosis and treatment of post-stroke dysphagia",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/34746431/",
+          "sourceType": "corrected-pubmed-record-route",
+          "sourceIdentityStatus": "corrected-pmid-identified-not-fresh-reviewed",
+          "verificationEvidence": "C2LTB8-SR-VERIFY-STROKE-DYSPHAGIA-CORRECTED-PMID-20260703",
+          "resolutionFinding": "Corrected PMID matches the post-stroke dysphagia guideline route; original PMID 30993445 is title-mismatched and must not be counted as evidence.",
+          "useBoundary": "Use only for source-route resolution, manual/fulltext preparation and independent fresh review; no artifact fill, no individual advice, no calibrated risk, no intervention ranking, no clinical/neurotechnology advice and no model admission."
+        },
+        {
+          "candidateId": "C2LTB8-SRR-007-CAND-02",
+          "candidateRole": "pmc-open-fulltext-route",
+          "title": "European Stroke Organisation and European Society for Swallowing Disorders guideline for the diagnosis and treatment of post-stroke dysphagia",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8564153/",
+          "sourceType": "pmc-open-fulltext-route",
+          "sourceIdentityStatus": "pmcid-identified-not-fresh-reviewed",
+          "verificationEvidence": "C2LTB8-SR-VERIFY-STROKE-DYSPHAGIA-CORRECTED-PMID-20260703",
+          "resolutionFinding": "PMC fulltext route is candidate context for adult post-stroke dysphagia screening/diagnosis/treatment boundaries.",
+          "useBoundary": "Use only for source-route resolution, manual/fulltext preparation and independent fresh review; no artifact fill, no individual advice, no calibrated risk, no intervention ranking, no clinical/neurotechnology advice and no model admission."
+        },
+        {
+          "candidateId": "C2LTB8-SRR-007-CAND-03",
+          "candidateRole": "doi-publisher-route",
+          "title": "European Stroke Organisation and European Society for Swallowing Disorders guideline for the diagnosis and treatment of post-stroke dysphagia",
+          "url": "https://doi.org/10.1177/23969873211039721",
+          "sourceType": "doi-publisher-route",
+          "sourceIdentityStatus": "doi-identified-not-fresh-reviewed",
+          "verificationEvidence": "C2LTB8-SR-VERIFY-STROKE-DYSPHAGIA-CORRECTED-PMID-20260703",
+          "resolutionFinding": "DOI route is candidate publisher route for full guideline context verification.",
+          "useBoundary": "Use only for source-route resolution, manual/fulltext preparation and independent fresh review; no artifact fill, no individual advice, no calibrated risk, no intervention ranking, no clinical/neurotechnology advice and no model admission."
+        }
+      ],
+      "requiredFreshReviewActions": [
+        "Correct source identity from original PMID 30993445 to candidate PMID 34746431 before evidence counting.",
+        "Extract adult post-stroke dysphagia screening, diagnosis, treatment and multidisciplinary capacity boundaries from full context.",
+        "Prevent use as all-dysphagia evidence, individual clinical advice, intervention ranking or calibrated prediction.",
+        "Run independent fresh review before bounded artifact creation.",
+        "Keep model admission and prohibited individual uses blocked."
+      ],
+      "artifactPromotionDecision": "blocked-pending-source-resolution-manual-fulltext-or-independent-fresh-review",
+      "modelAdmissionDecision": "blocked-pending-source-resolution-independent-fresh-review-reviewed-artifact-and-model-admission-gates",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ]
+    }
+  ],
+  "requiredNextArtifacts": [
+    "c2ltb8-manual-fulltext-extraction-register",
+    "c2ltb8-independent-fresh-review-verdict-register",
+    "bounded-reviewed-source-card-artifact-register",
+    "model-admission-candidate-registry-update",
+    "source-id-mismatch-downgrade-check-row"
+  ],
+  "modelAdmissionDecision": "blocked-pending-source-resolution-independent-fresh-review-reviewed-artifact-and-model-admission-gates"
+}

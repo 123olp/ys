@@ -1,0 +1,107 @@
+{
+  "schemaVersion": "human-infra.life-path-nhats-route-classifier-synthetic-dry-run-validation.v1",
+  "status": "PASS",
+  "sourceRefs": {
+    "routeClassifierReadinessPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_route_classifier_readiness.json",
+    "routeClassifierReadinessSha256": "f0c0224317c9ee20e8de56dcddeadba85ae24d67b736782ba22de90e83109296",
+    "missingnessRouteProtocolPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_missingness_route_protocol.json",
+    "missingnessRouteProtocolSha256": "e5f68ca68fd44aff81e2146eb2fa75534aab10440129b42f218f5473386e12fd",
+    "missingnessRouteTestCasesPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_missingness_route_test_cases.json",
+    "missingnessRouteTestCasesSha256": "38928543b47a1f950de5925c2bb329fc544df4516aa882015240e7047674b4be",
+    "classifierLogicSource": "domains/c1-boundary-rewriting/longevity-evidence/scripts/validate_nhats_missingness_route_map.py::validate_route_envelope"
+  },
+  "currentDecision": {
+    "syntheticRouteClassifierLogicRunnable": true,
+    "routeClassifierReady": false,
+    "classifierCodeAllowed": false,
+    "realExtractionAllowed": false,
+    "aggregateCohortFlowAllowed": false,
+    "weightedRouteCountsAllowed": false,
+    "publicExportAllowed": false,
+    "calibrationAllowed": false,
+    "individualPredictionAllowed": false,
+    "modelG4": "blocked"
+  },
+  "summary": {
+    "caseCount": 8,
+    "pass": 8,
+    "fail": 0,
+    "allowedCount": 5,
+    "blockedCount": 3,
+    "observedRouteClasses": [
+      "alive_facility_or_residential_route",
+      "alive_proxy_interview",
+      "alive_self_interview",
+      "decedent_or_death_boundary",
+      "missing_or_nonresponse",
+      "not_classifiable",
+      "suppressed_small_cell"
+    ],
+    "crosswalkHandoffState": "blocked-not-reviewable",
+    "crosswalkReviewHandoffAllowed": false
+  },
+  "caseResults": [
+    {
+      "caseId": "synthetic-alive-self-interview-route",
+      "expectedDecision": "allow-route-classification",
+      "observedDecision": "allow-route-classification",
+      "observedRouteClass": "alive_self_interview",
+      "status": "PASS"
+    },
+    {
+      "caseId": "synthetic-alive-proxy-interview-route",
+      "expectedDecision": "allow-route-classification",
+      "observedDecision": "allow-route-classification",
+      "observedRouteClass": "alive_proxy_interview",
+      "status": "PASS"
+    },
+    {
+      "caseId": "synthetic-alive-facility-route",
+      "expectedDecision": "allow-route-classification",
+      "observedDecision": "allow-route-classification",
+      "observedRouteClass": "alive_facility_or_residential_route",
+      "status": "PASS"
+    },
+    {
+      "caseId": "synthetic-decedent-dominates-functional-route",
+      "expectedDecision": "allow-route-classification",
+      "observedDecision": "allow-route-classification",
+      "observedRouteClass": "decedent_or_death_boundary",
+      "status": "PASS"
+    },
+    {
+      "caseId": "synthetic-missing-status-blocks-endpoint",
+      "expectedDecision": "block-route-classification",
+      "observedDecision": "block-route-classification",
+      "observedRouteClass": "missing_or_nonresponse",
+      "status": "PASS"
+    },
+    {
+      "caseId": "synthetic-conflicting-alive-and-decedent-flags",
+      "expectedDecision": "block-route-classification",
+      "observedDecision": "block-route-classification",
+      "observedRouteClass": "not_classifiable",
+      "status": "PASS"
+    },
+    {
+      "caseId": "synthetic-public-small-cell-unsuppressed",
+      "expectedDecision": "block-route-classification",
+      "observedDecision": "block-route-classification",
+      "observedRouteClass": "suppressed_small_cell",
+      "status": "PASS"
+    },
+    {
+      "caseId": "synthetic-public-small-cell-suppressed",
+      "expectedDecision": "allow-route-classification",
+      "observedDecision": "allow-route-classification",
+      "observedRouteClass": "suppressed_small_cell",
+      "status": "PASS"
+    }
+  ],
+  "hardBoundaries": [
+    "This dry-run only evaluates synthetic route envelopes.",
+    "It does not read or write raw NHATS rows, weighted route counts, individual mortality timestamps or individual predictions.",
+    "A passing synthetic dry-run cannot promote routeClassifierReady, classifierCodeAllowed, extraction, aggregation, calibration or public export."
+  ],
+  "failures": []
+}

@@ -1,0 +1,254 @@
+{
+  "schemaVersion": "human-infra.life-path-nhats-registration-evidence-packet-validator-test-cases.v1",
+  "testSetId": "nhats-registration-evidence-packet-validator-test-cases-2026-07-04",
+  "sourceId": "nhats",
+  "status": "synthetic-validator-test-cases-only-registration-still-blocked",
+  "purpose": "Exercise future NHATS registration evidence packet preflight semantics before any real registration proof, download, extraction script, raw data handling, public output, calibration or individual prediction is allowed.",
+  "sourceBindings": {
+    "registrationEvidenceTemplatePath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_registration_evidence_template.json"
+  },
+  "hardBoundaries": [
+    "These packets are synthetic fixtures, not real NHATS registration evidence.",
+    "No credential, account identity, session cookie, auth token, download token, private profile, raw NHATS data, raw NSOC data, row-level record, identifier or death-date field may enter a packet.",
+    "A reviewable packet is still blocked and cannot prove NHATS registration, authorize download, authorize extraction, open calibration or support individual prediction.",
+    "Validator success cannot replace external controlled workspace evidence, human review, second review, NHATS conditions compliance or disclosure review."
+  ],
+  "testCases": [
+    {
+      "caseId": "valid-redacted-registration-packet-still-blocked",
+      "expectedVerdict": "reviewable-but-still-blocked",
+      "packet": {
+        "packetSchema": "human-infra.life-path-nhats-registration-evidence-packet.v1",
+        "packetId": "synthetic-nhats-registration-evidence-packet-001",
+        "sourceId": "nhats",
+        "templateId": "nhats-registration-evidence-template-2026-07-03",
+        "acquisitionReadinessId": "nhats-acquisition-readiness-2026-07-02",
+        "evidenceDate": "2026-07-04",
+        "evidenceSlotIds": [
+          "registered-account-status",
+          "permitted-user-boundary",
+          "conditions-of-use-attestation",
+          "public-use-file-access-tier",
+          "sensitive-restricted-approval-boundary",
+          "controlled-workspace-linkage",
+          "no-public-secret-storage",
+          "second-reviewer-signoff"
+        ],
+        "redactedRegistrationStatus": "confirmed-outside-repository-redacted",
+        "permittedUserBoundary": {
+          "sharingBoundaryReviewed": true,
+          "noUnauthorizedSharing": true,
+          "redactedSummaryHash": "sha256:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+        },
+        "conditionsOfUseAttestation": {
+          "attested": true,
+          "attestedAt": "2026-07-04",
+          "publicAiUploadAllowed": false,
+          "unauthorizedSharingAllowed": false
+        },
+        "fileTierDecision": {
+          "publicUseRegistrationRequired": true,
+          "plannedPublicUseFilesRecorded": true,
+          "sensitiveRestrictedFilesExcluded": true,
+          "fileTierSummaryHash": "sha256:bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+        },
+        "controlledWorkspaceLinkage": {
+          "provisionedOutsideRepository": true,
+          "workspaceEvidenceHash": "sha256:cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+          "accessLogHash": "sha256:dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd",
+          "inventoryLogHash": "sha256:eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+          "destructionProcessHash": "sha256:ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
+        },
+        "noPublicSecretStorageCheck": {
+          "passed": true,
+          "credentialAbsent": true,
+          "rawDataAbsent": true,
+          "repositoryScanHash": "sha256:1111111111111111111111111111111111111111111111111111111111111111",
+          "publicAiScanHash": "sha256:2222222222222222222222222222222222222222222222222222222222222222"
+        },
+        "secondReviewStatus": {
+          "status": "signed-off-redacted-summary",
+          "reviewerRole": "independent-human-reviewer",
+          "reviewHash": "sha256:3333333333333333333333333333333333333333333333333333333333333333"
+        },
+        "downloadAllowed": false,
+        "extractionScriptAllowed": false,
+        "rawDataAllowedInRepository": false,
+        "publicAiUploadAllowed": false,
+        "calibrationAllowed": false,
+        "individualPredictionAllowed": false
+      }
+    },
+    {
+      "caseId": "missing-second-review-cannot-evaluate",
+      "expectedVerdict": "cannot-evaluate",
+      "packet": {
+        "packetSchema": "human-infra.life-path-nhats-registration-evidence-packet.v1",
+        "packetId": "synthetic-nhats-registration-evidence-packet-002",
+        "sourceId": "nhats",
+        "templateId": "nhats-registration-evidence-template-2026-07-03",
+        "acquisitionReadinessId": "nhats-acquisition-readiness-2026-07-02",
+        "evidenceDate": "2026-07-04",
+        "evidenceSlotIds": [
+          "registered-account-status",
+          "permitted-user-boundary",
+          "conditions-of-use-attestation",
+          "public-use-file-access-tier",
+          "sensitive-restricted-approval-boundary",
+          "controlled-workspace-linkage",
+          "no-public-secret-storage"
+        ],
+        "redactedRegistrationStatus": "confirmed-outside-repository-redacted",
+        "conditionsOfUseAttestation": {
+          "attested": true,
+          "attestedAt": "2026-07-04",
+          "publicAiUploadAllowed": false,
+          "unauthorizedSharingAllowed": false
+        },
+        "controlledWorkspaceLinkage": {
+          "provisionedOutsideRepository": true,
+          "workspaceEvidenceHash": "sha256:4444444444444444444444444444444444444444444444444444444444444444"
+        },
+        "noPublicSecretStorageCheck": {
+          "passed": true,
+          "credentialAbsent": true,
+          "rawDataAbsent": true
+        },
+        "downloadAllowed": false,
+        "extractionScriptAllowed": false,
+        "rawDataAllowedInRepository": false,
+        "publicAiUploadAllowed": false,
+        "calibrationAllowed": false,
+        "individualPredictionAllowed": false
+      }
+    },
+    {
+      "caseId": "credential-bearing-packet-rejected",
+      "expectedVerdict": "rejected",
+      "packet": {
+        "packetSchema": "human-infra.life-path-nhats-registration-evidence-packet.v1",
+        "packetId": "synthetic-nhats-registration-evidence-packet-003",
+        "sourceId": "nhats",
+        "templateId": "nhats-registration-evidence-template-2026-07-03",
+        "acquisitionReadinessId": "nhats-acquisition-readiness-2026-07-02",
+        "evidenceDate": "2026-07-04",
+        "evidenceSlotIds": [
+          "registered-account-status",
+          "permitted-user-boundary",
+          "conditions-of-use-attestation",
+          "public-use-file-access-tier",
+          "sensitive-restricted-approval-boundary",
+          "controlled-workspace-linkage",
+          "no-public-secret-storage",
+          "second-reviewer-signoff"
+        ],
+        "redactedRegistrationStatus": "confirmed-outside-repository-redacted",
+        "password": "forbidden",
+        "sessionCookie": "forbidden",
+        "downloadAllowed": false,
+        "extractionScriptAllowed": false,
+        "rawDataAllowedInRepository": false,
+        "publicAiUploadAllowed": false,
+        "calibrationAllowed": false,
+        "individualPredictionAllowed": false
+      }
+    },
+    {
+      "caseId": "raw-row-and-death-date-packet-rejected",
+      "expectedVerdict": "rejected",
+      "packet": {
+        "packetSchema": "human-infra.life-path-nhats-registration-evidence-packet.v1",
+        "packetId": "synthetic-nhats-registration-evidence-packet-004",
+        "sourceId": "nhats",
+        "templateId": "nhats-registration-evidence-template-2026-07-03",
+        "acquisitionReadinessId": "nhats-acquisition-readiness-2026-07-02",
+        "evidenceDate": "2026-07-04",
+        "evidenceSlotIds": [
+          "registered-account-status",
+          "permitted-user-boundary",
+          "conditions-of-use-attestation",
+          "public-use-file-access-tier",
+          "sensitive-restricted-approval-boundary",
+          "controlled-workspace-linkage",
+          "no-public-secret-storage",
+          "second-reviewer-signoff"
+        ],
+        "rowLevelData": [
+          {
+            "spid": "forbidden",
+            "deathDate": "forbidden"
+          }
+        ],
+        "downloadAllowed": false,
+        "extractionScriptAllowed": false,
+        "rawDataAllowedInRepository": false,
+        "publicAiUploadAllowed": false,
+        "calibrationAllowed": false,
+        "individualPredictionAllowed": false
+      }
+    },
+    {
+      "caseId": "public-ai-upload-packet-rejected",
+      "expectedVerdict": "rejected",
+      "packet": {
+        "packetSchema": "human-infra.life-path-nhats-registration-evidence-packet.v1",
+        "packetId": "synthetic-nhats-registration-evidence-packet-005",
+        "sourceId": "nhats",
+        "templateId": "nhats-registration-evidence-template-2026-07-03",
+        "acquisitionReadinessId": "nhats-acquisition-readiness-2026-07-02",
+        "evidenceDate": "2026-07-04",
+        "evidenceSlotIds": [
+          "registered-account-status",
+          "permitted-user-boundary",
+          "conditions-of-use-attestation",
+          "public-use-file-access-tier",
+          "sensitive-restricted-approval-boundary",
+          "controlled-workspace-linkage",
+          "no-public-secret-storage",
+          "second-reviewer-signoff"
+        ],
+        "redactedRegistrationStatus": "confirmed-outside-repository-redacted",
+        "conditionsOfUseAttestation": {
+          "attested": true,
+          "attestedAt": "2026-07-04",
+          "publicAiUploadAllowed": true
+        },
+        "downloadAllowed": false,
+        "extractionScriptAllowed": false,
+        "rawDataAllowedInRepository": false,
+        "publicAiUploadAllowed": true,
+        "calibrationAllowed": false,
+        "individualPredictionAllowed": false
+      }
+    },
+    {
+      "caseId": "premature-download-extraction-calibration-packet-rejected",
+      "expectedVerdict": "rejected",
+      "packet": {
+        "packetSchema": "human-infra.life-path-nhats-registration-evidence-packet.v1",
+        "packetId": "synthetic-nhats-registration-evidence-packet-006",
+        "sourceId": "nhats",
+        "templateId": "nhats-registration-evidence-template-2026-07-03",
+        "acquisitionReadinessId": "nhats-acquisition-readiness-2026-07-02",
+        "evidenceDate": "2026-07-04",
+        "evidenceSlotIds": [
+          "registered-account-status",
+          "permitted-user-boundary",
+          "conditions-of-use-attestation",
+          "public-use-file-access-tier",
+          "sensitive-restricted-approval-boundary",
+          "controlled-workspace-linkage",
+          "no-public-secret-storage",
+          "second-reviewer-signoff"
+        ],
+        "redactedRegistrationStatus": "confirmed-outside-repository-redacted",
+        "downloadAllowed": true,
+        "extractionScriptAllowed": true,
+        "rawDataAllowedInRepository": false,
+        "publicAiUploadAllowed": false,
+        "calibrationAllowed": true,
+        "individualPredictionAllowed": false
+      }
+    }
+  ]
+}

@@ -1,0 +1,338 @@
+{
+  "schemaVersion": "human-infra.l4-validation-calibration-reporting-contract.v1",
+  "contractId": "human-infra-l4-validation-calibration-reporting-contract-2026-07-04",
+  "status": "template-only-no-validation-report-l4-blocked",
+  "owner": "tradecatlabs",
+  "purpose": "Define the minimum validation, calibration, bias/applicability and reporting packet required before any L4 aggregate calibrated research-model review can open. This contract is a reporting and screening template only: it is not a validation report, not a calibrated prediction model, not public weighted-domain release permission, not individual prediction and not medical advice.",
+  "sourceOfTruth": {
+    "l4UnblockExecutionPlan": "docs/reference/human-infra-l4-unblock-execution-plan.json",
+    "l4EvidenceIntakeRegister": "docs/reference/human-infra-l4-evidence-intake-register.json",
+    "l4EvidencePacketReviewPlaybook": "docs/reference/human-infra-l4-evidence-packet-review-playbook.md",
+    "calibrationReadiness": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_calibration_readiness.json",
+    "modelAdmissionContract": "docs/reference/human-infra-model-admission-contract.json",
+    "modelAdmissionCandidateRegistry": "docs/reference/human-infra-model-admission-candidate-registry.json",
+    "falsifierSourceCardBackfill": "docs/reference/human-infra-falsifier-source-card-backfill.json"
+  },
+  "externalStandards": [
+    {
+      "standardId": "TRIPOD+AI",
+      "sourceAnchorId": "SA-TRIPOD-AI-2024",
+      "title": "TRIPOD+AI statement: updated guidance for reporting clinical prediction models that use regression or machine learning methods",
+      "url": "https://www.bmj.com/content/385/bmj-2023-078378",
+      "role": "prediction-model reporting completeness and transparent methods/results boundary"
+    },
+    {
+      "standardId": "TRIPOD+AI-website",
+      "sourceAnchorId": "SA-TRIPOD-AI-2024",
+      "title": "TRIPOD statement website",
+      "url": "https://www.tripod-statement.org/",
+      "role": "living entry point for reporting guidance and checklist materials"
+    },
+    {
+      "standardId": "PROBAST+AI",
+      "sourceAnchorId": "not-yet-carded",
+      "title": "PROBAST+AI risk of bias and applicability assessment tool",
+      "url": "https://www.latitudes-network.org/tool/probastai/",
+      "role": "risk of bias, applicability and AI-specific prediction-model assessment boundary"
+    }
+  ],
+  "currentDecision": {
+    "highestCurrentModelLevel": "L3-local-or-synthetic-only",
+    "reportTemplateReady": true,
+    "realValidationReportAttached": false,
+    "developmentValidationDesignComplete": false,
+    "calibrationDiagnosticsAvailable": false,
+    "realParameterSensitivityAvailable": false,
+    "biasApplicabilityReviewComplete": false,
+    "tripodProbastReportingPacketComplete": false,
+    "l4AggregateCalibratedAdmissionAllowed": false,
+    "publicWeightedDomainOutputAllowed": false,
+    "calibratedPredictionAvailable": false,
+    "individualUseAllowed": false,
+    "reason": "The L4 validation/calibration reporting contract exists as a template and gate, but no real reviewed aggregate output, validation design, calibration diagnostic, real-parameter sensitivity analysis, bias/applicability review or TRIPOD+AI / PROBAST+AI reporting packet has been attached. L4 aggregate calibrated admission, public weighted-domain output, calibrated prediction and individual use remain blocked."
+  },
+  "workOrderBinding": {
+    "workOrderId": "L4WO-05-validation-calibration-diagnostics",
+    "candidatePath": "L4C-NHANES-PUBLIC-LMF-WEIGHTED-DOMAIN",
+    "blocks": [
+      "L4B-06-validation-calibration"
+    ],
+    "dependsOn": [
+      "L4WO-03-nhats-real-extraction-cohort-flow",
+      "L4WO-04-nhanes-human-disclosure-review"
+    ],
+    "slotIds": [
+      "development-validation-design",
+      "calibration-diagnostics-report",
+      "real-parameter-sensitivity-analysis",
+      "bias-applicability-review",
+      "tripod-probast-reporting-packet"
+    ]
+  },
+  "reportPacketSections": [
+    {
+      "sectionId": "study-question-and-intended-use",
+      "purpose": "State the model question, target population, prediction horizon, outcome and strictly bounded intended use.",
+      "requiredFields": [
+        "candidatePath",
+        "targetPopulation",
+        "predictionHorizon",
+        "outcomeDefinition",
+        "intendedUse",
+        "prohibitedUses"
+      ],
+      "blocksIfMissing": true
+    },
+    {
+      "sectionId": "data-source-governance-and-cohort",
+      "purpose": "Bind the model to approved data sources, governance status, cohort flow and repository-safe disclosure state.",
+      "requiredFields": [
+        "dataSource",
+        "governanceApproval",
+        "cohortFlow",
+        "inclusionExclusionRules",
+        "disclosureReview",
+        "artifactHashes"
+      ],
+      "blocksIfMissing": true
+    },
+    {
+      "sectionId": "time-zero-horizons-outcomes",
+      "purpose": "Define time zero, follow-up windows, censoring, competing events and outcome ascertainment.",
+      "requiredFields": [
+        "timeZero",
+        "horizons",
+        "outcomeSource",
+        "censoringRules",
+        "competingEvents",
+        "followupCompleteness"
+      ],
+      "blocksIfMissing": true
+    },
+    {
+      "sectionId": "predictors-measurement-and-missingness",
+      "purpose": "Describe every predictor family, exact measurement route, missingness handling and non-row-persisting aggregate boundary.",
+      "requiredFields": [
+        "predictorList",
+        "measurementTiming",
+        "valueLabels",
+        "missingnessMap",
+        "imputationOrExclusionRules",
+        "leakageCheck"
+      ],
+      "blocksIfMissing": true
+    },
+    {
+      "sectionId": "model-specification-and-update-status",
+      "purpose": "Specify whether the model is developed, updated, recalibrated or externally validated, and freeze all model inputs.",
+      "requiredFields": [
+        "modelType",
+        "estimand",
+        "candidateLevel",
+        "trainingProcedure",
+        "updateStatus",
+        "frozenInputs"
+      ],
+      "blocksIfMissing": true
+    },
+    {
+      "sectionId": "development-validation-design",
+      "purpose": "Record the development cohort, validation cohort, resampling plan or external validation design.",
+      "requiredFields": [
+        "developmentCohort",
+        "validationCohort",
+        "splitOrResamplingPlan",
+        "externalValidationPlan",
+        "sampleSizeRationale",
+        "reviewedDesignHash"
+      ],
+      "blocksIfMissing": true
+    },
+    {
+      "sectionId": "performance-discrimination-and-overall-error",
+      "purpose": "Report horizon-bound model performance without individual outputs.",
+      "requiredFields": [
+        "performanceHorizon",
+        "discriminationMetric",
+        "overallPerformanceMetric",
+        "eventRateOrOutcomeAnchor",
+        "uncertaintyInterval",
+        "aggregateOnlyOutput"
+      ],
+      "blocksIfMissing": true
+    },
+    {
+      "sectionId": "calibration-diagnostics",
+      "purpose": "Report calibration diagnostics by horizon and subgroup/domain where allowed.",
+      "requiredFields": [
+        "calibrationPlotOrTable",
+        "calibrationInTheLarge",
+        "calibrationSlopeOrEquivalent",
+        "observedExpectedByRiskGroup",
+        "horizonSpecificDiagnostics",
+        "reviewedDiagnosticHash"
+      ],
+      "blocksIfMissing": true
+    },
+    {
+      "sectionId": "uncertainty-sensitivity-and-stability",
+      "purpose": "Stress-test uncertainty, parameter sensitivity, missingness assumptions, cohort definitions and prediction horizons.",
+      "requiredFields": [
+        "parameterUncertainty",
+        "missingnessSensitivity",
+        "cohortDefinitionSensitivity",
+        "horizonSensitivity",
+        "stabilityAcrossDomains",
+        "reviewedSensitivityHash"
+      ],
+      "blocksIfMissing": true
+    },
+    {
+      "sectionId": "bias-applicability-and-subgroup-review",
+      "purpose": "Assess bias, applicability, subgroup coverage, transport boundary and population mismatch before any L4 review opens.",
+      "requiredFields": [
+        "riskOfBiasAssessment",
+        "applicabilityAssessment",
+        "subgroupCoverage",
+        "transportBoundary",
+        "excludedPopulationReview",
+        "reviewedBiasApplicabilityHash"
+      ],
+      "blocksIfMissing": true
+    },
+    {
+      "sectionId": "traceability-reproducibility-and-human-review",
+      "purpose": "Bind the report to redacted artifacts, reproducible commands, reviewer roles and evidence packet decisions.",
+      "requiredFields": [
+        "artifactHashes",
+        "validationCommands",
+        "softwareEnvironment",
+        "firstReviewerRole",
+        "secondReviewerRole",
+        "packetVerdicts"
+      ],
+      "blocksIfMissing": true
+    },
+    {
+      "sectionId": "limitations-prohibited-uses-and-downstream-decision",
+      "purpose": "Record limits, prohibited uses, residual blockers and the downstream admission decision.",
+      "requiredFields": [
+        "limitations",
+        "prohibitedClaims",
+        "remainingBlockers",
+        "downstreamDecision",
+        "publicOutputDecision",
+        "individualUseDecision"
+      ],
+      "blocksIfMissing": true
+    }
+  ],
+  "minimumDiagnostics": {
+    "discrimination": [
+      "time-dependent-discrimination-or-clearly-justified-alternative",
+      "horizon-specific-performance"
+    ],
+    "calibration": [
+      "calibration-plot-or-table-by-horizon",
+      "calibration-in-the-large",
+      "calibration-slope-or-equivalent",
+      "observed-expected-by-risk-group-or-domain",
+      "confidence-or-uncertainty-intervals-when-release-approved"
+    ],
+    "overallPerformance": [
+      "Brier-score-or-survival-appropriate-loss",
+      "prediction-horizon-specific-error"
+    ],
+    "sensitivity": [
+      "parameter-uncertainty",
+      "missingness-assumption",
+      "cohort-definition",
+      "horizon-choice",
+      "subgroup-applicability"
+    ],
+    "auditBoundaries": [
+      "aggregate-reviewed-output-only",
+      "no-raw-rows",
+      "no-individual-prediction",
+      "no-public-real-values-before-disclosure-review",
+      "no-calibrated-claim-until-report-packet-complete"
+    ]
+  },
+  "slotMapping": [
+    {
+      "slotId": "development-validation-design",
+      "evidenceClass": "redacted-artifact-hash",
+      "repositoryPolicy": "study-design-summary-only",
+      "requiredSections": [
+        "study-question-and-intended-use",
+        "data-source-governance-and-cohort",
+        "time-zero-horizons-outcomes",
+        "predictors-measurement-and-missingness",
+        "model-specification-and-update-status",
+        "development-validation-design"
+      ]
+    },
+    {
+      "slotId": "calibration-diagnostics-report",
+      "evidenceClass": "calibration-diagnostic-report",
+      "repositoryPolicy": "reviewed-aggregate-diagnostics-only",
+      "requiredSections": [
+        "performance-discrimination-and-overall-error",
+        "calibration-diagnostics"
+      ]
+    },
+    {
+      "slotId": "real-parameter-sensitivity-analysis",
+      "evidenceClass": "calibration-diagnostic-report",
+      "repositoryPolicy": "reviewed-aggregate-diagnostics-only",
+      "requiredSections": [
+        "uncertainty-sensitivity-and-stability"
+      ]
+    },
+    {
+      "slotId": "bias-applicability-review",
+      "evidenceClass": "bias-applicability-review",
+      "repositoryPolicy": "reviewed-report-summary-only",
+      "requiredSections": [
+        "bias-applicability-and-subgroup-review"
+      ]
+    },
+    {
+      "slotId": "tripod-probast-reporting-packet",
+      "evidenceClass": "bias-applicability-review",
+      "repositoryPolicy": "reporting-packet-hash-only",
+      "requiredSections": [
+        "traceability-reproducibility-and-human-review",
+        "limitations-prohibited-uses-and-downstream-decision"
+      ]
+    }
+  ],
+  "acceptanceRules": [
+    "all five L4WO-05 slots must have reviewed evidence packets before L4 aggregate calibrated review can open",
+    "each attached report packet must include redacted SHA-256 artifact hashes and human reviewer roles",
+    "calibration diagnostics must be tied to a specific prediction horizon and outcome definition",
+    "TRIPOD+AI reporting completeness must be explicitly checked before any reporting packet can close",
+    "PROBAST+AI or PROBAST-style risk of bias and applicability review must be explicitly checked before any reporting packet can close",
+    "raw rows, restricted files, identifiers and screenshots with sensitive values must not be tracked",
+    "AI-only signoff must not close any slot",
+    "downstreamDecision must remain l4-still-blocked until all work orders close and model-admission review passes"
+  ],
+  "prohibitedClaims": [
+    "public-weighted-domain-output",
+    "calibrated-prediction",
+    "individual-prediction",
+    "individual-death-date-output",
+    "medical-advice",
+    "intervention-ranking",
+    "causal-effect-claim",
+    "longevity-escape-velocity-proof"
+  ],
+  "reportStatusSummary": {
+    "requiredSectionCount": 12,
+    "requiredSlotCount": 5,
+    "completedSectionCount": 0,
+    "completedSlotCount": 0,
+    "reportPacketCount": 0,
+    "l4ReviewOpen": false
+  }
+}

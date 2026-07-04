@@ -1,9 +1,9 @@
 {
   "schemaVersion": "human-infra.nhanes-public-lmf-domain-indicator-diagnostic-validation.v1",
   "status": "pass",
-  "generatedAt": "2026-07-03T10:41:43.606645+00:00",
+  "generatedAt": "2026-07-04T20:22:38.253308+00:00",
   "diagnosticPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhanes_public_lmf_domain_indicator_diagnostic.json",
-  "diagnosticSha256": "9242c75084073cb1e5d6329912362329ff99c804c97507892d41801ab251f74a",
+  "diagnosticSha256": "51e2ff68eb5ec3b23aa0f960c3dfe899c00bfbc9229a6574c893db17a540c4b4",
   "validationPath": "web/src/data/life-path-nhanes-public-lmf-domain-indicator-diagnostic-validation.json",
   "summary": {
     "sourceId": "nhanes-public-lmf-2017-2018",

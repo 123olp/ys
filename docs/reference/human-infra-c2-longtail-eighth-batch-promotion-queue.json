@@ -1,0 +1,986 @@
+{
+  "schemaVersion": "human-infra.c2-longtail-eighth-batch-promotion-queue.v1",
+  "queueId": "human-infra-c2-longtail-eighth-batch-promotion-queue",
+  "status": "active-eighth-batch-queue-model-blocked",
+  "purpose": "Select the eighth C2 long-tail batch for source-specific review, prioritizing pain, trauma recovery, neurodevelopmental executive function, sensory-communication continuity, autonomic regulation, brain-computer interfaces and living neural computation domains that determine whether the subject can perceive, communicate, regulate, learn, act and couple with future tools over long time horizons.",
+  "sourceOfTruth": {
+    "c2LongtailCoverageRegister": "docs/reference/human-infra-c2-longtail-coverage-register.json",
+    "firstBatchPromotionQueue": "docs/reference/human-infra-c2-longtail-first-batch-promotion-queue.json",
+    "secondBatchPromotionQueue": "docs/reference/human-infra-c2-longtail-second-batch-promotion-queue.json",
+    "thirdBatchPromotionQueue": "docs/reference/human-infra-c2-longtail-third-batch-promotion-queue.json",
+    "fourthBatchPromotionQueue": "docs/reference/human-infra-c2-longtail-fourth-batch-promotion-queue.json",
+    "fifthBatchPromotionQueue": "docs/reference/human-infra-c2-longtail-fifth-batch-promotion-queue.json",
+    "sixthBatchPromotionQueue": "docs/reference/human-infra-c2-longtail-sixth-batch-promotion-queue.json",
+    "seventhBatchPromotionQueue": "docs/reference/human-infra-c2-longtail-seventh-batch-promotion-queue.json",
+    "domainClassification": "domains/_possibility-space-control/classification.tsv",
+    "sourceCardSystem": "docs/reference/source-card-system.md",
+    "maturityGapRegister": "docs/reference/human-infra-maturity-gap-register.json",
+    "maturityRoadmap": "docs/reference/human-infra-maturity-roadmap.md"
+  },
+  "scope": {
+    "batchId": "C2-LT-B8",
+    "batchDomainCount": 12,
+    "selectionRule": "Prioritize still-uncovered C2 domains where subjective suffering, trauma recovery, executive function, sensory communication, autonomic regulation, neurotechnology interfaces and living neural computation shape the subject's capacity to perceive, communicate, regulate state, learn, act and couple to tools. This is importance/long-horizon/fundamentality oriented, not feasibility, market maturity or intervention hype oriented.",
+    "requiredArtifactClasses": [
+      "domain-claim-evidence-row",
+      "domain-source-card-field-extraction",
+      "domain-source-specific-deep-read",
+      "source-context-local-review",
+      "independent-fresh-review-verdict",
+      "reviewed-source-card",
+      "variable-card",
+      "endpoint-card",
+      "uncertainty-card",
+      "transfer-boundary-card",
+      "downgrade-check"
+    ],
+    "nonClaims": [
+      "This queue does not complete Source Cards.",
+      "This queue does not complete independent fresh review.",
+      "This queue does not upgrade any domain claim.",
+      "This queue does not admit any domain into calibrated prediction.",
+      "This queue does not provide medical, clinical, neurodevelopmental, mental-health, sensory-rehabilitation, BCI, biocomputing, individual, or intervention-ranking advice.",
+      "This queue does not mark any C2-LT-B1/B2/B3/B4/B5/B6/B7 blocked, downgrade, source-resolution, manual-access or model-blocked row as resolved."
+    ]
+  },
+  "blockedUses": [
+    "calibrated-prediction",
+    "individual-advice",
+    "individual-death-date-output",
+    "intervention-ranking",
+    "clinical-validity-claim",
+    "domain-claim-upgrade"
+  ],
+  "batchRows": [
+    {
+      "domainId": "pain-suffering-control",
+      "triageBucket": "barrier-function-mobility",
+      "selectionReason": "疼痛直接消耗注意力、睡眠、行动能力和主观时间质量，是有效寿命从“活着”转向“能行动、能学习、能选择”的核心源体维护域。",
+      "claimSeed": "持续疼痛会通过睡眠破坏、活动受限、情绪负担、药物风险和医疗使用改变有效时间、行动能力、恢复能力和主体持续性。",
+      "variableSeed": [
+        "pain-intensity",
+        "pain-interference",
+        "sleep-disruption",
+        "functional-restoration",
+        "analgesic-risk-boundary"
+      ],
+      "batchId": "C2-LT-B8",
+      "priorityRank": 1,
+      "localDomainPath": "domains/c2-source-maintenance/pain-suffering-control",
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB8-SRC-01-1",
+          "title": "CDC Clinical Practice Guideline for Prescribing Opioids for Pain — United States, 2022",
+          "url": "https://www.cdc.gov/mmwr/volumes/71/rr/rr7103a1.htm",
+          "evidenceRole": "pain-treatment-risk-benefit-guideline",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-03",
+          "sourceCheck": {
+            "checkedAt": "2026-07-03",
+            "method": "python-requests-get",
+            "statusCode": 200,
+            "contentLengthBytes": 715740
+          }
+        },
+        {
+          "sourceRefId": "C2LTB8-SRC-01-2",
+          "title": "WHO guideline for non-surgical management of chronic primary low back pain in adults in primary and community care settings",
+          "url": "https://www.who.int/publications/i/item/9789240081789",
+          "evidenceRole": "chronic-pain-function-guideline",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-03",
+          "sourceCheck": {
+            "checkedAt": "2026-07-03",
+            "method": "python-requests-get",
+            "statusCode": 200,
+            "contentLengthBytes": 93032
+          }
+        }
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "modelAdmissionDecision": "blocked-until-c2ltb8-source-specific-fields-local-review-independent-fresh-review-and-reviewed-artifacts-exist",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ]
+    },
+    {
+      "domainId": "trauma-ptsd-adversity-recovery-continuity",
+      "triageBucket": "neuro-sensory-cognitive-continuity",
+      "selectionReason": "创伤和 PTSD 会改变威胁感知、睡眠、记忆、情绪调节、社会信任和长期任务执行能力，是主体连续性的高负荷恢复域。",
+      "claimSeed": "创伤后应激和逆境暴露会通过症状负担、睡眠、回避、物质使用、照护接入和社会功能影响主体恢复、学习和长期行动窗口。",
+      "variableSeed": [
+        "ptsd-symptom-severity",
+        "sleep-nightmares",
+        "functional-impairment",
+        "trauma-focused-treatment-access",
+        "social-reintegration"
+      ],
+      "batchId": "C2-LT-B8",
+      "priorityRank": 2,
+      "localDomainPath": "domains/c2-source-maintenance/trauma-ptsd-adversity-recovery-continuity",
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB8-SRC-02-1",
+          "title": "VA/DoD Clinical Practice Guideline for Management of Posttraumatic Stress Disorder and Acute Stress Disorder",
+          "url": "https://www.healthquality.va.gov/guidelines/MH/ptsd/",
+          "evidenceRole": "ptsd-guideline-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-03",
+          "sourceCheck": {
+            "checkedAt": "2026-07-03",
+            "method": "python-requests-get",
+            "statusCode": 200,
+            "contentLengthBytes": 75448
+          }
+        },
+        {
+          "sourceRefId": "C2LTB8-SRC-02-2",
+          "title": "Clinician's Guide to Medications for PTSD",
+          "url": "https://www.ptsd.va.gov/professional/treat/txessentials/clinician_guide_meds.asp",
+          "evidenceRole": "ptsd-treatment-boundary-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-03",
+          "sourceCheck": {
+            "checkedAt": "2026-07-03",
+            "method": "python-requests-get",
+            "statusCode": 200,
+            "contentLengthBytes": 113427
+          }
+        }
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "modelAdmissionDecision": "blocked-until-c2ltb8-source-specific-fields-local-review-independent-fresh-review-and-reviewed-artifacts-exist",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ]
+    },
+    {
+      "domainId": "adhd-executive-function-neurodevelopment-continuity",
+      "triageBucket": "neuro-sensory-cognitive-continuity",
+      "selectionReason": "ADHD 影响执行功能、时间管理、抑制控制、学习和任务完成密度，是“通用任务资源”在发育期和成人期的关键研究域。",
+      "claimSeed": "ADHD 相关注意力、冲动控制和执行功能差异会改变学习轮次、任务摩擦、事故风险、教育/职业结果和长期自我管理能力。",
+      "variableSeed": [
+        "inattention",
+        "executive-function",
+        "impulsivity",
+        "treatment-access",
+        "school-work-function"
+      ],
+      "batchId": "C2-LT-B8",
+      "priorityRank": 3,
+      "localDomainPath": "domains/c2-source-maintenance/adhd-executive-function-neurodevelopment-continuity",
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB8-SRC-03-1",
+          "title": "CDC ADHD Treatment",
+          "url": "https://www.cdc.gov/adhd/treatment/index.html",
+          "evidenceRole": "adhd-treatment-access-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-03",
+          "sourceCheck": {
+            "checkedAt": "2026-07-03",
+            "method": "python-requests-get",
+            "statusCode": 200,
+            "contentLengthBytes": 72004
+          }
+        },
+        {
+          "sourceRefId": "C2LTB8-SRC-03-2",
+          "title": "Clinical Practice Guideline for the Diagnosis, Evaluation, and Treatment of ADHD in Children and Adolescents",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/31570648/",
+          "evidenceRole": "adhd-clinical-guideline-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-03",
+          "sourceCheck": {
+            "checkedAt": "2026-07-03",
+            "method": "python-requests-get",
+            "statusCode": 200,
+            "contentLengthBytes": 21185
+          }
+        }
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "modelAdmissionDecision": "blocked-until-c2ltb8-source-specific-fields-local-review-independent-fresh-review-and-reviewed-artifacts-exist",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ]
+    },
+    {
+      "domainId": "autism-neurodiversity-support-continuity",
+      "triageBucket": "neuro-sensory-cognitive-continuity",
+      "selectionReason": "自闭症谱系关系到感知负荷、沟通、支持环境、独立生活、教育就业和社会参与，决定主体能力能否被环境正确承载。",
+      "claimSeed": "自闭症相关支持需求、感觉负荷、沟通方式和共病管理会影响学习、关系、就业、生活独立性和主体长期行动能力。",
+      "variableSeed": [
+        "support-needs",
+        "sensory-load",
+        "communication-access",
+        "adaptive-function",
+        "co-occurring-condition-management"
+      ],
+      "batchId": "C2-LT-B8",
+      "priorityRank": 4,
+      "localDomainPath": "domains/c2-source-maintenance/autism-neurodiversity-support-continuity",
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB8-SRC-04-1",
+          "title": "CDC Treatment and Intervention Services for Autism Spectrum Disorder",
+          "url": "https://www.cdc.gov/autism/treatment/index.html",
+          "evidenceRole": "autism-support-services-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-03",
+          "sourceCheck": {
+            "checkedAt": "2026-07-03",
+            "method": "python-requests-get",
+            "statusCode": 200,
+            "contentLengthBytes": 60420
+          }
+        },
+        {
+          "sourceRefId": "C2LTB8-SRC-04-2",
+          "title": "Identification, Evaluation, and Management of Children With Autism Spectrum Disorder",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/31843864/",
+          "evidenceRole": "autism-clinical-report-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-03",
+          "sourceCheck": {
+            "checkedAt": "2026-07-03",
+            "method": "python-requests-get",
+            "statusCode": 200,
+            "contentLengthBytes": 158655
+          }
+        }
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "modelAdmissionDecision": "blocked-until-c2ltb8-source-specific-fields-local-review-independent-fresh-review-and-reviewed-artifacts-exist",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ]
+    },
+    {
+      "domainId": "brain-computer-interface-neurotechnology-governance",
+      "triageBucket": "neurotechnology-governance",
+      "selectionReason": "BCI 是把主体意图、神经信号、外部工具和身份边界连接起来的接口域，直接影响未来认知增强、残障补偿和主体连续性治理。",
+      "claimSeed": "脑机接口和神经技术可能扩展沟通、控制和认知外部化能力，但必须同时审查安全、隐私、同意、身份边界、依赖性和可退出性。",
+      "variableSeed": [
+        "neural-signal-interface",
+        "communication-control-restoration",
+        "privacy-consent",
+        "identity-continuity",
+        "device-dependence-exit"
+      ],
+      "batchId": "C2-LT-B8",
+      "priorityRank": 5,
+      "localDomainPath": "domains/c2-source-maintenance/brain-computer-interface-neurotechnology-governance",
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB8-SRC-05-1",
+          "title": "Ethical aspects of brain computer interfaces: a scoping review",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5699990/",
+          "evidenceRole": "bci-ethics-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-03",
+          "sourceCheck": {
+            "checkedAt": "2026-07-03",
+            "method": "python-requests-get",
+            "statusCode": 200,
+            "contentLengthBytes": 176947
+          }
+        },
+        {
+          "sourceRefId": "C2LTB8-SRC-05-2",
+          "title": "OECD Recommendation on Responsible Innovation in Neurotechnology",
+          "url": "https://legalinstruments.oecd.org/en/instruments/OECD-LEGAL-0457",
+          "evidenceRole": "neurotechnology-governance-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-03",
+          "sourceCheck": {
+            "checkedAt": "2026-07-03",
+            "method": "python-requests-get",
+            "statusCode": 200,
+            "contentLengthBytes": 4035
+          }
+        }
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "modelAdmissionDecision": "blocked-until-c2ltb8-source-specific-fields-local-review-independent-fresh-review-and-reviewed-artifacts-exist",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ]
+    },
+    {
+      "domainId": "synthetic-biological-intelligence-organoid-computing-continuity",
+      "triageBucket": "neurotechnology-governance",
+      "selectionReason": "活性算力和类器官智能把“智能材料”推进到生命适应性边界，可能重塑低能耗学习、反馈训练、AI 共生和生物伦理治理。",
+      "claimSeed": "活性神经元计算和类器官智能可能把学习、反馈适应、能耗效率和生物计算规模化纳入 Human Infra 的工具增强域，但网络效应、可扩展性、可控性和伦理边界必须先被审查。",
+      "variableSeed": [
+        "living-neural-computation",
+        "closed-loop-feedback-learning",
+        "energy-efficiency",
+        "scaling-network-effect",
+        "bioethics-control-boundary"
+      ],
+      "batchId": "C2-LT-B8",
+      "priorityRank": 6,
+      "localDomainPath": "domains/c2-source-maintenance/synthetic-biological-intelligence-organoid-computing-continuity",
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB8-SRC-06-1",
+          "title": "In vitro neurons learn and exhibit sentience when embodied in a simulated game-world",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/36208624/",
+          "evidenceRole": "dishbrain-living-neural-computation-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-03",
+          "sourceCheck": {
+            "checkedAt": "2026-07-03",
+            "method": "python-requests-get",
+            "statusCode": 200,
+            "contentLengthBytes": 140182
+          }
+        },
+        {
+          "sourceRefId": "C2LTB8-SRC-06-2",
+          "title": "Organoid intelligence (OI): the new frontier in biocomputing and intelligence-in-a-dish",
+          "url": "https://www.frontiersin.org/journals/science/articles/10.3389/fsci.2023.1017235/full",
+          "evidenceRole": "organoid-intelligence-biocomputing-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-03",
+          "sourceCheck": {
+            "checkedAt": "2026-07-03",
+            "method": "python-requests-get",
+            "statusCode": 200,
+            "contentLengthBytes": 2129333
+          }
+        }
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "modelAdmissionDecision": "blocked-until-c2ltb8-source-specific-fields-local-review-independent-fresh-review-and-reviewed-artifacts-exist",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ]
+    },
+    {
+      "domainId": "autonomic-nervous-system-homeostasis",
+      "triageBucket": "organ-system-homeostasis",
+      "selectionReason": "自主神经系统调度心率、血压、体温、胃肠、睡眠和应激恢复，是主体在不同环境中维持行动状态的底层控制系统。",
+      "claimSeed": "自主神经稳态失衡会通过体位耐受、疲劳、心率血压调节、睡眠和恢复能力影响有效时间、活动半径和长期任务执行。",
+      "variableSeed": [
+        "orthostatic-tolerance",
+        "heart-rate-blood-pressure-regulation",
+        "fatigue",
+        "sleep-recovery",
+        "stress-response"
+      ],
+      "batchId": "C2-LT-B8",
+      "priorityRank": 7,
+      "localDomainPath": "domains/c2-source-maintenance/autonomic-nervous-system-homeostasis",
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB8-SRC-07-1",
+          "title": "2015 Heart Rhythm Society Expert Consensus Statement on POTS, IST, and Vasovagal Syncope",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5267948/",
+          "evidenceRole": "autonomic-consensus-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-03",
+          "sourceCheck": {
+            "checkedAt": "2026-07-03",
+            "method": "python-requests-get",
+            "statusCode": 200,
+            "contentLengthBytes": 400998
+          }
+        },
+        {
+          "sourceRefId": "C2LTB8-SRC-07-2",
+          "title": "Autonomic dysfunction in long COVID: rationale, physiology and management strategies",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/34384200/",
+          "evidenceRole": "autonomic-dysfunction-management-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-03",
+          "sourceCheck": {
+            "checkedAt": "2026-07-03",
+            "method": "python-requests-get",
+            "statusCode": 200,
+            "contentLengthBytes": 124554
+          }
+        }
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "modelAdmissionDecision": "blocked-until-c2ltb8-source-specific-fields-local-review-independent-fresh-review-and-reviewed-artifacts-exist",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ]
+    },
+    {
+      "domainId": "speech-language-communication-continuity",
+      "triageBucket": "neuro-sensory-cognitive-continuity",
+      "selectionReason": "语言和沟通是主体把意图转化为协作、学习、交易、照护和社会支持的核心通道，失效后会放大所有任务成本。",
+      "claimSeed": "言语语言能力和沟通支持会影响教育、照护导航、工作协作、社会连接、求助能力和主体表达未来选择的能力。",
+      "variableSeed": [
+        "spoken-language-function",
+        "communication-participation",
+        "assistive-communication-access",
+        "education-work-impact",
+        "care-navigation-communication"
+      ],
+      "batchId": "C2-LT-B8",
+      "priorityRank": 8,
+      "localDomainPath": "domains/c2-source-maintenance/speech-language-communication-continuity",
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB8-SRC-08-1",
+          "title": "ASHA Practice Portal: Spoken Language Disorders",
+          "url": "https://www.asha.org/practice-portal/clinical-topics/spoken-language-disorders/",
+          "evidenceRole": "speech-language-practice-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-03",
+          "sourceCheck": {
+            "checkedAt": "2026-07-03",
+            "method": "python-requests-get",
+            "statusCode": 200,
+            "contentLengthBytes": 215358
+          }
+        },
+        {
+          "sourceRefId": "C2LTB8-SRC-08-2",
+          "title": "NIDCD Speech and Language Developmental Milestones",
+          "url": "https://www.nidcd.nih.gov/health/speech-and-language",
+          "evidenceRole": "speech-language-development-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-03",
+          "sourceCheck": {
+            "checkedAt": "2026-07-03",
+            "method": "python-requests-get",
+            "statusCode": 200,
+            "contentLengthBytes": 62606
+          }
+        }
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "modelAdmissionDecision": "blocked-until-c2ltb8-source-specific-fields-local-review-independent-fresh-review-and-reviewed-artifacts-exist",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ]
+    },
+    {
+      "domainId": "hearing-auditory-communication-continuity",
+      "triageBucket": "neuro-sensory-cognitive-continuity",
+      "selectionReason": "听觉通信影响语言、关系、危险感知、认知负荷和社会参与，是主体接收外界反馈和协作信号的基础入口。",
+      "claimSeed": "听力损失和听觉通信障碍会通过沟通负担、学习/工作障碍、社会隔离、认知负荷和辅助设备可及性影响主体持续行动能力。",
+      "variableSeed": [
+        "hearing-threshold",
+        "speech-in-noise",
+        "listening-effort",
+        "hearing-care-access",
+        "social-participation"
+      ],
+      "batchId": "C2-LT-B8",
+      "priorityRank": 9,
+      "localDomainPath": "domains/c2-source-maintenance/hearing-auditory-communication-continuity",
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB8-SRC-09-1",
+          "title": "WHO World report on hearing",
+          "url": "https://www.who.int/publications/i/item/9789240020481",
+          "evidenceRole": "hearing-global-report-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-03",
+          "sourceCheck": {
+            "checkedAt": "2026-07-03",
+            "method": "python-requests-get",
+            "statusCode": 200,
+            "contentLengthBytes": 89360
+          }
+        },
+        {
+          "sourceRefId": "C2LTB8-SRC-09-2",
+          "title": "NIDCD Age-Related Hearing Loss",
+          "url": "https://www.nidcd.nih.gov/health/age-related-hearing-loss",
+          "evidenceRole": "hearing-loss-health-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-03",
+          "sourceCheck": {
+            "checkedAt": "2026-07-03",
+            "method": "python-requests-get",
+            "statusCode": 200,
+            "contentLengthBytes": 50938
+          }
+        }
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "modelAdmissionDecision": "blocked-until-c2ltb8-source-specific-fields-local-review-independent-fresh-review-and-reviewed-artifacts-exist",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ]
+    },
+    {
+      "domainId": "vision-eye-health-continuity",
+      "triageBucket": "neuro-sensory-cognitive-continuity",
+      "selectionReason": "视觉决定阅读、导航、学习、工作、安全和工具使用，是主体与环境交互最密集的感知通道之一。",
+      "claimSeed": "视觉健康和视功能支持会通过信息获取、移动安全、学习工作、跌倒风险、辅助技术和医疗可及性影响有效寿命和行动范围。",
+      "variableSeed": [
+        "visual-acuity-function",
+        "vision-impairment",
+        "eye-care-access",
+        "assistive-vision-support",
+        "mobility-safety"
+      ],
+      "batchId": "C2-LT-B8",
+      "priorityRank": 10,
+      "localDomainPath": "domains/c2-source-maintenance/vision-eye-health-continuity",
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB8-SRC-10-1",
+          "title": "WHO World report on vision",
+          "url": "https://www.who.int/publications/i/item/9789241516570",
+          "evidenceRole": "vision-global-report-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-03",
+          "sourceCheck": {
+            "checkedAt": "2026-07-03",
+            "method": "python-requests-get",
+            "statusCode": 200,
+            "contentLengthBytes": 92647
+          }
+        },
+        {
+          "sourceRefId": "C2LTB8-SRC-10-2",
+          "title": "National Eye Institute Low Vision",
+          "url": "https://www.nei.nih.gov/eye-health-information/eye-conditions-and-diseases/low-vision",
+          "evidenceRole": "low-vision-function-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-03",
+          "sourceCheck": {
+            "checkedAt": "2026-07-03",
+            "method": "python-requests-get",
+            "statusCode": 200,
+            "contentLengthBytes": 55678
+          }
+        }
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "modelAdmissionDecision": "blocked-until-c2ltb8-source-specific-fields-local-review-independent-fresh-review-and-reviewed-artifacts-exist",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ]
+    },
+    {
+      "domainId": "vestibular-balance-spatial-orientation",
+      "triageBucket": "neuro-sensory-cognitive-continuity",
+      "selectionReason": "前庭和平衡系统决定空间定向、步态稳定、跌倒风险和环境探索，是行动半径和自主生活能力的基础控制环。",
+      "claimSeed": "前庭功能和平衡障碍会通过眩晕、跌倒、活动回避、空间定向和康复可及性影响移动能力、独立生活和任务执行。",
+      "variableSeed": [
+        "dizziness-vertigo",
+        "balance-function",
+        "fall-risk",
+        "vestibular-rehabilitation",
+        "activity-avoidance"
+      ],
+      "batchId": "C2-LT-B8",
+      "priorityRank": 11,
+      "localDomainPath": "domains/c2-source-maintenance/vestibular-balance-spatial-orientation",
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB8-SRC-11-1",
+          "title": "Vestibular Rehabilitation for Peripheral Vestibular Hypofunction: Clinical Practice Guideline",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/34864777/",
+          "evidenceRole": "vestibular-rehabilitation-guideline-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-03",
+          "sourceCheck": {
+            "checkedAt": "2026-07-03",
+            "method": "python-requests-get",
+            "statusCode": 200,
+            "contentLengthBytes": 165906
+          }
+        },
+        {
+          "sourceRefId": "C2LTB8-SRC-11-2",
+          "title": "Clinical Practice Guideline: Benign Paroxysmal Positional Vertigo (Update)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/28248609/",
+          "evidenceRole": "bppv-guideline-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-03",
+          "sourceCheck": {
+            "checkedAt": "2026-07-03",
+            "method": "python-requests-get",
+            "statusCode": 200,
+            "contentLengthBytes": 150084
+          }
+        }
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "modelAdmissionDecision": "blocked-until-c2ltb8-source-specific-fields-local-review-independent-fresh-review-and-reviewed-artifacts-exist",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ]
+    },
+    {
+      "domainId": "oropharyngeal-dysphagia-swallow-safety-continuity",
+      "triageBucket": "organ-system-homeostasis",
+      "selectionReason": "吞咽安全连接营养、水分、肺部感染和沟通尊严，是神经退行、卒中、老年衰弱和长期照护中的高影响连续性接口。",
+      "claimSeed": "口咽吞咽障碍会通过误吸、营养不良、脱水、肺炎、饮食限制和照护负担影响生命风险、有效时间和主体恢复窗口。",
+      "variableSeed": [
+        "swallow-safety",
+        "aspiration-risk",
+        "nutrition-hydration",
+        "pneumonia-risk",
+        "diet-modification-burden"
+      ],
+      "batchId": "C2-LT-B8",
+      "priorityRank": 12,
+      "localDomainPath": "domains/c2-source-maintenance/oropharyngeal-dysphagia-swallow-safety-continuity",
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB8-SRC-12-1",
+          "title": "ASHA Practice Portal: Adult Dysphagia",
+          "url": "https://www.asha.org/practice-portal/clinical-topics/adult-dysphagia/",
+          "evidenceRole": "adult-dysphagia-practice-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-03",
+          "sourceCheck": {
+            "checkedAt": "2026-07-03",
+            "method": "python-requests-get",
+            "statusCode": 200,
+            "contentLengthBytes": 183444
+          }
+        },
+        {
+          "sourceRefId": "C2LTB8-SRC-12-2",
+          "title": "Screening and clinical management of dysphagia in adult patients with stroke: an European Stroke Organisation and European Society for Swallowing Disorders guideline",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30993445/",
+          "evidenceRole": "stroke-dysphagia-guideline-candidate",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-03",
+          "sourceCheck": {
+            "checkedAt": "2026-07-03",
+            "method": "python-requests-get",
+            "statusCode": 200,
+            "contentLengthBytes": 157452
+          }
+        }
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "modelAdmissionDecision": "blocked-until-c2ltb8-source-specific-fields-local-review-independent-fresh-review-and-reviewed-artifacts-exist",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ]
+    }
+  ],
+  "aggregateDecision": {
+    "selectedDomainCount": 12,
+    "candidateSourceCount": 24,
+    "modelAdmission": "blocked",
+    "nextAction": "Derive C2-LT-B8 source-specific extraction tasks; do not create Source Cards, reviewed artifacts, model calibration inputs or public claims until local source-context review and independent fresh review are complete."
+  }
+}

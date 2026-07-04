@@ -1,0 +1,43 @@
+{
+  "schemaVersion": "human-infra.nhanes-public-lmf-dof-sparse-domain-diagnostic-validation.v1",
+  "status": "pass",
+  "generatedAt": "2026-07-04T20:22:38.292950+00:00",
+  "diagnosticPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhanes_public_lmf_dof_sparse_domain_diagnostic.json",
+  "diagnosticSha256": "3e17d5b2923a1a06c32cbe172ba22412fffe16c33bf1a241061eee142d50612a",
+  "validationPath": "web/src/data/life-path-nhanes-public-lmf-dof-sparse-domain-diagnostic-validation.json",
+  "summary": {
+    "sourceId": "nhanes-public-lmf-2017-2018",
+    "expectedDomainCombinationCount": 8,
+    "domainCombinationCountReviewed": 8,
+    "minimumDomainDegreesOfFreedomObserved": 15,
+    "dfReviewThreshold": 8,
+    "domainsBelowDfReviewThreshold": 0,
+    "domainsWithLonelyRepresentedStrata": 0,
+    "emptyDomainCombinationCount": 0,
+    "domainsBelowLocalMinimumUnweightedRecords": 0,
+    "publicDataDofSparseReviewComplete": true,
+    "publicDisclosureReviewComplete": false,
+    "weightedDomainOutputAllowed": false,
+    "perDomainRecordCountsPersisted": false,
+    "perDomainWeightedSumsPersisted": false,
+    "readyGateCount": 7,
+    "blockedGateCount": 2
+  },
+  "nonProofBoundary": {
+    "confirms": [
+      "public aggregate domain DOF/sparse metadata summary is complete for sex × ageBand",
+      "the diagnostic persists no rows, per-domain counts, per-domain weighted sums, rates or intervals",
+      "public weighted-domain output remains blocked until disclosure and output implementation gates pass"
+    ],
+    "doesNotConfirm": [
+      "public NHANES weighted domain output",
+      "effective sample size adequacy for publication",
+      "design-based confidence intervals",
+      "disclosure-reviewed public weighted cells",
+      "calibration",
+      "individual prediction",
+      "medical advice"
+    ]
+  },
+  "errors": []
+}

@@ -1,0 +1,317 @@
+{
+  "schemaVersion": "human-infra.quantitative-capability-ladder.v1",
+  "ladderId": "human-infra-quantitative-capability-ladder-2026-07-04",
+  "status": "active-quantitative-capability-ladder-q3-current-q4-q5-blocked",
+  "owner": "tradecatlabs",
+  "purpose": "Define what each Human Infra quantitative model capability level may output, what it must not output, and what evidence is required before moving from synthetic research demonstrations to aggregate calibrated research modeling.",
+  "sourceOfTruth": {
+    "modelAdmissionContract": "docs/reference/human-infra-model-admission-contract.json",
+    "modelAdmissionCandidateRegistry": "docs/reference/human-infra-model-admission-candidate-registry.json",
+    "l4ModelReadinessBlockerMatrix": "docs/reference/human-infra-l4-model-readiness-blocker-matrix.json",
+    "l4EvidenceIntakeRegister": "docs/reference/human-infra-l4-evidence-intake-register.json",
+    "l4EvidencePacketReviewPlaybook": "docs/reference/human-infra-l4-evidence-packet-review-playbook.md",
+    "l4ValidationCalibrationReportingContract": "docs/reference/human-infra-l4-validation-calibration-reporting-contract.json",
+    "researchStandardsSourceAnchorRegister": "docs/reference/human-infra-research-standards-source-anchor-register.json",
+    "toyModelOutput": "web/src/data/life-path-toy-model.json",
+    "toyModelSensitivity": "web/src/data/life-path-sensitivity-analysis.json",
+    "syntheticValidationCalibrationReport": "web/src/data/life-path-synthetic-validation-calibration-report.json",
+    "syntheticL4EvidencePacketDryRun": "web/src/data/life-path-l4-synthetic-evidence-packet-dry-run.json",
+    "nhanesWeightedDomainOutputReadiness": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhanes_public_lmf_weighted_domain_output_readiness.json",
+    "nhatsL4ReadinessRunway": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_l4_readiness_runway.json"
+  },
+  "currentDecision": {
+    "highestCurrentQuantitativeCapability": "Q3-synthetic-life-path-model",
+    "mappedModelAdmissionLevel": "L3",
+    "q3SyntheticCurvesAllowed": true,
+    "q3SyntheticSensitivityAllowed": true,
+    "q3SyntheticReportShapeAllowed": true,
+    "q4AggregateCalibratedResearchModelAllowed": false,
+    "q4PublicWeightedDomainOutputAllowed": false,
+    "q4CalibratedPredictionAllowed": false,
+    "q5IndividualDecisionSupportAllowed": false,
+    "individualDeathDateOutputAllowed": false,
+    "medicalAdviceAllowed": false,
+    "interventionRankingAllowed": false,
+    "reason": "The repository has synthetic toy-model outputs, synthetic sensitivity analysis, synthetic validation/calibration report shape and synthetic L4 evidence-packet dry-run. It does not yet have governed real evidence packets, closed L4 slots, real validation/calibration diagnostics, disclosure-reviewed public weighted domain output or any individual-use authority."
+  },
+  "capabilityLevels": [
+    {
+      "qLevel": "Q0",
+      "name": "conceptual-question-only",
+      "mappedAdmissionLevel": "L0",
+      "allowedOutputs": [
+        "research question",
+        "concept map",
+        "non-goal boundary"
+      ],
+      "blockedOutputs": [
+        "numeric score",
+        "curve",
+        "risk estimate",
+        "intervention ranking",
+        "prediction"
+      ],
+      "requiredEvidence": [
+        "topic boundary",
+        "non-goal statement",
+        "prohibited-use boundary"
+      ],
+      "currentState": "available"
+    },
+    {
+      "qLevel": "Q1",
+      "name": "reviewed-evidence-artifact",
+      "mappedAdmissionLevel": "L1",
+      "allowedOutputs": [
+        "bounded source card",
+        "claim-evidence row",
+        "transfer-boundary note",
+        "downgrade trigger"
+      ],
+      "blockedOutputs": [
+        "model coefficient",
+        "calibrated risk",
+        "survival curve",
+        "individual recommendation"
+      ],
+      "requiredEvidence": [
+        "source identity",
+        "fresh review verdict",
+        "exact claim use",
+        "blocked uses"
+      ],
+      "currentState": "available-for-reviewed-artifact-registers"
+    },
+    {
+      "qLevel": "Q2",
+      "name": "model-candidate-variable",
+      "mappedAdmissionLevel": "L2",
+      "allowedOutputs": [
+        "candidate variable",
+        "candidate endpoint",
+        "uncertainty channel",
+        "transfer-boundary field"
+      ],
+      "blockedOutputs": [
+        "parameter estimate",
+        "causal effect",
+        "calibrated prediction",
+        "public weighted estimate"
+      ],
+      "requiredEvidence": [
+        "Q1 reviewed artifact",
+        "population or setting",
+        "measurement source",
+        "model position",
+        "downgrade trigger"
+      ],
+      "currentState": "available-for-candidate-design-only"
+    },
+    {
+      "qLevel": "Q3",
+      "name": "synthetic-life-path-model",
+      "mappedAdmissionLevel": "L3",
+      "allowedOutputs": [
+        "synthetic hazard curve",
+        "synthetic survival curve",
+        "synthetic effective-time curve",
+        "synthetic option-value score",
+        "synthetic sensitivity summary",
+        "synthetic validation-report shape",
+        "synthetic evidence-packet dry-run"
+      ],
+      "blockedOutputs": [
+        "real aggregate estimate",
+        "calibrated prediction",
+        "individual risk",
+        "individual life expectancy",
+        "individual death date",
+        "medical advice",
+        "intervention ranking"
+      ],
+      "requiredEvidence": [
+        "synthetic model card",
+        "toy scenario definitions",
+        "synthetic-only boundary",
+        "sanity checks",
+        "sensitivity analysis",
+        "report-shape dry-run"
+      ],
+      "currentState": "highest-current-level"
+    },
+    {
+      "qLevel": "Q4",
+      "name": "aggregate-calibrated-research-model",
+      "mappedAdmissionLevel": "L4",
+      "allowedOutputs": [
+        "disclosure-reviewed aggregate table",
+        "aggregate calibrated survival diagnostics",
+        "aggregate calibration report",
+        "aggregate validation report",
+        "research-only uncertainty diagnostics"
+      ],
+      "blockedOutputs": [
+        "individual prediction",
+        "individual death date",
+        "clinical advice",
+        "insurance or eligibility decision",
+        "unreviewed public weighted output"
+      ],
+      "requiredEvidence": [
+        "governed data access",
+        "exact field value confirmation",
+        "real extraction cohort flow",
+        "survey design weighted estimates",
+        "human disclosure review",
+        "validation and calibration diagnostics",
+        "bias and applicability review",
+        "TRIPOD/PROBAST-style reporting packet"
+      ],
+      "currentState": "blocked"
+    },
+    {
+      "qLevel": "Q5",
+      "name": "individual-decision-support",
+      "mappedAdmissionLevel": "L5",
+      "allowedOutputs": [],
+      "blockedOutputs": [
+        "individual death date",
+        "individual life expectancy claim",
+        "personal medical advice",
+        "treatment selection",
+        "insurance or eligibility decision",
+        "automated high-stakes decision"
+      ],
+      "requiredEvidence": [
+        "not in current project scope",
+        "separate clinical safety case",
+        "separate ethics and regulatory review",
+        "prospective validation",
+        "human accountability model"
+      ],
+      "currentState": "blocked-by-default"
+    }
+  ],
+  "outputFamilyMatrix": [
+    {
+      "outputFamily": "narrative-concept-map",
+      "minimumLevel": "Q0",
+      "currentAllowed": true,
+      "publicWebAllowed": true,
+      "boundary": "Must preserve non-goals and prohibited-use labels."
+    },
+    {
+      "outputFamily": "reviewed-source-card",
+      "minimumLevel": "Q1",
+      "currentAllowed": true,
+      "publicWebAllowed": true,
+      "boundary": "Source cards support bounded evidence language only."
+    },
+    {
+      "outputFamily": "candidate-variable-or-endpoint",
+      "minimumLevel": "Q2",
+      "currentAllowed": true,
+      "publicWebAllowed": true,
+      "boundary": "Candidate fields are not coefficients, effects or predictions."
+    },
+    {
+      "outputFamily": "synthetic-curve-or-score",
+      "minimumLevel": "Q3",
+      "currentAllowed": true,
+      "publicWebAllowed": true,
+      "boundary": "Every chart must be marked synthetic and non-calibrated."
+    },
+    {
+      "outputFamily": "synthetic-validation-calibration-report-shape",
+      "minimumLevel": "Q3",
+      "currentAllowed": true,
+      "publicWebAllowed": true,
+      "boundary": "Report shape is allowed; real validation/calibration claims are not."
+    },
+    {
+      "outputFamily": "synthetic-l4-evidence-packet-dry-run",
+      "minimumLevel": "Q3",
+      "currentAllowed": true,
+      "publicWebAllowed": true,
+      "boundary": "Packet shape is allowed; slot closure and direct evidence are not."
+    },
+    {
+      "outputFamily": "real-public-weighted-domain-output",
+      "minimumLevel": "Q4",
+      "currentAllowed": false,
+      "publicWebAllowed": false,
+      "boundary": "Requires human disclosure review and release gate."
+    },
+    {
+      "outputFamily": "aggregate-calibrated-survival-model",
+      "minimumLevel": "Q4",
+      "currentAllowed": false,
+      "publicWebAllowed": false,
+      "boundary": "Requires governed data, validation, calibration and bias/applicability review."
+    },
+    {
+      "outputFamily": "individual-prediction",
+      "minimumLevel": "Q5",
+      "currentAllowed": false,
+      "publicWebAllowed": false,
+      "boundary": "Out of scope for this repository."
+    },
+    {
+      "outputFamily": "individual-death-date-output",
+      "minimumLevel": "never",
+      "currentAllowed": false,
+      "publicWebAllowed": false,
+      "boundary": "Forbidden output."
+    },
+    {
+      "outputFamily": "medical-advice-or-treatment-selection",
+      "minimumLevel": "never",
+      "currentAllowed": false,
+      "publicWebAllowed": false,
+      "boundary": "Forbidden output."
+    },
+    {
+      "outputFamily": "intervention-ranking-for-users",
+      "minimumLevel": "never",
+      "currentAllowed": false,
+      "publicWebAllowed": false,
+      "boundary": "Forbidden output."
+    }
+  ],
+  "promotionRules": [
+    {
+      "from": "Q3",
+      "to": "Q4",
+      "requires": [
+        "all L4 readiness blockers resolved",
+        "evidence intake slots reviewed",
+        "human disclosure review complete",
+        "real validation/calibration report attached",
+        "bias and applicability review complete",
+        "public output release gate passes"
+      ],
+      "currentDecision": "blocked"
+    },
+    {
+      "from": "Q4",
+      "to": "Q5",
+      "requires": [
+        "separate project charter",
+        "clinical safety case",
+        "regulatory and ethics review",
+        "prospective individual-level validation",
+        "human accountability and harm response model"
+      ],
+      "currentDecision": "blocked-by-default-out-of-scope"
+    }
+  ],
+  "hardBoundaries": [
+    "Q3 synthetic outputs must never be described as real validation, calibration, life expectancy, healthspan gain or longevity escape velocity evidence.",
+    "Q4 cannot open while any L4 blocker remains blocked.",
+    "Q5 is out of current repository scope and blocked by default.",
+    "No individual death-date output.",
+    "No individual medical advice.",
+    "No intervention ranking for users.",
+    "No public weighted-domain output without disclosure review and release gate."
+  ]
+}

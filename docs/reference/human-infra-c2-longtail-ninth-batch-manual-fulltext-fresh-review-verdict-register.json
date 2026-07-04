@@ -1,0 +1,542 @@
+{
+  "schemaVersion": "human-infra.c2ltb9-manual-fulltext-fresh-review-verdict-register.v1",
+  "registerId": "human-infra-c2-longtail-ninth-batch-manual-fulltext-fresh-review-verdict-register-2026-07-04",
+  "status": "active-c2ltb9-manual-fulltext-fresh-review-verdict-register-model-blocked",
+  "purpose": "Independently fresh-review the eight C2-LT-B9 manual/fulltext extraction rows, promote only four official-page, official-PDF or related-policy candidates to bounded reviewed-artifact preparation, and keep all advice uses and model admission blocked.",
+  "sourceOfTruth": {
+    "manualFulltextExtractionRegister": "docs/reference/human-infra-c2-longtail-ninth-batch-manual-fulltext-extraction-register.json",
+    "sourceResolutionRegister": "docs/reference/human-infra-c2-longtail-ninth-batch-source-resolution-register.json",
+    "localReviewRegister": "docs/reference/human-infra-c2-longtail-ninth-batch-local-review-register.json",
+    "evidencePolicy": "docs/reference/evidence-policy.md",
+    "maturityGapRegister": "docs/reference/human-infra-maturity-gap-register.json"
+  },
+  "scope": {
+    "batchId": "C2-LT-B9",
+    "reviewLevel": "c2ltb9-manual-fulltext-fresh-review-v0.1",
+    "manualExtractionRowCount": 8,
+    "reviewedManualExtractionRowCount": 8,
+    "eligibleForArtifactPrepRowCount": 4,
+    "blockedOrContextOnlyRowCount": 4,
+    "officialGuidelinePageCandidateRowCount": 1,
+    "officialPolicyPageCandidateRowCount": 2,
+    "officialPdfCandidateRowCount": 1,
+    "routeOnlyOrProvenanceBlockedRowCount": 4,
+    "directReviewedArtifactRowCount": 0,
+    "modelAdmissionOpenedRowCount": 0,
+    "nonClaims": [
+      "This fresh-review verdict register does not create reviewed artifacts, Source Cards, variable cards, endpoint cards, transfer-boundary cards or downgrade cards.",
+      "This fresh-review verdict register does not open model admission, calibrated prediction, intervention ranking, medical advice, dental advice, benefits advice, billing advice, eligibility advice, environmental-health advice or individual death-date output.",
+      "This fresh-review verdict register does not treat PubMed, DOI or redirect provenance as full-context evidence.",
+      "This fresh-review verdict register does not authorize wound care instructions, infection management, antibiotic selection, dental benefit decisions, eligibility inference or provider recommendations."
+    ]
+  },
+  "summary": {
+    "reviewedManualExtractionRows": 8,
+    "eligibleForArtifactPrepRows": [
+      "C2LTB9-MFEXT-001",
+      "C2LTB9-MFEXT-005",
+      "C2LTB9-MFEXT-007",
+      "C2LTB9-MFEXT-008"
+    ],
+    "blockedOrContextOnlyRows": [
+      "C2LTB9-MFEXT-002",
+      "C2LTB9-MFEXT-003",
+      "C2LTB9-MFEXT-004",
+      "C2LTB9-MFEXT-006"
+    ],
+    "directReviewedArtifactsCreated": 0,
+    "modelAdmissionDecision": "blocked",
+    "newFreshReviewFacts": [
+      "The official IDSA diabetic-foot-infection guideline page supports bounded reviewed-artifact preparation for chronic-wound infection scope, endpoint vocabulary, uncertainty and transfer-boundary artifacts only.",
+      "PubMed, DOI and companion PubMed routes for the diabetic-foot-infection guideline remain route, metadata or lineage support and cannot directly create artifacts.",
+      "The canonical Medicaid Dental Care page, the dated official oral-health PDF and the EPSDT related policy page support bounded artifact preparation for dental access, coverage boundary, datedness and pediatric-context transfer boundaries only.",
+      "The Medicaid index route remains redirect provenance only and cannot support claim extraction.",
+      "All eight rows keep calibrated prediction, individual advice, medical advice, dental advice, benefits advice, billing advice, eligibility advice, environmental-health advice and model admission blocked."
+    ],
+    "nextWorkOrder": "Prepare bounded reviewed artifacts for the four eligible C2-LT-B9 manual/fulltext fresh-review rows, while keeping the four route-only or redirect-provenance rows and all model admission blocked."
+  },
+  "blockedUses": [
+    "calibrated-prediction",
+    "individual-advice",
+    "individual-death-date-output",
+    "intervention-ranking",
+    "clinical-validity-claim",
+    "domain-claim-upgrade",
+    "medical-advice",
+    "dental-advice",
+    "rehabilitation-advice",
+    "respiratory-equipment-advice",
+    "vaccine-advice",
+    "environmental-health-advice"
+  ],
+  "manualFulltextFreshReviews": [
+    {
+      "reviewId": "C2LTB9-MFFRV-001",
+      "batchId": "C2-LT-B9",
+      "manualExtractionId": "C2LTB9-MFEXT-001",
+      "originTaskId": "C2LTB9-EXT-008",
+      "sourceResolutionId": "C2LTB9-SRR-001",
+      "domainId": "chronic-wound-venous-diabetic-pressure-ulcer-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/chronic-wound-venous-diabetic-pressure-ulcer-continuity",
+      "candidateId": "C2LTB9-SRR-001-CAND-01",
+      "sourceTitle": "IWGDF/IDSA Guidelines on the Diagnosis and Treatment of Diabetes-Related Foot Infections",
+      "sourceUrl": "https://www.idsociety.org/practice-guideline/diabetic-foot-infections/",
+      "freshReviewDate": "2026-07-04",
+      "freshReviewMode": "manual-fulltext-extraction-independent-fresh-review",
+      "sourceIdentityVerdict": "identity-confirmed-against-official-idsa-guideline-route",
+      "sourceAccessVerdict": "official-guideline-page-route-available-for-bounded-context-review",
+      "sourceContextVerdict": "bounded-source-context-supports-chronic-wound-infection-scope-and-transfer-boundary-artifacts",
+      "currentnessVerdict": "currentness-limited-to-2026-07-04-route-check-and-recorded-official-page-version",
+      "exactClaimVerdict": "exact-claims-may-be-prepared-only-as-bounded-reviewed-artifacts-after-this-verdict",
+      "endpointVariableVerdict": "infection-scope-wound-burden-care-burden-and-transfer-boundary-variables-eligible-for-bounded-reviewed-artifact-prep",
+      "transferBoundaryVerdict": "transfer-boundary-present-and-required",
+      "reviewerVerdict": "support-with-boundary",
+      "freshReviewFinding": "The official IDSA page supports bounded review of diabetes-related foot infection scope, infection vocabulary, wound burden and care-pathway burden for chronic wound continuity. It does not support individualized wound care, antibiotic selection, offloading decisions, amputation-risk advice or calibrated outcome prediction.",
+      "downgradeOrBlockReason": "Keep diabetes-related foot infection scope, guideline context and non-advice boundary explicit; block non-diabetic wound transfer, medical advice, treatment ranking and calibrated prediction.",
+      "artifactPromotionDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "allowedArtifactTypes": [
+        "reviewed-source-card",
+        "reviewed-variable-card",
+        "reviewed-endpoint-card",
+        "reviewed-uncertainty-card",
+        "reviewed-transfer-boundary-card",
+        "reviewed-downgrade-check"
+      ],
+      "modelAdmissionDecision": "blocked",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade",
+        "medical-advice",
+        "dental-advice",
+        "rehabilitation-advice",
+        "respiratory-equipment-advice",
+        "vaccine-advice",
+        "environmental-health-advice"
+      ],
+      "reviewEvidenceTrace": [
+        {
+          "url": "https://www.idsociety.org/practice-guideline/diabetic-foot-infections/",
+          "evidenceType": "official-guideline-page-route-check",
+          "finding": "Official IDSA route retained as bounded full-context candidate for diabetic-foot-infection guideline review."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-ninth-batch-manual-fulltext-extraction-register.json",
+          "evidenceType": "manual-fulltext-extraction-row",
+          "finding": "Manual extraction row C2LTB9-MFEXT-001 marks this official route as bounded fresh-review candidate while keeping model admission blocked."
+        }
+      ],
+      "nextAction": "Prepare bounded reviewed artifacts for chronic wound infection-scope variables and downgrade checks."
+    },
+    {
+      "reviewId": "C2LTB9-MFFRV-002",
+      "batchId": "C2-LT-B9",
+      "manualExtractionId": "C2LTB9-MFEXT-002",
+      "originTaskId": "C2LTB9-EXT-008",
+      "sourceResolutionId": "C2LTB9-SRR-001",
+      "domainId": "chronic-wound-venous-diabetic-pressure-ulcer-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/chronic-wound-venous-diabetic-pressure-ulcer-continuity",
+      "candidateId": "C2LTB9-SRR-001-CAND-02",
+      "sourceTitle": "IWGDF/IDSA Guidelines on the Diagnosis and Treatment of Diabetes-related Foot Infections (IWGDF/IDSA 2023)",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/37779457/",
+      "freshReviewDate": "2026-07-04",
+      "freshReviewMode": "manual-fulltext-extraction-independent-fresh-review",
+      "sourceIdentityVerdict": "route-identity-retained-but-not-full-context-reviewed",
+      "sourceAccessVerdict": "pubmed-record-route-only",
+      "sourceContextVerdict": "context-only-or-route-only-no-artifact-fill",
+      "currentnessVerdict": "currentness-limited-to-recorded-pubmed-route-and-manual-extraction-row",
+      "exactClaimVerdict": "exact-claims-blocked-from-this-route",
+      "endpointVariableVerdict": "endpoint-and-variable-boundaries-retained-only-as-route-context",
+      "transferBoundaryVerdict": "transfer-boundary-present-and-required",
+      "reviewerVerdict": "blocked-or-context-only",
+      "freshReviewFinding": "The PubMed route preserves bibliographic identity and DOI lineage for the diabetic-foot-infection guideline, but metadata alone does not provide an independently reviewed full-context basis for artifact fill.",
+      "downgradeOrBlockReason": "No direct reviewed artifact fill from PubMed metadata; use only for route lineage and pair it with official or publisher full context.",
+      "artifactPromotionDecision": "blocked-route-metadata-no-direct-artifact-fill",
+      "allowedArtifactTypes": [],
+      "modelAdmissionDecision": "blocked",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade",
+        "medical-advice",
+        "dental-advice",
+        "rehabilitation-advice",
+        "respiratory-equipment-advice",
+        "vaccine-advice",
+        "environmental-health-advice"
+      ],
+      "reviewEvidenceTrace": [
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/37779457/",
+          "evidenceType": "pubmed-record-route",
+          "finding": "PubMed route retained for provenance and DOI lineage only."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-ninth-batch-manual-fulltext-extraction-register.json",
+          "evidenceType": "manual-fulltext-extraction-row",
+          "finding": "Manual extraction row C2LTB9-MFEXT-002 keeps this candidate outside direct artifact promotion."
+        }
+      ],
+      "nextAction": "Keep blocked unless a separate full-context route is acquired and independently reviewed; prefer the official IDSA page candidate for artifact prep."
+    },
+    {
+      "reviewId": "C2LTB9-MFFRV-003",
+      "batchId": "C2-LT-B9",
+      "manualExtractionId": "C2LTB9-MFEXT-003",
+      "originTaskId": "C2LTB9-EXT-008",
+      "sourceResolutionId": "C2LTB9-SRR-001",
+      "domainId": "chronic-wound-venous-diabetic-pressure-ulcer-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/chronic-wound-venous-diabetic-pressure-ulcer-continuity",
+      "candidateId": "C2LTB9-SRR-001-CAND-03",
+      "sourceTitle": "IWGDF/IDSA Guidelines on the Diagnosis and Treatment of Diabetes-related Foot Infections (IWGDF/IDSA 2023)",
+      "sourceUrl": "https://doi.org/10.1093/cid/ciad527",
+      "freshReviewDate": "2026-07-04",
+      "freshReviewMode": "manual-fulltext-extraction-independent-fresh-review",
+      "sourceIdentityVerdict": "publisher-route-retained-but-not-full-context-reviewed",
+      "sourceAccessVerdict": "doi-publisher-route-identified-full-context-not-reviewed-in-this-pass",
+      "sourceContextVerdict": "context-only-or-route-only-no-artifact-fill",
+      "currentnessVerdict": "currentness-limited-to-recorded-doi-route-and-manual-extraction-row",
+      "exactClaimVerdict": "exact-claims-blocked-from-this-route",
+      "endpointVariableVerdict": "endpoint-and-variable-boundaries-retained-only-as-publisher-route-context",
+      "transferBoundaryVerdict": "transfer-boundary-present-and-required",
+      "reviewerVerdict": "blocked-or-context-only",
+      "freshReviewFinding": "The DOI route preserves publisher lineage for the diabetic-foot-infection guideline but does not provide a separately reviewed full-context basis in this pass.",
+      "downgradeOrBlockReason": "No direct reviewed artifact fill from DOI/publisher route alone; full context must be separately acquired and reviewed.",
+      "artifactPromotionDecision": "blocked-publisher-route-no-direct-artifact-fill",
+      "allowedArtifactTypes": [],
+      "modelAdmissionDecision": "blocked",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade",
+        "medical-advice",
+        "dental-advice",
+        "rehabilitation-advice",
+        "respiratory-equipment-advice",
+        "vaccine-advice",
+        "environmental-health-advice"
+      ],
+      "reviewEvidenceTrace": [
+        {
+          "url": "https://doi.org/10.1093/cid/ciad527",
+          "evidenceType": "doi-publisher-route",
+          "finding": "DOI route retained for publisher access planning and citation lineage only."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-ninth-batch-manual-fulltext-extraction-register.json",
+          "evidenceType": "manual-fulltext-extraction-row",
+          "finding": "Manual extraction row C2LTB9-MFEXT-003 keeps this candidate outside direct artifact promotion."
+        }
+      ],
+      "nextAction": "Keep blocked unless publisher full context is separately acquired and independently reviewed."
+    },
+    {
+      "reviewId": "C2LTB9-MFFRV-004",
+      "batchId": "C2-LT-B9",
+      "manualExtractionId": "C2LTB9-MFEXT-004",
+      "originTaskId": "C2LTB9-EXT-008",
+      "sourceResolutionId": "C2LTB9-SRR-001",
+      "domainId": "chronic-wound-venous-diabetic-pressure-ulcer-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/chronic-wound-venous-diabetic-pressure-ulcer-continuity",
+      "candidateId": "C2LTB9-SRR-001-CAND-04",
+      "sourceTitle": "IWGDF/IDSA guidelines on the diagnosis and treatment of diabetes-related foot infections (IWGDF/IDSA 2023)",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/37779323/",
+      "freshReviewDate": "2026-07-04",
+      "freshReviewMode": "manual-fulltext-extraction-independent-fresh-review",
+      "sourceIdentityVerdict": "companion-route-retained-but-not-primary-full-context-reviewed",
+      "sourceAccessVerdict": "pubmed-companion-record-route-only",
+      "sourceContextVerdict": "context-only-or-route-only-no-artifact-fill",
+      "currentnessVerdict": "currentness-limited-to-recorded-companion-route-and-manual-extraction-row",
+      "exactClaimVerdict": "exact-claims-blocked-from-this-route",
+      "endpointVariableVerdict": "endpoint-and-variable-boundaries-retained-only-as-companion-lineage-context",
+      "transferBoundaryVerdict": "transfer-boundary-present-and-required",
+      "reviewerVerdict": "blocked-or-context-only",
+      "freshReviewFinding": "The companion PubMed route can support lineage checking but must not substitute for the intended official or publisher full context.",
+      "downgradeOrBlockReason": "No direct reviewed artifact fill from companion metadata; block source substitution and route conflation.",
+      "artifactPromotionDecision": "blocked-companion-route-no-direct-artifact-fill",
+      "allowedArtifactTypes": [],
+      "modelAdmissionDecision": "blocked",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade",
+        "medical-advice",
+        "dental-advice",
+        "rehabilitation-advice",
+        "respiratory-equipment-advice",
+        "vaccine-advice",
+        "environmental-health-advice"
+      ],
+      "reviewEvidenceTrace": [
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/37779323/",
+          "evidenceType": "pubmed-companion-record-route",
+          "finding": "Companion PubMed route retained for lineage and source-substitution checking only."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-ninth-batch-manual-fulltext-extraction-register.json",
+          "evidenceType": "manual-fulltext-extraction-row",
+          "finding": "Manual extraction row C2LTB9-MFEXT-004 keeps this candidate outside direct artifact promotion."
+        }
+      ],
+      "nextAction": "Keep blocked and use only for lineage checking during official-source artifact preparation."
+    },
+    {
+      "reviewId": "C2LTB9-MFFRV-005",
+      "batchId": "C2-LT-B9",
+      "manualExtractionId": "C2LTB9-MFEXT-005",
+      "originTaskId": "C2LTB9-EXT-011",
+      "sourceResolutionId": "C2LTB9-SRR-002",
+      "domainId": "dental-care-access-insurance-workforce-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/dental-care-access-insurance-workforce-continuity",
+      "candidateId": "C2LTB9-SRR-002-CAND-01",
+      "sourceTitle": "Dental Care | Medicaid",
+      "sourceUrl": "https://www.medicaid.gov/medicaid/benefits/dental-care",
+      "freshReviewDate": "2026-07-04",
+      "freshReviewMode": "manual-fulltext-extraction-independent-fresh-review",
+      "sourceIdentityVerdict": "identity-confirmed-against-canonical-medicaid-dental-care-route",
+      "sourceAccessVerdict": "official-canonical-policy-page-route-available-for-bounded-context-review",
+      "sourceContextVerdict": "bounded-source-context-supports-dental-access-coverage-boundary-and-transfer-boundary-artifacts",
+      "currentnessVerdict": "currentness-limited-to-2026-07-04-route-check-and-recorded-canonical-page-version",
+      "exactClaimVerdict": "exact-claims-may-be-prepared-only-as-bounded-reviewed-artifacts-after-this-verdict",
+      "endpointVariableVerdict": "dental-coverage-program-boundary-cost-access-and-delayed-care-variables-eligible-for-bounded-reviewed-artifact-prep",
+      "transferBoundaryVerdict": "transfer-boundary-present-and-required",
+      "reviewerVerdict": "support-with-boundary",
+      "freshReviewFinding": "The canonical Medicaid Dental Care page supports bounded review of dental coverage, program boundary, out-of-pocket exposure, access friction and delayed-care context. It does not support individual eligibility, dental advice, billing guidance or provider recommendation.",
+      "downgradeOrBlockReason": "Keep state variation, adult/pediatric boundary and non-advice limits explicit; block individual benefit decisions and calibrated access prediction.",
+      "artifactPromotionDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "allowedArtifactTypes": [
+        "reviewed-source-card",
+        "reviewed-variable-card",
+        "reviewed-endpoint-card",
+        "reviewed-uncertainty-card",
+        "reviewed-transfer-boundary-card",
+        "reviewed-downgrade-check"
+      ],
+      "modelAdmissionDecision": "blocked",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade",
+        "medical-advice",
+        "dental-advice",
+        "rehabilitation-advice",
+        "respiratory-equipment-advice",
+        "vaccine-advice",
+        "environmental-health-advice"
+      ],
+      "reviewEvidenceTrace": [
+        {
+          "url": "https://www.medicaid.gov/medicaid/benefits/dental-care",
+          "evidenceType": "official-canonical-policy-page-route-check",
+          "finding": "Canonical Medicaid Dental Care route retained as bounded context candidate for dental access review."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-ninth-batch-manual-fulltext-extraction-register.json",
+          "evidenceType": "manual-fulltext-extraction-row",
+          "finding": "Manual extraction row C2LTB9-MFEXT-005 marks this route as bounded fresh-review candidate while keeping model admission blocked."
+        }
+      ],
+      "nextAction": "Prepare bounded reviewed artifacts for dental access coverage-boundary variables and downgrade checks."
+    },
+    {
+      "reviewId": "C2LTB9-MFFRV-006",
+      "batchId": "C2-LT-B9",
+      "manualExtractionId": "C2LTB9-MFEXT-006",
+      "originTaskId": "C2LTB9-EXT-011",
+      "sourceResolutionId": "C2LTB9-SRR-002",
+      "domainId": "dental-care-access-insurance-workforce-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/dental-care-access-insurance-workforce-continuity",
+      "candidateId": "C2LTB9-SRR-002-CAND-02",
+      "sourceTitle": "Medicaid Dental Care index route",
+      "sourceUrl": "https://www.medicaid.gov/medicaid/benefits/dental-care/index.html",
+      "freshReviewDate": "2026-07-04",
+      "freshReviewMode": "manual-fulltext-extraction-independent-fresh-review",
+      "sourceIdentityVerdict": "redirect-provenance-retained-but-not-source-content",
+      "sourceAccessVerdict": "redirect-provenance-route-only",
+      "sourceContextVerdict": "context-only-or-route-only-no-artifact-fill",
+      "currentnessVerdict": "currentness-limited-to-recorded-redirect-route-and-manual-extraction-row",
+      "exactClaimVerdict": "exact-claims-blocked-from-this-route",
+      "endpointVariableVerdict": "no-endpoint-or-variable-boundaries-admitted-from-redirect-provenance",
+      "transferBoundaryVerdict": "transfer-boundary-present-and-required",
+      "reviewerVerdict": "blocked-or-context-only",
+      "freshReviewFinding": "The original Medicaid index URL only explains route normalization to the canonical Dental Care page and does not provide policy content for artifact fill.",
+      "downgradeOrBlockReason": "No direct reviewed artifact fill from redirect provenance; use only to document lineage and route hygiene.",
+      "artifactPromotionDecision": "blocked-redirect-provenance-no-direct-artifact-fill",
+      "allowedArtifactTypes": [],
+      "modelAdmissionDecision": "blocked",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade",
+        "medical-advice",
+        "dental-advice",
+        "rehabilitation-advice",
+        "respiratory-equipment-advice",
+        "vaccine-advice",
+        "environmental-health-advice"
+      ],
+      "reviewEvidenceTrace": [
+        {
+          "url": "https://www.medicaid.gov/medicaid/benefits/dental-care/index.html",
+          "evidenceType": "official-redirect-provenance-route",
+          "finding": "Original index route retained only as redirect provenance."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-ninth-batch-manual-fulltext-extraction-register.json",
+          "evidenceType": "manual-fulltext-extraction-row",
+          "finding": "Manual extraction row C2LTB9-MFEXT-006 keeps this candidate outside direct artifact promotion."
+        }
+      ],
+      "nextAction": "Keep blocked and use the canonical Dental Care route for source-card preparation."
+    },
+    {
+      "reviewId": "C2LTB9-MFFRV-007",
+      "batchId": "C2-LT-B9",
+      "manualExtractionId": "C2LTB9-MFEXT-007",
+      "originTaskId": "C2LTB9-EXT-011",
+      "sourceResolutionId": "C2LTB9-SRR-002",
+      "domainId": "dental-care-access-insurance-workforce-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/dental-care-access-insurance-workforce-continuity",
+      "candidateId": "C2LTB9-SRR-002-CAND-03",
+      "sourceTitle": "2010 Medicaid/CHIP Oral Health Services fact sheet",
+      "sourceUrl": "https://www.medicaid.gov/sites/default/files/2019-12/2010-dental-factsheet.pdf",
+      "freshReviewDate": "2026-07-04",
+      "freshReviewMode": "manual-fulltext-extraction-independent-fresh-review",
+      "sourceIdentityVerdict": "identity-confirmed-as-official-linked-dated-pdf-route",
+      "sourceAccessVerdict": "official-linked-pdf-route-available-for-bounded-context-review",
+      "sourceContextVerdict": "bounded-source-context-supports-dated-oral-health-services-and-coverage-boundary-artifacts",
+      "currentnessVerdict": "dated-context-only-2010-fact-sheet-currentness-not-generalized",
+      "exactClaimVerdict": "exact-claims-may-be-prepared-only-as-dated-bounded-reviewed-artifacts-after-this-verdict",
+      "endpointVariableVerdict": "oral-health-services-medicaid-chip-context-and-dated-coverage-boundary-variables-eligible-for-bounded-reviewed-artifact-prep",
+      "transferBoundaryVerdict": "transfer-boundary-present-and-required",
+      "reviewerVerdict": "support-with-boundary",
+      "freshReviewFinding": "The official linked PDF supports bounded dated context for Medicaid/CHIP oral-health services, pediatric dental coverage vocabulary and access-friction terms. It does not support current policy, adult dental benefit design, individual eligibility or benefit advice without separate current corroboration.",
+      "downgradeOrBlockReason": "Mark datedness and pediatric/adult distinction explicitly; block current-policy generalization, eligibility advice and dental advice.",
+      "artifactPromotionDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "allowedArtifactTypes": [
+        "reviewed-source-card",
+        "reviewed-variable-card",
+        "reviewed-endpoint-card",
+        "reviewed-uncertainty-card",
+        "reviewed-transfer-boundary-card",
+        "reviewed-downgrade-check"
+      ],
+      "modelAdmissionDecision": "blocked",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade",
+        "medical-advice",
+        "dental-advice",
+        "rehabilitation-advice",
+        "respiratory-equipment-advice",
+        "vaccine-advice",
+        "environmental-health-advice"
+      ],
+      "reviewEvidenceTrace": [
+        {
+          "url": "https://www.medicaid.gov/sites/default/files/2019-12/2010-dental-factsheet.pdf",
+          "evidenceType": "official-linked-pdf-route-check",
+          "finding": "Official PDF route retained as dated bounded context candidate for oral-health services review."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-ninth-batch-manual-fulltext-extraction-register.json",
+          "evidenceType": "manual-fulltext-extraction-row",
+          "finding": "Manual extraction row C2LTB9-MFEXT-007 marks this route as bounded fresh-review candidate while keeping model admission blocked."
+        }
+      ],
+      "nextAction": "Prepare bounded reviewed artifacts with explicit dated-context and current-policy downgrade checks."
+    },
+    {
+      "reviewId": "C2LTB9-MFFRV-008",
+      "batchId": "C2-LT-B9",
+      "manualExtractionId": "C2LTB9-MFEXT-008",
+      "originTaskId": "C2LTB9-EXT-011",
+      "sourceResolutionId": "C2LTB9-SRR-002",
+      "domainId": "dental-care-access-insurance-workforce-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/dental-care-access-insurance-workforce-continuity",
+      "candidateId": "C2LTB9-SRR-002-CAND-04",
+      "sourceTitle": "Early and Periodic Screening, Diagnostic, and Treatment",
+      "sourceUrl": "https://www.medicaid.gov/medicaid/benefits/early-and-periodic-screening-diagnostic-and-treatment",
+      "freshReviewDate": "2026-07-04",
+      "freshReviewMode": "manual-fulltext-extraction-independent-fresh-review",
+      "sourceIdentityVerdict": "identity-confirmed-as-official-related-epsdt-policy-route",
+      "sourceAccessVerdict": "official-related-policy-page-route-available-for-bounded-context-review",
+      "sourceContextVerdict": "bounded-source-context-supports-pediatric-epsdt-and-dental-access-transfer-boundary-artifacts",
+      "currentnessVerdict": "currentness-limited-to-2026-07-04-route-check-and-recorded-epsdt-page-version",
+      "exactClaimVerdict": "exact-claims-may-be-prepared-only-as-related-policy-bounded-reviewed-artifacts-after-this-verdict",
+      "endpointVariableVerdict": "epsdt-context-pediatric-access-screening-referral-and-coverage-boundary-variables-eligible-for-bounded-reviewed-artifact-prep",
+      "transferBoundaryVerdict": "transfer-boundary-present-and-required",
+      "reviewerVerdict": "support-with-boundary",
+      "freshReviewFinding": "The official EPSDT page supports bounded related-policy context for pediatric screening, diagnostic and treatment access, referral continuity and coverage-boundary vocabulary. It does not support adult dental coverage, individual eligibility, benefits advice or billing guidance.",
+      "downgradeOrBlockReason": "Keep EPSDT as related pediatric context; block adult transfer, state-specific generalization, eligibility advice and dental advice.",
+      "artifactPromotionDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "allowedArtifactTypes": [
+        "reviewed-source-card",
+        "reviewed-variable-card",
+        "reviewed-endpoint-card",
+        "reviewed-uncertainty-card",
+        "reviewed-transfer-boundary-card",
+        "reviewed-downgrade-check"
+      ],
+      "modelAdmissionDecision": "blocked",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade",
+        "medical-advice",
+        "dental-advice",
+        "rehabilitation-advice",
+        "respiratory-equipment-advice",
+        "vaccine-advice",
+        "environmental-health-advice"
+      ],
+      "reviewEvidenceTrace": [
+        {
+          "url": "https://www.medicaid.gov/medicaid/benefits/early-and-periodic-screening-diagnostic-and-treatment",
+          "evidenceType": "official-related-policy-page-route-check",
+          "finding": "Official EPSDT page retained as bounded related pediatric policy context candidate for dental access review."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-ninth-batch-manual-fulltext-extraction-register.json",
+          "evidenceType": "manual-fulltext-extraction-row",
+          "finding": "Manual extraction row C2LTB9-MFEXT-008 marks this route as bounded fresh-review candidate while keeping model admission blocked."
+        }
+      ],
+      "nextAction": "Prepare bounded reviewed artifacts for pediatric EPSDT-related dental access context and transfer-boundary downgrade checks."
+    }
+  ],
+  "indexRequirements": [
+    "README.md",
+    "docs/AGENTS.md",
+    "docs/reference/README.md",
+    "docs/reference/human-infra-maturity-roadmap.md",
+    "tools/README.md",
+    "tools/AGENTS.md"
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "schemaVersion": "human-infra.l4-validation-calibration-report-execution-validation.v1",
+  "generatedAt": "2026-07-04T20:22:37+00:00",
+  "status": "PASS",
+  "sourceRefs": {
+    "executionRegister": {
+      "path": "docs/reference/human-infra-l4-validation-calibration-report-execution-register.json",
+      "sha256": "cb8ccb0a86ab2a94b9e3dab914354652f32878c9006be6ebe1f8970a466e483a"
+    },
+    "reportingContract": {
+      "path": "docs/reference/human-infra-l4-validation-calibration-reporting-contract.json",
+      "sha256": "c183428ba2b2e339d8ba2bdc22f6f401cef126769a0129e124c359e73305db6f"
+    },
+    "syntheticDryRun": {
+      "path": "web/src/data/life-path-synthetic-validation-calibration-report.json",
+      "sha256": "e8437437e06fcfd54421d596f1be1644207690883134ef118e3a5fd0fa599f32"
+    }
+  },
+  "summary": {
+    "registerId": "human-infra-l4-validation-calibration-report-execution-register-2026-07-04",
+    "contractId": "human-infra-l4-validation-calibration-reporting-contract-2026-07-04",
+    "syntheticReportId": "life-path-synthetic-validation-calibration-report-2026-07-04",
+    "requiredSectionCount": 12,
+    "syntheticFilledSectionCount": 12,
+    "realCompletedSectionCount": 0,
+    "pendingRealSectionCount": 12,
+    "requiredSlotCount": 5,
+    "syntheticFilledSlotCount": 5,
+    "realClosedSlotCount": 0,
+    "pendingRealSlotCount": 5,
+    "realReportPacketCount": 0,
+    "humanReviewedPacketCount": 0,
+    "secondReviewedPacketCount": 0,
+    "downstreamDecision": "l4-still-blocked",
+    "l4AggregateCalibratedAdmissionAllowed": false,
+    "publicWeightedDomainOutputAllowed": false,
+    "calibratedPredictionAvailable": false,
+    "individualUseAllowed": false
+  },
+  "boundaries": {
+    "confirms": [
+      "the L4 validation/calibration reporting execution state is machine-auditable",
+      "all 12 report sections are present and still block L4 until real reviewed evidence exists",
+      "all 5 L4WO-05 slots are present and still block L4 until reviewed packets close",
+      "the synthetic dry-run cannot be used as real validation or calibration evidence"
+    ],
+    "doesNotConfirm": [
+      "real validation report completion",
+      "real calibration diagnostics",
+      "real parameter sensitivity",
+      "bias/applicability review completion",
+      "TRIPOD+AI / PROBAST+AI packet completion",
+      "L4 aggregate calibrated model admission",
+      "public weighted-domain output permission",
+      "individual prediction",
+      "medical advice"
+    ]
+  },
+  "outputPath": "web/src/data/life-path-l4-validation-calibration-report-execution-validation.json"
+}

@@ -203,6 +203,151 @@
       ]
     }
   ],
+  "latestOfficialPublicLiveReprobe": {
+    "probeId": "nhats-official-source-live-reprobe-2026-07-04",
+    "observedAt": "2026-07-03T23:34:16.850751+00:00",
+    "observedDateLocal": "2026-07-04",
+    "methodBoundary": "Public official pages were re-probed for reachability only. HTML hashes are recorded as dynamic-page observations and must not be interpreted as semantic content stability, field confirmation, registration completion, download approval, extraction approval, calibration approval or individual prediction approval.",
+    "summary": {
+      "rows": 8,
+      "httpStatus200Rows": 8,
+      "htmlGetRows": 7,
+      "pdfHeadRows": 1,
+      "downloadAllowed": false,
+      "extractionAllowed": false,
+      "calibrationAllowed": false,
+      "individualPredictionAllowed": false
+    },
+    "rows": [
+      {
+        "id": "data-access",
+        "url": "https://www.nhats.org/data-access",
+        "method": "GET",
+        "httpStatus": 200,
+        "finalUrl": "https://www.nhats.org/data-access",
+        "contentType": "text/html; charset=UTF-8",
+        "contentLengthBytes": 74524,
+        "sha256": "3660e9a42047fff5fbb6afd95c54ff1e9d9878d9acb5b06400b9903fe5b7170b",
+        "title": "Data Access | NHATS",
+        "doesNotSupport": [
+          "registration-complete",
+          "download-approved",
+          "field-confirmed"
+        ]
+      },
+      {
+        "id": "cross-year-search",
+        "url": "https://www.nhats.org/data-access/cross-year-search",
+        "method": "GET",
+        "httpStatus": 200,
+        "finalUrl": "https://www.nhats.org/data-access/cross-year-search",
+        "contentType": "text/html; charset=UTF-8",
+        "contentLengthBytes": 66313,
+        "sha256": "14eb1abdec815c2c2c63081a71909ccab0e21e17d3aa5b9db80263e611f6917d",
+        "title": "Cross Year Search | NHATS",
+        "doesNotSupport": [
+          "colectica-login-complete",
+          "value-labels-confirmed",
+          "route-classifier-ready"
+        ]
+      },
+      {
+        "id": "conditions-of-use",
+        "url": "https://www.nhats.org/conditions-of-use",
+        "method": "GET",
+        "httpStatus": 200,
+        "finalUrl": "https://www.nhats.org/conditions-of-use",
+        "contentType": "text/html; charset=UTF-8",
+        "contentLengthBytes": 64675,
+        "sha256": "1dc4f6536f550001bb9115b411266ee013a7e58531932f3c497932dd59ba9aa8",
+        "title": "Conditions of Use for NHATS and NSOC Data | NHATS",
+        "doesNotSupport": [
+          "raw-data-export-approved",
+          "public-ai-upload-approved",
+          "individual-output-approved"
+        ]
+      },
+      {
+        "id": "welcome-ai-notice",
+        "url": "https://www.nhats.org/",
+        "method": "GET",
+        "httpStatus": 200,
+        "finalUrl": "https://www.nhats.org/",
+        "contentType": "text/html; charset=UTF-8",
+        "contentLengthBytes": 12129,
+        "sha256": "72608a60880ed0aed060f1e5ca157fa0f9e56a26111a7bf24684d9500e405a24",
+        "title": "Home | NHATS",
+        "doesNotSupport": [
+          "conditions-unchanged-forever",
+          "registration-complete"
+        ]
+      },
+      {
+        "id": "nhats-files-index",
+        "url": "https://www.nhats.org/data-access/nhats",
+        "method": "GET",
+        "httpStatus": 200,
+        "finalUrl": "https://www.nhats.org/data-access/nhats",
+        "contentType": "text/html; charset=UTF-8",
+        "contentLengthBytes": 92947,
+        "sha256": "90998c8ac6939a53a455f28556723b61d31979d26809e22963233252e1030d46",
+        "title": "NHATS Files | NHATS",
+        "doesNotSupport": [
+          "download-approved",
+          "file-content-verified",
+          "extractor-ready"
+        ]
+      },
+      {
+        "id": "round-13-files",
+        "url": "https://www.nhats.org/data-access/nhats/13",
+        "method": "GET",
+        "httpStatus": 200,
+        "finalUrl": "https://www.nhats.org/data-access/nhats/13",
+        "contentType": "text/html; charset=UTF-8",
+        "contentLengthBytes": 147717,
+        "sha256": "f37e1b446491264645735bae87f8dfa6b9aabcf3990b553267c6555e08f1f6ad",
+        "title": "NHATS Round 13 Files | NHATS",
+        "doesNotSupport": [
+          "registration-complete",
+          "download-approved",
+          "exact-fields-confirmed"
+        ]
+      },
+      {
+        "id": "round-14-files",
+        "url": "https://www.nhats.org/data-access/nhats/14",
+        "method": "GET",
+        "httpStatus": 200,
+        "finalUrl": "https://www.nhats.org/data-access/nhats/14",
+        "contentType": "text/html; charset=UTF-8",
+        "contentLengthBytes": 128277,
+        "sha256": "a6895f02a58a9dcfefc8190871f81ce084c036b83bbffd9e8ee9e64ba279aa71",
+        "title": "NHATS Round 14 Files | NHATS",
+        "doesNotSupport": [
+          "registration-complete",
+          "download-approved",
+          "exact-fields-confirmed"
+        ]
+      },
+      {
+        "id": "colectica-technical-guide",
+        "url": "https://nhats.org/sites/default/files/2025-09/NHATS%20Online%20Cross-Year%20Searchable%20Database%20Technical%20Guide.pdf",
+        "method": "HEAD",
+        "httpStatus": 200,
+        "finalUrl": "https://nhats.org/sites/default/files/2025-09/NHATS%20Online%20Cross-Year%20Searchable%20Database%20Technical%20Guide.pdf",
+        "contentType": "application/pdf",
+        "contentLengthBytes": 577295,
+        "lastModified": "Tue, 23 Sep 2025 18:42:24 GMT",
+        "etag": "\"8cf0f-63f7c4c04628a\"",
+        "doesNotSupport": [
+          "account-created",
+          "authenticated-capture-complete",
+          "value-labels-confirmed"
+        ]
+      }
+    ]
+  },
   "gateImpact": {
     "acquisitionGateId": "official-source-refresh",
     "newGateStatus": "ready",

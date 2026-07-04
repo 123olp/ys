@@ -1,0 +1,42 @@
+{
+  "schemaVersion": "human-infra.domain-to-model-bridge-validation.v1",
+  "status": "pass-q2-only-q4-q5-blocked",
+  "generatedAt": "2026-07-04T20:22:37.393073+00:00",
+  "contractPath": "docs/reference/human-infra-domain-to-model-bridge-contract.json",
+  "contractSha256": "97337f50212823f5f8d86e52ccc522991c0777d8ef016bbc02109d282aa6844f",
+  "registerPath": "docs/reference/human-infra-domain-to-model-bridge-register.json",
+  "registerSha256": "e8b369557f06ad4caeca58cf19acca3ee9f0eec764c85f91fea7df80773ada14",
+  "rowCount": 14,
+  "tierCoverage": [
+    "C1",
+    "C2",
+    "C3",
+    "C4",
+    "C5",
+    "C6"
+  ],
+  "modelLocationCoverage": [
+    "access-adoption-probability",
+    "action-policy",
+    "governance-boundary",
+    "hazard-function",
+    "observation-process",
+    "option-value",
+    "state-transition",
+    "state-variable",
+    "time-accounting",
+    "uncertainty-channel"
+  ],
+  "highestCurrentBridgeLevel": "B2-model-candidate-variable",
+  "mappedAdmissionLevel": "L2",
+  "mappedQuantitativeCapability": "Q2",
+  "candidateVariablesAllowed": true,
+  "aggregateCalibratedUseAllowed": false,
+  "individualUseAllowed": false,
+  "coefficientOutputAllowed": false,
+  "causalEffectOutputAllowed": false,
+  "interventionRankingAllowed": false,
+  "medicalAdviceAllowed": false,
+  "individualDeathDateOutputAllowed": false,
+  "errors": []
+}

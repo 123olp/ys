@@ -13,9 +13,9 @@
   "scope": {
     "coverageLevel": "full-queue-source-specific-field-extractions",
     "derivedTaskUnit": "domainId + sourceCardId",
-    "queuedTaskCount": 81,
+    "queuedTaskCount": 93,
     "completedTaskCount": 81,
-    "remainingQueuedTaskCount": 0,
+    "remainingQueuedTaskCount": 12,
     "completedFieldRowCount": 26,
     "completedSourceAnchorCount": 20,
     "completedSourceAnchors": [
@@ -42,10 +42,10 @@
     ],
     "selectionRule": "Complete all queued source-specific field extractions across method anchors, biological mechanisms, health-functioning value anchors, cognitive infrastructure, digital twins, brain preservation, future waiting, AI governance and screening-bias boundaries before fresh-review and variable-card promotion.",
     "currentLimitations": [
-      "All 81 queued domain-source field extractions are complete at the register level.",
+      "The original 81 queued domain-source field extractions are complete at the register level; 12 newly derived singularity-domain tasks remain queued.",
       "Rows are field-level source-specific extractions, not full external literature fresh reviews.",
       "Completed rows keep calibrated prediction, individual recommendation and intervention ranking blocked.",
-      "Next work is source-context fresh review, variable-card promotion, long-tail domain expansion and calibrated data-model validation."
+      "Next work is completing the 12 singularity-domain source-specific rows, source-context fresh review, variable-card promotion, long-tail domain expansion and calibrated data-model validation."
     ]
   },
   "sourceAnchorDecisions": [
@@ -2075,7 +2075,7 @@
     }
   ],
   "nonClaims": [
-    "This register completes the current 81-task source-specific field extraction queue but does not complete fresh external literature review.",
+    "This register completes the original 81-task source-specific field extraction queue and leaves 12 newly derived singularity-domain tasks pending.",
     "This register does not prove that any domain intervention extends lifespan, healthspan, effective time or future option value.",
     "This register does not authorize calibrated survival prediction, individual death-date output, clinical advice, or intervention ranking.",
     "This register does not replace full-text peer review, source-context verification, variable-card promotion or model validation."

@@ -1,0 +1,2094 @@
+{
+  "schemaVersion": "human-infra.c2ltb8-manual-fulltext-reviewed-card-artifact-register.v1",
+  "registerId": "human-infra-c2-longtail-eighth-batch-manual-fulltext-reviewed-card-artifact-register-2026-07-03",
+  "status": "active-c2ltb8-manual-fulltext-reviewed-card-artifact-register-model-blocked",
+  "purpose": "Promote only the five eligible C2-LT-B8 manual/fulltext fresh-review rows into bounded reviewed artifacts while preserving fourteen route-only or publisher-route blocked rows and keeping model admission blocked.",
+  "sourceOfTruth": {
+    "manualFulltextFreshReviewVerdictRegister": "docs/reference/human-infra-c2-longtail-eighth-batch-manual-fulltext-fresh-review-verdict-register.json",
+    "manualFulltextExtractionRegister": "docs/reference/human-infra-c2-longtail-eighth-batch-manual-fulltext-extraction-register.json",
+    "sourceResolutionRegister": "docs/reference/human-infra-c2-longtail-eighth-batch-source-resolution-register.json",
+    "evidencePolicy": "docs/reference/evidence-policy.md",
+    "maturityGapRegister": "docs/reference/human-infra-maturity-gap-register.json"
+  },
+  "scope": {
+    "batchId": "C2-LT-B8",
+    "artifactLevel": "c2ltb8-manual-fulltext-fresh-review-verdict-to-reviewed-card-artifact",
+    "manualFulltextFreshReviewRowCount": 19,
+    "eligibleManualFulltextFreshReviewRowCount": 5,
+    "blockedManualFulltextFreshReviewRowCount": 14,
+    "artifactTypeCount": 6,
+    "reviewedArtifactCount": 30,
+    "blockedRowCount": 14,
+    "artifactTypes": [
+      "reviewed-source-card",
+      "reviewed-variable-card",
+      "reviewed-endpoint-card",
+      "reviewed-uncertainty-card",
+      "reviewed-transfer-boundary-card",
+      "reviewed-downgrade-check"
+    ],
+    "selectionRule": "Create one artifact of each required type only for manual/fulltext fresh-review rows whose artifactPromotionDecision is eligible-for-bounded-reviewed-artifact-prep.",
+    "blockedRowRule": "Rows marked route-only, corrected-PubMed route, DOI route or publisher-route are preserved in blockedRows and cannot create direct reviewed content artifacts.",
+    "artifactStatusRule": "All artifacts are bounded reviewed artifacts and remain model-blocked.",
+    "modelAdmissionRule": "No C2-LT-B8 artifact opens calibrated prediction, individual advice, intervention ranking, clinical-validity claim, death-date output, neurotechnology advice, living neural computation scale-up claims or domain-claim upgrade.",
+    "nonClaims": [
+      "This register is not model-ready evidence and does not authorize calibrated prediction.",
+      "This register does not authorize individual advice, clinical recommendations, neurotechnology recommendations, individual prognosis, individual death-date output or intervention ranking.",
+      "This register does not fill rows that remained route-only, corrected-PubMed, DOI, publisher-route or provenance blocked.",
+      "This register does not authorize living neural computation network-effect, consciousness, human-level intelligence or human-surpassing intelligence claims.",
+      "This register does not mark remaining C2 long-tail domains complete."
+    ]
+  },
+  "blockedUses": [
+    "calibrated-prediction",
+    "individual-advice",
+    "individual-death-date-output",
+    "intervention-ranking",
+    "clinical-validity-claim",
+    "domain-claim-upgrade"
+  ],
+  "reviewedArtifacts": [
+    {
+      "artifactId": "C2LTB8-MFART-002-SOURCE-CARD",
+      "artifactType": "reviewed-source-card",
+      "artifactStatus": "filled-reviewed-c2ltb8-manual-fulltext-artifact-model-blocked",
+      "sourceRowKind": "manual-fulltext-fresh-review-row",
+      "reviewId": "C2LTB8-MFFRV-002",
+      "manualExtractionId": "C2LTB8-MFEXT-002",
+      "originTaskId": "C2LTB8-EXT-006",
+      "sourceResolutionId": "C2LTB8-SRR-001",
+      "candidateId": "C2LTB8-SRR-001-CAND-02",
+      "candidateRole": "pmc-open-fulltext-route",
+      "domainId": "adhd-executive-function-neurodevelopment-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/adhd-executive-function-neurodevelopment-continuity",
+      "sourceTitle": "Clinical Practice Guideline for the Diagnosis, Evaluation, and Treatment of Attention-Deficit/Hyperactivity Disorder in Children and Adolescents",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7067282/",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "filled-from-eligible-manual-fulltext-fresh-review",
+      "sourceVerdictDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "modelAdmissionDecision": "blocked-pending-c2ltb8-reviewed-artifact-gates-and-calibrated-model-validation",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "freshReviewEvidenceUrls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC7067282/",
+        "https://www.ncbi.nlm.nih.gov/pmc/utils/oa/oa.fcgi?id=PMC7067282",
+        "docs/reference/human-infra-c2-longtail-eighth-batch-manual-fulltext-extraction-register.json"
+      ],
+      "registeredExactClaimUse": "Use only as bounded source-context input for independent fresh review; do not create artifacts until fresh-review verdict and reviewed-artifact gate pass.",
+      "registeredTransferBoundary": "Do not transfer into adult ADHD, nootropic ranking, school discipline policy, individual medication advice or mortality/longevity prediction.",
+      "freshReviewFinding": "PMC page access supports bounded review of pediatric ADHD guideline context, service pathway variables, functional impairment and follow-up boundaries. It does not support adult ADHD transfer, nootropic ranking, individual treatment choice or longevity prediction.",
+      "content": {
+        "sourceIdentity": {
+          "title": "Clinical Practice Guideline for the Diagnosis, Evaluation, and Treatment of Attention-Deficit/Hyperactivity Disorder in Children and Adolescents",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7067282/",
+          "candidateId": "C2LTB8-SRR-001-CAND-02",
+          "manualExtractionId": "C2LTB8-MFEXT-002",
+          "sourceAccessStatus": "pmc-open-fulltext-route-available-for-bounded-context-review",
+          "sourceIdentityFinding": "identity-confirmed-against-manual-route-and-pmc-context"
+        },
+        "sourceRole": "pmc-open-fulltext-route",
+        "exactClaimUse": "Use only as bounded source-context input for independent fresh review; do not create artifacts until fresh-review verdict and reviewed-artifact gate pass.",
+        "transferBoundary": "Do not transfer into adult ADHD, nootropic ranking, school discipline policy, individual medication advice or mortality/longevity prediction.",
+        "freshReviewEvidence": [
+          {
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7067282/",
+            "evidenceType": "pmc-page-route-check",
+            "finding": "PMC route checked on 2026-07-03: pmc-page-accessible for PMC7067282."
+          },
+          {
+            "url": "https://www.ncbi.nlm.nih.gov/pmc/utils/oa/oa.fcgi?id=PMC7067282",
+            "evidenceType": "ncbi-oa-package-route-check",
+            "finding": "NCBI OA utility status checked on 2026-07-03: pmc-readable-not-ncbi-oa-package."
+          },
+          {
+            "url": "docs/reference/human-infra-c2-longtail-eighth-batch-manual-fulltext-extraction-register.json",
+            "evidenceType": "manual-fulltext-extraction-row",
+            "finding": "Manual extraction row C2LTB8-MFEXT-002 marks this route as bounded fresh-review candidate while keeping model admission blocked."
+          }
+        ],
+        "reviewerNote": "PMC page access supports bounded review of pediatric ADHD guideline context, service pathway variables, functional impairment and follow-up boundaries. It does not support adult ADHD transfer, nootropic ranking, individual treatment choice or longevity prediction."
+      }
+    },
+    {
+      "artifactId": "C2LTB8-MFART-002-VARIABLE-CARD",
+      "artifactType": "reviewed-variable-card",
+      "artifactStatus": "filled-reviewed-c2ltb8-manual-fulltext-artifact-model-blocked",
+      "sourceRowKind": "manual-fulltext-fresh-review-row",
+      "reviewId": "C2LTB8-MFFRV-002",
+      "manualExtractionId": "C2LTB8-MFEXT-002",
+      "originTaskId": "C2LTB8-EXT-006",
+      "sourceResolutionId": "C2LTB8-SRR-001",
+      "candidateId": "C2LTB8-SRR-001-CAND-02",
+      "candidateRole": "pmc-open-fulltext-route",
+      "domainId": "adhd-executive-function-neurodevelopment-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/adhd-executive-function-neurodevelopment-continuity",
+      "sourceTitle": "Clinical Practice Guideline for the Diagnosis, Evaluation, and Treatment of Attention-Deficit/Hyperactivity Disorder in Children and Adolescents",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7067282/",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "filled-from-eligible-manual-fulltext-fresh-review",
+      "sourceVerdictDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "modelAdmissionDecision": "blocked-pending-c2ltb8-reviewed-artifact-gates-and-calibrated-model-validation",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "freshReviewEvidenceUrls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC7067282/",
+        "https://www.ncbi.nlm.nih.gov/pmc/utils/oa/oa.fcgi?id=PMC7067282",
+        "docs/reference/human-infra-c2-longtail-eighth-batch-manual-fulltext-extraction-register.json"
+      ],
+      "registeredExactClaimUse": "Use only as bounded source-context input for independent fresh review; do not create artifacts until fresh-review verdict and reviewed-artifact gate pass.",
+      "registeredTransferBoundary": "Do not transfer into adult ADHD, nootropic ranking, school discipline policy, individual medication advice or mortality/longevity prediction.",
+      "freshReviewFinding": "PMC page access supports bounded review of pediatric ADHD guideline context, service pathway variables, functional impairment and follow-up boundaries. It does not support adult ADHD transfer, nootropic ranking, individual treatment choice or longevity prediction.",
+      "content": {
+        "variableQuestion": "Which bounded variables may this reviewed source name for Human Infra continuity modeling language?",
+        "variableSeed": [
+          "ADHD evaluation route",
+          "executive-function continuity",
+          "pediatric guideline scope",
+          "service follow-up boundary"
+        ],
+        "sourceExtractedVariables": [
+          "ADHD evaluation route",
+          "executive-function continuity",
+          "pediatric guideline scope",
+          "service follow-up boundary"
+        ],
+        "modelPosition": "C2 source-maintenance / neurodevelopment executive-function continuity route gate",
+        "admissibleUse": "Route-to-evidence context only; may proceed to bounded fresh review only where artifactPromotionReadiness marks a bounded candidate, and never opens model admission in this pass.",
+        "promotionBoundary": "bounded reviewed artifact vocabulary only; calibrated prediction, intervention ranking, clinical advice, neurotechnology advice, living-neural-computation scaling claims and domain-claim upgrades remain blocked"
+      }
+    },
+    {
+      "artifactId": "C2LTB8-MFART-002-ENDPOINT-CARD",
+      "artifactType": "reviewed-endpoint-card",
+      "artifactStatus": "filled-reviewed-c2ltb8-manual-fulltext-artifact-model-blocked",
+      "sourceRowKind": "manual-fulltext-fresh-review-row",
+      "reviewId": "C2LTB8-MFFRV-002",
+      "manualExtractionId": "C2LTB8-MFEXT-002",
+      "originTaskId": "C2LTB8-EXT-006",
+      "sourceResolutionId": "C2LTB8-SRR-001",
+      "candidateId": "C2LTB8-SRR-001-CAND-02",
+      "candidateRole": "pmc-open-fulltext-route",
+      "domainId": "adhd-executive-function-neurodevelopment-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/adhd-executive-function-neurodevelopment-continuity",
+      "sourceTitle": "Clinical Practice Guideline for the Diagnosis, Evaluation, and Treatment of Attention-Deficit/Hyperactivity Disorder in Children and Adolescents",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7067282/",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "filled-from-eligible-manual-fulltext-fresh-review",
+      "sourceVerdictDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "modelAdmissionDecision": "blocked-pending-c2ltb8-reviewed-artifact-gates-and-calibrated-model-validation",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "freshReviewEvidenceUrls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC7067282/",
+        "https://www.ncbi.nlm.nih.gov/pmc/utils/oa/oa.fcgi?id=PMC7067282",
+        "docs/reference/human-infra-c2-longtail-eighth-batch-manual-fulltext-extraction-register.json"
+      ],
+      "registeredExactClaimUse": "Use only as bounded source-context input for independent fresh review; do not create artifacts until fresh-review verdict and reviewed-artifact gate pass.",
+      "registeredTransferBoundary": "Do not transfer into adult ADHD, nootropic ranking, school discipline policy, individual medication advice or mortality/longevity prediction.",
+      "freshReviewFinding": "PMC page access supports bounded review of pediatric ADHD guideline context, service pathway variables, functional impairment and follow-up boundaries. It does not support adult ADHD transfer, nootropic ranking, individual treatment choice or longevity prediction.",
+      "content": {
+        "endpointQuestion": "Which endpoint vocabulary is supported by this manual/fulltext fresh-review row without calibrated effect-size claims?",
+        "endpointDefinition": "Pediatric ADHD diagnosis, evaluation and treatment guideline scope, age range, functional impairment boundary and follow-up context, not adult ADHD ranking or individualized treatment choice.",
+        "populationOrSetting": "Children and adolescents within the AAP guideline scope; transfer outside pediatric clinical guideline context requires separate review.",
+        "endpointBoundary": "endpoint-and-variable-boundaries-eligible-for-bounded-reviewed-artifact-prep",
+        "modelPosition": "C2 source-maintenance / neurodevelopment executive-function continuity route gate",
+        "blockedEndpointUses": [
+          "calibrated-prediction",
+          "individual-advice",
+          "individual-death-date-output",
+          "intervention-ranking",
+          "clinical-validity-claim",
+          "domain-claim-upgrade"
+        ]
+      }
+    },
+    {
+      "artifactId": "C2LTB8-MFART-002-UNCERTAINTY-CARD",
+      "artifactType": "reviewed-uncertainty-card",
+      "artifactStatus": "filled-reviewed-c2ltb8-manual-fulltext-artifact-model-blocked",
+      "sourceRowKind": "manual-fulltext-fresh-review-row",
+      "reviewId": "C2LTB8-MFFRV-002",
+      "manualExtractionId": "C2LTB8-MFEXT-002",
+      "originTaskId": "C2LTB8-EXT-006",
+      "sourceResolutionId": "C2LTB8-SRR-001",
+      "candidateId": "C2LTB8-SRR-001-CAND-02",
+      "candidateRole": "pmc-open-fulltext-route",
+      "domainId": "adhd-executive-function-neurodevelopment-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/adhd-executive-function-neurodevelopment-continuity",
+      "sourceTitle": "Clinical Practice Guideline for the Diagnosis, Evaluation, and Treatment of Attention-Deficit/Hyperactivity Disorder in Children and Adolescents",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7067282/",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "filled-from-eligible-manual-fulltext-fresh-review",
+      "sourceVerdictDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "modelAdmissionDecision": "blocked-pending-c2ltb8-reviewed-artifact-gates-and-calibrated-model-validation",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "freshReviewEvidenceUrls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC7067282/",
+        "https://www.ncbi.nlm.nih.gov/pmc/utils/oa/oa.fcgi?id=PMC7067282",
+        "docs/reference/human-infra-c2-longtail-eighth-batch-manual-fulltext-extraction-register.json"
+      ],
+      "registeredExactClaimUse": "Use only as bounded source-context input for independent fresh review; do not create artifacts until fresh-review verdict and reviewed-artifact gate pass.",
+      "registeredTransferBoundary": "Do not transfer into adult ADHD, nootropic ranking, school discipline policy, individual medication advice or mortality/longevity prediction.",
+      "freshReviewFinding": "PMC page access supports bounded review of pediatric ADHD guideline context, service pathway variables, functional impairment and follow-up boundaries. It does not support adult ADHD transfer, nootropic ranking, individual treatment choice or longevity prediction.",
+      "content": {
+        "uncertaintyQuestion": "What uncertainty remains after manual/fulltext fresh review?",
+        "uncertaintyOrBias": "Guideline recommendations are not calibrated individual risk effects; implementation depends on setting, comorbidity, family context and clinician judgement.",
+        "uncertaintyBoundaryVerdict": "currentness-limited-to-2026-07-03-route-check-and-recorded-source-version",
+        "evidenceLimit": "pmc-page-accessible; pmc-readable-not-ncbi-oa-package",
+        "downgradeTriggers": [
+          "Block artifact promotion if source identity, title, PMID/PMCID/DOI lineage or full-context access cannot be independently verified.",
+          "Block model admission, calibrated prediction, individual advice, intervention ranking and clinical/neurotechnology claims.",
+          "Downgrade if the source is outside its population, setting, endpoint or guideline/review boundary.",
+          "Keep guideline population, clinical setting and recommendation scope explicit; block individual advice, intervention ranking, adult transfer and mortality/longevity inference."
+        ]
+      }
+    },
+    {
+      "artifactId": "C2LTB8-MFART-002-TRANSFER-BOUNDARY-CARD",
+      "artifactType": "reviewed-transfer-boundary-card",
+      "artifactStatus": "filled-reviewed-c2ltb8-manual-fulltext-artifact-model-blocked",
+      "sourceRowKind": "manual-fulltext-fresh-review-row",
+      "reviewId": "C2LTB8-MFFRV-002",
+      "manualExtractionId": "C2LTB8-MFEXT-002",
+      "originTaskId": "C2LTB8-EXT-006",
+      "sourceResolutionId": "C2LTB8-SRR-001",
+      "candidateId": "C2LTB8-SRR-001-CAND-02",
+      "candidateRole": "pmc-open-fulltext-route",
+      "domainId": "adhd-executive-function-neurodevelopment-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/adhd-executive-function-neurodevelopment-continuity",
+      "sourceTitle": "Clinical Practice Guideline for the Diagnosis, Evaluation, and Treatment of Attention-Deficit/Hyperactivity Disorder in Children and Adolescents",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7067282/",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "filled-from-eligible-manual-fulltext-fresh-review",
+      "sourceVerdictDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "modelAdmissionDecision": "blocked-pending-c2ltb8-reviewed-artifact-gates-and-calibrated-model-validation",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "freshReviewEvidenceUrls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC7067282/",
+        "https://www.ncbi.nlm.nih.gov/pmc/utils/oa/oa.fcgi?id=PMC7067282",
+        "docs/reference/human-infra-c2-longtail-eighth-batch-manual-fulltext-extraction-register.json"
+      ],
+      "registeredExactClaimUse": "Use only as bounded source-context input for independent fresh review; do not create artifacts until fresh-review verdict and reviewed-artifact gate pass.",
+      "registeredTransferBoundary": "Do not transfer into adult ADHD, nootropic ranking, school discipline policy, individual medication advice or mortality/longevity prediction.",
+      "freshReviewFinding": "PMC page access supports bounded review of pediatric ADHD guideline context, service pathway variables, functional impairment and follow-up boundaries. It does not support adult ADHD transfer, nootropic ranking, individual treatment choice or longevity prediction.",
+      "content": {
+        "transferBoundaryQuestion": "Where must this reviewed source not be transferred?",
+        "domainTransferVerdict": "transfer-boundary-present-and-required",
+        "registeredTransferBoundary": "Do not transfer into adult ADHD, nootropic ranking, school discipline policy, individual medication advice or mortality/longevity prediction.",
+        "sourceExtractionTransferBoundary": "Do not transfer into adult ADHD, nootropic ranking, school discipline policy, individual medication advice or mortality/longevity prediction.",
+        "blockedTransferUses": [
+          "calibrated-prediction",
+          "individual-advice",
+          "individual-death-date-output",
+          "intervention-ranking",
+          "clinical-validity-claim",
+          "domain-claim-upgrade"
+        ]
+      }
+    },
+    {
+      "artifactId": "C2LTB8-MFART-002-DOWNGRADE-CHECK",
+      "artifactType": "reviewed-downgrade-check",
+      "artifactStatus": "filled-reviewed-c2ltb8-manual-fulltext-artifact-model-blocked",
+      "sourceRowKind": "manual-fulltext-fresh-review-row",
+      "reviewId": "C2LTB8-MFFRV-002",
+      "manualExtractionId": "C2LTB8-MFEXT-002",
+      "originTaskId": "C2LTB8-EXT-006",
+      "sourceResolutionId": "C2LTB8-SRR-001",
+      "candidateId": "C2LTB8-SRR-001-CAND-02",
+      "candidateRole": "pmc-open-fulltext-route",
+      "domainId": "adhd-executive-function-neurodevelopment-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/adhd-executive-function-neurodevelopment-continuity",
+      "sourceTitle": "Clinical Practice Guideline for the Diagnosis, Evaluation, and Treatment of Attention-Deficit/Hyperactivity Disorder in Children and Adolescents",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7067282/",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "filled-from-eligible-manual-fulltext-fresh-review",
+      "sourceVerdictDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "modelAdmissionDecision": "blocked-pending-c2ltb8-reviewed-artifact-gates-and-calibrated-model-validation",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "freshReviewEvidenceUrls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC7067282/",
+        "https://www.ncbi.nlm.nih.gov/pmc/utils/oa/oa.fcgi?id=PMC7067282",
+        "docs/reference/human-infra-c2-longtail-eighth-batch-manual-fulltext-extraction-register.json"
+      ],
+      "registeredExactClaimUse": "Use only as bounded source-context input for independent fresh review; do not create artifacts until fresh-review verdict and reviewed-artifact gate pass.",
+      "registeredTransferBoundary": "Do not transfer into adult ADHD, nootropic ranking, school discipline policy, individual medication advice or mortality/longevity prediction.",
+      "freshReviewFinding": "PMC page access supports bounded review of pediatric ADHD guideline context, service pathway variables, functional impairment and follow-up boundaries. It does not support adult ADHD transfer, nootropic ranking, individual treatment choice or longevity prediction.",
+      "content": {
+        "downgradeQuestion": "Which claim upgrades must trigger downgrade or block?",
+        "downgradeVerdict": "Keep guideline population, clinical setting and recommendation scope explicit; block individual advice, intervention ranking, adult transfer and mortality/longevity inference.",
+        "reviewerVerdict": "support-with-boundary",
+        "downgradeRequiredWhen": [
+          "Block artifact promotion if source identity, title, PMID/PMCID/DOI lineage or full-context access cannot be independently verified.",
+          "Block model admission, calibrated prediction, individual advice, intervention ranking and clinical/neurotechnology claims.",
+          "Downgrade if the source is outside its population, setting, endpoint or guideline/review boundary.",
+          "Keep guideline population, clinical setting and recommendation scope explicit; block individual advice, intervention ranking, adult transfer and mortality/longevity inference."
+        ],
+        "blockedSiblingPolicy": "Sibling PubMed, corrected-PubMed, DOI or publisher-route rows remain blocked unless separately full-context reviewed; living neural computation cannot be upgraded into network-effect, consciousness, human-level or human-surpassing intelligence claims."
+      }
+    },
+    {
+      "artifactId": "C2LTB8-MFART-007-SOURCE-CARD",
+      "artifactType": "reviewed-source-card",
+      "artifactStatus": "filled-reviewed-c2ltb8-manual-fulltext-artifact-model-blocked",
+      "sourceRowKind": "manual-fulltext-fresh-review-row",
+      "reviewId": "C2LTB8-MFFRV-007",
+      "manualExtractionId": "C2LTB8-MFEXT-007",
+      "originTaskId": "C2LTB8-EXT-011",
+      "sourceResolutionId": "C2LTB8-SRR-003",
+      "candidateId": "C2LTB8-SRR-003-CAND-02",
+      "candidateRole": "pmc-open-fulltext-route",
+      "domainId": "synthetic-biological-intelligence-organoid-computing-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/synthetic-biological-intelligence-organoid-computing-continuity",
+      "sourceTitle": "In vitro neurons learn and exhibit sentience when embodied in a simulated game-world",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9747182/",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "filled-from-eligible-manual-fulltext-fresh-review",
+      "sourceVerdictDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "modelAdmissionDecision": "blocked-pending-c2ltb8-reviewed-artifact-gates-and-calibrated-model-validation",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "freshReviewEvidenceUrls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC9747182/",
+        "https://www.ncbi.nlm.nih.gov/pmc/utils/oa/oa.fcgi?id=PMC9747182",
+        "docs/reference/human-infra-c2-longtail-eighth-batch-manual-fulltext-extraction-register.json"
+      ],
+      "registeredExactClaimUse": "Use only as bounded source-context input for independent fresh review; do not create artifacts until fresh-review verdict and reviewed-artifact gate pass.",
+      "registeredTransferBoundary": "Block claims about network effects, scale-to-intelligence, consciousness, human-level capability, human-surpassing capability, moral patienthood or clinical neurotechnology use.",
+      "freshReviewFinding": "PMC/OA context supports bounded living-neural-computation vocabulary: embodied neural cultures, closed-loop feedback and assay-bound adaptive behavior. It does not support network-effect scaling, consciousness, clinical use, human-level intelligence or human-surpassing intelligence claims.",
+      "content": {
+        "sourceIdentity": {
+          "title": "In vitro neurons learn and exhibit sentience when embodied in a simulated game-world",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9747182/",
+          "candidateId": "C2LTB8-SRR-003-CAND-02",
+          "manualExtractionId": "C2LTB8-MFEXT-007",
+          "sourceAccessStatus": "pmc-open-fulltext-route-available-for-bounded-context-review",
+          "sourceIdentityFinding": "identity-confirmed-against-manual-route-and-pmc-context"
+        },
+        "sourceRole": "pmc-open-fulltext-route",
+        "exactClaimUse": "Use only as bounded source-context input for independent fresh review; do not create artifacts until fresh-review verdict and reviewed-artifact gate pass.",
+        "transferBoundary": "Block claims about network effects, scale-to-intelligence, consciousness, human-level capability, human-surpassing capability, moral patienthood or clinical neurotechnology use.",
+        "freshReviewEvidence": [
+          {
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9747182/",
+            "evidenceType": "pmc-page-route-check",
+            "finding": "PMC route checked on 2026-07-03: pmc-page-fetched for PMC9747182."
+          },
+          {
+            "url": "https://www.ncbi.nlm.nih.gov/pmc/utils/oa/oa.fcgi?id=PMC9747182",
+            "evidenceType": "ncbi-oa-package-route-check",
+            "finding": "NCBI OA utility status checked on 2026-07-03: oa-package-available."
+          },
+          {
+            "url": "docs/reference/human-infra-c2-longtail-eighth-batch-manual-fulltext-extraction-register.json",
+            "evidenceType": "manual-fulltext-extraction-row",
+            "finding": "Manual extraction row C2LTB8-MFEXT-007 marks this route as bounded fresh-review candidate while keeping model admission blocked."
+          }
+        ],
+        "reviewerNote": "PMC/OA context supports bounded living-neural-computation vocabulary: embodied neural cultures, closed-loop feedback and assay-bound adaptive behavior. It does not support network-effect scaling, consciousness, clinical use, human-level intelligence or human-surpassing intelligence claims."
+      }
+    },
+    {
+      "artifactId": "C2LTB8-MFART-007-VARIABLE-CARD",
+      "artifactType": "reviewed-variable-card",
+      "artifactStatus": "filled-reviewed-c2ltb8-manual-fulltext-artifact-model-blocked",
+      "sourceRowKind": "manual-fulltext-fresh-review-row",
+      "reviewId": "C2LTB8-MFFRV-007",
+      "manualExtractionId": "C2LTB8-MFEXT-007",
+      "originTaskId": "C2LTB8-EXT-011",
+      "sourceResolutionId": "C2LTB8-SRR-003",
+      "candidateId": "C2LTB8-SRR-003-CAND-02",
+      "candidateRole": "pmc-open-fulltext-route",
+      "domainId": "synthetic-biological-intelligence-organoid-computing-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/synthetic-biological-intelligence-organoid-computing-continuity",
+      "sourceTitle": "In vitro neurons learn and exhibit sentience when embodied in a simulated game-world",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9747182/",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "filled-from-eligible-manual-fulltext-fresh-review",
+      "sourceVerdictDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "modelAdmissionDecision": "blocked-pending-c2ltb8-reviewed-artifact-gates-and-calibrated-model-validation",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "freshReviewEvidenceUrls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC9747182/",
+        "https://www.ncbi.nlm.nih.gov/pmc/utils/oa/oa.fcgi?id=PMC9747182",
+        "docs/reference/human-infra-c2-longtail-eighth-batch-manual-fulltext-extraction-register.json"
+      ],
+      "registeredExactClaimUse": "Use only as bounded source-context input for independent fresh review; do not create artifacts until fresh-review verdict and reviewed-artifact gate pass.",
+      "registeredTransferBoundary": "Block claims about network effects, scale-to-intelligence, consciousness, human-level capability, human-surpassing capability, moral patienthood or clinical neurotechnology use.",
+      "freshReviewFinding": "PMC/OA context supports bounded living-neural-computation vocabulary: embodied neural cultures, closed-loop feedback and assay-bound adaptive behavior. It does not support network-effect scaling, consciousness, clinical use, human-level intelligence or human-surpassing intelligence claims.",
+      "content": {
+        "variableQuestion": "Which bounded variables may this reviewed source name for Human Infra continuity modeling language?",
+        "variableSeed": [
+          "living neural computation",
+          "closed-loop adaptation",
+          "neural culture interface",
+          "overclaim blocker"
+        ],
+        "sourceExtractedVariables": [
+          "living neural computation",
+          "closed-loop adaptation",
+          "neural culture interface",
+          "overclaim blocker"
+        ],
+        "modelPosition": "C2 source-maintenance / synthetic biological intelligence and organoid computing route gate",
+        "admissibleUse": "Route-to-evidence context only; may proceed to bounded fresh review only where artifactPromotionReadiness marks a bounded candidate, and never opens model admission in this pass.",
+        "promotionBoundary": "bounded reviewed artifact vocabulary only; calibrated prediction, intervention ranking, clinical advice, neurotechnology advice, living-neural-computation scaling claims and domain-claim upgrades remain blocked"
+      }
+    },
+    {
+      "artifactId": "C2LTB8-MFART-007-ENDPOINT-CARD",
+      "artifactType": "reviewed-endpoint-card",
+      "artifactStatus": "filled-reviewed-c2ltb8-manual-fulltext-artifact-model-blocked",
+      "sourceRowKind": "manual-fulltext-fresh-review-row",
+      "reviewId": "C2LTB8-MFFRV-007",
+      "manualExtractionId": "C2LTB8-MFEXT-007",
+      "originTaskId": "C2LTB8-EXT-011",
+      "sourceResolutionId": "C2LTB8-SRR-003",
+      "candidateId": "C2LTB8-SRR-003-CAND-02",
+      "candidateRole": "pmc-open-fulltext-route",
+      "domainId": "synthetic-biological-intelligence-organoid-computing-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/synthetic-biological-intelligence-organoid-computing-continuity",
+      "sourceTitle": "In vitro neurons learn and exhibit sentience when embodied in a simulated game-world",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9747182/",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "filled-from-eligible-manual-fulltext-fresh-review",
+      "sourceVerdictDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "modelAdmissionDecision": "blocked-pending-c2ltb8-reviewed-artifact-gates-and-calibrated-model-validation",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "freshReviewEvidenceUrls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC9747182/",
+        "https://www.ncbi.nlm.nih.gov/pmc/utils/oa/oa.fcgi?id=PMC9747182",
+        "docs/reference/human-infra-c2-longtail-eighth-batch-manual-fulltext-extraction-register.json"
+      ],
+      "registeredExactClaimUse": "Use only as bounded source-context input for independent fresh review; do not create artifacts until fresh-review verdict and reviewed-artifact gate pass.",
+      "registeredTransferBoundary": "Block claims about network effects, scale-to-intelligence, consciousness, human-level capability, human-surpassing capability, moral patienthood or clinical neurotechnology use.",
+      "freshReviewFinding": "PMC/OA context supports bounded living-neural-computation vocabulary: embodied neural cultures, closed-loop feedback and assay-bound adaptive behavior. It does not support network-effect scaling, consciousness, clinical use, human-level intelligence or human-surpassing intelligence claims.",
+      "content": {
+        "endpointQuestion": "Which endpoint vocabulary is supported by this manual/fulltext fresh-review row without calibrated effect-size claims?",
+        "endpointDefinition": "Closed-loop in-vitro neural culture adaptation in a simulated game-world and living-neural-computation interface variables, not consciousness, moral status or deployable intelligence capability.",
+        "populationOrSetting": "In-vitro neuronal culture experimental system; no direct transfer to humans, clinical BCI, organoid cognition scaling, or human-surpassing intelligence.",
+        "endpointBoundary": "endpoint-and-variable-boundaries-eligible-for-bounded-reviewed-artifact-prep",
+        "modelPosition": "C2 source-maintenance / synthetic biological intelligence and organoid computing route gate",
+        "blockedEndpointUses": [
+          "calibrated-prediction",
+          "individual-advice",
+          "individual-death-date-output",
+          "intervention-ranking",
+          "clinical-validity-claim",
+          "domain-claim-upgrade"
+        ]
+      }
+    },
+    {
+      "artifactId": "C2LTB8-MFART-007-UNCERTAINTY-CARD",
+      "artifactType": "reviewed-uncertainty-card",
+      "artifactStatus": "filled-reviewed-c2ltb8-manual-fulltext-artifact-model-blocked",
+      "sourceRowKind": "manual-fulltext-fresh-review-row",
+      "reviewId": "C2LTB8-MFFRV-007",
+      "manualExtractionId": "C2LTB8-MFEXT-007",
+      "originTaskId": "C2LTB8-EXT-011",
+      "sourceResolutionId": "C2LTB8-SRR-003",
+      "candidateId": "C2LTB8-SRR-003-CAND-02",
+      "candidateRole": "pmc-open-fulltext-route",
+      "domainId": "synthetic-biological-intelligence-organoid-computing-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/synthetic-biological-intelligence-organoid-computing-continuity",
+      "sourceTitle": "In vitro neurons learn and exhibit sentience when embodied in a simulated game-world",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9747182/",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "filled-from-eligible-manual-fulltext-fresh-review",
+      "sourceVerdictDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "modelAdmissionDecision": "blocked-pending-c2ltb8-reviewed-artifact-gates-and-calibrated-model-validation",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "freshReviewEvidenceUrls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC9747182/",
+        "https://www.ncbi.nlm.nih.gov/pmc/utils/oa/oa.fcgi?id=PMC9747182",
+        "docs/reference/human-infra-c2-longtail-eighth-batch-manual-fulltext-extraction-register.json"
+      ],
+      "registeredExactClaimUse": "Use only as bounded source-context input for independent fresh review; do not create artifacts until fresh-review verdict and reviewed-artifact gate pass.",
+      "registeredTransferBoundary": "Block claims about network effects, scale-to-intelligence, consciousness, human-level capability, human-surpassing capability, moral patienthood or clinical neurotechnology use.",
+      "freshReviewFinding": "PMC/OA context supports bounded living-neural-computation vocabulary: embodied neural cultures, closed-loop feedback and assay-bound adaptive behavior. It does not support network-effect scaling, consciousness, clinical use, human-level intelligence or human-surpassing intelligence claims.",
+      "content": {
+        "uncertaintyQuestion": "What uncertainty remains after manual/fulltext fresh review?",
+        "uncertaintyOrBias": "Terminology such as sentience requires strict contextual review; source-ID mismatch provenance must remain visible; scaling and network-effect intelligence are not supported.",
+        "uncertaintyBoundaryVerdict": "currentness-limited-to-2026-07-03-route-check-and-recorded-source-version",
+        "evidenceLimit": "pmc-page-fetched; oa-package-available",
+        "downgradeTriggers": [
+          "Block artifact promotion if source identity, title, PMID/PMCID/DOI lineage or full-context access cannot be independently verified.",
+          "Block model admission, calibrated prediction, individual advice, intervention ranking and clinical/neurotechnology claims.",
+          "Downgrade if the source is outside its population, setting, endpoint or guideline/review boundary.",
+          "Preserve original PMID/title mismatch as downgrade evidence; do not count the original mismatched PMID as support.",
+          "Block sentience, consciousness, network-effect scaling, human-level or human-surpassing intelligence claims.",
+          "Treat the source as an experimental living neural computation context only; block sentience-as-consciousness, intelligence scaling, network-effect and human-surpassing extrapolations."
+        ]
+      }
+    },
+    {
+      "artifactId": "C2LTB8-MFART-007-TRANSFER-BOUNDARY-CARD",
+      "artifactType": "reviewed-transfer-boundary-card",
+      "artifactStatus": "filled-reviewed-c2ltb8-manual-fulltext-artifact-model-blocked",
+      "sourceRowKind": "manual-fulltext-fresh-review-row",
+      "reviewId": "C2LTB8-MFFRV-007",
+      "manualExtractionId": "C2LTB8-MFEXT-007",
+      "originTaskId": "C2LTB8-EXT-011",
+      "sourceResolutionId": "C2LTB8-SRR-003",
+      "candidateId": "C2LTB8-SRR-003-CAND-02",
+      "candidateRole": "pmc-open-fulltext-route",
+      "domainId": "synthetic-biological-intelligence-organoid-computing-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/synthetic-biological-intelligence-organoid-computing-continuity",
+      "sourceTitle": "In vitro neurons learn and exhibit sentience when embodied in a simulated game-world",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9747182/",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "filled-from-eligible-manual-fulltext-fresh-review",
+      "sourceVerdictDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "modelAdmissionDecision": "blocked-pending-c2ltb8-reviewed-artifact-gates-and-calibrated-model-validation",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "freshReviewEvidenceUrls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC9747182/",
+        "https://www.ncbi.nlm.nih.gov/pmc/utils/oa/oa.fcgi?id=PMC9747182",
+        "docs/reference/human-infra-c2-longtail-eighth-batch-manual-fulltext-extraction-register.json"
+      ],
+      "registeredExactClaimUse": "Use only as bounded source-context input for independent fresh review; do not create artifacts until fresh-review verdict and reviewed-artifact gate pass.",
+      "registeredTransferBoundary": "Block claims about network effects, scale-to-intelligence, consciousness, human-level capability, human-surpassing capability, moral patienthood or clinical neurotechnology use.",
+      "freshReviewFinding": "PMC/OA context supports bounded living-neural-computation vocabulary: embodied neural cultures, closed-loop feedback and assay-bound adaptive behavior. It does not support network-effect scaling, consciousness, clinical use, human-level intelligence or human-surpassing intelligence claims.",
+      "content": {
+        "transferBoundaryQuestion": "Where must this reviewed source not be transferred?",
+        "domainTransferVerdict": "transfer-boundary-present-and-required",
+        "registeredTransferBoundary": "Block claims about network effects, scale-to-intelligence, consciousness, human-level capability, human-surpassing capability, moral patienthood or clinical neurotechnology use.",
+        "sourceExtractionTransferBoundary": "Block claims about network effects, scale-to-intelligence, consciousness, human-level capability, human-surpassing capability, moral patienthood or clinical neurotechnology use.",
+        "blockedTransferUses": [
+          "calibrated-prediction",
+          "individual-advice",
+          "individual-death-date-output",
+          "intervention-ranking",
+          "clinical-validity-claim",
+          "domain-claim-upgrade"
+        ]
+      }
+    },
+    {
+      "artifactId": "C2LTB8-MFART-007-DOWNGRADE-CHECK",
+      "artifactType": "reviewed-downgrade-check",
+      "artifactStatus": "filled-reviewed-c2ltb8-manual-fulltext-artifact-model-blocked",
+      "sourceRowKind": "manual-fulltext-fresh-review-row",
+      "reviewId": "C2LTB8-MFFRV-007",
+      "manualExtractionId": "C2LTB8-MFEXT-007",
+      "originTaskId": "C2LTB8-EXT-011",
+      "sourceResolutionId": "C2LTB8-SRR-003",
+      "candidateId": "C2LTB8-SRR-003-CAND-02",
+      "candidateRole": "pmc-open-fulltext-route",
+      "domainId": "synthetic-biological-intelligence-organoid-computing-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/synthetic-biological-intelligence-organoid-computing-continuity",
+      "sourceTitle": "In vitro neurons learn and exhibit sentience when embodied in a simulated game-world",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9747182/",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "filled-from-eligible-manual-fulltext-fresh-review",
+      "sourceVerdictDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "modelAdmissionDecision": "blocked-pending-c2ltb8-reviewed-artifact-gates-and-calibrated-model-validation",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "freshReviewEvidenceUrls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC9747182/",
+        "https://www.ncbi.nlm.nih.gov/pmc/utils/oa/oa.fcgi?id=PMC9747182",
+        "docs/reference/human-infra-c2-longtail-eighth-batch-manual-fulltext-extraction-register.json"
+      ],
+      "registeredExactClaimUse": "Use only as bounded source-context input for independent fresh review; do not create artifacts until fresh-review verdict and reviewed-artifact gate pass.",
+      "registeredTransferBoundary": "Block claims about network effects, scale-to-intelligence, consciousness, human-level capability, human-surpassing capability, moral patienthood or clinical neurotechnology use.",
+      "freshReviewFinding": "PMC/OA context supports bounded living-neural-computation vocabulary: embodied neural cultures, closed-loop feedback and assay-bound adaptive behavior. It does not support network-effect scaling, consciousness, clinical use, human-level intelligence or human-surpassing intelligence claims.",
+      "content": {
+        "downgradeQuestion": "Which claim upgrades must trigger downgrade or block?",
+        "downgradeVerdict": "Treat the source as an experimental living neural computation context only; block sentience-as-consciousness, intelligence scaling, network-effect and human-surpassing extrapolations.",
+        "reviewerVerdict": "support-with-boundary",
+        "downgradeRequiredWhen": [
+          "Block artifact promotion if source identity, title, PMID/PMCID/DOI lineage or full-context access cannot be independently verified.",
+          "Block model admission, calibrated prediction, individual advice, intervention ranking and clinical/neurotechnology claims.",
+          "Downgrade if the source is outside its population, setting, endpoint or guideline/review boundary.",
+          "Preserve original PMID/title mismatch as downgrade evidence; do not count the original mismatched PMID as support.",
+          "Block sentience, consciousness, network-effect scaling, human-level or human-surpassing intelligence claims.",
+          "Treat the source as an experimental living neural computation context only; block sentience-as-consciousness, intelligence scaling, network-effect and human-surpassing extrapolations."
+        ],
+        "blockedSiblingPolicy": "Sibling PubMed, corrected-PubMed, DOI or publisher-route rows remain blocked unless separately full-context reviewed; living neural computation cannot be upgraded into network-effect, consciousness, human-level or human-surpassing intelligence claims."
+      }
+    },
+    {
+      "artifactId": "C2LTB8-MFART-010-SOURCE-CARD",
+      "artifactType": "reviewed-source-card",
+      "artifactStatus": "filled-reviewed-c2ltb8-manual-fulltext-artifact-model-blocked",
+      "sourceRowKind": "manual-fulltext-fresh-review-row",
+      "reviewId": "C2LTB8-MFFRV-010",
+      "manualExtractionId": "C2LTB8-MFEXT-010",
+      "originTaskId": "C2LTB8-EXT-014",
+      "sourceResolutionId": "C2LTB8-SRR-004",
+      "candidateId": "C2LTB8-SRR-004-CAND-02",
+      "candidateRole": "pmc-open-fulltext-route",
+      "domainId": "autonomic-nervous-system-homeostasis",
+      "localDomainPath": "domains/c2-source-maintenance/autonomic-nervous-system-homeostasis",
+      "sourceTitle": "Autonomic dysfunction in long COVID: rationale, physiology and management strategies",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7850225/",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "filled-from-eligible-manual-fulltext-fresh-review",
+      "sourceVerdictDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "modelAdmissionDecision": "blocked-pending-c2ltb8-reviewed-artifact-gates-and-calibrated-model-validation",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "freshReviewEvidenceUrls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC7850225/",
+        "https://www.ncbi.nlm.nih.gov/pmc/utils/oa/oa.fcgi?id=PMC7850225",
+        "docs/reference/human-infra-c2-longtail-eighth-batch-manual-fulltext-extraction-register.json"
+      ],
+      "registeredExactClaimUse": "Use only as bounded source-context input for independent fresh review; do not create artifacts until fresh-review verdict and reviewed-artifact gate pass.",
+      "registeredTransferBoundary": "Do not transfer into individual diagnosis, therapy recommendations, prevalence estimates, POTS-specific claims or calibrated survival/effective-time prediction.",
+      "freshReviewFinding": "PMC page access supports bounded review-level autonomic dysfunction context for long COVID, including physiology, symptom clusters and management-strategy vocabulary. It does not establish calibrated prognosis, individual diagnosis or treatment ranking.",
+      "content": {
+        "sourceIdentity": {
+          "title": "Autonomic dysfunction in long COVID: rationale, physiology and management strategies",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7850225/",
+          "candidateId": "C2LTB8-SRR-004-CAND-02",
+          "manualExtractionId": "C2LTB8-MFEXT-010",
+          "sourceAccessStatus": "pmc-open-fulltext-route-available-for-bounded-context-review",
+          "sourceIdentityFinding": "identity-confirmed-against-manual-route-and-pmc-context"
+        },
+        "sourceRole": "pmc-open-fulltext-route",
+        "exactClaimUse": "Use only as bounded source-context input for independent fresh review; do not create artifacts until fresh-review verdict and reviewed-artifact gate pass.",
+        "transferBoundary": "Do not transfer into individual diagnosis, therapy recommendations, prevalence estimates, POTS-specific claims or calibrated survival/effective-time prediction.",
+        "freshReviewEvidence": [
+          {
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7850225/",
+            "evidenceType": "pmc-page-route-check",
+            "finding": "PMC route checked on 2026-07-03: pmc-page-accessible for PMC7850225."
+          },
+          {
+            "url": "https://www.ncbi.nlm.nih.gov/pmc/utils/oa/oa.fcgi?id=PMC7850225",
+            "evidenceType": "ncbi-oa-package-route-check",
+            "finding": "NCBI OA utility status checked on 2026-07-03: pmc-readable-not-ncbi-oa-package."
+          },
+          {
+            "url": "docs/reference/human-infra-c2-longtail-eighth-batch-manual-fulltext-extraction-register.json",
+            "evidenceType": "manual-fulltext-extraction-row",
+            "finding": "Manual extraction row C2LTB8-MFEXT-010 marks this route as bounded fresh-review candidate while keeping model admission blocked."
+          }
+        ],
+        "reviewerNote": "PMC page access supports bounded review-level autonomic dysfunction context for long COVID, including physiology, symptom clusters and management-strategy vocabulary. It does not establish calibrated prognosis, individual diagnosis or treatment ranking."
+      }
+    },
+    {
+      "artifactId": "C2LTB8-MFART-010-VARIABLE-CARD",
+      "artifactType": "reviewed-variable-card",
+      "artifactStatus": "filled-reviewed-c2ltb8-manual-fulltext-artifact-model-blocked",
+      "sourceRowKind": "manual-fulltext-fresh-review-row",
+      "reviewId": "C2LTB8-MFFRV-010",
+      "manualExtractionId": "C2LTB8-MFEXT-010",
+      "originTaskId": "C2LTB8-EXT-014",
+      "sourceResolutionId": "C2LTB8-SRR-004",
+      "candidateId": "C2LTB8-SRR-004-CAND-02",
+      "candidateRole": "pmc-open-fulltext-route",
+      "domainId": "autonomic-nervous-system-homeostasis",
+      "localDomainPath": "domains/c2-source-maintenance/autonomic-nervous-system-homeostasis",
+      "sourceTitle": "Autonomic dysfunction in long COVID: rationale, physiology and management strategies",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7850225/",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "filled-from-eligible-manual-fulltext-fresh-review",
+      "sourceVerdictDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "modelAdmissionDecision": "blocked-pending-c2ltb8-reviewed-artifact-gates-and-calibrated-model-validation",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "freshReviewEvidenceUrls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC7850225/",
+        "https://www.ncbi.nlm.nih.gov/pmc/utils/oa/oa.fcgi?id=PMC7850225",
+        "docs/reference/human-infra-c2-longtail-eighth-batch-manual-fulltext-extraction-register.json"
+      ],
+      "registeredExactClaimUse": "Use only as bounded source-context input for independent fresh review; do not create artifacts until fresh-review verdict and reviewed-artifact gate pass.",
+      "registeredTransferBoundary": "Do not transfer into individual diagnosis, therapy recommendations, prevalence estimates, POTS-specific claims or calibrated survival/effective-time prediction.",
+      "freshReviewFinding": "PMC page access supports bounded review-level autonomic dysfunction context for long COVID, including physiology, symptom clusters and management-strategy vocabulary. It does not establish calibrated prognosis, individual diagnosis or treatment ranking.",
+      "content": {
+        "variableQuestion": "Which bounded variables may this reviewed source name for Human Infra continuity modeling language?",
+        "variableSeed": [
+          "autonomic dysfunction",
+          "long-COVID review route",
+          "symptom mechanism",
+          "management uncertainty"
+        ],
+        "sourceExtractedVariables": [
+          "autonomic dysfunction",
+          "long-COVID review route",
+          "symptom mechanism",
+          "management uncertainty"
+        ],
+        "modelPosition": "C2 source-maintenance / autonomic nervous system homeostasis route gate",
+        "admissibleUse": "Route-to-evidence context only; may proceed to bounded fresh review only where artifactPromotionReadiness marks a bounded candidate, and never opens model admission in this pass.",
+        "promotionBoundary": "bounded reviewed artifact vocabulary only; calibrated prediction, intervention ranking, clinical advice, neurotechnology advice, living-neural-computation scaling claims and domain-claim upgrades remain blocked"
+      }
+    },
+    {
+      "artifactId": "C2LTB8-MFART-010-ENDPOINT-CARD",
+      "artifactType": "reviewed-endpoint-card",
+      "artifactStatus": "filled-reviewed-c2ltb8-manual-fulltext-artifact-model-blocked",
+      "sourceRowKind": "manual-fulltext-fresh-review-row",
+      "reviewId": "C2LTB8-MFFRV-010",
+      "manualExtractionId": "C2LTB8-MFEXT-010",
+      "originTaskId": "C2LTB8-EXT-014",
+      "sourceResolutionId": "C2LTB8-SRR-004",
+      "candidateId": "C2LTB8-SRR-004-CAND-02",
+      "candidateRole": "pmc-open-fulltext-route",
+      "domainId": "autonomic-nervous-system-homeostasis",
+      "localDomainPath": "domains/c2-source-maintenance/autonomic-nervous-system-homeostasis",
+      "sourceTitle": "Autonomic dysfunction in long COVID: rationale, physiology and management strategies",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7850225/",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "filled-from-eligible-manual-fulltext-fresh-review",
+      "sourceVerdictDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "modelAdmissionDecision": "blocked-pending-c2ltb8-reviewed-artifact-gates-and-calibrated-model-validation",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "freshReviewEvidenceUrls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC7850225/",
+        "https://www.ncbi.nlm.nih.gov/pmc/utils/oa/oa.fcgi?id=PMC7850225",
+        "docs/reference/human-infra-c2-longtail-eighth-batch-manual-fulltext-extraction-register.json"
+      ],
+      "registeredExactClaimUse": "Use only as bounded source-context input for independent fresh review; do not create artifacts until fresh-review verdict and reviewed-artifact gate pass.",
+      "registeredTransferBoundary": "Do not transfer into individual diagnosis, therapy recommendations, prevalence estimates, POTS-specific claims or calibrated survival/effective-time prediction.",
+      "freshReviewFinding": "PMC page access supports bounded review-level autonomic dysfunction context for long COVID, including physiology, symptom clusters and management-strategy vocabulary. It does not establish calibrated prognosis, individual diagnosis or treatment ranking.",
+      "content": {
+        "endpointQuestion": "Which endpoint vocabulary is supported by this manual/fulltext fresh-review row without calibrated effect-size claims?",
+        "endpointDefinition": "Long-COVID autonomic dysfunction review scope, rationale, physiology and management-strategy vocabulary, not prevalence, diagnosis or treatment effect estimation.",
+        "populationOrSetting": "Long-COVID review context; not general dysautonomia, not individual diagnosis, and not treatment ranking without additional evidence.",
+        "endpointBoundary": "endpoint-and-variable-boundaries-eligible-for-bounded-reviewed-artifact-prep",
+        "modelPosition": "C2 source-maintenance / autonomic nervous system homeostasis route gate",
+        "blockedEndpointUses": [
+          "calibrated-prediction",
+          "individual-advice",
+          "individual-death-date-output",
+          "intervention-ranking",
+          "clinical-validity-claim",
+          "domain-claim-upgrade"
+        ]
+      }
+    },
+    {
+      "artifactId": "C2LTB8-MFART-010-UNCERTAINTY-CARD",
+      "artifactType": "reviewed-uncertainty-card",
+      "artifactStatus": "filled-reviewed-c2ltb8-manual-fulltext-artifact-model-blocked",
+      "sourceRowKind": "manual-fulltext-fresh-review-row",
+      "reviewId": "C2LTB8-MFFRV-010",
+      "manualExtractionId": "C2LTB8-MFEXT-010",
+      "originTaskId": "C2LTB8-EXT-014",
+      "sourceResolutionId": "C2LTB8-SRR-004",
+      "candidateId": "C2LTB8-SRR-004-CAND-02",
+      "candidateRole": "pmc-open-fulltext-route",
+      "domainId": "autonomic-nervous-system-homeostasis",
+      "localDomainPath": "domains/c2-source-maintenance/autonomic-nervous-system-homeostasis",
+      "sourceTitle": "Autonomic dysfunction in long COVID: rationale, physiology and management strategies",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7850225/",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "filled-from-eligible-manual-fulltext-fresh-review",
+      "sourceVerdictDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "modelAdmissionDecision": "blocked-pending-c2ltb8-reviewed-artifact-gates-and-calibrated-model-validation",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "freshReviewEvidenceUrls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC7850225/",
+        "https://www.ncbi.nlm.nih.gov/pmc/utils/oa/oa.fcgi?id=PMC7850225",
+        "docs/reference/human-infra-c2-longtail-eighth-batch-manual-fulltext-extraction-register.json"
+      ],
+      "registeredExactClaimUse": "Use only as bounded source-context input for independent fresh review; do not create artifacts until fresh-review verdict and reviewed-artifact gate pass.",
+      "registeredTransferBoundary": "Do not transfer into individual diagnosis, therapy recommendations, prevalence estimates, POTS-specific claims or calibrated survival/effective-time prediction.",
+      "freshReviewFinding": "PMC page access supports bounded review-level autonomic dysfunction context for long COVID, including physiology, symptom clusters and management-strategy vocabulary. It does not establish calibrated prognosis, individual diagnosis or treatment ranking.",
+      "content": {
+        "uncertaintyQuestion": "What uncertainty remains after manual/fulltext fresh review?",
+        "uncertaintyOrBias": "Review-level material cannot establish individual causal certainty, prevalence, or intervention effect; original PMID mismatch must remain a downgrade trigger.",
+        "uncertaintyBoundaryVerdict": "currentness-limited-to-2026-07-03-route-check-and-recorded-source-version",
+        "evidenceLimit": "pmc-page-accessible; pmc-readable-not-ncbi-oa-package",
+        "downgradeTriggers": [
+          "Block artifact promotion if source identity, title, PMID/PMCID/DOI lineage or full-context access cannot be independently verified.",
+          "Block model admission, calibrated prediction, individual advice, intervention ranking and clinical/neurotechnology claims.",
+          "Downgrade if the source is outside its population, setting, endpoint or guideline/review boundary.",
+          "Preserve original PMID/title mismatch as downgrade evidence; do not count the original mismatched PMID as support.",
+          "Keep review-level uncertainty, heterogeneous long-COVID population and autonomic testing/management boundaries explicit; block individualized clinical advice and lifespan inference."
+        ]
+      }
+    },
+    {
+      "artifactId": "C2LTB8-MFART-010-TRANSFER-BOUNDARY-CARD",
+      "artifactType": "reviewed-transfer-boundary-card",
+      "artifactStatus": "filled-reviewed-c2ltb8-manual-fulltext-artifact-model-blocked",
+      "sourceRowKind": "manual-fulltext-fresh-review-row",
+      "reviewId": "C2LTB8-MFFRV-010",
+      "manualExtractionId": "C2LTB8-MFEXT-010",
+      "originTaskId": "C2LTB8-EXT-014",
+      "sourceResolutionId": "C2LTB8-SRR-004",
+      "candidateId": "C2LTB8-SRR-004-CAND-02",
+      "candidateRole": "pmc-open-fulltext-route",
+      "domainId": "autonomic-nervous-system-homeostasis",
+      "localDomainPath": "domains/c2-source-maintenance/autonomic-nervous-system-homeostasis",
+      "sourceTitle": "Autonomic dysfunction in long COVID: rationale, physiology and management strategies",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7850225/",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "filled-from-eligible-manual-fulltext-fresh-review",
+      "sourceVerdictDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "modelAdmissionDecision": "blocked-pending-c2ltb8-reviewed-artifact-gates-and-calibrated-model-validation",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "freshReviewEvidenceUrls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC7850225/",
+        "https://www.ncbi.nlm.nih.gov/pmc/utils/oa/oa.fcgi?id=PMC7850225",
+        "docs/reference/human-infra-c2-longtail-eighth-batch-manual-fulltext-extraction-register.json"
+      ],
+      "registeredExactClaimUse": "Use only as bounded source-context input for independent fresh review; do not create artifacts until fresh-review verdict and reviewed-artifact gate pass.",
+      "registeredTransferBoundary": "Do not transfer into individual diagnosis, therapy recommendations, prevalence estimates, POTS-specific claims or calibrated survival/effective-time prediction.",
+      "freshReviewFinding": "PMC page access supports bounded review-level autonomic dysfunction context for long COVID, including physiology, symptom clusters and management-strategy vocabulary. It does not establish calibrated prognosis, individual diagnosis or treatment ranking.",
+      "content": {
+        "transferBoundaryQuestion": "Where must this reviewed source not be transferred?",
+        "domainTransferVerdict": "transfer-boundary-present-and-required",
+        "registeredTransferBoundary": "Do not transfer into individual diagnosis, therapy recommendations, prevalence estimates, POTS-specific claims or calibrated survival/effective-time prediction.",
+        "sourceExtractionTransferBoundary": "Do not transfer into individual diagnosis, therapy recommendations, prevalence estimates, POTS-specific claims or calibrated survival/effective-time prediction.",
+        "blockedTransferUses": [
+          "calibrated-prediction",
+          "individual-advice",
+          "individual-death-date-output",
+          "intervention-ranking",
+          "clinical-validity-claim",
+          "domain-claim-upgrade"
+        ]
+      }
+    },
+    {
+      "artifactId": "C2LTB8-MFART-010-DOWNGRADE-CHECK",
+      "artifactType": "reviewed-downgrade-check",
+      "artifactStatus": "filled-reviewed-c2ltb8-manual-fulltext-artifact-model-blocked",
+      "sourceRowKind": "manual-fulltext-fresh-review-row",
+      "reviewId": "C2LTB8-MFFRV-010",
+      "manualExtractionId": "C2LTB8-MFEXT-010",
+      "originTaskId": "C2LTB8-EXT-014",
+      "sourceResolutionId": "C2LTB8-SRR-004",
+      "candidateId": "C2LTB8-SRR-004-CAND-02",
+      "candidateRole": "pmc-open-fulltext-route",
+      "domainId": "autonomic-nervous-system-homeostasis",
+      "localDomainPath": "domains/c2-source-maintenance/autonomic-nervous-system-homeostasis",
+      "sourceTitle": "Autonomic dysfunction in long COVID: rationale, physiology and management strategies",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7850225/",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "filled-from-eligible-manual-fulltext-fresh-review",
+      "sourceVerdictDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "modelAdmissionDecision": "blocked-pending-c2ltb8-reviewed-artifact-gates-and-calibrated-model-validation",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "freshReviewEvidenceUrls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC7850225/",
+        "https://www.ncbi.nlm.nih.gov/pmc/utils/oa/oa.fcgi?id=PMC7850225",
+        "docs/reference/human-infra-c2-longtail-eighth-batch-manual-fulltext-extraction-register.json"
+      ],
+      "registeredExactClaimUse": "Use only as bounded source-context input for independent fresh review; do not create artifacts until fresh-review verdict and reviewed-artifact gate pass.",
+      "registeredTransferBoundary": "Do not transfer into individual diagnosis, therapy recommendations, prevalence estimates, POTS-specific claims or calibrated survival/effective-time prediction.",
+      "freshReviewFinding": "PMC page access supports bounded review-level autonomic dysfunction context for long COVID, including physiology, symptom clusters and management-strategy vocabulary. It does not establish calibrated prognosis, individual diagnosis or treatment ranking.",
+      "content": {
+        "downgradeQuestion": "Which claim upgrades must trigger downgrade or block?",
+        "downgradeVerdict": "Keep review-level uncertainty, heterogeneous long-COVID population and autonomic testing/management boundaries explicit; block individualized clinical advice and lifespan inference.",
+        "reviewerVerdict": "support-with-boundary",
+        "downgradeRequiredWhen": [
+          "Block artifact promotion if source identity, title, PMID/PMCID/DOI lineage or full-context access cannot be independently verified.",
+          "Block model admission, calibrated prediction, individual advice, intervention ranking and clinical/neurotechnology claims.",
+          "Downgrade if the source is outside its population, setting, endpoint or guideline/review boundary.",
+          "Preserve original PMID/title mismatch as downgrade evidence; do not count the original mismatched PMID as support.",
+          "Keep review-level uncertainty, heterogeneous long-COVID population and autonomic testing/management boundaries explicit; block individualized clinical advice and lifespan inference."
+        ],
+        "blockedSiblingPolicy": "Sibling PubMed, corrected-PubMed, DOI or publisher-route rows remain blocked unless separately full-context reviewed; living neural computation cannot be upgraded into network-effect, consciousness, human-level or human-surpassing intelligence claims."
+      }
+    },
+    {
+      "artifactId": "C2LTB8-MFART-013-SOURCE-CARD",
+      "artifactType": "reviewed-source-card",
+      "artifactStatus": "filled-reviewed-c2ltb8-manual-fulltext-artifact-model-blocked",
+      "sourceRowKind": "manual-fulltext-fresh-review-row",
+      "reviewId": "C2LTB8-MFFRV-013",
+      "manualExtractionId": "C2LTB8-MFEXT-013",
+      "originTaskId": "C2LTB8-EXT-021",
+      "sourceResolutionId": "C2LTB8-SRR-005",
+      "candidateId": "C2LTB8-SRR-005-CAND-02",
+      "candidateRole": "pmc-open-fulltext-route",
+      "domainId": "vestibular-balance-spatial-orientation",
+      "localDomainPath": "domains/c2-source-maintenance/vestibular-balance-spatial-orientation",
+      "sourceTitle": "Vestibular Rehabilitation for Peripheral Vestibular Hypofunction: An Updated Clinical Practice Guideline",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8920012/",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "filled-from-eligible-manual-fulltext-fresh-review",
+      "sourceVerdictDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "modelAdmissionDecision": "blocked-pending-c2ltb8-reviewed-artifact-gates-and-calibrated-model-validation",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "freshReviewEvidenceUrls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC8920012/",
+        "https://www.ncbi.nlm.nih.gov/pmc/utils/oa/oa.fcgi?id=PMC8920012",
+        "docs/reference/human-infra-c2-longtail-eighth-batch-manual-fulltext-extraction-register.json"
+      ],
+      "registeredExactClaimUse": "Use only as bounded source-context input for independent fresh review; do not create artifacts until fresh-review verdict and reviewed-artifact gate pass.",
+      "registeredTransferBoundary": "Do not transfer into BPPV-specific maneuvers, central vestibular disease, individual exercise advice, fall-risk prediction or device recommendations.",
+      "freshReviewFinding": "PMC/OA context supports bounded guideline review of peripheral vestibular hypofunction rehabilitation, balance/spatial-orientation endpoints and therapy-setting boundaries. It does not support BPPV substitution, generalized fall-risk prediction or individual exercise prescription.",
+      "content": {
+        "sourceIdentity": {
+          "title": "Vestibular Rehabilitation for Peripheral Vestibular Hypofunction: An Updated Clinical Practice Guideline",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8920012/",
+          "candidateId": "C2LTB8-SRR-005-CAND-02",
+          "manualExtractionId": "C2LTB8-MFEXT-013",
+          "sourceAccessStatus": "pmc-open-fulltext-route-available-for-bounded-context-review",
+          "sourceIdentityFinding": "identity-confirmed-against-manual-route-and-pmc-context"
+        },
+        "sourceRole": "pmc-open-fulltext-route",
+        "exactClaimUse": "Use only as bounded source-context input for independent fresh review; do not create artifacts until fresh-review verdict and reviewed-artifact gate pass.",
+        "transferBoundary": "Do not transfer into BPPV-specific maneuvers, central vestibular disease, individual exercise advice, fall-risk prediction or device recommendations.",
+        "freshReviewEvidence": [
+          {
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8920012/",
+            "evidenceType": "pmc-page-route-check",
+            "finding": "PMC route checked on 2026-07-03: pmc-page-accessible for PMC8920012."
+          },
+          {
+            "url": "https://www.ncbi.nlm.nih.gov/pmc/utils/oa/oa.fcgi?id=PMC8920012",
+            "evidenceType": "ncbi-oa-package-route-check",
+            "finding": "NCBI OA utility status checked on 2026-07-03: oa-package-available."
+          },
+          {
+            "url": "docs/reference/human-infra-c2-longtail-eighth-batch-manual-fulltext-extraction-register.json",
+            "evidenceType": "manual-fulltext-extraction-row",
+            "finding": "Manual extraction row C2LTB8-MFEXT-013 marks this route as bounded fresh-review candidate while keeping model admission blocked."
+          }
+        ],
+        "reviewerNote": "PMC/OA context supports bounded guideline review of peripheral vestibular hypofunction rehabilitation, balance/spatial-orientation endpoints and therapy-setting boundaries. It does not support BPPV substitution, generalized fall-risk prediction or individual exercise prescription."
+      }
+    },
+    {
+      "artifactId": "C2LTB8-MFART-013-VARIABLE-CARD",
+      "artifactType": "reviewed-variable-card",
+      "artifactStatus": "filled-reviewed-c2ltb8-manual-fulltext-artifact-model-blocked",
+      "sourceRowKind": "manual-fulltext-fresh-review-row",
+      "reviewId": "C2LTB8-MFFRV-013",
+      "manualExtractionId": "C2LTB8-MFEXT-013",
+      "originTaskId": "C2LTB8-EXT-021",
+      "sourceResolutionId": "C2LTB8-SRR-005",
+      "candidateId": "C2LTB8-SRR-005-CAND-02",
+      "candidateRole": "pmc-open-fulltext-route",
+      "domainId": "vestibular-balance-spatial-orientation",
+      "localDomainPath": "domains/c2-source-maintenance/vestibular-balance-spatial-orientation",
+      "sourceTitle": "Vestibular Rehabilitation for Peripheral Vestibular Hypofunction: An Updated Clinical Practice Guideline",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8920012/",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "filled-from-eligible-manual-fulltext-fresh-review",
+      "sourceVerdictDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "modelAdmissionDecision": "blocked-pending-c2ltb8-reviewed-artifact-gates-and-calibrated-model-validation",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "freshReviewEvidenceUrls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC8920012/",
+        "https://www.ncbi.nlm.nih.gov/pmc/utils/oa/oa.fcgi?id=PMC8920012",
+        "docs/reference/human-infra-c2-longtail-eighth-batch-manual-fulltext-extraction-register.json"
+      ],
+      "registeredExactClaimUse": "Use only as bounded source-context input for independent fresh review; do not create artifacts until fresh-review verdict and reviewed-artifact gate pass.",
+      "registeredTransferBoundary": "Do not transfer into BPPV-specific maneuvers, central vestibular disease, individual exercise advice, fall-risk prediction or device recommendations.",
+      "freshReviewFinding": "PMC/OA context supports bounded guideline review of peripheral vestibular hypofunction rehabilitation, balance/spatial-orientation endpoints and therapy-setting boundaries. It does not support BPPV substitution, generalized fall-risk prediction or individual exercise prescription.",
+      "content": {
+        "variableQuestion": "Which bounded variables may this reviewed source name for Human Infra continuity modeling language?",
+        "variableSeed": [
+          "vestibular hypofunction",
+          "balance continuity",
+          "rehabilitation guideline scope",
+          "functional endpoint"
+        ],
+        "sourceExtractedVariables": [
+          "vestibular hypofunction",
+          "balance continuity",
+          "rehabilitation guideline scope",
+          "functional endpoint"
+        ],
+        "modelPosition": "C2 source-maintenance / vestibular balance spatial-orientation route gate",
+        "admissibleUse": "Route-to-evidence context only; may proceed to bounded fresh review only where artifactPromotionReadiness marks a bounded candidate, and never opens model admission in this pass.",
+        "promotionBoundary": "bounded reviewed artifact vocabulary only; calibrated prediction, intervention ranking, clinical advice, neurotechnology advice, living-neural-computation scaling claims and domain-claim upgrades remain blocked"
+      }
+    },
+    {
+      "artifactId": "C2LTB8-MFART-013-ENDPOINT-CARD",
+      "artifactType": "reviewed-endpoint-card",
+      "artifactStatus": "filled-reviewed-c2ltb8-manual-fulltext-artifact-model-blocked",
+      "sourceRowKind": "manual-fulltext-fresh-review-row",
+      "reviewId": "C2LTB8-MFFRV-013",
+      "manualExtractionId": "C2LTB8-MFEXT-013",
+      "originTaskId": "C2LTB8-EXT-021",
+      "sourceResolutionId": "C2LTB8-SRR-005",
+      "candidateId": "C2LTB8-SRR-005-CAND-02",
+      "candidateRole": "pmc-open-fulltext-route",
+      "domainId": "vestibular-balance-spatial-orientation",
+      "localDomainPath": "domains/c2-source-maintenance/vestibular-balance-spatial-orientation",
+      "sourceTitle": "Vestibular Rehabilitation for Peripheral Vestibular Hypofunction: An Updated Clinical Practice Guideline",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8920012/",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "filled-from-eligible-manual-fulltext-fresh-review",
+      "sourceVerdictDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "modelAdmissionDecision": "blocked-pending-c2ltb8-reviewed-artifact-gates-and-calibrated-model-validation",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "freshReviewEvidenceUrls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC8920012/",
+        "https://www.ncbi.nlm.nih.gov/pmc/utils/oa/oa.fcgi?id=PMC8920012",
+        "docs/reference/human-infra-c2-longtail-eighth-batch-manual-fulltext-extraction-register.json"
+      ],
+      "registeredExactClaimUse": "Use only as bounded source-context input for independent fresh review; do not create artifacts until fresh-review verdict and reviewed-artifact gate pass.",
+      "registeredTransferBoundary": "Do not transfer into BPPV-specific maneuvers, central vestibular disease, individual exercise advice, fall-risk prediction or device recommendations.",
+      "freshReviewFinding": "PMC/OA context supports bounded guideline review of peripheral vestibular hypofunction rehabilitation, balance/spatial-orientation endpoints and therapy-setting boundaries. It does not support BPPV substitution, generalized fall-risk prediction or individual exercise prescription.",
+      "content": {
+        "endpointQuestion": "Which endpoint vocabulary is supported by this manual/fulltext fresh-review row without calibrated effect-size claims?",
+        "endpointDefinition": "Peripheral vestibular hypofunction rehabilitation guideline scope, balance/vestibular endpoint vocabulary and recommendation boundaries, not individualized exercise prescription.",
+        "populationOrSetting": "Patients within peripheral vestibular hypofunction guideline context; BPPV and central vestibular disorders require separate source handling.",
+        "endpointBoundary": "endpoint-and-variable-boundaries-eligible-for-bounded-reviewed-artifact-prep",
+        "modelPosition": "C2 source-maintenance / vestibular balance spatial-orientation route gate",
+        "blockedEndpointUses": [
+          "calibrated-prediction",
+          "individual-advice",
+          "individual-death-date-output",
+          "intervention-ranking",
+          "clinical-validity-claim",
+          "domain-claim-upgrade"
+        ]
+      }
+    },
+    {
+      "artifactId": "C2LTB8-MFART-013-UNCERTAINTY-CARD",
+      "artifactType": "reviewed-uncertainty-card",
+      "artifactStatus": "filled-reviewed-c2ltb8-manual-fulltext-artifact-model-blocked",
+      "sourceRowKind": "manual-fulltext-fresh-review-row",
+      "reviewId": "C2LTB8-MFFRV-013",
+      "manualExtractionId": "C2LTB8-MFEXT-013",
+      "originTaskId": "C2LTB8-EXT-021",
+      "sourceResolutionId": "C2LTB8-SRR-005",
+      "candidateId": "C2LTB8-SRR-005-CAND-02",
+      "candidateRole": "pmc-open-fulltext-route",
+      "domainId": "vestibular-balance-spatial-orientation",
+      "localDomainPath": "domains/c2-source-maintenance/vestibular-balance-spatial-orientation",
+      "sourceTitle": "Vestibular Rehabilitation for Peripheral Vestibular Hypofunction: An Updated Clinical Practice Guideline",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8920012/",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "filled-from-eligible-manual-fulltext-fresh-review",
+      "sourceVerdictDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "modelAdmissionDecision": "blocked-pending-c2ltb8-reviewed-artifact-gates-and-calibrated-model-validation",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "freshReviewEvidenceUrls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC8920012/",
+        "https://www.ncbi.nlm.nih.gov/pmc/utils/oa/oa.fcgi?id=PMC8920012",
+        "docs/reference/human-infra-c2-longtail-eighth-batch-manual-fulltext-extraction-register.json"
+      ],
+      "registeredExactClaimUse": "Use only as bounded source-context input for independent fresh review; do not create artifacts until fresh-review verdict and reviewed-artifact gate pass.",
+      "registeredTransferBoundary": "Do not transfer into BPPV-specific maneuvers, central vestibular disease, individual exercise advice, fall-risk prediction or device recommendations.",
+      "freshReviewFinding": "PMC/OA context supports bounded guideline review of peripheral vestibular hypofunction rehabilitation, balance/spatial-orientation endpoints and therapy-setting boundaries. It does not support BPPV substitution, generalized fall-risk prediction or individual exercise prescription.",
+      "content": {
+        "uncertaintyQuestion": "What uncertainty remains after manual/fulltext fresh review?",
+        "uncertaintyOrBias": "Guideline context does not provide personalized treatment ranking or universal outcome estimates; setting, diagnosis and contraindications matter.",
+        "uncertaintyBoundaryVerdict": "currentness-limited-to-2026-07-03-route-check-and-recorded-source-version",
+        "evidenceLimit": "pmc-page-accessible; oa-package-available",
+        "downgradeTriggers": [
+          "Block artifact promotion if source identity, title, PMID/PMCID/DOI lineage or full-context access cannot be independently verified.",
+          "Block model admission, calibrated prediction, individual advice, intervention ranking and clinical/neurotechnology claims.",
+          "Downgrade if the source is outside its population, setting, endpoint or guideline/review boundary.",
+          "Keep peripheral vestibular hypofunction, guideline recommendation strength and rehabilitation setting boundaries explicit; block transfer to unrelated vertigo disorders and individual treatment advice."
+        ]
+      }
+    },
+    {
+      "artifactId": "C2LTB8-MFART-013-TRANSFER-BOUNDARY-CARD",
+      "artifactType": "reviewed-transfer-boundary-card",
+      "artifactStatus": "filled-reviewed-c2ltb8-manual-fulltext-artifact-model-blocked",
+      "sourceRowKind": "manual-fulltext-fresh-review-row",
+      "reviewId": "C2LTB8-MFFRV-013",
+      "manualExtractionId": "C2LTB8-MFEXT-013",
+      "originTaskId": "C2LTB8-EXT-021",
+      "sourceResolutionId": "C2LTB8-SRR-005",
+      "candidateId": "C2LTB8-SRR-005-CAND-02",
+      "candidateRole": "pmc-open-fulltext-route",
+      "domainId": "vestibular-balance-spatial-orientation",
+      "localDomainPath": "domains/c2-source-maintenance/vestibular-balance-spatial-orientation",
+      "sourceTitle": "Vestibular Rehabilitation for Peripheral Vestibular Hypofunction: An Updated Clinical Practice Guideline",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8920012/",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "filled-from-eligible-manual-fulltext-fresh-review",
+      "sourceVerdictDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "modelAdmissionDecision": "blocked-pending-c2ltb8-reviewed-artifact-gates-and-calibrated-model-validation",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "freshReviewEvidenceUrls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC8920012/",
+        "https://www.ncbi.nlm.nih.gov/pmc/utils/oa/oa.fcgi?id=PMC8920012",
+        "docs/reference/human-infra-c2-longtail-eighth-batch-manual-fulltext-extraction-register.json"
+      ],
+      "registeredExactClaimUse": "Use only as bounded source-context input for independent fresh review; do not create artifacts until fresh-review verdict and reviewed-artifact gate pass.",
+      "registeredTransferBoundary": "Do not transfer into BPPV-specific maneuvers, central vestibular disease, individual exercise advice, fall-risk prediction or device recommendations.",
+      "freshReviewFinding": "PMC/OA context supports bounded guideline review of peripheral vestibular hypofunction rehabilitation, balance/spatial-orientation endpoints and therapy-setting boundaries. It does not support BPPV substitution, generalized fall-risk prediction or individual exercise prescription.",
+      "content": {
+        "transferBoundaryQuestion": "Where must this reviewed source not be transferred?",
+        "domainTransferVerdict": "transfer-boundary-present-and-required",
+        "registeredTransferBoundary": "Do not transfer into BPPV-specific maneuvers, central vestibular disease, individual exercise advice, fall-risk prediction or device recommendations.",
+        "sourceExtractionTransferBoundary": "Do not transfer into BPPV-specific maneuvers, central vestibular disease, individual exercise advice, fall-risk prediction or device recommendations.",
+        "blockedTransferUses": [
+          "calibrated-prediction",
+          "individual-advice",
+          "individual-death-date-output",
+          "intervention-ranking",
+          "clinical-validity-claim",
+          "domain-claim-upgrade"
+        ]
+      }
+    },
+    {
+      "artifactId": "C2LTB8-MFART-013-DOWNGRADE-CHECK",
+      "artifactType": "reviewed-downgrade-check",
+      "artifactStatus": "filled-reviewed-c2ltb8-manual-fulltext-artifact-model-blocked",
+      "sourceRowKind": "manual-fulltext-fresh-review-row",
+      "reviewId": "C2LTB8-MFFRV-013",
+      "manualExtractionId": "C2LTB8-MFEXT-013",
+      "originTaskId": "C2LTB8-EXT-021",
+      "sourceResolutionId": "C2LTB8-SRR-005",
+      "candidateId": "C2LTB8-SRR-005-CAND-02",
+      "candidateRole": "pmc-open-fulltext-route",
+      "domainId": "vestibular-balance-spatial-orientation",
+      "localDomainPath": "domains/c2-source-maintenance/vestibular-balance-spatial-orientation",
+      "sourceTitle": "Vestibular Rehabilitation for Peripheral Vestibular Hypofunction: An Updated Clinical Practice Guideline",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8920012/",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "filled-from-eligible-manual-fulltext-fresh-review",
+      "sourceVerdictDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "modelAdmissionDecision": "blocked-pending-c2ltb8-reviewed-artifact-gates-and-calibrated-model-validation",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "freshReviewEvidenceUrls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC8920012/",
+        "https://www.ncbi.nlm.nih.gov/pmc/utils/oa/oa.fcgi?id=PMC8920012",
+        "docs/reference/human-infra-c2-longtail-eighth-batch-manual-fulltext-extraction-register.json"
+      ],
+      "registeredExactClaimUse": "Use only as bounded source-context input for independent fresh review; do not create artifacts until fresh-review verdict and reviewed-artifact gate pass.",
+      "registeredTransferBoundary": "Do not transfer into BPPV-specific maneuvers, central vestibular disease, individual exercise advice, fall-risk prediction or device recommendations.",
+      "freshReviewFinding": "PMC/OA context supports bounded guideline review of peripheral vestibular hypofunction rehabilitation, balance/spatial-orientation endpoints and therapy-setting boundaries. It does not support BPPV substitution, generalized fall-risk prediction or individual exercise prescription.",
+      "content": {
+        "downgradeQuestion": "Which claim upgrades must trigger downgrade or block?",
+        "downgradeVerdict": "Keep peripheral vestibular hypofunction, guideline recommendation strength and rehabilitation setting boundaries explicit; block transfer to unrelated vertigo disorders and individual treatment advice.",
+        "reviewerVerdict": "support-with-boundary",
+        "downgradeRequiredWhen": [
+          "Block artifact promotion if source identity, title, PMID/PMCID/DOI lineage or full-context access cannot be independently verified.",
+          "Block model admission, calibrated prediction, individual advice, intervention ranking and clinical/neurotechnology claims.",
+          "Downgrade if the source is outside its population, setting, endpoint or guideline/review boundary.",
+          "Keep peripheral vestibular hypofunction, guideline recommendation strength and rehabilitation setting boundaries explicit; block transfer to unrelated vertigo disorders and individual treatment advice."
+        ],
+        "blockedSiblingPolicy": "Sibling PubMed, corrected-PubMed, DOI or publisher-route rows remain blocked unless separately full-context reviewed; living neural computation cannot be upgraded into network-effect, consciousness, human-level or human-surpassing intelligence claims."
+      }
+    },
+    {
+      "artifactId": "C2LTB8-MFART-018-SOURCE-CARD",
+      "artifactType": "reviewed-source-card",
+      "artifactStatus": "filled-reviewed-c2ltb8-manual-fulltext-artifact-model-blocked",
+      "sourceRowKind": "manual-fulltext-fresh-review-row",
+      "reviewId": "C2LTB8-MFFRV-018",
+      "manualExtractionId": "C2LTB8-MFEXT-018",
+      "originTaskId": "C2LTB8-EXT-024",
+      "sourceResolutionId": "C2LTB8-SRR-007",
+      "candidateId": "C2LTB8-SRR-007-CAND-02",
+      "candidateRole": "pmc-open-fulltext-route",
+      "domainId": "oropharyngeal-dysphagia-swallow-safety-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/oropharyngeal-dysphagia-swallow-safety-continuity",
+      "sourceTitle": "European Stroke Organisation and European Society for Swallowing Disorders guideline for the diagnosis and treatment of post-stroke dysphagia",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8564153/",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "filled-from-eligible-manual-fulltext-fresh-review",
+      "sourceVerdictDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "modelAdmissionDecision": "blocked-pending-c2ltb8-reviewed-artifact-gates-and-calibrated-model-validation",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "freshReviewEvidenceUrls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC8564153/",
+        "https://www.ncbi.nlm.nih.gov/pmc/utils/oa/oa.fcgi?id=PMC8564153",
+        "docs/reference/human-infra-c2-longtail-eighth-batch-manual-fulltext-extraction-register.json"
+      ],
+      "registeredExactClaimUse": "Use only as bounded source-context input for independent fresh review; do not create artifacts until fresh-review verdict and reviewed-artifact gate pass.",
+      "registeredTransferBoundary": "Do not transfer into non-stroke dysphagia, individual diet or tube-feeding advice, aspiration prediction, mortality prediction or intervention ranking.",
+      "freshReviewFinding": "PMC page access supports bounded guideline review of post-stroke dysphagia diagnosis/treatment context, swallow-safety endpoints and aspiration/nutrition continuity boundaries. It does not support non-stroke dysphagia transfer or individual treatment ranking.",
+      "content": {
+        "sourceIdentity": {
+          "title": "European Stroke Organisation and European Society for Swallowing Disorders guideline for the diagnosis and treatment of post-stroke dysphagia",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8564153/",
+          "candidateId": "C2LTB8-SRR-007-CAND-02",
+          "manualExtractionId": "C2LTB8-MFEXT-018",
+          "sourceAccessStatus": "pmc-open-fulltext-route-available-for-bounded-context-review",
+          "sourceIdentityFinding": "identity-confirmed-against-manual-route-and-pmc-context"
+        },
+        "sourceRole": "pmc-open-fulltext-route",
+        "exactClaimUse": "Use only as bounded source-context input for independent fresh review; do not create artifacts until fresh-review verdict and reviewed-artifact gate pass.",
+        "transferBoundary": "Do not transfer into non-stroke dysphagia, individual diet or tube-feeding advice, aspiration prediction, mortality prediction or intervention ranking.",
+        "freshReviewEvidence": [
+          {
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8564153/",
+            "evidenceType": "pmc-page-route-check",
+            "finding": "PMC route checked on 2026-07-03: pmc-page-accessible for PMC8564153."
+          },
+          {
+            "url": "https://www.ncbi.nlm.nih.gov/pmc/utils/oa/oa.fcgi?id=PMC8564153",
+            "evidenceType": "ncbi-oa-package-route-check",
+            "finding": "NCBI OA utility status checked on 2026-07-03: pmc-readable-not-ncbi-oa-package."
+          },
+          {
+            "url": "docs/reference/human-infra-c2-longtail-eighth-batch-manual-fulltext-extraction-register.json",
+            "evidenceType": "manual-fulltext-extraction-row",
+            "finding": "Manual extraction row C2LTB8-MFEXT-018 marks this route as bounded fresh-review candidate while keeping model admission blocked."
+          }
+        ],
+        "reviewerNote": "PMC page access supports bounded guideline review of post-stroke dysphagia diagnosis/treatment context, swallow-safety endpoints and aspiration/nutrition continuity boundaries. It does not support non-stroke dysphagia transfer or individual treatment ranking."
+      }
+    },
+    {
+      "artifactId": "C2LTB8-MFART-018-VARIABLE-CARD",
+      "artifactType": "reviewed-variable-card",
+      "artifactStatus": "filled-reviewed-c2ltb8-manual-fulltext-artifact-model-blocked",
+      "sourceRowKind": "manual-fulltext-fresh-review-row",
+      "reviewId": "C2LTB8-MFFRV-018",
+      "manualExtractionId": "C2LTB8-MFEXT-018",
+      "originTaskId": "C2LTB8-EXT-024",
+      "sourceResolutionId": "C2LTB8-SRR-007",
+      "candidateId": "C2LTB8-SRR-007-CAND-02",
+      "candidateRole": "pmc-open-fulltext-route",
+      "domainId": "oropharyngeal-dysphagia-swallow-safety-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/oropharyngeal-dysphagia-swallow-safety-continuity",
+      "sourceTitle": "European Stroke Organisation and European Society for Swallowing Disorders guideline for the diagnosis and treatment of post-stroke dysphagia",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8564153/",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "filled-from-eligible-manual-fulltext-fresh-review",
+      "sourceVerdictDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "modelAdmissionDecision": "blocked-pending-c2ltb8-reviewed-artifact-gates-and-calibrated-model-validation",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "freshReviewEvidenceUrls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC8564153/",
+        "https://www.ncbi.nlm.nih.gov/pmc/utils/oa/oa.fcgi?id=PMC8564153",
+        "docs/reference/human-infra-c2-longtail-eighth-batch-manual-fulltext-extraction-register.json"
+      ],
+      "registeredExactClaimUse": "Use only as bounded source-context input for independent fresh review; do not create artifacts until fresh-review verdict and reviewed-artifact gate pass.",
+      "registeredTransferBoundary": "Do not transfer into non-stroke dysphagia, individual diet or tube-feeding advice, aspiration prediction, mortality prediction or intervention ranking.",
+      "freshReviewFinding": "PMC page access supports bounded guideline review of post-stroke dysphagia diagnosis/treatment context, swallow-safety endpoints and aspiration/nutrition continuity boundaries. It does not support non-stroke dysphagia transfer or individual treatment ranking.",
+      "content": {
+        "variableQuestion": "Which bounded variables may this reviewed source name for Human Infra continuity modeling language?",
+        "variableSeed": [
+          "post-stroke dysphagia",
+          "swallow safety",
+          "guideline scope",
+          "corrected source route"
+        ],
+        "sourceExtractedVariables": [
+          "post-stroke dysphagia",
+          "swallow safety",
+          "guideline scope",
+          "corrected source route"
+        ],
+        "modelPosition": "C2 source-maintenance / oropharyngeal dysphagia swallow-safety route gate",
+        "admissibleUse": "Route-to-evidence context only; may proceed to bounded fresh review only where artifactPromotionReadiness marks a bounded candidate, and never opens model admission in this pass.",
+        "promotionBoundary": "bounded reviewed artifact vocabulary only; calibrated prediction, intervention ranking, clinical advice, neurotechnology advice, living-neural-computation scaling claims and domain-claim upgrades remain blocked"
+      }
+    },
+    {
+      "artifactId": "C2LTB8-MFART-018-ENDPOINT-CARD",
+      "artifactType": "reviewed-endpoint-card",
+      "artifactStatus": "filled-reviewed-c2ltb8-manual-fulltext-artifact-model-blocked",
+      "sourceRowKind": "manual-fulltext-fresh-review-row",
+      "reviewId": "C2LTB8-MFFRV-018",
+      "manualExtractionId": "C2LTB8-MFEXT-018",
+      "originTaskId": "C2LTB8-EXT-024",
+      "sourceResolutionId": "C2LTB8-SRR-007",
+      "candidateId": "C2LTB8-SRR-007-CAND-02",
+      "candidateRole": "pmc-open-fulltext-route",
+      "domainId": "oropharyngeal-dysphagia-swallow-safety-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/oropharyngeal-dysphagia-swallow-safety-continuity",
+      "sourceTitle": "European Stroke Organisation and European Society for Swallowing Disorders guideline for the diagnosis and treatment of post-stroke dysphagia",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8564153/",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "filled-from-eligible-manual-fulltext-fresh-review",
+      "sourceVerdictDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "modelAdmissionDecision": "blocked-pending-c2ltb8-reviewed-artifact-gates-and-calibrated-model-validation",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "freshReviewEvidenceUrls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC8564153/",
+        "https://www.ncbi.nlm.nih.gov/pmc/utils/oa/oa.fcgi?id=PMC8564153",
+        "docs/reference/human-infra-c2-longtail-eighth-batch-manual-fulltext-extraction-register.json"
+      ],
+      "registeredExactClaimUse": "Use only as bounded source-context input for independent fresh review; do not create artifacts until fresh-review verdict and reviewed-artifact gate pass.",
+      "registeredTransferBoundary": "Do not transfer into non-stroke dysphagia, individual diet or tube-feeding advice, aspiration prediction, mortality prediction or intervention ranking.",
+      "freshReviewFinding": "PMC page access supports bounded guideline review of post-stroke dysphagia diagnosis/treatment context, swallow-safety endpoints and aspiration/nutrition continuity boundaries. It does not support non-stroke dysphagia transfer or individual treatment ranking.",
+      "content": {
+        "endpointQuestion": "Which endpoint vocabulary is supported by this manual/fulltext fresh-review row without calibrated effect-size claims?",
+        "endpointDefinition": "Post-stroke dysphagia diagnosis and treatment guideline scope, swallow-safety endpoint vocabulary and guideline recommendation boundary, not individualized swallowing therapy.",
+        "populationOrSetting": "Post-stroke dysphagia guideline context; not all dysphagia etiologies, pediatric feeding, aspiration-risk prediction or individual diet modification.",
+        "endpointBoundary": "endpoint-and-variable-boundaries-eligible-for-bounded-reviewed-artifact-prep",
+        "modelPosition": "C2 source-maintenance / oropharyngeal dysphagia swallow-safety route gate",
+        "blockedEndpointUses": [
+          "calibrated-prediction",
+          "individual-advice",
+          "individual-death-date-output",
+          "intervention-ranking",
+          "clinical-validity-claim",
+          "domain-claim-upgrade"
+        ]
+      }
+    },
+    {
+      "artifactId": "C2LTB8-MFART-018-UNCERTAINTY-CARD",
+      "artifactType": "reviewed-uncertainty-card",
+      "artifactStatus": "filled-reviewed-c2ltb8-manual-fulltext-artifact-model-blocked",
+      "sourceRowKind": "manual-fulltext-fresh-review-row",
+      "reviewId": "C2LTB8-MFFRV-018",
+      "manualExtractionId": "C2LTB8-MFEXT-018",
+      "originTaskId": "C2LTB8-EXT-024",
+      "sourceResolutionId": "C2LTB8-SRR-007",
+      "candidateId": "C2LTB8-SRR-007-CAND-02",
+      "candidateRole": "pmc-open-fulltext-route",
+      "domainId": "oropharyngeal-dysphagia-swallow-safety-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/oropharyngeal-dysphagia-swallow-safety-continuity",
+      "sourceTitle": "European Stroke Organisation and European Society for Swallowing Disorders guideline for the diagnosis and treatment of post-stroke dysphagia",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8564153/",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "filled-from-eligible-manual-fulltext-fresh-review",
+      "sourceVerdictDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "modelAdmissionDecision": "blocked-pending-c2ltb8-reviewed-artifact-gates-and-calibrated-model-validation",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "freshReviewEvidenceUrls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC8564153/",
+        "https://www.ncbi.nlm.nih.gov/pmc/utils/oa/oa.fcgi?id=PMC8564153",
+        "docs/reference/human-infra-c2-longtail-eighth-batch-manual-fulltext-extraction-register.json"
+      ],
+      "registeredExactClaimUse": "Use only as bounded source-context input for independent fresh review; do not create artifacts until fresh-review verdict and reviewed-artifact gate pass.",
+      "registeredTransferBoundary": "Do not transfer into non-stroke dysphagia, individual diet or tube-feeding advice, aspiration prediction, mortality prediction or intervention ranking.",
+      "freshReviewFinding": "PMC page access supports bounded guideline review of post-stroke dysphagia diagnosis/treatment context, swallow-safety endpoints and aspiration/nutrition continuity boundaries. It does not support non-stroke dysphagia transfer or individual treatment ranking.",
+      "content": {
+        "uncertaintyQuestion": "What uncertainty remains after manual/fulltext fresh review?",
+        "uncertaintyOrBias": "Guideline context cannot be used as an individual aspiration-risk calculator or therapy-ranking model; original PMID mismatch remains downgrade evidence.",
+        "uncertaintyBoundaryVerdict": "currentness-limited-to-2026-07-03-route-check-and-recorded-source-version",
+        "evidenceLimit": "pmc-page-accessible; pmc-readable-not-ncbi-oa-package",
+        "downgradeTriggers": [
+          "Block artifact promotion if source identity, title, PMID/PMCID/DOI lineage or full-context access cannot be independently verified.",
+          "Block model admission, calibrated prediction, individual advice, intervention ranking and clinical/neurotechnology claims.",
+          "Downgrade if the source is outside its population, setting, endpoint or guideline/review boundary.",
+          "Preserve original PMID/title mismatch as downgrade evidence; do not count the original mismatched PMID as support.",
+          "Keep post-stroke population, dysphagia diagnosis/treatment guideline scope and swallow-safety endpoint boundaries explicit; block transfer to non-stroke dysphagia and individualized clinical advice."
+        ]
+      }
+    },
+    {
+      "artifactId": "C2LTB8-MFART-018-TRANSFER-BOUNDARY-CARD",
+      "artifactType": "reviewed-transfer-boundary-card",
+      "artifactStatus": "filled-reviewed-c2ltb8-manual-fulltext-artifact-model-blocked",
+      "sourceRowKind": "manual-fulltext-fresh-review-row",
+      "reviewId": "C2LTB8-MFFRV-018",
+      "manualExtractionId": "C2LTB8-MFEXT-018",
+      "originTaskId": "C2LTB8-EXT-024",
+      "sourceResolutionId": "C2LTB8-SRR-007",
+      "candidateId": "C2LTB8-SRR-007-CAND-02",
+      "candidateRole": "pmc-open-fulltext-route",
+      "domainId": "oropharyngeal-dysphagia-swallow-safety-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/oropharyngeal-dysphagia-swallow-safety-continuity",
+      "sourceTitle": "European Stroke Organisation and European Society for Swallowing Disorders guideline for the diagnosis and treatment of post-stroke dysphagia",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8564153/",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "filled-from-eligible-manual-fulltext-fresh-review",
+      "sourceVerdictDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "modelAdmissionDecision": "blocked-pending-c2ltb8-reviewed-artifact-gates-and-calibrated-model-validation",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "freshReviewEvidenceUrls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC8564153/",
+        "https://www.ncbi.nlm.nih.gov/pmc/utils/oa/oa.fcgi?id=PMC8564153",
+        "docs/reference/human-infra-c2-longtail-eighth-batch-manual-fulltext-extraction-register.json"
+      ],
+      "registeredExactClaimUse": "Use only as bounded source-context input for independent fresh review; do not create artifacts until fresh-review verdict and reviewed-artifact gate pass.",
+      "registeredTransferBoundary": "Do not transfer into non-stroke dysphagia, individual diet or tube-feeding advice, aspiration prediction, mortality prediction or intervention ranking.",
+      "freshReviewFinding": "PMC page access supports bounded guideline review of post-stroke dysphagia diagnosis/treatment context, swallow-safety endpoints and aspiration/nutrition continuity boundaries. It does not support non-stroke dysphagia transfer or individual treatment ranking.",
+      "content": {
+        "transferBoundaryQuestion": "Where must this reviewed source not be transferred?",
+        "domainTransferVerdict": "transfer-boundary-present-and-required",
+        "registeredTransferBoundary": "Do not transfer into non-stroke dysphagia, individual diet or tube-feeding advice, aspiration prediction, mortality prediction or intervention ranking.",
+        "sourceExtractionTransferBoundary": "Do not transfer into non-stroke dysphagia, individual diet or tube-feeding advice, aspiration prediction, mortality prediction or intervention ranking.",
+        "blockedTransferUses": [
+          "calibrated-prediction",
+          "individual-advice",
+          "individual-death-date-output",
+          "intervention-ranking",
+          "clinical-validity-claim",
+          "domain-claim-upgrade"
+        ]
+      }
+    },
+    {
+      "artifactId": "C2LTB8-MFART-018-DOWNGRADE-CHECK",
+      "artifactType": "reviewed-downgrade-check",
+      "artifactStatus": "filled-reviewed-c2ltb8-manual-fulltext-artifact-model-blocked",
+      "sourceRowKind": "manual-fulltext-fresh-review-row",
+      "reviewId": "C2LTB8-MFFRV-018",
+      "manualExtractionId": "C2LTB8-MFEXT-018",
+      "originTaskId": "C2LTB8-EXT-024",
+      "sourceResolutionId": "C2LTB8-SRR-007",
+      "candidateId": "C2LTB8-SRR-007-CAND-02",
+      "candidateRole": "pmc-open-fulltext-route",
+      "domainId": "oropharyngeal-dysphagia-swallow-safety-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/oropharyngeal-dysphagia-swallow-safety-continuity",
+      "sourceTitle": "European Stroke Organisation and European Society for Swallowing Disorders guideline for the diagnosis and treatment of post-stroke dysphagia",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8564153/",
+      "reviewerVerdict": "support-with-boundary",
+      "artifactPromotionDecision": "filled-from-eligible-manual-fulltext-fresh-review",
+      "sourceVerdictDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "modelAdmissionDecision": "blocked-pending-c2ltb8-reviewed-artifact-gates-and-calibrated-model-validation",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "freshReviewEvidenceUrls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC8564153/",
+        "https://www.ncbi.nlm.nih.gov/pmc/utils/oa/oa.fcgi?id=PMC8564153",
+        "docs/reference/human-infra-c2-longtail-eighth-batch-manual-fulltext-extraction-register.json"
+      ],
+      "registeredExactClaimUse": "Use only as bounded source-context input for independent fresh review; do not create artifacts until fresh-review verdict and reviewed-artifact gate pass.",
+      "registeredTransferBoundary": "Do not transfer into non-stroke dysphagia, individual diet or tube-feeding advice, aspiration prediction, mortality prediction or intervention ranking.",
+      "freshReviewFinding": "PMC page access supports bounded guideline review of post-stroke dysphagia diagnosis/treatment context, swallow-safety endpoints and aspiration/nutrition continuity boundaries. It does not support non-stroke dysphagia transfer or individual treatment ranking.",
+      "content": {
+        "downgradeQuestion": "Which claim upgrades must trigger downgrade or block?",
+        "downgradeVerdict": "Keep post-stroke population, dysphagia diagnosis/treatment guideline scope and swallow-safety endpoint boundaries explicit; block transfer to non-stroke dysphagia and individualized clinical advice.",
+        "reviewerVerdict": "support-with-boundary",
+        "downgradeRequiredWhen": [
+          "Block artifact promotion if source identity, title, PMID/PMCID/DOI lineage or full-context access cannot be independently verified.",
+          "Block model admission, calibrated prediction, individual advice, intervention ranking and clinical/neurotechnology claims.",
+          "Downgrade if the source is outside its population, setting, endpoint or guideline/review boundary.",
+          "Preserve original PMID/title mismatch as downgrade evidence; do not count the original mismatched PMID as support.",
+          "Keep post-stroke population, dysphagia diagnosis/treatment guideline scope and swallow-safety endpoint boundaries explicit; block transfer to non-stroke dysphagia and individualized clinical advice."
+        ],
+        "blockedSiblingPolicy": "Sibling PubMed, corrected-PubMed, DOI or publisher-route rows remain blocked unless separately full-context reviewed; living neural computation cannot be upgraded into network-effect, consciousness, human-level or human-surpassing intelligence claims."
+      }
+    }
+  ],
+  "blockedRows": [
+    {
+      "manualExtractionId": "C2LTB8-MFEXT-001",
+      "reviewId": "C2LTB8-MFFRV-001",
+      "originTaskId": "C2LTB8-EXT-006",
+      "sourceResolutionId": "C2LTB8-SRR-001",
+      "candidateId": "C2LTB8-SRR-001-CAND-01",
+      "domainId": "adhd-executive-function-neurodevelopment-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/adhd-executive-function-neurodevelopment-continuity",
+      "sourceTitle": "Clinical Practice Guideline for the Diagnosis, Evaluation, and Treatment of Attention-Deficit/Hyperactivity Disorder in Children and Adolescents",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/31570648/",
+      "reviewerVerdict": "blocked-or-context-only",
+      "artifactPromotionDecision": "blocked-route-metadata-no-direct-artifact-fill",
+      "modelAdmissionDecision": "blocked",
+      "nextAction": "Keep blocked unless a separate full-context route is acquired and independently reviewed; prefer the paired PMC bounded candidate where one exists.",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "freshReviewEvidenceUrls": [
+        "https://pubmed.ncbi.nlm.nih.gov/31570648/",
+        "docs/reference/human-infra-c2-longtail-eighth-batch-manual-fulltext-extraction-register.json"
+      ],
+      "blockedRowKind": "manual-fulltext-fresh-review-row-blocked-from-artifact-fill",
+      "blockReason": "No direct reviewed artifact fill from route metadata, corrected PubMed metadata or DOI/publisher route without separate full-context review; model admission remains blocked.",
+      "requiredBeforeArtifactFill": "Acquire and independently review a full-context route or use the paired eligible PMC row where available; do not fill artifacts from route metadata alone."
+    },
+    {
+      "manualExtractionId": "C2LTB8-MFEXT-003",
+      "reviewId": "C2LTB8-MFFRV-003",
+      "originTaskId": "C2LTB8-EXT-006",
+      "sourceResolutionId": "C2LTB8-SRR-001",
+      "candidateId": "C2LTB8-SRR-001-CAND-03",
+      "domainId": "adhd-executive-function-neurodevelopment-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/adhd-executive-function-neurodevelopment-continuity",
+      "sourceTitle": "Clinical Practice Guideline for the Diagnosis, Evaluation, and Treatment of Attention-Deficit/Hyperactivity Disorder in Children and Adolescents",
+      "sourceUrl": "https://doi.org/10.1542/peds.2019-2528",
+      "reviewerVerdict": "blocked-or-context-only",
+      "artifactPromotionDecision": "blocked-publisher-route-no-direct-artifact-fill",
+      "modelAdmissionDecision": "blocked",
+      "nextAction": "Keep blocked unless a separate full-context route is acquired and independently reviewed; prefer the paired PMC bounded candidate where one exists.",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "freshReviewEvidenceUrls": [
+        "https://doi.org/10.1542/peds.2019-2528",
+        "docs/reference/human-infra-c2-longtail-eighth-batch-manual-fulltext-extraction-register.json"
+      ],
+      "blockedRowKind": "manual-fulltext-fresh-review-row-blocked-from-artifact-fill",
+      "blockReason": "No direct reviewed artifact fill from route metadata, corrected PubMed metadata or DOI/publisher route without separate full-context review; model admission remains blocked.",
+      "requiredBeforeArtifactFill": "Acquire and independently review a full-context route or use the paired eligible PMC row where available; do not fill artifacts from route metadata alone."
+    },
+    {
+      "manualExtractionId": "C2LTB8-MFEXT-004",
+      "reviewId": "C2LTB8-MFFRV-004",
+      "originTaskId": "C2LTB8-EXT-008",
+      "sourceResolutionId": "C2LTB8-SRR-002",
+      "candidateId": "C2LTB8-SRR-002-CAND-01",
+      "domainId": "autism-neurodiversity-support-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/autism-neurodiversity-support-continuity",
+      "sourceTitle": "Identification, Evaluation, and Management of Children With Autism Spectrum Disorder",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/31843864/",
+      "reviewerVerdict": "blocked-or-context-only",
+      "artifactPromotionDecision": "blocked-route-metadata-no-direct-artifact-fill",
+      "modelAdmissionDecision": "blocked",
+      "nextAction": "Keep blocked unless a separate full-context route is acquired and independently reviewed; prefer the paired PMC bounded candidate where one exists.",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "freshReviewEvidenceUrls": [
+        "https://pubmed.ncbi.nlm.nih.gov/31843864/",
+        "docs/reference/human-infra-c2-longtail-eighth-batch-manual-fulltext-extraction-register.json"
+      ],
+      "blockedRowKind": "manual-fulltext-fresh-review-row-blocked-from-artifact-fill",
+      "blockReason": "No direct reviewed artifact fill from route metadata, corrected PubMed metadata or DOI/publisher route without separate full-context review; model admission remains blocked.",
+      "requiredBeforeArtifactFill": "Acquire and independently review a full-context route or use the paired eligible PMC row where available; do not fill artifacts from route metadata alone."
+    },
+    {
+      "manualExtractionId": "C2LTB8-MFEXT-005",
+      "reviewId": "C2LTB8-MFFRV-005",
+      "originTaskId": "C2LTB8-EXT-008",
+      "sourceResolutionId": "C2LTB8-SRR-002",
+      "candidateId": "C2LTB8-SRR-002-CAND-02",
+      "domainId": "autism-neurodiversity-support-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/autism-neurodiversity-support-continuity",
+      "sourceTitle": "Identification, Evaluation, and Management of Children With Autism Spectrum Disorder",
+      "sourceUrl": "https://doi.org/10.1542/peds.2019-3447",
+      "reviewerVerdict": "blocked-or-context-only",
+      "artifactPromotionDecision": "blocked-publisher-route-no-direct-artifact-fill",
+      "modelAdmissionDecision": "blocked",
+      "nextAction": "Keep blocked unless a separate full-context route is acquired and independently reviewed; prefer the paired PMC bounded candidate where one exists.",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "freshReviewEvidenceUrls": [
+        "https://doi.org/10.1542/peds.2019-3447",
+        "docs/reference/human-infra-c2-longtail-eighth-batch-manual-fulltext-extraction-register.json"
+      ],
+      "blockedRowKind": "manual-fulltext-fresh-review-row-blocked-from-artifact-fill",
+      "blockReason": "No direct reviewed artifact fill from route metadata, corrected PubMed metadata or DOI/publisher route without separate full-context review; model admission remains blocked.",
+      "requiredBeforeArtifactFill": "Acquire and independently review a full-context route or use the paired eligible PMC row where available; do not fill artifacts from route metadata alone."
+    },
+    {
+      "manualExtractionId": "C2LTB8-MFEXT-006",
+      "reviewId": "C2LTB8-MFFRV-006",
+      "originTaskId": "C2LTB8-EXT-011",
+      "sourceResolutionId": "C2LTB8-SRR-003",
+      "candidateId": "C2LTB8-SRR-003-CAND-01",
+      "domainId": "synthetic-biological-intelligence-organoid-computing-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/synthetic-biological-intelligence-organoid-computing-continuity",
+      "sourceTitle": "In vitro neurons learn and exhibit sentience when embodied in a simulated game-world",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/36228614/",
+      "reviewerVerdict": "blocked-or-context-only",
+      "artifactPromotionDecision": "blocked-route-metadata-no-direct-artifact-fill",
+      "modelAdmissionDecision": "blocked",
+      "nextAction": "Keep blocked unless a separate full-context route is acquired and independently reviewed; prefer the paired PMC bounded candidate where one exists.",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "freshReviewEvidenceUrls": [
+        "https://pubmed.ncbi.nlm.nih.gov/36228614/",
+        "docs/reference/human-infra-c2-longtail-eighth-batch-manual-fulltext-extraction-register.json"
+      ],
+      "blockedRowKind": "manual-fulltext-fresh-review-row-blocked-from-artifact-fill",
+      "blockReason": "No direct reviewed artifact fill from route metadata, corrected PubMed metadata or DOI/publisher route without separate full-context review; model admission remains blocked.",
+      "requiredBeforeArtifactFill": "Acquire and independently review a full-context route or use the paired eligible PMC row where available; do not fill artifacts from route metadata alone."
+    },
+    {
+      "manualExtractionId": "C2LTB8-MFEXT-008",
+      "reviewId": "C2LTB8-MFFRV-008",
+      "originTaskId": "C2LTB8-EXT-011",
+      "sourceResolutionId": "C2LTB8-SRR-003",
+      "candidateId": "C2LTB8-SRR-003-CAND-03",
+      "domainId": "synthetic-biological-intelligence-organoid-computing-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/synthetic-biological-intelligence-organoid-computing-continuity",
+      "sourceTitle": "In vitro neurons learn and exhibit sentience when embodied in a simulated game-world",
+      "sourceUrl": "https://doi.org/10.1016/j.neuron.2022.09.001",
+      "reviewerVerdict": "blocked-or-context-only",
+      "artifactPromotionDecision": "blocked-publisher-route-no-direct-artifact-fill",
+      "modelAdmissionDecision": "blocked",
+      "nextAction": "Keep blocked unless a separate full-context route is acquired and independently reviewed; prefer the paired PMC bounded candidate where one exists.",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "freshReviewEvidenceUrls": [
+        "https://doi.org/10.1016/j.neuron.2022.09.001",
+        "docs/reference/human-infra-c2-longtail-eighth-batch-manual-fulltext-extraction-register.json"
+      ],
+      "blockedRowKind": "manual-fulltext-fresh-review-row-blocked-from-artifact-fill",
+      "blockReason": "No direct reviewed artifact fill from route metadata, corrected PubMed metadata or DOI/publisher route without separate full-context review; model admission remains blocked.",
+      "requiredBeforeArtifactFill": "Acquire and independently review a full-context route or use the paired eligible PMC row where available; do not fill artifacts from route metadata alone."
+    },
+    {
+      "manualExtractionId": "C2LTB8-MFEXT-009",
+      "reviewId": "C2LTB8-MFFRV-009",
+      "originTaskId": "C2LTB8-EXT-014",
+      "sourceResolutionId": "C2LTB8-SRR-004",
+      "candidateId": "C2LTB8-SRR-004-CAND-01",
+      "domainId": "autonomic-nervous-system-homeostasis",
+      "localDomainPath": "domains/c2-source-maintenance/autonomic-nervous-system-homeostasis",
+      "sourceTitle": "Autonomic dysfunction in long COVID: rationale, physiology and management strategies",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/33243837/",
+      "reviewerVerdict": "blocked-or-context-only",
+      "artifactPromotionDecision": "blocked-route-metadata-no-direct-artifact-fill",
+      "modelAdmissionDecision": "blocked",
+      "nextAction": "Keep blocked unless a separate full-context route is acquired and independently reviewed; prefer the paired PMC bounded candidate where one exists.",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "freshReviewEvidenceUrls": [
+        "https://pubmed.ncbi.nlm.nih.gov/33243837/",
+        "docs/reference/human-infra-c2-longtail-eighth-batch-manual-fulltext-extraction-register.json"
+      ],
+      "blockedRowKind": "manual-fulltext-fresh-review-row-blocked-from-artifact-fill",
+      "blockReason": "No direct reviewed artifact fill from route metadata, corrected PubMed metadata or DOI/publisher route without separate full-context review; model admission remains blocked.",
+      "requiredBeforeArtifactFill": "Acquire and independently review a full-context route or use the paired eligible PMC row where available; do not fill artifacts from route metadata alone."
+    },
+    {
+      "manualExtractionId": "C2LTB8-MFEXT-011",
+      "reviewId": "C2LTB8-MFFRV-011",
+      "originTaskId": "C2LTB8-EXT-014",
+      "sourceResolutionId": "C2LTB8-SRR-004",
+      "candidateId": "C2LTB8-SRR-004-CAND-03",
+      "domainId": "autonomic-nervous-system-homeostasis",
+      "localDomainPath": "domains/c2-source-maintenance/autonomic-nervous-system-homeostasis",
+      "sourceTitle": "Autonomic dysfunction in long COVID: rationale, physiology and management strategies",
+      "sourceUrl": "https://doi.org/10.7861/clinmed.2020-0896",
+      "reviewerVerdict": "blocked-or-context-only",
+      "artifactPromotionDecision": "blocked-publisher-route-no-direct-artifact-fill",
+      "modelAdmissionDecision": "blocked",
+      "nextAction": "Keep blocked unless a separate full-context route is acquired and independently reviewed; prefer the paired PMC bounded candidate where one exists.",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "freshReviewEvidenceUrls": [
+        "https://doi.org/10.7861/clinmed.2020-0896",
+        "docs/reference/human-infra-c2-longtail-eighth-batch-manual-fulltext-extraction-register.json"
+      ],
+      "blockedRowKind": "manual-fulltext-fresh-review-row-blocked-from-artifact-fill",
+      "blockReason": "No direct reviewed artifact fill from route metadata, corrected PubMed metadata or DOI/publisher route without separate full-context review; model admission remains blocked.",
+      "requiredBeforeArtifactFill": "Acquire and independently review a full-context route or use the paired eligible PMC row where available; do not fill artifacts from route metadata alone."
+    },
+    {
+      "manualExtractionId": "C2LTB8-MFEXT-012",
+      "reviewId": "C2LTB8-MFFRV-012",
+      "originTaskId": "C2LTB8-EXT-021",
+      "sourceResolutionId": "C2LTB8-SRR-005",
+      "candidateId": "C2LTB8-SRR-005-CAND-01",
+      "domainId": "vestibular-balance-spatial-orientation",
+      "localDomainPath": "domains/c2-source-maintenance/vestibular-balance-spatial-orientation",
+      "sourceTitle": "Vestibular Rehabilitation for Peripheral Vestibular Hypofunction: An Updated Clinical Practice Guideline From the Academy of Neurologic Physical Therapy of the American Physical Therapy Association",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/34864777/",
+      "reviewerVerdict": "blocked-or-context-only",
+      "artifactPromotionDecision": "blocked-route-metadata-no-direct-artifact-fill",
+      "modelAdmissionDecision": "blocked",
+      "nextAction": "Keep blocked unless a separate full-context route is acquired and independently reviewed; prefer the paired PMC bounded candidate where one exists.",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "freshReviewEvidenceUrls": [
+        "https://pubmed.ncbi.nlm.nih.gov/34864777/",
+        "docs/reference/human-infra-c2-longtail-eighth-batch-manual-fulltext-extraction-register.json"
+      ],
+      "blockedRowKind": "manual-fulltext-fresh-review-row-blocked-from-artifact-fill",
+      "blockReason": "No direct reviewed artifact fill from route metadata, corrected PubMed metadata or DOI/publisher route without separate full-context review; model admission remains blocked.",
+      "requiredBeforeArtifactFill": "Acquire and independently review a full-context route or use the paired eligible PMC row where available; do not fill artifacts from route metadata alone."
+    },
+    {
+      "manualExtractionId": "C2LTB8-MFEXT-014",
+      "reviewId": "C2LTB8-MFFRV-014",
+      "originTaskId": "C2LTB8-EXT-021",
+      "sourceResolutionId": "C2LTB8-SRR-005",
+      "candidateId": "C2LTB8-SRR-005-CAND-03",
+      "domainId": "vestibular-balance-spatial-orientation",
+      "localDomainPath": "domains/c2-source-maintenance/vestibular-balance-spatial-orientation",
+      "sourceTitle": "Vestibular Rehabilitation for Peripheral Vestibular Hypofunction: An Updated Clinical Practice Guideline",
+      "sourceUrl": "https://doi.org/10.1097/NPT.0000000000000382",
+      "reviewerVerdict": "blocked-or-context-only",
+      "artifactPromotionDecision": "blocked-publisher-route-no-direct-artifact-fill",
+      "modelAdmissionDecision": "blocked",
+      "nextAction": "Keep blocked unless a separate full-context route is acquired and independently reviewed; prefer the paired PMC bounded candidate where one exists.",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "freshReviewEvidenceUrls": [
+        "https://doi.org/10.1097/NPT.0000000000000382",
+        "docs/reference/human-infra-c2-longtail-eighth-batch-manual-fulltext-extraction-register.json"
+      ],
+      "blockedRowKind": "manual-fulltext-fresh-review-row-blocked-from-artifact-fill",
+      "blockReason": "No direct reviewed artifact fill from route metadata, corrected PubMed metadata or DOI/publisher route without separate full-context review; model admission remains blocked.",
+      "requiredBeforeArtifactFill": "Acquire and independently review a full-context route or use the paired eligible PMC row where available; do not fill artifacts from route metadata alone."
+    },
+    {
+      "manualExtractionId": "C2LTB8-MFEXT-015",
+      "reviewId": "C2LTB8-MFFRV-015",
+      "originTaskId": "C2LTB8-EXT-022",
+      "sourceResolutionId": "C2LTB8-SRR-006",
+      "candidateId": "C2LTB8-SRR-006-CAND-01",
+      "domainId": "vestibular-balance-spatial-orientation",
+      "localDomainPath": "domains/c2-source-maintenance/vestibular-balance-spatial-orientation",
+      "sourceTitle": "Clinical Practice Guideline: Benign Paroxysmal Positional Vertigo (Update)",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/28248609/",
+      "reviewerVerdict": "blocked-or-context-only",
+      "artifactPromotionDecision": "blocked-route-metadata-no-direct-artifact-fill",
+      "modelAdmissionDecision": "blocked",
+      "nextAction": "Keep blocked unless a separate full-context route is acquired and independently reviewed; prefer the paired PMC bounded candidate where one exists.",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "freshReviewEvidenceUrls": [
+        "https://pubmed.ncbi.nlm.nih.gov/28248609/",
+        "docs/reference/human-infra-c2-longtail-eighth-batch-manual-fulltext-extraction-register.json"
+      ],
+      "blockedRowKind": "manual-fulltext-fresh-review-row-blocked-from-artifact-fill",
+      "blockReason": "No direct reviewed artifact fill from route metadata, corrected PubMed metadata or DOI/publisher route without separate full-context review; model admission remains blocked.",
+      "requiredBeforeArtifactFill": "Acquire and independently review a full-context route or use the paired eligible PMC row where available; do not fill artifacts from route metadata alone."
+    },
+    {
+      "manualExtractionId": "C2LTB8-MFEXT-016",
+      "reviewId": "C2LTB8-MFFRV-016",
+      "originTaskId": "C2LTB8-EXT-022",
+      "sourceResolutionId": "C2LTB8-SRR-006",
+      "candidateId": "C2LTB8-SRR-006-CAND-02",
+      "domainId": "vestibular-balance-spatial-orientation",
+      "localDomainPath": "domains/c2-source-maintenance/vestibular-balance-spatial-orientation",
+      "sourceTitle": "Clinical Practice Guideline: Benign Paroxysmal Positional Vertigo (Update)",
+      "sourceUrl": "https://doi.org/10.1177/0194599816689667",
+      "reviewerVerdict": "blocked-or-context-only",
+      "artifactPromotionDecision": "blocked-publisher-route-no-direct-artifact-fill",
+      "modelAdmissionDecision": "blocked",
+      "nextAction": "Keep blocked unless a separate full-context route is acquired and independently reviewed; prefer the paired PMC bounded candidate where one exists.",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "freshReviewEvidenceUrls": [
+        "https://doi.org/10.1177/0194599816689667",
+        "docs/reference/human-infra-c2-longtail-eighth-batch-manual-fulltext-extraction-register.json"
+      ],
+      "blockedRowKind": "manual-fulltext-fresh-review-row-blocked-from-artifact-fill",
+      "blockReason": "No direct reviewed artifact fill from route metadata, corrected PubMed metadata or DOI/publisher route without separate full-context review; model admission remains blocked.",
+      "requiredBeforeArtifactFill": "Acquire and independently review a full-context route or use the paired eligible PMC row where available; do not fill artifacts from route metadata alone."
+    },
+    {
+      "manualExtractionId": "C2LTB8-MFEXT-017",
+      "reviewId": "C2LTB8-MFFRV-017",
+      "originTaskId": "C2LTB8-EXT-024",
+      "sourceResolutionId": "C2LTB8-SRR-007",
+      "candidateId": "C2LTB8-SRR-007-CAND-01",
+      "domainId": "oropharyngeal-dysphagia-swallow-safety-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/oropharyngeal-dysphagia-swallow-safety-continuity",
+      "sourceTitle": "European Stroke Organisation and European Society for Swallowing Disorders guideline for the diagnosis and treatment of post-stroke dysphagia",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/34746431/",
+      "reviewerVerdict": "blocked-or-context-only",
+      "artifactPromotionDecision": "blocked-route-metadata-no-direct-artifact-fill",
+      "modelAdmissionDecision": "blocked",
+      "nextAction": "Keep blocked unless a separate full-context route is acquired and independently reviewed; prefer the paired PMC bounded candidate where one exists.",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "freshReviewEvidenceUrls": [
+        "https://pubmed.ncbi.nlm.nih.gov/34746431/",
+        "docs/reference/human-infra-c2-longtail-eighth-batch-manual-fulltext-extraction-register.json"
+      ],
+      "blockedRowKind": "manual-fulltext-fresh-review-row-blocked-from-artifact-fill",
+      "blockReason": "No direct reviewed artifact fill from route metadata, corrected PubMed metadata or DOI/publisher route without separate full-context review; model admission remains blocked.",
+      "requiredBeforeArtifactFill": "Acquire and independently review a full-context route or use the paired eligible PMC row where available; do not fill artifacts from route metadata alone."
+    },
+    {
+      "manualExtractionId": "C2LTB8-MFEXT-019",
+      "reviewId": "C2LTB8-MFFRV-019",
+      "originTaskId": "C2LTB8-EXT-024",
+      "sourceResolutionId": "C2LTB8-SRR-007",
+      "candidateId": "C2LTB8-SRR-007-CAND-03",
+      "domainId": "oropharyngeal-dysphagia-swallow-safety-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/oropharyngeal-dysphagia-swallow-safety-continuity",
+      "sourceTitle": "European Stroke Organisation and European Society for Swallowing Disorders guideline for the diagnosis and treatment of post-stroke dysphagia",
+      "sourceUrl": "https://doi.org/10.1177/23969873211039721",
+      "reviewerVerdict": "blocked-or-context-only",
+      "artifactPromotionDecision": "blocked-publisher-route-no-direct-artifact-fill",
+      "modelAdmissionDecision": "blocked",
+      "nextAction": "Keep blocked unless a separate full-context route is acquired and independently reviewed; prefer the paired PMC bounded candidate where one exists.",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "freshReviewEvidenceUrls": [
+        "https://doi.org/10.1177/23969873211039721",
+        "docs/reference/human-infra-c2-longtail-eighth-batch-manual-fulltext-extraction-register.json"
+      ],
+      "blockedRowKind": "manual-fulltext-fresh-review-row-blocked-from-artifact-fill",
+      "blockReason": "No direct reviewed artifact fill from route metadata, corrected PubMed metadata or DOI/publisher route without separate full-context review; model admission remains blocked.",
+      "requiredBeforeArtifactFill": "Acquire and independently review a full-context route or use the paired eligible PMC row where available; do not fill artifacts from route metadata alone."
+    }
+  ],
+  "summary": {
+    "reviewedArtifactsCreated": 30,
+    "blockedRowsPreserved": 14,
+    "modelAdmissionDecision": "blocked-pending-c2ltb8-reviewed-artifact-gates-and-calibrated-model-validation",
+    "artifactTypeCounts": {
+      "reviewed-source-card": 5,
+      "reviewed-variable-card": 5,
+      "reviewed-endpoint-card": 5,
+      "reviewed-uncertainty-card": 5,
+      "reviewed-transfer-boundary-card": 5,
+      "reviewed-downgrade-check": 5
+    },
+    "nextWorkOrder": "Use the 30 C2-LT-B8 reviewed artifacts as bounded source/variable/endpoint/uncertainty/transfer/downgrade evidence only; keep all model admission blocked and continue the next C2 long-tail batch or quantitative model gates."
+  },
+  "indexRequirements": [
+    "README.md",
+    "docs/AGENTS.md",
+    "docs/reference/README.md",
+    "docs/reference/human-infra-maturity-roadmap.md",
+    "tools/README.md",
+    "tools/AGENTS.md"
+  ]
+}

@@ -46,7 +46,7 @@
       "id": "nhats-colectica-root-anonymous-probe",
       "sourceType": "public-http-probe",
       "url": "https://nhats.colectica.org/",
-      "observedAt": "2026-07-03",
+      "observedAt": "2026-07-04",
       "evidenceUse": "Anonymous root access redirects to the login page and proves public unauthenticated browsing is insufficient for variable capture.",
       "supports": [
         "login-gate-required",
@@ -61,7 +61,7 @@
       "id": "nhats-colectica-search-anonymous-probe",
       "sourceType": "public-http-probe",
       "url": "https://nhats.colectica.org/search?query=r14status",
-      "observedAt": "2026-07-03",
+      "observedAt": "2026-07-04",
       "evidenceUse": "Anonymous search request resolves to the login page, so route field value labels cannot be collected by unauthenticated public scraping.",
       "supports": [
         "search-login-gate-required",
@@ -119,6 +119,88 @@
       "/Account/Login",
       "/Account/Register"
     ]
+  },
+  "latestAnonymousLiveReprobe": {
+    "observedAt": "2026-07-04",
+    "methodBoundary": "Public non-credentialed GET probes only. No account credentials, no session cookies, no authenticated metadata capture, no raw Colectica export and no raw NHATS data are stored.",
+    "observations": [
+      {
+        "id": "colectica-root-get-follow",
+        "url": "https://nhats.colectica.org/",
+        "method": "GET",
+        "followRedirects": true,
+        "finalStatus": 200,
+        "finalUrl": "https://nhats.colectica.org/Account/Login?returnUrl=%2F",
+        "redirects": 1,
+        "bytesDownloaded": 13308,
+        "htmlTitle": "Log in - NHATS",
+        "interpretation": "Anonymous portal root access still lands on the login page."
+      },
+      {
+        "id": "colectica-search-r14status-get-follow",
+        "url": "https://nhats.colectica.org/search?query=r14status",
+        "method": "GET",
+        "followRedirects": true,
+        "finalStatus": 200,
+        "finalUrl": "https://nhats.colectica.org/Account/Login?returnUrl=%2Fsearch",
+        "redirects": 1,
+        "bytesDownloaded": 13314,
+        "htmlTitle": "Log in - NHATS",
+        "interpretation": "Anonymous search for a route-field candidate still lands on the login page and exposes no variable details."
+      },
+      {
+        "id": "nhats-cross-year-search-public-get",
+        "url": "https://www.nhats.org/data-access/cross-year-search",
+        "method": "GET",
+        "followRedirects": true,
+        "finalStatus": 200,
+        "finalUrl": "https://www.nhats.org/data-access/cross-year-search",
+        "redirects": 0,
+        "bytesDownloaded": 66313,
+        "htmlTitle": "Cross Year Search | NHATS",
+        "interpretation": "The official NHATS Cross-Year Search page remains publicly reachable and points users toward the Colectica workflow."
+      }
+    ],
+    "decisionImpact": {
+      "officialAccessRouteStillReachable": true,
+      "anonymousColecticaStillLoginGated": true,
+      "anonymousVariableSearchStillBlocked": true,
+      "controlledAccountStillRequired": true,
+      "valueLabelsConfirmed": false,
+      "questionTextConfirmed": false,
+      "routeValueCrosswalkReady": false,
+      "routeClassifierAllowed": false,
+      "calibrationAllowed": false,
+      "individualPredictionAllowed": false
+    }
+  },
+  "latestTechnicalGuideFreshnessProbe": {
+    "observedAt": "2026-07-04",
+    "url": "https://nhats.org/sites/default/files/2025-09/NHATS%20Online%20Cross-Year%20Searchable%20Database%20Technical%20Guide.pdf",
+    "methodBoundary": "Public non-credentialed HTTP/PDF freshness probe only. The PDF was downloaded to temporary local storage for hash verification and is not committed to the repository.",
+    "httpStatus": 200,
+    "finalUrl": "https://nhats.org/sites/default/files/2025-09/NHATS%20Online%20Cross-Year%20Searchable%20Database%20Technical%20Guide.pdf",
+    "redirects": 0,
+    "responseDateGmt": "Fri, 03 Jul 2026 23:26:04 GMT",
+    "lastModified": "Tue, 23 Sep 2025 18:42:24 GMT",
+    "etag": "\"8cf0f-63f7c4c04628a\"",
+    "contentType": "application/pdf",
+    "contentLengthBytes": 577295,
+    "sha256": "ae0c0d1ade858725b1c098a05845ab146432fa2d008cec54f646ce827f485ee4",
+    "matchesRegisteredSourceEvidence": true,
+    "decisionImpact": {
+      "technicalGuideStillReachable": true,
+      "technicalGuideHashStable": true,
+      "detailsBasketWorkflowStillSourceAnchored": true,
+      "colecticaAccountCreated": false,
+      "colecticaLoginCompleted": false,
+      "valueLabelsConfirmed": false,
+      "questionTextConfirmed": false,
+      "routeValueCrosswalkReady": false,
+      "routeClassifierAllowed": false,
+      "calibrationAllowed": false,
+      "individualPredictionAllowed": false
+    }
   },
   "technicalGuideRoute": {
     "portalUrl": "https://nhats.colectica.org",

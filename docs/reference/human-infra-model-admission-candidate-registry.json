@@ -8,9 +8,12 @@
     "modelAdmissionContract": "docs/reference/human-infra-model-admission-contract.json",
     "maturityGapRegister": "docs/reference/human-infra-maturity-gap-register.json",
     "maturityRoadmap": "docs/reference/human-infra-maturity-roadmap.md",
-    "predictionModelContract": "docs/reference/life-path-prediction-model-contract.md",
-    "predictionModelGovernance": "docs/reference/life-path-prediction-model-governance.md",
-    "reviewedArtifactRegisters": [
+        "predictionModelContract": "docs/reference/life-path-prediction-model-contract.md",
+        "predictionModelGovernance": "docs/reference/life-path-prediction-model-governance.md",
+        "l4ReadinessBlockerMatrix": "docs/reference/human-infra-l4-model-readiness-blocker-matrix.json",
+        "l4UnblockExecutionPlan": "docs/reference/human-infra-l4-unblock-execution-plan.json",
+        "l4EvidenceIntakeRegister": "docs/reference/human-infra-l4-evidence-intake-register.json",
+        "reviewedArtifactRegisters": [
       "docs/reference/human-infra-reviewed-card-artifact-register.json",
       "docs/reference/human-infra-c2-longtail-first-batch-reviewed-card-artifact-register.json",
       "docs/reference/human-infra-c2-longtail-first-batch-corrected-source-reviewed-card-artifact-register.json",
@@ -19,7 +22,9 @@
       "docs/reference/human-infra-c2-longtail-fourth-batch-manual-fulltext-reviewed-card-artifact-register.json",
       "docs/reference/human-infra-c2-longtail-fifth-batch-reviewed-card-artifact-register.json",
       "docs/reference/human-infra-c2-longtail-sixth-batch-reviewed-card-artifact-register.json",
-      "docs/reference/human-infra-c2-longtail-seventh-batch-manual-fulltext-reviewed-card-artifact-register.json"
+      "docs/reference/human-infra-c2-longtail-seventh-batch-manual-fulltext-reviewed-card-artifact-register.json",
+      "docs/reference/human-infra-c2-longtail-eighth-batch-manual-fulltext-reviewed-card-artifact-register.json",
+      "docs/reference/human-infra-c2-longtail-ninth-batch-manual-fulltext-reviewed-card-artifact-register.json"
     ],
     "toyModelOutput": "web/src/data/life-path-toy-model.json",
     "toyModelAudit": "web/src/data/life-path-toy-model-audit.json",
@@ -30,16 +35,16 @@
     "nhatsPreoutcomeAggregationProtocol": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_preoutcome_aggregation_protocol.json"
   },
   "aggregateDecision": {
-    "reviewedArtifactRegisters": 9,
-    "reviewedArtifactsCovered": 1332,
-    "blockedRowsPreserved": 48,
+    "reviewedArtifactRegisters": 11,
+    "reviewedArtifactsCovered": 1386,
+    "blockedRowsPreserved": 66,
     "highestReviewedArtifactLevel": "L2",
     "highestCurrentModelLevel": "L3",
     "l4AggregateCalibratedAdmissions": 0,
     "l5IndividualAdmissions": 0,
     "calibratedPredictionAvailable": false,
     "individualUseAllowed": false,
-    "decision": "reviewed-artifacts-are-L1/L2-only; B1-B7 reviewed artifacts remain non-calibrated; synthetic toy and public aggregate baseline may remain L3; L4 and L5 stay blocked"
+    "decision": "reviewed-artifacts-are-L1/L2-only; B1-B9 reviewed artifacts remain non-calibrated; synthetic toy and public aggregate baseline may remain L3; human-infra-quantitative-capability-ladder.json records current Q3/L3 output capability; L4 and L5 stay blocked"
   },
   "reviewedArtifactAdmissionDecisions": [
     {
@@ -473,6 +478,102 @@
         "individual consent and appeal process",
         "external validation for intended use"
       ]
+    },
+    {
+      "decisionId": "MACR-010-c2ltb8-manual-fulltext-reviewed-artifacts",
+      "sourceRegisterPath": "docs/reference/human-infra-c2-longtail-eighth-batch-manual-fulltext-reviewed-card-artifact-register.json",
+      "sourceRegisterStatusMustContain": "model-blocked",
+      "reviewedArtifactCount": 30,
+      "blockedRowCount": 14,
+      "currentAdmissionLevel": "L1/L2-only",
+      "maxLevelWithoutAdditionalGates": "L2",
+      "allowedUses": [
+        "bounded source-card evidence",
+        "candidate variable language",
+        "candidate endpoint language",
+        "uncertainty channel framing",
+        "transfer-boundary framing",
+        "downgrade-trigger framing"
+      ],
+      "blockedLevels": [
+        "L3-synthetic-input-without-explicit-scenario-selection",
+        "L4-aggregate-calibrated-research-model",
+        "L5-individual-decision-support"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim"
+      ],
+      "requiredBeforeL3": [
+        "explicit synthetic scenario file",
+        "model card",
+        "sanity checks",
+        "synthetic-only output boundary"
+      ],
+      "requiredBeforeL4": [
+        "narrow estimand",
+        "governed data access",
+        "confirmed variables and value labels",
+        "cohort flow",
+        "survey design or sampling design",
+        "validation and calibration diagnostics"
+      ],
+      "requiredBeforeL5": [
+        "external clinical and ethical governance",
+        "individual consent and appeal process",
+        "external validation for intended use"
+      ]
+    },
+    {
+      "decisionId": "MACR-011-c2ltb9-manual-fulltext-reviewed-artifacts",
+      "sourceRegisterPath": "docs/reference/human-infra-c2-longtail-ninth-batch-manual-fulltext-reviewed-card-artifact-register.json",
+      "sourceRegisterStatusMustContain": "model-blocked",
+      "reviewedArtifactCount": 24,
+      "blockedRowCount": 4,
+      "currentAdmissionLevel": "L1/L2-only",
+      "maxLevelWithoutAdditionalGates": "L2",
+      "allowedUses": [
+        "bounded source-card evidence",
+        "candidate variable language",
+        "candidate endpoint language",
+        "uncertainty channel framing",
+        "transfer-boundary framing",
+        "downgrade-trigger framing"
+      ],
+      "blockedLevels": [
+        "L3-synthetic-input-without-explicit-scenario-selection",
+        "L4-aggregate-calibrated-research-model",
+        "L5-individual-decision-support"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim"
+      ],
+      "requiredBeforeL3": [
+        "explicit synthetic scenario file",
+        "model card",
+        "sanity checks",
+        "synthetic-only output boundary"
+      ],
+      "requiredBeforeL4": [
+        "narrow estimand",
+        "governed data access",
+        "confirmed variables and value labels",
+        "cohort flow",
+        "survey design or sampling design",
+        "validation and calibration diagnostics"
+      ],
+      "requiredBeforeL5": [
+        "external clinical and ethical governance",
+        "individual consent and appeal process",
+        "external validation for intended use"
+      ]
     }
   ],
   "existingL3Decisions": [
@@ -504,9 +605,21 @@
       "calibrated": false
     }
   ],
-  "blockedL4Candidates": [
-    {
-      "candidateId": "MACR-L4-BLOCK-001-nhats-first-estimand",
+    "blockedL4Candidates": [
+        {
+            "candidateId": "MACR-L4-BLOCK-000-l4-readiness-blocker-matrix",
+            "sourcePath": "docs/reference/human-infra-l4-model-readiness-blocker-matrix.json",
+            "blockedAt": [
+                "MAC-G4-data-access",
+                "MAC-G5-variable-confirmation",
+                "MAC-G6-extraction-and-cohort-flow",
+                "MAC-G7-validation-calibration",
+                "MAC-G8-governance-boundary"
+            ],
+            "reason": "The L4 blocker matrix now joins NHANES local-only output, NHATS runway, disclosure, survey-design and calibration blockers, but it is a blocking control surface rather than L4 admission evidence."
+        },
+        {
+            "candidateId": "MACR-L4-BLOCK-001-nhats-first-estimand",
       "sourcePath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_first_estimand_protocol.json",
       "blockedAt": [
         "MAC-G4-data-access",
@@ -576,7 +689,7 @@
     },
     {
       "priority": 3,
-      "item": "Keep future C2 reviewed artifacts entering this registry as L1/L2-only; B6 is covered but remains non-calibrated until a new admission decision passes the same audit.",
+      "item": "Keep future C2 reviewed artifacts entering this registry as L1/L2-only; B1-B9 are covered but remain non-calibrated until a new admission decision passes the same audit.",
       "unblocks": [
         "RESEARCH-G4-variable-mechanism-contracts"
       ]

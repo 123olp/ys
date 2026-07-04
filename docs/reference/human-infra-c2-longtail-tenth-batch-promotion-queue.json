@@ -1,0 +1,996 @@
+{
+  "schemaVersion": "human-infra.c2-longtail-tenth-batch-promotion-queue.v1",
+  "queueId": "human-infra-c2-longtail-tenth-batch-promotion-queue",
+  "status": "active-tenth-batch-queue-model-blocked",
+  "purpose": "Select the tenth C2 long-tail batch for source-specific review, prioritizing still-uncovered domains where device infection, home renal replacement, sensory loss, wound failure, temperature regulation, burns, vision-threatening diabetes, caregiver collapse, choking and dysphagia can interrupt subject continuity, effective action, recovery and future option access over long horizons.",
+  "sourceOfTruth": {
+    "c2LongtailCoverageRegister": "docs/reference/human-infra-c2-longtail-coverage-register.json",
+    "firstBatchPromotionQueue": "docs/reference/human-infra-c2-longtail-first-batch-promotion-queue.json",
+    "secondBatchPromotionQueue": "docs/reference/human-infra-c2-longtail-second-batch-promotion-queue.json",
+    "thirdBatchPromotionQueue": "docs/reference/human-infra-c2-longtail-third-batch-promotion-queue.json",
+    "fourthBatchPromotionQueue": "docs/reference/human-infra-c2-longtail-fourth-batch-promotion-queue.json",
+    "fifthBatchPromotionQueue": "docs/reference/human-infra-c2-longtail-fifth-batch-promotion-queue.json",
+    "sixthBatchPromotionQueue": "docs/reference/human-infra-c2-longtail-sixth-batch-promotion-queue.json",
+    "seventhBatchPromotionQueue": "docs/reference/human-infra-c2-longtail-seventh-batch-promotion-queue.json",
+    "eighthBatchPromotionQueue": "docs/reference/human-infra-c2-longtail-eighth-batch-promotion-queue.json",
+    "ninthBatchPromotionQueue": "docs/reference/human-infra-c2-longtail-ninth-batch-promotion-queue.json",
+    "domainClassification": "domains/_possibility-space-control/classification.tsv",
+    "sourceCardSystem": "docs/reference/source-card-system.md",
+    "maturityGapRegister": "docs/reference/human-infra-maturity-gap-register.json",
+    "maturityRoadmap": "docs/reference/human-infra-maturity-roadmap.md"
+  },
+  "scope": {
+    "batchId": "C2-LT-B10",
+    "batchDomainCount": 12,
+    "selectionRule": "Prioritize still-uncovered C2 domains by importance, long-horizon impact and fundamentality for subject continuity: infection control around body-device interfaces, home organ-support execution, sensory input and communication maintenance, wound boundary integrity, thermal regulation, acute airway risk, nutrition/aspiration safety and caregiver-system collapse. This is not feasibility, market maturity or intervention-hype ranking.",
+    "requiredArtifactClasses": [
+      "domain-claim-evidence-row",
+      "domain-source-card-field-extraction",
+      "domain-source-specific-deep-read",
+      "source-context-local-review",
+      "independent-fresh-review-verdict",
+      "reviewed-source-card",
+      "variable-card",
+      "endpoint-card",
+      "uncertainty-card",
+      "transfer-boundary-card",
+      "downgrade-check"
+    ],
+    "nonClaims": [
+      "This queue does not complete Source Cards.",
+      "This queue does not complete independent fresh review.",
+      "This queue does not upgrade any domain claim.",
+      "This queue does not admit any domain into calibrated prediction.",
+      "This queue does not provide clinical, device, renal, vision, hearing, rehabilitation, wound-care, burn-care, emergency, caregiver, nutrition, swallowing, individual, intervention-ranking or self-management advice.",
+      "This queue does not mark any C2-LT-B1/B2/B3/B4/B5/B6/B7/B8/B9 blocked, downgrade, source-resolution, manual-access, route-only or model-blocked row as resolved."
+    ]
+  },
+  "blockedUses": [
+    "calibrated-prediction",
+    "individual-advice",
+    "individual-death-date-output",
+    "intervention-ranking",
+    "clinical-validity-claim",
+    "domain-claim-upgrade"
+  ],
+  "batchRows": [
+    {
+      "domainId": "catheter-associated-uti-device-infection-continuity",
+      "triageBucket": "infection-immune-resilience",
+      "selectionReason": "导尿管相关感染把排泄通路、医疗设备、抗菌药物暴露和败血症风险连接起来，是长期照护和医院场景中主体连续性的高杠杆失效入口。",
+      "claimSeed": "导尿设备暴露通过感染风险、器械维护、症状识别、抗菌治疗、住院升级和脓毒症级联影响主体恢复能力与照护连续性。",
+      "variableSeed": [
+        "catheter-exposure",
+        "device-days",
+        "uti-symptom-boundary",
+        "infection-escalation",
+        "device-maintenance-context"
+      ],
+      "batchId": "C2-LT-B10",
+      "priorityRank": 1,
+      "localDomainPath": "domains/c2-source-maintenance/catheter-associated-uti-device-infection-continuity",
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB10-SRC-01-1",
+          "title": "CDC: Summary of Recommendations - Guideline for Prevention of Catheter-Associated Urinary Tract Infections",
+          "url": "https://www.cdc.gov/infection-control/hcp/cauti/summary-of-recommendations.html",
+          "evidenceRole": "catheter-associated-uti-prevention-guideline",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-04",
+          "sourceCheck": {
+            "checkedAt": "2026-07-04",
+            "method": "python-requests-get",
+            "statusCode": 200,
+            "contentLengthBytes": 81267
+          }
+        },
+        {
+          "sourceRefId": "C2LTB10-SRC-01-2",
+          "title": "NICE guideline NG113: Urinary tract infection (catheter-associated): antimicrobial prescribing",
+          "url": "https://www.nice.org.uk/guidance/ng113",
+          "evidenceRole": "catheter-associated-uti-treatment-boundary-guideline",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-04",
+          "sourceCheck": {
+            "checkedAt": "2026-07-04",
+            "method": "python-requests-get",
+            "statusCode": 200,
+            "contentLengthBytes": 21761
+          }
+        }
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "modelAdmissionDecision": "blocked-until-c2ltb10-source-specific-fields-local-review-independent-fresh-review-and-reviewed-artifacts-exist",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ]
+    },
+    {
+      "domainId": "home-dialysis-supply-self-management-continuity",
+      "triageBucket": "organ-system-homeostasis",
+      "selectionReason": "居家透析把肾脏替代、耗材连续性、感染控制、训练能力和家庭执行系统绑在一起；一旦断链，会直接压缩主体生存与行动窗口。",
+      "claimSeed": "居家血液透析或腹膜透析通过治疗频率、耗材供应、训练、感染边界、设备维护和升级转诊影响主体稳态与日常自主性。",
+      "variableSeed": [
+        "home-dialysis-modality",
+        "supply-continuity",
+        "training-burden",
+        "infection-boundary",
+        "treatment-adherence-context"
+      ],
+      "batchId": "C2-LT-B10",
+      "priorityRank": 2,
+      "localDomainPath": "domains/c2-source-maintenance/home-dialysis-supply-self-management-continuity",
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB10-SRC-02-1",
+          "title": "NIDDK: Hemodialysis",
+          "url": "https://www.niddk.nih.gov/health-information/kidney-disease/kidney-failure/hemodialysis",
+          "evidenceRole": "home-hemodialysis-treatment-context",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-04",
+          "sourceCheck": {
+            "checkedAt": "2026-07-04",
+            "method": "python-requests-get",
+            "statusCode": 200,
+            "contentLengthBytes": 67112
+          }
+        },
+        {
+          "sourceRefId": "C2LTB10-SRC-02-2",
+          "title": "NIDDK: Peritoneal Dialysis",
+          "url": "https://www.niddk.nih.gov/health-information/kidney-disease/kidney-failure/peritoneal-dialysis",
+          "evidenceRole": "home-peritoneal-dialysis-treatment-context",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-04",
+          "sourceCheck": {
+            "checkedAt": "2026-07-04",
+            "method": "python-requests-get",
+            "statusCode": 200,
+            "contentLengthBytes": 61485
+          }
+        }
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "modelAdmissionDecision": "blocked-until-c2ltb10-source-specific-fields-local-review-independent-fresh-review-and-reviewed-artifacts-exist",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ]
+    },
+    {
+      "domainId": "peripheral-neuropathy-somatosensory-continuity",
+      "triageBucket": "neuro-sensory-cognitive-continuity",
+      "selectionReason": "外周神经病变削弱痛觉、触觉、平衡和足部保护性反馈，使伤口、跌倒、活动规避和慢性疼痛成为长期有效时间损失源。",
+      "claimSeed": "外周感觉损伤通过保护性感觉丧失、疼痛、活动限制、跌倒风险、足部伤口和睡眠干扰改变行动质量与恢复窗口。",
+      "variableSeed": [
+        "protective-sensation",
+        "neuropathic-pain",
+        "foot-injury-risk",
+        "balance-impairment",
+        "diabetes-neuropathy-boundary"
+      ],
+      "batchId": "C2-LT-B10",
+      "priorityRank": 3,
+      "localDomainPath": "domains/c2-source-maintenance/peripheral-neuropathy-somatosensory-continuity",
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB10-SRC-03-1",
+          "title": "NIDDK: Diabetic Neuropathy",
+          "url": "https://www.niddk.nih.gov/health-information/diabetes/overview/preventing-problems/nerve-damage-diabetic-neuropathies",
+          "evidenceRole": "diabetic-neuropathy-sensory-risk-context",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-04",
+          "sourceCheck": {
+            "checkedAt": "2026-07-04",
+            "method": "python-requests-get",
+            "statusCode": 200,
+            "contentLengthBytes": 44921
+          }
+        },
+        {
+          "sourceRefId": "C2LTB10-SRC-03-2",
+          "title": "CDC: Diabetes and Nerve Damage",
+          "url": "https://www.cdc.gov/diabetes/diabetes-complications/diabetes-and-nerve-damage.html",
+          "evidenceRole": "diabetes-nerve-damage-public-health-context",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-04",
+          "sourceCheck": {
+            "checkedAt": "2026-07-04",
+            "method": "python-requests-get",
+            "statusCode": 200,
+            "contentLengthBytes": 61250
+          }
+        }
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "modelAdmissionDecision": "blocked-until-c2ltb10-source-specific-fields-local-review-independent-fresh-review-and-reviewed-artifacts-exist",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ]
+    },
+    {
+      "domainId": "low-vision-rehabilitation-assistive-technology-continuity",
+      "triageBucket": "neuro-sensory-cognitive-continuity",
+      "selectionReason": "低视力会直接削弱阅读、导航、药物管理、数字工具使用和安全行动；康复与辅助技术决定视觉损失后主体能否继续完成任务。",
+      "claimSeed": "低视力康复和辅助技术通过可读性、空间导航、任务独立性、跌倒风险和服务可及性影响主体外部世界接口。",
+      "variableSeed": [
+        "visual-function",
+        "vision-rehabilitation-access",
+        "assistive-technology-fit",
+        "reading-navigation-function",
+        "independence-burden"
+      ],
+      "batchId": "C2-LT-B10",
+      "priorityRank": 4,
+      "localDomainPath": "domains/c2-source-maintenance/low-vision-rehabilitation-assistive-technology-continuity",
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB10-SRC-04-1",
+          "title": "National Eye Institute: Vision Rehabilitation",
+          "url": "https://www.nei.nih.gov/eye-health-information/vision-rehabilitation",
+          "evidenceRole": "vision-rehabilitation-function-context",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-04",
+          "sourceCheck": {
+            "checkedAt": "2026-07-04",
+            "method": "python-requests-get",
+            "statusCode": 200,
+            "contentLengthBytes": 51250
+          }
+        },
+        {
+          "sourceRefId": "C2LTB10-SRC-04-2",
+          "title": "National Eye Institute: Low Vision",
+          "url": "https://www.nei.nih.gov/eye-health-information/eye-conditions-and-diseases/low-vision",
+          "evidenceRole": "low-vision-condition-and-assistive-device-context",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-04",
+          "sourceCheck": {
+            "checkedAt": "2026-07-04",
+            "method": "python-requests-get",
+            "statusCode": 200,
+            "contentLengthBytes": 55678
+          }
+        }
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "modelAdmissionDecision": "blocked-until-c2ltb10-source-specific-fields-local-review-independent-fresh-review-and-reviewed-artifacts-exist",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ]
+    },
+    {
+      "domainId": "hearing-aid-maintenance-battery-access-continuity",
+      "triageBucket": "neuro-sensory-cognitive-continuity",
+      "selectionReason": "听力辅助设备不是一次性购买品，而是沟通、警觉、社交、医疗沟通和认知负荷控制的持续运行接口；维护和电源断链会让能力快速退化。",
+      "claimSeed": "助听器和听觉支持通过设备可及、维护、电池/充电、适配、沟通质量和听力损失负担影响主体协作能力与社会接入。",
+      "variableSeed": [
+        "hearing-device-access",
+        "battery-or-charging-continuity",
+        "device-maintenance",
+        "communication-function",
+        "listening-effort"
+      ],
+      "batchId": "C2-LT-B10",
+      "priorityRank": 5,
+      "localDomainPath": "domains/c2-source-maintenance/hearing-aid-maintenance-battery-access-continuity",
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB10-SRC-05-1",
+          "title": "NIDCD: Hearing Aids",
+          "url": "https://www.nidcd.nih.gov/health/hearing-aids",
+          "evidenceRole": "hearing-aid-device-use-context",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-04",
+          "sourceCheck": {
+            "checkedAt": "2026-07-04",
+            "method": "python-requests-get",
+            "statusCode": 200,
+            "contentLengthBytes": 55992
+          }
+        },
+        {
+          "sourceRefId": "C2LTB10-SRC-05-2",
+          "title": "WHO Fact Sheet: Deafness and hearing loss",
+          "url": "https://www.who.int/news-room/fact-sheets/detail/deafness-and-hearing-loss",
+          "evidenceRole": "hearing-loss-global-burden-and-assistive-access-context",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-04",
+          "sourceCheck": {
+            "checkedAt": "2026-07-04",
+            "method": "python-requests-get",
+            "statusCode": 200,
+            "contentLengthBytes": 109234
+          }
+        }
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "modelAdmissionDecision": "blocked-until-c2ltb10-source-specific-fields-local-review-independent-fresh-review-and-reviewed-artifacts-exist",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ]
+    },
+    {
+      "domainId": "surgical-wound-dehiscence-ssi-continuity",
+      "triageBucket": "barrier-function-mobility",
+      "selectionReason": "手术切口裂开和 SSI 会把一次治疗变成长期感染、再入院、疼痛、行动限制和照护负担，是身体边界修复失败的典型级联。",
+      "claimSeed": "手术伤口完整性和感染预防通过切口愈合、感染升级、再手术、住院、功能恢复和照护依赖影响主体恢复时间。",
+      "variableSeed": [
+        "surgical-site-infection",
+        "wound-dehiscence",
+        "healing-status",
+        "readmission-risk",
+        "postoperative-recovery-burden"
+      ],
+      "batchId": "C2-LT-B10",
+      "priorityRank": 6,
+      "localDomainPath": "domains/c2-source-maintenance/surgical-wound-dehiscence-ssi-continuity",
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB10-SRC-06-1",
+          "title": "NICE guideline NG125: Surgical site infections: prevention and treatment",
+          "url": "https://www.nice.org.uk/guidance/ng125",
+          "evidenceRole": "surgical-site-infection-prevention-treatment-guideline",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-04",
+          "sourceCheck": {
+            "checkedAt": "2026-07-04",
+            "method": "python-requests-get",
+            "statusCode": 200,
+            "contentLengthBytes": 21537
+          }
+        },
+        {
+          "sourceRefId": "C2LTB10-SRC-06-2",
+          "title": "CDC: Surgical Site Infection Prevention",
+          "url": "https://www.cdc.gov/infection-control/hcp/surgical-site-infection/index.html",
+          "evidenceRole": "surgical-site-infection-prevention-guideline",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-04",
+          "sourceCheck": {
+            "checkedAt": "2026-07-04",
+            "method": "python-requests-get",
+            "statusCode": 200,
+            "contentLengthBytes": 49255
+          }
+        }
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "modelAdmissionDecision": "blocked-until-c2ltb10-source-specific-fields-local-review-independent-fresh-review-and-reviewed-artifacts-exist",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ]
+    },
+    {
+      "domainId": "thermal-homeostasis-resilience",
+      "triageBucket": "organ-system-homeostasis",
+      "selectionReason": "温度稳态决定极端热、寒冷、停电、住房质量和生理调节下的存活与行动能力，是环境变化时代的底层生命维持变量。",
+      "claimSeed": "热暴露和寒冷暴露通过体温调节、脱水、心血管负担、认知警觉、居住环境和能源连续性影响主体安全边界。",
+      "variableSeed": [
+        "heat-exposure",
+        "cold-exposure",
+        "thermoregulatory-reserve",
+        "hydration-and-cooling-access",
+        "environmental-safety-threshold"
+      ],
+      "batchId": "C2-LT-B10",
+      "priorityRank": 7,
+      "localDomainPath": "domains/c2-source-maintenance/thermal-homeostasis-resilience",
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB10-SRC-07-1",
+          "title": "CDC: About Heat and Your Health",
+          "url": "https://www.cdc.gov/heat-health/about/index.html",
+          "evidenceRole": "heat-health-risk-context",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-04",
+          "sourceCheck": {
+            "checkedAt": "2026-07-04",
+            "method": "python-requests-get",
+            "statusCode": 200,
+            "contentLengthBytes": 49950
+          }
+        },
+        {
+          "sourceRefId": "C2LTB10-SRC-07-2",
+          "title": "CDC: Prevent Hypothermia and Frostbite",
+          "url": "https://www.cdc.gov/winter-weather/prevention/index.html",
+          "evidenceRole": "cold-weather-health-risk-context",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-04",
+          "sourceCheck": {
+            "checkedAt": "2026-07-04",
+            "method": "python-requests-get",
+            "statusCode": 200,
+            "contentLengthBytes": 47349
+          }
+        }
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "modelAdmissionDecision": "blocked-until-c2ltb10-source-specific-fields-local-review-independent-fresh-review-and-reviewed-artifacts-exist",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ]
+    },
+    {
+      "domainId": "burn-wound-aftercare-scar-function-continuity",
+      "triageBucket": "acute-life-risk-and-recovery",
+      "selectionReason": "烧伤把皮肤屏障、感染、疼痛、瘢痕挛缩、热调节和功能恢复捆绑在一起；后续照护失败会造成长期行动与工作能力损失。",
+      "claimSeed": "烧伤及后续瘢痕功能通过皮肤屏障破坏、感染风险、疼痛、关节活动受限、热调节和康复负担影响主体长期行动能力。",
+      "variableSeed": [
+        "burn-depth-area",
+        "wound-healing",
+        "scar-contracture",
+        "infection-risk",
+        "functional-rehabilitation-burden"
+      ],
+      "batchId": "C2-LT-B10",
+      "priorityRank": 8,
+      "localDomainPath": "domains/c2-source-maintenance/burn-wound-aftercare-scar-function-continuity",
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB10-SRC-08-1",
+          "title": "WHO Fact Sheet: Burns",
+          "url": "https://www.who.int/news-room/fact-sheets/detail/burns",
+          "evidenceRole": "burns-burden-prevention-care-context",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-04",
+          "sourceCheck": {
+            "checkedAt": "2026-07-04",
+            "method": "python-requests-get",
+            "statusCode": 200,
+            "contentLengthBytes": 108154
+          }
+        },
+        {
+          "sourceRefId": "C2LTB10-SRC-08-2",
+          "title": "NHS: Burns and scalds",
+          "url": "https://www.nhs.uk/conditions/burns-and-scalds/",
+          "evidenceRole": "burns-symptom-treatment-recovery-context",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-04",
+          "sourceCheck": {
+            "checkedAt": "2026-07-04",
+            "method": "python-requests-get",
+            "statusCode": 200,
+            "contentLengthBytes": 33965
+          }
+        }
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "modelAdmissionDecision": "blocked-until-c2ltb10-source-specific-fields-local-review-independent-fresh-review-and-reviewed-artifacts-exist",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ]
+    },
+    {
+      "domainId": "diabetic-retinopathy-screening-treatment-continuity",
+      "triageBucket": "care-system-safety-continuity",
+      "selectionReason": "糖尿病视网膜病变是可逐步侵蚀视觉、工作、导航和自我管理能力的高影响路径；筛查与治疗连续性决定损失能否被提前捕获。",
+      "claimSeed": "糖尿病视网膜病变通过视力损失、筛查间隔、治疗可及、血糖/血压上下文和眼科随访影响主体感知接口与行动自主性。",
+      "variableSeed": [
+        "diabetic-retinopathy-stage",
+        "vision-loss-risk",
+        "screening-continuity",
+        "treatment-access",
+        "self-management-visual-burden"
+      ],
+      "batchId": "C2-LT-B10",
+      "priorityRank": 9,
+      "localDomainPath": "domains/c2-source-maintenance/diabetic-retinopathy-screening-treatment-continuity",
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB10-SRC-09-1",
+          "title": "National Eye Institute: Diabetic Retinopathy",
+          "url": "https://www.nei.nih.gov/eye-health-information/eye-conditions-and-diseases/diabetic-retinopathy",
+          "evidenceRole": "diabetic-retinopathy-condition-treatment-context",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-04",
+          "sourceCheck": {
+            "checkedAt": "2026-07-04",
+            "method": "python-requests-get",
+            "statusCode": 200,
+            "contentLengthBytes": 64339
+          }
+        },
+        {
+          "sourceRefId": "C2LTB10-SRC-09-2",
+          "title": "CDC: Diabetes and Vision Loss",
+          "url": "https://www.cdc.gov/diabetes/diabetes-complications/diabetes-and-vision-loss.html",
+          "evidenceRole": "diabetes-vision-loss-public-health-context",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-04",
+          "sourceCheck": {
+            "checkedAt": "2026-07-04",
+            "method": "python-requests-get",
+            "statusCode": 200,
+            "contentLengthBytes": 63574
+          }
+        }
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "modelAdmissionDecision": "blocked-until-c2ltb10-source-specific-fields-local-review-independent-fresh-review-and-reviewed-artifacts-exist",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ]
+    },
+    {
+      "domainId": "caregiver-health-burnout-screening-support-continuity",
+      "triageBucket": "acute-life-risk-and-recovery",
+      "selectionReason": "照护者不是外部背景，而是许多主体持续性的执行器；照护者健康崩溃会反向破坏用药、就医、营养、移动、安全和恢复。",
+      "claimSeed": "照护者健康和负担通过照护时间、压力、睡眠、经济损耗、协调失败和照护中断影响被照护主体与照护者双方的持续性。",
+      "variableSeed": [
+        "caregiver-burden",
+        "caregiver-health",
+        "respite-access",
+        "care-continuity",
+        "support-service-navigation"
+      ],
+      "batchId": "C2-LT-B10",
+      "priorityRank": 10,
+      "localDomainPath": "domains/c2-source-maintenance/caregiver-health-burnout-screening-support-continuity",
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB10-SRC-10-1",
+          "title": "MedlinePlus: Caregiver Health",
+          "url": "https://medlineplus.gov/caregiverhealth.html",
+          "evidenceRole": "caregiver-health-burden-context",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-04",
+          "sourceCheck": {
+            "checkedAt": "2026-07-04",
+            "method": "python-requests-get",
+            "statusCode": 200,
+            "contentLengthBytes": 71214
+          }
+        },
+        {
+          "sourceRefId": "C2LTB10-SRC-10-2",
+          "title": "CDC: Caring for Yourself When Caring for Others",
+          "url": "https://www.cdc.gov/caregiving/caring-for-yourself/index.html",
+          "evidenceRole": "caregiver-self-care-public-health-context",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-04",
+          "sourceCheck": {
+            "checkedAt": "2026-07-04",
+            "method": "python-requests-get",
+            "statusCode": 200,
+            "contentLengthBytes": 51197
+          }
+        }
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "modelAdmissionDecision": "blocked-until-c2ltb10-source-specific-fields-local-review-independent-fresh-review-and-reviewed-artifacts-exist",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ]
+    },
+    {
+      "domainId": "choking-foreign-body-airway-risk-continuity",
+      "triageBucket": "acute-life-risk-and-recovery",
+      "selectionReason": "窒息是低频但高尾部风险的气道中断事件，能够在极短时间内终止主体连续性；它也暴露了进食、吞咽、儿童安全和急救可及性边界。",
+      "claimSeed": "异物气道阻塞通过进食安全、儿童/老人风险、吞咽功能、急救响应时间和缺氧事件影响主体存活边界。",
+      "variableSeed": [
+        "airway-obstruction-risk",
+        "foreign-body-exposure",
+        "response-time",
+        "hypoxia-risk",
+        "feeding-swallowing-context"
+      ],
+      "batchId": "C2-LT-B10",
+      "priorityRank": 11,
+      "localDomainPath": "domains/c2-source-maintenance/choking-foreign-body-airway-risk-continuity",
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB10-SRC-11-1",
+          "title": "MedlinePlus: Choking",
+          "url": "https://medlineplus.gov/choking.html",
+          "evidenceRole": "choking-risk-and-response-context",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-04",
+          "sourceCheck": {
+            "checkedAt": "2026-07-04",
+            "method": "python-requests-get",
+            "statusCode": 200,
+            "contentLengthBytes": 73681
+          }
+        },
+        {
+          "sourceRefId": "C2LTB10-SRC-11-2",
+          "title": "NCBI Bookshelf: Foreign Body Airway Obstruction",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK553186/",
+          "evidenceRole": "foreign-body-airway-obstruction-clinical-review-context",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-04",
+          "sourceCheck": {
+            "checkedAt": "2026-07-04",
+            "method": "python-requests-get",
+            "statusCode": 200,
+            "contentLengthBytes": 94401
+          }
+        }
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "modelAdmissionDecision": "blocked-until-c2ltb10-source-specific-fields-local-review-independent-fresh-review-and-reviewed-artifacts-exist",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ]
+    },
+    {
+      "domainId": "neurodegenerative-dysphagia-nutrition-continuity",
+      "triageBucket": "neuro-sensory-cognitive-continuity",
+      "selectionReason": "神经退行性吞咽障碍把营养、吸入性肺炎、体重、沟通、照护和临终风险连接起来，是认知/运动衰退转为系统性失能的关键转换点。",
+      "claimSeed": "神经退行性吞咽障碍通过吞咽安全、误吸、营养状态、体重变化、照护负担和进食决策影响主体维持与选择空间。",
+      "variableSeed": [
+        "swallowing-safety",
+        "aspiration-risk",
+        "nutrition-status",
+        "weight-loss",
+        "feeding-support-boundary"
+      ],
+      "batchId": "C2-LT-B10",
+      "priorityRank": 12,
+      "localDomainPath": "domains/c2-source-maintenance/neurodegenerative-dysphagia-nutrition-continuity",
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB10-SRC-12-1",
+          "title": "NICE guideline NG71: Parkinson's disease in adults",
+          "url": "https://www.nice.org.uk/guidance/ng71",
+          "evidenceRole": "parkinson-dysphagia-nutrition-guideline-context",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-04",
+          "sourceCheck": {
+            "checkedAt": "2026-07-04",
+            "method": "python-requests-get",
+            "statusCode": 200,
+            "contentLengthBytes": 21046
+          }
+        },
+        {
+          "sourceRefId": "C2LTB10-SRC-12-2",
+          "title": "ASHA Practice Portal: Adult Dysphagia",
+          "url": "https://www.asha.org/practice-portal/clinical-topics/adult-dysphagia/",
+          "evidenceRole": "adult-dysphagia-function-and-aspiration-context",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-04",
+          "sourceCheck": {
+            "checkedAt": "2026-07-04",
+            "method": "python-requests-get",
+            "statusCode": 200,
+            "contentLengthBytes": 183444
+          }
+        }
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "modelAdmissionDecision": "blocked-until-c2ltb10-source-specific-fields-local-review-independent-fresh-review-and-reviewed-artifacts-exist",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ]
+    }
+  ],
+  "aggregateDecision": {
+    "selectedDomainCount": 12,
+    "candidateSourceCount": 24,
+    "modelAdmission": "blocked",
+    "promotionStatus": "source-specific-promotion-queue-only",
+    "nextRequiredWork": [
+      "derive C2-LT-B10 source extraction queue",
+      "perform field-level source-context extraction",
+      "perform local source-context review",
+      "run independent fresh review",
+      "create bounded reviewed artifacts only for eligible rows",
+      "preserve clinical, device, renal, vision, hearing, rehabilitation, wound-care, burn-care, emergency, caregiver, nutrition, swallowing and individual-use blocks"
+    ]
+  }
+}

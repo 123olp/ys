@@ -1,6 +1,6 @@
 {
   "schemaVersion": "human-infra.life-path-nhats-l4-readiness-runway-validation.v1",
-  "generatedAt": "2026-07-03T10:00:37.464177+00:00",
+  "generatedAt": "2026-07-04T20:22:39.911584+00:00",
   "runwayPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_l4_readiness_runway.json",
   "runwaySha256": "f7e1fa471eccbf8d11dc8781895b11d0bcd41317a37860f022bd83b865a54997",
   "runwayId": "nhats-r13-r14-l4-readiness-runway-2026-07-03",
@@ -171,8 +171,8 @@
     "individualUseAllowed": false
   },
   "sourceHashes": {
-    "docs/reference/human-infra-model-admission-contract.json": "7fda13c3bb19bdb6bff3af1450e455f4f0d82bace7c4272bd3f5d13f1e679262",
-    "docs/reference/human-infra-model-admission-candidate-registry.json": "4f5486688b123a436b0ca75521284bf7dd054e41fd1c0cd6ac392237c22fca19",
+    "docs/reference/human-infra-model-admission-contract.json": "82146a5b0b85e330c64e17380cf9f6b35c97198de28d61bba7cc7eb4ab3b7692",
+    "docs/reference/human-infra-model-admission-candidate-registry.json": "9f82f7fd443aa6c04a2ccb2ec8ab962c9ee6648076f294b8c4a523c35564db4a",
     "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_calibration_readiness.json": "03a6edabcadaefda990f3989e19604e7391d42613f1a09e7c9e74139c4c8d8d6",
     "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_acquisition_readiness.json": "15d8f2ce1144fe40d3a7132bb38d49fa496368f2a339dc0f769a87624225dd94",
     "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_registration_evidence_template.json": "403925b01f1fef53518448c27d14504d69532dc06f53ede474fb64f0033fff16",
@@ -188,7 +188,7 @@
     "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_route_field_discovery_register.json": "32d86995a0438e2104e6850334eefa63b30176b0767dd2229bc73a517ef5ade4",
     "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_value_label_review_protocol.json": "bd5130152b3c57d5a6d8cdc767df85bc8a10e19e1225738f13940bd3734ff416",
     "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_value_label_review_execution_register.json": "de6d17f9470a563346f92884cead1eec35cf5a954245751b0135efc60672b042",
-    "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_access_route_probe_register.json": "58941fde2c6a1c5488437a1ad447cb3dae2032739ef1ed579e29da98b96aaa89",
+    "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_access_route_probe_register.json": "650a4c8d6747a722055cf417b40da4f0b011b97fe7465b44586493daf16c006d",
     "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_authenticated_capture_template.json": "dc097acfcb44007b42a25ce500c6cb1d23b1154f6620a7797445293817313eeb",
     "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_l2_variable_family_admission_register.json": "da1d444f452482f37aa7d7d12cd97c9deb0b2d6006540f76c5d2588389dffce3",
     "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_preoutcome_aggregation_protocol.json": "a2917d4bbb1682f5de6251fe919afae5da5bad681168475845a3a9c0a9a0747d"

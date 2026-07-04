@@ -1,0 +1,100 @@
+{
+  "schemaVersion": "human-infra.nhanes-public-lmf-disclosure-output-envelope-validation.v1",
+  "generatedAt": "2026-07-04T20:22:38.329604+00:00",
+  "policyPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhanes_public_lmf_disclosure_output_envelope_policy.json",
+  "policySha256": "eb305bac0ddcac013d0c039a43341c603565d179b3f78122f91b8dd6a84864fa",
+  "testCasesPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhanes_public_lmf_disclosure_output_envelope_test_cases.json",
+  "testCasesSha256": "e509f144e3cc7d7ec3b9e68a3397757b05671f668d1ac6750fafaef4f9790463",
+  "overallStatus": "PASS",
+  "boundary": {
+    "containsRealNhanesData": false,
+    "containsSyntheticOnly": true,
+    "publicExportProofOnly": true,
+    "weightedDomainOutputImplemented": false,
+    "publicWeightedDomainOutputAllowed": false,
+    "calibrationAllowed": false,
+    "individualPredictionAllowed": false,
+    "note": "This report validates synthetic NHANES output envelopes only; it does not validate real weighted rates, intervals, calibration, causal inference, clinical use or individual prediction."
+  },
+  "summary": {
+    "caseCount": 8,
+    "pass": 8,
+    "fail": 0,
+    "allowedCount": 2,
+    "blockedCount": 6,
+    "policyIssueCount": 0,
+    "boundaryIssueCount": 0
+  },
+  "cases": [
+    {
+      "id": "synthetic-safe-weighted-domain-table",
+      "expectedDecision": "allow-export",
+      "observedDecision": "allow-export",
+      "status": "PASS",
+      "reasons": []
+    },
+    {
+      "id": "synthetic-small-cell-unsuppressed",
+      "expectedDecision": "block-export",
+      "observedDecision": "block-export",
+      "status": "PASS",
+      "reasons": [
+        "cell[0] count below 5 is not suppressed"
+      ]
+    },
+    {
+      "id": "synthetic-small-cell-suppressed",
+      "expectedDecision": "allow-export",
+      "observedDecision": "allow-export",
+      "status": "PASS",
+      "reasons": []
+    },
+    {
+      "id": "synthetic-low-dof-unsuppressed",
+      "expectedDecision": "block-export",
+      "observedDecision": "block-export",
+      "status": "PASS",
+      "reasons": [
+        "cell[0] domainDof below 8 is not suppressed"
+      ]
+    },
+    {
+      "id": "synthetic-row-level-leak",
+      "expectedDecision": "block-export",
+      "observedDecision": "block-export",
+      "status": "PASS",
+      "reasons": [
+        "containsRowLevelData must be false"
+      ]
+    },
+    {
+      "id": "synthetic-identifier-key-leak",
+      "expectedDecision": "block-export",
+      "observedDecision": "block-export",
+      "status": "PASS",
+      "reasons": [
+        "containsIdentifiers must be false",
+        "prohibited keys present: ['SEQN']"
+      ]
+    },
+    {
+      "id": "synthetic-public-ai-upload",
+      "expectedDecision": "block-export",
+      "observedDecision": "block-export",
+      "status": "PASS",
+      "reasons": [
+        "publicAiUploadRequested must be false"
+      ]
+    },
+    {
+      "id": "synthetic-forbidden-real-output-type",
+      "expectedDecision": "block-export",
+      "observedDecision": "block-export",
+      "status": "PASS",
+      "reasons": [
+        "outputType 'real_public_weighted_domain_rates' is not allowed",
+        "outputType 'real_public_weighted_domain_rates' is explicitly forbidden"
+      ]
+    }
+  ]
+}

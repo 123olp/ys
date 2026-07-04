@@ -1,15 +1,15 @@
 {
   "schemaVersion": "human-infra.life-path-nhats-colectica-access-route-probe-validation.v1",
-  "generatedAt": "2026-07-03T10:00:37.244587+00:00",
+  "generatedAt": "2026-07-04T20:22:39.053041+00:00",
   "probeRegisterPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_access_route_probe_register.json",
-  "probeRegisterSha256": "58941fde2c6a1c5488437a1ad447cb3dae2032739ef1ed579e29da98b96aaa89",
+  "probeRegisterSha256": "650a4c8d6747a722055cf417b40da4f0b011b97fe7465b44586493daf16c006d",
   "executionRegisterPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_value_label_review_execution_register.json",
   "executionRegisterSha256": "de6d17f9470a563346f92884cead1eec35cf5a954245751b0135efc60672b042",
   "probeRegisterId": "nhats-r13-r14-colectica-access-route-probe-2026-07-03",
   "executionRegisterId": "nhats-r13-r14-colectica-value-label-review-execution-register-2026-07-03",
   "overallStatus": "PASS",
   "summary": {
-    "pass": 11,
+    "pass": 13,
     "fail": 0
   },
   "checks": [
@@ -37,6 +37,16 @@
       "id": "anonymous-access-probe",
       "status": "PASS",
       "detail": "anonymous root and search probes must resolve to login boundary without metadata capture"
+    },
+    {
+      "id": "latest-anonymous-live-reprobe",
+      "status": "PASS",
+      "detail": "2026-07-04 live reprobe must prove public Cross-Year page reachability and anonymous Colectica login gating without confirming labels or classifier inputs"
+    },
+    {
+      "id": "latest-technical-guide-freshness-probe",
+      "status": "PASS",
+      "detail": "2026-07-04 technical guide freshness probe must match registered PDF hash and keep authenticated capture, labels, classifier and calibration blocked"
     },
     {
       "id": "technical-guide-route",

@@ -1,0 +1,221 @@
+{
+  "schemaVersion": "human-infra.nhanes-public-lmf-public-output-implementation-review-execution-register.v1",
+  "registerId": "nhanes-public-lmf-2017-2018-public-output-implementation-review-execution-register",
+  "status": "execution-register-ready-implementation-review-not-complete-release-blocked",
+  "sourceId": "nhanes-public-lmf-2017-2018",
+  "reviewType": "public-output-implementation-review-execution",
+  "lastReviewedDate": "2026-07-04",
+  "reviewer": "tradecatlabs",
+  "executionPurpose": "Record the machine-auditable execution state required after a future human disclosure approval and before any NHANES public-use LMF public output implementation can be exposed through tracked Web data or public pages.",
+  "upstreamTemplate": {
+    "path": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhanes_public_lmf_public_output_implementation_review_template.json",
+    "validationPath": "web/src/data/life-path-nhanes-public-lmf-public-output-implementation-review-template-validation.json"
+  },
+  "upstreamReleaseGate": {
+    "validationPath": "web/src/data/life-path-nhanes-public-lmf-public-release-gate-validation.json",
+    "expectedDecision": "blocked-pending-human-disclosure-review"
+  },
+  "currentDecision": {
+    "executionRegisterValidated": true,
+    "reviewTemplateValidated": true,
+    "reviewedOutputArtifactHashPresent": false,
+    "frontEndArtifactReviewed": false,
+    "allRequiredSlotsCompleted": false,
+    "humanReviewedSlotCount": 0,
+    "secondReviewerSignoffPresent": false,
+    "finalImplementationDecisionPresent": false,
+    "implementationReviewComplete": false,
+    "publicOutputImplementationAllowed": false,
+    "publicWeightedDomainOutputAllowed": false,
+    "realWeightedOutputImplemented": false,
+    "realWeightedOutputReviewed": false,
+    "realWeightedOutputReleased": false,
+    "calibrationAllowed": false,
+    "individualPredictionAllowed": false,
+    "medicalAdviceAllowed": false,
+    "releaseDecision": "blocked-pending-public-output-implementation-review",
+    "reason": "The execution register and template are ready, but no human implementation review, second reviewer signoff, reviewed output artifact hash, static build review, rollback plan or final public implementation decision exists."
+  },
+  "implementationReviewSlotExecution": [
+    {
+      "slotId": "reviewed-artifact-binding",
+      "templateStatus": "defined",
+      "executionStatus": "pending-human-review",
+      "machinePrefillAllowed": false,
+      "reviewEvidenceRef": null,
+      "reviewerSignoff": null,
+      "completedAt": null,
+      "blocksRelease": true
+    },
+    {
+      "slotId": "redacted-summary-binding",
+      "templateStatus": "defined",
+      "executionStatus": "pending-human-review",
+      "machinePrefillAllowed": false,
+      "reviewEvidenceRef": null,
+      "reviewerSignoff": null,
+      "completedAt": null,
+      "blocksRelease": true
+    },
+    {
+      "slotId": "front-end-json-source-binding",
+      "templateStatus": "defined",
+      "executionStatus": "pending-human-review",
+      "machinePrefillAllowed": false,
+      "reviewEvidenceRef": null,
+      "reviewerSignoff": null,
+      "completedAt": null,
+      "blocksRelease": true
+    },
+    {
+      "slotId": "no-real-values-scan-binding",
+      "templateStatus": "defined",
+      "executionStatus": "pending-human-review",
+      "machinePrefillAllowed": false,
+      "reviewEvidenceRef": null,
+      "reviewerSignoff": null,
+      "completedAt": null,
+      "blocksRelease": true
+    },
+    {
+      "slotId": "static-build-artifact-review",
+      "templateStatus": "defined",
+      "executionStatus": "pending-human-review",
+      "machinePrefillAllowed": false,
+      "reviewEvidenceRef": null,
+      "reviewerSignoff": null,
+      "completedAt": null,
+      "blocksRelease": true
+    },
+    {
+      "slotId": "page-rendering-boundary-review",
+      "templateStatus": "defined",
+      "executionStatus": "pending-human-review",
+      "machinePrefillAllowed": false,
+      "reviewEvidenceRef": null,
+      "reviewerSignoff": null,
+      "completedAt": null,
+      "blocksRelease": true
+    },
+    {
+      "slotId": "cache-and-cdn-invalidation-plan",
+      "templateStatus": "defined",
+      "executionStatus": "pending-human-review",
+      "machinePrefillAllowed": false,
+      "reviewEvidenceRef": null,
+      "reviewerSignoff": null,
+      "completedAt": null,
+      "blocksRelease": true
+    },
+    {
+      "slotId": "rollback-and-removal-plan",
+      "templateStatus": "defined",
+      "executionStatus": "pending-human-review",
+      "machinePrefillAllowed": false,
+      "reviewEvidenceRef": null,
+      "reviewerSignoff": null,
+      "completedAt": null,
+      "blocksRelease": true
+    },
+    {
+      "slotId": "accessibility-and-labeling-review",
+      "templateStatus": "defined",
+      "executionStatus": "pending-human-review",
+      "machinePrefillAllowed": false,
+      "reviewEvidenceRef": null,
+      "reviewerSignoff": null,
+      "completedAt": null,
+      "blocksRelease": true
+    },
+    {
+      "slotId": "user-facing-boundary-copy-review",
+      "templateStatus": "defined",
+      "executionStatus": "pending-human-review",
+      "machinePrefillAllowed": false,
+      "reviewEvidenceRef": null,
+      "reviewerSignoff": null,
+      "completedAt": null,
+      "blocksRelease": true
+    },
+    {
+      "slotId": "second-reviewer-implementation-signoff",
+      "templateStatus": "defined",
+      "executionStatus": "pending-human-review",
+      "machinePrefillAllowed": false,
+      "reviewEvidenceRef": null,
+      "reviewerSignoff": null,
+      "completedAt": null,
+      "blocksRelease": true
+    },
+    {
+      "slotId": "final-public-implementation-decision",
+      "templateStatus": "defined",
+      "executionStatus": "pending-human-review",
+      "machinePrefillAllowed": false,
+      "reviewEvidenceRef": null,
+      "reviewerSignoff": null,
+      "completedAt": null,
+      "blocksRelease": true
+    }
+  ],
+  "completionState": {
+    "requiredSlotCount": 12,
+    "machinePrefillAllowedSlotCount": 0,
+    "humanReviewedSlotCount": 0,
+    "completedSlotCount": 0,
+    "pendingHumanReviewSlotCount": 12,
+    "reviewedOutputArtifactHashPresent": false,
+    "frontEndArtifactReviewed": false,
+    "secondReviewerSignoffPresent": false,
+    "finalImplementationDecisionPresent": false,
+    "releaseDecision": "blocked-pending-public-output-implementation-review",
+    "implementationReviewComplete": false,
+    "publicOutputImplementationAllowed": false,
+    "publicWeightedDomainOutputAllowed": false,
+    "realWeightedOutputImplemented": false,
+    "realWeightedOutputReviewed": false,
+    "realWeightedOutputReleased": false,
+    "calibrationAllowed": false,
+    "individualPredictionAllowed": false,
+    "medicalAdviceAllowed": false
+  },
+  "releaseStateMachine": {
+    "currentState": "blocked-pending-public-output-implementation-review",
+    "allowedNextStates": [
+      "artifact-attached-pending-implementation-review",
+      "cannot-evaluate"
+    ],
+    "forbiddenDirectTransitions": [
+      "public-implementation-approved",
+      "public-weighted-output-implemented",
+      "calibration-enabled",
+      "individual-prediction-enabled"
+    ],
+    "minimumReleasePath": [
+      "human-disclosure-review-complete",
+      "reviewed-artifact-hash-bound",
+      "all-implementation-slots-human-reviewed",
+      "static-build-and-page-boundary-reviewed",
+      "rollback-plan-tested",
+      "second-implementation-reviewer-signed",
+      "explicit-final-public-implementation-decision-recorded"
+    ]
+  },
+  "nonProofBoundary": {
+    "confirms": [
+      "the public-output implementation review execution state is machine-auditable",
+      "all 12 implementation review slots are present and still block release",
+      "no reviewed public output artifact is bound",
+      "public weighted-domain output remains blocked"
+    ],
+    "doesNotConfirm": [
+      "public output implementation review completion",
+      "reviewed public output artifact approval",
+      "human disclosure review completion",
+      "public weighted-domain output permission",
+      "calibration",
+      "individual prediction",
+      "medical advice"
+    ]
+  }
+}

@@ -44,6 +44,7 @@ REQUIRED_SOURCE_IDS = {
     "round-14-files",
     "colectica-technical-guide",
 }
+REQUIRED_LIVE_REPROBE_ID = "nhats-official-source-live-reprobe-2026-07-04"
 REQUIRED_FALSE_DECISIONS = {
     "registrationStatusReady",
     "downloadAllowed",
@@ -60,6 +61,12 @@ REQUIRED_HARD_BOUNDARIES = {
     "no public AI upload of NHATS or NSOC data",
     "no calibration claim",
     "no individual prediction",
+}
+REQUIRED_LIVE_REPROBE_FALSE_SUMMARY = {
+    "downloadAllowed",
+    "extractionAllowed",
+    "calibrationAllowed",
+    "individualPredictionAllowed",
 }
 PROHIBITED_KEYS = {
     "password",
@@ -181,6 +188,67 @@ def validate_register(register: dict[str, Any]) -> list[dict[str, Any]]:
         f"observed={len(observed_ids)} missing={sorted(REQUIRED_SOURCE_IDS - observed_ids)}",
     )
 
+    live_reprobe = register.get("latestOfficialPublicLiveReprobe")
+    live_reprobe_ok = (
+        isinstance(live_reprobe, dict)
+        and live_reprobe.get("probeId") == REQUIRED_LIVE_REPROBE_ID
+        and live_reprobe.get("observedDateLocal") == "2026-07-04"
+        and "reachability only" in str(live_reprobe.get("methodBoundary", ""))
+    )
+    live_summary = live_reprobe.get("summary") if isinstance(live_reprobe, dict) else None
+    if isinstance(live_summary, dict):
+        live_reprobe_ok = (
+            live_reprobe_ok
+            and live_summary.get("rows") == len(REQUIRED_SOURCE_IDS)
+            and live_summary.get("httpStatus200Rows") == len(REQUIRED_SOURCE_IDS)
+            and live_summary.get("htmlGetRows") == len(REQUIRED_SOURCE_IDS) - 1
+            and live_summary.get("pdfHeadRows") == 1
+        )
+        for field in REQUIRED_LIVE_REPROBE_FALSE_SUMMARY:
+            live_reprobe_ok = live_reprobe_ok and live_summary.get(field) is False
+    live_rows = live_reprobe.get("rows") if isinstance(live_reprobe, dict) else None
+    live_ids: set[str] = set()
+    live_rows_ok = isinstance(live_rows, list) and len(live_rows) == len(REQUIRED_SOURCE_IDS)
+    if isinstance(live_rows, list):
+        for row in live_rows:
+            if not isinstance(row, dict):
+                live_rows_ok = False
+                continue
+            row_id = row.get("id")
+            if isinstance(row_id, str):
+                live_ids.add(row_id)
+            method = row.get("method")
+            live_rows_ok = live_rows_ok and row.get("httpStatus") == 200
+            live_rows_ok = live_rows_ok and method in {"GET", "HEAD"}
+            live_rows_ok = live_rows_ok and isinstance(row.get("url"), str)
+            live_rows_ok = live_rows_ok and row["url"].startswith("https://")
+            live_rows_ok = live_rows_ok and isinstance(row.get("finalUrl"), str)
+            live_rows_ok = live_rows_ok and row["finalUrl"].startswith("https://")
+            live_rows_ok = live_rows_ok and isinstance(row.get("contentType"), str)
+            live_rows_ok = live_rows_ok and isinstance(row.get("contentLengthBytes"), int)
+            live_rows_ok = live_rows_ok and row["contentLengthBytes"] > 10000
+            live_rows_ok = live_rows_ok and isinstance(row.get("doesNotSupport"), list)
+            live_rows_ok = live_rows_ok and any(
+                "confirmed" in str(item) or "approved" in str(item) or "complete" in str(item)
+                for item in row.get("doesNotSupport", [])
+            )
+            if method == "GET":
+                live_rows_ok = live_rows_ok and isinstance(row.get("title"), str)
+                live_rows_ok = live_rows_ok and bool(row.get("title", "").strip())
+                live_rows_ok = live_rows_ok and isinstance(row.get("sha256"), str)
+                live_rows_ok = live_rows_ok and len(row["sha256"]) == 64
+            if method == "HEAD":
+                live_rows_ok = live_rows_ok and row.get("id") == "colectica-technical-guide"
+                live_rows_ok = live_rows_ok and row.get("contentType") == "application/pdf"
+                live_rows_ok = live_rows_ok and isinstance(row.get("lastModified"), str)
+                live_rows_ok = live_rows_ok and isinstance(row.get("etag"), str)
+    add_check(
+        checks,
+        "latest-official-public-live-reprobe",
+        live_reprobe_ok and live_rows_ok and live_ids == REQUIRED_SOURCE_IDS,
+        f"observed={len(live_ids)} missing={sorted(REQUIRED_SOURCE_IDS - live_ids)}",
+    )
+
     gate_impact = register.get("gateImpact")
     gate_ok = (
         isinstance(gate_impact, dict)
@@ -259,6 +327,7 @@ def build_report(register_path: Path, output_path: Path) -> dict[str, Any]:
         "checks": checks,
         "summary": summary,
         "sourceRows": row_summaries,
+        "latestOfficialPublicLiveReprobe": register.get("latestOfficialPublicLiveReprobe"),
         "gateImpact": register.get("gateImpact"),
         "boundary": "This validation proves only that public official-source reachability was recorded; it does not authorize data download, extraction, calibration or individual use.",
     }

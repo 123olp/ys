@@ -1,0 +1,409 @@
+{
+  "schemaVersion": "human-infra.research-standards-source-anchor-register.v1",
+  "registerId": "human-infra-research-standards-source-anchor-register-2026-07-04",
+  "status": "active-standards-anchor-register-no-model-admission",
+  "currentAssessmentDate": "2026-07-04",
+  "purpose": "Map external research reporting, bias, certainty and model-transparency standards to Human Infra evidence and model-admission gates. This register is an anchor map only: it does not prove intervention effects, model calibration, individual prediction, medical advice, or longevity escape velocity.",
+  "sourceOfTruth": {
+    "evidencePolicy": "docs/reference/evidence-policy.md",
+    "sourceCardSystem": "docs/reference/source-card-system.md",
+    "modelAdmissionContract": "docs/reference/human-infra-model-admission-contract.json",
+    "modelAdmissionCandidateRegistry": "docs/reference/human-infra-model-admission-candidate-registry.json",
+    "l4ValidationCalibrationReportingContract": "docs/reference/human-infra-l4-validation-calibration-reporting-contract.json",
+    "l4ValidationCalibrationReportExecutionRegister": "docs/reference/human-infra-l4-validation-calibration-report-execution-register.json",
+    "maturityGapRegister": "docs/reference/human-infra-maturity-gap-register.json"
+  },
+  "anchorPolicy": {
+    "requiredBeforeUse": [
+      "source-specific extraction",
+      "independent fresh review",
+      "bias or applicability assessment",
+      "reporting completeness check",
+      "calibration or validation report admission",
+      "evidence-to-decision translation"
+    ],
+    "neverEvidenceFor": [
+      "validated-model-availability",
+      "causal-effect-proof",
+      "individual-prediction",
+      "individual-death-date-output",
+      "medical-advice",
+      "longevity-escape-velocity-proof"
+    ]
+  },
+  "standardAnchors": [
+    {
+      "anchorId": "RSA-TRIPOD-AI-2024",
+      "standardFamily": "prediction-model-reporting",
+      "title": "TRIPOD+AI reporting guidance for AI and machine-learning prediction model studies",
+      "sourceUrl": "https://www.tripod-statement.org/tripod-ai",
+      "sourceType": "official-guideline-route",
+      "sourceStatus": "http-verified-200-official-route",
+      "primaryUse": "Report AI/ML prediction model development, validation and update studies with transparent intended-use, data, predictor, outcome, validation and performance details.",
+      "humanInfraPlacement": "L4 validation/calibration report completeness gate for life-path prediction models.",
+      "requiredBefore": [
+        "L4 validation/calibration reporting packet",
+        "public model methods page",
+        "aggregate calibrated model admission"
+      ],
+      "notEvidenceFor": [
+        "causal-effect-proof",
+        "model-calibration-proof",
+        "individual-prediction",
+        "medical-advice",
+        "longevity-escape-velocity-proof"
+      ]
+    },
+    {
+      "anchorId": "RSA-PROBAST-AI-2024",
+      "standardFamily": "prediction-model-bias-applicability",
+      "title": "PROBAST / PROBAST+AI risk-of-bias and applicability route for prediction model studies",
+      "sourceUrl": "https://www.probast.org/",
+      "sourceType": "official-tool-route",
+      "sourceStatus": "http-verified-200-official-route-needs-version-specific-fresh-review",
+      "primaryUse": "Assess risk of bias and applicability for prediction model studies before using model claims as Human Infra evidence.",
+      "humanInfraPlacement": "Bias/applicability review gate for prediction-model source cards and L4 report packets.",
+      "requiredBefore": [
+        "prediction model evidence admission",
+        "bias applicability review",
+        "aggregate calibrated model admission"
+      ],
+      "notEvidenceFor": [
+        "intervention-effect-proof",
+        "model-calibration-proof",
+        "individual-prediction",
+        "medical-advice",
+        "longevity-escape-velocity-proof"
+      ]
+    },
+    {
+      "anchorId": "RSA-STROBE-OBSERVATIONAL",
+      "standardFamily": "observational-reporting",
+      "title": "STROBE statement for observational studies",
+      "sourceUrl": "https://www.strobe-statement.org/",
+      "sourceType": "official-reporting-guideline-route",
+      "sourceStatus": "http-verified-200-official-route",
+      "primaryUse": "Report cohort, case-control and cross-sectional observational evidence transparently.",
+      "humanInfraPlacement": "Source-card reporting-quality screen for observational epidemiology and cohort evidence.",
+      "requiredBefore": [
+        "observational source-card promotion",
+        "population endpoint extraction",
+        "uncertainty and confounding note"
+      ],
+      "notEvidenceFor": [
+        "causal-effect-proof",
+        "randomized-effect-proof",
+        "individual-prediction",
+        "medical-advice",
+        "longevity-escape-velocity-proof"
+      ]
+    },
+    {
+      "anchorId": "RSA-RECORD-ROUTINE-DATA",
+      "standardFamily": "routinely-collected-data-reporting",
+      "title": "RECORD statement for routinely collected health data studies",
+      "sourceUrl": "https://www.record-statement.org/",
+      "sourceType": "official-reporting-guideline-route",
+      "sourceStatus": "http-verified-200-official-route",
+      "primaryUse": "Report studies using routinely collected health data with database, linkage, coding and completeness transparency.",
+      "humanInfraPlacement": "NHANES/NHATS/RWE source-card reporting-quality screen when administrative or registry data are used.",
+      "requiredBefore": [
+        "routine-data source-card promotion",
+        "data lineage review",
+        "missingness and linkage bias notes"
+      ],
+      "notEvidenceFor": [
+        "causal-effect-proof",
+        "data-quality-proof",
+        "individual-prediction",
+        "medical-advice",
+        "longevity-escape-velocity-proof"
+      ]
+    },
+    {
+      "anchorId": "RSA-CONSORT-2025",
+      "standardFamily": "randomized-trial-reporting",
+      "title": "CONSORT reporting guidance for randomized trials",
+      "sourceUrl": "https://www.consort-statement.org/",
+      "sourceType": "official-reporting-guideline-route",
+      "sourceStatus": "http-verified-200-official-route-needs-2025-specific-fresh-review",
+      "primaryUse": "Report randomized trial design, allocation, participant flow, harms, outcomes and interpretation transparently.",
+      "humanInfraPlacement": "Clinical intervention source-card reporting-quality screen before any randomized evidence is used.",
+      "requiredBefore": [
+        "clinical trial source-card promotion",
+        "intervention effect extraction",
+        "harms and adverse-event boundary note"
+      ],
+      "notEvidenceFor": [
+        "external-validity-proof",
+        "long-term-safety-proof",
+        "individual-prediction",
+        "individual-treatment-recommendation",
+        "medical-advice",
+        "longevity-escape-velocity-proof"
+      ]
+    },
+    {
+      "anchorId": "RSA-SPIRIT-2025",
+      "standardFamily": "trial-protocol-reporting",
+      "title": "SPIRIT guidance for clinical trial protocols",
+      "sourceUrl": "https://www.spirit-statement.org/",
+      "sourceType": "official-protocol-guideline-route",
+      "sourceStatus": "http-verified-200-official-route-needs-2025-specific-fresh-review",
+      "primaryUse": "Check whether trial protocol claims expose objectives, eligibility, interventions, outcomes, sample size, monitoring and ethics before trial evidence is consumed.",
+      "humanInfraPlacement": "Pre-results and protocol-only trial evidence boundary for Human Infra source cards.",
+      "requiredBefore": [
+        "trial protocol source-card promotion",
+        "pre-registration and protocol consistency check",
+        "outcome switching risk note"
+      ],
+      "notEvidenceFor": [
+        "trial-result-proof",
+        "intervention-effect-proof",
+        "individual-prediction",
+        "individual-treatment-recommendation",
+        "medical-advice",
+        "longevity-escape-velocity-proof"
+      ]
+    },
+    {
+      "anchorId": "RSA-CONSORT-AI-2020",
+      "standardFamily": "ai-trial-reporting",
+      "title": "CONSORT-AI extension for clinical trials evaluating AI interventions",
+      "sourceUrl": "https://www.nature.com/articles/s41591-020-1034-x",
+      "sourceType": "peer-reviewed-guideline-route",
+      "sourceStatus": "http-verified-200-primary-route",
+      "primaryUse": "Report randomized trials of AI interventions with intervention inputs/outputs, human-AI interaction, error handling and integration details.",
+      "humanInfraPlacement": "AI clinical decision support evidence boundary before AI tools are admitted as intervention or conversion-channel evidence.",
+      "requiredBefore": [
+        "AI clinical trial source-card promotion",
+        "human-AI workflow boundary note",
+        "model failure mode note"
+      ],
+      "notEvidenceFor": [
+        "AI-system-general-safety-proof",
+        "individual-prediction",
+        "individual-medical-advice",
+        "model-calibration-proof",
+        "medical-advice",
+        "longevity-escape-velocity-proof"
+      ]
+    },
+    {
+      "anchorId": "RSA-SPIRIT-AI-2020",
+      "standardFamily": "ai-trial-protocol-reporting",
+      "title": "SPIRIT-AI extension for clinical trial protocols involving AI interventions",
+      "sourceUrl": "https://www.nature.com/articles/s41591-020-1037-7",
+      "sourceType": "peer-reviewed-protocol-guideline-route",
+      "sourceStatus": "http-verified-200-primary-route",
+      "primaryUse": "Check AI trial protocols for intervention details, integration, human factors, input data, output handling and monitoring before results exist.",
+      "humanInfraPlacement": "Protocol-only AI intervention boundary for Human Infra AI and healthcare conversion-channel source cards.",
+      "requiredBefore": [
+        "AI trial protocol source-card promotion",
+        "AI workflow intended-use review",
+        "human oversight boundary note"
+      ],
+      "notEvidenceFor": [
+        "AI-trial-result-proof",
+        "AI-system-general-safety-proof",
+        "individual-prediction",
+        "individual-medical-advice",
+        "medical-advice",
+        "longevity-escape-velocity-proof"
+      ]
+    },
+    {
+      "anchorId": "RSA-PRISMA-2020",
+      "standardFamily": "systematic-review-reporting",
+      "title": "PRISMA 2020 statement for systematic reviews",
+      "sourceUrl": "https://www.prisma-statement.org/prisma-2020",
+      "sourceType": "official-reporting-guideline-route",
+      "sourceStatus": "http-verified-200-official-route",
+      "primaryUse": "Report systematic review search, screening, eligibility, synthesis, bias and certainty workflow transparently.",
+      "humanInfraPlacement": "Evidence-synthesis and literature-review packet gate before claims are summarized across studies.",
+      "requiredBefore": [
+        "systematic review source-card promotion",
+        "evidence synthesis packet",
+        "living evidence update"
+      ],
+      "notEvidenceFor": [
+        "included-study-validity-proof",
+        "causal-effect-proof",
+        "individual-prediction",
+        "medical-advice",
+        "longevity-escape-velocity-proof"
+      ]
+    },
+    {
+      "anchorId": "RSA-GRADE-CERTAINTY",
+      "standardFamily": "evidence-certainty",
+      "title": "GRADE working group evidence certainty route",
+      "sourceUrl": "https://www.gradeworkinggroup.org/",
+      "sourceType": "official-method-route",
+      "sourceStatus": "http-verified-200-official-route",
+      "primaryUse": "Translate bodies of evidence into certainty judgments while separating risk of bias, inconsistency, indirectness, imprecision and publication bias.",
+      "humanInfraPlacement": "Certainty-level field for source-card aggregation and evidence-to-decision notes.",
+      "requiredBefore": [
+        "evidence certainty label",
+        "cross-study claim synthesis",
+        "guideline-style decision translation"
+      ],
+      "notEvidenceFor": [
+        "truth-proof",
+        "individual-prediction",
+        "personal-treatment-choice",
+        "medical-advice",
+        "longevity-escape-velocity-proof"
+      ]
+    },
+    {
+      "anchorId": "RSA-ROB2-RCT-BIAS",
+      "standardFamily": "randomized-risk-of-bias",
+      "title": "RoB 2 tool for risk of bias in randomized trials",
+      "sourceUrl": "https://www.riskofbias.info/welcome/rob-2-0-tool/current-version-of-rob-2",
+      "sourceType": "official-risk-of-bias-tool-route",
+      "sourceStatus": "http-verified-200-official-route",
+      "primaryUse": "Assess bias in randomized trial effect estimates across randomization, deviations, missing outcome data, outcome measurement and selective reporting.",
+      "humanInfraPlacement": "Bias assessment field for randomized clinical intervention source cards.",
+      "requiredBefore": [
+        "RCT effect source-card promotion",
+        "intervention effect synthesis",
+        "harms/benefit model candidate review"
+      ],
+      "notEvidenceFor": [
+        "effect-size-proof",
+        "external-validity-proof",
+        "individual-prediction",
+        "individual-treatment-recommendation",
+        "medical-advice",
+        "longevity-escape-velocity-proof"
+      ]
+    },
+    {
+      "anchorId": "RSA-ROBINS-I-V2",
+      "standardFamily": "nonrandomized-intervention-risk-of-bias",
+      "title": "ROBINS-I / ROBINS-I v2 route for non-randomized studies of interventions",
+      "sourceUrl": "https://www.riskofbias.info/welcome/robins-i-v2",
+      "sourceType": "official-risk-of-bias-tool-route",
+      "sourceStatus": "http-verified-200-official-route",
+      "primaryUse": "Assess risk of bias in non-randomized intervention evidence before translating it into causal or intervention claims.",
+      "humanInfraPlacement": "Non-randomized intervention source-card bias field for longevity, healthcare and policy intervention evidence.",
+      "requiredBefore": [
+        "non-randomized intervention source-card promotion",
+        "causal effect downgrade review",
+        "confounding and selection-bias note"
+      ],
+      "notEvidenceFor": [
+        "causal-effect-proof",
+        "unconfoundedness-proof",
+        "individual-prediction",
+        "individual-treatment-recommendation",
+        "medical-advice",
+        "longevity-escape-velocity-proof"
+      ]
+    },
+    {
+      "anchorId": "RSA-TARGET-TRIAL-EMULATION",
+      "standardFamily": "causal-emulation-design",
+      "title": "Target trial emulation route for causal questions in observational data",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4832051/",
+      "sourceType": "peer-reviewed-method-route",
+      "sourceStatus": "http-verified-200-primary-route",
+      "primaryUse": "Frame observational causal questions by specifying the trial that would answer the question, including eligibility, treatment strategies, assignment, follow-up, outcome and estimand.",
+      "humanInfraPlacement": "Causal design preflight before RWE or cohort evidence can support intervention-adjacent claims.",
+      "requiredBefore": [
+        "causal claim source-card promotion",
+        "observational intervention comparison",
+        "counterfactual estimand note"
+      ],
+      "notEvidenceFor": [
+        "exchangeability-proof",
+        "causal-effect-proof",
+        "individual-prediction",
+        "medical-advice",
+        "longevity-escape-velocity-proof"
+      ]
+    },
+    {
+      "anchorId": "RSA-START-RWE",
+      "standardFamily": "real-world-evidence-planning-reporting",
+      "title": "STaRT-RWE structured template for planning and reporting real-world evidence studies",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/34929592/",
+      "sourceType": "peer-reviewed-structured-template-route",
+      "sourceStatus": "http-verified-200-primary-route",
+      "primaryUse": "Structure real-world evidence planning and reporting so design choices, data sources, populations, exposures, outcomes and analysis plans are explicit.",
+      "humanInfraPlacement": "RWE evidence packet template for observational intervention and service-continuity sources.",
+      "requiredBefore": [
+        "RWE source-card promotion",
+        "routine-data effect extraction",
+        "causal or policy translation review"
+      ],
+      "notEvidenceFor": [
+        "causal-effect-proof",
+        "data-completeness-proof",
+        "individual-prediction",
+        "medical-advice",
+        "longevity-escape-velocity-proof"
+      ]
+    },
+    {
+      "anchorId": "RSA-ISPOR-SMDM-MODELING",
+      "standardFamily": "model-transparency-validation",
+      "title": "ISPOR-SMDM Modeling Good Research Practices route",
+      "sourceUrl": "https://www.ispor.org/heor-resources/good-practices",
+      "sourceType": "official-good-practices-route",
+      "sourceStatus": "http-verified-200-official-route-needs-model-specific-fresh-review",
+      "primaryUse": "Check decision-model structure, transparency, validation, uncertainty and reporting before model outputs are used for interpretation.",
+      "humanInfraPlacement": "Life-path model transparency, sensitivity and validation-calibration governance route.",
+      "requiredBefore": [
+        "model structure report",
+        "uncertainty and sensitivity packet",
+        "validation-calibration report packet"
+      ],
+      "notEvidenceFor": [
+        "model-validity-proof",
+        "calibrated-prediction-proof",
+        "individual-prediction",
+        "medical-advice",
+        "longevity-escape-velocity-proof"
+      ]
+    }
+  ],
+  "currentDecisions": {
+    "standardsProveInterventionEffects": false,
+    "standardsProveModelCalibration": false,
+    "standardsPermitIndividualPrediction": false,
+    "standardsPermitMedicalAdvice": false,
+    "standardsPermitLongevityEscapeVelocityClaim": false,
+    "l4AggregateCalibratedAdmissionAllowed": false,
+    "publicWeightedDomainOutputAllowed": false
+  },
+  "consumptionContract": {
+    "allowedUses": [
+      "source-card reporting-quality routing",
+      "bias/applicability gate selection",
+      "validation/calibration report section requirements",
+      "evidence-synthesis packet structure",
+      "model-readiness blocker explanation"
+    ],
+    "blockedUses": [
+      "using a guideline mention as proof that a source is true",
+      "using a standard route as proof that a Human Infra prediction model is calibrated",
+      "using any anchor to output individual death dates or individual medical decisions",
+      "using reporting compliance as evidence of longevity escape velocity"
+    ]
+  },
+  "indexLinks": [
+    "README.md",
+    "docs/AGENTS.md",
+    "docs/reference/README.md",
+    "docs/reference/human-infra-maturity-roadmap.md",
+    "docs/reference/human-infra-maturity-gap-register.json",
+    "Makefile",
+    "tools/README.md",
+    "tools/AGENTS.md",
+    "web/README.md",
+    "web/AGENTS.md",
+    "web/package.json"
+  ]
+}

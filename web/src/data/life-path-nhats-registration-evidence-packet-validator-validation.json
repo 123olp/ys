@@ -1,0 +1,115 @@
+{
+  "schemaVersion": "human-infra.life-path-nhats-registration-evidence-packet-validator-validation.v1",
+  "validationId": "nhats-registration-evidence-packet-validator-validation-2026-07-04",
+  "generatedAt": "2026-07-04T20:22:38.783498+00:00",
+  "status": "pass",
+  "sourceRefs": {
+    "testCasesPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_registration_evidence_packet_validator_test_cases.json",
+    "testCasesSha256": "38c2398b69afdb1ea6417fcb0baebb27ae139579b092adb285630d221d5942de",
+    "registrationEvidenceTemplatePath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_registration_evidence_template.json",
+    "registrationEvidenceTemplateSha256": "403925b01f1fef53518448c27d14504d69532dc06f53ede474fb64f0033fff16",
+    "validator": "domains/c1-boundary-rewriting/longevity-evidence/scripts/validate_nhats_registration_evidence_packet_validator.py"
+  },
+  "currentDecision": {
+    "validatorReady": true,
+    "testCaseCount": 6,
+    "reviewableButStillBlockedCount": 1,
+    "cannotEvaluateCount": 1,
+    "rejectedCount": 4,
+    "realRegistrationEvidenceAttached": false,
+    "registrationGateClosureAllowed": false,
+    "downloadAllowed": false,
+    "extractionScriptAllowed": false,
+    "rawDataAllowedInRepository": false,
+    "publicAiUploadAllowed": false,
+    "calibrationAllowed": false,
+    "individualPredictionAllowed": false,
+    "reason": "This validator only checks synthetic future NHATS registration evidence packet shapes. It does not attach real registration proof, close registration gates, authorize download, create extraction scripts, store raw data, calibrate a model or support individual use."
+  },
+  "caseResults": [
+    {
+      "caseId": "valid-redacted-registration-packet-still-blocked",
+      "expectedVerdict": "reviewable-but-still-blocked",
+      "actualVerdict": "reviewable-but-still-blocked",
+      "passed": true,
+      "rejectReasons": [],
+      "cannotEvaluateReasons": [],
+      "missingSlotIds": []
+    },
+    {
+      "caseId": "missing-second-review-cannot-evaluate",
+      "expectedVerdict": "cannot-evaluate",
+      "actualVerdict": "cannot-evaluate",
+      "passed": true,
+      "rejectReasons": [],
+      "cannotEvaluateReasons": [
+        "missing required fields: secondReviewStatus",
+        "missing evidence slots: second-reviewer-signoff"
+      ],
+      "missingSlotIds": [
+        "second-reviewer-signoff"
+      ]
+    },
+    {
+      "caseId": "credential-bearing-packet-rejected",
+      "expectedVerdict": "rejected",
+      "actualVerdict": "rejected",
+      "passed": true,
+      "rejectReasons": [
+        "forbidden keys present: password, sessionCookie"
+      ],
+      "cannotEvaluateReasons": [
+        "missing required fields: conditionsOfUseAttestation, controlledWorkspaceLinkage, noPublicSecretStorageCheck, secondReviewStatus"
+      ],
+      "missingSlotIds": []
+    },
+    {
+      "caseId": "raw-row-and-death-date-packet-rejected",
+      "expectedVerdict": "rejected",
+      "actualVerdict": "rejected",
+      "passed": true,
+      "rejectReasons": [
+        "forbidden keys present: deathDate, rowLevelData"
+      ],
+      "cannotEvaluateReasons": [
+        "missing required fields: conditionsOfUseAttestation, controlledWorkspaceLinkage, noPublicSecretStorageCheck, redactedRegistrationStatus, secondReviewStatus"
+      ],
+      "missingSlotIds": []
+    },
+    {
+      "caseId": "public-ai-upload-packet-rejected",
+      "expectedVerdict": "rejected",
+      "actualVerdict": "rejected",
+      "passed": true,
+      "rejectReasons": [
+        "publicAiUploadAllowed must be false",
+        "conditionsOfUseAttestation.publicAiUploadAllowed must be false"
+      ],
+      "cannotEvaluateReasons": [
+        "missing required fields: controlledWorkspaceLinkage, noPublicSecretStorageCheck, secondReviewStatus"
+      ],
+      "missingSlotIds": []
+    },
+    {
+      "caseId": "premature-download-extraction-calibration-packet-rejected",
+      "expectedVerdict": "rejected",
+      "actualVerdict": "rejected",
+      "passed": true,
+      "rejectReasons": [
+        "downloadAllowed must be false",
+        "extractionScriptAllowed must be false",
+        "calibrationAllowed must be false"
+      ],
+      "cannotEvaluateReasons": [
+        "missing required fields: conditionsOfUseAttestation, controlledWorkspaceLinkage, noPublicSecretStorageCheck, secondReviewStatus"
+      ],
+      "missingSlotIds": []
+    }
+  ],
+  "hardBoundaries": [
+    "Validator pass does not prove NHATS registration, data access, workspace execution or model readiness.",
+    "A reviewable registration packet remains blocked until external controlled evidence, human review and second-reviewer signoff are available outside this repository.",
+    "No output from this validator can authorize download, extraction, raw-data storage, public AI upload, calibration, validation or individual prediction."
+  ],
+  "failures": []
+}

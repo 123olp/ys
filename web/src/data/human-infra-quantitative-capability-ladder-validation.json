@@ -1,0 +1,15 @@
+{
+  "schemaVersion": "human-infra.quantitative-capability-ladder-validation.v1",
+  "status": "pass-q3-current-q4-q5-blocked",
+  "source": "docs/reference/human-infra-quantitative-capability-ladder.json",
+  "qLevelCount": 6,
+  "outputFamilyCount": 12,
+  "highestCurrentQuantitativeCapability": "Q3-synthetic-life-path-model",
+  "mappedModelAdmissionLevel": "L3",
+  "q4AggregateCalibratedResearchModelAllowed": false,
+  "q5IndividualDecisionSupportAllowed": false,
+  "individualDeathDateOutputAllowed": false,
+  "medicalAdviceAllowed": false,
+  "interventionRankingAllowed": false,
+  "publicWebBoundary": "Only Q0-Q3 bounded, synthetic or non-calibrated outputs may be consumed by public Web surfaces."
+}

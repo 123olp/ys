@@ -1,0 +1,149 @@
+{
+  "schemaVersion": "human-infra.c2-longtail-tenth-batch-independent-fresh-review-protocol.v1",
+  "registerId": "human-infra-c2-longtail-tenth-batch-independent-fresh-review-protocol-2026-07-04",
+  "status": "active-review-protocol",
+  "purpose": "Define independent fresh-review batches, required checks and promotion boundaries for the 24 locally reviewed C2-LT-B10 source-context extraction rows without storing verdicts inside the protocol artifact.",
+  "sourceOfTruth": {
+    "localReviewRegister": "docs/reference/human-infra-c2-longtail-tenth-batch-local-review-register.json",
+    "sourceExtractionRegister": "docs/reference/human-infra-c2-longtail-tenth-batch-source-extraction-register.json",
+    "sourceExtractionQueue": "docs/reference/human-infra-c2-longtail-tenth-batch-source-extraction-queue.json",
+    "sourceCardSystem": "docs/reference/source-card-system.md",
+    "evidencePolicy": "docs/reference/evidence-policy.md",
+    "maturityGapRegister": "docs/reference/human-infra-maturity-gap-register.json"
+  },
+  "scope": {
+    "localReviewedExtractionTaskCount": 24,
+    "coveredDomainCount": 12,
+    "batchCount": 2,
+    "sourceResolutionIssueCount": 0,
+    "protocolEmbeddedVerdictCount": 0,
+    "selectionRule": "Every C2-LT-B10 local-review row must receive independent fresh review before any reviewed artifact, advice-use, intervention-ranking or model-admission claim.",
+    "nonClaims": [
+      "This protocol is not an independent fresh review verdict register.",
+      "This protocol does not complete Source Cards, variable cards, endpoint cards, uncertainty cards, transfer-boundary cards or downgrade-check artifacts.",
+      "This protocol does not authorize calibrated prediction, individual advice, individual death-date output, intervention ranking, domain-claim upgrade, clinical-validity claims, medical advice, device advice, renal dialysis advice, vision rehabilitation advice, hearing-device advice, wound care advice, burn care advice, emergency advice, caregiver advice, nutrition advice or swallowing advice."
+    ]
+  },
+  "requiredReviewFields": [
+    "sourceIdentityVerdict",
+    "sourceContextVerdict",
+    "exactClaimUseVerdict",
+    "domainTransferVerdict",
+    "modelPositionVerdict",
+    "uncertaintyBoundaryVerdict",
+    "downgradeVerdict",
+    "blockedUseVerdict",
+    "adviceUseBoundaryVerdict",
+    "reviewerNote"
+  ],
+  "verdictTaxonomy": [
+    "support-with-boundary",
+    "bounded-support",
+    "downgrade-required",
+    "reject-source-context-mismatch",
+    "cannot-evaluate-insufficient-context"
+  ],
+  "artifactPromotionDecisions": [
+    "eligible-for-bounded-artifact-fill",
+    "downgrade-before-fill",
+    "rejected-no-fill",
+    "blocked-cannot-evaluate"
+  ],
+  "blockedUses": [
+    "calibrated-prediction",
+    "individual-advice",
+    "individual-death-date-output",
+    "intervention-ranking",
+    "clinical-validity-claim",
+    "domain-claim-upgrade",
+    "medical-advice",
+    "device-advice",
+    "renal-dialysis-advice",
+    "vision-rehabilitation-advice",
+    "hearing-device-advice",
+    "wound-care-advice",
+    "burn-care-advice",
+    "emergency-care-advice",
+    "caregiver-advice",
+    "nutrition-advice",
+    "swallowing-advice"
+  ],
+  "promotionRules": [
+    "support-with-boundary or bounded-support may proceed only to eligible-for-bounded-artifact-fill, never directly to model admission, intervention ranking, advice use or clinical-validity claims.",
+    "downgrade-required rows must carry a downgrade note before artifact fill and remain blocked for calibrated prediction, individual advice and all B10 advice-use categories.",
+    "reject-source-context-mismatch rows must not fill reviewed artifacts until source identity, source role or source context is corrected and independently checked.",
+    "cannot-evaluate-insufficient-context rows remain blocked until a primary or authoritative source can be independently checked.",
+    "Artifact promotion decisions are limited to eligible-for-bounded-artifact-fill, downgrade-before-fill, rejected-no-fill and blocked-cannot-evaluate."
+  ],
+  "indexRequirements": [
+    "docs/AGENTS.md",
+    "docs/reference/README.md",
+    "docs/reference/human-infra-maturity-roadmap.md",
+    "docs/reference/human-infra-maturity-gap-register.json",
+    "tools/README.md",
+    "tools/AGENTS.md",
+    "Makefile"
+  ],
+  "reviewBatches": [
+    {
+      "batchId": "C2LTB10-FRB-01-device-dialysis-sensory-wound",
+      "sourceLocalReviewBatchId": "C2LTB10-LR-BATCH-01",
+      "batchLabel": "导尿设备感染、居家透析、外周神经病变、低视力康复、助听维护和手术伤口连续性域",
+      "taskCount": 12,
+      "taskIds": [
+        "C2LTB10-EXT-001",
+        "C2LTB10-EXT-002",
+        "C2LTB10-EXT-003",
+        "C2LTB10-EXT-004",
+        "C2LTB10-EXT-005",
+        "C2LTB10-EXT-006",
+        "C2LTB10-EXT-007",
+        "C2LTB10-EXT-008",
+        "C2LTB10-EXT-009",
+        "C2LTB10-EXT-010",
+        "C2LTB10-EXT-011",
+        "C2LTB10-EXT-012"
+      ],
+      "domainIds": [
+        "catheter-associated-uti-device-infection-continuity",
+        "hearing-aid-maintenance-battery-access-continuity",
+        "home-dialysis-supply-self-management-continuity",
+        "low-vision-rehabilitation-assistive-technology-continuity",
+        "peripheral-neuropathy-somatosensory-continuity",
+        "surgical-wound-dehiscence-ssi-continuity"
+      ],
+      "reviewPriority": "first",
+      "reviewFocus": "independent fresh review must verify device-infection source scope, home-dialysis self-management boundary, peripheral-neuropathy sensory endpoints, low-vision assistive-technology limits, hearing-device maintenance context, surgical-wound/SSI endpoint specificity and no device, dialysis, vision, hearing or wound-care advice overclaim before artifact promotion"
+    },
+    {
+      "batchId": "C2LTB10-FRB-02-thermal-burn-retina-caregiver-airway-dysphagia",
+      "sourceLocalReviewBatchId": "C2LTB10-LR-BATCH-02",
+      "batchLabel": "温度稳态、烧伤、糖尿病视网膜病变、照护者健康、窒息和神经退行性吞咽障碍连续性域",
+      "taskCount": 12,
+      "taskIds": [
+        "C2LTB10-EXT-013",
+        "C2LTB10-EXT-014",
+        "C2LTB10-EXT-015",
+        "C2LTB10-EXT-016",
+        "C2LTB10-EXT-017",
+        "C2LTB10-EXT-018",
+        "C2LTB10-EXT-019",
+        "C2LTB10-EXT-020",
+        "C2LTB10-EXT-021",
+        "C2LTB10-EXT-022",
+        "C2LTB10-EXT-023",
+        "C2LTB10-EXT-024"
+      ],
+      "domainIds": [
+        "burn-wound-aftercare-scar-function-continuity",
+        "caregiver-health-burnout-screening-support-continuity",
+        "choking-foreign-body-airway-risk-continuity",
+        "diabetic-retinopathy-screening-treatment-continuity",
+        "neurodegenerative-dysphagia-nutrition-continuity",
+        "thermal-homeostasis-resilience"
+      ],
+      "reviewPriority": "second",
+      "reviewFocus": "independent fresh review must verify thermal exposure and resilience scope, burn aftercare/scar-function boundary, diabetic-retinopathy screening and treatment endpoint limits, caregiver-health burden context, choking emergency-risk framing, neurodegenerative dysphagia and nutrition boundaries and no burn-care, emergency, caregiver, nutrition or swallowing advice overclaim before artifact promotion"
+    }
+  ]
+}

@@ -12,7 +12,7 @@
   },
   "scope": {
     "coverageLevel": "domain-source-card-field-slots-v0.1",
-    "coveredDomainCount": 26,
+    "coveredDomainCount": 30,
     "selectionRule": "Cover every domain row currently present in the domain Claim-Evidence Matrix seed.",
     "currentLimitations": [
       "Endpoint candidates are extracted from the domain variable outputs, not yet from each external paper.",
@@ -251,12 +251,44 @@
       "sourceCardIds": ["SA-HALLMARKS-AGING-2023", "SA-TARGET-TRIAL-2022", "SA-WHO-CONSTITUTION"],
       "endpointCandidates": ["energy-recovery-and-function", "multi-system-risk-balance", "effective-time-and-safety"],
       "nextFieldExtractionAction": "Create endocrine axis cards separating deficiency, excess, replacement, suppression, feedback and adverse tradeoffs."
+    },
+    {
+      "fieldCardId": "HIDOM-FLD027",
+      "domainClaimId": "HIDOM-CL027",
+      "domainId": "superhuman-intelligence-threshold",
+      "sourceCardIds": ["SA-NIST-AI-RMF-2023", "SA-CAPABILITY-APPROACH", "SA-EXTENDED-MIND-1998"],
+      "endpointCandidates": ["future-boundary-shift", "human-agency-retention", "technology-window-access"],
+      "nextFieldExtractionAction": "Build a capability-threshold matrix separating benchmark superiority, expert replacement, cross-domain transfer and external boundary impact."
+    },
+    {
+      "fieldCardId": "HIDOM-FLD028",
+      "domainClaimId": "HIDOM-CL028",
+      "domainId": "recursive-self-improvement-intelligence-explosion",
+      "sourceCardIds": ["SA-NIST-AI-RMF-2023", "SA-TRIPOD-AI-2024", "SA-CAPABILITY-APPROACH"],
+      "endpointCandidates": ["capability-growth-rate", "control-failure-risk", "technology-window-acceleration"],
+      "nextFieldExtractionAction": "Build an AI-RD automation evidence table connecting METR-style task horizons to self-improvement depth and oversight latency."
+    },
+    {
+      "fieldCardId": "HIDOM-FLD029",
+      "domainClaimId": "HIDOM-CL029",
+      "domainId": "accelerating-returns-technology-convergence",
+      "sourceCardIds": ["SA-TRIPOD-AI-2024", "SA-NIST-AI-RMF-2023", "SA-CAPABILITY-APPROACH"],
+      "endpointCandidates": ["technology-window-shift", "LEV-condition-status", "future-option-access"],
+      "nextFieldExtractionAction": "Promote AI automated science Source Cards into a technology-window convergence matrix with positive, negative and correction-risk rows."
+    },
+    {
+      "fieldCardId": "HIDOM-FLD030",
+      "domainClaimId": "HIDOM-CL030",
+      "domainId": "singularity-control-interpretability-boundary",
+      "sourceCardIds": ["SA-NIST-AI-RMF-2023", "SA-TRIPOD-AI-2024", "SA-CAPABILITY-APPROACH"],
+      "endpointCandidates": ["future-choice-preservation", "tail-risk-exposure", "governance-abort-status"],
+      "nextFieldExtractionAction": "Create Source Cards for AI control, interpretability, incident reporting, system cards and frontier model governance."
     }
   ],
   "coverageSummary": {
-    "coveredDomainCount": 26,
-    "coveredFieldRowCount": 26,
-    "coveredEndpointCandidateCount": 78,
+    "coveredDomainCount": 30,
+    "coveredFieldRowCount": 30,
+    "coveredEndpointCandidateCount": 90,
     "coveredSourceAnchorCount": 20,
     "fieldCompletionState": "endpoint-candidates-present-population-uncertainty-transfer-boundaries-blocked-for-source-specific-extraction",
     "remainingWork": [

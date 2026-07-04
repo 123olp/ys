@@ -1,0 +1,176 @@
+{
+  "schemaVersion": "human-infra.nhanes-public-lmf-effective-sample-ci-publication-policy.v1",
+  "sourceId": "nhanes-public-lmf-2017-2018",
+  "sourceName": "NHANES 2017-2018 public-use Linked Mortality File pilot",
+  "policyId": "nhanes-public-lmf-2017-2018-effective-sample-ci-publication-policy",
+  "reviewDate": "2026-07-03",
+  "reviewer": "tradecatlabs",
+  "status": "synthetic-publication-criteria-policy-ready-no-real-output",
+  "policyPurpose": "Define a synthetic publication-review gate for future NHANES public-use LMF weighted-domain outputs, covering effective sample size, confidence interval width class, degrees of freedom and relative standard error before any real public output can be considered.",
+  "currentDecision": {
+    "realWeightedOutputPresent": false,
+    "realConfidenceIntervalsPresent": false,
+    "publicRealOutputExportAllowed": false,
+    "syntheticPublicationCriteriaValidationAllowed": true,
+    "calibrationAllowed": false,
+    "individualPredictionAllowed": false,
+    "reason": "The policy validates publication-review shape only. It does not compute effective sample sizes, real confidence intervals, rates, counts, calibration or individual predictions."
+  },
+  "rules": {
+    "syntheticOnlyUntilRealOutputImplementationGate": true,
+    "aggregateOnly": true,
+    "minimumSyntheticDenominatorClass": "threshold-met",
+    "minimumSyntheticEffectiveSampleSizeClass": "threshold-met",
+    "minimumDomainDof": 8,
+    "confidenceIntervalWidthRequired": true,
+    "relativeStandardErrorReviewRequired": true,
+    "publicationDecisionVocabulary": [
+      "presentable-synthetic",
+      "suppress-synthetic",
+      "manual-review-synthetic",
+      "blocked-real-output"
+    ],
+    "allowedOutputTypes": [
+      "synthetic_effective_sample_ci_publication_review",
+      "synthetic_reliability_standards_report"
+    ],
+    "forbiddenOutputTypes": [
+      "row_level_records",
+      "real_public_weighted_domain_rates",
+      "real_public_design_based_intervals",
+      "real_public_mortality_counts",
+      "individual_death_date_prediction",
+      "personal_medical_advice",
+      "personal_longevity_ranking",
+      "calibration_claim",
+      "validation_claim",
+      "treatment_effect_claim"
+    ],
+    "requiredReportFields": [
+      "schemaVersion",
+      "sourceId",
+      "outputId",
+      "outputType",
+      "containsRealNhanesData",
+      "containsRowLevelData",
+      "containsIdentifiers",
+      "containsRealConfidenceIntervals",
+      "publicExportRequested",
+      "publicAiUploadRequested",
+      "publicationReviewStatus",
+      "cells"
+    ],
+    "cellFields": [
+      "id",
+      "suppressed",
+      "syntheticDenominatorClass",
+      "syntheticEffectiveSampleSizeClass",
+      "relativeStandardErrorClass",
+      "confidenceIntervalWidthClass",
+      "domainDof",
+      "publicationDecision"
+    ],
+    "allowedClassValues": {
+      "syntheticDenominatorClass": [
+        "threshold-met",
+        "threshold-not-met",
+        "not-applicable-suppressed"
+      ],
+      "syntheticEffectiveSampleSizeClass": [
+        "threshold-met",
+        "threshold-not-met",
+        "not-applicable-suppressed"
+      ],
+      "relativeStandardErrorClass": [
+        "acceptable",
+        "manual-review",
+        "unacceptable",
+        "not-computed-real",
+        "not-applicable-suppressed"
+      ],
+      "confidenceIntervalWidthClass": [
+        "acceptable",
+        "manual-review",
+        "unacceptable",
+        "computed-real-public",
+        "not-computed-real",
+        "not-applicable-suppressed"
+      ]
+    },
+    "prohibitedKeys": [
+      "SEQN",
+      "seqn",
+      "RIDAGEYR",
+      "RIAGENDR",
+      "RIDRETH3",
+      "WTMEC2YR",
+      "SDMVSTRA",
+      "SDMVPSU",
+      "MORTSTAT",
+      "UCOD_LEADING",
+      "personId",
+      "participantId",
+      "rowRecords",
+      "recordRows",
+      "deathDate",
+      "death_date",
+      "individualDeathDate",
+      "individual_death_date",
+      "predictedDeathDate",
+      "predicted_death_date",
+      "realWeightedRate",
+      "realConfidenceIntervalLower",
+      "realConfidenceIntervalUpper"
+    ]
+  },
+  "upstreamContracts": {
+    "disclosureOutputEnvelopePolicyPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhanes_public_lmf_disclosure_output_envelope_policy.json",
+    "dofSparseDomainDiagnosticPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhanes_public_lmf_dof_sparse_domain_diagnostic.json",
+    "weightedDomainOutputReadinessPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhanes_public_lmf_weighted_domain_output_readiness.json"
+  },
+  "validatorContract": {
+    "validatorScript": "domains/c1-boundary-rewriting/longevity-evidence/scripts/validate_nhanes_public_lmf_effective_sample_ci_publication.py",
+    "testCases": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhanes_public_lmf_effective_sample_ci_publication_test_cases.json",
+    "generatedReport": "web/src/data/life-path-nhanes-public-lmf-effective-sample-ci-publication-validation.json",
+    "requiredDecisionVocabulary": [
+      "allow-publication-shape",
+      "block-publication-shape"
+    ],
+    "currentBoundary": "synthetic publication criteria validation only; no real NHANES weighted rates, design-based confidence intervals, denominator counts, weighted sums, mortality cells, calibration or individual output are present"
+  },
+  "sourceTrace": [
+    "https://wwwn.cdc.gov/nchs/nhanes/tutorials/reliabilityofestimates.aspx",
+    "https://wwwn.cdc.gov/nchs/nhanes/tutorials/varianceestimation.aspx",
+    "https://www.cdc.gov/nchs/data/series/sr_02/sr02_175.pdf",
+    "https://www.cdc.gov/nchs/data/series/sr_02/sr02-200.pdf",
+    "https://www.cdc.gov/nchs/linked-data/mortality-files/index.html"
+  ],
+  "sourceAnchors": [
+    {
+      "source": "NHANES Reliability of Estimates module",
+      "observedFact": "NHANES reliability guidance lists sample size, effective sample size, design effect, confidence interval width, degrees of freedom and relative standard error as reliability dimensions.",
+      "modelConsequence": "Future public weighted-domain output must carry a reliability-review state before it can be considered for publication."
+    },
+    {
+      "source": "NCHS Series 2 Number 175",
+      "observedFact": "NCHS data presentation standards for proportions use minimum denominator sample size, confidence interval width and degrees-of-freedom review, with suppression or statistical review when criteria fail.",
+      "modelConsequence": "This policy represents CI-width, effective-sample and degrees-of-freedom checks as synthetic classes until real output exists."
+    },
+    {
+      "source": "NCHS Series 2 Number 200",
+      "observedFact": "NCHS data presentation standards for rates and counts apply sample-size and confidence-interval criteria to support reliable presentation.",
+      "modelConsequence": "Future mortality-rate-like outputs need a statistic-specific publication review rather than a raw output dump."
+    }
+  ],
+  "prohibitedActions": [
+    "Do not treat synthetic publication criteria validation as a real NCHS publication clearance.",
+    "Do not publish real weighted domain rates, intervals, denominator counts or death counts from this policy alone.",
+    "Do not treat effective sample size or confidence interval classes as calibration, causal evidence, clinical evidence or individual prediction evidence.",
+    "Do not output individual death dates, personal medical advice or personal longevity rankings."
+  ],
+  "nextWork": [
+    "Run the synthetic publication criteria validator and publish only the generated validator report.",
+    "When real weighted-domain output exists, replace synthetic classes with statistic-specific effective sample size, confidence interval, RSE and degrees-of-freedom calculations under a separate review gate.",
+    "Keep this publication criteria gate separate from disclosure review, real weighted-domain output implementation, calibration and external validation."
+  ]
+}
