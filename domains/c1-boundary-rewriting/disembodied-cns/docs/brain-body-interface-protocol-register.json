@@ -1,0 +1,501 @@
+{
+  "schemaVersion": "human-infra.brain-body-interface-protocol-register.v1",
+  "registerId": "brain-body-interface-protocol-register",
+  "status": "active-c1-protocol-candidate-equivalence-no-operational-use",
+  "purpose": "Machine-readable candidate register for brain-body interface protocol rows used by the disembodied-cns domain. It supports variable governance and auditability only; it does not establish engineering feasibility, clinical validity, personal survival or operational use.",
+  "sourceOfTruth": {
+    "domainReadme": "domains/c1-boundary-rewriting/disembodied-cns/README.md",
+    "domainAgentContract": "domains/c1-boundary-rewriting/disembodied-cns/AGENTS.md",
+    "theoryModule": "domains/c1-boundary-rewriting/disembodied-cns/docs/body-function-substitution-minimal-sufficient-body.md",
+    "protocolContract": "domains/c1-boundary-rewriting/disembodied-cns/docs/brain-body-interface-protocol-contract.md",
+    "sourceSignals": "domains/c1-boundary-rewriting/disembodied-cns/literature/source-signals.md",
+    "sourceCards": "domains/c1-boundary-rewriting/disembodied-cns/literature/source-cards.md",
+    "domainToModelBridge": "docs/reference/human-infra-domain-to-model-bridge-register.json"
+  },
+  "currentDecision": {
+    "rowCount": 9,
+    "highestEquivalenceStatus": "candidate-equivalence",
+    "modelAdmissionLevel": "L2",
+    "quantitativeCapability": "Q2",
+    "operationalUseAllowed": false,
+    "clinicalUseAllowed": false,
+    "individualPredictionAllowed": false,
+    "subjectSurvivalClaimAllowed": false,
+    "engineeringFeasibilityClaimAllowed": false
+  },
+  "allowedEquivalenceStatus": [
+    "not-specified",
+    "observed-natural-channel",
+    "partial-proxy-known",
+    "candidate-equivalence",
+    "blocked",
+    "cannot-evaluate"
+  ],
+  "requiredProtocolFields": [
+    "protocol_id",
+    "channel_family",
+    "exchange_content",
+    "direction",
+    "carrier",
+    "unit_or_scale",
+    "frequency_or_cadence",
+    "latency_bound",
+    "precision_requirement",
+    "error_tolerance",
+    "closed_loop_role",
+    "subject_state_dependency",
+    "observable_proxy",
+    "replacement_candidate",
+    "failure_modes",
+    "abort_gate",
+    "evidence_anchor",
+    "scope_boundary",
+    "equivalence_status"
+  ],
+  "blockedUses": [
+    "life-support-instructions",
+    "perfusion-protocol",
+    "bci-implantation-or-stimulation-protocol",
+    "clinical-claim",
+    "engineering-feasibility-claim",
+    "personal-survival-claim",
+    "individual-prediction",
+    "whole-body-replacement-claim",
+    "mind-upload-or-revival-claim"
+  ],
+  "protocolRows": [
+    {
+      "protocol_id": "BBIP-001-perfusion-flow",
+      "channel_family": "perfusion",
+      "exchange_content": "blood flow, perfusion pressure, oxygen delivery support and microcirculation proxies",
+      "direction": "body-to-brain",
+      "carrier": "vascular flow / extracorporeal circulation candidate",
+      "unit_or_scale": "pressure, flow, oxygenation and tissue-integrity proxies; exact disembodied subject scale not specified",
+      "frequency_or_cadence": "continuous",
+      "latency_bound": "low-latency continuous support required; exact bound not specified",
+      "precision_requirement": "bounded physiological stability; no subject-continuity precision threshold established",
+      "error_tolerance": "loss of perfusion, severe instability, uncontrolled edema, thrombosis, hemorrhage or infection triggers abort/block",
+      "closed_loop_role": "substrate maintenance for neural tissue and downstream cognition",
+      "subject_state_dependency": [
+        "consciousness",
+        "cognition",
+        "memory-continuity",
+        "expression"
+      ],
+      "observable_proxy": [
+        "perfusion-stability",
+        "oxygenation",
+        "tissue-integrity",
+        "metabolic-marker-stability"
+      ],
+      "replacement_candidate": [
+        "extracorporeal-circulation",
+        "artificial-heart",
+        "organ-perfusion-system"
+      ],
+      "failure_modes": [
+        "ischemia",
+        "hemorrhage",
+        "thrombosis",
+        "infection",
+        "edema",
+        "device-failure",
+        "tissue-viability-to-subject-continuity-overclaim"
+      ],
+      "abort_gate": "Cannot claim subject continuity from tissue viability, perfusion signal or partial cellular recovery alone.",
+      "evidence_anchor": [
+        "MSB-CARD-001",
+        "MSB-CARD-012",
+        "MSB-CARD-014"
+      ],
+      "scope_boundary": "Supports substrate-maintenance and protocol-field modeling only; does not support revival, consciousness recovery, personal survival or deployable life-support engineering.",
+      "equivalence_status": "candidate-equivalence"
+    },
+    {
+      "protocol_id": "BBIP-002-interoceptive-feedback",
+      "channel_family": "interoception",
+      "exchange_content": "heartbeat, respiration, pain, fatigue, hunger, temperature, visceral state and affect-relevant internal-body signals",
+      "direction": "body-to-brain",
+      "carrier": "neural and humoral signaling; artificial replacement not specified",
+      "unit_or_scale": "subjective reports, physiological proxies, neural proxies and affective stability indicators",
+      "frequency_or_cadence": "multi-timescale",
+      "latency_bound": "task- and state-dependent; exact bound not specified",
+      "precision_requirement": "sufficient to preserve emotion, self-regulation, action readiness and agency; exact threshold not specified",
+      "error_tolerance": "severe signal loss, false body state, affective instability, dissociation or impaired agency triggers block/cannot-evaluate",
+      "closed_loop_role": "emotion, self-model, motivation, risk perception and regulatory feedback",
+      "subject_state_dependency": [
+        "emotion",
+        "motivation",
+        "selfhood",
+        "decision-quality",
+        "agency"
+      ],
+      "observable_proxy": [
+        "interoceptive-accuracy",
+        "affective-stability",
+        "physiological-regulation-proxies",
+        "agency-expression-proxy"
+      ],
+      "replacement_candidate": [
+        "artificial-interoceptive-feedback",
+        "neurofeedback",
+        "embodied-simulator"
+      ],
+      "failure_modes": [
+        "signal-loss",
+        "false-body-state",
+        "affective-instability",
+        "dissociation",
+        "impaired-agency",
+        "oxygenated-brain-maintenance-overclaim"
+      ],
+      "abort_gate": "Cannot treat oxygenated neural substrate maintenance as sufficient if interoceptive feedback and embodied regulation collapse.",
+      "evidence_anchor": [
+        "MSB-CARD-002",
+        "MSB-CARD-013",
+        "MSB-CARD-015",
+        "MSB-CARD-016",
+        "MSB-CARD-019"
+      ],
+      "scope_boundary": "Conceptual and variable-modeling support only; no artificial interoception engineering claim and no subject-continuity proof.",
+      "equivalence_status": "partial-proxy-known"
+    },
+    {
+      "protocol_id": "BBIP-003-oxygen-glucose-supply",
+      "channel_family": "energy-substrate",
+      "exchange_content": "oxygen, glucose, energy substrates and energy-availability signals required for neural tissue maintenance",
+      "direction": "body-to-brain",
+      "carrier": "vascular flow, extracorporeal oxygenation and metabolic support candidate",
+      "unit_or_scale": "oxygenation, glucose, perfusion, tissue-integrity and metabolic-marker proxies; exact subject-continuity scale not specified",
+      "frequency_or_cadence": "continuous with fast instability response",
+      "latency_bound": "low-latency continuous supply required; exact disembodied bound not specified",
+      "precision_requirement": "bounded substrate availability without severe hypo/hyper state; no identity-continuity threshold established",
+      "error_tolerance": "severe oxygen or glucose instability, ischemia, metabolic crisis or uncontrolled support-device failure triggers abort/block",
+      "closed_loop_role": "substrate supply for neural activity, consciousness candidates and downstream cognitive function",
+      "subject_state_dependency": [
+        "consciousness",
+        "cognition",
+        "attention",
+        "memory-continuity",
+        "wakefulness"
+      ],
+      "observable_proxy": [
+        "oxygenation",
+        "glucose-stability",
+        "metabolic-marker-stability",
+        "neural-tissue-integrity"
+      ],
+      "replacement_candidate": [
+        "extracorporeal-oxygenation",
+        "perfusion-system",
+        "closed-loop-metabolic-control"
+      ],
+      "failure_modes": [
+        "hypoxia",
+        "ischemia",
+        "hypoglycemia",
+        "hyperglycemia",
+        "metabolic-instability",
+        "substrate-maintenance-to-subject-continuity-overclaim"
+      ],
+      "abort_gate": "Cannot claim subject continuity from oxygen/glucose support or neural tissue substrate maintenance alone.",
+      "evidence_anchor": [
+        "MSB-CARD-001",
+        "MSB-CARD-003",
+        "MSB-CARD-004",
+        "MSB-CARD-005",
+        "MSB-CARD-012"
+      ],
+      "scope_boundary": "Supports substrate-supply and closed-loop-control vocabulary only; does not support deployable metabolic life-support engineering or personal survival claims.",
+      "equivalence_status": "candidate-equivalence"
+    },
+    {
+      "protocol_id": "BBIP-004-metabolic-clearance",
+      "channel_family": "clearance",
+      "exchange_content": "carbon dioxide, lactate, acid-base state, electrolytes, nitrogenous waste and other metabolic waste proxies",
+      "direction": "body-to-brain",
+      "carrier": "blood chemistry, extracorporeal circulation and organ-support candidate",
+      "unit_or_scale": "blood-gas, electrolyte, acid-base and metabolic-waste proxies; disembodied subject thresholds not specified",
+      "frequency_or_cadence": "continuous / periodic monitoring depending on variable",
+      "latency_bound": "variable-specific; exact closed-loop control bound not specified",
+      "precision_requirement": "bounded internal milieu stability sufficient to avoid neural dysfunction; exact threshold not specified",
+      "error_tolerance": "uncontrolled acidosis, electrolyte collapse, toxin accumulation, edema, device failure or unbounded waste load triggers block/cannot-evaluate",
+      "closed_loop_role": "protects neural substrate and whole-system homeostasis from waste and internal-environment drift",
+      "subject_state_dependency": [
+        "consciousness",
+        "cognition",
+        "attention",
+        "physiological-stability"
+      ],
+      "observable_proxy": [
+        "blood-gas-proxy",
+        "acid-base-stability",
+        "electrolyte-stability",
+        "metabolic-waste-proxy"
+      ],
+      "replacement_candidate": [
+        "extracorporeal-life-support",
+        "perfusion-system",
+        "clearance-device"
+      ],
+      "failure_modes": [
+        "acidosis",
+        "electrolyte-crisis",
+        "toxin-accumulation",
+        "fluid-overload",
+        "device-failure",
+        "clearance-proxy-to-subject-continuity-overclaim"
+      ],
+      "abort_gate": "Cannot treat metabolic clearance proxies as sufficient unless failure modes, timing and neural-state consequences are bounded.",
+      "evidence_anchor": [
+        "MSB-CARD-005",
+        "MSB-CARD-012"
+      ],
+      "scope_boundary": "Only supports clearance-channel modeling; does not prove long-term artificial homeostasis, clinical deployability or subject continuity.",
+      "equivalence_status": "partial-proxy-known"
+    },
+    {
+      "protocol_id": "BBIP-005-endocrine-signal",
+      "channel_family": "endocrine",
+      "exchange_content": "hormonal regulation signals including glucose regulation, stress-axis proxies, circadian signals and metabolic endocrine state",
+      "direction": "bidirectional",
+      "carrier": "humoral signaling and sensor-algorithm-actuator loop candidates",
+      "unit_or_scale": "hormone or endocrine proxy values, time-in-range style endpoints and rhythm stability proxies",
+      "frequency_or_cadence": "multi-timescale, from rapid glucose control to circadian and stress rhythms",
+      "latency_bound": "variable-specific; exact multi-axis endocrine replacement bound not specified",
+      "precision_requirement": "sufficient to preserve metabolic regulation, stress response, affect and action readiness; exact threshold not specified",
+      "error_tolerance": "sensor drift, algorithm error, actuator failure, endocrine crisis, rhythm collapse or user/subject non-expression triggers block/cannot-evaluate",
+      "closed_loop_role": "regulates internal state, energy allocation, stress response and body-brain state prediction",
+      "subject_state_dependency": [
+        "mood",
+        "motivation",
+        "attention",
+        "metabolic-stability",
+        "stress-response"
+      ],
+      "observable_proxy": [
+        "glucose-time-in-range",
+        "endocrine-marker-proxy",
+        "rhythm-stability",
+        "device-safety-event"
+      ],
+      "replacement_candidate": [
+        "artificial-pancreas",
+        "closed-loop-drug-delivery",
+        "algorithmic-endocrine-support"
+      ],
+      "failure_modes": [
+        "sensor-drift",
+        "algorithm-error",
+        "actuator-failure",
+        "hypoglycemia",
+        "hyperglycemia",
+        "stress-axis-dysregulation",
+        "single-axis-to-whole-body-overclaim"
+      ],
+      "abort_gate": "Cannot generalize a single endocrine closed loop into whole-body endocrine replacement or subject-continuity support.",
+      "evidence_anchor": [
+        "MSB-CARD-003",
+        "MSB-CARD-004",
+        "MSB-CARD-010",
+        "MSB-CARD-015",
+        "MSB-CARD-019"
+      ],
+      "scope_boundary": "Supports local closed-loop endocrine substitution vocabulary only; does not prove multi-axis endocrine replacement, subject continuity or medical advice.",
+      "equivalence_status": "partial-proxy-known"
+    },
+    {
+      "protocol_id": "BBIP-006-immune-inflammatory-signal",
+      "channel_family": "immune-inflammatory",
+      "exchange_content": "immune activation, inflammation, infection, tissue injury and public-health-risk signals affecting neural and systemic state",
+      "direction": "bidirectional",
+      "carrier": "humoral immune signaling, tissue state, implanted or transplanted biological material and monitoring system candidates",
+      "unit_or_scale": "inflammatory marker proxies, infection-risk proxies, rejection-risk proxies and monitoring requirements",
+      "frequency_or_cadence": "event-driven and chronic multi-timescale",
+      "latency_bound": "risk- and event-dependent; exact disembodied bound not specified",
+      "precision_requirement": "sufficient to detect infection, inflammatory drift, rejection and public-health risk before irreversible subject harm",
+      "error_tolerance": "uncontrolled infection, rejection, inflammation, zoonotic risk, surveillance failure or monitoring loss triggers block/abort",
+      "closed_loop_role": "protects substrate, replacement components and social/public-health boundary from immune and infection failure",
+      "subject_state_dependency": [
+        "neural-integrity",
+        "cognition",
+        "sickness-behavior",
+        "systemic-stability",
+        "social-governance-continuity"
+      ],
+      "observable_proxy": [
+        "infection-marker-proxy",
+        "inflammatory-marker-proxy",
+        "rejection-risk-proxy",
+        "monitoring-compliance-proxy"
+      ],
+      "replacement_candidate": [
+        "xenotransplantation-monitoring",
+        "bioengineered-organ-monitoring",
+        "immune-surveillance-system"
+      ],
+      "failure_modes": [
+        "infection",
+        "immune-rejection",
+        "chronic-inflammation",
+        "public-health-risk",
+        "monitoring-failure",
+        "biological-replacement-to-safe-platform-overclaim"
+      ],
+      "abort_gate": "Cannot treat biological replacement material as stable subject infrastructure without immune, infection, monitoring and public-health boundaries.",
+      "evidence_anchor": [
+        "MSB-CARD-008",
+        "MSB-CARD-012"
+      ],
+      "scope_boundary": "Only supports immune/inflammatory risk-channel modeling; does not prove xenotransplantation safety, whole-body replacement or long-term subject preservation.",
+      "equivalence_status": "partial-proxy-known"
+    },
+    {
+      "protocol_id": "BBIP-007-exteroceptive-input",
+      "channel_family": "exteroception",
+      "exchange_content": "visual, auditory, tactile, proprioceptive, vestibular and environment-state inputs needed for world-model updating",
+      "direction": "environment-mediated",
+      "carrier": "sensory organs, neural stimulation, implanted BCI, external sensors or virtual-environment candidates",
+      "unit_or_scale": "sensory bandwidth, classification accuracy, signal stability, latency and functional endpoint proxies",
+      "frequency_or_cadence": "task-dependent continuous and event-driven streams",
+      "latency_bound": "task-dependent; closed-loop agency requires bounded latency but exact threshold not specified",
+      "precision_requirement": "sufficient to preserve perception, orientation, learning, feedback and agency; exact threshold not specified",
+      "error_tolerance": "signal loss, sensory hallucination, unstable stimulation, unsafe latency or incoherent body/environment feedback triggers block/cannot-evaluate",
+      "closed_loop_role": "feeds world state into cognition, learning, safety behavior and embodied self-model",
+      "subject_state_dependency": [
+        "perception",
+        "orientation",
+        "learning",
+        "agency",
+        "environmental-feedback"
+      ],
+      "observable_proxy": [
+        "functional-sensory-endpoint",
+        "signal-stability",
+        "latency",
+        "task-performance-proxy"
+      ],
+      "replacement_candidate": [
+        "implanted-bci-sensory-interface",
+        "external-sensor-array",
+        "virtual-environment-input",
+        "neuroprosthetic-feedback"
+      ],
+      "failure_modes": [
+        "signal-loss",
+        "unstable-stimulation",
+        "false-environment-state",
+        "sensory-conflict",
+        "interface-injury",
+        "bci-to-full-body-interface-overclaim"
+      ],
+      "abort_gate": "Cannot infer high-bandwidth whole-body sensory replacement from limited BCI or sensory-interface research.",
+      "evidence_anchor": [
+        "MSB-CARD-006",
+        "MSB-CARD-013",
+        "MSB-CARD-017"
+      ],
+      "scope_boundary": "Supports sensory-interface variable modeling only; does not prove whole-body sensory substitution, stable embodied cognition or deployable BCI replacement.",
+      "equivalence_status": "partial-proxy-known"
+    },
+    {
+      "protocol_id": "BBIP-008-motor-expression-output",
+      "channel_family": "motor-expression",
+      "exchange_content": "language, eye movement, action intention, motor command, external actuator control and expressive output",
+      "direction": "brain-to-body",
+      "carrier": "motor pathways, neural decoding, implanted BCI and external actuator candidates",
+      "unit_or_scale": "functional endpoint, command accuracy, latency, reliability, fatigue and safety-event proxies",
+      "frequency_or_cadence": "task-dependent continuous and event-driven output",
+      "latency_bound": "task- and safety-dependent; exact subject-continuity bound not specified",
+      "precision_requirement": "sufficient to preserve communication, consent, action, correction and social participation; exact threshold not specified",
+      "error_tolerance": "loss of expression, unsafe actuator command, decoding drift, agency mismatch or inability to withdraw consent triggers block/abort",
+      "closed_loop_role": "allows subject expression, action, feedback correction, consent and participation in the environment",
+      "subject_state_dependency": [
+        "agency",
+        "communication",
+        "consent-expression",
+        "action-capability",
+        "social-participation"
+      ],
+      "observable_proxy": [
+        "communication-rate",
+        "command-accuracy",
+        "functional-endpoint",
+        "latency",
+        "safety-event-proxy"
+      ],
+      "replacement_candidate": [
+        "implanted-bci-output",
+        "external-actuator",
+        "robotic-effector",
+        "virtual-agent-control"
+      ],
+      "failure_modes": [
+        "decoding-drift",
+        "unsafe-command",
+        "loss-of-expression",
+        "agency-mismatch",
+        "actuator-failure",
+        "communication-to-full-subject-continuity-overclaim"
+      ],
+      "abort_gate": "Cannot claim subject continuity if the system cannot support reliable expression, correction, refusal and agency boundaries.",
+      "evidence_anchor": [
+        "MSB-CARD-006",
+        "MSB-CARD-013",
+        "MSB-CARD-018"
+      ],
+      "scope_boundary": "Supports output-interface and agency-boundary modeling only; does not prove stable long-term motor replacement, personhood preservation or engineering feasibility.",
+      "equivalence_status": "partial-proxy-known"
+    },
+    {
+      "protocol_id": "BBIP-009-rights-identity-control",
+      "channel_family": "rights-identity-control",
+      "exchange_content": "consent, withdrawal, refusal, preference expression, identity continuity, delegation, audit trail and legal/ethical control signals",
+      "direction": "bidirectional",
+      "carrier": "communication interface, governance record, device software controls, human review and safety-case process",
+      "unit_or_scale": "auditability, traceability, consent-state, withdrawal path, expression reliability and reviewer-signoff proxies",
+      "frequency_or_cadence": "continuous availability with event-driven governance actions",
+      "latency_bound": "must support timely stop/withdraw/refusal pathways; exact bound not specified",
+      "precision_requirement": "sufficient to avoid misattributed identity, coerced continuation, unauthorized operation and unverifiable subject preference",
+      "error_tolerance": "loss of consent channel, unverifiable identity, unsafe automation, missing audit trail or governance override triggers block/abort",
+      "closed_loop_role": "keeps the system accountable to the subject as a rights-bearing agent rather than a maintained biological object",
+      "subject_state_dependency": [
+        "identity-continuity",
+        "agency",
+        "consent",
+        "refusal",
+        "legal-personhood",
+        "auditability"
+      ],
+      "observable_proxy": [
+        "consent-state-record",
+        "withdrawal-path-test",
+        "traceability",
+        "reviewer-signoff",
+        "safety-case-coverage"
+      ],
+      "replacement_candidate": [
+        "auditable-control-plane",
+        "medical-device-software-governance",
+        "human-review-workflow",
+        "safety-case"
+      ],
+      "failure_modes": [
+        "loss-of-consent",
+        "identity-misattribution",
+        "unreviewed-automation",
+        "unsafe-control-loop",
+        "missing-audit-trail",
+        "maintained-object-to-subject-continuity-overclaim"
+      ],
+      "abort_gate": "Cannot treat a maintained CNS substrate as a continuing subject if expression, consent, refusal, auditability and identity boundaries are absent.",
+      "evidence_anchor": [
+        "MSB-CARD-009",
+        "MSB-CARD-010",
+        "MSB-CARD-011"
+      ],
+      "scope_boundary": "Governance and safety-case vocabulary only; does not establish legal personhood, clinical operation, subject survival or deployable control architecture.",
+      "equivalence_status": "cannot-evaluate"
+    }
+  ]
+}

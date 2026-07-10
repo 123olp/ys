@@ -1,0 +1,997 @@
+{
+  "schemaVersion": "human-infra.c2-longtail-eleventh-batch-promotion-queue.v1",
+  "queueId": "human-infra-c2-longtail-eleventh-batch-promotion-queue-2026-07-11",
+  "status": "active-eleventh-batch-queue-model-blocked",
+  "purpose": "Queue the eleventh batch of still-uncovered C2 long-tail domains for source-specific promotion work. This artifact only selects candidate domains and web-checked sources; it does not complete Source Cards, fresh review, claim upgrade or calibrated model admission.",
+  "sourceOfTruth": {
+    "c2LongtailCoverageRegister": "docs/reference/human-infra-c2-longtail-coverage-register.json",
+    "firstBatchPromotionQueue": "docs/reference/human-infra-c2-longtail-first-batch-promotion-queue.json",
+    "secondBatchPromotionQueue": "docs/reference/human-infra-c2-longtail-second-batch-promotion-queue.json",
+    "thirdBatchPromotionQueue": "docs/reference/human-infra-c2-longtail-third-batch-promotion-queue.json",
+    "fourthBatchPromotionQueue": "docs/reference/human-infra-c2-longtail-fourth-batch-promotion-queue.json",
+    "fifthBatchPromotionQueue": "docs/reference/human-infra-c2-longtail-fifth-batch-promotion-queue.json",
+    "sixthBatchPromotionQueue": "docs/reference/human-infra-c2-longtail-sixth-batch-promotion-queue.json",
+    "seventhBatchPromotionQueue": "docs/reference/human-infra-c2-longtail-seventh-batch-promotion-queue.json",
+    "eighthBatchPromotionQueue": "docs/reference/human-infra-c2-longtail-eighth-batch-promotion-queue.json",
+    "ninthBatchPromotionQueue": "docs/reference/human-infra-c2-longtail-ninth-batch-promotion-queue.json",
+    "tenthBatchPromotionQueue": "docs/reference/human-infra-c2-longtail-tenth-batch-promotion-queue.json",
+    "domainClassification": "domains/_possibility-space-control/classification.tsv",
+    "sourceCardSystem": "docs/reference/source-card-system.md",
+    "maturityGapRegister": "docs/reference/human-infra-maturity-gap-register.json",
+    "maturityRoadmap": "docs/reference/human-infra-maturity-roadmap.md"
+  },
+  "scope": {
+    "batchId": "C2-LT-B11",
+    "batchDomainCount": 12,
+    "selectionRule": "Prioritize still-uncovered C2 domains by importance, long-horizon impact and fundamentality for subject continuity: swallowing and aspiration, dental infection and pain, visual and auditory input protection, sensory assistive access, balance and gait stability, chemosensory nutrition/hazard signals, diabetic offloading and vestibular ototoxicity. This is not feasibility, market maturity or intervention-hype ranking.",
+    "requiredArtifactClasses": [
+      "domain-claim-evidence-row",
+      "domain-source-card-field-extraction",
+      "domain-source-specific-deep-read",
+      "source-context-local-review",
+      "independent-fresh-review-verdict",
+      "reviewed-source-card",
+      "variable-card",
+      "endpoint-card",
+      "uncertainty-card",
+      "transfer-boundary-card",
+      "downgrade-check"
+    ],
+    "nonClaims": [
+      "This queue does not complete Source Cards.",
+      "This queue does not complete independent fresh review.",
+      "This queue does not upgrade any domain claim.",
+      "This queue does not admit any domain into calibrated prediction.",
+      "This queue does not provide clinical, device, dental, vision, hearing, vestibular, swallowing, nutrition, infection, pain, mobility, pediatric, occupational, medication-risk, individual, intervention-ranking or self-management advice.",
+      "This queue does not mark any C2-LT-B1/B2/B3/B4/B5/B6/B7/B8/B9/B10 blocked, downgrade, source-resolution, manual-access, route-only or model-blocked row as resolved."
+    ]
+  },
+  "blockedUses": [
+    "calibrated-prediction",
+    "individual-advice",
+    "individual-death-date-output",
+    "intervention-ranking",
+    "clinical-validity-claim",
+    "domain-claim-upgrade"
+  ],
+  "batchRows": [
+    {
+      "domainId": "swallowing-dysphagia-aspiration-nutrition",
+      "triageBucket": "other-c2-source-maintenance",
+      "selectionReason": "吞咽障碍把营养进入、误吸、肺部感染、沟通和照护升级连接到同一条主体连续性风险链，是有效时间和生存曲线的基础输入通道。",
+      "claimSeed": "吞咽能力下降可通过营养摄入失败、误吸、肺炎风险、进食时间成本、照护负担和沟通受限影响主体持续性与恢复窗口。",
+      "variableSeed": [
+        "swallowing-safety",
+        "aspiration-risk",
+        "nutrition-intake",
+        "pneumonia-escalation",
+        "feeding-support-context"
+      ],
+      "batchId": "C2-LT-B11",
+      "priorityRank": 1,
+      "localDomainPath": "domains/c2-source-maintenance/swallowing-dysphagia-aspiration-nutrition",
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB11-SRC-01-1",
+          "title": "ASHA Practice Portal: Adult Dysphagia",
+          "url": "https://www.asha.org/practice-portal/clinical-topics/adult-dysphagia/",
+          "evidenceRole": "adult-dysphagia-assessment-management-boundary",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-11",
+          "sourceCheck": {
+            "checkedAt": "2026-07-11",
+            "method": "python-urllib-get",
+            "statusCode": 200,
+            "contentLengthBytes": 183444
+          }
+        },
+        {
+          "sourceRefId": "C2LTB11-SRC-01-2",
+          "title": "NCBI Bookshelf: Dysphagia",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK559174/",
+          "evidenceRole": "dysphagia-clinical-overview-and-mechanism-boundary",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-11",
+          "sourceCheck": {
+            "checkedAt": "2026-07-11",
+            "method": "python-urllib-get",
+            "statusCode": 200,
+            "contentLengthBytes": 131250
+          }
+        }
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "modelAdmissionDecision": "blocked-until-c2ltb11-source-specific-fields-local-review-independent-fresh-review-and-reviewed-artifacts-exist",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ]
+    },
+    {
+      "domainId": "dental-pain-emergency-infection-continuity",
+      "triageBucket": "acute-life-risk-and-recovery",
+      "selectionReason": "牙源性疼痛和感染可从局部疼痛扩展到营养受限、睡眠损伤、急诊升级和系统性感染，是低成本但高影响的连续性失效入口。",
+      "claimSeed": "牙痛和牙源性感染通过疼痛负担、咀嚼受限、睡眠中断、急诊可及性、抗感染升级和败血症尾部风险影响主体有效时间。",
+      "variableSeed": [
+        "dental-pain-burden",
+        "oral-infection-spread",
+        "chewing-function",
+        "sleep-disruption",
+        "emergency-care-access"
+      ],
+      "batchId": "C2-LT-B11",
+      "priorityRank": 2,
+      "localDomainPath": "domains/c2-source-maintenance/dental-pain-emergency-infection-continuity",
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB11-SRC-02-1",
+          "title": "MedlinePlus Medical Encyclopedia: Tooth abscess",
+          "url": "https://medlineplus.gov/ency/article/001060.htm",
+          "evidenceRole": "tooth-abscess-symptom-complication-boundary",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-11",
+          "sourceCheck": {
+            "checkedAt": "2026-07-11",
+            "method": "python-urllib-get",
+            "statusCode": 200,
+            "contentLengthBytes": 31431
+          }
+        },
+        {
+          "sourceRefId": "C2LTB11-SRC-02-2",
+          "title": "NCBI Bookshelf: Dental Emergencies",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK589664/",
+          "evidenceRole": "dental-emergency-triage-and-risk-boundary",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-11",
+          "sourceCheck": {
+            "checkedAt": "2026-07-11",
+            "method": "python-urllib-get",
+            "statusCode": 200,
+            "contentLengthBytes": 178956
+          }
+        }
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "modelAdmissionDecision": "blocked-until-c2ltb11-source-specific-fields-local-review-independent-fresh-review-and-reviewed-artifacts-exist",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ]
+    },
+    {
+      "domainId": "contact-lens-hygiene-eye-infection-continuity",
+      "triageBucket": "infection-immune-resilience",
+      "selectionReason": "角膜感染和隐形眼镜卫生把视觉输入、设备使用、行为风险和急性眼部感染绑定在一起，直接影响感知通道和行动安全。",
+      "claimSeed": "隐形眼镜相关感染风险通过角膜损伤、视觉中断、卫生行为、设备暴露和紧急眼科升级影响主体感知和任务能力。",
+      "variableSeed": [
+        "contact-lens-exposure",
+        "hygiene-behavior",
+        "keratitis-risk",
+        "visual-function-loss",
+        "urgent-eye-care-access"
+      ],
+      "batchId": "C2-LT-B11",
+      "priorityRank": 3,
+      "localDomainPath": "domains/c2-source-maintenance/contact-lens-hygiene-eye-infection-continuity",
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB11-SRC-03-1",
+          "title": "PMC: Contact Lens Wearer Demographics and Risk Behaviors for Contact Lens-Related Eye Infections",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5779588/",
+          "evidenceRole": "contact-lens-risk-behavior-surveillance-boundary",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-11",
+          "sourceCheck": {
+            "checkedAt": "2026-07-11",
+            "method": "python-urllib-get",
+            "statusCode": 200,
+            "contentLengthBytes": 175726
+          }
+        },
+        {
+          "sourceRefId": "C2LTB11-SRC-03-2",
+          "title": "NCBI Bookshelf: Contact Lens-Related Complications",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK587443/",
+          "evidenceRole": "contact-lens-complication-clinical-boundary",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-11",
+          "sourceCheck": {
+            "checkedAt": "2026-07-11",
+            "method": "python-urllib-get",
+            "statusCode": 200,
+            "contentLengthBytes": 112141
+          }
+        }
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "modelAdmissionDecision": "blocked-until-c2ltb11-source-specific-fields-local-review-independent-fresh-review-and-reviewed-artifacts-exist",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ]
+    },
+    {
+      "domainId": "diabetic-therapeutic-footwear-offloading-continuity",
+      "triageBucket": "infection-immune-resilience",
+      "selectionReason": "糖尿病足卸载与治疗鞋连接代谢疾病、足部压力、伤口、感染、截肢和行动能力，是身体承载结构和长期任务能力的关键边界。",
+      "claimSeed": "足部压力与保护性鞋具条件通过溃疡形成、伤口恶化、感染升级、截肢风险和行动受限影响长期主体持续性。",
+      "variableSeed": [
+        "plantar-pressure",
+        "offloading-support",
+        "foot-ulcer-risk",
+        "amputation-risk",
+        "mobility-continuity"
+      ],
+      "batchId": "C2-LT-B11",
+      "priorityRank": 4,
+      "localDomainPath": "domains/c2-source-maintenance/diabetic-therapeutic-footwear-offloading-continuity",
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB11-SRC-04-1",
+          "title": "CMS LCD: Therapeutic Shoes for Persons with Diabetes",
+          "url": "https://www.cms.gov/medicare-coverage-database/view/lcd.aspx?LCDId=33369",
+          "evidenceRole": "therapeutic-footwear-coverage-and-eligibility-boundary",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-11",
+          "sourceCheck": {
+            "checkedAt": "2026-07-11",
+            "method": "python-urllib-get",
+            "statusCode": 200,
+            "contentLengthBytes": 180703
+          }
+        },
+        {
+          "sourceRefId": "C2LTB11-SRC-04-2",
+          "title": "NCBI Bookshelf: Diabetic Foot Care",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK553110/",
+          "evidenceRole": "diabetic-foot-care-risk-and-prevention-boundary",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-11",
+          "sourceCheck": {
+            "checkedAt": "2026-07-11",
+            "method": "python-urllib-get",
+            "statusCode": 200,
+            "contentLengthBytes": 102602
+          }
+        }
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "modelAdmissionDecision": "blocked-until-c2ltb11-source-specific-fields-local-review-independent-fresh-review-and-reviewed-artifacts-exist",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ]
+    },
+    {
+      "domainId": "eye-injury-urgent-vision-protection-continuity",
+      "triageBucket": "neuro-sensory-cognitive-continuity",
+      "selectionReason": "眼外伤把突发事故、职业暴露、视觉输入丧失和紧急处置窗口连接起来，是感知能力和风险规避能力的基础风险域。",
+      "claimSeed": "眼部急症和眼面部防护条件通过视觉功能损失、工作暴露、急诊时效、事故预防和后续康复影响主体行动和学习反馈。",
+      "variableSeed": [
+        "eye-injury-exposure",
+        "visual-loss-risk",
+        "urgent-care-window",
+        "protective-equipment-access",
+        "occupational-exposure-context"
+      ],
+      "batchId": "C2-LT-B11",
+      "priorityRank": 5,
+      "localDomainPath": "domains/c2-source-maintenance/eye-injury-urgent-vision-protection-continuity",
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB11-SRC-05-1",
+          "title": "MedlinePlus Medical Encyclopedia: Eye emergencies",
+          "url": "https://medlineplus.gov/ency/article/000054.htm",
+          "evidenceRole": "eye-emergency-symptom-and-action-boundary",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-11",
+          "sourceCheck": {
+            "checkedAt": "2026-07-11",
+            "method": "python-urllib-get",
+            "statusCode": 200,
+            "contentLengthBytes": 36933
+          }
+        },
+        {
+          "sourceRefId": "C2LTB11-SRC-05-2",
+          "title": "OSHA: Eye and Face Protection",
+          "url": "https://www.osha.gov/eye-face-protection",
+          "evidenceRole": "occupational-eye-face-protection-boundary",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-11",
+          "sourceCheck": {
+            "checkedAt": "2026-07-11",
+            "method": "python-urllib-get",
+            "statusCode": 200,
+            "contentLengthBytes": 97554
+          }
+        }
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "modelAdmissionDecision": "blocked-until-c2ltb11-source-specific-fields-local-review-independent-fresh-review-and-reviewed-artifacts-exist",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ]
+    },
+    {
+      "domainId": "hearing-assistive-devices-alerting-access-continuity",
+      "triageBucket": "neuro-sensory-cognitive-continuity",
+      "selectionReason": "听觉辅助设备和警报接入把交流、危险提示、社会参与和认知负荷连接起来，是主体感知环境和协作系统的重要接口。",
+      "claimSeed": "听觉辅助技术通过改善语言访问、警报感知、环境提示、社会参与和任务沟通，影响主体行动质量与协作连续性。",
+      "variableSeed": [
+        "hearing-device-access",
+        "speech-access",
+        "alerting-signal-access",
+        "communication-load",
+        "social-participation"
+      ],
+      "batchId": "C2-LT-B11",
+      "priorityRank": 6,
+      "localDomainPath": "domains/c2-source-maintenance/hearing-assistive-devices-alerting-access-continuity",
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB11-SRC-06-1",
+          "title": "NIDCD: Assistive Devices for People with Hearing or Speech Disorders",
+          "url": "https://www.nidcd.nih.gov/health/assistive-devices-people-hearing-voice-speech-or-language-disorders",
+          "evidenceRole": "assistive-device-access-and-communication-boundary",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-11",
+          "sourceCheck": {
+            "checkedAt": "2026-07-11",
+            "method": "python-urllib-get",
+            "statusCode": 200,
+            "contentLengthBytes": 54455
+          }
+        },
+        {
+          "sourceRefId": "C2LTB11-SRC-06-2",
+          "title": "NCBI Bookshelf: Hearing Technologies - Expanding Options",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK385313/",
+          "evidenceRole": "hearing-technology-options-and-access-boundary",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-11",
+          "sourceCheck": {
+            "checkedAt": "2026-07-11",
+            "method": "python-urllib-get",
+            "statusCode": 200,
+            "contentLengthBytes": 250848
+          }
+        }
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "modelAdmissionDecision": "blocked-until-c2ltb11-source-specific-fields-local-review-independent-fresh-review-and-reviewed-artifacts-exist",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ]
+    },
+    {
+      "domainId": "noise-induced-hearing-loss-prevention-continuity",
+      "triageBucket": "neuro-sensory-cognitive-continuity",
+      "selectionReason": "噪声性听损把环境暴露、职业风险、可逆/不可逆感知损失和长期沟通负担连接起来，是感知输入维护的前端防线。",
+      "claimSeed": "噪声暴露通过听觉阈值损失、言语理解下降、职业环境、警报感知和社会沟通负担影响主体协作和风险识别。",
+      "variableSeed": [
+        "noise-exposure-level",
+        "hearing-threshold-shift",
+        "speech-understanding",
+        "occupational-noise-context",
+        "hearing-protection-access"
+      ],
+      "batchId": "C2-LT-B11",
+      "priorityRank": 7,
+      "localDomainPath": "domains/c2-source-maintenance/noise-induced-hearing-loss-prevention-continuity",
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB11-SRC-07-1",
+          "title": "NIDCD: Noise-Induced Hearing Loss",
+          "url": "https://www.nidcd.nih.gov/health/noise-induced-hearing-loss",
+          "evidenceRole": "noise-induced-hearing-loss-health-boundary",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-11",
+          "sourceCheck": {
+            "checkedAt": "2026-07-11",
+            "method": "python-urllib-get",
+            "statusCode": 200,
+            "contentLengthBytes": 49669
+          }
+        },
+        {
+          "sourceRefId": "C2LTB11-SRC-07-2",
+          "title": "OSHA: Occupational Noise Exposure",
+          "url": "https://www.osha.gov/noise",
+          "evidenceRole": "occupational-noise-exposure-standard-boundary",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-11",
+          "sourceCheck": {
+            "checkedAt": "2026-07-11",
+            "method": "python-urllib-get",
+            "statusCode": 200,
+            "contentLengthBytes": 124710
+          }
+        }
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "modelAdmissionDecision": "blocked-until-c2ltb11-source-specific-fields-local-review-independent-fresh-review-and-reviewed-artifacts-exist",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ]
+    },
+    {
+      "domainId": "pediatric-vision-screening-amblyopia-continuity",
+      "triageBucket": "neuro-sensory-cognitive-continuity",
+      "selectionReason": "儿童视觉筛查和弱视把早期输入质量、学习窗口、发育轨迹和未来能力储备连接起来，是主体持续性中早期可塑性的关键域。",
+      "claimSeed": "儿童视觉问题筛查通过发现弱视和风险因素、保护视觉输入、减少学习障碍和扩大早期发展窗口影响长期能力形成。",
+      "variableSeed": [
+        "vision-screening-access",
+        "amblyopia-risk",
+        "visual-input-quality",
+        "developmental-window",
+        "learning-function"
+      ],
+      "batchId": "C2-LT-B11",
+      "priorityRank": 8,
+      "localDomainPath": "domains/c2-source-maintenance/pediatric-vision-screening-amblyopia-continuity",
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB11-SRC-08-1",
+          "title": "USPSTF: Vision in Children Ages 6 Months to 5 Years - Screening",
+          "url": "https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/vision-in-children-ages-6-months-to-5-years-screening",
+          "evidenceRole": "pediatric-vision-screening-recommendation-boundary",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-11",
+          "sourceCheck": {
+            "checkedAt": "2026-07-11",
+            "method": "python-urllib-get",
+            "statusCode": 200,
+            "contentLengthBytes": 126219
+          }
+        },
+        {
+          "sourceRefId": "C2LTB11-SRC-08-2",
+          "title": "National Eye Institute: Amblyopia",
+          "url": "https://www.nei.nih.gov/eye-health-information/eye-conditions-and-diseases/amblyopia-lazy-eye",
+          "evidenceRole": "amblyopia-condition-and-development-boundary",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-11",
+          "sourceCheck": {
+            "checkedAt": "2026-07-11",
+            "method": "python-urllib-get",
+            "statusCode": 200,
+            "contentLengthBytes": 56358
+          }
+        }
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "modelAdmissionDecision": "blocked-until-c2ltb11-source-specific-fields-local-review-independent-fresh-review-and-reviewed-artifacts-exist",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ]
+    },
+    {
+      "domainId": "smell-taste-chemosensory-continuity",
+      "triageBucket": "other-c2-source-maintenance",
+      "selectionReason": "嗅觉和味觉不仅是体验问题，也参与营养选择、危险识别、感染后恢复、生活质量和安全行为，是常被低估的输入通道。",
+      "claimSeed": "嗅味觉损伤通过营养摄入、食物安全、气体/烟雾危险识别、情绪和生活质量改变主体有效时间和风险暴露。",
+      "variableSeed": [
+        "olfactory-function",
+        "taste-function",
+        "nutrition-signal",
+        "hazard-detection",
+        "quality-of-life-burden"
+      ],
+      "batchId": "C2-LT-B11",
+      "priorityRank": 9,
+      "localDomainPath": "domains/c2-source-maintenance/smell-taste-chemosensory-continuity",
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB11-SRC-09-1",
+          "title": "NIDCD: Smell Disorders",
+          "url": "https://www.nidcd.nih.gov/health/smell-disorders",
+          "evidenceRole": "olfactory-disorder-risk-and-function-boundary",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-11",
+          "sourceCheck": {
+            "checkedAt": "2026-07-11",
+            "method": "python-urllib-get",
+            "statusCode": 200,
+            "contentLengthBytes": 48544
+          }
+        },
+        {
+          "sourceRefId": "C2LTB11-SRC-09-2",
+          "title": "NIDCD: Taste Disorders",
+          "url": "https://www.nidcd.nih.gov/health/taste-disorders",
+          "evidenceRole": "taste-disorder-risk-and-function-boundary",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-11",
+          "sourceCheck": {
+            "checkedAt": "2026-07-11",
+            "method": "python-urllib-get",
+            "statusCode": 200,
+            "contentLengthBytes": 51812
+          }
+        }
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "modelAdmissionDecision": "blocked-until-c2ltb11-source-specific-fields-local-review-independent-fresh-review-and-reviewed-artifacts-exist",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ]
+    },
+    {
+      "domainId": "temporomandibular-orofacial-pain-jaw-function-continuity",
+      "triageBucket": "barrier-function-mobility",
+      "selectionReason": "颞下颌和口面痛把疼痛、咀嚼、睡眠、沟通和心理负担连接起来，是行动密度和有效时间的慢性摩擦源。",
+      "claimSeed": "下颌功能和口面痛通过进食、说话、睡眠、疼痛负担、情绪压力和医疗访问成本影响主体任务执行质量。",
+      "variableSeed": [
+        "jaw-function",
+        "orofacial-pain",
+        "chewing-limitation",
+        "sleep-impact",
+        "communication-burden"
+      ],
+      "batchId": "C2-LT-B11",
+      "priorityRank": 10,
+      "localDomainPath": "domains/c2-source-maintenance/temporomandibular-orofacial-pain-jaw-function-continuity",
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB11-SRC-10-1",
+          "title": "NIDCR: TMD",
+          "url": "https://www.nidcr.nih.gov/health-info/tmd",
+          "evidenceRole": "temporomandibular-disorder-condition-boundary",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-11",
+          "sourceCheck": {
+            "checkedAt": "2026-07-11",
+            "method": "python-urllib-get",
+            "statusCode": 200,
+            "contentLengthBytes": 74471
+          }
+        },
+        {
+          "sourceRefId": "C2LTB11-SRC-10-2",
+          "title": "NCBI Bookshelf: Temporomandibular Syndrome",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK551612/",
+          "evidenceRole": "temporomandibular-syndrome-clinical-overview-boundary",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-11",
+          "sourceCheck": {
+            "checkedAt": "2026-07-11",
+            "method": "python-urllib-get",
+            "statusCode": 200,
+            "contentLengthBytes": 90302
+          }
+        }
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "modelAdmissionDecision": "blocked-until-c2ltb11-source-specific-fields-local-review-independent-fresh-review-and-reviewed-artifacts-exist",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ]
+    },
+    {
+      "domainId": "bilateral-vestibular-hypofunction-gaze-gait-stability-continuity",
+      "triageBucket": "neuro-sensory-cognitive-continuity",
+      "selectionReason": "双侧前庭功能低下把凝视稳定、平衡、跌倒、导航和移动能力连接起来，是主体能否安全行动的基础感知-运动域。",
+      "claimSeed": "前庭输入受损通过凝视不稳、步态不稳、跌倒风险、视觉-空间负荷和活动回避影响主体行动能力与有效时间。",
+      "variableSeed": [
+        "vestibular-input",
+        "gaze-stability",
+        "gait-stability",
+        "fall-risk",
+        "activity-avoidance"
+      ],
+      "batchId": "C2-LT-B11",
+      "priorityRank": 11,
+      "localDomainPath": "domains/c2-source-maintenance/bilateral-vestibular-hypofunction-gaze-gait-stability-continuity",
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB11-SRC-11-1",
+          "title": "NIDCD: Balance Disorders",
+          "url": "https://www.nidcd.nih.gov/health/balance-disorders",
+          "evidenceRole": "balance-disorder-cause-function-boundary",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-11",
+          "sourceCheck": {
+            "checkedAt": "2026-07-11",
+            "method": "python-urllib-get",
+            "statusCode": 200,
+            "contentLengthBytes": 57064
+          }
+        },
+        {
+          "sourceRefId": "C2LTB11-SRC-11-2",
+          "title": "PubMed: Bilateral vestibulopathy diagnostic criteria - Barany Society consensus",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/29081426/",
+          "evidenceRole": "bilateral-vestibulopathy-diagnostic-criteria-boundary",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-11",
+          "sourceCheck": {
+            "checkedAt": "2026-07-11",
+            "method": "python-urllib-get",
+            "statusCode": 200,
+            "contentLengthBytes": 167565
+          }
+        }
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "modelAdmissionDecision": "blocked-until-c2ltb11-source-specific-fields-local-review-independent-fresh-review-and-reviewed-artifacts-exist",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ]
+    },
+    {
+      "domainId": "vestibular-ototoxicity-medication-chemical-risk-continuity",
+      "triageBucket": "neuro-sensory-cognitive-continuity",
+      "selectionReason": "前庭耳毒性把药物/化学暴露、听觉和平衡损害、跌倒、导航和长期任务安全连接起来，是治疗收益与功能损伤之间的高风险转移边界。",
+      "claimSeed": "耳毒性暴露可通过听觉和前庭损害、眩晕、平衡障碍、跌倒风险、药物风险管理和活动限制影响主体行动与恢复能力。",
+      "variableSeed": [
+        "ototoxic-exposure",
+        "vestibular-symptom",
+        "hearing-symptom",
+        "balance-impairment",
+        "medication-risk-context"
+      ],
+      "batchId": "C2-LT-B11",
+      "priorityRank": 12,
+      "localDomainPath": "domains/c2-source-maintenance/vestibular-ototoxicity-medication-chemical-risk-continuity",
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB11-SRC-12-1",
+          "title": "PubMed: Pharmacological drugs inducing ototoxicity, vestibular symptoms and tinnitus",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/21796866/",
+          "evidenceRole": "ototoxic-drug-vestibular-symptom-review-boundary",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-11",
+          "sourceCheck": {
+            "checkedAt": "2026-07-11",
+            "method": "python-urllib-get",
+            "statusCode": 200,
+            "contentLengthBytes": 121965
+          }
+        },
+        {
+          "sourceRefId": "C2LTB11-SRC-12-2",
+          "title": "PubMed: Vestibular damage in chronic ototoxicity",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/24333467/",
+          "evidenceRole": "chronic-vestibular-ototoxicity-review-boundary",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-11",
+          "sourceCheck": {
+            "checkedAt": "2026-07-11",
+            "method": "python-urllib-get",
+            "statusCode": 200,
+            "contentLengthBytes": 148564
+          }
+        }
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "modelAdmissionDecision": "blocked-until-c2ltb11-source-specific-fields-local-review-independent-fresh-review-and-reviewed-artifacts-exist",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ]
+    }
+  ],
+  "aggregateDecision": {
+    "selectedDomainCount": 12,
+    "candidateSourceCount": 24,
+    "modelAdmission": "blocked",
+    "promotionStatus": "source-specific-promotion-queue-only",
+    "nextRequiredWork": [
+      "derive C2-LT-B11 source extraction queue",
+      "perform field-level source-context extraction",
+      "perform local source-context review",
+      "run independent fresh review",
+      "create bounded reviewed artifacts only for eligible rows",
+      "preserve dental, vision, hearing, vestibular, swallowing, nutrition, infection, pain, mobility, pediatric, occupational, medication-risk and individual-use blocks"
+    ]
+  }
+}

@@ -199,7 +199,7 @@ Research Domain Atlas 定义 Human Infra 的研究域生成规则：凡是在“
 | 化学感知必须支撑安全与食欲 | `smell-taste-chemosensory-continuity/` | 嗅觉、味觉、气味危险信号、食欲、营养 | 烟气、燃气、腐败食品识别下降，食欲、生活质量和营养受损 |
 | 躯体感觉必须反馈身体边界 | `peripheral-neuropathy-somatosensory-continuity/` | 周围神经、触觉、痛觉、本体感觉、足部风险 | 损伤不可感、步态不稳、跌倒、溃疡和精细操作反馈丧失 |
 | 记忆可审查地处理 | `memory-editing/` | 记忆痕迹、人格连续性、同意 | 操控、伪记忆、不可逆损伤 |
-| 中枢可外部维持 | `disembodied-cns/` | 神经维持、生命支持、接口闭环 | 去主体化、控制失效、生命支持失败 |
+| 中枢可外部维持 | `disembodied-cns/` | 脑-身接口协议、接口因果等价、最小充分身体、外部维生、控制权 | 去主体化、接口失真、控制失效、生命支持失败、工程可行性外推 |
 | 等待成本可压缩 | `future-waiting/` | 主观时间、相对时间、未来窗口 | 退出失败、连续性失败、工程风险 |
 | 损耗可暂停 | `biostasis-cryopreservation/` | 结构保存、代谢降低、未来修复机会 | 不可逆损坏、复温失败、复活外推 |
 | 认知与行动可放大 | `cognitive-augmentation/` | 学习、判断、记忆外化、工具能力 | 依赖、失控、主体自主性下降 |

@@ -1,5 +1,6 @@
 .PHONY: check structure claim-matrix-audit maturity-gap-audit model-admission-contract-audit model-admission-candidate-registry-audit l4-model-readiness-blocker-matrix-audit l4-unblock-execution-plan-audit l4-evidence-intake-register-audit l4-validation-calibration-reporting-contract-audit public-mortality-anchor-audit nhanes-public-lmf-aggregate-pilot-audit nhanes-public-lmf-survey-design-readiness-audit nhanes-public-lmf-domain-subpopulation-rule-readiness-audit nhanes-public-lmf-eligible-base-readiness-audit nhanes-public-lmf-weighted-estimator-readiness-audit nhanes-public-lmf-r-survey-runtime-smoke-audit nhanes-public-lmf-r-survey-controlled-runtime-smoke-audit nhanes-public-lmf-domain-indicator-diagnostic-audit nhanes-public-lmf-dof-sparse-domain-diagnostic-audit nhanes-public-lmf-disclosure-output-envelope-audit nhanes-public-lmf-effective-sample-ci-publication-audit nhanes-public-lmf-weighted-output-implementation-preflight-audit nhanes-public-lmf-disclosure-review-template-audit nhanes-public-lmf-disclosure-review-execution-audit nhanes-public-lmf-local-run-evidence-manifest-audit nhanes-public-lmf-public-release-gate-audit nhanes-public-lmf-public-web-data-no-real-values-audit nhanes-public-lmf-weighted-domain-output-readiness-audit nhats-official-source-refresh-audit nhats-registration-evidence-template-audit nhats-file-tier-table-audit nhats-acquisition-readiness-audit nhats-controlled-storage-destruction-audit nhats-synthetic-storage-destruction-drill-audit nhats-colectica-value-label-review-execution-audit nhats-colectica-access-route-probe-audit nhats-colectica-authenticated-capture-template-audit nhats-colectica-capture-task-register-audit nhats-route-classifier-readiness-audit nhats-l2-variable-family-admission-audit nhats-preoutcome-aggregation-audit nhats-l4-readiness-runway-audit page-claim-audit audience-claim-map-audit paper-claim-audit domain-falsifier-audit domain-claim-matrix-audit domain-field-extraction-audit c2-longtail-coverage-audit c2-longtail-first-batch-promotion-audit c2-longtail-first-batch-source-extraction-audit c2-longtail-first-batch-source-extraction-register-audit c2-longtail-first-batch-local-review-audit c2-longtail-first-batch-independent-fresh-review-protocol-audit c2-longtail-first-batch-independent-fresh-review-verdict-audit c2-longtail-first-batch-reviewed-card-artifact-audit c2-longtail-first-batch-blocked-source-resolution-audit c2-longtail-first-batch-source-resolution-fresh-review-verdict-audit c2-longtail-first-batch-corrected-source-reextraction-queue-audit c2-longtail-first-batch-corrected-source-reextraction-register-audit c2-longtail-first-batch-corrected-source-fresh-review-verdict-audit c2-longtail-first-batch-corrected-source-reviewed-card-artifact-audit c2-longtail-second-batch-promotion-audit c2-longtail-second-batch-source-extraction-audit c2-longtail-second-batch-source-extraction-register-audit c2-longtail-second-batch-local-review-audit c2-longtail-second-batch-independent-fresh-review-protocol-audit c2-longtail-second-batch-independent-fresh-review-verdict-audit c2-longtail-second-batch-reviewed-card-artifact-audit c2-longtail-third-batch-promotion-audit c2-longtail-third-batch-source-extraction-audit c2-longtail-third-batch-source-extraction-register-audit c2-longtail-third-batch-local-review-audit c2-longtail-third-batch-source-resolution-audit c2-longtail-third-batch-independent-fresh-review-protocol-audit c2-longtail-third-batch-independent-fresh-review-verdict-audit c2-longtail-third-batch-corrected-source-reextraction-queue-audit c2-longtail-third-batch-corrected-source-reextraction-register-audit c2-longtail-third-batch-corrected-source-fresh-review-verdict-audit c2-longtail-third-batch-reviewed-card-artifact-audit c2-longtail-fourth-batch-promotion-audit c2-longtail-fourth-batch-source-extraction-audit c2-longtail-fourth-batch-source-extraction-register-audit c2-longtail-fourth-batch-local-review-audit c2-longtail-fourth-batch-source-resolution-audit c2-longtail-fourth-batch-manual-fulltext-extraction-audit c2-longtail-fourth-batch-manual-fulltext-fresh-review-verdict-audit c2-longtail-fourth-batch-manual-fulltext-reviewed-card-artifact-audit c2-longtail-fifth-batch-promotion-audit c2-longtail-fifth-batch-source-extraction-audit c2-longtail-fifth-batch-source-extraction-register-audit c2-longtail-fifth-batch-local-review-audit c2-longtail-fifth-batch-source-resolution-audit c2-longtail-fifth-batch-manual-fulltext-extraction-audit c2-longtail-fifth-batch-independent-fresh-review-verdict-audit c2-longtail-fifth-batch-reviewed-card-artifact-audit c2-longtail-seventh-batch-source-resolution-audit c2-longtail-seventh-batch-manual-fulltext-extraction-audit c2-longtail-seventh-batch-manual-fulltext-fresh-review-verdict-audit c2-longtail-seventh-batch-manual-fulltext-reviewed-card-artifact-audit c2-longtail-sixth-batch-source-extraction-register-audit c2-longtail-sixth-batch-local-review-audit c2-longtail-sixth-batch-source-resolution-audit c2-longtail-sixth-batch-manual-fulltext-extraction-audit c2-longtail-sixth-batch-independent-fresh-review-verdict-audit c2-longtail-sixth-batch-reviewed-card-artifact-audit domain-source-queue-audit domain-source-extraction-audit domain-source-promotion-audit source-context-local-review-audit card-promotion-prep-audit independent-fresh-review-protocol-audit independent-fresh-review-verdict-audit reviewed-card-artifact-audit future-boundary-route-card-audit falsifier-source-audit falsifier-source-extraction-audit py-compile clean
-.PHONY: nhanes-public-lmf-weighted-domain-output-local-run-audit nhanes-public-lmf-local-disclosure-review-packet-audit nhanes-public-lmf-public-output-implementation-review-template-audit nhanes-public-lmf-public-output-implementation-review-execution-audit life-path-synthetic-validation-calibration-report-audit life-path-l4-synthetic-evidence-packet-dry-run-audit life-path-toy-model-audit l4-evidence-packet-validator-audit l4-validation-calibration-report-execution-register-audit research-standards-source-anchor-audit quantitative-capability-ladder-audit domain-to-model-bridge-audit nhats-registration-evidence-packet-validator-audit nhats-colectica-capture-packet-validator-audit nhats-colectica-capture-packet-draft-audit nhats-colectica-capture-packet-review-handoff-audit nhats-colectica-capture-packet-review-execution-audit nhats-route-value-crosswalk-assembly-audit nhats-route-value-crosswalk-entry-validator-audit nhats-route-value-crosswalk-entry-draft-audit nhats-route-value-crosswalk-entry-review-handoff-audit nhats-route-classifier-synthetic-dry-run-audit c2-longtail-ninth-batch-promotion-audit c2-longtail-ninth-batch-source-extraction-audit c2-longtail-ninth-batch-source-extraction-register-audit c2-longtail-ninth-batch-local-review-audit c2-longtail-ninth-batch-source-resolution-audit c2-longtail-ninth-batch-manual-fulltext-extraction-audit c2-longtail-ninth-batch-manual-fulltext-fresh-review-verdict-audit c2-longtail-ninth-batch-manual-fulltext-reviewed-card-artifact-audit c2-longtail-tenth-batch-promotion-audit c2-longtail-tenth-batch-source-extraction-audit c2-longtail-tenth-batch-source-extraction-register-audit c2-longtail-tenth-batch-local-review-audit c2-longtail-tenth-batch-independent-fresh-review-protocol-audit c2-longtail-tenth-batch-independent-fresh-review-verdict-audit c2-longtail-tenth-batch-reviewed-card-artifact-audit
+.PHONY: nhanes-public-lmf-weighted-domain-output-local-run-audit nhanes-public-lmf-local-disclosure-review-packet-audit nhanes-public-lmf-public-output-implementation-review-template-audit nhanes-public-lmf-public-output-implementation-review-execution-audit life-path-synthetic-validation-calibration-report-audit life-path-l4-synthetic-evidence-packet-dry-run-audit life-path-toy-model-audit l4-evidence-packet-validator-audit l4-validation-calibration-report-execution-register-audit research-standards-source-anchor-audit quantitative-capability-ladder-audit domain-to-model-bridge-audit brain-body-interface-protocol-audit minimal-sufficient-body-claim-matrix-audit nhats-registration-evidence-packet-validator-audit nhats-colectica-capture-packet-validator-audit nhats-colectica-capture-packet-draft-audit nhats-colectica-capture-packet-review-handoff-audit nhats-colectica-capture-packet-review-execution-audit nhats-route-value-crosswalk-assembly-audit nhats-route-value-crosswalk-entry-validator-audit nhats-route-value-crosswalk-entry-draft-audit nhats-route-value-crosswalk-entry-review-handoff-audit nhats-route-classifier-synthetic-dry-run-audit c2-longtail-ninth-batch-promotion-audit c2-longtail-ninth-batch-source-extraction-audit c2-longtail-ninth-batch-source-extraction-register-audit c2-longtail-ninth-batch-local-review-audit c2-longtail-ninth-batch-source-resolution-audit c2-longtail-ninth-batch-manual-fulltext-extraction-audit c2-longtail-ninth-batch-manual-fulltext-fresh-review-verdict-audit c2-longtail-ninth-batch-manual-fulltext-reviewed-card-artifact-audit c2-longtail-tenth-batch-promotion-audit c2-longtail-tenth-batch-source-extraction-audit c2-longtail-tenth-batch-source-extraction-register-audit c2-longtail-tenth-batch-local-review-audit c2-longtail-tenth-batch-independent-fresh-review-protocol-audit c2-longtail-tenth-batch-independent-fresh-review-verdict-audit c2-longtail-tenth-batch-reviewed-card-artifact-audit
+.PHONY: c2-longtail-eleventh-batch-promotion-audit c2-longtail-eleventh-batch-source-extraction-audit c2-longtail-eleventh-batch-source-extraction-register-audit c2-longtail-eleventh-batch-local-review-audit c2-longtail-eleventh-batch-independent-fresh-review-protocol-audit c2-longtail-eleventh-batch-independent-fresh-review-verdict-audit c2-longtail-eleventh-batch-reviewed-card-artifact-audit c2-longtail-twelfth-batch-promotion-audit c2-longtail-twelfth-batch-source-extraction-audit c2-longtail-twelfth-batch-source-extraction-register-audit c2-longtail-twelfth-batch-local-review-audit c2-longtail-twelfth-batch-independent-fresh-review-protocol-audit c2-longtail-twelfth-batch-independent-fresh-review-verdict-audit c2-longtail-twelfth-batch-reviewed-card-artifact-audit c2-longtail-thirteenth-batch-promotion-audit c2-longtail-thirteenth-batch-source-extraction-audit c2-longtail-thirteenth-batch-source-extraction-register-audit c2-longtail-thirteenth-batch-local-review-audit c2-longtail-thirteenth-batch-source-resolution-audit c2-longtail-thirteenth-batch-corrected-source-reextraction-queue-audit c2-longtail-thirteenth-batch-corrected-source-reextraction-register-audit c2-longtail-thirteenth-batch-corrected-source-fresh-review-verdict-audit c2-longtail-fourteenth-batch-promotion-audit c2-longtail-fourteenth-batch-source-extraction-audit c2-longtail-fourteenth-batch-source-extraction-register-audit c2-longtail-fourteenth-batch-local-review-audit
 
 check:
 	$(MAKE) clean
@@ -10,6 +11,8 @@ check:
 	$(MAKE) model-admission-candidate-registry-audit
 	$(MAKE) quantitative-capability-ladder-audit
 	$(MAKE) domain-to-model-bridge-audit
+	$(MAKE) brain-body-interface-protocol-audit
+	$(MAKE) minimal-sufficient-body-claim-matrix-audit
 	$(MAKE) l4-model-readiness-blocker-matrix-audit
 	$(MAKE) l4-unblock-execution-plan-audit
 	$(MAKE) l4-evidence-intake-register-audit
@@ -137,6 +140,32 @@ check:
 	$(MAKE) c2-longtail-ninth-batch-manual-fulltext-fresh-review-verdict-audit
 	$(MAKE) c2-longtail-ninth-batch-manual-fulltext-reviewed-card-artifact-audit
 	$(MAKE) c2-longtail-tenth-batch-promotion-audit
+	$(MAKE) c2-longtail-eleventh-batch-promotion-audit
+	$(MAKE) c2-longtail-eleventh-batch-source-extraction-audit
+	$(MAKE) c2-longtail-eleventh-batch-source-extraction-register-audit
+	$(MAKE) c2-longtail-eleventh-batch-local-review-audit
+	$(MAKE) c2-longtail-eleventh-batch-independent-fresh-review-protocol-audit
+	$(MAKE) c2-longtail-eleventh-batch-independent-fresh-review-verdict-audit
+	$(MAKE) c2-longtail-eleventh-batch-reviewed-card-artifact-audit
+	$(MAKE) c2-longtail-twelfth-batch-promotion-audit
+	$(MAKE) c2-longtail-twelfth-batch-source-extraction-audit
+	$(MAKE) c2-longtail-twelfth-batch-source-extraction-register-audit
+	$(MAKE) c2-longtail-twelfth-batch-local-review-audit
+	$(MAKE) c2-longtail-twelfth-batch-independent-fresh-review-protocol-audit
+	$(MAKE) c2-longtail-twelfth-batch-independent-fresh-review-verdict-audit
+	$(MAKE) c2-longtail-twelfth-batch-reviewed-card-artifact-audit
+	$(MAKE) c2-longtail-thirteenth-batch-promotion-audit
+	$(MAKE) c2-longtail-thirteenth-batch-source-extraction-audit
+	$(MAKE) c2-longtail-thirteenth-batch-source-extraction-register-audit
+	$(MAKE) c2-longtail-thirteenth-batch-local-review-audit
+	$(MAKE) c2-longtail-thirteenth-batch-source-resolution-audit
+	$(MAKE) c2-longtail-thirteenth-batch-corrected-source-reextraction-queue-audit
+	$(MAKE) c2-longtail-thirteenth-batch-corrected-source-reextraction-register-audit
+	$(MAKE) c2-longtail-thirteenth-batch-corrected-source-fresh-review-verdict-audit
+	$(MAKE) c2-longtail-fourteenth-batch-promotion-audit
+	$(MAKE) c2-longtail-fourteenth-batch-source-extraction-audit
+	$(MAKE) c2-longtail-fourteenth-batch-source-extraction-register-audit
+	$(MAKE) c2-longtail-fourteenth-batch-local-review-audit
 	$(MAKE) c2-longtail-tenth-batch-source-extraction-audit
 	$(MAKE) c2-longtail-tenth-batch-source-extraction-register-audit
 	$(MAKE) c2-longtail-tenth-batch-local-review-audit
@@ -192,6 +221,12 @@ quantitative-capability-ladder-audit:
 
 domain-to-model-bridge-audit:
 	python3 tools/audit_human_infra_domain_to_model_bridge.py
+
+brain-body-interface-protocol-audit:
+	python3 tools/audit_human_infra_brain_body_interface_protocol_register.py
+
+minimal-sufficient-body-claim-matrix-audit:
+	python3 tools/audit_human_infra_minimal_sufficient_body_claim_evidence_matrix.py
 
 l4-model-readiness-blocker-matrix-audit:
 	python3 tools/audit_human_infra_l4_model_readiness_blocker_matrix.py
@@ -571,6 +606,84 @@ c2-longtail-ninth-batch-promotion-audit:
 c2-longtail-tenth-batch-promotion-audit:
 	python3 tools/audit_human_infra_c2_longtail_tenth_batch_promotion_queue.py
 
+c2-longtail-eleventh-batch-promotion-audit:
+	python3 tools/audit_human_infra_c2_longtail_eleventh_batch_promotion_queue.py
+
+c2-longtail-eleventh-batch-source-extraction-audit:
+	python3 tools/audit_human_infra_c2_longtail_eleventh_batch_source_extraction_queue.py
+
+c2-longtail-eleventh-batch-source-extraction-register-audit:
+	python3 tools/audit_human_infra_c2_longtail_eleventh_batch_source_extraction_register.py
+
+c2-longtail-eleventh-batch-local-review-audit:
+	python3 tools/audit_human_infra_c2_longtail_eleventh_batch_local_review_register.py
+
+c2-longtail-eleventh-batch-independent-fresh-review-protocol-audit:
+	python3 tools/audit_human_infra_c2_longtail_eleventh_batch_independent_fresh_review_protocol.py
+
+c2-longtail-eleventh-batch-independent-fresh-review-verdict-audit:
+	python3 tools/audit_human_infra_c2_longtail_eleventh_batch_independent_fresh_review_verdict_register.py
+
+c2-longtail-eleventh-batch-reviewed-card-artifact-audit:
+	python3 tools/audit_human_infra_c2_longtail_eleventh_batch_reviewed_card_artifact_register.py
+
+c2-longtail-twelfth-batch-promotion-audit:
+	python3 tools/audit_human_infra_c2_longtail_twelfth_batch_promotion_queue.py
+
+c2-longtail-twelfth-batch-source-extraction-audit:
+	python3 tools/audit_human_infra_c2_longtail_twelfth_batch_source_extraction_queue.py
+
+c2-longtail-twelfth-batch-source-extraction-register-audit:
+	python3 tools/audit_human_infra_c2_longtail_twelfth_batch_source_extraction_register.py
+
+c2-longtail-twelfth-batch-local-review-audit:
+	python3 tools/audit_human_infra_c2_longtail_twelfth_batch_local_review_register.py
+
+c2-longtail-twelfth-batch-independent-fresh-review-protocol-audit:
+	python3 tools/audit_human_infra_c2_longtail_twelfth_batch_independent_fresh_review_protocol.py
+
+c2-longtail-twelfth-batch-independent-fresh-review-verdict-audit:
+	python3 tools/audit_human_infra_c2_longtail_twelfth_batch_independent_fresh_review_verdict_register.py
+
+c2-longtail-twelfth-batch-reviewed-card-artifact-audit:
+	python3 tools/audit_human_infra_c2_longtail_twelfth_batch_reviewed_card_artifact_register.py
+
+c2-longtail-thirteenth-batch-promotion-audit:
+	python3 tools/audit_human_infra_c2_longtail_thirteenth_batch_promotion_queue.py
+
+c2-longtail-thirteenth-batch-source-extraction-audit:
+	python3 tools/audit_human_infra_c2_longtail_thirteenth_batch_source_extraction_queue.py
+
+c2-longtail-thirteenth-batch-source-extraction-register-audit:
+	python3 tools/audit_human_infra_c2_longtail_thirteenth_batch_source_extraction_register.py
+
+c2-longtail-thirteenth-batch-local-review-audit:
+	python3 tools/audit_human_infra_c2_longtail_thirteenth_batch_local_review_register.py
+
+c2-longtail-thirteenth-batch-source-resolution-audit:
+	python3 tools/audit_human_infra_c2_longtail_thirteenth_batch_source_resolution_register.py
+
+c2-longtail-thirteenth-batch-corrected-source-reextraction-queue-audit:
+	python3 tools/audit_human_infra_c2_longtail_thirteenth_batch_corrected_source_reextraction_queue.py
+
+c2-longtail-thirteenth-batch-corrected-source-reextraction-register-audit:
+	python3 tools/audit_human_infra_c2_longtail_thirteenth_batch_corrected_source_reextraction_register.py
+
+c2-longtail-thirteenth-batch-corrected-source-fresh-review-verdict-audit:
+	python3 tools/audit_human_infra_c2_longtail_thirteenth_batch_corrected_source_fresh_review_verdict_register.py
+
+c2-longtail-fourteenth-batch-promotion-audit:
+	python3 tools/audit_human_infra_c2_longtail_fourteenth_batch_promotion_queue.py
+
+c2-longtail-fourteenth-batch-source-extraction-audit:
+	python3 tools/audit_human_infra_c2_longtail_fourteenth_batch_source_extraction_queue.py
+
+c2-longtail-fourteenth-batch-source-extraction-register-audit:
+	python3 tools/audit_human_infra_c2_longtail_fourteenth_batch_source_extraction_register.py
+
+c2-longtail-fourteenth-batch-local-review-audit:
+	python3 tools/audit_human_infra_c2_longtail_fourteenth_batch_local_review_register.py
+
 c2-longtail-tenth-batch-source-extraction-audit:
 	python3 tools/audit_human_infra_c2_longtail_tenth_batch_source_extraction_queue.py
 
@@ -692,6 +805,9 @@ py-compile:
 		tools/audit_human_infra_model_admission_contract.py \
 		tools/audit_human_infra_model_admission_candidate_registry.py \
 		tools/audit_human_infra_quantitative_capability_ladder.py \
+		tools/audit_human_infra_domain_to_model_bridge.py \
+		tools/audit_human_infra_brain_body_interface_protocol_register.py \
+		tools/audit_human_infra_minimal_sufficient_body_claim_evidence_matrix.py \
 		tools/audit_human_infra_l4_model_readiness_blocker_matrix.py \
 		tools/audit_human_infra_l4_unblock_execution_plan.py \
 		tools/audit_human_infra_l4_evidence_intake_register.py \
@@ -785,6 +901,32 @@ tools/audit_human_infra_c2_longtail_tenth_batch_local_review_register.py \
 tools/audit_human_infra_c2_longtail_tenth_batch_independent_fresh_review_protocol.py \
 tools/audit_human_infra_c2_longtail_tenth_batch_independent_fresh_review_verdict_register.py \
 tools/audit_human_infra_c2_longtail_tenth_batch_reviewed_card_artifact_register.py \
+tools/audit_human_infra_c2_longtail_eleventh_batch_promotion_queue.py \
+tools/audit_human_infra_c2_longtail_eleventh_batch_source_extraction_queue.py \
+tools/audit_human_infra_c2_longtail_eleventh_batch_source_extraction_register.py \
+tools/audit_human_infra_c2_longtail_eleventh_batch_local_review_register.py \
+tools/audit_human_infra_c2_longtail_eleventh_batch_independent_fresh_review_protocol.py \
+tools/audit_human_infra_c2_longtail_eleventh_batch_independent_fresh_review_verdict_register.py \
+tools/audit_human_infra_c2_longtail_eleventh_batch_reviewed_card_artifact_register.py \
+tools/audit_human_infra_c2_longtail_twelfth_batch_promotion_queue.py \
+tools/audit_human_infra_c2_longtail_twelfth_batch_source_extraction_queue.py \
+tools/audit_human_infra_c2_longtail_twelfth_batch_source_extraction_register.py \
+tools/audit_human_infra_c2_longtail_twelfth_batch_local_review_register.py \
+tools/audit_human_infra_c2_longtail_twelfth_batch_independent_fresh_review_protocol.py \
+tools/audit_human_infra_c2_longtail_twelfth_batch_independent_fresh_review_verdict_register.py \
+tools/audit_human_infra_c2_longtail_twelfth_batch_reviewed_card_artifact_register.py \
+tools/audit_human_infra_c2_longtail_thirteenth_batch_promotion_queue.py \
+tools/audit_human_infra_c2_longtail_thirteenth_batch_source_extraction_queue.py \
+tools/audit_human_infra_c2_longtail_thirteenth_batch_source_extraction_register.py \
+tools/audit_human_infra_c2_longtail_thirteenth_batch_local_review_register.py \
+tools/audit_human_infra_c2_longtail_thirteenth_batch_source_resolution_register.py \
+tools/audit_human_infra_c2_longtail_thirteenth_batch_corrected_source_reextraction_queue.py \
+tools/audit_human_infra_c2_longtail_thirteenth_batch_corrected_source_reextraction_register.py \
+tools/audit_human_infra_c2_longtail_thirteenth_batch_corrected_source_fresh_review_verdict_register.py \
+tools/audit_human_infra_c2_longtail_fourteenth_batch_promotion_queue.py \
+tools/audit_human_infra_c2_longtail_fourteenth_batch_source_extraction_queue.py \
+tools/audit_human_infra_c2_longtail_fourteenth_batch_source_extraction_register.py \
+tools/audit_human_infra_c2_longtail_fourteenth_batch_local_review_register.py \
 tools/audit_human_infra_c2_longtail_sixth_batch_source_extraction_queue.py \
 tools/audit_human_infra_c2_longtail_sixth_batch_source_extraction_register.py \
 tools/audit_human_infra_c2_longtail_sixth_batch_local_review_register.py \

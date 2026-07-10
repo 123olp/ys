@@ -1,0 +1,992 @@
+{
+  "schemaVersion": "human-infra.c2-longtail-thirteenth-batch-promotion-queue.v1",
+  "queueId": "human-infra-c2-longtail-thirteenth-batch-promotion-queue-2026-07-11",
+  "status": "active-thirteenth-batch-queue-model-blocked",
+  "purpose": "Queue the thirteenth batch of still-uncovered C2 long-tail domains for source-specific promotion work. This artifact only selects candidate domains and web-checked sources; it does not complete Source Cards, fresh review, claim upgrade or calibrated model admission.",
+  "sourceOfTruth": {
+    "c2LongtailCoverageRegister": "docs/reference/human-infra-c2-longtail-coverage-register.json",
+    "firstBatchPromotionQueue": "docs/reference/human-infra-c2-longtail-first-batch-promotion-queue.json",
+    "secondBatchPromotionQueue": "docs/reference/human-infra-c2-longtail-second-batch-promotion-queue.json",
+    "thirdBatchPromotionQueue": "docs/reference/human-infra-c2-longtail-third-batch-promotion-queue.json",
+    "fourthBatchPromotionQueue": "docs/reference/human-infra-c2-longtail-fourth-batch-promotion-queue.json",
+    "fifthBatchPromotionQueue": "docs/reference/human-infra-c2-longtail-fifth-batch-promotion-queue.json",
+    "sixthBatchPromotionQueue": "docs/reference/human-infra-c2-longtail-sixth-batch-promotion-queue.json",
+    "seventhBatchPromotionQueue": "docs/reference/human-infra-c2-longtail-seventh-batch-promotion-queue.json",
+    "eighthBatchPromotionQueue": "docs/reference/human-infra-c2-longtail-eighth-batch-promotion-queue.json",
+    "ninthBatchPromotionQueue": "docs/reference/human-infra-c2-longtail-ninth-batch-promotion-queue.json",
+    "tenthBatchPromotionQueue": "docs/reference/human-infra-c2-longtail-tenth-batch-promotion-queue.json",
+    "eleventhBatchPromotionQueue": "docs/reference/human-infra-c2-longtail-eleventh-batch-promotion-queue.json",
+    "twelfthBatchPromotionQueue": "docs/reference/human-infra-c2-longtail-twelfth-batch-promotion-queue.json",
+    "domainClassification": "domains/_possibility-space-control/classification.tsv",
+    "sourceCardSystem": "docs/reference/source-card-system.md",
+    "maturityGapRegister": "docs/reference/human-infra-maturity-gap-register.json",
+    "maturityRoadmap": "docs/reference/human-infra-maturity-roadmap.md"
+  },
+  "scope": {
+    "batchId": "C2-LT-B13",
+    "batchDomainCount": 12,
+    "selectionRule": "Prioritize still-uncovered C2 domains by importance, long-horizon impact and fundamentality for subject continuity: endocrine excess/deficiency, vascular sexual function, renal obstruction, reproductive bleeding/fertility, vulvovaginal pain/infection, childhood hearing/language input, speech output, vestibular failure and inflammatory skin/moisture barrier burden. This is not feasibility, market maturity or intervention-hype ranking.",
+    "requiredArtifactClasses": [
+      "domain-claim-evidence-row",
+      "domain-source-card-field-extraction",
+      "domain-source-specific-deep-read",
+      "source-context-local-review",
+      "independent-fresh-review-verdict",
+      "reviewed-source-card",
+      "variable-card",
+      "endpoint-card",
+      "uncertainty-card",
+      "transfer-boundary-card",
+      "downgrade-check"
+    ],
+    "nonClaims": [
+      "This queue does not complete Source Cards.",
+      "This queue does not complete independent fresh review.",
+      "This queue does not upgrade any domain claim.",
+      "This queue does not admit any domain into calibrated prediction.",
+      "This queue does not provide clinical, endocrine, urologic, reproductive, gynecologic, pediatric, hearing, speech, vestibular, dermatology, rehabilitation, individual, intervention-ranking or self-management advice.",
+      "This queue does not mark any C2-LT-B1/B2/B3/B4/B5/B6/B7/B8/B9/B10/B11/B12 blocked, downgrade, source-resolution, manual-access, route-only or model-blocked row as resolved."
+    ]
+  },
+  "blockedUses": [
+    "calibrated-prediction",
+    "individual-advice",
+    "individual-death-date-output",
+    "intervention-ranking",
+    "clinical-validity-claim",
+    "domain-claim-upgrade"
+  ],
+  "batchRows": [
+    {
+      "domainId": "acromegaly-growth-hormone-cardiometabolic-continuity",
+      "triageBucket": "organ-system-homeostasis",
+      "selectionReason": "肢端肥大症把生长激素/IGF-1 轴、心代谢风险、睡眠呼吸、骨关节和肿瘤风险连接起来，是激素过量如何侵蚀主体持续性的典型域。",
+      "claimSeed": "GH/IGF-1 过量可通过心血管、代谢、呼吸、骨关节和肿瘤相关负担影响健康寿命、行动能力和长期风险曲线。",
+      "variableSeed": [
+        "growth-hormone-excess",
+        "igf1-level",
+        "cardiometabolic-burden",
+        "sleep-apnea-link",
+        "joint-function-burden"
+      ],
+      "batchId": "C2-LT-B13",
+      "priorityRank": 1,
+      "localDomainPath": "domains/c2-source-maintenance/acromegaly-growth-hormone-cardiometabolic-continuity",
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB13-SRC-01-1",
+          "title": "NIDDK: Acromegaly",
+          "url": "https://www.niddk.nih.gov/health-information/endocrine-diseases/acromegaly",
+          "evidenceRole": "acromegaly-condition-overview-boundary",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-11",
+          "sourceCheck": {
+            "checkedAt": "2026-07-11",
+            "method": "python-urllib-get",
+            "statusCode": 200,
+            "contentLengthBytes": 59014
+          }
+        },
+        {
+          "sourceRefId": "C2LTB13-SRC-01-2",
+          "title": "NCBI Bookshelf: Acromegaly",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK431086/",
+          "evidenceRole": "acromegaly-clinical-mechanism-boundary",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-11",
+          "sourceCheck": {
+            "checkedAt": "2026-07-11",
+            "method": "python-urllib-get",
+            "statusCode": 200,
+            "contentLengthBytes": 133470
+          }
+        }
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "modelAdmissionDecision": "blocked-pending-source-specific-extraction-local-review-independent-fresh-review-and-reviewed-artifact-promotion"
+    },
+    {
+      "domainId": "hypogonadism-testosterone-sex-hormone-continuity",
+      "triageBucket": "organ-system-homeostasis",
+      "selectionReason": "性激素不足影响肌肉、骨骼、能量、情绪、性功能和代谢，是身体功能、行动资源和主体体验的慢性调节轴。",
+      "claimSeed": "性腺功能低下可通过性激素不足、骨量、肌肉、情绪、性功能和代谢风险影响有效时间与主体持续性。",
+      "variableSeed": [
+        "testosterone-deficiency",
+        "sex-hormone-axis",
+        "bone-density-risk",
+        "muscle-energy-burden",
+        "sexual-function-burden"
+      ],
+      "batchId": "C2-LT-B13",
+      "priorityRank": 2,
+      "localDomainPath": "domains/c2-source-maintenance/hypogonadism-testosterone-sex-hormone-continuity",
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB13-SRC-02-1",
+          "title": "NCBI Bookshelf: Male Hypogonadism",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK532933/",
+          "evidenceRole": "hypogonadism-clinical-overview-boundary",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-11",
+          "sourceCheck": {
+            "checkedAt": "2026-07-11",
+            "method": "python-urllib-get",
+            "statusCode": 200,
+            "contentLengthBytes": 140879
+          }
+        },
+        {
+          "sourceRefId": "C2LTB13-SRC-02-2",
+          "title": "Testosterone Therapy in Men with Hypogonadism guideline",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/29562364/",
+          "evidenceRole": "testosterone-therapy-guideline-boundary",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-11",
+          "sourceCheck": {
+            "checkedAt": "2026-07-11",
+            "method": "python-urllib-get",
+            "statusCode": 200,
+            "contentLengthBytes": 178460
+          }
+        }
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "modelAdmissionDecision": "blocked-pending-source-specific-extraction-local-review-independent-fresh-review-and-reviewed-artifact-promotion"
+    },
+    {
+      "domainId": "erectile-dysfunction-vascular-sexual-function-continuity",
+      "triageBucket": "organ-system-homeostasis",
+      "selectionReason": "勃起功能障碍不仅是性功能问题，也常连接血管健康、代谢风险、心理负担和关系质量，是身体信号与生活质量的交叉域。",
+      "claimSeed": "ED 可通过血管功能、糖代谢、心理压力、关系功能和生活质量影响主体持续性与未来选择权。",
+      "variableSeed": [
+        "erectile-function",
+        "vascular-health-signal",
+        "metabolic-risk-link",
+        "sexual-quality-of-life",
+        "psychosocial-burden"
+      ],
+      "batchId": "C2-LT-B13",
+      "priorityRank": 3,
+      "localDomainPath": "domains/c2-source-maintenance/erectile-dysfunction-vascular-sexual-function-continuity",
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB13-SRC-03-1",
+          "title": "NIDDK: Erectile Dysfunction",
+          "url": "https://www.niddk.nih.gov/health-information/urologic-diseases/erectile-dysfunction",
+          "evidenceRole": "erectile-dysfunction-condition-boundary",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-11",
+          "sourceCheck": {
+            "checkedAt": "2026-07-11",
+            "method": "python-urllib-get",
+            "statusCode": 200,
+            "contentLengthBytes": 56824
+          }
+        },
+        {
+          "sourceRefId": "C2LTB13-SRC-03-2",
+          "title": "NCBI Bookshelf: Erectile Dysfunction",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK562253/",
+          "evidenceRole": "erectile-dysfunction-clinical-boundary",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-11",
+          "sourceCheck": {
+            "checkedAt": "2026-07-11",
+            "method": "python-urllib-get",
+            "statusCode": 200,
+            "contentLengthBytes": 229365
+          }
+        }
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "modelAdmissionDecision": "blocked-pending-source-specific-extraction-local-review-independent-fresh-review-and-reviewed-artifact-promotion"
+    },
+    {
+      "domainId": "kidney-stone-obstruction-renal-colic-continuity",
+      "triageBucket": "organ-system-homeostasis",
+      "selectionReason": "肾结石和梗阻会把局部矿物代谢问题转化为急性疼痛、感染、肾功能威胁和工作中断，是清除系统的突发失效模式。",
+      "claimSeed": "肾结石可通过急性绞痛、梗阻、感染、复发和肾功能风险影响有效时间、恢复窗口和医疗升级需求。",
+      "variableSeed": [
+        "stone-event",
+        "obstruction-risk",
+        "renal-colic-pain",
+        "infection-risk",
+        "recurrence-risk"
+      ],
+      "batchId": "C2-LT-B13",
+      "priorityRank": 4,
+      "localDomainPath": "domains/c2-source-maintenance/kidney-stone-obstruction-renal-colic-continuity",
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB13-SRC-04-1",
+          "title": "NIDDK: Kidney Stones",
+          "url": "https://www.niddk.nih.gov/health-information/urologic-diseases/kidney-stones",
+          "evidenceRole": "kidney-stone-condition-boundary",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-11",
+          "sourceCheck": {
+            "checkedAt": "2026-07-11",
+            "method": "python-urllib-get",
+            "statusCode": 200,
+            "contentLengthBytes": 56797
+          }
+        },
+        {
+          "sourceRefId": "C2LTB13-SRC-04-2",
+          "title": "NCBI Bookshelf: Renal Calculi",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK442014/",
+          "evidenceRole": "renal-calculi-clinical-boundary",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-11",
+          "sourceCheck": {
+            "checkedAt": "2026-07-11",
+            "method": "python-urllib-get",
+            "statusCode": 200,
+            "contentLengthBytes": 207140
+          }
+        }
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "modelAdmissionDecision": "blocked-pending-source-specific-extraction-local-review-independent-fresh-review-and-reviewed-artifact-promotion"
+    },
+    {
+      "domainId": "uterine-fibroids-bleeding-anemia-fertility-continuity",
+      "triageBucket": "acute-life-risk-and-recovery",
+      "selectionReason": "子宫肌瘤连接出血、贫血、疼痛、生育和工作能力，是生殖器官结构性问题如何消耗有效时间的关键域。",
+      "claimSeed": "子宫肌瘤可通过异常出血、贫血、疼痛、妊娠/生育影响和治疗负担改变主体持续性与未来选择权。",
+      "variableSeed": [
+        "fibroid-burden",
+        "abnormal-bleeding",
+        "anemia-risk",
+        "pelvic-pain",
+        "fertility-impact"
+      ],
+      "batchId": "C2-LT-B13",
+      "priorityRank": 5,
+      "localDomainPath": "domains/c2-source-maintenance/uterine-fibroids-bleeding-anemia-fertility-continuity",
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB13-SRC-05-1",
+          "title": "NICHD: Uterine Fibroids",
+          "url": "https://www.nichd.nih.gov/health/topics/uterine",
+          "evidenceRole": "uterine-fibroid-condition-boundary",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-11",
+          "sourceCheck": {
+            "checkedAt": "2026-07-11",
+            "method": "python-urllib-get",
+            "statusCode": 200,
+            "contentLengthBytes": 252060
+          }
+        },
+        {
+          "sourceRefId": "C2LTB13-SRC-05-2",
+          "title": "NCBI Bookshelf: Uterine Fibroids",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK546680/",
+          "evidenceRole": "uterine-fibroid-clinical-boundary",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-11",
+          "sourceCheck": {
+            "checkedAt": "2026-07-11",
+            "method": "python-urllib-get",
+            "statusCode": 200,
+            "contentLengthBytes": 221676
+          }
+        }
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "modelAdmissionDecision": "blocked-pending-source-specific-extraction-local-review-independent-fresh-review-and-reviewed-artifact-promotion"
+    },
+    {
+      "domainId": "vulvovaginal-pain-infection-sexual-function-continuity",
+      "triageBucket": "infection-immune-resilience",
+      "selectionReason": "外阴阴道疼痛和感染影响疼痛、性功能、排尿、睡眠、关系和尊严，是低死亡率但高主体负担的连续性域。",
+      "claimSeed": "外阴阴道疼痛或感染可通过疼痛、炎症、复发、性功能、心理负担和照护需求影响有效时间和主体体验。",
+      "variableSeed": [
+        "vulvovaginal-pain",
+        "vaginal-infection-risk",
+        "sexual-function-burden",
+        "recurrence-pattern",
+        "quality-of-life-impact"
+      ],
+      "batchId": "C2-LT-B13",
+      "priorityRank": 6,
+      "localDomainPath": "domains/c2-source-maintenance/vulvovaginal-pain-infection-sexual-function-continuity",
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB13-SRC-06-1",
+          "title": "NCBI Bookshelf: Vulvovaginitis",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK470302/",
+          "evidenceRole": "vulvovaginitis-clinical-boundary",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-11",
+          "sourceCheck": {
+            "checkedAt": "2026-07-11",
+            "method": "python-urllib-get",
+            "statusCode": 200,
+            "contentLengthBytes": 126490
+          }
+        },
+        {
+          "sourceRefId": "C2LTB13-SRC-06-2",
+          "title": "NCBI Bookshelf: Vulvodynia",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK430792/",
+          "evidenceRole": "vulvodynia-pain-boundary",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-11",
+          "sourceCheck": {
+            "checkedAt": "2026-07-11",
+            "method": "python-urllib-get",
+            "statusCode": 200,
+            "contentLengthBytes": 81349
+          }
+        }
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "modelAdmissionDecision": "blocked-pending-source-specific-extraction-local-review-independent-fresh-review-and-reviewed-artifact-promotion"
+    },
+    {
+      "domainId": "otitis-media-child-hearing-development-continuity",
+      "triageBucket": "neuro-sensory-cognitive-continuity",
+      "selectionReason": "儿童中耳炎把感染、听力、语言发展、学习和照护时间连接起来，是早期主体能力形成的感觉输入风险域。",
+      "claimSeed": "儿童中耳炎可通过疼痛、听力波动、语言发展、学习参与和照护需求影响长期能力形成。",
+      "variableSeed": [
+        "middle-ear-infection",
+        "hearing-fluctuation",
+        "child-language-development",
+        "pain-burden",
+        "caregiver-time-cost"
+      ],
+      "batchId": "C2-LT-B13",
+      "priorityRank": 7,
+      "localDomainPath": "domains/c2-source-maintenance/otitis-media-child-hearing-development-continuity",
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB13-SRC-07-1",
+          "title": "NIDCD: Ear Infections in Children",
+          "url": "https://www.nidcd.nih.gov/health/ear-infections-children",
+          "evidenceRole": "child-ear-infection-public-health-boundary",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-11",
+          "sourceCheck": {
+            "checkedAt": "2026-07-11",
+            "method": "python-urllib-get",
+            "statusCode": 200,
+            "contentLengthBytes": 55204
+          }
+        },
+        {
+          "sourceRefId": "C2LTB13-SRC-07-2",
+          "title": "NCBI Bookshelf: Acute Otitis Media",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK470332/",
+          "evidenceRole": "acute-otitis-media-clinical-boundary",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-11",
+          "sourceCheck": {
+            "checkedAt": "2026-07-11",
+            "method": "python-urllib-get",
+            "statusCode": 200,
+            "contentLengthBytes": 103343
+          }
+        }
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "modelAdmissionDecision": "blocked-pending-source-specific-extraction-local-review-independent-fresh-review-and-reviewed-artifact-promotion"
+    },
+    {
+      "domainId": "speech-sound-disorder-articulation-phonology-continuity",
+      "triageBucket": "neuro-sensory-cognitive-continuity",
+      "selectionReason": "语音音系障碍影响儿童把意图转为可被理解的语言输出，进而影响学习、社交、身份和长期机会。",
+      "claimSeed": "语音音系障碍可通过可懂度、语言参与、教育互动、社交反馈和治疗需求影响主体能力生成。",
+      "variableSeed": [
+        "speech-sound-accuracy",
+        "intelligibility",
+        "phonological-development",
+        "education-participation",
+        "social-feedback-burden"
+      ],
+      "batchId": "C2-LT-B13",
+      "priorityRank": 8,
+      "localDomainPath": "domains/c2-source-maintenance/speech-sound-disorder-articulation-phonology-continuity",
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB13-SRC-08-1",
+          "title": "ASHA: Speech Sound Disorders",
+          "url": "https://www.asha.org/practice-portal/clinical-topics/articulation-and-phonology/",
+          "evidenceRole": "speech-sound-practice-boundary",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-11",
+          "sourceCheck": {
+            "checkedAt": "2026-07-11",
+            "method": "python-urllib-get",
+            "statusCode": 200,
+            "contentLengthBytes": 197532
+          }
+        },
+        {
+          "sourceRefId": "C2LTB13-SRC-08-2",
+          "title": "NIDCD: Speech and Language Development",
+          "url": "https://www.nidcd.nih.gov/health/speech-and-language",
+          "evidenceRole": "speech-language-development-boundary",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-11",
+          "sourceCheck": {
+            "checkedAt": "2026-07-11",
+            "method": "python-urllib-get",
+            "statusCode": 200,
+            "contentLengthBytes": 62606
+          }
+        }
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "modelAdmissionDecision": "blocked-pending-source-specific-extraction-local-review-independent-fresh-review-and-reviewed-artifact-promotion"
+    },
+    {
+      "domainId": "vestibular-migraine-dizziness-sensory-load-continuity",
+      "triageBucket": "neuro-sensory-cognitive-continuity",
+      "selectionReason": "前庭性偏头痛把眩晕、感官负荷、行动不稳和认知疲劳连接起来，是高频但常被低估的有效时间压缩因素。",
+      "claimSeed": "前庭性偏头痛可通过眩晕、运动敏感、光声刺激负荷、跌倒风险和认知疲劳影响任务执行能力。",
+      "variableSeed": [
+        "vestibular-migraine",
+        "dizziness-burden",
+        "sensory-load",
+        "motion-sensitivity",
+        "fall-risk"
+      ],
+      "batchId": "C2-LT-B13",
+      "priorityRank": 9,
+      "localDomainPath": "domains/c2-source-maintenance/vestibular-migraine-dizziness-sensory-load-continuity",
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB13-SRC-09-1",
+          "title": "Vestibular migraine diagnostic criteria",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/23142830/",
+          "evidenceRole": "vestibular-migraine-diagnostic-boundary",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-11",
+          "sourceCheck": {
+            "checkedAt": "2026-07-11",
+            "method": "python-urllib-get",
+            "statusCode": 200,
+            "contentLengthBytes": 123117
+          }
+        },
+        {
+          "sourceRefId": "C2LTB13-SRC-09-2",
+          "title": "NCBI Bookshelf: Vestibular Migraine",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK507859/",
+          "evidenceRole": "vestibular-migraine-clinical-boundary",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-11",
+          "sourceCheck": {
+            "checkedAt": "2026-07-11",
+            "method": "python-urllib-get",
+            "statusCode": 200,
+            "contentLengthBytes": 107331
+          }
+        }
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "modelAdmissionDecision": "blocked-pending-source-specific-extraction-local-review-independent-fresh-review-and-reviewed-artifact-promotion"
+    },
+    {
+      "domainId": "vestibular-neuritis-labyrinthitis-acute-vertigo-continuity",
+      "triageBucket": "neuro-sensory-cognitive-continuity",
+      "selectionReason": "急性前庭炎和迷路炎会突然破坏空间定向、步态、工作和独立生活能力，是感觉-运动闭环的急性失效模式。",
+      "claimSeed": "急性前庭炎或迷路炎可通过眩晕、恶心、听力/平衡影响、跌倒风险和恢复时间影响主体持续性。",
+      "variableSeed": [
+        "acute-vertigo",
+        "vestibular-function",
+        "labyrinthitis-hearing-link",
+        "gait-instability",
+        "recovery-time"
+      ],
+      "batchId": "C2-LT-B13",
+      "priorityRank": 10,
+      "localDomainPath": "domains/c2-source-maintenance/vestibular-neuritis-labyrinthitis-acute-vertigo-continuity",
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB13-SRC-10-1",
+          "title": "NCBI Bookshelf: Vestibular Neuronitis",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK549866/",
+          "evidenceRole": "vestibular-neuritis-clinical-boundary",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-11",
+          "sourceCheck": {
+            "checkedAt": "2026-07-11",
+            "method": "python-urllib-get",
+            "statusCode": 200,
+            "contentLengthBytes": 74398
+          }
+        },
+        {
+          "sourceRefId": "C2LTB13-SRC-10-2",
+          "title": "NCBI Bookshelf: Labyrinthitis",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK560506/",
+          "evidenceRole": "labyrinthitis-clinical-boundary",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-11",
+          "sourceCheck": {
+            "checkedAt": "2026-07-11",
+            "method": "python-urllib-get",
+            "statusCode": 200,
+            "contentLengthBytes": 116954
+          }
+        }
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "modelAdmissionDecision": "blocked-pending-source-specific-extraction-local-review-independent-fresh-review-and-reviewed-artifact-promotion"
+    },
+    {
+      "domainId": "incontinence-associated-dermatitis-moisture-skin-continuity",
+      "triageBucket": "barrier-function-mobility",
+      "selectionReason": "失禁相关皮炎把排泄、皮肤屏障、感染入口、疼痛、护理负担和尊严连接起来，是长期照护中的基础失效面。",
+      "claimSeed": "失禁相关皮炎可通过潮湿暴露、皮肤屏障破坏、疼痛、感染风险和照护负担影响主体持续性。",
+      "variableSeed": [
+        "moisture-exposure",
+        "skin-barrier-breakdown",
+        "incontinence-context",
+        "pain-burden",
+        "infection-entry-risk"
+      ],
+      "batchId": "C2-LT-B13",
+      "priorityRank": 11,
+      "localDomainPath": "domains/c2-source-maintenance/incontinence-associated-dermatitis-moisture-skin-continuity",
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB13-SRC-11-1",
+          "title": "Incontinence-associated dermatitis review",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/26428404/",
+          "evidenceRole": "iad-review-boundary",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-11",
+          "sourceCheck": {
+            "checkedAt": "2026-07-11",
+            "method": "python-urllib-get",
+            "statusCode": 200,
+            "contentLengthBytes": 107521
+          }
+        },
+        {
+          "sourceRefId": "C2LTB13-SRC-11-2",
+          "title": "Incontinence-associated dermatitis PMC review",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6767985/",
+          "evidenceRole": "iad-care-context-boundary",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-11",
+          "sourceCheck": {
+            "checkedAt": "2026-07-11",
+            "method": "python-urllib-get",
+            "statusCode": 200,
+            "contentLengthBytes": 196133
+          }
+        }
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "modelAdmissionDecision": "blocked-pending-source-specific-extraction-local-review-independent-fresh-review-and-reviewed-artifact-promotion"
+    },
+    {
+      "domainId": "psoriasis-inflammatory-skin-systemic-burden-continuity",
+      "triageBucket": "barrier-function-mobility",
+      "selectionReason": "银屑病不仅是皮肤表现，也连接慢性炎症、疼痛、关节、心理负担和代谢风险，是屏障系统与全身炎症的交叉域。",
+      "claimSeed": "银屑病可通过慢性炎症、皮损疼痛/瘙痒、关节受累、心理负担和系统共病影响健康寿命与有效时间。",
+      "variableSeed": [
+        "psoriasis-severity",
+        "systemic-inflammation",
+        "itch-pain-burden",
+        "psoriatic-arthritis-link",
+        "quality-of-life-impact"
+      ],
+      "batchId": "C2-LT-B13",
+      "priorityRank": 12,
+      "localDomainPath": "domains/c2-source-maintenance/psoriasis-inflammatory-skin-systemic-burden-continuity",
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB13-SRC-12-1",
+          "title": "NIAMS: Psoriasis",
+          "url": "https://www.niams.nih.gov/health-topics/psoriasis",
+          "evidenceRole": "psoriasis-condition-overview-boundary",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-11",
+          "sourceCheck": {
+            "checkedAt": "2026-07-11",
+            "method": "python-urllib-get",
+            "statusCode": 200,
+            "contentLengthBytes": 55449
+          }
+        },
+        {
+          "sourceRefId": "C2LTB13-SRC-12-2",
+          "title": "NCBI Bookshelf: Psoriasis",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK448194/",
+          "evidenceRole": "psoriasis-clinical-boundary",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-11",
+          "sourceCheck": {
+            "checkedAt": "2026-07-11",
+            "method": "python-urllib-get",
+            "statusCode": 200,
+            "contentLengthBytes": 82230
+          }
+        }
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "modelAdmissionDecision": "blocked-pending-source-specific-extraction-local-review-independent-fresh-review-and-reviewed-artifact-promotion"
+    }
+  ],
+  "aggregateDecision": {
+    "selectedDomainCount": 12,
+    "candidateSourceCount": 24,
+    "modelAdmission": "blocked",
+    "promotionBoundary": "B13 selects still-uncovered source-maintenance domains and candidate sources only. Source-specific extraction, deep read, local review, independent fresh review and reviewed artifacts remain required before any claim upgrade or model admission.",
+    "nextAction": "Derive C2-LT-B13 source-extraction tasks with exact claim, endpoint, population, mechanism, uncertainty and transfer-boundary fields."
+  }
+}

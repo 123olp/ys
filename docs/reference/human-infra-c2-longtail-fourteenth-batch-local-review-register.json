@@ -1,0 +1,293 @@
+{
+  "schemaVersion": "human-infra.c2-longtail-fourteenth-batch-local-review-register.v1",
+  "registerId": "C2-LT-B14-LOCAL-SOURCE-CONTEXT-REVIEW-REGISTER",
+  "status": "complete-local-source-context-review-source-resolution-and-independent-fresh-review-required",
+  "purpose": "Record local structural review for all C2-LT-B14 source extraction rows after field-level extraction, confirming required fields, domain ownership files, B14-specific blocked uses, manual/source-resolution route preservation and model-admission blocking before independent fresh review or artifact promotion.",
+  "sourceOfTruth": {
+    "sourceExtractionQueue": "docs/reference/human-infra-c2-longtail-fourteenth-batch-source-extraction-queue.json",
+    "sourceExtractionRegister": "docs/reference/human-infra-c2-longtail-fourteenth-batch-source-extraction-register.json",
+    "sourceCardSystem": "docs/reference/source-card-system.md",
+    "maturityGapRegister": "docs/reference/human-infra-maturity-gap-register.json",
+    "maturityRoadmap": "docs/reference/human-infra-maturity-roadmap.md"
+  },
+  "scope": {
+    "batchId": "C2-LT-B14",
+    "reviewLevel": "source-extraction-row-local-context-review",
+    "sourceExtractionTaskCount": 32,
+    "localReviewedExtractionTaskCount": 32,
+    "coveredDomainCount": 16,
+    "reviewBatchCount": 2,
+    "sourceResolutionIssueCount": 8,
+    "sourceResolutionIssueTaskIds": [
+      "C2LTB14-EXT-004",
+      "C2LTB14-EXT-006",
+      "C2LTB14-EXT-007",
+      "C2LTB14-EXT-008",
+      "C2LTB14-EXT-011",
+      "C2LTB14-EXT-017",
+      "C2LTB14-EXT-021",
+      "C2LTB14-EXT-024"
+    ],
+    "independentFreshReviewCandidateTaskCount": 24,
+    "selectionRule": "Locally review every C2-LT-B14 source extraction row for required field presence, local domain ownership path, source-route status, blocked-use preservation and model-admission blocking; route HTTP 200 rows only to independent fresh review, and preserve 403/manual-review plus 404/source-resolution rows as blocked before fresh review or artifacts.",
+    "reviewedExtractionTaskIds": [
+      "C2LTB14-EXT-001",
+      "C2LTB14-EXT-002",
+      "C2LTB14-EXT-003",
+      "C2LTB14-EXT-004",
+      "C2LTB14-EXT-005",
+      "C2LTB14-EXT-006",
+      "C2LTB14-EXT-007",
+      "C2LTB14-EXT-008",
+      "C2LTB14-EXT-009",
+      "C2LTB14-EXT-010",
+      "C2LTB14-EXT-011",
+      "C2LTB14-EXT-012",
+      "C2LTB14-EXT-013",
+      "C2LTB14-EXT-014",
+      "C2LTB14-EXT-015",
+      "C2LTB14-EXT-016",
+      "C2LTB14-EXT-017",
+      "C2LTB14-EXT-018",
+      "C2LTB14-EXT-019",
+      "C2LTB14-EXT-020",
+      "C2LTB14-EXT-021",
+      "C2LTB14-EXT-022",
+      "C2LTB14-EXT-023",
+      "C2LTB14-EXT-024",
+      "C2LTB14-EXT-025",
+      "C2LTB14-EXT-026",
+      "C2LTB14-EXT-027",
+      "C2LTB14-EXT-028",
+      "C2LTB14-EXT-029",
+      "C2LTB14-EXT-030",
+      "C2LTB14-EXT-031",
+      "C2LTB14-EXT-032"
+    ],
+    "currentLimitations": [
+      "Local review checks structure, route status and blocking semantics only; it does not constitute independent source review.",
+      "Twenty-four non-issue rows may only move to independent fresh review and cannot become reviewed artifacts at this stage.",
+      "Seven 403/manual-review rows and one 404/source-resolution row remain blocked until source context is manually resolved or downgraded.",
+      "No B14 row may feed calibrated prediction, intervention ranking, individual advice, legal/clinical/engineering advice or model admission.",
+      "Domain-level claims remain bounded vocabulary and must still pass reviewed Source Card, variable-card, endpoint-card, uncertainty-card and downgrade checks."
+    ]
+  },
+  "requiredExtractionFieldsReviewed": [
+    "taskId",
+    "domainId",
+    "localDomainPath",
+    "sourceRefId",
+    "sourceTitle",
+    "sourceUrl",
+    "extractionStatus",
+    "sourceAccessStatus",
+    "sourceRole",
+    "exactClaimUse",
+    "endpointDefinition",
+    "populationOrSetting",
+    "effectOrMechanismSignal",
+    "uncertaintyOrBias",
+    "transferBoundary",
+    "downgradeTriggers",
+    "modelPosition",
+    "modelAdmissionDecision",
+    "blockedUses",
+    "nextAction"
+  ],
+  "localReviewVerdict": "local-structural-review-complete-for-32-rows; 24 rows route to independent-fresh-review-only and 8 manual/source-resolution rows require source-resolution before fresh-review or artifact use",
+  "promotionDecision": "blocked-before-independent-fresh-review; non-issue rows may only enter independent fresh review and issue rows must complete source-resolution/manual-route review first",
+  "sourceResolutionDecision": "source-resolution-required-for-C2LTB14-EXT-004-C2LTB14-EXT-006-C2LTB14-EXT-007-C2LTB14-EXT-008-C2LTB14-EXT-011-C2LTB14-EXT-017-C2LTB14-EXT-021-C2LTB14-EXT-024",
+  "modelAdmissionDecision": "blocked-until-local-review-issues-source-resolution-independent-fresh-review-reviewed-artifacts-calibrated-variables-and-model-admission-gates-complete",
+  "blockedUses": [
+    "calibrated-prediction",
+    "individual-advice",
+    "individual-death-date-output",
+    "intervention-ranking",
+    "clinical-validity-claim",
+    "domain-claim-upgrade",
+    "energy-infrastructure-advice",
+    "vision-care-advice",
+    "dental-or-oral-health-advice",
+    "burn-prevention-advice",
+    "genetic-or-neurodegenerative-advice",
+    "immunization-record-advice",
+    "indoor-environment-remediation-advice",
+    "respiratory-or-allergy-advice",
+    "employment-or-leave-legal-advice",
+    "court-access-legal-advice",
+    "reproductive-tissue-governance-advice",
+    "skin-care-supplies-advice",
+    "chemical-exposure-advice",
+    "synthetic-data-validity-claim",
+    "synthetic-media-authenticity-claim",
+    "nutrition-benefit-advice"
+  ],
+  "requiredNextArtifacts": [
+    "c2ltb14-source-resolution-register",
+    "c2ltb14-independent-fresh-review-protocol",
+    "c2ltb14-independent-fresh-review-verdict-register",
+    "reviewed-source-card",
+    "variable-card",
+    "endpoint-card",
+    "uncertainty-card",
+    "transfer-boundary-card",
+    "downgrade-check-row"
+  ],
+  "localReviewChecks": [
+    "all task IDs match source extraction queue order",
+    "all localDomainPath directories exist and contain README.md plus AGENTS.md",
+    "all required extraction fields are present and non-empty where required",
+    "B14-specific blockedUses are preserved exactly on every extraction row",
+    "modelAdmissionDecision remains blocked on every extraction row and on the register",
+    "HTTP 200/PDF/redirect rows are routed only to independent fresh review",
+    "HTTP 403/manual-review and HTTP 404/source-resolution rows are preserved in sourceResolutionFindings",
+    "no clinical, legal, energy, engineering, exposure, data-validity, authenticity, nutrition-benefit, advice or model-admission use is opened"
+  ],
+  "sourceResolutionFindings": [
+    {
+      "taskId": "C2LTB14-EXT-004",
+      "issueType": "automated-route-403-manual-source-context-review-required",
+      "reviewDisposition": "source-resolution-required-before-independent-fresh-review-or-artifact-use",
+      "correctionCandidate": "Resolve manual source route, open authoritative page context if accessible, or keep row blocked-cannot-evaluate if source context cannot be verified.",
+      "reason": "CDC: Vision Health Initiative returned automated-web-check-status-403-on-2026-07-11; requires-manual-source-context-review; this route requires manual source-context review or source resolution before extraction reuse and cannot be treated as reviewed source-context evidence at local review stage."
+    },
+    {
+      "taskId": "C2LTB14-EXT-006",
+      "issueType": "automated-route-403-manual-source-context-review-required",
+      "reviewDisposition": "source-resolution-required-before-independent-fresh-review-or-artifact-use",
+      "correctionCandidate": "Resolve manual source route, open authoritative page context if accessible, or keep row blocked-cannot-evaluate if source context cannot be verified.",
+      "reason": "CDC NCHS: Dental Care Among Adults Age 65 and Older returned automated-web-check-status-403-on-2026-07-11; requires-manual-source-context-review; this route requires manual source-context review or source resolution before extraction reuse and cannot be treated as reviewed source-context evidence at local review stage."
+    },
+    {
+      "taskId": "C2LTB14-EXT-007",
+      "issueType": "automated-route-403-manual-source-context-review-required",
+      "reviewDisposition": "source-resolution-required-before-independent-fresh-review-or-artifact-use",
+      "correctionCandidate": "Resolve manual source route, open authoritative page context if accessible, or keep row blocked-cannot-evaluate if source context cannot be verified.",
+      "reason": "CDC MMWR: Nonfatal Scald-Related Burns Among Adults Aged 65 Years returned automated-web-check-status-403-on-2026-07-11; requires-manual-source-context-review; this route requires manual source-context review or source resolution before extraction reuse and cannot be treated as reviewed source-context evidence at local review stage."
+    },
+    {
+      "taskId": "C2LTB14-EXT-008",
+      "issueType": "automated-route-403-manual-source-context-review-required",
+      "reviewDisposition": "source-resolution-required-before-independent-fresh-review-or-artifact-use",
+      "correctionCandidate": "Resolve manual source route, open authoritative page context if accessible, or keep row blocked-cannot-evaluate if source context cannot be verified.",
+      "reason": "CDC Stacks: Protect the Ones You Love - Burns returned automated-web-check-status-403-on-2026-07-11; requires-manual-source-context-review; this route requires manual source-context review or source resolution before extraction reuse and cannot be treated as reviewed source-context evidence at local review stage."
+    },
+    {
+      "taskId": "C2LTB14-EXT-011",
+      "issueType": "automated-route-403-manual-source-context-review-required",
+      "reviewDisposition": "source-resolution-required-before-independent-fresh-review-or-artifact-use",
+      "correctionCandidate": "Resolve manual source route, open authoritative page context if accessible, or keep row blocked-cannot-evaluate if source context cannot be verified.",
+      "reason": "CDC: Immunization Information Systems returned automated-web-check-status-403-on-2026-07-11; requires-manual-source-context-review; this route requires manual source-context review or source resolution before extraction reuse and cannot be treated as reviewed source-context evidence at local review stage."
+    },
+    {
+      "taskId": "C2LTB14-EXT-017",
+      "issueType": "automated-route-403-manual-source-context-review-required",
+      "reviewDisposition": "source-resolution-required-before-independent-fresh-review-or-artifact-use",
+      "correctionCandidate": "Resolve manual source route, open authoritative page context if accessible, or keep row blocked-cannot-evaluate if source context cannot be verified.",
+      "reason": "DOL: Family and Medical Leave Act returned automated-web-check-status-403-on-2026-07-11; requires-manual-source-context-review; this route requires manual source-context review or source resolution before extraction reuse and cannot be treated as reviewed source-context evidence at local review stage."
+    },
+    {
+      "taskId": "C2LTB14-EXT-021",
+      "issueType": "automated-route-404-source-resolution-required",
+      "reviewDisposition": "source-resolution-required-before-independent-fresh-review-or-artifact-use",
+      "correctionCandidate": "Resolve FDA/source page route from authoritative search index, replace with a stable current source if needed, or keep the row blocked-cannot-evaluate if source context cannot be verified.",
+      "reason": "FDA Guidance: Eligibility Determination for Donors of HCT/Ps returned automated-web-check-status-404-on-2026-07-11; FDA search index suggests source page may exist but direct automated route failed; requires manual source-resolution review; this route requires manual source-context review or source resolution before extraction reuse and cannot be treated as reviewed source-context evidence at local review stage."
+    },
+    {
+      "taskId": "C2LTB14-EXT-024",
+      "issueType": "automated-route-403-manual-source-context-review-required",
+      "reviewDisposition": "source-resolution-required-before-independent-fresh-review-or-artifact-use",
+      "correctionCandidate": "Resolve manual source route, open authoritative page context if accessible, or keep row blocked-cannot-evaluate if source context cannot be verified.",
+      "reason": "AHRQ: Preventing Pressure Ulcers in Hospitals Toolkit returned automated-web-check-status-403-on-2026-07-11; requires-manual-source-context-review; this route requires manual source-context review or source resolution before extraction reuse and cannot be treated as reviewed source-context evidence at local review stage."
+    }
+  ],
+  "reviewBatches": [
+    {
+      "reviewBatchId": "C2LTB14-LR-BATCH-01",
+      "reviewLabel": "Energy, vision, oral-health, burn, neurodegenerative, immunization, indoor-environment and respiratory/allergy rows",
+      "taskIds": [
+        "C2LTB14-EXT-001",
+        "C2LTB14-EXT-002",
+        "C2LTB14-EXT-003",
+        "C2LTB14-EXT-004",
+        "C2LTB14-EXT-005",
+        "C2LTB14-EXT-006",
+        "C2LTB14-EXT-007",
+        "C2LTB14-EXT-008",
+        "C2LTB14-EXT-009",
+        "C2LTB14-EXT-010",
+        "C2LTB14-EXT-011",
+        "C2LTB14-EXT-012",
+        "C2LTB14-EXT-013",
+        "C2LTB14-EXT-014",
+        "C2LTB14-EXT-015",
+        "C2LTB14-EXT-016"
+      ],
+      "taskCount": 16,
+      "domainIds": [
+        "advanced-nuclear-energy-safety-generation-continuity",
+        "eyeglasses-prescription-repair-replacement-continuity",
+        "geriatric-long-term-care-oral-health-continuity",
+        "hot-water-scald-burn-prevention-continuity",
+        "huntington-disease-genetic-neurodegeneration-continuity",
+        "immunization-record-proof-continuity",
+        "mold-dampness-indoor-biological-exposure",
+        "pollen-allergen-asthma-outdoor-activity-continuity"
+      ],
+      "reviewDecision": "local-review-mixed-pass-and-source-resolution-required",
+      "nextReviewMode": "Non-issue rows route only to independent fresh review; C2LTB14-EXT-004, C2LTB14-EXT-006, C2LTB14-EXT-007, C2LTB14-EXT-008, C2LTB14-EXT-011 require source-resolution/manual-route review before fresh review or artifact use."
+    },
+    {
+      "reviewBatchId": "C2LTB14-LR-BATCH-02",
+      "reviewLabel": "Work-family, remote-court, reproductive-tissue, skin-supplies, chemical-exposure, synthetic-data, synthetic-media and nutrition-benefit rows",
+      "taskIds": [
+        "C2LTB14-EXT-017",
+        "C2LTB14-EXT-018",
+        "C2LTB14-EXT-019",
+        "C2LTB14-EXT-020",
+        "C2LTB14-EXT-021",
+        "C2LTB14-EXT-022",
+        "C2LTB14-EXT-023",
+        "C2LTB14-EXT-024",
+        "C2LTB14-EXT-025",
+        "C2LTB14-EXT-026",
+        "C2LTB14-EXT-027",
+        "C2LTB14-EXT-028",
+        "C2LTB14-EXT-029",
+        "C2LTB14-EXT-030",
+        "C2LTB14-EXT-031",
+        "C2LTB14-EXT-032"
+      ],
+      "taskCount": 16,
+      "domainIds": [
+        "pregnancy-parental-work-continuity",
+        "remote-hybrid-court-hearing-access-continuity",
+        "reproductive-tissue-donor-screening-traceability-continuity",
+        "skin-care-supplies-dressings-barrier-products-continuity",
+        "substance-exposure-control",
+        "synthetic-data-generation-validation-continuity",
+        "synthetic-media-watermarking-disclosure-continuity",
+        "wic-benefit-redemption-infant-maternal-nutrition-continuity"
+      ],
+      "reviewDecision": "local-review-mixed-pass-and-source-resolution-required",
+      "nextReviewMode": "Non-issue rows route only to independent fresh review; C2LTB14-EXT-017, C2LTB14-EXT-021, C2LTB14-EXT-024 require source-resolution/manual-route review before fresh review or artifact use."
+    }
+  ],
+  "nonClaims": [
+    "This register does not claim any B14 source has passed independent fresh review.",
+    "This register does not create reviewed Source Cards, variable cards, endpoint cards, uncertainty cards or transfer-boundary cards.",
+    "This register does not resolve the seven 403/manual-review rows or the one 404/source-resolution row.",
+    "This register does not provide energy, vision, dental/oral-health, burn, genetic/neurodegenerative, immunization, environmental, respiratory/allergy, legal, reproductive-tissue, skin-supply, chemical-exposure, synthetic-data, synthetic-media, nutrition-benefit, clinical, engineering or individual advice.",
+    "This register does not authorize calibrated prediction, death-date output, intervention ranking, domain-claim upgrade or model admission.",
+    "This register does not prove causal effect size, legal sufficiency, clinical validity, engineering feasibility, data validity, content authenticity or individual benefit."
+  ],
+  "indexRequirements": [
+    "docs/reference/README.md must list this B14 local review register.",
+    "docs/AGENTS.md must describe this register and its non-claim boundary.",
+    "tools/README.md and tools/AGENTS.md must list the B14 local review audit script and Make target.",
+    "Makefile must expose c2-longtail-fourteenth-batch-local-review-audit and include it in make check.",
+    "docs/reference/human-infra-maturity-roadmap.md must update the B14 state from extraction-only to local-review-complete-with-source-resolution-required.",
+    "docs/reference/human-infra-maturity-gap-register.json must preserve B14 as blocked before source resolution, fresh review, reviewed artifacts and model admission.",
+    "No README or roadmap text may imply B14 reviewed artifacts or model-ready evidence exist."
+  ]
+}

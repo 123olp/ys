@@ -1,0 +1,991 @@
+{
+  "schemaVersion": "human-infra.c2-longtail-twelfth-batch-promotion-queue.v1",
+  "queueId": "human-infra-c2-longtail-twelfth-batch-promotion-queue-2026-07-11",
+  "status": "active-twelfth-batch-queue-model-blocked",
+  "purpose": "Queue the twelfth batch of still-uncovered C2 long-tail domains for source-specific promotion work. This artifact only selects candidate domains and web-checked sources; it does not complete Source Cards, fresh review, claim upgrade or calibrated model admission.",
+  "sourceOfTruth": {
+    "c2LongtailCoverageRegister": "docs/reference/human-infra-c2-longtail-coverage-register.json",
+    "firstBatchPromotionQueue": "docs/reference/human-infra-c2-longtail-first-batch-promotion-queue.json",
+    "secondBatchPromotionQueue": "docs/reference/human-infra-c2-longtail-second-batch-promotion-queue.json",
+    "thirdBatchPromotionQueue": "docs/reference/human-infra-c2-longtail-third-batch-promotion-queue.json",
+    "fourthBatchPromotionQueue": "docs/reference/human-infra-c2-longtail-fourth-batch-promotion-queue.json",
+    "fifthBatchPromotionQueue": "docs/reference/human-infra-c2-longtail-fifth-batch-promotion-queue.json",
+    "sixthBatchPromotionQueue": "docs/reference/human-infra-c2-longtail-sixth-batch-promotion-queue.json",
+    "seventhBatchPromotionQueue": "docs/reference/human-infra-c2-longtail-seventh-batch-promotion-queue.json",
+    "eighthBatchPromotionQueue": "docs/reference/human-infra-c2-longtail-eighth-batch-promotion-queue.json",
+    "ninthBatchPromotionQueue": "docs/reference/human-infra-c2-longtail-ninth-batch-promotion-queue.json",
+    "tenthBatchPromotionQueue": "docs/reference/human-infra-c2-longtail-tenth-batch-promotion-queue.json",
+    "eleventhBatchPromotionQueue": "docs/reference/human-infra-c2-longtail-eleventh-batch-promotion-queue.json",
+    "domainClassification": "domains/_possibility-space-control/classification.tsv",
+    "sourceCardSystem": "docs/reference/source-card-system.md",
+    "maturityGapRegister": "docs/reference/human-infra-maturity-gap-register.json",
+    "maturityRoadmap": "docs/reference/human-infra-maturity-roadmap.md"
+  },
+  "scope": {
+    "batchId": "C2-LT-B12",
+    "batchDomainCount": 12,
+    "selectionRule": "Prioritize still-uncovered C2 domains by importance, long-horizon impact and fundamentality for subject continuity: programmable living therapies, human tissue models, biosecurity, radiation/nuclear protection, infection-control infrastructure, occupational bloodborne exposure, urogenital dignity/function, allergic inflammatory burden, ocular surface endurance, auditory processing and motor-speech communication. This is not feasibility, market maturity or intervention-hype ranking.",
+    "requiredArtifactClasses": [
+      "domain-claim-evidence-row",
+      "domain-source-card-field-extraction",
+      "domain-source-specific-deep-read",
+      "source-context-local-review",
+      "independent-fresh-review-verdict",
+      "reviewed-source-card",
+      "variable-card",
+      "endpoint-card",
+      "uncertainty-card",
+      "transfer-boundary-card",
+      "downgrade-check"
+    ],
+    "nonClaims": [
+      "This queue does not complete Source Cards.",
+      "This queue does not complete independent fresh review.",
+      "This queue does not upgrade any domain claim.",
+      "This queue does not admit any domain into calibrated prediction.",
+      "This queue does not provide clinical, screening, drug, biologic, cell-therapy, biosecurity, radiation, infection-control, occupational, urogenital, allergy, eye, hearing, speech, rehabilitation, individual, intervention-ranking or self-management advice.",
+      "This queue does not mark any C2-LT-B1/B2/B3/B4/B5/B6/B7/B8/B9/B10/B11 blocked, downgrade, source-resolution, manual-access, route-only or model-blocked row as resolved."
+    ]
+  },
+  "blockedUses": [
+    "calibrated-prediction",
+    "individual-advice",
+    "individual-death-date-output",
+    "intervention-ranking",
+    "clinical-validity-claim",
+    "domain-claim-upgrade"
+  ],
+  "batchRows": [
+    {
+      "domainId": "engineered-cell-therapy-regenerative-platforms",
+      "triageBucket": "other-c2-source-maintenance",
+      "selectionReason": "工程化细胞疗法把活细胞从被动组织成分转化为可设计、可递送、可调控的平台，连接再生、免疫、癌症治疗和组织替代。",
+      "claimSeed": "工程化细胞疗法可能通过细胞设计、递送、持久性、免疫反应和安全监测改变疾病控制和修复路径，但必须受治疗场景、制造质量和长期风险约束。",
+      "variableSeed": [
+        "engineered-cell-product",
+        "cell-persistence",
+        "target-engagement",
+        "immune-toxicity",
+        "manufacturing-quality-boundary"
+      ],
+      "batchId": "C2-LT-B12",
+      "priorityRank": 1,
+      "localDomainPath": "domains/c2-source-maintenance/engineered-cell-therapy-regenerative-platforms",
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB12-SRC-01-1",
+          "title": "FDA-approved CAR T review",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/33387450/",
+          "evidenceRole": "engineered-cell-therapy-clinical-platform-boundary",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-11",
+          "sourceCheck": {
+            "checkedAt": "2026-07-11",
+            "method": "python-urllib-get",
+            "statusCode": 200,
+            "contentLengthBytes": 124578
+          }
+        },
+        {
+          "sourceRefId": "C2LTB12-SRC-01-2",
+          "title": "CAR T-cell therapy review",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8178498/",
+          "evidenceRole": "cell-therapy-mechanism-safety-boundary",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-11",
+          "sourceCheck": {
+            "checkedAt": "2026-07-11",
+            "method": "python-urllib-get",
+            "statusCode": 200,
+            "contentLengthBytes": 213159
+          }
+        }
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "modelAdmissionDecision": "blocked-pending-source-specific-extraction-local-review-independent-fresh-review-and-reviewed-artifact-promotion"
+    },
+    {
+      "domainId": "organoids-organ-on-chip-disease-models",
+      "triageBucket": "other-c2-source-maintenance",
+      "selectionReason": "类器官和器官芯片把人体组织功能转为可实验、可模拟、可筛选的平台，是从人群平均证据走向机制化个体模型的桥。",
+      "claimSeed": "类器官和器官芯片可作为疾病建模、药物反应、毒性测试和组织机制研究工具，但其外推到完整人体和主体持续性收益必须经过验证。",
+      "variableSeed": [
+        "organoid-model-fidelity",
+        "organ-chip-physiology",
+        "drug-response-signal",
+        "toxicity-signal",
+        "human-transfer-boundary"
+      ],
+      "batchId": "C2-LT-B12",
+      "priorityRank": 2,
+      "localDomainPath": "domains/c2-source-maintenance/organoids-organ-on-chip-disease-models",
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB12-SRC-02-1",
+          "title": "NCATS Tissue Chip Program",
+          "url": "https://ncats.nih.gov/research/research-activities/tissue-chip",
+          "evidenceRole": "tissue-chip-translational-platform-boundary",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-11",
+          "sourceCheck": {
+            "checkedAt": "2026-07-11",
+            "method": "python-urllib-get",
+            "statusCode": 200,
+            "contentLengthBytes": 48905
+          }
+        },
+        {
+          "sourceRefId": "C2LTB12-SRC-02-2",
+          "title": "Organ-on-chip review",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/35361907/",
+          "evidenceRole": "organ-chip-model-validation-boundary",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-11",
+          "sourceCheck": {
+            "checkedAt": "2026-07-11",
+            "method": "python-urllib-get",
+            "statusCode": 200,
+            "contentLengthBytes": 167977
+          }
+        }
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "modelAdmissionDecision": "blocked-pending-source-specific-extraction-local-review-independent-fresh-review-and-reviewed-artifact-promotion"
+    },
+    {
+      "domainId": "synthetic-biology-biosecurity",
+      "triageBucket": "other-c2-source-maintenance",
+      "selectionReason": "合成生物学既可能扩展治疗和制造能力，也可能放大生物安全风险；它决定生命工程能否成为可治理基础设施。",
+      "claimSeed": "合成生物学能力可通过设计生物系统、病原体风险、实验室治理、双重用途和供应链控制影响主体持续性的上行收益与尾部风险。",
+      "variableSeed": [
+        "synthetic-biology-capability",
+        "dual-use-risk",
+        "biosecurity-governance",
+        "pathogen-risk",
+        "responsible-innovation-boundary"
+      ],
+      "batchId": "C2-LT-B12",
+      "priorityRank": 3,
+      "localDomainPath": "domains/c2-source-maintenance/synthetic-biology-biosecurity",
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB12-SRC-03-1",
+          "title": "WHO global guidance framework for responsible use of life sciences",
+          "url": "https://www.who.int/publications/i/item/9789240056107",
+          "evidenceRole": "life-sciences-biosecurity-governance-boundary",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-11",
+          "sourceCheck": {
+            "checkedAt": "2026-07-11",
+            "method": "python-urllib-get",
+            "statusCode": 200,
+            "contentLengthBytes": 90955
+          }
+        },
+        {
+          "sourceRefId": "C2LTB12-SRC-03-2",
+          "title": "Biosecurity in synthetic biology",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7094744/",
+          "evidenceRole": "synthetic-biology-dual-use-boundary",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-11",
+          "sourceCheck": {
+            "checkedAt": "2026-07-11",
+            "method": "python-urllib-get",
+            "statusCode": 200,
+            "contentLengthBytes": 319347
+          }
+        }
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "modelAdmissionDecision": "blocked-pending-source-specific-extraction-local-review-independent-fresh-review-and-reviewed-artifact-promotion"
+    },
+    {
+      "domainId": "radiation-nuclear-safety-protection",
+      "triageBucket": "cellular-molecular-maintenance",
+      "selectionReason": "辐射和核风险直接作用于 DNA、组织和社会基础设施，是低频高损害的主体持续性尾部风险。",
+      "claimSeed": "辐射暴露和核事件可通过急性伤害、长期癌症风险、基础设施破坏和撤离/防护失败影响主体持续性。",
+      "variableSeed": [
+        "radiation-dose",
+        "acute-radiation-syndrome-risk",
+        "cancer-risk",
+        "protective-action",
+        "nuclear-event-tail-risk"
+      ],
+      "batchId": "C2-LT-B12",
+      "priorityRank": 4,
+      "localDomainPath": "domains/c2-source-maintenance/radiation-nuclear-safety-protection",
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB12-SRC-04-1",
+          "title": "WHO Radiation emergencies",
+          "url": "https://www.who.int/health-topics/radiation-emergencies",
+          "evidenceRole": "radiation-emergency-public-health-boundary",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-11",
+          "sourceCheck": {
+            "checkedAt": "2026-07-11",
+            "method": "python-urllib-get",
+            "statusCode": 200,
+            "contentLengthBytes": 150113
+          }
+        },
+        {
+          "sourceRefId": "C2LTB12-SRC-04-2",
+          "title": "NCBI Bookshelf: Radiation Exposure",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK551634/",
+          "evidenceRole": "radiation-exposure-clinical-mechanism-boundary",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-11",
+          "sourceCheck": {
+            "checkedAt": "2026-07-11",
+            "method": "python-urllib-get",
+            "statusCode": 200,
+            "contentLengthBytes": 88174
+          }
+        }
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "modelAdmissionDecision": "blocked-pending-source-specific-extraction-local-review-independent-fresh-review-and-reviewed-artifact-promotion"
+    },
+    {
+      "domainId": "sterilization-disinfection-infection-control",
+      "triageBucket": "infection-immune-resilience",
+      "selectionReason": "灭菌、消毒和感染控制决定医疗、照护和实验环境能否阻断传播链，是人类维护系统的基础卫生接口。",
+      "claimSeed": "消毒灭菌和感染控制失败可通过医疗相关感染、设备污染、病原传播和服务中断影响主体持续性与医疗系统可靠性。",
+      "variableSeed": [
+        "sterilization-process",
+        "disinfection-level",
+        "healthcare-associated-infection-risk",
+        "device-contamination",
+        "infection-control-compliance"
+      ],
+      "batchId": "C2-LT-B12",
+      "priorityRank": 5,
+      "localDomainPath": "domains/c2-source-maintenance/sterilization-disinfection-infection-control",
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB12-SRC-05-1",
+          "title": "NCBI Bookshelf: Sterilization and Disinfection",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK214361/",
+          "evidenceRole": "sterilization-disinfection-process-boundary",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-11",
+          "sourceCheck": {
+            "checkedAt": "2026-07-11",
+            "method": "python-urllib-get",
+            "statusCode": 200,
+            "contentLengthBytes": 49569
+          }
+        },
+        {
+          "sourceRefId": "C2LTB12-SRC-05-2",
+          "title": "Guideline for Disinfection and Sterilization in Healthcare Facilities",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/18843791/",
+          "evidenceRole": "healthcare-disinfection-guideline-boundary",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-11",
+          "sourceCheck": {
+            "checkedAt": "2026-07-11",
+            "method": "python-urllib-get",
+            "statusCode": 200,
+            "contentLengthBytes": 154015
+          }
+        }
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "modelAdmissionDecision": "blocked-pending-source-specific-extraction-local-review-independent-fresh-review-and-reviewed-artifact-promotion"
+    },
+    {
+      "domainId": "bloodborne-pathogens-sharps-injury-worker-continuity",
+      "triageBucket": "acute-life-risk-and-recovery",
+      "selectionReason": "血源病原体和锐器伤把照护劳动、职业暴露和感染风险连成一条系统可靠性链，影响医疗执行者和被照护者的连续性。",
+      "claimSeed": "血源暴露和锐器伤可通过 HIV、HBV、HCV 等感染风险、职业安全、暴露后处理和医疗劳动力稳定性影响主体持续性。",
+      "variableSeed": [
+        "bloodborne-exposure",
+        "sharps-injury",
+        "post-exposure-management",
+        "worker-safety",
+        "infection-transmission-risk"
+      ],
+      "batchId": "C2-LT-B12",
+      "priorityRank": 6,
+      "localDomainPath": "domains/c2-source-maintenance/bloodborne-pathogens-sharps-injury-worker-continuity",
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB12-SRC-06-1",
+          "title": "OSHA Bloodborne Pathogens",
+          "url": "https://www.osha.gov/bloodborne-pathogens",
+          "evidenceRole": "bloodborne-pathogen-worker-safety-boundary",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-11",
+          "sourceCheck": {
+            "checkedAt": "2026-07-11",
+            "method": "python-urllib-get",
+            "statusCode": 200,
+            "contentLengthBytes": 102760
+          }
+        },
+        {
+          "sourceRefId": "C2LTB12-SRC-06-2",
+          "title": "NCBI Bookshelf: Needlestick",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK493147/",
+          "evidenceRole": "needlestick-exposure-clinical-boundary",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-11",
+          "sourceCheck": {
+            "checkedAt": "2026-07-11",
+            "method": "python-urllib-get",
+            "statusCode": 200,
+            "contentLengthBytes": 90510
+          }
+        }
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "modelAdmissionDecision": "blocked-pending-source-specific-extraction-local-review-independent-fresh-review-and-reviewed-artifact-promotion"
+    },
+    {
+      "domainId": "urogenital-continuity",
+      "triageBucket": "organ-system-homeostasis",
+      "selectionReason": "泌尿生殖连续性连接排泄、感染、疼痛、性功能、尊严和日常任务执行，是身体出口系统和主体生活质量的基础接口。",
+      "claimSeed": "泌尿生殖问题可通过尿控、感染、排空失败、性功能、疼痛、睡眠中断和照护需求影响主体持续性与有效时间。",
+      "variableSeed": [
+        "bladder-control",
+        "urinary-infection-risk",
+        "voiding-function",
+        "sexual-function",
+        "daily-dignity-burden"
+      ],
+      "batchId": "C2-LT-B12",
+      "priorityRank": 7,
+      "localDomainPath": "domains/c2-source-maintenance/urogenital-continuity",
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB12-SRC-07-1",
+          "title": "NIDDK: Bladder Control Problems",
+          "url": "https://www.niddk.nih.gov/health-information/urologic-diseases/bladder-control-problems",
+          "evidenceRole": "bladder-control-function-boundary",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-11",
+          "sourceCheck": {
+            "checkedAt": "2026-07-11",
+            "method": "python-urllib-get",
+            "statusCode": 200,
+            "contentLengthBytes": 57325
+          }
+        },
+        {
+          "sourceRefId": "C2LTB12-SRC-07-2",
+          "title": "NIDDK: Bladder Infection UTI in Adults",
+          "url": "https://www.niddk.nih.gov/health-information/urologic-diseases/bladder-infection-uti-in-adults",
+          "evidenceRole": "urinary-tract-infection-boundary",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-11",
+          "sourceCheck": {
+            "checkedAt": "2026-07-11",
+            "method": "python-urllib-get",
+            "statusCode": 200,
+            "contentLengthBytes": 57061
+          }
+        }
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "modelAdmissionDecision": "blocked-pending-source-specific-extraction-local-review-independent-fresh-review-and-reviewed-artifact-promotion"
+    },
+    {
+      "domainId": "allergic-atopic-disease-immunologic-burden-continuity",
+      "triageBucket": "other-c2-source-maintenance",
+      "selectionReason": "过敏和特应性疾病长期消耗睡眠、注意力、皮肤屏障、呼吸稳定和免疫资源，是非致命但高负担的持续性磨损。",
+      "claimSeed": "过敏和特应性疾病可通过炎症、瘙痒、睡眠破坏、哮喘风险、皮肤屏障损害和长期用药/照护负担影响有效时间。",
+      "variableSeed": [
+        "atopic-inflammation",
+        "allergen-exposure",
+        "itch-sleep-burden",
+        "asthma-link",
+        "skin-barrier-burden"
+      ],
+      "batchId": "C2-LT-B12",
+      "priorityRank": 8,
+      "localDomainPath": "domains/c2-source-maintenance/allergic-atopic-disease-immunologic-burden-continuity",
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB12-SRC-08-1",
+          "title": "NHLBI: Asthma",
+          "url": "https://www.nhlbi.nih.gov/health/asthma",
+          "evidenceRole": "allergic-airway-disease-boundary",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-11",
+          "sourceCheck": {
+            "checkedAt": "2026-07-11",
+            "method": "python-urllib-get",
+            "statusCode": 200,
+            "contentLengthBytes": 69364
+          }
+        },
+        {
+          "sourceRefId": "C2LTB12-SRC-08-2",
+          "title": "NCBI Bookshelf: Atopic Dermatitis",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK448071/",
+          "evidenceRole": "atopic-dermatitis-mechanism-boundary",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-11",
+          "sourceCheck": {
+            "checkedAt": "2026-07-11",
+            "method": "python-urllib-get",
+            "statusCode": 200,
+            "contentLengthBytes": 80809
+          }
+        }
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "modelAdmissionDecision": "blocked-pending-source-specific-extraction-local-review-independent-fresh-review-and-reviewed-artifact-promotion"
+    },
+    {
+      "domainId": "dry-eye-ocular-surface-comfort-continuity",
+      "triageBucket": "other-c2-source-maintenance",
+      "selectionReason": "干眼和眼表舒适度影响阅读、屏幕工作、睡眠、疼痛和视觉任务密度，是现代认知劳动的低级但高频输入边界。",
+      "claimSeed": "干眼可通过眼表炎症、视觉波动、疼痛、阅读和屏幕耐受下降影响有效时间、注意力和任务执行。",
+      "variableSeed": [
+        "ocular-surface-stability",
+        "dry-eye-symptom-burden",
+        "visual-fluctuation",
+        "screen-tolerance",
+        "pain-attention-cost"
+      ],
+      "batchId": "C2-LT-B12",
+      "priorityRank": 9,
+      "localDomainPath": "domains/c2-source-maintenance/dry-eye-ocular-surface-comfort-continuity",
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB12-SRC-09-1",
+          "title": "NEI: Dry Eye",
+          "url": "https://www.nei.nih.gov/eye-health-information/eye-conditions-and-diseases/dry-eye",
+          "evidenceRole": "dry-eye-condition-overview-boundary",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-11",
+          "sourceCheck": {
+            "checkedAt": "2026-07-11",
+            "method": "python-urllib-get",
+            "statusCode": 200,
+            "contentLengthBytes": 60816
+          }
+        },
+        {
+          "sourceRefId": "C2LTB12-SRC-09-2",
+          "title": "TFOS DEWS II Definition and Classification",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/28736335/",
+          "evidenceRole": "dry-eye-definition-classification-boundary",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-11",
+          "sourceCheck": {
+            "checkedAt": "2026-07-11",
+            "method": "python-urllib-get",
+            "statusCode": 200,
+            "contentLengthBytes": 131576
+          }
+        }
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "modelAdmissionDecision": "blocked-pending-source-specific-extraction-local-review-independent-fresh-review-and-reviewed-artifact-promotion"
+    },
+    {
+      "domainId": "auditory-processing-listening-effort-continuity",
+      "triageBucket": "other-c2-source-maintenance",
+      "selectionReason": "听觉处理和聆听努力决定语音信息能否低成本进入认知系统，影响学习、社交、工作和疲劳。",
+      "claimSeed": "听觉处理困难可通过听懂语音的认知成本、噪声环境负担、学习困难、社交障碍和疲劳影响主体持续性。",
+      "variableSeed": [
+        "auditory-processing",
+        "listening-effort",
+        "speech-in-noise-burden",
+        "communication-fatigue",
+        "learning-access"
+      ],
+      "batchId": "C2-LT-B12",
+      "priorityRank": 10,
+      "localDomainPath": "domains/c2-source-maintenance/auditory-processing-listening-effort-continuity",
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB12-SRC-10-1",
+          "title": "ASHA: Central Auditory Processing Disorder",
+          "url": "https://www.asha.org/practice-portal/clinical-topics/central-auditory-processing-disorder/",
+          "evidenceRole": "auditory-processing-practice-boundary",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-11",
+          "sourceCheck": {
+            "checkedAt": "2026-07-11",
+            "method": "python-urllib-get",
+            "statusCode": 200,
+            "contentLengthBytes": 168398
+          }
+        },
+        {
+          "sourceRefId": "C2LTB12-SRC-10-2",
+          "title": "NIDCD: Auditory Processing Disorder",
+          "url": "https://www.nidcd.nih.gov/health/auditory-processing-disorder",
+          "evidenceRole": "auditory-processing-public-health-boundary",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-11",
+          "sourceCheck": {
+            "checkedAt": "2026-07-11",
+            "method": "python-urllib-get",
+            "statusCode": 200,
+            "contentLengthBytes": 37579
+          }
+        }
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "modelAdmissionDecision": "blocked-pending-source-specific-extraction-local-review-independent-fresh-review-and-reviewed-artifact-promotion"
+    },
+    {
+      "domainId": "dysarthria-speech-intelligibility-continuity",
+      "triageBucket": "neuro-sensory-cognitive-continuity",
+      "selectionReason": "构音障碍影响把意图转为可理解语言的输出带宽，直接限制协作、求助、社会参与和主体表达。",
+      "claimSeed": "构音障碍可通过语音清晰度下降、沟通效率降低、社交参与受限和照护升级需求影响主体持续性。",
+      "variableSeed": [
+        "speech-intelligibility",
+        "motor-speech-control",
+        "communication-efficiency",
+        "participation-burden",
+        "assistive-communication-need"
+      ],
+      "batchId": "C2-LT-B12",
+      "priorityRank": 11,
+      "localDomainPath": "domains/c2-source-maintenance/dysarthria-speech-intelligibility-continuity",
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB12-SRC-11-1",
+          "title": "ASHA: Dysarthria in Adults",
+          "url": "https://www.asha.org/practice-portal/clinical-topics/dysarthria-in-adults/",
+          "evidenceRole": "dysarthria-practice-boundary",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-11",
+          "sourceCheck": {
+            "checkedAt": "2026-07-11",
+            "method": "python-urllib-get",
+            "statusCode": 200,
+            "contentLengthBytes": 156147
+          }
+        },
+        {
+          "sourceRefId": "C2LTB12-SRC-11-2",
+          "title": "NCBI Bookshelf: Dysarthria",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK592453/",
+          "evidenceRole": "dysarthria-clinical-overview-boundary",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-11",
+          "sourceCheck": {
+            "checkedAt": "2026-07-11",
+            "method": "python-urllib-get",
+            "statusCode": 200,
+            "contentLengthBytes": 114433
+          }
+        }
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "modelAdmissionDecision": "blocked-pending-source-specific-extraction-local-review-independent-fresh-review-and-reviewed-artifact-promotion"
+    },
+    {
+      "domainId": "apraxia-of-speech-motor-planning-continuity",
+      "triageBucket": "neuro-sensory-cognitive-continuity",
+      "selectionReason": "言语失用把运动计划、语言输出和主体表达连接起来，属于认知意图到外部协作的关键执行接口。",
+      "claimSeed": "言语失用可通过言语运动计划失败、表达效率下降、治疗和辅助沟通需求增加影响主体的协作能力和未来选择权。",
+      "variableSeed": [
+        "speech-motor-planning",
+        "expressive-output",
+        "communication-breakdown",
+        "rehabilitation-need",
+        "assistive-communication-boundary"
+      ],
+      "batchId": "C2-LT-B12",
+      "priorityRank": 12,
+      "localDomainPath": "domains/c2-source-maintenance/apraxia-of-speech-motor-planning-continuity",
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB12-SRC-12-1",
+          "title": "ASHA: Acquired Apraxia of Speech",
+          "url": "https://www.asha.org/practice-portal/clinical-topics/acquired-apraxia-of-speech/",
+          "evidenceRole": "apraxia-of-speech-practice-boundary",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-11",
+          "sourceCheck": {
+            "checkedAt": "2026-07-11",
+            "method": "python-urllib-get",
+            "statusCode": 200,
+            "contentLengthBytes": 151397
+          }
+        },
+        {
+          "sourceRefId": "C2LTB12-SRC-12-2",
+          "title": "NIDCD: Apraxia of Speech",
+          "url": "https://www.nidcd.nih.gov/health/apraxia-speech",
+          "evidenceRole": "apraxia-of-speech-public-health-boundary",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-11",
+          "sourceCheck": {
+            "checkedAt": "2026-07-11",
+            "method": "python-urllib-get",
+            "statusCode": 200,
+            "contentLengthBytes": 47326
+          }
+        }
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "modelAdmissionDecision": "blocked-pending-source-specific-extraction-local-review-independent-fresh-review-and-reviewed-artifact-promotion"
+    }
+  ],
+  "aggregateDecision": {
+    "selectedDomainCount": 12,
+    "candidateSourceCount": 24,
+    "modelAdmission": "blocked",
+    "promotionBoundary": "B12 selects still-uncovered source-maintenance domains and candidate sources only. Source-specific extraction, deep read, local review, independent fresh review and reviewed artifacts remain required before any claim upgrade or model admission.",
+    "nextAction": "Derive C2-LT-B12 source-extraction tasks with exact claim, endpoint, population, mechanism, uncertainty and transfer-boundary fields."
+  }
+}

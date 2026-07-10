@@ -883,7 +883,7 @@ Human Infra 的上位对象是“人类任务执行系统”。不同子域分�
 - `domains/c2-source-maintenance/smell-taste-chemosensory-continuity/`：嗅觉、味觉、化学感知、危险气味识别、食欲、营养和生活质量。
 - `domains/c2-source-maintenance/peripheral-neuropathy-somatosensory-continuity/`：周围神经病变、触觉、痛觉、本体感觉、足部风险和身体边界反馈。
 - `domains/c1-boundary-rewriting/future-waiting/`：去未来、压缩等待和低主观时间成本等待路径。
-- `domains/c1-boundary-rewriting/disembodied-cns/`：去具身外部维持型中枢生命系统。
+- `domains/c1-boundary-rewriting/disembodied-cns/`：去具身外部维持型中枢生命系统；主对象不是复制身体器官，而是脑-身接口协议、接口因果等价和最小充分身体。
 - `domains/c1-boundary-rewriting/memory-editing/`：记忆读写、人格连续性和主体权利保护。
 - `domains/c1-boundary-rewriting/biostasis-cryopreservation/`：生物停滞、冷冻保存、休眠和等待未来修复。
 - `domains/c3-generation-engine/cognitive-augmentation/`：AI、外部记忆、学习系统、脑机接口和认知增强。
@@ -1541,7 +1541,7 @@ Human Infra
 
 “永生”和“记忆编辑”也不应直接混入 Biocat，因为它们不是普通长寿干预证据页，而是远期高风险研究域：
 
-- `disembodied-cns` 关注身体功能由外部系统代理后的生命支持、接口闭环和主体连续性。
+- `disembodied-cns` 关注身体功能由外部系统代理后的脑-身接口协议、生命支持、接口闭环和主体连续性。它把心脏、肺、肝肾、感官和肢体视为原生实现，真正审查的是血流、氧气、营养、代谢清除、激素、免疫、内感受、感觉输入和运动输出这些交换是否能在误差边界内形成接口等价。
 - `memory-editing` 关注神经系统中记忆痕迹的读写、删除、重构、验证和伦理约束。
 - `future-waiting` 关注通过物理或生物状态改变减少等待未来的主观时间成本，例如度规红移固有时差分路径（黑洞等待室）。
 - `cellular-reprogramming` 关注细胞身份、表观遗传年龄、组织功能和重编程风险之间的机制关系。它不是普通“长寿干预条目”，而是细胞状态可重写范式的独立机制域。
@@ -1677,7 +1677,7 @@ Human Infra
 - `endoplasmic-reticulum-stress-upr-proteostasis-continuity`、`golgi-secretory-trafficking-organelle-homeostasis-continuity`、`peroxisome-redox-lipid-metabolism-homeostasis-continuity`、`organelle-contact-sites-intercompartmental-communication-continuity`、`biomolecular-condensates-phase-separation-stress-adaptation-continuity` 和 `cytoskeleton-mechanotransduction-cellular-mechanics-continuity` 关注细胞器稳态、空间组织与应激响应连续性，分别承载 ER/UPR、Golgi 分泌运输、过氧化物酶体脂质氧化还原、细胞器接触位点、相分离凝聚体和细胞骨架机械转导。它们不能只放进 `proteostasis-autophagy`、`mitochondrial-bioenergetics`、`extracellular-matrix-glycation` 或 `cellular-reprogramming`，因为每个对象都有独立变量、证据来源、失败模式和禁止用途。
 - `rehabilitation-functioning`、`assistive-technology-access` 和 `sensory-continuity` 关注主体存活之后是否仍能行动、沟通、感知和参与。
 - `antimicrobial-resilience` 关注现代医学抗感染底座是否会被耐药性侵蚀。
-- `neuro-continuity`、`cognitive-augmentation`、`memory-editing` 和 `disembodied-cns` 关注延续的是否仍是能够行动、记忆和选择的同一主体。
+- `neuro-continuity`、`cognitive-augmentation`、`memory-editing` 和 `disembodied-cns` 关注延续的是否仍是能够行动、记忆和选择的同一主体；其中 `disembodied-cns` 进一步要求从结构复制转向接口等价，先定义脑-身交换内容、方向、频率、精度、允许误差和闭环效果，再讨论候选实现。
 - `mental-health-affective-stability`、`depression-mood-disorder-functioning-continuity`、`anxiety-stress-threat-regulation-continuity`、`trauma-ptsd-adversity-recovery-continuity`、`psychosis-reality-testing-community-continuity`、`bipolar-mood-episode-stability-continuity`、`adhd-executive-function-neurodevelopment-continuity`、`autism-neurodiversity-support-continuity`、`eating-disorders-nutrition-body-continuity`、`sleep-circadian-recovery`、`pain-suffering-control` 和 `oral-health-continuity` 关注存在时间是否能转化为可承受、可恢复、可行动、可进食、可沟通、可判断、可参与和可维持目标的有效时间。
 - `substance-exposure-control` 关注可避免暴露和成瘾如何同时侵蚀健康风险、资源预算和主体自主性。
 - `biostasis-cryopreservation` 关注暂停损耗并等待未来修复，与 `future-waiting` 的时间差分路径互补。

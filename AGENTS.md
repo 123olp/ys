@@ -393,6 +393,7 @@ human_infra/
 - 2026-06-30：新增第五十七波 8 个医疗支付、理赔、账单与成本保护连续性域，覆盖健康保险参保续保、权益核验、医疗服务授权、理赔/EOB/拒付、患者账单/付款计划、价格透明/GFE、意外账单保护和 charity care/医疗债务连续性。
 - 2026-06-30：新增第五十八波 8 个患者权利、记录访问、临床沟通与医疗民权连续性域，覆盖患者门户/医疗消息、病历访问修正释放、临床结果通知随访、知情同意/拒绝/共同决策、医疗语言服务、医疗残障便利、患者投诉/ombuds 和医疗民权反歧视连续性。
 - 2026-06-30：新增第五十九波 8 个急救健康信息与紧急交接连续性域，覆盖紧急联系人/近亲通知、个人健康记录急救摘要、医疗 ID/过敏关键警报、药物清单/植入设备急救转交、慢病急救行动计划、免疫记录证明、器官捐赠登记和 access/functional needs 急救登记连续性。
+- 2026-07-11：新增 `docs/reference/human-infra-c2-longtail-thirteenth-batch-corrected-source-fresh-review-verdict-register.json`，用于记录 C2-LT-B13 corrected IAD PMID 22193141 的 fresh-review 判定；该判定只允许 bounded reviewed artifact prep，继续阻塞临床/产品/护理建议和模型准入。
 - 2026-06-20：从 Biocat 单项目重组为 Human Infra 总项目；旧 Biocat 迁入 `domains/c1-boundary-rewriting/longevity-evidence/`；新增 `disembodied-cns` 与 `memory-editing` 子域；四份最新资料归档到 `docs/source-notes/`；按 Docs-as-Code 和 Diataxis 补齐根文件、协作模板、文档分层和结构检查脚本。
 - 2026-06-22：新增 `domains/c1-boundary-rewriting/future-waiting/` 和度规红移固有时差分路径（黑洞等待室），用于承载“压缩等待 / 去未来”类永生路径思想实验。
 - 2026-06-23：新增 GitHub Actions `make check` 门禁和 `.github/AGENTS.md`，准备远程仓库协作入口。

@@ -1,7 +1,7 @@
 {
   "schemaVersion": "human-infra.life-path-nhats-route-value-crosswalk-entry-validator-validation.v1",
   "validationId": "life-path-nhats-route-value-crosswalk-entry-validator-validation",
-  "generatedAt": "2026-07-04T20:22:39.511247+00:00",
+  "generatedAt": "2026-07-10T22:39:17.566287+00:00",
   "overallStatus": "PASS",
   "summary": {
     "caseCount": 6,
@@ -161,13 +161,13 @@
       "verdict": "rejected",
       "rejectReasons": [
         "assemblyUnitClosureAllowed must remain false",
-        "weightedRouteCountsAllowed must remain false",
-        "routeClassifierAllowed must remain false",
-        "realExtractionAllowed must remain false",
-        "individualPredictionAllowed must remain false",
-        "publicExportAllowed must remain false",
         "aggregateCohortFlowAllowed must remain false",
-        "calibrationAllowed must remain false"
+        "weightedRouteCountsAllowed must remain false",
+        "individualPredictionAllowed must remain false",
+        "routeClassifierAllowed must remain false",
+        "calibrationAllowed must remain false",
+        "realExtractionAllowed must remain false",
+        "publicExportAllowed must remain false"
       ],
       "cannotEvaluateReasons": [],
       "matchedField": "identity_join_key"

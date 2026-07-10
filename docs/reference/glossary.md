@@ -34,7 +34,15 @@ The domain that tracks longevity interventions, public evidence, clinical trials
 
 ## Disembodied CNS
 
-The domain for high-level modeling of an externally maintained biological brain or central nervous system without natural body dependency.
+The domain for high-level modeling of an externally maintained biological brain or central nervous system without natural body dependency. Its current core object is not organ-shape replication, but brain-body interface protocols: the causal exchanges of perfusion, oxygen, nutrition, clearance, endocrine signals, immune signals, interoception, sensory input, and motor output that would have to remain closed for subject continuity.
+
+## Brain-Body Interface Protocol
+
+A non-operational modeling contract that describes what the brain and body exchange, in which direction, at what cadence, with what precision and error tolerance, and with which closed-loop effect. It is used to test interface equivalence claims without implying engineering feasibility.
+
+## Minimal Sufficient Body
+
+The smallest set of brain-body interface protocols and body-function services that would be necessary for the same subject to remain alive, aware, expressive, regulatable, actionable, and rights-bearing. It is a research frame, not a current medical or engineering capability.
 
 ## Future Waiting
 

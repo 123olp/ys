@@ -1,0 +1,158 @@
+{
+  "schemaVersion": "human-infra.c2ltb13-corrected-source-fresh-review-verdict-register.v1",
+  "registerId": "human-infra-c2-longtail-thirteenth-batch-corrected-source-fresh-review-verdict-register-2026-07-11",
+  "status": "active-c2ltb13-corrected-source-fresh-review-verdict-register-model-blocked",
+  "purpose": "Independently fresh-review the single C2-LT-B13 corrected IAD source re-extraction output for PMID 22193141, decide bounded artifact-prep eligibility, and keep advice, clinical validity and model admission blocked.",
+  "sourceOfTruth": {
+    "correctedSourceReextractionRegister": "docs/reference/human-infra-c2-longtail-thirteenth-batch-corrected-source-reextraction-register.json",
+    "correctedSourceReextractionQueue": "docs/reference/human-infra-c2-longtail-thirteenth-batch-corrected-source-reextraction-queue.json",
+    "sourceResolutionRegister": "docs/reference/human-infra-c2-longtail-thirteenth-batch-source-resolution-register.json",
+    "sourceExtractionRegister": "docs/reference/human-infra-c2-longtail-thirteenth-batch-source-extraction-register.json",
+    "evidencePolicy": "docs/reference/evidence-policy.md",
+    "maturityGapRegister": "docs/reference/human-infra-maturity-gap-register.json"
+  },
+  "scope": {
+    "batchId": "C2-LT-B13",
+    "reviewLevel": "c2ltb13-corrected-source-fresh-review-v0.1",
+    "correctedExtractionRowCount": 1,
+    "reviewedCorrectedExtractionRowCount": 1,
+    "eligibleForArtifactPrepRowCount": 1,
+    "blockedOrContextOnlyRowCount": 0,
+    "directReviewedArtifactRowCount": 0,
+    "modelAdmissionOpenedRowCount": 0,
+    "nonClaims": [
+      "This verdict register does not create reviewed artifacts.",
+      "This verdict register does not open model admission.",
+      "This verdict register does not authorize clinical advice, skin-care advice, wound-care advice, incontinence-care advice, product choice, calibrated prediction, individual advice or clinical validity claims.",
+      "Fresh-review support for PMID 22193141 only affects bounded background artifact-prep eligibility and does not override currentness, clinical or model gates."
+    ]
+  },
+  "requiredReviewFields": [
+    "sourceIdentityVerdict",
+    "sourceAccessVerdict",
+    "sourceContextVerdict",
+    "currentnessVerdict",
+    "exactClaimVerdict",
+    "endpointVariableVerdict",
+    "transferBoundaryVerdict",
+    "reviewerVerdict",
+    "artifactPromotionDecision",
+    "modelAdmissionDecision",
+    "reviewEvidenceTrace"
+  ],
+  "verdictTaxonomy": [
+    "support-with-boundary",
+    "blocked-or-context-only"
+  ],
+  "artifactPromotionDecisions": [
+    "eligible-for-bounded-reviewed-artifact-prep",
+    "blocked-context-only-no-direct-artifact-fill",
+    "blocked-cannot-evaluate"
+  ],
+  "blockedUses": [
+    "calibrated-prediction",
+    "individual-advice",
+    "individual-death-date-output",
+    "intervention-ranking",
+    "clinical-validity-claim",
+    "domain-claim-upgrade",
+    "clinical-advice",
+    "skin-care-advice",
+    "dermatology-care-advice",
+    "wound-care-advice",
+    "incontinence-care-advice",
+    "product-advice"
+  ],
+  "correctedSourceFreshReviews": [
+    {
+      "reviewId": "C2LTB13-CFRV-001",
+      "batchId": "C2-LT-B13",
+      "reextractionTaskId": "C2LTB13-CREXT-001",
+      "originTaskId": "C2LTB13-EXT-021",
+      "sourceResolutionId": "C2LTB13-SRR-003",
+      "domainId": "incontinence-associated-dermatitis-moisture-skin-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/incontinence-associated-dermatitis-moisture-skin-continuity",
+      "candidateId": "C2LTB13-SRR-003-CAND-02",
+      "sourceTitle": "Incontinence-associated dermatitis: a comprehensive review and update.",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/22193141/",
+      "freshReviewDate": "2026-07-11",
+      "freshReviewMode": "corrected-source-reextraction-independent-fresh-review",
+      "sourceIdentityVerdict": "supported-corrected-pubmed-review-identity",
+      "sourceAccessVerdict": "pubmed-abstract-esummary-efetch-accessible-independent-review",
+      "sourceContextVerdict": "sufficient-for-bounded-artifact-prep-with-currentness-boundary",
+      "currentnessVerdict": "2012 PubMed-indexed review supports IAD background vocabulary and evidence-gap/currentness boundaries only; it is not current guideline, product-selection, care-regimen or individual clinical advice evidence.",
+      "exactClaimVerdict": "bounded-background-claim-supported",
+      "endpointVariableVerdict": "endpoint-vocabulary-supported-with-currentness-and-evidence-gap-boundary",
+      "transferBoundaryVerdict": "transfer-boundary-present-and-required",
+      "reviewerVerdict": "support-with-boundary",
+      "freshReviewFinding": "Independent PubMed, ESummary and EFetch review confirms the corrected IAD source identity for PMID 22193141 and supports bounded background vocabulary for IAD epidemiology, etiology, pathophysiology, urinary/fecal incontinence complications, moisture exposure, perineal skin-barrier compromise, dermatitis burden, infection-entry risk and evidence-gap/currentness boundaries. The abstract also states that research remains limited and additional studies are needed, so the row may enter bounded reviewed artifact preparation only as background source and variable vocabulary, not as current clinical guidance, product advice or calibrated risk evidence.",
+      "downgradeOrBlockReason": "No blocking defect for bounded background artifact preparation; all care-regimen, cleansing, moisturization, skin protectant, antifungal, anti-inflammatory, containment, product-selection, dermatology diagnosis, wound-care, incontinence-care, clinical-validity, calibrated prediction and individual advice uses remain blocked.",
+      "artifactPromotionDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "allowedArtifactTypes": [
+        "reviewed-source-card",
+        "reviewed-variable-card",
+        "reviewed-endpoint-card",
+        "reviewed-uncertainty-card",
+        "reviewed-transfer-boundary-card",
+        "reviewed-downgrade-check"
+      ],
+      "modelAdmissionDecision": "blocked",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade",
+        "clinical-advice",
+        "skin-care-advice",
+        "dermatology-care-advice",
+        "wound-care-advice",
+        "incontinence-care-advice",
+        "product-advice"
+      ],
+      "reviewEvidenceTrace": [
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/22193141/",
+          "evidenceType": "pubmed-record-independent-fresh-review",
+          "finding": "PubMed identifies PMID 22193141 as the 2012 review 'Incontinence-associated dermatitis: a comprehensive review and update' in J Wound Ostomy Continence Nurs with DOI 10.1097/WON.0b013e31823fe246."
+        },
+        {
+          "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&id=22193141&retmode=json",
+          "evidenceType": "ncbi-esummary-independent-fresh-review",
+          "finding": "NCBI ESummary confirms the corrected title, journal, publication date, pages, review publication type and DOI for PMID 22193141."
+        },
+        {
+          "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=22193141&retmode=xml",
+          "evidenceType": "ncbi-efetch-abstract-independent-fresh-review",
+          "finding": "NCBI EFetch abstract states that the review updates IAD research, discusses epidemiology, etiology and pathophysiology, names urinary or fecal incontinence complications, and concludes that research remains limited and additional studies are needed."
+        }
+      ],
+      "nextAction": "Prepare bounded IAD source, variable, endpoint, uncertainty, transfer-boundary and downgrade artifacts; keep clinical/product/advice uses and calibrated model admission blocked."
+    }
+  ],
+  "indexRequirements": [
+    "README.md",
+    "AGENTS.md",
+    "docs/AGENTS.md",
+    "docs/reference/README.md",
+    "docs/reference/human-infra-maturity-roadmap.md",
+    "tools/README.md",
+    "tools/AGENTS.md"
+  ],
+  "summary": {
+    "reviewedCorrectedRows": 1,
+    "eligibleForArtifactPrepRows": [
+      "C2LTB13-CREXT-001"
+    ],
+    "blockedOrContextOnlyRows": [],
+    "directReviewedArtifactsCreated": 0,
+    "modelAdmissionDecision": "blocked",
+    "newFreshReviewFacts": [
+      "Corrected source identity for PMID 22193141 is supported by PubMed, NCBI ESummary and NCBI EFetch.",
+      "The source is a 2012 review and must remain bounded to background IAD vocabulary, endpoint-variable discovery, uncertainty and transfer-boundary artifacts.",
+      "The abstract explicitly says research remains limited and additional studies are needed, so current clinical guidance, product selection, care-regimen claims and calibrated model use remain blocked."
+    ],
+    "nextWorkOrder": "Create bounded reviewed artifacts for C2LTB13-CFRV-001 only if artifact gate requirements are met; do not open clinical advice, product advice, intervention ranking, individual prediction, calibrated prediction or model admission."
+  }
+}

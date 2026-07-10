@@ -1,0 +1,152 @@
+{
+  "schemaVersion": "human-infra.c2-longtail-eleventh-batch-independent-fresh-review-protocol.v1",
+  "registerId": "human-infra-c2-longtail-eleventh-batch-independent-fresh-review-protocol-2026-07-11",
+  "status": "active-review-protocol",
+  "purpose": "Define independent fresh-review batches, required checks and promotion boundaries for the 24 locally reviewed C2-LT-B11 source-context extraction rows without storing verdicts inside the protocol artifact.",
+  "sourceOfTruth": {
+    "localReviewRegister": "docs/reference/human-infra-c2-longtail-eleventh-batch-local-review-register.json",
+    "sourceExtractionRegister": "docs/reference/human-infra-c2-longtail-eleventh-batch-source-extraction-register.json",
+    "sourceExtractionQueue": "docs/reference/human-infra-c2-longtail-eleventh-batch-source-extraction-queue.json",
+    "sourceCardSystem": "docs/reference/source-card-system.md",
+    "evidencePolicy": "docs/reference/evidence-policy.md",
+    "maturityGapRegister": "docs/reference/human-infra-maturity-gap-register.json"
+  },
+  "scope": {
+    "localReviewedExtractionTaskCount": 24,
+    "coveredDomainCount": 12,
+    "batchCount": 2,
+    "sourceResolutionIssueCount": 0,
+    "protocolEmbeddedVerdictCount": 0,
+    "selectionRule": "Every C2-LT-B11 local-review row must receive independent fresh review before any reviewed artifact, advice-use, intervention-ranking or model-admission claim.",
+    "nonClaims": [
+      "This protocol is not an independent fresh review verdict register.",
+      "This protocol does not complete Source Cards, variable cards, endpoint cards, uncertainty cards, transfer-boundary cards or downgrade-check artifacts.",
+      "This protocol does not authorize calibrated prediction, individual advice, individual death-date output, intervention ranking, domain-claim upgrade, clinical-validity claims, medical advice, dental advice, vision advice, hearing-device advice, vestibular-rehabilitation advice, contact-lens advice, diabetic-footwear advice, emergency-care advice, nutrition advice, swallowing advice, pain-care advice, infection-care advice, mobility advice or occupational-noise advice."
+    ]
+  },
+  "requiredReviewFields": [
+    "sourceIdentityVerdict",
+    "sourceContextVerdict",
+    "exactClaimUseVerdict",
+    "domainTransferVerdict",
+    "modelPositionVerdict",
+    "uncertaintyBoundaryVerdict",
+    "downgradeVerdict",
+    "blockedUseVerdict",
+    "adviceUseBoundaryVerdict",
+    "reviewerNote"
+  ],
+  "verdictTaxonomy": [
+    "support-with-boundary",
+    "bounded-support",
+    "downgrade-required",
+    "reject-source-context-mismatch",
+    "cannot-evaluate-insufficient-context"
+  ],
+  "artifactPromotionDecisions": [
+    "eligible-for-bounded-artifact-fill",
+    "downgrade-before-fill",
+    "rejected-no-fill",
+    "blocked-cannot-evaluate"
+  ],
+  "blockedUses": [
+    "calibrated-prediction",
+    "individual-advice",
+    "individual-death-date-output",
+    "intervention-ranking",
+    "clinical-validity-claim",
+    "domain-claim-upgrade",
+    "medical-advice",
+    "dental-advice",
+    "vision-advice",
+    "hearing-device-advice",
+    "vestibular-rehabilitation-advice",
+    "contact-lens-advice",
+    "diabetic-footwear-advice",
+    "emergency-care-advice",
+    "nutrition-advice",
+    "swallowing-advice",
+    "pain-care-advice",
+    "infection-care-advice",
+    "mobility-advice",
+    "occupational-noise-advice"
+  ],
+  "promotionRules": [
+    "support-with-boundary or bounded-support may proceed only to eligible-for-bounded-artifact-fill, never directly to model admission, intervention ranking, advice use or clinical-validity claims.",
+    "downgrade-required rows must carry a downgrade note before artifact fill and remain blocked for calibrated prediction, individual advice and all C2-LT-B11 advice-use categories.",
+    "reject-source-context-mismatch rows must not fill reviewed artifacts until source identity, source role or source context is corrected and independently checked.",
+    "cannot-evaluate-insufficient-context rows remain blocked until a primary or authoritative source can be independently checked.",
+    "Artifact promotion decisions are limited to eligible-for-bounded-artifact-fill, downgrade-before-fill, rejected-no-fill and blocked-cannot-evaluate."
+  ],
+  "indexRequirements": [
+    "docs/AGENTS.md",
+    "docs/reference/README.md",
+    "docs/reference/human-infra-maturity-roadmap.md",
+    "docs/reference/human-infra-maturity-gap-register.json",
+    "tools/README.md",
+    "tools/AGENTS.md",
+    "Makefile"
+  ],
+  "reviewBatches": [
+    {
+      "batchId": "C2LTB11-FRB-01-swallow-dental-contact-foot-eye-hearing",
+      "sourceLocalReviewBatchId": "C2LTB11-LR-BATCH-01",
+      "batchLabel": "吞咽、牙科感染、隐形眼镜、糖尿病足减压、眼外伤和助听可及性连续性域",
+      "taskCount": 12,
+      "taskIds": [
+        "C2LTB11-EXT-001",
+        "C2LTB11-EXT-002",
+        "C2LTB11-EXT-003",
+        "C2LTB11-EXT-004",
+        "C2LTB11-EXT-005",
+        "C2LTB11-EXT-006",
+        "C2LTB11-EXT-007",
+        "C2LTB11-EXT-008",
+        "C2LTB11-EXT-009",
+        "C2LTB11-EXT-010",
+        "C2LTB11-EXT-011",
+        "C2LTB11-EXT-012"
+      ],
+      "domainIds": [
+        "contact-lens-hygiene-eye-infection-continuity",
+        "dental-pain-emergency-infection-continuity",
+        "diabetic-therapeutic-footwear-offloading-continuity",
+        "eye-injury-urgent-vision-protection-continuity",
+        "hearing-assistive-devices-alerting-access-continuity",
+        "swallowing-dysphagia-aspiration-nutrition"
+      ],
+      "reviewPriority": "first",
+      "reviewFocus": "independent fresh review must verify swallowing, dental infection, contact-lens hygiene, diabetic-footwear offloading, urgent eye-injury and hearing assistive-device source scope; no swallowing, dental, contact-lens, diabetic-footwear, emergency, vision or hearing advice and no artifact promotion before independent verdicts"
+    },
+    {
+      "batchId": "C2LTB11-FRB-02-noise-pediatric-chemosensory-tmj-vestibular",
+      "sourceLocalReviewBatchId": "C2LTB11-LR-BATCH-02",
+      "batchLabel": "噪声性听损、儿童视力、嗅味觉、颞下颌疼痛、双侧前庭低下和前庭耳毒性连续性域",
+      "taskCount": 12,
+      "taskIds": [
+        "C2LTB11-EXT-013",
+        "C2LTB11-EXT-014",
+        "C2LTB11-EXT-015",
+        "C2LTB11-EXT-016",
+        "C2LTB11-EXT-017",
+        "C2LTB11-EXT-018",
+        "C2LTB11-EXT-019",
+        "C2LTB11-EXT-020",
+        "C2LTB11-EXT-021",
+        "C2LTB11-EXT-022",
+        "C2LTB11-EXT-023",
+        "C2LTB11-EXT-024"
+      ],
+      "domainIds": [
+        "bilateral-vestibular-hypofunction-gaze-gait-stability-continuity",
+        "noise-induced-hearing-loss-prevention-continuity",
+        "pediatric-vision-screening-amblyopia-continuity",
+        "smell-taste-chemosensory-continuity",
+        "temporomandibular-orofacial-pain-jaw-function-continuity",
+        "vestibular-ototoxicity-medication-chemical-risk-continuity"
+      ],
+      "reviewPriority": "second",
+      "reviewFocus": "independent fresh review must verify noise-induced hearing-loss prevention, pediatric vision screening, chemosensory function, temporomandibular/orofacial pain, bilateral vestibular hypofunction and vestibular ototoxicity source scope; no occupational-noise, vision, hearing-device, pain-care, mobility or vestibular-rehabilitation advice and no artifact promotion before independent verdicts"
+    }
+  ]
+}

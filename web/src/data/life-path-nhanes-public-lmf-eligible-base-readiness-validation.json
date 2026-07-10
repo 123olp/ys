@@ -1,7 +1,7 @@
 {
   "schemaVersion": "human-infra.nhanes-public-lmf-eligible-base-readiness-validation.v1",
   "status": "pass",
-  "generatedAt": "2026-07-04T20:22:38.019131+00:00",
+  "generatedAt": "2026-07-10T22:39:16.004418+00:00",
   "readinessPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhanes_public_lmf_eligible_base_readiness.json",
   "readinessSha256": "2abd4af214d1bbe6eb8c4c5109b33864fd9025e55ada972b8bcb51d13d97674b",
   "validationPath": "web/src/data/life-path-nhanes-public-lmf-eligible-base-readiness-validation.json",

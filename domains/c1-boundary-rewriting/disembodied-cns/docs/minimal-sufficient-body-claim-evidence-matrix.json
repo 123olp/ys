@@ -1,0 +1,343 @@
+{
+  "schemaVersion": "human-infra.minimal-sufficient-body-claim-evidence-matrix.v1",
+  "matrixId": "minimal-sufficient-body-claim-evidence-matrix",
+  "status": "active-c1-claim-evidence-matrix-no-operational-use",
+  "purpose": "Bind the disembodied-cns minimal-sufficient-body claims to Source Card anchors, brain-body interface protocol rows, variables, falsifiers, downgrade actions and prohibited-use boundaries.",
+  "sourceOfTruth": {
+    "domainReadme": "domains/c1-boundary-rewriting/disembodied-cns/README.md",
+    "domainAgentContract": "domains/c1-boundary-rewriting/disembodied-cns/AGENTS.md",
+    "theoryModule": "domains/c1-boundary-rewriting/disembodied-cns/docs/body-function-substitution-minimal-sufficient-body.md",
+    "protocolContract": "domains/c1-boundary-rewriting/disembodied-cns/docs/brain-body-interface-protocol-contract.md",
+    "protocolRegister": "domains/c1-boundary-rewriting/disembodied-cns/docs/brain-body-interface-protocol-register.json",
+    "sourceCards": "domains/c1-boundary-rewriting/disembodied-cns/literature/source-cards.md",
+    "maturityGapRegister": "docs/reference/human-infra-maturity-gap-register.json"
+  },
+  "currentDecision": {
+    "rowCount": 8,
+    "modelAdmissionLevel": "L2",
+    "quantitativeCapability": "Q2",
+    "claimEvidenceMatrixCompleteForDomain": true,
+    "operationalUseAllowed": false,
+    "clinicalUseAllowed": false,
+    "engineeringFeasibilityClaimAllowed": false,
+    "subjectSurvivalClaimAllowed": false,
+    "individualPredictionAllowed": false
+  },
+  "allowedEvidenceRoles": [
+    "definition-support",
+    "boundary-support",
+    "partial-analogy-support",
+    "method-constraint",
+    "risk-governance-support"
+  ],
+  "requiredClaimFields": [
+    "claim_id",
+    "claim",
+    "evidence_role",
+    "source_card_ids",
+    "protocol_ids",
+    "variables",
+    "mechanism",
+    "falsifier",
+    "downgrade_action",
+    "scope_boundary",
+    "model_position",
+    "blocked_inferences"
+  ],
+  "blockedUses": [
+    "life-support-instructions",
+    "perfusion-protocol",
+    "bci-implantation-or-stimulation-protocol",
+    "clinical-claim",
+    "engineering-feasibility-claim",
+    "subject-survival-claim",
+    "personal-survival-claim",
+    "individual-prediction",
+    "whole-body-replacement-claim",
+    "mind-upload-or-revival-claim",
+    "calibrated-prediction",
+    "legal-advice",
+    "investment-promotion"
+  ],
+  "claimRows": [
+    {
+      "claim_id": "MSB-CL001",
+      "claim": "The minimal-sufficient-body frame treats the body as a set of causal services for subject continuity rather than as an organ shape that must be copied one-to-one.",
+      "evidence_role": "definition-support",
+      "source_card_ids": [
+        "MSB-CARD-009",
+        "MSB-CARD-013"
+      ],
+      "protocol_ids": [
+        "BBIP-001-perfusion-flow",
+        "BBIP-002-interoceptive-feedback",
+        "BBIP-007-exteroceptive-input",
+        "BBIP-008-motor-expression-output"
+      ],
+      "variables": [
+        "body-function-service",
+        "subject-continuity-dependency",
+        "closed-loop-feedback",
+        "organ-shape-independence",
+        "interface-protocol-first",
+        "causal-effect-preservation"
+      ],
+      "mechanism": "A body service can be studied as an interface only after the native organ is treated as one implementation of a brain-body exchange protocol and its exchange content, direction, timing, precision, error tolerance and subject-state dependency are specified.",
+      "falsifier": "If a claimed service cannot be mapped to explicit brain-body exchange variables and subject-state dependencies, it cannot be treated as an interface-equivalence candidate.",
+      "downgrade_action": "Downgrade to conceptual metaphor only and block model bridging.",
+      "scope_boundary": "This row does not claim that any present system can replace a body or maintain a subject outside an original body.",
+      "model_position": "L2/Q2 vocabulary for C1 boundary rewriting only.",
+      "blocked_inferences": [
+        "whole-body-replacement-claim",
+        "engineering-feasibility-claim",
+        "personal-survival-claim"
+      ]
+    },
+    {
+      "claim_id": "MSB-CL002",
+      "claim": "Brain-body interface equivalence requires preserving the causal exchange effects of organs on the brain, not preserving the original organ morphology.",
+      "evidence_role": "definition-support",
+      "source_card_ids": [
+        "MSB-CARD-002",
+        "MSB-CARD-009",
+        "MSB-CARD-013",
+        "MSB-CARD-015",
+        "MSB-CARD-016",
+        "MSB-CARD-019"
+      ],
+      "protocol_ids": [
+        "BBIP-002-interoceptive-feedback",
+        "BBIP-005-endocrine-signal",
+        "BBIP-006-immune-inflammatory-signal",
+        "BBIP-007-exteroceptive-input",
+        "BBIP-008-motor-expression-output"
+      ],
+      "variables": [
+        "exchange-content",
+        "direction",
+        "cadence",
+        "precision-requirement",
+        "closed-loop-effect",
+        "implementation-independence",
+        "subject-state-dependency"
+      ],
+      "mechanism": "Interface equivalence asks whether another biological, mechanical or computational implementation can supply equivalent inputs, accept equivalent outputs and preserve closed-loop regulation within bounded error, while the original organ or device shape remains an implementation detail rather than the evidentiary target.",
+      "falsifier": "If equivalence is argued from organ naming or device similarity without exchange variables, the claim fails.",
+      "downgrade_action": "Downgrade to route signal and require protocol-row reconstruction before reuse.",
+      "scope_boundary": "This row does not assert full equivalence for any actual replacement system.",
+      "model_position": "L2/Q2 claim-boundary and variable-discovery support.",
+      "blocked_inferences": [
+        "clinical-claim",
+        "engineering-feasibility-claim",
+        "individual-prediction"
+      ]
+    },
+    {
+      "claim_id": "MSB-CL003",
+      "claim": "Closed-loop medical devices and extracorporeal supports can serve as partial analogies for body-function substitution, but only at local function scale.",
+      "evidence_role": "partial-analogy-support",
+      "source_card_ids": [
+        "MSB-CARD-003",
+        "MSB-CARD-004",
+        "MSB-CARD-005",
+        "MSB-CARD-014"
+      ],
+      "protocol_ids": [
+        "BBIP-001-perfusion-flow",
+        "BBIP-003-oxygen-glucose-supply",
+        "BBIP-004-metabolic-clearance",
+        "BBIP-005-endocrine-signal"
+      ],
+      "variables": [
+        "sensor",
+        "control-algorithm",
+        "actuator",
+        "physiological-endpoint",
+        "failure-mode"
+      ],
+      "mechanism": "A bounded body function can sometimes be partially delegated to sensor-controller-actuator systems or external support circuits with endpoint and safety monitoring.",
+      "falsifier": "If the analogy is expanded from one bounded function to whole-subject maintenance without additional interface rows and safety constraints, the inference is invalid.",
+      "downgrade_action": "Restrict evidence to local function replacement vocabulary and block whole-body inference.",
+      "scope_boundary": "This row does not convert artificial pancreas, ECMO or artificial heart evidence into long-term disembodied-subject support evidence.",
+      "model_position": "L2/Q2 partial analogy only.",
+      "blocked_inferences": [
+        "whole-body-replacement-claim",
+        "life-support-instructions",
+        "clinical-claim"
+      ]
+    },
+    {
+      "claim_id": "MSB-CL004",
+      "claim": "Restored cellular, microcirculatory or organ-level activity must be separated from restored subject-level consciousness, agency or personal continuity.",
+      "evidence_role": "boundary-support",
+      "source_card_ids": [
+        "MSB-CARD-001",
+        "MSB-CARD-012"
+      ],
+      "protocol_ids": [
+        "BBIP-001-perfusion-flow",
+        "BBIP-003-oxygen-glucose-supply",
+        "BBIP-004-metabolic-clearance"
+      ],
+      "variables": [
+        "cellular-activity",
+        "organ-function-signal",
+        "global-electrical-activity",
+        "consciousness-proxy",
+        "expressive-agency"
+      ],
+      "mechanism": "Perfusion and preservation systems can alter tissue and organ endpoints without satisfying subject-level continuity conditions.",
+      "falsifier": "If a text treats tissue viability, organ signal or cellular activity as direct evidence of a continuing person, it violates the evidence boundary.",
+      "downgrade_action": "Downgrade to substrate-maintenance boundary case and block subject-continuity language.",
+      "scope_boundary": "This row does not support revival, mind upload, personal survival or consciousness-restoration claims.",
+      "model_position": "L2/Q2 downgrade and falsifier guard.",
+      "blocked_inferences": [
+        "mind-upload-or-revival-claim",
+        "personal-survival-claim",
+        "subject-survival-claim"
+      ]
+    },
+    {
+      "claim_id": "MSB-CL005",
+      "claim": "Neural input-output interfaces can inform exteroceptive and motor-expression protocol rows, but they do not solve substrate maintenance, interoception or identity governance by themselves.",
+      "evidence_role": "boundary-support",
+      "source_card_ids": [
+        "MSB-CARD-006",
+        "MSB-CARD-013",
+        "MSB-CARD-017",
+        "MSB-CARD-018"
+      ],
+      "protocol_ids": [
+        "BBIP-007-exteroceptive-input",
+        "BBIP-008-motor-expression-output",
+        "BBIP-009-rights-identity-control"
+      ],
+      "variables": [
+        "neural-signal-stability",
+        "sensory-feedback",
+        "motor-command",
+        "agency-expression",
+        "consent-channel"
+      ],
+      "mechanism": "BCI-style channels can support selected input-output functions while leaving metabolic, affective, interoceptive, legal and identity-control dependencies unresolved.",
+      "falsifier": "If an argument infers sufficient body replacement from BCI input-output alone, it fails the minimal-sufficient-body test.",
+      "downgrade_action": "Restrict to L3/L4 input-output protocol support and require separate substrate, interoception and governance rows.",
+      "scope_boundary": "This row does not claim that BCI creates a complete artificial body, preserves identity or enables autonomous disembodied life.",
+      "model_position": "L2/Q2 interface-row support only.",
+      "blocked_inferences": [
+        "bci-implantation-or-stimulation-protocol",
+        "personal-survival-claim",
+        "engineering-feasibility-claim"
+      ]
+    },
+    {
+      "claim_id": "MSB-CL006",
+      "claim": "A minimal sufficient body hypothesis cannot enter quantitative reasoning until interface requirements, abort gates and verification boundaries are specified.",
+      "evidence_role": "method-constraint",
+      "source_card_ids": [
+        "MSB-CARD-009",
+        "MSB-CARD-010",
+        "MSB-CARD-011"
+      ],
+      "protocol_ids": [
+        "BBIP-001-perfusion-flow",
+        "BBIP-002-interoceptive-feedback",
+        "BBIP-009-rights-identity-control"
+      ],
+      "variables": [
+        "requirement",
+        "interface",
+        "verification",
+        "validation",
+        "traceability",
+        "abort-gate"
+      ],
+      "mechanism": "Systems engineering and safety methods force a route to define requirements, interfaces, verification evidence, feedback and constraint enforcement before any higher model level.",
+      "falsifier": "If a route lacks requirements, interface rows, verification evidence or abort gates, it cannot be promoted beyond candidate vocabulary.",
+      "downgrade_action": "Keep at L2/Q2; block L3/L4 admission and any calibrated or operational claim.",
+      "scope_boundary": "This row does not validate a device, protocol, surgical route, life-support system or deployment architecture.",
+      "model_position": "L2/Q2 gate for future model admission only.",
+      "blocked_inferences": [
+        "engineering-feasibility-claim",
+        "life-support-instructions",
+        "calibrated-prediction"
+      ]
+    },
+    {
+      "claim_id": "MSB-CL007",
+      "claim": "Rights, consent, expression and identity-control channels are part of the minimal-sufficient-body problem, not an external ethics appendix.",
+      "evidence_role": "risk-governance-support",
+      "source_card_ids": [
+        "MSB-CARD-009",
+        "MSB-CARD-010",
+        "MSB-CARD-011",
+        "MSB-CARD-013"
+      ],
+      "protocol_ids": [
+        "BBIP-008-motor-expression-output",
+        "BBIP-009-rights-identity-control"
+      ],
+      "variables": [
+        "consent",
+        "withdrawal",
+        "expressive-agency",
+        "proxy-decision",
+        "legal-identity",
+        "control-authority"
+      ],
+      "mechanism": "A subject-maintenance system changes who can express preferences, withdraw consent, authorize action and contest system behavior; those channels affect continuity, dignity and governance.",
+      "falsifier": "If a route maintains neural tissue while removing reliable expression, consent or control channels, it cannot count as subject-centered continuity.",
+      "downgrade_action": "Classify as substrate maintenance only; block subject-continuity and governance-complete claims.",
+      "scope_boundary": "This row does not provide legal advice, clinical consent protocol or deployment governance.",
+      "model_position": "L2/Q2 governance boundary and abort-gate vocabulary.",
+      "blocked_inferences": [
+        "legal-advice",
+        "clinical-claim",
+        "personal-survival-claim"
+      ]
+    },
+    {
+      "claim_id": "MSB-CL008",
+      "claim": "A body-substitution route cannot be treated as interface-equivalent unless it specifies exchange content, direction, cadence, precision, error tolerance, closed-loop role and subject-state dependency.",
+      "evidence_role": "method-constraint",
+      "source_card_ids": [
+        "MSB-CARD-009",
+        "MSB-CARD-010",
+        "MSB-CARD-011",
+        "MSB-CARD-015",
+        "MSB-CARD-019"
+      ],
+      "protocol_ids": [
+        "BBIP-001-perfusion-flow",
+        "BBIP-002-interoceptive-feedback",
+        "BBIP-003-oxygen-glucose-supply",
+        "BBIP-004-metabolic-clearance",
+        "BBIP-005-endocrine-signal",
+        "BBIP-006-immune-inflammatory-signal",
+        "BBIP-007-exteroceptive-input",
+        "BBIP-008-motor-expression-output"
+      ],
+      "variables": [
+        "exchange-content",
+        "direction",
+        "frequency-or-cadence",
+        "latency-bound",
+        "precision-requirement",
+        "error-tolerance",
+        "closed-loop-role",
+        "subject-state-dependency",
+        "interface-equivalence-gate"
+      ],
+      "mechanism": "Interface equivalence is a protocol-level admission gate: a candidate biological, mechanical or computational implementation must show what it sends to the brain, what it receives from the brain, how often and how accurately the exchange occurs, how errors are bounded, and how the loop preserves subject-relevant regulation.",
+      "falsifier": "If a route only names an organ, device or material substitute without defining the exchange protocol and subject-state dependency, it cannot be evaluated as interface-equivalent.",
+      "downgrade_action": "Downgrade to morphology analogy or source signal; require protocol-row reconstruction before any model bridge, equivalence language or value-chain reuse.",
+      "scope_boundary": "This row does not claim any actual replacement system currently satisfies the interface-equivalence gate.",
+      "model_position": "L2/Q2 admission rule for C1 boundary rewriting and future protocol-row review.",
+      "blocked_inferences": [
+        "whole-body-replacement-claim",
+        "engineering-feasibility-claim",
+        "calibrated-prediction"
+      ]
+    }
+  ]
+}

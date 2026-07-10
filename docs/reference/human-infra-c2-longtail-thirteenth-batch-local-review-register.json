@@ -1,0 +1,225 @@
+{
+  "schemaVersion": "human-infra.c2-longtail-thirteenth-batch-local-review-register.v1",
+  "registerId": "C2-LT-B13-LOCAL-SOURCE-CONTEXT-REVIEW-REGISTER",
+  "status": "complete-local-source-context-review-source-resolution-and-independent-fresh-review-required",
+  "purpose": "Record local structural review for all C2-LT-B13 source extraction rows after field-level extraction, confirming required fields, domain ownership files, B13-specific blocked uses and model-admission blocking while preserving three PubMed/manual-review route issues before independent fresh review, reviewed artifacts, individual advice and model admission.",
+  "sourceOfTruth": {
+    "sourceExtractionQueue": "docs/reference/human-infra-c2-longtail-thirteenth-batch-source-extraction-queue.json",
+    "sourceExtractionRegister": "docs/reference/human-infra-c2-longtail-thirteenth-batch-source-extraction-register.json",
+    "sourceCardSystem": "docs/reference/source-card-system.md",
+    "maturityGapRegister": "docs/reference/human-infra-maturity-gap-register.json"
+  },
+  "scope": {
+    "batchId": "C2-LT-B13",
+    "reviewLevel": "source-extraction-row-local-context-review",
+    "sourceExtractionTaskCount": 24,
+    "localReviewedExtractionTaskCount": 24,
+    "coveredDomainCount": 12,
+    "reviewBatchCount": 2,
+    "sourceResolutionIssueCount": 3,
+    "sourceResolutionIssueTaskIds": [
+      "C2LTB13-EXT-004",
+      "C2LTB13-EXT-017",
+      "C2LTB13-EXT-021"
+    ],
+    "independentFreshReviewCandidateTaskCount": 21,
+    "selectionRule": "Review all C2-LT-B13 source extraction rows after field-level extraction, route non-issue rows toward independent fresh review, and keep PubMed/manual-review route rows out of artifact promotion until source-resolution/manual-route review completes.",
+    "reviewedExtractionTaskIds": [
+      "C2LTB13-EXT-001",
+      "C2LTB13-EXT-002",
+      "C2LTB13-EXT-003",
+      "C2LTB13-EXT-004",
+      "C2LTB13-EXT-005",
+      "C2LTB13-EXT-006",
+      "C2LTB13-EXT-007",
+      "C2LTB13-EXT-008",
+      "C2LTB13-EXT-009",
+      "C2LTB13-EXT-010",
+      "C2LTB13-EXT-011",
+      "C2LTB13-EXT-012",
+      "C2LTB13-EXT-013",
+      "C2LTB13-EXT-014",
+      "C2LTB13-EXT-015",
+      "C2LTB13-EXT-016",
+      "C2LTB13-EXT-017",
+      "C2LTB13-EXT-018",
+      "C2LTB13-EXT-019",
+      "C2LTB13-EXT-020",
+      "C2LTB13-EXT-021",
+      "C2LTB13-EXT-022",
+      "C2LTB13-EXT-023",
+      "C2LTB13-EXT-024"
+    ],
+    "currentLimitations": [
+      "This is local structural review only and is not independent fresh review.",
+      "21 non-issue rows may only proceed to independent fresh review; they are not reviewed artifacts and not model-admissible.",
+      "3 PubMed HTTP 403/manual-review rows require source-resolution/manual-route review before fresh review, bounded artifact use or any Source Card promotion.",
+      "No row opens reviewed artifact fill, calibrated model admission, individual recommendation, endocrine, urogenital, reproductive, gynecologic, pediatric, hearing, speech, vestibular, skin, dermatology, rehabilitation, clinical or legal advice.",
+      "B13 remains pre-fresh-review and pre-artifact; every row must pass independent fresh review and artifact gates before any bounded reviewed-card artifact can be prepared."
+    ]
+  },
+  "requiredExtractionFieldsReviewed": [
+    "taskId",
+    "domainId",
+    "localDomainPath",
+    "sourceRefId",
+    "sourceTitle",
+    "sourceUrl",
+    "sourceRole",
+    "exactClaimUse",
+    "endpointDefinition",
+    "populationOrSetting",
+    "effectOrMechanismSignal",
+    "uncertaintyOrBias",
+    "transferBoundary",
+    "downgradeTriggers",
+    "modelPosition",
+    "modelAdmissionDecision",
+    "blockedUses",
+    "nextAction"
+  ],
+  "localReviewVerdict": "local-structural-review-complete-for-24-rows; 21 rows route to independent-fresh-review-only and 3 PubMed/manual-review rows require source-resolution before fresh-review or artifact use",
+  "promotionDecision": "blocked-before-independent-fresh-review; non-issue rows may only enter independent fresh review and issue rows must complete source-resolution/manual-route review first",
+  "sourceResolutionDecision": "source-resolution-required-for-C2LTB13-EXT-004-C2LTB13-EXT-017-C2LTB13-EXT-021",
+  "modelAdmissionDecision": "blocked-until-local-review-issues-source-resolution-independent-fresh-review-reviewed-artifacts-calibrated-variables-and-model-admission-gates-complete",
+  "blockedUses": [
+    "calibrated-prediction",
+    "individual-advice",
+    "individual-death-date-output",
+    "intervention-ranking",
+    "clinical-validity-claim",
+    "domain-claim-upgrade",
+    "clinical-advice",
+    "endocrine-advice",
+    "urogenital-care-advice",
+    "reproductive-health-advice",
+    "gynecologic-care-advice",
+    "pediatric-care-advice",
+    "hearing-care-advice",
+    "speech-therapy-advice",
+    "vestibular-care-advice",
+    "skin-care-advice",
+    "dermatology-care-advice",
+    "rehabilitation-advice"
+  ],
+  "requiredNextArtifacts": [
+    "c2ltb13-source-resolution-register",
+    "c2ltb13-independent-fresh-review-protocol",
+    "c2ltb13-independent-fresh-review-verdict-register",
+    "reviewed-source-card",
+    "variable-card",
+    "endpoint-card",
+    "uncertainty-card",
+    "transfer-boundary-card",
+    "downgrade-check-row"
+  ],
+  "localReviewChecks": [
+    "Each local review row is backed by the C2-LT-B13 source extraction register and source extraction queue.",
+    "Every localDomainPath exists and contains README.md and AGENTS.md.",
+    "Required extraction fields are present for all 24 source rows.",
+    "B13-specific blocked uses remain complete and include clinical, endocrine, urogenital, reproductive, gynecologic, pediatric, hearing, speech, vestibular, skin, dermatology and rehabilitation advice blocks.",
+    "Model admission remains blocked for all rows.",
+    "Three PubMed HTTP 403/manual-review rows are preserved as source-resolution findings rather than treated as fresh-review-ready evidence.",
+    "No row is promoted to reviewed artifact, advice, intervention ranking, individual prediction or calibrated model admission at local review stage."
+  ],
+  "sourceResolutionFindings": [
+    {
+      "taskId": "C2LTB13-EXT-004",
+      "issueType": "pubmed-automated-route-403-manual-source-context-review-required",
+      "reviewDisposition": "source-resolution-required-before-independent-fresh-review-or-artifact-use",
+      "correctionCandidate": "Resolve PubMed/manual route, open abstract/full-text context if available, or keep row blocked-cannot-evaluate if source context cannot be verified.",
+      "reason": "Testosterone Therapy in Men with Hypogonadism guideline returned automated-web-check-status-403-on-2026-07-11; PubMed route requires manual source-context review before extraction reuse and cannot be treated as reviewed source-context evidence at local review stage."
+    },
+    {
+      "taskId": "C2LTB13-EXT-017",
+      "issueType": "pubmed-automated-route-403-manual-source-context-review-required",
+      "reviewDisposition": "source-resolution-required-before-independent-fresh-review-or-artifact-use",
+      "correctionCandidate": "Resolve PubMed/manual route, open abstract/full-text context if available, or keep row blocked-cannot-evaluate if source context cannot be verified.",
+      "reason": "Vestibular migraine diagnostic criteria returned automated-web-check-status-403-on-2026-07-11; PubMed route requires manual source-context review before extraction reuse and cannot be treated as reviewed source-context evidence at local review stage."
+    },
+    {
+      "taskId": "C2LTB13-EXT-021",
+      "issueType": "pubmed-automated-route-403-manual-source-context-review-required",
+      "reviewDisposition": "source-resolution-required-before-independent-fresh-review-or-artifact-use",
+      "correctionCandidate": "Resolve PubMed/manual route, open abstract/full-text context if available, or keep row blocked-cannot-evaluate if source context cannot be verified.",
+      "reason": "Incontinence-associated dermatitis review returned automated-web-check-status-403-on-2026-07-11; PubMed route requires manual source-context review before extraction reuse and cannot be treated as reviewed source-context evidence at local review stage."
+    }
+  ],
+  "reviewBatches": [
+    {
+      "reviewBatchId": "C2LTB13-LR-BATCH-01",
+      "reviewLabel": "Endocrine, urogenital, reproductive and gynecologic source rows",
+      "taskIds": [
+        "C2LTB13-EXT-001",
+        "C2LTB13-EXT-002",
+        "C2LTB13-EXT-003",
+        "C2LTB13-EXT-004",
+        "C2LTB13-EXT-005",
+        "C2LTB13-EXT-006",
+        "C2LTB13-EXT-007",
+        "C2LTB13-EXT-008",
+        "C2LTB13-EXT-009",
+        "C2LTB13-EXT-010",
+        "C2LTB13-EXT-011",
+        "C2LTB13-EXT-012"
+      ],
+      "taskCount": 12,
+      "domainIds": [
+        "acromegaly-growth-hormone-cardiometabolic-continuity",
+        "erectile-dysfunction-vascular-sexual-function-continuity",
+        "hypogonadism-testosterone-sex-hormone-continuity",
+        "kidney-stone-obstruction-renal-colic-continuity",
+        "uterine-fibroids-bleeding-anemia-fertility-continuity",
+        "vulvovaginal-pain-infection-sexual-function-continuity"
+      ],
+      "reviewDecision": "local-review-mixed-pass-and-source-resolution-required",
+      "nextReviewMode": "Non-issue rows route only to independent fresh review; C2LTB13-EXT-004 requires source-resolution/manual-route review before fresh review or artifact use."
+    },
+    {
+      "reviewBatchId": "C2LTB13-LR-BATCH-02",
+      "reviewLabel": "Pediatric hearing/language, speech, vestibular and inflammatory skin source rows",
+      "taskIds": [
+        "C2LTB13-EXT-013",
+        "C2LTB13-EXT-014",
+        "C2LTB13-EXT-015",
+        "C2LTB13-EXT-016",
+        "C2LTB13-EXT-017",
+        "C2LTB13-EXT-018",
+        "C2LTB13-EXT-019",
+        "C2LTB13-EXT-020",
+        "C2LTB13-EXT-021",
+        "C2LTB13-EXT-022",
+        "C2LTB13-EXT-023",
+        "C2LTB13-EXT-024"
+      ],
+      "taskCount": 12,
+      "domainIds": [
+        "incontinence-associated-dermatitis-moisture-skin-continuity",
+        "otitis-media-child-hearing-development-continuity",
+        "psoriasis-inflammatory-skin-systemic-burden-continuity",
+        "speech-sound-disorder-articulation-phonology-continuity",
+        "vestibular-migraine-dizziness-sensory-load-continuity",
+        "vestibular-neuritis-labyrinthitis-acute-vertigo-continuity"
+      ],
+      "reviewDecision": "local-review-mixed-pass-and-source-resolution-required",
+      "nextReviewMode": "Non-issue rows route only to independent fresh review; C2LTB13-EXT-017 and C2LTB13-EXT-021 require source-resolution/manual-route review before fresh review or artifact use."
+    }
+  ],
+  "nonClaims": [
+    "This register is not independent fresh review.",
+    "This register does not create reviewed Source Cards, variable cards, endpoint cards, uncertainty cards, transfer-boundary cards or downgrade rows.",
+    "This register does not provide endocrine, urogenital, reproductive, gynecologic, pediatric, hearing, speech, vestibular, skin, dermatology, rehabilitation, clinical, legal, individual or intervention-ranking advice.",
+    "This register does not support individual death-date output, calibrated prediction, intervention ranking, clinical validity claims or domain-claim upgrades.",
+    "This register does not resolve any prior C2-LT-B1/B2/B3/B4/B5/B6/B7/B8/B9/B10/B11/B12 blocked, downgrade, source-resolution, manual-access or model-blocked row as resolved.",
+    "This register does not guarantee that future independent fresh review will allow any B13 row into bounded reviewed artifacts."
+  ],
+  "indexRequirements": [
+    "docs/reference/README.md must list the C2-LT-B13 local review register.",
+    "docs/AGENTS.md must include the register in the reference tree and responsibility list.",
+    "docs/reference/human-infra-maturity-roadmap.md must describe the C2-LT-B13 local review state and remaining source-resolution/fresh-review gates.",
+    "docs/reference/human-infra-maturity-gap-register.json must preserve B13 source-resolution, fresh-review, reviewed-artifact and model-admission gaps.",
+    "tools/README.md must list the C2-LT-B13 local review audit command.",
+    "tools/AGENTS.md must document the C2-LT-B13 local review audit boundary.",
+    "Makefile must expose the C2-LT-B13 local review audit target."
+  ]
+}

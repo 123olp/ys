@@ -1,14 +1,14 @@
 {
   "schemaVersion": "human-infra.nhanes-public-lmf-public-release-gate-validation.v1",
   "status": "pass",
-  "generatedAt": "2026-07-04T20:22:38.613323+00:00",
+  "generatedAt": "2026-07-10T22:39:16.654411+00:00",
   "sourceId": "nhanes-public-lmf-2017-2018",
   "validationPath": "web/src/data/life-path-nhanes-public-lmf-public-release-gate-validation.json",
   "inputs": [
     {
       "path": "web/src/data/life-path-nhanes-public-lmf-disclosure-review-execution-validation.json",
       "status": "pass",
-      "sha256": "9918509fbcfc92b04b718169b8002367f86b65cc71c05eccf1737f260258b98c"
+      "sha256": "069d060860bf1c49527eae4a77522a7c924b1db74714b82d581cf1629cec3484"
     },
     {
       "path": "web/src/data/life-path-nhanes-public-lmf-public-web-data-no-real-values-validation.json",
@@ -17,22 +17,22 @@
     {
       "path": "web/src/data/life-path-nhanes-public-lmf-local-run-evidence-manifest-validation.json",
       "status": "PASS",
-      "sha256": "534b73e0b91bc79400d3b001ff463e40100eb3df8165eb3fa06993dd1a1981ac"
+      "sha256": "c745813404e762a052150c516123c2fb82d81dc94fa3ebbd0a72b73fb222d760"
     },
     {
       "path": "web/src/data/life-path-nhanes-public-lmf-weighted-domain-output-readiness-validation.json",
       "status": "pass",
-      "sha256": "d09b76e652814a38af649a785e40a78773cd065d11d683985c970f57511a8c09"
+      "sha256": "4bcc1bf3723d71712a50be247b7677e1b8917ec333803d0c8deab10e93230e32"
     },
     {
       "path": "web/src/data/life-path-nhanes-public-lmf-public-output-implementation-review-template-validation.json",
       "status": "PASS",
-      "sha256": "61b3e1f62b50942c23248ef4b2b0af655cae67c22ae02c3818719a6a1eedb88e"
+      "sha256": "8e3fc4d6ead2b156fad7c6832c2007ceca2f65335159d1fc1a491f0798b1b792"
     },
     {
       "path": "web/src/data/life-path-nhanes-public-lmf-public-output-implementation-review-execution-validation.json",
       "status": "PASS",
-      "sha256": "237b875ce273bbead01a20c1bac532e0bc71e6c3b17cb05a76bbcf6e82316595"
+      "sha256": "ec9e582b486fe4754c2ba9f467da70be29c6eee45b46b3a0bb7861e1bfacaadc"
     }
   ],
   "currentDecision": {

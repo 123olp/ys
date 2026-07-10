@@ -8475,6 +8475,15 @@ def audit_model_governance_control_plane(
 
     domain_bridge_contract_decision = domain_bridge_contract.get("currentDecision")
     domain_bridge_register_decision = domain_bridge_register.get("currentDecision")
+    domain_bridge_rows = domain_bridge_register.get("bridgeRows")
+    domain_bridge_row_count = (
+        len(domain_bridge_rows) if isinstance(domain_bridge_rows, list) else None
+    )
+    domain_bridge_declared_row_count = (
+        domain_bridge_register_decision.get("rowCount")
+        if isinstance(domain_bridge_register_decision, dict)
+        else None
+    )
     domain_bridge_validation_ok = (
         domain_bridge_validation.get("schemaVersion")
         == "human-infra.domain-to-model-bridge-validation.v1"
@@ -8495,7 +8504,8 @@ def audit_model_governance_control_plane(
             if existing["domainToModelBridgeRegister"]
             else None
         )
-        and domain_bridge_validation.get("rowCount") == 14
+        and domain_bridge_validation.get("rowCount") == domain_bridge_declared_row_count
+        and domain_bridge_validation.get("rowCount") == domain_bridge_row_count
         and domain_bridge_validation.get("tierCoverage")
         == ["C1", "C2", "C3", "C4", "C5", "C6"]
         and isinstance(domain_bridge_validation.get("modelLocationCoverage"), list)
@@ -8546,7 +8556,9 @@ def audit_model_governance_control_plane(
         == str(domain_to_model_bridge_contract_path.relative_to(REPO_ROOT))
         and isinstance(domain_bridge_register_decision, dict)
         and domain_bridge_register_decision.get("representativeRowsReady") is True
-        and domain_bridge_register_decision.get("rowCount") == 14
+        and isinstance(domain_bridge_declared_row_count, int)
+        and domain_bridge_declared_row_count >= 14
+        and domain_bridge_declared_row_count == domain_bridge_row_count
         and domain_bridge_register_decision.get("highestCurrentBridgeLevel")
         == "B2-model-candidate-variable"
         and domain_bridge_register_decision.get("mappedAdmissionLevel") == "L2"
@@ -8555,14 +8567,14 @@ def audit_model_governance_control_plane(
         and domain_bridge_register_decision.get("aggregateCalibratedInputsOpened")
         is False
         and domain_bridge_register_decision.get("individualUseOpened") is False
-        and isinstance(domain_bridge_register.get("bridgeRows"), list)
-        and len(domain_bridge_register["bridgeRows"]) == 14
+        and isinstance(domain_bridge_rows, list)
+        and len(domain_bridge_rows) == domain_bridge_declared_row_count
         and all(
             isinstance(row, dict)
             and row.get("mappedAdmissionLevel") == "L2"
             and row.get("mappedQuantitativeCapability") == "Q2"
             and row.get("currentDecision") == "candidate-only"
-            for row in domain_bridge_register["bridgeRows"]
+            for row in domain_bridge_rows
         )
         and domain_bridge_validation_ok
     )

@@ -17,7 +17,7 @@
 - `accelerating-returns-technology-convergence/`：加速回报与多技术收敛，研究 AI、算力、生物技术、纳米技术、脑机接口和自动科研是否压缩技术窗口。
 - `biostasis-cryopreservation/`：生物停滞与冷冻保存，研究主体结构保存和未来恢复边界。
 - `brain-preservation-connectomics-emulation/`：脑保存、连接组和仿真，研究脑结构、人格连续性和数字化迁移边界。
-- `disembodied-cns/`：去具身中枢生命系统，研究主体生命维持与身体承载分离边界。
+- `disembodied-cns/`：去具身中枢生命系统，研究主体生命维持与身体承载分离边界；当前主线是脑-身接口协议、接口因果等价和最小充分身体，而不是复制原生器官形态。
 - `future-waiting/`：未来等待与时间差分路径，研究低固有时成本抵达未来的边界。
 - `longevity-evidence/`：长寿证据与长寿逃逸速度，研究延寿干预和寿命边界证据。
 - `memory-editing/`：记忆编辑，研究记忆痕迹、人格连续性和身份边界。

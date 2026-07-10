@@ -1,7 +1,7 @@
 {
   "schemaVersion": "human-infra.life-path-nhats-colectica-capture-packet-validator-validation.v1",
   "validationId": "nhats-r13-r14-colectica-capture-packet-validator-validation-2026-07-04",
-  "generatedAt": "2026-07-04T20:22:39.167088+00:00",
+  "generatedAt": "2026-07-10T22:39:17.245868+00:00",
   "status": "pass",
   "sourceRefs": {
     "testCasesPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_capture_packet_validator_test_cases.json",
@@ -130,8 +130,8 @@
       "actualVerdict": "rejected",
       "passed": true,
       "rejectReasons": [
-        "promotionAllowed must be false",
-        "routeClassifierAllowed must be false"
+        "routeClassifierAllowed must be false",
+        "promotionAllowed must be false"
       ],
       "cannotEvaluateReasons": [
         "review flags must all be true for a reviewable packet: concordanceReviewed, publicUseTierReviewed, questionTextReviewed, sensitiveRestrictedExclusionReviewed, universeSkipLogicReviewed, valueLabelsReviewed, variableSpecificMissingCodesReviewed"

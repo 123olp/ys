@@ -1,0 +1,153 @@
+{
+  "schemaVersion": "human-infra.c2-longtail-twelfth-batch-independent-fresh-review-protocol.v1",
+  "registerId": "human-infra-c2-longtail-twelfth-batch-independent-fresh-review-protocol-2026-07-11",
+  "status": "active-review-protocol",
+  "purpose": "Define independent fresh-review batches, required checks and promotion boundaries for the 24 locally reviewed C2-LT-B12 source-context extraction rows without storing verdicts inside the protocol artifact.",
+  "sourceOfTruth": {
+    "localReviewRegister": "docs/reference/human-infra-c2-longtail-twelfth-batch-local-review-register.json",
+    "sourceExtractionRegister": "docs/reference/human-infra-c2-longtail-twelfth-batch-source-extraction-register.json",
+    "sourceExtractionQueue": "docs/reference/human-infra-c2-longtail-twelfth-batch-source-extraction-queue.json",
+    "sourceCardSystem": "docs/reference/source-card-system.md",
+    "evidencePolicy": "docs/reference/evidence-policy.md",
+    "maturityGapRegister": "docs/reference/human-infra-maturity-gap-register.json"
+  },
+  "scope": {
+    "localReviewedExtractionTaskCount": 24,
+    "coveredDomainCount": 12,
+    "batchCount": 2,
+    "sourceResolutionIssueCount": 0,
+    "protocolEmbeddedVerdictCount": 0,
+    "selectionRule": "Every C2-LT-B12 local-review row must receive independent fresh review before any reviewed artifact, advice-use, intervention-ranking or model-admission claim.",
+    "nonClaims": [
+      "This protocol is not an independent fresh review verdict register.",
+      "This protocol does not complete Source Cards, variable cards, endpoint cards, uncertainty cards, transfer-boundary cards or downgrade-check artifacts.",
+      "This protocol does not authorize calibrated prediction, individual advice, individual death-date output, intervention ranking, domain-claim upgrade, clinical-validity claims, clinical advice, screening advice, drug advice, biologic advice, cell-therapy advice, biosecurity advice, radiation-emergency advice, infection-control advice, occupational-exposure advice, urogenital-care advice, allergy-care advice, eye-care advice, hearing-care advice, speech-therapy advice or rehabilitation advice."
+    ]
+  },
+  "requiredReviewFields": [
+    "sourceIdentityVerdict",
+    "sourceContextVerdict",
+    "exactClaimUseVerdict",
+    "domainTransferVerdict",
+    "modelPositionVerdict",
+    "uncertaintyBoundaryVerdict",
+    "downgradeVerdict",
+    "blockedUseVerdict",
+    "adviceUseBoundaryVerdict",
+    "reviewerNote"
+  ],
+  "verdictTaxonomy": [
+    "support-with-boundary",
+    "bounded-support",
+    "downgrade-required",
+    "reject-source-context-mismatch",
+    "cannot-evaluate-insufficient-context"
+  ],
+  "artifactPromotionDecisions": [
+    "eligible-for-bounded-artifact-fill",
+    "downgrade-before-fill",
+    "rejected-no-fill",
+    "blocked-cannot-evaluate"
+  ],
+  "blockedUses": [
+    "calibrated-prediction",
+    "individual-advice",
+    "individual-death-date-output",
+    "intervention-ranking",
+    "clinical-validity-claim",
+    "domain-claim-upgrade",
+    "clinical-advice",
+    "screening-advice",
+    "drug-advice",
+    "biologic-advice",
+    "cell-therapy-advice",
+    "biosecurity-advice",
+    "radiation-emergency-advice",
+    "infection-control-advice",
+    "occupational-exposure-advice",
+    "urogenital-care-advice",
+    "allergy-care-advice",
+    "eye-care-advice",
+    "hearing-care-advice",
+    "speech-therapy-advice",
+    "rehabilitation-advice"
+  ],
+  "promotionRules": [
+    "support-with-boundary or bounded-support may proceed only to eligible-for-bounded-artifact-fill, never directly to model admission, intervention ranking, advice use or clinical-validity claims.",
+    "downgrade-required rows must carry a downgrade note before artifact fill and remain blocked for calibrated prediction, individual advice and all C2-LT-B12 advice-use categories.",
+    "reject-source-context-mismatch rows must not fill reviewed artifacts until source identity, source role or source context is corrected and independently checked.",
+    "cannot-evaluate-insufficient-context rows remain blocked until a primary or authoritative source can be independently checked.",
+    "Artifact promotion decisions are limited to eligible-for-bounded-artifact-fill, downgrade-before-fill, rejected-no-fill and blocked-cannot-evaluate."
+  ],
+  "indexRequirements": [
+    "docs/AGENTS.md",
+    "docs/reference/README.md",
+    "docs/reference/human-infra-maturity-roadmap.md",
+    "docs/reference/human-infra-maturity-gap-register.json",
+    "tools/README.md",
+    "tools/AGENTS.md",
+    "Makefile"
+  ],
+  "reviewBatches": [
+    {
+      "batchId": "C2LTB12-FRB-01-cell-organoid-biosecurity-radiation-sterilization-bloodborne",
+      "sourceLocalReviewBatchId": "C2LTB12-LR-BATCH-01",
+      "batchLabel": "工程化细胞疗法、类器官/器官芯片、生物安全、辐射核安全、消毒灭菌和血源暴露连续性域",
+      "taskCount": 12,
+      "taskIds": [
+        "C2LTB12-EXT-001",
+        "C2LTB12-EXT-002",
+        "C2LTB12-EXT-003",
+        "C2LTB12-EXT-004",
+        "C2LTB12-EXT-005",
+        "C2LTB12-EXT-006",
+        "C2LTB12-EXT-007",
+        "C2LTB12-EXT-008",
+        "C2LTB12-EXT-009",
+        "C2LTB12-EXT-010",
+        "C2LTB12-EXT-011",
+        "C2LTB12-EXT-012"
+      ],
+      "domainIds": [
+        "bloodborne-pathogens-sharps-injury-worker-continuity",
+        "engineered-cell-therapy-regenerative-platforms",
+        "organoids-organ-on-chip-disease-models",
+        "radiation-nuclear-safety-protection",
+        "sterilization-disinfection-infection-control",
+        "synthetic-biology-biosecurity"
+      ],
+      "reviewPriority": "first",
+      "reviewFocus": "independent fresh review must verify engineered cell therapy, organoid/tissue-chip, synthetic biology biosecurity, radiation/nuclear safety, sterilization/disinfection and bloodborne exposure source scope; no cell-therapy, biosecurity, radiation-emergency, infection-control, occupational-exposure or clinical advice and no artifact promotion before independent verdicts"
+    },
+    {
+      "batchId": "C2LTB12-FRB-02-urogenital-allergy-dryeye-auditory-speech",
+      "sourceLocalReviewBatchId": "C2LTB12-LR-BATCH-02",
+      "batchLabel": "泌尿生殖、过敏特应、干眼、听觉处理、构音障碍和言语失用连续性域",
+      "taskCount": 12,
+      "taskIds": [
+        "C2LTB12-EXT-013",
+        "C2LTB12-EXT-014",
+        "C2LTB12-EXT-015",
+        "C2LTB12-EXT-016",
+        "C2LTB12-EXT-017",
+        "C2LTB12-EXT-018",
+        "C2LTB12-EXT-019",
+        "C2LTB12-EXT-020",
+        "C2LTB12-EXT-021",
+        "C2LTB12-EXT-022",
+        "C2LTB12-EXT-023",
+        "C2LTB12-EXT-024"
+      ],
+      "domainIds": [
+        "allergic-atopic-disease-immunologic-burden-continuity",
+        "apraxia-of-speech-motor-planning-continuity",
+        "auditory-processing-listening-effort-continuity",
+        "dry-eye-ocular-surface-comfort-continuity",
+        "dysarthria-speech-intelligibility-continuity",
+        "urogenital-continuity"
+      ],
+      "reviewPriority": "second",
+      "reviewFocus": "independent fresh review must verify urogenital, allergic/atopic, dry-eye, auditory-processing, dysarthria and apraxia-of-speech source scope; no urogenital-care, allergy-care, eye-care, hearing-care, speech-therapy, rehabilitation or clinical advice and no artifact promotion before independent verdicts"
+    }
+  ]
+}

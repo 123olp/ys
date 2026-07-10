@@ -1,7 +1,7 @@
 {
   "schemaVersion": "human-infra.nhanes-public-lmf-dof-sparse-domain-diagnostic-validation.v1",
   "status": "pass",
-  "generatedAt": "2026-07-04T20:22:38.292950+00:00",
+  "generatedAt": "2026-07-10T22:39:16.319684+00:00",
   "diagnosticPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhanes_public_lmf_dof_sparse_domain_diagnostic.json",
   "diagnosticSha256": "3e17d5b2923a1a06c32cbe172ba22412fffe16c33bf1a241061eee142d50612a",
   "validationPath": "web/src/data/life-path-nhanes-public-lmf-dof-sparse-domain-diagnostic-validation.json",

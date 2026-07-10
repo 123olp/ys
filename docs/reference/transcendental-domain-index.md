@@ -38,7 +38,7 @@
 | F | 记忆编辑 | `domains/c1-boundary-rewriting/memory-editing/` | `README.md` / `AGENTS.md` 已建 | 本文件、`research-domain-atlas.md`、`domain-map.md`、根 `README.md` |
 | G | AI 认知增强 | `domains/c3-generation-engine/cognitive-augmentation/` | `README.md` / `AGENTS.md` 已建 | 本文件、`research-domain-atlas.md`、`domain-map.md`、根 `README.md` |
 | H | 未来等待 / 时间差分路径 | `domains/c1-boundary-rewriting/future-waiting/` | `README.md` / `AGENTS.md` 已建 | 本文件、`research-domain-atlas.md`、`domain-map.md`、根 `README.md` |
-| I | 去具身中枢生命系统 | `domains/c1-boundary-rewriting/disembodied-cns/` | `README.md` / `AGENTS.md` 已建 | 本文件、`research-domain-atlas.md`、`domain-map.md`、根 `README.md` |
+| I | 去具身中枢生命系统 / 脑-身接口协议 | `domains/c1-boundary-rewriting/disembodied-cns/` | `README.md` / `AGENTS.md` 已建 | 本文件、`research-domain-atlas.md`、`domain-map.md`、根 `README.md` |
 | J | 冷冻保存 / 生物停滞 | `domains/c1-boundary-rewriting/biostasis-cryopreservation/` | `README.md` / `AGENTS.md` 已建 | 本文件、`research-domain-atlas.md`、`domain-map.md`、根 `README.md` |
 | K | 资源、环境、社会支持基础设施 | `domains/c6-local-unlocking/resource-social-infra/` | `README.md` / `AGENTS.md` 已建 | 本文件、`research-domain-atlas.md`、`domain-map.md`、根 `README.md` |
 
@@ -61,7 +61,7 @@
 | 记忆能否被干预且不摧毁人格连续性 | `domains/c1-boundary-rewriting/memory-editing/` | 记忆痕迹、创伤记忆、人格连续性、同意边界 | 记忆干预必须以主体连续性、同意和不可逆损害边界为先 |
 | AI 与工具是否放大主体而不是吞噬主体 | `domains/c3-generation-engine/cognitive-augmentation/` | AI 认知增强、学习、判断、记忆外化、工具能力 | 关注能力放大、依赖风险、授权边界和主体控制权 |
 | 等待未来的主观成本是否可压缩 | `domains/c1-boundary-rewriting/future-waiting/` | 未来等待、固有时差分、休眠、长寿逃逸窗口、递归等待 | 时间差只是一种输入变量，必须同时审查退出、连续性、风险和采用概率 |
-| 中枢主体是否能脱离原身体被外部维持 | `domains/c1-boundary-rewriting/disembodied-cns/` | 去具身中枢生命系统、外部维生、接口闭环、控制权 | 只做高层架构和伦理边界，不提供实验或人体改造路径 |
+| 中枢主体是否能脱离原身体被外部维持 | `domains/c1-boundary-rewriting/disembodied-cns/` | 去具身中枢生命系统、脑-身接口协议、接口因果等价、最小充分身体、外部维生、控制权 | 只做高层架构、变量协议和伦理边界，不提供实验、人体改造路径或工程可行性声称 |
 | 生物损耗是否可暂停或显著减速 | `domains/c1-boundary-rewriting/biostasis-cryopreservation/` | 冷冻保存、生物停滞、休眠、未来修复依赖 | 关注保存质量、结构完整性、可逆性和未来修复条件，不承诺复活 |
 | 资源、环境和社会支持是否稳定 | `domains/c6-local-unlocking/resource-social-infra/` | 食物、水、能源、住房、照护、医疗可及、社会支持 | 没有外部底座，主体持续性会被稀缺、断供、排除和孤立重新压回有限窗口 |
 

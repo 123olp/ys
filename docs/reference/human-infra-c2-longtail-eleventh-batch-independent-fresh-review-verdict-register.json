@@ -1,0 +1,1967 @@
+{
+  "schemaVersion": "human-infra.c2-longtail-eleventh-batch-independent-fresh-review-verdict-register.v1",
+  "registerId": "human-infra-c2-longtail-eleventh-batch-independent-fresh-review-verdict-register-2026-07-11",
+  "status": "active-c2ltb11-independent-fresh-review-verdict-register-model-blocked",
+  "purpose": "Record independent fresh-review verdicts for the 24 C2-LT-B11 locally reviewed source-context extraction rows, allowing bounded reviewed-artifact preparation only for full-context eligible rows while keeping PubMed-only route rows, all advice uses, intervention ranking and calibrated model admission blocked.",
+  "sourceOfTruth": {
+    "independentFreshReviewProtocol": "docs/reference/human-infra-c2-longtail-eleventh-batch-independent-fresh-review-protocol.json",
+    "localReviewRegister": "docs/reference/human-infra-c2-longtail-eleventh-batch-local-review-register.json",
+    "sourceExtractionRegister": "docs/reference/human-infra-c2-longtail-eleventh-batch-source-extraction-register.json",
+    "evidencePolicy": "docs/reference/evidence-policy.md",
+    "maturityGapRegister": "docs/reference/human-infra-maturity-gap-register.json"
+  },
+  "scope": {
+    "batchId": "C2-LT-B11",
+    "reviewedTaskCount": 24,
+    "eligibleForBoundedArtifactPrepCount": 21,
+    "downgradeBeforeFillCount": 0,
+    "rejectedNoFillCount": 0,
+    "blockedCannotEvaluateCount": 3,
+    "modelAdmissionCount": 0,
+    "adviceUseAdmissionCount": 0,
+    "reviewedTaskIds": [
+      "C2LTB11-EXT-001",
+      "C2LTB11-EXT-002",
+      "C2LTB11-EXT-003",
+      "C2LTB11-EXT-004",
+      "C2LTB11-EXT-005",
+      "C2LTB11-EXT-006",
+      "C2LTB11-EXT-007",
+      "C2LTB11-EXT-008",
+      "C2LTB11-EXT-009",
+      "C2LTB11-EXT-010",
+      "C2LTB11-EXT-011",
+      "C2LTB11-EXT-012",
+      "C2LTB11-EXT-013",
+      "C2LTB11-EXT-014",
+      "C2LTB11-EXT-015",
+      "C2LTB11-EXT-016",
+      "C2LTB11-EXT-017",
+      "C2LTB11-EXT-018",
+      "C2LTB11-EXT-019",
+      "C2LTB11-EXT-020",
+      "C2LTB11-EXT-021",
+      "C2LTB11-EXT-022",
+      "C2LTB11-EXT-023",
+      "C2LTB11-EXT-024"
+    ],
+    "blockedTaskIds": [
+      "C2LTB11-EXT-022",
+      "C2LTB11-EXT-023",
+      "C2LTB11-EXT-024"
+    ]
+  },
+  "summary": {
+    "verdict": "21 rows are eligible only for bounded reviewed artifact preparation; 3 PubMed-only rows remain blocked-cannot-evaluate pending publisher/full-context or manual/fulltext review; zero rows are admitted to model variables, clinical validity, advice, intervention ranking or individual prediction.",
+    "requiredNextArtifact": "human-infra-c2-longtail-eleventh-batch-reviewed-card-artifact-register.json",
+    "remainingBoundary": "Even after artifact fill, B11 remains L1/L2 vocabulary evidence and cannot satisfy calibrated model admission."
+  },
+  "blockedUses": [
+    "calibrated-prediction",
+    "individual-advice",
+    "individual-death-date-output",
+    "intervention-ranking",
+    "clinical-validity-claim",
+    "domain-claim-upgrade",
+    "medical-advice",
+    "dental-advice",
+    "vision-advice",
+    "hearing-device-advice",
+    "vestibular-rehabilitation-advice",
+    "contact-lens-advice",
+    "diabetic-footwear-advice",
+    "emergency-care-advice",
+    "nutrition-advice",
+    "swallowing-advice",
+    "pain-care-advice",
+    "infection-care-advice",
+    "mobility-advice",
+    "occupational-noise-advice"
+  ],
+  "freshReviewVerdicts": [
+    {
+      "reviewId": "C2LTB11-FRV-001",
+      "batchId": "C2-LT-B11",
+      "taskId": "C2LTB11-EXT-001",
+      "domainId": "swallowing-dysphagia-aspiration-nutrition",
+      "localDomainPath": "domains/c2-source-maintenance/swallowing-dysphagia-aspiration-nutrition",
+      "sourceRefId": "C2LTB11-SRC-01-1",
+      "sourceTitle": "ASHA Practice Portal: Adult Dysphagia",
+      "sourceUrl": "https://www.asha.org/practice-portal/clinical-topics/adult-dysphagia/",
+      "freshReviewDate": "2026-07-11",
+      "freshReviewMode": "independent-source-context-review-from-registered-source-route-and-extraction-boundary",
+      "sourceIdentityVerdict": "bounded-support",
+      "sourceContextVerdict": "support-with-boundary",
+      "exactClaimUseVerdict": "bounded-support",
+      "domainTransferVerdict": "bounded-support",
+      "modelPositionVerdict": "support-with-boundary",
+      "uncertaintyBoundaryVerdict": "support-with-boundary",
+      "downgradeVerdict": "support-with-boundary",
+      "blockedUseVerdict": "support-with-boundary",
+      "adviceUseBoundaryVerdict": "support-with-boundary",
+      "reviewerVerdict": "eligible-for-bounded-reviewed-artifact-prep",
+      "freshReviewFinding": "ASHA Practice Portal: Adult Dysphagia can be used only as bounded source-context support for swallowing-dysphagia-aspiration-nutrition source, variable, endpoint, uncertainty, transfer-boundary and downgrade artifacts. It does not authorize advice, treatment selection, device use, clinical validity, individual prediction, intervention ranking or model admission.",
+      "downgradeOrBlockReason": "Downgrade if the claim is used beyond the registered source role, endpoint boundary, population/setting boundary, uncertainty boundary, advice-use boundary or model-position boundary.",
+      "artifactPromotionDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "allowedArtifactTypes": [
+        "reviewed-source-card",
+        "reviewed-variable-card",
+        "reviewed-endpoint-card",
+        "reviewed-uncertainty-card",
+        "reviewed-transfer-boundary-card",
+        "reviewed-downgrade-check"
+      ],
+      "modelAdmissionDecision": "blocked-pending-b11-reviewed-artifact-gates-and-calibrated-model-validation",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade",
+        "medical-advice",
+        "dental-advice",
+        "vision-advice",
+        "hearing-device-advice",
+        "vestibular-rehabilitation-advice",
+        "contact-lens-advice",
+        "diabetic-footwear-advice",
+        "emergency-care-advice",
+        "nutrition-advice",
+        "swallowing-advice",
+        "pain-care-advice",
+        "infection-care-advice",
+        "mobility-advice",
+        "occupational-noise-advice"
+      ],
+      "reviewEvidenceTrace": [
+        {
+          "url": "https://www.asha.org/practice-portal/clinical-topics/adult-dysphagia/",
+          "evidenceType": "source-url",
+          "finding": "Registered candidate source route retained for bounded source-context review."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-eleventh-batch-source-extraction-register.json",
+          "evidenceType": "source-extraction-row",
+          "finding": "Bounded extraction row C2LTB11-EXT-001 supplies exact claim use, endpoint, population, uncertainty, transfer boundary and model-position text."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-eleventh-batch-local-review-register.json",
+          "evidenceType": "local-review-register",
+          "finding": "Local structural review routes all B11 rows to independent fresh review with zero local source-resolution issues."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-eleventh-batch-independent-fresh-review-protocol.json",
+          "evidenceType": "independent-fresh-review-protocol",
+          "finding": "Protocol defines required review fields, verdict taxonomy, artifact promotion decisions and B11-specific blocked uses."
+        }
+      ],
+      "nextAction": "Promote to bounded reviewed-card artifact fill only; keep advice uses, clinical-validity claims, intervention ranking, individual prediction and calibrated model admission blocked."
+    },
+    {
+      "reviewId": "C2LTB11-FRV-002",
+      "batchId": "C2-LT-B11",
+      "taskId": "C2LTB11-EXT-002",
+      "domainId": "swallowing-dysphagia-aspiration-nutrition",
+      "localDomainPath": "domains/c2-source-maintenance/swallowing-dysphagia-aspiration-nutrition",
+      "sourceRefId": "C2LTB11-SRC-01-2",
+      "sourceTitle": "NCBI Bookshelf: Dysphagia",
+      "sourceUrl": "https://www.ncbi.nlm.nih.gov/books/NBK559174/",
+      "freshReviewDate": "2026-07-11",
+      "freshReviewMode": "independent-source-context-review-from-registered-source-route-and-extraction-boundary",
+      "sourceIdentityVerdict": "bounded-support",
+      "sourceContextVerdict": "support-with-boundary",
+      "exactClaimUseVerdict": "bounded-support",
+      "domainTransferVerdict": "bounded-support",
+      "modelPositionVerdict": "support-with-boundary",
+      "uncertaintyBoundaryVerdict": "support-with-boundary",
+      "downgradeVerdict": "support-with-boundary",
+      "blockedUseVerdict": "support-with-boundary",
+      "adviceUseBoundaryVerdict": "support-with-boundary",
+      "reviewerVerdict": "eligible-for-bounded-reviewed-artifact-prep",
+      "freshReviewFinding": "NCBI Bookshelf: Dysphagia can be used only as bounded source-context support for swallowing-dysphagia-aspiration-nutrition source, variable, endpoint, uncertainty, transfer-boundary and downgrade artifacts. It does not authorize advice, treatment selection, device use, clinical validity, individual prediction, intervention ranking or model admission.",
+      "downgradeOrBlockReason": "Downgrade if the claim is used beyond the registered source role, endpoint boundary, population/setting boundary, uncertainty boundary, advice-use boundary or model-position boundary.",
+      "artifactPromotionDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "allowedArtifactTypes": [
+        "reviewed-source-card",
+        "reviewed-variable-card",
+        "reviewed-endpoint-card",
+        "reviewed-uncertainty-card",
+        "reviewed-transfer-boundary-card",
+        "reviewed-downgrade-check"
+      ],
+      "modelAdmissionDecision": "blocked-pending-b11-reviewed-artifact-gates-and-calibrated-model-validation",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade",
+        "medical-advice",
+        "dental-advice",
+        "vision-advice",
+        "hearing-device-advice",
+        "vestibular-rehabilitation-advice",
+        "contact-lens-advice",
+        "diabetic-footwear-advice",
+        "emergency-care-advice",
+        "nutrition-advice",
+        "swallowing-advice",
+        "pain-care-advice",
+        "infection-care-advice",
+        "mobility-advice",
+        "occupational-noise-advice"
+      ],
+      "reviewEvidenceTrace": [
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK559174/",
+          "evidenceType": "source-url",
+          "finding": "Registered candidate source route retained for bounded source-context review."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-eleventh-batch-source-extraction-register.json",
+          "evidenceType": "source-extraction-row",
+          "finding": "Bounded extraction row C2LTB11-EXT-002 supplies exact claim use, endpoint, population, uncertainty, transfer boundary and model-position text."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-eleventh-batch-local-review-register.json",
+          "evidenceType": "local-review-register",
+          "finding": "Local structural review routes all B11 rows to independent fresh review with zero local source-resolution issues."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-eleventh-batch-independent-fresh-review-protocol.json",
+          "evidenceType": "independent-fresh-review-protocol",
+          "finding": "Protocol defines required review fields, verdict taxonomy, artifact promotion decisions and B11-specific blocked uses."
+        }
+      ],
+      "nextAction": "Promote to bounded reviewed-card artifact fill only; keep advice uses, clinical-validity claims, intervention ranking, individual prediction and calibrated model admission blocked."
+    },
+    {
+      "reviewId": "C2LTB11-FRV-003",
+      "batchId": "C2-LT-B11",
+      "taskId": "C2LTB11-EXT-003",
+      "domainId": "dental-pain-emergency-infection-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/dental-pain-emergency-infection-continuity",
+      "sourceRefId": "C2LTB11-SRC-02-1",
+      "sourceTitle": "MedlinePlus Medical Encyclopedia: Tooth abscess",
+      "sourceUrl": "https://medlineplus.gov/ency/article/001060.htm",
+      "freshReviewDate": "2026-07-11",
+      "freshReviewMode": "independent-source-context-review-from-registered-source-route-and-extraction-boundary",
+      "sourceIdentityVerdict": "bounded-support",
+      "sourceContextVerdict": "support-with-boundary",
+      "exactClaimUseVerdict": "bounded-support",
+      "domainTransferVerdict": "bounded-support",
+      "modelPositionVerdict": "support-with-boundary",
+      "uncertaintyBoundaryVerdict": "support-with-boundary",
+      "downgradeVerdict": "support-with-boundary",
+      "blockedUseVerdict": "support-with-boundary",
+      "adviceUseBoundaryVerdict": "support-with-boundary",
+      "reviewerVerdict": "eligible-for-bounded-reviewed-artifact-prep",
+      "freshReviewFinding": "MedlinePlus Medical Encyclopedia: Tooth abscess can be used only as bounded source-context support for dental-pain-emergency-infection-continuity source, variable, endpoint, uncertainty, transfer-boundary and downgrade artifacts. It does not authorize advice, treatment selection, device use, clinical validity, individual prediction, intervention ranking or model admission.",
+      "downgradeOrBlockReason": "Downgrade if the claim is used beyond the registered source role, endpoint boundary, population/setting boundary, uncertainty boundary, advice-use boundary or model-position boundary.",
+      "artifactPromotionDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "allowedArtifactTypes": [
+        "reviewed-source-card",
+        "reviewed-variable-card",
+        "reviewed-endpoint-card",
+        "reviewed-uncertainty-card",
+        "reviewed-transfer-boundary-card",
+        "reviewed-downgrade-check"
+      ],
+      "modelAdmissionDecision": "blocked-pending-b11-reviewed-artifact-gates-and-calibrated-model-validation",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade",
+        "medical-advice",
+        "dental-advice",
+        "vision-advice",
+        "hearing-device-advice",
+        "vestibular-rehabilitation-advice",
+        "contact-lens-advice",
+        "diabetic-footwear-advice",
+        "emergency-care-advice",
+        "nutrition-advice",
+        "swallowing-advice",
+        "pain-care-advice",
+        "infection-care-advice",
+        "mobility-advice",
+        "occupational-noise-advice"
+      ],
+      "reviewEvidenceTrace": [
+        {
+          "url": "https://medlineplus.gov/ency/article/001060.htm",
+          "evidenceType": "source-url",
+          "finding": "Registered candidate source route retained for bounded source-context review."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-eleventh-batch-source-extraction-register.json",
+          "evidenceType": "source-extraction-row",
+          "finding": "Bounded extraction row C2LTB11-EXT-003 supplies exact claim use, endpoint, population, uncertainty, transfer boundary and model-position text."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-eleventh-batch-local-review-register.json",
+          "evidenceType": "local-review-register",
+          "finding": "Local structural review routes all B11 rows to independent fresh review with zero local source-resolution issues."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-eleventh-batch-independent-fresh-review-protocol.json",
+          "evidenceType": "independent-fresh-review-protocol",
+          "finding": "Protocol defines required review fields, verdict taxonomy, artifact promotion decisions and B11-specific blocked uses."
+        }
+      ],
+      "nextAction": "Promote to bounded reviewed-card artifact fill only; keep advice uses, clinical-validity claims, intervention ranking, individual prediction and calibrated model admission blocked."
+    },
+    {
+      "reviewId": "C2LTB11-FRV-004",
+      "batchId": "C2-LT-B11",
+      "taskId": "C2LTB11-EXT-004",
+      "domainId": "dental-pain-emergency-infection-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/dental-pain-emergency-infection-continuity",
+      "sourceRefId": "C2LTB11-SRC-02-2",
+      "sourceTitle": "NCBI Bookshelf: Dental Emergencies",
+      "sourceUrl": "https://www.ncbi.nlm.nih.gov/books/NBK589664/",
+      "freshReviewDate": "2026-07-11",
+      "freshReviewMode": "independent-source-context-review-from-registered-source-route-and-extraction-boundary",
+      "sourceIdentityVerdict": "bounded-support",
+      "sourceContextVerdict": "support-with-boundary",
+      "exactClaimUseVerdict": "bounded-support",
+      "domainTransferVerdict": "bounded-support",
+      "modelPositionVerdict": "support-with-boundary",
+      "uncertaintyBoundaryVerdict": "support-with-boundary",
+      "downgradeVerdict": "support-with-boundary",
+      "blockedUseVerdict": "support-with-boundary",
+      "adviceUseBoundaryVerdict": "support-with-boundary",
+      "reviewerVerdict": "eligible-for-bounded-reviewed-artifact-prep",
+      "freshReviewFinding": "NCBI Bookshelf: Dental Emergencies can be used only as bounded source-context support for dental-pain-emergency-infection-continuity source, variable, endpoint, uncertainty, transfer-boundary and downgrade artifacts. It does not authorize advice, treatment selection, device use, clinical validity, individual prediction, intervention ranking or model admission.",
+      "downgradeOrBlockReason": "Downgrade if the claim is used beyond the registered source role, endpoint boundary, population/setting boundary, uncertainty boundary, advice-use boundary or model-position boundary.",
+      "artifactPromotionDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "allowedArtifactTypes": [
+        "reviewed-source-card",
+        "reviewed-variable-card",
+        "reviewed-endpoint-card",
+        "reviewed-uncertainty-card",
+        "reviewed-transfer-boundary-card",
+        "reviewed-downgrade-check"
+      ],
+      "modelAdmissionDecision": "blocked-pending-b11-reviewed-artifact-gates-and-calibrated-model-validation",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade",
+        "medical-advice",
+        "dental-advice",
+        "vision-advice",
+        "hearing-device-advice",
+        "vestibular-rehabilitation-advice",
+        "contact-lens-advice",
+        "diabetic-footwear-advice",
+        "emergency-care-advice",
+        "nutrition-advice",
+        "swallowing-advice",
+        "pain-care-advice",
+        "infection-care-advice",
+        "mobility-advice",
+        "occupational-noise-advice"
+      ],
+      "reviewEvidenceTrace": [
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK589664/",
+          "evidenceType": "source-url",
+          "finding": "Registered candidate source route retained for bounded source-context review."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-eleventh-batch-source-extraction-register.json",
+          "evidenceType": "source-extraction-row",
+          "finding": "Bounded extraction row C2LTB11-EXT-004 supplies exact claim use, endpoint, population, uncertainty, transfer boundary and model-position text."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-eleventh-batch-local-review-register.json",
+          "evidenceType": "local-review-register",
+          "finding": "Local structural review routes all B11 rows to independent fresh review with zero local source-resolution issues."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-eleventh-batch-independent-fresh-review-protocol.json",
+          "evidenceType": "independent-fresh-review-protocol",
+          "finding": "Protocol defines required review fields, verdict taxonomy, artifact promotion decisions and B11-specific blocked uses."
+        }
+      ],
+      "nextAction": "Promote to bounded reviewed-card artifact fill only; keep advice uses, clinical-validity claims, intervention ranking, individual prediction and calibrated model admission blocked."
+    },
+    {
+      "reviewId": "C2LTB11-FRV-005",
+      "batchId": "C2-LT-B11",
+      "taskId": "C2LTB11-EXT-005",
+      "domainId": "contact-lens-hygiene-eye-infection-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/contact-lens-hygiene-eye-infection-continuity",
+      "sourceRefId": "C2LTB11-SRC-03-1",
+      "sourceTitle": "PMC: Contact Lens Wearer Demographics and Risk Behaviors for Contact Lens-Related Eye Infections",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5779588/",
+      "freshReviewDate": "2026-07-11",
+      "freshReviewMode": "independent-source-context-review-from-registered-source-route-and-extraction-boundary",
+      "sourceIdentityVerdict": "bounded-support",
+      "sourceContextVerdict": "support-with-boundary",
+      "exactClaimUseVerdict": "bounded-support",
+      "domainTransferVerdict": "bounded-support",
+      "modelPositionVerdict": "support-with-boundary",
+      "uncertaintyBoundaryVerdict": "support-with-boundary",
+      "downgradeVerdict": "support-with-boundary",
+      "blockedUseVerdict": "support-with-boundary",
+      "adviceUseBoundaryVerdict": "support-with-boundary",
+      "reviewerVerdict": "eligible-for-bounded-reviewed-artifact-prep",
+      "freshReviewFinding": "PMC: Contact Lens Wearer Demographics and Risk Behaviors for Contact Lens-Related Eye Infections can be used only as bounded source-context support for contact-lens-hygiene-eye-infection-continuity source, variable, endpoint, uncertainty, transfer-boundary and downgrade artifacts. It does not authorize advice, treatment selection, device use, clinical validity, individual prediction, intervention ranking or model admission.",
+      "downgradeOrBlockReason": "Downgrade if the claim is used beyond the registered source role, endpoint boundary, population/setting boundary, uncertainty boundary, advice-use boundary or model-position boundary.",
+      "artifactPromotionDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "allowedArtifactTypes": [
+        "reviewed-source-card",
+        "reviewed-variable-card",
+        "reviewed-endpoint-card",
+        "reviewed-uncertainty-card",
+        "reviewed-transfer-boundary-card",
+        "reviewed-downgrade-check"
+      ],
+      "modelAdmissionDecision": "blocked-pending-b11-reviewed-artifact-gates-and-calibrated-model-validation",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade",
+        "medical-advice",
+        "dental-advice",
+        "vision-advice",
+        "hearing-device-advice",
+        "vestibular-rehabilitation-advice",
+        "contact-lens-advice",
+        "diabetic-footwear-advice",
+        "emergency-care-advice",
+        "nutrition-advice",
+        "swallowing-advice",
+        "pain-care-advice",
+        "infection-care-advice",
+        "mobility-advice",
+        "occupational-noise-advice"
+      ],
+      "reviewEvidenceTrace": [
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5779588/",
+          "evidenceType": "source-url",
+          "finding": "Registered candidate source route retained for bounded source-context review."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-eleventh-batch-source-extraction-register.json",
+          "evidenceType": "source-extraction-row",
+          "finding": "Bounded extraction row C2LTB11-EXT-005 supplies exact claim use, endpoint, population, uncertainty, transfer boundary and model-position text."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-eleventh-batch-local-review-register.json",
+          "evidenceType": "local-review-register",
+          "finding": "Local structural review routes all B11 rows to independent fresh review with zero local source-resolution issues."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-eleventh-batch-independent-fresh-review-protocol.json",
+          "evidenceType": "independent-fresh-review-protocol",
+          "finding": "Protocol defines required review fields, verdict taxonomy, artifact promotion decisions and B11-specific blocked uses."
+        }
+      ],
+      "nextAction": "Promote to bounded reviewed-card artifact fill only; keep advice uses, clinical-validity claims, intervention ranking, individual prediction and calibrated model admission blocked."
+    },
+    {
+      "reviewId": "C2LTB11-FRV-006",
+      "batchId": "C2-LT-B11",
+      "taskId": "C2LTB11-EXT-006",
+      "domainId": "contact-lens-hygiene-eye-infection-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/contact-lens-hygiene-eye-infection-continuity",
+      "sourceRefId": "C2LTB11-SRC-03-2",
+      "sourceTitle": "NCBI Bookshelf: Contact Lens-Related Complications",
+      "sourceUrl": "https://www.ncbi.nlm.nih.gov/books/NBK587443/",
+      "freshReviewDate": "2026-07-11",
+      "freshReviewMode": "independent-source-context-review-from-registered-source-route-and-extraction-boundary",
+      "sourceIdentityVerdict": "bounded-support",
+      "sourceContextVerdict": "support-with-boundary",
+      "exactClaimUseVerdict": "bounded-support",
+      "domainTransferVerdict": "bounded-support",
+      "modelPositionVerdict": "support-with-boundary",
+      "uncertaintyBoundaryVerdict": "support-with-boundary",
+      "downgradeVerdict": "support-with-boundary",
+      "blockedUseVerdict": "support-with-boundary",
+      "adviceUseBoundaryVerdict": "support-with-boundary",
+      "reviewerVerdict": "eligible-for-bounded-reviewed-artifact-prep",
+      "freshReviewFinding": "NCBI Bookshelf: Contact Lens-Related Complications can be used only as bounded source-context support for contact-lens-hygiene-eye-infection-continuity source, variable, endpoint, uncertainty, transfer-boundary and downgrade artifacts. It does not authorize advice, treatment selection, device use, clinical validity, individual prediction, intervention ranking or model admission.",
+      "downgradeOrBlockReason": "Downgrade if the claim is used beyond the registered source role, endpoint boundary, population/setting boundary, uncertainty boundary, advice-use boundary or model-position boundary.",
+      "artifactPromotionDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "allowedArtifactTypes": [
+        "reviewed-source-card",
+        "reviewed-variable-card",
+        "reviewed-endpoint-card",
+        "reviewed-uncertainty-card",
+        "reviewed-transfer-boundary-card",
+        "reviewed-downgrade-check"
+      ],
+      "modelAdmissionDecision": "blocked-pending-b11-reviewed-artifact-gates-and-calibrated-model-validation",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade",
+        "medical-advice",
+        "dental-advice",
+        "vision-advice",
+        "hearing-device-advice",
+        "vestibular-rehabilitation-advice",
+        "contact-lens-advice",
+        "diabetic-footwear-advice",
+        "emergency-care-advice",
+        "nutrition-advice",
+        "swallowing-advice",
+        "pain-care-advice",
+        "infection-care-advice",
+        "mobility-advice",
+        "occupational-noise-advice"
+      ],
+      "reviewEvidenceTrace": [
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK587443/",
+          "evidenceType": "source-url",
+          "finding": "Registered candidate source route retained for bounded source-context review."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-eleventh-batch-source-extraction-register.json",
+          "evidenceType": "source-extraction-row",
+          "finding": "Bounded extraction row C2LTB11-EXT-006 supplies exact claim use, endpoint, population, uncertainty, transfer boundary and model-position text."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-eleventh-batch-local-review-register.json",
+          "evidenceType": "local-review-register",
+          "finding": "Local structural review routes all B11 rows to independent fresh review with zero local source-resolution issues."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-eleventh-batch-independent-fresh-review-protocol.json",
+          "evidenceType": "independent-fresh-review-protocol",
+          "finding": "Protocol defines required review fields, verdict taxonomy, artifact promotion decisions and B11-specific blocked uses."
+        }
+      ],
+      "nextAction": "Promote to bounded reviewed-card artifact fill only; keep advice uses, clinical-validity claims, intervention ranking, individual prediction and calibrated model admission blocked."
+    },
+    {
+      "reviewId": "C2LTB11-FRV-007",
+      "batchId": "C2-LT-B11",
+      "taskId": "C2LTB11-EXT-007",
+      "domainId": "diabetic-therapeutic-footwear-offloading-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/diabetic-therapeutic-footwear-offloading-continuity",
+      "sourceRefId": "C2LTB11-SRC-04-1",
+      "sourceTitle": "CMS LCD: Therapeutic Shoes for Persons with Diabetes",
+      "sourceUrl": "https://www.cms.gov/medicare-coverage-database/view/lcd.aspx?LCDId=33369",
+      "freshReviewDate": "2026-07-11",
+      "freshReviewMode": "independent-source-context-review-from-registered-source-route-and-extraction-boundary",
+      "sourceIdentityVerdict": "bounded-support",
+      "sourceContextVerdict": "support-with-boundary",
+      "exactClaimUseVerdict": "bounded-support",
+      "domainTransferVerdict": "bounded-support",
+      "modelPositionVerdict": "support-with-boundary",
+      "uncertaintyBoundaryVerdict": "support-with-boundary",
+      "downgradeVerdict": "support-with-boundary",
+      "blockedUseVerdict": "support-with-boundary",
+      "adviceUseBoundaryVerdict": "support-with-boundary",
+      "reviewerVerdict": "eligible-for-bounded-reviewed-artifact-prep",
+      "freshReviewFinding": "CMS LCD: Therapeutic Shoes for Persons with Diabetes can be used only as bounded source-context support for diabetic-therapeutic-footwear-offloading-continuity source, variable, endpoint, uncertainty, transfer-boundary and downgrade artifacts. It does not authorize advice, treatment selection, device use, clinical validity, individual prediction, intervention ranking or model admission.",
+      "downgradeOrBlockReason": "Downgrade if the claim is used beyond the registered source role, endpoint boundary, population/setting boundary, uncertainty boundary, advice-use boundary or model-position boundary.",
+      "artifactPromotionDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "allowedArtifactTypes": [
+        "reviewed-source-card",
+        "reviewed-variable-card",
+        "reviewed-endpoint-card",
+        "reviewed-uncertainty-card",
+        "reviewed-transfer-boundary-card",
+        "reviewed-downgrade-check"
+      ],
+      "modelAdmissionDecision": "blocked-pending-b11-reviewed-artifact-gates-and-calibrated-model-validation",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade",
+        "medical-advice",
+        "dental-advice",
+        "vision-advice",
+        "hearing-device-advice",
+        "vestibular-rehabilitation-advice",
+        "contact-lens-advice",
+        "diabetic-footwear-advice",
+        "emergency-care-advice",
+        "nutrition-advice",
+        "swallowing-advice",
+        "pain-care-advice",
+        "infection-care-advice",
+        "mobility-advice",
+        "occupational-noise-advice"
+      ],
+      "reviewEvidenceTrace": [
+        {
+          "url": "https://www.cms.gov/medicare-coverage-database/view/lcd.aspx?LCDId=33369",
+          "evidenceType": "source-url",
+          "finding": "Registered candidate source route retained for bounded source-context review."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-eleventh-batch-source-extraction-register.json",
+          "evidenceType": "source-extraction-row",
+          "finding": "Bounded extraction row C2LTB11-EXT-007 supplies exact claim use, endpoint, population, uncertainty, transfer boundary and model-position text."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-eleventh-batch-local-review-register.json",
+          "evidenceType": "local-review-register",
+          "finding": "Local structural review routes all B11 rows to independent fresh review with zero local source-resolution issues."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-eleventh-batch-independent-fresh-review-protocol.json",
+          "evidenceType": "independent-fresh-review-protocol",
+          "finding": "Protocol defines required review fields, verdict taxonomy, artifact promotion decisions and B11-specific blocked uses."
+        }
+      ],
+      "nextAction": "Promote to bounded reviewed-card artifact fill only; keep advice uses, clinical-validity claims, intervention ranking, individual prediction and calibrated model admission blocked."
+    },
+    {
+      "reviewId": "C2LTB11-FRV-008",
+      "batchId": "C2-LT-B11",
+      "taskId": "C2LTB11-EXT-008",
+      "domainId": "diabetic-therapeutic-footwear-offloading-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/diabetic-therapeutic-footwear-offloading-continuity",
+      "sourceRefId": "C2LTB11-SRC-04-2",
+      "sourceTitle": "NCBI Bookshelf: Diabetic Foot Care",
+      "sourceUrl": "https://www.ncbi.nlm.nih.gov/books/NBK553110/",
+      "freshReviewDate": "2026-07-11",
+      "freshReviewMode": "independent-source-context-review-from-registered-source-route-and-extraction-boundary",
+      "sourceIdentityVerdict": "bounded-support",
+      "sourceContextVerdict": "support-with-boundary",
+      "exactClaimUseVerdict": "bounded-support",
+      "domainTransferVerdict": "bounded-support",
+      "modelPositionVerdict": "support-with-boundary",
+      "uncertaintyBoundaryVerdict": "support-with-boundary",
+      "downgradeVerdict": "support-with-boundary",
+      "blockedUseVerdict": "support-with-boundary",
+      "adviceUseBoundaryVerdict": "support-with-boundary",
+      "reviewerVerdict": "eligible-for-bounded-reviewed-artifact-prep",
+      "freshReviewFinding": "NCBI Bookshelf: Diabetic Foot Care can be used only as bounded source-context support for diabetic-therapeutic-footwear-offloading-continuity source, variable, endpoint, uncertainty, transfer-boundary and downgrade artifacts. It does not authorize advice, treatment selection, device use, clinical validity, individual prediction, intervention ranking or model admission.",
+      "downgradeOrBlockReason": "Downgrade if the claim is used beyond the registered source role, endpoint boundary, population/setting boundary, uncertainty boundary, advice-use boundary or model-position boundary.",
+      "artifactPromotionDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "allowedArtifactTypes": [
+        "reviewed-source-card",
+        "reviewed-variable-card",
+        "reviewed-endpoint-card",
+        "reviewed-uncertainty-card",
+        "reviewed-transfer-boundary-card",
+        "reviewed-downgrade-check"
+      ],
+      "modelAdmissionDecision": "blocked-pending-b11-reviewed-artifact-gates-and-calibrated-model-validation",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade",
+        "medical-advice",
+        "dental-advice",
+        "vision-advice",
+        "hearing-device-advice",
+        "vestibular-rehabilitation-advice",
+        "contact-lens-advice",
+        "diabetic-footwear-advice",
+        "emergency-care-advice",
+        "nutrition-advice",
+        "swallowing-advice",
+        "pain-care-advice",
+        "infection-care-advice",
+        "mobility-advice",
+        "occupational-noise-advice"
+      ],
+      "reviewEvidenceTrace": [
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK553110/",
+          "evidenceType": "source-url",
+          "finding": "Registered candidate source route retained for bounded source-context review."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-eleventh-batch-source-extraction-register.json",
+          "evidenceType": "source-extraction-row",
+          "finding": "Bounded extraction row C2LTB11-EXT-008 supplies exact claim use, endpoint, population, uncertainty, transfer boundary and model-position text."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-eleventh-batch-local-review-register.json",
+          "evidenceType": "local-review-register",
+          "finding": "Local structural review routes all B11 rows to independent fresh review with zero local source-resolution issues."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-eleventh-batch-independent-fresh-review-protocol.json",
+          "evidenceType": "independent-fresh-review-protocol",
+          "finding": "Protocol defines required review fields, verdict taxonomy, artifact promotion decisions and B11-specific blocked uses."
+        }
+      ],
+      "nextAction": "Promote to bounded reviewed-card artifact fill only; keep advice uses, clinical-validity claims, intervention ranking, individual prediction and calibrated model admission blocked."
+    },
+    {
+      "reviewId": "C2LTB11-FRV-009",
+      "batchId": "C2-LT-B11",
+      "taskId": "C2LTB11-EXT-009",
+      "domainId": "eye-injury-urgent-vision-protection-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/eye-injury-urgent-vision-protection-continuity",
+      "sourceRefId": "C2LTB11-SRC-05-1",
+      "sourceTitle": "MedlinePlus Medical Encyclopedia: Eye emergencies",
+      "sourceUrl": "https://medlineplus.gov/ency/article/000054.htm",
+      "freshReviewDate": "2026-07-11",
+      "freshReviewMode": "independent-source-context-review-from-registered-source-route-and-extraction-boundary",
+      "sourceIdentityVerdict": "bounded-support",
+      "sourceContextVerdict": "support-with-boundary",
+      "exactClaimUseVerdict": "bounded-support",
+      "domainTransferVerdict": "bounded-support",
+      "modelPositionVerdict": "support-with-boundary",
+      "uncertaintyBoundaryVerdict": "support-with-boundary",
+      "downgradeVerdict": "support-with-boundary",
+      "blockedUseVerdict": "support-with-boundary",
+      "adviceUseBoundaryVerdict": "support-with-boundary",
+      "reviewerVerdict": "eligible-for-bounded-reviewed-artifact-prep",
+      "freshReviewFinding": "MedlinePlus Medical Encyclopedia: Eye emergencies can be used only as bounded source-context support for eye-injury-urgent-vision-protection-continuity source, variable, endpoint, uncertainty, transfer-boundary and downgrade artifacts. It does not authorize advice, treatment selection, device use, clinical validity, individual prediction, intervention ranking or model admission.",
+      "downgradeOrBlockReason": "Downgrade if the claim is used beyond the registered source role, endpoint boundary, population/setting boundary, uncertainty boundary, advice-use boundary or model-position boundary.",
+      "artifactPromotionDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "allowedArtifactTypes": [
+        "reviewed-source-card",
+        "reviewed-variable-card",
+        "reviewed-endpoint-card",
+        "reviewed-uncertainty-card",
+        "reviewed-transfer-boundary-card",
+        "reviewed-downgrade-check"
+      ],
+      "modelAdmissionDecision": "blocked-pending-b11-reviewed-artifact-gates-and-calibrated-model-validation",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade",
+        "medical-advice",
+        "dental-advice",
+        "vision-advice",
+        "hearing-device-advice",
+        "vestibular-rehabilitation-advice",
+        "contact-lens-advice",
+        "diabetic-footwear-advice",
+        "emergency-care-advice",
+        "nutrition-advice",
+        "swallowing-advice",
+        "pain-care-advice",
+        "infection-care-advice",
+        "mobility-advice",
+        "occupational-noise-advice"
+      ],
+      "reviewEvidenceTrace": [
+        {
+          "url": "https://medlineplus.gov/ency/article/000054.htm",
+          "evidenceType": "source-url",
+          "finding": "Registered candidate source route retained for bounded source-context review."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-eleventh-batch-source-extraction-register.json",
+          "evidenceType": "source-extraction-row",
+          "finding": "Bounded extraction row C2LTB11-EXT-009 supplies exact claim use, endpoint, population, uncertainty, transfer boundary and model-position text."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-eleventh-batch-local-review-register.json",
+          "evidenceType": "local-review-register",
+          "finding": "Local structural review routes all B11 rows to independent fresh review with zero local source-resolution issues."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-eleventh-batch-independent-fresh-review-protocol.json",
+          "evidenceType": "independent-fresh-review-protocol",
+          "finding": "Protocol defines required review fields, verdict taxonomy, artifact promotion decisions and B11-specific blocked uses."
+        }
+      ],
+      "nextAction": "Promote to bounded reviewed-card artifact fill only; keep advice uses, clinical-validity claims, intervention ranking, individual prediction and calibrated model admission blocked."
+    },
+    {
+      "reviewId": "C2LTB11-FRV-010",
+      "batchId": "C2-LT-B11",
+      "taskId": "C2LTB11-EXT-010",
+      "domainId": "eye-injury-urgent-vision-protection-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/eye-injury-urgent-vision-protection-continuity",
+      "sourceRefId": "C2LTB11-SRC-05-2",
+      "sourceTitle": "OSHA: Eye and Face Protection",
+      "sourceUrl": "https://www.osha.gov/eye-face-protection",
+      "freshReviewDate": "2026-07-11",
+      "freshReviewMode": "independent-source-context-review-from-registered-source-route-and-extraction-boundary",
+      "sourceIdentityVerdict": "bounded-support",
+      "sourceContextVerdict": "support-with-boundary",
+      "exactClaimUseVerdict": "bounded-support",
+      "domainTransferVerdict": "bounded-support",
+      "modelPositionVerdict": "support-with-boundary",
+      "uncertaintyBoundaryVerdict": "support-with-boundary",
+      "downgradeVerdict": "support-with-boundary",
+      "blockedUseVerdict": "support-with-boundary",
+      "adviceUseBoundaryVerdict": "support-with-boundary",
+      "reviewerVerdict": "eligible-for-bounded-reviewed-artifact-prep",
+      "freshReviewFinding": "OSHA: Eye and Face Protection can be used only as bounded source-context support for eye-injury-urgent-vision-protection-continuity source, variable, endpoint, uncertainty, transfer-boundary and downgrade artifacts. It does not authorize advice, treatment selection, device use, clinical validity, individual prediction, intervention ranking or model admission.",
+      "downgradeOrBlockReason": "Downgrade if the claim is used beyond the registered source role, endpoint boundary, population/setting boundary, uncertainty boundary, advice-use boundary or model-position boundary.",
+      "artifactPromotionDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "allowedArtifactTypes": [
+        "reviewed-source-card",
+        "reviewed-variable-card",
+        "reviewed-endpoint-card",
+        "reviewed-uncertainty-card",
+        "reviewed-transfer-boundary-card",
+        "reviewed-downgrade-check"
+      ],
+      "modelAdmissionDecision": "blocked-pending-b11-reviewed-artifact-gates-and-calibrated-model-validation",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade",
+        "medical-advice",
+        "dental-advice",
+        "vision-advice",
+        "hearing-device-advice",
+        "vestibular-rehabilitation-advice",
+        "contact-lens-advice",
+        "diabetic-footwear-advice",
+        "emergency-care-advice",
+        "nutrition-advice",
+        "swallowing-advice",
+        "pain-care-advice",
+        "infection-care-advice",
+        "mobility-advice",
+        "occupational-noise-advice"
+      ],
+      "reviewEvidenceTrace": [
+        {
+          "url": "https://www.osha.gov/eye-face-protection",
+          "evidenceType": "source-url",
+          "finding": "Registered candidate source route retained for bounded source-context review."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-eleventh-batch-source-extraction-register.json",
+          "evidenceType": "source-extraction-row",
+          "finding": "Bounded extraction row C2LTB11-EXT-010 supplies exact claim use, endpoint, population, uncertainty, transfer boundary and model-position text."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-eleventh-batch-local-review-register.json",
+          "evidenceType": "local-review-register",
+          "finding": "Local structural review routes all B11 rows to independent fresh review with zero local source-resolution issues."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-eleventh-batch-independent-fresh-review-protocol.json",
+          "evidenceType": "independent-fresh-review-protocol",
+          "finding": "Protocol defines required review fields, verdict taxonomy, artifact promotion decisions and B11-specific blocked uses."
+        }
+      ],
+      "nextAction": "Promote to bounded reviewed-card artifact fill only; keep advice uses, clinical-validity claims, intervention ranking, individual prediction and calibrated model admission blocked."
+    },
+    {
+      "reviewId": "C2LTB11-FRV-011",
+      "batchId": "C2-LT-B11",
+      "taskId": "C2LTB11-EXT-011",
+      "domainId": "hearing-assistive-devices-alerting-access-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/hearing-assistive-devices-alerting-access-continuity",
+      "sourceRefId": "C2LTB11-SRC-06-1",
+      "sourceTitle": "NIDCD: Assistive Devices for People with Hearing or Speech Disorders",
+      "sourceUrl": "https://www.nidcd.nih.gov/health/assistive-devices-people-hearing-voice-speech-or-language-disorders",
+      "freshReviewDate": "2026-07-11",
+      "freshReviewMode": "independent-source-context-review-from-registered-source-route-and-extraction-boundary",
+      "sourceIdentityVerdict": "bounded-support",
+      "sourceContextVerdict": "support-with-boundary",
+      "exactClaimUseVerdict": "bounded-support",
+      "domainTransferVerdict": "bounded-support",
+      "modelPositionVerdict": "support-with-boundary",
+      "uncertaintyBoundaryVerdict": "support-with-boundary",
+      "downgradeVerdict": "support-with-boundary",
+      "blockedUseVerdict": "support-with-boundary",
+      "adviceUseBoundaryVerdict": "support-with-boundary",
+      "reviewerVerdict": "eligible-for-bounded-reviewed-artifact-prep",
+      "freshReviewFinding": "NIDCD: Assistive Devices for People with Hearing or Speech Disorders can be used only as bounded source-context support for hearing-assistive-devices-alerting-access-continuity source, variable, endpoint, uncertainty, transfer-boundary and downgrade artifacts. It does not authorize advice, treatment selection, device use, clinical validity, individual prediction, intervention ranking or model admission.",
+      "downgradeOrBlockReason": "Downgrade if the claim is used beyond the registered source role, endpoint boundary, population/setting boundary, uncertainty boundary, advice-use boundary or model-position boundary.",
+      "artifactPromotionDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "allowedArtifactTypes": [
+        "reviewed-source-card",
+        "reviewed-variable-card",
+        "reviewed-endpoint-card",
+        "reviewed-uncertainty-card",
+        "reviewed-transfer-boundary-card",
+        "reviewed-downgrade-check"
+      ],
+      "modelAdmissionDecision": "blocked-pending-b11-reviewed-artifact-gates-and-calibrated-model-validation",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade",
+        "medical-advice",
+        "dental-advice",
+        "vision-advice",
+        "hearing-device-advice",
+        "vestibular-rehabilitation-advice",
+        "contact-lens-advice",
+        "diabetic-footwear-advice",
+        "emergency-care-advice",
+        "nutrition-advice",
+        "swallowing-advice",
+        "pain-care-advice",
+        "infection-care-advice",
+        "mobility-advice",
+        "occupational-noise-advice"
+      ],
+      "reviewEvidenceTrace": [
+        {
+          "url": "https://www.nidcd.nih.gov/health/assistive-devices-people-hearing-voice-speech-or-language-disorders",
+          "evidenceType": "source-url",
+          "finding": "Registered candidate source route retained for bounded source-context review."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-eleventh-batch-source-extraction-register.json",
+          "evidenceType": "source-extraction-row",
+          "finding": "Bounded extraction row C2LTB11-EXT-011 supplies exact claim use, endpoint, population, uncertainty, transfer boundary and model-position text."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-eleventh-batch-local-review-register.json",
+          "evidenceType": "local-review-register",
+          "finding": "Local structural review routes all B11 rows to independent fresh review with zero local source-resolution issues."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-eleventh-batch-independent-fresh-review-protocol.json",
+          "evidenceType": "independent-fresh-review-protocol",
+          "finding": "Protocol defines required review fields, verdict taxonomy, artifact promotion decisions and B11-specific blocked uses."
+        }
+      ],
+      "nextAction": "Promote to bounded reviewed-card artifact fill only; keep advice uses, clinical-validity claims, intervention ranking, individual prediction and calibrated model admission blocked."
+    },
+    {
+      "reviewId": "C2LTB11-FRV-012",
+      "batchId": "C2-LT-B11",
+      "taskId": "C2LTB11-EXT-012",
+      "domainId": "hearing-assistive-devices-alerting-access-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/hearing-assistive-devices-alerting-access-continuity",
+      "sourceRefId": "C2LTB11-SRC-06-2",
+      "sourceTitle": "NCBI Bookshelf: Hearing Technologies - Expanding Options",
+      "sourceUrl": "https://www.ncbi.nlm.nih.gov/books/NBK385313/",
+      "freshReviewDate": "2026-07-11",
+      "freshReviewMode": "independent-source-context-review-from-registered-source-route-and-extraction-boundary",
+      "sourceIdentityVerdict": "bounded-support",
+      "sourceContextVerdict": "support-with-boundary",
+      "exactClaimUseVerdict": "bounded-support",
+      "domainTransferVerdict": "bounded-support",
+      "modelPositionVerdict": "support-with-boundary",
+      "uncertaintyBoundaryVerdict": "support-with-boundary",
+      "downgradeVerdict": "support-with-boundary",
+      "blockedUseVerdict": "support-with-boundary",
+      "adviceUseBoundaryVerdict": "support-with-boundary",
+      "reviewerVerdict": "eligible-for-bounded-reviewed-artifact-prep",
+      "freshReviewFinding": "NCBI Bookshelf: Hearing Technologies - Expanding Options can be used only as bounded source-context support for hearing-assistive-devices-alerting-access-continuity source, variable, endpoint, uncertainty, transfer-boundary and downgrade artifacts. It does not authorize advice, treatment selection, device use, clinical validity, individual prediction, intervention ranking or model admission.",
+      "downgradeOrBlockReason": "Downgrade if the claim is used beyond the registered source role, endpoint boundary, population/setting boundary, uncertainty boundary, advice-use boundary or model-position boundary.",
+      "artifactPromotionDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "allowedArtifactTypes": [
+        "reviewed-source-card",
+        "reviewed-variable-card",
+        "reviewed-endpoint-card",
+        "reviewed-uncertainty-card",
+        "reviewed-transfer-boundary-card",
+        "reviewed-downgrade-check"
+      ],
+      "modelAdmissionDecision": "blocked-pending-b11-reviewed-artifact-gates-and-calibrated-model-validation",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade",
+        "medical-advice",
+        "dental-advice",
+        "vision-advice",
+        "hearing-device-advice",
+        "vestibular-rehabilitation-advice",
+        "contact-lens-advice",
+        "diabetic-footwear-advice",
+        "emergency-care-advice",
+        "nutrition-advice",
+        "swallowing-advice",
+        "pain-care-advice",
+        "infection-care-advice",
+        "mobility-advice",
+        "occupational-noise-advice"
+      ],
+      "reviewEvidenceTrace": [
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK385313/",
+          "evidenceType": "source-url",
+          "finding": "Registered candidate source route retained for bounded source-context review."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-eleventh-batch-source-extraction-register.json",
+          "evidenceType": "source-extraction-row",
+          "finding": "Bounded extraction row C2LTB11-EXT-012 supplies exact claim use, endpoint, population, uncertainty, transfer boundary and model-position text."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-eleventh-batch-local-review-register.json",
+          "evidenceType": "local-review-register",
+          "finding": "Local structural review routes all B11 rows to independent fresh review with zero local source-resolution issues."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-eleventh-batch-independent-fresh-review-protocol.json",
+          "evidenceType": "independent-fresh-review-protocol",
+          "finding": "Protocol defines required review fields, verdict taxonomy, artifact promotion decisions and B11-specific blocked uses."
+        }
+      ],
+      "nextAction": "Promote to bounded reviewed-card artifact fill only; keep advice uses, clinical-validity claims, intervention ranking, individual prediction and calibrated model admission blocked."
+    },
+    {
+      "reviewId": "C2LTB11-FRV-013",
+      "batchId": "C2-LT-B11",
+      "taskId": "C2LTB11-EXT-013",
+      "domainId": "noise-induced-hearing-loss-prevention-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/noise-induced-hearing-loss-prevention-continuity",
+      "sourceRefId": "C2LTB11-SRC-07-1",
+      "sourceTitle": "NIDCD: Noise-Induced Hearing Loss",
+      "sourceUrl": "https://www.nidcd.nih.gov/health/noise-induced-hearing-loss",
+      "freshReviewDate": "2026-07-11",
+      "freshReviewMode": "independent-source-context-review-from-registered-source-route-and-extraction-boundary",
+      "sourceIdentityVerdict": "bounded-support",
+      "sourceContextVerdict": "support-with-boundary",
+      "exactClaimUseVerdict": "bounded-support",
+      "domainTransferVerdict": "bounded-support",
+      "modelPositionVerdict": "support-with-boundary",
+      "uncertaintyBoundaryVerdict": "support-with-boundary",
+      "downgradeVerdict": "support-with-boundary",
+      "blockedUseVerdict": "support-with-boundary",
+      "adviceUseBoundaryVerdict": "support-with-boundary",
+      "reviewerVerdict": "eligible-for-bounded-reviewed-artifact-prep",
+      "freshReviewFinding": "NIDCD: Noise-Induced Hearing Loss can be used only as bounded source-context support for noise-induced-hearing-loss-prevention-continuity source, variable, endpoint, uncertainty, transfer-boundary and downgrade artifacts. It does not authorize advice, treatment selection, device use, clinical validity, individual prediction, intervention ranking or model admission.",
+      "downgradeOrBlockReason": "Downgrade if the claim is used beyond the registered source role, endpoint boundary, population/setting boundary, uncertainty boundary, advice-use boundary or model-position boundary.",
+      "artifactPromotionDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "allowedArtifactTypes": [
+        "reviewed-source-card",
+        "reviewed-variable-card",
+        "reviewed-endpoint-card",
+        "reviewed-uncertainty-card",
+        "reviewed-transfer-boundary-card",
+        "reviewed-downgrade-check"
+      ],
+      "modelAdmissionDecision": "blocked-pending-b11-reviewed-artifact-gates-and-calibrated-model-validation",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade",
+        "medical-advice",
+        "dental-advice",
+        "vision-advice",
+        "hearing-device-advice",
+        "vestibular-rehabilitation-advice",
+        "contact-lens-advice",
+        "diabetic-footwear-advice",
+        "emergency-care-advice",
+        "nutrition-advice",
+        "swallowing-advice",
+        "pain-care-advice",
+        "infection-care-advice",
+        "mobility-advice",
+        "occupational-noise-advice"
+      ],
+      "reviewEvidenceTrace": [
+        {
+          "url": "https://www.nidcd.nih.gov/health/noise-induced-hearing-loss",
+          "evidenceType": "source-url",
+          "finding": "Registered candidate source route retained for bounded source-context review."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-eleventh-batch-source-extraction-register.json",
+          "evidenceType": "source-extraction-row",
+          "finding": "Bounded extraction row C2LTB11-EXT-013 supplies exact claim use, endpoint, population, uncertainty, transfer boundary and model-position text."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-eleventh-batch-local-review-register.json",
+          "evidenceType": "local-review-register",
+          "finding": "Local structural review routes all B11 rows to independent fresh review with zero local source-resolution issues."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-eleventh-batch-independent-fresh-review-protocol.json",
+          "evidenceType": "independent-fresh-review-protocol",
+          "finding": "Protocol defines required review fields, verdict taxonomy, artifact promotion decisions and B11-specific blocked uses."
+        }
+      ],
+      "nextAction": "Promote to bounded reviewed-card artifact fill only; keep advice uses, clinical-validity claims, intervention ranking, individual prediction and calibrated model admission blocked."
+    },
+    {
+      "reviewId": "C2LTB11-FRV-014",
+      "batchId": "C2-LT-B11",
+      "taskId": "C2LTB11-EXT-014",
+      "domainId": "noise-induced-hearing-loss-prevention-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/noise-induced-hearing-loss-prevention-continuity",
+      "sourceRefId": "C2LTB11-SRC-07-2",
+      "sourceTitle": "OSHA: Occupational Noise Exposure",
+      "sourceUrl": "https://www.osha.gov/noise",
+      "freshReviewDate": "2026-07-11",
+      "freshReviewMode": "independent-source-context-review-from-registered-source-route-and-extraction-boundary",
+      "sourceIdentityVerdict": "bounded-support",
+      "sourceContextVerdict": "support-with-boundary",
+      "exactClaimUseVerdict": "bounded-support",
+      "domainTransferVerdict": "bounded-support",
+      "modelPositionVerdict": "support-with-boundary",
+      "uncertaintyBoundaryVerdict": "support-with-boundary",
+      "downgradeVerdict": "support-with-boundary",
+      "blockedUseVerdict": "support-with-boundary",
+      "adviceUseBoundaryVerdict": "support-with-boundary",
+      "reviewerVerdict": "eligible-for-bounded-reviewed-artifact-prep",
+      "freshReviewFinding": "OSHA: Occupational Noise Exposure can be used only as bounded source-context support for noise-induced-hearing-loss-prevention-continuity source, variable, endpoint, uncertainty, transfer-boundary and downgrade artifacts. It does not authorize advice, treatment selection, device use, clinical validity, individual prediction, intervention ranking or model admission.",
+      "downgradeOrBlockReason": "Downgrade if the claim is used beyond the registered source role, endpoint boundary, population/setting boundary, uncertainty boundary, advice-use boundary or model-position boundary.",
+      "artifactPromotionDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "allowedArtifactTypes": [
+        "reviewed-source-card",
+        "reviewed-variable-card",
+        "reviewed-endpoint-card",
+        "reviewed-uncertainty-card",
+        "reviewed-transfer-boundary-card",
+        "reviewed-downgrade-check"
+      ],
+      "modelAdmissionDecision": "blocked-pending-b11-reviewed-artifact-gates-and-calibrated-model-validation",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade",
+        "medical-advice",
+        "dental-advice",
+        "vision-advice",
+        "hearing-device-advice",
+        "vestibular-rehabilitation-advice",
+        "contact-lens-advice",
+        "diabetic-footwear-advice",
+        "emergency-care-advice",
+        "nutrition-advice",
+        "swallowing-advice",
+        "pain-care-advice",
+        "infection-care-advice",
+        "mobility-advice",
+        "occupational-noise-advice"
+      ],
+      "reviewEvidenceTrace": [
+        {
+          "url": "https://www.osha.gov/noise",
+          "evidenceType": "source-url",
+          "finding": "Registered candidate source route retained for bounded source-context review."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-eleventh-batch-source-extraction-register.json",
+          "evidenceType": "source-extraction-row",
+          "finding": "Bounded extraction row C2LTB11-EXT-014 supplies exact claim use, endpoint, population, uncertainty, transfer boundary and model-position text."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-eleventh-batch-local-review-register.json",
+          "evidenceType": "local-review-register",
+          "finding": "Local structural review routes all B11 rows to independent fresh review with zero local source-resolution issues."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-eleventh-batch-independent-fresh-review-protocol.json",
+          "evidenceType": "independent-fresh-review-protocol",
+          "finding": "Protocol defines required review fields, verdict taxonomy, artifact promotion decisions and B11-specific blocked uses."
+        }
+      ],
+      "nextAction": "Promote to bounded reviewed-card artifact fill only; keep advice uses, clinical-validity claims, intervention ranking, individual prediction and calibrated model admission blocked."
+    },
+    {
+      "reviewId": "C2LTB11-FRV-015",
+      "batchId": "C2-LT-B11",
+      "taskId": "C2LTB11-EXT-015",
+      "domainId": "pediatric-vision-screening-amblyopia-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/pediatric-vision-screening-amblyopia-continuity",
+      "sourceRefId": "C2LTB11-SRC-08-1",
+      "sourceTitle": "USPSTF: Vision in Children Ages 6 Months to 5 Years - Screening",
+      "sourceUrl": "https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/vision-in-children-ages-6-months-to-5-years-screening",
+      "freshReviewDate": "2026-07-11",
+      "freshReviewMode": "independent-source-context-review-from-registered-source-route-and-extraction-boundary",
+      "sourceIdentityVerdict": "bounded-support",
+      "sourceContextVerdict": "support-with-boundary",
+      "exactClaimUseVerdict": "bounded-support",
+      "domainTransferVerdict": "bounded-support",
+      "modelPositionVerdict": "support-with-boundary",
+      "uncertaintyBoundaryVerdict": "support-with-boundary",
+      "downgradeVerdict": "support-with-boundary",
+      "blockedUseVerdict": "support-with-boundary",
+      "adviceUseBoundaryVerdict": "support-with-boundary",
+      "reviewerVerdict": "eligible-for-bounded-reviewed-artifact-prep",
+      "freshReviewFinding": "USPSTF: Vision in Children Ages 6 Months to 5 Years - Screening can be used only as bounded source-context support for pediatric-vision-screening-amblyopia-continuity source, variable, endpoint, uncertainty, transfer-boundary and downgrade artifacts. It does not authorize advice, treatment selection, device use, clinical validity, individual prediction, intervention ranking or model admission.",
+      "downgradeOrBlockReason": "Downgrade if the claim is used beyond the registered source role, endpoint boundary, population/setting boundary, uncertainty boundary, advice-use boundary or model-position boundary.",
+      "artifactPromotionDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "allowedArtifactTypes": [
+        "reviewed-source-card",
+        "reviewed-variable-card",
+        "reviewed-endpoint-card",
+        "reviewed-uncertainty-card",
+        "reviewed-transfer-boundary-card",
+        "reviewed-downgrade-check"
+      ],
+      "modelAdmissionDecision": "blocked-pending-b11-reviewed-artifact-gates-and-calibrated-model-validation",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade",
+        "medical-advice",
+        "dental-advice",
+        "vision-advice",
+        "hearing-device-advice",
+        "vestibular-rehabilitation-advice",
+        "contact-lens-advice",
+        "diabetic-footwear-advice",
+        "emergency-care-advice",
+        "nutrition-advice",
+        "swallowing-advice",
+        "pain-care-advice",
+        "infection-care-advice",
+        "mobility-advice",
+        "occupational-noise-advice"
+      ],
+      "reviewEvidenceTrace": [
+        {
+          "url": "https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/vision-in-children-ages-6-months-to-5-years-screening",
+          "evidenceType": "source-url",
+          "finding": "Registered candidate source route retained for bounded source-context review."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-eleventh-batch-source-extraction-register.json",
+          "evidenceType": "source-extraction-row",
+          "finding": "Bounded extraction row C2LTB11-EXT-015 supplies exact claim use, endpoint, population, uncertainty, transfer boundary and model-position text."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-eleventh-batch-local-review-register.json",
+          "evidenceType": "local-review-register",
+          "finding": "Local structural review routes all B11 rows to independent fresh review with zero local source-resolution issues."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-eleventh-batch-independent-fresh-review-protocol.json",
+          "evidenceType": "independent-fresh-review-protocol",
+          "finding": "Protocol defines required review fields, verdict taxonomy, artifact promotion decisions and B11-specific blocked uses."
+        }
+      ],
+      "nextAction": "Promote to bounded reviewed-card artifact fill only; keep advice uses, clinical-validity claims, intervention ranking, individual prediction and calibrated model admission blocked."
+    },
+    {
+      "reviewId": "C2LTB11-FRV-016",
+      "batchId": "C2-LT-B11",
+      "taskId": "C2LTB11-EXT-016",
+      "domainId": "pediatric-vision-screening-amblyopia-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/pediatric-vision-screening-amblyopia-continuity",
+      "sourceRefId": "C2LTB11-SRC-08-2",
+      "sourceTitle": "National Eye Institute: Amblyopia",
+      "sourceUrl": "https://www.nei.nih.gov/eye-health-information/eye-conditions-and-diseases/amblyopia-lazy-eye",
+      "freshReviewDate": "2026-07-11",
+      "freshReviewMode": "independent-source-context-review-from-registered-source-route-and-extraction-boundary",
+      "sourceIdentityVerdict": "bounded-support",
+      "sourceContextVerdict": "support-with-boundary",
+      "exactClaimUseVerdict": "bounded-support",
+      "domainTransferVerdict": "bounded-support",
+      "modelPositionVerdict": "support-with-boundary",
+      "uncertaintyBoundaryVerdict": "support-with-boundary",
+      "downgradeVerdict": "support-with-boundary",
+      "blockedUseVerdict": "support-with-boundary",
+      "adviceUseBoundaryVerdict": "support-with-boundary",
+      "reviewerVerdict": "eligible-for-bounded-reviewed-artifact-prep",
+      "freshReviewFinding": "National Eye Institute: Amblyopia can be used only as bounded source-context support for pediatric-vision-screening-amblyopia-continuity source, variable, endpoint, uncertainty, transfer-boundary and downgrade artifacts. It does not authorize advice, treatment selection, device use, clinical validity, individual prediction, intervention ranking or model admission.",
+      "downgradeOrBlockReason": "Downgrade if the claim is used beyond the registered source role, endpoint boundary, population/setting boundary, uncertainty boundary, advice-use boundary or model-position boundary.",
+      "artifactPromotionDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "allowedArtifactTypes": [
+        "reviewed-source-card",
+        "reviewed-variable-card",
+        "reviewed-endpoint-card",
+        "reviewed-uncertainty-card",
+        "reviewed-transfer-boundary-card",
+        "reviewed-downgrade-check"
+      ],
+      "modelAdmissionDecision": "blocked-pending-b11-reviewed-artifact-gates-and-calibrated-model-validation",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade",
+        "medical-advice",
+        "dental-advice",
+        "vision-advice",
+        "hearing-device-advice",
+        "vestibular-rehabilitation-advice",
+        "contact-lens-advice",
+        "diabetic-footwear-advice",
+        "emergency-care-advice",
+        "nutrition-advice",
+        "swallowing-advice",
+        "pain-care-advice",
+        "infection-care-advice",
+        "mobility-advice",
+        "occupational-noise-advice"
+      ],
+      "reviewEvidenceTrace": [
+        {
+          "url": "https://www.nei.nih.gov/eye-health-information/eye-conditions-and-diseases/amblyopia-lazy-eye",
+          "evidenceType": "source-url",
+          "finding": "Registered candidate source route retained for bounded source-context review."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-eleventh-batch-source-extraction-register.json",
+          "evidenceType": "source-extraction-row",
+          "finding": "Bounded extraction row C2LTB11-EXT-016 supplies exact claim use, endpoint, population, uncertainty, transfer boundary and model-position text."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-eleventh-batch-local-review-register.json",
+          "evidenceType": "local-review-register",
+          "finding": "Local structural review routes all B11 rows to independent fresh review with zero local source-resolution issues."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-eleventh-batch-independent-fresh-review-protocol.json",
+          "evidenceType": "independent-fresh-review-protocol",
+          "finding": "Protocol defines required review fields, verdict taxonomy, artifact promotion decisions and B11-specific blocked uses."
+        }
+      ],
+      "nextAction": "Promote to bounded reviewed-card artifact fill only; keep advice uses, clinical-validity claims, intervention ranking, individual prediction and calibrated model admission blocked."
+    },
+    {
+      "reviewId": "C2LTB11-FRV-017",
+      "batchId": "C2-LT-B11",
+      "taskId": "C2LTB11-EXT-017",
+      "domainId": "smell-taste-chemosensory-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/smell-taste-chemosensory-continuity",
+      "sourceRefId": "C2LTB11-SRC-09-1",
+      "sourceTitle": "NIDCD: Smell Disorders",
+      "sourceUrl": "https://www.nidcd.nih.gov/health/smell-disorders",
+      "freshReviewDate": "2026-07-11",
+      "freshReviewMode": "independent-source-context-review-from-registered-source-route-and-extraction-boundary",
+      "sourceIdentityVerdict": "bounded-support",
+      "sourceContextVerdict": "support-with-boundary",
+      "exactClaimUseVerdict": "bounded-support",
+      "domainTransferVerdict": "bounded-support",
+      "modelPositionVerdict": "support-with-boundary",
+      "uncertaintyBoundaryVerdict": "support-with-boundary",
+      "downgradeVerdict": "support-with-boundary",
+      "blockedUseVerdict": "support-with-boundary",
+      "adviceUseBoundaryVerdict": "support-with-boundary",
+      "reviewerVerdict": "eligible-for-bounded-reviewed-artifact-prep",
+      "freshReviewFinding": "NIDCD: Smell Disorders can be used only as bounded source-context support for smell-taste-chemosensory-continuity source, variable, endpoint, uncertainty, transfer-boundary and downgrade artifacts. It does not authorize advice, treatment selection, device use, clinical validity, individual prediction, intervention ranking or model admission.",
+      "downgradeOrBlockReason": "Downgrade if the claim is used beyond the registered source role, endpoint boundary, population/setting boundary, uncertainty boundary, advice-use boundary or model-position boundary.",
+      "artifactPromotionDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "allowedArtifactTypes": [
+        "reviewed-source-card",
+        "reviewed-variable-card",
+        "reviewed-endpoint-card",
+        "reviewed-uncertainty-card",
+        "reviewed-transfer-boundary-card",
+        "reviewed-downgrade-check"
+      ],
+      "modelAdmissionDecision": "blocked-pending-b11-reviewed-artifact-gates-and-calibrated-model-validation",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade",
+        "medical-advice",
+        "dental-advice",
+        "vision-advice",
+        "hearing-device-advice",
+        "vestibular-rehabilitation-advice",
+        "contact-lens-advice",
+        "diabetic-footwear-advice",
+        "emergency-care-advice",
+        "nutrition-advice",
+        "swallowing-advice",
+        "pain-care-advice",
+        "infection-care-advice",
+        "mobility-advice",
+        "occupational-noise-advice"
+      ],
+      "reviewEvidenceTrace": [
+        {
+          "url": "https://www.nidcd.nih.gov/health/smell-disorders",
+          "evidenceType": "source-url",
+          "finding": "Registered candidate source route retained for bounded source-context review."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-eleventh-batch-source-extraction-register.json",
+          "evidenceType": "source-extraction-row",
+          "finding": "Bounded extraction row C2LTB11-EXT-017 supplies exact claim use, endpoint, population, uncertainty, transfer boundary and model-position text."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-eleventh-batch-local-review-register.json",
+          "evidenceType": "local-review-register",
+          "finding": "Local structural review routes all B11 rows to independent fresh review with zero local source-resolution issues."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-eleventh-batch-independent-fresh-review-protocol.json",
+          "evidenceType": "independent-fresh-review-protocol",
+          "finding": "Protocol defines required review fields, verdict taxonomy, artifact promotion decisions and B11-specific blocked uses."
+        }
+      ],
+      "nextAction": "Promote to bounded reviewed-card artifact fill only; keep advice uses, clinical-validity claims, intervention ranking, individual prediction and calibrated model admission blocked."
+    },
+    {
+      "reviewId": "C2LTB11-FRV-018",
+      "batchId": "C2-LT-B11",
+      "taskId": "C2LTB11-EXT-018",
+      "domainId": "smell-taste-chemosensory-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/smell-taste-chemosensory-continuity",
+      "sourceRefId": "C2LTB11-SRC-09-2",
+      "sourceTitle": "NIDCD: Taste Disorders",
+      "sourceUrl": "https://www.nidcd.nih.gov/health/taste-disorders",
+      "freshReviewDate": "2026-07-11",
+      "freshReviewMode": "independent-source-context-review-from-registered-source-route-and-extraction-boundary",
+      "sourceIdentityVerdict": "bounded-support",
+      "sourceContextVerdict": "support-with-boundary",
+      "exactClaimUseVerdict": "bounded-support",
+      "domainTransferVerdict": "bounded-support",
+      "modelPositionVerdict": "support-with-boundary",
+      "uncertaintyBoundaryVerdict": "support-with-boundary",
+      "downgradeVerdict": "support-with-boundary",
+      "blockedUseVerdict": "support-with-boundary",
+      "adviceUseBoundaryVerdict": "support-with-boundary",
+      "reviewerVerdict": "eligible-for-bounded-reviewed-artifact-prep",
+      "freshReviewFinding": "NIDCD: Taste Disorders can be used only as bounded source-context support for smell-taste-chemosensory-continuity source, variable, endpoint, uncertainty, transfer-boundary and downgrade artifacts. It does not authorize advice, treatment selection, device use, clinical validity, individual prediction, intervention ranking or model admission.",
+      "downgradeOrBlockReason": "Downgrade if the claim is used beyond the registered source role, endpoint boundary, population/setting boundary, uncertainty boundary, advice-use boundary or model-position boundary.",
+      "artifactPromotionDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "allowedArtifactTypes": [
+        "reviewed-source-card",
+        "reviewed-variable-card",
+        "reviewed-endpoint-card",
+        "reviewed-uncertainty-card",
+        "reviewed-transfer-boundary-card",
+        "reviewed-downgrade-check"
+      ],
+      "modelAdmissionDecision": "blocked-pending-b11-reviewed-artifact-gates-and-calibrated-model-validation",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade",
+        "medical-advice",
+        "dental-advice",
+        "vision-advice",
+        "hearing-device-advice",
+        "vestibular-rehabilitation-advice",
+        "contact-lens-advice",
+        "diabetic-footwear-advice",
+        "emergency-care-advice",
+        "nutrition-advice",
+        "swallowing-advice",
+        "pain-care-advice",
+        "infection-care-advice",
+        "mobility-advice",
+        "occupational-noise-advice"
+      ],
+      "reviewEvidenceTrace": [
+        {
+          "url": "https://www.nidcd.nih.gov/health/taste-disorders",
+          "evidenceType": "source-url",
+          "finding": "Registered candidate source route retained for bounded source-context review."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-eleventh-batch-source-extraction-register.json",
+          "evidenceType": "source-extraction-row",
+          "finding": "Bounded extraction row C2LTB11-EXT-018 supplies exact claim use, endpoint, population, uncertainty, transfer boundary and model-position text."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-eleventh-batch-local-review-register.json",
+          "evidenceType": "local-review-register",
+          "finding": "Local structural review routes all B11 rows to independent fresh review with zero local source-resolution issues."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-eleventh-batch-independent-fresh-review-protocol.json",
+          "evidenceType": "independent-fresh-review-protocol",
+          "finding": "Protocol defines required review fields, verdict taxonomy, artifact promotion decisions and B11-specific blocked uses."
+        }
+      ],
+      "nextAction": "Promote to bounded reviewed-card artifact fill only; keep advice uses, clinical-validity claims, intervention ranking, individual prediction and calibrated model admission blocked."
+    },
+    {
+      "reviewId": "C2LTB11-FRV-019",
+      "batchId": "C2-LT-B11",
+      "taskId": "C2LTB11-EXT-019",
+      "domainId": "temporomandibular-orofacial-pain-jaw-function-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/temporomandibular-orofacial-pain-jaw-function-continuity",
+      "sourceRefId": "C2LTB11-SRC-10-1",
+      "sourceTitle": "NIDCR: TMD",
+      "sourceUrl": "https://www.nidcr.nih.gov/health-info/tmd",
+      "freshReviewDate": "2026-07-11",
+      "freshReviewMode": "independent-source-context-review-from-registered-source-route-and-extraction-boundary",
+      "sourceIdentityVerdict": "bounded-support",
+      "sourceContextVerdict": "support-with-boundary",
+      "exactClaimUseVerdict": "bounded-support",
+      "domainTransferVerdict": "bounded-support",
+      "modelPositionVerdict": "support-with-boundary",
+      "uncertaintyBoundaryVerdict": "support-with-boundary",
+      "downgradeVerdict": "support-with-boundary",
+      "blockedUseVerdict": "support-with-boundary",
+      "adviceUseBoundaryVerdict": "support-with-boundary",
+      "reviewerVerdict": "eligible-for-bounded-reviewed-artifact-prep",
+      "freshReviewFinding": "NIDCR: TMD can be used only as bounded source-context support for temporomandibular-orofacial-pain-jaw-function-continuity source, variable, endpoint, uncertainty, transfer-boundary and downgrade artifacts. It does not authorize advice, treatment selection, device use, clinical validity, individual prediction, intervention ranking or model admission.",
+      "downgradeOrBlockReason": "Downgrade if the claim is used beyond the registered source role, endpoint boundary, population/setting boundary, uncertainty boundary, advice-use boundary or model-position boundary.",
+      "artifactPromotionDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "allowedArtifactTypes": [
+        "reviewed-source-card",
+        "reviewed-variable-card",
+        "reviewed-endpoint-card",
+        "reviewed-uncertainty-card",
+        "reviewed-transfer-boundary-card",
+        "reviewed-downgrade-check"
+      ],
+      "modelAdmissionDecision": "blocked-pending-b11-reviewed-artifact-gates-and-calibrated-model-validation",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade",
+        "medical-advice",
+        "dental-advice",
+        "vision-advice",
+        "hearing-device-advice",
+        "vestibular-rehabilitation-advice",
+        "contact-lens-advice",
+        "diabetic-footwear-advice",
+        "emergency-care-advice",
+        "nutrition-advice",
+        "swallowing-advice",
+        "pain-care-advice",
+        "infection-care-advice",
+        "mobility-advice",
+        "occupational-noise-advice"
+      ],
+      "reviewEvidenceTrace": [
+        {
+          "url": "https://www.nidcr.nih.gov/health-info/tmd",
+          "evidenceType": "source-url",
+          "finding": "Registered candidate source route retained for bounded source-context review."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-eleventh-batch-source-extraction-register.json",
+          "evidenceType": "source-extraction-row",
+          "finding": "Bounded extraction row C2LTB11-EXT-019 supplies exact claim use, endpoint, population, uncertainty, transfer boundary and model-position text."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-eleventh-batch-local-review-register.json",
+          "evidenceType": "local-review-register",
+          "finding": "Local structural review routes all B11 rows to independent fresh review with zero local source-resolution issues."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-eleventh-batch-independent-fresh-review-protocol.json",
+          "evidenceType": "independent-fresh-review-protocol",
+          "finding": "Protocol defines required review fields, verdict taxonomy, artifact promotion decisions and B11-specific blocked uses."
+        }
+      ],
+      "nextAction": "Promote to bounded reviewed-card artifact fill only; keep advice uses, clinical-validity claims, intervention ranking, individual prediction and calibrated model admission blocked."
+    },
+    {
+      "reviewId": "C2LTB11-FRV-020",
+      "batchId": "C2-LT-B11",
+      "taskId": "C2LTB11-EXT-020",
+      "domainId": "temporomandibular-orofacial-pain-jaw-function-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/temporomandibular-orofacial-pain-jaw-function-continuity",
+      "sourceRefId": "C2LTB11-SRC-10-2",
+      "sourceTitle": "NCBI Bookshelf: Temporomandibular Syndrome",
+      "sourceUrl": "https://www.ncbi.nlm.nih.gov/books/NBK551612/",
+      "freshReviewDate": "2026-07-11",
+      "freshReviewMode": "independent-source-context-review-from-registered-source-route-and-extraction-boundary",
+      "sourceIdentityVerdict": "bounded-support",
+      "sourceContextVerdict": "support-with-boundary",
+      "exactClaimUseVerdict": "bounded-support",
+      "domainTransferVerdict": "bounded-support",
+      "modelPositionVerdict": "support-with-boundary",
+      "uncertaintyBoundaryVerdict": "support-with-boundary",
+      "downgradeVerdict": "support-with-boundary",
+      "blockedUseVerdict": "support-with-boundary",
+      "adviceUseBoundaryVerdict": "support-with-boundary",
+      "reviewerVerdict": "eligible-for-bounded-reviewed-artifact-prep",
+      "freshReviewFinding": "NCBI Bookshelf: Temporomandibular Syndrome can be used only as bounded source-context support for temporomandibular-orofacial-pain-jaw-function-continuity source, variable, endpoint, uncertainty, transfer-boundary and downgrade artifacts. It does not authorize advice, treatment selection, device use, clinical validity, individual prediction, intervention ranking or model admission.",
+      "downgradeOrBlockReason": "Downgrade if the claim is used beyond the registered source role, endpoint boundary, population/setting boundary, uncertainty boundary, advice-use boundary or model-position boundary.",
+      "artifactPromotionDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "allowedArtifactTypes": [
+        "reviewed-source-card",
+        "reviewed-variable-card",
+        "reviewed-endpoint-card",
+        "reviewed-uncertainty-card",
+        "reviewed-transfer-boundary-card",
+        "reviewed-downgrade-check"
+      ],
+      "modelAdmissionDecision": "blocked-pending-b11-reviewed-artifact-gates-and-calibrated-model-validation",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade",
+        "medical-advice",
+        "dental-advice",
+        "vision-advice",
+        "hearing-device-advice",
+        "vestibular-rehabilitation-advice",
+        "contact-lens-advice",
+        "diabetic-footwear-advice",
+        "emergency-care-advice",
+        "nutrition-advice",
+        "swallowing-advice",
+        "pain-care-advice",
+        "infection-care-advice",
+        "mobility-advice",
+        "occupational-noise-advice"
+      ],
+      "reviewEvidenceTrace": [
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK551612/",
+          "evidenceType": "source-url",
+          "finding": "Registered candidate source route retained for bounded source-context review."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-eleventh-batch-source-extraction-register.json",
+          "evidenceType": "source-extraction-row",
+          "finding": "Bounded extraction row C2LTB11-EXT-020 supplies exact claim use, endpoint, population, uncertainty, transfer boundary and model-position text."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-eleventh-batch-local-review-register.json",
+          "evidenceType": "local-review-register",
+          "finding": "Local structural review routes all B11 rows to independent fresh review with zero local source-resolution issues."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-eleventh-batch-independent-fresh-review-protocol.json",
+          "evidenceType": "independent-fresh-review-protocol",
+          "finding": "Protocol defines required review fields, verdict taxonomy, artifact promotion decisions and B11-specific blocked uses."
+        }
+      ],
+      "nextAction": "Promote to bounded reviewed-card artifact fill only; keep advice uses, clinical-validity claims, intervention ranking, individual prediction and calibrated model admission blocked."
+    },
+    {
+      "reviewId": "C2LTB11-FRV-021",
+      "batchId": "C2-LT-B11",
+      "taskId": "C2LTB11-EXT-021",
+      "domainId": "bilateral-vestibular-hypofunction-gaze-gait-stability-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/bilateral-vestibular-hypofunction-gaze-gait-stability-continuity",
+      "sourceRefId": "C2LTB11-SRC-11-1",
+      "sourceTitle": "NIDCD: Balance Disorders",
+      "sourceUrl": "https://www.nidcd.nih.gov/health/balance-disorders",
+      "freshReviewDate": "2026-07-11",
+      "freshReviewMode": "independent-source-context-review-from-registered-source-route-and-extraction-boundary",
+      "sourceIdentityVerdict": "bounded-support",
+      "sourceContextVerdict": "support-with-boundary",
+      "exactClaimUseVerdict": "bounded-support",
+      "domainTransferVerdict": "bounded-support",
+      "modelPositionVerdict": "support-with-boundary",
+      "uncertaintyBoundaryVerdict": "support-with-boundary",
+      "downgradeVerdict": "support-with-boundary",
+      "blockedUseVerdict": "support-with-boundary",
+      "adviceUseBoundaryVerdict": "support-with-boundary",
+      "reviewerVerdict": "eligible-for-bounded-reviewed-artifact-prep",
+      "freshReviewFinding": "NIDCD: Balance Disorders can be used only as bounded source-context support for bilateral-vestibular-hypofunction-gaze-gait-stability-continuity source, variable, endpoint, uncertainty, transfer-boundary and downgrade artifacts. It does not authorize advice, treatment selection, device use, clinical validity, individual prediction, intervention ranking or model admission.",
+      "downgradeOrBlockReason": "Downgrade if the claim is used beyond the registered source role, endpoint boundary, population/setting boundary, uncertainty boundary, advice-use boundary or model-position boundary.",
+      "artifactPromotionDecision": "eligible-for-bounded-reviewed-artifact-prep",
+      "allowedArtifactTypes": [
+        "reviewed-source-card",
+        "reviewed-variable-card",
+        "reviewed-endpoint-card",
+        "reviewed-uncertainty-card",
+        "reviewed-transfer-boundary-card",
+        "reviewed-downgrade-check"
+      ],
+      "modelAdmissionDecision": "blocked-pending-b11-reviewed-artifact-gates-and-calibrated-model-validation",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade",
+        "medical-advice",
+        "dental-advice",
+        "vision-advice",
+        "hearing-device-advice",
+        "vestibular-rehabilitation-advice",
+        "contact-lens-advice",
+        "diabetic-footwear-advice",
+        "emergency-care-advice",
+        "nutrition-advice",
+        "swallowing-advice",
+        "pain-care-advice",
+        "infection-care-advice",
+        "mobility-advice",
+        "occupational-noise-advice"
+      ],
+      "reviewEvidenceTrace": [
+        {
+          "url": "https://www.nidcd.nih.gov/health/balance-disorders",
+          "evidenceType": "source-url",
+          "finding": "Registered candidate source route retained for bounded source-context review."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-eleventh-batch-source-extraction-register.json",
+          "evidenceType": "source-extraction-row",
+          "finding": "Bounded extraction row C2LTB11-EXT-021 supplies exact claim use, endpoint, population, uncertainty, transfer boundary and model-position text."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-eleventh-batch-local-review-register.json",
+          "evidenceType": "local-review-register",
+          "finding": "Local structural review routes all B11 rows to independent fresh review with zero local source-resolution issues."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-eleventh-batch-independent-fresh-review-protocol.json",
+          "evidenceType": "independent-fresh-review-protocol",
+          "finding": "Protocol defines required review fields, verdict taxonomy, artifact promotion decisions and B11-specific blocked uses."
+        }
+      ],
+      "nextAction": "Promote to bounded reviewed-card artifact fill only; keep advice uses, clinical-validity claims, intervention ranking, individual prediction and calibrated model admission blocked."
+    },
+    {
+      "reviewId": "C2LTB11-FRV-022",
+      "batchId": "C2-LT-B11",
+      "taskId": "C2LTB11-EXT-022",
+      "domainId": "bilateral-vestibular-hypofunction-gaze-gait-stability-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/bilateral-vestibular-hypofunction-gaze-gait-stability-continuity",
+      "sourceRefId": "C2LTB11-SRC-11-2",
+      "sourceTitle": "PubMed: Bilateral vestibulopathy diagnostic criteria - Barany Society consensus",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/29081426/",
+      "freshReviewDate": "2026-07-11",
+      "freshReviewMode": "independent-source-context-review-from-registered-source-route-and-extraction-boundary",
+      "sourceIdentityVerdict": "bounded-support",
+      "sourceContextVerdict": "cannot-evaluate-insufficient-context",
+      "exactClaimUseVerdict": "cannot-evaluate-insufficient-context",
+      "domainTransferVerdict": "downgrade-required",
+      "modelPositionVerdict": "support-with-boundary",
+      "uncertaintyBoundaryVerdict": "downgrade-required",
+      "downgradeVerdict": "downgrade-required",
+      "blockedUseVerdict": "support-with-boundary",
+      "adviceUseBoundaryVerdict": "support-with-boundary",
+      "reviewerVerdict": "blocked-cannot-evaluate",
+      "freshReviewFinding": "PubMed: Bilateral vestibulopathy diagnostic criteria - Barany Society consensus is retained only as PubMed bibliographic or abstract-route context for bilateral-vestibular-hypofunction-gaze-gait-stability-continuity. It preserves source identity and route planning, but it does not provide an independently reviewed full-context basis for reviewed artifact fill. It does not authorize advice, clinical-validity claims, intervention ranking, individual prediction or model admission.",
+      "downgradeOrBlockReason": "PubMed-only route requires publisher/full-context or authoritative full-text source review before artifact fill; use only for provenance, route planning and downgrade vocabulary.",
+      "artifactPromotionDecision": "blocked-cannot-evaluate",
+      "allowedArtifactTypes": [],
+      "modelAdmissionDecision": "blocked-pending-b11-reviewed-artifact-gates-and-calibrated-model-validation",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade",
+        "medical-advice",
+        "dental-advice",
+        "vision-advice",
+        "hearing-device-advice",
+        "vestibular-rehabilitation-advice",
+        "contact-lens-advice",
+        "diabetic-footwear-advice",
+        "emergency-care-advice",
+        "nutrition-advice",
+        "swallowing-advice",
+        "pain-care-advice",
+        "infection-care-advice",
+        "mobility-advice",
+        "occupational-noise-advice"
+      ],
+      "reviewEvidenceTrace": [
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/29081426/",
+          "evidenceType": "source-url",
+          "finding": "PubMed route retained for provenance, abstract-route context and route planning only."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-eleventh-batch-source-extraction-register.json",
+          "evidenceType": "source-extraction-row",
+          "finding": "Bounded extraction row C2LTB11-EXT-022 supplies exact claim use, endpoint, population, uncertainty, transfer boundary and model-position text."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-eleventh-batch-local-review-register.json",
+          "evidenceType": "local-review-register",
+          "finding": "Local structural review routes all B11 rows to independent fresh review with zero local source-resolution issues."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-eleventh-batch-independent-fresh-review-protocol.json",
+          "evidenceType": "independent-fresh-review-protocol",
+          "finding": "Protocol defines required review fields, verdict taxonomy, artifact promotion decisions and B11-specific blocked uses."
+        }
+      ],
+      "nextAction": "Resolve publisher/full-context source route or run manual/fulltext review before any reviewed-card artifact fill; keep advice uses, clinical-validity claims, intervention ranking, individual prediction and calibrated model admission blocked."
+    },
+    {
+      "reviewId": "C2LTB11-FRV-023",
+      "batchId": "C2-LT-B11",
+      "taskId": "C2LTB11-EXT-023",
+      "domainId": "vestibular-ototoxicity-medication-chemical-risk-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/vestibular-ototoxicity-medication-chemical-risk-continuity",
+      "sourceRefId": "C2LTB11-SRC-12-1",
+      "sourceTitle": "PubMed: Pharmacological drugs inducing ototoxicity, vestibular symptoms and tinnitus",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/21796866/",
+      "freshReviewDate": "2026-07-11",
+      "freshReviewMode": "independent-source-context-review-from-registered-source-route-and-extraction-boundary",
+      "sourceIdentityVerdict": "bounded-support",
+      "sourceContextVerdict": "cannot-evaluate-insufficient-context",
+      "exactClaimUseVerdict": "cannot-evaluate-insufficient-context",
+      "domainTransferVerdict": "downgrade-required",
+      "modelPositionVerdict": "support-with-boundary",
+      "uncertaintyBoundaryVerdict": "downgrade-required",
+      "downgradeVerdict": "downgrade-required",
+      "blockedUseVerdict": "support-with-boundary",
+      "adviceUseBoundaryVerdict": "support-with-boundary",
+      "reviewerVerdict": "blocked-cannot-evaluate",
+      "freshReviewFinding": "PubMed: Pharmacological drugs inducing ototoxicity, vestibular symptoms and tinnitus is retained only as PubMed bibliographic or abstract-route context for vestibular-ototoxicity-medication-chemical-risk-continuity. It preserves source identity and route planning, but it does not provide an independently reviewed full-context basis for reviewed artifact fill. It does not authorize advice, clinical-validity claims, intervention ranking, individual prediction or model admission.",
+      "downgradeOrBlockReason": "PubMed-only route requires publisher/full-context or authoritative full-text source review before artifact fill; use only for provenance, route planning and downgrade vocabulary.",
+      "artifactPromotionDecision": "blocked-cannot-evaluate",
+      "allowedArtifactTypes": [],
+      "modelAdmissionDecision": "blocked-pending-b11-reviewed-artifact-gates-and-calibrated-model-validation",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade",
+        "medical-advice",
+        "dental-advice",
+        "vision-advice",
+        "hearing-device-advice",
+        "vestibular-rehabilitation-advice",
+        "contact-lens-advice",
+        "diabetic-footwear-advice",
+        "emergency-care-advice",
+        "nutrition-advice",
+        "swallowing-advice",
+        "pain-care-advice",
+        "infection-care-advice",
+        "mobility-advice",
+        "occupational-noise-advice"
+      ],
+      "reviewEvidenceTrace": [
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/21796866/",
+          "evidenceType": "source-url",
+          "finding": "PubMed route retained for provenance, abstract-route context and route planning only."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-eleventh-batch-source-extraction-register.json",
+          "evidenceType": "source-extraction-row",
+          "finding": "Bounded extraction row C2LTB11-EXT-023 supplies exact claim use, endpoint, population, uncertainty, transfer boundary and model-position text."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-eleventh-batch-local-review-register.json",
+          "evidenceType": "local-review-register",
+          "finding": "Local structural review routes all B11 rows to independent fresh review with zero local source-resolution issues."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-eleventh-batch-independent-fresh-review-protocol.json",
+          "evidenceType": "independent-fresh-review-protocol",
+          "finding": "Protocol defines required review fields, verdict taxonomy, artifact promotion decisions and B11-specific blocked uses."
+        }
+      ],
+      "nextAction": "Resolve publisher/full-context source route or run manual/fulltext review before any reviewed-card artifact fill; keep advice uses, clinical-validity claims, intervention ranking, individual prediction and calibrated model admission blocked."
+    },
+    {
+      "reviewId": "C2LTB11-FRV-024",
+      "batchId": "C2-LT-B11",
+      "taskId": "C2LTB11-EXT-024",
+      "domainId": "vestibular-ototoxicity-medication-chemical-risk-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/vestibular-ototoxicity-medication-chemical-risk-continuity",
+      "sourceRefId": "C2LTB11-SRC-12-2",
+      "sourceTitle": "PubMed: Vestibular damage in chronic ototoxicity",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/24333467/",
+      "freshReviewDate": "2026-07-11",
+      "freshReviewMode": "independent-source-context-review-from-registered-source-route-and-extraction-boundary",
+      "sourceIdentityVerdict": "bounded-support",
+      "sourceContextVerdict": "cannot-evaluate-insufficient-context",
+      "exactClaimUseVerdict": "cannot-evaluate-insufficient-context",
+      "domainTransferVerdict": "downgrade-required",
+      "modelPositionVerdict": "support-with-boundary",
+      "uncertaintyBoundaryVerdict": "downgrade-required",
+      "downgradeVerdict": "downgrade-required",
+      "blockedUseVerdict": "support-with-boundary",
+      "adviceUseBoundaryVerdict": "support-with-boundary",
+      "reviewerVerdict": "blocked-cannot-evaluate",
+      "freshReviewFinding": "PubMed: Vestibular damage in chronic ototoxicity is retained only as PubMed bibliographic or abstract-route context for vestibular-ototoxicity-medication-chemical-risk-continuity. It preserves source identity and route planning, but it does not provide an independently reviewed full-context basis for reviewed artifact fill. It does not authorize advice, clinical-validity claims, intervention ranking, individual prediction or model admission.",
+      "downgradeOrBlockReason": "PubMed-only route requires publisher/full-context or authoritative full-text source review before artifact fill; use only for provenance, route planning and downgrade vocabulary.",
+      "artifactPromotionDecision": "blocked-cannot-evaluate",
+      "allowedArtifactTypes": [],
+      "modelAdmissionDecision": "blocked-pending-b11-reviewed-artifact-gates-and-calibrated-model-validation",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade",
+        "medical-advice",
+        "dental-advice",
+        "vision-advice",
+        "hearing-device-advice",
+        "vestibular-rehabilitation-advice",
+        "contact-lens-advice",
+        "diabetic-footwear-advice",
+        "emergency-care-advice",
+        "nutrition-advice",
+        "swallowing-advice",
+        "pain-care-advice",
+        "infection-care-advice",
+        "mobility-advice",
+        "occupational-noise-advice"
+      ],
+      "reviewEvidenceTrace": [
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/24333467/",
+          "evidenceType": "source-url",
+          "finding": "PubMed route retained for provenance, abstract-route context and route planning only."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-eleventh-batch-source-extraction-register.json",
+          "evidenceType": "source-extraction-row",
+          "finding": "Bounded extraction row C2LTB11-EXT-024 supplies exact claim use, endpoint, population, uncertainty, transfer boundary and model-position text."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-eleventh-batch-local-review-register.json",
+          "evidenceType": "local-review-register",
+          "finding": "Local structural review routes all B11 rows to independent fresh review with zero local source-resolution issues."
+        },
+        {
+          "url": "docs/reference/human-infra-c2-longtail-eleventh-batch-independent-fresh-review-protocol.json",
+          "evidenceType": "independent-fresh-review-protocol",
+          "finding": "Protocol defines required review fields, verdict taxonomy, artifact promotion decisions and B11-specific blocked uses."
+        }
+      ],
+      "nextAction": "Resolve publisher/full-context source route or run manual/fulltext review before any reviewed-card artifact fill; keep advice uses, clinical-validity claims, intervention ranking, individual prediction and calibrated model admission blocked."
+    }
+  ],
+  "indexRequirements": [
+    "docs/AGENTS.md",
+    "docs/reference/README.md",
+    "docs/reference/human-infra-maturity-roadmap.md",
+    "docs/reference/human-infra-maturity-gap-register.json",
+    "tools/README.md",
+    "tools/AGENTS.md",
+    "Makefile"
+  ]
+}

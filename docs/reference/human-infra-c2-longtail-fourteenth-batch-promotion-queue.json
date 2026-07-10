@@ -1,0 +1,1301 @@
+{
+  "schemaVersion": "human-infra.c2-longtail-fourteenth-batch-promotion-queue.v1",
+  "queueId": "human-infra-c2-longtail-fourteenth-batch-promotion-queue-2026-07-11",
+  "status": "active-fourteenth-batch-queue-model-blocked",
+  "purpose": "Queue the fourteenth and final currently-unqueued batch of still-uncovered C2 long-tail domains for source-specific promotion work. This artifact only selects candidate domains and web-checked sources; it does not complete Source Cards, fresh review, claim upgrade or calibrated model admission.",
+  "sourceOfTruth": {
+    "c2LongtailCoverageRegister": "docs/reference/human-infra-c2-longtail-coverage-register.json",
+    "firstBatchPromotionQueue": "docs/reference/human-infra-c2-longtail-first-batch-promotion-queue.json",
+    "secondBatchPromotionQueue": "docs/reference/human-infra-c2-longtail-second-batch-promotion-queue.json",
+    "thirdBatchPromotionQueue": "docs/reference/human-infra-c2-longtail-third-batch-promotion-queue.json",
+    "fourthBatchPromotionQueue": "docs/reference/human-infra-c2-longtail-fourth-batch-promotion-queue.json",
+    "fifthBatchPromotionQueue": "docs/reference/human-infra-c2-longtail-fifth-batch-promotion-queue.json",
+    "sixthBatchPromotionQueue": "docs/reference/human-infra-c2-longtail-sixth-batch-promotion-queue.json",
+    "seventhBatchPromotionQueue": "docs/reference/human-infra-c2-longtail-seventh-batch-promotion-queue.json",
+    "eighthBatchPromotionQueue": "docs/reference/human-infra-c2-longtail-eighth-batch-promotion-queue.json",
+    "ninthBatchPromotionQueue": "docs/reference/human-infra-c2-longtail-ninth-batch-promotion-queue.json",
+    "tenthBatchPromotionQueue": "docs/reference/human-infra-c2-longtail-tenth-batch-promotion-queue.json",
+    "eleventhBatchPromotionQueue": "docs/reference/human-infra-c2-longtail-eleventh-batch-promotion-queue.json",
+    "twelfthBatchPromotionQueue": "docs/reference/human-infra-c2-longtail-twelfth-batch-promotion-queue.json",
+    "thirteenthBatchPromotionQueue": "docs/reference/human-infra-c2-longtail-thirteenth-batch-promotion-queue.json",
+    "domainClassification": "domains/_possibility-space-control/classification.tsv",
+    "sourceCardSystem": "docs/reference/source-card-system.md",
+    "maturityGapRegister": "docs/reference/human-infra-maturity-gap-register.json",
+    "maturityRoadmap": "docs/reference/human-infra-maturity-roadmap.md"
+  },
+  "scope": {
+    "batchId": "C2-LT-B14",
+    "batchDomainCount": 16,
+    "selectionRule": "Select the remaining C2 long-tail uncovered domains not already present in B1 through B13, preserving the Human Infra ordering by importance, long-horizon impact and fundamentality rather than near-term feasibility. The batch closes the current unqueued coverage gap across energy, vision, oral health, burns, genetic neurodegeneration, immunization proof, indoor/outdoor exposure, work-family continuity, court access, reproductive tissue traceability, skin supplies, substance exposure, synthetic data/media integrity and WIC redemption.",
+    "requiredArtifactClasses": [
+      "domain-claim-evidence-row",
+      "domain-source-card-field-extraction",
+      "domain-source-specific-deep-read",
+      "source-context-local-review",
+      "independent-fresh-review-verdict",
+      "reviewed-source-card",
+      "variable-card",
+      "endpoint-card",
+      "uncertainty-card",
+      "transfer-boundary-card",
+      "downgrade-check"
+    ],
+    "nonClaims": [
+      "This queue does not complete Source Cards or reviewed artifacts for any B14 domain.",
+      "This queue does not complete independent fresh review or local source-context review.",
+      "This queue does not admit any domain into calibrated prediction, intervention ranking, clinical validity, individual advice or individual death-date output.",
+      "This queue does not modify the coverage register status; selected rows remain c2-longtail-uncovered until reviewed artifacts are created and separately audited.",
+      "This queue closes currently unqueued C2 long-tail coverage after B1/B2/B3/B4/B5/B6/B7/B8/B9/B10/B11/B12/B13 selection only; it does not close extraction, review or model-admission gaps.",
+      "This queue does not provide energy, medical, legal, court, reproductive, environmental, AI content, data governance, nutrition benefit or safety advice."
+    ]
+  },
+  "blockedUses": [
+    "calibrated-prediction",
+    "individual-advice",
+    "individual-death-date-output",
+    "intervention-ranking",
+    "clinical-validity-claim",
+    "domain-claim-upgrade"
+  ],
+  "batchRows": [
+    {
+      "domainId": "advanced-nuclear-energy-safety-generation-continuity",
+      "triageBucket": "energy-infrastructure-boundary",
+      "selectionReason": "先进核能把长期电力、医疗设备供能、工业热、灾害韧性和高可靠能源系统连接起来，是主体持续性生态承载的高杠杆能源域。",
+      "claimSeed": "先进核能和小型/先进反应堆讨论可通过电力可靠性、能源密度、安全治理和低碳基础负荷影响长期社会基础设施连续性。",
+      "variableSeed": [
+        "energy-density",
+        "grid-reliability",
+        "reactor-safety-governance",
+        "low-carbon-baseload",
+        "critical-service-power-continuity"
+      ],
+      "batchId": "C2-LT-B14",
+      "priorityRank": 1,
+      "localDomainPath": "domains/c2-source-maintenance/advanced-nuclear-energy-safety-generation-continuity",
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB14-SRC-01-1",
+          "title": "OECD NEA: Advanced Reactors",
+          "url": "https://www.oecd-nea.org/jcms/pl_15008/advanced-reactors",
+          "evidenceRole": "advanced-reactor-technology-safety-boundary",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-11",
+          "sourceCheck": {
+            "checkedAt": "2026-07-11",
+            "method": "python-urllib-get",
+            "statusCode": 200,
+            "contentLengthBytes": 51681
+          }
+        },
+        {
+          "sourceRefId": "C2LTB14-SRC-01-2",
+          "title": "World Nuclear Association: Small Nuclear Power Reactors",
+          "url": "https://world-nuclear.org/information-library/nuclear-fuel-cycle/nuclear-power-reactors/small-nuclear-power-reactors",
+          "evidenceRole": "small-reactor-generation-continuity-boundary",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-11",
+          "sourceCheck": {
+            "checkedAt": "2026-07-11",
+            "method": "python-urllib-get",
+            "statusCode": 200,
+            "contentLengthBytes": 61619
+          }
+        }
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "modelAdmissionDecision": "blocked-pending-source-specific-extraction-local-review-independent-fresh-review-and-reviewed-artifact-promotion"
+    },
+    {
+      "domainId": "eyeglasses-prescription-repair-replacement-continuity",
+      "triageBucket": "sensory-access-execution",
+      "selectionReason": "眼镜处方、修理和替换决定视觉输入是否稳定可用，直接影响学习、工作、出行、安全和任务执行密度。",
+      "claimSeed": "可获得、可携带、可替换的视觉矫正资源可降低视觉功能损失造成的任务摩擦和行动风险。",
+      "variableSeed": [
+        "corrective-lens-access",
+        "prescription-portability",
+        "replacement-friction",
+        "vision-function",
+        "task-safety"
+      ],
+      "batchId": "C2-LT-B14",
+      "priorityRank": 2,
+      "localDomainPath": "domains/c2-source-maintenance/eyeglasses-prescription-repair-replacement-continuity",
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB14-SRC-02-1",
+          "title": "FTC: Complying with the Eyeglass Rule",
+          "url": "https://www.ftc.gov/business-guidance/resources/complying-eyeglass-rule",
+          "evidenceRole": "eyeglass-prescription-portability-boundary",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-11",
+          "sourceCheck": {
+            "checkedAt": "2026-07-11",
+            "method": "python-urllib-get",
+            "statusCode": 200,
+            "contentLengthBytes": 998902
+          }
+        },
+        {
+          "sourceRefId": "C2LTB14-SRC-02-2",
+          "title": "CDC: Vision Health Initiative",
+          "url": "https://www.cdc.gov/vision-health/index.html",
+          "evidenceRole": "vision-health-function-access-boundary",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-11",
+          "sourceCheck": {
+            "checkedAt": "2026-07-11",
+            "method": "python-urllib-get",
+            "statusCode": 200,
+            "contentLengthBytes": 57543
+          }
+        }
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "modelAdmissionDecision": "blocked-pending-source-specific-extraction-local-review-independent-fresh-review-and-reviewed-artifact-promotion"
+    },
+    {
+      "domainId": "geriatric-long-term-care-oral-health-continuity",
+      "triageBucket": "long-term-care-maintenance",
+      "selectionReason": "老年和长期照护口腔健康影响营养、疼痛、感染、沟通、尊严和护理负担，是长期主体维护中容易被低估的入口。",
+      "claimSeed": "老年口腔健康与咀嚼、营养、感染、疼痛和生活质量相关，可作为长期照护连续性的候选维护变量。",
+      "variableSeed": [
+        "oral-health-status",
+        "chewing-function",
+        "dental-care-access",
+        "pain-infection-burden",
+        "long-term-care-support"
+      ],
+      "batchId": "C2-LT-B14",
+      "priorityRank": 3,
+      "localDomainPath": "domains/c2-source-maintenance/geriatric-long-term-care-oral-health-continuity",
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB14-SRC-03-1",
+          "title": "NIDCR: Older Adults and Oral Health",
+          "url": "https://www.nidcr.nih.gov/health-info/for-older-adults",
+          "evidenceRole": "older-adult-oral-health-boundary",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-11",
+          "sourceCheck": {
+            "checkedAt": "2026-07-11",
+            "method": "python-urllib-get",
+            "statusCode": 200,
+            "contentLengthBytes": 53161
+          }
+        },
+        {
+          "sourceRefId": "C2LTB14-SRC-03-2",
+          "title": "CDC NCHS: Dental Care Among Adults Age 65 and Older",
+          "url": "https://www.cdc.gov/nchs/products/databriefs/db500.htm",
+          "evidenceRole": "older-adult-dental-care-access-boundary",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-11",
+          "sourceCheck": {
+            "checkedAt": "2026-07-11",
+            "method": "python-urllib-get",
+            "statusCode": 200,
+            "contentLengthBytes": 116837
+          }
+        }
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "modelAdmissionDecision": "blocked-pending-source-specific-extraction-local-review-independent-fresh-review-and-reviewed-artifact-promotion"
+    },
+    {
+      "domainId": "hot-water-scald-burn-prevention-continuity",
+      "triageBucket": "home-injury-prevention",
+      "selectionReason": "热水烫伤是居家、照护和老年儿童安全中的高频可预防伤害，影响疼痛、感染、失能、护理负担和环境安全。",
+      "claimSeed": "热水温度、照护环境和预防措施可影响烫伤发生、急性损伤、功能恢复和长期照护负担。",
+      "variableSeed": [
+        "tap-water-temperature",
+        "scald-risk",
+        "burn-injury",
+        "home-safety",
+        "caregiving-risk"
+      ],
+      "batchId": "C2-LT-B14",
+      "priorityRank": 4,
+      "localDomainPath": "domains/c2-source-maintenance/hot-water-scald-burn-prevention-continuity",
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB14-SRC-04-1",
+          "title": "CDC MMWR: Nonfatal Scald-Related Burns Among Adults Aged 65 Years",
+          "url": "https://www.cdc.gov/mmwr/preview/mmwrhtml/mm5836a1.htm",
+          "evidenceRole": "scald-burn-older-adult-injury-boundary",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-11",
+          "sourceCheck": {
+            "checkedAt": "2026-07-11",
+            "method": "python-urllib-get",
+            "statusCode": 200,
+            "contentLengthBytes": 50376
+          }
+        },
+        {
+          "sourceRefId": "C2LTB14-SRC-04-2",
+          "title": "CDC Stacks: Protect the Ones You Love - Burns",
+          "url": "https://stacks.cdc.gov/view/cdc/12352",
+          "evidenceRole": "burn-prevention-home-safety-boundary",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-11",
+          "sourceCheck": {
+            "checkedAt": "2026-07-11",
+            "method": "python-urllib-get",
+            "statusCode": 200,
+            "contentLengthBytes": 56644
+          }
+        }
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "modelAdmissionDecision": "blocked-pending-source-specific-extraction-local-review-independent-fresh-review-and-reviewed-artifact-promotion"
+    },
+    {
+      "domainId": "huntington-disease-genetic-neurodegeneration-continuity",
+      "triageBucket": "genetic-neurodegeneration",
+      "selectionReason": "亨廷顿病把遗传风险、神经退行、运动、认知、精神症状、家庭规划和照护连续性连在一起，是主体连续性被单基因神经退行侵蚀的典型域。",
+      "claimSeed": "亨廷顿病可通过运动、认知、精神症状和遗传风险影响有效时间、行动能力、家庭决策和长期照护路径。",
+      "variableSeed": [
+        "httexpansion-risk",
+        "motor-decline",
+        "cognitive-decline",
+        "psychiatric-burden",
+        "family-planning-continuity"
+      ],
+      "batchId": "C2-LT-B14",
+      "priorityRank": 5,
+      "localDomainPath": "domains/c2-source-maintenance/huntington-disease-genetic-neurodegeneration-continuity",
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB14-SRC-05-1",
+          "title": "NCBI GeneReviews: Huntington Disease",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK1305/",
+          "evidenceRole": "huntington-genetic-clinical-boundary",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-11",
+          "sourceCheck": {
+            "checkedAt": "2026-07-11",
+            "method": "python-urllib-get",
+            "statusCode": 200,
+            "contentLengthBytes": 467449
+          }
+        },
+        {
+          "sourceRefId": "C2LTB14-SRC-05-2",
+          "title": "MedlinePlus: Huntington Disease",
+          "url": "https://medlineplus.gov/huntingtonsdisease.html",
+          "evidenceRole": "huntington-public-health-overview-boundary",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-11",
+          "sourceCheck": {
+            "checkedAt": "2026-07-11",
+            "method": "python-urllib-get",
+            "statusCode": 200,
+            "contentLengthBytes": 74235
+          }
+        }
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "modelAdmissionDecision": "blocked-pending-source-specific-extraction-local-review-independent-fresh-review-and-reviewed-artifact-promotion"
+    },
+    {
+      "domainId": "immunization-record-proof-continuity",
+      "triageBucket": "health-record-proof",
+      "selectionReason": "免疫记录证明关系到入学、就业、旅行、暴发响应和医疗连续性，是免疫保护从身体状态转化为社会可用资格的接口。",
+      "claimSeed": "免疫信息系统和可追溯接种记录可影响接种连续性、证明成本、公共卫生响应和服务资格。",
+      "variableSeed": [
+        "immunization-record",
+        "iis-availability",
+        "proof-friction",
+        "dose-history-continuity",
+        "public-health-response"
+      ],
+      "batchId": "C2-LT-B14",
+      "priorityRank": 6,
+      "localDomainPath": "domains/c2-source-maintenance/immunization-record-proof-continuity",
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB14-SRC-06-1",
+          "title": "CDC: Immunization Information Systems",
+          "url": "https://www.cdc.gov/iis/about/index.html",
+          "evidenceRole": "immunization-information-system-boundary",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-11",
+          "sourceCheck": {
+            "checkedAt": "2026-07-11",
+            "method": "python-urllib-get",
+            "statusCode": 200,
+            "contentLengthBytes": 49513
+          }
+        },
+        {
+          "sourceRefId": "C2LTB14-SRC-06-2",
+          "title": "NCBI Bookshelf: Immunization Information Systems",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK220811/",
+          "evidenceRole": "iis-record-continuity-background-boundary",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-11",
+          "sourceCheck": {
+            "checkedAt": "2026-07-11",
+            "method": "python-urllib-get",
+            "statusCode": 200,
+            "contentLengthBytes": 130608
+          }
+        }
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "modelAdmissionDecision": "blocked-pending-source-specific-extraction-local-review-independent-fresh-review-and-reviewed-artifact-promotion"
+    },
+    {
+      "domainId": "mold-dampness-indoor-biological-exposure",
+      "triageBucket": "indoor-environment-biological-exposure",
+      "selectionReason": "霉菌和潮湿暴露连接住房质量、呼吸症状、过敏、维护成本和可居住性，是环境基础设施侵蚀主体健康和行动能力的入口。",
+      "claimSeed": "室内潮湿和霉菌暴露可通过呼吸、过敏和居住环境质量影响健康状态、有效时间和住房稳定性。",
+      "variableSeed": [
+        "dampness",
+        "mold-exposure",
+        "respiratory-symptoms",
+        "housing-quality",
+        "remediation-friction"
+      ],
+      "batchId": "C2-LT-B14",
+      "priorityRank": 7,
+      "localDomainPath": "domains/c2-source-maintenance/mold-dampness-indoor-biological-exposure",
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB14-SRC-07-1",
+          "title": "EPA: Mold Resources",
+          "url": "https://www.epa.gov/mold",
+          "evidenceRole": "mold-indoor-environment-boundary",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-11",
+          "sourceCheck": {
+            "checkedAt": "2026-07-11",
+            "method": "python-urllib-get",
+            "statusCode": 200,
+            "contentLengthBytes": 62981
+          }
+        },
+        {
+          "sourceRefId": "C2LTB14-SRC-07-2",
+          "title": "NCBI Bookshelf: WHO Guidelines for Indoor Air Quality - Dampness and Mould",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK143940/",
+          "evidenceRole": "dampness-mould-health-evidence-boundary",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-11",
+          "sourceCheck": {
+            "checkedAt": "2026-07-11",
+            "method": "python-urllib-get",
+            "statusCode": 200,
+            "contentLengthBytes": 166577
+          }
+        }
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "modelAdmissionDecision": "blocked-pending-source-specific-extraction-local-review-independent-fresh-review-and-reviewed-artifact-promotion"
+    },
+    {
+      "domainId": "pollen-allergen-asthma-outdoor-activity-continuity",
+      "triageBucket": "outdoor-exposure-respiratory-function",
+      "selectionReason": "花粉和过敏原通过哮喘、睡眠、户外活动和学习工作缺勤影响有效时间，是环境变化如何改变行动窗口的典型域。",
+      "claimSeed": "花粉和室外过敏原暴露可影响哮喘/过敏症状、户外活动能力、睡眠和日常任务执行。",
+      "variableSeed": [
+        "pollen-exposure",
+        "asthma-trigger",
+        "allergic-symptom-burden",
+        "outdoor-activity-window",
+        "sleep-disruption"
+      ],
+      "batchId": "C2-LT-B14",
+      "priorityRank": 8,
+      "localDomainPath": "domains/c2-source-maintenance/pollen-allergen-asthma-outdoor-activity-continuity",
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB14-SRC-08-1",
+          "title": "EPA: Asthma Triggers - Gain Control",
+          "url": "https://www.epa.gov/asthma/asthma-triggers-gain-control",
+          "evidenceRole": "asthma-trigger-control-boundary",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-11",
+          "sourceCheck": {
+            "checkedAt": "2026-07-11",
+            "method": "python-urllib-get",
+            "statusCode": 200,
+            "contentLengthBytes": 80436
+          }
+        },
+        {
+          "sourceRefId": "C2LTB14-SRC-08-2",
+          "title": "AAAAI: Outdoor Allergens",
+          "url": "https://www.aaaai.org/tools-for-the-public/conditions-library/allergies/outdoor-allergens-ttr",
+          "evidenceRole": "outdoor-allergen-symptom-boundary",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-11",
+          "sourceCheck": {
+            "checkedAt": "2026-07-11",
+            "method": "python-urllib-get",
+            "statusCode": 200,
+            "contentLengthBytes": 83608
+          }
+        }
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "modelAdmissionDecision": "blocked-pending-source-specific-extraction-local-review-independent-fresh-review-and-reviewed-artifact-promotion"
+    },
+    {
+      "domainId": "pregnancy-parental-work-continuity",
+      "triageBucket": "work-family-continuity",
+      "selectionReason": "孕期和育儿工作连续性影响收入、医疗接入、休息恢复、家庭照护和职业持续性，是主体持续性与下一代照护的制度接口。",
+      "claimSeed": "家庭医疗休假和孕期工作便利可影响工作保留、收入连续性、健康恢复、照护时间和家庭资源稳定。",
+      "variableSeed": [
+        "job-protection",
+        "paid-or-unpaid-leave",
+        "pregnancy-accommodation",
+        "caregiving-time",
+        "income-continuity"
+      ],
+      "batchId": "C2-LT-B14",
+      "priorityRank": 9,
+      "localDomainPath": "domains/c2-source-maintenance/pregnancy-parental-work-continuity",
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB14-SRC-09-1",
+          "title": "DOL: Family and Medical Leave Act",
+          "url": "https://www.dol.gov/agencies/whd/fmla",
+          "evidenceRole": "family-medical-leave-work-continuity-boundary",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-11",
+          "sourceCheck": {
+            "checkedAt": "2026-07-11",
+            "method": "python-urllib-get",
+            "statusCode": 200,
+            "contentLengthBytes": 97582
+          }
+        },
+        {
+          "sourceRefId": "C2LTB14-SRC-09-2",
+          "title": "EEOC: Pregnant Workers Fairness Act",
+          "url": "https://www.eeoc.gov/wysk/what-you-should-know-about-pregnant-workers-fairness-act",
+          "evidenceRole": "pregnancy-accommodation-work-boundary",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-11",
+          "sourceCheck": {
+            "checkedAt": "2026-07-11",
+            "method": "python-urllib-get",
+            "statusCode": 200,
+            "contentLengthBytes": 85487
+          }
+        }
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "modelAdmissionDecision": "blocked-pending-source-specific-extraction-local-review-independent-fresh-review-and-reviewed-artifact-promotion"
+    },
+    {
+      "domainId": "remote-hybrid-court-hearing-access-continuity",
+      "triageBucket": "justice-access-procedure",
+      "selectionReason": "远程和混合法庭听证影响残障、交通、照护、工作冲突和程序参与，是司法可及性如何改变权利恢复成本的执行域。",
+      "claimSeed": "远程/混合听证可改变出庭成本、参与率、程序公平、技术障碍和权利救济连续性。",
+      "variableSeed": [
+        "remote-hearing-access",
+        "technology-barrier",
+        "transportation-cost",
+        "procedural-participation",
+        "fairness-risk"
+      ],
+      "batchId": "C2-LT-B14",
+      "priorityRank": 10,
+      "localDomainPath": "domains/c2-source-maintenance/remote-hybrid-court-hearing-access-continuity",
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB14-SRC-10-1",
+          "title": "NCSC: Guide to Better Remote Dependency Hearings",
+          "url": "https://www.ncsc.org/resources-courts/guide-better-remote-dependency-hearings",
+          "evidenceRole": "remote-hearing-practice-boundary",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-11",
+          "sourceCheck": {
+            "checkedAt": "2026-07-11",
+            "method": "python-urllib-get",
+            "statusCode": 200,
+            "contentLengthBytes": 80704
+          }
+        },
+        {
+          "sourceRefId": "C2LTB14-SRC-10-2",
+          "title": "US Courts: Remote Public Access to Proceedings",
+          "url": "https://www.uscourts.gov/court-records/access-court-proceedings/remote-public-access-proceedings",
+          "evidenceRole": "remote-court-access-boundary",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-11",
+          "sourceCheck": {
+            "checkedAt": "2026-07-11",
+            "method": "python-urllib-get",
+            "statusCode": 200,
+            "contentLengthBytes": 212220
+          }
+        }
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "modelAdmissionDecision": "blocked-pending-source-specific-extraction-local-review-independent-fresh-review-and-reviewed-artifact-promotion"
+    },
+    {
+      "domainId": "reproductive-tissue-donor-screening-traceability-continuity",
+      "triageBucket": "reproductive-tissue-safety-traceability",
+      "selectionReason": "生殖组织供体筛查和追溯关系到感染风险、亲子身份、组织来源、长期责任和未来选择权，是生殖技术基础设施的安全接口。",
+      "claimSeed": "HCT/P 供体资格、筛查和记录追溯可影响生殖组织安全、感染风险、可追责性和生育选择连续性。",
+      "variableSeed": [
+        "donor-eligibility",
+        "infectious-disease-screening",
+        "traceability",
+        "tissue-source-governance",
+        "recipient-risk"
+      ],
+      "batchId": "C2-LT-B14",
+      "priorityRank": 11,
+      "localDomainPath": "domains/c2-source-maintenance/reproductive-tissue-donor-screening-traceability-continuity",
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB14-SRC-11-1",
+          "title": "FDA Guidance: Eligibility Determination for Donors of HCT/Ps",
+          "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/eligibility-determination-donors-human-cells-tissues-and-cellular-and-tissue-based-products",
+          "evidenceRole": "hctp-donor-eligibility-boundary",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-11",
+          "sourceCheck": {
+            "checkedAt": "2026-07-11",
+            "method": "python-urllib-get",
+            "statusCode": 200,
+            "contentLengthBytes": 36805
+          }
+        },
+        {
+          "sourceRefId": "C2LTB14-SRC-11-2",
+          "title": "eCFR: 21 CFR Part 1271 Subpart C Donor Eligibility",
+          "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-L/part-1271/subpart-C",
+          "evidenceRole": "hctp-donor-eligibility-regulatory-boundary",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-11",
+          "sourceCheck": {
+            "checkedAt": "2026-07-11",
+            "method": "python-urllib-get",
+            "statusCode": 200,
+            "contentLengthBytes": 135100
+          }
+        }
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "modelAdmissionDecision": "blocked-pending-source-specific-extraction-local-review-independent-fresh-review-and-reviewed-artifact-promotion"
+    },
+    {
+      "domainId": "skin-care-supplies-dressings-barrier-products-continuity",
+      "triageBucket": "skin-boundary-supplies",
+      "selectionReason": "敷料、屏障产品和皮肤护理用品决定慢性伤口、压力损伤、潮湿损伤和感染入口能否被持续管理，是皮肤边界维护的物资接口。",
+      "claimSeed": "皮肤护理用品和敷料可通过伤口覆盖、渗出液管理、屏障保护和感染预防影响疼痛、活动和长期照护负担。",
+      "variableSeed": [
+        "dressing-access",
+        "barrier-product-access",
+        "wound-exudate-management",
+        "skin-integrity",
+        "supply-continuity"
+      ],
+      "batchId": "C2-LT-B14",
+      "priorityRank": 12,
+      "localDomainPath": "domains/c2-source-maintenance/skin-care-supplies-dressings-barrier-products-continuity",
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB14-SRC-12-1",
+          "title": "CMS LCD: Surgical Dressings",
+          "url": "https://www.cms.gov/medicare-coverage-database/view/lcd.aspx?lcdid=33831",
+          "evidenceRole": "surgical-dressing-coverage-boundary",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-11",
+          "sourceCheck": {
+            "checkedAt": "2026-07-11",
+            "method": "python-urllib-get",
+            "statusCode": 200,
+            "contentLengthBytes": 207931
+          }
+        },
+        {
+          "sourceRefId": "C2LTB14-SRC-12-2",
+          "title": "AHRQ: Preventing Pressure Ulcers in Hospitals Toolkit",
+          "url": "https://www.ahrq.gov/patient-safety/settings/hospital/resource/pressureulcer/tool/index.html",
+          "evidenceRole": "pressure-injury-skin-care-tool-boundary",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-11",
+          "sourceCheck": {
+            "checkedAt": "2026-07-11",
+            "method": "python-urllib-get",
+            "statusCode": 200,
+            "contentLengthBytes": 77161
+          }
+        }
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "modelAdmissionDecision": "blocked-pending-source-specific-extraction-local-review-independent-fresh-review-and-reviewed-artifact-promotion"
+    },
+    {
+      "domainId": "substance-exposure-control",
+      "triageBucket": "chemical-substance-exposure",
+      "selectionReason": "有毒物质和危险化学暴露控制影响神经、呼吸、肝肾、癌症风险、工作安全和居住安全，是环境与职业风险治理的上游域。",
+      "claimSeed": "有毒物质信息、暴露控制和危害沟通可影响风险识别、预防行动、职业安全和长期健康负担。",
+      "variableSeed": [
+        "toxic-substance-exposure",
+        "hazard-communication",
+        "exposure-control",
+        "occupational-risk",
+        "long-term-health-burden"
+      ],
+      "batchId": "C2-LT-B14",
+      "priorityRank": 13,
+      "localDomainPath": "domains/c2-source-maintenance/substance-exposure-control",
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB14-SRC-13-1",
+          "title": "CDC ATSDR: Toxic Substances Portal",
+          "url": "https://wwwn.cdc.gov/TSP/index.aspx",
+          "evidenceRole": "toxic-substance-profile-boundary",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-11",
+          "sourceCheck": {
+            "checkedAt": "2026-07-11",
+            "method": "python-urllib-get",
+            "statusCode": 200,
+            "contentLengthBytes": 246150
+          }
+        },
+        {
+          "sourceRefId": "C2LTB14-SRC-13-2",
+          "title": "OSHA: Hazard Communication",
+          "url": "https://www.osha.gov/hazcom",
+          "evidenceRole": "hazard-communication-exposure-control-boundary",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-11",
+          "sourceCheck": {
+            "checkedAt": "2026-07-11",
+            "method": "python-urllib-get",
+            "statusCode": 200,
+            "contentLengthBytes": 112656
+          }
+        }
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "modelAdmissionDecision": "blocked-pending-source-specific-extraction-local-review-independent-fresh-review-and-reviewed-artifact-promotion"
+    },
+    {
+      "domainId": "synthetic-data-generation-validation-continuity",
+      "triageBucket": "research-data-method-validity",
+      "selectionReason": "合成数据生成和验证影响隐私保护、模型开发、公开数据共享和方法外推风险，是科研基础设施进入定量模型前的关键数据层。",
+      "claimSeed": "合成数据可在隐私保护和数据共享中发挥作用，但需要验证效用、偏差、隐私风险和与真实数据分布的边界。",
+      "variableSeed": [
+        "synthetic-data-utility",
+        "privacy-risk",
+        "distribution-shift",
+        "validation-protocol",
+        "model-development-boundary"
+      ],
+      "batchId": "C2-LT-B14",
+      "priorityRank": 14,
+      "localDomainPath": "domains/c2-source-maintenance/synthetic-data-generation-validation-continuity",
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB14-SRC-14-1",
+          "title": "NIST: Differentially Private Synthetic Data",
+          "url": "https://www.nist.gov/blogs/cybersecurity-insights/differentially-private-synthetic-data",
+          "evidenceRole": "synthetic-data-privacy-utility-boundary",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-11",
+          "sourceCheck": {
+            "checkedAt": "2026-07-11",
+            "method": "python-urllib-get",
+            "statusCode": 200,
+            "contentLengthBytes": 109163
+          }
+        },
+        {
+          "sourceRefId": "C2LTB14-SRC-14-2",
+          "title": "NIST: Differential Privacy Synthetic Data Challenge",
+          "url": "https://www.nist.gov/ctl/pscr/open-innovation-prize-challenges/past-prize-challenges/2018-differential-privacy-synthetic",
+          "evidenceRole": "synthetic-data-challenge-validation-boundary",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-11",
+          "sourceCheck": {
+            "checkedAt": "2026-07-11",
+            "method": "python-urllib-get",
+            "statusCode": 200,
+            "contentLengthBytes": 122808
+          }
+        }
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "modelAdmissionDecision": "blocked-pending-source-specific-extraction-local-review-independent-fresh-review-and-reviewed-artifact-promotion"
+    },
+    {
+      "domainId": "synthetic-media-watermarking-disclosure-continuity",
+      "triageBucket": "information-integrity-provenance",
+      "selectionReason": "合成媒体水印和披露影响信任、诈骗、身份冒充、公共信息完整性和证据链，是 AI 时代信息环境连续性的基础控制域。",
+      "claimSeed": "合成内容来源标记、披露和 provenance 标准可影响内容可信、身份冒充风险、平台治理和证据保存。",
+      "variableSeed": [
+        "synthetic-content-provenance",
+        "watermarking-disclosure",
+        "content-authenticity",
+        "impersonation-risk",
+        "evidence-chain"
+      ],
+      "batchId": "C2-LT-B14",
+      "priorityRank": 15,
+      "localDomainPath": "domains/c2-source-maintenance/synthetic-media-watermarking-disclosure-continuity",
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB14-SRC-15-1",
+          "title": "NIST AI 100-4: Reducing Risks Posed by Synthetic Content",
+          "url": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-4.pdf",
+          "evidenceRole": "synthetic-content-risk-provenance-boundary",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-11",
+          "sourceCheck": {
+            "checkedAt": "2026-07-11",
+            "method": "python-urllib-get",
+            "statusCode": 200,
+            "contentLengthBytes": 2000000
+          }
+        },
+        {
+          "sourceRefId": "C2LTB14-SRC-15-2",
+          "title": "C2PA Specification",
+          "url": "https://c2pa.org/specifications/specifications/2.1/index.html",
+          "evidenceRole": "content-provenance-standard-boundary",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-11",
+          "sourceCheck": {
+            "checkedAt": "2026-07-11",
+            "method": "python-urllib-get",
+            "statusCode": 200,
+            "contentLengthBytes": 13173
+          }
+        }
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "modelAdmissionDecision": "blocked-pending-source-specific-extraction-local-review-independent-fresh-review-and-reviewed-artifact-promotion"
+    },
+    {
+      "domainId": "wic-benefit-redemption-infant-maternal-nutrition-continuity",
+      "triageBucket": "nutrition-benefit-redemption",
+      "selectionReason": "WIC 兑换链路影响孕产妇、婴幼儿营养、购买摩擦、商户可及性和福利实际转化率，是社会保护转化为身体维护资源的关键接口。",
+      "claimSeed": "WIC 资源是否能被低摩擦兑换为合格食物，可影响母婴营养、食物安全、时间成本和福利执行连续性。",
+      "variableSeed": [
+        "wic-benefit-redemption",
+        "authorized-food-access",
+        "maternal-infant-nutrition",
+        "shopping-friction",
+        "benefit-utilization"
+      ],
+      "batchId": "C2-LT-B14",
+      "priorityRank": 16,
+      "localDomainPath": "domains/c2-source-maintenance/wic-benefit-redemption-infant-maternal-nutrition-continuity",
+      "candidateSourceRefs": [
+        {
+          "sourceRefId": "C2LTB14-SRC-16-1",
+          "title": "USDA ERS: WIC Program",
+          "url": "https://www.ers.usda.gov/topics/food-nutrition-assistance/wic-program/",
+          "evidenceRole": "wic-program-nutrition-access-boundary",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-11",
+          "sourceCheck": {
+            "checkedAt": "2026-07-11",
+            "method": "python-urllib-get",
+            "statusCode": 200,
+            "contentLengthBytes": 49501
+          }
+        },
+        {
+          "sourceRefId": "C2LTB14-SRC-16-2",
+          "title": "NCBI Bookshelf: WIC Program Background",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK209822/",
+          "evidenceRole": "wic-benefit-program-context-boundary",
+          "requiredExtraction": [
+            "exact-claim-or-recommendation",
+            "endpoint-definition",
+            "population-or-setting-boundary",
+            "effect-or-mechanism-signal",
+            "uncertainty-bias-transfer-boundary"
+          ],
+          "reviewStatus": "candidate-not-yet-source-carded",
+          "selectionTrace": "web-checked-source-candidate-2026-07-11",
+          "sourceCheck": {
+            "checkedAt": "2026-07-11",
+            "method": "python-urllib-get",
+            "statusCode": 200,
+            "contentLengthBytes": 68484
+          }
+        }
+      ],
+      "promotionSteps": [
+        "create-domain-claim-evidence-row",
+        "extract-domain-source-card-fields",
+        "run-source-specific-deep-read",
+        "perform-local-source-context-review",
+        "send-through-independent-fresh-review",
+        "promote-reviewed-source-variable-endpoint-uncertainty-transfer-downgrade-cards"
+      ],
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "modelAdmissionDecision": "blocked-pending-source-specific-extraction-local-review-independent-fresh-review-and-reviewed-artifact-promotion"
+    }
+  ],
+  "aggregateDecision": {
+    "selectedDomainCount": 16,
+    "candidateSourceCount": 32,
+    "modelAdmission": "blocked",
+    "promotionBoundary": "B14 selects the remaining still-unqueued uncovered C2 long-tail domains and candidate sources only. Source-specific extraction, deep read, local review, independent fresh review and reviewed artifacts remain required before any claim upgrade or model admission.",
+    "nextAction": "Run B14 audit, then start source-specific extraction queues for B11-B14 or promote the highest-priority reviewed-card backlog."
+  }
+}

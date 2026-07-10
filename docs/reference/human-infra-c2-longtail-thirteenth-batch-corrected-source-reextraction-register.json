@@ -1,0 +1,179 @@
+{
+  "schemaVersion": "human-infra.c2ltb13-corrected-source-reextraction-register.v1",
+  "registerId": "human-infra-c2-longtail-thirteenth-batch-corrected-source-reextraction-register-2026-07-11",
+  "status": "active-c2ltb13-corrected-source-reextracted-model-blocked",
+  "purpose": "Record the bounded corrected-source re-extraction output for the C2-LT-B13 incontinence-associated dermatitis row after PubMed source-resolution replaced the mismatched PMID 26428404 with PMID 22193141.",
+  "sourceOfTruth": {
+    "correctedSourceReextractionQueue": "docs/reference/human-infra-c2-longtail-thirteenth-batch-corrected-source-reextraction-queue.json",
+    "sourceResolutionRegister": "docs/reference/human-infra-c2-longtail-thirteenth-batch-source-resolution-register.json",
+    "sourceExtractionRegister": "docs/reference/human-infra-c2-longtail-thirteenth-batch-source-extraction-register.json",
+    "evidencePolicy": "docs/reference/evidence-policy.md",
+    "maturityGapRegister": "docs/reference/human-infra-maturity-gap-register.json"
+  },
+  "scope": {
+    "batchId": "C2-LT-B13",
+    "queueTaskCount": 1,
+    "reextractedRowCount": 1,
+    "boundedFreshReviewCandidateCount": 1,
+    "routeOrIndexOnlyCount": 0,
+    "directArtifactFillCount": 0,
+    "modelAdmissionOpenedCount": 0,
+    "extractionLimit": "This register records corrected source-context extraction only; it does not itself create reviewed artifacts or authorize model admission."
+  },
+  "requiredPerRowFields": [
+    "reextractionTaskId",
+    "originTaskId",
+    "sourceResolutionId",
+    "domainId",
+    "localDomainPath",
+    "candidateId",
+    "sourceTitle",
+    "sourceUrl",
+    "pmid",
+    "doi",
+    "publicationDate",
+    "sourceType",
+    "extractionStatus",
+    "sourceAccessStatus",
+    "sourceIdentityCorrection",
+    "currentnessBoundary",
+    "exactClaimUse",
+    "endpointDefinition",
+    "populationOrSetting",
+    "effectOrMechanismSignal",
+    "uncertaintyOrBias",
+    "transferBoundary",
+    "downgradeTriggers",
+    "modelPosition",
+    "artifactPromotionReadiness",
+    "modelAdmissionDecision",
+    "blockedUses",
+    "sourceEvidenceTrace",
+    "nextAction"
+  ],
+  "blockedUses": [
+    "calibrated-prediction",
+    "individual-advice",
+    "individual-death-date-output",
+    "intervention-ranking",
+    "clinical-validity-claim",
+    "domain-claim-upgrade",
+    "clinical-advice",
+    "skin-care-advice",
+    "dermatology-care-advice",
+    "wound-care-advice",
+    "incontinence-care-advice",
+    "product-advice"
+  ],
+  "extractedRows": [
+    {
+      "reextractionTaskId": "C2LTB13-CREXT-001",
+      "originTaskId": "C2LTB13-EXT-021",
+      "sourceResolutionId": "C2LTB13-SRR-003",
+      "domainId": "incontinence-associated-dermatitis-moisture-skin-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/incontinence-associated-dermatitis-moisture-skin-continuity",
+      "candidateId": "C2LTB13-SRR-003-CAND-02",
+      "sourceTitle": "Incontinence-associated dermatitis: a comprehensive review and update.",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/22193141/",
+      "pmid": "22193141",
+      "doi": "10.1097/WON.0b013e31823fe246",
+      "publicationDate": "2012 Jan-Feb",
+      "sourceType": "PubMed-indexed review article abstract route",
+      "extractionStatus": "completed-corrected-source-reextraction-bounded",
+      "sourceAccessStatus": "pubmed-esummary-and-efetch-abstract-accessible-2026-07-11; abstract-level source-context extraction only",
+      "sourceIdentityCorrection": "Blocks the original registered PMID 26428404 because it resolves to a chemistry/crystallography article, and replaces the source route with PMID 22193141, a PubMed-indexed review titled 'Incontinence-associated dermatitis: a comprehensive review and update.'",
+      "currentnessBoundary": "The corrected source is a 2012 review article with PubMed abstract access and a 2026 PubMed record revision date. Use it only as IAD review-background vocabulary and source-route correction pending independent fresh review; it is not a current clinical guideline or product-selection source.",
+      "exactClaimUse": "Supports bounded source-context framing that IAD literature discusses epidemiology, etiology and pathophysiology, connects urinary or fecal incontinence to dermatitis as a complication, and identifies persistent knowledge gaps. It may name IAD as a moisture/skin-barrier continuity domain but cannot support individual care advice or calibrated risk.",
+      "endpointDefinition": "Candidate variables include moisture-exposure, urinary-or-fecal-incontinence-context, perineal-skin-barrier-breakdown, dermatitis/skin-inflammation-burden, pain-or-discomfort-burden, infection-entry-risk and evidence-gap/currentness-boundary.",
+      "populationOrSetting": "Human IAD review context involving urinary or fecal incontinence complications, perineal skin and clinical nursing/wound-ostomy-continence literature. It is not generalized to all dermatology, all chronic wounds, all incontinence care, individual prognosis or product choice.",
+      "effectOrMechanismSignal": "Mechanism route: urinary or fecal incontinence can create moisture exposure and perineal skin compromise; IAD is framed as dermatitis with etiology and pathophysiology routes relevant to skin-boundary maintenance, pain/discomfort burden, infection-entry risk and care burden.",
+      "uncertaintyOrBias": "The PubMed abstract states that research remained limited and additional studies were urgently needed. This is a review/consensus-derived source route, not a randomized effect estimate, current guideline, validated endpoint definition, individual risk model or product-comparison evidence.",
+      "transferBoundary": "Transfer only as corrected source identity, IAD background vocabulary, candidate variable names and uncertainty boundary. Do not reuse for skin-care regimens, antifungal or anti-inflammatory use, product selection, wound-care decisions, dermatology diagnosis, clinical instructions, calibrated prediction, intervention ranking or individual advice.",
+      "downgradeTriggers": [
+        "Downgrade to background-only if independent fresh review finds the abstract too old or too recommendation-oriented for the domain claim seed.",
+        "Block artifact promotion if the row is used to endorse cleansing, moisturization, protectant, antifungal, containment, anti-inflammatory, product or care-regimen claims.",
+        "Block model use if the row is treated as calibrated effect-size evidence, current guideline evidence, individual-risk evidence or clinical-validity evidence.",
+        "Downgrade if no full-text or newer source can bind IAD endpoint variables, measurement definitions or currentness boundaries."
+      ],
+      "modelPosition": {
+        "primaryLocation": "C2 source-maintenance skin-boundary and moisture-exposure continuity route",
+        "variables": [
+          "moisture-exposure",
+          "urinary-fecal-incontinence-context",
+          "skin-barrier-breakdown",
+          "dermatitis-burden",
+          "infection-entry-risk",
+          "iad-evidence-gap-boundary"
+        ],
+        "admissibleUse": "corrected source identity, IAD vocabulary and candidate endpoint variables pending independent fresh review"
+      },
+      "artifactPromotionReadiness": "eligible-for-independent-fresh-review-before-bounded-artifact-promotion",
+      "modelAdmissionDecision": "blocked-pending-corrected-extraction-independent-review-and-artifact-gates",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade",
+        "clinical-advice",
+        "skin-care-advice",
+        "dermatology-care-advice",
+        "wound-care-advice",
+        "incontinence-care-advice",
+        "product-advice"
+      ],
+      "sourceEvidenceTrace": [
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/22193141/",
+          "evidenceType": "pubmed-corrected-review-index",
+          "finding": "PubMed identifies PMID 22193141 as the 2012 J Wound Ostomy Continence Nurs review 'Incontinence-associated dermatitis: a comprehensive review and update' with DOI 10.1097/WON.0b013e31823fe246."
+        },
+        {
+          "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&id=22193141&retmode=json",
+          "evidenceType": "ncbi-esummary-source-identity",
+          "finding": "NCBI ESummary confirms title, authors, journal, publication date, review publication type and DOI for PMID 22193141."
+        },
+        {
+          "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=22193141&retmode=xml",
+          "evidenceType": "ncbi-efetch-abstract-context",
+          "finding": "NCBI EFetch abstract states the review updates IAD research, discusses epidemiology, etiology and pathophysiology, and concludes that research remains limited and additional studies are needed."
+        }
+      ],
+      "nextAction": "Send this corrected extraction output to independent fresh review; create bounded reviewed artifacts only if review confirms scope, currentness and prohibited-use boundaries."
+    }
+  ],
+  "nonClaims": [
+    "This register does not make PMID 22193141 a reviewed Source Card.",
+    "This register does not assert that the 2012 review is current guidance.",
+    "This register does not endorse any skin-care, wound-care, incontinence-care, dermatology, product or individual clinical recommendation.",
+    "This register does not authorize model admission, calibrated prediction, intervention ranking, clinical validity or domain-claim upgrade."
+  ],
+  "indexRequirements": [
+    "docs/AGENTS.md",
+    "docs/reference/README.md",
+    "docs/reference/human-infra-maturity-roadmap.md",
+    "docs/reference/human-infra-maturity-gap-register.json",
+    "tools/README.md",
+    "tools/AGENTS.md"
+  ],
+  "summary": {
+    "reextractedRowCount": 1,
+    "freshReviewCandidateTaskIds": [
+      "C2LTB13-CREXT-001"
+    ],
+    "routeOrIndexOnlyTaskIds": [],
+    "blockedPriorSourceUrls": [
+      "https://pubmed.ncbi.nlm.nih.gov/26428404/"
+    ],
+    "correctedSourceUrls": [
+      "https://pubmed.ncbi.nlm.nih.gov/22193141/"
+    ],
+    "remainingWork": [
+      "Run independent fresh review for C2LTB13-CREXT-001.",
+      "Decide whether the corrected IAD source can create bounded reviewed artifacts or must remain background-only.",
+      "If artifacts are allowed, create Source/variable/endpoint/uncertainty/transfer-boundary/downgrade artifacts with blocked clinical uses.",
+      "Keep model admission blocked until reviewed artifacts and model gates pass."
+    ]
+  }
+}

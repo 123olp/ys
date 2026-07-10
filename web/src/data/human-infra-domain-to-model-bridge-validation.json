@@ -1,12 +1,12 @@
 {
   "schemaVersion": "human-infra.domain-to-model-bridge-validation.v1",
   "status": "pass-q2-only-q4-q5-blocked",
-  "generatedAt": "2026-07-04T20:22:37.393073+00:00",
+  "generatedAt": "2026-07-10T22:39:15.312792+00:00",
   "contractPath": "docs/reference/human-infra-domain-to-model-bridge-contract.json",
   "contractSha256": "97337f50212823f5f8d86e52ccc522991c0777d8ef016bbc02109d282aa6844f",
   "registerPath": "docs/reference/human-infra-domain-to-model-bridge-register.json",
-  "registerSha256": "e8b369557f06ad4caeca58cf19acca3ee9f0eec764c85f91fea7df80773ada14",
-  "rowCount": 14,
+  "registerSha256": "98989b932403c11d5faaa2ce50d02a9411bb054322321189d66599ac47fe3d74",
+  "rowCount": 15,
   "tierCoverage": [
     "C1",
     "C2",

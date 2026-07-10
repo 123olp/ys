@@ -271,7 +271,7 @@ disaster-recovery-relief-continuity	C5	可能性生态承载层	外部生态承�
 disaster-temporary-housing-displacement-recovery-continuity	C5	可能性生态承载层	外部生态承载	domains/c5-ecological-substrate/disaster-temporary-housing-displacement-recovery-continuity	关键词显示该域主要承载能源、水、食物、住房、治理、经济、通信、灾害或基础设施环境。	heuristic-v0.1
 disaster-unemployment-income-disruption-continuity	C5	可能性生态承载层	外部生态承载	domains/c5-ecological-substrate/disaster-unemployment-income-disruption-continuity	关键词显示该域主要承载能源、水、食物、住房、治理、经济、通信、灾害或基础设施环境。	heuristic-v0.1
 disaster-volunteer-donations-management-continuity	C5	可能性生态承载层	外部生态承载	domains/c5-ecological-substrate/disaster-volunteer-donations-management-continuity	关键词显示该域主要承载能源、水、食物、住房、治理、经济、通信、灾害或基础设施环境。	heuristic-v0.1
-disembodied-cns	C1	可能性边界改写层	去具身主体边界	domains/c1-boundary-rewriting/disembodied-cns	直接处理中枢生命系统脱离原身体后的主体持续性边界。	heuristic-v0.1
+disembodied-cns	C1	可能性边界改写层	去具身主体边界	domains/c1-boundary-rewriting/disembodied-cns	通过脑-身接口协议、接口因果等价和最小充分身体，直接改写主体对原生身体形态的依赖边界。	heuristic-v0.1
 disorders-of-consciousness-coma-recovery	C2	可能性源体维护层	生命载体维护	domains/c2-source-maintenance/disorders-of-consciousness-coma-recovery	直接维护身体、脑、器官、衰老、损伤或生命系统这些可能性源体。	heuristic-v0.1
 dmca-notice-counter-notice-platform-removal-continuity	C6	局部可能性解锁层	局部阻塞解除	domains/c6-local-unlocking/dmca-notice-counter-notice-platform-removal-continuity	未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。	heuristic-v0.1
 document-capture-ocr-pdf-record-workflow-continuity	C6	局部可能性解锁层	局部阻塞解除	domains/c6-local-unlocking/document-capture-ocr-pdf-record-workflow-continuity	未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。	heuristic-v0.1

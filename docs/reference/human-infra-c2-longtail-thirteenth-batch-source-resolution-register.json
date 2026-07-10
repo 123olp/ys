@@ -1,0 +1,249 @@
+{
+  "schemaVersion": "human-infra.c2-longtail-thirteenth-batch-source-resolution-register.v1",
+  "registerId": "human-infra-c2-longtail-thirteenth-batch-source-resolution-register-2026-07-11",
+  "status": "active-c2ltb13-source-resolution-register-independent-fresh-review-required",
+  "purpose": "Resolve the three C2-LT-B13 local-review PubMed/manual-route issue rows into source-identity matches or corrected source-route candidates without changing reviewed artifact or model admission status.",
+  "sourceOfTruth": {
+    "sourceExtractionQueue": "docs/reference/human-infra-c2-longtail-thirteenth-batch-source-extraction-queue.json",
+    "sourceExtractionRegister": "docs/reference/human-infra-c2-longtail-thirteenth-batch-source-extraction-register.json",
+    "localReviewRegister": "docs/reference/human-infra-c2-longtail-thirteenth-batch-local-review-register.json",
+    "evidencePolicy": "docs/reference/source-card-system.md",
+    "maturityGapRegister": "docs/reference/human-infra-maturity-gap-register.json"
+  },
+  "scope": {
+    "batchId": "C2-LT-B13",
+    "resolutionLevel": "c2ltb13-local-review-issue-row-source-resolution-v0.1",
+    "totalLocalReviewRowCount": 24,
+    "issueRowCount": 3,
+    "pubmedManualRouteIssueCount": 3,
+    "pubmedIdentityMatchCount": 2,
+    "pubmedTitleDomainMismatchCount": 1,
+    "correctedSourceCandidateCount": 1,
+    "resolutionCandidateCount": 4,
+    "selectionRule": "Resolve only the three C2-LT-B13 PubMed/manual-route issue rows identified by local review; use NCBI official metadata routes for source identity and route correction, without extracting clinical recommendations or promoting artifacts.",
+    "resolutionRule": "A matching PMID may proceed only to independent fresh review; a mismatched PMID must remain blocked and requires corrected-source re-extraction before independent fresh review.",
+    "nonClaims": [
+      "This source-resolution register does not change any C2-LT-B13 row into reviewed evidence.",
+      "This source-resolution register does not create reviewed artifacts, Source Cards, variables, endpoints or model-ready rows.",
+      "This source-resolution register does not authorize endocrine, vestibular, dermatology, skin-care, rehabilitation, clinical or individual advice.",
+      "This source-resolution register does not open calibrated prediction, death-date output, intervention ranking or model admission.",
+      "This source-resolution register does not extract clinical recommendations or effect sizes from PubMed abstracts."
+    ]
+  },
+  "verificationSources": [
+    {
+      "verificationId": "C2LTB13-SR-VERIFY-NCBI-ESUMMARY-20260711",
+      "title": "NCBI ESummary PubMed metadata check for C2-LT-B13 issue PMIDs and corrected IAD candidate PMID",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&id=29562364,23142830,26428404,22193141&retmode=json",
+      "sourceType": "official-ncbi-metadata-api",
+      "useBoundary": "Use only for source identity, title, journal, DOI, publication type and bibliographic lineage resolution; not for extracting clinical recommendations, effect claims, individual advice or model variables."
+    },
+    {
+      "verificationId": "C2LTB13-SR-VERIFY-NCBI-EFETCH-20260711",
+      "title": "NCBI EFetch PubMed XML abstract-route check for C2-LT-B13 issue PMIDs and corrected IAD candidate PMID",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=29562364,23142830,26428404,22193141&retmode=xml",
+      "sourceType": "official-ncbi-abstract-route-api",
+      "useBoundary": "Use only to confirm whether an abstract route exists for independent fresh review planning; not for direct Source Card promotion, clinical advice or calibrated model admission."
+    },
+    {
+      "verificationId": "C2LTB13-SR-VERIFY-NCBI-IAD-SEARCH-20260711",
+      "title": "NCBI ESearch DOI/title route check for incontinence-associated dermatitis corrected candidate",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=10.1097%2FWON.0b013e31823fe246%5BAID%5D&retmode=json",
+      "sourceType": "official-ncbi-search-api",
+      "useBoundary": "Use only to justify the corrected IAD candidate PMID route; not for treating the corrected source as fresh-reviewed evidence."
+    }
+  ],
+  "blockedUses": [
+    "calibrated-prediction",
+    "individual-advice",
+    "individual-death-date-output",
+    "intervention-ranking",
+    "clinical-validity-claim",
+    "domain-claim-upgrade"
+  ],
+  "resolutionRows": [
+    {
+      "resolutionId": "C2LTB13-SRR-001",
+      "taskId": "C2LTB13-EXT-004",
+      "domainId": "hypogonadism-testosterone-sex-hormone-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/hypogonadism-testosterone-sex-hormone-continuity",
+      "sourceRefId": "C2LTB13-SRC-02-2",
+      "originalRegisteredTitle": "Testosterone Therapy in Men with Hypogonadism guideline",
+      "originalRegisteredUrl": "https://pubmed.ncbi.nlm.nih.gov/29562364/",
+      "localReviewIssueType": "pubmed-automated-route-403-manual-source-context-review-required",
+      "currentSourceCheck": {
+        "observedTitle": "Testosterone Therapy in Men With Hypogonadism: An Endocrine Society Clinical Practice Guideline.",
+        "observedJournal": "The Journal of clinical endocrinology and metabolism",
+        "observedDoi": "10.1210/jc.2018-00229",
+        "verificationEvidence": "C2LTB13-SR-VERIFY-NCBI-ESUMMARY-20260711",
+        "result": "registered-pmid-title-match-source-route-usable-for-fresh-review-planning"
+      },
+      "sourceResolutionDecision": "keep-registered-pubmed-route-after-ncbi-metadata-identity-check",
+      "sourceResolutionStatus": "candidate-resolution-prepared-not-fresh-reviewed",
+      "sourceResolutionCandidates": [
+        {
+          "candidateId": "C2LTB13-SRR-001-CAND-01",
+          "candidateRole": "pubmed-source-identity-match",
+          "title": "Testosterone Therapy in Men With Hypogonadism: An Endocrine Society Clinical Practice Guideline.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/29562364/",
+          "sourceType": "official-pubmed-bibliographic-index-route",
+          "sourceIdentityStatus": "pubmed-metadata-route-verified-not-fresh-reviewed",
+          "verificationEvidence": "C2LTB13-SR-VERIFY-NCBI-ESUMMARY-20260711",
+          "resolutionFinding": "PMID 29562364 matches the queued testosterone therapy guideline title and can proceed to independent fresh review as a bibliographic guideline-index route.",
+          "doi": "10.1210/jc.2018-00229",
+          "useBoundary": "Use only for source-route resolution, independent fresh review planning and possible re-extraction; no reviewed artifact, individual advice, intervention ranking, calibrated risk or model admission."
+        }
+      ],
+      "requiredFreshReviewActions": [
+        "Open the PubMed and DOI/publisher route during independent fresh review and confirm source identity, currentness and accessible abstract/full-text boundary.",
+        "Re-extract exact claim, endpoint, population/setting, uncertainty, transfer boundary, downgrade triggers and model position from the verified source route if the row proceeds.",
+        "Downgrade to bibliographic-index-only if full text cannot be reviewed or if source scope is insufficient for the domain claim seed.",
+        "Keep all advice, intervention-ranking, individual-prediction and calibrated model uses blocked.",
+        "Run independent fresh review before any bounded reviewed artifact can be created."
+      ],
+      "artifactPromotionDecision": "blocked-pending-independent-fresh-review-and-reviewed-artifact-gates",
+      "modelAdmissionDecision": "blocked-pending-source-resolution-independent-fresh-review-reviewed-artifact-and-model-admission-gates",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ]
+    },
+    {
+      "resolutionId": "C2LTB13-SRR-002",
+      "taskId": "C2LTB13-EXT-017",
+      "domainId": "vestibular-migraine-dizziness-sensory-load-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/vestibular-migraine-dizziness-sensory-load-continuity",
+      "sourceRefId": "C2LTB13-SRC-09-1",
+      "originalRegisteredTitle": "Vestibular migraine diagnostic criteria",
+      "originalRegisteredUrl": "https://pubmed.ncbi.nlm.nih.gov/23142830/",
+      "localReviewIssueType": "pubmed-automated-route-403-manual-source-context-review-required",
+      "currentSourceCheck": {
+        "observedTitle": "Vestibular migraine: diagnostic criteria.",
+        "observedJournal": "Journal of vestibular research : equilibrium & orientation",
+        "observedDoi": "10.3233/VES-2012-0453",
+        "verificationEvidence": "C2LTB13-SR-VERIFY-NCBI-ESUMMARY-20260711",
+        "result": "registered-pmid-title-match-source-route-usable-for-fresh-review-planning"
+      },
+      "sourceResolutionDecision": "keep-registered-pubmed-route-after-ncbi-metadata-identity-check",
+      "sourceResolutionStatus": "candidate-resolution-prepared-not-fresh-reviewed",
+      "sourceResolutionCandidates": [
+        {
+          "candidateId": "C2LTB13-SRR-002-CAND-01",
+          "candidateRole": "pubmed-source-identity-match",
+          "title": "Vestibular migraine: diagnostic criteria.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/23142830/",
+          "sourceType": "official-pubmed-bibliographic-index-route",
+          "sourceIdentityStatus": "pubmed-metadata-route-verified-not-fresh-reviewed",
+          "verificationEvidence": "C2LTB13-SR-VERIFY-NCBI-ESUMMARY-20260711",
+          "resolutionFinding": "PMID 23142830 matches the queued vestibular migraine diagnostic criteria title and can proceed to independent fresh review as a bibliographic diagnostic-criteria route.",
+          "doi": "10.3233/VES-2012-0453",
+          "useBoundary": "Use only for source-route resolution, independent fresh review planning and possible re-extraction; no reviewed artifact, individual advice, intervention ranking, calibrated risk or model admission."
+        }
+      ],
+      "requiredFreshReviewActions": [
+        "Open the PubMed and DOI/publisher route during independent fresh review and confirm source identity, currentness and accessible abstract/full-text boundary.",
+        "Re-extract exact claim, endpoint, population/setting, uncertainty, transfer boundary, downgrade triggers and model position from the verified source route if the row proceeds.",
+        "Downgrade to bibliographic-index-only if full text cannot be reviewed or if source scope is insufficient for the domain claim seed.",
+        "Keep all advice, intervention-ranking, individual-prediction and calibrated model uses blocked.",
+        "Run independent fresh review before any bounded reviewed artifact can be created."
+      ],
+      "artifactPromotionDecision": "blocked-pending-independent-fresh-review-and-reviewed-artifact-gates",
+      "modelAdmissionDecision": "blocked-pending-source-resolution-independent-fresh-review-reviewed-artifact-and-model-admission-gates",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ]
+    },
+    {
+      "resolutionId": "C2LTB13-SRR-003",
+      "taskId": "C2LTB13-EXT-021",
+      "domainId": "incontinence-associated-dermatitis-moisture-skin-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/incontinence-associated-dermatitis-moisture-skin-continuity",
+      "sourceRefId": "C2LTB13-SRC-11-1",
+      "originalRegisteredTitle": "Incontinence-associated dermatitis review",
+      "originalRegisteredUrl": "https://pubmed.ncbi.nlm.nih.gov/26428404/",
+      "localReviewIssueType": "pubmed-title-domain-mismatch",
+      "currentSourceCheck": {
+        "observedTitle": "Combined analysis of chemical bonding in a Cu(II) dimer using QTAIM, Voronoi tessellation and Hirshfeld surface approaches.",
+        "observedJournal": "Acta crystallographica Section B, Structural science, crystal engineering and materials",
+        "observedDoi": "10.1107/S2052520615015279",
+        "verificationEvidence": "C2LTB13-SR-VERIFY-NCBI-ESUMMARY-20260711",
+        "result": "registered-pmid-invalid-for-incontinence-associated-dermatitis-domain"
+      },
+      "sourceResolutionDecision": "replace-mismatched-pmid-with-incontinence-associated-dermatitis-review-candidate-pmid",
+      "sourceResolutionStatus": "candidate-correction-prepared-reextraction-required-not-fresh-reviewed",
+      "sourceResolutionCandidates": [
+        {
+          "candidateId": "C2LTB13-SRR-003-CAND-01",
+          "candidateRole": "invalid-registered-pmid-to-block",
+          "title": "Combined analysis of chemical bonding in a Cu(II) dimer using QTAIM, Voronoi tessellation and Hirshfeld surface approaches.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/26428404/",
+          "sourceType": "mismatched-pubmed-bibliographic-index-route",
+          "sourceIdentityStatus": "verified-title-domain-mismatch-via-ncbi-esummary",
+          "verificationEvidence": "C2LTB13-SR-VERIFY-NCBI-ESUMMARY-20260711",
+          "resolutionFinding": "PMID 26428404 resolves to a chemistry/crystallography article and cannot support the incontinence-associated dermatitis domain row.",
+          "doi": "10.1107/S2052520615015279",
+      "useBoundary": "Block this candidate for the IAD row; use only as mismatch evidence and never as skin-boundary, IAD, clinical, intervention or model evidence; model admission remains blocked."
+        },
+        {
+          "candidateId": "C2LTB13-SRR-003-CAND-02",
+          "candidateRole": "corrected-iad-review-source-candidate",
+          "title": "Incontinence-associated dermatitis: a comprehensive review and update.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/22193141/",
+          "sourceType": "official-pubmed-bibliographic-review-route",
+          "sourceIdentityStatus": "corrected-iad-review-candidate-identified-not-fresh-reviewed",
+          "verificationEvidence": "C2LTB13-SR-VERIFY-NCBI-IAD-SEARCH-20260711",
+          "resolutionFinding": "PMID 22193141 matches an incontinence-associated dermatitis comprehensive review and update; it is a corrected source-route candidate that still requires re-extraction and independent fresh review.",
+          "doi": "10.1097/WON.0b013e31823fe246",
+          "useBoundary": "Use only for corrected source-route resolution, re-extraction planning and independent fresh review; no reviewed artifact, skin-care advice, calibrated risk, intervention ranking or model admission."
+        }
+      ],
+      "requiredFreshReviewActions": [
+        "Keep PMID 26428404 blocked as a title/domain mismatch for the IAD row.",
+        "Re-extract source-context fields from the corrected candidate PMID 22193141 before independent fresh review.",
+        "Confirm whether the corrected IAD source is sufficient for the domain claim seed or should be downgraded to review-background vocabulary only.",
+        "Separate IAD skin-boundary vocabulary from individual dermatology, wound-care, incontinence-care or product advice.",
+        "Run independent fresh review before any bounded reviewed artifact can be created."
+      ],
+      "artifactPromotionDecision": "blocked-pending-corrected-source-reextraction-independent-fresh-review-and-reviewed-artifact-gates",
+      "modelAdmissionDecision": "blocked-pending-source-correction-reextraction-independent-fresh-review-reviewed-artifact-and-model-admission-gates",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ]
+    }
+  ],
+  "requiredNextArtifacts": [
+    "c2ltb13-corrected-source-reextraction-queue-for-C2LTB13-EXT-021",
+    "c2ltb13-independent-fresh-review-protocol",
+    "c2ltb13-independent-fresh-review-verdict-register",
+    "reviewed-source-card",
+    "variable-card",
+    "endpoint-card",
+    "uncertainty-card",
+    "transfer-boundary-card",
+    "downgrade-check-row"
+  ],
+  "modelAdmissionDecision": "blocked-source-resolution-prepared-but-corrected-source-reextraction-independent-fresh-review-reviewed-artifacts-and-calibrated-model-admission-incomplete",
+  "indexRequirements": [
+    "docs/reference/README.md must list this B13 source-resolution register.",
+    "docs/AGENTS.md must describe this register and its non-claim boundary.",
+    "tools/README.md and tools/AGENTS.md must list the B13 source-resolution audit script and Make target.",
+    "Makefile must expose c2-longtail-thirteenth-batch-source-resolution-audit and include it in make check.",
+    "docs/reference/human-infra-maturity-roadmap.md must update B13 from local-review-complete to source-resolution-prepared-with-one-corrected-source-reextraction-needed.",
+    "docs/reference/human-infra-maturity-gap-register.json must preserve B13 as blocked before corrected re-extraction, fresh review, reviewed artifacts and model admission.",
+    "No README or roadmap text may imply B13 reviewed artifacts or model-ready evidence exist."
+  ]
+}

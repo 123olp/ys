@@ -1,0 +1,162 @@
+{
+  "schemaVersion": "human-infra.c2ltb13-corrected-source-reextraction-queue.v1",
+  "queueId": "human-infra-c2-longtail-thirteenth-batch-corrected-source-reextraction-queue-2026-07-11",
+  "status": "active-c2ltb13-corrected-source-reextraction-queue-model-blocked",
+  "purpose": "Derive the single C2-LT-B13 corrected incontinence-associated dermatitis source candidate into a bounded corrected-source re-extraction task after local source-resolution identified the registered PMID as a title/domain mismatch.",
+  "sourceOfTruth": {
+    "sourceResolutionRegister": "docs/reference/human-infra-c2-longtail-thirteenth-batch-source-resolution-register.json",
+    "sourceExtractionRegister": "docs/reference/human-infra-c2-longtail-thirteenth-batch-source-extraction-register.json",
+    "localReviewRegister": "docs/reference/human-infra-c2-longtail-thirteenth-batch-local-review-register.json",
+    "evidencePolicy": "docs/reference/evidence-policy.md",
+    "maturityGapRegister": "docs/reference/human-infra-maturity-gap-register.json"
+  },
+  "scope": {
+    "batchId": "C2-LT-B13",
+    "queueLevel": "c2ltb13-corrected-source-reextraction-v0.1",
+    "sourceResolutionIssueRowCount": 3,
+    "titleDomainMismatchRowCount": 1,
+    "correctedSourceCandidateCount": 1,
+    "derivedTaskCount": 1,
+    "directArtifactFillTaskCount": 0,
+    "modelAdmissionOpenedTaskCount": 0,
+    "selectionRule": "Include only the corrected IAD review candidate C2LTB13-SRR-003-CAND-02 for C2LTB13-EXT-021; keep the invalid registered PMID 26428404 blocked as mismatch evidence.",
+    "currentLimitations": [
+      "This queue does not complete corrected source re-extraction.",
+      "This queue does not create Source Cards, reviewed artifacts, variable cards, endpoint cards or model-ready rows.",
+      "This queue does not authorize skin-care, dermatology, wound-care, incontinence-care, product, clinical or individual advice.",
+      "This queue does not open calibrated prediction, intervention ranking, clinical-validity claims, domain-claim upgrade or individual death-date output."
+    ]
+  },
+  "requiredPerTaskFields": [
+    "taskId",
+    "batchId",
+    "originTaskId",
+    "sourceResolutionId",
+    "domainId",
+    "localDomainPath",
+    "candidateId",
+    "candidateRole",
+    "sourceTitle",
+    "sourceUrl",
+    "sourceType",
+    "reextractionRole",
+    "reextractionAction",
+    "sourceResolutionFinding",
+    "useBoundary",
+    "requiredReextractionSlots",
+    "reextractionQuestions",
+    "taskStatus",
+    "reviewState",
+    "artifactPromotionDecision",
+    "modelAdmissionDecision",
+    "blockedUses",
+    "nextAction"
+  ],
+  "queueDefaults": {
+    "taskStatus": "queued-corrected-source-reextraction-required",
+    "reviewState": "source-resolution-candidate-correction-not-reextracted",
+    "artifactPromotionDecision": "blocked-pending-corrected-source-reextraction-independent-fresh-review-and-reviewed-artifact-gates",
+    "modelAdmissionDecision": "blocked",
+    "blockedUses": [
+      "calibrated-prediction",
+      "individual-advice",
+      "individual-death-date-output",
+      "intervention-ranking",
+      "clinical-validity-claim",
+      "domain-claim-upgrade"
+    ],
+    "minimumReextractionQuestion": "What bounded source-context fields can PMID 22193141 support for the IAD domain without clinical, product, individual or model-admission claims?"
+  },
+  "derivedQueueSummary": {
+    "derivedTaskCount": 1,
+    "originTaskIds": [
+      "C2LTB13-EXT-021"
+    ],
+    "correctedCandidateIds": [
+      "C2LTB13-SRR-003-CAND-02"
+    ],
+    "blockedPriorSourceUrls": [
+      "https://pubmed.ncbi.nlm.nih.gov/26428404/"
+    ],
+    "correctedSourceUrls": [
+      "https://pubmed.ncbi.nlm.nih.gov/22193141/"
+    ],
+    "remainingWork": [
+      "Complete bounded corrected-source re-extraction.",
+      "Run independent fresh review on the corrected extraction output.",
+      "Create bounded reviewed artifacts only if independent review passes.",
+      "Keep model admission blocked until reviewed artifacts and model gates pass."
+    ]
+  },
+  "nonClaims": [
+    "This queue does not prove that the corrected IAD review is current guidance.",
+    "This queue does not extract or endorse prevention or treatment recommendations.",
+    "This queue does not create a reviewed artifact or Source Card.",
+    "This queue does not permit clinical advice, product selection, risk calibration, intervention ranking or model admission."
+  ],
+  "indexRequirements": [
+    "docs/AGENTS.md",
+    "docs/reference/README.md",
+    "docs/reference/human-infra-maturity-roadmap.md",
+    "docs/reference/human-infra-maturity-gap-register.json",
+    "tools/README.md",
+    "tools/AGENTS.md"
+  ],
+  "reextractionTasks": [
+    {
+      "taskId": "C2LTB13-CREXT-001",
+      "batchId": "C2-LT-B13",
+      "originTaskId": "C2LTB13-EXT-021",
+      "sourceResolutionId": "C2LTB13-SRR-003",
+      "domainId": "incontinence-associated-dermatitis-moisture-skin-continuity",
+      "localDomainPath": "domains/c2-source-maintenance/incontinence-associated-dermatitis-moisture-skin-continuity",
+      "candidateId": "C2LTB13-SRR-003-CAND-02",
+      "candidateRole": "corrected-iad-review-source-candidate",
+      "sourceTitle": "Incontinence-associated dermatitis: a comprehensive review and update.",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/22193141/",
+      "sourceType": "official-pubmed-bibliographic-review-route",
+      "reextractionRole": "corrected-iad-review-bounded-extraction",
+      "reextractionAction": "extract bounded source identity, IAD vocabulary, endpoint candidates, uncertainty, transfer boundaries and model-position notes from the corrected PubMed review record",
+      "sourceResolutionFinding": "PMID 22193141 matches the IAD comprehensive review/update title and replaces the mismatched PMID 26428404 for this source-route candidate, but still requires corrected-source re-extraction and independent fresh review.",
+      "useBoundary": "Use only for IAD source-context vocabulary, endpoint candidates and uncertainty boundaries after bounded re-extraction; no skin-care advice, product advice, dermatology care advice, wound-care advice, calibrated risk or model admission.",
+      "requiredReextractionSlots": [
+        "sourceIdentityCorrection",
+        "currentnessBoundary",
+        "exactClaimUse",
+        "endpointDefinition",
+        "populationOrSetting",
+        "effectOrMechanismSignal",
+        "uncertaintyOrBias",
+        "transferBoundary",
+        "downgradeTriggers",
+        "modelPosition",
+        "artifactPromotionReadiness"
+      ],
+      "reextractionQuestions": [
+        "What exact source identity correction is being made, and which invalid PMID is blocked?",
+        "What population or clinical context does the corrected IAD review actually cover?",
+        "Which IAD vocabulary and endpoint candidates can be named without clinical advice or effect-size claims?",
+        "Which mechanism signals connect urinary or fecal incontinence, moisture exposure, dermatitis and skin-barrier compromise?",
+        "What uncertainty and currentness limits follow from using a 2012 review abstract route?",
+        "What transfer boundary prevents product, skin-care, wound-care, dermatology or individual-advice reuse?",
+        "Which downgrade triggers would block artifact promotion or model use?",
+        "Where would the corrected row sit in the Human Infra model if a later review creates bounded artifacts?",
+        "Which blocked uses remain prohibited after this corrected re-extraction?",
+        "What downstream independent fresh-review gate must pass next?"
+      ],
+      "taskStatus": "queued-corrected-source-reextraction-required",
+      "reviewState": "source-resolution-candidate-correction-not-reextracted",
+      "artifactPromotionDecision": "blocked-pending-corrected-source-reextraction-independent-fresh-review-and-reviewed-artifact-gates",
+      "modelAdmissionDecision": "blocked",
+      "blockedUses": [
+        "calibrated-prediction",
+        "individual-advice",
+        "individual-death-date-output",
+        "intervention-ranking",
+        "clinical-validity-claim",
+        "domain-claim-upgrade"
+      ],
+      "nextAction": "Perform bounded corrected-source re-extraction, then send the output through independent fresh review before any reviewed artifact or model bridge consideration."
+    }
+  ]
+}
