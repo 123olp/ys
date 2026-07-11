@@ -69,6 +69,11 @@ disembodied-cns/
 │   └── minimal-sufficient-body-claim-evidence-matrix.json
 └── literature/
     ├── README.md
+    ├── papers/
+    │   ├── README.md
+    │   ├── manifest.tsv
+    │   ├── html/
+    │   └── pdf/
     ├── source-cards.md
     └── source-signals.md
 ```
@@ -81,6 +86,10 @@ disembodied-cns/
 - `docs/brain-body-interface-protocol-register.json`：保存脑-身接口协议的机器可审计记录，只允许 L2/Q2 候选变量和保守状态，不承载工程、临床、个体预测或生存收益声称。
 - `docs/minimal-sufficient-body-claim-evidence-matrix.json`：保存本域稳定主张到 Source Cards、协议行、变量、反证、降级动作和禁止外推边界的机器可审计矩阵。
 - `literature/README.md`：说明文献包结构、维护规则和禁止外推边界。
+- `literature/papers/README.md`：说明本地 PDF/HTML 镜像的目录、状态、版权边界和使用规则。
+- `literature/papers/manifest.tsv`：记录 `MSB-SIG-*` 来源的本地 PDF、HTML 快照、下载状态和失败原因。
+- `literature/papers/html/`：保存官方页面、PubMed 页面、PMC 页面或监管页面快照。
+- `literature/papers/pdf/`：只保存可通过开放或官方下载路径取得的 PDF。
 - `literature/source-signals.md`：记录候选论文、监管资料、标准和技术项目，只作为待复核来源信号。
 - `literature/source-cards.md`：把已读来源整理为 claim、变量、机制、证据类型、边界、反证条件和迁移位置。
 
@@ -93,6 +102,7 @@ disembodied-cns/
 ## 维护规则
 
 - 新增内容必须保持非操作性、非实验步骤、非人体改造指南。
+- 新增或更新本地文献镜像时，必须同步更新 `literature/papers/manifest.tsv`；受限 PDF、NCBI 下载挑战、FTP 失败或非 OA 来源必须明确标记，不得绕过访问限制或伪装为已下载全文。
 - 技术讨论必须围绕系统边界、接口、控制、反馈、故障、验证和伦理。
 - 本域优先采用“接口因果作用”判据：先描述原生器官经由脑-身接口实际交换了什么、以何方向/频率/精度/误差边界交换、对主体状态产生什么闭环作用，再讨论候选替代实现；不得用器官名称、设备外形或功能相似性直接替代接口等价证明。
 - 维护本域时必须把“脑-身接口协议”当作第一对象，把心脏、肺、肝脏、肾脏、四肢、传感器、执行器、控制器和神经接口都视为协议实现细节；新增条目若不能说明交换内容、方向、频率、延迟、精度、误差、闭环角色和主体状态依赖，只能进入来源信号，不能进入稳定主张。
