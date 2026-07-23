@@ -31,3 +31,10 @@ Calitree 的节点状态与进度环
 ## 选定候选
 
 `Historical Tech Tree` 已选为主要视觉与交互参考，并进入专项完整镜像流程。其 Windows 抓取入口、离线闭合方式、完整性证据和许可边界见 `../../../tools/tech-tree-reference-capture/CAPTURE-CONTRACT.md`；第三方资产继续只保存在本地研究快照目录，不进入正式产品源码。
+
+原始镜像固定在 `20260723T214152Z` 批次，本地优化副本位于
+`D:\.projects\human-infra-reference-captures\historical-tech-tree\optimized-source`。
+原版预览使用 `http://localhost:18779/`，优化版使用
+`http://localhost:18780/`。优化副本拥有独立 Git 历史，基线提交
+`577e2af`，性能修复提交 `6e1e4bf`；详细对照证据见优化副本的
+`DEBUG.md`。

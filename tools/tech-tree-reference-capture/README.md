@@ -59,6 +59,12 @@ D:\.projects\human-infra-reference-captures\historical-tech-tree\<run-id>\
 
 命令会抓取真实站点页面、公开图数据、API 声明的全部本地技术图片和浏览器发现的运行时资产，随后执行结构审计、本地 HTTP 重放、Chrome 交互门禁、逐文件 SHA-256 和 ZIP 打包。可用 `-OutputRoot`、`-RunId`、`-Concurrency` 和 `-Port` 调整运行参数。
 
+性能研究必须在独立副本中进行，不修改已验收的原始批次。当前优化副本为
+`D:\.projects\human-infra-reference-captures\historical-tech-tree\optimized-source`，
+本地预览地址为 `http://localhost:18780/`。其 `DEBUG.md` 保存根因、
+修复和三轮 Chrome CDP 对照基准，`src/scripts/profile-renderer.mjs`
+提供可重复的渲染性能检查。
+
 哲学知识图谱的旧快照仅用于证明 Windows 抓取工作流可用，不属于 Historical Tech Tree 内容。需要归档该参考批次时执行：
 
 ```bash

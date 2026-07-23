@@ -46,6 +46,25 @@
     },
     "workflow_reference": "build/reference-captures/tech-tree/workflow-reference/philosophy-knowledge-graph/"
   },
+  "local_optimized_fork": {
+    "status": "verified",
+    "path": "D:\\.projects\\human-infra-reference-captures\\historical-tech-tree\\optimized-source",
+    "baseline_commit": "577e2af",
+    "optimization_commit": "6e1e4bf",
+    "local_preview": "http://localhost:18780/",
+    "scope": "本地研究副本；原始抓取批次保持不可变，不进入 Human Infra 正式产品源码",
+    "verification": {
+      "typescript": "PASS",
+      "production_build": "PASS",
+      "browser_interaction": "PASS",
+      "average_interaction_ms_before": 60.22,
+      "average_interaction_ms_after": 32.59,
+      "dom_elements_after_before": 4706.7,
+      "dom_elements_after_optimized": 2355,
+      "long_tasks_per_run_before": 14,
+      "long_tasks_per_run_after": 1
+    }
+  },
   "quality_boundary": [
     "研究完成不等于原始镜像完成",
     "不绕过认证、付费墙、验证码或站点访问策略",
