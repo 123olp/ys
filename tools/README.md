@@ -4,6 +4,7 @@
 
 ## Current Tools
 
+- `tech-tree-reference-capture/`: orchestrates candidate WARC capture plus a Windows-native Historical Tech Tree pipeline using public graph APIs, Chrome/CDP discovery, aria2, offline interaction gates, SHA-256 manifests, and ZIP archives; third-party outputs stay outside Git.
 - `arxiv_html_paper_tool.py`: installs, verifies, and scaffolds the reusable arXiv HTML papers reader framework for Astro projects.
 - `audit_core_claim_evidence_matrix.py`: verifies that the core Human Infra Claim-Evidence Matrix keeps required source anchors, claim IDs, evidence gates, prohibited-use boundaries, method URLs, and index links.
 - `audit_human_infra_maturity_gap_register.py`: verifies that the 100% maturity gap register keeps value, research-framework, and quantitative-model gates aligned with the maturity roadmap, local evidence paths, and blocked-state boundaries.

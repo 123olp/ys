@@ -1,0 +1,25 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-07-23",
+  "purpose": "Human Infra 交互式目标科技树候选参考",
+  "candidates": [
+    {"id":"calitree","name":"Calitree","url":"https://calitree.app/","category":"visual-skill-tree","fit_score":95,"adopt":["四态节点","进度环","节点详情","平移缩放","前置技能"],"avoid":["品牌视觉复制"],"license_boundary":"reference-only"},
+    {"id":"treeapp","name":"Tree","url":"https://treeapp.io/","category":"dependency-unlock","fit_score":94,"adopt":["前置完成后点亮","锁定灰化","分支比较","战争迷雾","图为真相源"],"avoid":["复制专有实现"],"license_boundary":"reference-only"},
+    {"id":"roadmap-sh","name":"roadmap.sh","url":"https://roadmap.sh/","category":"roadmap-content","fit_score":90,"adopt":["节点资源","进度追踪","社区路线图","多路线入口"],"avoid":["复制具体路线图内容"],"license_boundary":"inspect-upstream-license"},
+    {"id":"path-of-exile","name":"Path of Exile Passive Skill Tree","url":"https://www.pathofexile.com/passive-skill-tree","category":"large-graph-navigation","fit_score":87,"adopt":["大型画布","路径高亮","全屏导航","密集图缩放"],"avoid":["游戏美术","过度节点密度"],"license_boundary":"reference-only"},
+    {"id":"skilltreesapp","name":"SkillTrees & RoadMaps","url":"https://skilltreesapp.com/","category":"visual-editor","fit_score":82,"adopt":["拖拽节点","创建连接","状态编辑","自由画布"],"avoid":["无验证标准的自由编辑"],"license_boundary":"reference-only"},
+    {"id":"cortextree","name":"CortexTree","url":"https://www.cortextree.com/","category":"visual-editor","fit_score":81,"adopt":["拖放连接","颜色分组","JSON 导出","网格吸附","撤销重做"],"avoid":["登录成为公开阅读障碍"],"license_boundary":"reference-only"},
+    {"id":"calisthentials","name":"Calisthentials Skill Tree","url":"https://calisthentials.com/calisthenics-skill-tree/","category":"state-progression","fit_score":80,"adopt":["锁定到掌握渐进状态","桌面与移动手势","本地保存"],"avoid":["点击循环状态误操作"],"license_boundary":"reference-only"},
+    {"id":"historical-tech-tree","name":"Historical Tech Tree","url":"https://www.historicaltechtree.com/","category":"genealogy-timeline","fit_score":78,"adopt":["长时间尺度","技术谱系","历史节点关系"],"avoid":["把历史先后误写成因果"],"license_boundary":"reference-only"},
+    {"id":"factorio-technologies","name":"Factorio Technologies","url":"https://wiki.factorio.com/Technologies","category":"research-dependency","fit_score":79,"adopt":["研究前置","投入成本","解锁产物","部分进度保留"],"avoid":["直接移植游戏成本模型"],"license_boundary":"inspect-upstream-license"},
+    {"id":"seenodes","name":"seenodes","url":"https://seenodes.com/","category":"status-graph","fit_score":76,"adopt":["正常","风险","受阻","完成","有向边","导出"],"avoid":["仅用颜色表达状态"],"license_boundary":"reference-only"},
+    {"id":"probknow","name":"ProbKnow","url":"https://probknow.com/","category":"science-evidence-graph","fit_score":91,"adopt":["论文节点","主张节点","假设节点","证据权重","时间线"],"avoid":["把实验平台输出视为权威结论"],"license_boundary":"reference-only"},
+    {"id":"3ie-egm","name":"3ie Evidence Gap Maps","url":"https://www.3ieimpact.org/evidence-hub/evidence-gap-maps","category":"evidence-map","fit_score":90,"adopt":["证据聚类","证据空白","摘要与全文跳转","筛选"],"avoid":["把证据数量等同于质量"],"license_boundary":"reference-only"},
+    {"id":"orkg","name":"Open Research Knowledge Graph","url":"https://www.orkg.org/","category":"scholarly-knowledge-graph","fit_score":86,"adopt":["结构化研究贡献","论文比较","机器可读知识"],"avoid":["直接作为事实真相源"],"license_boundary":"inspect-upstream-license"},
+    {"id":"mira","name":"MIRA","url":"https://www.mira.science/","category":"claim-evidence-medium","fit_score":84,"adopt":["问题","主张","证据","可引用记录"],"avoid":["用平台结构替代证据审查"],"license_boundary":"reference-only"},
+    {"id":"react-flow","name":"React Flow","url":"https://reactflow.dev/","category":"implementation-engine","fit_score":94,"adopt":["自定义节点","边","缩放","平移","选择","小地图"],"avoid":["无必要引入第二套运行时"],"license_boundary":"MIT"},
+    {"id":"react-flow-examples","name":"React Flow Examples","url":"https://reactflow.dev/examples","category":"implementation-patterns","fit_score":92,"adopt":["Dagre 树","ELK 树","折叠展开","自动布局"],"avoid":["复制代码不保留许可"],"license_boundary":"MIT"},
+    {"id":"react-d3-tree","name":"react-d3-tree","url":"https://bkrem.github.io/react-d3-tree/docs/","category":"implementation-engine","fit_score":78,"adopt":["层级树布局","D3 数据映射","节点展开"],"avoid":["用纯树表达多父依赖 DAG"],"license_boundary":"MIT"},
+    {"id":"nasa-trl","name":"NASA Technology Readiness Levels","url":"https://esto.nasa.gov/trl/","category":"maturity-gate","fit_score":93,"adopt":["TRL 1-9","逐级验收","成熟度与完成度分离","证据门禁"],"avoid":["机械套用到所有研究对象"],"license_boundary":"public-reference"}
+  ]
+}

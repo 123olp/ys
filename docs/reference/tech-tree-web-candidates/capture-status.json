@@ -1,0 +1,56 @@
+{
+  "schema_version": "1.0.0",
+  "captured_at": "2026-07-23",
+  "research_snapshot": {
+    "status": "complete",
+    "candidate_count": 18,
+    "method": "公开页面检索、官方说明核对与交互模式归纳"
+  },
+  "raw_capture": {
+    "status": "blocked",
+    "successful_count": 0,
+    "partial_count": 0,
+    "blocked_count": 18,
+    "audit_run_id": "20260723T180000Z-audit",
+    "output_root": "build/reference-captures/tech-tree/20260723T180000Z-audit",
+    "blocker": "当前 WSL 执行环境继承不可达的 127.0.0.1:7890 代理；直连 DNS 与浏览器沙箱系统调用均被运行时限制。未将搜索摘要伪装为网页镜像。",
+    "retry_tool": "tools/tech-tree-reference-capture/capture.sh"
+  },
+  "selected_target_capture": {
+    "candidate_id": "historical-tech-tree",
+    "target_url": "https://www.historicaltechtree.com/",
+    "status": "raw_capture_complete",
+    "completed_run_id": "20260723T214152Z",
+    "windows_entrypoint": "tools/tech-tree-reference-capture/capture-historical-tech-tree.ps1",
+    "capture_contract": "tools/tech-tree-reference-capture/CAPTURE-CONTRACT.md",
+    "output_root": "D:\\.projects\\human-infra-reference-captures\\historical-tech-tree\\20260723T214152Z",
+    "archive": "D:\\.projects\\human-infra-reference-captures\\historical-tech-tree\\historical-tech-tree-20260723T214152Z.zip",
+    "archive_sha256": "bdc8d57716de5c0b996790f76493f47ecd6f2234fcf32a7ce8c50500857894a2",
+    "local_preview": "http://localhost:18779/",
+    "target_contract": {
+      "minimum_nodes": 2400,
+      "minimum_links": 3700,
+      "api": "/api/inventions",
+      "local_image_prefix": "/tech-images/",
+      "source_repository": "https://github.com/etiennefd/hhr-tech-tree"
+    },
+    "verification": {
+      "verdict": "PASS",
+      "nodes": 2415,
+      "links": 3749,
+      "declared_local_images": 2411,
+      "missing_local_images": 0,
+      "captured_and_hashed_files": 5028,
+      "offline_remote_runtime_requests": 0,
+      "archive_integrity": "PASS"
+    },
+    "workflow_reference": "build/reference-captures/tech-tree/workflow-reference/philosophy-knowledge-graph/"
+  },
+  "quality_boundary": [
+    "研究完成不等于原始镜像完成",
+    "不绕过认证、付费墙、验证码或站点访问策略",
+    "第三方原始资产不提交到 Git",
+    "实现只复用模式与合规开源代码",
+    "Historical Tech Tree 代码为 MIT；技术、连接数据和图片授权必须分别审查"
+  ]
+}
