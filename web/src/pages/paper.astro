@@ -1,6 +1,7 @@
 ---
 import PaperReaderLayout from "../layouts/PaperReaderLayout.astro";
 import bookSignals from "../data/book-signals.json";
+import {withBase} from "../lib/site";
 
 const chapterMap = [
   ["引言", "奇点为什么更近", "加速回报定律、2045 时间表、奇点作为隐喻。"],
@@ -134,6 +135,8 @@ const milestoneRows = [
   description="A LaTeXML-style Human Infra web paper that translates singularity-era technology narratives into subject-continuity infrastructure, life-path modeling, and research visualization."
   arxivId="human-infra/working-paper.0001"
   category="cs.HC; q-bio.PE; stat.ME; cs.AI"
+  datePublished="2026-06-27"
+  keywords={["Human Infra", "主体持续性", "生命路径模型", "科研叙事", "subject continuity"]}
 >
   <nav class="ltx_page_navbar" slot="toc">
     <nav class="ltx_TOC">
@@ -1238,8 +1241,8 @@ const milestoneRows = [
       <ol>
         <li>arXiv HTML paper sample: <a href="https://arxiv.org/html/2606.26689v1">https://arxiv.org/html/2606.26689v1</a>.</li>
         <li>LaTeXML: <a href="https://dlmf.nist.gov/LaTeXML/">https://dlmf.nist.gov/LaTeXML/</a>.</li>
-        <li>Human Infra model contract: <a href="/research-standards/">Research standards</a> and repository reference documents.</li>
-        <li>Human Infra arXiv reuse kit: <a href="/paper/">current paper route</a> and local `tools/arxiv_html_paper_tool.py`.</li>
+        <li>Human Infra model contract: <a href={withBase("/research-standards/")}>Research standards</a> and repository reference documents.</li>
+        <li>Human Infra arXiv reuse kit: <a href={withBase("/paper/")}>current paper route</a> and local `tools/arxiv_html_paper_tool.py`.</li>
         <li>Learning source note: 《奇点更近》学习资料，作为书内观点的研究化整理材料使用，不作为事实核验结论。</li>
       </ol>
     </section>

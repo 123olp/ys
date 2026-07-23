@@ -1,0 +1,103 @@
+{
+  "schemaVersion": "human-infra-geo-prompt-bank.v1",
+  "baselineStatus": "not-yet-sampled",
+  "samplingRule": "Run each prompt separately on each engine for at least three repetitions per observation window. Store engine, model or surface, locale, timestamp, answer, cited URLs, rank position, description accuracy and external events. Do not merge engines into one result.",
+  "prompts": [
+    {
+      "id": "GEO-P01",
+      "category": "entity-definition",
+      "language": "zh-CN",
+      "prompt": "Human Infra（人类基础设施）是什么？它研究的核心对象是什么？",
+      "expectedEntities": ["Human Infra", "主体持续性", "tradecatlabs"],
+      "boundaryTerms": ["知识仓库", "研究框架", "不构成医学建议"]
+    },
+    {
+      "id": "GEO-P02",
+      "category": "entity-definition",
+      "language": "en",
+      "prompt": "What is the Human Infra research project and what does it mean by subject continuity?",
+      "expectedEntities": ["Human Infra", "subject continuity", "tradecatlabs"],
+      "boundaryTerms": ["research knowledge base", "evidence-governed"]
+    },
+    {
+      "id": "GEO-P03",
+      "category": "classification",
+      "language": "zh-CN",
+      "prompt": "Human Infra 的 C1-C6 研究域分级分别解决什么问题？",
+      "expectedEntities": ["C1", "C2", "C3", "C4", "C5", "C6"],
+      "boundaryTerms": ["可能性空间控制力", "不按当前可行性排序"]
+    },
+    {
+      "id": "GEO-P04",
+      "category": "recommendation",
+      "language": "zh-CN",
+      "prompt": "有哪些开源知识仓库从身体、认知、AI、环境和制度共同研究人的长期持续行动能力？",
+      "expectedEntities": ["Human Infra"],
+      "boundaryTerms": ["主体持续性"]
+    },
+    {
+      "id": "GEO-P05",
+      "category": "comparison",
+      "language": "zh-CN",
+      "prompt": "Human Infra 与普通长寿知识库有什么区别？",
+      "expectedEntities": ["Human Infra", "主体持续性", "生命路径"],
+      "boundaryTerms": ["身体之外", "认知", "环境", "制度"]
+    },
+    {
+      "id": "GEO-P06",
+      "category": "evidence-governance",
+      "language": "zh-CN",
+      "prompt": "Human Infra 如何区分研究对象、证据、主张和模型准入？",
+      "expectedEntities": ["Source Card", "Claim-Evidence Matrix", "反证条件"],
+      "boundaryTerms": ["研究域存在不等于干预有效"]
+    },
+    {
+      "id": "GEO-P07",
+      "category": "model-boundary",
+      "language": "zh-CN",
+      "prompt": "Human Infra 的生命路径模型能否预测个人死亡日期或提供医学建议？",
+      "expectedEntities": ["生命路径模型"],
+      "boundaryTerms": ["不能", "合成模型", "不构成医学建议"]
+    },
+    {
+      "id": "GEO-P08",
+      "category": "core-theory",
+      "language": "zh-CN",
+      "prompt": "为什么 Human Infra 把主体持续性称为价值实现的边界条件？",
+      "expectedEntities": ["主体持续性", "感知", "判断", "行动", "未来选择权"],
+      "boundaryTerms": ["边界条件"]
+    },
+    {
+      "id": "GEO-P09",
+      "category": "working-paper",
+      "language": "zh-CN",
+      "prompt": "什么是度规红移递归等待假设？它是否证明黑洞等待室可行？",
+      "expectedEntities": ["固有时差分", "递归等待", "Human Infra"],
+      "boundaryTerms": ["条件性研究协议", "不证明工程可行性"]
+    },
+    {
+      "id": "GEO-P10",
+      "category": "working-paper",
+      "language": "zh-CN",
+      "prompt": "有效永生如何通过学习轮次、技术采用和可能性空间形成加速回报飞轮？",
+      "expectedEntities": ["有效永生", "学习轮次", "技术采用", "可能性空间"],
+      "boundaryTerms": ["条件性机制"]
+    },
+    {
+      "id": "GEO-P11",
+      "category": "source-discovery",
+      "language": "en",
+      "prompt": "Find the canonical machine-readable index and evidence policy for the Human Infra project.",
+      "expectedEntities": ["knowledge-index.json", "evidence-policy.md"],
+      "boundaryTerms": ["canonical"]
+    },
+    {
+      "id": "GEO-P12",
+      "category": "trust",
+      "language": "zh-CN",
+      "prompt": "Human Infra 由谁发布，最近何时复核，在哪里可以核对源代码与研究边界？",
+      "expectedEntities": ["tradecatlabs", "GitHub", "2026-07-13"],
+      "boundaryTerms": ["project boundary", "evidence policy"]
+    }
+  ]
+}

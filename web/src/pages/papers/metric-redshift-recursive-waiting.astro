@@ -4,6 +4,7 @@ import metricData from "../../data/metric-redshift-recursive-waiting.json";
 import citationContextPacket from "../../data/metric-redshift-recursive-waiting/CITATION_CONTEXT_REVIEW_PACKET.json";
 import citationContextLocalReview from "../../data/metric-redshift-recursive-waiting/CITATION_CONTEXT_LOCAL_REVIEW.json";
 import scenarioEvaluationAudit from "../../data/metric-redshift-recursive-waiting/SCENARIO_EVALUATION_AUDIT.json";
+import {withBase} from "../../lib/site";
 
 const contributionRows = metricData.contributionRegister;
 const sourceByKey = new Map(metricData.sourceCards.map((source) => [source.key, source]));
@@ -65,6 +66,8 @@ const propositionFormulaHtml = {
   description="An arXiv-style Human Infra working paper proposing a metric-redshift proper-time differential waiting loop for future technology windows."
   arxivId="human-infra/working-paper.0003"
   category="gr-qc; cs.HC; q-bio.PE; stat.ME"
+  datePublished="2026-06-30"
+  keywords={["度规红移", "固有时差分", "递归等待", "未来技术窗口", "主体连续性"]}
 >
   <nav class="ltx_page_navbar" slot="toc">
     <nav class="ltx_TOC">
@@ -941,7 +944,7 @@ const propositionFormulaHtml = {
         <li>P. D. Welch. <a href="https://arxiv.org/abs/gr-qc/0609035">The extent of computation in Malament-Hogarth spacetimes</a>.</li>
         <li>John Earman and John D. Norton. <a href="https://philsci-archive.pitt.edu/1307/">Forever is a Day: Supertasks in Pitowsky and Malament-Hogarth Spacetimes</a>.</li>
         <li>David Lewis. <a href="https://www.jstor.org/stable/2025310">The Paradoxes of Time Travel</a>.</li>
-        <li>Human Infra. <a href="/papers/effective-immortality-flywheel/">Effective Immortality and the Subject-Continuity Acceleration Flywheel</a>.</li>
+        <li>Human Infra. <a href={withBase("/papers/effective-immortality-flywheel/")}>Effective Immortality and the Subject-Continuity Acceleration Flywheel</a>.</li>
       </ol>
     </section>
   </article>

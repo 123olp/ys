@@ -1,5 +1,6 @@
 ---
 import PaperReaderLayout from "../../layouts/PaperReaderLayout.astro";
+import {resolvePublishedHref} from "../../lib/site";
 import paperData from "../../data/controllable-metric-waiting-room-hypothesis.json";
 
 const {
@@ -151,6 +152,8 @@ const displayMathText = (value) => equationMathByText[value] || (
   description="An arXiv-style Human Infra working paper proposing controllable metric waiting rooms for recursive future access."
   arxivId={meta.arxivId}
   category={meta.category}
+  datePublished="2026-06-29"
+  keywords={["可控度规", "固有时差分", "递归未来访问", "退出可达性", "主体连续性"]}
 >
   <nav class="ltx_page_navbar" slot="toc">
     <nav class="ltx_TOC">
@@ -551,7 +554,7 @@ const displayMathText = (value) => equationMathByText[value] || (
       <h2 class="ltx_title ltx_title_section">References</h2>
       <ol>
         {sourceRows.map((row) => (
-          <li><span class="ltx_text ltx_font_bold">{row[1]}.</span> {row[2]}. <a href={row[3]}>{row[3]}</a>. {row[4]}</li>
+          <li><span class="ltx_text ltx_font_bold">{row[1]}.</span> {row[2]}. <a href={resolvePublishedHref(row[3])}>{row[3]}</a>. {row[4]}</li>
         ))}
       </ol>
     </section>

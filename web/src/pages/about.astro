@@ -1,0 +1,106 @@
+---
+import ResearchLayout from "../layouts/ResearchLayout.astro";
+import SectionHeader from "../components/SectionHeader.astro";
+import {SITE, publicUrl} from "../lib/site";
+---
+
+<ResearchLayout
+  title="关于 Human Infra"
+  description="Human Infra 的规范定义、研究对象、证据方法、非目标、作者和机器可读入口。"
+  section="Project Identity"
+  pageType="AboutPage"
+  keywords={["Human Infra", "人类基础设施", "主体持续性", "subject continuity", "tradecatlabs"]}
+>
+  <div class="page">
+    <section class="section" style="margin-top: 0;">
+      <header class="page-intro">
+        <p class="kicker">Canonical Definition</p>
+        <h1>让主体继续存在、行动和进入未来的条件成为工程对象</h1>
+        <p>{SITE.definition}</p>
+      </header>
+      <div class="two-grid">
+        <article class="paper-panel">
+          <h2>研究对象</h2>
+          <p>Human Infra 把身体、认知、记忆、注意力、时间、AI、医学、工具、资源、环境、制度和协作理解为共同支撑主体持续性的基础设施。</p>
+          <p>项目从“目标何以可能”反向追问其必要条件，再把条件拆成可定义、可证伪、可观测和可治理的研究域。</p>
+        </article>
+        <article class="paper-panel">
+          <h2>价值边界</h2>
+          <p>主体持续性是价值实现的边界条件：主体终止时，感知、判断、行动、学习、创造与未来选择权同步终止。</p>
+          <p>因此，Human Infra 优化的不是一次任务，而是主体持续选择、创造、修正和进入未来的资格。</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="facts">
+      <SectionHeader
+        kicker="Verified Project Facts"
+        title="可直接引用的项目事实"
+        lead="以下事实来自仓库自身的分类、内容和发布契约；它们不代替外部科学证据。"
+      />
+      <table class="data-table">
+        <thead><tr><th>字段</th><th>值</th><th>来源</th></tr></thead>
+        <tbody>
+          <tr><td>项目名称</td><td>Human Infra / 人类基础设施</td><td>仓库与站点规范实体</td></tr>
+          <tr><td>发布者</td><td>{SITE.publisher}</td><td>CITATION.cff 与站点元数据</td></tr>
+          <tr><td>核心对象</td><td>主体持续性 / subject continuity</td><td>核心命题与项目边界</td></tr>
+          <tr><td>组织方式</td><td>C0 价值原点与 C1-C6 可能性空间控制层级</td><td>classification.tsv</td></tr>
+          <tr><td>发布形态</td><td>知识仓库、研究协议、工作论文、合成模型与机器知识索引</td><td>GitHub 与 Web 应用</td></tr>
+          <tr><td>最近复核</td><td>{SITE.lastReviewed}</td><td>站点发布契约</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="section" id="method">
+      <SectionHeader
+        kicker="Evidence Governance"
+        title="从研究域到可引用主张"
+        lead="目录存在只表示研究对象被登记。主张必须继续经过来源、语境、证据角色、适用边界、反证条件和独立复核。"
+      />
+      <div class="equation-box">研究对象 → Claim / Fact Card → 来源语境 → 证据角色 → 适用边界 → 反证条件 → 复核状态 → 有界公开表达</div>
+      <div class="dense-grid" style="margin-top: 1rem;">
+        <article class="paper-panel"><h3>可发现</h3><p>用语义路由、站点地图、机器索引和稳定 URL 暴露真实知识资产。</p></article>
+        <article class="paper-panel"><h3>可解析</h3><p>用结构化标题、实体关系、JSON-LD 和原子事实块降低抽取歧义。</p></article>
+        <article class="paper-panel"><h3>可引用</h3><p>让定义、数字、边界和来源在脱离页面上下文时仍保持完整。</p></article>
+        <article class="paper-panel"><h3>可信</h3><p>明确发布者、更新时间、证据政策、非目标和不确定性。</p></article>
+        <article class="paper-panel"><h3>可证伪</h3><p>为强主张绑定失败条件、降级动作和禁止外推边界。</p></article>
+        <article class="paper-panel"><h3>可复现</h3><p>用构建审计验证入口、元数据、索引覆盖和发布路径。</p></article>
+      </div>
+    </section>
+
+    <section class="section" id="boundaries">
+      <SectionHeader
+        kicker="Non-Claims"
+        title="这些内容不应从项目中推出"
+        lead="研究对象、合成模型和远期假设必须与现实可行性、临床效果和个体建议分开。"
+      />
+      <div class="boundary">
+        <ul>
+          <li>研究域被收录，不代表相关干预有效、可获得或已进入模型。</li>
+          <li>工作论文中的条件性假设，不证明物理、工程或生命支持可行。</li>
+          <li>合成生命路径模型不输出个体死亡日期，也不构成医学建议。</li>
+          <li>书籍转译页面整理作者观点，不等于事实核验或项目立场背书。</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="machine-access">
+      <SectionHeader
+        kicker="Machine Access"
+        title="机器与智能体入口"
+        lead="所有入口指向同一项目实体和同一组边界，不为不同抓取者制造互相冲突的版本。"
+      />
+      <table class="data-table">
+        <tbody>
+          <tr><th>简明上下文</th><td><a href={publicUrl("/llms.txt")}>llms.txt</a></td></tr>
+          <tr><th>完整上下文</th><td><a href={publicUrl("/llms-full.txt")}>llms-full.txt</a></td></tr>
+          <tr><th>知识索引</th><td><a href={publicUrl("/knowledge-index.json")}>knowledge-index.json</a></td></tr>
+          <tr><th>证据图</th><td><a href={publicUrl("/evidence-graph.json")}>evidence-graph.json</a></td></tr>
+          <tr><th>指标契约</th><td><a href={publicUrl("/geo-metrics.json")}>geo-metrics.json</a></td></tr>
+          <tr><th>源代码</th><td><a href={SITE.repository}>GitHub repository</a></td></tr>
+          <tr><th>社区</th><td><a href={SITE.community}>Telegram</a></td></tr>
+        </tbody>
+      </table>
+    </section>
+  </div>
+</ResearchLayout>

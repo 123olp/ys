@@ -4,6 +4,7 @@ Reference documents are stable lookup materials: maps, rules, glossaries, standa
 
 Current documents:
 
+- `tech-tree-web-candidates/README.md`: 目标科技树的视觉、依赖、证据、成熟度与实现候选参考包。
 - `applications-and-literature.md`: real-world application cases and literature spine for Human Infra.
 - `arxiv-html-papers-toolchain.md`: arXiv HTML papers toolchain analysis, local mirroring commands, reader controls, reusable CLI tooling, and Human Infra reuse boundary.
 - `../../domains/_possibility-space-control/README.md`: control-plane index for classifying research domains by possibility-space control power rather than feasibility.

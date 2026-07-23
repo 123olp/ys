@@ -9,6 +9,8 @@ human_infra/
 ├── .github/              # GitHub 协作模板与远程质量门禁
 ├── AGENTS.md             # 项目架构说明和代理维护规则
 ├── README.md             # Human Infra 定位、边界、目录和变更日志
+├── README.en.md          # 英文短入口、研究边界与机器发布路由
+├── CITATION.cff          # tradecatlabs 署名与仓库引用元数据
 ├── CHANGELOG.md          # 变更记录
 ├── docs/                 # 上位理论、域地图、伦理边界和资料归档
 ├── domains/              # 按可能性空间控制力物理分级的研究域
@@ -22,7 +24,7 @@ human_infra/
 │   ├── c5-ecological-substrate/    # 可能性生态承载层
 │   └── c6-local-unlocking/         # 局部可能性解锁层
 ├── tools/                # 仓库检查脚本和可复用工程工具
-└── web/                  # Web 展示、论文页和交互叙事应用
+└── web/                  # Astro + D3 展示、论文、机器知识与 GEO 发布层
 ```
 
 ## 职责边界
@@ -30,7 +32,9 @@ human_infra/
 - `.github/` 只放 GitHub 协作模板和远程质量门禁，不放长期知识正文。
 - `human-infra-dashboard.html` 是根目录静态展示入口，只承载可直接打开的模型看板，不承载数据采集、个人预测或生产服务逻辑。
 - `singularity-human-infra.html` 是根目录专项展示入口，用于把《奇点更近》学习资料转译为 Human Infra 的价值展示、预测模型和 D3 可视化，不作为事实核验或医学建议。
-- `web/` 是 Observable Framework 正式 Web 应用目录，用于多页科研叙事、书籍转译、预测模型和交互可视化；它不承载采集脚本、个人预测服务或医学决策逻辑。
+- `README.en.md` 是 GitHub 与国际生成式引擎的英文短入口，不复制中文 README 的全部研究账本。
+- `CITATION.cff` 是仓库引用与发布者元数据真相源，作者统一为 `tradecatlabs`。
+- `web/` 是 Astro + D3 正式 Web 应用和 GEO 机器发布层，用于多页科研叙事、论文、预测模型、结构化数据、抓取入口和自动发布审计；它不承载采集脚本、个人预测服务或医学决策逻辑。
 - `tools/` 保存仓库维护脚本和可迁移工程工具；其中 arXiv HTML papers 复用工具只负责资源安装、资产校验和 Astro 模板生成，不承载 Human Infra 正文理论；Human Infra 审计器只检查本地研究契约和索引覆盖，不证明外部文献真实性。
 - `docs/` 只放 Human Infra 的上位理论、域边界、伦理原则和原始资料归档，不放具体采集脚本；`docs/reference/human-infra-falsifier-source-card-backfill.json` 只保存论文强主张和优先域反证的 Source Card 来源锚点回填，不替代逐篇 Source Card 精读。
 - `domains/` 的正式研究域必须进入 C1-C6 物理层级目录；每个研究域必须有独立 README 和 AGENTS，明确自身对象、非目标、证据要求和上下游关系。

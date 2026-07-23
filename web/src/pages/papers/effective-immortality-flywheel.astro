@@ -1,5 +1,6 @@
 ---
 import PaperReaderLayout from "../../layouts/PaperReaderLayout.astro";
+import {resolvePublishedHref} from "../../lib/site";
 import evidenceData from "../../data/effective-immortality-evidence.json";
 
 const hypothesisRows = [
@@ -185,6 +186,8 @@ const toyModelMathRows = toyModelBlock.split("\n");
   description="An arXiv-style Human Infra working paper on effective immortality, subject continuity, research pipeline, technology families, learning rounds, technology adoption, option space, and acceleration feedback loops."
   arxivId="human-infra/working-paper.0002"
   category="cs.HC; q-bio.PE; stat.ME; cs.AI"
+  datePublished="2026-06-29"
+  keywords={["有效永生", "主体持续性", "加速回报", "技术采用", "可能性空间"]}
 >
   <nav class="ltx_page_navbar" slot="toc">
     <nav class="ltx_TOC">
@@ -1145,7 +1148,7 @@ const toyModelMathRows = toyModelBlock.split("\n");
                 <td>{ref.entryType}</td>
                 <td>{ref.year}</td>
                 <td>
-                  {ref.doi ? <a href={`https://doi.org/${ref.doi}`}>{ref.doi}</a> : <a href={ref.url}>official / local link</a>}
+                  {ref.doi ? <a href={`https://doi.org/${ref.doi}`}>{ref.doi}</a> : <a href={resolvePublishedHref(ref.url)}>official / local link</a>}
                 </td>
                 <td>{ref.auditStatus}</td>
                 <td>{ref.usedFor}</td>
@@ -1157,7 +1160,7 @@ const toyModelMathRows = toyModelBlock.split("\n");
       <ol class="ltx_biblist">
         {referenceRegistryRows.map((ref) => (
           <li class="ltx_bibitem">
-            {ref.authors}. {ref.title}. <a href={ref.url}>{ref.venue}{ref.volume ? `, ${ref.volume}` : ""}{ref.issue ? `(${ref.issue})` : ""}{ref.pages ? `:${ref.pages}` : ""}{ref.year ? `, ${ref.year}` : ""}</a>{ref.doi ? ` DOI: ${ref.doi}` : ""}.
+            {ref.authors}. {ref.title}. <a href={resolvePublishedHref(ref.url)}>{ref.venue}{ref.volume ? `, ${ref.volume}` : ""}{ref.issue ? `(${ref.issue})` : ""}{ref.pages ? `:${ref.pages}` : ""}{ref.year ? `, ${ref.year}` : ""}</a>{ref.doi ? ` DOI: ${ref.doi}` : ""}.
           </li>
         ))}
       </ol>

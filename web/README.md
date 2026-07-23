@@ -9,6 +9,7 @@ Astro 负责页面结构、长文叙事、组件化和静态发布；D3 负责�
 ```text
 web/
 ├── AGENTS.md
+├── GEO.md
 ├── README.md
 ├── astro.config.mjs
 ├── package.json
@@ -18,6 +19,7 @@ web/
 │       ├── font-files/
 │       └── utz6mli.css
 ├── scripts/
+│   ├── audit-geo-readiness.mjs
 │   ├── audit-claim-context-alignment.mjs
 │   ├── audit-citation-context-risk-triage.mjs
 │   ├── audit-citation-context-local-review.mjs
@@ -54,6 +56,7 @@ web/
     │   └── SectionHeader.astro
     ├── data/
     │   ├── book-signals.json
+    │   ├── geo-monitoring-prompt-bank.json
     │   ├── effective-immortality-evidence.json
     │   ├── metric-redshift-recursive-waiting.json
     │   ├── proper-time-differential-waiting-hypothesis.json
@@ -130,12 +133,26 @@ web/
     │       ├── REFERENCE_VERIFICATION.json
     │       ├── REFERENCE_VERIFICATION.md
     │       └── references.bib
+    ├── lib/
+    │   ├── domain-registry.ts
+    │   ├── evidence-registry.ts
+    │   └── site.ts
     ├── layouts/
     │   ├── PaperReaderLayout.astro
     │   └── ResearchLayout.astro
     ├── pages/
+    │   ├── about.astro
+    │   ├── evidence-graph.json.ts
+    │   ├── evidence-map.astro
+    │   ├── geo-metrics.json.ts
+    │   ├── geo-prompt-bank.json.ts
     │   ├── index.astro
+    │   ├── knowledge-index.json.ts
+    │   ├── llms-full.txt.ts
+    │   ├── llms.txt.ts
     │   ├── paper.astro
+    │   ├── research-map.astro
+    │   ├── robots.txt.ts
     │   ├── papers/
     │   │   ├── effective-immortality-flywheel.astro
     │   │   ├── metric-redshift-recursive-waiting.astro
@@ -153,8 +170,25 @@ web/
         └── global.css
 ```
 
+## GEO 发布层
+
+Web 站点同时面向人类读者、传统搜索引擎、生成式问答引擎与智能体。发布链路是：
+
+```text
+可审查来源 -> 项目实体与研究域真相源 -> 人类可读页面 -> 机器可读端点 -> 抓取与引用信号 -> 可重复采样与迭代
+```
+
+- `src/lib/site.ts` 统一管理项目实体、tradecatlabs 发布者、规范 URL、C1-C6 定义与公开页注册表。
+- `src/lib/domain-registry.ts` 在构建期将 `domains/_possibility-space-control/classification.tsv` 投影为 994 个研究域的公开索引。
+- `src/lib/evidence-registry.ts` 只读连接主张矩阵、反证寄存器、字段抽取寄存器和来源锚点寄存器；它不修改研究账本，也不把来源锚点升级为独立 fresh review。
+- `/about/`、`/research-map/` 和 `/evidence-map/` 提供项目定义、研究域、优先域主张、来源角色、反证和迁移边界的人类入口。
+- `/llms.txt`、`/llms-full.txt`、`/knowledge-index.json`、`/evidence-graph.json`、`/geo-prompt-bank.json` 和 `/geo-metrics.json` 提供机器入口、结构化知识、有界证据关系、固定采样题库与度量边界。
+- `scripts/audit-geo-readiness.mjs` 验证规范链接、语义标记、JSON-LD、站点地图、Pages 子路径、机器端点和证据图引用完整性。它不伪造 AI 平台引用率、提及率或推荐曝光。
+- 完整方法、指标分层和迭代规则见 [GEO.md](GEO.md)。
+
 ## 页面职责
 
+- `src/pages/evidence-map.astro`：优先域有界主张与来源角色的人类可读地图；完整关系由 `evidence-graph.json.ts` 发布，二者都不得表达独立 fresh review、干预有效性或模型准入。
 - `src/pages/index.astro`：首页，把《奇点更近》学习资料、Human Infra 主体持续性、预测模型和成熟度缺口放在同一个叙事入口；页面直接消费 `docs/reference/human-infra-maturity-gap-register.json`，展示项目价值、研究框架和定量模型三轴距离 100% 的当前 gate 状态与下一步 work orders。
 - `src/pages/paper.astro`：arXiv HTML papers 风格论文页，用学术阅读器展示 Human Infra 的理论、模型和工具链。
 - `src/pages/papers/effective-immortality-flywheel.astro`：独立 arXiv-style working paper 页面，展示有效永生带来的主体持续性加速回报飞轮，不覆盖旧 `/paper/`。
@@ -320,6 +354,15 @@ http://localhost:18764/
 cd web
 npm run build
 ```
+
+按 GitHub Pages 的 `/human_infra` 子路径构建并执行 GEO 发布门禁：
+
+```bash
+cd web
+npm run audit:geo
+```
+
+该门禁证明构建产物技术上可抓取、可解析与可引用，不证明任何外部 AI 平台已收录、引用或推荐本项目。
 
 构建产物在 `web/dist/`，该目录不进入仓库。
 

@@ -8,6 +8,7 @@
 tools/
 ├── AGENTS.md                         # 本目录架构说明
 ├── README.md                         # 工具入口和常用命令
+├── tech-tree-reference-capture/      # 科技树候选网页采集、渲染与哈希工具
 ├── audit_core_claim_evidence_matrix.py # 核心主张证据矩阵审计器
 ├── audit_human_infra_maturity_gap_register.py # 100% 成熟度缺口账本审计器
 ├── audit_human_infra_model_admission_contract.py # 模型准入契约审计器

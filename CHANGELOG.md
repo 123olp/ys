@@ -2,6 +2,18 @@
 
 All notable repository structure changes are recorded here.
 
+## 2026-07-14
+
+- Added a bounded Human Infra evidence graph that projects 30 priority-domain claims, 21 source anchors, 60 falsifiers, and 90 endpoint candidates from existing repository registers without creating a second evidence truth source.
+- Added `/evidence-map/` and `/evidence-graph.json`, with explicit source roles, transfer boundaries, prohibited uses, review state, and machine-readable provenance relations.
+- Extended the GEO gate to verify claim/source/falsifier coverage, source-boundary coverage, graph referential integrity, and support-edge provenance across 13 public pages.
+
+## 2026-07-13
+
+- Added the Human Infra GEO publication layer: canonical entity metadata, JSON-LD, robots, sitemap, llms context, a 994-domain machine knowledge index, a measurement contract, and a reproducible AI prompt bank.
+- Added `/about/` and `/research-map/`, corrected GitHub Pages base-path handling, and added build-time GEO checks covering all public pages and registered domains.
+- Added GitHub Pages deployment and Web/GEO CI workflows, an English repository entry point, and `tradecatlabs` citation metadata.
+
 ## 2026-07-02
 
 - Added a C2 long-tail coverage register and audit gate, tracking all 204 C2 source-maintenance domains with 20 priority reviewed-artifact covered domains and 184 long-tail uncovered domains still blocked from model admission.

@@ -1,17 +1,35 @@
 # Human Infra
 
 [![Check](https://github.com/tradecatlabs/human_infra/actions/workflows/check.yml/badge.svg)](https://github.com/tradecatlabs/human_infra/actions/workflows/check.yml)
+[![Pages](https://github.com/tradecatlabs/human_infra/actions/workflows/pages.yml/badge.svg)](https://github.com/tradecatlabs/human_infra/actions/workflows/pages.yml)
 [![Docs as Code](https://img.shields.io/badge/docs-as--code-2f6f6d)](docs/reference/repository-standards.md)
 [![Knowledge Base](https://img.shields.io/badge/type-knowledge--base-6b7280)](docs/README.md)
 [![License](https://img.shields.io/badge/license-pending-lightgrey)](LICENSE.md)
 [![Safety Boundaries](https://img.shields.io/badge/safety-boundaries-critical-b91c1c)](docs/reference/ethics-and-safety-boundaries.md)
 [![Community](https://img.shields.io/badge/community-Telegram-229ED9)](https://t.me/human_infra)
 
+[English](README.en.md) · [Web](https://tradecatlabs.github.io/human_infra/) · [研究域地图](https://tradecatlabs.github.io/human_infra/research-map/) · [证据图](https://tradecatlabs.github.io/human_infra/evidence-map/) · [AI 入口](https://tradecatlabs.github.io/human_infra/llms.txt) · [机器知识索引](https://tradecatlabs.github.io/human_infra/knowledge-index.json)
+
 Human Infra 是一个研究“能够继续做事的主体”如何被维护、延展和升级的基础设施知识仓库。
 
 它的核心判断是：一切价值、目标与创造，都预设一个仍能感知、判断、行动、学习和修正的主体。主体由生命、认知、工具、环境、资源与协作共同支撑，属于有限系统。
 
 > Human Infra 的本质，是对主体持续性进行工程化建设。
+
+## 公开与机器入口
+
+| 入口 | 用途 |
+| --- | --- |
+| [关于 Human Infra](https://tradecatlabs.github.io/human_infra/about/) | 规范定义、项目事实、方法、作者与边界 |
+| [研究域地图](https://tradecatlabs.github.io/human_infra/research-map/) | C1-C6 分级和 994 个研究域的公开路由 |
+| [证据地图](https://tradecatlabs.github.io/human_infra/evidence-map/) | 30 条优先域主张、21 个来源锚点、反证条件和迁移边界 |
+| [llms.txt](https://tradecatlabs.github.io/human_infra/llms.txt) | 生成式引擎与智能体的简明项目上下文 |
+| [llms-full.txt](https://tradecatlabs.github.io/human_infra/llms-full.txt) | 完整定义、边界、页面和域上下文 |
+| [knowledge-index.json](https://tradecatlabs.github.io/human_infra/knowledge-index.json) | 项目实体、C1-C6、研究域和仓库来源关系 |
+| [evidence-graph.json](https://tradecatlabs.github.io/human_infra/evidence-graph.json) | 可机读 Fact Cards、来源、端点、反证和有界关系图 |
+| [GEO 发布契约](web/GEO.md) | 生成式引擎优化的方法、门禁、指标和监测规则 |
+
+发布者：`tradecatlabs`。站点与机器入口只发布仓库已经存在的事实，不把研究域登记、合成模型或条件性假设外推为临床效果、个体预测或工程可行性。
 
 ## 实现持续性主线
 

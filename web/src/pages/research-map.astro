@@ -1,0 +1,100 @@
+---
+import ResearchLayout from "../layouts/ResearchLayout.astro";
+import SectionHeader from "../components/SectionHeader.astro";
+import {domainTierSummary, loadDomainRegistry} from "../lib/domain-registry";
+import {SITE, publicUrl} from "../lib/site";
+
+const domains = loadDomainRegistry();
+const tiers = domainTierSummary();
+const c1Domains = domains.filter((domain) => domain.tier === "C1");
+---
+
+<ResearchLayout
+  title="Human Infra 研究域地图"
+  description={`按可能性空间控制力组织的 ${domains.length} 个 Human Infra 研究域公开索引。`}
+  section="Domain Atlas"
+  pageType="CollectionPage"
+  keywords={["Human Infra research domains", "C1-C6", "可能性空间", "研究域地图"]}
+>
+  <div class="page">
+    <section class="section" style="margin-top: 0;">
+      <header class="page-intro">
+        <p class="kicker">Possibility-Space Control</p>
+        <h1>{domains.length} 个研究域，一套根本性分级</h1>
+        <p>C1-C6 按研究对象对主体可能性空间的边界控制力、根本性和长期作用分级，不按当前技术可行性、市场热度或短期成熟度排序。</p>
+      </header>
+      <div class="metric-grid">
+        {tiers.map((tier) => (
+          <article class="metric-card">
+            <span>{tier.id}</span>
+            <strong>{tier.count}</strong>
+            <small>{tier.shortName}</small>
+          </article>
+        ))}
+      </div>
+    </section>
+
+    <section class="section" id="tiers">
+      <SectionHeader
+        kicker="Tier Contract"
+        title="六层控制结构"
+        lead="每层回答不同的先验条件问题；层级越靠前，越直接改变主体可以拥有的未来边界。"
+      />
+      <table class="data-table">
+        <thead><tr><th>层级</th><th>名称</th><th>研究问题</th><th>域数</th></tr></thead>
+        <tbody>
+          {tiers.map((tier) => (
+            <tr>
+              <td><strong>{tier.id}</strong></td>
+              <td>{tier.name}</td>
+              <td>{tier.question}</td>
+              <td>{tier.count}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </section>
+
+    <section class="section" id="c1">
+      <SectionHeader
+        kicker="Highest Boundary Control"
+        title="C1：可能性边界改写层"
+        lead="C1 研究直接改变寿命、死亡、时间、身份连续性或未来抵达边界，因此是当前分级中的最高边界控制层。"
+      />
+      <table class="data-table">
+        <thead><tr><th>研究域</th><th>纳入理由</th><th>来源目录</th></tr></thead>
+        <tbody>
+          {c1Domains.map((domain) => (
+            <tr>
+              <td><strong>{domain.domain}</strong></td>
+              <td>{domain.rationale}</td>
+              <td><a href={`${SITE.repository}/tree/main/${domain.physicalPath}`}>查看研究域</a></td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </section>
+
+    <section class="section" id="index">
+      <SectionHeader
+        kicker="Machine Index"
+        title="完整域表由机器索引承载"
+        lead="人类页面负责解释分级逻辑和最高层研究对象；完整 994 域、路径、理由、状态和实体关系由可重复生成的 JSON 索引提供。"
+      />
+      <div class="two-grid">
+        <a class="paper-panel link-panel" href={publicUrl("/knowledge-index.json")}>
+          <h3>knowledge-index.json</h3>
+          <p>完整域实体、C1-C6 关系、仓库路径和证据治理入口。</p>
+        </a>
+        <a class="paper-panel link-panel" href={publicUrl("/evidence-map/")}>
+          <h3>证据地图</h3>
+          <p>优先域主张、来源锚点、反证条件和迁移边界。</p>
+        </a>
+        <a class="paper-panel link-panel" href={`${SITE.repository}/blob/main/domains/_possibility-space-control/classification.tsv`}>
+          <h3>classification.tsv</h3>
+          <p>研究域物理路径与层级分类的仓库真相源。</p>
+        </a>
+      </div>
+    </section>
+  </div>
+</ResearchLayout>

@@ -7,14 +7,16 @@
 ```text
 web/
 ├── AGENTS.md                    # 本目录架构说明
+├── GEO.md                       # GEO 方法、度量边界和执行契约
 ├── README.md                    # 运行方式、页面职责和边界
 ├── astro.config.mjs             # Astro 配置
 ├── package.json                 # Web 应用依赖与脚本
 ├── public/                       # 静态发布资源和 vendored 前端资源
-├── scripts/                      # 本地生成器和数据导出脚本
+├── scripts/                      # 本地生成器、数据导出器和 GEO 审计器
 └── src/
     ├── components/              # Astro 页面组件
     ├── data/                    # 小型结构化展示数据和派生审计产物
+    ├── lib/                     # 实体、URL、研究域与证据图只读发布适配层
     ├── layouts/                 # 页面布局
     ├── pages/                   # Astro 路由页面
     │   └── papers/              # 独立论文页路由
@@ -24,6 +26,14 @@ web/
 
 ## 职责边界
 
+- `GEO.md` 是 Web 生成式引擎优化的方法与度量契约；它区分本地可验证的发布就绪度与必须通过外部采样观测的 AI 引用效果。
+- `src/lib/site.ts` 是公开实体、发布者、规范 URL、GitHub Pages 基路径和公开页注册表的单一真相源；页面不得硬编码第二套公开地址。
+- `src/lib/domain-registry.ts` 只在构建期读取 `domains/_possibility-space-control/classification.tsv`，将其投影为研究域索引；不反向修改研究域真相源。
+- `src/lib/evidence-registry.ts` 只读连接 `docs/reference/` 中的主张、反证、字段和来源锚点寄存器，构建失败即拒绝缺失或重复 ID；它不得成为新的人工证据真相源。
+- `src/pages/about.astro`、`src/pages/research-map.astro` 和 `src/pages/evidence-map.astro` 是项目实体、C1-C6 研究域与有界证据关系的人类可读入口。
+- `src/pages/robots.txt.ts`、`llms.txt.ts`、`llms-full.txt.ts`、`knowledge-index.json.ts`、`evidence-graph.json.ts`、`geo-prompt-bank.json.ts` 和 `geo-metrics.json.ts` 组成机器可读发布面；知识和证据索引必须保留研究边界，监测指标不得伪造外部 AI 平台观测值。
+- `src/data/geo-monitoring-prompt-bank.json` 是可重复外部 AI 采样的提示注册表，只定义问题与分类，不保存未经观测的排名、引用或推荐结论。
+- `scripts/audit-geo-readiness.mjs` 审计构建产物的规范链接、结构化数据、语义容器、机器端点、站点地图、Pages 子路径和证据图引用完整性；PASS 只表示技术发布与有界关系投影就绪，不表示已被收录、引用或独立验证。
 - `src/pages/*.astro` 是页面真相源，负责叙事结构、页面路由和内容组织。
 - `src/pages/index.astro` 是 Web 首页与成熟度状态入口，直接消费 `docs/reference/human-infra-maturity-gap-register.json` 展示三轴成熟度、未完成 gate 和下一步 work orders；不得把早期 70/35/10 旧评估重新写入页面，也不得把 partial / blocked gate 表达成完成。
 - `src/pages/papers/effective-immortality-flywheel.astro` 是有效永生飞轮的独立论文页，复用 PaperReaderLayout，不覆盖旧 `/paper/`。
@@ -127,6 +137,8 @@ web/
 
 ## 维护规则
 
+- GitHub Pages 生产构建使用 `/human_infra` 基路径；新增内部链接必须通过 `site.ts` 的 URL helper 生成，不得假定站点部署在域名根目录。
+- 修改公开页、实体元数据、机器端点、站点地图或 Pages 配置后，必须运行 `npm run audit:geo`；外部 AI 效果仍必须按 `GEO.md` 的固定提示库与采样周期独立记录。
 - 新增页面时，必须同步更新 `README.md` 和本文件目录结构。
 - 新增图表时，优先复用 `src/scripts/model-charts.js` 和 `src/scripts/evidence-graph.js` 的 D3 绘图约定；证据型图表优先消费 `src/data/` 的结构化数据。
 - 新增论文式长文时，优先使用 `tools/arxiv_html_paper_tool.py write-page` 生成工具 seed，再用 `ltx_*` 语义结构和 PaperReaderLayout 承载正文；不得改写 arXiv 下载资源的样式和控件逻辑，只替换正文内容。

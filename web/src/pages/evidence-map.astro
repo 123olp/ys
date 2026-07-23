@@ -1,0 +1,129 @@
+---
+import ResearchLayout from "../layouts/ResearchLayout.astro";
+import SectionHeader from "../components/SectionHeader.astro";
+import {loadEvidenceRegistry} from "../lib/evidence-registry";
+import {SITE, publicUrl} from "../lib/site";
+
+const registry = loadEvidenceRegistry();
+const c1Claims = registry.claims.filter((claim) => claim.tier === "C1");
+const sourceById = new Map(registry.sources.map((source) => [source.id, source]));
+---
+
+<ResearchLayout
+  title="Human Infra 证据图"
+  description="连接优先研究域主张、来源锚点、端点候选、反证条件、禁止用途和迁移边界的可审查证据地图。"
+  section="Evidence Graph"
+  pageType="Dataset"
+  keywords={["Human Infra evidence graph", "Source Card", "反证条件", "证据边界", "Fact Card"]}
+>
+  <div class="page">
+    <section class="section" style="margin-top: 0;">
+      <header class="page-intro">
+        <p class="kicker">Claim · Source · Falsifier · Boundary</p>
+        <h1>让每条主张都能回到证据，也能被证据降级</h1>
+        <p>本页把仓库既有研究账本投影为可引用证据单元。来源只在明确的证据角色与迁移边界内支持主张；缺少人群、效应量、不确定性或独立复核时，相关条目不能进入定量预测。</p>
+      </header>
+      <div class="metric-grid">
+        <article class="metric-card"><span>Bounded claims</span><strong>{registry.summary.claim_count}</strong><small>优先域主张</small></article>
+        <article class="metric-card"><span>Source anchors</span><strong>{registry.summary.source_count}</strong><small>来源锚点</small></article>
+        <article class="metric-card"><span>Falsifiers</span><strong>{registry.summary.falsifier_count}</strong><small>反证与降级条件</small></article>
+        <article class="metric-card"><span>Endpoints</span><strong>{registry.summary.endpoint_candidate_count}</strong><small>候选端点</small></article>
+      </div>
+    </section>
+
+    <section class="section" id="reading-contract">
+      <SectionHeader
+        kicker="Reading Contract"
+        title="证据图表达什么"
+        lead="它表达研究账本中已经登记的关系，不替代逐篇论文复核，也不把概念支持升级为干预有效性。"
+      />
+      <div class="equation-box">研究域 → 有界主张 → 来源锚点与证据角色 → 候选端点 → 反证条件 → 降级动作 → 禁止用途</div>
+      <div class="boundary" style="margin-top: 1rem;">
+        <ul>
+          {registry.limitations.map((limitation) => <li>{limitation}</li>)}
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="c1-claims">
+      <SectionHeader
+        kicker="C1 Boundary-Rewriting Claims"
+        title="最高边界控制层的有界主张"
+        lead={`${c1Claims.length} 个 C1 研究域全部具备来源锚点、端点候选、反证条件和禁止用途；这些结构用于审查，不代表当前可行性。`}
+      />
+      <div class="evidence-list">
+        {c1Claims.map((claim) => (
+          <article class="evidence-claim" id={claim.domain_id}>
+            <header>
+              <div>
+                <p class="kicker">{claim.id} · {claim.model_position}</p>
+                <h3>{claim.domain_id}</h3>
+              </div>
+              <a href={`${SITE.repository}/tree/main/${claim.repository_path}`}>研究目录</a>
+            </header>
+            <p class="claim-text">{claim.claim}</p>
+            <dl class="evidence-fields">
+              <div><dt>候选端点</dt><dd>{claim.endpoint_candidates.join(" · ")}</dd></div>
+              <div>
+                <dt>来源锚点</dt>
+                <dd>
+                  {claim.source_ids.map((sourceId, index) => {
+                    const source = sourceById.get(sourceId);
+                    return <>{index > 0 && " · "}<a href={source?.url}>{source?.title ?? sourceId}</a></>;
+                  })}
+                </dd>
+              </div>
+              <div><dt>禁止用途</dt><dd>{claim.prohibited_uses.join("；")}</dd></div>
+            </dl>
+            <div class="falsifier-list">
+              {claim.falsifiers.map((falsifier) => (
+                <p><strong>反证条件：</strong>{falsifier.condition}<br /><span>触发后：{falsifier.downgradeAction}</span></p>
+              ))}
+            </div>
+          </article>
+        ))}
+      </div>
+    </section>
+
+    <section class="section" id="sources">
+      <SectionHeader
+        kicker="Source Ledger"
+        title="来源角色与迁移边界"
+        lead="同一来源可以支持机制、方法或概念框架，但不能因此自动支持临床效果、工程可行性或个体结论。"
+      />
+      <div class="table-scroll">
+        <table class="data-table">
+          <thead><tr><th>来源</th><th>证据角色</th><th>迁移边界</th><th>复核状态</th></tr></thead>
+          <tbody>
+            {registry.sources.map((source) => (
+              <tr>
+                <td><a href={source.url}><strong>{source.title}</strong></a><br /><small>{source.id} · {source.source_type}</small></td>
+                <td>{source.evidence_role}</td>
+                <td>{source.transfer_boundary}</td>
+                <td>来源锚点回填；尚非独立 fresh review</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section" id="machine-access">
+      <SectionHeader
+        kicker="Machine Projection"
+        title="机器证据图"
+        lead="JSON 端点发布全部 30 条优先域主张及其关系，并通过构建门禁检查图节点、边和引用完整性。"
+      />
+      <div class="two-grid">
+        <a class="paper-panel link-panel" href={publicUrl("/evidence-graph.json")}>
+          <h3>evidence-graph.json</h3>
+          <p>Fact Cards、来源、反证、端点和可回溯关系边。</p>
+        </a>
+        <a class="paper-panel link-panel" href={`${SITE.repository}/blob/main/docs/reference/human-infra-domain-claim-evidence-matrix.json`}>
+          <h3>Claim-Evidence Matrix</h3>
+          <p>Web 投影所使用的仓库主张关系真相源。</p>
+        </a>
+      </div>
+    </section>
+  </div>
+</ResearchLayout>

@@ -1,20 +1,83 @@
 ---
 import "../styles/global.css";
+import {SITE, normalizeRoute, publicUrl, withBase} from "../lib/site";
 
 const {
   title = "Human Infra Web",
   description = "Human Infra research narrative and life-path model",
-  section = "Human Infra"
+  section = "Human Infra",
+  pageType = "WebPage",
+  keywords = ["Human Infra", "主体持续性", "subject continuity"],
+  dateModified = SITE.lastReviewed
 } = Astro.props;
+
+const route = normalizeRoute(Astro.url.pathname);
+const canonical = publicUrl(route);
+const fullTitle = `${title} | Human Infra`;
+const keywordText = Array.isArray(keywords) ? keywords.join(", ") : keywords;
 
 const nav = [
   {href: "/", label: "首页"},
+  {href: "/about/", label: "关于"},
+  {href: "/research-map/", label: "研究域"},
+  {href: "/evidence-map/", label: "证据图"},
   {href: "/paper/", label: "论文页"},
   {href: "/book/", label: "书籍转译"},
   {href: "/model/", label: "预测模型"},
   {href: "/lev/", label: "LEV 路线"},
   {href: "/research-standards/", label: "科研标准"}
 ];
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": `${SITE.publicUrl}#publisher`,
+      name: SITE.publisher,
+      url: "https://github.com/tradecatlabs",
+      sameAs: ["https://github.com/tradecatlabs", SITE.community]
+    },
+    {
+      "@type": "WebSite",
+      "@id": `${SITE.publicUrl}#website`,
+      name: SITE.name,
+      alternateName: SITE.alternateName,
+      url: SITE.publicUrl,
+      description: SITE.description,
+      inLanguage: SITE.language,
+      publisher: {"@id": `${SITE.publicUrl}#publisher`}
+    },
+    {
+      "@type": "ResearchProject",
+      "@id": `${SITE.publicUrl}#project`,
+      name: SITE.name,
+      alternateName: SITE.alternateName,
+      url: SITE.publicUrl,
+      description: SITE.description,
+      codeRepository: SITE.repository,
+      license: SITE.license,
+      keywords: ["subject continuity", "Human Infra", "life-path modeling", "主体持续性"],
+      author: {"@id": `${SITE.publicUrl}#publisher`}
+    },
+    {
+      "@type": pageType,
+      "@id": `${canonical}#page`,
+      url: canonical,
+      name: title,
+      headline: title,
+      description,
+      dateModified,
+      inLanguage: "zh-CN",
+      keywords: keywordText,
+      author: {"@id": `${SITE.publicUrl}#publisher`},
+      publisher: {"@id": `${SITE.publicUrl}#publisher`},
+      isPartOf: {"@id": `${SITE.publicUrl}#website`},
+      about: {"@id": `${SITE.publicUrl}#project`},
+      mainEntityOfPage: canonical
+    }
+  ]
+};
 ---
 <!doctype html>
 <html lang="zh-CN">
@@ -22,11 +85,26 @@ const nav = [
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content={description} />
-    <title>{title} | Human Infra Web</title>
+    <meta name="author" content={SITE.publisher} />
+    <meta name="keywords" content={keywordText} />
+    <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
+    <link rel="canonical" href={canonical} />
+    <link rel="alternate" type="text/plain" href={publicUrl("/llms.txt")} title="LLM context" />
+    <meta property="og:type" content={pageType === "ScholarlyArticle" ? "article" : "website"} />
+    <meta property="og:site_name" content={SITE.name} />
+    <meta property="og:locale" content="zh_CN" />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content={fullTitle} />
+    <meta name="twitter:description" content={description} />
+    <title>{fullTitle}</title>
+    <script type="application/ld+json" set:html={JSON.stringify(jsonLd)}></script>
   </head>
   <body>
     <header class="site-header">
-      <a class="brand" href="/">
+      <a class="brand" href={withBase("/")}>
         <span class="brand-mark">HI</span>
         <span>
           <strong>Human Infra</strong>
@@ -35,12 +113,25 @@ const nav = [
       </a>
       <nav class="top-nav" aria-label="主导航">
         {nav.map((item) => (
-          <a href={item.href}>{item.label}</a>
+          <a href={withBase(item.href)}>{item.label}</a>
         ))}
       </nav>
     </header>
     <main>
       <slot />
     </main>
+    <footer class="site-footer">
+      <div>
+        <strong>Human Infra</strong>
+        <span>发布者：{SITE.publisher} · 内容复核：{dateModified}</span>
+      </div>
+      <nav aria-label="机器与治理入口">
+        <a href={withBase("/llms.txt")}>LLM 入口</a>
+        <a href={withBase("/knowledge-index.json")}>知识索引</a>
+        <a href={withBase("/evidence-graph.json")}>证据图</a>
+        <a href={SITE.repository}>GitHub</a>
+        <a href={SITE.community}>社区</a>
+      </nav>
+    </footer>
   </body>
 </html>

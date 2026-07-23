@@ -1,5 +1,6 @@
 ---
 import PaperReaderLayout from "../../layouts/PaperReaderLayout.astro";
+import {resolvePublishedHref} from "../../lib/site";
 import paperData from "../../data/proper-time-differential-waiting-hypothesis.json";
 
 const {
@@ -62,6 +63,8 @@ const figureHeight = matrixTop + scenarioVariableRows.length * matrixCellHeight 
   description="An arXiv-style Human Infra working paper proposing the metric-redshift proper-time differential waiting path."
   arxivId="human-infra/working-paper.0004"
   category="gr-qc; cs.HC; q-bio.PE"
+  datePublished="2026-06-29"
+  keywords={["度规红移", "固有时", "未来等待", "黑洞等待室", "主体连续性"]}
 >
   <nav class="ltx_page_navbar" slot="toc">
     <nav class="ltx_TOC">
@@ -570,7 +573,7 @@ const figureHeight = matrixTop + scenarioVariableRows.length * matrixCellHeight 
       <h2 class="ltx_title ltx_title_section">References</h2>
       <ol>
         {referenceRows.map((row) => (
-          <li><span class="ltx_text ltx_font_bold">{row[0]}.</span> {row[1]}. <a href={row[2]}>{row[2]}</a>. {row[3]}</li>
+          <li><span class="ltx_text ltx_font_bold">{row[0]}.</span> {row[1]}. <a href={resolvePublishedHref(row[2])}>{row[2]}</a>. {row[3]}</li>
         ))}
       </ol>
     </section>

@@ -5,8 +5,10 @@
   "scripts": {
     "dev": "astro dev --host 0.0.0.0",
     "build": "astro build",
+    "build:pages": "SITE_BASE_PATH=/human_infra astro build",
     "preview": "astro preview --host 0.0.0.0",
     "clean": "rm -rf dist .astro",
+    "audit:geo": "npm run build:pages && node scripts/audit-geo-readiness.mjs --base /human_infra",
     "export:references": "node scripts/export-reference-registry.mjs",
     "export:lev-model": "node scripts/export-lev-model-data.mjs",
     "export:life-path-toy": "python3 ../domains/c1-boundary-rewriting/longevity-evidence/scripts/run_life_path_toy_model.py --out src/data/life-path-toy-model.json",
@@ -84,6 +86,7 @@
   },
   "dependencies": {
     "@astrojs/mdx": "^7.0.0",
+    "@astrojs/sitemap": "^3.7.3",
     "ajv": "^8.20.0",
     "ajv-formats": "^3.0.1",
     "astro": "^7.0.3",
