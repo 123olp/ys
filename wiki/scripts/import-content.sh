@@ -40,3 +40,6 @@ while IFS=$'\t' read -r title file; do
 done < content/manifest.tsv
 
 docker compose --env-file .env exec -T wiki php maintenance/run.php runJobs --maxjobs=100 >/dev/null
+printf '%s\n' 'Human Infra:首页' | docker compose --env-file .env exec -T wiki \
+    php maintenance/run.php purgePage >/dev/null
+printf '已刷新: Human Infra:首页\n'

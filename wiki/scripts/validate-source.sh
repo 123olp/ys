@@ -30,6 +30,7 @@ required=(
     portal/default.conf.template
     portal/assets/human-infra-mark.svg
     portal/assets/human-infra-wordmark.svg
+    portal/assets/human-infra-tech-tree.png
     scripts/refresh-wikipedia-portal.py
     scripts/refresh-wikipedia-homepage.py
     scripts/build-wikipedia-homepage.py
@@ -102,6 +103,39 @@ if 'class="plainlinks noresize"' not in source:
     raise SystemExit("首页关联项目未复用 Wikipediasister 表格契约")
 if source.count("[[File:Human-Infra-mark.svg") < 9:
     raise SystemExit("首页关联项目缺少顶部标志或八个入口标志")
+
+templates = {
+    "research_map": Path("content/Template_Home_Research_Map.wiki").read_text(
+        encoding="utf-8"
+    ),
+    "current_focus": Path("content/Template_Home_Current_Focus.wiki").read_text(
+        encoding="utf-8"
+    ),
+    "participate": Path("content/Template_Home_Participate.wiki").read_text(
+        encoding="utf-8"
+    ),
+    "reminder": Path("content/Template_Home_Reminder.wiki").read_text(
+        encoding="utf-8"
+    ),
+    "site_links": Path("content/Template_Home_Site_Links.wiki").read_text(
+        encoding="utf-8"
+    ),
+}
+if "[[File:Human-Infra-tech-tree.png" not in templates["research_map"]:
+    raise SystemExit("首页研究图谱未提供原生 MediaWiki 图片内容")
+if sum(
+    line.startswith("* ")
+    for line in templates["current_focus"].splitlines()
+) < 8:
+    raise SystemExit("首页当前重点内容密度不足")
+for name in ("participate", "reminder"):
+    if "[[File:Human-Infra-mark.svg|70px|right" not in templates[name]:
+        raise SystemExit(f"首页 {name} 未复用上游右侧 70px 图片结构")
+if sum(
+    line.startswith("* ")
+    for line in templates["site_links"].splitlines()
+) < 15:
+    raise SystemExit("首页站点链接未达到上游三列十五项结构")
 PY
 
 grep -Fq 'resources/assets/licenses/cc-by-sa.png' config/HumanInfraSettings.php || {
@@ -118,6 +152,14 @@ grep -Fq 'human-infra-mark.svg:/var/www/html/resources/assets/human-infra-mark.s
 }
 grep -Fq 'seed-assets/Human-Infra-mark.svg:ro' compose.yaml || {
     printf 'Wiki 服务未挂载可复现的 MediaWiki 品牌种子文件。\n' >&2
+    exit 1
+}
+grep -Fq 'seed-assets/Human-Infra-tech-tree.png:ro' compose.yaml || {
+    printf 'Wiki 服务未挂载可复现的科技树图片种子文件。\n' >&2
+    exit 1
+}
+grep -Fq "printf '%s\\n' 'Human Infra:首页'" scripts/import-content.sh || {
+    printf '内容导入流程未按 MediaWiki 1.46 契约刷新首页解析缓存。\n' >&2
     exit 1
 }
 

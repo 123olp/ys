@@ -81,23 +81,73 @@ for contract in 'id="mp-2012-banner"' 'id="mp-2012-column-left"' 'id="mp-2012-co
     }
 done
 python3 -c '
-import re
+from html.parser import HTMLParser
 import sys
 
+requirements = dict((
+    ("mp-2012-column-featurepic-block", 4),
+    ("mp-2012-column-right-block-b", 5),
+    ("mp-2012-column-right-block-c", 3),
+    ("mp-2012-links", 15),
+    ("mp-2012-sisters", 16),
+))
+
+
+class HomepageContractParser(HTMLParser):
+    def __init__(self):
+        super().__init__()
+        self.void_tags = {
+            "area", "base", "br", "col", "embed", "hr", "img", "input",
+            "link", "meta", "param", "source", "track", "wbr",
+        }
+        self.stack = []
+        self.links = {key: 0 for key in requirements}
+        self.classes = {key: set() for key in requirements}
+
+    def handle_starttag(self, tag, attrs):
+        attributes = dict(attrs)
+        parent_contract = self.stack[-1][1] if self.stack else None
+        contract = attributes.get("id")
+        active = contract if contract in requirements else parent_contract
+        if active:
+            self.classes[active].update(attributes.get("class", "").split())
+            if tag == "a":
+                self.links[active] += 1
+        if tag not in self.void_tags:
+            self.stack.append((tag, active))
+
+    def handle_startendtag(self, tag, attrs):
+        attributes = dict(attrs)
+        active = self.stack[-1][1] if self.stack else None
+        if active:
+            self.classes[active].update(attributes.get("class", "").split())
+            if tag == "a":
+                self.links[active] += 1
+
+    def handle_endtag(self, tag):
+        for index in range(len(self.stack) - 1, -1, -1):
+            if self.stack[index][0] == tag:
+                del self.stack[index:]
+                break
+
+
 page = sys.stdin.read()
-match = re.search(
-    r"<div id=\"mp-2012-sisters\"[^>]*>(.*?)</table>",
-    page,
-    re.DOTALL,
-)
-if not match:
-    raise SystemExit("中文项目首页缺少完整关联项目表格。")
-fragment = match.group(1)
-if "plainlinks noresize" not in fragment or fragment.count("<a ") < 16:
-    raise SystemExit("中文项目首页关联项目组件内容密度不足。")
+parser = HomepageContractParser()
+parser.feed(page)
+for contract, minimum_links in requirements.items():
+    if parser.links[contract] < minimum_links:
+        raise SystemExit(f"中文项目首页组件内容不足: {contract}")
+if not {"plainlinks", "noresize"}.issubset(parser.classes["mp-2012-sisters"]):
+    raise SystemExit("中文项目首页关联项目未复用 Wikipediasister 表格契约。")
+if "Human-Infra-tech-tree.png" not in page:
+    raise SystemExit("中文项目首页未渲染本地科技树图片。")
 ' <<<"$rendered_main_page"
 grep -Fq '典范研究' <<<"$rendered_main_page" || {
     printf '中文项目首页内容未渲染。\n' >&2
+    exit 1
+}
+grep -Fq '请按' <<<"$rendered_main_page" || {
+    printf '中文项目首页仍在使用过期模板解析缓存。\n' >&2
     exit 1
 }
 if grep -Eq '<img[^>]+src=""' <<<"$rendered_main_page"; then
@@ -124,6 +174,16 @@ brand_media_path="$(
 [[ -n "$brand_media_path" ]] && curl -fsS -o /dev/null \
     "${base_url}${brand_media_path}" || {
     printf 'MediaWiki 本地文件仓库中的 Human Infra 品牌资源不可用。\n' >&2
+    exit 1
+}
+tech_tree_media_path="$(
+    grep -oE 'src="[^"]*Human-Infra-tech-tree\.png[^"]*"' <<<"$rendered_main_page" \
+        | head -n 1 \
+        | cut -d '"' -f 2
+)"
+[[ -n "$tech_tree_media_path" ]] && curl -fsS -o /dev/null \
+    "${base_url}${tech_tree_media_path}" || {
+    printf 'MediaWiki 本地文件仓库中的 Human Infra 科技树图片不可用。\n' >&2
     exit 1
 }
 curl -fsS -o /dev/null \
