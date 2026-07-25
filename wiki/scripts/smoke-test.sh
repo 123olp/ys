@@ -80,6 +80,22 @@ for contract in 'id="mp-2012-banner"' 'id="mp-2012-column-left"' 'id="mp-2012-co
         exit 1
     }
 done
+python3 -c '
+import re
+import sys
+
+page = sys.stdin.read()
+match = re.search(
+    r"<div id=\"mp-2012-sisters\"[^>]*>(.*?)</table>",
+    page,
+    re.DOTALL,
+)
+if not match:
+    raise SystemExit("中文项目首页缺少完整关联项目表格。")
+fragment = match.group(1)
+if "plainlinks noresize" not in fragment or fragment.count("<a ") < 16:
+    raise SystemExit("中文项目首页关联项目组件内容密度不足。")
+' <<<"$rendered_main_page"
 grep -Fq '典范研究' <<<"$rendered_main_page" || {
     printf '中文项目首页内容未渲染。\n' >&2
     exit 1

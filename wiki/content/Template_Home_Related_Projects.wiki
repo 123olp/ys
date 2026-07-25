@@ -1,2 +1,21 @@
-<div></div>
-<p>Human Infra Wiki 由 tradecatlabs 维护，使用 MediaWiki 与自由内容许可组织可修订的研究知识。</p><noinclude>[[Category:首页模板]]</noinclude>
+<div>[[File:Human-Infra-mark.svg|45px|center|link=Human Infra:关于|Human Infra]]</div>
+<p style="text-align:center;">'''Human Infra Wiki''' 由 tradecatlabs 维护，并与以下研究入口共同组织主体持续性知识：</p>
+{| class="plainlinks noresize" align="center" cellpadding="2" style="width:90%; background-color:transparent; color:var(--color-placeholder,#777); font-size:95%;"
+| style="text-align:center; padding:4px;" | [[File:Human-Infra-mark.svg|center|35px|link=研究域全景索引|研究域]]
+| style="width:27%; padding:4px;" | [[研究域全景索引|'''研究域''']]<br /><span style="font-size:small;">C1-C6 可能性空间</span>
+| style="text-align:center; padding:4px;" | [[File:Human-Infra-mark.svg|center|35px|link=技术路线全景索引|技术路线]]
+| style="width:27%; padding:4px;" | [[技术路线全景索引|'''技术路线''']]<br /><span style="font-size:small;">目标依赖与历史路径</span>
+| style="text-align:center; padding:4px;" | [[File:Human-Infra-mark.svg|center|35px|link=证据地图与支持边界|证据地图]]
+| style="width:27%; padding:4px;" | [[证据地图与支持边界|'''证据地图''']]<br /><span style="font-size:small;">主张、来源与反证</span>
+| style="text-align:center; padding:4px;" | [[File:Human-Infra-mark.svg|center|35px|link=Portal:永生与主体持续性|永生专题]]
+| style="width:19%; padding:4px;" | [[Portal:永生与主体持续性|'''永生专题''']]<br /><span style="font-size:small;">终极目标与条件网络</span>
+|-
+| style="text-align:center; padding:4px;" | [[File:Human-Infra-mark.svg|center|35px|link=Portal:衰老机制与长寿科学|长寿科学]]
+| style="padding:4px;" | [[Portal:衰老机制与长寿科学|'''长寿科学''']]<br /><span style="font-size:small;">衰老机制与干预</span>
+| style="text-align:center; padding:4px;" | [[File:Human-Infra-mark.svg|center|35px|link=Portal:身体替代与人体增强|身体替代]]
+| style="padding:4px;" | [[Portal:身体替代与人体增强|'''身体替代''']]<br /><span style="font-size:small;">功能接口与人体增强</span>
+| style="text-align:center; padding:4px;" | [[File:Human-Infra-mark.svg|center|35px|link=Portal:脑、记忆与主体连续性|主体连续性]]
+| style="padding:4px;" | [[Portal:脑、记忆与主体连续性|'''主体连续性''']]<br /><span style="font-size:small;">脑、记忆与人格</span>
+| style="text-align:center; padding:4px;" | [[File:Human-Infra-mark.svg|center|35px|link=Portal:AI与自动化科学|自动化科学]]
+| style="padding:4px;" | [[Portal:AI与自动化科学|'''自动化科学''']]<br /><span style="font-size:small;">AI 与技术窗口压缩</span>
+|}<noinclude>[[Category:首页模板]]</noinclude>

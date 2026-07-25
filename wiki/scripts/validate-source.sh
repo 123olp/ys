@@ -92,6 +92,18 @@ PY
 
 python3 scripts/build-wikipedia-homepage.py --check
 
+python3 - <<'PY'
+from pathlib import Path
+
+source = Path("content/Template_Home_Related_Projects.wiki").read_text(
+    encoding="utf-8"
+)
+if 'class="plainlinks noresize"' not in source:
+    raise SystemExit("首页关联项目未复用 Wikipediasister 表格契约")
+if source.count("[[File:Human-Infra-mark.svg") < 9:
+    raise SystemExit("首页关联项目缺少顶部标志或八个入口标志")
+PY
+
 grep -Fq 'resources/assets/licenses/cc-by-sa.png' config/HumanInfraSettings.php || {
     printf '站点未配置 MediaWiki 内置 CC BY-SA 许可证图标。\n' >&2
     exit 1
