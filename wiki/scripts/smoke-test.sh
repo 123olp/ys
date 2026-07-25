@@ -16,8 +16,11 @@ portal_url="${portal_url%/}"
 curl -fsS "$portal_url/healthz" | grep -Fq 'ok'
 portal_html="$(curl -fsS "$portal_url/")"
 grep -Fq 'Human Infra' <<<"$portal_html"
-grep -Fq '选择语言' <<<"$portal_html"
-curl -fsS "$portal_url/languages.json" | grep -Fq '"status": "available"'
+grep -Fq 'class="central-featured"' <<<"$portal_html"
+grep -Fq 'class="search-container"' <<<"$portal_html"
+grep -Fq 'data-hi-language="zh"' <<<"$portal_html"
+curl -fsS "$portal_url/adapter.js" | grep -Fq 'HUMAN_INFRA_PORTAL'
+curl -fsS "$portal_url/UPSTREAM.md" | grep -Fq 'wikimedia/portals'
 
 printf '等待 Wiki HTTP 就绪'
 for _ in $(seq 1 60); do
@@ -30,8 +33,14 @@ for _ in $(seq 1 60); do
 done
 
 siteinfo="$(curl -fsS "$base_url/api.php?action=query&meta=siteinfo&format=json")"
-grep -Fq '"sitename":"Human Infra Wiki"' <<<"$siteinfo"
-grep -Fq '"mainpage":"Human Infra:首页"' <<<"$siteinfo"
+python3 -c '
+import json
+import sys
+
+general = json.load(sys.stdin)["query"]["general"]
+assert general["sitename"] == "Human Infra Wiki"
+assert general["mainpage"] == "Human Infra:首页"
+' <<<"$siteinfo"
 
 namespaces="$(curl -fsS "$base_url/api.php?action=query&meta=siteinfo&siprop=namespaces&format=json")"
 grep -Fq '"100":{"id":100,"case":"first-letter","canonical":"Portal"' <<<"$namespaces" || {

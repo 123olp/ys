@@ -1,6 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" role="img" aria-labelledby="title">
   <title id="title">Human Infra</title>
-  <g fill="none" stroke="#202122" stroke-width="3">
+  <style>
+    .line { stroke: #202122; }
+    @media (prefers-color-scheme: dark) { .line { stroke: #eaecf0; } }
+  </style>
+  <g class="line" fill="none" stroke-width="3">
     <circle cx="80" cy="80" r="58"/>
     <path d="M22 80h116M80 22c21 16 32 35 32 58s-11 42-32 58M80 22C59 38 48 57 48 80s11 42 32 58"/>
     <path d="M36 48h88M36 112h88"/>

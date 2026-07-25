@@ -1,6 +1,6 @@
 # Human Infra Wiki
 
-Human Infra Wiki 是科技树节点的知识详情层，也是项目专有概念、研究域和证据来源的可修订知识库。它采用独立多语言门户与 MediaWiki 语言版本分层架构；中文站使用 MediaWiki 1.46、MariaDB 11.8、Vector、VisualEditor 和 Page Forms，保持 Wikipedia 同系阅读与编辑体验。
+Human Infra Wiki 是科技树节点的知识详情层，也是项目专有概念、研究域和证据来源的可修订知识库。语言入口直接复用 Wikimedia 官方 `www.wikipedia.org` 门户发布物；中文站使用 MediaWiki 1.46、MariaDB 11.8、Vector、VisualEditor 和 Page Forms，保持 Wikipedia 同系阅读与编辑体验。
 
 ## 一键部署
 
@@ -31,7 +31,7 @@ Windows 11 可直接访问这些 `localhost` 地址。若端口冲突，在 `.en
   -> 研究域 / 技术节点 / 证据来源
 ```
 
-语言版本准入遵循 [语言版本契约](LANGUAGE-EDITION-CONTRACT.md)，首页和专题层遵循 [首页与专题门户契约](HOMEPAGE-PORTAL-CONTRACT.md)。当前只开放中文版本；英文入口标记为筹备中，不生成空内容版本。
+语言版本准入遵循 [语言版本契约](LANGUAGE-EDITION-CONTRACT.md)，首页和专题层遵循 [首页与专题门户契约](HOMEPAGE-PORTAL-CONTRACT.md)。门户上的多语言入口当前切换 MediaWiki 界面语言；独立内容版本目前只开放中文，不能把界面翻译误写为内容版本。
 
 ## 内容入口
 
@@ -57,6 +57,14 @@ make import      # 重新导入受治理的种子页面
 make smoke       # 验证 HTTP、数据库、扩展和关键页面
 make backup      # 创建时间戳备份包
 make validate    # 检查源码契约和 Compose 配置
+```
+
+更新官方语言门户快照：
+
+```bash
+python3 scripts/refresh-wikipedia-portal.py
+make validate
+make smoke
 ```
 
 ## 备份与恢复

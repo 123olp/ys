@@ -33,7 +33,7 @@ Human Infra 是一个研究“能够继续做事的主体”如何被维护、�
 
 ## 本地 Wiki
 
-`wiki/` 提供 Human Infra 的多语言知识入口与独立 MediaWiki，用于整理项目专有词条、研究域、技术节点和证据来源，并作为科技树节点的本地详情页。默认访问链为：语言门户 `http://localhost:18784/` -> 中文 Wiki 首页 `http://localhost:18782/` -> 专题门户 -> 具体词条。首次部署、页面分层、录入规范和科技树跳转契约见 [Wiki 使用说明](wiki/README.md)。
+`wiki/` 提供 Human Infra 的多语言知识入口与独立 MediaWiki；语言入口直接复用 Wikimedia 官方 `www.wikipedia.org` 门户发布物，不维护仿制视觉层。默认访问链为：语言门户 `http://localhost:18784/` -> 中文 Wiki 首页 `http://localhost:18782/` -> 专题门户 -> 具体词条。首次部署、页面分层、录入规范和科技树跳转契约见 [Wiki 使用说明](wiki/README.md)。
 
 ## 实现持续性主线
 

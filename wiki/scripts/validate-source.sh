@@ -17,11 +17,14 @@ required=(
     config/HumanInfraSettings.php
     docker/entrypoint.sh
     portal/index.html
-    portal/app.js
-    portal/styles.css
+    portal/adapter.js
+    portal/UPSTREAM.md
+    portal/LICENSE.wikimedia-portals
     portal/languages.json
     portal/default.conf.template
     portal/assets/human-infra-mark.svg
+    portal/assets/human-infra-wordmark.svg
+    scripts/refresh-wikipedia-portal.py
     content/manifest.tsv
 )
 
@@ -31,6 +34,48 @@ for file in "${required[@]}"; do
         exit 1
     }
 done
+
+grep -Fq 'class="central-featured"' portal/index.html || {
+    printf '语言门户缺少 Wikimedia central-featured DOM 契约。\n' >&2
+    exit 1
+}
+grep -Fq 'class="search-container"' portal/index.html || {
+    printf '语言门户缺少 Wikimedia search-container DOM 契约。\n' >&2
+    exit 1
+}
+grep -Fq 'data-hi-language="zh"' portal/index.html || {
+    printf '语言门户缺少中文路由锚点。\n' >&2
+    exit 1
+}
+[[ ! -e portal/styles.css ]] || {
+    printf '禁止用本地 styles.css 覆盖 Wikimedia 官方门户视觉层。\n' >&2
+    exit 1
+}
+python3 - <<'PY'
+import re
+from pathlib import Path
+
+manifest_titles = {
+    line.split("\t", 1)[0]
+    for line in Path("content/manifest.tsv").read_text(encoding="utf-8").splitlines()
+    if line and not line.startswith("#")
+}
+portal_html = Path("portal/index.html").read_text(encoding="utf-8")
+portal_titles = set(re.findall(r'data-hi-title="([^"]+)"', portal_html))
+missing_titles = sorted(portal_titles - manifest_titles)
+if missing_titles:
+    raise SystemExit(f"语言门户存在未入库的 Wiki 目标: {missing_titles}")
+
+local_assets = set(
+    re.findall(r'(?:src|href)="(assets/[^"]+)"', portal_html)
+    + re.findall(r'url\((assets/[^)]+)\)', portal_html)
+)
+missing_assets = sorted(
+    asset for asset in local_assets if not Path("portal", asset).is_file()
+)
+if missing_assets:
+    raise SystemExit(f"语言门户缺少本地化上游资源: {missing_assets}")
+PY
 
 declare -A titles=()
 while IFS=$'\t' read -r title file; do

@@ -7,6 +7,7 @@ All notable repository structure changes are recorded here.
 - Added a reproducible Human Infra MediaWiki stack with MariaDB, Vector, VisualEditor and Page Forms.
 - Added governed Wiki forms for research domains, technology nodes and evidence sources, plus seed pages, backup/restore operations and a technology-tree routing contract.
 - Added a Wikipedia-style language portal, a modular Chinese project homepage, seven topic portals, custom Portal namespaces, and browser-level navigation and responsive-layout checks.
+- Replaced the locally designed language portal with an adapted snapshot of Wikimedia's official `www.wikipedia.org` production portal, preserving the upstream visual system and limiting local code to branding and routing glue.
 
 ## 2026-07-14
 

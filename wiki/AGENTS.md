@@ -21,12 +21,13 @@ wiki/
 ├── docker/
 │   └── entrypoint.sh         # 运行时目录和 LocalSettings 装载
 ├── portal/                   # 独立多语言入口，不承载研究正文
-│   ├── index.html            # 语言选择与搜索入口
+│   ├── index.html            # Wikimedia 官方生产门户的本地适配快照
 │   ├── languages.json        # 语言状态与展示顺序真相源
-│   ├── app.js                # API 统计与语言路由
-│   ├── styles.css            # Wikipedia 中性配色与响应式布局
+│   ├── adapter.js            # 本地 Wiki 路由与搜索胶水
+│   ├── UPSTREAM.md           # 官方来源、版本、许可证和刷新流程
+│   ├── LICENSE.wikimedia-portals # Wikimedia portals 上游许可证
 │   ├── default.conf.template # Nginx 健康检查和运行时端口注入
-│   └── assets/               # Human Infra 门户品牌资产
+│   └── assets/               # 官方发布资源与 Human Infra 品牌替换资产
 ├── content/
 │   ├── manifest.tsv          # 种子页面标题与文件映射真相源
 │   └── *.wiki                # 首页、政策、模板、表单和分类种子
@@ -35,6 +36,7 @@ wiki/
 │   ├── import-content.sh     # 按 manifest 幂等更新种子页面
 │   ├── backup.sh             # 数据库、上传文件和配置备份
 │   ├── restore.sh            # 显式确认后的完整恢复
+│   ├── refresh-wikipedia-portal.py # 刷新并最小适配官方门户发布物
 │   ├── smoke-test.sh         # HTTP、扩展、页面和数据库验证
 │   └── validate-source.sh    # 跟踪配置与内容契约检查
 └── runtime/                  # 忽略：数据库、上传、安装配置和备份
@@ -43,7 +45,7 @@ wiki/
 ## 职责边界
 
 - `compose.yaml` 和 `Dockerfile` 固定可复现基础设施；不得把密码写入其中。
-- `portal/` 是语言选择层，只负责版本发现、搜索路由和语言状态；禁止存放研究结论或伪造尚未建立的语言版本。
+- `portal/` 是语言选择层，视觉、DOM 与通用控件行为归 Wikimedia 官方门户；本项目只维护品牌内容和本地路由适配，禁止新增平行视觉 CSS、存放研究结论或伪造尚未建立的语言版本。
 - `config/` 只保存可公开的站点策略；MediaWiki 生成的 `LocalSettings.php` 属于运行时。
 - `content/` 是首次安装和可重复导入的种子，不是整个 Wiki 数据库的镜像。
 - `Human Infra:首页` 是中文项目首页；`Template:首页/*` 是其模块；`Portal:` 只做专题导航，不成为并行正文真相源。
