@@ -32,7 +32,9 @@ module.exports = async (page) => {
       ".uls-dialog,",
       ".mwe-popups,",
       ".mw-notification-area,",
-      ".vector-sticky-header {",
+      ".vector-sticky-header,",
+      "#scrollUpButton-zhwiki,",
+      "#scrollDownButton-zhwiki {",
       "  display: none !important;",
       "}",
     ].join("\n");

@@ -49,6 +49,10 @@ BackstopJS 首次生成参考图时，容器访问中文维基百科出现 `net:
 
 2026-07-25 的首个可靠基线为 8/20 通过：桌面 8/10 通过，移动 0/10 通过。失败项保持为真实未解决差异，不能通过提高阈值、删除移动视口或批准本地截图消除。
 
+后续逐图复核发现，中文维基百科会在滚动后动态插入 `#scrollUpButton-zhwiki` 和 `#scrollDownButton-zhwiki`。这两个页面级浮动按钮在 BackstopJS 逐组件滚动截图时进入官方参考图，但本地实例没有对应实验代码，造成与模板无关的假差异。稳定化脚本现持续隐藏这两个明确的页面壳元素，并把每个截图组件的小数像素起点归一到整数坐标；这不改变组件尺寸、层级、响应式断点或内容布局。
+
+修复后重新从官方页面生成受控组件基线，并连续三次执行本地对比，均为桌面 10/10、移动 10/10、总计 20/20 通过。该结果只证明标准内容夹具下的首页模板、样式和响应式组件契约达到零像素差异；官方实时内容、站点页壳、动态实验和本地 Human Infra 内容的完整页面差异仍由 `homepage-audit` 单独报告。
+
 ## 回归条件
 
 - 快照文件必须与 `metadata.json` 中的 SHA-256 一致。
@@ -66,4 +70,4 @@ make homepage-check   PASS
 make homepage-compare PASS
 ```
 
-上述历史 PASS 只证明抽样几何契约，不再作为像素对齐证据。标准化官方组件参考图进入 `visual-regression/bitmaps_reference/`；测试截图、差异图和 HTML 报告写入忽略目录 `runtime/visual-regression/`。当前零容差 Gate 仍为 FAIL，禁止对外声称像素对齐。
+上述历史 `homepage-check` PASS 只证明抽样几何契约，不再作为像素对齐证据。标准化官方组件参考图进入 `visual-regression/bitmaps_reference/`；测试截图、差异图和 HTML 报告写入忽略目录 `runtime/visual-regression/`。当前标准内容组件契约的零容差 Gate 为 PASS；该结论不得扩张为官方实时整页内容逐像素一致。
