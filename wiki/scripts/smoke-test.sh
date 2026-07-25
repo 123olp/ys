@@ -58,12 +58,55 @@ done
 
 pages="$(curl -fsS --get "$base_url/api.php" \
     --data-urlencode 'action=query' \
-    --data-urlencode 'titles=Human Infra:首页|Portal:永生与主体持续性|Form:研究域|Form:技术节点|Form:证据来源' \
+    --data-urlencode 'titles=Human Infra:首页|Portal:永生与主体持续性|Category:Human Infra Wiki|Category:首页模板|Form:研究域|Form:技术节点|Form:证据来源' \
     --data-urlencode 'format=json')"
 if grep -Fq '"missing":true' <<<"$pages"; then
     printf '关键种子页面缺失。\n' >&2
     exit 1
 fi
+
+for query_page in Wantedpages Wantedtemplates Wantedcategories; do
+    query_result="$(curl -fsS --get "$base_url/api.php" \
+        --data-urlencode 'action=query' \
+        --data-urlencode 'list=querypage' \
+        --data-urlencode "qppage=$query_page" \
+        --data-urlencode 'qplimit=max' \
+        --data-urlencode 'format=json')"
+    python3 -c '
+import json
+import sys
+
+page_name = sys.argv[1]
+results = json.load(sys.stdin)["query"]["querypage"]["results"]
+if results:
+    titles = [result.get("title", result.get("value")) for result in results]
+    raise SystemExit(f"{page_name} 仍有缺失项: {titles}")
+' "$query_page" <<<"$query_result"
+done
+
+for portal in \
+    '永生与主体持续性' \
+    '衰老机制与长寿科学' \
+    '身体替代与人体增强' \
+    '脑、记忆与主体连续性' \
+    'AI与自动化科学' \
+    '未来等待' \
+    '治理、风险与公平'; do
+    rendered_portal="$(curl -fsS --get "$base_url/index.php" \
+        --data-urlencode "title=Portal:$portal")"
+    grep -Fq '参与建设' <<<"$rendered_portal" || {
+        printf '专题门户缺少参与建设内容槽: %s\n' "$portal" >&2
+        exit 1
+    }
+    grep -Fq '相关门户' <<<"$rendered_portal" || {
+        printf '专题门户缺少相关门户内容槽: %s\n' "$portal" >&2
+        exit 1
+    }
+    if grep -Fq 'hi-portal' <<<"$rendered_portal"; then
+        printf '专题门户仍依赖项目私有平行布局: %s\n' "$portal" >&2
+        exit 1
+    fi
+done
 
 main_page="$(curl -fsS --get "$base_url/index.php" \
     --data-urlencode 'title=Human Infra:首页' \

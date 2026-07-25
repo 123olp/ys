@@ -29,6 +29,7 @@ Windows 11 可直接访问这些 `localhost` 地址。若端口冲突，在 `.en
   -> Human Infra:首页
   -> Portal:专题
   -> 研究域 / 技术节点 / 证据来源
+  -> Category:Human Infra Wiki 单根分类体系
 ```
 
 语言版本准入遵循 [语言版本契约](LANGUAGE-EDITION-CONTRACT.md)，首页和专题层遵循 [首页与专题门户契约](HOMEPAGE-PORTAL-CONTRACT.md)。门户上的多语言入口当前切换 MediaWiki 界面语言；独立内容版本目前只开放中文，不能把界面翻译误写为内容版本。
@@ -45,7 +46,7 @@ Windows 11 可直接访问这些 `localhost` 地址。若端口冲突，在 `.en
 
 录入前阅读 [内容标准](CONTENT-STANDARD.md)。科技树接入遵循 [跳转契约](ROUTING-CONTRACT.md)。
 
-中文首页由固定的中文维基百科首页 Wikitext、页首、TemplateStyles 和渲染 HTML 快照生成；`Template:首页/*` 仅维护 Human Infra 内容。生成产物禁止手工修改，上游固定修订、哈希与许可记录在 `homepage-upstream/UPSTREAM.md`。顶级专题使用 `Portal:` 命名空间，Portal 只组织导航、边界和跨词条关系，不复制词条正文。
+中文首页由固定的中文维基百科首页 Wikitext、页首、TemplateStyles 和渲染 HTML 快照生成；`Template:首页/*` 仅维护 Human Infra 内容。生成产物禁止手工修改，上游固定修订、哈希与许可记录在 `homepage-upstream/UPSTREAM.md`。顶级专题使用 `Portal:` 命名空间；Portal 复用 MediaWiki 原生排版，按概览、精选研究、路线、证据边界、开放问题、参与建设和相关门户组织内容，不复制词条正文。全部内容分类必须通过有限父链追溯到 `Category:Human Infra Wiki`。
 
 Human Infra 品牌标识只有一个受版本控制的源文件：`portal/assets/human-infra-mark.svg`。Compose 将它只读提供给 Vector 皮肤，`make import` 再通过 MediaWiki 原生 `importImages` 导入本地文件仓库供首页模板引用；不得依赖 InstantCommons 上的占位品牌文件。首页“研究图谱”使用 `portal/assets/human-infra-tech-tree.png`，它是 Human Infra 科技树实际页面的渲染截图，通过同一原生图片导入链路发布，不以 CSS 背景或外链图片绕过 MediaWiki 文件系统。
 

@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-07-26
+
+- Expanded all seven Human Infra topic portals with native MediaWiki semantic sections for overview, selected research, routes, evidence boundaries, open questions, participation and related navigation, removing the custom portal CSS layer.
+- Added a single-root Wiki category graph under `Category:Human Infra Wiki`, governed homepage and infobox template categories, runtime red-link/category gates, and duplicate-title regression checks.
+
 ## 2026-07-25
 
 - 将中文 Wiki 首页改为中文维基百科固定快照驱动：保存官方 Wikitext、页首、TemplateStyles、渲染 HTML、修订元数据和 SHA-256，并由确定性生成器仅注入 Human Infra 内容槽位。

@@ -224,6 +224,11 @@ for title in \
     'MediaWiki:Common.css' \
     'Human Infra:首页' \
     'Template:首页/styles.css' \
+    'Category:Human Infra Wiki' \
+    'Category:模板' \
+    'Category:信息框模板' \
+    'Category:首页模板' \
+    'Category:隐藏分类' \
     'Portal:永生与主体持续性' \
     'Portal:衰老机制与长寿科学' \
     'Portal:身体替代与人体增强' \
@@ -236,6 +241,110 @@ for title in \
         exit 1
     }
 done
+
+python3 - <<'PY'
+import re
+from pathlib import Path
+
+content_dir = Path("content")
+manifest_entries = {
+    title: filename
+    for title, filename in (
+        line.split("\t", 1)
+        for line in (content_dir / "manifest.tsv").read_text(encoding="utf-8").splitlines()
+        if line and not line.startswith("#")
+    )
+}
+manifest_titles = set(manifest_entries)
+
+category_parents = {}
+for title, filename in manifest_entries.items():
+    if not title.startswith("Category:"):
+        continue
+    source = (content_dir / filename).read_text(encoding="utf-8")
+    if re.search(r"(?m)^=\s*Category:", source):
+        raise SystemExit(f"分类页不得在正文重复页面标题: {filename}")
+    category_parents[title] = {
+        f"Category:{parent.strip()}"
+        for parent in re.findall(r"\[\[Category:([^\]|]+)", source)
+    }
+
+root_category = "Category:Human Infra Wiki"
+def verify_category_path(title, trail):
+    if title == root_category:
+        return
+    if title in trail:
+        cycle = " -> ".join((*trail, title))
+        raise SystemExit(f"分类层级存在循环: {cycle}")
+    parents = category_parents.get(title, set())
+    if not parents:
+        raise SystemExit(f"分类无法追溯到顶级分类: {title}")
+    unknown = sorted(parent for parent in parents if parent not in category_parents)
+    if unknown:
+        raise SystemExit(f"分类引用未治理父分类 {title}: {unknown}")
+    for parent in parents:
+        verify_category_path(parent, (*trail, title))
+
+
+for title in category_parents:
+    verify_category_path(title, ())
+
+base_categories = (
+    "Category_Evidence_source.wiki",
+    "Category_Fiction_reference.wiki",
+    "Category_Portals.wiki",
+    "Category_Research_domain.wiki",
+    "Category_Technology_node.wiki",
+    "Category_Topic.wiki",
+)
+for filename in base_categories:
+    source = (content_dir / filename).read_text(encoding="utf-8")
+    if "[[Category:Human Infra Wiki]]" not in source:
+        raise SystemExit(f"基础分类未接入单一顶级分类: {filename}")
+
+for filename in (
+    "Template_Research_domain.wiki",
+    "Template_Technology_node.wiki",
+    "Template_Evidence_source.wiki",
+):
+    source = (content_dir / filename).read_text(encoding="utf-8")
+    noinclude = source.partition("<noinclude>")[2]
+    if "[[Category:信息框模板]]" not in noinclude:
+        raise SystemExit(f"信息框模板缺少模板页维护分类: {filename}")
+
+common_css = (content_dir / "MediaWiki_Common_css.wiki").read_text(encoding="utf-8")
+if ".hi-portal" in common_css:
+    raise SystemExit("Portal 禁止使用项目私有平行布局 CSS。")
+
+required_sections = {
+    "Portal_Immortality.wiki": ("概览", "精选条目", "研究路线", "证据与反证", "参与建设", "相关门户"),
+    "Portal_Aging_Longevity.wiki": ("概览", "精选研究", "技术路线", "证据与边界", "开放问题", "参与建设", "相关门户"),
+    "Portal_Body_Augmentation.wiki": ("概览", "精选研究", "功能替代", "证据与边界", "开放问题", "参与建设", "相关门户"),
+    "Portal_Brain_Memory.wiki": ("概览", "精选研究", "技术与测量", "证据与边界", "开放问题", "参与建设", "相关门户"),
+    "Portal_AI_Science.wiki": ("概览", "精选研究", "能力阶梯", "证据与边界", "开放问题", "参与建设", "相关门户"),
+    "Portal_Future_Waiting.wiki": ("概览", "精选研究", "候选路径", "证据与边界", "开放问题", "参与建设", "相关门户"),
+    "Portal_Governance.wiki": ("概览", "精选研究", "治理对象", "内容与证据治理", "开放问题", "参与建设", "相关门户"),
+}
+for filename, sections in required_sections.items():
+    source = (content_dir / filename).read_text(encoding="utf-8")
+    if "hi-portal" in source:
+        raise SystemExit(f"Portal 仍依赖项目私有布局类: {filename}")
+    if re.search(r"(?m)^=\s+[^=].*\s+=$", source):
+        raise SystemExit(f"Portal 不得在正文重复页面标题: {filename}")
+    for section in sections:
+        if f"== {section} ==" not in source:
+            raise SystemExit(f"Portal 缺少标准内容槽 {section}: {filename}")
+    links = {
+        match.strip()
+        for match in re.findall(r"\[\[([^\]|#]+)", source)
+        if not match.startswith(("File:", "Category:"))
+    }
+    if len(links) < 10:
+        raise SystemExit(f"Portal 内部导航密度不足: {filename}")
+    missing = sorted(link for link in links if link not in manifest_titles)
+    if missing:
+        raise SystemExit(f"Portal 存在未治理内部链接 {filename}: {missing}")
+PY
 
 grep -Fq '<div id="mp-2012">' content/Human_Infra_Main_Page.wiki || {
     printf '中文首页缺少中文维基百科 mp-2012 根 DOM 契约。\n' >&2

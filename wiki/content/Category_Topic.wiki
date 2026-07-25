@@ -1,5 +1,5 @@
-= Category:专题 =
-
 专题承担导航和综合，不是无解释的链接堆砌。
 
 主要入口：[[首页]]。
+
+[[Category:Human Infra Wiki]]

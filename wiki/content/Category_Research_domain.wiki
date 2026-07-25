@@ -1,5 +1,5 @@
-= Category:研究域 =
-
 研究域页面按稳定域 ID 描述一个研究对象，并通过 C1—C6 分类组织。
 
 主要入口：[[研究域全景索引]]。
+
+[[Category:Human Infra Wiki]]

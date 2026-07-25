@@ -33,7 +33,9 @@ wiki/
 │   └── snapshot/             # 原始 Wikitext、CSS、渲染 HTML 与哈希元数据
 ├── content/
 │   ├── manifest.tsv          # 种子页面标题与文件映射真相源
-│   └── *.wiki                # 首页、政策、模板、表单和分类种子
+│   ├── Portal_*.wiki         # 原生 MediaWiki 专题导航与证据边界
+│   ├── Category_*.wiki       # 以 Human Infra Wiki 为唯一根的分类图
+│   └── *.wiki                # 首页、政策、模板、表单和词条种子
 ├── scripts/
 │   ├── bootstrap.sh          # 幂等安装、升级、导入和启动
 │   ├── import-content.sh     # 按 manifest 幂等更新种子页面
@@ -64,6 +66,8 @@ wiki/
 - `homepage-upstream/snapshot/` 是中文首页结构与样式真相源；`Human Infra:首页`、页首和样式均由生成器从该快照产生，禁止手工改写生成产物。
 - `visual-regression/` 只保存 BackstopJS 配置、浏览器状态稳定脚本、视觉夹具和受版本控制的官方组件参考图；像素比较、差异图与报告由 BackstopJS 提供，禁止新增自研截图比较器。模板契约套件负责零容差 Gate，实时整页套件只负责诊断有意内容差异；禁止用 `approve` 把本地失败图替换为官方标准。
 - `Template:首页/*` 只替换研究内容，禁止自建平行首页布局；`Portal:` 只做专题导航，不成为并行正文真相源。
+- `Portal_*.wiki` 必须使用 MediaWiki 原生标题、列表、表格和链接，覆盖概览、精选研究、路线、证据边界、开放问题、参与建设和相关门户；禁止在正文重复页面 H1 或通过 `MediaWiki:Common.css` 建立平行门户视觉层。
+- `Category:Human Infra Wiki` 是分类图唯一根；新增分类必须能沿父分类有限追溯到该根。模板维护分类只写入模板的 `<noinclude>`，不得污染调用页面。
 - `runtime/` 和 `.env` 不得提交；数据迁移必须使用备份包。
 - 科技树只保存稳定节点 ID、标题和目标路由；词条正文、引用和修订历史归 Wiki。
 - 外部通用概念优先链接公共 Wikipedia；项目专有概念、模型和研究域进入本地 Wiki。

@@ -1,25 +1,3 @@
-/* Human Infra Portal 页面；不改变普通词条和上游首页排版。 */
-.hi-portal {
-  max-width: 1240px;
-  margin: 0 auto;
-}
-
-.hi-portal-lead {
-  margin-bottom: 1rem;
-  padding: 1rem 1.2rem;
-  border: 1px solid #a2a9b1;
-  background: #f8f9fa;
-}
-
-.hi-portal-links {
-  columns: 2 22rem;
-  column-gap: 2rem;
-}
-
-.hi-portal-links li {
-  break-inside: avoid;
-}
-
 /* 中文首页遵循中文维基百科主页行为：主内容从 banner 开始。 */
 body.page-Main_Page.action-view .vector-page-titlebar {
     display: none;
