@@ -84,6 +84,42 @@ grep -Fq '典范研究' <<<"$rendered_main_page" || {
     printf '中文项目首页内容未渲染。\n' >&2
     exit 1
 }
+if grep -Eq '<img[^>]+src=""' <<<"$rendered_main_page"; then
+    printf '中文项目首页存在空图片地址。\n' >&2
+    exit 1
+fi
+if grep -Fq 'MediaWiki_logo_reworked' <<<"$rendered_main_page"; then
+    printf '中文项目首页仍引用外部 MediaWiki 占位品牌。\n' >&2
+    exit 1
+fi
+grep -Fq '/resources/assets/human-infra-mark.svg' <<<"$rendered_main_page" || {
+    printf '中文项目首页未使用本地 Human Infra 品牌资源。\n' >&2
+    exit 1
+}
+grep -Fq 'Human-Infra-mark.svg' <<<"$rendered_main_page" || {
+    printf '中文项目首页横幅未使用 MediaWiki 本地文件仓库中的品牌资源。\n' >&2
+    exit 1
+}
+brand_media_path="$(
+    grep -oE 'src="[^"]*Human-Infra-mark\.svg"' <<<"$rendered_main_page" \
+        | head -n 1 \
+        | cut -d '"' -f 2
+)"
+[[ -n "$brand_media_path" ]] && curl -fsS -o /dev/null \
+    "${base_url}${brand_media_path}" || {
+    printf 'MediaWiki 本地文件仓库中的 Human Infra 品牌资源不可用。\n' >&2
+    exit 1
+}
+curl -fsS -o /dev/null \
+    "$base_url/resources/assets/human-infra-mark.svg" || {
+    printf 'Human Infra 品牌资源不可用。\n' >&2
+    exit 1
+}
+curl -fsS -o /dev/null \
+    "$base_url/resources/assets/licenses/cc-by-sa.png" || {
+    printf 'CC BY-SA 许可证图标不可用。\n' >&2
+    exit 1
+}
 
 for form in 研究域 技术节点 证据来源; do
     form_source="$(curl -fsS --get "$base_url/index.php" \

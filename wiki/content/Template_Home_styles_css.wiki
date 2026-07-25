@@ -404,9 +404,7 @@ html.skin-theme-clientpref-night #mp-2012-banner a {
     display: flow-root;
 }
 
-/*
- * 官方移动端的空标志槽高度为 0；本地品牌图只在桌面端占用该槽位。
- */
+/* 官方移动端不显示桌面页首标志槽。 */
 @media all and (max-width: 719px) {
     #mp-2012-banner-logo {
         display: none;

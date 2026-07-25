@@ -2,7 +2,7 @@
 <noinclude><templatestyles src="首页/styles.css" />
 <div id="mp-2012">
 </noinclude><div id="mp-2012-banner" class="nomobile">
-    <div id="mp-2012-banner-logo">[[File:MediaWiki logo reworked 2.svg|118px|link=Human Infra:关于|Human Infra Wiki]]</div>
+    <div id="mp-2012-banner-logo">[[File:Human-Infra-mark.svg|108px|link=Human Infra:关于|Human Infra Wiki]]</div>
 
     <div id="mp-2012-banner-title"><div>
         <h1>[[Human Infra:关于|人类基础设施]]</h1>

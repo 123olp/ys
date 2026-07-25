@@ -41,9 +41,7 @@ PARSER_HEADING_COMPAT = """
     display: flow-root;
 }
 
-/*
- * 官方移动端的空标志槽高度为 0；本地品牌图只在桌面端占用该槽位。
- */
+/* 官方移动端不显示桌面页首标志槽。 */
 @media all and (max-width: 719px) {
     #mp-2012-banner-logo {
         display: none;
@@ -219,7 +217,7 @@ def build_banner() -> str:
     )
     substitutions = {
         '<templatestyles src="Wikipedia:首页/styles.css" />': '<templatestyles src="首页/styles.css" />',
-        '<div id="mp-2012-banner-logo"><!-- &#x200B; --></div>': '<div id="mp-2012-banner-logo">[[File:MediaWiki logo reworked 2.svg|118px|link=Human Infra:关于|Human Infra Wiki]]</div>',
+        '<div id="mp-2012-banner-logo"><!-- &#x200B; --></div>': '<div id="mp-2012-banner-logo">[[File:Human-Infra-mark.svg|108px|link=Human Infra:关于|Human Infra Wiki]]</div>',
         "[[Wikipedia:关于|维基百科]]": "[[Human Infra:关于|人类基础设施]]",
         "海納百川，有容乃大<br />[[Wikipedia:欢迎|人人可編輯]]的[[自由內容|自由]]百科全書": "Human Infra 知识库<br />研究主体持续性何以可能",
         "篇[[Wikipedia:什么是条目|條目]]": "篇内容条目",

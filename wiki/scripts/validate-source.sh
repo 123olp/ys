@@ -92,6 +92,23 @@ PY
 
 python3 scripts/build-wikipedia-homepage.py --check
 
+grep -Fq 'resources/assets/licenses/cc-by-sa.png' config/HumanInfraSettings.php || {
+    printf '站点未配置 MediaWiki 内置 CC BY-SA 许可证图标。\n' >&2
+    exit 1
+}
+grep -Fq 'resources/assets/human-infra-mark.svg' config/HumanInfraSettings.php || {
+    printf '站点未配置本地 Human Infra 品牌资源。\n' >&2
+    exit 1
+}
+grep -Fq 'human-infra-mark.svg:/var/www/html/resources/assets/human-infra-mark.svg:ro' compose.yaml || {
+    printf 'Wiki 服务未只读挂载 Human Infra 品牌资源。\n' >&2
+    exit 1
+}
+grep -Fq 'seed-assets/Human-Infra-mark.svg:ro' compose.yaml || {
+    printf 'Wiki 服务未挂载可复现的 MediaWiki 品牌种子文件。\n' >&2
+    exit 1
+}
+
 grep -Fq 'class="central-featured"' portal/index.html || {
     printf '语言门户缺少 Wikimedia central-featured DOM 契约。\n' >&2
     exit 1

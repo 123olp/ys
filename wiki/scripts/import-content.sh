@@ -14,6 +14,15 @@ set -a
 source .env
 set +a
 
+docker compose --env-file .env exec -T wiki \
+    php maintenance/run.php importImages \
+    --extensions=svg \
+    --overwrite \
+    --user="$WIKI_ADMIN_USER" \
+    --comment="同步 Human Infra 受治理品牌资源" \
+    /opt/human-infra-wiki/seed-assets >/dev/null
+printf '已导入: File:Human-Infra-mark.svg\n'
+
 while IFS=$'\t' read -r title file; do
     [[ -n "$title" && "${title:0:1}" != "#" ]] || continue
     source_file="$wiki_dir/content/$file"

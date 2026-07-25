@@ -47,6 +47,8 @@ Windows 11 可直接访问这些 `localhost` 地址。若端口冲突，在 `.en
 
 中文首页由固定的中文维基百科首页 Wikitext、页首、TemplateStyles 和渲染 HTML 快照生成；`Template:首页/*` 仅维护 Human Infra 内容。生成产物禁止手工修改，上游固定修订、哈希与许可记录在 `homepage-upstream/UPSTREAM.md`。顶级专题使用 `Portal:` 命名空间，Portal 只组织导航、边界和跨词条关系，不复制词条正文。
 
+Human Infra 品牌标识只有一个受版本控制的源文件：`portal/assets/human-infra-mark.svg`。Compose 将它只读提供给 Vector 皮肤，`make import` 再通过 MediaWiki 原生 `importImages` 导入本地文件仓库供首页模板引用；不得依赖 InstantCommons 上的占位品牌文件。
+
 ## 常用命令
 
 ```bash

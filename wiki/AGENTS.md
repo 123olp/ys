@@ -27,7 +27,7 @@ wiki/
 │   ├── UPSTREAM.md           # 官方来源、版本、许可证和刷新流程
 │   ├── LICENSE.wikimedia-portals # Wikimedia portals 上游许可证
 │   ├── default.conf.template # Nginx 健康检查和运行时端口注入
-│   └── assets/               # 官方发布资源与 Human Infra 品牌替换资产
+│   └── assets/               # 门户资源及 Wiki 只读复用的 Human Infra 品牌种子
 ├── homepage-upstream/        # 中文维基首页不可手改的上游模板
 │   ├── UPSTREAM.md           # mp-2012 来源、许可、转换边界和更新流程
 │   └── snapshot/             # 原始 Wikitext、CSS、渲染 HTML 与哈希元数据
@@ -58,9 +58,9 @@ wiki/
 ## 职责边界
 
 - `compose.yaml` 和 `Dockerfile` 固定可复现基础设施；不得把密码写入其中。
-- `portal/` 是语言选择层，视觉、DOM 与通用控件行为归 Wikimedia 官方门户；本项目只维护品牌内容和本地路由适配，禁止新增平行视觉 CSS、存放研究结论或伪造尚未建立的语言版本。
+- `portal/` 是语言选择层，视觉、DOM 与通用控件行为归 Wikimedia 官方门户；本项目只维护品牌内容和本地路由适配，禁止新增平行视觉 CSS、存放研究结论或伪造尚未建立的语言版本。`human-infra-mark.svg` 同时作为 Wiki 皮肤图标和 MediaWiki 本地文件仓库的受治理品牌种子，禁止改回不稳定的 InstantCommons 占位文件。
 - `config/` 只保存可公开的站点策略；MediaWiki 生成的 `LocalSettings.php` 属于运行时。
-- `content/` 是首次安装和可重复导入的种子，不是整个 Wiki 数据库的镜像。
+- `content/` 是首次安装和可重复导入的页面种子，不是整个 Wiki 数据库的镜像；`import-content.sh` 必须先通过 MediaWiki 原生 `importImages` 导入品牌种子，再导入引用它的页面。
 - `homepage-upstream/snapshot/` 是中文首页结构与样式真相源；`Human Infra:首页`、页首和样式均由生成器从该快照产生，禁止手工改写生成产物。
 - `visual-regression/` 只保存 BackstopJS 配置、浏览器状态稳定脚本、视觉夹具和受版本控制的官方组件参考图；像素比较、差异图与报告由 BackstopJS 提供，禁止新增自研截图比较器。模板契约套件负责零容差 Gate，实时整页套件只负责诊断有意内容差异；禁止用 `approve` 把本地失败图替换为官方标准。
 - `Template:首页/*` 只替换研究内容，禁止自建平行首页布局；`Portal:` 只做专题导航，不成为并行正文真相源。

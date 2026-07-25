@@ -17,7 +17,7 @@ $wgExtraNamespaces[NS_HUMAN_INFRA_PORTAL_TALK] = 'Portal_talk';
 $wgNamespaceAliases['门户'] = NS_HUMAN_INFRA_PORTAL;
 $wgContentNamespaces[] = NS_HUMAN_INFRA_PORTAL;
 $wgLogos = [
-    'icon' => "$wgResourceBasePath/resources/assets/mediawiki_compact.svg",
+    'icon' => "$wgResourceBasePath/resources/assets/human-infra-mark.svg",
 ];
 
 wfLoadSkin( 'Vector' );
@@ -29,6 +29,7 @@ wfLoadExtension( 'PageForms' );
 
 $wgEnableUploads = true;
 $wgFileExtensions[] = 'pdf';
+$wgFileExtensions[] = 'svg';
 $wgUseInstantCommons = true;
 $wgEnableEmail = false;
 $wgEnableUserEmail = false;
@@ -51,6 +52,7 @@ $wgVisualEditorEnableWikitext = true;
 $wgRightsPage = 'Human_Infra:版权';
 $wgRightsUrl = 'https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans';
 $wgRightsText = 'CC BY-SA 4.0';
+$wgRightsIcon = "$wgResourceBasePath/resources/assets/licenses/cc-by-sa.png";
 
 $wgJobRunRate = 0;
 $wgShowExceptionDetails = false;

@@ -65,3 +65,5 @@ services:
       - ./runtime/config:/config
       - ./runtime/images:/var/www/html/images
       - ./config/HumanInfraSettings.php:/opt/human-infra-wiki/HumanInfraSettings.php:ro
+      - ./portal/assets/human-infra-mark.svg:/var/www/html/resources/assets/human-infra-mark.svg:ro
+      - ./portal/assets/human-infra-mark.svg:/opt/human-infra-wiki/seed-assets/Human-Infra-mark.svg:ro
