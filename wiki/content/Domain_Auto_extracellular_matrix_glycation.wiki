@@ -1,0 +1,92 @@
+{{研究域
+|域 ID=domain.extracellular-matrix-glycation
+|C 层级=C2：可能性源体维护层
+|研究对象=Extracellular Matrix Glycation
+|持续性作用=直接维护身体、脑、器官、衰老、损伤或生命系统这些可能性源体。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c2-source-maintenance/extracellular-matrix-glycation
+}}
+
+'''Extracellular Matrix Glycation'''是 Human Infra 在“生命载体维护”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+直接维护身体、脑、器官、衰老、损伤或生命系统这些可能性源体。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C2“可能性源体维护层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+Extracellular Matrix Glycation 负责整理细胞外基质、胶原、弹性、纤维化、组织力学、糖化终产物和结构性老化如何影响主体持续性。
+
+核心问题：
+
+<blockquote>身体不只是细胞集合，也是一套材料结构；基质硬化、糖化和纤维化会让组织逐步失去弹性、修复性和功能余量。
+</blockquote>
+== 先验位置 ==
+
+<pre>有效永生 / 主体持续性最大化
+  -> 主体需要细胞之外的组织结构长期保持可修复、可传力、可灌注和可适应
+  -> 细胞外基质决定组织力学、信号、迁移、修复和器官结构
+  -> 糖化、交联、纤维化和硬化会改变血管、皮肤、肺、肾、肌腱、心脏和代谢环境
+  -> 因此细胞外基质与糖化是结构性衰老的材料域</pre>
+== 关注对象 ==
+
+* 胶原、弹性蛋白、蛋白聚糖、基底膜、细胞外基质重塑和组织力学。
+* Advanced glycation end products、交联、硬化、纤维化、炎症和修复障碍。
+* 血管硬化、肺/肾/肝纤维化、皮肤弹性、肌腱韧带、伤口和器官结构。
+* ECM 与细胞衰老、再生医学、代谢、血管、皮肤、肌骨和癌症微环境的交叉。
+
+<span id="human-infra-模型链路"></span>
+== Human Infra 模型链路 ==
+
+<pre>基质状态或糖化暴露 T
+  -> 改变组织弹性、交联、纤维化、细胞信号和修复环境 X
+  -> 改变器官结构、灌注、力学负荷和再生能力 S
+  -> 改变失能、器官功能下降、慢病和死亡风险 λ(t)
+  -> 影响健康寿命、有效时间和未来治疗可整合性</pre>
+== 非目标 ==
+
+* 不提供抗糖化补剂、药物、饮食、检测解释、皮肤治疗或纤维化治疗建议。
+* 不把 AGE、胶原或组织硬度指标写成个体寿命预测。
+* 不替代 <code>musculoskeletal-integrity/</code>、<code>cardiovascular-resilience/</code>、<code>skin-barrier-wound-healing/</code> 或 <code>regenerative-medicine/</code>。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* PMC extracellular matrix and aging review: https://pmc.ncbi.nlm.nih.gov/articles/PMC4181688/
+* PMC advanced glycation end products and aging review: https://pmc.ncbi.nlm.nih.gov/articles/PMC3583887/
+* NCBI extracellular matrix overview: https://www.ncbi.nlm.nih.gov/books/NBK26810/
+
+== 下一步 ==
+
+# 建立 ECM/糖化变量表：组织硬度、交联、纤维化、修复环境、器官结构和可逆性。
+# 与 <code>regenerative-medicine/</code>、<code>cellular-senescence-clearance/</code>、<code>skin-barrier-wound-healing/</code> 和 <code>cardiovascular-resilience/</code> 建立边界。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C2研究域|C2研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c2-source-maintenance/extracellular-matrix-glycation/README.md Human Infra 仓库：domains/c2-source-maintenance/extracellular-matrix-glycation/README.md]
+
+[[Category:C2研究域]]

@@ -1,0 +1,85 @@
+{{研究域
+|域 ID=domain.planetary-health-environment
+|C 层级=C6：局部可能性解锁层
+|研究对象=Planetary Health And Environment
+|持续性作用=未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c6-local-unlocking/planetary-health-environment
+}}
+
+'''Planetary Health And Environment'''是 Human Infra 在“局部阻塞解除”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C6“局部可能性解锁层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+Planetary Health And Environment 负责整理空气、水、气候、生态系统、污染、热风险、食物系统和自然环境对主体持续性的影响。
+
+核心问题：
+
+<blockquote>主体依赖环境系统；如果空气、水、气候、生态和食物系统失稳，个体技术无法单独维持主体持续性。
+</blockquote>
+== 先验位置 ==
+
+<pre>主体持续性最大化
+  -> 主体必须依赖空气、水、食物、温度和生态系统服务
+  -> 环境退化会增加疾病、灾害、迁移、资源断裂和死亡风险
+  -> 个体层面的健康技术无法替代外部环境底座
+  -> 因此星球健康与环境是主体持续性的宏观条件</pre>
+== 关注对象 ==
+
+* 空气污染、水质、热风险、气候变化、极端天气、生态系统和食物系统。
+* 环境暴露、社区韧性、迁移、公共健康和长期风险函数。
+* 与 <code>risk-engineering/</code> 和 <code>resource-social-infra/</code> 的关系：环境是风险和资源的上游条件。
+
+<span id="human-infra-模型链路"></span>
+== Human Infra 模型链路 ==
+
+<pre>环境条件 T
+  -> 改变污染暴露、热暴露、水食物安全和灾害风险 X
+  -> 改变主体外部生存状态 S
+  -> 改变呼吸、心血管、感染、营养、迁移和灾害死亡风险 λ(t)
+  -> 改变长期健康寿命和未来选择权</pre>
+== 非目标 ==
+
+* 不把环境风险归咎于个人选择。
+* 不提供危险环境规避违法建议。
+* 不把单一环境指标等同于完整生态和公共健康风险。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* WHO Air Pollution: https://www.who.int/health-topics/air-pollution
+* Lancet Planetary Health: https://www.thelancet.com/journals/lanplh/home
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C6研究域|C6研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c6-local-unlocking/planetary-health-environment/README.md Human Infra 仓库：domains/c6-local-unlocking/planetary-health-environment/README.md]
+
+[[Category:C6研究域]]

@@ -1,0 +1,85 @@
+{{研究域
+|域 ID=domain.open-source-maintainer-sustainability-continuity
+|C 层级=C6：局部可能性解锁层
+|研究对象=Open Source Maintainer Sustainability Continuity
+|持续性作用=未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c6-local-unlocking/open-source-maintainer-sustainability-continuity
+}}
+
+'''Open Source Maintainer Sustainability Continuity'''是 Human Infra 在“局部阻塞解除”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C6“局部可能性解锁层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>open-source-maintainer-sustainability-continuity</code> 研究开源维护者时间、资金、安全支持、治理、交接、项目健康、依赖关键性和社区负载如何影响主体依赖的软件生态能否持续修复、更新和可信演化。
+
+<blockquote>核心问题：开源不是免费自然资源；大量关键服务依赖少数维护者的持续劳动和治理能力。
+</blockquote>
+== 关注对象 ==
+
+* Maintainer time、funding、burnout、安全响应、release cadence、bus factor、governance、贡献者入口和交接机制。
+* OpenSSF、Alpha-Omega、criticality score、项目健康、依赖图、漏洞响应和安全审计资源。
+* 商业使用、公共资金、基金会治理、赞助、责任分配和维护者风险。
+* 维护中断、项目废弃、恶意接管、维护者疲劳、治理失效和关键依赖无人负责。
+
+<span id="human-infra-链路"></span>
+== Human Infra 链路 ==
+
+<pre>开源维护者可持续
+  -> 关键依赖持续获得修复、审计、发布和治理
+  -> 软件工具、公共服务和数字基础设施断裂风险下降
+  -> 主体依赖的学习、工作、医疗、金融和协作系统更稳定
+  -> 数字行动底座和社会技术系统韧性增强</pre>
+== 非目标 ==
+
+* 不提供项目接管、账号滥用、社工维护者、供应链攻击、漏洞披露滥用或骚扰组织方式。
+* 不替代基金会治理、开源项目决策、资助策略、法律建议或安全响应。
+* 不收集维护者私人信息、财务细节、未公开安全报告、项目内部冲突或私有仓库资料。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* OpenSSF resources, Scorecard, Alpha-Omega and Securing Critical Projects: https://openssf.org/
+* CISA Open Source Software Security Roadmap: https://www.cisa.gov/
+* GitHub / Linux Foundation open source ecosystem reports as ecosystem evidence.
+* SLSA and Sigstore as downstream trust tooling references.
+
+== 下一步 ==
+
+* 建立 <code>maintainer capacity -&gt; project health -&gt; dependency continuity -&gt; subject continuity</code> 变量表。
+* 区分项目健康、安全响应、资金可持续、治理交接和关键依赖集中风险。
+* 与 <code>software-supply-chain-dependency-provenance-continuity</code>、<code>research-infrastructure-open-science-translation</code>、<code>public-procurement-contracting-capacity</code> 和 <code>technology-foresight-horizon-scanning</code> 建立边界。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C6研究域|C6研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c6-local-unlocking/open-source-maintainer-sustainability-continuity/README.md Human Infra 仓库：domains/c6-local-unlocking/open-source-maintainer-sustainability-continuity/README.md]
+
+[[Category:C6研究域]]

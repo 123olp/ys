@@ -1,0 +1,84 @@
+{{研究域
+|域 ID=domain.home-office-workstation-ergonomics-continuity
+|C 层级=C5：可能性生态承载层
+|研究对象=Home Office Workstation Ergonomics Continuity
+|持续性作用=关键词显示该域主要承载能源、水、食物、住房、治理、经济、通信、灾害或基础设施环境。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c5-ecological-substrate/home-office-workstation-ergonomics-continuity
+}}
+
+'''Home Office Workstation Ergonomics Continuity'''是 Human Infra 在“外部生态承载”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要承载能源、水、食物、住房、治理、经济、通信、灾害或基础设施环境。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C5“可能性生态承载层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>home-office-workstation-ergonomics-continuity</code> 研究居家办公/学习工位中的桌椅、屏幕、键鼠、照明、噪声、坐站切换和长时姿势如何影响疼痛、疲劳、注意力和生产任务连续性。
+
+<blockquote>核心问题：远程工作和学习把“办公室的人因系统”搬进家庭，但家庭工位常由餐桌、沙发、床、临时屏幕和共享空间拼成；工位失配会把注意力、身体负荷和长期任务能力慢性消耗。
+</blockquote>
+== 关注对象 ==
+
+* 桌椅高度、屏幕位置、键盘鼠标、笔记本支架、照明、眩光、噪声、温度、坐站变化、休息节律和共享空间冲突。
+* 远程工作者、学生、照护者、自由职业者、残障者、慢性疼痛者和多成员家庭的工作/学习场景。
+* 工位适配如何影响颈肩腰痛、眼疲劳、注意力、视频会议、输入效率、恢复、睡眠和长期执行。
+* 与人因工效总域、家庭室内空气、照明、线缆、电力网络和心理负荷的接口。
+
+<span id="human-infra-链路"></span>
+== Human Infra 链路 ==
+
+<pre>家庭工位与人体任务适配
+  -> 姿势负荷、视觉负荷、线缆摩擦、噪声和环境干扰下降
+  -> 学习、写作、编码、沟通、远程会议和恢复节律更稳定
+  -> 疼痛、疲劳、注意力破碎和任务切换成本减少
+  -> 主体单位时间行动质量和长期执行能力提高</pre>
+== 非目标 ==
+
+* 不提供个体工位处方、医疗诊断、工伤法律建议、雇主合规意见、产品推荐、监控方案、绩效评分或采购建议。
+* 不替代 OSHA、NIOSH、职业治疗师、医疗人员、雇主 EHS、人因专家或劳动法规。
+* 不与 <code>human-factors-ergonomics-task-system-continuity</code> 合并；本域聚焦家庭环境中的远程办公/学习工位。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* OSHA Computer Workstations eTool: https://www.osha.gov/etools/computer-workstations
+* CDC NIOSH Ergonomics: https://www.cdc.gov/niosh/ergonomics/
+* NIST Human Factors / Human-Centered Design: https://www.nist.gov/itl/iad/human-centered-technologies/human-factors-human-centered-design
+
+== 下一步 ==
+
+* 建立 <code>workstation fit -&gt; body/visual/cognitive load -&gt; task density -&gt; continuity outcome</code> 变量表。
+* 区分临时工位、长期远程工位、多人共享空间、照护兼容工位和低成本工位改造边界。
+* 与 <code>human-factors-ergonomics-task-system-continuity</code>、<code>household-cord-cable-trip-entanglement-continuity</code> 和 <code>home-lighting-nighttime-pathway-visibility-continuity</code> 建立边界。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C5研究域|C5研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c5-ecological-substrate/home-office-workstation-ergonomics-continuity/README.md Human Infra 仓库：domains/c5-ecological-substrate/home-office-workstation-ergonomics-continuity/README.md]
+
+[[Category:C5研究域]]

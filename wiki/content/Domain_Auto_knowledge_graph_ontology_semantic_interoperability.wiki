@@ -1,0 +1,98 @@
+{{研究域
+|域 ID=domain.knowledge-graph-ontology-semantic-interoperability
+|C 层级=C4：可能性转换通道层
+|研究对象=Knowledge Graph Ontology Semantic Interoperability
+|持续性作用=主要把科学、医疗、数据、制度或技术从潜在能力转成真实可用路径。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c4-conversion-channel/knowledge-graph-ontology-semantic-interoperability
+}}
+
+'''Knowledge Graph Ontology Semantic Interoperability'''是 Human Infra 在“路径转换接口”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+主要把科学、医疗、数据、制度或技术从潜在能力转成真实可用路径。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C4“可能性转换通道层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+== 定位 ==
+
+本域研究知识图谱、本体、语义互操作、受控词表、关系建模和 FAIR 数据原则，如何把 Human Infra 的多研究域组织成机器可读、可追踪、可组合和可审查的知识结构。
+
+Human Infra 的研究对象跨越细胞、器官、主体、工具、社会服务、基础设施、制度和未来技术。如果只靠散文式文档，域之间的概念关系、变量边界和证据来源会逐渐失控。本域负责把“知识仓库”升级为“可计算知识系统”的语义层。
+
+== 先验位置 ==
+
+<pre>有效永生 / 主体持续性最大化
+  -> 需要整合大量研究域、变量、证据、技术和风险
+  -> 这些对象必须能被统一命名、链接、追踪和机器读取
+  -> 需要本体、知识图谱和语义互操作把碎片知识变成结构化系统
+  -> knowledge-graph-ontology-semantic-interoperability</pre>
+== 关注对象 ==
+
+* 概念、变量、干预、风险、终点、证据、来源和禁止用途的语义建模。
+* RDF、OWL、SKOS、JSON-LD、schema.org 等知识表达方式。
+* FAIR 原则、元数据、标识符、可查找性、可访问性、互操作性和可复用性。
+* 生物医学和公共服务术语体系的映射边界，例如 UMLS、LOINC、SNOMED CT、OBO Foundry 相关生态。
+* Human Infra 域地图、Source Card、Model Card、Scenario Card 和论文页面之间的关系结构。
+
+<span id="human-infra-模型链路"></span>
+== Human Infra 模型链路 ==
+
+<pre>多域资料和变量
+  -> 受控词表、本体和关系定义
+  -> 形成可查询、可链接、可版本化的知识图谱
+  -> 支撑模型变量契约、证据追踪、Web 可视化和自动审计
+  -> 降低概念混淆、重复域、证据错配和跨域推理错误</pre>
+== 非目标 ==
+
+* 不自称临床术语标准制定机构。
+* 不提供医疗编码、保险编码、账单编码或临床语义映射服务。
+* 不绕过 UMLS、SNOMED CT、LOINC 等术语系统的授权和许可边界。
+* 不把知识图谱推理结果写成事实证明或临床结论。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* FAIR Principles: https://www.go-fair.org/fair-principles/
+* OBO Foundry Principles: https://obofoundry.org/principles/fp-000-summary.html
+* W3C RDF: https://www.w3.org/RDF/
+* W3C OWL 2 Overview: https://www.w3.org/TR/owl2-overview/
+* UMLS: https://www.nlm.nih.gov/research/umls/index.html
+* LOINC: https://loinc.org/
+
+== 下一步 ==
+
+* 建立 Human Infra ontology seed：Domain、Variable、Intervention、Outcome、Risk、Evidence、Boundary、Source。
+* 为 <code>docs/reference/research-domain-atlas.md</code> 设计可机器读取的域关系表。
+* 与 <code>model-cards-ai-audit-documentation/</code> 对接，把模型卡、数据卡和来源卡纳入同一知识图谱。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C4研究域|C4研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c4-conversion-channel/knowledge-graph-ontology-semantic-interoperability/README.md Human Infra 仓库：domains/c4-conversion-channel/knowledge-graph-ontology-semantic-interoperability/README.md]
+
+[[Category:C4研究域]]

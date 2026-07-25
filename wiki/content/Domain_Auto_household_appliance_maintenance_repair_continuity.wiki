@@ -1,0 +1,85 @@
+{{研究域
+|域 ID=domain.household-appliance-maintenance-repair-continuity
+|C 层级=C5：可能性生态承载层
+|研究对象=Household Appliance Maintenance Repair Continuity
+|持续性作用=关键词显示该域主要承载能源、水、食物、住房、治理、经济、通信、灾害或基础设施环境。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c5-ecological-substrate/household-appliance-maintenance-repair-continuity
+}}
+
+'''Household Appliance Maintenance Repair Continuity'''是 Human Infra 在“外部生态承载”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要承载能源、水、食物、住房、治理、经济、通信、灾害或基础设施环境。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C5“可能性生态承载层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>household-appliance-maintenance-repair-continuity</code> 研究家用电器、设备维护、召回、维修、替换、能效和故障恢复如何影响家庭运行、食品保存、清洁、温控和日常任务连续性。
+
+<blockquote>核心问题：家电不是消费品背景，而是家庭本地基础设施；冰箱、炉具、洗衣机、热水器、空调、路由器和关键小电器失效，会把食物、卫生、温控、照护和工作流一起拖入恢复成本。
+</blockquote>
+== 关注对象 ==
+
+* 家用电器生命周期、维护、故障模式、维修可及、零件、保修、召回、替换和报废。
+* 冰箱、冷冻柜、炉具、烤箱、洗衣机、烘干机、热水器、空调、取暖设备和家庭关键设备。
+* 能效标准、能源负担、设备安全、火灾/电气/中毒风险、维修权、备件供应和服务窗口。
+* 与能源、电网、产品安全、制造维修、家庭网络、食品安全和清洁卫生的接口。
+
+<span id="human-infra-链路"></span>
+== Human Infra 链路 ==
+
+<pre>家用设备可维护
+  -> 食物保存、烹饪、清洁、洗衣、温控和家庭照护工具持续运行
+  -> 设备故障、召回、维修延迟、能耗和安全风险被提前识别
+  -> 家庭日常任务从一次性劳动变成可恢复的本地服务系统
+  -> 有效时间、健康环境、家庭韧性和主体恢复能力增强</pre>
+== 非目标 ==
+
+* 不提供电气施工、燃气维修、拆机、绕过安全联锁、危险改装或具体维修步骤。
+* 不替代专业维修、建筑规范、消防检查、产品召回处理或保修/法律判断。
+* 不提供品牌推荐、购买建议、能效投资建议、理赔建议或个体维修决策。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* U.S. CPSC Recalls: https://www.cpsc.gov/Recalls
+* DOE Appliance and Equipment Standards Program: https://www.energy.gov/eere/buildings/appliance-and-equipment-standards-program
+* ENERGY STAR Appliances: https://www.energystar.gov/products/appliances
+* FTC Repair and home services consumer guidance: https://consumer.ftc.gov/
+
+== 下一步 ==
+
+* 建立 <code>appliance function -&gt; dependent task -&gt; failure mode -&gt; repair/replace path -&gt; downtime cost</code> 变量表。
+* 区分安全召回、能效、维修可及、备件供应、能源依赖和服务合同摩擦。
+* 与 <code>product-safety-recall-systems</code>、<code>manufacturing-repair-capacity</code>、<code>energy-access-resilience</code> 和 <code>household-maintenance-repair-contractor-continuity</code> 建立边界。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C5研究域|C5研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c5-ecological-substrate/household-appliance-maintenance-repair-continuity/README.md Human Infra 仓库：domains/c5-ecological-substrate/household-appliance-maintenance-repair-continuity/README.md]
+
+[[Category:C5研究域]]

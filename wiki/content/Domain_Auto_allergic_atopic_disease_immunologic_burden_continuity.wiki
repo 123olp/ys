@@ -1,0 +1,89 @@
+{{研究域
+|域 ID=domain.allergic-atopic-disease-immunologic-burden-continuity
+|C 层级=C2：可能性源体维护层
+|研究对象=Allergic Atopic Disease Immunologic Burden Continuity
+|持续性作用=关键词显示该域主要维护身体、脑、器官、细胞、急性生命风险或衰老损伤控制。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c2-source-maintenance/allergic-atopic-disease-immunologic-burden-continuity
+}}
+
+'''Allergic Atopic Disease Immunologic Burden Continuity'''是 Human Infra 在“生命载体维护”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要维护身体、脑、器官、细胞、急性生命风险或衰老损伤控制。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C2“可能性源体维护层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>allergic-atopic-disease-immunologic-burden-continuity/</code> 研究过敏性鼻炎、特应性皮炎、食物过敏、过敏原暴露、瘙痒睡眠损害、过敏反应风险和长期免疫负担如何影响主体持续性。
+
+<blockquote>核心问题：过敏和特应性疾病常被低估，但它们会通过睡眠破坏、瘙痒、呼吸症状、食物/环境限制、急性反应风险和污名持续消耗有效时间。
+</blockquote>
+== 先验位置 ==
+
+<pre>有效永生 / 主体持续性最大化
+  -> 主体需要稳定皮肤屏障、气道反应、食物安全、睡眠和环境可预测性
+  -> 过敏/特应性疾病会造成瘙痒、鼻眼症状、睡眠损害、限制行为和急性反应风险
+  -> 结果取决于过敏原控制、诊断连接、药物可及、学校/工作支持和急救边界
+  -> 因此过敏和特应性疾病是免疫负担、恢复质量和生活参与的关键维护域</pre>
+== 关注对象 ==
+
+* Allergic rhinitis、atopic dermatitis、eczema、food allergy、allergen exposure, itch, sleep disruption, anaphylaxis risk boundary, school/work accommodations, environmental control。
+* 与 <code>skin-barrier-wound-healing/</code> 的边界：该域关注皮肤屏障总机制；本域关注特应性/过敏疾病的长期免疫负担和参与限制。
+* 与 <code>anaphylaxis-allergic-emergency-continuity/</code> 的关系：本域关注长期控制和环境可及；急性过敏反应由急症域承载。
+
+<span id="human-infra-模型链路"></span>
+== Human Infra 模型链路 ==
+
+<pre>过敏/特应性疾病负担管理系统 T
+  -> 改变过敏原暴露、瘙痒、睡眠、气道症状、食物限制、药物可及和急性反应边界变量 X
+  -> 改变恢复质量、学校/工作参与、社交活动、心理负担和环境控制状态 S
+  -> 改变有效时间损耗、急性反应风险、精神健康风险和生活参与 λ(t)
+  -> 影响主体日常行动质量、恢复能力和未来选择权</pre>
+== 非目标 ==
+
+* 不提供个人过敏诊断、皮疹/皮损判断、食物挑战、脱敏、药物、肾上腺素、急救、饮食或环境改造建议。
+* 不生成个人过敏原清单、学校/工作便利、食物限制、护肤、检测或治疗计划。
+* 不收集个案皮肤照片、过敏史、食物反应、用药、学校/工作或保险资料。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* NIAID allergic diseases: https://www.niaid.nih.gov/diseases-conditions/allergic-diseases
+* NIAMS atopic dermatitis: https://www.niams.nih.gov/health-topics/atopic-dermatitis
+* CDC food allergies in schools: https://www.cdc.gov/healthyschools/foodallergies/
+
+== 下一步 ==
+
+* 建立 Atopic Burden Card：condition type, allergen exposure, itch/sleep, food/environment restriction, anaphylaxis boundary, participation support。
+* 与 <code>immune-maintenance/</code>、<code>skin-barrier-wound-healing/</code> 和 <code>anaphylaxis-allergic-emergency-continuity/</code> 建立接口。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C2研究域|C2研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c2-source-maintenance/allergic-atopic-disease-immunologic-burden-continuity/README.md Human Infra 仓库：domains/c2-source-maintenance/allergic-atopic-disease-immunologic-burden-continuity/README.md]
+
+[[Category:C2研究域]]

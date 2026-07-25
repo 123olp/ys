@@ -1,0 +1,87 @@
+{{研究域
+|域 ID=domain.disability-income-insurance-claim-continuity
+|C 层级=C5：可能性生态承载层
+|研究对象=残障收入保险与理赔连续性
+|持续性作用=关键词显示该域主要承载能源、水、食物、住房、治理、经济、通信、灾害或基础设施环境。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c5-ecological-substrate/disability-income-insurance-claim-continuity
+}}
+
+'''残障收入保险与理赔连续性'''是 Human Infra 在“外部生态承载”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要承载能源、水、食物、住房、治理、经济、通信、灾害或基础设施环境。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C5“可能性生态承载层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+本域研究 private disability insurance、employer group disability、short-term disability、long-term disability、elimination period、own occupation / any occupation、medical evidence、claim、appeal 和 termination 如何影响主体疾病伤残后的收入连续性。它关注保险合同型收入替代，而不是公共残障福利、医疗判断、claim 策略或法律建议。
+
+== 研究对象 ==
+
+* 短期残障保险、长期残障保险、雇主团体残障、个人残障收入保险和 rider。
+* elimination period、benefit amount、benefit duration、own occupation、any occupation、pre-existing condition 和 offset。
+* 医疗证明、功能限制、claim、appeal、independent medical review、termination、surveillance 和复工影响。
+* 与公共残障福利、工伤、病假、合理便利和工作能力评估的边界。
+
+== 价值链路 ==
+
+<pre>主体因疾病或伤残失去劳动收入
+  -> 残障收入保险把工作能力冲击转移为合同型现金流替代
+  -> 清晰定义、医学证据和 appeal 入口维持治疗恢复期间的收入连续性
+  -> 拒赔、终止、offset 或定义争议会把健康事件扩散为财务危机
+  -> 残障收入保险连续性把身体功能变化纳入可审查的收入风险转移</pre>
+== 关键问题 ==
+
+* 私人残障保险与 Social Security disability、工伤和带薪病假如何分界？
+* own occupation / any occupation、elimination period 和 offset 如何影响真实保障？
+* 医疗证据、功能限制和复工记录如何影响 claim 连续性？
+* claim 终止或 appeal 失败如何改变主体治疗、住房和家庭照护路径？
+
+== 上游与下游 ==
+
+* 上游：<code>workplace-accommodation-return-to-work-continuity/</code>、<code>disability-income-work-capacity-benefit-continuity/</code>、<code>healthcare-access-continuity/</code>。
+* 下游：<code>household-budget-cashflow-continuity/</code>、<code>paid-sick-family-leave-wage-replacement-continuity/</code>、<code>workers-compensation-occupational-injury-benefit-continuity/</code>、<code>debt-obligation-collection-relief-continuity/</code>。
+
+== 非目标 ==
+
+* 不提供残障保险购买、保额选择、claim 填写、医学证明、复工安排、appeal、诉讼、福利申请或法律建议。
+* 不判断某人是否残障、是否符合定义、是否应停工、是否应复工或某个 claim 是否应批准。
+* 不协助伪造医疗记录、夸大功能限制、隐瞒工作收入、保险欺诈、规避 surveillance、骚扰雇主/保险人或骗取福利。
+
+== 初始资料入口 ==
+
+* NAIC: Disability insurance consumer materials
+* State insurance department disability insurance and complaint materials
+* DOL / EEOC / SSA public disability context materials
+* Official employer benefits and ERISA context materials
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C5研究域|C5研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c5-ecological-substrate/disability-income-insurance-claim-continuity/README.md Human Infra 仓库：domains/c5-ecological-substrate/disability-income-insurance-claim-continuity/README.md]
+
+[[Category:C5研究域]]

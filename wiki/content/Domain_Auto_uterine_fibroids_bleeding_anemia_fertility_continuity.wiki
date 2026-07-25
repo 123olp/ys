@@ -1,0 +1,90 @@
+{{研究域
+|域 ID=domain.uterine-fibroids-bleeding-anemia-fertility-continuity
+|C 层级=C2：可能性源体维护层
+|研究对象=Uterine Fibroids Bleeding Anemia Fertility Continuity
+|持续性作用=关键词显示该域主要维护身体、脑、器官、细胞、急性生命风险或衰老损伤控制。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c2-source-maintenance/uterine-fibroids-bleeding-anemia-fertility-continuity
+}}
+
+'''Uterine Fibroids Bleeding Anemia Fertility Continuity'''是 Human Infra 在“生命载体维护”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要维护身体、脑、器官、细胞、急性生命风险或衰老损伤控制。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C2“可能性源体维护层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>uterine-fibroids-bleeding-anemia-fertility-continuity/</code> 研究子宫肌瘤、重度出血、贫血、疼痛、压迫症状、生育/妊娠影响、治疗路径和医疗可及如何影响主体持续性。
+
+<blockquote>核心问题：肌瘤的主体持续性影响不只在“肿块存在”，而在出血、贫血、疲劳、疼痛、工作学习缺席、生育计划和治疗负担共同消耗有效时间。
+</blockquote>
+== 先验位置 ==
+
+<pre>有效永生 / 主体持续性最大化
+  -> 主体需要稳定能量、行动能力、血液携氧、身体自主和未来选择权
+  -> 子宫肌瘤可能通过重度月经出血、贫血、疼痛、压迫和妊娠/生育影响破坏这些条件
+  -> 若诊断、贫血处理、治疗选择和随访断裂，主体会损失有效时间、工作参与和生殖规划窗口
+  -> 因此肌瘤是出血-贫血-生育-功能连续性的研究域</pre>
+== 关注对象 ==
+
+* Uterine fibroids、heavy menstrual bleeding、anemia、fatigue、pelvic pressure、pain、fertility and pregnancy concerns、procedure burden、shared decision-making。
+* 与 <code>menstrual-health-cycle-literacy-continuity/</code> 的边界：月经域关注周期性信号和参与；本域关注肌瘤导致的结构性出血、贫血和生育/治疗路径。
+* 与 <code>blood-oxygen-hemostasis/</code> 的关系：重度出血和贫血会进入携氧能力、疲劳和恢复模型。
+* 与 <code>reproductive-fertility-continuity/</code> 的关系：肌瘤可能影响未来生育选择权，但不等于个人生育结论。
+
+<span id="human-infra-模型链路"></span>
+== Human Infra 模型链路 ==
+
+<pre>肌瘤识别与连续照护系统 T
+  -> 改变出血量、贫血、疲劳、疼痛、压迫、生育规划、治疗选择和随访变量 X
+  -> 改变主体能量、有效时间、行动半径、工作学习参与、身体自主和未来选择权状态 S
+  -> 改变贫血、失能、治疗负担、妊娠/生育受限、诊断延迟和资源消耗 lambda(t)
+  -> 影响主体健康寿命、有效时间和长期计划能力</pre>
+== 非目标 ==
+
+* 不提供肌瘤诊断、影像解释、贫血治疗、激素/药物、手术/介入、妊娠建议、生育治疗、急诊判断或个体医疗建议。
+* 不把出血、贫血、疼痛、腹胀、压迫、影像或肌瘤大小写成个人风险判断。
+* 不收集个人月经、贫血、影像、妊娠、生育、用药、手术或保险资料。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* MedlinePlus uterine fibroids: https://medlineplus.gov/uterinefibroids.html
+* NICHD uterine fibroids: https://www.nichd.nih.gov/health/topics/uterine
+* HHS OWH uterine fibroids: https://www.womenshealth.gov/a-z-topics/uterine-fibroids
+
+== 下一步 ==
+
+* 建立 Fibroids Continuity Card：bleeding burden, anemia signal, pain/pressure, fertility planning, treatment burden, follow-up access。
+* 与 <code>blood-oxygen-hemostasis/</code>、<code>menstrual-health-cycle-literacy-continuity/</code>、<code>reproductive-fertility-continuity/</code> 和 <code>healthcare-access-continuity/</code> 建立接口。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C2研究域|C2研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c2-source-maintenance/uterine-fibroids-bleeding-anemia-fertility-continuity/README.md Human Infra 仓库：domains/c2-source-maintenance/uterine-fibroids-bleeding-anemia-fertility-continuity/README.md]
+
+[[Category:C2研究域]]

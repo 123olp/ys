@@ -1,0 +1,81 @@
+{{研究域
+|域 ID=domain.runaway-homeless-youth-outreach-shelter-continuity
+|C 层级=C5：可能性生态承载层
+|研究对象=Runaway Homeless Youth Outreach Shelter Continuity
+|持续性作用=关键词显示该域主要承载能源、水、食物、住房、治理、经济、通信、灾害或基础设施环境。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c5-ecological-substrate/runaway-homeless-youth-outreach-shelter-continuity
+}}
+
+'''Runaway Homeless Youth Outreach Shelter Continuity'''是 Human Infra 在“外部生态承载”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要承载能源、水、食物、住房、治理、经济、通信、灾害或基础设施环境。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C5“可能性生态承载层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+离家与无家可归青年外展、庇护和转接连续性，关注未成年或过渡年龄青年在家庭断裂、逃离暴力、住房不稳、学校断线和服务入口不可信时，如何仍能被外展、短期庇护、危机服务、家庭调解、教育、医疗、身份和长期住房系统接住。
+
+== 对象 ==
+
+* Runaway and homeless youth
+* Street outreach
+* Basic center / emergency shelter
+* Transitional living
+* Family reunification / mediation
+* Education and health service linkage
+* Identity and records recovery
+* Safety and confidentiality boundaries
+
+<span id="human-infra-价值"></span>
+== Human Infra 价值 ==
+
+青年离家和无家可归不是单纯住房问题，而是家庭、学校、身份、医疗、安全和发展机会同时断裂的窗口。该域把“青少年能否继续学习、恢复、建立关系和进入成年”建模为外展、可信服务、短期庇护、长期转接和隐私保护的基础设施问题。
+
+== 边界 ==
+
+* 不提供个案逃离、庇护所定位、家庭冲突处理、报警、法律、移民、医疗、心理危机或安全计划建议。
+* 不收集、推断或公开未成年人位置、身份、家庭信息、风险状态或服务使用记录。
+* 不替代官方热线、当地儿童保护、青少年服务机构、学校、医疗、法律援助或紧急服务。
+
+== 上游与下游 ==
+
+* 上游：<code>child-protection-family-safety/</code>、<code>homelessness-unsheltered-health-continuity/</code>、<code>school-enrollment-attendance-continuity/</code>。
+* 下游：<code>transition-age-youth-mental-health-service-continuity/</code>、<code>opportunity-youth-education-employment-pathway-continuity/</code>、<code>pregnant-parenting-youth-family-support-continuity/</code>。
+
+== 初始资料线索 ==
+
+* ACF Family and Youth Services Bureau Runaway and Homeless Youth Programs.
+* Youth.gov runaway and homeless youth resources.
+* HUD youth homelessness and continuum-of-care materials.
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C5研究域|C5研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c5-ecological-substrate/runaway-homeless-youth-outreach-shelter-continuity/README.md Human Infra 仓库：domains/c5-ecological-substrate/runaway-homeless-youth-outreach-shelter-continuity/README.md]
+
+[[Category:C5研究域]]

@@ -1,0 +1,89 @@
+{{研究域
+|域 ID=domain.burn-injury-critical-care-rehabilitation-continuity
+|C 层级=C2：可能性源体维护层
+|研究对象=Burn Injury Critical Care Rehabilitation Continuity
+|持续性作用=关键词显示该域主要维护身体、脑、器官、细胞、急性生命风险或衰老损伤控制。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c2-source-maintenance/burn-injury-critical-care-rehabilitation-continuity
+}}
+
+'''Burn Injury Critical Care Rehabilitation Continuity'''是 Human Infra 在“生命载体维护”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要维护身体、脑、器官、细胞、急性生命风险或衰老损伤控制。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C2“可能性源体维护层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>burn-injury-critical-care-rehabilitation-continuity/</code> 研究烧伤预防、烧伤中心、液体/感染/疼痛/手术照护、皮肤屏障修复、瘢痕和长期康复如何影响主体身体连续性。
+
+<blockquote>核心问题：严重烧伤同时破坏皮肤屏障、体液稳态、感染防线、疼痛控制、运动功能和身份体验。它是身体边界被急性摧毁后的长期重建域。
+</blockquote>
+== 先验位置 ==
+
+<pre>有效永生 / 主体持续性最大化
+  -> 主体依赖皮肤屏障、体温、液体平衡、感染防线和行动功能
+  -> 严重烧伤可同时造成休克、感染、疼痛、瘢痕、功能损失和心理创伤
+  -> 生存和恢复依赖烧伤中心、重症照护、手术修复、康复和长期支持
+  -> 因此烧伤损伤是身体边界毁损后的急性救援与长期重建域</pre>
+== 关注对象 ==
+
+* Burn center access、burn severity、fluid loss、infection risk、pain, grafting/reconstruction, scar, rehabilitation, return to function。
+* 与 <code>skin-barrier-wound-healing/</code> 的边界：皮肤屏障域关注屏障和伤口机制；本域关注严重烧伤的系统性重症和康复链。
+* 与 <code>trauma-system-hemorrhage-control-continuity/</code> 的关系：烧伤也可作为特殊创伤系统的一部分。
+
+<span id="human-infra-模型链路"></span>
+== Human Infra 模型链路 ==
+
+<pre>烧伤重症与康复基础设施 T
+  -> 改变烧伤中心可达、液体管理、感染控制、手术修复、疼痛和康复变量 X
+  -> 改变休克、感染、皮肤屏障、运动功能、瘢痕和心理恢复状态 S
+  -> 改变死亡、感染、长期残障、疼痛和社会参与损失风险 λ(t)
+  -> 影响主体身体连续性、有效时间和行动能力</pre>
+== 非目标 ==
+
+* 不提供烧伤急救、伤口处理、敷料、液体、止痛、抗感染、手术、瘢痕处理或个体医疗建议。
+* 不生成烧伤中心选择、转运策略、工伤/保险/法律建议或事故处置方案。
+* 不收集伤口照片、身份、定位、病历、烧伤机制、暴力/工伤证据或敏感康复资料。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* WHO Burns Fact Sheet: https://www.who.int/news-room/fact-sheets/detail/burns
+* American Burn Association: https://ameriburn.org/
+* CDC Fire Safety: https://www.cdc.gov/fire-safety/
+
+== 下一步 ==
+
+* 建立 Burn Continuity Card：severity, center access, infection, reconstruction, pain, scar, rehab, social reintegration。
+* 与 <code>skin-barrier-wound-healing/</code>、<code>trauma-system-hemorrhage-control-continuity/</code> 和 <code>rehabilitation-functioning/</code> 建立接口。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C2研究域|C2研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c2-source-maintenance/burn-injury-critical-care-rehabilitation-continuity/README.md Human Infra 仓库：domains/c2-source-maintenance/burn-injury-critical-care-rehabilitation-continuity/README.md]
+
+[[Category:C2研究域]]

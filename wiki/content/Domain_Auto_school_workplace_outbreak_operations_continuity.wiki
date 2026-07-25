@@ -1,0 +1,88 @@
+{{研究域
+|域 ID=domain.school-workplace-outbreak-operations-continuity
+|C 层级=C5：可能性生态承载层
+|研究对象=School Workplace Outbreak Operations Continuity
+|持续性作用=关键词显示该域主要承载能源、水、食物、住房、治理、经济、通信、灾害或基础设施环境。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c5-ecological-substrate/school-workplace-outbreak-operations-continuity
+}}
+
+'''School Workplace Outbreak Operations Continuity'''是 Human Infra 在“外部生态承载”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要承载能源、水、食物、住房、治理、经济、通信、灾害或基础设施环境。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C5“可能性生态承载层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>school-workplace-outbreak-operations-continuity/</code> 研究学校、工作场所和公共服务组织在暴发期间如何通过运营规则、病假、替代路径和风险层级维持任务连续性。
+
+<blockquote>核心问题：暴发会同时攻击健康、学习、收入、照护和组织运转；运营连续性决定控制措施是否能被真实执行。
+</blockquote>
+== 先验位置 ==
+
+<pre>有效永生 / 主体持续性最大化
+  -> 主体能力形成和资源获得依赖学校、工作场所和公共服务
+  -> 暴发使这些组织在传播风险与开放需求之间摇摆
+  -> 组织运营连续性把检测、隔离、通风、口罩和疫苗等措施编排成可执行制度</pre>
+== 关注对象 ==
+
+* 学校运营、工作场所运营、病假、远程替代、分层措施、沟通、缺勤、照护接口、闭环反馈和公平影响。
+* 与 <code>education-access-lifelong-learning/</code> 和 <code>occupational-work-design/</code> 的关系：本域只聚焦暴发状态下的组织运营连续性。
+
+<span id="human-infra-模型链路"></span>
+== Human Infra 模型链路 ==
+
+<pre>学校与工作场所暴发运营
+  -> 编排检测、隔离、通风、口罩、疫苗、病假和远程替代
+  -> 改变传播风险、缺勤、学习损失、收入中断和照护压力
+  -> 降低过度停摆、盲目开放和组织信任崩塌
+  -> 增强学习连续、收入稳定、有效时间和主体持续性</pre>
+== 非目标 ==
+
+* 不提供个案返校返工、HR 法律、学校纪律、劳动争议、医疗 clearance 或场所开放建议。
+* 不提供规避病假、瞒报、证明伪造、检测规避、组织监控或惩罚机制。
+* 不替代学校、雇主、本地卫生部门或法律专业判断。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* CDC respiratory viruses guidance: https://www.cdc.gov/respiratory-viruses/guidance/
+* CDC schools and childcare resources: https://www.cdc.gov/respiratory-viruses/guidance/schools-childcare.html
+* OSHA COVID-19 and workplace safety resources: https://www.osha.gov/coronavirus
+* U.S. Department of Education: https://www.ed.gov/
+
+== 下一步 ==
+
+* 建立变量表：病假、缺勤、远程替代、学习损失、运营层级、风险沟通、工种差异、照护压力和公平影响。
+* 与 <code>isolation-quarantine-work-school-continuity/</code>、<code>indoor-ventilation-filtration-outbreak-control-continuity/</code> 和 <code>mask-respirator-source-control-fit-access-continuity/</code> 建立接口。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C5研究域|C5研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c5-ecological-substrate/school-workplace-outbreak-operations-continuity/README.md Human Infra 仓库：domains/c5-ecological-substrate/school-workplace-outbreak-operations-continuity/README.md]
+
+[[Category:C5研究域]]

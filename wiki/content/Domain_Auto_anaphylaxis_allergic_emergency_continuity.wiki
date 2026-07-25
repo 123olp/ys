@@ -1,0 +1,89 @@
+{{研究域
+|域 ID=domain.anaphylaxis-allergic-emergency-continuity
+|C 层级=C2：可能性源体维护层
+|研究对象=Anaphylaxis Allergic Emergency Continuity
+|持续性作用=关键词显示该域主要维护身体、脑、器官、细胞、急性生命风险或衰老损伤控制。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c2-source-maintenance/anaphylaxis-allergic-emergency-continuity
+}}
+
+'''Anaphylaxis Allergic Emergency Continuity'''是 Human Infra 在“生命载体维护”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要维护身体、脑、器官、细胞、急性生命风险或衰老损伤控制。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C2“可能性源体维护层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>anaphylaxis-allergic-emergency-continuity/</code> 研究过敏性休克、严重过敏、触发物识别、肾上腺素自动注射器可及、急救接入、学校/工作/公共场所计划和复发预防如何影响主体持续性。
+
+<blockquote>核心问题：过敏性休克会在分钟级内同时影响气道、循环和意识。它不是普通过敏，而是触发物、识别、可及药物、场所准备和后续评估共同决定的急性主体中断风险。
+</blockquote>
+== 先验位置 ==
+
+<pre>有效永生 / 主体持续性最大化
+  -> 主体依赖气道和循环不被免疫反应突然关闭
+  -> 过敏性休克可在短时间内造成窒息、休克和死亡
+  -> 结果取决于触发物管理、识别、应急药物可及、场所计划和急救转接
+  -> 因此过敏急症是免疫-气道-循环交界的急性失效域</pre>
+== 关注对象 ==
+
+* Anaphylaxis recognition systems, allergen exposure context, epinephrine auto-injector access, school/workplace plans, EMS handoff, biphasic risk, follow-up allergy care。
+* 与 <code>immune-maintenance/</code> 的边界：该域关注免疫系统长期维护；本域关注严重过敏急性窗口。
+* 与 <code>medical-id-allergy-critical-alert-continuity/</code> 的关系：关键过敏身份信息可影响本域的识别和转接。
+
+<span id="human-infra-模型链路"></span>
+== Human Infra 模型链路 ==
+
+<pre>过敏急症准备系统 T
+  -> 改变触发物暴露、识别延迟、药物可及、场所计划和急救转接变量 X
+  -> 改变气道、循环、意识、急诊观察和复发风险状态 S
+  -> 改变窒息、休克、死亡和长期活动受限风险 λ(t)
+  -> 影响主体存活、活动边界和未来选择权</pre>
+== 非目标 ==
+
+* 不提供过敏诊断、肾上腺素使用、剂量、急救步骤、食物/药物挑战、脱敏、学校计划或个案医疗建议。
+* 不生成 anaphylaxis action plan、过敏风险评分、暴露规避、处方或现场处理工具。
+* 不收集个案过敏史、药物、食物、学校/工作地点、急救事件或医疗资料。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* World Allergy Organization anaphylaxis guidance: https://www.worldallergy.org/
+* NIAID food allergy guideline materials: https://www.niaid.nih.gov/
+* AAAAI anaphylaxis practice parameter materials: https://www.aaaai.org/
+
+== 下一步 ==
+
+* 建立 Anaphylaxis Continuity Card：trigger, recognition, epinephrine access, place plan, EMS transfer, follow-up。
+* 与 <code>immune-maintenance/</code>、<code>medical-id-allergy-critical-alert-continuity/</code> 和 <code>school-health-services-chronic-condition-continuity/</code> 建立接口。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C2研究域|C2研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c2-source-maintenance/anaphylaxis-allergic-emergency-continuity/README.md Human Infra 仓库：domains/c2-source-maintenance/anaphylaxis-allergic-emergency-continuity/README.md]
+
+[[Category:C2研究域]]

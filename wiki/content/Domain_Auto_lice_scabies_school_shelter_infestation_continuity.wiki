@@ -1,0 +1,88 @@
+{{研究域
+|域 ID=domain.lice-scabies-school-shelter-infestation-continuity
+|C 层级=C5：可能性生态承载层
+|研究对象=Lice Scabies School Shelter Infestation Continuity
+|持续性作用=关键词显示该域主要承载能源、水、食物、住房、治理、经济、通信、灾害或基础设施环境。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c5-ecological-substrate/lice-scabies-school-shelter-infestation-continuity
+}}
+
+'''Lice Scabies School Shelter Infestation Continuity'''是 Human Infra 在“外部生态承载”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要承载能源、水、食物、住房、治理、经济、通信、灾害或基础设施环境。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C5“可能性生态承载层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>lice-scabies-school-shelter-infestation-continuity</code> 研究头虱、疥疮等人际传播性寄生/虫害如何影响学校、避难所、照护机构、睡眠和污名治理。
+
+<blockquote>核心问题：虱疥类问题通常不是高死亡风险，却能通过瘙痒、睡眠破坏、污名、停课、家庭冲突和集体住宿传播持续消耗主体有效时间。
+</blockquote>
+== 先验位置 ==
+
+<pre>有效永生 / 主体持续性最大化
+  -> 主体需要学校、避难所、照护和家庭环境保持可参与
+  -> 虱疥等虫害会制造瘙痒、睡眠中断、排斥、污名和反复传播
+  -> 识别、通知、治疗连接、清洁边界和反污名规则构成参与前提
+  -> 若该前提失败，教育、照护、住房和恢复系统会被低致死高摩擦风险拖慢</pre>
+== 关注对象 ==
+
+* 头虱、体虱、疥疮、集体住宿、学校、避难所、长期照护和无家可归场景。
+* 瘙痒、睡眠、污名、停课/停工、家庭负担、重复传播和护理人员暴露。
+* 与 <code>bed-bug-infestation-sleep-housing-continuity/</code> 的边界：床虱主要是环境/住房侵扰；本域关注人际传播性虫害和集体机构连续性。
+
+<span id="human-infra-链路"></span>
+== Human Infra 链路 ==
+
+<pre>虱疥类传播被低污名、低摩擦地处理
+  -> 瘙痒、睡眠损失、停课、污名和反复传播下降
+  -> 学校、避难所、照护机构和家庭运行更稳定
+  -> 学习、恢复、照护和社会参与连续性增强</pre>
+== 非目标 ==
+
+* 不提供诊断、用药、治疗步骤、清洗细节、机构隔离政策、学校排除规则或个案处理建议。
+* 不替代 CDC、学校、公共卫生、医疗、长期照护、避难所管理或住房机构。
+* 不鼓励污名化、强制剃发、歧视、隐瞒传播或恐慌性清理。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* CDC Head Lice: https://www.cdc.gov/lice/about/head-lice.html
+* CDC Scabies: https://www.cdc.gov/scabies/
+* CDC Body Lice: https://www.cdc.gov/lice/about/body-lice.html
+
+== 下一步 ==
+
+* 建立 <code>infestation signal -&gt; notification/treatment access -&gt; participation policy -&gt; stigma/sleep cost -&gt; continuity outcome</code> 变量表。
+* 区分学校、避难所、长期照护、家庭、无家可归、灾后临时住宿和儿童场景。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C5研究域|C5研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c5-ecological-substrate/lice-scabies-school-shelter-infestation-continuity/README.md Human Infra 仓库：domains/c5-ecological-substrate/lice-scabies-school-shelter-infestation-continuity/README.md]
+
+[[Category:C5研究域]]

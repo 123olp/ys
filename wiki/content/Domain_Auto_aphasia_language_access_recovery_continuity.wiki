@@ -1,0 +1,87 @@
+{{研究域
+|域 ID=domain.aphasia-language-access-recovery-continuity
+|C 层级=C3：可能性生成引擎层
+|研究对象=Aphasia Language Access Recovery Continuity
+|持续性作用=关键词显示该域主要增强认知、学习、工具、AI、技能或沟通能力。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c3-generation-engine/aphasia-language-access-recovery-continuity
+}}
+
+'''Aphasia Language Access Recovery Continuity'''是 Human Infra 在“主体能力生成”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要增强认知、学习、工具、AI、技能或沟通能力。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C3“可能性生成引擎层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+Aphasia language access recovery continuity studies acquired language loss as a direct constraint on preference expression, consent, care participation, relationship continuity, and social role recovery.
+
+核心问题：
+
+<blockquote>失语不是“说话少了”，而是主体把内部意图转成可被他人理解的语言接口受损；接口断裂会让偏好、同意、求助和关系维护同时变难。
+</blockquote>
+== 先验位置 ==
+
+<pre>主体持续性最大化
+  -> 主体必须能表达需求、理解信息并参与决策
+  -> 失语会扰动说、听、读、写等语言通道
+  -> 医疗、法律、家庭和社会互动中的意思表达成本上升
+  -> 因而失语是主体表达权与服务参与之间的语言接口失效模式</pre>
+== 关注对象 ==
+
+* 卒中、脑损伤或神经疾病后的失语、语言理解、命名、阅读、书写和会话参与。
+* 沟通伙伴支持、环境可达、长期恢复、身份角色和照护沟通。
+* 与 <code>cerebrovascular-stroke-brain-perfusion-resilience/</code> 的关系：卒中域关注急性脑灌注；本域关注语言接口恢复。
+* 与 <code>augmentative-alternative-communication-aac-continuity/</code> 的关系：AAC 域关注替代沟通工具；本域关注失语机制和参与恢复。
+
+<span id="human-infra-模型链路"></span>
+== Human Infra 模型链路 ==
+
+<pre>识别 / 沟通支持 / 语言康复 / 伙伴训练 T
+  -> 改变语言理解、表达、阅读、书写和会话参与变量 X
+  -> 改变医疗参与、关系维持、权益表达和社会角色状态 S
+  -> 改变误解、孤立、服务失败和决策排除风险 λ(t)
+  -> 影响主体表达权、恢复机会和未来选择权</pre>
+== 非目标 ==
+
+* 不提供失语诊断、分型、治疗方案、家庭训练计划、预后判断或个体康复建议。
+* 不根据个人语言表现判断卒中、痴呆、TBI 或其他病因。
+* 不替代神经、言语语言治疗、康复、心理健康、法律或急诊服务。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* NIDCD aphasia resources。
+* ASHA aphasia and adult neurogenic language disorder practice materials。
+* Stroke and neurorehabilitation literature as research context。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C3研究域|C3研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c3-generation-engine/aphasia-language-access-recovery-continuity/README.md Human Infra 仓库：domains/c3-generation-engine/aphasia-language-access-recovery-continuity/README.md]
+
+[[Category:C3研究域]]

@@ -1,0 +1,87 @@
+{{研究域
+|域 ID=domain.bilateral-vestibular-hypofunction-gaze-gait-stability-continuity
+|C 层级=C2：可能性源体维护层
+|研究对象=Bilateral Vestibular Hypofunction Gaze Gait Stability Continuity
+|持续性作用=关键词显示该域主要维护身体、脑、器官、细胞、急性生命风险或衰老损伤控制。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c2-source-maintenance/bilateral-vestibular-hypofunction-gaze-gait-stability-continuity
+}}
+
+'''Bilateral Vestibular Hypofunction Gaze Gait Stability Continuity'''是 Human Infra 在“生命载体维护”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要维护身体、脑、器官、细胞、急性生命风险或衰老损伤控制。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C2“可能性源体维护层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+Bilateral vestibular hypofunction gaze and gait stability continuity studies chronic loss of vestibular function on both sides as a failure of stable vision during movement, gait confidence, night walking, and spatial navigation.
+
+核心问题：
+
+<blockquote>主体移动时不仅要腿能走，还要眼睛能在头部运动中稳定看见世界；双侧前庭功能下降会让走路、转头、夜间移动和复杂地面变成高负荷任务。
+</blockquote>
+== 先验位置 ==
+
+<pre>主体持续性最大化
+  -> 主体必须能在头动和行走中保持视觉稳定
+  -> 双侧前庭输入不足削弱凝视稳定、步态反馈和空间安全感
+  -> 夜间、崎岖地面和复杂环境中的移动风险上升
+  -> 因而双侧前庭功能下降是移动中的视觉-步态稳定基础设施失效</pre>
+== 关注对象 ==
+
+* 双侧前庭功能下降、凝视稳定、振动幻视、步态不稳、夜间行走和复杂地面。
+* 行动半径、户外移动、楼梯、交通换乘、跌倒暴露和辅助补偿。
+* 与 <code>low-vision-rehabilitation-assistive-technology-continuity/</code> 的关系：低视力域关注视觉输入补偿；本域关注头动时视觉稳定。
+* 与 <code>peripheral-neuropathy-somatosensory-continuity/</code> 的关系：周围神经域关注本体/触觉反馈；本域关注前庭反馈。
+
+<span id="human-infra-模型链路"></span>
+== Human Infra 模型链路 ==
+
+<pre>前庭评估 / 康复 / 辅助补偿 / 环境适配 T
+  -> 改变凝视稳定、步态信心、夜间移动和复杂地面耐受 X
+  -> 改变行动半径、外出频率、跌倒暴露和任务参与状态 S
+  -> 改变跌倒、隔离、依赖和有效时间损耗风险 λ(t)
+  -> 影响独立生活、移动自由和未来选择权</pre>
+== 非目标 ==
+
+* 不提供前庭测试解释、诊断、康复训练、助行器建议、用药建议或个人跌倒风险判断。
+* 不根据个人步态或眩晕描述判断病因、外出许可或驾驶许可。
+* 不替代耳鼻喉、神经、前庭康复、物理治疗或老年医学服务。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* Vestibular rehabilitation clinical practice guideline for peripheral vestibular hypofunction。
+* NIDCD balance disorders resources。
+* CDC STEADI fall prevention resources as downstream risk context。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C2研究域|C2研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c2-source-maintenance/bilateral-vestibular-hypofunction-gaze-gait-stability-continuity/README.md Human Infra 仓库：domains/c2-source-maintenance/bilateral-vestibular-hypofunction-gaze-gait-stability-continuity/README.md]
+
+[[Category:C2研究域]]

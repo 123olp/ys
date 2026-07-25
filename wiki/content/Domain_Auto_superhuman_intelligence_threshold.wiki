@@ -1,0 +1,82 @@
+{{研究域
+|域 ID=domain.superhuman-intelligence-threshold
+|C 层级=C1：可能性边界改写层
+|研究对象=Superhuman Intelligence Threshold
+|持续性作用=研究技术系统何时产生超人智能并直接改写人类可理解、可进入和可选择的未来边界。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c1-boundary-rewriting/superhuman-intelligence-threshold
+}}
+
+'''Superhuman Intelligence Threshold'''是 Human Infra 在“智能边界改写”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+研究技术系统何时产生超人智能并直接改写人类可理解、可进入和可选择的未来边界。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C1“可能性边界改写层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+本域研究 Vinge 路线中的“超人智能阈值”：当技术系统在通用问题求解、科学发现、工程设计、战略规划和跨域迁移上系统性超过人类时，人类主体的未来选择权会被怎样改写。
+
+== 核心问题 ==
+
+<pre>技术系统能力增长
+  -> 在关键任务上超过人类专家和组织
+  -> 科学、工程、治理和军事等领域的前沿判断转移到机器系统
+  -> 人类理解、参与、制衡和选择的窗口被压缩
+  -> 主体未来选择权和风险暴露同时被改写</pre>
+== 关注变量 ==
+
+* 能力覆盖：AI 是否只强于局部任务，还是跨科学、工程、规划、语言、工具使用和社会策略。
+* 自主程度：系统是工具、代理、组织协作者，还是能独立设定中间目标。
+* 人类可参与性：人类是否仍能审查、复现、解释和否决关键结论。
+* 外部影响面：能力是否进入医学、材料、能源、安全、治理和基础设施。
+* Human Infra 输出：技术窗口压缩、风险函数改变、主体未来选择权变化。
+
+== 非目标 ==
+
+* 不把任何单个大模型、榜单成绩或自动实验案例写成“超人智能已经实现”。
+* 不把超人智能阈值自动等同于永生、乌托邦或世界末日。
+* 不提供模型越权、自主扩散、规避监管或恶意自动化方法。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* Vernor Vinge, ''The Coming Technological Singularity'', 1993.
+* I. J. Good, ''Speculations Concerning the First Ultraintelligent Machine'', 1965.
+* AI Index、METR、Epoch AI、前沿模型评估和 AI R&amp;D 自动化资料可作为后续 Source Cards 候选。
+
+== 与相邻域的关系 ==
+
+* 上游关联 <code>recursive-self-improvement-intelligence-explosion/</code>：超人智能阈值若能改进自身，才进入智能爆炸路径。
+* 下游关联 <code>singularity-control-interpretability-boundary/</code>：能力超过人类后，解释权和控制权成为主体持续性的风险门。
+* 旁路关联 <code>longevity-evidence/</code> 的 AI 自动科研路线：超人智能可能压缩长寿技术窗口，但不能直接证明长寿逃逸速度。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C1研究域|C1研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c1-boundary-rewriting/superhuman-intelligence-threshold/README.md Human Infra 仓库：domains/c1-boundary-rewriting/superhuman-intelligence-threshold/README.md]
+
+[[Category:C1研究域]]

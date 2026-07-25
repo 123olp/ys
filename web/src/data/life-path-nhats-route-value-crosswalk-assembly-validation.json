@@ -1,7 +1,7 @@
 {
   "schemaVersion": "human-infra.validation-report.v1",
   "validationId": "life-path-nhats-route-value-crosswalk-assembly-validation",
-  "generatedAt": "2026-07-10T22:39:17.527348+00:00",
+  "generatedAt": "2026-07-25T00:41:58.578535+00:00",
   "overallStatus": "PASS",
   "summary": {
     "pass": 12,

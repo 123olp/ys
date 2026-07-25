@@ -1,0 +1,90 @@
+{{研究域
+|域 ID=domain.housing-built-environment-stability
+|C 层级=C5：可能性生态承载层
+|研究对象=Housing Built Environment Stability
+|持续性作用=主要提供主体展开未来所需的基础环境、资源、治理或基础设施。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c5-ecological-substrate/housing-built-environment-stability
+}}
+
+'''Housing Built Environment Stability'''是 Human Infra 在“外部生态承载”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+主要提供主体展开未来所需的基础环境、资源、治理或基础设施。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C5“可能性生态承载层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>housing-built-environment-stability/</code> 研究住房稳定性和建成环境能否支撑主体长期存在、恢复、行动、照护和服务接入。
+
+<blockquote>核心问题：主体需要一个不会持续制造风险、排除和损耗的生活空间；住房与建成环境不是背景，而是健康、照护、移动、恢复和尊严的基础接口。
+</blockquote>
+== 先验位置 ==
+
+<pre>有效永生 / 主体持续性最大化
+  -> 主体必须在具体空间中睡眠、恢复、饮食、行动、照护和连接服务
+  -> 住房和建成环境必须稳定、安全、可负担、可达且适配能力变化
+  -> 长寿和健康寿命才不会被居住风险、环境暴露和空间排除截断</pre>
+== 关注对象 ==
+
+* 住房稳定性、住房质量、室内空气、温湿度、拥挤、霉菌、铅、噪声和安全。
+* 无障碍、可步行性、社区资源、绿地、交通连接、热风险和灾害暴露。
+* 住房不安全、无家可归、搬迁、驱逐、住房负担和建成环境健康差异。
+* 与交通、照护、医疗可及、气候风险和社会服务的接口。
+
+<span id="human-infra-模型链路"></span>
+== Human Infra 模型链路 ==
+
+<pre>住房与建成环境稳定
+  -> 睡眠、恢复、营养、卫生、照护和社区连接获得稳定空间
+  -> 环境暴露、跌倒、热/冷风险、拥挤和服务断点减少
+  -> 健康寿命、有效时间、照护可行性和行动半径提高
+  -> 主体持续性获得稳定生活底座</pre>
+== 非目标 ==
+
+* 不提供房地产、租房、买房、装修、维修、法律、福利或住房申请建议。
+* 不做个体环境医学诊断、检测解释或危险处置指南。
+* 不把住房责任个体化，忽视政策、收入、社区和公共基础设施条件。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* WHO Housing and Health Guidelines: https://www.who.int/publications/i/item/9789241550376
+* CDC Healthy Places: https://www.cdc.gov/healthy-places/
+* Healthy People 2020 Quality of Housing: https://www.healthypeople.gov/2020/topics-objectives/topic/social-determinants-health/interventions-resources/quality-of-housing
+
+== 下一步 ==
+
+* 建立住房/建成环境变量表：稳定性、质量、成本、室内暴露、无障碍、服务距离和灾害暴露。
+* 整理 WHO Housing、CDC Healthy Places、住房不安全、建成环境和健康差异 Source Cards。
+* 明确与 <code>planetary-health-environment/</code>、<code>transportation-access-mobility/</code> 和 <code>caregiving-long-term-care/</code> 的边界。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C5研究域|C5研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c5-ecological-substrate/housing-built-environment-stability/README.md Human Infra 仓库：domains/c5-ecological-substrate/housing-built-environment-stability/README.md]
+
+[[Category:C5研究域]]

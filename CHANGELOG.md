@@ -2,6 +2,11 @@
 
 All notable repository structure changes are recorded here.
 
+## 2026-07-24
+
+- Added a reproducible Human Infra MediaWiki stack with MariaDB, Vector, VisualEditor and Page Forms.
+- Added governed Wiki forms for research domains, technology nodes and evidence sources, plus seed pages, backup/restore operations and a technology-tree routing contract.
+
 ## 2026-07-14
 
 - Added a bounded Human Infra evidence graph that projects 30 priority-domain claims, 21 source anchors, 60 falsifiers, and 90 endpoint candidates from existing repository registers without creating a second evidence truth source.

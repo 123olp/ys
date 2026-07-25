@@ -1,0 +1,88 @@
+{{研究域
+|域 ID=domain.stalking-harassment-protection-order-continuity
+|C 层级=C6：局部可能性解锁层
+|研究对象=stalking-harassment-protection-order-continuity
+|持续性作用=未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c6-local-unlocking/stalking-harassment-protection-order-continuity
+}}
+
+'''stalking-harassment-protection-order-continuity'''是 Human Infra 在“局部阻塞解除”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C6“局部可能性解锁层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>stalking-harassment-protection-order-continuity</code> 研究 stalking、harassment、threats、protective orders、restraining orders、no-contact orders、service/enforcement、address confidentiality 和数字/线下交叉风险如何影响主体行动自由、住所安全、通信安全和制度保护。
+
+<span id="scope"></span>
+== Scope ==
+
+* Stalking、harassment、credible threat、protective order、restraining order、no-contact order、order service、violation reporting 和 enforcement interface。
+* 数字跟踪、位置隐私、社交媒体骚扰、设备滥用、地址保密和跨辖区承认的公开资料。
+* 与家庭暴力、性暴力、校园安全、工作场所安全和在线安全交叉的制度边界。
+
+<span id="continuity-logic"></span>
+== Continuity Logic ==
+
+<pre>持续跟踪、骚扰或威胁
+-> 日常移动、通信、住所、工作、学校和心理恢复被持续压缩
+-> 保护令、服务送达、执行、地址保密和数字安全成为制度保护接口
+-> 保护链断裂会把单次风险变成长期自由和注意力消耗</pre>
+<span id="source-spine"></span>
+== Source Spine ==
+
+* DOJ OVW stalking and protection-order related materials.
+* CDC stalking and intimate partner violence materials.
+* OVC victim assistance and rights resources.
+* State court and victim service public information, when used only as comparative system material.
+* FTC / CISA digital safety materials where harassment intersects with account and device safety.
+
+<span id="evidence-boundary"></span>
+== Evidence Boundary ==
+
+本域只整理公开 stalking、harassment、protective order、地址保密和制度执行资料。
+
+Do not include:
+
+* 个案保护令申请、送达、报警、诉讼、取证、反跟踪、对抗或安全计划建议。
+* 跟踪、定位、监控、骚扰、doxxing、规避保护令、规避送达、规避执法或报复方法。
+* 可识别个人、地址、学校、工作地点、庇护所、服务点或法院案件的信息。
+
+<span id="upstream--downstream"></span>
+== Upstream / Downstream ==
+
+* Upstream: <code>domestic-violence-coercive-control-safety-continuity/</code>, <code>sexual-assault-forensic-exam-advocacy-continuity/</code>, <code>online-safety-digital-harm-prevention/</code>.
+* Downstream: <code>court-notice-service-process-default-judgment-continuity/</code>, <code>victim-witness-rights-notification-continuity/</code>, <code>messaging-contact-graph-portability-continuity/</code>, <code>platform-account-suspension-appeals-continuity/</code>.
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C6研究域|C6研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c6-local-unlocking/stalking-harassment-protection-order-continuity/README.md Human Infra 仓库：domains/c6-local-unlocking/stalking-harassment-protection-order-continuity/README.md]
+
+[[Category:C6研究域]]

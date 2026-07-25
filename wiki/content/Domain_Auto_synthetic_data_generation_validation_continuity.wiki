@@ -1,0 +1,93 @@
+{{研究域
+|域 ID=domain.synthetic-data-generation-validation-continuity
+|C 层级=C2：可能性源体维护层
+|研究对象=Synthetic Data Generation Validation Continuity
+|持续性作用=关键词显示该域主要维护身体、脑、器官、细胞、急性生命风险或衰老损伤控制。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c2-source-maintenance/synthetic-data-generation-validation-continuity
+}}
+
+'''Synthetic Data Generation Validation Continuity'''是 Human Infra 在“生命载体维护”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要维护身体、脑、器官、细胞、急性生命风险或衰老损伤控制。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C2“可能性源体维护层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>synthetic-data-generation-validation-continuity/</code> 研究合成数据生成、隐私风险、效用验证、分布保真、偏差扩散和下游评估，如何决定合成数据能否作为 Human Infra 的研究与 AI 训练材料。
+
+<blockquote>核心问题：合成数据可以降低隐私和稀缺数据约束，也可能制造虚假规律、泄露原始样本或放大偏差。它不是天然安全数据。
+</blockquote>
+== 先验位置 ==
+
+<pre>有效永生 / 主体持续性最大化
+  -> 需要更多可用数据支持研究、评测、仿真和 AI 工具训练
+  -> 真实数据常受隐私、稀缺、偏差、访问和伦理约束限制
+  -> 合成数据可能缓解约束，但必须验证隐私、效用、分布和下游影响
+  -> 因此合成数据生成与验证是数据稀缺到可审查数据资源的转换域</pre>
+== 关注对象 ==
+
+* 合成数据生成方法、隐私攻击风险、相似性、成员推断、属性泄露、效用和公平性。
+* 分布保真、边界案例、下游模型性能、误差传播、标注语义和 synthetic-to-real gap。
+* 合成数据说明书、生成模型版本、原始数据来源、验证报告和禁止用途。
+* 与 <code>privacy-preserving-computation/</code> 的关系：隐私计算域关注安全计算机制；本域关注合成数据作为产物是否可靠。
+* 与 <code>ai-data-provenance-contamination-drift-continuity/</code> 的边界：数据谱系域关注全链路来源和漂移；本域关注合成数据生成与验证。
+
+<span id="human-infra-模型链路"></span>
+== Human Infra 模型链路 ==
+
+<pre>合成数据生成与验证 T
+  -> 改变数据可用性、隐私风险、分布保真、偏差和下游效用变量 X
+  -> 改变模型训练、仿真、评测和研究验证的数据状态 S
+  -> 改变隐私泄露、虚假规律、偏差扩散和模型失效风险 λ(t)
+  -> 影响研究速度、AI 工具可靠性、主体隐私和未来选择权</pre>
+== 非目标 ==
+
+* 不提供重新识别、成员推断攻击、隐私攻击、规避审查或用合成数据洗白敏感数据的方法。
+* 不把合成数据写成自动匿名化、自动合规或自动无偏。
+* 不使用合成数据输出个体医疗、法律、金融或寿命预测。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* NIST Privacy Engineering and synthetic data resources: https://www.nist.gov/privacy-framework
+* UK ICO anonymisation and synthetic data guidance: https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/data-sharing/anonymisation/
+* NIST AI Risk Management Framework: https://www.nist.gov/itl/ai-risk-management-framework
+* EU AI Act information portal: https://artificialintelligenceact.eu/
+* Datasheets for Datasets: https://arxiv.org/abs/1803.09010
+
+== 下一步 ==
+
+* 建立 Synthetic Data Card 字段：generator, source data boundary, privacy test, utility test, distribution check, downstream mismatch, forbidden use。
+* 与 <code>privacy-preserving-computation/</code>、<code>ai-data-provenance-contamination-drift-continuity/</code> 和 <code>data-quality-missingness-representativeness/</code> 建立验证接口。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C2研究域|C2研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c2-source-maintenance/synthetic-data-generation-validation-continuity/README.md Human Infra 仓库：domains/c2-source-maintenance/synthetic-data-generation-validation-continuity/README.md]
+
+[[Category:C2研究域]]

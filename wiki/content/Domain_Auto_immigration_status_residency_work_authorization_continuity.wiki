@@ -1,0 +1,85 @@
+{{研究域
+|域 ID=domain.immigration-status-residency-work-authorization-continuity
+|C 层级=C6：局部可能性解锁层
+|研究对象=Immigration Status Residency Work Authorization Continuity
+|持续性作用=未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c6-local-unlocking/immigration-status-residency-work-authorization-continuity
+}}
+
+'''Immigration Status Residency Work Authorization Continuity'''是 Human Infra 在“局部阻塞解除”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C6“局部可能性解锁层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+本域研究移民身份、居留资格、工作授权、身份变更、身份续期和身份失效风险如何影响主体在一个制度内持续生活、工作、学习、医疗和连接家庭。
+
+<blockquote>核心问题：主体能否继续行动，不只取决于是否在某地，还取决于是否有被承认的居留与工作资格；身份过期、文件延迟或授权断裂会把时间、收入、医疗、教育和家庭关系同时推入不稳定。
+</blockquote>
+== 关注对象 ==
+
+* 签证、居留、永久居民、工作授权、身份变更、延期、续期、身份证明和雇佣资格核验。
+* 身份过期、等待期间、文件丢失、地址变更、雇主依赖、家庭成员派生资格和服务资格断点。
+* 移民身份与就业、教育、医疗、银行、住房、驾照、税务、公共福利和家庭团聚的接口。
+* 与 <code>migration-displacement-humanitarian-continuity/</code> 的边界：迁移域关注移动和流离失所后的服务连续性；本域关注制度内居留和工作授权连续性。
+
+<span id="human-infra-链路"></span>
+== Human Infra 链路 ==
+
+<pre>移民身份 / 居留 / 工作授权连续
+  -> 主体在所在地拥有可证明、可续期、可核验的制度资格
+  -> 工作、学习、医疗、住房、金融和家庭关系可以持续运行
+  -> 过期、延误、雇主锁定、资格断裂和服务拒绝风险下降
+  -> 主体获得跨时间的制度稳定和行动窗口</pre>
+== 非目标 ==
+
+* 不提供签证、绿卡、居留、工作许可、身份变更、延期、加急、申诉、雇佣、税务或法律建议。
+* 不判断个人是否有移民资格、工作资格、福利资格、入境资格或身份风险。
+* 不协助伪造文件、规避 E-Verify/I-9、隐藏身份、绕过边境/执法、滥用签证或组织危险迁移。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* USCIS Green Card: https://www.uscis.gov/green-card
+* USCIS Employment Authorization: https://www.uscis.gov/green-card/green-card-processes-and-procedures/employment-authorization-document
+* USCIS Change My Nonimmigrant Status: https://www.uscis.gov/visit-the-united-states/change-my-nonimmigrant-status
+* USCIS I-9 Central: https://www.uscis.gov/i-9-central
+
+== 下一步 ==
+
+* 建立移民状态连续性变量表：身份类别、有效期、续期窗口、工作授权、派生资格、等待状态、文件恢复和服务资格接口。
+* 整理 USCIS、DHS、State Department visa、I-9/E-Verify 和 OECD / IOM migration governance Source Cards。
+* 与 <code>passport-travel-document-mobility-continuity/</code> 明确分工：护照域研究跨境移动证件，本域研究在地居留和工作授权。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C6研究域|C6研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c6-local-unlocking/immigration-status-residency-work-authorization-continuity/README.md Human Infra 仓库：domains/c6-local-unlocking/immigration-status-residency-work-authorization-continuity/README.md]
+
+[[Category:C6研究域]]

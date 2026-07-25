@@ -1,0 +1,87 @@
+{{研究域
+|域 ID=domain.hazwoper-responder-ppe-safety-continuity
+|C 层级=C6：局部可能性解锁层
+|研究对象=HAZWOPER Responder PPE Safety Continuity
+|持续性作用=未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c6-local-unlocking/hazwoper-responder-ppe-safety-continuity
+}}
+
+'''HAZWOPER Responder PPE Safety Continuity'''是 Human Infra 在“局部阻塞解除”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C6“局部可能性解锁层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>hazwoper-responder-ppe-safety-continuity/</code> 研究危险物质响应人员的培训、PPE、呼吸防护、热压力、污染转移、轮换和心理/组织支持如何决定事故响应是否可持续。
+
+<blockquote>核心问题：如果响应者不能安全持续工作，公众保护、医疗转运、去污、环境监测和恢复都会失去执行主体。
+</blockquote>
+== 先验位置 ==
+
+<pre>有效永生 / 主体持续性最大化
+  -> 社区事故响应依赖一线响应者持续可行动
+  -> 危险材料响应把毒性、缺氧、热压力、装备负担和组织压力集中到响应者身上
+  -> HAZWOPER 与 PPE 安全把响应者保护转化为公共服务连续性条件</pre>
+== 关注对象 ==
+
+* HAZWOPER、PPE、呼吸防护、训练、医疗监测、热压力、污染转移、轮班疲劳和机构责任。
+* 与 <code>occupational-exposure-industrial-hygiene/</code> 的关系：工业卫生域关注长期工作暴露；本域关注应急响应者在危险材料事故中的保护和持续行动能力。
+
+<span id="human-infra-模型链路"></span>
+== Human Infra 模型链路 ==
+
+<pre>响应者 PPE 与 HAZWOPER 安全
+  -> 改变响应者伤害、疲劳、热压力、交叉污染和任务持续能力
+  -> 改变事故控制、公众保护、医疗转运和恢复速度
+  -> 支撑社区主体持续性和应急系统可信度</pre>
+== 非目标 ==
+
+* 不提供 PPE 选择、穿脱、呼吸器适配、现场等级判断、训练替代或职业合规建议。
+* 不提供进入危险区域、采样、去污、泄漏控制、消防或救援操作步骤。
+* 不输出规避 HAZWOPER、规避 PPE、规避监管或降低安全标准的信息。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* OSHA HAZWOPER: https://www.osha.gov/hazwoper
+* OSHA respiratory protection: https://www.osha.gov/respiratory-protection
+* NIOSH emergency response resources: https://www.cdc.gov/niosh/emres/
+* NIOSH personal protective equipment: https://www.cdc.gov/niosh/ppe/
+
+== 下一步 ==
+
+* 建立 Responder Safety Card：training, PPE, respiratory protection, heat/fatigue, contamination control, medical monitoring, staffing rotation。
+* 与 <code>occupational-exposure-industrial-hygiene/</code>、<code>mask-respirator-source-control-fit-access-continuity/</code> 和 <code>health-workforce-capacity/</code> 建立接口。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C6研究域|C6研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c6-local-unlocking/hazwoper-responder-ppe-safety-continuity/README.md Human Infra 仓库：domains/c6-local-unlocking/hazwoper-responder-ppe-safety-continuity/README.md]
+
+[[Category:C6研究域]]

@@ -1,0 +1,87 @@
+{{研究域
+|域 ID=domain.veterans-health-benefits-navigation-continuity
+|C 层级=C4：可能性转换通道层
+|研究对象=Veterans Health Benefits Navigation Continuity
+|持续性作用=关键词显示该域主要处理研究、数据、模型、服务入口、身份记录、转化或治理接口。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c4-conversion-channel/veterans-health-benefits-navigation-continuity
+}}
+
+'''Veterans Health Benefits Navigation Continuity'''是 Human Infra 在“路径转换接口”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要处理研究、数据、模型、服务入口、身份记录、转化或治理接口。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C4“可能性转换通道层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+退伍军人健康、福利与导航连续性域研究：当主体从军队系统转入民用系统后，健康照护、福利资格、创伤支持、就业、住房、家庭和身份记录如何持续衔接。
+
+== 对象 ==
+
+* VA health care、veterans benefits、service records、claims navigation、appeals boundary 和服务入口。
+* 军转民、退役身份、健康记录、创伤暴露、残障补偿、就业培训、教育福利、住房支持和家庭照护。
+* PTSD、TBI、慢性疼痛、肢体损伤、听力损失、物质使用、心理危机和长期照护连续性。
+* 退伍军人服务组织、州/地方服务、社区照护、远程医疗、交通和数字账户访问。
+* 身份证明、记录缺口、福利延迟、医疗转介、照护者负担和社会连接断点。
+
+<span id="human-infra-价值"></span>
+== Human Infra 价值 ==
+
+军队服务把主体放入高风险任务系统，退役又把主体推回复杂民用服务网络。退伍军人健康与福利导航域关注这种制度转换是否会切断医疗、收入、住房、记录、身份和家庭支持。
+
+<pre>军转民服务导航被结构化治理
+  -> 医疗、福利、记录、住房、就业和家庭支持更连续
+  -> 服役风险不被转嫁为退役后的孤立失能
+  -> 主体恢复能力、行动能力和未来选择权提高</pre>
+== 边界 ==
+
+本域只整理公开退伍军人健康、福利导航、服务衔接、记录、社区照护和家庭支持资料。
+
+不提供：
+
+* 个体福利申请、claims、appeals、医疗、心理危机、住房、就业或法律建议。
+* 军事记录纠错、伤残等级、资格判断、补偿计算、诉讼或代理策略。
+* 替代 VA、VSO、临床医生、危机热线、法律援助或政府服务的个案指导。
+* 对退伍军人群体的创伤污名化、风险画像、招聘套利或商业获客方案。
+
+== 上游与下游 ==
+
+* 上游：<code>healthcare-access-continuity/</code>、<code>mental-health-affective-stability/</code>、<code>housing-stability-affordability/</code>、<code>workforce-employment-services/</code>、<code>legal-identity-civil-registration/</code>。
+* 下游：<code>suicide-crisis-response-continuity/</code>、<code>substance-use-treatment-recovery-continuity/</code>、<code>family-caregiver-respite-work-continuity/</code>、<code>disability-income-work-capacity-benefit-continuity/</code>、<code>education-access-lifelong-learning/</code>。
+
+== 初始资料线索 ==
+
+* VA health care and benefits public resources。
+* Veterans Crisis Line public materials, used only as service-system context。
+* Department of Labor veterans employment resources and community veteran service organization materials。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C4研究域|C4研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c4-conversion-channel/veterans-health-benefits-navigation-continuity/README.md Human Infra 仓库：domains/c4-conversion-channel/veterans-health-benefits-navigation-continuity/README.md]
+
+[[Category:C4研究域]]

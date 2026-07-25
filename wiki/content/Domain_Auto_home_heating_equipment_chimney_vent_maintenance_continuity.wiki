@@ -1,0 +1,84 @@
+{{研究域
+|域 ID=domain.home-heating-equipment-chimney-vent-maintenance-continuity
+|C 层级=C5：可能性生态承载层
+|研究对象=Home Heating Equipment Chimney Vent Maintenance Continuity
+|持续性作用=关键词显示该域主要承载能源、水、食物、住房、治理、经济、通信、灾害或基础设施环境。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c5-ecological-substrate/home-heating-equipment-chimney-vent-maintenance-continuity
+}}
+
+'''Home Heating Equipment Chimney Vent Maintenance Continuity'''是 Human Infra 在“外部生态承载”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要承载能源、水、食物、住房、治理、经济、通信、灾害或基础设施环境。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C5“可能性生态承载层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>home-heating-equipment-chimney-vent-maintenance-continuity</code> 研究住宅供暖设备、烟囱、通风排气、燃料燃烧、维护记录和季节性启停如何影响冬季居住、安全睡眠、照护和恢复。
+
+<blockquote>核心问题：供暖不是单纯温度，而是燃烧、排气、维护、通风和火灾/CO 风险共同构成的家庭生命支持接口。
+</blockquote>
+== 关注对象 ==
+
+* furnace、boiler、fireplace、wood stove、chimney、venting、portable heater、燃料供应和季节性维护。
+* 火灾、CO、通风不良、设备老化、清洁维护延迟、燃料中断和极端寒冷叠加。
+* 老年人、儿童、慢病患者、低收入能源负担家庭、租房家庭和冬季停电场景。
+* 与 CO 报警、烟雾报警、能源服务、冬季风暴、燃料可得和住房维修的接口。
+
+<span id="human-infra-链路"></span>
+== Human Infra 链路 ==
+
+<pre>家庭供暖设备与排气维护连续
+  -> 寒冷环境下室内温度、燃烧和排气边界更可靠
+  -> 火灾、CO、冻伤、睡眠破坏和照护中断风险下降
+  -> 居住、恢复、照护和慢病管理任务保持可执行
+  -> 主体寒冷暴露风险下降并保持冬季行动窗口</pre>
+== 非目标 ==
+
+* 不提供供暖设备维修、烟囱清理、燃气/油炉调试、空间加热器使用教程、排气判断或现场安全许可。
+* 不替代 HVAC 专业人员、chimney professional、消防部门、能源公司、房东维修义务或应急服务。
+* 不把高温供暖能力当成唯一目标；本域关注安全、可维护、可负担、可通风的供暖连续性。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* USFA Home Heating Fire Safety: https://www.usfa.fema.gov/prevention/home-fires/prevent-fires/heating/
+* CDC Carbon Monoxide Poisoning Basics: https://www.cdc.gov/carbon-monoxide/about/index.html
+* Ready.gov Winter Weather: https://www.ready.gov/winter-weather
+
+== 下一步 ==
+
+* 建立 <code>heating equipment -&gt; venting/maintenance state -&gt; indoor thermal state -&gt; household task -&gt; continuity outcome</code> 变量表。
+* 区分燃烧设备、电供暖、空间加热器、烟囱壁炉、租房维护和能源负担。
+* 与 <code>carbon-monoxide-alarm-combustion-appliance-safety-continuity</code>、<code>winter-storm-cold-exposure-power-continuity</code> 和 <code>fuel-thermal-energy-service-continuity</code> 建立边界。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C5研究域|C5研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c5-ecological-substrate/home-heating-equipment-chimney-vent-maintenance-continuity/README.md Human Infra 仓库：domains/c5-ecological-substrate/home-heating-equipment-chimney-vent-maintenance-continuity/README.md]
+
+[[Category:C5研究域]]

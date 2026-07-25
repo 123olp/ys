@@ -1,0 +1,92 @@
+{{研究域
+|域 ID=domain.synthetic-biology-biosecurity
+|C 层级=C2：可能性源体维护层
+|研究对象=Synthetic Biology Biosecurity
+|持续性作用=关键词显示该域主要维护身体、脑、器官、细胞、急性生命风险或衰老损伤控制。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c2-source-maintenance/synthetic-biology-biosecurity
+}}
+
+'''Synthetic Biology Biosecurity'''是 Human Infra 在“生命载体维护”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要维护身体、脑、器官、细胞、急性生命风险或衰老损伤控制。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C2“可能性源体维护层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+Synthetic Biology Biosecurity 负责整理合成生物学、生物安全、生物安保、双重用途风险和治理边界如何影响主体持续性。
+
+核心问题：
+
+<blockquote>生物技术既可能修复身体、制造疗法和降低疾病风险，也可能扩大病原体、实验外泄和双重用途风险。
+</blockquote>
+== 先验位置 ==
+
+<pre>有效永生 / 主体持续性最大化
+  -> 主体持续性依赖未来生物技术修复、诊断和制造能力
+  -> 同一能力也可能降低制造生物风险的门槛
+  -> 生物风险可同时改变个体、群体和文明层面的风险函数
+  -> 因此生物安全和生物安保是生物技术进入主体持续性系统的治理域</pre>
+== 关注对象 ==
+
+* 合成生物学、重组或合成核酸研究、生物安全、生物安保和双重用途治理。
+* DNA 合成筛查、实验室安全文化、机构审查、事故报告和责任边界。
+* 疫情风险、病原体风险、医疗创新、平台生物技术和风险沟通。
+* 高风险研究主张的证据边界、禁止用途、审查门槛和中止条件。
+
+<span id="human-infra-模型链路"></span>
+== Human Infra 模型链路 ==
+
+<pre>生物安全治理措施 T
+  -> 改变风险识别、审查、筛查、隔离、报告和治理能力 X
+  -> 改变生物技术系统的安全状态 S
+  -> 降低误用、外泄、事故和群体健康冲击风险 λ(t)
+  -> 保留生物技术修复主体的正向窗口并限制尾部风险</pre>
+== 非目标 ==
+
+* 不提供病原体工程、培养、传播、规避筛查、实验协议或湿实验步骤。
+* 不提供可用于增强危害、逃避免疫、规避检测或绕过生物安全审查的信息。
+* 不把生物安全治理写成对具体实验的操作建议。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* NIH Guidelines for Research Involving Recombinant or Synthetic Nucleic Acid Molecules: https://osp.od.nih.gov/policies/biosafety-and-biosecurity-policy/#tab2/
+* WHO Laboratory Biosafety Manual: https://www.who.int/publications/i/item/9789240011311
+* National Academies reports on biosecurity: https://www.nationalacademies.org/topics/biosecurity
+
+== 下一步 ==
+
+# 建立生物技术双重用途边界表：收益类型、风险类型、审查对象、禁止输出。
+# 与 <code>cellular-reprogramming/</code>、<code>regenerative-medicine/</code>、<code>risk-engineering/</code>、<code>governance-rights/</code> 建立生物创新和安全治理边界。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C2研究域|C2研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c2-source-maintenance/synthetic-biology-biosecurity/README.md Human Infra 仓库：domains/c2-source-maintenance/synthetic-biology-biosecurity/README.md]
+
+[[Category:C2研究域]]

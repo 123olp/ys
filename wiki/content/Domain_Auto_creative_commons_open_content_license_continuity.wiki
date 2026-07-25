@@ -1,0 +1,85 @@
+{{研究域
+|域 ID=domain.creative-commons-open-content-license-continuity
+|C 层级=C6：局部可能性解锁层
+|研究对象=Creative Commons Open Content License Continuity
+|持续性作用=未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c6-local-unlocking/creative-commons-open-content-license-continuity
+}}
+
+'''Creative Commons Open Content License Continuity'''是 Human Infra 在“局部阻塞解除”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C6“局部可能性解锁层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>creative-commons-open-content-license-continuity</code> 研究 Creative Commons、公共领域标识、开放内容许可、署名、相同方式共享、非商业、禁止演绎和许可元数据如何影响知识传播、教育材料、创作复用和公共文化连续性。
+
+<blockquote>核心问题：开放许可不是“没有版权”；它是让知识和作品可复用的制度接口，边界混乱会让开放知识变成不可确认、不可组合、不可传播的材料堆。
+</blockquote>
+== 关注对象 ==
+
+* Creative Commons license family、public domain tools、attribution、share-alike、noncommercial、no-derivatives 和 license metadata。
+* 开放教育资源、开放文化遗产、开放图片音视频、研究图表、课程材料和社区知识库。
+* 许可兼容性、署名可追溯、版本记录、机器可读许可和再利用边界。
+* 开放内容如何降低学习成本、创作成本、传播摩擦和知识重复生产成本。
+
+<span id="human-infra-链路"></span>
+== Human Infra 链路 ==
+
+<pre>内容被明确开放许可
+  -> 复用、翻译、教学、改编和传播边界更清楚
+  -> 知识获取和创作启动成本下降
+  -> 学习、教育、研究和公共文化材料更可持续积累
+  -> 主体认知资源、表达资源和协作资源增强</pre>
+== 非目标 ==
+
+* 不提供许可选择、许可兼容性法律判断、合规审查、侵权判断、商业使用判断或法律意见。
+* 不提供版权清洗、署名伪造、许可剥离、公共领域误标、训练数据许可规避或平台迁移规避。
+* 不收集未授权作品、合同、争议材料、许可争议证据或私人创作资料。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* Creative Commons licenses: https://creativecommons.org/licenses/
+* Creative Commons public domain tools: https://creativecommons.org/share-your-work/public-domain/
+* Creative Commons chooser: https://chooser-beta.creativecommons.org/
+* WIPO copyright resources: https://www.wipo.int/copyright/en/
+
+== 下一步 ==
+
+* 建立 <code>content -&gt; license -&gt; attribution -&gt; reuse -&gt; derivative/education/research continuity</code> 变量表。
+* 区分 CC 许可、公共领域标识、开放教育资源、开放文化遗产和平台授权条款。
+* 与 <code>copyright-authorship-registration-licensing-continuity</code>、<code>research-infrastructure-open-science-translation</code>、<code>education-access-lifelong-learning</code> 和 <code>ai-training-data-rights-opt-out-provenance-continuity</code> 建立边界。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C6研究域|C6研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c6-local-unlocking/creative-commons-open-content-license-continuity/README.md Human Infra 仓库：domains/c6-local-unlocking/creative-commons-open-content-license-continuity/README.md]
+
+[[Category:C6研究域]]

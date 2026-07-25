@@ -1,0 +1,84 @@
+{{研究域
+|域 ID=domain.incontinence-absorbent-product-supply-dignity-continuity
+|C 层级=C5：可能性生态承载层
+|研究对象=Incontinence Absorbent Product Supply Dignity Continuity
+|持续性作用=关键词显示该域主要承载能源、水、食物、住房、治理、经济、通信、灾害或基础设施环境。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c5-ecological-substrate/incontinence-absorbent-product-supply-dignity-continuity
+}}
+
+'''Incontinence Absorbent Product Supply Dignity Continuity'''是 Human Infra 在“外部生态承载”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要承载能源、水、食物、住房、治理、经济、通信、灾害或基础设施环境。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C5“可能性生态承载层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>incontinence-absorbent-product-supply-dignity-continuity</code> 研究成人尿失禁/便失禁吸收用品、尺寸适配、皮肤保护、费用、配送、处置、照护负担和尊严如何影响外出、睡眠、照护、工作和社会参与连续性。
+
+<blockquote>核心问题：失禁用品不是单一皮肤护理变量；它是排泄控制失败后维持主体移动、睡眠、社交、照护和尊严的补偿基础设施。
+</blockquote>
+== 关注对象 ==
+
+* 成人纸尿裤、拉拉裤、护垫、床垫、处置袋、清洁用品、尺寸/吸收量适配和备用库存。
+* 费用、保险/福利、配送、公共厕所可达、垃圾处置、家庭照护、机构照护和夜间更换。
+* 泄漏、气味、羞耻、皮肤潮湿、睡眠中断、外出回避和照护者负担。
+* 与泌尿、失禁相关皮炎、DME、长期照护、公共厕所、住房和福利系统的接口。
+
+<span id="human-infra-链路"></span>
+== Human Infra 链路 ==
+
+<pre>失禁吸收用品连续
+  -> 主体在尿控或肠控不稳定时仍能维持清洁、睡眠、外出和尊严
+  -> 尺寸适配、供应、费用、处置和照护断点造成的回避与皮肤风险下降
+  -> 照护负担、社交退出、夜间恢复损耗和服务进入摩擦减少
+  -> 有效时间、关系连续和未来选择权增强</pre>
+== 非目标 ==
+
+* 不提供失禁诊断、盆底训练、药物、导尿、皮肤处理、产品品牌、医保个案或照护操作建议。
+* 不替代泌尿科、妇科、长期照护、DME 供应商、NIDDK、Medicare/Medicaid 或临床指南。
+* 不把失禁记录、用品使用或照护依赖作为羞辱、监控、资格排除或服务惩罚依据。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* NIDDK Bladder Control Problems: https://www.niddk.nih.gov/health-information/urologic-diseases/bladder-control-problems
+* MedlinePlus Urinary Incontinence: https://medlineplus.gov/urinaryincontinence.html
+* CDC Hygiene: https://www.cdc.gov/hygiene/
+
+== 下一步 ==
+
+* 建立 <code>absorbent product -&gt; fit/absorbency -&gt; supply/coverage -&gt; dignity/task impact</code> 变量表。
+* 区分居家、机构、工作、旅行、灾害、无家可归、认知障碍和照护者依赖场景。
+* 与 <code>incontinence-associated-dermatitis-moisture-skin-continuity</code>、<code>urogenital-continuity</code> 和 <code>durable-medical-equipment-supplier-repair-continuity</code> 建立边界。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C5研究域|C5研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c5-ecological-substrate/incontinence-absorbent-product-supply-dignity-continuity/README.md Human Infra 仓库：domains/c5-ecological-substrate/incontinence-absorbent-product-supply-dignity-continuity/README.md]
+
+[[Category:C5研究域]]

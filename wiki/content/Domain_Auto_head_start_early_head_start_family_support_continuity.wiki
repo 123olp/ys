@@ -1,0 +1,91 @@
+{{研究域
+|域 ID=domain.head-start-early-head-start-family-support-continuity
+|C 层级=C6：局部可能性解锁层
+|研究对象=Head Start Early Head Start Family Support Continuity
+|持续性作用=未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c6-local-unlocking/head-start-early-head-start-family-support-continuity
+}}
+
+'''Head Start Early Head Start Family Support Continuity'''是 Human Infra 在“局部阻塞解除”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C6“局部可能性解锁层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>head-start-early-head-start-family-support-continuity/</code> 研究 Head Start 与 Early Head Start 如何把早期学习、健康、营养、家庭支持和父母参与整合为低收入家庭的儿童发展基础设施。
+
+<blockquote>核心问题：早期儿童服务不只是看护时间，更是儿童健康、学习、营养、家庭支持和代际能力形成的综合平台。
+</blockquote>
+== 先验位置 ==
+
+<pre>有效永生 / 主体持续性最大化
+  -> 儿童能力形成发生在生命早期
+  -> 家庭资源不足会压缩健康、学习、营养和亲子支持
+  -> Head Start / Early Head Start 把服务整合到儿童与家庭系统
+  -> 儿童发展和照护者行动能力才不会被早期稀缺锁死</pre>
+== 关注对象 ==
+
+* Head Start、Early Head Start、早期学习、健康筛查、营养、家庭参与和父母支持。
+* 项目绩效标准、综合服务、家庭目标、转介、社区合作和入学过渡。
+* 与 <code>childcare-family-continuity/</code>、<code>maternal-newborn-child-development/</code>、<code>school-enrollment-attendance-continuity/</code> 和 <code>community-resource-navigation/</code> 的接口。
+
+<span id="human-infra-模型链路"></span>
+== Human Infra 模型链路 ==
+
+<pre>低收入家庭早期发展需求
+  -> Head Start / Early Head Start 综合服务
+  -> 儿童健康、学习、营养和家庭支持改善
+  -> 学校准备、家庭稳定和照护者能力提高
+  -> 儿童未来选择权和家庭持续性增强</pre>
+== 非目标 ==
+
+* 不判断个体项目资格、申请、录取、等待名单、服务适配或家庭目标。
+* 不提供儿童诊断、教育处方、医疗建议、项目投诉、法律建议或家庭评估。
+* 不收集儿童记录、家庭收入、项目申请、健康记录、教育记录或家庭服务计划。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* Head Start: https://headstart.gov/
+* Head Start Program Performance Standards: https://eclkc.ohs.acf.hhs.gov/policy/45-cfr-chap-xiii
+* ACF Office of Head Start: https://www.acf.hhs.gov/ohs
+* CDC Child Development: https://www.cdc.gov/child-development/
+
+== 下一步 ==
+
+* 建立变量表：早期学习、健康、营养、家庭支持、父母参与、转介和入学过渡。
+* 整理 HeadStart.gov、ECLKC HSPPS、ACF OHS 和 CDC 儿童发展 Source Cards。
+* 与一般托育供给域区分：本域关注综合早期发展与家庭支持项目。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C6研究域|C6研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c6-local-unlocking/head-start-early-head-start-family-support-continuity/README.md Human Infra 仓库：domains/c6-local-unlocking/head-start-early-head-start-family-support-continuity/README.md]
+
+[[Category:C6研究域]]

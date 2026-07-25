@@ -1,0 +1,97 @@
+{{研究域
+|域 ID=domain.weather-climate-observation-forecasting
+|C 层级=C5：可能性生态承载层
+|研究对象=Weather Climate Observation Forecasting
+|持续性作用=关键词显示该域主要承载能源、水、食物、住房、治理、经济、通信、灾害或基础设施环境。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c5-ecological-substrate/weather-climate-observation-forecasting
+}}
+
+'''Weather Climate Observation Forecasting'''是 Human Infra 在“外部生态承载”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要承载能源、水、食物、住房、治理、经济、通信、灾害或基础设施环境。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C5“可能性生态承载层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>weather-climate-observation-forecasting/</code> 研究天气观测、气候服务、预报模型、极端天气监测和风险信息如何支撑主体持续性。
+
+<blockquote>核心问题：主体能否在热、冷、暴雨、洪水、风暴、火灾天气、空气和长期气候风险中提前获得可靠观测与预测。
+</blockquote>
+== 先验位置 ==
+
+<pre>有效永生 / 主体持续性最大化
+  -> 主体必须在外部环境变化中维持安全、健康和服务连续性
+  -> 天气和气候风险会改变死亡风险、居住安全、交通、能源、食物、水、医疗和应急响应
+  -> 观测、预报、气候服务和早期预警构成风险函数的外部输入
+  -> 如果观测和预报失败，主体会在热、洪水、风暴、火灾天气和空气风险中失去提前行动窗口</pre>
+== 关注对象 ==
+
+* 地面、海洋、卫星、雷达、探空、气候观测和数据同化。
+* 天气预报、气候服务、极端事件监测、季节预测、影响预报和早期预警。
+* 热、冷、暴雨、洪水、风暴、干旱、野火天气、空气质量和气候趋势对主体持续性的影响。
+* 与 <code>emergency-alerts-communications/</code> 的边界：本域关注风险观测和预测生成；预警通信域关注信息如何到达人。
+* 与 <code>planetary-health-environment/</code> 的边界：星球健康域关注环境暴露和生态底座；本域关注天气气候观测、模型和预报产品。
+
+<span id="human-infra-模型链路"></span>
+== Human Infra 模型链路 ==
+
+<pre>观测系统稳定
+  -> 天气和气候状态可被测量
+  -> 预报模型和气候服务可生成风险窗口
+  -> 热、洪水、风暴、干旱、火灾天气和空气风险可提前进入决策
+  -> 家庭准备、公共预警、能源调度、交通、医疗和供应链有更长响应时间
+  -> 风险暴露、资源中断和恢复时间下降
+  -> 主体持续性增强</pre>
+== 非目标 ==
+
+* 不提供实时灾害指挥、撤离路线、出行决策、急救或个人安全承诺。
+* 不把天气、气候、模型输出或长期情景写成确定预测。
+* 不提供保险、交易、农业投机、灾害套利或规避官方预警的建议。
+* 不替代国家气象机构、地方应急部门、官方预警或专业气候风险评估。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* WMO Early Warnings for All：全球早期预警能力建设。
+* NOAA National Weather Service：天气预报、警报和 Weather-Ready Nation。
+* NOAA Climate.gov：气候资料、风险解释和教育资源。
+* WMO Global Observing System：全球气象观测基础设施。
+* Copernicus Climate Change Service / ECMWF：气候数据和再分析服务。
+
+== 下一步 ==
+
+* 建立 Source Card：WMO、NOAA NWS、NOAA Climate、ECMWF/Copernicus。
+* 梳理变量：观测覆盖、预报时效、预警提前量、极端事件强度、热风险、洪水风险、模型不确定性。
+* 绘制跨域接口：应急预警、家庭准备、能源韧性、水卫生、住房、交通、灾后恢复和保险风险。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C5研究域|C5研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c5-ecological-substrate/weather-climate-observation-forecasting/README.md Human Infra 仓库：domains/c5-ecological-substrate/weather-climate-observation-forecasting/README.md]
+
+[[Category:C5研究域]]

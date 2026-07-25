@@ -1,0 +1,88 @@
+{{研究域
+|域 ID=domain.notary-document-authentication-signature-continuity
+|C 层级=C6：局部可能性解锁层
+|研究对象=公证、文件认证与签名连续性
+|持续性作用=未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c6-local-unlocking/notary-document-authentication-signature-continuity
+}}
+
+'''公证、文件认证与签名连续性'''是 Human Infra 在“局部阻塞解除”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C6“局部可能性解锁层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+本域研究公证、签名、电子签名、文件认证、apostille、授权文件和跨机构承认如何让关键声明、授权和记录具备可验证性。它关注的是“文件能被承认”这一制度基础，而不是个人公证、认证、签署或跨境文件办理建议。
+
+== 研究对象 ==
+
+* 公证、见证、签名、电子签名、数字签名、远程在线公证和签署记录。
+* 文件认证、apostille、领事认证、法院/政府/学校/商业文件的跨境承认。
+* 授权书、同意书、声明、合同、医疗代理、财务代理和教育/家庭文件。
+* 签名文件与身份、权限、证据链、合规、档案保存和长期可读性的关系。
+
+== 价值链路 ==
+
+<pre>主体需要把意愿、授权和事实变成可被他人承认的记录
+  -> 签名、公证和认证机制把文件连接到身份、时间、权限和证据链
+  -> 电子签名、远程公证和 apostille 扩展跨地点、跨机构、跨国使用能力
+  -> 签署无效、身份无法确认、认证缺失或文件格式失效会让授权和事实不可执行
+  -> 文件认证连续性把主体意愿和制度记录转化为可验证、可迁移、可执行的承认链</pre>
+== 关键问题 ==
+
+* 哪些主体持续性文件依赖签名、公证或认证才能跨机构生效？
+* 电子签名、远程公证和数字签名如何改变可及性、欺诈风险和长期验证？
+* apostille、领事认证和跨境文件承认如何影响迁移、教育、家庭、工作和继承？
+* 文件格式、证书、密钥、审计日志和档案保存如何影响几十年尺度的可验证性？
+
+== 上游与下游 ==
+
+* 上游：<code>digital-identity-security/</code>、<code>legal-identity-civil-registration/</code>、<code>verifiable-credential-wallet-interoperability/</code>、<code>long-term-digital-preservation-format-migration/</code>。
+* 下游：<code>financial-fiduciary-power-of-attorney-continuity/</code>、<code>advance-care-planning-medical-decision-continuity/</code>、<code>trust-estate-affairs-succession-continuity/</code>、<code>passport-travel-document-mobility-continuity/</code>、<code>contract-subscription-billing-consent-continuity/</code>。
+
+== 非目标 ==
+
+* 不提供个人公证、apostille、认证、签署、电子签名、合同、授权书、移民、学校、继承、法院或法律建议。
+* 不判断个人文件是否有效、是否需要公证、是否可认证、是否可跨境使用或是否可替代原件。
+* 不协助伪造签名、公证、认证、印章、证书、身份、时间戳、电子签名记录或跨境文件。
+
+== 初始资料入口 ==
+
+* U.S. Department of State: Authentications and apostilles
+* State secretary of state / notary public official materials
+* FTC / Federal legal materials on electronic signatures and E-SIGN context
+* NIST: Digital identity and trust services materials
+* Courts, agencies, schools and institutions issuing document-authentication requirements
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C6研究域|C6研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c6-local-unlocking/notary-document-authentication-signature-continuity/README.md Human Infra 仓库：domains/c6-local-unlocking/notary-document-authentication-signature-continuity/README.md]
+
+[[Category:C6研究域]]

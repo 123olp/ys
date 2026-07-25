@@ -1,0 +1,83 @@
+{{研究域
+|域 ID=domain.cpap-pap-device-mask-supply-power-continuity
+|C 层级=C5：可能性生态承载层
+|研究对象=CPAP PAP Device Mask Supply Power Continuity
+|持续性作用=关键词显示该域主要承载能源、水、食物、住房、治理、经济、通信、灾害或基础设施环境。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c5-ecological-substrate/cpap-pap-device-mask-supply-power-continuity
+}}
+
+'''CPAP PAP Device Mask Supply Power Continuity'''是 Human Infra 在“外部生态承载”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要承载能源、水、食物、住房、治理、经济、通信、灾害或基础设施环境。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C5“可能性生态承载层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>cpap-pap-device-mask-supply-power-continuity</code> 研究 CPAP/BiPAP/PAP 设备、面罩、管路、滤芯、清洁、供电、旅行、召回、供应商和依从支持如何影响睡眠、日间警觉、心血管风险、驾驶安全和恢复能力。
+
+<blockquote>核心问题：PAP 治疗的收益依赖设备每天晚上可用；面罩漏气、耗材断供、停电、旅行断点或供应商摩擦会把可治疗睡眠风险重新变成恢复失败。
+</blockquote>
+== 关注对象 ==
+
+* CPAP、BiPAP、PAP 设备、面罩、管路、滤芯、加湿器、清洁维护、供电、旅行电源、召回和耗材替换。
+* 睡眠呼吸暂停、日间嗜睡、疲劳、驾驶/工作安全、心血管风险和照护者观察。
+* 供应商、医保合规、依从记录、设备数据、隐私和远程监测接口。
+* 与睡眠、呼吸、家庭医疗设备、备用电、召回和医疗服务连续性的接口。
+
+<span id="human-infra-链路"></span>
+== Human Infra 链路 ==
+
+<pre>PAP 设备运行连续
+  -> 主体夜间呼吸支持和睡眠恢复更稳定
+  -> 面罩、耗材、供电、召回和供应商断点造成的治疗中断下降
+  -> 日间警觉、认知、驾驶/工作安全和长期恢复能力增强
+  -> 有效时间、风险控制和未来选择权提高</pre>
+== 非目标 ==
+
+* 不提供睡眠呼吸暂停诊断、PAP 处方、压力参数、面罩选择、清洁步骤、设备购买、维修、召回个案或保险申诉建议。
+* 不替代睡眠医生、呼吸治疗师、DME 供应商、NHLBI、CMS、FDA 或设备说明。
+* 不把设备依从性简化为意志问题；面罩适配、费用、供电、隐私、召回和供应商接口必须纳入。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* Medicare CPAP Devices: https://www.medicare.gov/coverage/continuous-positive-airway-pressure-devices
+* CMS CPAP Devices and Accessories: https://www.cms.gov/training-education/medicare-learning-networkr-mln/compliance/medicare-provider-compliance-tips/cpap-devices-accessories
+
+== 下一步 ==
+
+* 建立 <code>PAP device state -&gt; mask/supply/power/provider dependency -&gt; sleep recovery -&gt; daytime function</code> 变量表。
+* 区分居家、旅行、停电、召回、依从记录、隐私和长期供应商维护场景。
+* 与 <code>sleep-disordered-breathing-screening-treatment-continuity</code>、<code>home-oxygen-respiratory-equipment-supply-continuity</code> 和 <code>refrigerated-medication-medical-device-power-outage-continuity</code> 建立边界。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C5研究域|C5研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c5-ecological-substrate/cpap-pap-device-mask-supply-power-continuity/README.md Human Infra 仓库：domains/c5-ecological-substrate/cpap-pap-device-mask-supply-power-continuity/README.md]
+
+[[Category:C5研究域]]

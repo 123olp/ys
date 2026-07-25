@@ -1,0 +1,82 @@
+{{研究域
+|域 ID=domain.skin-care-supplies-dressings-barrier-products-continuity
+|C 层级=C2：可能性源体维护层
+|研究对象=Skin Care Supplies, Dressings and Barrier Products Continuity
+|持续性作用=关键词显示该域主要维护身体、脑、器官、细胞、急性生命风险或衰老损伤控制。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c2-source-maintenance/skin-care-supplies-dressings-barrier-products-continuity
+}}
+
+'''Skin Care Supplies, Dressings and Barrier Products Continuity'''是 Human Infra 在“生命载体维护”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要维护身体、脑、器官、细胞、急性生命风险或衰老损伤控制。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C2“可能性源体维护层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>skin-care-supplies-dressings-barrier-products-continuity/</code> 研究敷料、屏障产品、清洁用品、失禁用品、皮肤保护材料、DME/供应链、支付覆盖和库存中断如何影响伤口、皮肤屏障和照护连续性。
+
+<blockquote>核心问题：皮肤保护不是只有医学知识；它还依赖材料、支付、库存、物流、照护者和正确使用边界。
+</blockquote>
+== 先验位置 ==
+
+<pre>有效永生
+  -> 主体边界维护需要持续可用的材料和照护执行
+  -> 敷料、屏障用品、清洁用品和失禁用品中断会放大伤口与感染风险
+  -> 供应链和支付失败会把可护理问题转化为失能风险
+  -> 因此皮肤护理用品是伤口和屏障连续性的资源底座</pre>
+== 关注对象 ==
+
+* Dressings, barrier products, cleansers, incontinence supplies, skin protection supplies, DME, coverage, inventory and caregiver use。
+* 与 <code>durable-medical-equipment-supplier-repair-continuity/</code> 的关系：后者关注广义 DME，本域关注皮肤/伤口用品和屏障产品连续性。
+
+<span id="human-infra-模型链路"></span>
+== Human Infra 模型链路 ==
+
+<pre>皮肤护理用品供应连续性 T
+  -> 改变敷料、屏障产品、清洁用品、失禁用品、支付和库存 X
+  -> 改变伤口保护、潮湿控制、感染入口和照护执行 S
+  -> 改变慢性伤口、压力损伤、感染和住院风险 lambda(t)
+  -> 改变照护负担、有效时间和恢复质量</pre>
+== 非目标 ==
+
+* 不推荐具体品牌、型号、敷料选择、用品替代、保险策略、护理步骤或个体采购建议。
+* 不处理个人伤口、皮肤照片、处方、供应商、账单或报销资料。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* FDA wound dressing and medical device public materials.
+* CMS DME and supply coverage materials as policy context.
+* MedlinePlus wound care and pressure injury materials.
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C2研究域|C2研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c2-source-maintenance/skin-care-supplies-dressings-barrier-products-continuity/README.md Human Infra 仓库：domains/c2-source-maintenance/skin-care-supplies-dressings-barrier-products-continuity/README.md]
+
+[[Category:C2研究域]]

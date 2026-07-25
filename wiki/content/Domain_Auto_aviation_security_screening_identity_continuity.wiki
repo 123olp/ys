@@ -1,0 +1,87 @@
+{{研究域
+|域 ID=domain.aviation-security-screening-identity-continuity
+|C 层级=C4：可能性转换通道层
+|研究对象=航空安检、身份核验与筛查连续性
+|持续性作用=关键词显示该域主要处理研究、数据、模型、服务入口、身份记录、转化或治理接口。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c4-conversion-channel/aviation-security-screening-identity-continuity
+}}
+
+'''航空安检、身份核验与筛查连续性'''是 Human Infra 在“路径转换接口”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要处理研究、数据、模型、服务入口、身份记录、转化或治理接口。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C4“可能性转换通道层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+本域研究机场安检、身份核验、REAL ID、旅客支持、可访问筛查和安检过程中的信息断点如何影响主体跨地点行动。它关注的是筛查系统如何成为移动资格入口，而不是安检规避、漏洞利用或违禁品处理。
+
+== 研究对象 ==
+
+* TSA 安检流程、身份核验、REAL ID、证件不匹配、安检通知和旅客支持。
+* 残障、医疗设备、药品、辅助器具、服务动物、语言障碍和儿童/老年旅客的筛查连续性。
+* 安检等待、二次筛查、证件丢失、姓名错配、设备/药品误解和沟通失败造成的行程断点。
+* 安检规则如何与护照、驾照/州 ID、行程、航空中断和无障碍服务衔接。
+
+== 价值链路 ==
+
+<pre>航空移动必须先通过身份与安全筛查入口
+  -> 安检把证件、身体、设备、药品和辅助需求转化为是否能登机的判定过程
+  -> 若身份错配、筛查不可访问或沟通失败，主体会失去航班、医疗用品、时间窗口和跨境安排
+  -> 官方旅客支持、REAL ID 规则和可访问筛查边界降低部分制度摩擦
+  -> 航空安检连续性把安全筛查建模为移动主体的准入与恢复条件</pre>
+== 关键问题 ==
+
+* 身份核验、REAL ID 和旅行证件如何影响航空移动资格？
+* 医疗设备、药品、辅助器具和服务动物如何进入安检可访问性变量？
+* 安检等待、二次筛查和沟通失败如何消耗主体有效时间？
+* 如何把安全规则作为证据边界，而不泄露规避、绕行或漏洞利用路径？
+
+== 上游与下游 ==
+
+* 上游：<code>driver-license-vehicle-registration-continuity/</code>、<code>passport-travel-document-mobility-continuity/</code>、<code>healthcare-disability-accommodation-accessibility-continuity/</code>。
+* 下游：<code>air-passenger-rights-disruption-refund-continuity/</code>、<code>baggage-personal-property-travel-continuity/</code>、<code>long-distance-travel-booking-itinerary-continuity/</code>。
+
+== 非目标 ==
+
+* 不提供安检规避、漏洞利用、违禁品携带、身份绕过、机场安全弱点、走私、监控规避或执法对抗方法。
+* 不判断个人是否能通过安检、是否可携带某物、是否需要 REAL ID 或是否应申请任何旅客项目。
+* 不收集身份证件、登机牌、安检记录、医疗证明、设备序列号或实时机场位置。
+
+== 初始资料入口 ==
+
+* TSA: Travel and security screening
+* TSA Cares / Passenger Support
+* DHS: REAL ID
+* U.S. DOT materials on accessible air travel as boundary context
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C4研究域|C4研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c4-conversion-channel/aviation-security-screening-identity-continuity/README.md Human Infra 仓库：domains/c4-conversion-channel/aviation-security-screening-identity-continuity/README.md]
+
+[[Category:C4研究域]]

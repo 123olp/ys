@@ -1,0 +1,95 @@
+{{研究域
+|域 ID=domain.health-data-privacy-governance
+|C 层级=C4：可能性转换通道层
+|研究对象=Health Data Privacy Governance
+|持续性作用=主要把科学、医疗、数据、制度或技术从潜在能力转成真实可用路径。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c4-conversion-channel/health-data-privacy-governance
+}}
+
+'''Health Data Privacy Governance'''是 Human Infra 在“路径转换接口”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+主要把科学、医疗、数据、制度或技术从潜在能力转成真实可用路径。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C4“可能性转换通道层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>health-data-privacy-governance/</code> 研究健康、基因、行为、神经和服务使用数据的隐私、同意、安全、共享、二次使用和治理边界。
+
+<blockquote>核心问题：Human Infra 越依赖数据，就越必须先保护主体的同意、退出、用途边界、访问控制和被滥用后的恢复路径；否则测量系统会反过来吞噬主体。
+</blockquote>
+== 先验位置 ==
+
+<pre>有效永生 / 主体持续性最大化
+  -> 主体状态需要被观测、记录、建模和反馈
+  -> 观测会产生高敏感健康、基因、行为、神经和社会需求数据
+  -> 数据治理必须先约束采集、共享、二次使用、安全和退出
+  -> 数据系统才能支撑主体持续性，而不是制造控制、歧视和不可逆暴露</pre>
+== 关注对象 ==
+
+* 健康隐私、受试者保护、同意、撤回、访问控制、最小必要使用和用途限制。
+* 健康信息共享、信息阻断、基因组数据共享、去标识化风险、再识别风险和数据安全。
+* 与 <code>patient-data-interoperability/</code> 的关系：患者数据互操作域关注数据是否能随主体流动；本域关注流动时是否有权利、安全和治理边界。
+* 与 <code>digital-identity-security/</code>、<code>governance-rights/</code>、<code>measurement-feedback/</code> 和 <code>synthetic-biology-biosecurity/</code> 的接口。
+
+<span id="human-infra-模型链路"></span>
+== Human Infra 模型链路 ==
+
+<pre>健康数据隐私治理基础设施
+  -> 改变数据采集、访问、共享、撤回、安全和二次使用边界
+  -> 改变主体被测量、被建模、被照护和被研究时的权利状态
+  -> 降低隐私暴露、再识别、歧视、越权使用、信任崩塌和系统性排除风险
+  -> 增强数据可用性、主体自主性、长期信任和可审查研究能力</pre>
+== 非目标 ==
+
+* 不提供法律意见、合规认证、HIPAA/Common Rule 适用判断或机构合规方案。
+* 不提供真实 PHI/基因/神经/行为数据处理架构、去标识化保证、数据共享许可或二次利用建议。
+* 不提供账号绕过、授权绕过、隐私规避、数据抓取、渗透攻击或敏感数据交易方法。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* HHS HIPAA Privacy Rule: https://www.hhs.gov/hipaa/for-professionals/privacy/index.html
+* HHS Common Rule: https://www.hhs.gov/ohrp/regulations-and-policy/regulations/common-rule/index.html
+* NIST Privacy Framework: https://www.nist.gov/privacy-framework
+* NIST Cybersecurity Framework: https://www.nist.gov/cyberframework
+* NIH Genomic Data Sharing Policy: https://sharing.nih.gov/genomic-data-sharing-policy
+* GA4GH Framework for Responsible Sharing: https://www.ga4gh.org/product/framework-for-responsible-sharing-of-genomic-and-health-related-data/
+* ONC Information Blocking: https://healthit.gov/information-blocking/
+
+== 下一步 ==
+
+* 建立健康数据治理变量表：同意、撤回、访问控制、最小必要、用途限制、安全、共享、审计、再识别风险和退出。
+* 与 <code>patient-data-interoperability/</code> 拆分数据流动和数据治理边界。
+* 整理 HIPAA、Common Rule、NIST Privacy、NIST CSF、NIH GDS、GA4GH 和 ONC Information Blocking 的 Source Cards。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C4研究域|C4研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c4-conversion-channel/health-data-privacy-governance/README.md Human Infra 仓库：domains/c4-conversion-channel/health-data-privacy-governance/README.md]
+
+[[Category:C4研究域]]

@@ -1,0 +1,86 @@
+{{研究域
+|域 ID=domain.parkinsons-disease-movement-control-continuity
+|C 层级=C6：局部可能性解锁层
+|研究对象=Parkinson's Disease Movement Control Continuity
+|持续性作用=未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c6-local-unlocking/parkinsons-disease-movement-control-continuity
+}}
+
+'''Parkinson's Disease Movement Control Continuity'''是 Human Infra 在“局部阻塞解除”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C6“局部可能性解锁层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>parkinsons-disease-movement-control-continuity/</code> 研究帕金森病、运动控制、震颤、僵硬、步态、非运动症状、照护负担和长期功能参与如何影响主体持续性。
+
+<span id="core-question"></span>
+== Core Question ==
+
+当多巴胺能运动控制和非运动功能逐步受损时，主体如何继续维持移动、表达、工作、照护协作、环境适配和长期项目推进能力？
+
+== 先验位置 ==
+
+* 与 <code>neuro-continuity/</code> 的关系：帕金森病是慢性神经退行性病程，不是一般神经完整性条目。
+* 与 <code>physical-activity-mobility/</code> 的关系：步态、平衡和运动迟缓会直接改变行动半径。
+* 与 <code>caregiving-long-term-care/</code> 的关系：进展期功能变化会放大照护、住房和服务协调需求。
+
+== 关注对象 ==
+
+* 运动症状、非运动症状、药物时效波动、跌倒风险、吞咽/言语、睡眠、认知、情绪和照护连续性。
+* 诊断延迟、专科可及、康复/运动支持、辅助技术、照护者负担和长期参与限制。
+
+<span id="human-infra-模型链路"></span>
+== Human Infra 模型链路 ==
+
+<pre>帕金森病病程
+-> 运动控制、非运动症状和认知/情绪负担变化
+-> 移动、表达、睡眠、工作和照护协作能力下降
+-> 有效时间、社会参与和未来选择权受限
+-> 主体持续性下降</pre>
+== 非目标 ==
+
+* 不提供帕金森病诊断、药物、剂量、手术、深脑刺激、康复动作、设备或照护方案建议。
+* 不根据症状、视频、步态、可穿戴数据或量表输出个体病程、风险、驾驶/工作许可或治疗判断。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* NINDS Parkinson's disease: https://www.ninds.nih.gov/health-information/disorders/parkinsons-disease
+
+== 下一步 ==
+
+* 建立 movement control card：把运动症状、非运动症状、跌倒、照护和参与限制拆成可审查变量。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C6研究域|C6研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c6-local-unlocking/parkinsons-disease-movement-control-continuity/README.md Human Infra 仓库：domains/c6-local-unlocking/parkinsons-disease-movement-control-continuity/README.md]
+
+[[Category:C6研究域]]

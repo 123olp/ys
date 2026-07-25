@@ -1,0 +1,83 @@
+{{研究域
+|域 ID=domain.eyeglasses-prescription-repair-replacement-continuity
+|C 层级=C2：可能性源体维护层
+|研究对象=Eyeglasses Prescription Repair Replacement Continuity
+|持续性作用=关键词显示该域主要维护身体、脑、器官、细胞、急性生命风险或衰老损伤控制。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c2-source-maintenance/eyeglasses-prescription-repair-replacement-continuity
+}}
+
+'''Eyeglasses Prescription Repair Replacement Continuity'''是 Human Infra 在“生命载体维护”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要维护身体、脑、器官、细胞、急性生命风险或衰老损伤控制。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C2“可能性源体维护层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>eyeglasses-prescription-repair-replacement-continuity</code> 研究眼镜、处方更新、镜片/镜架损坏、备用眼镜、费用、取件等待和远程/旅行断点如何影响阅读、工作、驾驶、导航、屏幕任务和公共服务使用。
+
+<blockquote>核心问题：屈光矫正工具不是一次性购买物，而是视觉带宽的日常运行接口；当眼镜丢失、损坏、过期或无法替换时，低成本视觉能力会立刻变成任务摩擦。
+</blockquote>
+== 关注对象 ==
+
+* 眼镜、镜片、镜架、处方有效性、备用眼镜、修理、替换、取件等待和费用摩擦。
+* 阅读、学习、屏幕工作、驾驶、步行导航、药品标签、公共表格和灾害转移中的视觉任务断点。
+* 儿童、低收入者、老年人、流动人口、灾后失物和长期照护场景中的眼镜可得性。
+* 与屈光不正、低视力康复、视觉健康、身份文件、驾驶和学校/工作参与的接口。
+
+<span id="human-infra-链路"></span>
+== Human Infra 链路 ==
+
+<pre>眼镜运行连续
+  -> 主体保持低成本、低负担的基础视觉带宽
+  -> 阅读、导航、屏幕任务、标签识别和安全判断更可靠
+  -> 学习、工作、医疗理解、交通和公共服务使用摩擦下降
+  -> 有效时间、行动能力和未来选择权增强</pre>
+== 非目标 ==
+
+* 不提供验光、处方判断、镜片参数、品牌推荐、购买建议、驾驶资格判断或保险个案建议。
+* 不替代眼科医生、验光师、NEI、MedlinePlus、学校视觉项目、低视力服务或交通监管要求。
+* 不把眼镜运行问题合并进眼病诊疗；本域只处理矫正工具的可得、可用和断点。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* MedlinePlus Refractive Errors: https://medlineplus.gov/refractiveerrors.html
+* NEI Contact Lenses and Eyeglasses context: https://www.nei.nih.gov/eye-health-information/healthy-vision/contact-lenses
+
+== 下一步 ==
+
+* 建立 <code>glasses state -&gt; replacement/repair delay -&gt; visual task -&gt; execution loss</code> 变量表。
+* 区分学生、驾驶、工作屏幕、老年照护、灾后失物和流动人口场景。
+* 与 <code>refractive-error-glasses-contact-lens-continuity</code>、<code>low-vision-rehabilitation-assistive-technology-continuity</code> 和 <code>contact-lens-hygiene-eye-infection-continuity</code> 建立边界。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C2研究域|C2研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c2-source-maintenance/eyeglasses-prescription-repair-replacement-continuity/README.md Human Infra 仓库：domains/c2-source-maintenance/eyeglasses-prescription-repair-replacement-continuity/README.md]
+
+[[Category:C2研究域]]

@@ -1,0 +1,89 @@
+{{研究域
+|域 ID=domain.pelvic-floor-continence-function-continuity
+|C 层级=C6：局部可能性解锁层
+|研究对象=Pelvic Floor Continence Function Continuity
+|持续性作用=未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c6-local-unlocking/pelvic-floor-continence-function-continuity
+}}
+
+'''Pelvic Floor Continence Function Continuity'''是 Human Infra 在“局部阻塞解除”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C6“局部可能性解锁层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>pelvic-floor-continence-function-continuity/</code> 研究盆底功能、尿失禁、便失禁、盆腔器官脱垂、产后/老年功能恢复、羞耻和服务可及如何影响主体持续性。
+
+<blockquote>核心问题：盆底和控尿控便功能直接影响行动半径、睡眠、社交、工作、照护负担和尊严，是有效时间与社会参与的隐性基础设施。
+</blockquote>
+== 先验位置 ==
+
+<pre>有效永生 / 主体持续性最大化
+  -> 主体需要可预测的排泄控制、行动半径、睡眠和尊严维持日常任务
+  -> 盆底功能障碍会通过失禁、疼痛、感染、跌倒、社交回避和照护负担消耗有效时间
+  -> 结果取决于筛查沟通、治疗转介、康复可及、用品可及和非污名环境
+  -> 因此盆底与控尿控便功能是身体行动和社会参与之间的关键域</pre>
+== 关注对象 ==
+
+* Pelvic floor function、urinary incontinence、fecal incontinence、pelvic organ prolapse、postpartum recovery, aging continence, pelvic floor physical therapy access, continence supplies, stigma。
+* 与 <code>urogenital-continuity/</code> 的边界：该域关注泌尿生殖总机制；本域关注盆底、控尿控便和功能参与连续性。
+* 与 <code>fall-risk-prevention-home-safety-continuity/</code> 的关系：夜尿、急迫性和浴厕环境可放大跌倒风险。
+
+<span id="human-infra-模型链路"></span>
+== Human Infra 模型链路 ==
+
+<pre>盆底与控尿控便支持系统 T
+  -> 改变症状识别、康复可及、用品可及、浴厕环境、羞耻和转介变量 X
+  -> 改变行动半径、睡眠、感染风险、社交参与、照护负担和尊严状态 S
+  -> 改变有效时间损失、跌倒、隔离、工作退出和生活质量下降 λ(t)
+  -> 影响主体日常行动、关系参与、恢复和长期独立性</pre>
+== 非目标 ==
+
+* 不提供个人失禁诊断、盆底训练步骤、用药、器械、手术、产后恢复计划、用品选择或医疗建议。
+* 不生成个人症状评分、康复方案、检查排序、家庭处理、保险申诉或临床分诊。
+* 不收集个案排泄、性健康、产后、手术、影像、药物、浴厕环境或身份敏感资料。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* NIDDK urinary incontinence: https://www.niddk.nih.gov/health-information/urologic-diseases/bladder-control-problems
+* NIDDK fecal incontinence: https://www.niddk.nih.gov/health-information/digestive-diseases/fecal-incontinence
+* HHS OWH urinary incontinence: https://www.womenshealth.gov/a-z-topics/urinary-incontinence
+
+== 下一步 ==
+
+* 建立 Pelvic Floor Continuity Card：symptoms, referral, rehabilitation access, supplies, bathroom environment, stigma, participation。
+* 与 <code>urogenital-continuity/</code>、<code>rehabilitation-functioning/</code> 和 <code>fall-risk-prevention-home-safety-continuity/</code> 建立接口。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C6研究域|C6研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c6-local-unlocking/pelvic-floor-continence-function-continuity/README.md Human Infra 仓库：domains/c6-local-unlocking/pelvic-floor-continence-function-continuity/README.md]
+
+[[Category:C6研究域]]

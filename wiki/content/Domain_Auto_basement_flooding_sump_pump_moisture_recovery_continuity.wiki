@@ -1,0 +1,83 @@
+{{研究域
+|域 ID=domain.basement-flooding-sump-pump-moisture-recovery-continuity
+|C 层级=C5：可能性生态承载层
+|研究对象=Basement Flooding Sump Pump Moisture Recovery Continuity
+|持续性作用=关键词显示该域主要承载能源、水、食物、住房、治理、经济、通信、灾害或基础设施环境。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c5-ecological-substrate/basement-flooding-sump-pump-moisture-recovery-continuity
+}}
+
+'''Basement Flooding Sump Pump Moisture Recovery Continuity'''是 Human Infra 在“外部生态承载”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要承载能源、水、食物、住房、治理、经济、通信、灾害或基础设施环境。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C5“可能性生态承载层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>basement-flooding-sump-pump-moisture-recovery-continuity</code> 研究地下室进水、sump pump、排水、潮湿、断电、霉菌风险和洪水后恢复如何影响住房可居住性、储物、设备、空气质量和恢复时间。
+
+<blockquote>核心问题：家庭底层空间常承载设备、文件、药品、储物和避难功能；进水与潮湿恢复失败会把一次性水害转成长期空气、财产和居住稳定性损耗。
+</blockquote>
+== 关注对象 ==
+
+* 地下室进水、sump pump、排水、地表径流、断电、备电、潮湿材料、清理恢复和霉菌风险。
+* 电气设备、HVAC、热水器、文件、药品、食物储备、可访问通道和家庭恢复空间。
+* 洪水后室内空气、干燥时间、维修协调、保险/援助、租赁责任、老年/残障家庭和低收入恢复负担。
+* 与家庭维修、灾后恢复、室内空气、公共卫生和住房稳定的接口。
+
+<span id="human-infra-链路"></span>
+== Human Infra 链路 ==
+
+<pre>地下室进水与潮湿恢复连续
+  -> 家庭底层空间水害更早发现并可恢复
+  -> 设备、文件、储物、空气质量和通行功能更可靠
+  -> 霉菌、财产损失、维修延误和居住中断风险下降
+  -> 家庭恢复空间、有效时间和资源稳定性增强</pre>
+== 非目标 ==
+
+* 不提供电气进入、抽水操作、霉菌清理步骤、施工防水、保险索赔、承包商谈判或灾害现场判断。
+* 不替代 EPA、CDC、FEMA、地方应急管理、持证维修商、电工、保险、房东/物业或公共卫生。
+* 不把地下室进水问题写成 DIY 灾害恢复教程；本域只处理风险链、恢复断点和主体持续性后果。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* EPA Flood Cleanup to Protect Indoor Air and Health: https://www.epa.gov/emergencies-iaq/flood-cleanup-protect-indoor-air-and-your-health
+* EPA Septic maintenance context for sewage/flood interfaces: https://www.epa.gov/septic/why-maintain-your-septic-system
+
+== 下一步 ==
+
+* 建立 <code>water intrusion -&gt; pump/power/drainage state -&gt; drying/repair delay -&gt; housing task -&gt; continuity outcome</code> 变量表。
+* 区分普通渗水、暴雨、河流洪水、污水回流、断电、租房、多代同住和医疗设备家庭场景。
+* 与 <code>disaster-recovery-relief-continuity</code>、<code>mold-dampness-indoor-biological-exposure</code> 和 <code>household-maintenance-repair-contractor-continuity</code> 建立边界。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C5研究域|C5研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c5-ecological-substrate/basement-flooding-sump-pump-moisture-recovery-continuity/README.md Human Infra 仓库：domains/c5-ecological-substrate/basement-flooding-sump-pump-moisture-recovery-continuity/README.md]
+
+[[Category:C5研究域]]

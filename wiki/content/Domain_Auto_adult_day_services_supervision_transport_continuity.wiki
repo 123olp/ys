@@ -1,0 +1,91 @@
+{{研究域
+|域 ID=domain.adult-day-services-supervision-transport-continuity
+|C 层级=C5：可能性生态承载层
+|研究对象=Adult Day Services Supervision Transport Continuity
+|持续性作用=关键词显示该域主要承载能源、水、食物、住房、治理、经济、通信、灾害或基础设施环境。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c5-ecological-substrate/adult-day-services-supervision-transport-continuity
+}}
+
+'''Adult Day Services Supervision Transport Continuity'''是 Human Infra 在“外部生态承载”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要承载能源、水、食物、住房、治理、经济、通信、灾害或基础设施环境。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C5“可能性生态承载层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>adult-day-services-supervision-transport-continuity/</code> 研究 adult day services、日间照护、监督、活动、健康观察、餐食和往返交通如何影响失能、认知衰退、孤立或照护者过载场景中的主体持续性。
+
+<blockquote>核心问题：长期照护不只发生在家庭或机构。日间服务可以把白天监督、活动、餐食、社交、照护者喘息和交通组织成中间层，防止主体被困在“独自在家”和“机构化”之间。
+</blockquote>
+== 先验位置 ==
+
+<pre>有效永生 / 主体持续性最大化
+  -> 主体可能在部分失能、认知衰退或孤立状态中仍能参与社区
+  -> 白天监督、活动、营养、交通和照护者喘息必须可连续
+  -> adult day services 成为居家生活与机构照护之间的执行缓冲层</pre>
+== 关注对象 ==
+
+* Adult day services、adult day health care、社会活动、监督、安全观察和日间结构。
+* 往返交通、接送时间、活动参与、餐食、药物提醒边界和照护者工作时间。
+* 痴呆、残障、老年脆弱、社交孤立和家庭照护过载场景。
+* 与 <code>caregiving-long-term-care/</code>、<code>family-caregiver-respite-work-continuity/</code>、<code>home-delivered-meals-congregate-nutrition-services-continuity/</code> 的接口。
+
+<span id="human-infra-模型链路"></span>
+== Human Infra 模型链路 ==
+
+<pre>成人日间服务基础设施
+  -> 改变监督、活动、餐食、交通和照护者喘息变量
+  -> 改变主体白天安全、社交参与和家庭照护负担状态
+  -> 降低孤立、跌倒未发现、照护者退出和过早机构化风险
+  -> 增加有效时间、关系参与和居家持续性</pre>
+== 非目标 ==
+
+* 不推荐具体 adult day center、交通服务、项目质量或个人照护安排。
+* 不判断资格、保险覆盖、Medicaid/HCBS、长期照护保险或费用责任。
+* 不制定个人日间照护计划、活动计划、交通路线、药物提醒或安全监督方案。
+* 不收集个人健康、认知、行为、照护者、住址、交通或支付资料。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* Eldercare Locator: https://eldercare.acl.gov/
+* ACL National Family Caregiver Support Program: https://acl.gov/programs/support-caregivers/national-family-caregiver-support-program
+* Medicaid Home &amp; Community Based Services: https://www.medicaid.gov/medicaid/home-community-based-services/index.html
+* NIA Caregiving: https://www.nia.nih.gov/health/caregiving
+
+== 下一步 ==
+
+* 建立 adult day services 变量表：监督时间、交通接续、活动参与、餐食、照护者喘息、服务中断和过早机构化风险。
+* 整理 adult day、HCBS、respite 和 caregiver support 的 Source Cards。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C5研究域|C5研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c5-ecological-substrate/adult-day-services-supervision-transport-continuity/README.md Human Infra 仓库：domains/c5-ecological-substrate/adult-day-services-supervision-transport-continuity/README.md]
+
+[[Category:C5研究域]]

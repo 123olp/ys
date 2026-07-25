@@ -1,0 +1,18 @@
+{{证据来源
+|来源 ID=evidence.singularity.vinge-chalmers
+|来源类型=未来研究与哲学论证
+|完整引文=Vernor Vinge, The Coming Technological Singularity, 1993; David Chalmers, The Singularity: A Philosophical Analysis, 2010.
+|URL 或 DOI=https://ntrs.nasa.gov/citations/19940022856 ; https://consc.net/papers/singularity.pdf
+|支持范围=超人智能、递归改进和智能爆炸假设的经典表述
+|不支持的推论=不支持奇点必然发生、具体时间表或奇点必然带来永生
+|审查状态=已核对 NASA 记录与作者论文
+|访问日期=2026-07-24
+}}
+
+== 支持范围 ==
+
+Vinge 将超人智能的出现视为技术变化结构性断裂的来源；Chalmers 将递归产生更强系统的智能爆炸论证形式化。
+
+== 不支持的推论 ==
+
+这些文本提出和分析假设，不是对未来时间、增长率或治理结果的实验验证。

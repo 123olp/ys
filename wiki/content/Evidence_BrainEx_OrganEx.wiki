@@ -1,0 +1,16 @@
+{{证据来源
+|来源 ID=evidence.nih.brainex-organex
+|来源类型=NIH研究解读
+|完整引文=National Institutes of Health. Restoring cell and organ function after the heart stops.
+|URL 或 DOI=https://www.nih.gov/news-events/nih-research-matters/restoring-cell-organ-function-after-heart-stops
+|支持范围=OrganEx和BrainEx对缺血后细胞、组织与部分器官过程恢复的研究
+|不支持的推论=不支持整体脑功能、意识、人格或死亡逆转已经实现
+|审查状态=已核对NIH原始页面
+|访问日期=2026-07-25
+}}
+
+== 支持范围 ==
+用于说明传统不可逆损伤边界可能包含可研究的细胞恢复窗口。
+
+== 不支持的推论 ==
+细胞完整、循环恢复或局部活动不能解释为意识恢复或主体复活。

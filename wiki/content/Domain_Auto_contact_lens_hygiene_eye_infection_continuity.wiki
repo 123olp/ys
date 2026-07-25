@@ -1,0 +1,84 @@
+{{研究域
+|域 ID=domain.contact-lens-hygiene-eye-infection-continuity
+|C 层级=C2：可能性源体维护层
+|研究对象=Contact Lens Hygiene Eye Infection Continuity
+|持续性作用=关键词显示该域主要维护身体、脑、器官、细胞、急性生命风险或衰老损伤控制。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c2-source-maintenance/contact-lens-hygiene-eye-infection-continuity
+}}
+
+'''Contact Lens Hygiene Eye Infection Continuity'''是 Human Infra 在“生命载体维护”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要维护身体、脑、器官、细胞、急性生命风险或衰老损伤控制。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C2“可能性源体维护层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>contact-lens-hygiene-eye-infection-continuity</code> 研究隐形眼镜佩戴、清洁、储存、替换、护理液、处方更新和感染风险如何影响视觉任务、工作学习、出行和眼部安全连续性。
+
+<blockquote>核心问题：隐形眼镜不是单纯屈光矫正用品；它把视觉带宽、手部卫生、耗材供应、佩戴习惯、感染入口和眼科转诊连成一个日常风险系统。
+</blockquote>
+== 关注对象 ==
+
+* 隐形眼镜、护理液、镜盒、替换周期、处方有效性、佩戴场景和卫生行为。
+* 角膜感染、疼痛、红眼、视力变化、眼表损伤和医疗延迟的任务影响。
+* 学校、工作、运动、旅行、灾害、住房不稳、清洁水可及和替代眼镜路径。
+* 与屈光矫正、眼表舒适、眼外伤、WASH、医疗器械和药店/眼科服务的接口。
+
+<span id="human-infra-链路"></span>
+== Human Infra 链路 ==
+
+<pre>隐形眼镜卫生连续
+  -> 主体能够稳定获得清晰视觉输入且不把矫正工具变成感染入口
+  -> 清洁水、护理液、镜盒、替换周期和转诊入口的断点被提前识别
+  -> 阅读、驾驶、屏幕任务、学习、工作和空间行动的低层视觉摩擦下降
+  -> 有效时间、行动安全和未来选择权增强</pre>
+== 非目标 ==
+
+* 不提供验光、隐形眼镜处方、品牌推荐、佩戴时长、感染判断、眼科治疗或急症处置建议。
+* 不替代眼科医生、验光师、FDA、CDC、NEI 或产品标签。
+* 不把隐形眼镜作为绕过职业安全、防护眼镜或眼伤转诊的替代方案。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* CDC Contact Lenses: https://www.cdc.gov/contact-lenses/
+* NEI Contact Lenses: https://www.nei.nih.gov/eye-health-information/healthy-vision/contact-lenses
+* FDA Medical Devices - Contact Lenses search entry may move; prefer CDC/NEI for stable hygiene and eye health facts.
+
+== 下一步 ==
+
+* 建立 <code>lens type -&gt; hygiene dependency -&gt; supply dependency -&gt; eye risk -&gt; task impact</code> 变量表。
+* 区分日常佩戴、游泳/淋浴、睡眠佩戴、旅行、灾害、青少年和住房/水卫生不稳场景。
+* 与 <code>refractive-error-glasses-contact-lens-continuity</code>、<code>dry-eye-ocular-surface-comfort-continuity</code> 和 <code>eye-injury-urgent-vision-protection-continuity</code> 建立边界。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C2研究域|C2研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c2-source-maintenance/contact-lens-hygiene-eye-infection-continuity/README.md Human Infra 仓库：domains/c2-source-maintenance/contact-lens-hygiene-eye-infection-continuity/README.md]
+
+[[Category:C2研究域]]

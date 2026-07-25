@@ -1,0 +1,84 @@
+{{研究域
+|域 ID=domain.home-water-valve-plumbing-labeling-continuity
+|C 层级=C5：可能性生态承载层
+|研究对象=Home Water Valve Plumbing Labeling Continuity
+|持续性作用=关键词显示该域主要承载能源、水、食物、住房、治理、经济、通信、灾害或基础设施环境。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c5-ecological-substrate/home-water-valve-plumbing-labeling-continuity
+}}
+
+'''Home Water Valve Plumbing Labeling Continuity'''是 Human Infra 在“外部生态承载”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要承载能源、水、食物、住房、治理、经济、通信、灾害或基础设施环境。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C5“可能性生态承载层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>home-water-valve-plumbing-labeling-continuity</code> 研究家庭主水阀、分区阀、fixture valves、管线标签、漏水记录和水系统交接资料如何影响漏水响应、卫生任务、维修协作和灾后恢复连续性。
+
+<blockquote>核心问题：家庭水系统的失败经常从小漏点变成墙体、地板、霉菌、卫生和居住恢复问题；水路位置、阀门职责和维修记录不可读，会让可控事件变成长期恢复负担。
+</blockquote>
+== 关注对象 ==
+
+* 主水阀、分区阀、fixture shutoffs、热水器/洗衣机/洗碗机供水接口、管线标签、漏水历史和维修记录。
+* 地下室、阁楼、车库、厨房、卫生间、洗衣区、出租房、老旧住房和灾后返家场景。
+* 水路地图、标签、照片索引、维修单和交接说明如何帮助家庭成员、房东、物业、照护者和专业人员协作。
+* 与饮用水安全、premise plumbing、地下室洪水、霉菌、家电维护和家庭运行地图的接口。
+
+<span id="human-infra-链路"></span>
+== Human Infra 链路 ==
+
+<pre>家庭水路与阀门资料可读
+  -> 漏水、维修和灾后返家时的定位与沟通成本下降
+  -> 水损、霉菌、卫生中断、家电停用和住房恢复延迟风险下降
+  -> 饮水、清洁、洗浴、做饭、洗衣和照护任务更稳定
+  -> 家庭水系统从隐蔽管线变成可维护的生活基础设施</pre>
+== 非目标 ==
+
+* 不提供阀门操作、管道维修、漏水判断、热水器维修、灾后返家许可、霉菌处置、建筑改造或个案水质建议。
+* 不替代持证 plumber、房东/物业、本地建筑规范、水务公司、保险、公共卫生或应急服务。
+* 不收集房屋水路图、住址、阀门位置照片、安防信息、账户或其他可被滥用的设施资料。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* EPA Septic and household water materials: https://www.epa.gov/septic/how-care-your-septic-system
+* EPA Flood Cleanup and Indoor Air: https://www.epa.gov/emergencies-iaq/flood-cleanup-protect-indoor-air-and-your-health
+* Ready.gov Document and Insure Your Property: https://www.ready.gov/sites/default/files/2020-03/ready_document-and-insure-your-property.pdf
+
+== 下一步 ==
+
+* 建立 <code>water interface map -&gt; leak/repair handoff -&gt; water-damage risk -&gt; continuity outcome</code> 变量表。
+* 区分主水入口、局部分区、热水设备、家电供水、租赁责任和灾后恢复。
+* 与 <code>premise-plumbing-backflow-cross-connection-continuity</code>、<code>basement-flooding-sump-pump-moisture-recovery-continuity</code> 和 <code>household-operating-map-handoff-continuity</code> 建立边界。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C5研究域|C5研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c5-ecological-substrate/home-water-valve-plumbing-labeling-continuity/README.md Human Infra 仓库：domains/c5-ecological-substrate/home-water-valve-plumbing-labeling-continuity/README.md]
+
+[[Category:C5研究域]]

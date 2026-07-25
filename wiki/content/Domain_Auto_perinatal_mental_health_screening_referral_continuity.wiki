@@ -1,0 +1,80 @@
+{{研究域
+|域 ID=domain.perinatal-mental-health-screening-referral-continuity
+|C 层级=C4：可能性转换通道层
+|研究对象=Perinatal Mental Health Screening Referral Continuity
+|持续性作用=关键词显示该域主要处理研究、数据、模型、服务入口、身份记录、转化或治理接口。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c4-conversion-channel/perinatal-mental-health-screening-referral-continuity
+}}
+
+'''Perinatal Mental Health Screening Referral Continuity'''是 Human Infra 在“路径转换接口”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要处理研究、数据、模型、服务入口、身份记录、转化或治理接口。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C4“可能性转换通道层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+围产期心理健康筛查与转介连续性，关注怀孕至产后期间的抑郁、焦虑、创伤、强迫症状、物质使用、亲密伴侣暴力、危机入口、筛查工具、转介闭环、保险和同伴支持边界。
+
+== 对象 ==
+
+* Perinatal depression and anxiety screening
+* Referral and treatment access pathway
+* Crisis and emergency boundary
+* Trauma, substance use and IPV screening interface
+* Insurance, language and culturally safe care
+* Peer support and community programs
+* Follow-up closure and warm handoff
+
+<span id="human-infra-价值"></span>
+== Human Infra 价值 ==
+
+围产期心理健康会影响睡眠、判断、照护、亲子关系、工作学习、身体恢复和危机风险。该域把“心理风险是否被发现、转接并持续跟进”建模为主体和下一代持续性的关键恢复系统。
+
+== 边界 ==
+
+* 不提供诊断、量表解释、治疗、药物、自伤/他伤判断、危机干预、家庭暴力处置、物质使用治疗、亲子风险判断或个体心理建议。
+* 不判断个人是否有产后抑郁、焦虑、精神病、创伤、成瘾、家庭暴力风险或儿童安全风险。
+* 不替代心理健康专业人员、OB/GYN、pediatrics、crisis hotline、IPV advocate、substance-use treatment、儿童保护、律师或紧急服务。
+
+== 上游与下游 ==
+
+* 上游：<code>prenatal-care-access-risk-screening-continuity/</code>、<code>postpartum-care-recovery-follow-up-continuity/</code>、<code>pregnancy-loss-stillbirth-bereavement-continuity/</code>。
+* 下游：<code>maternal-newborn-child-development/</code>、<code>suicide-crisis-response-continuity/</code>、<code>family-caregiver-respite-work-continuity/</code>。
+
+== 初始资料线索 ==
+
+* ACOG perinatal mental health screening guidance.
+* HRSA maternal mental health resources.
+* SAMHSA and National Maternal Mental Health Hotline resources.
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C4研究域|C4研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c4-conversion-channel/perinatal-mental-health-screening-referral-continuity/README.md Human Infra 仓库：domains/c4-conversion-channel/perinatal-mental-health-screening-referral-continuity/README.md]
+
+[[Category:C4研究域]]

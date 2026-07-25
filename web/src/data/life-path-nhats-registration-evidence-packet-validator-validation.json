@@ -1,7 +1,7 @@
 {
   "schemaVersion": "human-infra.life-path-nhats-registration-evidence-packet-validator-validation.v1",
   "validationId": "nhats-registration-evidence-packet-validator-validation-2026-07-04",
-  "generatedAt": "2026-07-10T22:39:16.835770+00:00",
+  "generatedAt": "2026-07-25T00:41:57.931751+00:00",
   "status": "pass",
   "sourceRefs": {
     "testCasesPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_registration_evidence_packet_validator_test_cases.json",
@@ -96,8 +96,8 @@
       "actualVerdict": "rejected",
       "passed": true,
       "rejectReasons": [
-        "extractionScriptAllowed must be false",
         "calibrationAllowed must be false",
+        "extractionScriptAllowed must be false",
         "downloadAllowed must be false"
       ],
       "cannotEvaluateReasons": [

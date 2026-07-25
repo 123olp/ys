@@ -1,0 +1,83 @@
+{{研究域
+|域 ID=domain.fall-detection-emergency-response-device-continuity
+|C 层级=C5：可能性生态承载层
+|研究对象=Fall Detection Emergency Response Device Continuity
+|持续性作用=关键词显示该域主要承载能源、水、食物、住房、治理、经济、通信、灾害或基础设施环境。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c5-ecological-substrate/fall-detection-emergency-response-device-continuity
+}}
+
+'''Fall Detection Emergency Response Device Continuity'''是 Human Infra 在“外部生态承载”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要承载能源、水、食物、住房、治理、经济、通信、灾害或基础设施环境。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C5“可能性生态承载层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>fall-detection-emergency-response-device-continuity</code> 研究跌倒检测、个人紧急响应设备、传感器、按钮、佩戴/充电、蜂窝/网络连接、误报漏报、照护者通知和 911/EMS 连接如何影响独居、老年、残障和高跌倒风险主体的求助连续性。
+
+<blockquote>核心问题：跌倒后的关键不是设备存在，而是事件被发现、信号被传出、联系人能响应、服务能到达；任何一环断裂都会把可救助事件变成长时间无人发现。
+</blockquote>
+== 关注对象 ==
+
+* 跌倒检测设备、个人紧急响应按钮、床椅传感器、穿戴设备、充电、电池、网络连接、照护者通知和 EMS/911 连接。
+* 误报、漏报、设备未佩戴、隐私、监控疲劳、照护者负担和服务响应时间。
+* 独居老人、残障主体、术后恢复、认知衰退、家庭照护、长期照护机构和灾害通信断点。
+* 与跌倒预防、家庭安全、应急通信、照护网络和医疗警报设备治理的接口。
+
+<span id="human-infra-链路"></span>
+== Human Infra 链路 ==
+
+<pre>跌倒检测与紧急响应设备连续
+  -> 主体在跌倒或急性失能后更可能被及时发现
+  -> 佩戴、供电、连接、通知和响应链断点下降
+  -> 长时间无人救助、并发损伤和照护者不确定性减少
+  -> 安全感、独立生活、关系支持和未来选择权增强</pre>
+== 非目标 ==
+
+* 不提供设备选购、品牌推荐、安装配置、急救指令、医学分诊、911 使用建议、监控方案或机构采购建议。
+* 不替代 CDC、NIA、FDA、EMS、照护计划、家庭安全评估或医疗专业人员。
+* 不把跌倒检测替代为跌倒预防；它只处理跌倒发生后的发现、通知和响应链。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* CDC Older Adult Falls: https://www.cdc.gov/falls/about/index.html
+* FDA Fall Prevention Alarm: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpcd/classification.cfm?id=PJO
+
+== 下一步 ==
+
+* 建立 <code>event detection -&gt; device power/connectivity -&gt; notification routing -&gt; response arrival -&gt; outcome</code> 变量表。
+* 区分居家独居、认知衰退、长期照护、术后恢复、灾害通信和误报疲劳场景。
+* 与 <code>fall-risk-prevention-home-safety-continuity</code>、<code>emergency-contact-next-of-kin-notification-continuity</code> 和 <code>emergency-alerts-communications</code> 建立边界。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C5研究域|C5研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c5-ecological-substrate/fall-detection-emergency-response-device-continuity/README.md Human Infra 仓库：domains/c5-ecological-substrate/fall-detection-emergency-response-device-continuity/README.md]
+
+[[Category:C5研究域]]

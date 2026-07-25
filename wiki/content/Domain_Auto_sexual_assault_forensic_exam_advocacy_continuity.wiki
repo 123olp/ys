@@ -1,0 +1,88 @@
+{{研究域
+|域 ID=domain.sexual-assault-forensic-exam-advocacy-continuity
+|C 层级=C6：局部可能性解锁层
+|研究对象=sexual-assault-forensic-exam-advocacy-continuity
+|持续性作用=未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c6-local-unlocking/sexual-assault-forensic-exam-advocacy-continuity
+}}
+
+'''sexual-assault-forensic-exam-advocacy-continuity'''是 Human Infra 在“局部阻塞解除”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C6“局部可能性解锁层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>sexual-assault-forensic-exam-advocacy-continuity</code> 研究性暴力发生后，医疗照护、forensic exam、SANE/SAFE 服务、advocacy、证据保存边界、匿名/限制报告选项、创伤支持和权利告知如何影响主体身体恢复、心理恢复、法律参与和未来选择权。
+
+<span id="scope"></span>
+== Scope ==
+
+* Sexual assault、rape crisis response、medical forensic examination、SANE/SAFE、advocacy、crisis counseling 和 victim rights information。
+* 医疗照护、药物预防、证据采集流程说明、报告选项、保密、语言可达、残障可达和未成年人边界。
+* 与校园、军队、拘押、医疗机构、移民和家庭暴力交叉的公开制度资料。
+
+<span id="continuity-logic"></span>
+== Continuity Logic ==
+
+<pre>性暴力事件
+-> 身体伤害、感染风险、创伤反应、证据时效和制度参与压力同时出现
+-> 医疗 forensic exam、advocacy、保密选项和权利告知成为恢复接口
+-> 接口缺失会增加健康风险、二次伤害、法律退出和长期创伤负荷</pre>
+<span id="source-spine"></span>
+== Source Spine ==
+
+* DOJ Office on Violence Against Women sexual assault materials.
+* Office for Victims of Crime sexual assault and victim services materials.
+* CDC sexual violence prevention resources.
+* HHS Office on Women's Health sexual assault resources.
+* SAFEta / national protocol materials where used as public professional guidance.
+
+<span id="evidence-boundary"></span>
+== Evidence Boundary ==
+
+本域只整理公开性暴力响应、医疗 forensic exam、受害者 advocacy、报告选项和创伤支持资料。
+
+Do not include:
+
+* 个案医疗建议、证据采集建议、报警策略、诉讼策略、校园投诉策略、移民策略或安全计划。
+* 可用于制造、隐藏、伪造、污染、破坏或操控证据的信息。
+* 识别受害者、加害者、医疗人员、服务点或未成年人的信息。
+
+<span id="upstream--downstream"></span>
+== Upstream / Downstream ==
+
+* Upstream: <code>personal-safety-violence-prevention/</code>, <code>healthcare-access-continuity/</code>, <code>healthcare-civil-rights-nondiscrimination-continuity/</code>.
+* Downstream: <code>victim-witness-rights-notification-continuity/</code>, <code>crime-victim-compensation-restitution-continuity/</code>, <code>campus-safety-title-ix-clery-continuity/</code>, <code>mental-health-affective-stability/</code>.
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C6研究域|C6研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c6-local-unlocking/sexual-assault-forensic-exam-advocacy-continuity/README.md Human Infra 仓库：domains/c6-local-unlocking/sexual-assault-forensic-exam-advocacy-continuity/README.md]
+
+[[Category:C6研究域]]

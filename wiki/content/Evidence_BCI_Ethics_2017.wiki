@@ -1,0 +1,18 @@
+{{证据来源
+|来源 ID=evidence.bmc.bci-ethics-2017
+|来源类型=同行评审范围综述
+|完整引文=Burwell S, Sample M, Racine E. Ethical aspects of brain computer interfaces: a scoping review. BMC Medical Ethics. 2017.
+|URL 或 DOI=https://pmc.ncbi.nlm.nih.gov/articles/PMC5680604/
+|支持范围=脑机接口的人格、自主、隐私、安全、责任和公平问题
+|不支持的推论=不支持脑机接口能够读出任意思想或实现通用认知增强
+|审查状态=已核对 PMC 全文
+|访问日期=2026-07-24
+}}
+
+== 支持范围 ==
+
+用于给脑机接口和人体增强节点建立全生命周期伦理与治理变量。
+
+== 不支持的推论 ==
+
+伦理问题的存在既不证明技术可行，也不证明技术不可接受；具体用途必须单独评估。

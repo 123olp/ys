@@ -1,0 +1,88 @@
+{{研究域
+|域 ID=domain.banking-deposit-account-access-continuity
+|C 层级=C5：可能性生态承载层
+|研究对象=银行账户、存款保险与账户访问连续性
+|持续性作用=关键词显示该域主要承载能源、水、食物、住房、治理、经济、通信、灾害或基础设施环境。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c5-ecological-substrate/banking-deposit-account-access-continuity
+}}
+
+'''银行账户、存款保险与账户访问连续性'''是 Human Infra 在“外部生态承载”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要承载能源、水、食物、住房、治理、经济、通信、灾害或基础设施环境。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C5“可能性生态承载层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+本域研究银行账户、存款保险、账户访问、支付入口和账户恢复如何支撑主体对日常资源的持续控制。它关注的是主体能否稳定保存、接收、支付和转移资源，而不是个人开户、理财、贷款或银行操作建议。
+
+== 研究对象 ==
+
+* 银行账户、信用社账户、储蓄账户、支票账户和账户访问凭据。
+* 存款保险、机构倒闭处置、账户冻结、错误交易、争议和恢复入口。
+* 直接存款、电子支付、账单支付、自动扣款和身份验证断点。
+* 银行服务可及性与数字身份、地址、收入、福利、税务和照护代理的依赖关系。
+
+== 价值链路 ==
+
+<pre>主体需要持续控制可用资金
+  -> 银行和信用社账户把收入、福利、储蓄和支付连接到日常生活
+  -> 存款保险、账户恢复、错误纠正和争议机制降低账户失效风险
+  -> 账户冻结、凭据丢失、机构倒闭、身份错配或数字排除会截断资源流
+  -> 银行账户连续性把金融资源从名义资产转化为可调用的行动能力</pre>
+== 关键问题 ==
+
+* 账户访问失败会如何影响住房、食物、医疗、交通、通信和照护支付？
+* 存款保险、机构处置和账户迁移如何降低金融机构失效对主体的冲击？
+* 数字身份、地址、姓名、死亡/失能记录和代理权限如何影响账户连续性？
+* 账户争议、错误交易、欺诈恢复和投诉系统如何把资金损失转化为可修复问题？
+
+== 上游与下游 ==
+
+* 上游：<code>digital-identity-security/</code>、<code>name-change-identity-record-synchronization-continuity/</code>、<code>address-residency-mail-service-continuity/</code>、<code>income-payroll-employment-record-continuity/</code>。
+* 下游：<code>financial-inclusion-payment-systems/</code>、<code>social-protection-benefits-delivery/</code>、<code>financial-fiduciary-power-of-attorney-continuity/</code>、<code>fraud-scams-consumer-protection/</code>、<code>contract-subscription-billing-consent-continuity/</code>。
+
+== 非目标 ==
+
+* 不提供开户、换银行、存款分散、理财、投资、借贷、信用卡、税务、债务、保险或个体金融建议。
+* 不判断个人账户冻结、争议、欺诈、机构倒闭赔付、投诉或法律责任。
+* 不协助规避 KYC、反洗钱、制裁、税务、债务、法院命令或账户风控。
+
+== 初始资料入口 ==
+
+* FDIC: Deposit Insurance
+* FDIC: BankFind Suite and consumer resources
+* NCUA: Share Insurance
+* CFPB: Bank accounts and payment complaints
+* Federal Reserve: Payment systems materials
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C5研究域|C5研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c5-ecological-substrate/banking-deposit-account-access-continuity/README.md Human Infra 仓库：domains/c5-ecological-substrate/banking-deposit-account-access-continuity/README.md]
+
+[[Category:C5研究域]]

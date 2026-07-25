@@ -1,0 +1,89 @@
+{{研究域
+|域 ID=domain.fall-risk-prevention-home-safety-continuity
+|C 层级=C5：可能性生态承载层
+|研究对象=Fall Risk Prevention Home Safety Continuity
+|持续性作用=关键词显示该域主要承载能源、水、食物、住房、治理、经济、通信、灾害或基础设施环境。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c5-ecological-substrate/fall-risk-prevention-home-safety-continuity
+}}
+
+'''Fall Risk Prevention Home Safety Continuity'''是 Human Infra 在“外部生态承载”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要承载能源、水、食物、住房、治理、经济、通信、灾害或基础设施环境。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C5“可能性生态承载层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>fall-risk-prevention-home-safety-continuity/</code> 研究跌倒风险筛查、药物/视力/平衡/环境因素、家居安全、社区项目、跌倒后恢复和恐惧回避如何影响主体持续性。
+
+<blockquote>核心问题：跌倒不是单次意外，而是视觉、前庭、肌力、药物、环境、认知和照护系统共同失稳的结果。有效永生需要把跌倒预防建模为避免骨折、脑损伤、恐惧回避和行动半径收缩的日常基础设施。
+</blockquote>
+== 先验位置 ==
+
+<pre>有效永生 / 主体持续性最大化
+  -> 主体依赖安全站立、转移、行走和家居移动维持独立生活
+  -> 跌倒会把轻微环境摩擦转化为骨折、TBI、恐惧和机构化风险
+  -> 结果取决于风险识别、家居环境、药物审查、视力/平衡/肌力和社区支持
+  -> 因此跌倒风险预防是行动连续性和居家安全的执行域</pre>
+== 关注对象 ==
+
+* Fall risk screening, STEADI-like workflows, home safety, medication review, vision/balance/strength interfaces, fear of falling, post-fall follow-up。
+* 与 <code>musculoskeletal-integrity/</code> 和 <code>vestibular-balance-spatial-orientation/</code> 的边界：这些域关注身体结构与平衡机制；本域关注跌倒风险如何在家居和社区执行层被识别、降低和复盘。
+* 与 <code>built-environment-accessibility-universal-design/</code> 的关系：家居和公共空间设计是跌倒风险控制的外部条件。
+
+<span id="human-infra-模型链路"></span>
+== Human Infra 模型链路 ==
+
+<pre>跌倒风险预防系统 T
+  -> 改变风险筛查、家居安全、药物审查、视力/平衡/肌力接口和复盘变量 X
+  -> 改变跌倒概率、损伤严重度、移动信心和独立生活状态 S
+  -> 改变骨折、TBI、机构化、照护负担和有效时间损失 λ(t)
+  -> 影响主体行动半径、自主性和未来选择权</pre>
+== 非目标 ==
+
+* 不提供个人跌倒风险判断、家庭改造、训练动作、药物调整、辅具选择、驾驶/活动许可、急救或康复建议。
+* 不生成家居安全个案清单、设备购买、监控布置、责任判断、保险或法律建议。
+* 不收集个案居住平面、跌倒史、药物、影像、视频、位置或诊疗资料。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* CDC STEADI: https://www.cdc.gov/steadi/
+* CDC older adult fall prevention: https://www.cdc.gov/falls/
+* NIA falls and fractures: https://www.nia.nih.gov/health/falls-and-falls-prevention
+
+== 下一步 ==
+
+* 建立 Fall Prevention Card：screening, medication, vision/balance/strength, home safety, post-fall review, fear of falling。
+* 与 <code>musculoskeletal-integrity/</code>、<code>vestibular-balance-spatial-orientation/</code>、<code>osteoporosis-fracture-prevention-bone-health-continuity/</code> 和 <code>built-environment-accessibility-universal-design/</code> 建立接口。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C5研究域|C5研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c5-ecological-substrate/fall-risk-prevention-home-safety-continuity/README.md Human Infra 仓库：domains/c5-ecological-substrate/fall-risk-prevention-home-safety-continuity/README.md]
+
+[[Category:C5研究域]]

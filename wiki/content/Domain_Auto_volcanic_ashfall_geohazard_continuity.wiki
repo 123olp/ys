@@ -1,0 +1,84 @@
+{{研究域
+|域 ID=domain.volcanic-ashfall-geohazard-continuity
+|C 层级=C5：可能性生态承载层
+|研究对象=Volcanic Ashfall and Geohazard Continuity
+|持续性作用=关键词显示该域主要承载能源、水、食物、住房、治理、经济、通信、灾害或基础设施环境。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c5-ecological-substrate/volcanic-ashfall-geohazard-continuity
+}}
+
+'''Volcanic Ashfall and Geohazard Continuity'''是 Human Infra 在“外部生态承载”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要承载能源、水、食物、住房、治理、经济、通信、灾害或基础设施环境。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C5“可能性生态承载层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+== 核心问题 ==
+
+火山活动和火山灰决定地质灾害能否通过空气质量、航空、供水、农业、建筑、能源和健康系统，形成跨区域主体持续性断点。
+
+Human Infra 关注的问题不是火山学本身，而是：
+
+<pre>火山喷发和火山灰如何把地质事件转化为健康、交通、食物、水和基础设施连续性问题？</pre>
+== 先验位置 ==
+
+主体持续性需要可呼吸空气、可用水、运输、食物供应和公共服务。火山灰是复合风险载体：它可以同时影响肺部暴露、航空安全、屋顶负荷、供水处理、农作物和机械设备。
+
+== 关注对象 ==
+
+* 火山监测、喷发预警、火山灰扩散、火山气体和泥石流。
+* 空气质量、呼吸暴露、饮水、农业、航空、道路、屋顶负荷和设备磨损。
+* 避难、清灰、公共通信、服务恢复和长期社区韧性。
+
+<span id="human-infra-模型链路"></span>
+== Human Infra 模型链路 ==
+
+<pre>火山喷发 / 火山灰
+  -> 空气、水、交通、农业、建筑和设备受扰
+  -> 健康风险、供应链中断和公共服务恢复压力上升
+  -> 主体外部资源和行动路径收缩
+  -> 有效时间、恢复能力和未来选择权下降</pre>
+== 非目标 ==
+
+* 不提供火山喷发预测、避难命令、清灰操作、呼吸防护选择或建筑安全判断。
+* 不替代 USGS、气象、公共卫生、应急管理或地方政府信息。
+* 不把单次火山事件外推为全球确定性危机。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* USGS Volcano Hazards Program: https://www.usgs.gov/programs/VHP
+* USGS Volcanic Ash Impacts and Mitigation: https://volcanoes.usgs.gov/volcanic_ash/
+* Smithsonian Global Volcanism Program: https://volcano.si.edu/
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C5研究域|C5研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c5-ecological-substrate/volcanic-ashfall-geohazard-continuity/README.md Human Infra 仓库：domains/c5-ecological-substrate/volcanic-ashfall-geohazard-continuity/README.md]
+
+[[Category:C5研究域]]

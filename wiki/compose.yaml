@@ -1,0 +1,46 @@
+name: human-infra-wiki
+
+services:
+  db:
+    image: mariadb:11.8
+    restart: unless-stopped
+    environment:
+      MARIADB_DATABASE: ${MARIADB_DATABASE}
+      MARIADB_USER: ${MARIADB_USER}
+      MARIADB_PASSWORD: ${MARIADB_PASSWORD}
+      MARIADB_ROOT_PASSWORD: ${MARIADB_ROOT_PASSWORD}
+    command:
+      - --character-set-server=utf8mb4
+      - --collation-server=utf8mb4_unicode_ci
+    volumes:
+      - ./runtime/db:/var/lib/mysql
+    healthcheck:
+      test:
+        - CMD
+        - healthcheck.sh
+        - --connect
+        - --innodb_initialized
+      interval: 5s
+      timeout: 5s
+      retries: 30
+      start_period: 15s
+
+  wiki:
+    build:
+      context: .
+      args:
+        PAGE_FORMS_VERSION: "6.0.9"
+        PAGE_FORMS_SHA256: d4c4966169bde055b974eda3d9b79997d08f4a00514021631db6922ff09471cf
+    restart: unless-stopped
+    environment:
+      WIKI_SERVER: ${WIKI_SERVER}
+      WIKI_SITE_NAME: ${WIKI_SITE_NAME}
+    depends_on:
+      db:
+        condition: service_healthy
+    ports:
+      - "${WIKI_PORT}:80"
+    volumes:
+      - ./runtime/config:/config
+      - ./runtime/images:/var/www/html/images
+      - ./config/HumanInfraSettings.php:/opt/human-infra-wiki/HumanInfraSettings.php:ro

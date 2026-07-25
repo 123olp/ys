@@ -1,0 +1,87 @@
+{{研究域
+|域 ID=domain.lgbtq-health-identity-affirming-service-continuity
+|C 层级=C4：可能性转换通道层
+|研究对象=LGBTQ Health Identity Affirming Service Continuity
+|持续性作用=关键词显示该域主要处理研究、数据、模型、服务入口、身份记录、转化或治理接口。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c4-conversion-channel/lgbtq-health-identity-affirming-service-continuity
+}}
+
+'''LGBTQ Health Identity Affirming Service Continuity'''是 Human Infra 在“路径转换接口”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要处理研究、数据、模型、服务入口、身份记录、转化或治理接口。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C4“可能性转换通道层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+LGBTQ 健康、身份承认与肯定性服务连续性域研究：当主体的身体、亲密关系、家庭、身份文件、医疗访问、心理健康、学校、工作和公共服务受歧视或不承认影响时，如何维护主体持续性和未来选择权。
+
+== 对象 ==
+
+* LGBTQ health, identity recognition, nondiscrimination, affirming services, family and community support。
+* 医疗访问、心理健康、预防服务、性健康、慢病管理、青少年支持、老年服务和暴力风险。
+* 身份文件、姓名代词、家庭关系、学校和工作场所、住房、公共服务与民权保护。
+* 歧视、污名、少数压力、服务回避、隐私风险、数据收集边界和安全沟通。
+* 对主体行动能力、恢复能力、关系支持、健康寿命、有效时间和未来选择权的影响。
+
+<span id="human-infra-价值"></span>
+== Human Infra 价值 ==
+
+主体持续性需要制度承认主体是谁、与谁有关、如何安全进入服务。LGBTQ 健康与身份承认域把身份不承认、歧视、服务回避和隐私风险作为基础设施失效，而不是把问题降格为个人心理或生活方式。
+
+<pre>身份承认和肯定性服务被结构化治理
+  -> 医疗、学校、工作、家庭、住房和公共服务入口更安全
+  -> 歧视和不承认不再持续消耗主体恢复能力和未来选择权
+  -> 主体持续性、关系支持和长期行动能力提高</pre>
+== 边界 ==
+
+本域只整理公开 LGBTQ health、民权、服务可达、身份承认、隐私、社区支持和风险治理资料。
+
+不提供：
+
+* 个体医疗、心理、性健康、转诊、激素/手术、身份文件、法律、学校、职场或家庭冲突建议。
+* 对任何人的性取向、性别认同、隐私状态、风险状态或家庭关系做推断。
+* 危机干预、outing、监控、画像、歧视性分类、转换治疗或伤害性内容。
+* 把 LGBTQ 服务可达写成文化战争材料、政治宣传或商业定向获客方案。
+
+== 上游与下游 ==
+
+* 上游：<code>healthcare-civil-rights-nondiscrimination-continuity/</code>、<code>personal-safety-violence-prevention/</code>、<code>mental-health-affective-stability/</code>、<code>healthcare-access-continuity/</code>、<code>legal-identity-civil-registration/</code>。
+* 下游：<code>sexual-health-sti-prevention-continuity/</code>、<code>suicide-crisis-response-continuity/</code>、<code>housing-stability-affordability/</code>、<code>workplace-accommodation-return-to-work-continuity/</code>、<code>school-attendance-stability-continuity/</code>。
+
+== 初始资料线索 ==
+
+* CDC LGBT health public resources。
+* HHS Section 1557 and civil rights nondiscrimination resources。
+* SAMHSA and public health materials on behavioral health equity, minority stress and affirming services。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C4研究域|C4研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c4-conversion-channel/lgbtq-health-identity-affirming-service-continuity/README.md Human Infra 仓库：domains/c4-conversion-channel/lgbtq-health-identity-affirming-service-continuity/README.md]
+
+[[Category:C4研究域]]

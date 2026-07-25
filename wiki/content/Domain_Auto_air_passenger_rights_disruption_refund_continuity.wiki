@@ -1,0 +1,87 @@
+{{研究域
+|域 ID=domain.air-passenger-rights-disruption-refund-continuity
+|C 层级=C3：可能性生成引擎层
+|研究对象=航空旅客权利、中断与退款连续性
+|持续性作用=关键词显示该域主要增强认知、学习、工具、AI、技能或沟通能力。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c3-generation-engine/air-passenger-rights-disruption-refund-continuity
+}}
+
+'''航空旅客权利、中断与退款连续性'''是 Human Infra 在“主体能力生成”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要增强认知、学习、工具、AI、技能或沟通能力。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C3“可能性生成引擎层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+本域研究航班延误、取消、退款、拒载、行李责任、无障碍航空旅行和消费者投诉如何影响主体在远距离移动中的时间、资源和任务连续性。它关注的是航空服务中断的公共规则与恢复机制，而不是个人维权、赔偿或航空公司选择建议。
+
+== 研究对象 ==
+
+* 航班延误、取消、退款、拒载、停机坪延误、航班信息披露和航空消费者投诉。
+* 航空公司承运合同、DOT 航空消费者保护资料、服务承诺和公开 dashboard。
+* 残障旅客、辅助设备、服务动物、儿童、老年旅客和照护者在航空中断中的特殊断点。
+* 航空中断如何影响住宿、医疗预约、工作学习、照护交接、签证/入境窗口和回程能力。
+
+== 价值链路 ==
+
+<pre>远距离行动依赖航空服务按时、可解释、可恢复
+  -> 航班中断会消耗时间、现金、药物余量、住宿窗口和跨境安排
+  -> 退款、重新安排、投诉和无障碍义务决定主体能否从中断中恢复
+  -> 若规则不透明、通知失败或辅助需求被忽视，移动失败会扩散为工作、医疗、家庭和身份风险
+  -> 航空旅客权利连续性把航空中断从单次不便建模为主体行动链的恢复问题</pre>
+== 关键问题 ==
+
+* 航空中断如何改变主体有效时间、现金缓冲、治疗连续性和任务窗口？
+* 退款、改签、拒载和投诉规则如何作为公共制度变量进入 Human Infra？
+* 残障、辅助设备、服务动物和照护需求如何改变中断风险和恢复成本？
+* 如何避免把公共消费者保护资料误写成个案法律、赔偿或投诉策略？
+
+== 上游与下游 ==
+
+* 上游：<code>long-distance-travel-booking-itinerary-continuity/</code>、<code>passport-travel-document-mobility-continuity/</code>、<code>disability-services-independent-living/</code>。
+* 下游：<code>baggage-personal-property-travel-continuity/</code>、<code>lodging-temporary-accommodation-access-continuity/</code>、<code>travel-advisory-consular-assistance-continuity/</code>。
+
+== 非目标 ==
+
+* 不提供个人退款、赔偿、投诉、诉讼、航空公司选择、票价购买、改签或航班中断应对策略。
+* 不判断某个航班、航空公司、路线、机场、保险或服务是否适合个人。
+* 不收集机票、PNR、登机牌、身份文件、残障证明、行李标签或实时航班数据。
+
+== 初始资料入口 ==
+
+* U.S. Department of Transportation: Aviation Consumer Protection
+* U.S. DOT: Fly Rights and Airline Customer Service Dashboard
+* U.S. DOT: Passengers with Disabilities and Air Travel
+* Airline contracts of carriage as contextual materials
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C3研究域|C3研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c3-generation-engine/air-passenger-rights-disruption-refund-continuity/README.md Human Infra 仓库：domains/c3-generation-engine/air-passenger-rights-disruption-refund-continuity/README.md]
+
+[[Category:C3研究域]]

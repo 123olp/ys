@@ -1,0 +1,16 @@
+{{证据来源
+|来源 ID=evidence.fda.regenerative-medicine
+|来源类型=监管机构专题页
+|完整引文=U.S. Food and Drug Administration. Focus Area: Regenerative Medicine.
+|URL 或 DOI=https://www.fda.gov/science-research/focus-areas-regulatory-science-report/focus-area-regenerative-medicine
+|支持范围=再生医学定义、受监管产品类型和监管科学挑战
+|不支持的推论=不支持任何未批准细胞产品有效，也不支持全器官再生已经实现
+|审查状态=已核对FDA原始页面
+|访问日期=2026-07-25
+}}
+
+== 支持范围 ==
+FDA将再生医学描述为恢复、替换或重建细胞、组织或器官，并列出细胞疗法、组织工程、部分基因疗法和人体细胞组织产品。
+
+== 不支持的推论 ==
+监管分类不能替代具体产品的安全性、效力、制造质量和适应证证据。

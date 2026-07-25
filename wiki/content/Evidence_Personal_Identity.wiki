@@ -1,0 +1,18 @@
+{{证据来源
+|来源 ID=evidence.sep.personal-identity
+|来源类型=权威哲学百科
+|完整引文=Stanford Encyclopedia of Philosophy. Personal Identity.
+|URL 或 DOI=https://plato.stanford.edu/entries/identity-personal/
+|支持范围=人格跨时间同一、心理连续性、物理连续性与分支问题
+|不支持的推论=不支持任何心智上传方法已经保持原主体
+|审查状态=已核对百科条目
+|访问日期=2026-07-24
+}}
+
+== 支持范围 ==
+
+用于明确主体持续性不是单纯工程指标，并为复制、分支、记忆继承和身体连续性建立问题空间。
+
+== 不支持的推论 ==
+
+哲学理论不能替代神经科学证据，也不能单独裁定某项上传或复制技术成功。

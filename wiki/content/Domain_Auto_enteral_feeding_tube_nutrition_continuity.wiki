@@ -1,0 +1,86 @@
+{{研究域
+|域 ID=domain.enteral-feeding-tube-nutrition-continuity
+|C 层级=C6：局部可能性解锁层
+|研究对象=Enteral Feeding Tube Nutrition Continuity
+|持续性作用=未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c6-local-unlocking/enteral-feeding-tube-nutrition-continuity
+}}
+
+'''Enteral Feeding Tube Nutrition Continuity'''是 Human Infra 在“局部阻塞解除”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C6“局部可能性解锁层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+Enteral feeding tube nutrition continuity studies non-oral nutrition pathways when swallowing or intake is insufficient, focusing on nutrition delivery continuity, device dependence, infection risk, caregiver burden, dignity, and decision boundaries.
+
+核心问题：
+
+<blockquote>管饲不是“营养自动解决”，而是把营养入口转移到设备、护理、供应、并发症和决策权共同维护的外部系统。
+</blockquote>
+== 先验位置 ==
+
+<pre>主体持续性最大化
+  -> 主体必须持续获得水分、能量和药物
+  -> 口服路径不足时可能需要非口服营养通道
+  -> 管路、配方、泵、护理、感染和供应链成为新的单点失效
+  -> 因而管饲营养连续性是吞咽失败后的外部入口基础设施</pre>
+== 关注对象 ==
+
+* 鼻胃管、胃造瘘、肠造瘘、配方供应、管路维护、泵、感染、堵管、照护者负担和意愿决策。
+* 与 <code>nutrition-metabolic-health/</code> 的关系：营养域关注营养状态；本域关注管饲入口和执行链。
+* 与 <code>advance-care-planning-medical-decision-continuity/</code> 的关系：决策域关注意愿和代理；本域只整理管饲作为研究对象。
+
+<span id="human-infra-模型链路"></span>
+== Human Infra 模型链路 ==
+
+<pre>营养评估 / 管饲路径 / 供应链 / 护理流程 T
+  -> 改变能量水分进入、设备依赖、感染风险和照护负担变量 X
+  -> 改变营养状态、家庭执行、尊严和医疗依赖状态 S
+  -> 改变营养不足、脱水、感染、住院和照护崩溃风险 λ(t)
+  -> 影响恢复能力、主体自主性和未来选择权</pre>
+== 非目标 ==
+
+* 不提供管饲适应证、置管选择、配方、速率、冲管、护理、并发症处理或伦理决策建议。
+* 不根据个体吞咽、体重、疾病、管路或营养数据判断是否需要管饲。
+* 不替代营养、胃肠、外科、护理、言语语言治疗、伦理咨询或临床服务。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* ASPEN / ESPEN enteral nutrition guideline materials as professional context。
+* MedlinePlus feeding tube public medical materials。
+* Long-term care and home health literature as implementation context。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C6研究域|C6研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c6-local-unlocking/enteral-feeding-tube-nutrition-continuity/README.md Human Infra 仓库：domains/c6-local-unlocking/enteral-feeding-tube-nutrition-continuity/README.md]
+
+[[Category:C6研究域]]

@@ -1,0 +1,85 @@
+{{研究域
+|域 ID=domain.phone-number-sim-portability-account-security-continuity
+|C 层级=C6：局部可能性解锁层
+|研究对象=Phone Number SIM Portability Account Security Continuity
+|持续性作用=未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c6-local-unlocking/phone-number-sim-portability-account-security-continuity
+}}
+
+'''Phone Number SIM Portability Account Security Continuity'''是 Human Infra 在“局部阻塞解除”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C6“局部可能性解锁层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>phone-number-sim-portability-account-security-continuity</code> 研究手机号、SIM/eSIM、号码携转、短信验证、语音验证、运营商账号和 port-out / SIM swap 风险如何影响主体通信可达、账号恢复和服务接入。
+
+<blockquote>核心问题：手机号已变成金融、医疗、工作、政府和平台账号的事实恢复通道；号码丢失或被转出会连带破坏多个系统。
+</blockquote>
+== 关注对象 ==
+
+* Phone number ownership、carrier account、SIM/eSIM provisioning、number portability、port-out lock、account PIN 和 device binding。
+* SMS/voice OTP、emergency contact、service notification、two-step recovery 和身份校验。
+* SIM swap、port-out fraud、号码回收、号码更换、漫游、欠费停机、运营商资料错误和死亡/失能后号码继承。
+* 与邮箱、MFA、银行、医疗门户、雇主系统和政府服务的恢复链路。
+
+<span id="human-infra-链路"></span>
+== Human Infra 链路 ==
+
+<pre>手机号与 SIM/携转安全连续
+  -> 通信可达、短信验证和账号恢复通道保持稳定
+  -> SIM swap、port-out、号码回收和停机导致的连锁账号失控风险下降
+  -> 金融、医疗、工作、教育、政府和社交服务恢复能力增强
+  -> 主体资源控制、身份安全和行动连续性增强</pre>
+== 非目标 ==
+
+* 不提供个人号码找回、SIM swap 处置、携号转网策略、运营商投诉、追踪定位、短信拦截、验证码转发或账号恢复建议。
+* 不替代运营商、FCC、FTC、组织 IT、安全团队、执法、律师或官方账号恢复渠道。
+* 不收集或处理电话号码、SIM/eSIM 资料、验证码、运营商 PIN、账单、设备 IMEI/ICCID、定位或通信记录。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* FCC SIM swap and port-out fraud materials: https://www.fcc.gov/
+* FCC wireless local number portability resources: https://www.fcc.gov/
+* FTC identity theft and phone account fraud guidance: https://consumer.ftc.gov/
+* CISA account security and MFA guidance: https://www.cisa.gov/secure-our-world
+
+== 下一步 ==
+
+* 建立 <code>phone number -&gt; carrier control -&gt; OTP/recovery -&gt; account access -&gt; continuity</code> 变量表。
+* 区分手机号作为通信地址、验证因子、恢复通道和身份资料的不同模型位置。
+* 与 <code>mfa-passkey-credential-recovery-continuity</code>、<code>email-account-recovery-continuity</code>、<code>banking-deposit-account-access-continuity</code> 和 <code>digital-identity-security</code> 建立边界。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C6研究域|C6研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c6-local-unlocking/phone-number-sim-portability-account-security-continuity/README.md Human Infra 仓库：domains/c6-local-unlocking/phone-number-sim-portability-account-security-continuity/README.md]
+
+[[Category:C6研究域]]

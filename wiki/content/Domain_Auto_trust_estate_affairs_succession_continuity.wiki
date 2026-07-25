@@ -1,0 +1,80 @@
+{{研究域
+|域 ID=domain.trust-estate-affairs-succession-continuity
+|C 层级=C6：局部可能性解锁层
+|研究对象=Trust Estate Affairs Succession Continuity
+|持续性作用=未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c6-local-unlocking/trust-estate-affairs-succession-continuity
+}}
+
+'''Trust Estate Affairs Succession Continuity'''是 Human Infra 在“局部阻塞解除”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C6“局部可能性解锁层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+Trust Estate Affairs Succession Continuity 关注事务整理、受益人信息、信托/遗产安排、账户继承、文件可达和项目交接如何在失能或死亡边界附近保持资源、责任和长期项目连续性。
+
+== 对象 ==
+
+* Getting affairs in order、重要文件、受益人、账户清单、遗产执行、trustee、executor 和 successor roles。
+* 失能、死亡、长期住院、迁移、灾害或家庭断联时的资源、文件、账户和责任交接。
+* 医疗、财务、数字、法律、家庭、照护和作品项目之间的继承断点。
+
+<span id="human-infra-价值"></span>
+== Human Infra 价值 ==
+
+<pre>主体持续性也包括失能和死亡边界上的资料与责任不断裂
+-> 长期项目、资产、照护责任、数字资料和家庭义务跨越个人行动能力
+-> 若事务没有整理，资源可能被冻结、丢失、争议化或无法用于照护与继承
+-> 事务与继承连续性把文件、角色、账户和责任提前组织
+-> 失能或死亡边界附近的资源、资料和项目更可能被正确接续</pre>
+== 边界 ==
+
+* 本域不提供遗嘱、信托、税务、继承、受益人、财产分配、投资、保险、数字账户转移或法律建议。
+* 不判断某文件是否有效、某继承人权利、某遗产如何分配或某账户如何处理。
+* 不替代律师、税务专业人员、法院、金融机构、保险公司、遗产执行人或平台政策。
+* 只整理公开教育资料、角色边界、文件类型、连续性断点和禁止用途。
+
+== 上游与下游 ==
+
+* 上游：<code>digital-legacy-data-succession/</code>、<code>life-logging-personal-archives-continuity/</code>、<code>financial-fiduciary-power-of-attorney-continuity/</code>、<code>legal-identity-civil-registration/</code>。
+* 下游：<code>insurance-risk-transfer/</code>、<code>governance-rights/</code>、<code>resource-social-infra/</code>、公共法律教育和平台继承政策资料。
+
+== 初始资料线索 ==
+
+* National Institute on Aging getting your affairs in order.
+* Consumer Financial Protection Bureau trustee and fiduciary guides.
+* Public legal education materials on estate, probate, beneficiary and executor roles.
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C6研究域|C6研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c6-local-unlocking/trust-estate-affairs-succession-continuity/README.md Human Infra 仓库：domains/c6-local-unlocking/trust-estate-affairs-succession-continuity/README.md]
+
+[[Category:C6研究域]]

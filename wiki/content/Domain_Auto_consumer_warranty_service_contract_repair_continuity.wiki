@@ -1,0 +1,87 @@
+{{研究域
+|域 ID=domain.consumer-warranty-service-contract-repair-continuity
+|C 层级=C5：可能性生态承载层
+|研究对象=消费品保修、服务合同与维修连续性
+|持续性作用=关键词显示该域主要承载能源、水、食物、住房、治理、经济、通信、灾害或基础设施环境。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c5-ecological-substrate/consumer-warranty-service-contract-repair-continuity
+}}
+
+'''消费品保修、服务合同与维修连续性'''是 Human Infra 在“外部生态承载”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要承载能源、水、食物、住房、治理、经济、通信、灾害或基础设施环境。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C5“可能性生态承载层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+本域研究消费品保修、服务合同、维修承诺、替换承诺、保修登记和文件说明如何影响产品可用寿命、家庭任务连续性和资源恢复。它关注保修维修作为产品失败后的恢复基础设施，而不是个案保修索赔、合同审查或法律建议。
+
+== 研究对象 ==
+
+* 书面保修、默认保修、有限保修、延长服务合同、维修、替换、退款和保修登记。
+* 保修说明、维修条件、排除条款、服务中心、备件、维修时间和产品停用成本。
+* 保修记录、购买记录、序列号、维修记录、召回记录和消费者投诉资料。
+* 与维修权、产品安全召回、家电维修、个人设备维修和支付争议的边界。
+
+== 价值链路 ==
+
+<pre>产品进入主体任务系统
+  -> 保修、服务合同和维修承诺定义故障后的恢复路径
+  -> 透明保修、可用维修和记录连续性降低产品失败的替换成本
+  -> 模糊保修、维修拒绝、备件不足或服务合同误导会压缩有效资源
+  -> 保修维修连续性把产品从一次性消费品转化为可维护的任务资产</pre>
+== 关键问题 ==
+
+* 保修和服务合同如何改变产品故障后的现金成本、等待成本和替代成本？
+* 保修语言、登记要求和维修条件如何影响消费者实际可用权利？
+* 产品召回、保修维修和维修权之间应如何分层？
+* 保修记录如何与产品生命周期、二手转让和长期维护连接？
+
+== 上游与下游 ==
+
+* 上游：<code>product-safety-recall-systems/</code>、<code>online-retail-order-shipping-fulfillment-continuity/</code>、<code>household-appliance-maintenance-repair-continuity/</code>、<code>personal-computing-device-lifecycle-repair-continuity/</code>。
+* 下游：<code>right-to-repair-parts-manuals-access-continuity/</code>、<code>consumer-return-refund-dispute-resolution-continuity/</code>、<code>manufacturing-repair-capacity/</code>、<code>waste-management-hazardous-materials-continuity/</code>。
+
+== 非目标 ==
+
+* 不提供个案保修索赔、合同审查、维修建议、品牌选择、产品推荐、诉讼、仲裁或法律建议。
+* 不判断某项保修是否有效、某个缺陷是否覆盖、某次维修是否合格或服务合同是否值得购买。
+* 不协助伪造购买记录、修改序列号、绕过保修条件、滥用服务合同或操控维修流程。
+
+== 初始资料入口 ==
+
+* FTC: Warranties
+* FTC: Business guidance on warranties and Magnuson-Moss Warranty Act
+* FTC: Nixing the Fix report
+* State consumer protection agencies and attorneys general official materials
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C5研究域|C5研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c5-ecological-substrate/consumer-warranty-service-contract-repair-continuity/README.md Human Infra 仓库：domains/c5-ecological-substrate/consumer-warranty-service-contract-repair-continuity/README.md]
+
+[[Category:C5研究域]]

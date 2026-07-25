@@ -1,0 +1,88 @@
+{{研究域
+|域 ID=domain.alert-fatigue-interruption-signal-management-continuity
+|C 层级=C6：局部可能性解锁层
+|研究对象=Alert Fatigue Interruption Signal Management Continuity
+|持续性作用=未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c6-local-unlocking/alert-fatigue-interruption-signal-management-continuity
+}}
+
+'''Alert Fatigue Interruption Signal Management Continuity'''是 Human Infra 在“局部阻塞解除”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C6“局部可能性解锁层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+Alert Fatigue Interruption Signal Management Continuity 研究告警、通知、中断、提示、报警疲劳和信号优先级如何影响注意力、情境感知和任务连续性。
+
+<blockquote>核心问题：信号太少会漏掉风险，信号太多会摧毁注意力；主体需要可校准的信号环境。
+</blockquote>
+== 研究对象 ==
+
+* Alert fatigue、alarm fatigue、notification fatigue、interruption management、signal prioritization、quiet hours 和 escalation routing。
+* 医疗警报、运维告警、个人通知、AI 提示、应急消息、任务提醒和团队协作消息。
+* 信号过载如何影响注意力、疲劳、响应率、错误恢复、睡眠和有效时间。
+
+== 先验链路 ==
+
+<pre>主体需要及时接收重要信号以避免风险和推进任务
+  -> 告警和中断把外部事件竞争性地插入注意力系统
+  -> 信号过载会造成忽略、麻木、错误响应、睡眠破坏和注意力碎片化
+  -> 重要风险被淹没，普通任务也被频繁打断
+  -> 有效时间、情境感知和恢复能力下降
+  -> 因而告警中断管理是主体持续性的注意力环境层</pre>
+== 关键变量 ==
+
+* 告警数量、优先级、假阳性、假阴性、响应时间、升级路径、静默窗口、确认机制和撤销机制。
+* 频率、渠道、上下文、可操作性、重复通知、夜间打扰、值班负荷和恢复影响。
+* 以“通知即责任转移”、把所有风险推给用户、用中断操控注意力或制造成瘾的风险。
+
+== 证据入口 ==
+
+* Joint Commission / AHRQ alarm fatigue and patient safety materials。
+* Notification fatigue and human factors literature。
+* <code>notification-alert-routing-attention-continuity/</code> existing domain materials。
+* NIST / human-centered design signal and warning design materials。
+
+== 非目标 ==
+
+* 本域不提供医疗告警配置、生产运维阈值、应急通知策略、个人治疗提醒或高风险系统部署方案。
+* 不提供绕过安全告警、降低监管要求、隐藏风险信号、操控用户注意力或增长黑客方案。
+* 不收集个人通知记录、医疗告警、生产告警、位置、睡眠数据、值班记录或内部事件日志。
+
+== 上下游 ==
+
+* 上游：<code>notification-alert-routing-attention-continuity/</code>、<code>attention-executive-control/</code>、<code>situational-awareness-decision-environment-continuity/</code>。
+* 下游：<code>fatigue-risk-alertness-continuity/</code>、<code>automation-bias-mode-confusion-oversight-continuity/</code>、<code>emergency-alerts-communications/</code>。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C6研究域|C6研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c6-local-unlocking/alert-fatigue-interruption-signal-management-continuity/README.md Human Infra 仓库：domains/c6-local-unlocking/alert-fatigue-interruption-signal-management-continuity/README.md]
+
+[[Category:C6研究域]]

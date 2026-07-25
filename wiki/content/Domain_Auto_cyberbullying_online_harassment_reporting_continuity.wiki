@@ -1,0 +1,81 @@
+{{研究域
+|域 ID=domain.cyberbullying-online-harassment-reporting-continuity
+|C 层级=C6：局部可能性解锁层
+|研究对象=Cyberbullying Online Harassment Reporting Continuity
+|持续性作用=未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c6-local-unlocking/cyberbullying-online-harassment-reporting-continuity
+}}
+
+'''Cyberbullying Online Harassment Reporting Continuity'''是 Human Infra 在“局部阻塞解除”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C6“局部可能性解锁层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>cyberbullying-online-harassment-reporting-continuity</code> 研究网络霸凌、在线骚扰、群体排斥、羞辱扩散、威胁、冒充和举报响应如何影响儿童青少年的学校参与、心理安全、关系网络和数字行动能力。
+
+<blockquote>核心问题：网络霸凌不是单次信息伤害，而是会通过学校、家庭、平台和同伴网络持续侵蚀主体可到场、可求助和可恢复能力。
+</blockquote>
+== 对象 ==
+
+* cyberbullying、online harassment、doxxing 风险、冒充、威胁、羞辱扩散、群聊排斥和持续性数字攻击。
+* 平台举报、学校响应、家庭支持、证据保留边界、反报复、心理支持和民权/反歧视接口。
+* 学校气候、出勤、心理健康、数字身份安全和受害者恢复。
+
+<span id="human-infra-价值"></span>
+== Human Infra 价值 ==
+
+<pre>线上霸凌可识别、可举报、可恢复
+  -> 学生更少因线上伤害产生恐惧缺勤、关系断裂和心理负荷
+  -> 学校、家庭、平台和支持服务之间形成更清晰的响应链
+  -> 学习轮次、关系安全和数字参与能力得到保护</pre>
+== 边界 ==
+
+* 不提供个案调查、证据固定、报案、法律、学校投诉、平台申诉、心理危机、安全计划或反击策略建议。
+* 不协助识别、定位、曝光、羞辱、报复、骚扰、反向攻击或扩散任何儿童、学校、账号或家庭信息。
+* 不收集、存储或分析未成年人聊天记录、照片、账号、位置、学校、同伴关系、心理状态或家庭资料。
+* 不替代学校、平台、家长、心理健康专业人员、执法、法律援助或危机服务。
+
+== 上游与下游 ==
+
+* 上游：<code>online-safety-digital-harm-prevention/</code>、<code>school-climate-bullying-violence-prevention-continuity/</code>、<code>digital-identity-security/</code>。
+* 下游：<code>school-mental-health-counseling-support-continuity/</code>、<code>platform-content-moderation-notice-appeal-continuity/</code>、<code>digital-evidence-preservation-chain-of-custody-continuity/</code>。
+
+== 初始资料线索 ==
+
+* StopBullying.gov cyberbullying resources.
+* FTC and platform online safety public materials.
+* School climate, civil rights and youth mental health public resources.
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C6研究域|C6研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c6-local-unlocking/cyberbullying-online-harassment-reporting-continuity/README.md Human Infra 仓库：domains/c6-local-unlocking/cyberbullying-online-harassment-reporting-continuity/README.md]
+
+[[Category:C6研究域]]

@@ -1,0 +1,85 @@
+{{研究域
+|域 ID=domain.personal-automation-integration-workflow-continuity
+|C 层级=C3：可能性生成引擎层
+|研究对象=Personal Automation Integration Workflow Continuity
+|持续性作用=关键词显示该域主要增强认知、学习、工具、AI、技能或沟通能力。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c3-generation-engine/personal-automation-integration-workflow-continuity
+}}
+
+'''Personal Automation Integration Workflow Continuity'''是 Human Infra 在“主体能力生成”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要增强认知、学习、工具、AI、技能或沟通能力。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C3“可能性生成引擎层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>personal-automation-integration-workflow-continuity</code> 研究个人自动化、低代码/无代码集成、脚本、触发器、动作、webhook、OAuth 授权、API 连接和工作流编排如何影响主体是否能把重复任务交给可靠工具链。
+
+<blockquote>核心问题：自动化能降低重复成本，也会制造新的隐形依赖；触发器失效、权限过期或平台政策变化会让任务在无声中中断。
+</blockquote>
+== 关注对象 ==
+
+* 触发器、动作、webhook、OAuth scopes、API token、低代码平台、脚本、定时任务、同步任务和错误通知。
+* 个人自动化、家庭自动化、资料整理、账单/表单流程、研究资料流、任务分派和跨应用连接。
+* 幂等、重试、日志、权限最小化、人工确认、失败恢复、平台退出和自动化债务。
+* 隐私泄露、越权授权、无限循环、重复提交、平台锁定、限流、费用失控和无人监控自动化。
+
+<span id="human-infra-链路"></span>
+== Human Infra 链路 ==
+
+<pre>个人自动化与工作流连续
+  -> 重复任务、跨应用传递和低价值操作可被可靠编排
+  -> 人工摩擦、遗忘、重复输入和流程断点下降
+  -> 主体释放有效时间和注意力，并保留失败可见性与人工中止权
+  -> 任务吞吐、恢复能力和长期项目维护能力增强</pre>
+== 非目标 ==
+
+* 不提供绕过平台限制、规避计费、批量滥用、凭证窃取、自动化刷量、垃圾提交或安全攻击方法。
+* 不替代平台工程、SRE、安全、法律、隐私、采购或合规审查。
+* 不收集 API key、OAuth token、私有 webhook、自动化日志、账号数据或敏感工作流。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* OpenAPI Specification: https://spec.openapis.org/oas/latest.html
+* OAuth 2.0 RFC 6749: https://www.rfc-editor.org/rfc/rfc6749
+* W3C Web of Things and automation-adjacent integration references.
+* Platform public docs for webhook, status, rate limit and deprecation signals.
+
+== 下一步 ==
+
+* 建立 <code>trigger -&gt; authorization -&gt; action -&gt; idempotency -&gt; logging -&gt; human override -&gt; recovery</code> 变量表。
+* 区分个人自动化、家庭自动化、研究自动化、业务流程自动化和公共服务自动化。
+* 与 <code>api-platform-dependency-runtime-continuity</code>、<code>cloud-service-exit-interoperability-continuity</code>、<code>notification-alert-routing-attention-continuity</code> 和 <code>ai-agency-safety</code> 建立边界。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C3研究域|C3研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c3-generation-engine/personal-automation-integration-workflow-continuity/README.md Human Infra 仓库：domains/c3-generation-engine/personal-automation-integration-workflow-continuity/README.md]
+
+[[Category:C3研究域]]

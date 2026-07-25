@@ -1,0 +1,85 @@
+{{研究域
+|域 ID=domain.postsecondary-admissions-transfer-articulation-continuity
+|C 层级=C6：局部可能性解锁层
+|研究对象=Postsecondary Admissions Transfer Articulation Continuity
+|持续性作用=未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c6-local-unlocking/postsecondary-admissions-transfer-articulation-continuity
+}}
+
+'''Postsecondary Admissions Transfer Articulation Continuity'''是 Human Infra 在“局部阻塞解除”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C6“局部可能性解锁层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>postsecondary-admissions-transfer-articulation-continuity</code> 研究高等教育入学、录取、注册、转学、学分转换、衔接协议、重新入学和既有学习成果如何影响主体进入更高学习路径、职业路径和长期未来选择权。
+
+<blockquote>核心问题：主体完成中学、工作或中断后，如果无法被高等教育系统接收、转换已有学习成果或恢复学籍，时间、学费、能力资本和职业窗口会被重复消耗。
+</blockquote>
+== 关注对象 ==
+
+* 申请、录取、注册、入学确认、重新入学、转学和跨机构衔接。
+* 学分转换、articulation agreements、先修课程、通识要求、prior learning assessment 和课程等价。
+* 转学学生、成人学习者、退学返校学生、军人/退伍军人、第一代学生和跨州/跨国学习经历。
+* 入学数据、录取率、留存率、转学率、完成率、学分损失、时间到学位和转学路径透明度。
+
+<span id="human-infra-链路"></span>
+== Human Infra 链路 ==
+
+<pre>高等教育入学与转学衔接连续
+  -> 已有学习成果、学分和资格被承认
+  -> 重复修课、学费浪费、时间损耗和路径不确定性下降
+  -> 学习轮次、职业准备和证书完成概率提高
+  -> 主体长期能力资本、收入入口和未来选择权增强</pre>
+== 非目标 ==
+
+* 不提供个人选校、申请、录取、转学、学分申诉、学业规划、签证、贷款、奖学金或法律建议。
+* 不替代高校招生办公室、registrar、academic advisor、州高教机构、认证机构或法律援助。
+* 不收集或处理个人申请材料、成绩单、推荐信、考试分数、移民身份、残障资料或家庭财务资料。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* NCES IPEDS postsecondary institution, admissions, enrollment, retention, graduation and completions data: https://nces.ed.gov/ipeds/
+* U.S. Department of Education College Scorecard institution outcomes and cost data: https://collegescorecard.ed.gov/
+* Federal Student Aid school participation and eligibility context: https://studentaid.gov/
+* State higher education transfer, articulation and common course numbering policies.
+
+== 下一步 ==
+
+* 建立 <code>admission -&gt; enrollment -&gt; transfer credit -&gt; degree pathway -&gt; completion</code> 变量表。
+* 区分首次入学、转学、重新入学、成人返校、双录取、跨州衔接和国际学历评估。
+* 与 <code>education-access-lifelong-learning</code>、<code>education-record-transcript-verification-continuity</code>、<code>skills-competency-credentialing-continuity</code> 和本轮高教域建立边界。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C6研究域|C6研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c6-local-unlocking/postsecondary-admissions-transfer-articulation-continuity/README.md Human Infra 仓库：domains/c6-local-unlocking/postsecondary-admissions-transfer-articulation-continuity/README.md]
+
+[[Category:C6研究域]]

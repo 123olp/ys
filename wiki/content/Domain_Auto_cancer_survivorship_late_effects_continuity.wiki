@@ -1,0 +1,89 @@
+{{研究域
+|域 ID=domain.cancer-survivorship-late-effects-continuity
+|C 层级=C2：可能性源体维护层
+|研究对象=Cancer Survivorship Late Effects Continuity
+|持续性作用=关键词显示该域主要维护身体、脑、器官、细胞、急性生命风险或衰老损伤控制。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c2-source-maintenance/cancer-survivorship-late-effects-continuity
+}}
+
+'''Cancer Survivorship Late Effects Continuity'''是 Human Infra 在“生命载体维护”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要维护身体、脑、器官、细胞、急性生命风险或衰老损伤控制。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C2“可能性源体维护层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>cancer-survivorship-late-effects-continuity/</code> 研究癌症幸存者的复发恐惧、晚期效应、二次肿瘤、器官毒性、疲劳、心理健康、工作/保险、家庭角色和长期照护转接如何影响主体持续性。
+
+<blockquote>核心问题：癌症治疗结束不是连续性的结束；幸存者阶段常把复发风险、晚期毒性、财务压力、工作身份、照护角色和长期不确定性带入主体系统。
+</blockquote>
+== 先验位置 ==
+
+<pre>有效永生 / 主体持续性最大化
+  -> 主体在重大疾病后需要恢复可行动、可学习、可工作、可关系化的存在状态
+  -> 癌症幸存者晚期效应和复发恐惧改变有效时间、身体储备、心理安全和资源结构
+  -> 长期随访、二次预防、工作/保险支持和照护转接决定治疗后主体是否真正回到未来路径
+  -> 因此癌症幸存者晚期效应是癌症连续性的恢复与长期治理域</pre>
+== 关注对象 ==
+
+* Cancer survivorship, late effects, recurrence fear, second cancers, organ toxicity, fatigue, mental health, work / insurance, care transition, quality of life。
+* 与各器官癌症域的关系：本域提供跨癌种幸存者和晚期效应框架，各器官域保留自身治疗和复发路径。
+* 与 <code>mental-health-continuity/</code>、<code>workplace-safety-labor-rights</code> 和 <code>social-protection-benefits-delivery/</code> 的关系：癌症后连续性常取决于心理、劳动和社会保护系统。
+
+<span id="human-infra-模型链路"></span>
+== Human Infra 模型链路 ==
+
+<pre>癌症幸存者连续性系统 T
+  -> 改变晚期效应监测、复发恐惧、二次肿瘤、器官毒性、疲劳、工作/保险和照护转接变量 X
+  -> 改变身体储备、心理安全、劳动参与、家庭角色和资源状态 S
+  -> 改变复发/二次癌症、长期失能、有效时间损失和资源耗竭 λ(t)
+  -> 影响主体健康寿命、可持续创造、关系稳定和未来选择权</pre>
+== 非目标 ==
+
+* 不提供个人随访计划、复发判断、症状诊断、晚期效应诊断、用药、康复方案、保险/工作证明、预后判断或个体建议。
+* 不生成个人癌症幸存者风险预测器、复发恐惧治疗器、保险申诉、工作能力证明或商业康复推广。
+* 不收集个案治疗史、病理、随访、症状、工作、保险、财务或心理资料。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* NCI survivorship: https://www.cancer.gov/about-cancer/coping/survivorship
+* NCI follow-up medical care: https://www.cancer.gov/about-cancer/coping/survivorship/follow-up-care
+* CDC cancer survivors: https://www.cdc.gov/cancer-survivors/
+
+== 下一步 ==
+
+* 建立 Survivorship Continuity Card：late effects, recurrence fear, secondary cancers, organ toxicity, fatigue, mental health, work / insurance, care transition。
+* 与所有器官特异癌症域、<code>mental-health-continuity/</code> 和 <code>social-protection-benefits-delivery/</code> 建立接口。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C2研究域|C2研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c2-source-maintenance/cancer-survivorship-late-effects-continuity/README.md Human Infra 仓库：domains/c2-source-maintenance/cancer-survivorship-late-effects-continuity/README.md]
+
+[[Category:C2研究域]]

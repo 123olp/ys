@@ -1,0 +1,90 @@
+{{研究域
+|域 ID=domain.erectile-dysfunction-vascular-sexual-function-continuity
+|C 层级=C2：可能性源体维护层
+|研究对象=Erectile Dysfunction Vascular Sexual Function Continuity
+|持续性作用=关键词显示该域主要维护身体、脑、器官、细胞、急性生命风险或衰老损伤控制。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c2-source-maintenance/erectile-dysfunction-vascular-sexual-function-continuity
+}}
+
+'''Erectile Dysfunction Vascular Sexual Function Continuity'''是 Human Infra 在“生命载体维护”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要维护身体、脑、器官、细胞、急性生命风险或衰老损伤控制。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C2“可能性源体维护层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>erectile-dysfunction-vascular-sexual-function-continuity/</code> 研究勃起功能障碍作为血管、代谢、神经、内分泌、药物、心理、关系和性功能接口，如何影响主体持续性、尊严、关系和长期风险识别。
+
+<blockquote>核心问题：ED 不只是性功能问题，它可能是血管代谢风险、药物副作用、心理负担和关系压力的可见信号，也会通过尊严、亲密关系和医疗回避影响主体行动质量。
+</blockquote>
+== 先验位置 ==
+
+<pre>有效永生 / 主体持续性最大化
+  -> 主体需要身体完整性、关系参与、尊严和长期风险识别能力
+  -> ED 可能连接血管、代谢、神经、内分泌、药物、心理和关系变量
+  -> 若污名或商业化误导阻断评估，主体会损失风险发现窗口、关系质量和身体自主
+  -> 因此 ED 是性功能、血管代谢信号和尊严连续性的交叉域</pre>
+== 关注对象 ==
+
+* Erectile dysfunction、vascular risk signal、diabetes/cardiovascular context、neurologic/endocrine context、medication side effects、psychological stress、relationship burden、privacy and stigma。
+* 与 <code>urogenital-continuity/</code> 的边界：上位域关注泌尿生殖尊严；本域关注 ED 作为性功能、血管代谢和关系接口。
+* 与 <code>cardiovascular-resilience/</code> 的关系：ED 可能与血管健康和代谢风险相关，但本域不做个人心血管风险判读。
+* 与 <code>sexual-health-sti-prevention-continuity/</code> 的边界：STI 域关注感染预防和公共卫生；本域关注性功能与风险信号。
+
+<span id="human-infra-模型链路"></span>
+== Human Infra 模型链路 ==
+
+<pre>ED 风险识别与支持系统 T
+  -> 改变血管代谢信号、神经/内分泌背景、药物副作用、心理压力、关系安全、隐私和污名变量 X
+  -> 改变主体身体自主、尊严、亲密关系、医疗信任、风险识别和有效时间状态 S
+  -> 改变心血管/糖尿病风险漏检、关系冲突、心理负担、商业误导和医疗回避 lambda(t)
+  -> 影响主体长期健康风险治理、关系连续性和生活质量</pre>
+== 非目标 ==
+
+* 不提供 ED 诊断、药物、补剂、器械、激素、心理治疗、性行为建议、心血管风险判读、伴侣建议或个体医疗建议。
+* 不比较产品、平台、诊所、处方、设备或商业服务。
+* 不收集个人性功能、伴侣、药物、心血管、糖尿病、心理健康或身份敏感资料。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* NIDDK erectile dysfunction: https://www.niddk.nih.gov/health-information/urologic-diseases/erectile-dysfunction
+* MedlinePlus erectile dysfunction: https://medlineplus.gov/erectiledysfunction.html
+* NIDDK diabetes, sexual and urologic problems: https://www.niddk.nih.gov/health-information/diabetes/overview/preventing-problems/sexual-urologic-problems
+
+== 下一步 ==
+
+* 建立 ED Continuity Card：vascular/metabolic signal, medication context, psychologic load, privacy, relationship burden, misinformation risk。
+* 与 <code>urogenital-continuity/</code>、<code>cardiovascular-resilience/</code>、<code>diabetes-insulin-glucose-monitoring-supplies-continuity/</code> 和 <code>mental-health-affective-stability/</code> 建立接口。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C2研究域|C2研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c2-source-maintenance/erectile-dysfunction-vascular-sexual-function-continuity/README.md Human Infra 仓库：domains/c2-source-maintenance/erectile-dysfunction-vascular-sexual-function-continuity/README.md]
+
+[[Category:C2研究域]]

@@ -1,0 +1,87 @@
+{{研究域
+|域 ID=domain.thymic-involution-naive-t-cell-output-continuity
+|C 层级=C6：局部可能性解锁层
+|研究对象=Thymic Involution Naive T Cell Output Continuity
+|持续性作用=未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c6-local-unlocking/thymic-involution-naive-t-cell-output-continuity
+}}
+
+'''Thymic Involution Naive T Cell Output Continuity'''是 Human Infra 在“局部阻塞解除”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C6“局部可能性解锁层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+Thymic Involution Naive T Cell Output Continuity 负责整理胸腺退化、初始 T 细胞输出、T 细胞库更新、感染防御、疫苗响应和肿瘤免疫监视之间的主体持续性关系。
+
+核心问题：
+
+<blockquote>胸腺不是普通器官背景项，而是长期免疫更新的入口；当初始 T 细胞输出下降，主体面对新病原体、新疫苗、新肿瘤抗原和未来治疗窗口的适应能力会下降。
+</blockquote>
+== 先验位置 ==
+
+<pre>有效永生 / 主体持续性最大化
+  -> 主体需要长期面对新抗原、新感染、新癌前克隆和新治疗平台
+  -> 免疫系统需要持续产生可识别新抗原的初始 T 细胞
+  -> 胸腺退化会压缩初始 T 细胞输出和免疫库更新
+  -> 新抗原适应能力下降会提高感染、疫苗失败、肿瘤免疫逃逸和恢复失败风险
+  -> 因此胸腺退化是主体长期免疫可塑性的基础约束</pre>
+== 关注对象 ==
+
+* thymic involution、naive T cell output、TCR diversity、T cell repertoire renewal。
+* 年龄、炎症、激素、感染、营养、治疗暴露和胸腺微环境对免疫输出的影响。
+* 与 <code>immune-maintenance/</code> 的关系：本域聚焦免疫新生入口；免疫维护域聚焦整体免疫系统风险。
+* 与 <code>cancer-control/</code> 和 <code>vaccination-campaign-booster-delivery-continuity/</code> 的关系：本域提供新抗原识别能力变量。
+
+<span id="human-infra-模型链路"></span>
+== Human Infra 模型链路 ==
+
+<pre>胸腺维护 / 再生相关技术 T
+  -> 改变胸腺结构、初始 T 细胞输出和 TCR 多样性 X
+  -> 改变主体面对新抗原的适应状态 S
+  -> 改变感染、疫苗响应、肿瘤免疫监视和恢复风险
+  -> 改变健康寿命、治疗可用性和未来选择权</pre>
+== 非目标 ==
+
+* 不提供胸腺激素、免疫增强、干细胞、再生医学、药物、补剂或实验操作建议。
+* 不把胸腺“年轻化”写成已经可用的人体抗衰疗法。
+* 不解释个体免疫检查、T 细胞亚群或临床检验结果。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* NIA Biology of Aging Program: https://www.nia.nih.gov/research/dab/biology-aging-program
+* Age-related thymic involution review: https://pmc.ncbi.nlm.nih.gov/articles/PMC9381902/
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C6研究域|C6研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c6-local-unlocking/thymic-involution-naive-t-cell-output-continuity/README.md Human Infra 仓库：domains/c6-local-unlocking/thymic-involution-naive-t-cell-output-continuity/README.md]
+
+[[Category:C6研究域]]

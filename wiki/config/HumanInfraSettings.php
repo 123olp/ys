@@ -1,0 +1,50 @@
+<?php
+
+// ==================== Human Infra 站点策略 ====================
+
+$wgSitename = getenv( 'WIKI_SITE_NAME' ) ?: 'Human Infra Wiki';
+$wgMetaNamespace = 'Human_Infra';
+$wgLanguageCode = 'zh';
+$wgLocaltimezone = 'Asia/Shanghai';
+$wgDefaultSkin = 'vector-2022';
+$wgLogos = [
+    'icon' => "$wgResourceBasePath/resources/assets/mediawiki_compact.svg",
+];
+
+wfLoadSkin( 'Vector' );
+wfLoadExtension( 'Cite' );
+wfLoadExtension( 'ParserFunctions' );
+wfLoadExtension( 'VisualEditor' );
+wfLoadExtension( 'PageForms' );
+
+$wgEnableUploads = true;
+$wgFileExtensions[] = 'pdf';
+$wgUseInstantCommons = true;
+$wgEnableEmail = false;
+$wgEnableUserEmail = false;
+
+// 公开阅读、受控编辑。管理员可在 Wiki 内创建后续账号和权限组。
+$wgGroupPermissions['*']['read'] = true;
+$wgGroupPermissions['*']['edit'] = false;
+$wgGroupPermissions['*']['createpage'] = false;
+$wgGroupPermissions['*']['createtalk'] = false;
+$wgGroupPermissions['*']['createaccount'] = false;
+$wgGroupPermissions['user']['createclass'] = false;
+$wgGroupPermissions['user']['multipageedit'] = false;
+$wgGroupPermissions['sysop']['createclass'] = true;
+$wgGroupPermissions['sysop']['multipageedit'] = true;
+
+$wgDefaultUserOptions['visualeditor-editor'] = 'visualeditor';
+$wgVisualEditorEnableWikitext = true;
+
+$wgRightsPage = 'Human_Infra:版权';
+$wgRightsUrl = 'https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans';
+$wgRightsText = 'CC BY-SA 4.0';
+
+$wgJobRunRate = 0;
+$wgShowExceptionDetails = false;
+$wgShowDBErrorBacktrace = false;
+
+if ( getenv( 'WIKI_SERVER' ) ) {
+    $wgServer = getenv( 'WIKI_SERVER' );
+}

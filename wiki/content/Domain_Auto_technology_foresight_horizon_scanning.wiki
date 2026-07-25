@@ -1,0 +1,97 @@
+{{研究域
+|域 ID=domain.technology-foresight-horizon-scanning
+|C 层级=C4：可能性转换通道层
+|研究对象=Technology Foresight Horizon Scanning
+|持续性作用=主要把科学、医疗、数据、制度或技术从潜在能力转成真实可用路径。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c4-conversion-channel/technology-foresight-horizon-scanning
+}}
+
+'''Technology Foresight Horizon Scanning'''是 Human Infra 在“路径转换接口”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+主要把科学、医疗、数据、制度或技术从潜在能力转成真实可用路径。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C4“可能性转换通道层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+== 定位 ==
+
+本域研究技术预见、地平线扫描、早期信号、情景分析和弱信号监测，如何帮助 Human Infra 系统性发现可能改变主体持续性边界的新技术、新风险和新制度窗口。
+
+Human Infra 的终极问题不是只管理今天已经成熟的技术，还要理解哪些未来技术可能改变寿命、有效时间、主观时间、相对时间和未来选择权。若没有地平线扫描，项目会被新闻热度牵引；若没有边界，技术预见又会变成炒作和投资叙事。本域负责把“未来可能性”转为可审查的研究候选队列。
+
+== 先验位置 ==
+
+<pre>有效永生 / 主体持续性最大化
+  -> 需要等待、识别、采用和整合未来技术窗口
+  -> 技术窗口出现前通常只有弱信号、临床前结果、专利、资金、政策和原型
+  -> 需要技术预见和地平线扫描把弱信号转成候选研究域和审查任务
+  -> technology-foresight-horizon-scanning</pre>
+== 关注对象 ==
+
+* Horizon scanning、strategic foresight、weak signals、scenario planning 和 early warning。
+* 科研论文、临床试验、专利、监管公告、资金流、公司披露、标准化活动和政策信号。
+* 技术成熟度、证据成熟度、社会可及性、成本曲线和风险曲线。
+* 未来技术如何进入 Human Infra 的 radar、Source Card、Scenario Card 和 ADR。
+* 技术预见如何服务“等待-采用-升级”的主体持续性飞轮。
+
+<span id="human-infra-模型链路"></span>
+== Human Infra 模型链路 ==
+
+<pre>弱信号和新技术线索
+  -> 地平线扫描与技术预见
+  -> 形成候选研究域、证据队列和场景假设
+  -> 进入 Research Domain Radar 或正式 domains/*
+  -> 支撑未来窗口识别、等待策略和研究组合治理</pre>
+== 非目标 ==
+
+* 不提供投资建议、交易策略、公司评级、市场时机判断或财务预测。
+* 不把新闻、融资、专利或公司公告写成疗效、可行性或时间表证明。
+* 不制造“必然到来”的技术决定论叙事。
+* 不替代正式证据审查、监管审查、伦理审查或模型评估。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* OECD Strategic Foresight: https://www.oecd.org/strategic-foresight/
+* WHO Health Technology Assessment and horizon scanning: https://www.who.int/teams/health-products-policy-and-standards/assistive-and-medical-technology/health-technology-assessment
+* EUnetHTA: https://www.eunethta.eu/
+* FDA Emerging Sciences and Technologies: https://www.fda.gov/science-research/science-and-research-special-topics/emerging-science-and-technology
+* OECD Science, Technology and Innovation Outlook: https://www.oecd.org/sti/oecd-science-technology-and-innovation-outlook-25186167.htm
+
+== 下一步 ==
+
+* 建立 Horizon Signal Card：signal type、source、mechanism、maturity、evidence gap、risk、trigger、watch cadence。
+* 把 <code>docs/reference/research-domain-radar.md</code> 从静态列表升级为带信号来源、触发条件和复核周期的候选域队列。
+* 与 <code>research-portfolio-prioritization-funding-governance/</code> 对接，把弱信号转成研究组合优先级，而不是单点追热点。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C4研究域|C4研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c4-conversion-channel/technology-foresight-horizon-scanning/README.md Human Infra 仓库：domains/c4-conversion-channel/technology-foresight-horizon-scanning/README.md]
+
+[[Category:C4研究域]]

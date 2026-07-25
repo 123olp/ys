@@ -1,0 +1,92 @@
+{{研究域
+|域 ID=domain.public-service-design-accessibility
+|C 层级=C5：可能性生态承载层
+|研究对象=Public Service Design Accessibility
+|持续性作用=主要提供主体展开未来所需的基础环境、资源、治理或基础设施。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c5-ecological-substrate/public-service-design-accessibility
+}}
+
+'''Public Service Design Accessibility'''是 Human Infra 在“外部生态承载”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+主要提供主体展开未来所需的基础环境、资源、治理或基础设施。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C5“可能性生态承载层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>public-service-design-accessibility/</code> 研究公共数字服务、表单、流程、客户体验、无障碍和任务完成路径如何影响主体获得权利、资源和恢复支持。
+
+<blockquote>核心问题：公共服务存在不等于主体能完成它；如果入口、表单、身份、语言、移动端、人工帮助和反馈路径失败，名义权利会变成实际排除。
+</blockquote>
+== 先验位置 ==
+
+<pre>有效永生 / 主体持续性最大化
+  -> 主体必须持续接入公共服务、权利、福利、医疗、身份和灾后支持
+  -> 这些服务越来越通过网页、表单、账号、通知和客服流程实现
+  -> 糟糕的服务设计会制造行政负担、申请放弃、延误和制度排除
+  -> 因此公共服务设计与可达性是主体持续性的制度接口域</pre>
+== 关注对象 ==
+
+* 公共服务设计、USWDS、Digital.gov、客户体验、表单设计、任务完成率、无障碍和反馈路径。
+* 数字入口与人工帮助、移动端、语言可达、身份认证、隐私和申诉之间的关系。
+* 行政负担如何消耗有效时间、注意力、恢复能力和未来选择权。
+* 与 <code>digital-inclusion-connectivity/</code> 的边界：本域关注服务本身如何被设计；数字包容关注连接、设备、技能和可负担性。
+
+<span id="human-infra-模型链路"></span>
+== Human Infra 模型链路 ==
+
+<pre>公共服务设计 T
+  -> 改变可理解性、表单负担、无障碍、人工帮助、状态反馈和申诉变量 X
+  -> 改变主体完成公共任务和获得服务的状态 S
+  -> 改变申请放弃、服务延误、行政时间损耗、权利断线和恢复失败风险 λ(t)
+  -> 影响有效时间、资源可及、制度信任和未来选择权</pre>
+== 非目标 ==
+
+* 不提供个体申请、资格判断、材料准备、申诉策略、法律意见或服务绕过方法。
+* 不支持 dark patterns、强制数字化、无人工替代、监控式体验分析或服务排除。
+* 不把界面效率置于同意、隐私、无障碍、语言可达和主体尊严之上。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* Digital.gov: https://digital.gov/
+* U.S. Web Design System: https://designsystem.digital.gov/
+* Performance.gov Customer Experience: https://www.performance.gov/cx/
+* Section508.gov: https://www.section508.gov/
+* PlainLanguage.gov: https://www.plainlanguage.gov/
+
+== 下一步 ==
+
+* 建立公共服务设计变量表：任务完成、表单负担、可理解性、无障碍、移动端、人工帮助、状态反馈和申诉路径。
+* 与 <code>social-protection-benefits-delivery/</code>、<code>language-access-plain-communication/</code>、<code>digital-identity-security/</code> 和 <code>digital-inclusion-connectivity/</code> 建立接口。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C5研究域|C5研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c5-ecological-substrate/public-service-design-accessibility/README.md Human Infra 仓库：domains/c5-ecological-substrate/public-service-design-accessibility/README.md]
+
+[[Category:C5研究域]]

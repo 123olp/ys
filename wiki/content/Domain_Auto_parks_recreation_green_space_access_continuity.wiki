@@ -1,0 +1,84 @@
+{{研究域
+|域 ID=domain.parks-recreation-green-space-access-continuity
+|C 层级=C6：局部可能性解锁层
+|研究对象=Parks Recreation Green Space Access Continuity
+|持续性作用=未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c6-local-unlocking/parks-recreation-green-space-access-continuity
+}}
+
+'''Parks Recreation Green Space Access Continuity'''是 Human Infra 在“局部阻塞解除”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C6“局部可能性解锁层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>parks-recreation-green-space-access-continuity</code> 研究公园、绿地、步道、运动场、游乐场、社区娱乐设施和自然接触如何影响身体活动、心理恢复、社交连接、热环境缓冲和公共生活参与。
+
+<blockquote>核心问题：公园不是装饰性绿化，而是低成本恢复和行动空间；当绿地不可达、不安全或不可用，身体、心理、社交和热暴露都会失去缓冲层。
+</blockquote>
+== 关注对象 ==
+
+* 公园、绿地、步道、球场、游乐场、社区运动设施、自然区域、开放空间和公共娱乐项目。
+* 步行可达性、维护、安全感、照明、无障碍、树冠、水源、厕所、活动项目、费用、开放时段和环境质量。
+* 与身体活动、心理健康、儿童发展、老年友好城市、热岛缓解、社区安全、城市规划和生态系统服务的接口。
+
+<span id="human-infra-链路"></span>
+== Human Infra 链路 ==
+
+<pre>公园、娱乐和绿地接入稳定
+  -> 身体活动、恢复、社交、自然接触和热环境缓冲更可持续
+  -> 久坐、孤立、压力、儿童活动不足和高温暴露风险下降
+  -> 主体可以低成本维护身体、情绪、关系和社区参与
+  -> 主体健康寿命、恢复能力和公共生活选择权增强</pre>
+== 非目标 ==
+
+* 不提供违规进入、逃避公园管理、破坏设施、骚扰游客、跟踪儿童或弱势群体、露宿规避、野外风险操作或个案执法建议。
+* 不替代公园部门、公共卫生、城市规划、学校、生态管理、治安机构、医疗或心理健康专业服务。
+* 不收集儿童位置、个人活动轨迹、敏感生态点位、设施安防细节或实时拥挤数据。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* CDC Physical Activity and Built Environment: https://www.cdc.gov/physical-activity/php/toolkit/index.html
+* CDC Parks, Trails, and Health: https://www.cdc.gov/physical-activity/php/toolkit/parks-trails-health.html
+* EPA Green Infrastructure: https://www.epa.gov/green-infrastructure
+* National Recreation and Park Association: https://www.nrpa.org/
+
+== 下一步 ==
+
+* 建立 <code>green space -&gt; access quality -&gt; activity/recovery/social exposure -&gt; healthspan impact -&gt; subject continuity</code> 变量表。
+* 区分邻里公园、区域公园、步道、运动设施、游乐场、自然区域和公共娱乐项目。
+* 与 <code>physical-activity-mobility</code>、<code>mental-health-stress-resilience</code>、<code>green-blue-infrastructure-urban-nature-cooling</code>、<code>public-seating-shade-rest-cooling-access-continuity</code> 和 <code>urban-planning-land-use-zoning-resilience</code> 建立边界。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C6研究域|C6研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c6-local-unlocking/parks-recreation-green-space-access-continuity/README.md Human Infra 仓库：domains/c6-local-unlocking/parks-recreation-green-space-access-continuity/README.md]
+
+[[Category:C6研究域]]

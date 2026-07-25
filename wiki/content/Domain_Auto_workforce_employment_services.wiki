@@ -1,0 +1,94 @@
+{{研究域
+|域 ID=domain.workforce-employment-services
+|C 层级=C5：可能性生态承载层
+|研究对象=Workforce Employment Services
+|持续性作用=主要提供主体展开未来所需的基础环境、资源、治理或基础设施。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c5-ecological-substrate/workforce-employment-services
+}}
+
+'''Workforce Employment Services'''是 Human Infra 在“外部生态承载”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+主要提供主体展开未来所需的基础环境、资源、治理或基础设施。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C5“可能性生态承载层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>workforce-employment-services/</code> 研究就业服务、劳动力发展、学徒制、职业信息、再就业支持、岗位匹配和合理便利如何让主体把能力转化为收入、角色和长期任务窗口。
+
+<blockquote>核心问题：主体不仅需要学习能力，还需要进入可持续工作的制度通道；就业服务失败会让能力、时间和健康无法转化为资源与社会参与。
+</blockquote>
+== 先验位置 ==
+
+<pre>有效永生 / 主体持续性最大化
+  -> 主体必须长期维持收入、技能更新、社会角色和任务入口
+  -> 技能需要通过就业服务、劳动力发展、学徒制、职业信息和合理便利转化为工作机会
+  -> 失业、转型失败、岗位错配和便利缺失会压缩资源、身份、行动和未来选择权
+  -> 因此劳动力与就业服务是主体持续性的能力转化域</pre>
+== 关注对象 ==
+
+* 就业服务、CareerOneStop、WIOA、学徒制、O*NET、My Next Move、劳动力市场信息和合理便利。
+* 再就业、技能转型、岗位匹配、残障就业、工作适配、收入恢复和职业路径导航。
+* 与 <code>learning-skill-acquisition/</code> 的边界：学习域关注能力形成；本域关注能力进入劳动市场和服务系统。
+* 与 <code>occupational-work-design/</code> 的边界：工作设计关注岗位内健康和组织；本域关注就业入口、转型和服务。
+
+<span id="human-infra-模型链路"></span>
+== Human Infra 模型链路 ==
+
+<pre>就业服务与劳动力发展 T
+  -> 改变职业信息、技能转型、岗位匹配、学徒制、合理便利和再就业支持变量 X
+  -> 改变主体收入、角色、技能使用和社会参与状态 S
+  -> 改变长期失业、收入断裂、技能过期、职业错配、健康恶化和机会损失风险 λ(t)
+  -> 影响财务韧性、身份连续、有效时间和未来选择权</pre>
+== 非目标 ==
+
+* 不提供个体职业规划、简历、面试、就业承诺、工资判断、移民、福利、法律或劳动争议建议。
+* 不支持歧视性筛选、剥削性招聘、监控劳动者、虚假岗位、培训骗局或资格规避。
+* 不把就业服务写成让人无限服从劳动力市场的工具；主体健康、尊严和退出权优先。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* CareerOneStop: https://www.careeronestop.org/
+* U.S. Department of Labor Employment and Training Administration: https://www.dol.gov/agencies/eta
+* WIOA: https://www.dol.gov/agencies/eta/wioa
+* Apprenticeship.gov: https://www.apprenticeship.gov/
+* O*NET: https://www.onetonline.org/
+* My Next Move: https://www.mynextmove.org/
+* Job Accommodation Network: https://askjan.org/
+
+== 下一步 ==
+
+* 建立变量表：就业入口、技能转型、岗位匹配、合理便利、再就业支持、收入恢复和职业信息质量。
+* 与 <code>learning-skill-acquisition/</code>、<code>occupational-work-design/</code>、<code>labor-rights-workplace-protection/</code> 和 <code>financial-resilience-access/</code> 建立边界。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C5研究域|C5研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c5-ecological-substrate/workforce-employment-services/README.md Human Infra 仓库：domains/c5-ecological-substrate/workforce-employment-services/README.md]
+
+[[Category:C5研究域]]

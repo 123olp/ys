@@ -1,0 +1,84 @@
+{{研究域
+|域 ID=domain.prepared-food-restaurant-cafeteria-safety-access-continuity
+|C 层级=C5：可能性生态承载层
+|研究对象=Prepared Food Restaurant Cafeteria Safety Access Continuity
+|持续性作用=关键词显示该域主要承载能源、水、食物、住房、治理、经济、通信、灾害或基础设施环境。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c5-ecological-substrate/prepared-food-restaurant-cafeteria-safety-access-continuity
+}}
+
+'''Prepared Food Restaurant Cafeteria Safety Access Continuity'''是 Human Infra 在“外部生态承载”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要承载能源、水、食物、住房、治理、经济、通信、灾害或基础设施环境。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C5“可能性生态承载层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>prepared-food-restaurant-cafeteria-safety-access-continuity</code> 研究餐馆、食堂、工作/校园/医院 cafeteria、外卖、即食餐、菜单信息、过敏原、食品安全和可负担外食如何影响主体在不能做饭或离家时的餐食连续性。
+
+<blockquote>核心问题：外食不是娱乐层，而是厨房不可用、时间不足、照护负担、工作学习和医疗场景中的替代摄食基础设施。
+</blockquote>
+== 关注对象 ==
+
+* 餐馆、cafeteria、工作/校园/医院餐食、外卖、即食餐、菜单信息、过敏原标识、食品安全评分、价格和支付入口。
+* 食源性风险、过敏原、特殊饮食、营业时段、交通可达、排队、配送、停电、灾害、卫生检查和消费者信息。
+* 与 FDA Food Code、CDC restaurant food safety、地方健康部门、劳动/学校/医院食堂、外卖平台和食品安全监管的接口。
+
+<span id="human-infra-链路"></span>
+== Human Infra 链路 ==
+
+<pre>熟食和外食安全可达
+  -> 主体在离家、厨房不可用或时间受限时仍可获得餐食
+  -> 食源性疾病、过敏暴露、排队失败、价格挤压和时间损耗下降
+  -> 工作、学习、照护、医疗陪护和旅行场景中的能量输入更稳定
+  -> 有效时间、恢复能力和任务完成能力增强</pre>
+== 非目标 ==
+
+* 不提供餐馆推荐、点餐建议、饮食处方、过敏医疗建议、卫生评分炒作、差评攻击、外卖平台规避、食品制备流程或个案投诉策略。
+* 不替代 FDA、CDC、地方卫生部门、餐饮机构、营养师、过敏专科、消费者保护或法律服务。
+* 不收集个人点餐记录、健康/过敏信息、支付账号、餐馆内部安防、员工隐私、配送轨迹或卫生检查未公开信息。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* FDA Food Code: https://www.fda.gov/food/fda-food-code/food-code-2022
+* CDC Food Safety: https://www.cdc.gov/food-safety/
+* CDC Food Safety in Restaurants: https://www.cdc.gov/food-safety/php/practices/index.html
+* FDA Food Allergies: https://www.fda.gov/food/food-labeling-nutrition/food-allergies
+
+== 下一步 ==
+
+* 建立 <code>prepared food venue -&gt; menu/safety signal -&gt; access mode -&gt; dietary constraint -&gt; meal continuity</code> 变量表。
+* 区分餐馆、工作食堂、校园食堂、医院食堂、外卖、即食餐、过敏原信息和灾害/停电替代餐食。
+* 与 <code>food-safety-contamination-control</code>、<code>cooking-meal-preparation-kitchen-safety-continuity</code>、<code>grocery-retail-food-store-access-continuity</code>、<code>school-meals-nutrition-access-continuity</code> 和 <code>occupational-work-design</code> 建立边界。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C5研究域|C5研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c5-ecological-substrate/prepared-food-restaurant-cafeteria-safety-access-continuity/README.md Human Infra 仓库：domains/c5-ecological-substrate/prepared-food-restaurant-cafeteria-safety-access-continuity/README.md]
+
+[[Category:C5研究域]]

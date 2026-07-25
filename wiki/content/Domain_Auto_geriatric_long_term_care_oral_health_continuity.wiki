@@ -1,0 +1,92 @@
+{{研究域
+|域 ID=domain.geriatric-long-term-care-oral-health-continuity
+|C 层级=C2：可能性源体维护层
+|研究对象=Geriatric Long Term Care Oral Health Continuity
+|持续性作用=关键词显示该域主要维护身体、脑、器官、细胞、急性生命风险或衰老损伤控制。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c2-source-maintenance/geriatric-long-term-care-oral-health-continuity
+}}
+
+'''Geriatric Long Term Care Oral Health Continuity'''是 Human Infra 在“生命载体维护”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要维护身体、脑、器官、细胞、急性生命风险或衰老损伤控制。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C2“可能性源体维护层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>geriatric-long-term-care-oral-health-continuity/</code> 负责整理老年口腔健康、长期照护、义齿、口腔卫生和功能连续性。
+
+核心问题：
+
+<blockquote>老年口腔健康不是护理细节；它影响进食、吞咽、感染、疼痛、尊严、照护工作流和机构生活质量。
+</blockquote>
+== 先验位置 ==
+
+<pre>主体持续性最大化
+  -> 老年主体必须在衰弱、共病和照护依赖中维持进食、沟通和尊严
+  -> 缺牙、义齿不适、口干、疼痛和口腔卫生不足会破坏摄食与社交
+  -> 长期照护机构中的口腔问题会与营养、感染、吞咽和认知照护相互放大
+  -> 因此老年口腔连续性是长期照护质量和有效时间的基础接口</pre>
+== 关注对象 ==
+
+* 老年缺牙、义齿、龋病、牙周病、口干、吞咽、疼痛和口腔卫生支持。
+* 长期照护机构、家庭照护、护理工作流、认知障碍、衰弱和医疗牙科协作。
+* 营养、误吸风险、感染负担、尊严、社交和生活质量。
+* 与 <code>frailty-sarcopenia-reserve/</code> 的关系：本域关注口腔输入和照护流程；衰弱域关注整体储备下降。
+
+<span id="human-infra-模型链路"></span>
+== Human Infra 模型链路 ==
+
+<pre>老年口腔照护 / 服务 T
+  -> 改变咀嚼、义齿适配、口干、疼痛、口腔卫生、吞咽和照护时间变量 X
+  -> 改变老年主体摄食、感染和照护依赖状态 S
+  -> 改变营养不良、误吸、社交退缩、疼痛和机构照护失败风险
+  -> 增加尊严、生活质量和晚年有效时间</pre>
+== 非目标 ==
+
+* 不提供护理医嘱、义齿调整、吞咽训练、药物更改、产品或个体照护方案。
+* 不替代牙医、护理、老年医学、言语吞咽或营养专业评估。
+* 不把机构照护问题简化为单一口腔卫生责任。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* NIDCR Older Adults and Oral Health: https://www.nidcr.nih.gov/health-info/older-adults
+* CDC Oral Health: https://www.cdc.gov/oral-health/
+* WHO Oral Health: https://www.who.int/news-room/fact-sheets/detail/oral-health
+
+== 下一步 ==
+
+* 建立老年口腔照护变量表，覆盖义齿、口干、疼痛、吞咽、营养和机构工作流。
+* 对接长期照护、吞咽、缺牙修复和唾液功能域。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C2研究域|C2研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c2-source-maintenance/geriatric-long-term-care-oral-health-continuity/README.md Human Infra 仓库：domains/c2-source-maintenance/geriatric-long-term-care-oral-health-continuity/README.md]
+
+[[Category:C2研究域]]

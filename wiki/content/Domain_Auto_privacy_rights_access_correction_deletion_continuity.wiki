@@ -1,0 +1,82 @@
+{{研究域
+|域 ID=domain.privacy-rights-access-correction-deletion-continuity
+|C 层级=C4：可能性转换通道层
+|研究对象=Privacy Rights Access Correction Deletion Continuity
+|持续性作用=关键词显示该域主要处理研究、数据、模型、服务入口、身份记录、转化或治理接口。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c4-conversion-channel/privacy-rights-access-correction-deletion-continuity
+}}
+
+'''Privacy Rights Access Correction Deletion Continuity'''是 Human Infra 在“路径转换接口”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要处理研究、数据、模型、服务入口、身份记录、转化或治理接口。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C4“可能性转换通道层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+Privacy Rights Access Correction Deletion Continuity 关注个人对自身数据的访问、更正、删除、限制处理、可携带、申诉和执行权利如何让主体在数据化社会中保持可纠错、可退出和可控制。
+
+== 对象 ==
+
+* Privacy rights、data subject access request、correction、deletion、appeal、verification、authorized agent 和 response timeline。
+* 数据错误、身份混淆、旧资料、敏感资料外泄、不可解释拒绝和跨机构数据同步失败。
+* 消费者、患者、学生、劳动者、租户、账户持有人、儿童和照护代理人的数据权利入口。
+
+<span id="human-infra-价值"></span>
+== Human Infra 价值 ==
+
+<pre>主体持续性需要数据系统承认主体的纠错权
+-> 外部系统持续记录主体身份、行为、资格、风险和偏好
+-> 数据错误或无法访问会让主体失去解释、纠正和退出机会
+-> 访问、更正、删除、申诉和授权代理机制把数据系统变成可审查接口
+-> 主体在金融、住房、医疗、就业、教育和公共服务中的连续性更少被错误资料击穿</pre>
+== 边界 ==
+
+* 本域不提供法律建议、隐私权适用判断、请求信代写、身份验证材料准备、投诉策略或平台操作教程。
+* 不判断某机构是否必须删除、更正、披露或停止处理某项个人数据。
+* 不提供绕过平台、伪造授权、隐藏身份、抓取数据、批量投诉、骚扰企业或攻击隐私门户的方法。
+* 只整理公开资料、权利类型、请求流程抽象、失败模式、证据边界和禁止用途。
+
+== 上下游 ==
+
+* 上游：<code>health-data-privacy-governance/</code>、<code>digital-identity-security/</code>、<code>patient-data-interoperability/</code>。
+* 下游：<code>data-broker-registry-opt-out-deletion-continuity/</code>、<code>credit-consumer-reporting-access-continuity/</code>、<code>platform-account-suspension-appeals-continuity/</code>。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* NIST Privacy Framework.
+* California Privacy Protection Agency consumer rights materials.
+* Federal Trade Commission privacy and data security materials.
+* CFPB consumer report access and dispute materials.
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C4研究域|C4研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c4-conversion-channel/privacy-rights-access-correction-deletion-continuity/README.md Human Infra 仓库：domains/c4-conversion-channel/privacy-rights-access-correction-deletion-continuity/README.md]
+
+[[Category:C4研究域]]

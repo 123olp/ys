@@ -1,0 +1,89 @@
+{{研究域
+|域 ID=domain.hypogonadism-testosterone-sex-hormone-continuity
+|C 层级=C2：可能性源体维护层
+|研究对象=Hypogonadism Testosterone Sex Hormone Continuity
+|持续性作用=关键词显示该域主要维护身体、脑、器官、细胞、急性生命风险或衰老损伤控制。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c2-source-maintenance/hypogonadism-testosterone-sex-hormone-continuity
+}}
+
+'''Hypogonadism Testosterone Sex Hormone Continuity'''是 Human Infra 在“生命载体维护”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要维护身体、脑、器官、细胞、急性生命风险或衰老损伤控制。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C2“可能性源体维护层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>hypogonadism-testosterone-sex-hormone-continuity/</code> 研究性腺功能低下、睾酮/性激素不足、青春期/成人阶段差异、骨骼肌肉、情绪、性功能、生育力和长期监测边界如何影响主体持续性。
+
+<blockquote>核心问题：性激素不只是性功能变量，也参与骨密度、肌肉、能量、情绪、红细胞、生殖窗口和身份体验；误读或商业化过度会同时制造漏诊和过度治疗风险。
+</blockquote>
+== 先验位置 ==
+
+<pre>有效永生 / 主体持续性最大化
+  -> 主体需要性腺轴在发育、成人和衰老阶段维持骨骼、肌肉、情绪、性功能和生育相关能力
+  -> 性腺功能低下会改变睾酮/雌激素、精子生成、骨密度、肌力、疲劳、情绪和性功能变量
+  -> 结果取决于病因识别、年龄/阶段语境、化验边界、治疗风险、商业夸大和长期监测
+  -> 因此性腺功能低下是性激素轴、身体能力和未来选择权的关键域</pre>
+== 关注对象 ==
+
+* Hypogonadism、low testosterone context、hypogonadotropic hypogonadism context、puberty/adult stage context、bone/muscle effects、sexual function、fertility and sperm production, monitoring boundary。
+* 与 <code>male-factor-infertility-sperm-health-continuity/</code> 的关系：本域聚焦性腺激素轴；男性因素不育域聚焦精子健康和生殖规划负担。
+* 与 <code>erectile-dysfunction-vascular-sexual-function-continuity/</code> 的关系：ED 是性功能和血管信号接口，不等于睾酮不足。
+
+<span id="human-infra-模型链路"></span>
+== Human Infra 模型链路 ==
+
+<pre>性腺功能低下识别与监测 T
+  -> 改变睾酮/性激素、骨密度、肌肉、疲劳、情绪、性功能和生育变量 X
+  -> 改变体力、训练适应、关系参与、生殖规划、身份体验和长期治疗状态 S
+  -> 改变骨折、肌少、贫血/红细胞异常、性功能困扰、生育窗口损耗和过度治疗风险 λ(t)
+  -> 影响主体行动能力、未来选择权和长期健康寿命</pre>
+== 非目标 ==
+
+* 不提供个人诊断、睾酮/LH/FSH/雌激素/精液化验判读、青春期判断、用药、激素、剂量、补剂、健身、性功能、生育、停药、风险评分或个体医疗建议。
+* 不生成 testosterone therapy 方案、药品/诊所/产品推荐、健身增肌方案、伴侣沟通、保险申诉、实验室重测策略或身份/性功能判断。
+* 不收集个案化验、精液报告、处方、身体照片、青春期资料、性生活资料、伴侣信息、生育计划或保险资料。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* MedlinePlus hypogonadism: https://medlineplus.gov/ency/article/001195.htm
+* MedlinePlus hypogonadotropic hypogonadism: https://medlineplus.gov/ency/article/000390.htm
+* MedlinePlus testosterone levels test: https://medlineplus.gov/lab-tests/testosterone-levels-test/
+
+== 下一步 ==
+
+* 建立 Sex Hormone Axis Card：stage, gonadal vs central context, bone/muscle/energy effects, fertility interface, overmedicalization boundary。
+* 与 <code>endocrine-hormonal-regulation/</code>、<code>male-factor-infertility-sperm-health-continuity/</code>、<code>erectile-dysfunction-vascular-sexual-function-continuity/</code> 和 <code>musculoskeletal-integrity/</code> 建立接口。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C2研究域|C2研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c2-source-maintenance/hypogonadism-testosterone-sex-hormone-continuity/README.md Human Infra 仓库：domains/c2-source-maintenance/hypogonadism-testosterone-sex-hormone-continuity/README.md]
+
+[[Category:C2研究域]]

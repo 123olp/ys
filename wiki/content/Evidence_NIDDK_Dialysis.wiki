@@ -1,0 +1,16 @@
+{{证据来源
+|来源 ID=evidence.niddk.hemodialysis
+|来源类型=美国国家糖尿病、消化与肾脏疾病研究所患者资料
+|完整引文=National Institute of Diabetes and Digestive and Kidney Diseases. Hemodialysis.
+|URL 或 DOI=https://www.niddk.nih.gov/health-information/kidney-disease/kidney-failure/hemodialysis
+|支持范围=血液透析的作用、实施方式与功能边界
+|不支持的推论=不支持透析治愈肾衰竭或复制肾脏全部功能
+|审查状态=已核对NIDDK原始页面
+|访问日期=2026-07-25
+}}
+
+== 支持范围 ==
+NIDDK说明透析可帮助肾衰竭患者改善状态和延长生存，但不是治愈。
+
+== 不支持的推论 ==
+血液清除功能不能代表肾脏的全部内分泌、代谢和稳态作用。

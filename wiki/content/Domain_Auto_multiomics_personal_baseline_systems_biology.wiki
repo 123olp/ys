@@ -1,0 +1,96 @@
+{{研究域
+|域 ID=domain.multiomics-personal-baseline-systems-biology
+|C 层级=C3：可能性生成引擎层
+|研究对象=Multiomics Personal Baseline Systems Biology
+|持续性作用=关键词显示该域主要增强认知、学习、工具、AI、技能或沟通能力。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c3-generation-engine/multiomics-personal-baseline-systems-biology
+}}
+
+'''Multiomics Personal Baseline Systems Biology'''是 Human Infra 在“主体能力生成”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要增强认知、学习、工具、AI、技能或沟通能力。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C3“可能性生成引擎层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>multiomics-personal-baseline-systems-biology/</code> 研究基因组、转录组、表观组、蛋白组、代谢组、微生物组、临床数据和连续感知如何构成主体状态的系统生物学底图。
+
+<blockquote>核心问题：单一指标不足以描述一个长期运行的主体。Human Infra 需要的是跨层状态图：哪些变量在变、为什么变、如何相互作用、能否被干预。
+</blockquote>
+== 先验位置 ==
+
+<pre>有效永生 / 主体持续性最大化
+  -> 主体状态由多层生物系统共同决定
+  -> 单一检测无法覆盖基因、表达、蛋白、代谢、免疫、微生物和行为状态
+  -> 多组学和个人基线可提供动态状态估计
+  -> 数据质量、解释性、隐私和可迁移性失败会制造错误模型
+  -> 因此多组学个人基线是生命路径建模的数据底座</pre>
+== 关注对象 ==
+
+* Genomics、epigenomics、transcriptomics、proteomics、metabolomics、microbiomics、single-cell、spatial omics 和 clinical phenotyping。
+* 个人基线、纵向变化、跨组学整合、系统生物学网络、因果假设和风险预测。
+* 数据批次效应、样本偏差、缺失数据、算法解释、隐私、代表性和临床可用性。
+* 与 <code>health-data-privacy-governance/</code> 的边界：隐私治理域关注权利和数据治理；本域关注生物状态建模。
+* 与 <code>biological-age-clocks-biomarker-validation/</code> 的边界：年龄钟域关注衰老指标；本域关注全局系统状态。
+
+<span id="human-infra-模型链路"></span>
+== Human Infra 模型链路 ==
+
+<pre>多组学观测 O
+  -> 描述主体多层状态 X
+  -> 改善疾病风险、恢复能力、干预反应和个体差异估计 S
+  -> 改变风险函数 λ(t) 和行动策略 A_t
+  -> 影响健康寿命、有效时间和未来选择权</pre>
+== 非目标 ==
+
+* 不提供个体基因组解释、疾病诊断、治疗建议、检测购买或保险/就业决策建议。
+* 不把相关网络、聚类、风险分数或 AI 解释写成确定因果。
+* 不把多组学数据收集本身写成健康收益；必须说明反馈和行动路径。
+* 不保存个人敏感数据、原始基因组数据或可识别健康数据。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* NIH Human BioMolecular Atlas Program: https://commonfund.nih.gov/hubmap
+* NIH Bridge2AI: https://commonfund.nih.gov/bridge2ai
+* GTEx Portal: https://gtexportal.org/
+* All of Us Research Program: https://allofus.nih.gov/
+* Human Cell Atlas: https://www.humancellatlas.org/
+
+== 下一步 ==
+
+# 建立多组学变量契约：数据层、样本来源、时间尺度、可解释性、隐私等级和证据用途。
+# 与 <code>biological-age-clocks-biomarker-validation/</code>、<code>measurement-feedback/</code>、<code>health-data-privacy-governance/</code> 建立接口。
+# 将代表性多组学平台资料转成 Source Cards。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C3研究域|C3研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c3-generation-engine/multiomics-personal-baseline-systems-biology/README.md Human Infra 仓库：domains/c3-generation-engine/multiomics-personal-baseline-systems-biology/README.md]
+
+[[Category:C3研究域]]

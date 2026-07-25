@@ -1,0 +1,84 @@
+{{研究域
+|域 ID=domain.home-cooling-heat-pump-air-conditioning-maintenance-continuity
+|C 层级=C3：可能性生成引擎层
+|研究对象=Home Cooling Heat Pump Air Conditioning Maintenance Continuity
+|持续性作用=关键词显示该域主要增强认知、学习、工具、AI、技能或沟通能力。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c3-generation-engine/home-cooling-heat-pump-air-conditioning-maintenance-continuity
+}}
+
+'''Home Cooling Heat Pump Air Conditioning Maintenance Continuity'''是 Human Infra 在“主体能力生成”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要增强认知、学习、工具、AI、技能或沟通能力。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C3“可能性生成引擎层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>home-cooling-heat-pump-air-conditioning-maintenance-continuity</code> 研究住宅空调、热泵、过滤、制冷能力、维护延迟和高温负荷如何影响睡眠、慢病管理、药品保存、学习和家庭恢复。
+
+<blockquote>核心问题：制冷不是舒适装饰，而是在热浪、慢病、睡眠和室内空气条件下维持主体可行动状态的家庭运行系统。
+</blockquote>
+== 关注对象 ==
+
+* 中央空调、window AC、portable AC、heat pump、过滤器、室外机、冷媒系统、维护计划和能源成本。
+* 高温、湿度、设备故障、滤网堵塞、租房维护、低收入能源负担和停电叠加。
+* 睡眠质量、慢病症状、药品/设备保存、儿童老人照护、远程工作学习和灾后恢复。
+* 与极端高温、公共降温中心、能源可负担性、室内空气过滤和备电的接口。
+
+<span id="human-infra-链路"></span>
+== Human Infra 链路 ==
+
+<pre>家庭制冷与热泵维护连续
+  -> 热浪和高湿条件下室内热负荷更可控
+  -> 睡眠、慢病管理、照护、药品保存和学习工作受热中断下降
+  -> 主体恢复能力、注意力和居住稳定性提高
+  -> 高温风险不再直接压缩有效行动时间</pre>
+== 非目标 ==
+
+* 不提供空调维修、冷媒操作、热泵安装、设备选型、温度处方、能耗审计或个案医疗建议。
+* 不替代 HVAC 专业人员、能源援助、房东维修义务、公共卫生热警报、医疗建议或应急服务。
+* 不把持续低温当作目标；本域关注热风险下的安全、可负担、可维护制冷能力。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* Energy Saver Maintaining Your Air Conditioner: https://www.energy.gov/energysaver/maintaining-your-air-conditioner
+* Energy Saver Heat Pump Systems: https://www.energy.gov/energysaver/heat-pump-systems
+* CDC Heat and Health: https://www.cdc.gov/heat-health/about/index.html
+
+== 下一步 ==
+
+* 建立 <code>cooling equipment -&gt; maintenance/filter state -&gt; indoor heat exposure -&gt; task loss -&gt; continuity outcome</code> 变量表。
+* 区分热泵、中央空调、窗机、便携空调、租房维护、能源负担和停电场景。
+* 与 <code>extreme-heat-cooling-public-health-continuity</code>、<code>energy-access-resilience</code> 和 <code>indoor-ventilation-filtration-outbreak-control-continuity</code> 建立边界。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C3研究域|C3研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c3-generation-engine/home-cooling-heat-pump-air-conditioning-maintenance-continuity/README.md Human Infra 仓库：domains/c3-generation-engine/home-cooling-heat-pump-air-conditioning-maintenance-continuity/README.md]
+
+[[Category:C3研究域]]

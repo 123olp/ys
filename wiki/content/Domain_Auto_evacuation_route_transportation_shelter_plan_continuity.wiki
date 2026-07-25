@@ -1,0 +1,80 @@
+{{研究域
+|域 ID=domain.evacuation-route-transportation-shelter-plan-continuity
+|C 层级=C5：可能性生态承载层
+|研究对象=Evacuation Route Transportation Shelter Plan Continuity
+|持续性作用=关键词显示该域主要承载能源、水、食物、住房、治理、经济、通信、灾害或基础设施环境。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c5-ecological-substrate/evacuation-route-transportation-shelter-plan-continuity
+}}
+
+'''Evacuation Route Transportation Shelter Plan Continuity'''是 Human Infra 在“外部生态承载”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要承载能源、水、食物、住房、治理、经济、通信、灾害或基础设施环境。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C5“可能性生态承载层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>evacuation-route-transportation-shelter-plan-continuity/</code> 研究撤离路线、交通可得、避难点、接驳、无障碍和返回条件如何影响主体在危险环境中的退出能力。
+
+<blockquote>核心问题：撤离不是“知道危险”之后自动发生，而是交通、燃料、路况、照护、证件、宠物、无障碍和避难承接共同决定的退出链。
+</blockquote>
+== 先验位置 ==
+
+<pre>主体要避开局部灾害
+  -> 必须在危险超过居留阈值前退出暴露区域
+  -> 撤离依赖路线、交通、燃料、时间、避难承接和特殊需求支持
+  -> 因而撤离计划是主体从危险空间转移到可恢复空间的执行条件</pre>
+== 关注对象 ==
+
+* 撤离路线、车辆/公共交通、燃料、道路封闭、避难点、接驳、无障碍、临时住宿和返回条件。
+* 无车家庭、残障者、老人、儿童家庭、宠物家庭、低收入家庭、沿海/火灾/洪水风险地区居民。
+
+<span id="human-infra-模型链路"></span>
+== Human Infra 模型链路 ==
+
+<pre>撤离路线与避难承接系统 T
+  -> 改变交通可及、路线冗余、燃料、无障碍、照护负荷和避难容量变量 X
+  -> 改变主体从危险环境退出的状态 S
+  -> 改变滞留、暴露、交通事故、照护断裂、失屋和恢复延迟风险 λ(t)
+  -> 改变生命安全、服务接入、家庭团聚和灾后恢复选择权</pre>
+== 非目标 ==
+
+* 不提供个人撤离路线、实时路况、避难点选择、驾驶、燃料、交通、住宿、保险或灾害现场行动建议。
+* 不收集住址、路线、车辆、燃料、残障状态、宠物、家庭成员、避难点或定位信息。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* Ready.gov evacuation materials: https://www.ready.gov/evacuation
+* FEMA evacuation planning materials: https://community.fema.gov/ProtectiveActions/s/article/Evacuation
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C5研究域|C5研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c5-ecological-substrate/evacuation-route-transportation-shelter-plan-continuity/README.md Human Infra 仓库：domains/c5-ecological-substrate/evacuation-route-transportation-shelter-plan-continuity/README.md]
+
+[[Category:C5研究域]]

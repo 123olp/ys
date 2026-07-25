@@ -1,0 +1,83 @@
+{{研究域
+|域 ID=domain.tanf-cash-assistance-work-support-continuity
+|C 层级=C6：局部可能性解锁层
+|研究对象=TANF Cash Assistance Work Support Continuity
+|持续性作用=未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c6-local-unlocking/tanf-cash-assistance-work-support-continuity
+}}
+
+'''TANF Cash Assistance Work Support Continuity'''是 Human Infra 在“局部阻塞解除”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C6“局部可能性解锁层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>tanf-cash-assistance-work-support-continuity</code> 研究 TANF 现金援助、工作参与、时间限制、制裁、case management、child support cooperation、child care/work support 和州级执行差异如何影响家庭现金流、照护安排、就业连接和儿童发展连续性。
+
+== 核心问题 ==
+
+TANF 不是单纯现金项目，而是家庭、工作、托育、制裁和州级管理共同构成的任务系统。任何一个环节失败，都可能让低收入家庭在食物、住房、儿童照护、交通和就业之间失去稳定行动窗口。
+
+== 对象 ==
+
+* TANF cash assistance、work participation、time limits、sanctions、case management 和 state plan variation。
+* child care、transportation、work supports、child support cooperation、家庭暴力例外和 hardship 机制。
+* 与 SNAP、Medicaid/CHIP、CCDF、housing、workforce services 和 child welfare 的接口。
+
+<span id="human-infra-价值"></span>
+== Human Infra 价值 ==
+
+* 把低收入家庭现金援助视为儿童发展、照护者工作连续性和家庭风险缓冲基础设施。
+* 解释 work requirement、case management 和制裁如何改变有效时间、照护负担和未来选择权。
+* 将反稀缺工程从物资获得扩展到家庭任务链路稳定。
+
+== 边界 ==
+
+* 不提供 TANF 资格判断、申请、续期、工作要求合规、制裁处理、child support、托育补贴、法律、税务、移民或个案建议。
+* 不代写申请、证明、case plan、good cause、sanction appeal 或机构沟通材料。
+* 不帮助规避工作要求、隐瞒收入、虚构家庭组成、逃避 child support cooperation、骗领福利或操纵州级规则。
+* 不收集家庭成员、收入、child support、案件号、住址、移民身份或门户凭证。
+
+== 上游与下游 ==
+
+* 上游：<code>social-protection-benefits-delivery</code>、<code>administrative-burden-procedural-friction</code>、<code>childcare-family-continuity</code>。
+* 下游：<code>child-care-subsidy-ccdf-payment-continuity</code>、<code>snap-eligibility-recertification-abawd-continuity</code>、<code>medicaid-chip-renewal-redetermination-continuity</code>、<code>workforce-development-reskilling</code>。
+
+== 初始资料线索 ==
+
+* ACF Office of Family Assistance TANF: https://www.acf.hhs.gov/ofa/programs/tanf
+* ACF TANF policy and guidance: https://www.acf.hhs.gov/ofa/policy-guidance
+* ACF TANF data and reports: https://www.acf.hhs.gov/ofa/data
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C6研究域|C6研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c6-local-unlocking/tanf-cash-assistance-work-support-continuity/README.md Human Infra 仓库：domains/c6-local-unlocking/tanf-cash-assistance-work-support-continuity/README.md]
+
+[[Category:C6研究域]]

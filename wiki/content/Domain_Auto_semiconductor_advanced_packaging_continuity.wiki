@@ -1,0 +1,90 @@
+{{研究域
+|域 ID=domain.semiconductor-advanced-packaging-continuity
+|C 层级=C6：局部可能性解锁层
+|研究对象=Semiconductor Advanced Packaging Continuity
+|持续性作用=未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c6-local-unlocking/semiconductor-advanced-packaging-continuity
+}}
+
+'''Semiconductor Advanced Packaging Continuity'''是 Human Infra 在“局部阻塞解除”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C6“局部可能性解锁层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>semiconductor-advanced-packaging-continuity/</code> 研究先进封装、chiplet、interposer、HBM 集成、热管理、测试和封装供应连续性如何影响高性能计算、AI 加速器和低功耗边缘设备。
+
+<blockquote>核心问题：未来算力不只来自更小晶体管，也来自封装、互连、内存靠近计算和系统级集成；封装断点会把芯片能力卡在制造之后、部署之前。
+</blockquote>
+== 先验位置 ==
+
+<pre>有效永生 / 主体持续性最大化
+  -> 需要更高能效、更高带宽、更高可靠性的计算硬件
+  -> 先进封装决定 chiplet、HBM、互连、散热和系统集成能力
+  -> 封装瓶颈会限制 AI、仿真、医学建模和边缘智能扩展
+  -> 因此先进封装是算力增长从晶圆走向可用系统的转化域</pre>
+== 关注对象 ==
+
+* Advanced packaging、chiplet architecture、2.5D/3D integration、HBM、substrate、interposer、test、thermal interface 和 reliability。
+* 封装产能、标准接口、测试覆盖、热失效、供应集中、可维修性和系统级可靠性。
+* 与 <code>semiconductor-manufacturing-metrology-continuity/</code> 的边界：制造域关注晶圆和制程；本域关注晶片之后的系统级封装。
+* 与 <code>ai-hardware-accelerator-performance-continuity/</code> 的关系：AI 硬件性能依赖封装，但本域不评测模型性能。
+
+<span id="human-infra-模型链路"></span>
+== Human Infra 模型链路 ==
+
+<pre>先进封装 T
+  -> 改变带宽、能效、热密度、良率、可靠性和系统集成变量 X
+  -> 改变 AI 训练推理、科学仿真、医疗建模和边缘设备状态 S
+  -> 改变算力短缺、硬件失效、能耗上升和技术采用延迟风险 λ(t)
+  -> 影响主体可使用的智能增强、研究速度和长期工具可得性</pre>
+== 非目标 ==
+
+* 不提供封装工艺参数、供应商选择、采购路线、出口管制规避或商业投资建议。
+* 不把封装路线图当成确定的算力增长承诺。
+* 不替代芯片制造、芯片设计、数据中心或 AI 硬件评测域。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* CHIPS National Advanced Packaging Manufacturing Program: https://www.nist.gov/chips/research-and-development-programs/national-advanced-packaging-manufacturing-program
+* NIST CHIPS R&amp;D Programs: https://www.nist.gov/chips/research-and-development-programs
+* JEDEC Standards: https://www.jedec.org/
+* SEMI Standards: https://www.semi.org/en/standards
+
+== 下一步 ==
+
+* 建立 Packaging Continuity Card：package class, memory integration, thermal envelope, test coverage, supplier concentration, reliability risk, compute impact。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C6研究域|C6研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c6-local-unlocking/semiconductor-advanced-packaging-continuity/README.md Human Infra 仓库：domains/c6-local-unlocking/semiconductor-advanced-packaging-continuity/README.md]
+
+[[Category:C6研究域]]

@@ -1,0 +1,83 @@
+{{研究域
+|域 ID=domain.lead-service-line-lead-copper-drinking-water-continuity
+|C 层级=C5：可能性生态承载层
+|研究对象=Lead Service Line Lead Copper Drinking Water Continuity
+|持续性作用=关键词显示该域主要承载能源、水、食物、住房、治理、经济、通信、灾害或基础设施环境。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c5-ecological-substrate/lead-service-line-lead-copper-drinking-water-continuity
+}}
+
+'''Lead Service Line Lead Copper Drinking Water Continuity'''是 Human Infra 在“外部生态承载”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要承载能源、水、食物、住房、治理、经济、通信、灾害或基础设施环境。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C5“可能性生态承载层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>lead-service-line-lead-copper-drinking-water-continuity</code> 研究铅服务线、铅铜管线、腐蚀控制、采样通知、替换计划和家庭端风险降低如何影响儿童发育、孕产妇健康、认知功能和饮水信任。
+
+<blockquote>核心问题：饮水铅暴露不是抽象环境风险，而是管线、腐蚀控制、采样、通知、替换和家庭端执行共同决定的长期主体损耗路径。
+</blockquote>
+== 关注对象 ==
+
+* 铅服务线、premise plumbing、铅铜规则、采样、腐蚀控制、公共通知、替换计划和临时保护措施。
+* 儿童、孕产妇、租户、老旧住房、学校/托育场所和低收入社区中的暴露不平等。
+* 过滤、冲洗、瓶装水、通知理解、施工替换、账单负担和信任恢复。
+* 与重金属暴露、公共饮水、家庭水处理、住房质量和公共健康沟通的接口。
+
+<span id="human-infra-链路"></span>
+== Human Infra 链路 ==
+
+<pre>铅铜饮水风险治理连续
+  -> 管线风险、采样结果和替换状态更可见
+  -> 家庭端保护、公共通知和长期替换更可执行
+  -> 儿童发育、认知、孕产妇健康和饮水信任损耗下降
+  -> 主体能力、学习轮次和未来选择权被保护</pre>
+== 非目标 ==
+
+* 不提供水样结果解释、家庭施工、滤水器选择、管线识别教程、法律索赔、房屋交易或个案饮水建议。
+* 不替代 EPA、州饮水监管机构、水务公司、认证实验室、持证 plumber、学校/托育监管或医疗专业人员。
+* 不把铅铜饮水问题合并进一般重金属暴露；本域只处理饮水管线、采样通知、替换和家庭执行链。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* EPA Lead and Copper Rule: https://www.epa.gov/dwreginfo/lead-and-copper-rule
+* EPA Certified Filters to Reduce Lead: https://www.epa.gov/water-research/consumer-tool-identifying-point-use-and-pitcher-filters-certified-reduce-lead
+
+== 下一步 ==
+
+* 建立 <code>service line state -&gt; sampling/notice -&gt; household mitigation -&gt; developmental/cognitive risk outcome</code> 变量表。
+* 区分家庭、学校、托育、孕产妇、租房和老旧城市供水场景。
+* 与 <code>lead-heavy-metal-exposure-control</code>、<code>public-drinking-water-hydration-access-continuity</code> 和 <code>household-water-treatment-filter-maintenance-continuity</code> 建立边界。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C5研究域|C5研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c5-ecological-substrate/lead-service-line-lead-copper-drinking-water-continuity/README.md Human Infra 仓库：domains/c5-ecological-substrate/lead-service-line-lead-copper-drinking-water-continuity/README.md]
+
+[[Category:C5研究域]]

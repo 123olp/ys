@@ -1,0 +1,84 @@
+{{研究域
+|域 ID=domain.public-seating-shade-rest-cooling-access-continuity
+|C 层级=C4：可能性转换通道层
+|研究对象=Public Seating Shade Rest Cooling Access Continuity
+|持续性作用=关键词显示该域主要处理研究、数据、模型、服务入口、身份记录、转化或治理接口。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c4-conversion-channel/public-seating-shade-rest-cooling-access-continuity
+}}
+
+'''Public Seating Shade Rest Cooling Access Continuity'''是 Human Infra 在“路径转换接口”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要处理研究、数据、模型、服务入口、身份记录、转化或治理接口。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C4“可能性转换通道层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>public-seating-shade-rest-cooling-access-continuity</code> 研究公共座椅、遮阴、树冠、候车休息、降温设施、冷却中心导向和可停留空间如何影响主体在城市、交通、排队、照护和高温场景中的有效行动时间。
+
+<blockquote>核心问题：公共空间只允许移动而不允许休息，会把老人、儿童、残障者、慢病患者、孕产妇、户外劳动者和低收入人群排除出日常任务系统。
+</blockquote>
+== 关注对象 ==
+
+* 公共座椅、候车亭、遮阳棚、树荫、喷雾/饮水/降温设施、空调公共空间、冷却中心和排队休息点。
+* 空间分布、维护状态、无障碍高度、扶手、靠背、照明、安全感、敌意设计、开放时间和极端高温期间的可用性。
+* 与热健康、城市树冠、公共交通、老年友好城市、残障可达、公共安全和公园管理的接口。
+
+<span id="human-infra-链路"></span>
+== Human Infra 链路 ==
+
+<pre>公共休息、遮阴和降温接入稳定
+  -> 主体在公共空间中可分段恢复体力和热负荷
+  -> 中暑、跌倒、疲劳、放弃出行和排队失败风险下降
+  -> 医疗、购物、通勤、照护、学校接送和社区参与更可完成
+  -> 主体有效行动密度、恢复能力和公共空间选择权增强</pre>
+== 非目标 ==
+
+* 不提供规避公共空间管理、占用设施、破坏敌意设计、露宿策略、跟踪人流、骚扰弱势群体或个案执法建议。
+* 不替代城市规划、公共卫生、交通机构、公园部门、设施运营方、社会服务或法律专业人员。
+* 不收集个人停留轨迹、脆弱人群实时位置、设施安防细节或敏感庇护/冷却中心拥挤数据。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* CDC Heat and Health: https://www.cdc.gov/heat-health/
+* EPA Heat Island Cooling Strategies: https://www.epa.gov/heatislands/heat-island-cooling-strategies
+* EPA Trees and Vegetation: https://www.epa.gov/heatislands/using-trees-and-vegetation-reduce-heat-islands
+* Ready.gov Extreme Heat: https://www.ready.gov/heat
+
+== 下一步 ==
+
+* 建立 <code>rest point -&gt; shade/cooling capacity -&gt; exposure reduction -&gt; recovery interval -&gt; task continuity</code> 变量表。
+* 区分日常座椅、候车休息、树荫降温、冷却中心、排队恢复和灾害期间临时休息设施。
+* 与 <code>heat-health-thermal-safety-continuity</code>、<code>green-blue-infrastructure-urban-nature-cooling</code>、<code>transportation-access-mobility</code>、<code>parks-recreation-green-space-access-continuity</code> 和 <code>public-service-design-accessibility</code> 建立边界。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C4研究域|C4研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c4-conversion-channel/public-seating-shade-rest-cooling-access-continuity/README.md Human Infra 仓库：domains/c4-conversion-channel/public-seating-shade-rest-cooling-access-continuity/README.md]
+
+[[Category:C4研究域]]

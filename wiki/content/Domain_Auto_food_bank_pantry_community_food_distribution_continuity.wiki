@@ -1,0 +1,84 @@
+{{研究域
+|域 ID=domain.food-bank-pantry-community-food-distribution-continuity
+|C 层级=C5：可能性生态承载层
+|研究对象=Food Bank Pantry Community Food Distribution Continuity
+|持续性作用=关键词显示该域主要承载能源、水、食物、住房、治理、经济、通信、灾害或基础设施环境。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c5-ecological-substrate/food-bank-pantry-community-food-distribution-continuity
+}}
+
+'''Food Bank Pantry Community Food Distribution Continuity'''是 Human Infra 在“外部生态承载”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要承载能源、水、食物、住房、治理、经济、通信、灾害或基础设施环境。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C5“可能性生态承载层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>food-bank-pantry-community-food-distribution-continuity</code> 研究食品银行、食品 pantry、社区发放点、TEFAP、捐赠物流、资格摩擦、开放时段和尊严保护如何在收入、灾害或服务断点中维持食物输入。
+
+<blockquote>核心问题：社区食物发放是最后缓冲层；当正式收入、福利或零售购买失败时，它决定主体是否仍有食物恢复窗口。
+</blockquote>
+== 关注对象 ==
+
+* 食品银行、食品 pantry、社区餐食、TEFAP、捐赠食品、移动发放、drive-through 发放、宗教/社区组织发放点。
+* 开放时段、资格要求、排队、交通、语言、隐私、食品安全、特殊饮食、库存波动、志愿者能力和灾害扩容。
+* 与 USDA FNS TEFAP、Feeding America 网络、地方社会服务、食品安全、灾害响应和社区资源导航的接口。
+
+<span id="human-infra-链路"></span>
+== Human Infra 链路 ==
+
+<pre>社区食品发放可持续
+  -> 收入、福利、零售或灾害冲击下仍有食物缓冲
+  -> 饥饿、羞辱、排队失败、库存断裂和食品安全风险下降
+  -> 主体可以把危机时间转化为恢复和重新组织资源
+  -> 家庭韧性、健康维护和未来选择权增强</pre>
+== 非目标 ==
+
+* 不提供资格规避、重复领取、转售捐赠食品、排队插队、库存操纵、食品处置决策、个案福利申请或组织运营合规建议。
+* 不替代 USDA FNS、食品银行、pantry、地方社会服务、营养师、食品安全机构或法律服务。
+* 不收集领取者身份、收入材料、地址、家庭组成、排队位置、机构库存漏洞、捐赠者身份或敏感服务记录。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* USDA FNS TEFAP: https://www.fns.usda.gov/tefap/emergency-food-assistance-program
+* USDA FNS Food Distribution Programs: https://www.fns.usda.gov/fdd
+* Feeding America Hunger and Food Bank Network: https://www.feedingamerica.org/
+* USDA Food Safety and Inspection Service: https://www.fsis.usda.gov/food-safety
+
+== 下一步 ==
+
+* 建立 <code>distribution node -&gt; eligibility friction -&gt; inventory/service window -&gt; dignity/safety -&gt; food continuity</code> 变量表。
+* 区分食品银行、pantry、TEFAP、社区餐食、移动发放、灾害扩容和特殊饮食支持。
+* 与 <code>food-security-nutrition-access</code>、<code>social-protection-benefits-delivery</code>、<code>emergency-food-disaster-feeding-continuity</code>、<code>community-resource-navigation</code> 和 <code>food-safety-contamination-control</code> 建立边界。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C5研究域|C5研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c5-ecological-substrate/food-bank-pantry-community-food-distribution-continuity/README.md Human Infra 仓库：domains/c5-ecological-substrate/food-bank-pantry-community-food-distribution-continuity/README.md]
+
+[[Category:C5研究域]]

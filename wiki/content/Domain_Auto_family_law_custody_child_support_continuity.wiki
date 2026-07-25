@@ -1,0 +1,87 @@
+{{研究域
+|域 ID=domain.family-law-custody-child-support-continuity
+|C 层级=C6：局部可能性解锁层
+|研究对象=家庭法、监护权与子女抚养连续性
+|持续性作用=未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c6-local-unlocking/family-law-custody-child-support-continuity
+}}
+
+'''家庭法、监护权与子女抚养连续性'''是 Human Infra 在“局部阻塞解除”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C6“局部可能性解锁层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+本域研究父母身份、监护权、探视/养育时间、子女抚养、家庭法院命令和执行机制如何影响儿童与照护者的资源、身份、教育、医疗和安全连续性。它关注制度接口和主体持续性，不提供个人家庭法建议。
+
+== 研究对象 ==
+
+* 父母身份、亲子关系、监护权、养育时间、子女抚养和家庭法院命令。
+* 子女抚养服务、收入扣缴、跨州执行、修改、欠款、健康保险和支付记录。
+* 家庭冲突、搬迁、保护令、安全计划、学校医疗授权和照护责任分配。
+* 家庭法记录与税务、福利、学校、医疗、住房和身份系统的下游关系。
+
+== 价值链路 ==
+
+<pre>儿童和照护者的持续性依赖清晰的照护责任与资源流
+  -> 家庭法系统把亲子关系、监护、养育时间和抚养责任制度化
+  -> 这些安排决定谁能做决定、谁承担费用、谁接收通知、谁能访问服务
+  -> 命令缺失、执行失败、跨州断点或冲突升级会让儿童资源、安全和照护连续性断裂
+  -> 家庭法连续性把家庭关系冲突转化为可执行、可审查、可恢复的照护结构</pre>
+== 关键问题 ==
+
+* 监护权、养育时间和子女抚养如何影响儿童医疗、教育、住房和福利连续性？
+* 子女抚养记录和支付流如何成为家庭资源连续性基础设施？
+* 家庭法院命令、保护令和安全需求如何与服务访问、地址隐私和学校医疗决策交织？
+* 如何防止家庭法资料被误用为个案策略、胁迫、规避责任或监控工具？
+
+== 上游与下游 ==
+
+* 上游：<code>child-protection-family-safety/</code>、<code>personal-safety-violence-prevention/</code>、<code>vital-records-life-event-continuity/</code>、<code>access-to-justice-legal-aid/</code>。
+* 下游：<code>household-composition-dependent-eligibility-continuity/</code>、<code>childcare-family-continuity/</code>、<code>social-protection-benefits-delivery/</code>、<code>healthcare-access-continuity/</code>、<code>education-record-transcript-verification-continuity/</code>。
+
+== 非目标 ==
+
+* 不提供离婚、监护权、探视、亲子关系、抚养费、保护令、跨州执行、修改命令或家庭法院策略建议。
+* 不判断个人案件胜算、抚养费金额、监护安排、违法责任、服务资格或税务影响。
+* 不协助逃避抚养义务、隐藏收入、规避法院命令、骚扰跟踪、胁迫控制或滥用家庭法系统。
+
+== 初始资料入口 ==
+
+* HHS ACF Office of Child Support Services
+* State child support agencies and state court self-help official resources
+* USA.gov and state legal aid official resources
+* National Center for State Courts public family court resources
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C6研究域|C6研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c6-local-unlocking/family-law-custody-child-support-continuity/README.md Human Infra 仓库：domains/c6-local-unlocking/family-law-custody-child-support-continuity/README.md]
+
+[[Category:C6研究域]]

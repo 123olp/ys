@@ -1,0 +1,88 @@
+{{研究域
+|域 ID=domain.toxic-mushroom-foraging-poisoning-continuity
+|C 层级=C6：局部可能性解锁层
+|研究对象=Toxic Mushroom Foraging Poisoning Continuity
+|持续性作用=未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c6-local-unlocking/toxic-mushroom-foraging-poisoning-continuity
+}}
+
+'''Toxic Mushroom Foraging Poisoning Continuity'''是 Human Infra 在“局部阻塞解除”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C6“局部可能性解锁层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>toxic-mushroom-foraging-poisoning-continuity</code> 研究野生蘑菇误食、采食文化、食物获取、毒物中心连接和急性中毒风险如何影响主体持续性。
+
+<blockquote>核心问题：野生蘑菇风险不是“食材知识不足”；它是食物探索、文化实践、户外活动、儿童误食和急性肝肾毒性之间的高后果边界。
+</blockquote>
+== 先验位置 ==
+
+<pre>有效永生 / 主体持续性最大化
+  -> 主体需要可靠区分可食资源和有毒暴露
+  -> 野生蘑菇误食会把食物探索转化为急性中毒和医疗危机
+  -> 教育、标签、毒物中心、急诊连接和食品安全边界构成行动前提
+  -> 若该前提失败，户外采食、儿童安全、家庭饮食和医疗容量都会被高后果事件重定价</pre>
+== 关注对象 ==
+
+* 野生蘑菇、误食、采食、儿童误食、急性中毒、肝肾风险、毒物中心和急诊连接。
+* 食品安全教育、市场/餐饮边界、文化实践、语言可及和风险沟通。
+* 与 <code>food-safety-contamination-control/</code> 的边界：上位域关注食品污染控制；本域关注野生蘑菇识别失败和毒物连接。
+
+<span id="human-infra-链路"></span>
+== Human Infra 链路 ==
+
+<pre>野生蘑菇误食风险被识别和连接
+  -> 高后果中毒、诊疗延误和家庭恐慌下降
+  -> 食物探索、户外活动和家庭饮食边界更清楚
+  -> 生命风险、医疗负担和有效时间损失下降</pre>
+== 非目标 ==
+
+* 不提供蘑菇鉴定、可食性判断、采食建议、烹饪安全、治疗、解毒、急诊分诊或市场合规建议。
+* 不替代 FDA、Poison Help、医疗机构、毒物中心、地方公共卫生、食品监管或专家鉴定。
+* 不把照片、AI 识别、民间经验、地理位置或颜色气味写成食用许可。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* CDC MMWR Poisonous Mushroom Ingestions: https://www.cdc.gov/mmwr/volumes/70/wr/mm7010a1.htm
+* FDA Bad Bug Book: https://www.fda.gov/food/foodborne-pathogens/bad-bug-book-second-edition
+* Poison Help: https://www.poisonhelp.org/
+
+== 下一步 ==
+
+* 建立 <code>foraging exposure -&gt; identification uncertainty -&gt; ingestion risk -&gt; poison center / ED connection -&gt; continuity cost</code> 变量表。
+* 区分儿童误食、成人采食、市场/餐饮、移民语言可及、社交媒体误导和户外教育场景。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C6研究域|C6研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c6-local-unlocking/toxic-mushroom-foraging-poisoning-continuity/README.md Human Infra 仓库：domains/c6-local-unlocking/toxic-mushroom-foraging-poisoning-continuity/README.md]
+
+[[Category:C6研究域]]

@@ -1,0 +1,88 @@
+{{研究域
+|域 ID=domain.emergency-contact-next-of-kin-notification-continuity
+|C 层级=C5：可能性生态承载层
+|研究对象=Emergency Contact Next Of Kin Notification Continuity
+|持续性作用=关键词显示该域主要承载能源、水、食物、住房、治理、经济、通信、灾害或基础设施环境。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c5-ecological-substrate/emergency-contact-next-of-kin-notification-continuity
+}}
+
+'''Emergency Contact Next Of Kin Notification Continuity'''是 Human Infra 在“外部生态承载”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要承载能源、水、食物、住房、治理、经济、通信、灾害或基础设施环境。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C5“可能性生态承载层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+Emergency Contact Next Of Kin Notification Continuity 研究 emergency contact、next of kin、照护者通知、身份确认和联系链如何在急救、灾害、住院、失能或死亡边界中维持主体与支持网络的连接。
+
+<blockquote>核心问题：主体一旦无法表达，系统能否找到正确的人、以正确权限通知正确事实，决定医疗、照护、身份和后续恢复是否继续有人接住。
+</blockquote>
+== 研究对象 ==
+
+* Emergency contact、next of kin、authorized contact、照护者、代理人和家庭通知链。
+* 医院、EMS、学校、雇主、长期照护、灾害安置和公共机构中的联系人字段。
+* 联系人信息更新、重复联系人、关系变化、隐私边界、误通知和通知失败。
+
+== 先验链路 ==
+
+<pre>主体在急救或失能场景中可能无法表达
+  -> 医疗、灾害或机构系统需要外部联系人参与确认、照护、授权或后续安排
+  -> 联系人记录若缺失、过期、错误或权限不清，支持网络无法及时进入
+  -> 医疗信息、照护安排、身份确认、交通接回、财务和家庭责任产生断点
+  -> 主体恢复、照护、尊严和未来选择权受到损害
+  -> 因而紧急联系人与近亲通知链是主体持续性的急救社会接口</pre>
+== 关键变量 ==
+
+* 联系人完整性、更新频率、关系类型、优先级和备用联系人。
+* 通知触发条件、通知延迟、通知准确性、授权边界和记录一致性。
+* 语言、听力、残障、跨境、无家可归、家庭暴力和隐私安全风险。
+
+== 证据入口 ==
+
+* Ready.gov family emergency communication plan materials.
+* MedlinePlus personal health records and emergency information materials.
+* Hospital patient registration / emergency contact practices.
+* Public safety, missing persons and next-of-kin notification policy materials.
+
+== 非目标 ==
+
+* 本域不代写通知、寻找亲属、判断谁应被通知、处理家庭纠纷或提供法律建议。
+* 不提供失踪寻人、执法协助、医院沟通、遗体认领、监护、继承或隐私投诉策略。
+* 不收集真实姓名、电话、地址、病历号、定位、家庭关系、身份文件或其他敏感资料。
+
+== 上下游 ==
+
+* 上游：<code>personal-health-record-emergency-summary-continuity/</code>、<code>digital-identity-security/</code>、<code>vital-records-life-event-continuity/</code>。
+* 下游：<code>advance-care-planning-medical-decision-continuity/</code>、<code>healthcare-personal-representative-hipaa-access-continuity/</code>、<code>care-transitions-discharge-continuity/</code>。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C5研究域|C5研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c5-ecological-substrate/emergency-contact-next-of-kin-notification-continuity/README.md Human Infra 仓库：domains/c5-ecological-substrate/emergency-contact-next-of-kin-notification-continuity/README.md]
+
+[[Category:C5研究域]]

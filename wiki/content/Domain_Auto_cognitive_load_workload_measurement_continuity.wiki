@@ -1,0 +1,87 @@
+{{研究域
+|域 ID=domain.cognitive-load-workload-measurement-continuity
+|C 层级=C3：可能性生成引擎层
+|研究对象=Cognitive Load Workload Measurement Continuity
+|持续性作用=关键词显示该域主要增强认知、学习、工具、AI、技能或沟通能力。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c3-generation-engine/cognitive-load-workload-measurement-continuity
+}}
+
+'''Cognitive Load Workload Measurement Continuity'''是 Human Infra 在“主体能力生成”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要增强认知、学习、工具、AI、技能或沟通能力。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C3“可能性生成引擎层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+Cognitive Load Workload Measurement Continuity 研究任务负荷、认知负荷、时间压力、挫败感和工作记忆限制如何影响主体持续行动、学习和安全执行。
+
+<blockquote>核心问题：很多失败不是“不努力”，而是任务把人的工作记忆、注意力和恢复能力推过了负荷边界。
+</blockquote>
+== 研究对象 ==
+
+* Cognitive load、mental workload、NASA-TLX、工作记忆限制、任务复杂度、信息密度和时间压力。
+* 学习材料、工作界面、AI 工具、操作流程和高压任务中的负荷测量与负荷设计。
+* 负荷如何影响错误率、学习速度、疲劳、依从、创造密度和有效时间。
+
+== 先验链路 ==
+
+<pre>主体执行复杂任务需要有限认知资源
+  -> 任务负荷占用工作记忆、注意力、时间和情绪恢复能力
+  -> 负荷超过边界会导致遗漏、误判、放弃、学习失败和疲劳累积
+  -> 单位时间行动质量下降，任务成本和恢复成本上升
+  -> 长期学习轮次、试错轮次和创造密度下降
+  -> 因而认知负荷是主体持续性的任务资源消耗层</pre>
+== 关键变量 ==
+
+* Mental demand、physical demand、temporal demand、effort、frustration、perceived performance。
+* 信息量、步骤数、切换成本、界面密度、先验知识、反馈延迟和错误恢复成本。
+* 把负荷测量用于绩效压迫、个体筛除、心理诊断或算法管理的风险。
+
+== 证据入口 ==
+
+* NASA Task Load Index / Hart and Staveland NASA-TLX。
+* Cognitive Load Theory 相关论文。
+* Human-AI interaction guidelines and workload literature。
+
+== 非目标 ==
+
+* 本域不提供心理诊断、学习障碍诊断、个人效率处方、绩效评分或招聘筛选方案。
+* 不把 NASA-TLX 或负荷量表用作临床工具、惩罚工具或个体能力标签。
+* 不收集个人心理状态、工作监控、学习成绩、生产率、医疗或学校个案资料。
+
+== 上下游 ==
+
+* 上游：<code>attention-executive-control/</code>、<code>learning-skill-acquisition/</code>、<code>human-factors-ergonomics-task-system-continuity/</code>。
+* 下游：<code>alert-fatigue-interruption-signal-management-continuity/</code>、<code>situational-awareness-decision-environment-continuity/</code>、<code>automation-bias-mode-confusion-oversight-continuity/</code>。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C3研究域|C3研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c3-generation-engine/cognitive-load-workload-measurement-continuity/README.md Human Infra 仓库：domains/c3-generation-engine/cognitive-load-workload-measurement-continuity/README.md]
+
+[[Category:C3研究域]]

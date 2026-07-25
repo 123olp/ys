@@ -1,0 +1,89 @@
+{{研究域
+|域 ID=domain.pregnancy-parental-work-continuity
+|C 层级=C2：可能性源体维护层
+|研究对象=孕产育儿工作连续性
+|持续性作用=关键词显示该域主要维护身体、脑、器官、细胞、急性生命风险或衰老损伤控制。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c2-source-maintenance/pregnancy-parental-work-continuity
+}}
+
+'''孕产育儿工作连续性'''是 Human Infra 在“生命载体维护”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要维护身体、脑、器官、细胞、急性生命风险或衰老损伤控制。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C2“可能性源体维护层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+本域整理怀孕、分娩、哺乳、恢复、育儿绑定和父母工作连续性的制度与环境条件。它关注生育与照护责任如何不把主体排除出工作、收入、学习和社会参与系统。
+
+== 研究对象 ==
+
+* Pregnancy accommodation、孕期工作调整、反歧视和安全边界。
+* 分娩恢复、父母 bonding leave、育儿责任、哺乳/泵奶空间与时间。
+* PWFA、PUMP Act、Title VII/PDA、FMLA、州/雇主 parental leave 的交叉。
+* 怀孕、育儿、托育、工资替代和职业轨迹之间的长期影响。
+
+== 价值链路 ==
+
+<pre>生育和育儿会改变身体状态、时间结构和照护责任
+  -> 若工作系统不能容纳这些变化，主体会失去收入、岗位和职业积累
+  -> 孕产便利、哺乳支持、父母假和反歧视机制保留工作参与入口
+  -> 托育与工资替代降低育儿窗口中的时间贫困和财务冲击
+  -> 父母与儿童的长期主体持续性同时获得更稳定底座</pre>
+== 关键问题 ==
+
+* 怀孕、分娩、泵奶、育儿和托育缺口分别改变哪些任务资源。
+* 合理便利、岗位保护、工资替代和托育如何形成连续链路。
+* 哪些环节会制造“母职/父职惩罚”、职业中断和收入轨迹下降。
+* 如何把儿童早期生命、托育、家庭连续性和父母工作连续性接到同一模型。
+
+== 上游与下游 ==
+
+* 上游：生殖健康、母婴儿童早期生命、工作设计、托育和家庭经济。
+* 下游：父母工作连续性、儿童发展、家庭收入、照护质量和未来选择权。
+* 相关域：<code>maternal-newborn-child-development/</code>、<code>childcare-family-continuity/</code>、<code>family-medical-leave-job-protection-continuity/</code>、<code>paid-sick-family-leave-wage-replacement-continuity/</code>、<code>workplace-accommodation-return-to-work-continuity/</code>。
+
+== 非目标 ==
+
+* 不提供个人怀孕、分娩、哺乳、医疗、法律、HR 或福利建议。
+* 不判断具体工作场所便利请求、歧视案件、产假资格或医疗限制。
+* 不生成医生证明、HR 通知、法律投诉、雇主政策或诉讼材料。
+* 不将任何生育路径包装成义务、道德要求或单一最优人生策略。
+
+== 初始资料入口 ==
+
+* U.S. Equal Employment Opportunity Commission: Pregnant Workers Fairness Act.
+* U.S. Department of Labor: PUMP at Work.
+* DOL FMLA parental leave and military caregiver leave materials.
+* ACF/ChildCare.gov and World Bank childcare materials for childcare-work continuity context.
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C2研究域|C2研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c2-source-maintenance/pregnancy-parental-work-continuity/README.md Human Infra 仓库：domains/c2-source-maintenance/pregnancy-parental-work-continuity/README.md]
+
+[[Category:C2研究域]]

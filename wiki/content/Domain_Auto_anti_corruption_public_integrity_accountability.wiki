@@ -1,0 +1,94 @@
+{{研究域
+|域 ID=domain.anti-corruption-public-integrity-accountability
+|C 层级=C5：可能性生态承载层
+|研究对象=Anti Corruption Public Integrity Accountability
+|持续性作用=主要提供主体展开未来所需的基础环境、资源、治理或基础设施。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c5-ecological-substrate/anti-corruption-public-integrity-accountability
+}}
+
+'''Anti Corruption Public Integrity Accountability'''是 Human Infra 在“外部生态承载”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+主要提供主体展开未来所需的基础环境、资源、治理或基础设施。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C5“可能性生态承载层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+反腐败、公共廉洁与问责域研究：公共权力、采购、许可、执法、福利、医疗、基础设施和资源分配如何避免被私人利益俘获，并通过透明、审计、申诉和问责维持对主体持续性的公共承诺。
+
+== 对象 ==
+
+* 腐败、贿赂、利益冲突、裙带关系、公共资源俘获、采购腐败、服务寻租和监管失灵。
+* 公共廉洁、审计、透明、申报、举报人保护、开放数据、独立监督、问责和反腐败制度。
+* 腐败如何通过药品质量、采购失败、工程质量、服务排除、福利截留、司法不公和信任崩塌影响主体持续性。
+* 公共系统从“名义存在”转化为“真实可用”的诚信条件。
+* 反腐败资料与具体举报、调查、法律行动、政治攻击之间的边界。
+
+<span id="human-infra-价值"></span>
+== Human Infra 价值 ==
+
+Human Infra 的许多底座依赖公共采购、监管、执法和服务递送。腐败会让预算、法律、医疗、救济和基础设施在纸面上存在，却在主体需要时失效。
+
+<pre>公共权力被私人利益俘获
+  -> 采购、许可、监管、福利、医疗和司法发生失真
+  -> 透明、廉洁、审计、申诉和问责降低系统性泄漏
+  -> 公共资源更可能转化为主体可用服务和恢复路径</pre>
+== 边界 ==
+
+本域只整理公开的反腐败、公共廉洁、透明、审计和问责资料。
+
+不提供：
+
+* 行贿、洗钱、规避审计、隐藏资产、逃避监管、伪造记录或腐败操作方法。
+* 针对具体个人、机构、案件或国家的调查策略、举报策略、法律建议或政治攻击材料。
+* 获取、泄露、利用非公开信息的建议。
+* 把反腐败资料写成诽谤、骚扰、人肉、舆论动员或派系斗争工具。
+
+== 上游与下游 ==
+
+* 上游：<code>civic-data-open-government-transparency/</code>、<code>governance-rights/</code>、<code>public-procurement-contracting-capacity/</code>、<code>access-to-justice-legal-aid/</code>。
+* 下游：<code>continuity-of-government-public-administration-resilience/</code>、<code>macroeconomic-monetary-fiscal-stability/</code>、<code>healthcare-access-continuity/</code>、<code>social-protection-benefits-delivery/</code>。
+
+== 初始资料线索 ==
+
+* OECD Public Integrity: https://www.oecd.org/en/topics/public-integrity.html
+* UNODC United Nations Convention against Corruption: https://www.unodc.org/unodc/en/corruption/uncac.html
+* World Bank governance and anti-corruption materials.
+* Open Government Partnership accountability materials.
+
+== 下一步 ==
+
+* 建立公共廉洁变量表：透明度、利益冲突、审计、采购竞争、申诉通道、举报保护、服务寻租和问责闭环。
+* 整理 Source Cards：OECD、UNODC、World Bank、OGP、TI 等公开资料。
+* 与 <code>public-procurement-contracting-capacity/</code>、<code>civic-data-open-government-transparency/</code> 和 <code>continuity-of-government-public-administration-resilience/</code> 建立证据关系。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C5研究域|C5研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c5-ecological-substrate/anti-corruption-public-integrity-accountability/README.md Human Infra 仓库：domains/c5-ecological-substrate/anti-corruption-public-integrity-accountability/README.md]
+
+[[Category:C5研究域]]

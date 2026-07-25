@@ -1,0 +1,91 @@
+{{研究域
+|域 ID=domain.retraction-expression-concern-correction-continuity
+|C 层级=C6：局部可能性解锁层
+|研究对象=Retraction Expression Concern Correction Continuity
+|持续性作用=未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c6-local-unlocking/retraction-expression-concern-correction-continuity
+}}
+
+'''Retraction Expression Concern Correction Continuity'''是 Human Infra 在“局部阻塞解除”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C6“局部可能性解锁层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>retraction-expression-concern-correction-continuity/</code> 研究撤稿、表达关注、勘误、更正、版本更新和出版状态信号如何影响证据能否继续用于 Human Infra。
+
+<blockquote>核心问题：一篇论文不是发表后就永久稳定；撤稿、expression of concern、correction 和 updated version 会改变它在模型中的地位。
+</blockquote>
+== 先验位置 ==
+
+<pre>有效永生 / 主体持续性最大化
+  -> 需要长期复用论文、综述、指南和模型证据
+  -> 出版物状态会随撤稿、关注表达、勘误和版本更新改变
+  -> 若模型不追踪出版状态，旧证据会在撤回后继续污染推理
+  -> 因此撤稿/关注/更正连续性是证据时效与可信度的更新门槛</pre>
+== 关注对象 ==
+
+* Retraction、expression of concern、correction、erratum、corrigendum、updated version、withdrawal 和 Crossmark 状态。
+* 撤稿原因、影响范围、版本链、引用继续传播、二次综述修订和媒体更正。
+* 与 <code>living-evidence-surveillance-update-continuity/</code> 的边界：活证据域关注持续监测；本域关注出版状态信号本身如何解释和传播。
+* 与 <code>persistent-identifier-doi-citation-metadata-continuity/</code> 的边界：持久标识域关注对象解析；本域关注对象状态改变。
+
+<span id="human-infra-模型链路"></span>
+== Human Infra 模型链路 ==
+
+<pre>撤稿/关注/更正状态 T
+  -> 改变 publication_status、version_status、correction_reason、citation_warning 变量 X
+  -> 改变 Source Card、系统综述、图表、论文页和模型输入状态 S
+  -> 改变旧证据继续被引用、错误结论扩散和技术窗口误判风险 λ(t)
+  -> 影响研究组合、传播材料、模型可信度和主体持续性决策</pre>
+== 非目标 ==
+
+* 不提供撤稿规避、声誉洗白、引文操控、出版商申诉代写或法律意见。
+* 不把撤稿等同于作者故意不端；撤稿原因必须分层记录。
+* 不抓取受限出版系统、审稿系统或非公开撤稿材料。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* COPE Retraction Guidelines: https://publicationethics.org/retraction-guidelines
+* Crossref Crossmark: https://www.crossref.org/services/crossmark/
+* Retraction Watch Database: https://retractiondatabase.org/
+* ICMJE Corrections, Retractions and Expressions of Concern: https://www.icmje.org/recommendations/
+
+== 下一步 ==
+
+* 给 Source Card 增加 <code>publication_status</code>、<code>correction_type</code>、<code>status_date</code>、<code>status_source</code> 和 <code>reuse_policy</code> 字段。
+* 建立“已撤稿材料进入模型时必须降级或移除”的文档门槛。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C6研究域|C6研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c6-local-unlocking/retraction-expression-concern-correction-continuity/README.md Human Infra 仓库：domains/c6-local-unlocking/retraction-expression-concern-correction-continuity/README.md]
+
+[[Category:C6研究域]]

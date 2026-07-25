@@ -1,0 +1,89 @@
+{{研究域
+|域 ID=domain.waste-management-hazardous-materials-continuity
+|C 层级=C6：局部可能性解锁层
+|研究对象=Waste Management Hazardous Materials Continuity
+|持续性作用=未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c6-local-unlocking/waste-management-hazardous-materials-continuity
+}}
+
+'''Waste Management Hazardous Materials Continuity'''是 Human Infra 在“局部阻塞解除”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C6“局部可能性解锁层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+废弃物管理、危险材料与处置连续性域研究：当主体持续性依赖“废物、污染源、医疗废物和危险材料不能反向侵蚀生活环境”时，需要哪些收集、分类、处理、处置和服务连续性基础设施。
+
+== 对象 ==
+
+* 固体废弃物、城市废弃物、医疗废物、危险废物和电子废弃物。
+* 收集、转运、处理、处置、回收、循环利用和服务中断风险。
+* 废弃物流和水卫生、公共卫生、环境暴露、住房、灾害恢复之间的接口。
+* 危险材料、污染扩散、处置能力、工人安全和社区环境正义。
+* 废弃物系统在灾害、疫情、供应链中断和城市服务压力下的连续性。
+
+<span id="human-infra-价值"></span>
+== Human Infra 价值 ==
+
+废弃物管理是反向基础设施：它不直接增强主体能力，但阻止生活系统产生的残余物重新变成感染、毒性、污染、火灾、伤害和尊严风险。它把“使用后的世界”维持在主体仍可居住、恢复和行动的状态。
+
+<pre>生活、医疗和生产活动产生废弃物
+  -> 收集、处理、处置和危险材料治理
+  -> 环境暴露、感染入口和污染扩散下降
+  -> 栖居、照护、公共卫生和灾后恢复可持续
+  -> 主体持续性底座保持可居住</pre>
+== 边界 ==
+
+本域只整理公开政策、系统能力、服务连续性、风险分类和非操作性治理框架。
+
+不提供：
+
+* 危险废物、化学品、医疗废物或放射性废物的处理、包装、转运、处置步骤。
+* 非法倾倒、规避监管、危险材料储存、应急清理或现场处置建议。
+* 家庭、机构或企业的具体废物合规、采购、设施设计或承包建议。
+* 可帮助制造、隐藏、扩散或规避危险材料风险的信息。
+
+== 上游与下游 ==
+
+* 上游：<code>water-sanitation-hygiene-continuity/</code>、<code>planetary-health-environment/</code>、<code>building-fire-life-safety-codes/</code>、<code>manufacturing-repair-capacity/</code>。
+* 下游：<code>risk-engineering/</code>、<code>emergency-preparedness-response/</code>、<code>disaster-recovery-relief-continuity/</code>、<code>social-determinants-community-vulnerability/</code>。
+
+== 初始资料线索 ==
+
+* EPA hazardous waste and materials management resources。
+* WHO health-care waste resources。
+* World Bank solid waste management resources。
+* UNEP waste and circularity resources。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C6研究域|C6研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c6-local-unlocking/waste-management-hazardous-materials-continuity/README.md Human Infra 仓库：domains/c6-local-unlocking/waste-management-hazardous-materials-continuity/README.md]
+
+[[Category:C6研究域]]

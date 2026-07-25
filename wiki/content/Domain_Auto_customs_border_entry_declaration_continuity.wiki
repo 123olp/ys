@@ -1,0 +1,87 @@
+{{研究域
+|域 ID=domain.customs-border-entry-declaration-continuity
+|C 层级=C6：局部可能性解锁层
+|研究对象=海关、边境入境与申报连续性
+|持续性作用=未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c6-local-unlocking/customs-border-entry-declaration-continuity
+}}
+
+'''海关、边境入境与申报连续性'''是 Human Infra 在“局部阻塞解除”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C6“局部可能性解锁层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+本域研究海关申报、边境检查、I-94/入境记录、受限物品、农业检疫、关税和可信旅客系统如何影响跨境主体的物品、身份和行程连续性。它关注的是入境制度接口如何保护或截断行动链，而不是移民策略、走私规避或个案入境建议。
+
+== 研究对象 ==
+
+* 海关申报、入境检查、I-94、受限/禁止物品、农业与食品检查、现金申报、关税和边境服务。
+* Global Entry / Trusted Traveler 等可信旅客项目作为制度接口，而不是个人申请建议。
+* 入境记录错误、申报错误、物品扣留、证件/姓名错配、二次检查和语言障碍造成的断点。
+* 海关边境规则如何连接护照、旅行健康、药品携带、行李、旅行证件和后续居留/工作/学习安排。
+
+== 价值链路 ==
+
+<pre>跨境返回或进入必须通过边境制度接口
+  -> 海关申报和入境记录把主体、物品、健康材料和行程事实转化为可入境状态
+  -> 若申报、记录、证件或物品边界失败，主体可能失去时间、物资、医疗用品、学习工作窗口和后续身份记录
+  -> 官方边境资料和申报规则提供可审查的制度变量与禁止用途边界
+  -> 海关与入境申报连续性把边境通过建模为主体跨境行动链的关键门槛</pre>
+== 关键问题 ==
+
+* 海关申报、I-94 和入境记录如何影响后续工作、学习、医疗和跨境行动？
+* 药品、食品、动植物、现金、设备和商业物品如何成为边境断点？
+* 可信旅客系统、语言可及性和记录更正如何影响摩擦成本？
+* 如何避免把公开边境资料写成走私、虚假申报、规避检查或移民策略？
+
+== 上游与下游 ==
+
+* 上游：<code>passport-travel-document-mobility-continuity/</code>、<code>travel-health-preparedness-continuity/</code>、<code>baggage-personal-property-travel-continuity/</code>。
+* 下游：<code>immigration-status-residency-work-authorization-continuity/</code>、<code>long-distance-travel-booking-itinerary-continuity/</code>、<code>citizenship-nationality-statelessness-continuity/</code>。
+
+== 非目标 ==
+
+* 不提供签证、移民、入境资格、申报策略、走私、规避检查、违禁品携带、虚假陈述、I-94 个案处理或可信旅客申请建议。
+* 不判断个人是否可入境、是否需申报、是否可携带某物、是否应申请某项目或如何处理边境争议。
+* 不收集护照号、签证、I-94、海关申报、旅行路线、药品清单、支付信息或边境检查记录。
+
+== 初始资料入口 ==
+
+* U.S. Customs and Border Protection: Travel
+* CBP: Know Before You Go
+* CBP: I-94 and entry records
+* CBP: Prohibited and restricted items / agriculture inspection materials
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C6研究域|C6研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c6-local-unlocking/customs-border-entry-declaration-continuity/README.md Human Infra 仓库：domains/c6-local-unlocking/customs-border-entry-declaration-continuity/README.md]
+
+[[Category:C6研究域]]

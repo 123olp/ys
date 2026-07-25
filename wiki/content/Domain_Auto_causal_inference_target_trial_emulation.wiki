@@ -1,0 +1,97 @@
+{{研究域
+|域 ID=domain.causal-inference-target-trial-emulation
+|C 层级=C4：可能性转换通道层
+|研究对象=Causal Inference Target Trial Emulation
+|持续性作用=主要把科学、医疗、数据、制度或技术从潜在能力转成真实可用路径。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c4-conversion-channel/causal-inference-target-trial-emulation
+}}
+
+'''Causal Inference Target Trial Emulation'''是 Human Infra 在“路径转换接口”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+主要把科学、医疗、数据、制度或技术从潜在能力转成真实可用路径。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C4“可能性转换通道层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+== 定位 ==
+
+本域研究因果推断和目标试验模拟如何把 Human Infra 的“技术/干预 T 是否改变主体持续性”从相关性叙事推进到可审查的干预问题。
+
+Human Infra 不能只问某个变量是否和寿命、健康寿命或有效时间相关，而要问：如果改变这个变量，主体未来生命路径的概率分布是否会改变，以及这个判断依赖哪些识别条件。
+
+== 先验位置 ==
+
+<pre>有效永生 / 主体持续性最大化
+  -> 必须判断哪些技术和因素真正改变未来生命路径
+  -> 必须区分相关信号、选择偏差、幸存者偏差和干预效果
+  -> 需要因果图、目标试验模拟和反事实框架
+  -> causal-inference-target-trial-emulation</pre>
+== 关注对象 ==
+
+* 因果图、结构因果模型、反事实和 <code>do()</code> 干预。
+* 时间变化混杂、选择偏差、幸存者偏差、反向因果和中介效应。
+* 目标试验模拟、资格标准、时间零点、治疗策略、随访、结局和分析计划。
+* 干预 T 对中间变量 X、主体状态 S、风险函数 <code>lambda(t)</code>、生存曲线和未来选择权的路径。
+* 平均处理效应、异质性处理效应、可迁移性和可推广性。
+
+<span id="human-infra-模型链路"></span>
+== Human Infra 模型链路 ==
+
+<pre>技术/干预 T
+  -> 先被写成明确可执行的干预策略
+  -> 用目标试验模拟定义对象、时间零点、比较组、结局和随访
+  -> 用因果图识别混杂、选择机制、中介路径和禁止调整变量
+  -> 估计 T 对状态转移、风险函数和健康质量积分的因果影响
+  -> 再进入生存分析、数字孪生、模型校准和治理审查</pre>
+== 非目标 ==
+
+* 不提供个体治疗、用药、筛查、临床试验入组或健康决策建议。
+* 不把观察性相关性包装成因果结论。
+* 不用 AI 总结替代研究设计、数据来源、偏差审查和人工判断。
+* 不输出个体死亡日期、确定寿命收益或个体风险承诺。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* Target trial emulation: https://pubmed.ncbi.nlm.nih.gov/36508210/
+* Hernan and Robins causal inference book: https://www.hsph.harvard.edu/miguel-hernan/causal-inference-book/
+* Using big data to emulate a target trial: https://pmc.ncbi.nlm.nih.gov/articles/PMC4832051/
+* STROBE reporting guidance: https://www.strobe-statement.org/
+
+== 下一步 ==
+
+* 建立 <code>intervention -&gt; causal question -&gt; target trial -&gt; estimand -&gt; evidence boundary</code> 的 Source Card 模板。
+* 给山中因子、运动、早筛、AI 医学、可穿戴监测等方向分别写目标试验模拟草案。
+* 与 <code>survival-analysis-healthspan-risk-modeling/</code> 对接，把因果效应转成风险函数和生存曲线位置。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C4研究域|C4研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c4-conversion-channel/causal-inference-target-trial-emulation/README.md Human Infra 仓库：domains/c4-conversion-channel/causal-inference-target-trial-emulation/README.md]
+
+[[Category:C4研究域]]

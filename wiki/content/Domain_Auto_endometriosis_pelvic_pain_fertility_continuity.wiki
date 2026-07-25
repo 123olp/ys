@@ -1,0 +1,90 @@
+{{研究域
+|域 ID=domain.endometriosis-pelvic-pain-fertility-continuity
+|C 层级=C2：可能性源体维护层
+|研究对象=Endometriosis Pelvic Pain Fertility Continuity
+|持续性作用=关键词显示该域主要维护身体、脑、器官、细胞、急性生命风险或衰老损伤控制。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c2-source-maintenance/endometriosis-pelvic-pain-fertility-continuity
+}}
+
+'''Endometriosis Pelvic Pain Fertility Continuity'''是 Human Infra 在“生命载体维护”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要维护身体、脑、器官、细胞、急性生命风险或衰老损伤控制。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C2“可能性源体维护层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>endometriosis-pelvic-pain-fertility-continuity/</code> 研究子宫内膜异位症、慢性盆腔痛、炎症、诊断延迟、手术/药物路径、生育力、工作学习缺席和生活质量如何影响主体持续性。
+
+<blockquote>核心问题：内异症不是“痛经更严重”这么简单，而是会通过疼痛、疲劳、不孕风险、诊断延迟、反复就医和污名长期压缩有效时间与未来选择权。
+</blockquote>
+== 先验位置 ==
+
+<pre>有效永生 / 主体持续性最大化
+  -> 主体需要可持续行动、可预测身体信号、疼痛可控和未来选择权
+  -> 内异症可能造成慢性疼痛、炎症、疲劳、性交痛、生育困难和诊断延迟
+  -> 痛苦被正常化或服务路径断裂时，主体会损失学习、工作、关系和生育规划窗口
+  -> 因此内异症是疼痛、功能、生殖和医疗导航交叉的连续性域</pre>
+== 关注对象 ==
+
+* Endometriosis、慢性盆腔痛、痛经、性交痛、疲劳、炎症、诊断延迟、影像/手术路径、生育力、工作学习参与和生活质量。
+* 与 <code>menstrual-health-cycle-literacy-continuity/</code> 的边界：月经域关注周期素养和参与支持；本域关注内异症作为慢性炎症疼痛和生育风险机制。
+* 与 <code>chronic-pain-functional-restoration-continuity/</code> 的边界：慢性疼痛域关注长期功能恢复总问题；本域关注盆腔、生殖和诊断延迟特异路径。
+* 与 <code>reproductive-fertility-continuity/</code> 的关系：内异症是影响未来生育选择权的疾病机制之一，但不能简化为不孕结论。
+
+<span id="human-infra-模型链路"></span>
+== Human Infra 模型链路 ==
+
+<pre>内异症识别与支持系统 T
+  -> 改变盆腔痛、炎症、疲劳、诊断延迟、生育规划、工作学习支持和污名变量 X
+  -> 改变主体有效时间、行动半径、关系安全、医疗信任、生殖选择权和恢复状态 S
+  -> 改变慢性疼痛、缺席、心理负担、手术/用药风险、诊断延迟和未来选择受限 lambda(t)
+  -> 影响主体行动质量、健康寿命、关系参与和长期计划</pre>
+== 非目标 ==
+
+* 不提供内异症诊断、影像/腹腔镜解释、止痛药、激素治疗、手术、饮食、补剂、运动、性交痛处理、生育治疗或急诊判断。
+* 不把月经疼痛、盆腔痛、性交痛、肠尿症状或不孕写成个人病因推断。
+* 不收集个人月经、性生活、疼痛、影像、手术、用药、生育或精神健康资料。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* MedlinePlus endometriosis: https://medlineplus.gov/endometriosis.html
+* NICHD endometriosis: https://www.nichd.nih.gov/health/topics/endometri
+* WHO endometriosis: https://www.who.int/news-room/fact-sheets/detail/endometriosis
+
+== 下一步 ==
+
+* 建立 Endometriosis Continuity Card：pain burden, diagnostic delay, fertility planning, work/school participation, treatment burden, stigma。
+* 与 <code>chronic-pain-functional-restoration-continuity/</code>、<code>reproductive-fertility-continuity/</code> 和 <code>patient-advocacy-shared-decision-making/</code> 建立接口。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C2研究域|C2研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c2-source-maintenance/endometriosis-pelvic-pain-fertility-continuity/README.md Human Infra 仓库：domains/c2-source-maintenance/endometriosis-pelvic-pain-fertility-continuity/README.md]
+
+[[Category:C2研究域]]

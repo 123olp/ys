@@ -1,0 +1,97 @@
+{{研究域
+|域 ID=domain.privacy-preserving-computation-federated-learning
+|C 层级=C4：可能性转换通道层
+|研究对象=Privacy Preserving Computation Federated Learning
+|持续性作用=主要把科学、医疗、数据、制度或技术从潜在能力转成真实可用路径。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c4-conversion-channel/privacy-preserving-computation-federated-learning
+}}
+
+'''Privacy Preserving Computation Federated Learning'''是 Human Infra 在“路径转换接口”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+主要把科学、医疗、数据、制度或技术从潜在能力转成真实可用路径。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C4“可能性转换通道层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+== 定位 ==
+
+本域研究隐私保护计算、差分隐私、联邦学习、安全多方计算、可信执行环境和合成数据等技术，如何让敏感主体数据在不被集中暴露的前提下进入研究、模型训练、风险评估和公共利益场景。
+
+Human Infra 需要健康、组学、神经、行为、照护、位置、生命日志和服务数据来观察主体持续性。但这些数据一旦被集中、滥用或再识别，测量系统就会反过来侵蚀主体权利。本域是“可用数据”和“主体安全”之间的计算治理层。
+
+== 先验位置 ==
+
+<pre>有效永生 / 主体持续性最大化
+  -> 需要跨机构、跨时间、跨主体数据支持预测模型和证据生成
+  -> 原始敏感数据集中化会制造隐私、歧视、再识别和权力失衡风险
+  -> 需要隐私保护计算在数据不完全暴露的条件下支持学习和审计
+  -> privacy-preserving-computation-federated-learning</pre>
+== 关注对象 ==
+
+* 差分隐私、隐私预算、扰动、输出限制和效用损失。
+* 联邦学习、协作学习、跨机构训练、模型聚合、客户端漂移和安全聚合。
+* 安全多方计算、同态加密、可信执行环境和隐私增强技术。
+* 合成数据、匿名化、去标识化、再识别风险和成员推断风险。
+* 隐私保护计算如何服务 Human Infra 模型、Source Card、数据卡、模型卡和治理审计。
+
+<span id="human-infra-模型链路"></span>
+== Human Infra 模型链路 ==
+
+<pre>敏感主体数据
+  -> 隐私保护计算与授权治理
+  -> 形成可审计的聚合统计、模型参数或受限输出
+  -> 支撑因果推断、生存分析、数字孪生和技术评估
+  -> 同时降低原始数据泄露、再识别和二次用途风险</pre>
+== 非目标 ==
+
+* 不提供再识别、成员推断、模型反演、数据窃取、隐私绕过或攻击方法。
+* 不提供密码协议实现细节、安全参数建议或生产部署指南。
+* 不把“去标识化”“合成数据”“联邦学习”写成绝对安全。
+* 不替代 <code>health-data-privacy-governance/</code>；本域只处理计算机制，权利、同意、用途和退出仍由隐私治理域负责。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* NIST Privacy Framework: https://www.nist.gov/privacy-framework
+* NIST Differential Privacy project: https://csrc.nist.gov/projects/differential-privacy
+* NIST Collaborative Learning and Privacy: https://www.nist.gov/itl/applied-cybersecurity/privacy-engineering/collaborative-learning
+* NIST Privacy-Enhancing Cryptography: https://csrc.nist.gov/projects/privacy-enhancing-cryptography
+* National Academies report on data privacy and utility: https://nap.nationalacademies.org/catalog/13342/protecting-individual-privacy-in-the-struggle-against-terrorists-a-framework
+
+== 下一步 ==
+
+* 建立 Privacy Computation Card：data type、threat model、privacy mechanism、utility loss、attack surface、audit evidence、forbidden claims。
+* 与 <code>data-quality-missingness-representativeness/</code> 对接，记录隐私机制对偏差、缺失和代表性的影响。
+* 与 <code>model-cards-ai-audit-documentation/</code> 对接，把隐私机制写入模型卡和审计轨迹。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C4研究域|C4研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c4-conversion-channel/privacy-preserving-computation-federated-learning/README.md Human Infra 仓库：domains/c4-conversion-channel/privacy-preserving-computation-federated-learning/README.md]
+
+[[Category:C4研究域]]

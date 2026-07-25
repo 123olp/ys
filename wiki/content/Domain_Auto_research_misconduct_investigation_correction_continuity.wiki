@@ -1,0 +1,93 @@
+{{研究域
+|域 ID=domain.research-misconduct-investigation-correction-continuity
+|C 层级=C4：可能性转换通道层
+|研究对象=Research Misconduct Investigation Correction Continuity
+|持续性作用=关键词显示该域主要处理研究、数据、模型、服务入口、身份记录、转化或治理接口。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c4-conversion-channel/research-misconduct-investigation-correction-continuity
+}}
+
+'''Research Misconduct Investigation Correction Continuity'''是 Human Infra 在“路径转换接口”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要处理研究、数据、模型、服务入口、身份记录、转化或治理接口。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C4“可能性转换通道层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>research-misconduct-investigation-correction-continuity/</code> 研究科研不端定义、调查、机构责任、资助方责任、纠错路径和记录状态如何影响 Human Infra 的证据可信度。
+
+<blockquote>核心问题：主体持续性模型依赖长期证据积累；如果伪造、篡改、剽窃、调查状态和纠错结论不能被区分，模型会把污染证据当成未来技术窗口。
+</blockquote>
+== 先验位置 ==
+
+<pre>有效永生 / 主体持续性最大化
+  -> 需要把研究结论转化为可审查证据
+  -> 研究结论可能受到 fabrication、falsification、plagiarism、调查程序和机构纠错影响
+  -> 证据系统必须区分怀疑、调查、机构结论、期刊更正和正式撤稿
+  -> 因此科研不端调查与纠错连续性是证据进入模型前的完整性门槛</pre>
+== 关注对象 ==
+
+* 科研不端定义、调查管辖、机构程序、资助方要求、调查结论和公开纠错。
+* fabrication、falsification、plagiarism、questionable research practices、authorship dispute 和 data availability failure 的边界。
+* 研究机构、资助方、期刊、出版商、数据仓库、预印本平台和公众记录之间的纠错链。
+* 与 <code>trustworthy-scientific-communication-peer-review/</code> 的边界：可信传播域关注审查和传播状态；本域关注不端指控、调查和纠错状态的制度化处理。
+* 与 <code>retraction-expression-concern-correction-continuity/</code> 的边界：撤稿域关注出版物状态；本域关注调查和责任链。
+
+<span id="human-infra-模型链路"></span>
+== Human Infra 模型链路 ==
+
+<pre>科研不端调查与纠错 T
+  -> 改变研究完整性状态、调查状态、纠错状态、数据可信度和引用可用性变量 X
+  -> 改变证据卡片、系统综述、模型输入和传播材料的可信状态 S
+  -> 改变错误技术采用、污染证据累积、错误共识和资源错配风险 λ(t)
+  -> 影响技术窗口判断、研究组合优先级和主体持续性路径选择</pre>
+== 非目标 ==
+
+* 不提供不端指控代写、举报策略、法律意见、调查规避、数据清洗伪造、论文洗稿或责任规避方法。
+* 不基于高偏倚、撤稿、利益冲突或统计异常自动断定作者故意不端。
+* 不公开个人敏感信息、未公开调查材料、审稿记录或机构内部记录。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* U.S. Office of Research Integrity: https://ori.hhs.gov/
+* ORI research misconduct definition: https://ori.hhs.gov/definition-research-misconduct
+* National Academies, Fostering Integrity in Research: https://nap.nationalacademies.org/catalog/21896/fostering-integrity-in-research
+* COPE Core Practices: https://publicationethics.org/core-practices
+* ICMJE Recommendations: https://www.icmje.org/recommendations/
+
+== 下一步 ==
+
+* 给 Source Card 增加 <code>integrity_status</code>、<code>investigation_status</code>、<code>institutional_finding</code>、<code>publisher_action</code> 和 <code>correction_path</code> 字段。
+* 与撤稿状态、风险偏倚、利益冲突和活证据更新域建立交叉引用。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C4研究域|C4研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c4-conversion-channel/research-misconduct-investigation-correction-continuity/README.md Human Infra 仓库：domains/c4-conversion-channel/research-misconduct-investigation-correction-continuity/README.md]
+
+[[Category:C4研究域]]

@@ -1,0 +1,92 @@
+{{研究域
+|域 ID=domain.citation-network-claim-propagation-continuity
+|C 层级=C4：可能性转换通道层
+|研究对象=Citation Network Claim Propagation Continuity
+|持续性作用=关键词显示该域主要处理研究、数据、模型、服务入口、身份记录、转化或治理接口。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c4-conversion-channel/citation-network-claim-propagation-continuity
+}}
+
+'''Citation Network Claim Propagation Continuity'''是 Human Infra 在“路径转换接口”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要处理研究、数据、模型、服务入口、身份记录、转化或治理接口。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C4“可能性转换通道层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>citation-network-claim-propagation-continuity/</code> 研究引用网络、主张传播、引用语境、二次引用和错误共识如何影响 Human Infra 的知识图谱。
+
+<blockquote>核心问题：错误不是只出现在单篇论文；它会沿引用网络传播，形成看似稳固的共识、综述句式和政策叙事。
+</blockquote>
+== 先验位置 ==
+
+<pre>有效永生 / 主体持续性最大化
+  -> 需要从文献网络中抽取机制、变量、效应和边界
+  -> 引用经常只传播结论标签，而丢失原始条件、反证和限制
+  -> 错误引用和断章引用会形成伪共识
+  -> 因此引用网络与主张传播连续性是知识图谱纠错门槛</pre>
+== 关注对象 ==
+
+* Citation context、citation sentiment、claim extraction、reference lineage、citation cascade、secondary citation 和 consensus formation。
+* 引用是否支持原文主张、是否误引、是否引用撤稿、是否从新闻稿/综述绕过原始研究。
+* 与 <code>knowledge-graph-ontology-semantic-interoperability/</code> 的边界：知识图谱域关注语义结构；本域关注主张如何在引用网络中传播和变形。
+* 与 <code>persistent-identifier-doi-citation-metadata-continuity/</code> 的边界：DOI 域关注对象解析；本域关注引用语境和主张链。
+
+<span id="human-infra-模型链路"></span>
+== Human Infra 模型链路 ==
+
+<pre>引用网络与主张传播 T
+  -> 改变 citation_context、claim_support、reference_lineage、misquotation_signal 变量 X
+  -> 改变知识图谱、Source Card 和综述结论的可信状态 S
+  -> 改变伪共识、错误机制归因、过度外推和撤稿后继续引用风险 λ(t)
+  -> 影响模型变量、技术采用判断和主体持续性研究方向</pre>
+== 非目标 ==
+
+* 不提供刷引用、操控引用网络、影响因子游戏、论文 SEO、引用农场或声誉攻击。
+* 不把引用次数写成证据强度。
+* 不抓取受限全文或绕过出版访问控制。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* Crossref Cited-by: https://www.crossref.org/services/cited-by/
+* Crossref Event Data: https://www.crossref.org/services/event-data/
+* OpenAlex: https://openalex.org/
+* scite citation statements: https://scite.ai/
+* Retraction Watch Database: https://retractiondatabase.org/
+
+== 下一步 ==
+
+* 给 Source Card 增加 <code>citation_context</code>、<code>claim_support_status</code>、<code>cites_retracted_work</code> 和 <code>lineage_depth</code> 字段。
+* 在知识图谱中区分“被引用很多”与“被原文支持”。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C4研究域|C4研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c4-conversion-channel/citation-network-claim-propagation-continuity/README.md Human Infra 仓库：domains/c4-conversion-channel/citation-network-claim-propagation-continuity/README.md]
+
+[[Category:C4研究域]]

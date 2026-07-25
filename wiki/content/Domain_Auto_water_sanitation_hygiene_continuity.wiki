@@ -1,0 +1,89 @@
+{{研究域
+|域 ID=domain.water-sanitation-hygiene-continuity
+|C 层级=C5：可能性生态承载层
+|研究对象=Water Sanitation Hygiene Continuity
+|持续性作用=主要提供主体展开未来所需的基础环境、资源、治理或基础设施。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c5-ecological-substrate/water-sanitation-hygiene-continuity
+}}
+
+'''Water Sanitation Hygiene Continuity'''是 Human Infra 在“外部生态承载”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+主要提供主体展开未来所需的基础环境、资源、治理或基础设施。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C5“可能性生态承载层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>water-sanitation-hygiene-continuity/</code> 研究安全饮用水、卫生设施和基本卫生实践能否持续支撑主体健康、尊严、感染控制和日常生活。
+
+<blockquote>核心问题：没有安全水、卫生设施和卫生服务，主体持续性会被感染、脱水、照护负担、尊严丧失和公共卫生风险反复截断。
+</blockquote>
+== 先验位置 ==
+
+<pre>有效永生 / 主体持续性最大化
+  -> 主体需要安全饮用水、排泄处理、洗手和卫生环境
+  -> WASH 系统必须可用、可达、可靠、安全且在灾害中不断线
+  -> 感染控制、营养吸收、照护、尊严和公共卫生才有基础条件</pre>
+== 关注对象 ==
+
+* 安全饮用水、卫生设施、污水处理、洗手设施、卫生服务和 WASH 覆盖。
+* 水源污染、服务中断、灾害下供水、学校/医疗机构 WASH、脆弱群体卫生可及。
+* 与胃肠屏障、感染控制、皮肤伤口、家庭照护、灾害响应和住房环境的接口。
+
+<span id="human-infra-模型链路"></span>
+== Human Infra 模型链路 ==
+
+<pre>水、环境卫生与个人卫生连续性
+  -> 安全饮水、排泄处理和卫生实践稳定可用
+  -> 感染、脱水、胃肠疾病、照护负担和尊严损害减少
+  -> 恢复能力、健康寿命、公共卫生安全和有效时间提高
+  -> 主体持续性获得基础生活卫生条件</pre>
+== 非目标 ==
+
+* 不提供个体补水、电解质、疾病处理、水质检测解释、净水设备购买或灾害取水操作建议。
+* 不提供污水处理施工、危险环境处置、规避监管或非法取水建议。
+* 不把 WASH 问题归因于个人卫生习惯，忽视基础设施、贫困、住房和公共服务条件。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* WHO/UNICEF JMP: https://washdata.org/
+* WHO Drinking-water: https://www.who.int/news-room/fact-sheets/detail/drinking-water
+* UNICEF WASH: https://www.unicef.org/wash
+
+== 下一步 ==
+
+* 建立 WASH 变量表：安全水、可及距离、服务可靠性、卫生设施、洗手设施、医疗/学校 WASH 和灾害连续性。
+* 整理 WHO/UNICEF JMP、WHO drinking-water、UNICEF WASH 和公共卫生应急 WASH Source Cards。
+* 与 <code>fluid-electrolyte-acid-base-homeostasis/</code> 明确分工：本域研究外部水卫生系统，后者研究体内水电解质稳态。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C5研究域|C5研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c5-ecological-substrate/water-sanitation-hygiene-continuity/README.md Human Infra 仓库：domains/c5-ecological-substrate/water-sanitation-hygiene-continuity/README.md]
+
+[[Category:C5研究域]]

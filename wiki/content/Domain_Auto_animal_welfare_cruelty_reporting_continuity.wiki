@@ -1,0 +1,87 @@
+{{研究域
+|域 ID=domain.animal-welfare-cruelty-reporting-continuity
+|C 层级=C6：局部可能性解锁层
+|研究对象=Animal Welfare Cruelty Reporting Continuity
+|持续性作用=未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c6-local-unlocking/animal-welfare-cruelty-reporting-continuity
+}}
+
+'''Animal Welfare Cruelty Reporting Continuity'''是 Human Infra 在“局部阻塞解除”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C6“局部可能性解锁层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+Animal Welfare Cruelty Reporting Continuity 研究动物福利、虐待忽视报告、执法转介和家庭风险信号如何保护动物、人类关系和社区安全。
+
+<blockquote>核心问题：动物虐待和忽视不只是动物问题；它也常暴露家庭压力、暴力、照护失败和社区风险。
+</blockquote>
+== 研究对象 ==
+
+* 动物福利、虐待、忽视、囤积、遗弃、报告入口、动物控制、执法转介和受害者安全。
+* 动物虐待与家庭暴力、儿童安全、老人照护、心理压力、住房风险和社区健康之间的关系。
+* 报告边界、隐私、证据、误报、报复风险、反私刑和反骚扰边界。
+
+== 先验链路 ==
+
+<pre>主体持续性需要照护关系不被暴力和忽视腐蚀
+  -> 动物虐待、忽视、遗弃和囤积会伤害动物福利并暴露家庭系统压力
+  -> 合法报告、转介、调查和支持系统可降低持续伤害和关系破裂
+  -> 若资料被用于网暴、跟踪或私刑，保护系统会反向制造人身风险
+  -> 因而动物福利与虐待报告需要独立的安全和伦理边界</pre>
+== 关键变量 ==
+
+* 动物福利标准、照护忽视、暴力、囤积、遗弃、报告入口、跨机构转介和受害者安全。
+* 家庭暴力、儿童保护、老年/成人保护、住房检查、心理健康、贫困和社区服务链接。
+* 把动物福利资料用于公开羞辱、骚扰、非法调查、执法规避或家庭控制的风险。
+
+== 证据入口 ==
+
+* USDA APHIS Animal Welfare Act / Animal Care materials。
+* AVMA animal welfare resources。
+* CDC Healthy Pets, Healthy People。
+* Local animal control / humane law enforcement public materials。
+
+== 非目标 ==
+
+* 本域不提供个案报案策略、证据收集、执法判断、动物没收、家庭冲突处理、公开曝光或法律建议。
+* 不指导虐待、遗弃、囤积、非法繁殖、动物交易、规避检查或报复行为。
+* 不收集地址、照片、视频、个人身份、儿童信息、家庭暴力细节、动物伤情或举报线索。
+
+== 上下游 ==
+
+* 上游：<code>animal-shelter-rescue-rehoming-continuity/</code>、<code>child-protection-family-safety/</code>、<code>elder-justice-adult-protective-services/</code>。
+* 下游：<code>personal-safety-violence-prevention/</code>、<code>child-protection-family-safety/</code>、<code>elder-justice-adult-protective-services/</code>。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C6研究域|C6研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c6-local-unlocking/animal-welfare-cruelty-reporting-continuity/README.md Human Infra 仓库：domains/c6-local-unlocking/animal-welfare-cruelty-reporting-continuity/README.md]
+
+[[Category:C6研究域]]

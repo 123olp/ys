@@ -1011,4 +1011,4 @@ tools/audit_human_infra_domain_source_specific_extraction_queue.py \
 		domains/c1-boundary-rewriting/longevity-evidence/scripts/audit_life_path_toy_model.py
 
 clean:
-	find . -type d \( -name __pycache__ -o -name .pytest_cache \) -prune -exec rm -rf {} +
+	find . -path ./wiki/runtime -prune -o -type d \( -name __pycache__ -o -name .pytest_cache \) -prune -exec rm -rf {} +

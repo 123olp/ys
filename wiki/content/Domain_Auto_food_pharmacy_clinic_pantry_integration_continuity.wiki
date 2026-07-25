@@ -1,0 +1,84 @@
+{{研究域
+|域 ID=domain.food-pharmacy-clinic-pantry-integration-continuity
+|C 层级=C5：可能性生态承载层
+|研究对象=Food Pharmacy Clinic Pantry Integration Continuity
+|持续性作用=关键词显示该域主要承载能源、水、食物、住房、治理、经济、通信、灾害或基础设施环境。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c5-ecological-substrate/food-pharmacy-clinic-pantry-integration-continuity
+}}
+
+'''Food Pharmacy Clinic Pantry Integration Continuity'''是 Human Infra 在“外部生态承载”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要承载能源、水、食物、住房、治理、经济、通信、灾害或基础设施环境。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C5“可能性生态承载层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+该域研究 food pharmacy、clinic pantry、hospital pantry 和医疗场景内外食物支持如何与临床工作流、EHR 转介、社区伙伴和食物发放连接。它关注“医疗入口里的食物基础设施”。
+
+== 核心问题 ==
+
+* food pharmacy / clinic pantry 如何嵌入筛查、转介、领取、随访和社区资源闭环。
+* 现场发放、库存、营养教育、慢病照护、隐私、污名和人员角色如何影响主体真实获得食物。
+* 临床场所食物支持与食品银行、MTM、MTG、produce prescription 和社会处方如何分工。
+* 哪些执行断点会让 pantry 变成一次性发放，而不是持续照护接口。
+
+== 对象 ==
+
+* Food pharmacy、clinic pantry、hospital pantry、onsite food distribution、community food partner。
+* EHR referral、screening workflow、inventory、pickup/delivery、nutrition education、follow-up。
+* 数据共享、同意、污名、空间设计、运营责任和社区组织协作。
+
+<span id="human-infra-价值"></span>
+== Human Infra 价值 ==
+
+当食物支持被放进医疗入口，主体不必在病情、交通、信息和多个机构之间反复切换。该域关注这种整合能否降低行动摩擦、改善慢病执行，并避免把食品发放变成医疗场景中的污名化附属物。
+
+== 边界 ==
+
+* 只整理公开项目模型、执行变量、证据、风险和治理边界。
+* 不推荐具体 pantry、医院、食品包、疾病饮食、领取路径、志愿者流程或个案资源。
+* 不替代医疗、营养、福利、食品安全、隐私合规或机构运营建议。
+
+== 上游与下游 ==
+
+* 上游：<code>nutrition-insecurity-screening-referral-continuity</code>、<code>social-prescribing-community-referral-continuity</code>、<code>patient-portal-account-message-continuity</code>、<code>healthcare-language-interpreter-effective-communication-continuity</code>。
+* 下游：<code>food-bank-pantry-community-food-distribution-continuity</code>、<code>medically-tailored-groceries-food-benefit-continuity</code>、<code>produce-prescription-fruit-vegetable-benefit-continuity</code>。
+
+== 初始资料线索 ==
+
+* HHS Food is Medicine.
+* CMS Medicaid HRSN nutrition supports.
+* Food pharmacy / clinic pantry implementation and evaluation literature.
+* Community health center and hospital community benefit materials.
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C5研究域|C5研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c5-ecological-substrate/food-pharmacy-clinic-pantry-integration-continuity/README.md Human Infra 仓库：domains/c5-ecological-substrate/food-pharmacy-clinic-pantry-integration-continuity/README.md]
+
+[[Category:C5研究域]]

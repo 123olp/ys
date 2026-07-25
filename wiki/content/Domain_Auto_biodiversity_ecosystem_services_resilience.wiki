@@ -1,0 +1,91 @@
+{{研究域
+|域 ID=domain.biodiversity-ecosystem-services-resilience
+|C 层级=C5：可能性生态承载层
+|研究对象=Biodiversity Ecosystem Services Resilience
+|持续性作用=主要提供主体展开未来所需的基础环境、资源、治理或基础设施。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c5-ecological-substrate/biodiversity-ecosystem-services-resilience
+}}
+
+'''Biodiversity Ecosystem Services Resilience'''是 Human Infra 在“外部生态承载”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+主要提供主体展开未来所需的基础环境、资源、治理或基础设施。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C5“可能性生态承载层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>biodiversity-ecosystem-services-resilience/</code> 研究生物多样性、生态系统服务、授粉、水土保持、病害调节、热缓冲和生态恢复如何支撑主体持续性。
+
+<blockquote>核心问题：主体不是只活在技术系统里，也活在生态系统里；生态系统服务一旦退化，食物、水、空气、疾病风险、热风险和心理恢复都会同时变差。
+</blockquote>
+== 先验位置 ==
+
+<pre>有效永生 / 主体持续性最大化
+  -> 主体依赖食物、水、空气、温度调节、病害控制和恢复环境
+  -> 这些服务部分由生态系统和生物多样性提供
+  -> 生态系统退化会降低授粉、过滤、碳储存、灾害缓冲和疾病调节能力
+  -> 技术系统必须补偿更多自然服务缺口，主体维护成本上升</pre>
+== 关注对象 ==
+
+* 生物多样性、生态系统服务、授粉、湿地、水土保持、城市绿地、自然恢复和生态连通性。
+* 生态系统退化对食物、水、空气、热风险、传染病、心理恢复和灾害缓冲的影响。
+* 与 <code>planetary-health-environment/</code> 的边界：星球健康域关注广义环境暴露；本域关注生态系统服务作为可识别功能。
+* 与 <code>agricultural-production-food-system-resilience/</code> 的边界：农业域关注生产系统；本域关注生态系统对生产与健康的支撑。
+
+<span id="human-infra-模型链路"></span>
+== Human Infra 模型链路 ==
+
+<pre>生态系统服务维持
+  -> 授粉、过滤、蓄水、降温、碳储存、栖息地和病害调节能力保留
+  -> 食物、水、空气、热风险、灾害和恢复环境更稳定
+  -> 技术补偿成本、疾病风险和环境压力下降
+  -> 主体持续性获得生态底座支撑</pre>
+== 非目标 ==
+
+* 不提供保护地执法、野生动物处理、生态补偿、碳市场、土地开发或项目审批建议。
+* 不把生态服务估值写成投资、交易、征地或政策结论。
+* 不提供可能伤害物种、栖息地或保护设施的操作信息。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* IPBES Global Assessment: https://www.ipbes.net/global-assessment
+* Convention on Biological Diversity: https://www.cbd.int/
+* UNEP Nature and Biodiversity: https://www.unep.org/explore-topics/ecosystems-and-biodiversity
+
+== 下一步 ==
+
+* 建立生态服务变量表：授粉、过滤、蓄水、降温、栖息地、疾病调节、恢复环境和服务替代成本。
+* 整理 IPBES、CBD、UNEP、WHO nature and health 资料卡片。
+* 与农业、土壤、水资源、空气质量、心理恢复、灾害和城市环境域建立链路。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C5研究域|C5研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c5-ecological-substrate/biodiversity-ecosystem-services-resilience/README.md Human Infra 仓库：domains/c5-ecological-substrate/biodiversity-ecosystem-services-resilience/README.md]
+
+[[Category:C5研究域]]

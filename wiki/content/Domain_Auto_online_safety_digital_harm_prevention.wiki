@@ -1,0 +1,87 @@
+{{研究域
+|域 ID=domain.online-safety-digital-harm-prevention
+|C 层级=C6：局部可能性解锁层
+|研究对象=Online Safety Digital Harm Prevention
+|持续性作用=未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c6-local-unlocking/online-safety-digital-harm-prevention
+}}
+
+'''Online Safety Digital Harm Prevention'''是 Human Infra 在“局部阻塞解除”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C6“局部可能性解锁层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+在线安全与数字伤害预防域研究：当骚扰、网络霸凌、数字胁迫、儿童在线剥削、非自愿影像、跟踪、勒索和平台滥用影响主体时，数字空间如何保持可参与、可求助、可恢复和可治理。
+
+== 对象 ==
+
+* 网络霸凌、在线骚扰、数字虐待、跟踪、勒索、非自愿影像、儿童在线剥削、诈骗诱导和平台举报。
+* 平台治理、内容举报、信任与安全、隐私保护、账号安全、数字证据保存、儿童安全和受害者支持。
+* 在线伤害对心理健康、身体安全、社会关系、工作学习、身份安全、财务安全和未来选择权的影响。
+* 青少年、儿童、残障者、移民、公众人物、亲密伴侣暴力受害者和弱势群体的数字可达与安全。
+
+<span id="human-infra-价值"></span>
+== Human Infra 价值 ==
+
+数字空间已经成为学习、工作、社交、医疗、福利和公共服务入口。在线伤害会把这个入口变成持续威胁源。在线安全域把数字参与的安全性、求助路径和恢复能力作为主体持续性的基础设施。
+
+<pre>数字伤害可预防、举报和恢复
+  -> 在线参与、学习、工作、社交和服务入口更安全
+  -> 骚扰、胁迫、剥削、身份风险和心理伤害下降
+  -> 主体数字行动能力和未来选择权提高</pre>
+== 边界 ==
+
+本域只整理公开在线安全、网络霸凌、儿童在线保护、平台举报、数字伤害预防和受害者支持资料。
+
+不提供：
+
+* 跟踪、骚扰、 doxxing、勒索、非自愿影像、诱导、儿童剥削、账号入侵、规避平台检测或规避执法方法。
+* 个案法律、调查、证据固定、平台申诉、身份识别、报案、心理危机或安全计划建议。
+* 指向具体儿童、受害者、弱势群体、家庭、学校、账号或地点的定位、识别、扩散或二次伤害信息。
+* 把在线安全写成审查扩张、歧视筛选、商业监控、恐慌营销或受害者归因。
+
+== 上游与下游 ==
+
+* 上游：<code>digital-identity-security/</code>、<code>information-integrity-trust/</code>、<code>personal-safety-violence-prevention/</code>、<code>child-protection-family-safety/</code>。
+* 下游：<code>mental-health-affective-stability/</code>、<code>fraud-scams-consumer-protection/</code>、<code>health-data-privacy-governance/</code>、<code>governance-rights/</code>。
+
+== 初始资料线索 ==
+
+* StopBullying.gov cyberbullying resources。
+* NCMEC CyberTipline and online exploitation prevention resources。
+* FTC online safety and privacy resources。
+* Public materials on platform trust and safety, digital abuse and online harassment prevention。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C6研究域|C6研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c6-local-unlocking/online-safety-digital-harm-prevention/README.md Human Infra 仓库：domains/c6-local-unlocking/online-safety-digital-harm-prevention/README.md]
+
+[[Category:C6研究域]]

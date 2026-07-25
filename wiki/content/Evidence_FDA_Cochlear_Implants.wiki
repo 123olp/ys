@@ -1,0 +1,16 @@
+{{证据来源
+|来源 ID=evidence.fda.cochlear-implants
+|来源类型=监管设备专题页
+|完整引文=U.S. Food and Drug Administration. FDA-Approved Cochlear Implants.
+|URL 或 DOI=https://www.fda.gov/medical-devices/cochlear-implants/fda-approved-cochlear-implants
+|支持范围=人工耳蜗已有获批设备及FDA审查依据
+|不支持的推论=不支持人工耳蜗复制自然听觉或适用于所有听力损失
+|审查状态=已核对FDA原始页面
+|访问日期=2026-07-25
+}}
+
+== 支持范围 ==
+FDA说明多款人工耳蜗已获批，并根据临床表现和不良事件资料判断安全有效性。
+
+== 不支持的推论 ==
+获批设备的效果、适应证和代际能力必须分别审查。

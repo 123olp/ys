@@ -1,0 +1,16 @@
+{{证据来源
+|来源 ID=evidence.frontiers.organoid-intelligence-2023
+|来源类型=同行评审研究议程
+|完整引文=Smirnova L, et al. Organoid intelligence (OI): the new frontier in biocomputing and intelligence-in-a-dish. Frontiers in Science. 2023.
+|URL 或 DOI=https://doi.org/10.3389/fsci.2023.1017235
+|支持范围=类器官智能概念、研究目标、技术依赖和伦理议程
+|不支持的推论=不支持脑类器官已具有人类智能、意识或扩展后必然超越人类
+|审查状态=已核对期刊原文
+|访问日期=2026-07-25
+}}
+
+== 支持范围 ==
+论文提出使用三维人脑细胞培养物探索记忆、计算和脑机接口的跨学科研究方向。
+
+== 不支持的推论 ==
+这是研究议程而非成熟计算平台；能耗、规模效应、智能水平和道德地位仍未确定。

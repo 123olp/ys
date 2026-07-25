@@ -1,0 +1,86 @@
+{{研究域
+|域 ID=domain.sensory-continuity
+|C 层级=C4：可能性转换通道层
+|研究对象=Sensory Continuity
+|持续性作用=关键词显示该域主要处理研究、数据、模型、服务入口、身份记录、转化或治理接口。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c4-conversion-channel/sensory-continuity
+}}
+
+'''Sensory Continuity'''是 Human Infra 在“路径转换接口”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要处理研究、数据、模型、服务入口、身份记录、转化或治理接口。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C4“可能性转换通道层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+Sensory Continuity 负责整理视觉、听觉、前庭、触觉、嗅觉等感官系统对主体感知、行动和身份连续性的支撑。
+
+核心问题：
+
+<blockquote>主体通过感官进入世界；感官衰退会压缩学习、沟通、安全、行动和社会参与能力。
+</blockquote>
+== 先验位置 ==
+
+<pre>主体持续性最大化
+  -> 主体必须感知世界、获得反馈、沟通和行动
+  -> 视觉、听觉和平衡等感官系统会随年龄、疾病和事故衰退
+  -> 感官丧失会增加跌倒、孤立、认知负担和失能风险
+  -> 因此感官连续性是主体行动和反馈闭环的必要条件</pre>
+== 关注对象 ==
+
+* 视力、听力、前庭平衡、触觉反馈、感官辅助和感官康复。
+* 白内障、黄斑变性、青光眼、听力损失、耳鸣和平衡障碍。
+* 与 <code>assistive-technology-access/</code> 的关系：辅助技术可补偿感官功能。
+* 与 <code>neuro-continuity/</code> 的关系：感官输入是认知和身份世界模型的基础。
+
+<span id="human-infra-模型链路"></span>
+== Human Infra 模型链路 ==
+
+<pre>感官维护技术 T
+  -> 改变视觉、听觉、平衡、触觉和反馈质量 X
+  -> 改变主体感知和行动状态 S
+  -> 降低跌倒、隔离、沟通失败、认知负担和失能风险
+  -> 增加有效时间、学习能力和社会参与</pre>
+== 非目标 ==
+
+* 不提供眼科、听力、神经或设备治疗建议。
+* 不把单一感官改善等同于完整主体功能恢复。
+* 不忽略辅助技术、环境可达和社会参与维度。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* WHO Vision Impairment and Blindness: https://www.who.int/news-room/fact-sheets/detail/blindness-and-visual-impairment
+* WHO Deafness and Hearing Loss: https://www.who.int/news-room/fact-sheets/detail/deafness-and-hearing-loss
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C4研究域|C4研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c4-conversion-channel/sensory-continuity/README.md Human Infra 仓库：domains/c4-conversion-channel/sensory-continuity/README.md]
+
+[[Category:C4研究域]]

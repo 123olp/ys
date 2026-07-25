@@ -1,0 +1,92 @@
+{{研究域
+|域 ID=domain.tooth-loss-prosthodontic-chewing-continuity
+|C 层级=C6：局部可能性解锁层
+|研究对象=Tooth Loss Prosthodontic Chewing Continuity
+|持续性作用=未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c6-local-unlocking/tooth-loss-prosthodontic-chewing-continuity
+}}
+
+'''Tooth Loss Prosthodontic Chewing Continuity'''是 Human Infra 在“局部阻塞解除”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C6“局部可能性解锁层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>tooth-loss-prosthodontic-chewing-continuity/</code> 负责整理缺牙、修复义齿、咀嚼效率、营养和社会参与连续性。
+
+核心问题：
+
+<blockquote>缺牙不是外观问题；它会改变咀嚼、饮食选择、说话、面部支撑、社交尊严和长期照护负担。
+</blockquote>
+== 先验位置 ==
+
+<pre>主体持续性最大化
+  -> 主体必须能以可承受成本摄入营养、表达和参与社会
+  -> 牙齿数量、咬合支持和修复稳定性决定咀嚼效率
+  -> 缺牙和修复失败会导致饮食受限、营养风险、社交退缩和照护依赖
+  -> 因此缺牙与修复连续性是有效时间和尊严持续的功能条件</pre>
+== 关注对象 ==
+
+* 缺牙、无牙颌、义齿、种植修复、固定/活动修复和维护负担。
+* 咀嚼效率、饮食多样性、营养、言语、面部支撑、社交和自尊。
+* 老年照护、低收入人群、护理机构、交通和保险费用导致的修复可及性问题。
+* 与 <code>nutrition-metabolic-health/</code> 的关系：本域关注口腔输入通道；营养域关注代谢和摄入质量。
+
+<span id="human-infra-模型链路"></span>
+== Human Infra 模型链路 ==
+
+<pre>缺牙修复 / 咀嚼支持 T
+  -> 改变牙列完整性、咀嚼效率、言语、社交、营养选择和维护成本变量 X
+  -> 改变主体摄食、沟通和资源状态 S
+  -> 改变营养不足、社交退缩、照护依赖和任务执行受限风险
+  -> 增加有效时间、生活质量和行动密度</pre>
+== 非目标 ==
+
+* 不提供种植、义齿、冠桥或任何修复方案选择建议。
+* 不做咬合设计、影像判读、手术路径、材料选择或费用承诺。
+* 不替代牙医、修复专科、口腔外科或营养专业评估。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* WHO Oral Health: https://www.who.int/news-room/fact-sheets/detail/oral-health
+* CDC Oral Health: https://www.cdc.gov/oral-health/
+* NIDCR Older Adults and Oral Health: https://www.nidcr.nih.gov/health-info/older-adults
+
+== 下一步 ==
+
+* 建立缺牙到营养、沟通、尊严和照护依赖的变量表。
+* 与老年口腔、牙周病、龋病和服务可及性域建立交叉索引。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C6研究域|C6研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c6-local-unlocking/tooth-loss-prosthodontic-chewing-continuity/README.md Human Infra 仓库：domains/c6-local-unlocking/tooth-loss-prosthodontic-chewing-continuity/README.md]
+
+[[Category:C6研究域]]

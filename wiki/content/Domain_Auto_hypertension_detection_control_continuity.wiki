@@ -1,0 +1,89 @@
+{{研究域
+|域 ID=domain.hypertension-detection-control-continuity
+|C 层级=C6：局部可能性解锁层
+|研究对象=Hypertension Detection Control Continuity
+|持续性作用=未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c6-local-unlocking/hypertension-detection-control-continuity
+}}
+
+'''Hypertension Detection Control Continuity'''是 Human Infra 在“局部阻塞解除”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C6“局部可能性解锁层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>hypertension-detection-control-continuity/</code> 研究高血压筛查、确认、家庭/门诊测量质量、长期控制、随访坚持和靶器官风险预防如何影响主体持续性。
+
+<blockquote>核心问题：高血压常在无症状阶段持续改变卒中、心衰、肾衰和血管事件风险。有效永生需要把“发现、确认、控制和长期坚持”建模为急性危象之前的上游风险治理层。
+</blockquote>
+== 先验位置 ==
+
+<pre>有效永生 / 主体持续性最大化
+  -> 主体依赖稳定血管压力环境维持脑、心、肾和眼底功能
+  -> 高血压可长期无症状地提高多器官风险函数
+  -> 结果取决于筛查、确认、随访、治疗可及、行为环境和坚持系统
+  -> 因此高血压检测与控制是急性靶器官损害之前的预防执行域</pre>
+== 关注对象 ==
+
+* Hypertension screening、office / out-of-office BP measurement、confirmation、control rate、treatment adherence、follow-up interval、team-based care、home BP device access。
+* 与 <code>cardiovascular-resilience/</code> 的边界：该域关注心血管韧性总机制；本域关注血压风险被发现、确认、控制和长期坚持的执行链。
+* 与 <code>hypertensive-crisis-end-organ-risk-continuity/</code> 的关系：本域处理危象之前的长期风险控制，后者处理急性靶器官损害窗口。
+
+<span id="human-infra-模型链路"></span>
+== Human Infra 模型链路 ==
+
+<pre>高血压检测与控制系统 T
+  -> 改变测量准确性、确认率、控制率、随访坚持和药物/生活环境可及变量 X
+  -> 改变血管负荷、心脑肾眼底状态和长期器官储备 S
+  -> 改变卒中、心衰、肾衰、急性危象和有效时间损失 λ(t)
+  -> 影响主体行动能力、认知稳定和未来选择权</pre>
+== 非目标 ==
+
+* 不提供个人血压读数判断、降压药、剂量、家庭处理、设备购买、检查排序、急诊分诊或个体医疗建议。
+* 不生成个人风险评分、治疗目标、生活方式处方、用药调整、远程监测策略或保险申诉。
+* 不收集个案血压、病史、用药、实验室、位置、设备或诊疗资料。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* USPSTF hypertension screening: https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/hypertension-in-adults-screening
+* CDC high blood pressure: https://www.cdc.gov/high-blood-pressure/
+* NHLBI high blood pressure: https://www.nhlbi.nih.gov/health/high-blood-pressure
+
+== 下一步 ==
+
+* 建立 Hypertension Control Card：screening, confirmation, measurement quality, access, adherence, follow-up, end-organ prevention。
+* 与 <code>cardiovascular-resilience/</code>、<code>hypertensive-crisis-end-organ-risk-continuity/</code> 和 <code>chronic-kidney-disease-screening-progression-continuity/</code> 建立接口。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C6研究域|C6研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c6-local-unlocking/hypertension-detection-control-continuity/README.md Human Infra 仓库：domains/c6-local-unlocking/hypertension-detection-control-continuity/README.md]
+
+[[Category:C6研究域]]

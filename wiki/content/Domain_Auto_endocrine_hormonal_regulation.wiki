@@ -1,0 +1,92 @@
+{{研究域
+|域 ID=domain.endocrine-hormonal-regulation
+|C 层级=C2：可能性源体维护层
+|研究对象=Endocrine Hormonal Regulation
+|持续性作用=直接维护身体、脑、器官、衰老、损伤或生命系统这些可能性源体。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c2-source-maintenance/endocrine-hormonal-regulation
+}}
+
+'''Endocrine Hormonal Regulation'''是 Human Infra 在“生命载体维护”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+直接维护身体、脑、器官、衰老、损伤或生命系统这些可能性源体。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C2“可能性源体维护层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+Endocrine Hormonal Regulation 负责整理内分泌系统、激素轴、代谢信号、压力反应、生长、生殖、骨骼和情绪调节如何支撑主体持续性。
+
+核心问题：
+
+<blockquote>主体不是一堆独立器官，而是被激素信号长期协调的动态系统；激素失衡会把代谢、睡眠、情绪、骨骼、免疫和生殖同时推入风险状态。
+</blockquote>
+== 先验位置 ==
+
+<pre>有效永生 / 主体持续性最大化
+  -> 主体必须长期维持跨器官协调
+  -> 激素系统调度能量、压力、生长、修复、生殖、骨骼和昼夜节律
+  -> 内分泌失衡会改变代谢状态、认知情绪、组织维护和疾病风险
+  -> 因此内分泌激素调节是跨系统稳态域</pre>
+== 关注对象 ==
+
+* 甲状腺、胰岛、肾上腺、性腺、垂体、下丘脑和骨代谢相关激素轴。
+* 胰岛素、皮质醇、甲状腺激素、性激素、生长激素、维生素 D / PTH 等状态变量。
+* 糖尿病、甲状腺疾病、肾上腺异常、骨质疏松、生殖衰退、压力轴紊乱。
+* 激素系统与代谢、睡眠、心理、免疫、肌骨、心血管和衰老机制的交叉。
+
+<span id="human-infra-模型链路"></span>
+== Human Infra 模型链路 ==
+
+<pre>内分泌状态或干预 T
+  -> 改变激素水平、受体敏感性、反馈环和跨器官信号 X
+  -> 改变代谢、修复、情绪、睡眠、骨骼和免疫状态 S
+  -> 改变慢病、失能、认知情绪崩塌和死亡风险 λ(t)
+  -> 影响有效时间、恢复能力和长期行动窗口</pre>
+== 非目标 ==
+
+* 不提供激素检测解释、补充、处方、剂量、停药、周期管理或治疗建议。
+* 不把单个激素指标写成寿命预测或主体能力判断。
+* 不替代 <code>nutrition-metabolic-health/</code>、<code>sleep-circadian-recovery/</code>、<code>mental-health-affective-stability/</code> 或 <code>musculoskeletal-integrity/</code>。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* NIDDK endocrine diseases: https://www.niddk.nih.gov/health-information/endocrine-diseases
+* NIDDK diabetes overview: https://www.niddk.nih.gov/health-information/diabetes
+* Endocrine Society hormone health resources: https://www.endocrine.org/patient-engagement/endocrine-library
+
+== 下一步 ==
+
+# 建立激素轴变量表：轴、信号、反馈、目标器官、失败模式和证据类型。
+# 与 <code>nutrition-metabolic-health/</code>、<code>sleep-circadian-recovery/</code>、<code>mental-health-affective-stability/</code> 和 <code>musculoskeletal-integrity/</code> 建立边界。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C2研究域|C2研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c2-source-maintenance/endocrine-hormonal-regulation/README.md Human Infra 仓库：domains/c2-source-maintenance/endocrine-hormonal-regulation/README.md]
+
+[[Category:C2研究域]]

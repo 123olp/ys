@@ -1,0 +1,92 @@
+{{研究域
+|域 ID=domain.replication-reproducibility-many-labs-continuity
+|C 层级=C6：局部可能性解锁层
+|研究对象=Replication Reproducibility Many Labs Continuity
+|持续性作用=未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c6-local-unlocking/replication-reproducibility-many-labs-continuity
+}}
+
+'''Replication Reproducibility Many Labs Continuity'''是 Human Infra 在“局部阻塞解除”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C6“局部可能性解锁层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>replication-reproducibility-many-labs-continuity/</code> 研究复制研究、复现实验、多实验室协作、再分析和结果稳健性如何影响 Human Infra 证据可靠性。
+
+<blockquote>核心问题：单一研究即使发表也可能不可复制；主体持续性模型需要知道结论是否能在不同数据、实验室、方法和人群中重复出现。
+</blockquote>
+== 先验位置 ==
+
+<pre>有效永生 / 主体持续性最大化
+  -> 需要把技术和干预放入长期决策模型
+  -> 单次研究结果可能来自偶然、偏倚、过拟合或情境依赖
+  -> 复制、复现、多实验室验证和再分析决定结果稳健性
+  -> 因此复制/复现/多实验室连续性是证据从信号变成可靠输入的门槛</pre>
+== 关注对象 ==
+
+* Replication、reproducibility、robustness、multisite study、Many Labs、reanalysis、registered replication report 和 computational reproducibility。
+* 直接复制、概念复制、独立数据再分析、跨实验室异质性和失败复制解释。
+* 与 <code>research-software-capsule-reproducibility-continuity/</code> 的边界：软件胶囊域关注计算环境；本域关注研究结论跨团队和情境是否稳健。
+* 与 <code>meta-analysis-effect-size-heterogeneity-continuity/</code> 的边界：Meta 域量化多研究效应；本域关注复制设计和失败解释。
+
+<span id="human-infra-模型链路"></span>
+== Human Infra 模型链路 ==
+
+<pre>复制复现与多实验室验证 T
+  -> 改变 replication_status、reproducibility_status、cross_site_heterogeneity、robustness 变量 X
+  -> 改变效应估计、证据确定性和模型输入可信状态 S
+  -> 改变不可复制结论、过拟合、场景外推和技术采用误判风险 λ(t)
+  -> 影响长期研究组合、模型校准和主体持续性路径判断</pre>
+== 非目标 ==
+
+* 不提供数据伪造、复现实验操控、显著性追逐、论文代写、实验规避或对作者的不端指控。
+* 不把失败复制自动解释为原研究错误；必须记录情境、方法和样本差异。
+* 不提供湿实验、人体实验或临床操作协议。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* National Academies, Reproducibility and Replicability in Science: https://nap.nationalacademies.org/catalog/25303/reproducibility-and-replicability-in-science
+* Center for Open Science: https://www.cos.io/
+* Many Labs projects, Center for Open Science: https://www.cos.io/initiatives
+* Registered Reports, Center for Open Science: https://www.cos.io/initiatives/registered-reports
+* OSF Registries: https://osf.io/registries
+
+== 下一步 ==
+
+* 给 Source Card 增加 <code>replication_status</code>、<code>reproducibility_package</code>、<code>multisite_signal</code>、<code>failed_replication_context</code> 和 <code>robustness_note</code> 字段。
+* 与 Meta 分析、风险偏倚、预注册和研究软件胶囊域建立复核链。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C6研究域|C6研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c6-local-unlocking/replication-reproducibility-many-labs-continuity/README.md Human Infra 仓库：domains/c6-local-unlocking/replication-reproducibility-many-labs-continuity/README.md]
+
+[[Category:C6研究域]]

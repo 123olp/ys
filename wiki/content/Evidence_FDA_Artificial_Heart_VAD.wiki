@@ -1,0 +1,16 @@
+{{证据来源
+|来源 ID=evidence.fda.artificial-heart-vad
+|来源类型=监管设备说明
+|完整引文=U.S. Food and Drug Administration. SynCardia temporary Total Artificial Heart and ventricular assist device materials.
+|URL 或 DOI=https://www.accessdata.fda.gov/cdrh_docs/pdf3/P030011c.pdf
+|支持范围=全人工心脏与VAD的机械泵血功能和设备边界
+|不支持的推论=不支持设备等同永久无维护心脏或完整身体替代
+|审查状态=已核对FDA设备资料
+|访问日期=2026-07-25
+}}
+
+== 支持范围 ==
+该资料说明机械装置可以替代双心室和瓣膜泵血，支持身体功能可被不同材料实现。
+
+== 不支持的推论 ==
+设备仍依赖手术、抗凝、控制台、能源和持续医疗支持。

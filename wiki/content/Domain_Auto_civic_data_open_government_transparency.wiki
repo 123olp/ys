@@ -1,0 +1,94 @@
+{{研究域
+|域 ID=domain.civic-data-open-government-transparency
+|C 层级=C5：可能性生态承载层
+|研究对象=Civic Data Open Government Transparency
+|持续性作用=主要提供主体展开未来所需的基础环境、资源、治理或基础设施。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c5-ecological-substrate/civic-data-open-government-transparency
+}}
+
+'''Civic Data Open Government Transparency'''是 Human Infra 在“外部生态承载”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+主要提供主体展开未来所需的基础环境、资源、治理或基础设施。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C5“可能性生态承载层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>civic-data-open-government-transparency/</code> 研究开放数据、政府透明、公共记录、绩效数据、FOIA、数据目录和可复用公共信息如何支撑问责、服务改进和公共决策参与。
+
+<blockquote>核心问题：公共系统不可见时，主体无法判断资源如何分配、服务是否有效、风险是否被治理；开放数据和透明机制把制度运行变成可审查、可复用、可反馈的公共基础设施。
+</blockquote>
+== 先验位置 ==
+
+<pre>有效永生 / 主体持续性最大化
+  -> 主体依赖公共资源、政策、服务和风险治理
+  -> 这些系统必须可被观察、比较、审查和反馈
+  -> 开放数据、公共记录和透明机制降低制度不可见性
+  -> 缺乏透明会放大腐败、低效、排除、服务失败和信任崩塌
+  -> 因此公民数据与开放政府是主体持续性的治理可观测域</pre>
+== 关注对象 ==
+
+* 开放政府数据、Data.gov、元数据、公共记录、FOIA、绩效仪表板、服务数据和公共参与数据。
+* 透明、问责、可复用、机器可读、隐私保护、数据质量、更新频率和访问门槛。
+* 公民社会、研究者、记者、社区组织和公共部门如何用数据发现缺口、改进服务和监督风险。
+* 与 <code>civic-participation-election-access/</code> 的边界：本域关注公共数据和透明度；公民参与域关注投票和公共参与入口。
+* 与 <code>health-data-privacy-governance/</code> 的边界：本域处理公共开放数据；健康数据隐私域处理敏感个体健康数据治理。
+
+<span id="human-infra-模型链路"></span>
+== Human Infra 模型链路 ==
+
+<pre>开放政府与公民数据 T
+  -> 改变数据可得性、透明度、元数据质量、公共记录、绩效反馈和隐私保护变量 X
+  -> 改变主体、社区和研究者审查制度、发现缺口和推动改进的状态 S
+  -> 改变服务失败不可见、资源错配、腐败、歧视、信任崩塌和风险治理失灵风险 λ(t)
+  -> 影响公共资源质量、制度反馈、权利保护和未来选择权</pre>
+== 非目标 ==
+
+* 不提供人肉搜索、隐私攻击、规避访问控制、监控目标定位、商业抓取滥用或执法情报分析。
+* 不把开放数据写成可以发布敏感个体数据、健康数据、儿童数据、位置数据或可再识别数据的理由。
+* 不提供 FOIA 个案法律建议、诉讼策略、政府合规判断或政治操控方案。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* Data.gov: https://data.gov/
+* Resources.data.gov: https://resources.data.gov/
+* FOIA.gov: https://www.foia.gov/
+* U.S. Open Government: https://open.usa.gov/
+* Federal Data Strategy: https://strategy.data.gov/
+
+== 下一步 ==
+
+* 建立开放数据变量表：可得性、机器可读、元数据、更新、许可、隐私、再识别风险、绩效反馈和公共参与接口。
+* 与 <code>governance-rights/</code>、<code>public-service-design-accessibility/</code>、<code>civic-participation-election-access/</code> 和 <code>health-data-privacy-governance/</code> 建立接口。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C5研究域|C5研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c5-ecological-substrate/civic-data-open-government-transparency/README.md Human Infra 仓库：domains/c5-ecological-substrate/civic-data-open-government-transparency/README.md]
+
+[[Category:C5研究域]]

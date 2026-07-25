@@ -1,0 +1,84 @@
+{{研究域
+|域 ID=domain.public-restroom-sanitation-hygiene-access-continuity
+|C 层级=C4：可能性转换通道层
+|研究对象=Public Restroom Sanitation Hygiene Access Continuity
+|持续性作用=关键词显示该域主要处理研究、数据、模型、服务入口、身份记录、转化或治理接口。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c4-conversion-channel/public-restroom-sanitation-hygiene-access-continuity
+}}
+
+'''Public Restroom Sanitation Hygiene Access Continuity'''是 Human Infra 在“路径转换接口”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要处理研究、数据、模型、服务入口、身份记录、转化或治理接口。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C4“可能性转换通道层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>public-restroom-sanitation-hygiene-access-continuity</code> 研究公共厕所、洗手设施、卫生维护、开放时段、无障碍如厕、经期卫生和照护者辅助空间如何影响主体在离家后能否持续工作、学习、出行、照护、就医和参加公共生活。
+
+<blockquote>核心问题：公共空间中的身体需求不是附属小事；如厕和卫生接入断裂，会把行动半径、停留时间、尊严、安全和公共参与同时压缩。
+</blockquote>
+== 关注对象 ==
+
+* 公共厕所、洗手设施、卫生用品、经期卫生、家庭/无障碍厕所、婴幼儿换尿布台和照护辅助空间。
+* 开放时段、维护频率、清洁质量、导视、排队、费用、关闭策略、损坏修复和极端天气/灾害期间的替代设施。
+* 与 WASH、公共卫生、无障碍设计、城市治理、公共交通、旅游、露宿者服务、学校和灾害响应的接口。
+
+<span id="human-infra-链路"></span>
+== Human Infra 链路 ==
+
+<pre>公共如厕和卫生接入稳定
+  -> 主体离家停留时间和行动半径增加
+  -> 感染、脱水、憋尿、尊严损失和公共空间排除风险下降
+  -> 工作、学习、照护、就医、交通换乘和社区参与更可持续
+  -> 主体有效时间、行动自由和未来选择权增强</pre>
+== 非目标 ==
+
+* 不提供厕所定位跟踪、规避管理、破坏设施、占用空间、偷拍骚扰、非法进入、露宿规避执法或个案投诉策略。
+* 不替代地方政府、公共卫生部门、设施运营方、无障碍专业人员、法律服务或社会服务机构。
+* 不收集个人如厕记录、位置轨迹、健康隐私、未成年人信息、设施安防细节或实时人流数据。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* CDC WASH: https://www.cdc.gov/healthywater/global/wash.html
+* CDC Handwashing: https://www.cdc.gov/handwashing/
+* ADA.gov Public Accommodations: https://www.ada.gov/topics/title-iii/
+* OSHA Sanitation guidance: https://www.osha.gov/restrooms-sanitation
+
+== 下一步 ==
+
+* 建立 <code>facility -&gt; access window -&gt; hygiene function -&gt; dignity/safety impact -&gt; task continuity</code> 变量表。
+* 区分公共厕所、交通枢纽厕所、学校厕所、工作场所厕所、灾害临时厕所和无障碍/家庭厕所。
+* 与 <code>water-sanitation-hygiene-continuity</code>、<code>housing-built-environment-stability</code>、<code>public-service-design-accessibility</code>、<code>transportation-access-mobility</code> 和 <code>emergency-preparedness-response</code> 建立边界。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C4研究域|C4研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c4-conversion-channel/public-restroom-sanitation-hygiene-access-continuity/README.md Human Infra 仓库：domains/c4-conversion-channel/public-restroom-sanitation-hygiene-access-continuity/README.md]
+
+[[Category:C4研究域]]

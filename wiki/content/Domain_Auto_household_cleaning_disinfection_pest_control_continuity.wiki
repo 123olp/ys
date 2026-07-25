@@ -1,0 +1,85 @@
+{{研究域
+|域 ID=domain.household-cleaning-disinfection-pest-control-continuity
+|C 层级=C5：可能性生态承载层
+|研究对象=Household Cleaning Disinfection Pest Control Continuity
+|持续性作用=关键词显示该域主要承载能源、水、食物、住房、治理、经济、通信、灾害或基础设施环境。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c5-ecological-substrate/household-cleaning-disinfection-pest-control-continuity
+}}
+
+'''Household Cleaning Disinfection Pest Control Continuity'''是 Human Infra 在“外部生态承载”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要承载能源、水、食物、住房、治理、经济、通信、灾害或基础设施环境。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C5“可能性生态承载层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>household-cleaning-disinfection-pest-control-continuity</code> 研究家庭清洁、消毒、垃圾处理、害虫控制、化学品安全和室内卫生如何影响感染、过敏、毒性暴露、睡眠和家庭恢复环境连续性。
+
+<blockquote>核心问题：家庭不是天然安全环境；清洁不足会制造感染和害虫风险，清洁过度或错误混合又会制造化学暴露，真正需要研究的是家庭卫生作为可治理的风险边界。
+</blockquote>
+== 关注对象 ==
+
+* 表面清洁、消毒、洗手点、卫生间/厨房清洁、垃圾、霉味/潮湿信号、害虫迹象和家庭卫生例程。
+* 消毒剂、清洁剂、农药、标签、储存、儿童/宠物暴露、误混合、通风和中毒风险。
+* 老年、儿童、免疫低下、照护、租住、灾后水损、公共住房和多户住宅环境。
+* 与 WASH、化学安全、毒物控制、室内空气、霉菌潮湿、病媒控制和产品安全的接口。
+
+<span id="human-infra-链路"></span>
+== Human Infra 链路 ==
+
+<pre>家庭卫生治理连续
+  -> 清洁、消毒、害虫控制和化学品使用保持可理解、可追踪、可恢复
+  -> 感染、过敏、毒性暴露、害虫和卫生摩擦风险下降
+  -> 家庭空间成为可恢复、可睡眠、可照护和可工作的环境
+  -> 健康寿命、有效时间、照护安全和居住稳定性增强</pre>
+== 非目标 ==
+
+* 不提供具体消毒配比、化学混合、杀虫剂使用、毒物处理、霉菌清除或医疗处置步骤。
+* 不替代 CDC、EPA、毒物中心、公共卫生、房屋维修、害虫治理或医疗服务。
+* 不鼓励危险化学品使用、标签规避、非法灭害、房东/租客对抗策略或恐慌性清洁。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* CDC Cleaning and Disinfecting: https://www.cdc.gov/hygiene/cleaning/
+* EPA Pesticide Labels: https://www.epa.gov/pesticide-labels
+* National Pesticide Information Center: https://npic.orst.edu/
+* Poison Help: https://www.poisonhelp.org/
+
+== 下一步 ==
+
+* 建立 <code>surface/environment -&gt; contamination/pest signal -&gt; cleaning/disinfection control -&gt; chemical exposure boundary -&gt; recovery cost</code> 变量表。
+* 区分日常清洁、感染暴发、灾后水损、害虫控制、儿童/宠物暴露和照护卫生场景。
+* 与 <code>sterilization-disinfection-infection-control</code>、<code>chemical-safety-poison-control-toxicology</code>、<code>mold-dampness-indoor-biological-exposure</code> 和 <code>vector-borne-disease-environmental-control</code> 建立边界。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C5研究域|C5研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c5-ecological-substrate/household-cleaning-disinfection-pest-control-continuity/README.md Human Infra 仓库：domains/c5-ecological-substrate/household-cleaning-disinfection-pest-control-continuity/README.md]
+
+[[Category:C5研究域]]

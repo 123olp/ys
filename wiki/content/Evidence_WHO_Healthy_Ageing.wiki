@@ -1,0 +1,20 @@
+{{证据来源
+|来源 ID=evidence.who.healthy-ageing-functional-ability
+|来源类型=国际组织定义
+|完整引文=World Health Organization. Healthy ageing and functional ability.
+|URL 或 DOI=https://www.who.int/news-room/questions-and-answers/item/healthy-ageing-and-functional-ability
+|支持范围=健康老龄化、功能能力、内在能力与环境交互的定义
+|不支持的推论=不支持永生、个体寿命预测或具体干预疗效
+|审查状态=已核对官方页面
+|访问日期=2026-07-24
+}}
+
+该来源用于为 Human Infra 的功能能力和环境承载维度提供公共卫生定义。
+
+== 支持范围 ==
+
+支持将健康目标理解为维持一个人做其重视之事的能力，并将其分解为个体内在能力、环境及二者交互。
+
+== 不支持的推论 ==
+
+不能据此推出任何技术延寿、年龄逆转或个体化医学建议。

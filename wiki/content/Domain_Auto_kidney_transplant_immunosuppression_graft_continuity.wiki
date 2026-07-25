@@ -1,0 +1,81 @@
+{{研究域
+|域 ID=domain.kidney-transplant-immunosuppression-graft-continuity
+|C 层级=C2：可能性源体维护层
+|研究对象=Kidney Transplant, Immunosuppression and Graft Continuity
+|持续性作用=关键词显示该域主要维护身体、脑、器官、细胞、急性生命风险或衰老损伤控制。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c2-source-maintenance/kidney-transplant-immunosuppression-graft-continuity
+}}
+
+'''Kidney Transplant, Immunosuppression and Graft Continuity'''是 Human Infra 在“生命载体维护”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要维护身体、脑、器官、细胞、急性生命风险或衰老损伤控制。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C2“可能性源体维护层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>kidney-transplant-immunosuppression-graft-continuity/</code> 研究肾移植、移植物功能、免疫抑制、感染风险、排斥、药物供应、随访和保险中断如何影响主体持续性。
+
+<blockquote>核心问题：肾移植把清除能力重新内置到身体中，但它依赖长期免疫抑制、随访、药物供应和感染/排斥风险治理。
+</blockquote>
+== 先验位置 ==
+
+<pre>有效永生
+  -> 外部替代清除可以被器官替代重建
+  -> 移植后的清除能力依赖免疫与药物系统长期稳定
+  -> 因此肾移植是清除能力重建后的长期治理域</pre>
+== 关注对象 ==
+
+* Kidney transplant, graft function, rejection, immunosuppression, infection, medication adherence, drug supply, follow-up, insurance and transition of care。
+* 与 <code>xenotransplantation-bioengineered-organ-replacement/</code> 的关系：后者关注远期器官替代平台，本域关注当前肾移植连续性。
+
+<span id="human-infra-模型链路"></span>
+== Human Infra 模型链路 ==
+
+<pre>移植随访与免疫抑制连续性 T
+  -> 改变排斥、感染、药物供应、毒性、随访和保险中断 X
+  -> 改变移植物功能、清除能力、免疫状态和生活稳定性 S
+  -> 改变死亡、移植物失败、住院和重返透析风险 lambda(t)
+  -> 改变健康寿命、资源负担和未来选择权</pre>
+== 非目标 ==
+
+* 不提供移植资格、配型、免疫抑制用药、剂量、实验室解释、感染处理、保险策略或个体建议。
+* 不输出个人移植物风险、排斥判断、用药调整、供体判断或机构选择。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* NIDDK kidney transplant materials.
+* National Kidney Foundation kidney transplant and anti-rejection medicine materials.
+* UNOS / OPTN public transplant system materials.
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C2研究域|C2研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c2-source-maintenance/kidney-transplant-immunosuppression-graft-continuity/README.md Human Infra 仓库：domains/c2-source-maintenance/kidney-transplant-immunosuppression-graft-continuity/README.md]
+
+[[Category:C2研究域]]

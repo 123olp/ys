@@ -1,0 +1,91 @@
+{{研究域
+|域 ID=domain.personal-safety-violence-prevention
+|C 层级=C3：可能性生成引擎层
+|研究对象=Personal Safety Violence Prevention
+|持续性作用=关键词显示该域主要增强认知、学习、工具、AI、技能或沟通能力。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c3-generation-engine/personal-safety-violence-prevention
+}}
+
+'''Personal Safety Violence Prevention'''是 Human Infra 在“主体能力生成”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要增强认知、学习、工具、AI、技能或沟通能力。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C3“可能性生成引擎层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>personal-safety-violence-prevention/</code> 研究人身安全、暴力预防、受害者支持和创伤后服务能否防止主体被伤害、胁迫、孤立和长期失能。
+
+<blockquote>核心问题：暴力和胁迫会直接截断主体持续性，也会通过恐惧、创伤、资源损失和关系控制长期侵蚀行动能力。
+</blockquote>
+== 先验位置 ==
+
+<pre>有效永生 / 主体持续性最大化
+  -> 主体可能暴露于亲密伴侣暴力、性暴力、跟踪、社区暴力、犯罪伤害和胁迫控制
+  -> 预防、求助入口、受害者服务、法律保护、医疗创伤支持和安全转介必须可达
+  -> 人身伤害和控制关系才不会把主体的生命、尊严、资源和未来选择权击穿</pre>
+== 关注对象 ==
+
+* 亲密伴侣暴力、性暴力、跟踪、儿童/老年/残障虐待、社区暴力、犯罪伤害和胁迫控制。
+* 暴力预防、风险识别、求助入口、热线/转介、受害者服务、保护令、补偿、创伤支持和恢复路径。
+* 安全、隐私、保密、数字滥用、语言可达、残障可达和服务连续性。
+* 与司法可及、住房、医疗、心理健康、数字身份安全、社会连接和应急响应的接口。
+
+<span id="human-infra-模型链路"></span>
+== Human Infra 模型链路 ==
+
+<pre>人身安全与暴力预防
+  -> 暴力暴露、胁迫控制和犯罪伤害被预防、识别和转介
+  -> 医疗、心理、法律、住房、经济和受害者服务形成支持链
+  -> 死亡、伤害、创伤、资源剥夺和行动控制风险下降
+  -> 主体持续性获得安全、尊严和恢复层的支撑</pre>
+== 非目标 ==
+
+* 不提供自卫战术、武器、报复、跟踪、监控、定位、骚扰、逃避执法或危险对抗建议。
+* 不替代热线、警方、医疗、受害者服务、法律援助、庇护所或专业安全规划。
+* 不输出可让施害者扩大控制、定位受害者、绕过安全措施或破坏求助路径的信息。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* CDC Violence Prevention: https://www.cdc.gov/violence-prevention/
+* DOJ Office for Victims of Crime: https://ovc.ojp.gov/
+* DOJ Office on Violence Against Women: https://www.justice.gov/ovw
+* VictimConnect Resource Center: https://victimconnect.org/
+
+== 下一步 ==
+
+* 建立人身安全变量表：暴力类型、求助入口、隐私、转介、医疗创伤支持、法律保护、住房安全和恢复连续性。
+* 整理 CDC、OVC、OVW、VictimConnect、WHO 暴力预防和家庭暴力服务 Source Cards。
+* 与 <code>risk-engineering/</code> 明确分工：本域研究人与人之间的伤害、胁迫和受害者支持，风险工程研究更上位的风险模型。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C3研究域|C3研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c3-generation-engine/personal-safety-violence-prevention/README.md Human Infra 仓库：domains/c3-generation-engine/personal-safety-violence-prevention/README.md]
+
+[[Category:C3研究域]]

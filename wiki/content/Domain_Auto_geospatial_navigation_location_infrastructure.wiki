@@ -1,0 +1,97 @@
+{{研究域
+|域 ID=domain.geospatial-navigation-location-infrastructure
+|C 层级=C4：可能性转换通道层
+|研究对象=Geospatial Navigation Location Infrastructure
+|持续性作用=关键词显示该域主要处理研究、数据、模型、服务入口、身份记录、转化或治理接口。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c4-conversion-channel/geospatial-navigation-location-infrastructure
+}}
+
+'''Geospatial Navigation Location Infrastructure'''是 Human Infra 在“路径转换接口”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要处理研究、数据、模型、服务入口、身份记录、转化或治理接口。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C4“可能性转换通道层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>geospatial-navigation-location-infrastructure/</code> 研究空间位置、导航、地址、地图、地理编码和定位服务如何成为主体持续行动的基础设施。
+
+<blockquote>核心问题：主体能否被定位、找到资源、抵达服务、完成配送、获得救援，并在复杂环境中维持可导航的行动路径。
+</blockquote>
+== 先验位置 ==
+
+<pre>有效永生 / 主体持续性最大化
+  -> 主体必须能够在外部世界中定位自身、资源、风险和服务
+  -> 定位、导航、地址、地图、地理编码和空间参考系统构成行动坐标系
+  -> 医疗、应急、交通、物流、社区资源、灾害恢复和公共服务都依赖可用位置层
+  -> 如果位置层失败，主体即使拥有服务权利和资源信息，也可能无法抵达、被找到或被分配支持</pre>
+== 关注对象 ==
+
+* 地理空间数据、基础地图、地址系统、地名、行政边界和空间参考框架。
+* GNSS/GPS、授时、定位、导航、测绘、地理编码、路线服务和位置互操作。
+* 医疗交通、应急定位、灾害制图、物流配送、社区资源导航和公共服务可达性中的空间层。
+* 与 <code>transportation-access-mobility/</code> 的边界：交通域关注移动服务和出行系统；本域关注位置、地图、地址和导航坐标系。
+* 与 <code>emergency-alerts-communications/</code> 的边界：预警通信关注危机信息到达；本域关注风险、人员、资源和救援目标能否被空间定位。
+
+<span id="human-infra-模型链路"></span>
+== Human Infra 模型链路 ==
+
+<pre>空间位置层可靠
+  -> 人、服务、风险、资源和设施可被共同定位
+  -> 医疗、应急、物流、交通和公共服务路径可被计算
+  -> 到达成本、搜寻成本、配送成本和响应延迟下降
+  -> 主体获得服务、撤离、救援、补给和恢复的概率上升
+  -> 行动半径、资源可达性和危机恢复能力增强
+  -> 主体持续性和未来选择权提高</pre>
+== 非目标 ==
+
+* 不提供跟踪、监控、骚扰、定位他人、人肉搜索、规避执法或隐私攻击方法。
+* 不提供危险路线、实时撤离路线、基础设施攻击定位、安防绕过或目标识别建议。
+* 不承诺地图、地址、GPS、路线、风险图或服务点的实时准确性。
+* 不替代官方应急、导航、航空、海事、测绘、交通或公共安全系统。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* UN-GGIM：全球地理空间信息管理和国家地理空间信息基础设施。
+* USGS National Geospatial Program：美国国家地理空间底图、地名和地理空间数据。
+* GPS.gov：GPS、PNT 和卫星导航的公共资料。
+* NOAA National Geodetic Survey：测地基准、坐标框架和空间参考系统。
+* Open Geospatial Consortium：地理空间互操作标准。
+
+== 下一步 ==
+
+* 建立 Source Card：UN-GGIM、USGS NGP、GPS.gov、NOAA NGS、OGC。
+* 梳理变量：定位可用性、地址覆盖、地图更新、地理编码错误、应急位置精度、空间数据互操作。
+* 绘制跨域接口：交通、应急、灾后恢复、社区资源、供应链、天气风险和公共服务。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C4研究域|C4研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c4-conversion-channel/geospatial-navigation-location-infrastructure/README.md Human Infra 仓库：domains/c4-conversion-channel/geospatial-navigation-location-infrastructure/README.md]
+
+[[Category:C4研究域]]

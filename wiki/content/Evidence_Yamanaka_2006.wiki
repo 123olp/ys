@@ -1,0 +1,18 @@
+{{证据来源
+|来源 ID=evidence.cell.yamanaka-ips-2006
+|来源类型=同行评审基础研究
+|完整引文=Takahashi K, Yamanaka S. Induction of pluripotent stem cells from mouse embryonic and adult fibroblast cultures by defined factors. Cell. 2006.
+|URL 或 DOI=https://pubmed.ncbi.nlm.nih.gov/16904174/
+|支持范围=定义因子可把小鼠成熟体细胞重编程为多能状态
+|不支持的推论=不支持安全的人体部分重编程、全身逆龄或永生
+|审查状态=已核对 PubMed 记录
+|访问日期=2026-07-24
+}}
+
+== 支持范围 ==
+
+该研究奠定了成熟细胞身份可被深度改写的实验基础。
+
+== 不支持的推论 ==
+
+完全重编程与治疗性年轻化不是同一过程；本研究不能支持人体抗衰疗效。

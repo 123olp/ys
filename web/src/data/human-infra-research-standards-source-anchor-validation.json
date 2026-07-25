@@ -1,7 +1,7 @@
 {
   "schemaVersion": "human-infra.research-standards-source-anchor-validation.v1",
   "status": "pass-no-model-admission",
-  "generatedAt": "2026-07-10T22:39:15+00:00",
+  "generatedAt": "2026-07-25T00:41:56+00:00",
   "sourceRegister": "docs/reference/human-infra-research-standards-source-anchor-register.json",
   "anchorCount": 15,
   "standardFamilies": [

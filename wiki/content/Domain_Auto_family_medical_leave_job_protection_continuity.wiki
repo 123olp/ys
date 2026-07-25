@@ -1,0 +1,89 @@
+{{研究域
+|域 ID=domain.family-medical-leave-job-protection-continuity
+|C 层级=C6：局部可能性解锁层
+|研究对象=家庭医疗假与岗位保护连续性
+|持续性作用=未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c6-local-unlocking/family-medical-leave-job-protection-continuity
+}}
+
+'''家庭医疗假与岗位保护连续性'''是 Human Infra 在“局部阻塞解除”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C6“局部可能性解锁层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+本域整理家庭医疗事件、严重健康状况、照护责任、军属照护和复工之间的岗位保护机制。它关注的不是“怎么请假”，而是主体在疾病、照护或家庭事件中，是否仍能保留工作角色、保险连接、复工入口和长期收入路径。
+
+== 研究对象 ==
+
+* 家庭与医疗休假、岗位保护和复工权利。
+* 严重健康状况、家庭照护、军属照护、资格、通知和证明边界。
+* 反报复、工作角色保留、保险连续性和复工摩擦。
+* 休假保护与工资替代、残障权益、工伤权益、托育和照护系统之间的接口。
+
+== 价值链路 ==
+
+<pre>主体会遭遇疾病、家庭事件和照护责任
+  -> 若短期无法工作会直接切断岗位、保险、收入和职业身份
+  -> 岗位保护型 leave 把健康/照护事件转化为可返回工作的制度窗口
+  -> 通知、资格、证明、反报复和复工路径降低事件后的角色断裂
+  -> 主体更可能在恢复或照护后回到任务、收入和社会协作系统</pre>
+== 关键问题 ==
+
+* 哪些事件会把短期健康或家庭冲击放大成长期工作断裂。
+* 工作保护、工资替代和保险连续性之间如何分工。
+* 证明、通知、等待、复工和反报复机制如何影响主体有效时间。
+* 何时应把问题转入带薪休假、残障收入、工伤、托育或照护支持域。
+
+== 上游与下游 ==
+
+* 上游：劳动权利、健康服务、照护责任、家庭系统和雇佣记录。
+* 下游：岗位连续性、收入连续性、保险连续性、复工成功率和长期职业轨迹。
+* 相关域：<code>labor-rights-workplace-protection/</code>、<code>paid-sick-family-leave-wage-replacement-continuity/</code>、<code>pregnancy-parental-work-continuity/</code>、<code>workplace-accommodation-return-to-work-continuity/</code>、<code>disability-income-work-capacity-benefit-continuity/</code>、<code>workers-compensation-occupational-injury-benefit-continuity/</code>。
+
+== 非目标 ==
+
+* 不提供个人 FMLA、雇佣法、劳动仲裁、请假策略或申请建议。
+* 不判断个人资格、雇主义务、证明是否充分或争议胜负。
+* 不生成雇主合规方案、法律文书、医疗证明或 HR 表单。
+* 不帮助规避制度、伪造记录、制造证据或压制劳动者权利。
+
+== 初始资料入口 ==
+
+* U.S. Department of Labor, Wage and Hour Division: Family and Medical Leave Act.
+* DOL FMLA fact sheets and forms.
+* DOL worker protection and anti-retaliation materials.
+* State paid family and medical leave program comparisons, only as secondary navigation, not as advice.
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C6研究域|C6研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c6-local-unlocking/family-medical-leave-job-protection-continuity/README.md Human Infra 仓库：domains/c6-local-unlocking/family-medical-leave-job-protection-continuity/README.md]
+
+[[Category:C6研究域]]

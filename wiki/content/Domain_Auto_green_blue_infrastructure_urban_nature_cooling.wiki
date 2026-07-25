@@ -1,0 +1,91 @@
+{{研究域
+|域 ID=domain.green-blue-infrastructure-urban-nature-cooling
+|C 层级=C5：可能性生态承载层
+|研究对象=Green Blue Infrastructure Urban Nature Cooling
+|持续性作用=关键词显示该域主要承载能源、水、食物、住房、治理、经济、通信、灾害或基础设施环境。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c5-ecological-substrate/green-blue-infrastructure-urban-nature-cooling
+}}
+
+'''Green Blue Infrastructure Urban Nature Cooling'''是 Human Infra 在“外部生态承载”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要承载能源、水、食物、住房、治理、经济、通信、灾害或基础设施环境。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C5“可能性生态承载层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>green-blue-infrastructure-urban-nature-cooling/</code> 研究城市绿地、树冠、雨水花园、湿地、开放水体、海绵城市、自然基解决方案、热岛缓解和城市冷却如何支撑主体持续性。
+
+<blockquote>核心问题：城市自然不是装饰，它决定热暴露、雨洪、空气、心理恢复、活动空间、社会连接和生态缓冲。绿蓝基础设施失败会让城市把每一天都变成更热、更硬、更孤立和更脆弱的环境。
+</blockquote>
+== 先验位置 ==
+
+<pre>有效永生 / 主体持续性最大化
+  -> 主体依赖城市环境能够降温、蓄水、过滤、恢复心理压力并提供安全活动空间
+  -> 绿地、树冠、湿地、开放水体和自然基解决方案提供这些调节服务
+  -> 热岛、硬化地表、雨洪积水、空气污染、生态缺失和空间不平等会改变健康和有效时间
+  -> 城市绿蓝基础设施不足会在个体健康管理之前持续提高环境负担</pre>
+== 关注对象 ==
+
+* 城市树冠、绿地、公园、雨水花园、透水铺装、湿地、开放水体、蓝绿廊道、海绵城市和自然基解决方案。
+* 热岛缓解、雨洪管理、空气过滤、心理恢复、活动空间、健康公平和维护治理。
+* 与 <code>biodiversity-ecosystem-services-resilience/</code> 的边界：生态服务域关注自然系统总体服务；本域关注城市内的绿蓝基础设施和人体暴露界面。
+* 与 <code>urban-planning-land-use-zoning-resilience/</code> 的边界：城市规划域关注空间治理；本域关注城市自然资产如何具体改变热、雨洪、空气和恢复环境。
+
+<span id="human-infra-模型链路"></span>
+== Human Infra 模型链路 ==
+
+<pre>城市绿蓝基础设施建设维护
+  -> 树冠、绿地、水体、湿地和雨洪自然基设施可被规划、监测和维护
+  -> 热暴露、内涝、空气暴露、心理压力、活动空间不足和环境不平等下降
+  -> 恢复能力、日常行动、社会连接和灾害缓冲提高
+  -> 主体获得更低环境负担和更高恢复密度的城市生活底座</pre>
+== 非目标 ==
+
+* 不提供工程设计、植物处方、施工、排水改造、地产增值、碳信用、项目审批或采购建议。
+* 不提供规避排水、环保、园林、市政、物业或公共空间管理要求的操作方法。
+* 不替代城市规划、公共工程、园林、市政、环保、卫生或地方政府的官方信息。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* EPA Green Infrastructure: https://www.epa.gov/green-infrastructure
+* WHO Urban Green Spaces and Health: https://www.who.int/europe/publications/i/item/9789289052498
+* UNEP Nature-based Solutions: https://www.unep.org/topics/nature-action/nature-based-solutions
+
+== 下一步 ==
+
+* 建立绿蓝基础设施变量表：树冠、绿地可达、热岛、雨洪、空气、活动空间、心理恢复和维护状态。
+* 整理 EPA、WHO、UNEP、UN-Habitat、城市绿地和自然基解决方案资料卡片。
+* 与城市规划、空气质量、水资源、生态服务、热稳态和住房建成环境域建立接口。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C5研究域|C5研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c5-ecological-substrate/green-blue-infrastructure-urban-nature-cooling/README.md Human Infra 仓库：domains/c5-ecological-substrate/green-blue-infrastructure-urban-nature-cooling/README.md]
+
+[[Category:C5研究域]]

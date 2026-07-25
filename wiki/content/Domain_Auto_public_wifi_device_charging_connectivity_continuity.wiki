@@ -1,0 +1,84 @@
+{{研究域
+|域 ID=domain.public-wifi-device-charging-connectivity-continuity
+|C 层级=C4：可能性转换通道层
+|研究对象=Public Wifi Device Charging Connectivity Continuity
+|持续性作用=关键词显示该域主要处理研究、数据、模型、服务入口、身份记录、转化或治理接口。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c4-conversion-channel/public-wifi-device-charging-connectivity-continuity
+}}
+
+'''Public Wifi Device Charging Connectivity Continuity'''是 Human Infra 在“路径转换接口”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要处理研究、数据、模型、服务入口、身份记录、转化或治理接口。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C4“可能性转换通道层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>public-wifi-device-charging-connectivity-continuity</code> 研究公共 Wi-Fi、公共电脑、设备充电点、断电期间通信恢复、应急通知接收和数字服务访问如何影响主体在离家、旅行、断电和灾害场景中的任务连续性。
+
+<blockquote>核心问题：现代主体离不开连接和电量；公共 Wi-Fi 与充电点把手机、身份、支付、导航、医疗门户、求助和工作重新接入行动系统。
+</blockquote>
+== 关注对象 ==
+
+* 公共 Wi-Fi、图书馆/社区中心网络、公共电脑、应急充电站、移动充电点、交通枢纽充电和断电期间通信服务。
+* 覆盖、带宽、开放时段、设备安全、隐私、身份验证、无障碍、费用、停电韧性、网络告警和公共场所使用规则。
+* 与 FCC、CISA、Ready.gov、图书馆、数字包容、应急通信、支付系统、医疗门户、远程工作和导航的接口。
+
+<span id="human-infra-链路"></span>
+== Human Infra 链路 ==
+
+<pre>公共连接和设备充电接入稳定
+  -> 主体离家或断电时仍可通信、导航、支付、求助和访问数字服务
+  -> 失联、错过告警、医疗门户断裂、支付失败和信息失明风险下降
+  -> 工作、学习、旅行、灾害应对和服务申请更可持续
+  -> 主体任务执行、恢复能力和未来选择权增强</pre>
+== 非目标 ==
+
+* 不提供 Wi-Fi 攻击、绕过认证、蹭网滥用、设备盗充、账号盗用、公共电脑规避、隐私侵犯、钓鱼或网络安全攻击步骤。
+* 不替代 FCC、ISP、CISA、图书馆、设施运营方、应急管理、网络安全或数字服务支持。
+* 不收集登录凭据、设备标识、实时位置、网络拓扑、公共 Wi-Fi 安防细节或个人通信内容。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* FCC Emergency Communications: https://www.fcc.gov/emergency
+* FCC E-Rate: https://www.fcc.gov/general/e-rate-schools-libraries-usf-program
+* Ready.gov Power Outages: https://www.ready.gov/power-outages
+* CISA Communications Sector: https://www.cisa.gov/topics/critical-infrastructure-security-and-resilience/critical-infrastructure-sectors/communications-sector
+
+== 下一步 ==
+
+* 建立 <code>public connectivity point -&gt; power/network reliability -&gt; digital task -&gt; outage scenario -&gt; continuity impact</code> 变量表。
+* 区分日常公共 Wi-Fi、图书馆网络、公共电脑、交通枢纽连接、断电充电点和灾害通信恢复点。
+* 与 <code>digital-inclusion-connectivity</code>、<code>telecommunications-network-resilience-continuity</code>、<code>emergency-alerts-communications</code>、<code>energy-access-resilience</code> 和 <code>public-library-community-anchor-access-continuity</code> 建立边界。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C4研究域|C4研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c4-conversion-channel/public-wifi-device-charging-connectivity-continuity/README.md Human Infra 仓库：domains/c4-conversion-channel/public-wifi-device-charging-connectivity-continuity/README.md]
+
+[[Category:C4研究域]]

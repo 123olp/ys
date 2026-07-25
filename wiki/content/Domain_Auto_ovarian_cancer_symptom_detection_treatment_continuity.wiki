@@ -1,0 +1,89 @@
+{{研究域
+|域 ID=domain.ovarian-cancer-symptom-detection-treatment-continuity
+|C 层级=C2：可能性源体维护层
+|研究对象=Ovarian Cancer Symptom Detection Treatment Continuity
+|持续性作用=关键词显示该域主要维护身体、脑、器官、细胞、急性生命风险或衰老损伤控制。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c2-source-maintenance/ovarian-cancer-symptom-detection-treatment-continuity
+}}
+
+'''Ovarian Cancer Symptom Detection Treatment Continuity'''是 Human Infra 在“生命载体维护”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要维护身体、脑、器官、细胞、急性生命风险或衰老损伤控制。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C2“可能性源体维护层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>ovarian-cancer-symptom-detection-treatment-continuity/</code> 研究卵巢癌症状识别、诊断延迟、遗传风险入口、治疗负担、复发管理、家庭照护和生活质量如何影响主体持续性。
+
+<blockquote>核心问题：卵巢癌常缺少普通人群有效筛查路径，连续性重点不是简单“早筛”，而是症状被认真对待、风险入口不失联、诊断延迟被压缩和复发负担被管理。
+</blockquote>
+== 先验位置 ==
+
+<pre>有效永生 / 主体持续性最大化
+  -> 主体依赖高死亡风险但筛查困难的癌种被及时识别和持续支持
+  -> 卵巢癌症状非特异、诊断延迟和复发负担改变死亡风险和家庭资源消耗
+  -> 症状识别、风险入口、治疗可及、复发管理和照护支持决定主体是否保留行动能力
+  -> 因此卵巢癌是癌症连续性中的症状-诊断延迟治理域</pre>
+== 关注对象 ==
+
+* Ovarian cancer symptoms, diagnostic delay, genetic risk pathway, treatment burden, recurrence, caregiver load, quality of life, equity。
+* 与 <code>cancer-screening-early-detection-continuity/</code> 的边界：本域不假定普通筛查可行，重点放在症状识别、风险通道和诊断延迟。
+* 与 <code>reproductive-fertility-continuity/</code> 和 <code>caregiving-family-support-continuity/</code> 的关系：卵巢癌强烈影响生殖系统、家庭照护和长期心理负担。
+
+<span id="human-infra-模型链路"></span>
+== Human Infra 模型链路 ==
+
+<pre>卵巢癌连续性系统 T
+  -> 改变症状识别、风险入口、诊断延迟、治疗可及、复发管理和照护变量 X
+  -> 改变癌症阶段、治疗毒性、复发负担、家庭资源和心理状态 S
+  -> 改变死亡、失能、有效时间损失和照护资源消耗 λ(t)
+  -> 影响主体健康寿命、家庭系统、行动能力和未来选择权</pre>
+== 非目标 ==
+
+* 不提供症状诊断、CA-125/影像判读、遗传风险解释、筛查建议、病理分型、分期、治疗方案、用药、手术或个体建议。
+* 不生成个人卵巢癌风险计算器、症状分诊、影像/标志物解释、治疗排序或商业检测推广。
+* 不收集个案症状、CA-125、影像、病理、遗传检测、家族史或治疗资料。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* NCI ovarian cancer: https://www.cancer.gov/types/ovarian
+* NCI ovarian cancer screening: https://www.cancer.gov/types/ovarian/screening
+* CDC ovarian cancer: https://www.cdc.gov/ovarian-cancer/
+
+== 下一步 ==
+
+* 建立 Ovarian Cancer Continuity Card：symptom recognition, diagnostic delay, hereditary risk pathway, treatment burden, recurrence, caregiver load。
+* 与 <code>cancer-control/</code>、<code>reproductive-fertility-continuity/</code> 和 <code>cancer-survivorship-late-effects-continuity/</code> 建立接口。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C2研究域|C2研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c2-source-maintenance/ovarian-cancer-symptom-detection-treatment-continuity/README.md Human Infra 仓库：domains/c2-source-maintenance/ovarian-cancer-symptom-detection-treatment-continuity/README.md]
+
+[[Category:C2研究域]]

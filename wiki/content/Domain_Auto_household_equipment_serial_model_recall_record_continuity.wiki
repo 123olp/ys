@@ -1,0 +1,84 @@
+{{研究域
+|域 ID=domain.household-equipment-serial-model-recall-record-continuity
+|C 层级=C4：可能性转换通道层
+|研究对象=Household Equipment Serial Model Recall Record Continuity
+|持续性作用=关键词显示该域主要处理研究、数据、模型、服务入口、身份记录、转化或治理接口。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c4-conversion-channel/household-equipment-serial-model-recall-record-continuity
+}}
+
+'''Household Equipment Serial Model Recall Record Continuity'''是 Human Infra 在“路径转换接口”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要处理研究、数据、模型、服务入口、身份记录、转化或治理接口。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C4“可能性转换通道层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>household-equipment-serial-model-recall-record-continuity</code> 研究家庭设备的品牌、型号、序列号、购买记录、召回匹配、维修记录和安全通知如何影响产品安全、恢复速度和资源连续性。
+
+<blockquote>核心问题：召回、保修、维修和安全通知常常依赖型号与序列号；如果家庭设备身份不可查，产品缺陷、替换资格、维修历史和安全风险就很难被转化为可处理流程。
+</blockquote>
+== 关注对象 ==
+
+* 家电、儿童用品、家具、取暖/制冷设备、医疗/辅助设备、电子设备和工具的型号、序列号、购买日期、维修记录和召回状态。
+* 召回通知、维修/替换计划、保修资料、产品登记、二手设备、捐赠/转让设备和租住房内设备。
+* 家庭设备记录如何支持安全通知、维修交接、保险/灾后记录和长期维护。
+* 与产品召回、保修服务、维修权、家电维护、儿童产品安全和灾后财产记录的接口。
+
+<span id="human-infra-链路"></span>
+== Human Infra 链路 ==
+
+<pre>家庭设备身份记录连续
+  -> 设备能被召回系统、保修系统、维修系统和财产记录识别
+  -> 缺陷通知、维修替换、风险下架和灾后证明摩擦下降
+  -> 家庭安全、照护设备、冷链、温控、清洁和通信任务更可恢复
+  -> 产品从匿名消费物转化为可追踪、可维护、可召回的任务资产</pre>
+== 非目标 ==
+
+* 不提供个案召回处理、保修索赔、维修方案、产品推荐、购买建议、保险理赔、法律意见或合同判断。
+* 不协助伪造购买记录、修改序列号、规避召回、绕过保修条件、篡改维修历史或操控产品登记。
+* 不收集家庭设备清单、序列号、住址、照片、账户、购买凭证或其他敏感资产资料。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* CPSC Recalls: https://www.cpsc.gov/Recalls
+* SaferProducts.gov: https://www.saferproducts.gov/
+* FTC Warranties: https://consumer.ftc.gov/articles/warranties
+
+== 下一步 ==
+
+* 建立 <code>equipment identity -&gt; recall/warranty/repair matching -&gt; risk correction -&gt; continuity outcome</code> 变量表。
+* 区分儿童用品、家电、医疗/辅助设备、二手设备、租房设备和灾后财产记录。
+* 与 <code>product-safety-recall-systems</code>、<code>consumer-warranty-service-contract-repair-continuity</code> 和 <code>right-to-repair-parts-manuals-access-continuity</code> 建立边界。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C4研究域|C4研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c4-conversion-channel/household-equipment-serial-model-recall-record-continuity/README.md Human Infra 仓库：domains/c4-conversion-channel/household-equipment-serial-model-recall-record-continuity/README.md]
+
+[[Category:C4研究域]]

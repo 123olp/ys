@@ -1,0 +1,85 @@
+{{研究域
+|域 ID=domain.school-climate-bullying-violence-prevention-continuity
+|C 层级=C5：可能性生态承载层
+|研究对象=School Climate Bullying Violence Prevention Continuity
+|持续性作用=关键词显示该域主要承载能源、水、食物、住房、治理、经济、通信、灾害或基础设施环境。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c5-ecological-substrate/school-climate-bullying-violence-prevention-continuity
+}}
+
+'''School Climate Bullying Violence Prevention Continuity'''是 Human Infra 在“外部生态承载”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要承载能源、水、食物、住房、治理、经济、通信、灾害或基础设施环境。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C5“可能性生态承载层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>school-climate-bullying-violence-prevention-continuity</code> 研究学校气候、归属感、欺凌、骚扰、暴力预防、报告机制、安全计划和民权边界如何影响学生安全、出勤、心理恢复和学习连续性。
+
+<blockquote>核心问题：学校环境不是学习的背景板，而是决定主体是否敢到场、能专注、可求助和可持续发展的安全基础设施。
+</blockquote>
+== 关注对象 ==
+
+* 学校气候、归属感、信任、成人支持、同伴关系、报告渠道和安全感。
+* 欺凌、网络欺凌与学校接口、骚扰、歧视、威胁、暴力、报复和旁观者机制。
+* 预防项目、事件响应、家校沟通、民权保护、纪律边界和创伤知情恢复。
+* 学校气候与出勤、心理健康、纪律、儿童保护、在线安全、人身安全和语言可达的交叉。
+
+<span id="human-infra-链路"></span>
+== Human Infra 链路 ==
+
+<pre>学校气候与欺凌暴力预防连续
+  -> 学校成为可到场、可求助、可归属和可恢复的环境
+  -> 欺凌、骚扰、暴力、恐惧缺勤和慢性压力下降
+  -> 注意力、学习参与、社会信任和心理恢复能力增强
+  -> 儿童主体持续性、关系能力和未来选择权更稳定</pre>
+== 非目标 ==
+
+* 不提供个人欺凌投诉、威胁判断、校园安全策略、纪律申诉、民权投诉、网络取证、心理危机或法律建议。
+* 不替代学校、家长、StopBullying.gov、OCR、儿童保护、心理健康、执法、急救或危机服务。
+* 不收集学生姓名、事件细节、威胁、定位、聊天记录、心理健康、家庭或纪律资料。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* StopBullying.gov bullying prevention and response resources.
+* CDC youth violence prevention and school connectedness resources.
+* U.S. Department of Education Office for Civil Rights harassment and discrimination resources.
+* State and local school safety and school climate guidance.
+
+== 下一步 ==
+
+* 建立 <code>school climate -&gt; safety/reporting -&gt; stress/attendance -&gt; learning continuity</code> 变量表。
+* 区分欺凌、骚扰、歧视、暴力、纪律、危机响应、网络安全和心理支持。
+* 与 <code>online-safety-digital-harm-prevention</code>、<code>personal-safety-violence-prevention</code>、<code>school-mental-health-counseling-support-continuity</code> 和 <code>school-discipline-exclusion-restraint-continuity</code> 建立边界。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C5研究域|C5研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c5-ecological-substrate/school-climate-bullying-violence-prevention-continuity/README.md Human Infra 仓库：domains/c5-ecological-substrate/school-climate-bullying-violence-prevention-continuity/README.md]
+
+[[Category:C5研究域]]

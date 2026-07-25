@@ -1,0 +1,88 @@
+{{研究域
+|域 ID=domain.domestic-violence-coercive-control-safety-continuity
+|C 层级=C6：局部可能性解锁层
+|研究对象=domestic-violence-coercive-control-safety-continuity
+|持续性作用=未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c6-local-unlocking/domestic-violence-coercive-control-safety-continuity
+}}
+
+'''domestic-violence-coercive-control-safety-continuity'''是 Human Infra 在“局部阻塞解除”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C6“局部可能性解锁层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>domestic-violence-coercive-control-safety-continuity</code> 研究亲密伴侣暴力、家庭暴力、胁迫控制、经济虐待、技术辅助控制和服务转介如何影响主体安全、住所、通信、经济资源、儿童照护、医疗和长期恢复。
+
+<span id="scope"></span>
+== Scope ==
+
+* Intimate partner violence、domestic violence、dating violence、coercive control、economic abuse、technology-facilitated abuse 和 trauma-informed response。
+* Hotline、advocacy、shelter referral、legal services referral、healthcare screening、child and family safety interface。
+* 安全、隐私、地址保密、语言可达、残障可达、文化可达、移民身份风险和报复风险。
+
+<span id="continuity-logic"></span>
+== Continuity Logic ==
+
+<pre>亲密关系或家庭内部暴力与控制
+-> 身体安全、通信自由、财务控制、住所稳定和儿童照护受损
+-> 求助入口、保密服务、庇护转介、法律保护和经济支持成为恢复条件
+-> 服务断裂会延长暴露、创伤、失业、住房不稳和未来选择权压缩</pre>
+<span id="source-spine"></span>
+== Source Spine ==
+
+* DOJ Office on Violence Against Women domestic violence and grant program materials.
+* CDC intimate partner violence prevention and NISVS materials.
+* HHS Office on Women's Health domestic or intimate partner violence resources.
+* OVC Help for Victims and victim assistance resources.
+* HUD VAWA housing protections where abuse intersects with housing.
+
+<span id="evidence-boundary"></span>
+== Evidence Boundary ==
+
+本域只整理公开家庭暴力、亲密伴侣暴力、胁迫控制、服务转介和制度支持资料。
+
+Do not include:
+
+* 个案安全计划、逃离路线、庇护所定位、法律策略、证据策略、保护令申请建议或移民/监护建议。
+* 跟踪、监控、定位、控制通信、胁迫、报复、武器、自卫战术、对抗施暴者或规避执法方法。
+* 可识别受害者、儿童、家庭、地址、庇护所、服务人员或施暴者的信息。
+
+<span id="upstream--downstream"></span>
+== Upstream / Downstream ==
+
+* Upstream: <code>personal-safety-violence-prevention/</code>, <code>child-protection-family-safety/</code>, <code>online-safety-digital-harm-prevention/</code>.
+* Downstream: <code>survivor-safe-housing-emergency-transfer-continuity/</code>, <code>stalking-harassment-protection-order-continuity/</code>, <code>crime-victim-compensation-restitution-continuity/</code>, <code>healthcare-civil-rights-nondiscrimination-continuity/</code>.
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C6研究域|C6研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c6-local-unlocking/domestic-violence-coercive-control-safety-continuity/README.md Human Infra 仓库：domains/c6-local-unlocking/domestic-violence-coercive-control-safety-continuity/README.md]
+
+[[Category:C6研究域]]

@@ -1,0 +1,84 @@
+{{研究域
+|域 ID=domain.home-delivered-meals-congregate-nutrition-services-continuity
+|C 层级=C5：可能性生态承载层
+|研究对象=Home Delivered Meals Congregate Nutrition Services Continuity
+|持续性作用=关键词显示该域主要承载能源、水、食物、住房、治理、经济、通信、灾害或基础设施环境。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c5-ecological-substrate/home-delivered-meals-congregate-nutrition-services-continuity
+}}
+
+'''Home Delivered Meals Congregate Nutrition Services Continuity'''是 Human Infra 在“外部生态承载”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要承载能源、水、食物、住房、治理、经济、通信、灾害或基础设施环境。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C5“可能性生态承载层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>home-delivered-meals-congregate-nutrition-services-continuity</code> 研究老年人、残障者和行动受限主体的 home-delivered meals、congregate meals、营养筛查、社交接触和送餐中断如何影响持续摄食、独立生活和照护负担。
+
+<blockquote>核心问题：能吃饭不只是有食物，还要能获得、准备、进食并被定期看见；送餐和集体餐食是营养、社交和安全检查的复合基础设施。
+</blockquote>
+== 关注对象 ==
+
+* Home-delivered meals、congregate meals、Older Americans Act nutrition services、Meals on Wheels 类服务、营养筛查和送餐安全检查。
+* 资格、等待名单、配送可靠性、特殊饮食、社交接触、恶劣天气、志愿者能力、照护者负担、独立生活和转介服务。
+* 与 ACL、AAA、老年服务、残障服务、长期照护、慢病管理、社会连接和灾害供餐的接口。
+
+<span id="human-infra-链路"></span>
+== Human Infra 链路 ==
+
+<pre>送餐和集体营养服务可持续
+  -> 行动受限主体仍可获得餐食、社交接触和安全观察
+  -> 营养不良、孤立、照护负担、住院和机构化风险下降
+  -> 主体更能在家中维持独立生活和日常恢复
+  -> 健康寿命、有效时间和未来选择权增强</pre>
+== 非目标 ==
+
+* 不提供个人资格判断、服务申请材料、餐食处方、疾病饮食建议、照护安排、医疗处置、志愿者调度或个案申诉策略。
+* 不替代 ACL、Area Agencies on Aging、Meals on Wheels、营养师、医疗机构、长期照护、残障服务或社会服务。
+* 不收集个人地址、健康信息、配送路线、餐食记录、家庭风险、志愿者身份、服务名单或照护者隐私。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* ACL Nutrition Services: https://acl.gov/programs/health-wellness/nutrition-services
+* ACL Older Americans Act: https://acl.gov/about-acl/authorizing-statutes/older-americans-act
+* Meals on Wheels America Research: https://www.mealsonwheelsamerica.org/learn-more/research
+* USDA Nutrition Programs: https://www.fns.usda.gov/programs
+
+== 下一步 ==
+
+* 建立 <code>nutrition service -&gt; delivery/congregate mode -&gt; social check -&gt; functional status -&gt; independence continuity</code> 变量表。
+* 区分送餐、集体餐、营养筛查、社交接触、安全观察、特殊饮食和灾害中断恢复。
+* 与 <code>caregiving-long-term-care</code>、<code>social-connection-relational-infra</code>、<code>food-security-nutrition-access</code>、<code>disability-services-independent-living</code> 和 <code>emergency-food-disaster-feeding-continuity</code> 建立边界。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C5研究域|C5研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c5-ecological-substrate/home-delivered-meals-congregate-nutrition-services-continuity/README.md Human Infra 仓库：domains/c5-ecological-substrate/home-delivered-meals-congregate-nutrition-services-continuity/README.md]
+
+[[Category:C5研究域]]

@@ -1,0 +1,85 @@
+{{研究域
+|域 ID=domain.campus-basic-needs-student-support-continuity
+|C 层级=C6：局部可能性解锁层
+|研究对象=Campus Basic Needs Student Support Continuity
+|持续性作用=未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c6-local-unlocking/campus-basic-needs-student-support-continuity
+}}
+
+'''Campus Basic Needs Student Support Continuity'''是 Human Infra 在“局部阻塞解除”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C6“局部可能性解锁层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>campus-basic-needs-student-support-continuity</code> 研究高校学生的食物、住房、交通、托育、应急资金、福利导航、书本设备、卫生用品和学生支持服务如何影响学习持续、健康恢复和退学风险。
+
+<blockquote>核心问题：高等教育不是纯认知任务；如果学生没有稳定食物、住所、交通、照护、设备和应急缓冲，学习时间会被生存任务吞噬。
+</blockquote>
+== 关注对象 ==
+
+* 校园 food pantry、meal support、SNAP/benefits navigation、housing support、emergency grants 和 short-term aid。
+* 交通、托育、书本设备、数字接入、卫生用品、衣物、紧急住宿和社区资源转介。
+* Basic needs screening、case management、single stop/navigation、学生事务支持和跨部门转介。
+* 基本需求不安全、课程负担、工作小时、缺勤、成绩下降、停学退学、心理压力和健康服务连接。
+
+<span id="human-infra-链路"></span>
+== Human Infra 链路 ==
+
+<pre>校园基本需求与学生支持连续
+  -> 食物、住房、交通、托育、设备和应急现金流被接住
+  -> 生存性摩擦、缺勤、压力负荷和退学风险下降
+  -> 学习时间、恢复能力和校园参与保持稳定
+  -> 主体长期能力资本、职业路径和未来选择权增强</pre>
+== 非目标 ==
+
+* 不提供个人福利申请、住房安排、校内资源预约、紧急住宿、食物援助、财务援助、托育或法律建议。
+* 不替代高校 student affairs、basic needs office、case manager、counseling、housing office、福利机构或危机服务。
+* 不收集或处理个人贫困、住房、食物、家庭、身份、心理、财务或福利资料。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* U.S. Department of Education postsecondary basic needs and student support resources: https://www.ed.gov/
+* Federal Student Aid emergency and institutional aid context: https://studentaid.gov/
+* SNAP and public benefit navigation sources such as USDA and USA.gov.
+* NCES/IPEDS and College Scorecard institutional context data.
+
+== 下一步 ==
+
+* 建立 <code>basic needs insecurity -&gt; service navigation -&gt; retention -&gt; effective learning time</code> 变量表。
+* 区分食物、住房、交通、托育、设备、卫生、应急资金、福利导航和社区转介。
+* 与 <code>food-security-nutrition-access</code>、<code>housing-built-environment-stability</code>、<code>transportation-access-mobility</code>、<code>childcare-family-continuity</code> 和本轮高教域建立边界。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C6研究域|C6研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c6-local-unlocking/campus-basic-needs-student-support-continuity/README.md Human Infra 仓库：domains/c6-local-unlocking/campus-basic-needs-student-support-continuity/README.md]
+
+[[Category:C6研究域]]

@@ -1,0 +1,87 @@
+{{研究域
+|域 ID=domain.fraud-scams-consumer-protection
+|C 层级=C6：局部可能性解锁层
+|研究对象=Fraud Scams Consumer Protection
+|持续性作用=未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c6-local-unlocking/fraud-scams-consumer-protection
+}}
+
+'''Fraud Scams Consumer Protection'''是 Human Infra 在“局部阻塞解除”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C6“局部可能性解锁层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+诈骗、欺诈与消费者保护域研究：当主体面对钓鱼、身份盗用、金融诈骗、虚假服务、诱导支付和平台欺诈时，识别、报告、止损、消费者保护和恢复路径如何避免资源与制度入口被夺走。
+
+== 对象 ==
+
+* 诈骗、钓鱼、身份盗用、金融欺诈、投资诱导、虚假客服、虚假福利、医疗/保险诈骗和老年财务剥削。
+* 消费者保护、举报系统、投诉数据库、身份恢复、账号恢复、资金流风险、平台治理和金融监管。
+* 诈骗对财务韧性、数字身份、心理健康、住房、医疗、福利、工作和未来选择权的影响。
+* 反受害者归因、可理解风险沟通、语言可达、老年/残障/移民/低数字素养群体可达性。
+
+<span id="human-infra-价值"></span>
+== Human Infra 价值 ==
+
+现代主体依赖账号、支付、身份、信用和数字服务入口。诈骗和欺诈不是“个人太笨”，而是能直接夺走资源、身份、时间、信任和公共服务入口的系统性风险。该域把消费者保护作为主体持续性基础设施。
+
+<pre>诈骗和欺诈可被识别、报告并恢复
+  -> 资金、身份、账号、信用和服务入口损失下降
+  -> 主体资源韧性和制度接入能力被保护
+  -> 未来选择权和恢复能力提高</pre>
+== 边界 ==
+
+本域只整理公开诈骗识别、消费者保护、身份盗用恢复、投诉举报、平台治理和风险沟通资料。
+
+不提供：
+
+* 个案法律、追款、报案、税务、投资、保险、银行、平台申诉、信用修复或损失追回建议。
+* 诈骗脚本、社工话术、钓鱼页面、支付规避、洗钱、制裁规避、账户接管、漏洞利用或反侦测方法。
+* 定位、羞辱、骚扰受害者，或把诈骗责任转嫁给受害者。
+* 把消费者保护资料写成金融套利、营销恐吓、机构背书或执法承诺。
+
+== 上游与下游 ==
+
+* 上游：<code>digital-identity-security/</code>、<code>financial-inclusion-payment-systems/</code>、<code>financial-resilience-access/</code>、<code>information-integrity-trust/</code>。
+* 下游：<code>elder-justice-adult-protective-services/</code>、<code>access-to-justice-legal-aid/</code>、<code>health-data-privacy-governance/</code>、<code>public-service-design-accessibility/</code>。
+
+== 初始资料线索 ==
+
+* FTC scams, phishing, ReportFraud and IdentityTheft.gov resources。
+* CFPB consumer complaint and consumer protection resources。
+* FBI Internet Crime Complaint Center resources。
+* NIST digital identity and fraud prevention adjacent resources。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C6研究域|C6研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c6-local-unlocking/fraud-scams-consumer-protection/README.md Human Infra 仓库：domains/c6-local-unlocking/fraud-scams-consumer-protection/README.md]
+
+[[Category:C6研究域]]

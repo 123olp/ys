@@ -1,0 +1,86 @@
+{{研究域
+|域 ID=domain.address-residency-mail-service-continuity
+|C 层级=C6：局部可能性解锁层
+|研究对象=地址、居住地与邮件服务连续性
+|持续性作用=未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c6-local-unlocking/address-residency-mail-service-continuity
+}}
+
+'''地址、居住地与邮件服务连续性'''是 Human Infra 在“局部阻塞解除”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C6“局部可能性解锁层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+本域研究地址、居住地证明和邮件转递如何成为服务通知、资格判断、学校、医疗、税务、投票、福利、保险、法院和灾害救援的路由基础设施。它关注地址连续性和地址断点，不提供个人迁址、居住证明或邮政操作建议。
+
+== 研究对象 ==
+
+* 通信地址、居住地址、服务地址、邮寄地址和无固定住址场景的替代联系机制。
+* 邮件转递、地址变更通知、政府账户地址更新和关键通知送达。
+* 地址与辖区、学校、投票、税务、福利、医疗网络、保险费率、应急服务和灾后救援的关系。
+* 住房不稳定、无家可归、迁移、灾害、家庭暴力安全地址和数字服务通知断点。
+
+== 价值链路 ==
+
+<pre>服务系统必须知道主体在哪里以及如何联系主体
+  -> 地址和邮件服务把主体连接到通知、资格、辖区、学校、医疗、税务和救援系统
+  -> 迁居、无固定住址、邮件丢失或地址未同步会造成通知失效、资格中断和服务错位
+  -> 地址连续性把空间位置和制度通信转化为可恢复的服务路由层</pre>
+== 关键问题 ==
+
+* 地址在哪些系统中同时扮演位置、通信、辖区和资格变量？
+* 地址变化如何影响医疗、福利、税务、学校、投票、保险、法院和灾害救援？
+* 邮件服务中断如何把名义权利转化为实际缺席、逾期、丢失和默认失败？
+* 对无固定住址、流离失所和安全地址需求主体，如何理解地址基础设施的包容性边界？
+
+== 上游与下游 ==
+
+* 上游：<code>housing-built-environment-stability/</code>、<code>homelessness-unsheltered-health-continuity/</code>、<code>migration-displacement-humanitarian-continuity/</code>、<code>geospatial-navigation-location-infrastructure/</code>。
+* 下游：<code>public-service-design-accessibility/</code>、<code>social-protection-benefits-delivery/</code>、<code>civic-participation-election-access/</code>、<code>tax-administration-filing-record-continuity/</code>、<code>disaster-recovery-relief-continuity/</code>。
+
+== 非目标 ==
+
+* 不提供个人 USPS、IRS、SSA、DMV、学校、法院、投票、福利或保险地址变更建议。
+* 不判断个人居住地、税务居民身份、投票资格、学区资格、福利资格或保险费率。
+* 不协助隐藏地址、规避法律通知、逃避债务、规避抚养义务、规避执法或欺骗服务系统。
+
+== 初始资料入口 ==
+
+* USPS Change of Address
+* USA.gov: Change your address
+* IRS: Address changes
+* SSA and state benefits account address update official pages
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C6研究域|C6研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c6-local-unlocking/address-residency-mail-service-continuity/README.md Human Infra 仓库：domains/c6-local-unlocking/address-residency-mail-service-continuity/README.md]
+
+[[Category:C6研究域]]

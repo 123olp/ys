@@ -1,0 +1,18 @@
+{{证据来源
+|来源 ID=evidence.natcomms.reprogramming-rejuvenation-2024
+|来源类型=同行评审观点与综述
+|完整引文=Yücel AD, Gladyshev VN. The long and winding road of reprogramming-induced rejuvenation. Nature Communications. 2024.
+|URL 或 DOI=https://www.nature.com/articles/s41467-024-46020-5
+|支持范围=部分重编程、年轻化与去分化的区别、组织差异和安全问题
+|不支持的推论=不支持人体逆龄已经实现或可直接临床应用
+|审查状态=已核对论文全文页面
+|访问日期=2026-07-24
+}}
+
+== 支持范围 ==
+
+支持把细胞身份保护、年龄测量、组织特异性和安全性列为部分重编程的核心问题。
+
+== 不支持的推论 ==
+
+综述汇总的体外和动物结果不能转换为个体寿命预测或治疗建议。

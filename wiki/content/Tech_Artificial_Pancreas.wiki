@@ -1,0 +1,35 @@
+{{技术节点
+|节点 ID=technology.artificial-pancreas-closed-loop
+|阶段=当前
+|状态=已实现
+|时间=2010年代至今
+|前置依赖=连续血糖监测、控制算法、输注泵、用户监督
+|持续性作用=自动维持部分葡萄糖稳态并降低管理负担
+|解锁条件=更高自主性、鲁棒传感、故障安全和广泛可及
+|证据来源=[[证据来源：FDA人工胰腺]]
+}}
+
+'''人工胰腺闭环'''是利用连续葡萄糖监测、控制算法和输注泵自动调节胰岛素的医疗系统。
+
+== 对 Human Infra 的作用 ==
+
+它证明身体功效可以被拆成可观测状态、控制策略和执行器，并由工程闭环部分接管。
+
+== 机制或依赖 ==
+
+传感器估计葡萄糖，算法计算剂量，泵执行输注，人体状态产生新反馈。现实系统仍需要不同程度的用户参与。
+
+== 证据与来源 ==
+
+FDA 已建立人工胰腺设备系统的监管说明，并区分阈值暂停、单激素和双激素控制系统。<ref>[https://www.fda.gov/medical-devices/artificial-pancreas-device-system/types-artificial-pancreas-device-systems FDA, Types of Artificial Pancreas Device Systems]，访问于 2026-07-24。</ref>
+
+== 边界、失败条件和未知项 ==
+
+该系统只接管胰腺部分内分泌功能；传感错误、输注故障、网络和电源依赖仍需人工兜底。
+
+== 相关词条与外部链接 ==
+
+* [[再生医学与器官替代]]
+* [https://zh.wikipedia.org/wiki/%E4%BA%BA%E5%B7%A5%E8%83%B0%E8%85%BA 外部 Wikipedia：人工胰腺]
+
+<references />

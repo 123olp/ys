@@ -1,0 +1,31 @@
+<noinclude>
+通过本表单创建或编辑研究域词条。
+</noinclude><includeonly>
+{{{for template|研究域}}}
+{| class="formtable"
+! 域 ID
+| {{{field|域 ID|input type=text|mandatory}}}
+|-
+! C 层级
+| {{{field|C 层级|input type=dropdown|values=C1,C2,C3,C4,C5,C6|mandatory}}}
+|-
+! 研究对象
+| {{{field|研究对象|input type=textarea|rows=4|mandatory}}}
+|-
+! 持续性作用
+| {{{field|持续性作用|input type=textarea|rows=4|mandatory}}}
+|-
+! 证据状态
+| {{{field|证据状态|input type=dropdown|values=已审查,部分审查,待审查,受阻|mandatory}}}
+|-
+! 仓库路径
+| {{{field|仓库路径|input type=text}}}
+|}
+{{{end template}}}
+
+'''正文'''
+{{{standard input|free text|rows=24}}}
+
+{{{standard input|summary}}}
+{{{standard input|save}}} {{{standard input|preview}}} {{{standard input|changes}}} {{{standard input|cancel}}}
+</includeonly>

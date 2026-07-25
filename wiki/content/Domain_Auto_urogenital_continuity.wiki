@@ -1,0 +1,92 @@
+{{研究域
+|域 ID=domain.urogenital-continuity
+|C 层级=C2：可能性源体维护层
+|研究对象=Urogenital Continuity
+|持续性作用=直接维护身体、脑、器官、衰老、损伤或生命系统这些可能性源体。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c2-source-maintenance/urogenital-continuity
+}}
+
+'''Urogenital Continuity'''是 Human Infra 在“生命载体维护”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+直接维护身体、脑、器官、衰老、损伤或生命系统这些可能性源体。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C2“可能性源体维护层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+Urogenital Continuity 负责整理膀胱、尿路、盆底、尿控、泌尿感染、性功能和日常尊严如何支撑主体持续性。
+
+核心问题：
+
+<blockquote>主体持续性不只是避免死亡，也包括保持可行动、可参与、可自理和有尊严的生活；泌尿生殖功能失稳会通过感染、疼痛、睡眠破坏、社会退缩和照护负担侵蚀有效时间。
+</blockquote>
+== 先验位置 ==
+
+<pre>有效永生 / 主体持续性最大化
+  -> 主体必须维持排泄控制、泌尿安全和身体自主性
+  -> 尿控、感染、盆底功能和性/生殖相关功能影响睡眠、行动、关系、尊严和照护负担
+  -> 泌尿生殖功能失败会把长期存在转化为痛苦、隔离和依赖
+  -> 因此泌尿生殖连续性是主体持续性的功能与尊严域</pre>
+== 关注对象 ==
+
+* 膀胱、尿路、尿控、尿频、夜尿、盆底、泌尿感染、性功能和相关生活质量。
+* 尿失禁、尿路感染、慢性盆腔/泌尿疼痛、夜间睡眠中断、照护负担和社会参与。
+* 泌尿生殖功能如何进入睡眠、心理稳定、疼痛、康复、照护、感染和身份尊严模型。
+* 与生殖生育域的边界：本域关注主体当下功能、尿路安全和生活质量；生殖生育域关注生育窗口和未来选择权。
+
+<span id="human-infra-模型链路"></span>
+== Human Infra 模型链路 ==
+
+<pre>泌尿生殖因素 T
+  -> 改变尿控、感染风险、疼痛、睡眠中断、性功能和盆底支持 X
+  -> 改变主体自理、行动、关系、尊严和有效时间状态 S
+  -> 改变感染、跌倒、失眠、抑郁、失能和照护依赖风险 λ(t)
+  -> 影响健康寿命、有效时间和未来选择权</pre>
+== 非目标 ==
+
+* 不提供泌尿、生殖、性功能、盆底训练、感染、药物、器械、手术或检查解释建议。
+* 不把尿频、尿控、性功能或感染症状写成个体诊断。
+* 不替代 <code>renal-hepatic-clearance/</code>、<code>pain-suffering-control/</code> 或 <code>reproductive-fertility-continuity/</code>，而是承载泌尿生殖功能与尊严主接口。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* NIDDK urologic diseases: https://www.niddk.nih.gov/health-information/urologic-diseases
+* NIDDK bladder control problems: https://www.niddk.nih.gov/health-information/urologic-diseases/bladder-control-problems
+* CDC urinary tract infection basics: https://www.cdc.gov/uti/about/index.html
+
+== 下一步 ==
+
+# 建立泌尿生殖连续性变量表：尿控、感染、夜尿、疼痛、盆底、性功能、照护负担和尊严。
+# 与 <code>sleep-circadian-recovery/</code>、<code>pain-suffering-control/</code>、<code>immune-maintenance/</code> 和 <code>reproductive-fertility-continuity/</code> 建立交叉边界。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C2研究域|C2研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c2-source-maintenance/urogenital-continuity/README.md Human Infra 仓库：domains/c2-source-maintenance/urogenital-continuity/README.md]
+
+[[Category:C2研究域]]

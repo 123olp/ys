@@ -1,0 +1,87 @@
+{{研究域
+|域 ID=domain.child-protection-family-safety
+|C 层级=C6：局部可能性解锁层
+|研究对象=Child Protection Family Safety
+|持续性作用=未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c6-local-unlocking/child-protection-family-safety
+}}
+
+'''Child Protection Family Safety'''是 Human Infra 在“局部阻塞解除”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C6“局部可能性解锁层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+儿童保护与家庭安全域研究：当儿童面临虐待、忽视、家庭暴力暴露、剥削、家庭压力或照护失败时，预防、发现、报告、家庭支持、儿童福利和创伤知情服务如何保护未来主体能力形成。
+
+== 对象 ==
+
+* 儿童虐待、忽视、性剥削、家庭暴力暴露、ACEs、家庭压力、儿童福利和家庭支持服务。
+* 预防、报告系统、强制报告框架、儿童保护服务、寄养、家庭保全、创伤知情照护和学校/医疗转介。
+* 早期逆境对大脑发展、心理健康、教育、关系、慢病风险、暴力循环和未来选择权的影响。
+* 儿童保护系统中的权利、隐私、家庭完整性、公平、误报、过度监控和制度伤害风险。
+
+<span id="human-infra-价值"></span>
+== Human Infra 价值 ==
+
+主体持续性从儿童阶段就开始被塑造。儿童保护与家庭安全域把虐待、忽视和家庭失稳看作未来主体能力形成的早期断点，同时也审查保护系统本身可能造成的误伤、过度监控和家庭断裂。
+
+<pre>儿童风险被预防、发现并支持
+  -> 虐待、忽视、创伤和家庭失稳下降
+  -> 大脑发展、学习能力、关系能力和健康路径更稳定
+  -> 未来主体持续性和选择权提高</pre>
+== 边界 ==
+
+本域只整理公开儿童保护、儿童福利、ACEs、家庭支持、创伤知情服务和儿童安全资料。
+
+不提供：
+
+* 个案报告、法律、监护、探视、取证、调查、家庭冲突、学校纪律或儿童福利个案建议。
+* 儿童定位、监控、控制、惩罚、规避调查、规避报告、胁迫儿童或隐瞒伤害的方法。
+* 性剥削、虐待、诱导、接触、材料获取、材料传播、规避平台/执法或任何危害儿童的内容。
+* 把儿童保护资料写成家庭监控、歧视筛选、惩罚穷人、移民执法或制度剥夺的工具。
+
+== 上游与下游 ==
+
+* 上游：<code>maternal-newborn-child-development/</code>、<code>childcare-family-continuity/</code>、<code>personal-safety-violence-prevention/</code>、<code>social-protection-benefits-delivery/</code>。
+* 下游：<code>mental-health-affective-stability/</code>、<code>education-access-lifelong-learning/</code>、<code>access-to-justice-legal-aid/</code>、<code>social-connection-relational-infra/</code>。
+
+== 初始资料线索 ==
+
+* Child Welfare Information Gateway resources。
+* CDC Adverse Childhood Experiences resources。
+* CDC child abuse and neglect prevention resources。
+* Children’s Bureau and family support public materials。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C6研究域|C6研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c6-local-unlocking/child-protection-family-safety/README.md Human Infra 仓库：domains/c6-local-unlocking/child-protection-family-safety/README.md]
+
+[[Category:C6研究域]]

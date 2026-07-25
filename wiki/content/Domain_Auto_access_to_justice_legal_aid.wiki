@@ -1,0 +1,90 @@
+{{研究域
+|域 ID=domain.access-to-justice-legal-aid
+|C 层级=C5：可能性生态承载层
+|研究对象=Access To Justice Legal Aid
+|持续性作用=主要提供主体展开未来所需的基础环境、资源、治理或基础设施。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c5-ecological-substrate/access-to-justice-legal-aid
+}}
+
+'''Access To Justice Legal Aid'''是 Human Infra 在“外部生态承载”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+主要提供主体展开未来所需的基础环境、资源、治理或基础设施。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C5“可能性生态承载层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>access-to-justice-legal-aid/</code> 研究司法可及、民事法律需求、法律援助和权利救济能否把“名义权利”转化为主体可实际使用的保护。
+
+<blockquote>核心问题：权利只有在可理解、可负担、可及时进入、可申诉和可执行时，才会成为主体持续性的真实基础设施。
+</blockquote>
+== 先验位置 ==
+
+<pre>有效永生 / 主体持续性最大化
+  -> 主体会遭遇住房、债务、家庭、福利、就业、身份、照护和安全等法律性问题
+  -> 司法入口、法律援助、程序理解、代理支持和救济路径必须可达
+  -> 权利才不会停留在文本层，主体才有机会恢复资源、身份、安全和行动能力</pre>
+== 关注对象 ==
+
+* 民事法律需求、法律援助、公共法律服务、在线法律帮助、法院可及性和程序负担。
+* 住房、债务、家庭、安全、福利、就业、身份、照护和消费者问题中的权利救济路径。
+* 法律信息可理解性、费用、代理缺口、等待时间、语言可达、残障可达和申诉机制。
+* 与法律身份、社会保护、住房、财务韧性、人身安全和公民参与的接口。
+
+<span id="human-infra-模型链路"></span>
+== Human Infra 模型链路 ==
+
+<pre>司法可及与法律援助
+  -> 主体能识别问题中的权利和救济路径
+  -> 法律信息、代理支持、法院入口、申诉和执行机制可达
+  -> 住房、收入、身份、安全、照护和公共服务断裂概率下降
+  -> 主体持续性获得权利恢复和制度救济层的支撑</pre>
+== 非目标 ==
+
+* 不提供法律意见、案件策略、文书起草、资格判断、诉讼建议、移民建议或个体救济路径。
+* 不提供规避监管、伪造材料、逃避执行、骚扰、报复、证据操控或程序滥用方法。
+* 不把司法可及写成替代律师、法院、法律援助机构或受害者服务的个人操作指南。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* Legal Services Corporation Justice Gap: https://justicegap.lsc.gov/
+* USA.gov Legal Aid: https://www.usa.gov/legal-aid
+* World Justice Project Rule of Law Index: https://worldjusticeproject.org/rule-of-law-index/
+
+== 下一步 ==
+
+* 建立司法可及变量表：问题识别、法律信息、费用、代理、语言、等待、程序负担、申诉和执行。
+* 整理 LSC Justice Gap、USA.gov Legal Aid、World Justice Project 和公共法律服务 Source Cards。
+* 与 <code>legal-identity-civil-registration/</code> 明确分工：本域研究权利救济和法律帮助，后者研究制度身份承认。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C5研究域|C5研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c5-ecological-substrate/access-to-justice-legal-aid/README.md Human Infra 仓库：domains/c5-ecological-substrate/access-to-justice-legal-aid/README.md]
+
+[[Category:C5研究域]]

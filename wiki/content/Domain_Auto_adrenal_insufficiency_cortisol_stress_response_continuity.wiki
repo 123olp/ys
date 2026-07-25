@@ -1,0 +1,88 @@
+{{研究域
+|域 ID=domain.adrenal-insufficiency-cortisol-stress-response-continuity
+|C 层级=C2：可能性源体维护层
+|研究对象=Adrenal Insufficiency Cortisol Stress Response Continuity
+|持续性作用=关键词显示该域主要维护身体、脑、器官、细胞、急性生命风险或衰老损伤控制。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c2-source-maintenance/adrenal-insufficiency-cortisol-stress-response-continuity
+}}
+
+'''Adrenal Insufficiency Cortisol Stress Response Continuity'''是 Human Infra 在“生命载体维护”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要维护身体、脑、器官、细胞、急性生命风险或衰老损伤控制。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C2“可能性源体维护层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>adrenal-insufficiency-cortisol-stress-response-continuity/</code> 研究肾上腺不足、Addison's disease、皮质醇缺乏、压力反应失败、危象风险、疲劳和长期替代治疗连续性如何影响主体持续性。
+
+<blockquote>核心问题：主体不只是需要平时稳定运转，还需要在感染、手术、创伤、脱水、压力和突发事件中维持最低生理应激能力；皮质醇轴失败会把小扰动放大成生命风险和有效时间损耗。
+</blockquote>
+== 先验位置 ==
+
+<pre>有效永生 / 主体持续性最大化
+  -> 主体需要在基础状态和压力状态下都能维持血压、能量、盐水平衡和恢复反应
+  -> 肾上腺不足会削弱皮质醇和盐皮质激素响应，使疲劳、低血压、低血糖、脱水和危象风险上升
+  -> 结果取决于识别、替代治疗连续性、应激剂量教育、急救识别、药品可及和过度/不足治疗边界
+  -> 因此肾上腺不足是压力响应和生命维持冗余的关键内分泌域</pre>
+== 关注对象 ==
+
+* Adrenal insufficiency、Addison's disease、cortisol deficiency、aldosterone/mineralocorticoid context、adrenal crisis、fatigue、hypotension、stress response, medication continuity。
+* 与 <code>endocrine-hormonal-regulation/</code> 的边界：该域关注内分泌总机制；本域聚焦皮质醇轴、盐水平衡、应激响应和危象风险。
+* 与 <code>emergency-preparedness-response/</code> 的关系：本域只描述慢性内分泌脆弱性如何进入急性风险，不提供急救方案。
+
+<span id="human-infra-模型链路"></span>
+== Human Infra 模型链路 ==
+
+<pre>肾上腺不足识别与治疗连续性 T
+  -> 改变皮质醇、盐水平衡、血压、血糖、疲劳、感染/创伤应激反应变量 X
+  -> 改变基础能量、恢复能力、急性压力承载和药品依赖状态 S
+  -> 改变危象、住院、失能、工作中断和死亡风险 λ(t)
+  -> 影响主体行动可靠性、恢复能力和进入未来的安全冗余</pre>
+== 非目标 ==
+
+* 不提供个人诊断、实验室判读、皮质醇/ACTH 解释、用药、剂量、应激剂量、停药、急救、手术、感染处理、饮食、补剂或个体医疗建议。
+* 不生成 emergency plan、医学证明、药品替代、处方调整、旅行准备、保险申诉、工作/学校证明或家庭处置脚本。
+* 不收集个案化验、处方、急救卡、住院记录、血压/血糖记录、保险或身份资料。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* NIDDK adrenal insufficiency and Addison's disease: https://www.niddk.nih.gov/health-information/endocrine-diseases/adrenal-insufficiency-addisons-disease
+* MedlinePlus adrenal gland disorders: https://medlineplus.gov/adrenalglanddisorders.html
+
+== 下一步 ==
+
+* 建立 Adrenal Stress Response Card：baseline state, stress state, crisis signal boundary, medication continuity, emergency-interface boundary。
+* 与 <code>endocrine-hormonal-regulation/</code>、<code>fatigue-risk-alertness-continuity/</code>、<code>emergency-preparedness-response/</code> 和 <code>medicine-access-treatment-continuity/</code> 建立接口。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C2研究域|C2研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c2-source-maintenance/adrenal-insufficiency-cortisol-stress-response-continuity/README.md Human Infra 仓库：domains/c2-source-maintenance/adrenal-insufficiency-cortisol-stress-response-continuity/README.md]
+
+[[Category:C2研究域]]

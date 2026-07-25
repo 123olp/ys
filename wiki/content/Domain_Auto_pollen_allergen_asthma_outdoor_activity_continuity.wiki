@@ -1,0 +1,88 @@
+{{研究域
+|域 ID=domain.pollen-allergen-asthma-outdoor-activity-continuity
+|C 层级=C2：可能性源体维护层
+|研究对象=Pollen Allergen Asthma Outdoor Activity Continuity
+|持续性作用=关键词显示该域主要维护身体、脑、器官、细胞、急性生命风险或衰老损伤控制。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c2-source-maintenance/pollen-allergen-asthma-outdoor-activity-continuity
+}}
+
+'''Pollen Allergen Asthma Outdoor Activity Continuity'''是 Human Infra 在“生命载体维护”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要维护身体、脑、器官、细胞、急性生命风险或衰老损伤控制。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C2“可能性源体维护层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>pollen-allergen-asthma-outdoor-activity-continuity</code> 研究花粉、季节性过敏、哮喘触发、户外行动和工作/学习窗口如何影响主体持续性。
+
+<blockquote>核心问题：花粉不是单纯不适；当过敏、哮喘、睡眠破坏和户外回避叠加时，它会把季节性环境暴露转化为注意力、体力、出勤和行动半径的长期折扣。
+</blockquote>
+== 先验位置 ==
+
+<pre>有效永生 / 主体持续性最大化
+  -> 主体必须在季节性环境变化中维持呼吸、睡眠、注意力和行动能力
+  -> 花粉和空气过敏原会触发鼻炎、眼部症状、哮喘加重和疲劳
+  -> 监测、预警、室内过滤、症状管理连接和户外安排构成行动前提
+  -> 若该前提失败，学习、工作、运动、通勤和恢复时间都会被季节性压缩</pre>
+== 关注对象 ==
+
+* 花粉、季节性过敏、过敏性鼻炎、哮喘触发、眼鼻症状、睡眠和户外活动限制。
+* 花粉预报、空气质量、室内外暴露、学校/工作场所调整、慢病管理连接和风险沟通。
+* 与 <code>respiratory-oxygenation/</code> 的边界：上位域关注呼吸系统和氧合；本域关注花粉过敏原如何在季节性环境中压缩行动窗口。
+
+<span id="human-infra-链路"></span>
+== Human Infra 链路 ==
+
+<pre>花粉暴露被识别和管理
+  -> 过敏症状、哮喘加重和睡眠破坏减少
+  -> 户外行动、学习出勤、工作效率和恢复节律更稳定
+  -> 有效时间、注意力和未来选择权被保护</pre>
+== 非目标 ==
+
+* 不提供诊断、药物、剂量、免疫治疗、急性哮喘处理、空气净化器购买或个体户外安全结论。
+* 不替代医疗机构、过敏/呼吸专科、学校健康服务、职业健康或公共卫生空气质量提示。
+* 不把花粉预报、AQI、气象数据或 AI 输出写成个体发作概率、治疗方案或活动许可。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* CDC Asthma: https://www.cdc.gov/asthma/
+* CDC Allergies and Hay Fever: https://www.cdc.gov/nchs/fastats/allergies.htm
+* EPA Asthma Triggers: https://www.epa.gov/asthma
+
+== 下一步 ==
+
+* 建立 <code>pollen exposure -&gt; allergic inflammation -&gt; sleep/respiration/attention cost -&gt; activity continuity</code> 变量表。
+* 区分儿童学校、户外劳动、运动训练、慢性哮喘、城市绿化和气候变化场景。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C2研究域|C2研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c2-source-maintenance/pollen-allergen-asthma-outdoor-activity-continuity/README.md Human Infra 仓库：domains/c2-source-maintenance/pollen-allergen-asthma-outdoor-activity-continuity/README.md]
+
+[[Category:C2研究域]]

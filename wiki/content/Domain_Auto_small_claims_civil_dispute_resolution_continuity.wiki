@@ -1,0 +1,89 @@
+{{研究域
+|域 ID=domain.small-claims-civil-dispute-resolution-continuity
+|C 层级=C6：局部可能性解锁层
+|研究对象=Small Claims and Civil Dispute Resolution Continuity
+|持续性作用=未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c6-local-unlocking/small-claims-civil-dispute-resolution-continuity
+}}
+
+'''Small Claims and Civil Dispute Resolution Continuity'''是 Human Infra 在“局部阻塞解除”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C6“局部可能性解锁层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+This domain studies how small claims, low-value civil disputes, consumer disputes, neighborhood disputes, and simplified civil processes help or fail to restore resources without overwhelming subjects with procedural cost.
+
+Human Infra value: low-dollar disputes can still break cash flow, housing, work tools, reputation, and trust when recovery channels are too slow, expensive, confusing, or inaccessible.
+
+<span id="scope"></span>
+== Scope ==
+
+* Small claims and simplified civil procedure at system level
+* Consumer, landlord-tenant, property, contract, repair, and service disputes as examples
+* Mediation, settlement conference, online dispute resolution, and court referral models
+* Filing limits, fees, service, evidence, hearing access, judgment collection, and appeal boundaries at high level
+* Self-help, plain-language, language access, disability access, and digital access interfaces
+
+<span id="non-goals"></span>
+== Non-Goals ==
+
+* No legal advice, demand letters, complaint drafting, evidence strategy, service instructions, settlement strategy, judgment collection advice, or appeal advice.
+* No consumer-product recommendation, repair advice, debt collection strategy, harassment, retaliation, or business review manipulation.
+* No prediction of dispute outcome or court jurisdiction.
+
+<span id="source-spine"></span>
+== Source Spine ==
+
+* National Center for State Courts civil justice and online dispute resolution materials.
+* State court small-claims public guides as local examples.
+* FTC and CFPB consumer dispute materials for consumer-protection context.
+* Community mediation and access-to-justice literature for non-court alternatives.
+
+<span id="upstream"></span>
+== Upstream ==
+
+* <code>consumer-return-refund-dispute-resolution-continuity</code>
+* <code>community-mediation-neighbor-conflict-resolution-continuity</code>
+* <code>self-represented-litigant-court-self-help-continuity</code>
+* <code>court-fees-fines-ability-to-pay-continuity</code>
+
+<span id="downstream"></span>
+== Downstream ==
+
+* <code>court-efiling-document-submission-continuity</code>
+* <code>remote-hybrid-court-hearing-access-continuity</code>
+* <code>access-to-justice-legal-aid</code>
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C6研究域|C6研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c6-local-unlocking/small-claims-civil-dispute-resolution-continuity/README.md Human Infra 仓库：domains/c6-local-unlocking/small-claims-civil-dispute-resolution-continuity/README.md]
+
+[[Category:C6研究域]]

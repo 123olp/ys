@@ -1,0 +1,90 @@
+{{研究域
+|域 ID=domain.fuel-thermal-energy-service-continuity
+|C 层级=C5：可能性生态承载层
+|研究对象=Fuel Thermal Energy Service Continuity
+|持续性作用=主要提供主体展开未来所需的基础环境、资源、治理或基础设施。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c5-ecological-substrate/fuel-thermal-energy-service-continuity
+}}
+
+'''Fuel Thermal Energy Service Continuity'''是 Human Infra 在“外部生态承载”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+主要提供主体展开未来所需的基础环境、资源、治理或基础设施。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C5“可能性生态承载层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>fuel-thermal-energy-service-continuity/</code> 研究取暖燃料、制冷能源、燃气、液体燃料、区域供热/供冷、应急燃料和热能服务如何支撑主体持续性。
+
+<blockquote>核心问题：主体不仅需要“电”，也需要可持续的热服务。取暖、制冷、热水、烹饪、备用发电、医院锅炉、避难中心和冷链都依赖燃料、热网、储备、配送和价格稳定。
+</blockquote>
+== 先验位置 ==
+
+<pre>有效永生 / 主体持续性最大化
+  -> 主体必须维持体温、食物处理、居住舒适、医疗热负荷和冷链
+  -> 这些服务依赖燃气、燃油、液化气、区域能源、热泵、电力、燃料配送和应急储备
+  -> 极端天气、燃料短缺、价格冲击、配送中断和设备失效会造成热服务失败
+  -> 热服务失败会把寒冷、热暴露、食品药品损坏、医疗中断和家庭压力放大</pre>
+== 关注对象 ==
+
+* 取暖燃料、燃气供应、液体燃料、丙烷、区域供热/供冷、热泵系统、电热转换、备用燃料、关键设施燃料保障和热服务恢复。
+* 与 <code>thermal-homeostasis-resilience/</code> 的边界：热稳态域关注身体如何应对冷热；本域关注外部能源系统如何提供取暖、制冷和热服务。
+* 与 <code>electric-grid-reliability-resilience-continuity/</code> 的边界：电网域关注电力生命线；本域关注燃料与热能服务，包括非电能源和区域热系统。
+
+<span id="human-infra-模型链路"></span>
+== Human Infra 模型链路 ==
+
+<pre>燃料与热能服务连续性
+  -> 取暖、制冷、热水、烹饪、备用电源和关键设施热负荷可被稳定供应
+  -> 寒冷暴露、热暴露、食品药品损坏、医疗设施中断和家庭能源压力下降
+  -> 主体在季节性、灾害和价格冲击中保持可居住、可恢复、可照护的环境</pre>
+== 非目标 ==
+
+* 不提供燃气、燃油、锅炉、热泵、区域能源、燃料储存、发电机、管线、燃烧设备的安装、维修、操作、采购、改装或安全处置建议。
+* 不提供燃料交易、投资、囤积、供应规避、管线设施弱点、盗取能源或危险燃烧指南。
+* 不替代公用事业公司、能源监管、消防、建筑安全、公共卫生或应急管理官方信息。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* IEA Energy Security: https://www.iea.org/topics/energy-security
+* EIA Heating Oil and Propane: https://www.eia.gov/petroleum/heatingoilpropane/
+* DOE Energy Saver Heating and Cooling: https://www.energy.gov/energysaver/heating-and-cooling
+* WHO Housing and Health Guidelines: https://www.who.int/publications/i/item/9789241550376
+
+== 下一步 ==
+
+* 建立热能服务变量表：燃料可得性、价格冲击、配送时间、取暖/制冷能力、关键设施燃料、设备失效和脆弱家庭暴露。
+* 整理 IEA、EIA、DOE、WHO、地方能源和应急燃料公开资料卡片。
+* 与热稳态、电网、住房、食品冷链、医疗设施、应急准备和 utility affordability 域建立接口。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C5研究域|C5研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c5-ecological-substrate/fuel-thermal-energy-service-continuity/README.md Human Infra 仓库：domains/c5-ecological-substrate/fuel-thermal-energy-service-continuity/README.md]
+
+[[Category:C5研究域]]

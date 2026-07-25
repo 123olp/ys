@@ -1,0 +1,81 @@
+{{研究域
+|域 ID=domain.healthcare-personal-representative-hipaa-access-continuity
+|C 层级=C3：可能性生成引擎层
+|研究对象=Healthcare Personal Representative HIPAA Access Continuity
+|持续性作用=关键词显示该域主要增强认知、学习、工具、AI、技能或沟通能力。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c3-generation-engine/healthcare-personal-representative-hipaa-access-continuity
+}}
+
+'''Healthcare Personal Representative HIPAA Access Continuity'''是 Human Infra 在“主体能力生成”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要增强认知、学习、工具、AI、技能或沟通能力。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C3“可能性生成引擎层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+Healthcare Personal Representative HIPAA Access Continuity 关注 HIPAA personal representative、授权照护者、医疗记录访问、隐私边界和代理访问如何在主体失能、转诊、照护协调或长期照护中保持医疗信息连续性。
+
+== 对象 ==
+
+* HIPAA personal representative、授权照护者、医疗代理人、家属访问和患者门户代理访问。
+* 医疗记录、检验结果、用药、转诊、出院文件、保险信息和远程照护数据的授权共享。
+* 隐私保护、越权访问、家庭冲突、照护者任务负担和跨机构数据断点。
+
+<span id="human-infra-价值"></span>
+== Human Infra 价值 ==
+
+<pre>主体持续性需要医疗信息在授权边界内可传递
+-> 失能、慢病和照护转移会让主体无法亲自汇总和解释资料
+-> 若照护者无合法访问路径，药物、结果、预约和风险信息会断裂
+-> 若访问边界过宽，主体隐私和安全又会被侵蚀
+-> 个人代表和授权访问机制把信息连续性与隐私控制放在同一框架
+-> 医疗照护更可能被复核、协调和持续执行</pre>
+== 边界 ==
+
+* 本域不提供 HIPAA 法律意见、授权表填写、病历索取策略、门户设置、隐私投诉或家庭纠纷建议。
+* 不判断某人是否有权访问特定病历或机构是否违反隐私规则。
+* 不替代 HHS OCR、医疗机构隐私官、律师、患者代表或监管机构。
+* 只整理公开资料、角色边界、信息流断点、授权模型和禁止用途。
+
+== 上游与下游 ==
+
+* 上游：<code>patient-data-interoperability/</code>、<code>health-data-privacy-governance/</code>、<code>caregiving-long-term-care/</code>、<code>care-transitions-discharge-continuity/</code>。
+* 下游：<code>advance-care-planning-medical-decision-continuity/</code>、<code>patient-advocacy-shared-decision-making/</code>、<code>telehealth-remote-monitoring-access/</code>。
+
+== 初始资料线索 ==
+
+* HHS HIPAA guidance on personal representatives.
+* HHS OCR patient access and privacy guidance.
+* ONC patient access, portal, and interoperability resources.
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C3研究域|C3研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c3-generation-engine/healthcare-personal-representative-hipaa-access-continuity/README.md Human Infra 仓库：domains/c3-generation-engine/healthcare-personal-representative-hipaa-access-continuity/README.md]
+
+[[Category:C3研究域]]

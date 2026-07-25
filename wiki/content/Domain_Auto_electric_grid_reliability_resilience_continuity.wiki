@@ -1,0 +1,91 @@
+{{研究域
+|域 ID=domain.electric-grid-reliability-resilience-continuity
+|C 层级=C5：可能性生态承载层
+|研究对象=Electric Grid Reliability Resilience Continuity
+|持续性作用=主要提供主体展开未来所需的基础环境、资源、治理或基础设施。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c5-ecological-substrate/electric-grid-reliability-resilience-continuity
+}}
+
+'''Electric Grid Reliability Resilience Continuity'''是 Human Infra 在“外部生态承载”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+主要提供主体展开未来所需的基础环境、资源、治理或基础设施。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C5“可能性生态承载层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>electric-grid-reliability-resilience-continuity/</code> 研究发电、输电、配电、调度、停电恢复、备用能力和电网韧性如何支撑主体持续性。
+
+<blockquote>核心问题：现代主体的医疗设备、通信、制冷制热、支付、照明、交通、水务、食品冷链和 AI 工具都依赖电力。电网不是“有电/没电”的背景变量，而是多部门连续运行的上游生命线。
+</blockquote>
+== 先验位置 ==
+
+<pre>有效永生 / 主体持续性最大化
+  -> 主体依赖电力维持通信、温控、医疗、食品、水务、支付、照明和数字工具
+  -> 电网由发电、输电、配电、调度、保护、燃料、备件和恢复队伍共同支撑
+  -> 极端天气、燃料短缺、网络攻击、设备老化、负荷峰值和互依赖故障会造成停电
+  -> 电网失效会把多个下游基础设施同时推入中断状态</pre>
+== 关注对象 ==
+
+* 电力可靠性、资源充足性、输配电资产、调度、停电恢复、微电网、备用电源、关键负荷、黑启动、互联互通和韧性投资。
+* 与 <code>energy-access-resilience/</code> 的边界：能源可及域关注家庭和社区能否获得可负担能源服务；本域关注电网作为公共生命线系统的可靠运行和恢复。
+* 与 <code>telecommunications-network-resilience-continuity/</code>、<code>water-wastewater-utility-service-continuity/</code>、<code>compute-data-center-ai-infrastructure/</code> 的接口：电网是通信、水务、算力和医疗服务的上游供能条件。
+
+<span id="human-infra-模型链路"></span>
+== Human Infra 模型链路 ==
+
+<pre>电网可靠性与韧性
+  -> 发电、输电、配电和调度能力维持关键负荷
+  -> 停电频率、持续时间、恢复时间和脆弱用户暴露下降
+  -> 医疗、通信、水务、冷链、温控、支付和数字工具连续性提升
+  -> 主体获得可预测、可恢复、可扩展的电力生命线</pre>
+== 非目标 ==
+
+* 不提供电网调度、变电站、线路、保护系统、控制系统、黑启动、绕供、攻击、破坏、入侵或敏感设施信息。
+* 不提供电力交易、投资、采购、发电并网、工程设计、施工、维修或监管规避建议。
+* 不替代公用事业公司、监管机构、应急管理机构、NERC、DOE、EIA、CISA 或地方官方公告。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* DOE Grid Resilience: https://www.energy.gov/gdo/grid-resilience
+* NERC Reliability: https://www.nerc.com/pa/Pages/default.aspx
+* EIA Electricity: https://www.eia.gov/electricity/
+* CISA Energy Sector: https://www.cisa.gov/topics/critical-infrastructure-security-and-resilience/critical-infrastructure-sectors/energy-sector
+
+== 下一步 ==
+
+* 建立电网连续性变量表：可靠性、停电持续时间、恢复时间、资源充足性、关键负荷、备用能力、脆弱用户和互依赖风险。
+* 整理 DOE、NERC、EIA、CISA、FERC 和地方公用事业公开资料卡片。
+* 与水务、通信、医疗设备、温控、交通、食品冷链和关键基础设施互依赖域建立接口。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C5研究域|C5研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c5-ecological-substrate/electric-grid-reliability-resilience-continuity/README.md Human Infra 仓库：domains/c5-ecological-substrate/electric-grid-reliability-resilience-continuity/README.md]
+
+[[Category:C5研究域]]

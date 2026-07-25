@@ -1,0 +1,92 @@
+{{研究域
+|域 ID=domain.dry-eye-ocular-surface-comfort-continuity
+|C 层级=C2：可能性源体维护层
+|研究对象=Dry Eye Ocular Surface Comfort Continuity
+|持续性作用=关键词显示该域主要维护身体、脑、器官、细胞、急性生命风险或衰老损伤控制。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c2-source-maintenance/dry-eye-ocular-surface-comfort-continuity
+}}
+
+'''Dry Eye Ocular Surface Comfort Continuity'''是 Human Infra 在“生命载体维护”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要维护身体、脑、器官、细胞、急性生命风险或衰老损伤控制。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C2“可能性源体维护层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>dry-eye-ocular-surface-comfort-continuity/</code> 负责整理干眼、眼表不适、屏幕/环境暴露、慢性疼痛疲劳和视觉任务舒适性连续性。
+
+核心问题：
+
+<blockquote>干眼通常不直接终止生命，但会以持续疼痛、模糊、畏光和屏幕耐受下降的方式吞噬有效时间；它是“低致死、高摩擦”的视觉工作负担。
+</blockquote>
+== 先验位置 ==
+
+<pre>主体持续性最大化
+  -> 主体必须长时间稳定读写、看屏幕、移动和处理视觉任务
+  -> 眼表不适会降低视觉耐受、注意力稳定和恢复质量
+  -> 慢性干眼会把工作、学习和社交时间转化为疼痛、疲劳和任务中断
+  -> 因此干眼眼表舒适连续性是有效时间和视觉任务耐受的基础条件</pre>
+== 关注对象 ==
+
+* 干眼、眼表不适、刺痛、异物感、泪液问题、视疲劳、光敏和波动性模糊。
+* 屏幕使用、室内空气、药物副作用、风/干燥环境、隐形眼镜和工作场景。
+* 注意力、阅读速度、屏幕耐受、睡眠恢复、工作效率和生活质量。
+* 与 <code>vision-eye-health-continuity/</code> 的关系：本域聚焦眼表舒适和有效时间负担，不覆盖所有眼病。
+
+<span id="human-infra-模型链路"></span>
+== Human Infra 模型链路 ==
+
+<pre>眼表健康管理 / 环境改善 / 服务衔接 T
+  -> 改变干涩、疼痛、视疲劳、屏幕耐受、环境暴露和恢复变量 X
+  -> 改变主体阅读、工作、学习、睡眠和社交参与状态 S
+  -> 改变任务中断、注意力下降、慢性不适和有效时间损耗风险
+  -> 增加视觉任务耐受、恢复质量和创造窗口</pre>
+== 非目标 ==
+
+* 不提供干眼诊断、眼药水选择、处方药、补剂、隐形眼镜建议或个体治疗方案。
+* 不根据症状判断个人是否有感染、免疫疾病、角膜问题或紧急风险。
+* 不把屏幕习惯、环境改变或产品写成治疗承诺。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* National Eye Institute Dry Eye: https://www.nei.nih.gov/learn-about-eye-health/eye-conditions-and-diseases/dry-eye
+* CDC Vision Health: https://www.cdc.gov/vision-health/
+* MedlinePlus Dry Eye: https://medlineplus.gov/dryeyes.html
+
+== 下一步 ==
+
+* 建立干眼 Source Card，区分眼表机制、环境暴露、屏幕工作和有效时间终点。
+* 对接光照环境、职业健康、屏幕工作、人因可靠性和慢性疼痛域。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C2研究域|C2研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c2-source-maintenance/dry-eye-ocular-surface-comfort-continuity/README.md Human Infra 仓库：domains/c2-source-maintenance/dry-eye-ocular-surface-comfort-continuity/README.md]
+
+[[Category:C2研究域]]

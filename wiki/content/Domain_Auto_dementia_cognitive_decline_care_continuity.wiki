@@ -1,0 +1,88 @@
+{{研究域
+|域 ID=domain.dementia-cognitive-decline-care-continuity
+|C 层级=C3：可能性生成引擎层
+|研究对象=Dementia Cognitive Decline Care Continuity
+|持续性作用=关键词显示该域主要增强认知、学习、工具、AI、技能或沟通能力。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c3-generation-engine/dementia-cognitive-decline-care-continuity
+}}
+
+'''Dementia Cognitive Decline Care Continuity'''是 Human Infra 在“主体能力生成”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要增强认知、学习、工具、AI、技能或沟通能力。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C3“可能性生成引擎层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+痴呆、认知衰退与照护连续性域研究：当记忆、判断、执行功能和日常能力逐步下降时，识别、照护、沟通、安全、权利和家庭支持如何保护主体身份、尊严和可承受持续性。
+
+== 对象 ==
+
+* 痴呆、阿尔茨海默病、轻度认知障碍、认知退行、神经心理评估和早期识别系统。
+* 照护计划、家庭照护、长期照护、居家社区支持、记忆辅助、沟通辅助和日常风险管理。
+* 用药、财务、居住、驾驶、走失、跌倒、营养、孤立、照护者负担和危机迁移。
+* 代理决策、同意能力、尊严、虐待防护、服务导航和照护转介。
+* 认知衰退对主体连续性、未来选择权、有效时间和关系网络的影响。
+
+<span id="human-infra-价值"></span>
+== Human Infra 价值 ==
+
+主体持续性不仅是身体活着，还包括记忆、判断、身份、沟通和参与能力尽可能被保护。痴呆照护连续性域把认知退行作为独立边界条件：当主体逐步失去自我管理能力时，支持系统必须承接风险，而不是让主体被动失权。
+
+<pre>认知衰退被早期识别并纳入照护连续性
+  -> 记忆、判断、用药、财务、居住和安全风险被支持系统承接
+  -> 照护者负担、危机迁移和主体失权下降
+  -> 主体身份、尊严、参与和可承受持续性提高</pre>
+== 边界 ==
+
+本域只整理公开痴呆、认知衰退、照护连续性、照护者支持、安全治理和服务导航资料。
+
+不提供：
+
+* 个体诊断、筛查解释、治疗、用药、认知训练、饮食、补剂或医疗决策。
+* 法律、财务、代理决策、监护、遗嘱、保险、驾驶资格或机构选择建议。
+* 走失防控、监控、定位、门禁、约束、行为管理或家庭冲突的可操作方案。
+* 把认知衰退主体视为无权利对象、监控对象或家庭负担的表述。
+
+== 上游与下游 ==
+
+* 上游：<code>neuro-continuity/</code>、<code>mental-health-affective-stability/</code>、<code>caregiving-long-term-care/</code>、<code>assistive-technology-access/</code>、<code>patient-safety-organizational-learning/</code>。
+* 下游：<code>memory-editing/</code>、<code>social-connection-relational-infra/</code>、<code>health-data-privacy-governance/</code>、<code>disability-services-independent-living/</code>。
+
+== 初始资料线索 ==
+
+* WHO dementia fact sheets and action resources。
+* CDC dementia and healthy aging resources。
+* NIA Alzheimer’s and dementia resources。
+* Public materials on caregiver support, long-term care and dementia-friendly communities。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C3研究域|C3研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c3-generation-engine/dementia-cognitive-decline-care-continuity/README.md Human Infra 仓库：domains/c3-generation-engine/dementia-cognitive-decline-care-continuity/README.md]
+
+[[Category:C3研究域]]

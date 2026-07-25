@@ -1,0 +1,92 @@
+{{研究域
+|域 ID=domain.tinnitus-sound-tolerance-sleep-continuity
+|C 层级=C6：局部可能性解锁层
+|研究对象=Tinnitus Sound Tolerance Sleep Continuity
+|持续性作用=未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c6-local-unlocking/tinnitus-sound-tolerance-sleep-continuity
+}}
+
+'''Tinnitus Sound Tolerance Sleep Continuity'''是 Human Infra 在“局部阻塞解除”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C6“局部可能性解锁层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>tinnitus-sound-tolerance-sleep-continuity/</code> 负责整理耳鸣、声音耐受、睡眠中断、注意力负担和长期有效时间连续性。
+
+核心问题：
+
+<blockquote>耳鸣常常不是“听见声音”这么简单；它会通过睡眠、注意力、情绪和声音环境耐受，把主体的恢复系统和任务执行窗口持续拉低。
+</blockquote>
+== 先验位置 ==
+
+<pre>主体持续性最大化
+  -> 主体必须维持睡眠、注意力、情绪和声音环境耐受
+  -> 耳鸣会在外部声源不存在时持续占用感知和认知资源
+  -> 睡眠中断、烦扰、焦虑和听觉疲劳会降低有效时间和恢复能力
+  -> 因此耳鸣与声音耐受连续性是听觉-恢复交叉基础设施</pre>
+== 关注对象 ==
+
+* 耳鸣、声音敏感、烦扰、睡眠中断、注意力负担和生活质量。
+* 听力损失、噪声暴露、心理负担、声环境、助听/声音支持和服务可及性。
+* 工作、学习、关系、睡眠恢复、焦虑抑郁交叉和有效时间损耗。
+* 与 <code>hearing-auditory-communication-continuity/</code> 的关系：本域聚焦耳鸣负担和恢复影响。
+
+<span id="human-infra-模型链路"></span>
+== Human Infra 模型链路 ==
+
+<pre>耳鸣评估 / 声环境支持 / 睡眠与心理服务 T
+  -> 改变耳鸣烦扰、睡眠、声音耐受、注意力和情绪变量 X
+  -> 改变主体恢复、工作学习、社交和长期参与状态 S
+  -> 改变失眠、焦虑、沟通疲劳、有效时间损耗和任务中断风险
+  -> 增加恢复质量、注意力稳定和未来选择权</pre>
+== 非目标 ==
+
+* 不提供耳鸣诊断、治疗方案、补剂、设备、药物、声音疗法参数或产品推荐。
+* 不根据耳鸣描述判断听损、神经疾病、急症、心理风险或个体预后。
+* 不替代耳鼻喉、听力学、睡眠医学、心理健康或神经专业服务。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* NIDCD Tinnitus: https://www.nidcd.nih.gov/health/tinnitus
+* NIDCD Noise-Induced Hearing Loss: https://www.nidcd.nih.gov/health/noise-induced-hearing-loss
+* WHO Deafness and hearing loss: https://www.who.int/news-room/fact-sheets/detail/deafness-and-hearing-loss
+
+== 下一步 ==
+
+* 建立耳鸣 Source Card，区分声音感知、烦扰、睡眠、注意力和有效时间终点。
+* 对接睡眠、心理健康、噪声暴露和听觉沟通域。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C6研究域|C6研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c6-local-unlocking/tinnitus-sound-tolerance-sleep-continuity/README.md Human Infra 仓库：domains/c6-local-unlocking/tinnitus-sound-tolerance-sleep-continuity/README.md]
+
+[[Category:C6研究域]]

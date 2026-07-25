@@ -1,0 +1,85 @@
+{{研究域
+|域 ID=domain.civil-commitment-involuntary-treatment-rights-continuity
+|C 层级=C6：局部可能性解锁层
+|研究对象=Civil Commitment Involuntary Treatment Rights Continuity
+|持续性作用=未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c6-local-unlocking/civil-commitment-involuntary-treatment-rights-continuity
+}}
+
+'''Civil Commitment Involuntary Treatment Rights Continuity'''是 Human Infra 在“局部阻塞解除”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C6“局部可能性解锁层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+本域研究精神健康危机、非自愿评估、民事收治、强制治疗、能力限制和权利保护如何影响主体自主性、医疗连续性、法律入口和恢复路径。
+
+<blockquote>核心问题：危机状态下的保护措施可能防止即时伤害，也可能造成权利、记忆、关系、工作、居住和信任断裂；Human Infra 需要把安全、最小限制、正当程序和恢复连续性放进同一框架。
+</blockquote>
+== 关注对象 ==
+
+* 非自愿评估、民事收治、强制治疗、危机响应、最小限制替代、同意能力、复查和申诉。
+* 危机状态与医疗记录、药物、工作/学校、住房、家庭、财务、监护、隐私和污名的接口。
+* 与 <code>mental-health-affective-stability/</code>、<code>suicide-crisis-response-continuity/</code>、<code>supported-decision-making-guardianship-rights/</code> 和 <code>access-to-justice-legal-aid/</code> 的边界。
+* 机构化风险、过度强制、残障权利、语言可达、创伤知情照护和出院后恢复路径。
+
+<span id="human-infra-链路"></span>
+== Human Infra 链路 ==
+
+<pre>非自愿治疗与民事收治权利连续
+  -> 急性风险被处理时，主体的权利、同意、最小限制和复查路径仍被保护
+  -> 医疗、住房、工作、家庭、财务和社会信任断裂风险下降
+  -> 出院后照护、支持性决策和社区恢复可以衔接
+  -> 危机干预不把主体推出长期自主性和未来选择权</pre>
+== 非目标 ==
+
+* 不提供个人危机判断、收治标准、强制治疗、出院、法律申诉、医疗、用药或安全计划建议。
+* 不指导如何规避危机服务、躲避评估、控制他人、强迫治疗、监控定位或制造证据。
+* 若存在即时伤害风险，应联系当地紧急服务、危机热线、医疗机构或专业人员。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* SAMHSA Crisis Services: https://www.samhsa.gov/find-help
+* HHS Office for Civil Rights Civil Rights: https://www.hhs.gov/civil-rights/index.html
+* DOJ Civil Rights Division Disability Rights: https://www.justice.gov/crt/disability-rights-section
+* WHO Guidance on Community Mental Health Services: https://www.who.int/publications/i/item/9789240025707
+
+== 下一步 ==
+
+* 建立非自愿治疗连续性变量表：触发条件、复查、最小限制、同意能力、语言、残障权利、出院计划和社区支持。
+* 整理 SAMHSA、HHS OCR、DOJ Civil Rights、WHO community mental health 和 disability rights Source Cards。
+* 与 <code>suicide-crisis-response-continuity/</code> 明确分工：危机响应域关注即时求助网络，本域关注强制性制度入口和权利连续性。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C6研究域|C6研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c6-local-unlocking/civil-commitment-involuntary-treatment-rights-continuity/README.md Human Infra 仓库：domains/c6-local-unlocking/civil-commitment-involuntary-treatment-rights-continuity/README.md]
+
+[[Category:C6研究域]]

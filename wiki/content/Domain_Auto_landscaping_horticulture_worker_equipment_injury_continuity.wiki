@@ -1,0 +1,88 @@
+{{研究域
+|域 ID=domain.landscaping-horticulture-worker-equipment-injury-continuity
+|C 层级=C5：可能性生态承载层
+|研究对象=Landscaping Horticulture Worker Equipment Injury Continuity
+|持续性作用=关键词显示该域主要承载能源、水、食物、住房、治理、经济、通信、灾害或基础设施环境。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c5-ecological-substrate/landscaping-horticulture-worker-equipment-injury-continuity
+}}
+
+'''Landscaping Horticulture Worker Equipment Injury Continuity'''是 Human Infra 在“外部生态承载”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要承载能源、水、食物、住房、治理、经济、通信、灾害或基础设施环境。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C5“可能性生态承载层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>landscaping-horticulture-worker-equipment-injury-continuity</code> 研究园林、草坪、树木维护、户外工人、设备伤害、热/化学/生物暴露和工作连续性的关系。
+
+<blockquote>核心问题：园林维护不是单纯美化；它把切割设备、跌落、噪声、热暴露、农药、毒植物、病媒、交通和季节性劳动组织叠加到同一个工作系统里。
+</blockquote>
+== 先验位置 ==
+
+<pre>有效永生 / 主体持续性最大化
+  -> 主体依赖可维护的户外环境和安全劳动系统
+  -> 园林/园艺工作会集中暴露设备、热、噪声、化学、植物和病媒风险
+  -> 培训、PPE、设备维护、任务设计、天气调整和应急连接构成工作前提
+  -> 若该前提失败，户外工人健康、公共空间维护、住房环境和恢复绿地都会被压缩</pre>
+== 关注对象 ==
+
+* Landscaping、horticulture、草坪/树木维护、切割设备、跌落、噪声、热暴露、毒植物、农药和病媒。
+* 工人培训、PPE、设备维护、季节性劳动、语言可及、伤害记录和职业健康连接。
+* 与 <code>occupational-exposure-industrial-hygiene/</code> 的边界：上位域关注职业暴露总论；本域关注园林/园艺这一复合户外执行场景。
+
+<span id="human-infra-链路"></span>
+== Human Infra 链路 ==
+
+<pre>园林园艺劳动风险被工程化管理
+  -> 设备伤害、热应激、化学暴露和生物暴露下降
+  -> 户外工人、公共空间、住房维护和绿地恢复更稳定
+  -> 劳动持续性、城市恢复空间和主体行动条件被保护</pre>
+== 非目标 ==
+
+* 不提供设备操作、树木作业、PPE 选型、农药使用、施工流程、雇佣合规、事故处理或职业法律建议。
+* 不替代 OSHA、NIOSH、雇主安全计划、职业健康、设备制造商、园林承包商或急救医疗。
+* 不把安全清单、天气、设备型号、现场照片或 AI 输出写成作业许可。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* OSHA Landscaping and Horticultural Services: https://www.osha.gov/landscaping
+* CDC/NIOSH Outdoor Workers: https://www.cdc.gov/niosh/topics/outdoor/
+* CDC/NIOSH Poisonous Plants: https://www.cdc.gov/niosh/topics/plants/
+
+== 下一步 ==
+
+* 建立 <code>landscape task -&gt; equipment / heat / chemical / biological exposure -&gt; work interruption -&gt; continuity cost</code> 变量表。
+* 区分草坪维护、树木修剪、灾后清理、公共绿地、移民/季节性工人和住房维护场景。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C5研究域|C5研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c5-ecological-substrate/landscaping-horticulture-worker-equipment-injury-continuity/README.md Human Infra 仓库：domains/c5-ecological-substrate/landscaping-horticulture-worker-equipment-injury-continuity/README.md]
+
+[[Category:C5研究域]]

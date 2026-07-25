@@ -1,0 +1,88 @@
+{{研究域
+|域 ID=domain.hearing-auditory-communication-continuity
+|C 层级=C2：可能性源体维护层
+|研究对象=Hearing Auditory Communication Continuity
+|持续性作用=直接维护身体、脑、器官、衰老、损伤或生命系统这些可能性源体。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c2-source-maintenance/hearing-auditory-communication-continuity
+}}
+
+'''Hearing Auditory Communication Continuity'''是 Human Infra 在“生命载体维护”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+直接维护身体、脑、器官、衰老、损伤或生命系统这些可能性源体。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C2“可能性源体维护层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+听力与听觉沟通连续性域整理听力损失、言语识别、耳鸣、助听支持和沟通负担对主体持续行动的影响。
+
+核心问题：
+
+<blockquote>主体要持续参与关系、工作、照护和公共服务，必须能接收语音、警报和环境声音；听觉沟通失效会把人推向孤立、误解、认知负担和安全信号漏接。
+</blockquote>
+== 先验位置 ==
+
+<pre>主体持续性最大化
+  -> 主体必须持续接入他人、服务和环境警报
+  -> 听觉承载语言、社交、风险信号和空间线索
+  -> 听力损失增加沟通成本、孤立、疲劳和信息遗漏
+  -> 因而听力与听觉沟通是主体持续性中的关系和警报输入层</pre>
+== 关注对象 ==
+
+* 听力损失、年龄相关性听力下降、耳鸣和听觉处理负担。
+* 言语识别、噪声环境沟通、助听器/人工耳蜗等听觉支持的可及性与维护。
+* 听觉警报、环境声音、安全风险、照护沟通和公共服务沟通。
+* 社交孤立、认知负担、工作参与、医疗沟通和服务理解。
+* 与 <code>language-access-plain-communication/</code> 的关系：本域关注听觉通道；语言可达域关注语言、清晰表达和可理解性。
+
+<span id="human-infra-模型链路"></span>
+== Human Infra 模型链路 ==
+
+<pre>听力照护 / 助听支持 / 环境声学 T
+  -> 改变声音可达性、言语识别、耳鸣负担和沟通疲劳 X
+  -> 改变主体社交参与、服务理解、安全警报接收和工作状态 S
+  -> 降低孤立、误解、事故、认知负担和任务中断风险 λ(t)
+  -> 增加关系连续性、服务可达性、有效时间和未来选择权</pre>
+== 非目标 ==
+
+* 不提供听力诊断、听力图解释、助听器/人工耳蜗处方、耳鸣治疗或设备购买建议。
+* 不把听力指标写成个体认知、工作、驾驶、学习或安全资格判断。
+* 不替代听力学、耳鼻喉、言语语言治疗或康复专业服务。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* WHO deafness and hearing loss fact sheet。
+* NIDCD age-related hearing loss resources。
+* NIDCD hearing, ear infections, and deafness topics。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C2研究域|C2研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c2-source-maintenance/hearing-auditory-communication-continuity/README.md Human Infra 仓库：domains/c2-source-maintenance/hearing-auditory-communication-continuity/README.md]
+
+[[Category:C2研究域]]

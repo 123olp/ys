@@ -1,0 +1,84 @@
+{{研究域
+|域 ID=domain.emergency-food-disaster-feeding-continuity
+|C 层级=C5：可能性生态承载层
+|研究对象=Emergency Food Disaster Feeding Continuity
+|持续性作用=关键词显示该域主要承载能源、水、食物、住房、治理、经济、通信、灾害或基础设施环境。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c5-ecological-substrate/emergency-food-disaster-feeding-continuity
+}}
+
+'''Emergency Food Disaster Feeding Continuity'''是 Human Infra 在“外部生态承载”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要承载能源、水、食物、住房、治理、经济、通信、灾害或基础设施环境。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C5“可能性生态承载层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>emergency-food-disaster-feeding-continuity</code> 研究灾害供餐、应急食品发放、D-SNAP、学校/社区紧急供餐、避难所餐食和供应链恢复如何在灾害中维持主体能量输入。
+
+<blockquote>核心问题：灾害会同时切断厨房、商店、交通、电力、支付和常规福利；应急供餐把食物输入从日常系统切换到危机系统。
+</blockquote>
+== 关注对象 ==
+
+* 灾害供餐、避难所餐食、应急食品包、D-SNAP、USDA disaster nutrition assistance、学校/社区紧急供餐和非营利组织供餐。
+* 触发条件、资格、地点、交通、特殊饮食、食品安全、冷链、电力、配送、语言服务、残障可达和退出到常规系统。
+* 与 USDA FNS disaster assistance、FEMA、Ready.gov、地方应急管理、学校、食品银行、社区韧性中心和供应链的接口。
+
+<span id="human-infra-链路"></span>
+== Human Infra 链路 ==
+
+<pre>灾害供餐和应急食品发放可用
+  -> 厨房、商店、支付、电力和交通中断时仍有能量输入
+  -> 饥饿、恐慌采购、食品腐坏、慢病风险和照护崩溃下降
+  -> 主体可以等待恢复、执行撤离/避难和重建日常食物路径
+  -> 灾害生存窗口、恢复速度和未来选择权增强</pre>
+== 非目标 ==
+
+* 不提供 D-SNAP 资格规避、骗领、物资抢占、发放点拥挤跟踪、救援路线跟踪、食品囤积套利、避难所规避或个案救援指挥。
+* 不替代 USDA FNS、FEMA、地方应急管理、红十字、学校、食品银行、公共卫生或社会服务。
+* 不收集受灾者身份、地址、家庭成员、福利材料、发放点实时库存、避难所容量、救援行动细节或医疗隐私。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* USDA FNS Disaster Assistance: https://www.fns.usda.gov/disaster/disaster-assistance
+* USDA FNS D-SNAP: https://www.fns.usda.gov/snap/disaster-snap
+* FEMA Community Lifelines: https://www.fema.gov/emergency-managers/practitioners/lifelines
+* Ready.gov Food: https://www.ready.gov/food
+
+== 下一步 ==
+
+* 建立 <code>disaster trigger -&gt; feeding channel -&gt; access/capacity -&gt; nutrition safety -&gt; recovery transition</code> 变量表。
+* 区分 D-SNAP、避难所供餐、应急食品包、学校紧急供餐、社区供餐和常规食品系统恢复。
+* 与 <code>emergency-preparedness-response</code>、<code>community-resilience-hub-shelter-center-continuity</code>、<code>food-bank-pantry-community-food-distribution-continuity</code>、<code>grocery-retail-food-store-access-continuity</code> 和 <code>food-safety-contamination-control</code> 建立边界。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C5研究域|C5研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c5-ecological-substrate/emergency-food-disaster-feeding-continuity/README.md Human Infra 仓库：domains/c5-ecological-substrate/emergency-food-disaster-feeding-continuity/README.md]
+
+[[Category:C5研究域]]

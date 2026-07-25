@@ -1,0 +1,89 @@
+{{研究域
+|域 ID=domain.shift-work-long-hours-fatigue-continuity
+|C 层级=C6：局部可能性解锁层
+|研究对象=Shift Work Long Hours Fatigue Continuity
+|持续性作用=未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c6-local-unlocking/shift-work-long-hours-fatigue-continuity
+}}
+
+'''Shift Work Long Hours Fatigue Continuity'''是 Human Infra 在“局部阻塞解除”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C6“局部可能性解锁层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>shift-work-long-hours-fatigue-continuity/</code> 研究夜班、轮班、长工时、连续值班、恢复窗口不足和组织排班如何影响睡眠、警觉性、安全和主体持续性。
+
+<blockquote>核心问题：轮班和长工时不是个人时间管理问题，而是外部任务系统对睡眠-觉醒节律和恢复窗口的结构性占用。
+</blockquote>
+== 先验位置 ==
+
+<pre>有效永生 / 主体持续性最大化
+  -> 主体需要足够恢复窗口和稳定警觉性执行高质量任务
+  -> 夜班、轮班和长工时会制造睡眠债、节律错位、警觉性下降和事故暴露
+  -> 结果取决于组织排班、休息间隔、任务风险、交通暴露和疲劳风险管理
+  -> 因此轮班长工时是外部时间制度侵蚀主体持续性的关键执行域</pre>
+== 关注对象 ==
+
+* Shift work、night work、long work hours、extended shifts、sleep debt、fatigue risk management、commute safety、healthcare / transport / industrial / care work contexts。
+* 与 <code>fatigue-risk-alertness-continuity/</code> 的边界：疲劳域是上位风险模型；本域专门处理轮班、夜班和长工时这类外部日程结构。
+* 与 <code>circadian-rhythm-sleep-wake-disorder-continuity/</code> 的关系：节律障碍域关注个体生物钟失配；本域关注组织和制度时间安排造成的失配。
+
+<span id="human-infra-模型链路"></span>
+== Human Infra 模型链路 ==
+
+<pre>轮班长工时与疲劳治理系统 T
+  -> 改变工作时长、夜班暴露、轮班稳定性、休息间隔、通勤风险和恢复机会变量 X
+  -> 改变睡眠债、警觉性、反应时间、错误率、情绪稳定和事故暴露 S
+  -> 改变职业伤害、交通事故、慢病负担、离职和有效时间损失 λ(t)
+  -> 影响主体长期行动能力、家庭时间和未来选择权</pre>
+== 非目标 ==
+
+* 不提供个人排班法律建议、职业安全合规判断、驾驶许可、兴奋剂/药物建议、睡眠处方、雇佣争议或保险建议。
+* 不生成个人班表优化、疲劳评分、雇主投诉、工伤索赔、法律信、请假材料或规避安全规则方案。
+* 不收集个案班表、雇佣记录、睡眠数据、事故记录、健康资料、工号、位置或可识别工作资料。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* CDC/NIOSH working hours and fatigue: https://www.cdc.gov/niosh/bulletin/2023/fatigue.html
+* CDC/NIOSH sleep and work: https://www.cdc.gov/niosh/bulletin/2012/sleep-and-work.html
+* NHLBI circadian rhythm disorders: https://www.nhlbi.nih.gov/health/circadian-rhythm-disorders
+
+== 下一步 ==
+
+* 建立 Shift Work Fatigue Card：hours, night exposure, rotation pattern, rest interval, commute exposure, task criticality, recovery opportunity。
+* 与 <code>fatigue-risk-alertness-continuity/</code>、<code>circadian-rhythm-sleep-wake-disorder-continuity/</code> 和 <code>occupational-work-design/</code> 建立接口。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C6研究域|C6研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c6-local-unlocking/shift-work-long-hours-fatigue-continuity/README.md Human Infra 仓库：domains/c6-local-unlocking/shift-work-long-hours-fatigue-continuity/README.md]
+
+[[Category:C6研究域]]

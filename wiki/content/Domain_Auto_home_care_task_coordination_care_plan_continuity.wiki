@@ -1,0 +1,91 @@
+{{研究域
+|域 ID=domain.home-care-task-coordination-care-plan-continuity
+|C 层级=C5：可能性生态承载层
+|研究对象=Home Care Task Coordination Care Plan Continuity
+|持续性作用=关键词显示该域主要承载能源、水、食物、住房、治理、经济、通信、灾害或基础设施环境。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c5-ecological-substrate/home-care-task-coordination-care-plan-continuity
+}}
+
+'''Home Care Task Coordination Care Plan Continuity'''是 Human Infra 在“外部生态承载”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要承载能源、水、食物、住房、治理、经济、通信、灾害或基础设施环境。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C5“可能性生态承载层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>home-care-task-coordination-care-plan-continuity/</code> 研究家庭照护任务、care plan、预约、药物、用品、交通、观察记录、家庭成员分工和跨服务交接如何被协调，防止照护从“有人负责”退化为“人人以为别人负责”。
+
+<blockquote>核心问题：家庭照护最常见的失败不是没有爱，而是任务、时间、信息和责任没有可执行的共同真相源。照护任务协调把长期照护从隐性劳动变成可分配、可追踪、可交接的系统。
+</blockquote>
+== 先验位置 ==
+
+<pre>有效永生 / 主体持续性最大化
+  -> 长期照护包含大量重复任务、异常观察和跨人交接
+  -> 任务必须被记录、分配、提醒、升级和复核
+  -> 否则照护系统会在误解、遗漏、重复和责任漂移中失效</pre>
+== 关注对象 ==
+
+* Care plan、家庭任务清单、预约、药物/用品提醒、观察记录、异常升级和责任分工。
+* 家庭成员、paid caregiver、home health、primary care、specialist、pharmacy 和社区服务之间的交接。
+* 共享日历、纸质 binder、照护 app、隐私、代理访问和数据最小化。
+* 与 <code>personal-automation-integration-workflow-continuity/</code>、<code>patient-portal-account-message-continuity/</code>、<code>care-transitions-discharge-continuity/</code> 的接口。
+
+<span id="human-infra-模型链路"></span>
+== Human Infra 模型链路 ==
+
+<pre>家庭照护任务协调系统
+  -> 改变任务可见性、责任分配、提醒、交接、异常升级和复核能力
+  -> 改变照护遗漏、重复劳动、家庭冲突、服务断点和再入院风险
+  -> 降低药物/预约/用品/观察遗漏和照护者认知负荷
+  -> 增加居家持续性、家庭协作和主体未来选择权</pre>
+== 非目标 ==
+
+* 不生成个人 care plan、用药表、预约安排、护理任务、监测指标或家庭分工建议。
+* 不接入、存储或同步个人健康数据、家庭日历、患者门户、药房、保险或设备资料。
+* 不替代医生、护士、社工、照护经理、药师、家庭会议或法律代理。
+* 不提供监控、定位、约束、家庭纠纷裁决或隐私绕过方案。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* AHRQ Care Coordination: https://www.ahrq.gov/ncepcr/care/coordination.html
+* NIA Long-Distance Caregiving: https://www.nia.nih.gov/health/caregiving/long-distance-caregiving
+* NIA Caregiving: https://www.nia.nih.gov/health/caregiving
+* CMS Home Health Services: https://www.cms.gov/medicare/coverage/home-health-services
+
+== 下一步 ==
+
+* 建立家庭照护任务协调变量表：任务类型、责任人、提醒、异常升级、资料共享、隐私、交接和复核。
+* 整理 care coordination、family caregiving, discharge handoff 和 proxy access Source Cards。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C5研究域|C5研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c5-ecological-substrate/home-care-task-coordination-care-plan-continuity/README.md Human Infra 仓库：domains/c5-ecological-substrate/home-care-task-coordination-care-plan-continuity/README.md]
+
+[[Category:C5研究域]]

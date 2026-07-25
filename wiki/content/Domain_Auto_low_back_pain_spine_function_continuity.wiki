@@ -1,0 +1,89 @@
+{{研究域
+|域 ID=domain.low-back-pain-spine-function-continuity
+|C 层级=C2：可能性源体维护层
+|研究对象=Low Back Pain Spine Function Continuity
+|持续性作用=关键词显示该域主要维护身体、脑、器官、细胞、急性生命风险或衰老损伤控制。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c2-source-maintenance/low-back-pain-spine-function-continuity
+}}
+
+'''Low Back Pain Spine Function Continuity'''是 Human Infra 在“生命载体维护”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要维护身体、脑、器官、细胞、急性生命风险或衰老损伤控制。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C2“可能性源体维护层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>low-back-pain-spine-function-continuity/</code> 研究腰背痛、脊柱功能、工作活动负荷、影像与转诊、康复可及和复发预防如何影响主体持续性。
+
+<blockquote>核心问题：腰背痛是高频、复发、跨年龄和跨职业的行动能力断点；它通过疼痛、恐惧回避、工作限制和医疗路径摩擦持续吞噬有效时间。
+</blockquote>
+== 先验位置 ==
+
+<pre>有效永生 / 主体持续性最大化
+  -> 主体需要稳定移动、坐立、弯腰、搬运和工作参与能力
+  -> 腰背痛会造成行动受限、任务中断、医疗利用和复发风险
+  -> 结果取决于危险信号识别、保守治疗可及、康复、工作设计和复发预防
+  -> 因此腰背痛是脊柱功能和长期执行能力的关键维护域</pre>
+== 关注对象 ==
+
+* Low back pain、spine function、red flags、physical therapy access、activity continuation、work modification、imaging overuse risk、recurrence prevention。
+* 与 <code>musculoskeletal-integrity/</code> 的边界：该域关注肌骨结构总问题；本域聚焦腰背痛这个高频任务执行断点。
+* 与 <code>chronic-pain-functional-restoration-continuity/</code> 的关系：腰背痛可进入慢性疼痛系统，但需要单独处理脊柱功能、工作负荷和复发路径。
+
+<span id="human-infra-模型链路"></span>
+== Human Infra 模型链路 ==
+
+<pre>腰背痛脊柱功能维护系统 T
+  -> 改变疼痛、活动耐受、工作负荷、康复可及、影像路径和复发预防变量 X
+  -> 改变移动能力、工作参与、睡眠、医疗摩擦和恐惧回避状态 S
+  -> 改变有效时间损耗、失能风险、收入连续性和慢性疼痛转化 λ(t)
+  -> 影响主体长期行动半径、任务完成能力和未来选择权</pre>
+== 非目标 ==
+
+* 不提供个人腰背痛诊断、影像判读、康复动作、拉伸、药物、注射、手术、红旗分诊或工作限制建议。
+* 不生成治疗计划、运动计划、复工判断、设备购买、保险或工伤建议。
+* 不收集个案疼痛、影像、神经症状、职业暴露、工伤或医疗记录。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* NIAMS back pain: https://www.niams.nih.gov/health-topics/back-pain
+* CDC musculoskeletal pain and work-related health signals: https://www.cdc.gov/niosh/musculoskeletal/
+* WHO musculoskeletal health: https://www.who.int/news-room/fact-sheets/detail/musculoskeletal-conditions
+
+== 下一步 ==
+
+* 建立 Spine Function Card：duration, red-flag routing, activity limitation, work exposure, rehabilitation access, recurrence prevention。
+* 与 <code>musculoskeletal-integrity/</code>、<code>chronic-pain-functional-restoration-continuity/</code> 和 <code>workplace-accommodation-return-to-work-continuity/</code> 建立接口。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C2研究域|C2研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c2-source-maintenance/low-back-pain-spine-function-continuity/README.md Human Infra 仓库：domains/c2-source-maintenance/low-back-pain-spine-function-continuity/README.md]
+
+[[Category:C2研究域]]

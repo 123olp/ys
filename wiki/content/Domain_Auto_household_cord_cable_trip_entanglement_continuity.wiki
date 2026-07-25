@@ -1,0 +1,84 @@
+{{研究域
+|域 ID=domain.household-cord-cable-trip-entanglement-continuity
+|C 层级=C5：可能性生态承载层
+|研究对象=Household Cord Cable Trip Entanglement Continuity
+|持续性作用=关键词显示该域主要承载能源、水、食物、住房、治理、经济、通信、灾害或基础设施环境。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c5-ecological-substrate/household-cord-cable-trip-entanglement-continuity
+}}
+
+'''Household Cord Cable Trip Entanglement Continuity'''是 Human Infra 在“外部生态承载”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要承载能源、水、食物、住房、治理、经济、通信、灾害或基础设施环境。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C5“可能性生态承载层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>household-cord-cable-trip-entanglement-continuity</code> 研究充电线、延长线、插排、网线、设备线缆、临时供电和穿越通道的线缆如何影响绊倒、缠绕、供电可靠性和家庭任务连续性。
+
+<blockquote>核心问题：线缆是数字生活、照护设备和家庭办公的底层连接，但当它穿越路径、堆积床边或承担长期临时供电时，也会变成绊倒、缠绕、火灾和设备失效的隐形接口。
+</blockquote>
+== 关注对象 ==
+
+* 手机/电脑充电线、延长线、插排、电源适配器、网线、医疗/辅助设备线缆、电视/游戏设备线缆和临时布线。
+* 床边、办公桌下、厨房、走道、楼梯口、儿童游戏区、宠物活动区和夜间路径中的线缆暴露。
+* 线缆管理如何影响跌倒、儿童/宠物缠绕、设备断电、清洁绕行、火灾边界和家庭协作。
+* 与住宅电气安全、家庭办公、人因工效、照护设备供电和个人设备维护的接口。
+
+<span id="human-infra-链路"></span>
+== Human Infra 链路 ==
+
+<pre>家庭线缆路径可治理
+  -> 通道绊倒、缠绕、设备断电和过载暴露下降
+  -> 充电、联网、照护设备、家庭办公和夜间行动更稳定
+  -> 任务中断、伤害窗口、清洁摩擦和设备失效减少
+  -> 主体数字连接、行动安全和居家执行连续性提高</pre>
+== 非目标 ==
+
+* 不提供电气维修、布线施工、延长线容量计算、产品推荐、插排改造、火灾处置、触电处理、宠物/儿童监控或现场安全认证。
+* 不替代 CPSC、USFA、地方消防、电工、物业、设备厂商、医疗设备供应商或公共安全机构。
+* 不把线缆管理写成美观整理教程；只讨论路径、供电、绊倒、缠绕和任务连续性的关系。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* CPSC Recalls: https://www.cpsc.gov/Recalls
+* USFA Appliance and Electrical Fire Safety: https://www.usfa.fema.gov/prevention/home-fires/prevent-fires/appliance-and-electrical/
+* CDC STEADI Check for Safety: https://www.cdc.gov/steadi/pdf/STEADI-Brochure-CheckForSafety-508.pdf
+
+== 下一步 ==
+
+* 建立 <code>cord routing -&gt; path exposure / power reliability -&gt; task failure -&gt; continuity outcome</code> 变量表。
+* 区分绊倒线缆、长期临时供电、设备断电、过载风险、儿童/宠物缠绕和医疗设备供电。
+* 与 <code>residential-electrical-wiring-outlet-safety-continuity</code>、<code>home-office-workstation-ergonomics-continuity</code> 和 <code>personal-device-charging-power-bank-continuity</code> 建立边界。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C5研究域|C5研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c5-ecological-substrate/household-cord-cable-trip-entanglement-continuity/README.md Human Infra 仓库：domains/c5-ecological-substrate/household-cord-cable-trip-entanglement-continuity/README.md]
+
+[[Category:C5研究域]]

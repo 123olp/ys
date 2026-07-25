@@ -1,0 +1,87 @@
+{{研究域
+|域 ID=domain.pet-disaster-evacuation-sheltering-continuity
+|C 层级=C5：可能性生态承载层
+|研究对象=Pet Disaster Evacuation Sheltering Continuity
+|持续性作用=关键词显示该域主要承载能源、水、食物、住房、治理、经济、通信、灾害或基础设施环境。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c5-ecological-substrate/pet-disaster-evacuation-sheltering-continuity
+}}
+
+'''Pet Disaster Evacuation Sheltering Continuity'''是 Human Infra 在“外部生态承载”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要承载能源、水、食物、住房、治理、经济、通信、灾害或基础设施环境。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C5“可能性生态承载层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+Pet Disaster Evacuation Sheltering Continuity 研究宠物和服务动物如何影响灾害准备、撤离、避难、家庭团聚和恢复连续性。
+
+<blockquote>核心问题：如果灾害计划不承认宠物，很多家庭会延迟撤离、拒绝避难或在恢复期失去关键关系支持。
+</blockquote>
+== 研究对象 ==
+
+* 宠物灾害准备、撤离运输、避难接纳、宠物物资、疫苗/身份记录、服务动物优先边界和家庭团聚。
+* 宠物限制如何影响撤离决策、庇护所选择、交通、住房恢复、儿童压力和社会支持。
+* 灾害中动物福利、公共卫生、场所规则、隐私、失主重聚和服务动物权利边界。
+
+== 先验链路 ==
+
+<pre>灾害连续性需要家庭真实组成被计划承认
+  -> 很多家庭把宠物和服务动物视为不可分割的照护对象或辅助接口
+  -> 若撤离、交通、避难和恢复系统不能接纳动物，主体可能延迟行动或失去支持
+  -> 动物走失、收容、疾病和物资断供会延长家庭恢复时间
+  -> 因而宠物灾害撤离与避难是家庭应急准备的独立连续性域</pre>
+== 关键变量 ==
+
+* 宠物应急包、身份资料、运输笼、食物药品、疫苗记录、避难政策、服务动物规则和重聚机制。
+* 撤离延迟、庇护所可达、低收入家庭、老年人、儿童、残障主体和多宠家庭压力。
+* 把灾害资料写成实时撤离路线、现场指挥、设施推荐或个案安全承诺的风险。
+
+== 证据入口 ==
+
+* Ready.gov Pets。
+* FEMA pet preparedness and sheltering materials。
+* CDC emergency planning for pets。
+* ADA.gov service animal emergency access context。
+
+== 非目标 ==
+
+* 本域不提供实时撤离路线、避难点推荐、现场救援、宠物运输操作、医疗急救、服务动物纠纷处理或个案灾害计划。
+* 不判断某个避难所是否接纳、不替代地方应急管理、动物控制、兽医或残障权利机构。
+* 不收集家庭地址、撤离路线、动物照片、微芯片号、残障诊断、避难位置或实时灾害状态。
+
+== 上下游 ==
+
+* 上游：<code>household-emergency-preparedness-resilience/</code>、<code>service-animal-disability-access-continuity/</code>、<code>pet-identification-microchip-reunification-continuity/</code>。
+* 下游：<code>community-resilience-hub-shelter-center-continuity/</code>、<code>disaster-recovery-relief-continuity/</code>、<code>animal-shelter-rescue-rehoming-continuity/</code>。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C5研究域|C5研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c5-ecological-substrate/pet-disaster-evacuation-sheltering-continuity/README.md Human Infra 仓库：domains/c5-ecological-substrate/pet-disaster-evacuation-sheltering-continuity/README.md]
+
+[[Category:C5研究域]]

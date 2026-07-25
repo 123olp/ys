@@ -1,0 +1,88 @@
+{{研究域
+|域 ID=domain.noise-exposure-acoustic-environment-continuity
+|C 层级=C6：局部可能性解锁层
+|研究对象=Noise Exposure Acoustic Environment Continuity
+|持续性作用=未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c6-local-unlocking/noise-exposure-acoustic-environment-continuity
+}}
+
+'''Noise Exposure Acoustic Environment Continuity'''是 Human Infra 在“局部阻塞解除”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C6“局部可能性解锁层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+噪声暴露与声环境连续性域研究：当主体持续性依赖睡眠、注意力、沟通、听觉保存和压力恢复时，环境噪声、职业噪声、交通噪声和社区声环境如何成为长期损耗条件。
+
+== 对象 ==
+
+* 交通、航空、工业、建筑、娱乐、学校、医院和居住环境中的噪声暴露。
+* 职业噪声、听力损伤、耳鸣、沟通负担、认知负荷和事故风险。
+* 噪声对睡眠、心血管压力、儿童学习、心理恢复、社交沟通和工作表现的影响。
+* 声环境监测、暴露标准、听力保护、城市设计、工作场所控制和公共风险沟通。
+* 噪声不平等：低收入住房、道路附近、机场附近、工业区和高噪声职业的结构性暴露。
+
+<span id="human-infra-价值"></span>
+== Human Infra 价值 ==
+
+噪声不是单纯舒适度问题，而是长期压缩恢复、注意力、听觉输入和沟通质量的环境变量。本域把声环境纳入主体持续性模型，避免把睡眠破坏、听力下降和认知疲劳完全归因于个人习惯。
+
+<pre>噪声暴露被识别与治理
+  -> 睡眠、听觉、沟通和压力负荷更稳定
+  -> 学习、工作、照护和恢复过程的摩擦下降
+  -> 有效时间、主体能力和长期选择权提高</pre>
+== 边界 ==
+
+本域只整理噪声暴露、声环境、听力保护、公共标准和风险治理资料。
+
+不提供：
+
+* 个体听力诊断、耳鸣治疗、助听设备选择、用药、康复训练或医疗建议。
+* 工作场所噪声合规判断、个人防护用品选择、设备采购、施工降噪、房屋隔音改造或法律索赔建议。
+* 实时环境安全判断、邻里纠纷处理、劳动争议处理、投诉策略或执法替代方案。
+* 把噪声读数、手机 App、AI 分析或单次测量写成个人健康风险、保险资格或法律结论。
+
+== 上游与下游 ==
+
+* 上游：<code>housing-built-environment-stability/</code>、<code>occupational-work-design/</code>、<code>transportation-access-mobility/</code>、<code>urban-planning-land-use-zoning-resilience/</code>。
+* 下游：<code>sleep-circadian-recovery/</code>、<code>hearing-auditory-communication-continuity/</code>、<code>attention-executive-control/</code>、<code>cardiovascular-resilience/</code>、<code>mental-health-affective-stability/</code>。
+
+== 初始资料线索 ==
+
+* WHO environmental noise guidance。
+* CDC/NIOSH occupational noise and hearing loss resources。
+* OSHA occupational noise exposure resources。
+* EPA and transportation noise materials where applicable。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C6研究域|C6研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c6-local-unlocking/noise-exposure-acoustic-environment-continuity/README.md Human Infra 仓库：domains/c6-local-unlocking/noise-exposure-acoustic-environment-continuity/README.md]
+
+[[Category:C6研究域]]

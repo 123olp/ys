@@ -1,0 +1,90 @@
+{{研究域
+|域 ID=domain.hiv-testing-prep-prevention-continuity
+|C 层级=C6：局部可能性解锁层
+|研究对象=HIV Testing PrEP Prevention Continuity
+|持续性作用=未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c6-local-unlocking/hiv-testing-prep-prevention-continuity
+}}
+
+'''HIV Testing PrEP Prevention Continuity'''是 Human Infra 在“局部阻塞解除”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C6“局部可能性解锁层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>hiv-testing-prep-prevention-continuity/</code> 研究 HIV 检测、PrEP 可及、PEP 转介、持续护理、病毒抑制、污名和隐私如何影响主体持续性。
+
+<blockquote>核心问题：HIV 领域已经从单纯死亡风险转向“预防、早检、持续治疗和传播阻断”的长期连续性问题；断点常来自可及性、污名、费用、隐私和随访。
+</blockquote>
+== 先验位置 ==
+
+<pre>有效永生 / 主体持续性最大化
+  -> 主体依赖可获得、可保密、可持续的 HIV 预防和照护入口
+  -> HIV 风险和感染状态会通过免疫、慢病管理、心理负荷、关系和制度污名改变长期路径
+  -> 结果取决于检测、PrEP/PEP 转介、ART 连续性、病毒抑制和反歧视保护
+  -> 因此 HIV 预防与持续照护是感染风险治理和权利保护的交叉域</pre>
+== 关注对象 ==
+
+* HIV testing、PrEP access、PEP referral、ART linkage, retention in care, viral suppression, U=U communication, stigma, confidentiality, insurance and pharmacy access。
+* 与 <code>sexual-health-sti-prevention-continuity/</code> 的边界：该域覆盖性健康总入口；本域聚焦 HIV 的检测、预防和持续照护链。
+* 与 <code>chronic-infectious-disease-care-continuity/</code> 的关系：HIV 是慢性感染连续照护的核心例子之一。
+
+<span id="human-infra-模型链路"></span>
+== Human Infra 模型链路 ==
+
+<pre>HIV 检测、PrEP 与持续照护系统 T
+  -> 改变检测覆盖、预防可及、治疗连接、病毒抑制、污名和隐私变量 X
+  -> 改变感染风险、免疫状态、医疗连续性、关系安全和制度暴露 S
+  -> 改变死亡风险、机会性感染、慢病负担、传播风险和有效时间 λ(t)
+  -> 影响主体身体持续性、关系选择、工作和未来计划</pre>
+== 非目标 ==
+
+* 不提供个人 HIV 风险评分、检测解释、PrEP/PEP/ART 用药、暴露后处理、伴侣建议、诊断或治疗建议。
+* 不生成个人检测周期、药物选择、保险方案、药房路径或法律建议。
+* 不收集个案性行为、伴侣、HIV 状态、用药、定位、身份或敏感健康资料。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* CDC HIV testing: https://www.cdc.gov/hiv/testing/
+* CDC PrEP clinical guidance: https://www.cdc.gov/hivnexus/hcp/prep/
+* USPSTF HIV screening: https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/human-immunodeficiency-virus-hiv-infection-screening
+* USPSTF PrEP: https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/prevention-of-human-immunodeficiency-virus-hiv-infection-pre-exposure-prophylaxis
+
+== 下一步 ==
+
+* 建立 HIV Continuity Card：testing, PrEP/PEP access, linkage, retention, viral suppression, confidentiality, stigma, cost。
+* 与 <code>sexual-health-sti-prevention-continuity/</code>、<code>chronic-infectious-disease-care-continuity/</code> 和 <code>pharmacy-benefit-formulary-prior-authorization-continuity/</code> 建立接口。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C6研究域|C6研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c6-local-unlocking/hiv-testing-prep-prevention-continuity/README.md Human Infra 仓库：domains/c6-local-unlocking/hiv-testing-prep-prevention-continuity/README.md]
+
+[[Category:C6研究域]]

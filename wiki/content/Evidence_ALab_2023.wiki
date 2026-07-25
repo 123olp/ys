@@ -1,0 +1,18 @@
+{{证据来源
+|来源 ID=evidence.nature.a-lab-2023
+|来源类型=同行评审自动化实验研究
+|完整引文=Szymanski NJ, et al. An autonomous laboratory for the accelerated synthesis of inorganic materials. Nature. 2023.
+|URL 或 DOI=https://www.nature.com/articles/s41586-023-06734-w
+|支持范围=机器学习、机器人、测量和主动学习组成材料实验闭环
+|不支持的推论=不支持无人科研已全面超过人类或材料均为世界首次发现
+|审查状态=已核对论文与更正后的结果表述
+|访问日期=2026-07-24
+}}
+
+== 支持范围 ==
+
+支持自动化科研闭环已经能在限定材料空间内持续执行实验、分析结果和更新方案。
+
+== 不支持的推论 ==
+
+论文记录了大量失败路线和人工复核需求，不能据此推出通用自主科学家或奇点。

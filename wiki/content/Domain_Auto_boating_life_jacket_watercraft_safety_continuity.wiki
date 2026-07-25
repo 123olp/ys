@@ -1,0 +1,80 @@
+{{研究域
+|域 ID=domain.boating-life-jacket-watercraft-safety-continuity
+|C 层级=C5：可能性生态承载层
+|研究对象=Boating Life Jacket Watercraft Safety Continuity
+|持续性作用=关键词显示该域主要承载能源、水、食物、住房、治理、经济、通信、灾害或基础设施环境。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c5-ecological-substrate/boating-life-jacket-watercraft-safety-continuity
+}}
+
+'''Boating Life Jacket Watercraft Safety Continuity'''是 Human Infra 在“外部生态承载”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要承载能源、水、食物、住房、治理、经济、通信、灾害或基础设施环境。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C5“可能性生态承载层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>boating-life-jacket-watercraft-safety-continuity/</code> 研究休闲船艇、个人水上载具、救生衣、酒精暴露、天气水况和事故报告如何影响水上活动中的主体持续性。
+
+<blockquote>核心问题：船艇安全把交通、天气、设备、判断力和水域救援连接成一条高后果行动链。
+</blockquote>
+== 先验位置 ==
+
+<pre>主体要持续行动
+  -> 必须在水上移动中维持浮力、方向、判断和救援可达
+  -> 船艇活动同时暴露于机械、天气、酒精、碰撞和落水风险
+  -> 因而水上载具安全是娱乐移动中的持续性边界</pre>
+== 关注对象 ==
+
+* 休闲船艇、个人水上载具、救生衣、操作员培训、天气水况、酒精、乘员、事故报告和公共执法教育。
+* 儿童、不会游泳者、船艇乘员、钓鱼/划船/水上运动参与者。
+
+<span id="human-infra-模型链路"></span>
+== Human Infra 模型链路 ==
+
+<pre>船艇与救生衣安全 T
+  -> 改变浮力保护、操作判断、天气暴露、酒精、载具稳定、通信和救援变量 X
+  -> 改变水上移动、落水和事故后存活状态 S
+  -> 改变溺水、创伤、低温、失踪和救援延迟风险 λ(t)
+  -> 改变行动半径、休闲恢复、家庭系统和未来选择权</pre>
+== 非目标 ==
+
+* 不提供船艇驾驶、航线、天气判断、救援动作、装备选择、儿童活动许可、法律合规、保险或个体安全建议。
+* 不收集船只登记、定位轨迹、事故细节、健康状态、乘员名单或个人活动计划。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* U.S. Coast Guard Boating Safety: https://www.uscgboating.org/
+* U.S. Coast Guard boating statistics: https://www.uscgboating.org/statistics/
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C5研究域|C5研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c5-ecological-substrate/boating-life-jacket-watercraft-safety-continuity/README.md Human Infra 仓库：domains/c5-ecological-substrate/boating-life-jacket-watercraft-safety-continuity/README.md]
+
+[[Category:C5研究域]]

@@ -1,0 +1,85 @@
+{{研究域
+|域 ID=domain.cloud-backup-file-sync-data-portability-continuity
+|C 层级=C4：可能性转换通道层
+|研究对象=Cloud Backup File Sync Data Portability Continuity
+|持续性作用=关键词显示该域主要处理研究、数据、模型、服务入口、身份记录、转化或治理接口。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c4-conversion-channel/cloud-backup-file-sync-data-portability-continuity
+}}
+
+'''Cloud Backup File Sync Data Portability Continuity'''是 Human Infra 在“路径转换接口”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要处理研究、数据、模型、服务入口、身份记录、转化或治理接口。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C4“可能性转换通道层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>cloud-backup-file-sync-data-portability-continuity</code> 研究云存储、文件同步、备份恢复、版本历史、数据导出、格式迁移和供应商可携带如何影响主体资料、作品、证据和长期记忆连续。
+
+<blockquote>核心问题：个人和组织资料已经从本地文件变成跨设备、跨平台、跨格式的数据流；备份和可携带失败会直接摧毁记忆、证据、作品和恢复能力。
+</blockquote>
+== 关注对象 ==
+
+* Cloud storage、file sync、backup、version history、trash retention、offline copies、device restore 和 ransomware recovery。
+* Data export、takeout、interoperability、format migration、metadata preservation、access logs 和 shared folder ownership。
+* 供应商停服、账号停权、同步冲突、误删、勒索软件、共享权限错误、失能/死亡后访问和长期格式失效。
+* 与个人档案、研究资料、工作交接、医疗/法律/金融证据和数字遗产的关系。
+
+<span id="human-infra-链路"></span>
+== Human Infra 链路 ==
+
+<pre>云备份与数据可携带连续
+  -> 文件、作品、证据、记忆和元数据拥有可恢复副本与可导出路径
+  -> 误删、勒索、账号停权、设备损坏和供应商锁定导致的资料损失下降
+  -> 学习、工作、医疗、法律、财务和长期记忆恢复能力增强
+  -> 主体历史连续、行动连续和未来选择权增强</pre>
+== 非目标 ==
+
+* 不提供个人账号恢复、云盘绕过、文件解密、勒索软件谈判、取证、备份方案购买、版权规避或平台迁移操作建议。
+* 不替代云服务商、组织 IT、安全团队、律师、取证人员、数字遗产执行人或官方支持渠道。
+* 不收集或处理云账号、文件内容、访问令牌、备份密钥、共享链接、日志、个人资料或敏感证据。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* CISA ransomware and backup resilience guidance: https://www.cisa.gov/stopransomware
+* NIST Cybersecurity Framework and data recovery concepts: https://www.nist.gov/cyberframework
+* Data Transfer Project / Data Transfer Initiative portability materials: https://dtinit.org/
+* Library of Congress digital preservation resources: https://www.loc.gov/preservation/
+
+== 下一步 ==
+
+* 建立 <code>file state -&gt; backup/version -&gt; export/format -&gt; recovery -&gt; continuity</code> 变量表。
+* 区分同步、备份、归档、导出和长期保存这些不同能力。
+* 与 <code>long-term-digital-preservation-format-migration</code>、<code>life-logging-personal-archives-continuity</code>、<code>digital-legacy-data-succession</code> 和 <code>email-account-recovery-continuity</code> 建立边界。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C4研究域|C4研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c4-conversion-channel/cloud-backup-file-sync-data-portability-continuity/README.md Human Infra 仓库：domains/c4-conversion-channel/cloud-backup-file-sync-data-portability-continuity/README.md]
+
+[[Category:C4研究域]]

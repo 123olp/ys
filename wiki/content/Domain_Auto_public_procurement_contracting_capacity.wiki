@@ -1,0 +1,96 @@
+{{研究域
+|域 ID=domain.public-procurement-contracting-capacity
+|C 层级=C4：可能性转换通道层
+|研究对象=Public Procurement Contracting Capacity
+|持续性作用=关键词显示该域主要处理研究、数据、模型、服务入口、身份记录、转化或治理接口。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c4-conversion-channel/public-procurement-contracting-capacity
+}}
+
+'''Public Procurement Contracting Capacity'''是 Human Infra 在“路径转换接口”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要处理研究、数据、模型、服务入口、身份记录、转化或治理接口。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C4“可能性转换通道层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>public-procurement-contracting-capacity/</code> 研究公共采购、合同、供应商管理、透明度和应急采购如何决定公共资源能否转化为真实服务。
+
+<blockquote>核心问题：政府和公共机构是否能把预算、需求和政策目标转化为可靠采购、合同执行、交付验收和公众可用服务。
+</blockquote>
+== 先验位置 ==
+
+<pre>有效永生 / 主体持续性最大化
+  -> 大量医疗、住房、交通、教育、应急、福利和基础设施能力由公共采购转化
+  -> 有预算不等于有服务，有政策不等于有交付
+  -> 采购、合同、供应商、验收、透明度和问责决定公共能力是否落地
+  -> 如果公共采购失败，主体会面对服务延迟、质量低下、腐败、断供和恢复失败</pre>
+== 关注对象 ==
+
+* 公共采购制度、合同管理、招标、供应商管理、应急采购、框架协议、透明度和审计。
+* 医疗、应急、基础设施、数字服务、教育、交通、住房、食品、水、能源和社会服务采购。
+* 采购能力、合同执行、交付验收、公开数据、腐败风险、供应商集中和公共价值。
+* 与 <code>public-service-design-accessibility/</code> 的边界：公共服务设计关注用户能否完成任务；本域关注服务背后的采购和合同执行能力。
+* 与 <code>civic-data-open-government-transparency/</code> 的边界：开放数据域关注可观察和问责；本域关注采购制度和合同交付本身。
+
+<span id="human-infra-模型链路"></span>
+== Human Infra 模型链路 ==
+
+<pre>公共采购与合同能力可靠
+  -> 预算、需求和政策目标可转化为供应商选择、合同交付和服务验收
+  -> 医疗、应急、基础设施、数字服务和社会支持更稳定
+  -> 腐败、断供、劣质交付、延误和应急采购失灵下降
+  -> 公共资源更可能抵达主体并形成真实支持
+  -> 主体持续性、恢复能力和未来选择权提高</pre>
+== 非目标 ==
+
+* 不提供投标策略、围标、串标、供应商规避、采购套利、腐败、利益输送或合同操控方法。
+* 不提供具体政府采购项目的法律、商业、税务、报价、资格或中标建议。
+* 不替代律师、采购官、审计人员、合规人员或公共机构判断。
+* 不把采购效率、最低价或供应商集中写成公共价值的唯一标准。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* OECD Public Procurement：公共采购治理、透明度、价值和完整性。
+* OECD Recommendation on Public Procurement：采购制度原则。
+* World Bank Procurement：项目和计划采购、采购框架和能力建设。
+* MAPS：公共采购系统评估方法。
+* SAM.gov / USAspending.gov：美国公共采购、合同和支出公开入口。
+
+== 下一步 ==
+
+* 建立 Source Card：OECD、World Bank Procurement、MAPS、SAM.gov、USAspending.gov。
+* 梳理变量：采购周期、供应商集中、合同绩效、应急采购速度、透明度、投诉、审计发现、交付失败率。
+* 绘制跨域接口：公共服务设计、开放政府、应急响应、医疗服务、供应链、制造维修和社会保护。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C4研究域|C4研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c4-conversion-channel/public-procurement-contracting-capacity/README.md Human Infra 仓库：domains/c4-conversion-channel/public-procurement-contracting-capacity/README.md]
+
+[[Category:C4研究域]]

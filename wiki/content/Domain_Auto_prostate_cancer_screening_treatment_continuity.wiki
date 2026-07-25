@@ -1,0 +1,89 @@
+{{研究域
+|域 ID=domain.prostate-cancer-screening-treatment-continuity
+|C 层级=C2：可能性源体维护层
+|研究对象=Prostate Cancer Screening Treatment Continuity
+|持续性作用=关键词显示该域主要维护身体、脑、器官、细胞、急性生命风险或衰老损伤控制。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c2-source-maintenance/prostate-cancer-screening-treatment-continuity
+}}
+
+'''Prostate Cancer Screening Treatment Continuity'''是 Human Infra 在“生命载体维护”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要维护身体、脑、器官、细胞、急性生命风险或衰老损伤控制。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C2“可能性源体维护层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>prostate-cancer-screening-treatment-continuity/</code> 研究前列腺癌 PSA 筛查争议、风险分层、主动监测、治疗副作用、泌尿/性功能、心理负担和生活质量如何影响主体持续性。
+
+<blockquote>核心问题：前列腺癌连续性不是“筛查越多越好”；它需要同时处理早发现、过度诊断、治疗伤害、主动监测焦虑和男性健康沟通断点。
+</blockquote>
+== 先验位置 ==
+
+<pre>有效永生 / 主体持续性最大化
+  -> 主体依赖高发癌种被合理分层而不过度伤害
+  -> 前列腺癌筛查和治疗选择改变死亡风险、尿控/性功能、焦虑和生活质量
+  -> 风险分层、主动监测、治疗副作用管理和共享决策决定净持续性收益
+  -> 因此前列腺癌是癌症连续性中的收益伤害权衡域</pre>
+== 关注对象 ==
+
+* Prostate cancer screening, PSA controversy, risk stratification, active surveillance, treatment side effects, urinary function, sexual function, shared decision-making。
+* 与 <code>cancer-screening-early-detection-continuity/</code> 的边界：本域专注前列腺癌特有的筛查争议、过度诊断和功能副作用。
+* 与 <code>urogenital-continuity/</code> 和 <code>sexual-health-sti-prevention-continuity/</code> 的关系：治疗后尿控和性功能是主体连续性的关键变量。
+
+<span id="human-infra-模型链路"></span>
+== Human Infra 模型链路 ==
+
+<pre>前列腺癌连续性系统 T
+  -> 改变 PSA 筛查、风险分层、主动监测、治疗副作用、尿控/性功能和共享决策变量 X
+  -> 改变癌症死亡风险、过度诊断、焦虑、身体功能和关系状态 S
+  -> 改变死亡、治疗后功能损失、心理负担和有效时间损失 λ(t)
+  -> 影响主体健康寿命、尊严、关系安全和未来选择权</pre>
+== 非目标 ==
+
+* 不提供 PSA 判读、筛查决策、活检建议、影像/病理解释、分期、主动监测、治疗方案、用药、手术、放疗或个体建议。
+* 不生成个人前列腺癌风险计算器、PSA 解释器、治疗排序、性功能方案或商业检测推广。
+* 不收集个案 PSA、MRI、病理、尿控、性功能、症状或治疗资料。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* NCI prostate cancer: https://www.cancer.gov/types/prostate
+* NCI prostate cancer screening: https://www.cancer.gov/types/prostate/screening
+* CDC prostate cancer: https://www.cdc.gov/prostate-cancer/
+
+== 下一步 ==
+
+* 建立 Prostate Cancer Continuity Card：screening controversy, risk stratification, active surveillance, treatment burden, urinary / sexual function, shared decision。
+* 与 <code>cancer-control/</code>、<code>urogenital-continuity/</code> 和 <code>cancer-survivorship-late-effects-continuity/</code> 建立接口。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C2研究域|C2研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c2-source-maintenance/prostate-cancer-screening-treatment-continuity/README.md Human Infra 仓库：domains/c2-source-maintenance/prostate-cancer-screening-treatment-continuity/README.md]
+
+[[Category:C2研究域]]

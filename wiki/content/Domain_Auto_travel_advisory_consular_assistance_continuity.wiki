@@ -1,0 +1,87 @@
+{{研究域
+|域 ID=domain.travel-advisory-consular-assistance-continuity
+|C 层级=C6：局部可能性解锁层
+|研究对象=旅行警示与领事协助连续性
+|持续性作用=未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c6-local-unlocking/travel-advisory-consular-assistance-continuity
+}}
+
+'''旅行警示与领事协助连续性'''是 Human Infra 在“局部阻塞解除”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C6“局部可能性解锁层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+本域研究旅行警示、海外登记、领事协助、紧急护照、海外医疗/逮捕/死亡/危机协助和海外通信如何影响跨境主体的安全与选择权。它关注的是国家边界外的制度求助链，而不是旅行安全建议、撤离路线或法律策略。
+
+== 研究对象 ==
+
+* Travel Advisory、STEP、海外使领馆、紧急协助、紧急护照、危机通信和海外联系。
+* 海外医疗、事故、死亡、逮捕、失踪、灾害、冲突和证件丢失时的制度性断点。
+* 旅行警示如何影响保险、雇主/学校安排、家庭联络、行程决策和风险边界。
+* 领事协助的能力边界、不可承诺事项、隐私同意和家庭通知。
+
+== 价值链路 ==
+
+<pre>跨境移动把主体放入不熟悉的法律、医疗和安全环境
+  -> 旅行警示和领事登记把外部风险、危机通信和求助入口提前接入主体计划
+  -> 海外突发事件中，领事协助、紧急证件和家庭通信决定主体是否仍能被定位、承认和恢复
+  -> 若警示失读、登记缺失或求助边界被误解，跨境风险会放大为身份、医疗、自由和家庭断裂
+  -> 旅行警示与领事协助连续性把海外风险治理纳入主体持续性基础设施</pre>
+== 关键问题 ==
+
+* 旅行警示、STEP 和领事协助如何影响跨境风险识别与求助链？
+* 海外医疗、逮捕、死亡、失踪、灾害和证件丢失如何改变主体连续性？
+* 领事协助能做什么、不能做什么，如何避免虚假安全感？
+* 如何把官方警示作为风险资料，而不是具体出行、撤离或法律行动建议？
+
+== 上游与下游 ==
+
+* 上游：<code>passport-travel-document-mobility-continuity/</code>、<code>long-distance-travel-booking-itinerary-continuity/</code>、<code>travel-health-preparedness-continuity/</code>。
+* 下游：<code>customs-border-entry-declaration-continuity/</code>、<code>disaster-recovery-relief-continuity/</code>、<code>armed-conflict-civilian-protection-ihl/</code>。
+
+== 非目标 ==
+
+* 不提供旅行安全、撤离路线、冲突地区行动、海外法律、签证、移民、逮捕处置、医疗转运、保险理赔或个案领事建议。
+* 不判断个人是否应旅行、是否应撤离、是否安全、是否能获得领事协助或是否可入境。
+* 不收集护照号、海外位置、行程、家属信息、报警记录、医疗记录或领事案件资料。
+
+== 初始资料入口 ==
+
+* U.S. Department of State: Travel Advisories
+* Smart Traveler Enrollment Program (STEP)
+* U.S. Department of State: Emergency Assistance for U.S. Citizens Abroad
+* U.S. Embassies and Consulates public materials as contextual sources
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C6研究域|C6研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c6-local-unlocking/travel-advisory-consular-assistance-continuity/README.md Human Infra 仓库：domains/c6-local-unlocking/travel-advisory-consular-assistance-continuity/README.md]
+
+[[Category:C6研究域]]

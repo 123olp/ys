@@ -1,0 +1,91 @@
+{{研究域
+|域 ID=domain.child-care-subsidy-ccdf-payment-continuity
+|C 层级=C5：可能性生态承载层
+|研究对象=Child Care Subsidy CCDF Payment Continuity
+|持续性作用=关键词显示该域主要承载能源、水、食物、住房、治理、经济、通信、灾害或基础设施环境。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c5-ecological-substrate/child-care-subsidy-ccdf-payment-continuity
+}}
+
+'''Child Care Subsidy CCDF Payment Continuity'''是 Human Infra 在“外部生态承载”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要承载能源、水、食物、住房、治理、经济、通信、灾害或基础设施环境。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C5“可能性生态承载层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>child-care-subsidy-ccdf-payment-continuity/</code> 研究 CCDF 与托育补贴、资格、授权、续期、支付、家庭共付和行政负担如何决定家庭是否能持续负担照护。
+
+<blockquote>核心问题：托育补贴不是抽象福利，而是把家庭收入、儿童照护、父母工作和服务供给连接起来的支付连续性系统。
+</blockquote>
+== 先验位置 ==
+
+<pre>有效永生 / 主体持续性最大化
+  -> 托育费用可能吞噬家庭收入和照护者工作收益
+  -> 补贴、授权、续期和支付必须稳定抵达家庭与 provider
+  -> 行政负担和支付中断必须被识别
+  -> 家庭才能维持照护、就业、学习和恢复连续性</pre>
+== 关注对象 ==
+
+* CCDF、托育补贴、资格规则、redetermination、家庭共付、provider payment、授权与等待。
+* 申请摩擦、续期流失、支付延迟、provider 参与、家庭负担和服务稳定性。
+* 与 <code>social-protection-benefits-delivery/</code>、<code>administrative-burden-procedural-friction/</code>、<code>child-care-availability-affordability-continuity/</code> 和 <code>financial-resilience-access/</code> 的接口。
+
+<span id="human-infra-模型链路"></span>
+== Human Infra 模型链路 ==
+
+<pre>托育费用压力
+  -> 补贴资格、授权、续期、共付和 provider 支付
+  -> 家庭现金流和托育服务稳定性改善
+  -> 父母工作学习连续性和儿童稳定照护提高
+  -> 家庭未来选择权和风险缓冲增强</pre>
+== 非目标 ==
+
+* 不判断个体补贴资格、申请策略、材料准备、申诉、税务、法律或移民问题。
+* 不提供虚假材料、资格规避、收入规避、支付套利或 provider payment 操作建议。
+* 不收集家庭收入、儿童身份、补贴材料、税务记录、雇佣证明或账号凭据。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* ACF Office of Child Care: https://www.acf.hhs.gov/occ
+* Child Care and Development Fund: https://www.acf.hhs.gov/occ/programs/ccdf
+* ChildCare.gov: https://childcare.gov/
+* National Survey of Early Care and Education: https://www.acf.hhs.gov/opre/project/national-survey-early-care-and-education-2019-2017-2022
+
+== 下一步 ==
+
+* 建立变量表：资格、授权、续期、共付、支付时间、provider 参与、行政负担和服务中断。
+* 整理 ACF OCC、CCDF、ChildCare.gov 和 NSECE Source Cards。
+* 与 <code>social-protection-benefits-delivery/</code> 区分：本域只处理托育补贴和支付连续性。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C5研究域|C5研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c5-ecological-substrate/child-care-subsidy-ccdf-payment-continuity/README.md Human Infra 仓库：domains/c5-ecological-substrate/child-care-subsidy-ccdf-payment-continuity/README.md]
+
+[[Category:C5研究域]]

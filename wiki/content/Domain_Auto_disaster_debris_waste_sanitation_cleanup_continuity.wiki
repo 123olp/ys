@@ -1,0 +1,84 @@
+{{研究域
+|域 ID=domain.disaster-debris-waste-sanitation-cleanup-continuity
+|C 层级=C5：可能性生态承载层
+|研究对象=Disaster Debris Waste Sanitation Cleanup Continuity
+|持续性作用=关键词显示该域主要承载能源、水、食物、住房、治理、经济、通信、灾害或基础设施环境。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c5-ecological-substrate/disaster-debris-waste-sanitation-cleanup-continuity
+}}
+
+'''Disaster Debris Waste Sanitation Cleanup Continuity'''是 Human Infra 在“外部生态承载”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要承载能源、水、食物、住房、治理、经济、通信、灾害或基础设施环境。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C5“可能性生态承载层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>disaster-debris-waste-sanitation-cleanup-continuity/</code> 研究灾后碎片废弃物、建筑残骸、污染物、卫生垃圾、清理协调和公共卫生风险如何影响主体返回、修复和恢复。
+
+<blockquote>核心问题：灾后废弃物不是背景噪声，而是道路、住房、饮水、空气、感染、伤害和心理恢复的瓶颈；清理失败会让可返回空间继续不可行动。
+</blockquote>
+== 先验位置 ==
+
+<pre>有效永生 / 主体持续性最大化
+  -> 主体恢复需要安全道路、可进入住房、卫生环境和可工作的公共空间
+  -> 灾害产生建筑残骸、危险废物、污水、腐败物、粉尘和尖锐物
+  -> 废弃物清理决定返回、修复、交通、供水和公共卫生恢复速度
+  -> 因此灾后废弃物与卫生清理是主体恢复连续性的环境域</pre>
+== 关注对象 ==
+
+* EPA natural disaster debris、FEMA Public Assistance debris removal、地方固废系统、危险废物、污水、饮用水和公共卫生清理。
+* 分类、收集、运输、处置、危险暴露、工人安全、公共通知、环境正义和二次污染。
+* 与 <code>water-sanitation-hygiene-systems</code> 的边界：该域关注长期 WASH；本域关注灾害后的清理和废弃物恢复。
+
+<span id="human-infra-模型链路"></span>
+== Human Infra 模型链路 ==
+
+<pre>灾后废弃物与卫生清理系统 T
+  -> 改变道路清通、空间可进入、污染暴露、卫生和修复速度变量 X
+  -> 改变主体返回与环境安全状态 S
+  -> 改变伤害、感染、污染、住房延迟和经济恢复失败风险 λ(t)
+  -> 影响恢复窗口、有效时间和长期选择权</pre>
+== 非目标 ==
+
+* 不提供个人清理操作、危险废物处理、霉菌移除、结构安全判断、承包商建议或现场防护指导。
+* 不收集房屋位置、污染类型、废弃物清单、承包商信息或保险资料。
+* 不替代 EPA、FEMA、地方固废/公共卫生部门、持证修复承包商或职业安全专业人员。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* EPA Planning for Natural Disaster Debris: https://www.epa.gov/homeland-security-waste/planning-natural-disaster-debris
+* FEMA Public Assistance Debris Removal: https://www.fema.gov/assistance/public/process/debris-removal
+* CDC Cleanup and Safety After a Disaster: https://www.cdc.gov/natural-disasters/safety/index.html
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C5研究域|C5研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c5-ecological-substrate/disaster-debris-waste-sanitation-cleanup-continuity/README.md Human Infra 仓库：domains/c5-ecological-substrate/disaster-debris-waste-sanitation-cleanup-continuity/README.md]
+
+[[Category:C5研究域]]

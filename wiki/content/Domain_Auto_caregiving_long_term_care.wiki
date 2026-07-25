@@ -1,0 +1,90 @@
+{{研究域
+|域 ID=domain.caregiving-long-term-care
+|C 层级=C6：局部可能性解锁层
+|研究对象=Caregiving Long Term Care
+|持续性作用=未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c6-local-unlocking/caregiving-long-term-care
+}}
+
+'''Caregiving Long Term Care'''是 Human Infra 在“局部阻塞解除”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C6“局部可能性解锁层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>caregiving-long-term-care/</code> 研究当主体出现失能、慢病、认知衰退或生活支持需求时，照护和长期照护系统能否持续接住主体。
+
+<blockquote>核心问题：主体不只是需要治疗，还需要在长期生活中被照护、协作、替代和恢复；照护系统断裂会把可活时间变成不可行动、不可恢复或不可尊严存在的时间。
+</blockquote>
+== 先验位置 ==
+
+<pre>有效永生 / 主体持续性最大化
+  -> 主体可能经历疾病、失能、脆弱、认知退行和长期依赖
+  -> 家庭、社区、机构和专业照护必须可持续
+  -> 长寿才不会退化为无人照护、照护者崩溃或主体尊严丧失</pre>
+== 关注对象 ==
+
+* 家庭照护、长期照护、居家和社区支持、机构照护、照护协调和照护者负担。
+* ADL/IADL、失能、认知障碍、慢病管理、临终前照护和照护转移。
+* 照护资源不足、照护者倦怠、经济压力、照护中断和虐待/忽视风险。
+* 与康复、社会连接、医疗连续性、公共福利和住房环境的接口。
+
+<span id="human-infra-模型链路"></span>
+== Human Infra 模型链路 ==
+
+<pre>照护与长期照护
+  -> 失能、慢病、脆弱和认知退行被日常支持系统接住
+  -> 生活活动、用药、就医、营养、卫生、沟通和安全不被中断
+  -> 有效时间、尊严、恢复机会和社会参与被保留
+  -> 主体持续性从单纯生存转化为可行动、可感知、可被支持的存在</pre>
+== 非目标 ==
+
+* 不制定个体照护计划、护理操作、医学处理、用药或安全处置。
+* 不提供保险、福利、长期照护机构、法律监护或财务规划建议。
+* 不把照护技术写成替代关系、同意、尊严和专业服务的万能方案。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* NIA Caregiving: https://www.nia.nih.gov/health/caregiving
+* NIA Long-Term Care: https://www.nia.nih.gov/health/caregiving/long-term-care
+* WHO Ageing and Health: https://www.who.int/news-room/fact-sheets/detail/ageing-and-health
+
+== 下一步 ==
+
+* 建立照护连续性变量表：照护强度、照护者负担、ADL/IADL、服务可及、转移风险和照护质量。
+* 整理长期照护、家庭照护、居家社区服务和照护者健康的 Source Cards。
+* 明确与 <code>social-connection-relational-infra/</code>、<code>rehabilitation-functioning/</code> 和 <code>housing-built-environment-stability/</code> 的交叉边界。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C6研究域|C6研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c6-local-unlocking/caregiving-long-term-care/README.md Human Infra 仓库：domains/c6-local-unlocking/caregiving-long-term-care/README.md]
+
+[[Category:C6研究域]]

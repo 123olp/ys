@@ -1,0 +1,88 @@
+{{研究域
+|域 ID=domain.radon-asbestos-indoor-hazard-continuity
+|C 层级=C6：局部可能性解锁层
+|研究对象=Radon Asbestos Indoor Hazard Continuity
+|持续性作用=未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c6-local-unlocking/radon-asbestos-indoor-hazard-continuity
+}}
+
+'''Radon Asbestos Indoor Hazard Continuity'''是 Human Infra 在“局部阻塞解除”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C6“局部可能性解锁层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+氡、石棉与室内长期危害连续性域研究：当主体持续性依赖可居住空间和长期肺部风险控制时，氡、石棉及其他建筑遗留危害如何通过住房、学校、工作场所和公共建筑制造慢性风险。
+
+== 对象 ==
+
+* 氡进入住宅、学校、地下空间和工作场所后的长期暴露风险。
+* 石棉建筑材料、老旧建筑、维护翻新、拆除、学校/公共建筑和职业暴露。
+* 肺癌、间皮瘤、慢性呼吸负担、暴露不平等和长期潜伏期风险。
+* 建筑年代、通风、地质、材料、监管、检测、缓解、维护记录和公共沟通。
+* 租户、房主、学生、工人、维护人员和低收入家庭的风险差异。
+
+<span id="human-infra-价值"></span>
+== Human Infra 价值 ==
+
+主体持续性需要一个不会持续积累不可见肺部风险的空间。氡和石棉说明，居住空间本身可能成为长期损耗机器；只有检测、治理、监管和维护记录形成闭环，住房才是真正的基础设施。
+
+<pre>室内长期危害被识别、记录和治理
+  -> 慢性肺部与癌症相关风险暴露下降
+  -> 住房、学校和工作场所的长期安全性提高
+  -> 健康寿命、有效时间和居住选择权提高</pre>
+== 边界 ==
+
+本域只整理氡、石棉、室内长期危害、建筑资料、监管和公共治理边界。
+
+不提供：
+
+* 个体检测解读、医疗诊断、癌症风险判断、筛查建议、治疗建议或法律赔偿建议。
+* 氡检测设备购买、缓解系统设计、石棉识别、采样、拆除、封装、施工、清理、废弃物处置或承包商选择建议。
+* 房屋购买、租赁、改造、学校/单位合规、保险、诉讼、投诉策略或资产价值判断。
+* 危险材料操作、监管规避、虚假检测、记录篡改或暴露隐瞒方法。
+
+== 上游与下游 ==
+
+* 上游：<code>housing-built-environment-stability/</code>、<code>building-fire-life-safety-codes/</code>、<code>air-quality-ventilation-exposure-control/</code>、<code>occupational-exposure-industrial-hygiene/</code>。
+* 下游：<code>respiratory-oxygenation/</code>、<code>cancer-control/</code>、<code>healthcare-access-continuity/</code>、<code>insurance-risk-transfer/</code>。
+
+== 初始资料线索 ==
+
+* EPA radon resources。
+* EPA asbestos resources。
+* CDC/NIOSH occupational exposure materials where applicable。
+* State or local public-health building hazard resources where applicable。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C6研究域|C6研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c6-local-unlocking/radon-asbestos-indoor-hazard-continuity/README.md Human Infra 仓库：domains/c6-local-unlocking/radon-asbestos-indoor-hazard-continuity/README.md]
+
+[[Category:C6研究域]]

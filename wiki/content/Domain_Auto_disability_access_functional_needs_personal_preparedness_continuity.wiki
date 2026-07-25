@@ -1,0 +1,80 @@
+{{研究域
+|域 ID=domain.disability-access-functional-needs-personal-preparedness-continuity
+|C 层级=C3：可能性生成引擎层
+|研究对象=Disability Access Functional Needs Personal Preparedness Continuity
+|持续性作用=关键词显示该域主要增强认知、学习、工具、AI、技能或沟通能力。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c3-generation-engine/disability-access-functional-needs-personal-preparedness-continuity
+}}
+
+'''Disability Access Functional Needs Personal Preparedness Continuity'''是 Human Infra 在“主体能力生成”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要增强认知、学习、工具、AI、技能或沟通能力。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C3“可能性生成引擎层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>disability-access-functional-needs-personal-preparedness-continuity/</code> 研究残障者、辅助技术用户和有功能需求主体在灾害前如何准备通信、照护、设备、运输和支持网络。
+
+<blockquote>核心问题：通用应急准备默认主体能听见、看见、行走、读懂、搬运、开车和自我管理；残障与功能需求会把这些默认能力变成必须显式设计的条件。
+</blockquote>
+== 先验位置 ==
+
+<pre>主体要在灾害中持续行动
+  -> 必须让准备方案适配真实身体、感官、认知、通信和照护条件
+  -> 通用方案若忽略功能需求，会把准备系统变成排除系统
+  -> 因而残障与功能需求准备是公平主体持续性的基础约束</pre>
+== 关注对象 ==
+
+* 无障碍通信、辅助技术、药品设备、个人支持网络、照护者、交通、服务动物、备用资料和机构交接。
+* 残障者、慢病患者、感官障碍者、认知障碍者、行动受限者、医疗设备用户和照护者。
+
+<span id="human-infra-模型链路"></span>
+== Human Infra 模型链路 ==
+
+<pre>功能需求个人准备系统 T
+  -> 改变通信、移动、设备、药物、照护、交通、服务动物和支持网络变量 X
+  -> 改变主体在灾害中的可执行状态 S
+  -> 改变被遗漏、无法撤离、设备中断、照护断裂、服务不可达和尊严损失风险 λ(t)
+  -> 改变安全退出、服务接入、恢复速度和主体控制权</pre>
+== 非目标 ==
+
+* 不提供个人残障评估、照护计划、设备选择、交通安排、医疗建议、福利申请、法律权利或登记建议。
+* 不收集残障状态、诊断、设备型号、照护者、住址、路线、服务动物、医疗记录或身份证明。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* Ready.gov disability preparedness materials: https://www.ready.gov/disability
+* FEMA disability and access functional needs materials: https://www.fema.gov/emergency-managers/practitioners/integrated-public-alert-warning-system/public-safety-officials/alerting-accessibility
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C3研究域|C3研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c3-generation-engine/disability-access-functional-needs-personal-preparedness-continuity/README.md Human Infra 仓库：domains/c3-generation-engine/disability-access-functional-needs-personal-preparedness-continuity/README.md]
+
+[[Category:C3研究域]]

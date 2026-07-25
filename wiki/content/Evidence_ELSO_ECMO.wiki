@@ -1,0 +1,16 @@
+{{证据来源
+|来源 ID=evidence.elso.ecmo-overview
+|来源类型=专业组织临床资源
+|完整引文=Extracorporeal Life Support Organization. ECMO Resources.
+|URL 或 DOI=https://www.elso.org/ecmo-resources.aspx
+|支持范围=ECMO的临床资源、注册、教育和指南入口
+|不支持的推论=不支持ECMO适合长期稳定身体替代或所有患者净获益
+|审查状态=已核对ELSO资源入口
+|访问日期=2026-07-25
+}}
+
+== 支持范围 ==
+用于界定ECMO作为体外生命支持系统的临床位置和专业治理环境。
+
+== 不支持的推论 ==
+ECMO是高资源、高风险支持技术，不是长期人工心肺的完成形态。

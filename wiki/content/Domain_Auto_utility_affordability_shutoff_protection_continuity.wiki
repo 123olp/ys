@@ -1,0 +1,91 @@
+{{研究域
+|域 ID=domain.utility-affordability-shutoff-protection-continuity
+|C 层级=C5：可能性生态承载层
+|研究对象=Utility Affordability Shutoff Protection Continuity
+|持续性作用=主要提供主体展开未来所需的基础环境、资源、治理或基础设施。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c5-ecological-substrate/utility-affordability-shutoff-protection-continuity
+}}
+
+'''Utility Affordability Shutoff Protection Continuity'''是 Human Infra 在“外部生态承载”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+主要提供主体展开未来所需的基础环境、资源、治理或基础设施。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C5“可能性生态承载层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>utility-affordability-shutoff-protection-continuity/</code> 研究电、水、燃气、热能和通信等公共事业服务在账单压力、欠费、断供、援助、分期、消费者保护和危机豁免下如何保持主体持续性。
+
+<blockquote>核心问题：服务系统存在不等于主体能持续使用。公用事业可负担性失败会让电、水、热、通信和医疗设备供能在家庭层面被切断，形成“基础设施存在但不可用”的断点。
+</blockquote>
+== 先验位置 ==
+
+<pre>有效永生 / 主体持续性最大化
+  -> 主体需要持续使用电、水、热、燃气、通信和关键家庭服务
+  -> 即使基础设施存在，账单压力、欠费、资格摩擦和断供规则也可能切断服务
+  -> 服务被切断会造成温控失败、饮水卫生失败、通信断线、医疗设备失效和家庭压力升级
+  -> 公用事业可负担性和断供保护决定基础设施能否真实到达主体</pre>
+== 关注对象 ==
+
+* 能源负担、水费负担、燃气/热能账单、通信账单、欠费、断供保护、低收入援助、分期安排、危机援助、医疗必要服务保护、消费者申诉和程序摩擦。
+* 与 <code>energy-access-resilience/</code>、<code>water-wastewater-utility-service-continuity/</code> 的边界：能源/水务域关注服务生产和可及；本域关注服务存在后是否因费用、资格、欠费和断供规则被家庭实际失去。
+* 与 <code>social-protection-benefits-delivery/</code> 的边界：社会保护域关注福利整体递送；本域聚焦 utility services 的 affordability、arrears、shutoff 和 lifeline protection。
+
+<span id="human-infra-模型链路"></span>
+== Human Infra 模型链路 ==
+
+<pre>公用事业可负担性与断供保护
+  -> 账单压力、欠费、援助入口、分期、保护规则和申诉机制可被观察
+  -> 家庭电、水、热、燃气、通信和医疗设备供能被切断的概率下降
+  -> 温控、卫生、通信、照护、学习、工作和数字服务连续性提升
+  -> 主体获得不因支付摩擦被基础设施排除的最低生命线保障</pre>
+== 非目标 ==
+
+* 不提供个体账单、断供、资格、申请、法律、债务、信用、争议、逃费、绕表或服务规避建议。
+* 不承诺任何援助项目资格、金额、时效或停止断供结果。
+* 不替代公用事业公司、监管机构、社会服务机构、法律援助、消费者保护和官方项目入口。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* ACF LIHEAP: https://www.acf.hhs.gov/ocs/programs/liheap
+* DOE Low-Income Energy Affordability Data Tool: https://www.energy.gov/scep/slsc/lead-tool
+* EPA Water Infrastructure and Resiliency Finance Center: https://www.epa.gov/waterfinancecenter
+* FCC Lifeline: https://www.fcc.gov/lifeline-consumers
+
+== 下一步 ==
+
+* 建立公用事业负担变量表：账单负担、欠费、断供率、援助可达、资格摩擦、保护规则、申诉入口和脆弱家庭。
+* 整理 LIHEAP、DOE LEAD、EPA Water Finance Center、FCC Lifeline、州监管和消费者保护公开资料卡片。
+* 与能源、水务、通信、社会保护、行政负担、住房、医疗设备、热稳态和家庭应急准备域建立接口。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C5研究域|C5研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c5-ecological-substrate/utility-affordability-shutoff-protection-continuity/README.md Human Infra 仓库：domains/c5-ecological-substrate/utility-affordability-shutoff-protection-continuity/README.md]
+
+[[Category:C5研究域]]

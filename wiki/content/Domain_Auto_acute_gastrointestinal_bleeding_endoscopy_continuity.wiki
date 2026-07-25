@@ -1,0 +1,89 @@
+{{研究域
+|域 ID=domain.acute-gastrointestinal-bleeding-endoscopy-continuity
+|C 层级=C2：可能性源体维护层
+|研究对象=Acute Gastrointestinal Bleeding Endoscopy Continuity
+|持续性作用=关键词显示该域主要维护身体、脑、器官、细胞、急性生命风险或衰老损伤控制。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c2-source-maintenance/acute-gastrointestinal-bleeding-endoscopy-continuity
+}}
+
+'''Acute Gastrointestinal Bleeding Endoscopy Continuity'''是 Human Infra 在“生命载体维护”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要维护身体、脑、器官、细胞、急性生命风险或衰老损伤控制。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C2“可能性源体维护层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>acute-gastrointestinal-bleeding-endoscopy-continuity/</code> 研究急性上/下消化道出血、休克风险、输血/凝血支持、内镜可及、住院路径和复发预防如何影响主体持续性。
+
+<blockquote>核心问题：消化道出血把隐蔽失血、贫血、休克、抗凝药物、内镜能力和血液系统连接成急性死亡边界。它需要被建模为“出血识别-稳定-内镜-恢复”的服务链。
+</blockquote>
+== 先验位置 ==
+
+<pre>有效永生 / 主体持续性最大化
+  -> 主体依赖血容量和血红蛋白维持灌注与供氧
+  -> 消化道出血可隐蔽或急性地造成贫血、休克和器官灌注失败
+  -> 结果取决于识别、稳定、输血/凝血支持、内镜可及和复发预防
+  -> 因此急性消化道出血是血液-消化-急诊交界的时间关键域</pre>
+== 关注对象 ==
+
+* Upper GI bleeding, lower GI bleeding, hemodynamic instability, transfusion interface, anticoagulant context, endoscopy access, rebleeding, discharge follow-up。
+* 与 <code>transfusion-blood-management-hemorrhage-continuity/</code> 的边界：该域关注血液供应和输血治理；本域关注消化道出血的诊断、内镜和复发链。
+* 与 <code>surgical-anesthesia-perioperative-safety/</code> 的关系：严重出血可能进入操作/手术路径，但本域关注出血服务链。
+
+<span id="human-infra-模型链路"></span>
+== Human Infra 模型链路 ==
+
+<pre>消化道出血服务链 T
+  -> 改变识别延迟、血流动力学稳定、输血/凝血支持、内镜可及和复发预防变量 X
+  -> 改变血容量、贫血、休克、住院、再出血和功能恢复状态 S
+  -> 改变急性死亡、再住院、长期虚弱和有效时间损失 λ(t)
+  -> 影响主体存活、恢复能力和未来选择权</pre>
+== 非目标 ==
+
+* 不提供便血/呕血判断、急诊分诊、停药、抗凝处理、输血、内镜、饮食、药物或个体治疗建议。
+* 不生成 GI bleeding 风险评分、内镜时机、药物路径、家庭处理或预后工具。
+* 不收集个案症状、血压、血红蛋白、粪便/呕吐物图片、用药、内镜或病历资料。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* American College of Gastroenterology guideline materials: https://gi.org/
+* NIDDK digestive diseases materials: https://www.niddk.nih.gov/health-information/digestive-diseases
+* AABB transfusion guideline materials: https://www.aabb.org/news-resources/resources/clinical-practice-guidelines
+
+== 下一步 ==
+
+* 建立 GI Bleeding Card：recognition, instability, transfusion interface, endoscopy access, anticoagulant context, rebleeding。
+* 与 <code>transfusion-blood-management-hemorrhage-continuity/</code>、<code>surgical-anesthesia-perioperative-safety/</code> 和 <code>acute-coronary-syndrome-reperfusion-continuity/</code> 建立抗凝/出血权衡接口。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C2研究域|C2研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c2-source-maintenance/acute-gastrointestinal-bleeding-endoscopy-continuity/README.md Human Infra 仓库：domains/c2-source-maintenance/acute-gastrointestinal-bleeding-endoscopy-continuity/README.md]
+
+[[Category:C2研究域]]

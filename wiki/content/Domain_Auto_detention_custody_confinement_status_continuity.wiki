@@ -1,0 +1,85 @@
+{{研究域
+|域 ID=domain.detention-custody-confinement-status-continuity
+|C 层级=C6：局部可能性解锁层
+|研究对象=Detention Custody Confinement Status Continuity
+|持续性作用=未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c6-local-unlocking/detention-custody-confinement-status-continuity
+}}
+
+'''Detention Custody Confinement Status Continuity'''是 Human Infra 在“局部阻塞解除”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C6“局部可能性解锁层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+本域研究逮捕、拘留、羁押、移民拘押、审前羁押、监禁、释放和监管状态如何影响主体行动自由、通信、家庭、医疗、法律救济和服务连续性。
+
+<blockquote>核心问题：拘押不是单一健康问题，而是主体行动边界被制度重写；若状态、通知、法律入口、通信、药物、身份文件和释放转接断裂，主体持续性会在短时间内急剧恶化。
+</blockquote>
+== 关注对象 ==
+
+* 逮捕、审前羁押、监禁、移民拘押、释放、保释/监管、通信、探视、法律联系和家属通知。
+* 拘押状态与医疗、药物、心理、残障便利、语言、身份文件、财务、家庭照护、住房和工作断点。
+* 释放前后与 <code>correctional-health-reentry-continuity/</code> 的接口：该域关注健康与重返服务；本域关注拘押状态本身和自由/通信/程序入口。
+* 拘押系统中的透明度、标准、记录、申诉、过度羁押、弱势群体保护和数据敏感性。
+
+<span id="human-infra-链路"></span>
+== Human Infra 链路 ==
+
+<pre>拘押 / 羁押 / 监管状态连续
+  -> 主体行动自由受限时，状态、位置、联系、法律入口和照护仍可被记录与恢复
+  -> 医疗、药物、家庭责任、收入、住房、身份文件和法律救济断裂风险下降
+  -> 释放或状态转换时服务、记录和支持可衔接
+  -> 主体在强制限制状态下仍保留最低连续性和恢复路径</pre>
+== 非目标 ==
+
+* 不提供刑事案件、保释、假释、移民拘押、申诉、上诉、逃避监管、设施规避或法律建议。
+* 不提供拘押设施弱点、通信规避、违禁品、逃脱、隐藏身份、对抗执法或规避筛查方法。
+* 不替代律师、法院、拘押机构、监察机构、医疗人员、危机热线或家属通知系统。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* ICE Detention Management: https://www.ice.gov/detain/detention-management
+* Federal Bureau of Prisons: https://www.bop.gov/
+* Bureau of Justice Statistics Corrections: https://bjs.ojp.gov/topics/corrections
+* WHO Prisons and Health: https://www.who.int/europe/publications/i/item/9789289058674
+
+== 下一步 ==
+
+* 建立拘押状态变量表：状态类型、位置通知、通信、法律入口、医疗药物、家庭责任、文件、释放转接和监督机制。
+* 整理 ICE、BOP、BJS、WHO prisons、CDC correctional health 和 reentry continuity Source Cards。
+* 与 <code>correctional-health-reentry-continuity/</code> 明确分工：本域关注拘押状态和制度转换，后者关注羁押健康与释放后照护。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C6研究域|C6研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c6-local-unlocking/detention-custody-confinement-status-continuity/README.md Human Infra 仓库：domains/c6-local-unlocking/detention-custody-confinement-status-continuity/README.md]
+
+[[Category:C6研究域]]

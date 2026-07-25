@@ -1,0 +1,16 @@
+{{证据来源
+|来源 ID=evidence.fda.casgevy
+|来源类型=监管批准资料
+|完整引文=U.S. Food and Drug Administration. CASGEVY, STN 125787.
+|URL 或 DOI=https://www.fda.gov/vaccines-blood-biologics/casgevy
+|支持范围=CRISPR/Cas9编辑的自体造血干细胞产品已获批用于特定血液病
+|不支持的推论=不支持体内全身编辑成熟、抗衰老有效或脱靶风险已消失
+|审查状态=已核对FDA产品页与批准资料
+|访问日期=2026-07-25
+}}
+
+== 支持范围 ==
+该来源证明基因组编辑可成为受监管治疗产品，并记录适应证、制造和批准资料。
+
+== 不支持的推论 ==
+适应证级成功不能外推到衰老、多基因疾病或健康人增强；长期随访和脱靶风险仍必要。

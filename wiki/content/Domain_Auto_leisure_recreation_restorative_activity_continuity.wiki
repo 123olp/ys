@@ -1,0 +1,87 @@
+{{研究域
+|域 ID=domain.leisure-recreation-restorative-activity-continuity
+|C 层级=C6：局部可能性解锁层
+|研究对象=Leisure Recreation Restorative Activity Continuity
+|持续性作用=未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c6-local-unlocking/leisure-recreation-restorative-activity-continuity
+}}
+
+'''Leisure Recreation Restorative Activity Continuity'''是 Human Infra 在“局部阻塞解除”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C6“局部可能性解锁层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+Leisure Recreation Restorative Activity Continuity 研究休闲、娱乐、游戏、户外活动、恢复性活动和非生产性时间如何支撑恢复、关系、运动、情绪和生活质量。
+
+<blockquote>核心问题：人不是只为任务优化的机器；长期持续行动需要非工具性的恢复、玩耍、探索和愉悦空间。
+</blockquote>
+== 研究对象 ==
+
+* Leisure、recreation、play、hobbies、parks use、outdoor recreation、restorative activities 和 non-work time。
+* 休闲与心理健康、压力恢复、身体活动、社交连接、创造力、睡眠和生活质量之间的关系。
+* 公园、娱乐设施、公共空间、残障可及、费用、时间贫困和安全感。
+
+== 先验链路 ==
+
+<pre>主体长期任务执行会持续消耗注意力、体力、情绪和动机
+  -> 休闲和恢复性活动提供非生产性恢复、探索、游戏和关系连接
+  -> 如果休闲空间和非任务时间被压缩，恢复系统和创造性会变弱
+  -> 压力、倦怠、孤独、身体活动不足和生活质量下降
+  -> 单位时间行动质量和长期任务持续性下降
+  -> 因而休闲与娱乐是主体持续性的恢复-愉悦基础设施</pre>
+== 关键变量 ==
+
+* 可支配休闲时间、公共空间可及、费用、无障碍、安全感、自然接触、娱乐选择和时间贫困。
+* 儿童、老年人、残障者、照护者、低收入群体、轮班工作者和高压力职业。
+* 过度游戏/成瘾、消费主义、监控、商业诱导、风险活动、公共空间排除和环境安全风险。
+
+== 证据入口 ==
+
+* WHO physical activity / leisure-time physical activity materials。
+* CDC parks, recreation and public health materials。
+* Leisure, recreation, play and well-being 相关综述。
+
+== 非目标 ==
+
+* 本域不推荐活动、地点、运动方案、游戏、旅游、娱乐产品或风险活动。
+* 不提供心理治疗、健身训练、儿童看护、活动组织、安全计划或成瘾处理建议。
+* 不收集位置、日程、兴趣偏好、儿童活动、心理诊断、消费记录或社交关系资料。
+
+== 上下游 ==
+
+* 上游：<code>time-allocation-effective-time/</code>、<code>parks-recreation-green-space-access-continuity/</code>、<code>physical-activity-mobility/</code>。
+* 下游：<code>sleep-circadian-recovery/</code>、<code>mental-health-affective-stability/</code>、<code>arts-creative-expression-participation-continuity/</code>。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C6研究域|C6研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c6-local-unlocking/leisure-recreation-restorative-activity-continuity/README.md Human Infra 仓库：domains/c6-local-unlocking/leisure-recreation-restorative-activity-continuity/README.md]
+
+[[Category:C6研究域]]

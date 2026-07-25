@@ -1,0 +1,82 @@
+{{研究域
+|域 ID=domain.digital-evidence-preservation-chain-of-custody-continuity
+|C 层级=C4：可能性转换通道层
+|研究对象=Digital Evidence Preservation Chain Of Custody Continuity
+|持续性作用=关键词显示该域主要处理研究、数据、模型、服务入口、身份记录、转化或治理接口。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c4-conversion-channel/digital-evidence-preservation-chain-of-custody-continuity
+}}
+
+'''Digital Evidence Preservation Chain Of Custody Continuity'''是 Human Infra 在“路径转换接口”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要处理研究、数据、模型、服务入口、身份记录、转化或治理接口。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C4“可能性转换通道层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+Digital Evidence Preservation Chain Of Custody Continuity 关注截图、文件、日志、消息、元数据、设备资料和平台记录如何在不篡改、不丢失、不越权的前提下被保存、描述和移交。
+
+== 对象 ==
+
+* Digital evidence、chain of custody、metadata preservation、hashing concept、forensic soundness、record retention、export, audit trail 和 evidence handling boundary。
+* 消费者纠纷、平台申诉、受害者服务、医疗记录、法院程序、雇佣争议、保险理赔和身份恢复中的数字资料保存。
+* 截图缺上下文、元数据丢失、文件被编辑、证据链不明、隐私泄露、非法获取和过度收集风险。
+
+<span id="human-infra-价值"></span>
+== Human Infra 价值 ==
+
+<pre>主体在纠纷和恢复中需要把经历转成可审查记录
+-> 数字资料容易被删除、篡改、误解、压缩或失去上下文
+-> 保存边界、链路记录和最小必要原则能降低证据失效和隐私外溢
+-> 主体更能在投诉、申诉、医疗、保险、法院和平台恢复中表达事实
+-> 伤害恢复和资源纠错更少因记录失效而中断</pre>
+== 边界 ==
+
+* 本域不提供数字取证教程、设备镜像、密码绕过、账号入侵、数据恢复、隐藏痕迹、证据制作或法庭证据策略。
+* 不判断某份材料是否可采、是否真实或是否足以胜诉，不替代律师、取证专家、执法或平台流程。
+* 不收集真实聊天记录、截图、日志、设备、元数据、案件材料、受害者信息或未成年人资料。
+* 只整理公开原则、变量、链路风险、隐私最小化和禁止用途。
+
+== 上下游 ==
+
+* 上游：<code>document-capture-ocr-pdf-record-workflow-continuity/</code>、<code>cloud-backup-file-sync-data-portability-continuity/</code>、<code>content-provenance-authenticity-credential-continuity/</code>。
+* 下游：<code>small-claims-civil-dispute-resolution-continuity/</code>、<code>platform-content-moderation-notice-appeal-continuity/</code>、<code>victim-witness-rights-notification-continuity/</code>。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* NIST digital evidence and forensic science materials.
+* SWGDE digital evidence best-practice materials.
+* NIJ digital evidence guides.
+* Court, platform and consumer complaint record-retention public materials.
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C4研究域|C4研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c4-conversion-channel/digital-evidence-preservation-chain-of-custody-continuity/README.md Human Infra 仓库：domains/c4-conversion-channel/digital-evidence-preservation-chain-of-custody-continuity/README.md]
+
+[[Category:C4研究域]]

@@ -1,0 +1,181 @@
+= 科幻作品中的永生与增强 =
+
+'''科幻作品中的永生与增强'''是 Human Infra 的文化参照索引，用于发现概念、失败模式和伦理冲突。作品设定属于思想实验，不属于技术证据。
+
+== 作品映射 ==
+
+{| class="wikitable sortable"
+! 作品
+! 主要设定
+! 对 Human Infra 的问题价值
+! 公共百科
+|-
+| 《吉尔伽美什史诗》
+| 对死亡与不朽的追寻
+| 区分生物不死、名誉延续和主体持续
+| [https://zh.wikipedia.org/wiki/%E5%90%89%E5%B0%94%E4%BC%BD%E7%BE%8E%E4%BB%80%E5%8F%B2%E8%AF%97 Wikipedia]
+|-
+| 《科学怪人》
+| 人工制造生命
+| 讨论制造能力、照护义务与创造者责任
+| [https://zh.wikipedia.org/wiki/%E7%A7%91%E5%AD%B8%E6%80%AA%E4%BA%BA Wikipedia]
+|-
+| 《美丽新世界》
+| 生物工程与社会控制
+| 预演增强技术与制度权力结合后的主体性风险
+| [https://zh.wikipedia.org/wiki/%E7%BE%8E%E4%B8%BD%E6%96%B0%E4%B8%96%E7%95%8C Wikipedia]
+|-
+| 《仿生人会梦见电子羊吗？》
+| 人造生命与人格判准
+| 检验生物材料是否是人格和道德地位的必要条件
+| [https://zh.wikipedia.org/wiki/%E4%BB%BF%E7%94%9F%E4%BA%BA%E4%BC%9A%E6%A2%A6%E8%A7%81%E7%94%B5%E5%AD%90%E7%BE%8A%E5%90%97%EF%BC%9F Wikipedia]
+|-
+| 《2001太空漫游》
+| 人机协作与失控
+| 讨论高能力系统、目标冲突和控制权
+| [https://zh.wikipedia.org/wiki/2001%E5%A4%AA%E7%A9%BA%E6%BC%AB%E6%B8%B8 Wikipedia]
+|-
+| 《沙丘》
+| 延寿物质、预知与制度垄断
+| 分析长寿资源稀缺、预测能力和权力集中
+| [https://zh.wikipedia.org/wiki/%E6%B2%99%E4%B8%98_(%E5%B0%8F%E8%AF%B4) Wikipedia]
+|-
+| 《神经漫游者》
+| 赛博空间、人工智能与数字人格
+| 讨论外部化心智和去具身主体边界
+| [https://zh.wikipedia.org/wiki/%E7%A5%9E%E7%BB%8F%E6%B5%AA%E6%B8%B8%E8%80%85 Wikipedia]
+|-
+| 《攻壳机动队》
+| 义体化、脑机接口与人格
+| 讨论身体可替换时主体连续性的最低条件
+| [https://zh.wikipedia.org/wiki/%E6%94%BB%E6%AE%BC%E6%A9%9F%E5%8B%95%E9%9A%8A Wikipedia]
+|-
+| 《副本》
+| 心智备份与身体更换
+| 暴露复制、分支、所有权和阶层化永生问题
+| [https://zh.wikipedia.org/wiki/%E7%A2%B3%E8%AE%8A Wikipedia]
+|-
+| 《黑镜：圣朱尼佩洛》
+| 数字来生
+| 检验上传是否延续原主体，以及退出与同意如何治理
+| [https://zh.wikipedia.org/wiki/%E5%9C%A3%E8%8E%B1%E5%B0%BC%E4%BD%A9%E6%B4%9B Wikipedia]
+|-
+| 《上传新生》
+| 商业化数字来生
+| 讨论平台依赖、数据权利、服务中断与人格所有权
+| [https://zh.wikipedia.org/wiki/%E4%B8%8A%E8%BD%BD_(%E7%94%B5%E8%A7%86%E5%89%A7) Wikipedia]
+|-
+| 《太空堡垒卡拉狄加》
+| 复制身体、记忆迁移与循环重生
+| 区分记忆相似、因果连续和数值同一
+| [https://zh.wikipedia.org/wiki/%E5%A4%AA%E7%A9%BA%E5%A0%A1%E5%9E%92%E5%8D%A1%E6%8B%89%E7%8B%84%E5%8A%A0 Wikipedia]
+|-
+| 《加速》
+| 递归技术升级与后人类演化
+| 预演加速回报、智能分化和控制权迁移
+| [https://en.wikipedia.org/wiki/Accelerando Wikipedia]
+|-
+| 《奇点天空》
+| 超智能介入与后稀缺
+| 讨论奇点后预测失效、制度适应和技术分配
+| [https://en.wikipedia.org/wiki/Singularity_Sky Wikipedia]
+|}
+
+== 扩展作品映射 ==
+
+{| class="wikitable sortable"
+! 作品
+! 主要设定
+! 对 Human Infra 的问题价值
+! 公共百科
+|-
+| 提托诺斯神话
+| 获得不死但没有获得不老
+| 区分寿命延长、健康寿命和有效永生
+| [https://en.wikipedia.org/wiki/Tithonus Wikipedia]
+|-
+| 《道林·格雷的画像》
+| 身体不老与道德、心理代价分离
+| 检验外观年轻是否足以代表主体状态
+| [https://zh.wikipedia.org/wiki/%E9%81%93%E6%9E%97%C2%B7%E6%A0%BC%E9%9B%B7%E7%9A%84%E7%94%BB%E5%83%8F Wikipedia]
+|-
+| 《玛士撒拉之子》
+| 选择性长寿与社会冲突
+| 讨论长寿资源、遗传筛选、政治排斥和迁移
+| [https://en.wikipedia.org/wiki/Methuselah%27s_Children Wikipedia]
+|-
+| 《城市与群星》
+| 人格存储、身体再造与文明停滞
+| 检验循环复生是否保持身份以及不死社会是否失去探索动力
+| [https://en.wikipedia.org/wiki/The_City_and_the_Stars Wikipedia]
+|-
+| 《尤比克》
+| 半生命、意识维持与现实不稳定
+| 讨论低温保存、残余认知和外部维护依赖
+| [https://zh.wikipedia.org/wiki/%E5%B0%A4%E6%AF%94%E5%85%8B Wikipedia]
+|-
+| “文化”系列
+| 后稀缺文明、AI治理与身体可塑性
+| 讨论高能力基础设施如何改变寿命、身份、自由和制度
+| [https://en.wikipedia.org/wiki/Culture_series Wikipedia]
+|-
+| 《海伯利安》
+| 时间差、复活技术和人工智能网络
+| 比较时间债、复制复活、宗教权力与技术基础设施
+| [https://zh.wikipedia.org/wiki/%E6%B5%B7%E4%BC%AF%E5%88%A9%E5%AE%89 Wikipedia]
+|-
+| 《排列之城》
+| 数字人格、计算资源和模拟宇宙
+| 检验副本、算力依赖、主观时间和数字主体权利
+| [https://en.wikipedia.org/wiki/Permutation_City Wikipedia]
+|-
+| 《散居》
+| 后人类数字主体与宇宙尺度生存
+| 讨论去具身、分支人格、备份和极端环境适应
+| [https://en.wikipedia.org/wiki/Diaspora_(novel) Wikipedia]
+|-
+| 《黑客帝国》
+| 身体维生、脑机接口与模拟现实
+| 检验经验真实性、身体依赖、控制权与退出条件
+| [https://zh.wikipedia.org/wiki/%E9%BB%91%E5%AE%A2%E5%B8%9D%E5%9B%BD Wikipedia]
+|-
+| 《超验骇客》
+| 人格上传、网络扩散和技术控制
+| 检验上传后的身份、能力放大和治理失控
+| [https://zh.wikipedia.org/wiki/%E8%B6%85%E9%AA%8C%E9%AA%87%E5%AE%A2 Wikipedia]
+|-
+| 《西部世界》
+| 人工人格、记忆循环和身体替换
+| 讨论记忆如何构成主体、反复重置是否造成伤害
+| [https://zh.wikipedia.org/wiki/%E8%A5%BF%E9%83%A8%E4%B8%96%E7%95%8C_(%E7%94%B5%E8%A7%86%E5%89%A7) Wikipedia]
+|-
+| 《SOMA》
+| 脑扫描、人格复制与连续性错觉
+| 直接检验复制不是迁移以及分支后的数值同一问题
+| [https://en.wikipedia.org/wiki/Soma_(video_game) Wikipedia]
+|-
+| 《赛博朋克2077》
+| 人格芯片、数字幽灵与身体争夺
+| 讨论记忆覆盖、人格冲突、身体所有权和技术垄断
+| [https://zh.wikipedia.org/wiki/%E8%B5%9B%E5%8D%9A%E6%9C%8B%E5%85%8B2077 Wikipedia]
+|-
+| 《万神殿》
+| 上传智能、复制分支与加速计算
+| 讨论数字主体、主观时间、计算资源和代际权力
+| [https://en.wikipedia.org/wiki/Pantheon_(TV_series) Wikipedia]
+|-
+| 《三体》
+| 冬眠、文明等待和技术跃迁
+| 分析生物停滞如何改变代际时间、技术窗口和制度连续性
+| [https://zh.wikipedia.org/wiki/%E4%B8%89%E4%BD%93_(%E5%B0%8F%E8%AF%B4) Wikipedia]
+|}
+
+== 使用规则 ==
+
+* 作品只用于提出问题、构造反例和发现治理变量。
+* 不从虚构设定推出工程可行性。
+* 不复制受版权保护的长段文本、剧情或对白。
+* 技术判断必须回到[[:Category:证据来源|证据来源]]和现实科技节点。
+
+[[Category:科幻作品参照]]
+[[Category:专题]]

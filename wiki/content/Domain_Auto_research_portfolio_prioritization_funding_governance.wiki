@@ -1,0 +1,98 @@
+{{研究域
+|域 ID=domain.research-portfolio-prioritization-funding-governance
+|C 层级=C4：可能性转换通道层
+|研究对象=Research Portfolio Prioritization Funding Governance
+|持续性作用=主要把科学、医疗、数据、制度或技术从潜在能力转成真实可用路径。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c4-conversion-channel/research-portfolio-prioritization-funding-governance
+}}
+
+'''Research Portfolio Prioritization Funding Governance'''是 Human Infra 在“路径转换接口”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+主要把科学、医疗、数据、制度或技术从潜在能力转成真实可用路径。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C4“可能性转换通道层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+== 定位 ==
+
+本域研究研究组合、优先级设定、资金治理、价值信息分析、项目组合管理和公共/慈善/机构资助机制，如何决定 Human Infra 应该把有限注意力、时间、资金和审查能力投向哪些研究域。
+
+Human Infra 的研究域会持续扩展，但资源不会无限。真正的瓶颈不仅是“发现更多可能”，也是“决定先研究什么、为什么、用什么证据进入下一阶段、何时停止”。本域负责把研究发散转化为可审查的组合治理。
+
+== 先验位置 ==
+
+<pre>有效永生 / 主体持续性最大化
+  -> 可能路径很多，但研究资源、注意力和验证能力有限
+  -> 需要按影响、可行性、证据缺口、风险和组合多样性排序
+  -> 需要研究组合优先级和资金治理机制
+  -> research-portfolio-prioritization-funding-governance</pre>
+== 关注对象 ==
+
+* Research portfolio、priority setting、program governance、stage-gate 和里程碑审查。
+* Value of information、expected impact、evidence gap、option value、risk-adjusted learning。
+* NIH/ARPA-H/DARPA 式组合管理、资助机制、项目经理模型和失败容忍。
+* 公共研究、慈善资助、开放科学、专利激励和可及性之间的张力。
+* Human Infra 中域晋升、Source Card 精读、模型开发、Web 展示和论文写作的资源分配规则。
+
+<span id="human-infra-模型链路"></span>
+== Human Infra 模型链路 ==
+
+<pre>大量候选研究域
+  -> 组合优先级和资金治理
+  -> 按主体持续性影响、证据缺口、可行性、风险和学习价值排序
+  -> 决定哪些域进入精读、建模、网页、论文和工具化
+  -> 提高有限资源下的研究复利和纠错效率</pre>
+== 非目标 ==
+
+* 不提供基金申请操控、资助游说、项目包装、关系路径或评审规避策略。
+* 不把研究组合评分写成真理排序、商业估值、投资建议或机构背书。
+* 不用单一指标压倒伦理、可及性、弱势群体需求和长期公共价值。
+* 不替代 <code>technology-foresight-horizon-scanning/</code>；本域负责排序和资源治理，预见域负责发现候选信号。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* NIH Office of Portfolio Analysis: https://dpcpsi.nih.gov/opa
+* NIH RePORTER: https://reporter.nih.gov/
+* WHO research priority setting: https://www.who.int/activities/setting-research-priorities
+* ARPA-H: https://arpa-h.gov/
+* DARPA: https://www.darpa.mil/
+* PCORI research methodology resources: https://www.pcori.org/research-results/research-methodology
+
+== 下一步 ==
+
+* 建立 Research Portfolio Card：domain、expected subject-continuity impact、evidence gap、tractability、risk、option value、next proof point、stop condition。
+* 给 <code>docs/reference/research-domain-radar.md</code> 增加优先级字段和复核周期。
+* 与 <code>technology-foresight-horizon-scanning/</code> 对接，把弱信号队列转成研究组合决策。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C4研究域|C4研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c4-conversion-channel/research-portfolio-prioritization-funding-governance/README.md Human Infra 仓库：domains/c4-conversion-channel/research-portfolio-prioritization-funding-governance/README.md]
+
+[[Category:C4研究域]]

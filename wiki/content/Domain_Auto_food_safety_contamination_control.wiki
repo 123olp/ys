@@ -1,0 +1,89 @@
+{{研究域
+|域 ID=domain.food-safety-contamination-control
+|C 层级=C5：可能性生态承载层
+|研究对象=Food Safety Contamination Control
+|持续性作用=关键词显示该域主要承载能源、水、食物、住房、治理、经济、通信、灾害或基础设施环境。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c5-ecological-substrate/food-safety-contamination-control
+}}
+
+'''Food Safety Contamination Control'''是 Human Infra 在“外部生态承载”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要承载能源、水、食物、住房、治理、经济、通信、灾害或基础设施环境。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C5“可能性生态承载层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+食品安全、污染控制与食源性风险域研究：当主体持续性依赖稳定摄入食物时，病原体、毒素、过敏原、加工流通、检查、追溯和召回如何防止食物从资源变成风险。
+
+== 对象 ==
+
+* 食源性病原体、毒素、化学污染物、过敏原、异物污染和交叉污染风险。
+* 农场、加工、运输、零售、餐饮、家庭和机构供餐中的食品安全控制。
+* 食品检查、HACCP、追溯、召回、检测、标准、标签、进口控制和风险沟通。
+* 食品安全事件、暴发调查、脆弱人群、学校/医院/长期照护机构供餐风险。
+* 食品安全对感染、营养连续性、照护负担、信任和供应链稳定的影响。
+
+<span id="human-infra-价值"></span>
+== Human Infra 价值 ==
+
+食物不只是能量输入，也可能成为感染、毒性和系统信任崩溃入口。食品安全域把“可吃、可信、可追溯、可召回”的食品系统纳入主体持续性模型，使食物安全与营养可及从同一个资源问题中分出安全治理层。
+
+<pre>食品污染被预防、检测、追溯和召回
+  -> 食源性疾病、毒性暴露和信任损失下降
+  -> 营养摄入与公共供餐连续性提高
+  -> 主体恢复能力、照护能力和有效时间提高</pre>
+== 边界 ==
+
+本域只整理食品安全标准、污染控制、追溯召回、暴发治理和公共风险沟通资料。
+
+不提供：
+
+* 个体饮食、烹饪、储存、保质期判断、过敏管理、诊断或治疗建议。
+* 食品加工、发酵、消毒、检测、采样、污染清理或实验室操作步骤。
+* 企业合规、召回策略、责任认定、索赔、贸易、进口或法律建议。
+* 食品投毒、污染规避、检测规避、供应链欺诈或非法生产方法。
+
+== 上游与下游 ==
+
+* 上游：<code>food-security-nutrition-access/</code>、<code>animal-health-zoonotic-interface-one-health/</code>、<code>supply-chain-continuity/</code>、<code>standards-metrology-quality-infrastructure/</code>。
+* 下游：<code>gastrointestinal-barrier-absorption/</code>、<code>immune-maintenance/</code>、<code>public-health-laboratory-diagnostic-capacity/</code>、<code>product-safety-recall-systems/</code>。
+
+== 初始资料线索 ==
+
+* WHO food safety resources。
+* CDC food safety and foodborne outbreak resources。
+* FDA food and FSMA resources。
+* USDA FSIS food safety resources。
+* Codex Alimentarius resources。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C5研究域|C5研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c5-ecological-substrate/food-safety-contamination-control/README.md Human Infra 仓库：domains/c5-ecological-substrate/food-safety-contamination-control/README.md]
+
+[[Category:C5研究域]]

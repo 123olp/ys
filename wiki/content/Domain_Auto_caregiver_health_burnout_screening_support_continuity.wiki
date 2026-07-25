@@ -1,0 +1,91 @@
+{{研究域
+|域 ID=domain.caregiver-health-burnout-screening-support-continuity
+|C 层级=C2：可能性源体维护层
+|研究对象=Caregiver Health Burnout Screening Support Continuity
+|持续性作用=关键词显示该域主要维护身体、脑、器官、细胞、急性生命风险或衰老损伤控制。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c2-source-maintenance/caregiver-health-burnout-screening-support-continuity
+}}
+
+'''Caregiver Health Burnout Screening Support Continuity'''是 Human Infra 在“生命载体维护”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要维护身体、脑、器官、细胞、急性生命风险或衰老损伤控制。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C2“可能性源体维护层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>caregiver-health-burnout-screening-support-continuity/</code> 研究照护者健康、负担、睡眠、抑郁焦虑、肌骨损伤、社会隔离、筛查、支持服务和恢复资源如何影响家庭照护系统是否可持续。
+
+<blockquote>核心问题：照护者不是背景资源，而是另一个主体。若照护者健康、睡眠、收入和心理稳定被持续消耗，被照护者的持续性也会失去支撑。
+</blockquote>
+== 先验位置 ==
+
+<pre>有效永生 / 主体持续性最大化
+  -> 长期照护依赖照护者持续存在、行动、恢复和判断
+  -> 照护者自身也会受到睡眠损耗、压力、孤立、损伤和收入冲击
+  -> 因此照护者健康和 burnout 支持是双主体持续性条件</pre>
+== 关注对象 ==
+
+* Caregiver burden、burnout、sleep loss、depression/anxiety、musculoskeletal strain、financial strain 和 social isolation。
+* 负担筛查、同伴支持、咨询转介、respite 连接、工作支持和社区资源导航。
+* 痴呆照护、严重疾病、儿童复杂照护、残障支持和长期家庭照护。
+* 与 <code>mental-health-affective-stability/</code>、<code>social-connection-relational-infra/</code>、<code>family-caregiver-respite-work-continuity/</code> 的接口。
+
+<span id="human-infra-模型链路"></span>
+== Human Infra 模型链路 ==
+
+<pre>照护者健康支持
+  -> 改变睡眠、压力、情绪、身体损伤、社会支持和恢复资源
+  -> 改变照护者持续行动状态和家庭照护系统稳定性
+  -> 降低 burnout、照护中断、忽视/冲突、收入退出和危机迁移风险
+  -> 同时保护照护者与被照护者主体持续性</pre>
+== 非目标 ==
+
+* 不提供心理诊断、治疗、危机处置、用药、家庭关系裁决或法律建议。
+* 不筛查或评估具体照护者 burnout、抑郁、焦虑、虐待风险或照护能力。
+* 不制定个人休息、睡眠、治疗、雇佣、福利或照护替代方案。
+* 不收集心理健康、家庭冲突、照护安排、收入、住址或危机资料。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* NIA Caregiving: https://www.nia.nih.gov/health/caregiving
+* ACL National Family Caregiver Support Program: https://acl.gov/programs/support-caregivers/national-family-caregiver-support-program
+* CDC Older Adult and Caregiver materials: https://www.cdc.gov/aging/
+* Eldercare Locator: https://eldercare.acl.gov/
+
+== 下一步 ==
+
+* 建立照护者健康变量表：睡眠、压力、情绪、肌骨损伤、孤立、财务压力、支持连接和照护中断。
+* 整理 caregiver burden、burnout、respite、peer support 和 mental health referral Source Cards。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C2研究域|C2研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c2-source-maintenance/caregiver-health-burnout-screening-support-continuity/README.md Human Infra 仓库：domains/c2-source-maintenance/caregiver-health-burnout-screening-support-continuity/README.md]
+
+[[Category:C2研究域]]

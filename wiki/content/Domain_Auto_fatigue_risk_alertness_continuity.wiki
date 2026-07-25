@@ -1,0 +1,88 @@
+{{研究域
+|域 ID=domain.fatigue-risk-alertness-continuity
+|C 层级=C6：局部可能性解锁层
+|研究对象=Fatigue Risk Alertness Continuity
+|持续性作用=未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c6-local-unlocking/fatigue-risk-alertness-continuity
+}}
+
+'''Fatigue Risk Alertness Continuity'''是 Human Infra 在“局部阻塞解除”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C6“局部可能性解锁层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+Fatigue Risk Alertness Continuity 研究疲劳、长工时、夜班、睡眠不足、轮班、恢复缺口和警觉性下降如何影响主体安全、判断和长期行动能力。
+
+<blockquote>核心问题：疲劳不是个人硬扛问题，而是任务排布、组织资源、恢复窗口和安全边界共同决定的风险函数。
+</blockquote>
+== 研究对象 ==
+
+* Fatigue risk management、alertness、sleep debt、shift work、long work hours、night work 和恢复窗口。
+* 医疗、交通、工业、软件值班、照护、应急响应和高压知识工作中的疲劳风险。
+* 疲劳如何改变注意力、反应时间、情绪稳定、错误率、事故风险和长期健康。
+
+== 先验链路 ==
+
+<pre>主体持续执行需要可恢复的警觉性
+  -> 长工时、夜班、睡眠不足和恢复缺口积累疲劳
+  -> 疲劳降低注意力、反应速度、判断质量和情绪调节
+  -> 错误、事故、冲突、健康损耗和恢复时间增加
+  -> 有效行动窗口被压缩，长期任务系统变得不可持续
+  -> 因而疲劳风险是主体持续性的警觉性与恢复门槛</pre>
+== 关键变量 ==
+
+* 睡眠时长、睡眠质量、工作时长、夜班、连续值班、休息间隔、轮班稳定性和恢复机会。
+* 主观疲劳、警觉性、反应时、错误率、近失误、事故、情绪波动和健康损耗。
+* 把疲劳管理转嫁给个人、用疲劳数据监控员工、合理化人手不足和无休止值班的风险。
+
+== 证据入口 ==
+
+* NIOSH fatigue and work schedules resources。
+* OSHA worker fatigue resources。
+* FAA fatigue and human factors materials。
+* Sleep and circadian recovery literature。
+
+== 非目标 ==
+
+* 本域不提供睡眠医疗诊断、排班法律建议、个体药物/兴奋剂建议、驾驶/飞行/值班许可判断。
+* 不提供规避工时、安全或职业健康要求的排班方案。
+* 不收集睡眠追踪、雇佣记录、班表、事故个案、医疗诊断或员工监控资料。
+
+== 上下游 ==
+
+* 上游：<code>sleep-circadian-recovery/</code>、<code>occupational-work-design/</code>、<code>light-exposure-circadian-environment-continuity/</code>。
+* 下游：<code>human-error-just-culture-incident-learning-continuity/</code>、<code>handoff-checklist-procedure-reliability-continuity/</code>、<code>risk-engineering/</code>。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C6研究域|C6研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c6-local-unlocking/fatigue-risk-alertness-continuity/README.md Human Infra 仓库：domains/c6-local-unlocking/fatigue-risk-alertness-continuity/README.md]
+
+[[Category:C6研究域]]

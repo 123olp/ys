@@ -1,0 +1,84 @@
+{{研究域
+|域 ID=domain.post-flood-mold-moisture-indoor-recovery-continuity
+|C 层级=C5：可能性生态承载层
+|研究对象=Post Flood Mold Moisture Indoor Recovery Continuity
+|持续性作用=关键词显示该域主要承载能源、水、食物、住房、治理、经济、通信、灾害或基础设施环境。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c5-ecological-substrate/post-flood-mold-moisture-indoor-recovery-continuity
+}}
+
+'''Post Flood Mold Moisture Indoor Recovery Continuity'''是 Human Infra 在“外部生态承载”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要承载能源、水、食物、住房、治理、经济、通信、灾害或基础设施环境。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C5“可能性生态承载层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>post-flood-mold-moisture-indoor-recovery-continuity/</code> 研究洪水、漏水、潮湿、霉菌、室内空气和建筑材料干燥失败如何影响灾后住房可返回性与健康恢复。
+
+<blockquote>核心问题：洪水退去不等于住房恢复；湿气和霉菌会把房屋、睡眠、呼吸健康、免疫风险和长期居住稳定继续锁在不可行动状态。
+</blockquote>
+== 先验位置 ==
+
+<pre>有效永生 / 主体持续性最大化
+  -> 主体恢复需要可居住室内环境、呼吸安全、睡眠和物品保存
+  -> 洪水和潮湿可导致霉菌、材料损坏、空气质量下降和过敏/哮喘负担
+  -> 室内恢复失败会延迟返回并加重健康风险
+  -> 因此洪水后霉菌与湿气恢复是主体住房恢复连续性的环境健康域</pre>
+== 关注对象 ==
+
+* CDC mold cleanup after disaster、EPA mold resources、FEMA flood recovery、室内湿气、空气质量、材料干燥和高风险人群。
+* 暴露风险、健康负担、住房可返回、承包商边界、保险/修复延迟和公共沟通。
+* 与 <code>air-quality-ventilation-exposure-control/</code> 的边界：该域关注日常空气质量；本域关注洪水后潮湿和霉菌恢复。
+
+<span id="human-infra-模型链路"></span>
+== Human Infra 模型链路 ==
+
+<pre>洪水后湿气与霉菌恢复系统 T
+  -> 改变室内湿度、霉菌暴露、空气质量、材料修复和住房可返回变量 X
+  -> 改变主体灾后居住环境状态 S
+  -> 改变呼吸负担、过敏哮喘、感染风险、睡眠损失和迁移风险 λ(t)
+  -> 影响恢复速度、健康寿命和未来选择权</pre>
+== 非目标 ==
+
+* 不提供个人清理步骤、霉菌检测解释、承包商推荐、结构安全判断、保险理赔建议或医疗诊断。
+* 不收集房屋地址、照片、霉菌样本、保险单、健康状况或儿童/老人房间信息。
+* 不替代 CDC、EPA、地方公共卫生、持证修复承包商、保险专业人员或医疗服务。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* CDC Mold After a Disaster: https://www.cdc.gov/mold-health/about/clean-up.html
+* EPA Mold Resources: https://www.epa.gov/mold
+* Ready.gov Floods: https://www.ready.gov/floods
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C5研究域|C5研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c5-ecological-substrate/post-flood-mold-moisture-indoor-recovery-continuity/README.md Human Infra 仓库：domains/c5-ecological-substrate/post-flood-mold-moisture-indoor-recovery-continuity/README.md]
+
+[[Category:C5研究域]]

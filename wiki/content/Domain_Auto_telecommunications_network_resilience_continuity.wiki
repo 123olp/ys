@@ -1,0 +1,94 @@
+{{研究域
+|域 ID=domain.telecommunications-network-resilience-continuity
+|C 层级=C5：可能性生态承载层
+|研究对象=Telecommunications Network Resilience Continuity
+|持续性作用=主要提供主体展开未来所需的基础环境、资源、治理或基础设施。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c5-ecological-substrate/telecommunications-network-resilience-continuity
+}}
+
+'''Telecommunications Network Resilience Continuity'''是 Human Infra 在“外部生态承载”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+主要提供主体展开未来所需的基础环境、资源、治理或基础设施。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C5“可能性生态承载层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+电信网络韧性与通信连续性域研究：固定网络、移动网络、宽带、卫星、互联网骨干、应急通信和优先通信机制如何在灾害、攻击、停电、拥塞和供应中断中继续连接人、服务和救援系统。
+
+== 对象 ==
+
+* 电信基础设施、通信网络、宽带、移动通信、互联网骨干、卫星通信、911/NG911、公共安全通信和应急通信。
+* 网络冗余、电力备份、互联互通、拥塞、恢复时间、服务覆盖、弱势群体连接和关键服务依赖。
+* 灾害、网络攻击、停电、设备故障、供应链、物理破坏、海底电缆和空间天气对通信连续性的影响。
+* 通信中断对医疗、支付、身份、公共警报、家庭联系、工作、教育和救援响应的连锁影响。
+* 通信系统作为主体持续性的“外部神经系统”。
+
+<span id="human-infra-价值"></span>
+== Human Infra 价值 ==
+
+现代主体依赖通信网络获取警报、医疗、支付、身份验证、导航、社交、学习、工作和救援。通信断线会把资源存在变成资源不可达，把风险信息变成不可行动信息。
+
+<pre>通信网络中断
+  -> 警报、求助、支付、医疗、身份、家庭联系和公共服务同时失联
+  -> 网络韧性、冗余、备电和应急通信降低断线时间
+  -> 主体仍能求助、协作、获得信息并进入恢复路径</pre>
+== 边界 ==
+
+本域只整理公开的通信韧性、应急通信、服务连续性和关键基础设施资料。
+
+不提供：
+
+* 入侵、干扰、阻断、监听、伪基站、绕过认证、破坏网络、规避监测或利用 outage 的方法。
+* 针对具体运营商、基站、骨干节点、海缆、卫星、公共安全网络或应急系统的敏感细节。
+* 非法无线电操作、通信规避、隐蔽通信、诈骗通信或攻击性网络策略。
+* 对具体设备、运营商、卫星服务或网络方案的背书。
+
+== 上游与下游 ==
+
+* 上游：<code>cybersecurity-resilience-critical-services/</code>、<code>energy-access-resilience/</code>、<code>critical-minerals-materials-resilience/</code>、<code>space-extreme-habitation/</code>。
+* 下游：<code>emergency-alerts-communications/</code>、<code>digital-inclusion-connectivity/</code>、<code>patient-data-interoperability/</code>、<code>continuity-of-government-public-administration-resilience/</code>。
+
+== 初始资料线索 ==
+
+* CISA Communications Sector: https://www.cisa.gov/topics/critical-infrastructure-security-and-resilience/critical-infrastructure-sectors/communications-sector
+* CISA National Emergency Communications Plan: https://www.cisa.gov/resources-tools/resources/national-emergency-communications-plan
+* FCC 911 and public safety communications materials.
+* ITU emergency telecommunications materials.
+
+== 下一步 ==
+
+* 建立通信连续性变量表：覆盖、冗余、备电、拥塞、恢复时间、应急优先级、互联互通、弱势群体连接和关键服务依赖。
+* 整理 Source Cards：CISA、FCC、ITU、NIST、OECD 等公开资料。
+* 与 <code>emergency-alerts-communications/</code> 和 <code>digital-inclusion-connectivity/</code> 区分：前者是警报求助入口，本域是底层网络韧性。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C5研究域|C5研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c5-ecological-substrate/telecommunications-network-resilience-continuity/README.md Human Infra 仓库：domains/c5-ecological-substrate/telecommunications-network-resilience-continuity/README.md]
+
+[[Category:C5研究域]]

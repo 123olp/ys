@@ -1,0 +1,80 @@
+{{研究域
+|域 ID=domain.credit-consumer-reporting-access-continuity
+|C 层级=C6：局部可能性解锁层
+|研究对象=Credit Consumer Reporting Access Continuity
+|持续性作用=未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c6-local-unlocking/credit-consumer-reporting-access-continuity
+}}
+
+'''Credit Consumer Reporting Access Continuity'''是 Human Infra 在“局部阻塞解除”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C6“局部可能性解锁层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+Credit Consumer Reporting Access Continuity 关注信用报告、消费者报告、征信准确性、争议更正和负面记录如何影响主体进入住房、金融、就业、保险和公共服务的能力。
+
+== 对象 ==
+
+* Credit reports、consumer reports、credit bureaus、specialty consumer reporting agencies 和 FCRA 权利结构。
+* 错误记录、身份混淆、欺诈痕迹、债务信息、账户状态、冻结/解冻、争议和更正流程。
+* 信用、租房、贷款、就业、保险和服务资格中的报告依赖。
+
+<span id="human-infra-价值"></span>
+== Human Infra 价值 ==
+
+<pre>主体持续性需要制度入口不被错误报告截断
+-> 信用和消费者报告把过去记录转成未来准入条件
+-> 错误、过期、身份混淆或欺诈记录会切断住房、金融、就业和保险入口
+-> 报告访问、争议、更正和监管机制让主体能发现并修复错误信号
+-> 资源、住房、工作和风险转移更可能继续围绕真实主体状态运行</pre>
+== 边界 ==
+
+* 本域不提供信用修复、贷款、债务、破产、法律、税务、租房、就业、保险或个案争议建议。
+* 不判断某报告是否违法、某记录是否应删除、某评分是否准确或某申请如何提高通过率。
+* 不替代 CFPB、FTC、信用机构、消费者律师、金融机构、雇主、房东、保险机构或法院。
+* 只整理公开资料、报告类型、权利边界、数据错误机制、争议流程和禁止用途。
+
+== 上游与下游 ==
+
+* 上游：<code>financial-inclusion-payment-systems/</code>、<code>financial-resilience-access/</code>、<code>fraud-scams-consumer-protection/</code>、<code>digital-identity-security/</code>。
+* 下游：<code>tenant-screening-rental-access-continuity/</code>、<code>employment-algorithmic-hiring-screening-continuity/</code>、<code>insurance-underwriting-algorithmic-risk-scoring-continuity/</code>。
+
+== 初始资料线索 ==
+
+* CFPB consumer reports and credit reports resources.
+* FTC consumer report and background report guidance.
+* Fair Credit Reporting Act public education resources.
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C6研究域|C6研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c6-local-unlocking/credit-consumer-reporting-access-continuity/README.md Human Infra 仓库：domains/c6-local-unlocking/credit-consumer-reporting-access-continuity/README.md]
+
+[[Category:C6研究域]]

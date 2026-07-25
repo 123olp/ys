@@ -1,0 +1,93 @@
+{{研究域
+|域 ID=domain.labor-rights-workplace-protection
+|C 层级=C5：可能性生态承载层
+|研究对象=Labor Rights Workplace Protection
+|持续性作用=关键词显示该域主要承载能源、水、食物、住房、治理、经济、通信、灾害或基础设施环境。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c5-ecological-substrate/labor-rights-workplace-protection
+}}
+
+'''Labor Rights Workplace Protection'''是 Human Infra 在“外部生态承载”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要承载能源、水、食物、住房、治理、经济、通信、灾害或基础设施环境。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C5“可能性生态承载层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>labor-rights-workplace-protection/</code> 研究劳动标准、工资工时、工作场所安全权利、反歧视、反报复、申诉入口和劳动组织治理。
+
+<blockquote>核心问题：工作不只是收入来源，也可能是健康、时间、尊严和权利的损耗源；劳动保护决定工作是能力延展还是主体持续性的反向消耗。
+</blockquote>
+== 先验位置 ==
+
+<pre>有效永生 / 主体持续性最大化
+  -> 主体需要通过工作获得资源、身份、技能和社会连接
+  -> 工作系统必须限制工资剥夺、过劳、安全风险、歧视、骚扰和报复
+  -> 劳动权利与申诉机制决定工作能否支撑而不是侵蚀主体持续性</pre>
+== 关注对象 ==
+
+* 国际劳动标准、最低工资、加班、工时、童工、工资支付和劳动组织透明度。
+* 工作场所安全权利、反歧视、反骚扰、反报复、申诉入口和执行机制。
+* 与 <code>occupational-work-design/</code> 的关系：工作设计域关注任务、暴露和组织方式；本域关注权利、标准和执行。
+* 与 <code>financial-resilience-access/</code>、<code>social-protection-benefits-delivery/</code> 和 <code>governance-rights/</code> 的接口。
+
+<span id="human-infra-模型链路"></span>
+== Human Infra 模型链路 ==
+
+<pre>劳动权利与工作场所保护基础设施
+  -> 改变工资支付、工时边界、安全权利、反歧视和申诉执行能力
+  -> 改变工作对健康、时间、收入、尊严和自主性的净影响
+  -> 降低过劳、伤害、工资剥夺、歧视、报复和长期耗损风险
+  -> 增强资源稳定、恢复能力、有效时间和主体持续性</pre>
+== 非目标 ==
+
+* 不提供法律意见、案件策略、工资计算、雇佣分类判断、投诉策略或胜诉承诺。
+* 不提供劳动组织、集体谈判、罢工、规避雇主或规避监管的操作建议。
+* 不把公共资料写成具体地区、行业、雇佣关系或个案权利结论。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* ILO International Labour Standards: https://www.ilo.org/international-labour-standards
+* U.S. Department of Labor Wage and Hour Division: https://www.dol.gov/agencies/whd
+* Fair Labor Standards Act: https://www.dol.gov/agencies/whd/flsa
+* OSHA Workers: https://www.osha.gov/workers
+* EEOC: https://www.eeoc.gov/
+* DOL Office of Labor-Management Standards: https://www.dol.gov/agencies/olms
+
+== 下一步 ==
+
+* 建立劳动保护变量表：工资支付、工时、加班、安全权利、反歧视、反报复、申诉入口、执行和组织治理。
+* 与 <code>occupational-work-design/</code> 拆清任务设计/人体工学和权利执行的边界。
+* 整理 ILO、DOL WHD、FLSA、OSHA、EEOC 和 OLMS 的 Source Cards。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C5研究域|C5研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c5-ecological-substrate/labor-rights-workplace-protection/README.md Human Infra 仓库：domains/c5-ecological-substrate/labor-rights-workplace-protection/README.md]
+
+[[Category:C5研究域]]

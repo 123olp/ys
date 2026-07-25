@@ -1,0 +1,88 @@
+{{研究域
+|域 ID=domain.chronic-infectious-disease-care-continuity
+|C 层级=C6：局部可能性解锁层
+|研究对象=Chronic Infectious Disease Care Continuity
+|持续性作用=未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c6-local-unlocking/chronic-infectious-disease-care-continuity
+}}
+
+'''Chronic Infectious Disease Care Continuity'''是 Human Infra 在“局部阻塞解除”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C6“局部可能性解锁层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+慢性与长疗程传染病照护连续性域研究：当 HIV、结核、病毒性肝炎等疾病需要长期检测、治疗、随访、去污名和公共卫生协同时，个体健康寿命与社区风险屏障如何共同维持。
+
+== 对象 ==
+
+* HIV、结核、病毒性肝炎和其他需要长期随访、治疗、耐药监测或公共卫生协同的传染病。
+* 筛查系统、确诊路径、治疗连续性、药物可及、依从支持、实验室监测、耐药和失访。
+* 污名、隐私、接触服务、公共卫生报告、社区支持、移民/无家可归/羁押场景中的服务断点。
+* 个体器官损伤、免疫状态、机会性感染、传播风险、公共卫生屏障和治疗窗口。
+* 慢性传染病对健康寿命、有效时间、关系网络、工作能力和未来选择权的影响。
+
+<span id="human-infra-价值"></span>
+== Human Infra 价值 ==
+
+慢性传染病不是单次感染事件，而是长期治疗、监测、药物、隐私、去污名和公共卫生协同的连续系统。这个域把个体持续性和群体屏障放在同一模型里，避免只看“是否有药”，忽略失访、耐药、污名和服务断线。
+
+<pre>慢性和长疗程传染病被连续检测、治疗和支持
+  -> 传播、耐药、器官损伤、污名和照护中断下降
+  -> 个体健康寿命与公共卫生屏障同步提高
+  -> 主体持续性和社区风险韧性提高</pre>
+== 边界 ==
+
+本域只整理公开 HIV、结核、病毒性肝炎、长期感染照护、公共卫生、治疗连续性和去污名资料。
+
+不提供：
+
+* 个体检测、诊断、治疗、用药、停药、PEP/PrEP、隔离、暴露后处理或医疗决策。
+* 传播规避、接触追踪逃避、公共卫生报告规避、检测规避、实验室操作或病原体处理方法。
+* 对感染者、接触者、社群、职业、国籍、羁押或无家可归群体的污名化、定位或歧视性筛选。
+* 把公共卫生资料写成确定个人风险、关系判断、入境/就业/保险策略或法律建议。
+
+== 上游与下游 ==
+
+* 上游：<code>immunization-public-health-surveillance/</code>、<code>antimicrobial-resilience/</code>、<code>medicine-access-treatment-continuity/</code>、<code>health-data-privacy-governance/</code>、<code>clinical-laboratory-diagnostic-quality/</code>。
+* 下游：<code>immune-maintenance/</code>、<code>renal-hepatic-clearance/</code>、<code>social-connection-relational-infra/</code>、<code>governance-rights/</code>。
+
+== 初始资料线索 ==
+
+* WHO HIV, tuberculosis and hepatitis resources。
+* CDC HIV, TB and hepatitis resources。
+* UNAIDS, Stop TB Partnership and viral hepatitis elimination public materials。
+* Public materials on treatment continuity, stigma reduction, contact services and drug resistance。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C6研究域|C6研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c6-local-unlocking/chronic-infectious-disease-care-continuity/README.md Human Infra 仓库：domains/c6-local-unlocking/chronic-infectious-disease-care-continuity/README.md]
+
+[[Category:C6研究域]]

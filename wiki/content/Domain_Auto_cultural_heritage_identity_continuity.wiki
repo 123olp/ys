@@ -1,0 +1,87 @@
+{{研究域
+|域 ID=domain.cultural-heritage-identity-continuity
+|C 层级=C4：可能性转换通道层
+|研究对象=Cultural Heritage Identity Continuity
+|持续性作用=关键词显示该域主要处理研究、数据、模型、服务入口、身份记录、转化或治理接口。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c4-conversion-channel/cultural-heritage-identity-continuity
+}}
+
+'''Cultural Heritage Identity Continuity'''是 Human Infra 在“路径转换接口”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要处理研究、数据、模型、服务入口、身份记录、转化或治理接口。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C4“可能性转换通道层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+Cultural Heritage Identity Continuity 研究语言、文化实践、传统知识、族群身份、移民文化连续性和非物质文化遗产如何支撑主体的身份、归属、记忆和跨代传递。
+
+<blockquote>核心问题：主体不是抽象个体；文化、语言和传统实践会塑造其自我理解、关系网络、照护偏好和未来想象。
+</blockquote>
+== 研究对象 ==
+
+* Cultural heritage、intangible cultural heritage、language, identity, tradition, community memory 和 intergenerational transmission。
+* 迁移、流离失所、殖民创伤、少数族群、原住民、语言弱势和代际断裂。
+* 文化身份与照护沟通、归属、歧视、教育、艺术、仪式和精神实践之间的关系。
+
+== 先验链路 ==
+
+<pre>主体通过语言、习俗、记忆和共同体理解自己是谁
+  -> 文化身份让偏好、价值、照护、关系和未来目标具备解释框架
+  -> 文化断裂会削弱归属、信任、照护沟通、代际传递和身份稳定
+  -> 主体在迁移、教育、医疗、工作和公共服务中更容易被误读或排除
+  -> 有效行动、恢复支持和未来选择权下降
+  -> 因而文化遗产与身份连续性是主体持续性的解释与归属基础</pre>
+== 关键变量 ==
+
+* 语言可及、文化实践、非物质文化遗产、代际传递、文化安全、歧视、同化压力和身份稳定。
+* 移民、难民、原住民、少数族群、宗教共同体、家庭结构、教育系统和医疗沟通。
+* 文化本质化、刻板标签、文化挪用、身份审查、政治操控和敏感身份数据风险。
+
+== 证据入口 ==
+
+* UNESCO Intangible Cultural Heritage Convention。
+* UNESCO living heritage / cultural diversity resources。
+* Language access、cultural mediation 和 minority health 相关资料。
+
+== 非目标 ==
+
+* 本域不做族群判定、文化正统裁判、宗教政治判断、身份认证、文化活动推荐或移民/法律建议。
+* 不提供文化标签化、画像、筛选、同化、宣传、动员、审查或排除方案。
+* 不收集族群、语言、宗教、移民、政治、家庭谱系、文化实践或社区成员资料。
+
+== 上下游 ==
+
+* 上游：<code>language-access-plain-communication/</code>、<code>medical-interpreter-cultural-mediation/</code>、<code>migration-displacement-humanitarian-continuity/</code>。
+* 下游：<code>ritual-ceremony-life-transition-continuity/</code>、<code>arts-creative-expression-participation-continuity/</code>、<code>narrative-identity-life-review-continuity/</code>。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C4研究域|C4研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c4-conversion-channel/cultural-heritage-identity-continuity/README.md Human Infra 仓库：domains/c4-conversion-channel/cultural-heritage-identity-continuity/README.md]
+
+[[Category:C4研究域]]

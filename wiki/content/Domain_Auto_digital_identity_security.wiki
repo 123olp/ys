@@ -1,0 +1,91 @@
+{{研究域
+|域 ID=domain.digital-identity-security
+|C 层级=C4：可能性转换通道层
+|研究对象=Digital Identity Security
+|持续性作用=关键词显示该域主要处理研究、数据、模型、服务入口、身份记录、转化或治理接口。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c4-conversion-channel/digital-identity-security
+}}
+
+'''Digital Identity Security'''是 Human Infra 在“路径转换接口”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要处理研究、数据、模型、服务入口、身份记录、转化或治理接口。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C4“可能性转换通道层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+Digital Identity Security 负责整理数字身份、账号、凭据、身份恢复、服务入口和数据可携带如何支撑主体持续性。
+
+核心问题：
+
+<blockquote>在数字社会中，主体不仅要活着，还必须能被系统承认、访问服务、恢复账号并证明自己仍是自己。
+</blockquote>
+== 先验位置 ==
+
+<pre>有效永生 / 主体持续性最大化
+  -> 主体必须长期接入医疗、金融、政府、社区和协作系统
+  -> 这些系统越来越依赖数字身份、账号、凭据和恢复流程
+  -> 身份盗用、账号丢失或恢复失败会切断资源、权利和行动能力
+  -> 因此数字身份安全是主体进入长期社会系统的入口域</pre>
+== 关注对象 ==
+
+* 身份证明、认证、账号恢复、多因素认证、通行密钥和委托访问。
+* 身份盗用、凭据泄露、社交工程、账户接管和服务入口丢失。
+* 医疗、金融、公共服务、社区资源、数字遗产和数据可携带。
+* 长期身份连续性、代理授权、监护、继承、退出和撤销机制。
+
+<span id="human-infra-模型链路"></span>
+== Human Infra 模型链路 ==
+
+<pre>数字身份安全措施 T
+  -> 改变认证强度、恢复能力、身份证明和服务可达性 X
+  -> 改变主体在数字制度中的可识别状态 S
+  -> 降低服务断线、身份盗用、资源损失和权利中断风险 λ(t)
+  -> 增加长期行动能力、资源接入和未来选择权</pre>
+== 非目标 ==
+
+* 不提供钓鱼、撞库、绕过认证、账号接管或规避身份审查的方法。
+* 不提供法律、金融、移民、保险或福利申请建议。
+* 不把数字身份安全写成单一工具采购建议。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* NIST Digital Identity Guidelines: https://www.nist.gov/itl/applied-cybersecurity/special-publication-800-63
+* NIST Cybersecurity Framework: https://www.nist.gov/cyberframework
+
+== 下一步 ==
+
+# 建立数字身份连续性变量表：认证、授权、恢复、撤销、委托和继承。
+# 与 <code>governance-rights/</code>、<code>resource-social-infra/</code>、<code>ai-agency-safety/</code> 建立身份、代理和服务入口边界。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C4研究域|C4研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c4-conversion-channel/digital-identity-security/README.md Human Infra 仓库：domains/c4-conversion-channel/digital-identity-security/README.md]
+
+[[Category:C4研究域]]

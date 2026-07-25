@@ -1,0 +1,85 @@
+{{研究域
+|域 ID=domain.meeting-video-conferencing-remote-collaboration-continuity
+|C 层级=C6：局部可能性解锁层
+|研究对象=Meeting Video Conferencing Remote Collaboration Continuity
+|持续性作用=未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c6-local-unlocking/meeting-video-conferencing-remote-collaboration-continuity
+}}
+
+'''Meeting Video Conferencing Remote Collaboration Continuity'''是 Human Infra 在“局部阻塞解除”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C6“局部可能性解锁层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>meeting-video-conferencing-remote-collaboration-continuity</code> 研究会议、视频会议、语音、屏幕共享、字幕、录制、协作白板、远程参与和会议资料如何影响主体跨距离完成协作任务。
+
+<blockquote>核心问题：远程会议不是简单通话，而是把身份、声音、画面、资料、同意、记录和行动项临时组合成协作现场。
+</blockquote>
+== 关注对象 ==
+
+* WebRTC、会议链接、会议室、拨入、屏幕共享、录制、字幕、聊天、白板、会议纪要和行动项。
+* 无障碍字幕、语言支持、低带宽模式、设备兼容、隐私权限、主持人控制和会议安全。
+* 远程医疗、远程学习、远程工作、法律/公共服务听证、照护会议和跨组织项目协作。
+* 会议疲劳、平台中断、链接失效、身份混淆、录制风险、资料散落和行动项丢失。
+
+<span id="human-infra-链路"></span>
+== Human Infra 链路 ==
+
+<pre>远程会议与协作连续
+  -> 跨地点主体能够共享语音、画面、资料、记录和行动项
+  -> 距离、设备、带宽、语言、无障碍和资料断点造成的协作失败下降
+  -> 主体能持续参与医疗、学习、工作、治理和照护决策
+  -> 协作网络、社会支持和任务完成能力增强</pre>
+== 非目标 ==
+
+* 不提供会议入侵、绕过会议控制、偷拍视频、规避录制同意、窃听、平台滥用或身份冒充方法。
+* 不替代医疗、法律、学校、雇主或公共机构的正式远程服务规则。
+* 不收集会议录制、聊天记录、敏感资料、会议链接、参与者名单或生物识别数据。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* W3C WebRTC: https://www.w3.org/TR/webrtc/
+* IETF WebRTC overview RFC 8825: https://www.rfc-editor.org/rfc/rfc8825
+* W3C WCAG captions and media accessibility guidance: https://www.w3.org/WAI/
+* NIST telework and collaboration security materials as governance signals.
+
+== 下一步 ==
+
+* 建立 <code>meeting access -&gt; media quality -&gt; accessibility -&gt; record -&gt; action item -&gt; follow-up</code> 变量表。
+* 区分同步会议、异步协作、远程服务、远程听证、照护会议和项目例会。
+* 与 <code>telehealth-remote-monitoring-access</code>、<code>digital-inclusion-connectivity</code>、<code>collaborative-document-permission-version-continuity</code> 和 <code>calendar-scheduling-appointment-continuity</code> 建立边界。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C6研究域|C6研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c6-local-unlocking/meeting-video-conferencing-remote-collaboration-continuity/README.md Human Infra 仓库：domains/c6-local-unlocking/meeting-video-conferencing-remote-collaboration-continuity/README.md]
+
+[[Category:C6研究域]]

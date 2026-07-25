@@ -1,0 +1,85 @@
+{{研究域
+|域 ID=domain.calendar-scheduling-appointment-continuity
+|C 层级=C6：局部可能性解锁层
+|研究对象=Calendar Scheduling Appointment Continuity
+|持续性作用=未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c6-local-unlocking/calendar-scheduling-appointment-continuity
+}}
+
+'''Calendar Scheduling Appointment Continuity'''是 Human Infra 在“局部阻塞解除”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C6“局部可能性解锁层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>calendar-scheduling-appointment-continuity</code> 研究日历、时区、预约、改期、取消、邀请、可用性、提醒和跨平台同步如何影响主体是否能把未来时间承诺转化为真实行动。
+
+<blockquote>核心问题：时间并不会自动变成有效行动；如果日程系统错配、时区错误、预约丢失或提醒失效，医疗、工作、学习、照护和协作机会会直接断线。
+</blockquote>
+== 关注对象 ==
+
+* iCalendar、CalDAV、VTODO、VEVENT、VALARM、会议邀请、预约确认、改期、取消和重复事件。
+* 时区数据库、夏令时、跨地区日程、可用性共享、冲突检测、候补名单和服务窗口。
+* 医疗预约、面试、法庭日期、学校安排、公共服务预约、照护交班和长期项目里程碑。
+* 日历导出、订阅、迁移、备份、权限、共享日历、委托管理和跨平台同步失败。
+
+<span id="human-infra-链路"></span>
+== Human Infra 链路 ==
+
+<pre>日程与预约连续
+  -> 时间承诺、地点、参与人、截止日期和提醒可被可靠记录
+  -> 错过预约、时区错配、改期丢失和冲突成本下降
+  -> 主体能把未来时间窗口稳定转化为医疗、工作、学习、照护和协作行动
+  -> 有效时间、未来选择权和长期项目连续性增强</pre>
+== 非目标 ==
+
+* 不提供绕过预约系统、抢号、自动刷号、批量占位、垃圾邀请或日历滥用方法。
+* 不替代医疗、法律、移民、学校、就业或公共服务机构的正式预约规则。
+* 不收集个人日历、位置、医疗预约、法庭日期、联系人或私密日程。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* IETF RFC 5545 iCalendar: https://www.rfc-editor.org/rfc/rfc5545
+* IETF RFC 4791 CalDAV: https://www.rfc-editor.org/rfc/rfc4791
+* IANA Time Zone Database: https://www.iana.org/time-zones
+* Unicode CLDR date/time data: https://cldr.unicode.org/
+
+== 下一步 ==
+
+* 建立 <code>time commitment -&gt; calendar object -&gt; reminder -&gt; attendance -&gt; recovery</code> 变量表。
+* 区分个人日历、家庭照护日历、医疗预约、教育日程、司法/行政日期和组织排班。
+* 与 <code>time-allocation-effective-time</code>、<code>notification-alert-routing-attention-continuity</code>、<code>reminder-alarm-routine-task-continuity</code> 和 <code>collaborative-document-permission-version-continuity</code> 建立边界。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C6研究域|C6研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c6-local-unlocking/calendar-scheduling-appointment-continuity/README.md Human Infra 仓库：domains/c6-local-unlocking/calendar-scheduling-appointment-continuity/README.md]
+
+[[Category:C6研究域]]

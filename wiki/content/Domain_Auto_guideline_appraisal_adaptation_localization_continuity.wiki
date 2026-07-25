@@ -1,0 +1,85 @@
+{{研究域
+|域 ID=domain.guideline-appraisal-adaptation-localization-continuity
+|C 层级=C4：可能性转换通道层
+|研究对象=Guideline Appraisal, Adaptation and Localization Continuity
+|持续性作用=关键词显示该域主要处理研究、数据、模型、服务入口、身份记录、转化或治理接口。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c4-conversion-channel/guideline-appraisal-adaptation-localization-continuity
+}}
+
+'''Guideline Appraisal, Adaptation and Localization Continuity'''是 Human Infra 在“路径转换接口”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要处理研究、数据、模型、服务入口、身份记录、转化或治理接口。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C4“可能性转换通道层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<span id="scope"></span>
+== Scope ==
+
+This domain studies guideline quality appraisal, adaptation, localization, contextual fit, update status, conflict handling and implementation transfer boundaries.
+
+Human Infra treats guidelines as contextual artifacts: a guideline can be high quality in one setting and still be misapplied in another.
+
+<span id="human-infra-chain"></span>
+== Human Infra Chain ==
+
+<pre>guideline exists
+  -> quality, currency, scope and conflicts must be appraised
+  -> local context changes resources, population, regulation, equity and feasibility
+  -> adaptation documents what transfers and what must be modified
+  -> Human Infra can use guidelines as bounded evidence, not universal commands
+  -> model and narrative outputs avoid context-blind authority transfer</pre>
+<span id="non-goals"></span>
+== Non-Goals ==
+
+* No clinical implementation plan, local policy mandate, medical advice or legal compliance assessment.
+* No endorsement that a guideline is valid, current or applicable to a user.
+* No adaptation used to bypass regulation, professional standards, patient consent or resource constraints.
+* No manipulation of guideline appraisal scores or conflict disclosure.
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* AGREE Enterprise / AGREE II: https://www.agreetrust.org/
+* GRADE-ADOLOPMENT resources: https://www.gradeworkinggroup.org/
+* Guidelines International Network: https://g-i-n.net/
+* WHO handbook for guideline development: https://www.who.int/publications/i/item/9789241548960
+
+<span id="next-notes"></span>
+== Next Notes ==
+
+* Define guideline-card fields: source, date, scope, population, recommendation strength, update status, appraisal result and localization limits.
+* Connect to <code>evidence-to-decision-guideline-panel-continuity/</code>.
+* Track failure modes: stale guideline, context mismatch, resource assumption mismatch, conflict omission and recommendation overreach.
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C4研究域|C4研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c4-conversion-channel/guideline-appraisal-adaptation-localization-continuity/README.md Human Infra 仓库：domains/c4-conversion-channel/guideline-appraisal-adaptation-localization-continuity/README.md]
+
+[[Category:C4研究域]]

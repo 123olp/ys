@@ -1,0 +1,89 @@
+{{研究域
+|域 ID=domain.sleep-disordered-breathing-screening-treatment-continuity
+|C 层级=C4：可能性转换通道层
+|研究对象=Sleep Disordered Breathing Screening Treatment Continuity
+|持续性作用=关键词显示该域主要处理研究、数据、模型、服务入口、身份记录、转化或治理接口。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c4-conversion-channel/sleep-disordered-breathing-screening-treatment-continuity
+}}
+
+'''Sleep Disordered Breathing Screening Treatment Continuity'''是 Human Infra 在“路径转换接口”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要处理研究、数据、模型、服务入口、身份记录、转化或治理接口。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C4“可能性转换通道层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>sleep-disordered-breathing-screening-treatment-continuity/</code> 研究阻塞性睡眠呼吸暂停、夜间低氧、日间嗜睡、诊断转介、治疗坚持和设备可及如何影响主体持续性。
+
+<blockquote>核心问题：睡眠呼吸障碍不是单纯睡眠质量问题，而是通过低氧、觉醒碎片、心血管压力、事故风险和认知疲劳持续改变有效时间与死亡风险。
+</blockquote>
+== 先验位置 ==
+
+<pre>有效永生 / 主体持续性最大化
+  -> 主体依赖睡眠中的呼吸稳定维持脑、心血管和代谢恢复
+  -> 睡眠呼吸障碍可在长期未识别状态下造成低氧、疲劳、事故和心血管负荷
+  -> 结果取决于症状识别、诊断可及、设备/行为治疗可及、坚持和随访
+  -> 因此睡眠呼吸障碍是恢复系统与风险预防之间的关键执行域</pre>
+== 关注对象 ==
+
+* Obstructive sleep apnea、sleep-disordered breathing、nocturnal hypoxemia、daytime sleepiness、screening uncertainty、sleep study access、CPAP / oral appliance adherence、driving and work safety。
+* 与 <code>sleep-circadian-recovery/</code> 的边界：该域关注睡眠、昼夜节律和恢复总机制；本域关注呼吸障碍、低氧和治疗连续性。
+* 与 <code>respiratory-oxygenation/</code> 的关系：本域处理睡眠阶段的呼吸和氧合断点。
+
+<span id="human-infra-模型链路"></span>
+== Human Infra 模型链路 ==
+
+<pre>睡眠呼吸障碍识别与治疗系统 T
+  -> 改变低氧负荷、觉醒碎片、白天警觉性、治疗坚持和设备可及变量 X
+  -> 改变脑恢复、心血管压力、代谢状态、事故暴露和认知疲劳 S
+  -> 改变有效时间损失、心血管事件、工作/驾驶风险和长期失能 λ(t)
+  -> 影响主体学习、行动、恢复、判断和未来选择权</pre>
+== 非目标 ==
+
+* 不提供个人筛查量表解读、睡眠监测判读、CPAP 设置、口腔矫治器选择、用药、驾驶限制或治疗建议。
+* 不生成个人诊断、睡眠报告解释、设备购买建议、保险申诉或职业安全判定。
+* 不收集个案睡眠、呼吸、血氧、体重、病史、药物、驾驶或设备数据。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* NHLBI sleep apnea: https://www.nhlbi.nih.gov/health/sleep-apnea
+* USPSTF obstructive sleep apnea screening statement: https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/obstructive-sleep-apnea-in-adults-screening
+* CDC sleep and sleep disorders: https://www.cdc.gov/sleep/
+
+== 下一步 ==
+
+* 建立 Sleep Breathing Continuity Card：symptoms, oxygen burden, study access, treatment access, adherence, safety exposure, follow-up。
+* 与 <code>sleep-circadian-recovery/</code>、<code>respiratory-oxygenation/</code> 和 <code>cardiovascular-resilience/</code> 建立接口。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C4研究域|C4研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c4-conversion-channel/sleep-disordered-breathing-screening-treatment-continuity/README.md Human Infra 仓库：domains/c4-conversion-channel/sleep-disordered-breathing-screening-treatment-continuity/README.md]
+
+[[Category:C4研究域]]

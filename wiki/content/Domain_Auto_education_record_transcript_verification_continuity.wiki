@@ -1,0 +1,81 @@
+{{研究域
+|域 ID=domain.education-record-transcript-verification-continuity
+|C 层级=C3：可能性生成引擎层
+|研究对象=Education Record Transcript Verification Continuity
+|持续性作用=关键词显示该域主要增强认知、学习、工具、AI、技能或沟通能力。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c3-generation-engine/education-record-transcript-verification-continuity
+}}
+
+'''Education Record Transcript Verification Continuity'''是 Human Infra 在“主体能力生成”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要增强认知、学习、工具、AI、技能或沟通能力。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C3“可能性生成引擎层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+Education Record Transcript Verification Continuity 关注教育记录、成绩单、学籍、学历、证书和学习成就证明如何被保存、核验、携带和纠错，以及这些记录如何影响主体进入教育、就业、移民、执照、福利和研究系统的能力。
+
+== 对象 ==
+
+* Student education records、transcripts、diplomas、enrollment records、degree verification、school records 和 registrar systems。
+* FERPA、学生隐私、记录访问、更正、授权披露、第三方核验、跨校转学和国际学历核验。
+* 教育记录在招聘、背景调查、专业证照、继续教育、奖助学金、移民和公共服务中的准入作用。
+
+<span id="human-infra-价值"></span>
+== Human Infra 价值 ==
+
+<pre>主体长期行动需要可被承认的学习历史
+-> 教育记录把过去学习转成未来教育、就业和资格入口
+-> 记录丢失、错误、学校关闭、身份不匹配或不可携带会切断能力证明
+-> 访问、更正、授权披露和核验机制让学习历史可恢复、可解释、可转移
+-> 主体更容易把学习轮次沉淀为可被制度承认的长期能力资产</pre>
+== 边界 ==
+
+* 本域不提供升学申请、学历认证、成绩修改、背景调查争议、移民、法律、就业或个案文件建议。
+* 不判断某学历、成绩单、学校、证书或核验服务是否真实、等效、合规或应被接受。
+* 不提供伪造成绩单、规避核验、冒名认证、账号绕过或学校系统访问方法。
+* 只整理公开资料、记录权利、核验机制、隐私边界、失真风险和连续性断点。
+
+== 上游与下游 ==
+
+* 上游：<code>education-access-lifelong-learning/</code>、<code>digital-identity-security/</code>、<code>legal-identity-civil-registration/</code>、<code>health-data-privacy-governance/</code>。
+* 下游：<code>background-check-record-screening-continuity/</code>、<code>professional-licensure-certification-continuity/</code>、<code>employment-algorithmic-hiring-screening-continuity/</code>、<code>skills-competency-credentialing-continuity/</code>。
+
+== 初始资料线索 ==
+
+* U.S. Department of Education FERPA student privacy resources.
+* National Center for Education Statistics and official education data systems.
+* Registrar、transcript、degree verification and education-record portability literature.
+* W3C Verifiable Credentials and digital credential use cases.
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C3研究域|C3研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c3-generation-engine/education-record-transcript-verification-continuity/README.md Human Infra 仓库：domains/c3-generation-engine/education-record-transcript-verification-continuity/README.md]
+
+[[Category:C3研究域]]

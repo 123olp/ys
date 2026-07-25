@@ -1,0 +1,93 @@
+{{研究域
+|域 ID=domain.registries-real-world-data-governance
+|C 层级=C4：可能性转换通道层
+|研究对象=Registries Real World Data Governance
+|持续性作用=主要把科学、医疗、数据、制度或技术从潜在能力转成真实可用路径。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c4-conversion-channel/registries-real-world-data-governance
+}}
+
+'''Registries Real World Data Governance'''是 Human Infra 在“路径转换接口”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+主要把科学、医疗、数据、制度或技术从潜在能力转成真实可用路径。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C4“可能性转换通道层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>registries-real-world-data-governance/</code> 研究患者登记、疾病登记、产品登记、真实世界数据、真实世界证据、数据模型、质量评估和治理边界，如何把现实照护过程转化为可审查证据。
+
+<blockquote>核心问题：很多 Human Infra 路径不可能只靠随机试验理解。药物、器械、罕见病、长期照护、复杂慢病和高风险技术都需要登记系统与真实世界数据反馈。但登记系统如果定义混乱、缺失严重或治理失效，会制造规模化误判。
+</blockquote>
+== 先验位置 ==
+
+<pre>有效永生 / 主体持续性最大化
+  -> 需要理解技术和照护在真实世界中的长期效果、安全性和可及性
+  -> 真实世界证据依赖登记系统、数据模型、质量控制、结局定义和治理
+  -> 登记缺失、选择偏差、数据漂移和用途越界会污染效果与风险判断
+  -> 因此登记与真实世界数据治理是技术进入现实后的反馈域</pre>
+== 关注对象 ==
+
+* 患者登记、疾病登记、产品登记、器械登记、治疗登记、罕见病登记和结局登记。
+* 真实世界数据、真实世界证据、EHR、claims、患者报告数据、数据模型、数据质量和治理。
+* 长期安全、有效性、可及性、公平性、上市后反馈和技术扩散监测。
+* 与 <code>clinical-trials-regulatory-science-translation/</code> 的边界：临床试验域关注试验与监管证据路径；本域关注真实世界登记和持续反馈。
+* 与 <code>patient-data-interoperability/</code> 的边界：患者数据互操作域关注数据流通标准；本域关注登记系统作为证据工具的治理与质量。
+
+<span id="human-infra-模型链路"></span>
+== Human Infra 模型链路 ==
+
+<pre>登记与真实世界数据治理 T
+  -> 改变结局定义、数据完整性、随访、代表性、质量审计和用途边界变量 X
+  -> 改变技术真实世界效果、安全性和扩散状态 S
+  -> 改变上市后风险遗漏、效果外推、数据漂移和证据错配风险 λ(t)
+  -> 影响技术采用、监管反馈、患者安全和主体持续性路径修正</pre>
+== 非目标 ==
+
+* 不提供越权访问 EHR、重新识别、规避 HIPAA/IRB、操控登记入组或选择性报告策略。
+* 不把真实世界数据写成自动因果结论；必须区分描述、预测、因果和监管证据。
+* 不替代监管机构、数据使用协议、隐私审查或统计分析计划。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* AHRQ Registries for Evaluating Patient Outcomes: https://effectivehealthcare.ahrq.gov/products/registries-guide-4th-edition/research
+* FDA Real-World Evidence: https://www.fda.gov/science-research/science-and-research-special-topics/real-world-evidence
+* FDA Real-World Data and Real-World Evidence Guidances: https://www.fda.gov/science-research/science-and-research-special-topics/real-world-evidence
+* OHDSI OMOP Common Data Model: https://ohdsi.github.io/CommonDataModel/
+* ClinicalTrials.gov: https://clinicaltrials.gov/
+
+== 下一步 ==
+
+* 建立登记系统变量表：目标人群、入组规则、结局定义、随访、缺失、数据来源、质量审计和用途限制。
+* 与 <code>pharmacovigilance-drug-safety-monitoring/</code>、<code>medical-device-equipment-safety-maintenance/</code>、<code>rare-disease-diagnostic-odyssey-care-coordination/</code> 和 <code>causal-inference-target-trial-emulation/</code> 建立接口。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C4研究域|C4研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c4-conversion-channel/registries-real-world-data-governance/README.md Human Infra 仓库：domains/c4-conversion-channel/registries-real-world-data-governance/README.md]
+
+[[Category:C4研究域]]

@@ -1,0 +1,82 @@
+{{研究域
+|域 ID=domain.wound-infection-cellulitis-sepsis-continuity
+|C 层级=C2：可能性源体维护层
+|研究对象=Wound Infection, Cellulitis and Sepsis Continuity
+|持续性作用=关键词显示该域主要维护身体、脑、器官、细胞、急性生命风险或衰老损伤控制。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c2-source-maintenance/wound-infection-cellulitis-sepsis-continuity
+}}
+
+'''Wound Infection, Cellulitis and Sepsis Continuity'''是 Human Infra 在“生命载体维护”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要维护身体、脑、器官、细胞、急性生命风险或衰老损伤控制。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C2“可能性源体维护层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>wound-infection-cellulitis-sepsis-continuity/</code> 研究皮肤破口、慢性伤口、蜂窝织炎和软组织感染如何从局部边界失败发展为全身感染风险，并影响主体行动、住院和死亡风险。
+
+<blockquote>核心问题：皮肤感染是外界进入身体系统的通道；一旦失控，它会从局部疼痛和红肿升级为全身性风险。
+</blockquote>
+== 先验位置 ==
+
+<pre>有效永生
+  -> 主体必须维持外界与内部环境之间的感染边界
+  -> 伤口或皮肤屏障破裂会增加微生物进入机会
+  -> 局部感染可能扩大为蜂窝织炎、深部感染或脓毒症风险
+  -> 因此伤口感染是皮肤边界失效进入系统性风险的过渡域</pre>
+== 关注对象 ==
+
+* Wound infection, cellulitis, skin and soft tissue infection, spreading infection, sepsis risk, recurrence and care delay。
+* 与 <code>sepsis-shock-early-recognition-resuscitation-continuity/</code> 的关系：后者关注全身性脓毒症抢救，本域关注皮肤/伤口入口和早期失控链路。
+
+<span id="human-infra-模型链路"></span>
+== Human Infra 模型链路 ==
+
+<pre>伤口感染控制连续性 T
+  -> 改变屏障破口、局部炎症、传播速度、照护延迟和抗菌治理 X
+  -> 改变局部组织状态、疼痛、行动能力和全身感染负担 S
+  -> 改变住院、脓毒症、器官支持和死亡风险 lambda(t)
+  -> 改变有效时间、恢复窗口和未来选择权</pre>
+== 非目标 ==
+
+* 不提供感染诊断、抗生素选择、急诊判断、伤口照片判断、用药剂量或个人治疗建议。
+* 不输出“是否蜂窝织炎”“是否脓毒症”等个体结论。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* MedlinePlus cellulitis materials.
+* MedlinePlus wounds and injuries materials.
+* CDC / Sepsis public health materials.
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C2研究域|C2研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c2-source-maintenance/wound-infection-cellulitis-sepsis-continuity/README.md Human Infra 仓库：domains/c2-source-maintenance/wound-infection-cellulitis-sepsis-continuity/README.md]
+
+[[Category:C2研究域]]

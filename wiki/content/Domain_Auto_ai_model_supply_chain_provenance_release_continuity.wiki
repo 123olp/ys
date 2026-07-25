@@ -1,0 +1,93 @@
+{{研究域
+|域 ID=domain.ai-model-supply-chain-provenance-release-continuity
+|C 层级=C3：可能性生成引擎层
+|研究对象=AI Model Supply Chain Provenance Release Continuity
+|持续性作用=关键词显示该域主要增强认知、学习、工具、AI、技能或沟通能力。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c3-generation-engine/ai-model-supply-chain-provenance-release-continuity
+}}
+
+'''AI Model Supply Chain Provenance Release Continuity'''是 Human Infra 在“主体能力生成”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要增强认知、学习、工具、AI、技能或沟通能力。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C3“可能性生成引擎层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>ai-model-supply-chain-provenance-release-continuity/</code> 研究 AI 模型来源、权重、依赖、数据/代码谱系、签名、发布说明、版本变更、许可证和撤回机制，如何影响 AI 工具作为 Human Infra 的长期可信性。
+
+<blockquote>核心问题：AI 模型不是孤立文件，而是数据、代码、依赖、训练流程、权重、许可证和发布治理的供应链产物。供应链不可信，模型能力就不可托付。
+</blockquote>
+== 先验位置 ==
+
+<pre>有效永生 / 主体持续性最大化
+  -> 需要长期复用 AI 模型和工具链作为认知与行动放大器
+  -> AI 模型依赖训练数据、代码、权重、依赖包、推理服务和发布流程
+  -> 来源不明、依赖污染、版本漂移和许可证不清会破坏长期可用性
+  -> 因此 AI 模型供应链、来源证明与发布治理是 AI 工具可信消费域</pre>
+== 关注对象 ==
+
+* 模型来源、权重哈希、签名、依赖、训练/微调流程、数据引用、license、model card、release notes 和 deprecation。
+* 模型 registry、artifact provenance、SBOM/ML-BOM、SLSA、Sigstore、可复现构建和撤回通知。
+* 发布前审查、版本差异、能力变更、安全变更、已知限制和回滚路径。
+* 与 <code>software-supply-chain-dependency-provenance/</code> 的关系：软件供应链域关注通用软件依赖；本域关注模型 artifact 与 AI 发布链路。
+* 与 <code>model-cards-ai-audit-documentation/</code> 的边界：模型卡域关注说明文档；本域关注可验证来源、发布和供应链完整性。
+
+<span id="human-infra-模型链路"></span>
+== Human Infra 模型链路 ==
+
+<pre>AI 模型供应链来源与发布治理 T
+  -> 改变来源证明、版本、依赖、许可证、发布说明和撤回信号变量 X
+  -> 改变模型可追溯、可回滚、可替换和可信消费状态 S
+  -> 改变供应链污染、不可复现、错误升级、合规不确定和长期不可用风险 λ(t)
+  -> 影响主体 AI 工具稳定性、知识资产延续和协作基础设施可信度</pre>
+== 非目标 ==
+
+* 不提供模型盗取、权重绕权、许可证规避、私有模型抓取、供应链投毒或签名伪造方法。
+* 不保存未授权模型权重、私有构建日志、密钥、token 或受限 artifact。
+* 不把“开源”“公开下载”写成可无限制使用。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* OpenSSF SLSA: https://slsa.dev/
+* Sigstore: https://www.sigstore.dev/
+* CISA Secure by Design: https://www.cisa.gov/securebydesign
+* NIST Secure Software Development Framework: https://csrc.nist.gov/Projects/ssdf
+* Model Cards for Model Reporting: https://arxiv.org/abs/1810.03993
+
+== 下一步 ==
+
+* 建立 Model Release Source Card 字段：artifact id, version, hash, license, provenance, dependency boundary, release note, deprecation status。
+* 与 <code>software-supply-chain-dependency-provenance/</code>、<code>model-cards-ai-audit-documentation/</code> 和 <code>ai-data-provenance-contamination-drift-continuity/</code> 建立供应链索引。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C3研究域|C3研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c3-generation-engine/ai-model-supply-chain-provenance-release-continuity/README.md Human Infra 仓库：domains/c3-generation-engine/ai-model-supply-chain-provenance-release-continuity/README.md]
+
+[[Category:C3研究域]]

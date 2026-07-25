@@ -1,0 +1,80 @@
+{{研究域
+|域 ID=domain.employment-algorithmic-hiring-screening-continuity
+|C 层级=C4：可能性转换通道层
+|研究对象=Employment Algorithmic Hiring Screening Continuity
+|持续性作用=关键词显示该域主要处理研究、数据、模型、服务入口、身份记录、转化或治理接口。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c4-conversion-channel/employment-algorithmic-hiring-screening-continuity
+}}
+
+'''Employment Algorithmic Hiring Screening Continuity'''是 Human Infra 在“路径转换接口”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要处理研究、数据、模型、服务入口、身份记录、转化或治理接口。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C4“可能性转换通道层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+Employment Algorithmic Hiring Screening Continuity 关注 AI 招聘、自动化简历筛选、测评、视频面试、背景筛查、disparate impact 和合理便利如何影响主体进入工作、收入和技能增长路径。
+
+== 对象 ==
+
+* Algorithmic hiring tools、resume screening、assessment tests、video interview scoring、job matching 和 automated employment decision systems。
+* 数据偏差、代理变量、残障合理便利、透明度、告知、审计、申诉和人类复核。
+* 招聘、晋升、排班、绩效、解雇、平台劳动和劳动力服务中的算法筛查层。
+
+<span id="human-infra-价值"></span>
+== Human Infra 价值 ==
+
+<pre>主体持续性需要工作入口不被不透明算法错误排除
+-> 工作入口决定收入、保险、身份、学习机会和社会参与
+-> 自动化筛查会把数据偏差、代理变量和不可解释评分转成排除
+-> 告知、审计、合理便利、人类复核和反歧视边界降低错误筛除
+-> 能力更可能转化为真实工作机会和长期资源循环</pre>
+== 边界 ==
+
+* 本域不提供求职优化、简历规避、面试作弊、背景调查规避、法律、劳动争议、歧视投诉或雇主合规建议。
+* 不判断某招聘工具、雇主行为、测评结果或拒绝录用是否合法。
+* 不替代 EEOC、DOL、州劳动机构、律师、雇主、工会、人力资源或残障权利机构。
+* 只整理公开资料、算法机制、风险变量、治理边界、审计线索和禁止用途。
+
+== 上游与下游 ==
+
+* 上游：<code>labor-rights-workplace-protection/</code>、<code>workforce-employment-services/</code>、<code>background-check-record-screening-continuity/</code>、<code>model-cards-ai-audit-documentation/</code>。
+* 下游：<code>financial-resilience-access/</code>、<code>healthcare-access-continuity/</code>、<code>education-access-lifelong-learning/</code>、<code>administrative-burden-procedural-friction/</code>。
+
+== 初始资料线索 ==
+
+* EEOC Artificial Intelligence and Algorithmic Fairness Initiative.
+* EEOC technical assistance on AI and selection procedures.
+* NIST AI Risk Management Framework.
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C4研究域|C4研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c4-conversion-channel/employment-algorithmic-hiring-screening-continuity/README.md Human Infra 仓库：domains/c4-conversion-channel/employment-algorithmic-hiring-screening-continuity/README.md]
+
+[[Category:C4研究域]]

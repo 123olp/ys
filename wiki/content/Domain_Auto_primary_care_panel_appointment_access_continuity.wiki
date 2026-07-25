@@ -1,0 +1,89 @@
+{{研究域
+|域 ID=domain.primary-care-panel-appointment-access-continuity
+|C 层级=C6：局部可能性解锁层
+|研究对象=Primary Care Panel Appointment Access Continuity
+|持续性作用=未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c6-local-unlocking/primary-care-panel-appointment-access-continuity
+}}
+
+'''Primary Care Panel Appointment Access Continuity'''是 Human Infra 在“局部阻塞解除”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C6“局部可能性解锁层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+== 定位 ==
+
+本域研究初级照护、panel、new patient intake、年度体检、慢病随访、同日预约、远程/线下入口和连续关系如何把医疗系统转化为主体的常规维护界面。
+
+它不是个体诊断、医生选择、预约抢号或健康管理建议入口。
+
+== 先验问题 ==
+
+<pre>医疗系统何以维护主体而不是只处理危机？
+  -> 主体必须有可进入的初级照护入口
+  -> 初诊、随访、预防、慢病和转诊关系必须连续
+  -> panel 和预约容量必须能吸收真实需求
+  -> 否则问题会累积到急诊、住院或不可逆损伤</pre>
+== 研究对象 ==
+
+* Primary care、family medicine、internal medicine、pediatrics 和 community health centers。
+* Panel size、new patient access、same-day access、annual wellness、follow-up 和 chronic care visits。
+* FQHC、HRSA health center、patient-centered medical home 和 team-based care。
+* 远程初级照护、语言服务、交通、数字入口和预约改期。
+
+== 关键变量 ==
+
+* 初诊等待时间、新患者接收率、随访间隔和 missed appointment。
+* Panel capacity、PCP-to-population ratio、连续性指数和常规来源照护比例。
+* 预防服务完成、慢病监测间隔、转诊启动率和患者门户可用性。
+
+== 证据入口 ==
+
+* HRSA health centers、AHRQ primary care、CMS preventive services 和 Medicare wellness visit 资料。
+* CDC / Healthy People primary care access 指标。
+* NCQA patient-centered medical home 和卫生服务研究。
+
+== 非目标 ==
+
+* 不推荐医生、诊断、检查、药物、慢病方案、预约技巧或抢号方法。
+* 不提供保险选择、资格判断、FQHC 申请、病历整理或个案转诊建议。
+* 不收集病历、保险、预约、地址、症状、用药或健康门户信息。
+
+== 上下游 ==
+
+* 上游：<code>provider-directory-network-adequacy-continuity/</code>、<code>healthcare-access-continuity/</code>、<code>community-resource-navigation/</code>。
+* 下游：<code>specialist-referral-authorization-navigation-continuity/</code>、<code>appointment-availability-wait-time-continuity/</code>、<code>medication-reconciliation-regimen-adherence-continuity/</code>。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C6研究域|C6研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c6-local-unlocking/primary-care-panel-appointment-access-continuity/README.md Human Infra 仓库：domains/c6-local-unlocking/primary-care-panel-appointment-access-continuity/README.md]
+
+[[Category:C6研究域]]

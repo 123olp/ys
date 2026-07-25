@@ -1,0 +1,18 @@
+{{证据来源
+|来源 ID=evidence.nia.geroscience
+|来源类型=政府研究机构说明
+|完整引文=National Institute on Aging. Geroscience: The intersection of basic aging biology, chronic disease, and health.
+|URL 或 DOI=https://www.nia.nih.gov/research/dab/geroscience-intersection-basic-aging-biology-chronic-disease-and-health
+|支持范围=衰老机制作为多种慢性疾病共同驱动因素的研究框架
+|不支持的推论=不支持衰老已被治愈或长寿逃逸速度已经实现
+|审查状态=已核对官方页面
+|访问日期=2026-07-24
+}}
+
+== 支持范围 ==
+
+支持 geroscience 的研究定位，以及炎症、免疫、应激适应、表观遗传、代谢、大分子损伤、蛋白稳态和细胞衰老等研究支柱。
+
+== 不支持的推论 ==
+
+该来源不证明任何单项药物、组合疗法或人体逆龄方案有效。

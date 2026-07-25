@@ -1,0 +1,92 @@
+{{研究域
+|域 ID=domain.journal-editorial-policy-peer-review-integrity-continuity
+|C 层级=C4：可能性转换通道层
+|研究对象=Journal Editorial Policy Peer Review Integrity Continuity
+|持续性作用=关键词显示该域主要处理研究、数据、模型、服务入口、身份记录、转化或治理接口。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c4-conversion-channel/journal-editorial-policy-peer-review-integrity-continuity
+}}
+
+'''Journal Editorial Policy Peer Review Integrity Continuity'''是 Human Infra 在“路径转换接口”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要处理研究、数据、模型、服务入口、身份记录、转化或治理接口。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C4“可能性转换通道层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>journal-editorial-policy-peer-review-integrity-continuity/</code> 研究期刊编辑政策、同行评审完整性、审稿透明度、编辑纠错和出版伦理如何影响证据进入 Human Infra。
+
+<blockquote>核心问题：同行评审不是二元开关；审稿模式、编辑政策、数据可得性、利益冲突和纠错程序会改变论文可用性。
+</blockquote>
+== 先验位置 ==
+
+<pre>有效永生 / 主体持续性最大化
+  -> 需要把论文状态转化为可审查证据等级
+  -> 期刊编辑政策和同行评审流程决定论文是否经过最低质量控制
+  -> 审稿失灵、编辑冲突和政策缺位会让错误结论获得权威外观
+  -> 因此期刊编辑政策与同行评审完整性是证据权威性的制度门槛</pre>
+== 关注对象 ==
+
+* Editorial policy、peer review model、review transparency、data availability policy、conflict policy、correction policy 和 appeals process。
+* Open peer review、registered reports、reviewer identity protection、editorial independence 和 publication ethics。
+* 与 <code>preregistration-registered-report-study-plan-continuity/</code> 的边界：预注册域关注研究计划；本域关注期刊和审稿制度。
+* 与 <code>risk-of-bias-critical-appraisal-continuity/</code> 的边界：偏倚域评价研究本身；本域评价出版和审稿管道。
+
+<span id="human-infra-模型链路"></span>
+== Human Infra 模型链路 ==
+
+<pre>期刊编辑与同行评审完整性 T
+  -> 改变 editorial_policy、review_model、transparency、data_policy、correction_capacity 变量 X
+  -> 改变论文证据等级、可信传播状态和复核优先级 S
+  -> 改变权威外观误导、审稿失灵、数据不可查和结论过度使用风险 λ(t)
+  -> 影响系统综述、模型输入和主体持续性路径判断</pre>
+== 非目标 ==
+
+* 不提供伪造审稿、推荐审稿人操控、投稿策略、审稿规避、编辑申诉代写或期刊排名服务。
+* 不把期刊影响因子当作质量替代指标。
+* 不公开非公开审稿意见、编辑系统记录或审稿人身份。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* COPE Core Practices: https://publicationethics.org/core-practices
+* ICMJE Recommendations: https://www.icmje.org/recommendations/
+* EQUATOR Network: https://www.equator-network.org/
+* Open Peer Review taxonomy, F1000Research: https://f1000research.com/articles/6-588
+* Registered Reports, Center for Open Science: https://www.cos.io/initiatives/registered-reports
+
+== 下一步 ==
+
+* 为 Source Card 增加 <code>peer_review_model</code>、<code>editorial_policy_signal</code>、<code>data_availability_policy</code> 和 <code>correction_policy_signal</code> 字段。
+* 与预注册、风险偏倚、利益冲突和撤稿状态域建立复核链。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C4研究域|C4研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c4-conversion-channel/journal-editorial-policy-peer-review-integrity-continuity/README.md Human Infra 仓库：domains/c4-conversion-channel/journal-editorial-policy-peer-review-integrity-continuity/README.md]
+
+[[Category:C4研究域]]

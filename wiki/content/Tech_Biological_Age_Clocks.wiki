@@ -1,0 +1,36 @@
+{{技术节点
+|节点 ID=technology.biological-age-clocks
+|阶段=当前
+|状态=进行中
+|时间=2013年至今
+|前置依赖=纵向队列、多组学测量、临床结局
+|持续性作用=缩短衰老干预反馈周期并支持风险分层
+|解锁条件=跨人群外部验证、增量预测价值、干预响应验证
+|证据来源=[[证据来源：衰老标志2023]]
+}}
+
+'''生物年龄时钟'''使用 DNA 甲基化、蛋白质、代谢、转录或功能数据估计与年龄和健康结局相关的生物状态。
+
+== 对 Human Infra 的作用 ==
+
+它是观测能力节点，使数十年的寿命终点可能获得较短周期的候选替代指标。
+
+== 机制或依赖 ==
+
+时钟从训练数据中学习年龄或结局相关模式。有效应用要求量表定义、测量稳定性、跨队列校准、纵向敏感性和与真实功能终点对齐。
+
+== 证据与来源 ==
+
+表观遗传年龄与健康结局和死亡风险存在关联，但不同指标捕获的生物过程并不相同。<ref>[https://www.nia.nih.gov/news/age-estimated-changes-dna-can-help-predict-health-outcomes-mortality-older-adults NIA, Epigenetic age and health outcomes]，访问于 2026-07-24。</ref>
+
+== 边界、失败条件和未知项 ==
+
+指标变年轻不自动代表功能恢复或寿命延长；训练集偏差、批次效应和针对指标优化可能产生 Goodhart 风险。
+
+== 相关词条与外部链接 ==
+
+* [[长寿科学]]
+* [[部分细胞重编程]]
+* [https://en.wikipedia.org/wiki/Epigenetic_clock 外部 Wikipedia：Epigenetic clock]
+
+<references />

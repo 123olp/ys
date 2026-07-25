@@ -1,0 +1,85 @@
+{{研究域
+|域 ID=domain.email-account-recovery-continuity
+|C 层级=C6：局部可能性解锁层
+|研究对象=Email Account Recovery Continuity
+|持续性作用=未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c6-local-unlocking/email-account-recovery-continuity
+}}
+
+'''Email Account Recovery Continuity'''是 Human Infra 在“局部阻塞解除”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C6“局部可能性解锁层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>email-account-recovery-continuity</code> 研究邮箱账号、恢复邮箱、通知入口、密码重置、身份验证、账号接管和通信记录如何影响主体能否继续接入医疗、金融、教育、工作、政府和社交系统。
+
+<blockquote>核心问题：邮箱不是普通通信工具，而是大多数数字身份、账单通知、密码重置、资料导出和服务恢复的上游入口。
+</blockquote>
+== 关注对象 ==
+
+* Primary email、recovery email、alias、mail forwarding、MX/DNS 配置、过滤规则、垃圾邮件误判和账号停用。
+* Password reset、account recovery、suspicious login notification、session management、OAuth consent 和第三方登录绑定。
+* 邮件归档、账单/医疗/学校/政府通知、工作交接、法律通知、收据和长期检索。
+* 账号接管、恢复失败、邮箱提供商停权、域名邮箱过期、恢复资料陈旧和隐私泄露。
+
+<span id="human-infra-链路"></span>
+== Human Infra 链路 ==
+
+<pre>邮箱账号恢复连续
+  -> 数字服务通知、密码重置和身份验证入口保持可达
+  -> 医疗、金融、教育、工作、政府和社交账户恢复成本下降
+  -> 关键服务断联、资料丢失和身份接管风险下降
+  -> 主体数字行动能力、资源控制和未来选择权增强</pre>
+== 非目标 ==
+
+* 不提供个人邮箱找回、黑客入侵处置、取证、绕过验证、社工、账号接管或平台申诉建议。
+* 不替代邮箱服务商、组织 IT、身份验证团队、执法、律师、FTC IdentityTheft.gov 或官方账号恢复渠道。
+* 不收集或处理邮箱地址、密码、验证码、恢复码、邮件内容、登录记录、联系人、设备指纹或账号安全事件细节。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* FTC hacked email and account recovery guidance: https://consumer.ftc.gov/
+* CISA Secure Our World account security resources: https://www.cisa.gov/secure-our-world
+* NIST Digital Identity Guidelines: https://pages.nist.gov/800-63-4/
+* Google, Microsoft, Apple and major provider public account recovery documentation as implementation examples.
+
+== 下一步 ==
+
+* 建立 <code>email account -&gt; recovery channel -&gt; service reset -&gt; notification -&gt; continuity</code> 变量表。
+* 区分个人邮箱、工作邮箱、学校邮箱、域名邮箱和恢复邮箱的所有权边界。
+* 与 <code>digital-identity-security</code>、<code>platform-account-suspension-appeals-continuity</code>、<code>cloud-backup-file-sync-data-portability-continuity</code> 和 <code>domain-dns-web-presence-continuity</code> 建立边界。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C6研究域|C6研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c6-local-unlocking/email-account-recovery-continuity/README.md Human Infra 仓库：domains/c6-local-unlocking/email-account-recovery-continuity/README.md]
+
+[[Category:C6研究域]]

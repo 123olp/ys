@@ -1,0 +1,18 @@
+{{证据来源
+|来源 ID=evidence.jne.memory-prosthesis-2018
+|来源类型=同行评审人体概念验证
+|完整引文=Hampson RE, et al. Developing a hippocampal neural prosthetic to facilitate human memory encoding and recall. Journal of Neural Engineering. 2018.
+|URL 或 DOI=https://pubmed.ncbi.nlm.nih.gov/29589592/
+|支持范围=个体海马编码模型与特定短期记忆任务中的刺激效果
+|不支持的推论=不支持任意记忆写入、删除、人格备份或通用智力增强
+|审查状态=已核对 PubMed 摘要
+|访问日期=2026-07-24
+}}
+
+== 支持范围 ==
+
+支持闭环神经假体可在受控条件下调节特定记忆编码任务的研究方向。
+
+== 不支持的推论 ==
+
+单项概念验证不能外推为长期、跨任务或健康人增强效果。

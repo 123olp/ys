@@ -1,0 +1,95 @@
+{{研究域
+|域 ID=domain.thermal-stress-sauna-cold-exposure-hormesis-governance-continuity
+|C 层级=C6：局部可能性解锁层
+|研究对象=Thermal Stress Sauna Cold Exposure Hormesis Governance Continuity
+|持续性作用=未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c6-local-unlocking/thermal-stress-sauna-cold-exposure-hormesis-governance-continuity
+}}
+
+'''Thermal Stress Sauna Cold Exposure Hormesis Governance Continuity'''是 Human Infra 在“局部阻塞解除”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C6“局部可能性解锁层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>thermal-stress-sauna-cold-exposure-hormesis-governance-continuity/</code> 研究 sauna、passive heat therapy、cold exposure、cold water immersion、热/冷应激和 hormesis 叙事如何进入证据、安全和风险治理。
+
+<blockquote>核心问题：冷热应激是强生理扰动，不是低成本长寿捷径。它可能影响血管、炎症、压力恢复和主观状态，也可能触发心血管、热伤害、冷休克和低体温风险。
+</blockquote>
+== 先验位置 ==
+
+<pre>有效永生 / 主体持续性最大化
+  -> 主体需要热稳态、循环稳定、恢复能力和压力适应
+  -> 热暴露和冷暴露可能作为环境应激改变血管、炎症、代谢和心理状态
+  -> 观察性关联、短期 RCT 和机制推断不能自动推出寿命收益
+  -> 因此冷热 hormesis 必须作为高扰动生活方式干预治理域</pre>
+== 关注对象 ==
+
+* sauna bathing、dry sauna、passive heat therapy、hot bath、cold water immersion、cold plunge、cold shower、brown adipose tissue、heat shock response 和 cold shock response。
+* 心血管风险、血压、脱水、晕厥、热应激、冷休克、呼吸反应、低体温、酒精叠加、运动恢复和证据偏倚。
+* 与 <code>thermal-homeostasis-resilience/</code> 的边界：热稳态域关注体温调节和环境暴露；本域关注主动冷热应激作为干预的证据和安全治理。
+* 与 <code>cardiovascular-resilience/</code> 的边界：心血管韧性域关注疾病和循环风险；本域关注冷热暴露对血管和心血管风险的干预语境。
+
+<span id="human-infra-模型链路"></span>
+== Human Infra 模型链路 ==
+
+<pre>冷热应激 T
+  -> 影响血管功能、交感反应、炎症、热休克蛋白、棕色脂肪、睡眠和压力恢复 X
+  -> 改变身体状态 S、恢复体验和急性风险暴露
+  -> 改变风险函数 lambda(t) 的可能方向和不确定性
+  -> 若心血管、热伤害、冷休克或低体温风险不可控，则阻塞为安全风险</pre>
+== 非目标 ==
+
+* 不提供 sauna、热水浴、cold plunge、冷水游泳、时长、温度、频率或个体操作建议。
+* 不把观察性 sauna 研究、短期 cold exposure 指标或 hormesis 叙事写成延寿证明。
+* 不替代医生、心血管评估、运动医学、热病/低体温风险判断或场地安全管理。
+* 不鼓励酒后、高温、独自冷水、开放水域或高风险人群实践。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* Clinical Effects of Regular Dry Sauna Bathing systematic review: https://pmc.ncbi.nlm.nih.gov/articles/PMC5941775/
+* Sauna bathing and cardiovascular mortality cohort: https://pubmed.ncbi.nlm.nih.gov/25705824/
+* Heat therapy cardiovascular health review: https://pmc.ncbi.nlm.nih.gov/articles/PMC8285605/
+* Passive heat therapy for cardiovascular disease: https://pubmed.ncbi.nlm.nih.gov/39819110/
+* Cold-water immersion health and wellbeing systematic review: https://pubmed.ncbi.nlm.nih.gov/39879231/
+* Health effects of voluntary cold water exposure review: https://pubmed.ncbi.nlm.nih.gov/36137565/
+
+== 下一步 ==
+
+# 建立冷热应激证据矩阵：观察性关联、短期生理反应、RCT、长期终点、急性风险和偏倚来源。
+# 建立 safety gate：心血管、血压、酒精、独处开放水域、热病、低体温和药物/慢病风险。
+# 与 <code>thermal-homeostasis-resilience/</code>、<code>cardiovascular-resilience/</code> 和 <code>uncertainty-quantification-model-calibration/</code> 建立边界。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C6研究域|C6研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c6-local-unlocking/thermal-stress-sauna-cold-exposure-hormesis-governance-continuity/README.md Human Infra 仓库：domains/c6-local-unlocking/thermal-stress-sauna-cold-exposure-hormesis-governance-continuity/README.md]
+
+[[Category:C6研究域]]

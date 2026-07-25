@@ -1,0 +1,84 @@
+{{研究域
+|域 ID=domain.snap-ebt-redemption-retailer-payment-continuity
+|C 层级=C5：可能性生态承载层
+|研究对象=SNAP EBT Redemption Retailer Payment Continuity
+|持续性作用=关键词显示该域主要承载能源、水、食物、住房、治理、经济、通信、灾害或基础设施环境。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c5-ecological-substrate/snap-ebt-redemption-retailer-payment-continuity
+}}
+
+'''SNAP EBT Redemption Retailer Payment Continuity'''是 Human Infra 在“外部生态承载”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要承载能源、水、食物、住房、治理、经济、通信、灾害或基础设施环境。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C5“可能性生态承载层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>snap-ebt-redemption-retailer-payment-continuity</code> 研究 SNAP 资格之外的执行层：EBT 卡、PIN、余额、授权零售商、在线购买、交易失败、系统中断、替换卡和支付恢复如何影响食物福利能否真实兑换为食物。
+
+<blockquote>核心问题：福利批准不等于食物到手；如果 EBT 支付、授权零售商或账户恢复失败，名义营养援助会停在制度记录里。
+</blockquote>
+== 关注对象 ==
+
+* SNAP EBT 卡、PIN、余额查询、交易授权、授权零售商、在线 SNAP、替换卡、盗刷/丢失、系统中断和客户服务。
+* 零售商覆盖、支付网络、账户安全、错误交易、排队摩擦、停电灾害、语言可达和残障可达。
+* 与 USDA FNS SNAP、州 EBT 管理、零售商授权、消费者保护、反欺诈、数字支付和食品零售可达的接口。
+
+<span id="human-infra-链路"></span>
+== Human Infra 链路 ==
+
+<pre>SNAP EBT 可安全兑换
+  -> 营养援助从资格记录转成可购买食物
+  -> 支付失败、账户失控、零售商不可用和交易摩擦风险下降
+  -> 家庭在收入冲击中仍能维持基本食物输入
+  -> 主体恢复能力、预算韧性和未来选择权增强</pre>
+== 非目标 ==
+
+* 不提供 SNAP 资格判断、申请材料、规避规则、福利欺诈、EBT 破解、PIN 获取、盗刷、转售福利、零售商欺诈或个案申诉策略。
+* 不替代 USDA FNS、州 SNAP/EBT 机构、授权零售商、支付处理方、消费者保护、法律或社会服务。
+* 不收集 EBT 卡号、PIN、余额截图、交易记录、家庭身份、收入材料、地址、账户凭据或个案福利文件。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* USDA FNS SNAP: https://www.fns.usda.gov/snap/supplemental-nutrition-assistance-program
+* USDA FNS SNAP Retailers: https://www.fns.usda.gov/snap/retailer
+* USDA FNS SNAP Online Purchasing: https://www.fns.usda.gov/snap/online-purchasing-pilot
+* USDA FNS SNAP Retailer Locator: https://www.fns.usda.gov/snap/retailer-locator
+
+== 下一步 ==
+
+* 建立 <code>benefit account -&gt; payment credential -&gt; retailer acceptance -&gt; transaction outcome -&gt; food continuity</code> 变量表。
+* 区分资格决定、EBT 凭证、授权零售、在线购买、系统中断、盗刷恢复和灾害替代支付。
+* 与 <code>social-protection-benefits-delivery</code>、<code>food-security-nutrition-access</code>、<code>grocery-retail-food-store-access-continuity</code>、<code>financial-inclusion-payment-systems</code> 和 <code>fraud-scams-consumer-protection</code> 建立边界。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C5研究域|C5研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c5-ecological-substrate/snap-ebt-redemption-retailer-payment-continuity/README.md Human Infra 仓库：domains/c5-ecological-substrate/snap-ebt-redemption-retailer-payment-continuity/README.md]
+
+[[Category:C5研究域]]

@@ -1,0 +1,85 @@
+{{研究域
+|域 ID=domain.school-health-services-chronic-condition-continuity
+|C 层级=C5：可能性生态承载层
+|研究对象=School Health Services Chronic Condition Continuity
+|持续性作用=关键词显示该域主要承载能源、水、食物、住房、治理、经济、通信、灾害或基础设施环境。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c5-ecological-substrate/school-health-services-chronic-condition-continuity
+}}
+
+'''School Health Services Chronic Condition Continuity'''是 Human Infra 在“外部生态承载”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要承载能源、水、食物、住房、治理、经济、通信、灾害或基础设施环境。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C5“可能性生态承载层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>school-health-services-chronic-condition-continuity</code> 研究校医/学校护士、慢性病管理、用药支持、免疫记录、急救计划、过敏和返校支持如何让学生在学习日保持健康安全和参与能力。
+
+<blockquote>核心问题：儿童健康条件如果不能进入学校运行系统，就会转化为缺勤、急性风险、家庭照护负担和学习机会损耗。
+</blockquote>
+== 关注对象 ==
+
+* 学校健康服务、护士覆盖、用药管理、急救计划、健康筛查和家校医沟通。
+* 哮喘、糖尿病、癫痫、严重过敏、残障、传染病、免疫记录和慢病返校计划。
+* 健康资料隐私、同意、紧急联系人、培训、设备、备药和学校活动风险。
+* 校医服务与 IEP/504、出勤、校餐、交通、心理健康、公共卫生和家庭照护的交叉。
+
+<span id="human-infra-链路"></span>
+== Human Infra 链路 ==
+
+<pre>学校健康服务连续
+  -> 学生健康条件被转化为学校可执行的观察、支持和应急计划
+  -> 缺勤、急性事件、家庭中断和学习日风险下降
+  -> 健康安全、课堂参与、恢复能力和照护协调增强
+  -> 长期学习能力、身体持续性和家庭系统韧性提高</pre>
+== 非目标 ==
+
+* 不提供个人诊断、用药、校医计划、过敏/癫痫/糖尿病处理、急救、疫苗判断、返校许可或医疗建议。
+* 不替代学校护士、医生、急救服务、公共卫生机构、家长、IEP/504 团队或法律顾问。
+* 不收集或解释学生个人健康记录、免疫记录、药物、残障、心理或家庭资料。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* CDC Healthy Schools and school health services resources.
+* CDC school guidance for chronic health conditions and emergency care planning.
+* State and local school health service requirements.
+* Professional school nursing and public health guidance where relevant.
+
+== 下一步 ==
+
+* 建立 <code>health condition -&gt; school support plan -&gt; attendance/safety -&gt; learning continuity</code> 变量表。
+* 区分学校健康服务、临床医疗、急救、公共卫生和特殊教育相关服务。
+* 与 <code>school-enrollment-attendance-continuity</code>、<code>special-education-iep-504-accommodation-continuity</code>、<code>emergency-medical-services-prehospital-care</code> 和 <code>health-data-privacy-governance</code> 建立边界。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C5研究域|C5研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c5-ecological-substrate/school-health-services-chronic-condition-continuity/README.md Human Infra 仓库：domains/c5-ecological-substrate/school-health-services-chronic-condition-continuity/README.md]
+
+[[Category:C5研究域]]

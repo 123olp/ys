@@ -1,0 +1,18 @@
+{{证据来源
+|来源 ID=evidence.natcomms.rat-kidney-nanowarming-2023
+|来源类型=同行评审动物研究
+|完整引文=Han Z, et al. Vitrification and nanowarming enable long-term organ cryopreservation and life-sustaining kidney transplantation in a rat model. Nature Communications. 2023.
+|URL 或 DOI=https://www.nature.com/articles/s41467-023-38824-8
+|支持范围=大鼠肾脏玻璃化、纳米复温和移植功能
+|不支持的推论=不支持人体器官、完整人体、脑或人格可逆保存
+|审查状态=已核对论文全文页面
+|访问日期=2026-07-24
+}}
+
+== 支持范围 ==
+
+支持将均匀复温视为器官低温保存的关键工程环节，并证明动物肾脏尺度的概念可行性。
+
+== 不支持的推论 ==
+
+尺度、组织复杂性和主体连续性问题阻止该结果直接外推到人体冷冻复苏。

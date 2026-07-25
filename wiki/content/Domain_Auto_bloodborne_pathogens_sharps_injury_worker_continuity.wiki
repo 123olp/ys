@@ -1,0 +1,90 @@
+{{研究域
+|域 ID=domain.bloodborne-pathogens-sharps-injury-worker-continuity
+|C 层级=C2：可能性源体维护层
+|研究对象=Bloodborne Pathogens Sharps Injury Worker Continuity
+|持续性作用=关键词显示该域主要维护身体、脑、器官、细胞、急性生命风险或衰老损伤控制。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c2-source-maintenance/bloodborne-pathogens-sharps-injury-worker-continuity
+}}
+
+'''Bloodborne Pathogens Sharps Injury Worker Continuity'''是 Human Infra 在“生命载体维护”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要维护身体、脑、器官、细胞、急性生命风险或衰老损伤控制。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C2“可能性源体维护层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>bloodborne-pathogens-sharps-injury-worker-continuity/</code> 研究血源性病原体、针刺/锐器伤、医疗和照护工作者暴露、报告、随访、污名和长期心理负担如何影响主体持续性。
+
+核心问题：
+
+<blockquote>照护别人时，主体可能通过血液、锐器和体液暴露承担感染和焦虑风险；安全系统必须保护照护者本身的身体、时间和尊严。
+</blockquote>
+== 先验位置 ==
+
+<pre>有效永生 / 主体持续性
+  -> 医疗、照护、清洁和应急工作需要接触血液、锐器和体液
+  -> 针刺或锐器伤可能暴露 HBV、HCV、HIV 等血源性病原体
+  -> 暴露后报告、评估、随访和心理负担会影响工作者持续行动
+  -> 因此血源性病原体与锐器伤治理是照护系统保护自身的条件</pre>
+== 关注对象 ==
+
+* Bloodborne pathogens、needlestick injuries、sharps injury、HBV/HCV/HIV exposure context、exposure control plan、reporting and follow-up。
+* 风险链：照护/清洁任务 -&gt; 锐器/血液暴露 -&gt; 报告/随访断裂 -&gt; 感染风险/焦虑/污名 -&gt; 工作退出或持续负担。
+* 制度链：engineering controls、safer devices、training、vaccination context、post-exposure workflow、confidentiality。
+
+<span id="human-infra-模型位置"></span>
+== Human Infra 模型位置 ==
+
+<pre>照护/医疗任务 T
+  -> 改变血液和锐器暴露 X
+  -> 改变感染风险、心理负担和工作状态 S
+  -> 改变长期健康/工作退出风险 lambda(t)
+  -> 改变照护人力、家庭资源和未来选择权</pre>
+== 非目标 ==
+
+* 不提供暴露后处理、PEP、检测、疫苗、用药、针刺处置、感染判断、职业健康流程、报告表填写或个人医疗建议。
+* 不判断个人风险、雇主责任、工伤、隐私投诉、OSHA 违规、复工或法律策略。
+* 不帮助隐藏暴露、规避报告、重复使用锐器、绕开感染控制或收集可识别健康资料。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* OSHA Bloodborne Pathogens: https://www.osha.gov/bloodborne-pathogens
+* CDC/NIOSH Bloodborne Infectious Diseases: https://www.cdc.gov/niosh/topics/bbp/
+
+== 下一步 ==
+
+* 建立 Sharps Exposure Continuity Card：task context、sharp type、exposure pathway、reporting latency、follow-up boundary、stigma/confidentiality。
+* 与 <code>health-workforce-capacity/</code>、<code>sterilization-disinfection-infection-control/</code> 和 <code>occupational-exposure-industrial-hygiene/</code> 建立接口。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C2研究域|C2研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c2-source-maintenance/bloodborne-pathogens-sharps-injury-worker-continuity/README.md Human Infra 仓库：domains/c2-source-maintenance/bloodborne-pathogens-sharps-injury-worker-continuity/README.md]
+
+[[Category:C2研究域]]

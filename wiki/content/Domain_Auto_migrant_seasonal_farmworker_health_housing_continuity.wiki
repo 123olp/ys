@@ -1,0 +1,87 @@
+{{研究域
+|域 ID=domain.migrant-seasonal-farmworker-health-housing-continuity
+|C 层级=C5：可能性生态承载层
+|研究对象=Migrant Seasonal Farmworker Health Housing Continuity
+|持续性作用=关键词显示该域主要承载能源、水、食物、住房、治理、经济、通信、灾害或基础设施环境。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c5-ecological-substrate/migrant-seasonal-farmworker-health-housing-continuity
+}}
+
+'''Migrant Seasonal Farmworker Health Housing Continuity'''是 Human Infra 在“外部生态承载”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要承载能源、水、食物、住房、治理、经济、通信、灾害或基础设施环境。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C5“可能性生态承载层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+迁徙与季节性农业工人健康、住房和劳动连续性域研究：当工作、住房、交通、语言、身份、气候暴露和医疗可及绑定在季节性农业链条上时，主体如何维持健康、收入、家庭和服务入口。
+
+== 对象 ==
+
+* Migrant and seasonal farmworker health, labor, housing, transportation, childcare and service access。
+* 农业工作暴露、热应激、农药、伤害、呼吸风险、感染风险、慢病管理和职业健康。
+* 临时/雇主关联住房、交通依赖、工资支付、招聘中介、劳动权利、语言可达和报复风险。
+* 社区健康中心、migrant health centers、移动诊所、学校和家庭服务衔接。
+* 季节性迁移、记录缺口、健康保险、医疗随访、药品连续性和家庭照护断点。
+
+<span id="human-infra-价值"></span>
+== Human Infra 价值 ==
+
+农业工人的主体持续性常被拆散在工作地点、临时住房、交通、语言和身份风险之间。该域把季节性迁移和雇佣依赖作为基础设施变量，解释为什么“有服务”仍不等于“能安全使用服务”。
+
+<pre>农业劳动、住房和迁移链条被结构化治理
+  -> 医疗、劳动权利、交通、住房、语言和家庭服务更可达
+  -> 季节性工作不再把健康随访和家庭支持反复切断
+  -> 主体有效时间、恢复能力和未来选择权提高</pre>
+== 边界 ==
+
+本域只整理公开农业工人健康、职业暴露、住房、劳动权利、迁移、服务可达和家庭支持资料。
+
+不提供：
+
+* 个体医疗、移民身份、劳动纠纷、举报、工资追索、住房申请、交通或法律建议。
+* 雇主、招聘中介、农场、工人营地、执法或移民状态的个案判断。
+* 危险作业规避、执法规避、身份规避、现场冲突处理或职业暴露处置建议。
+* 将农业工人群体用于风险定位、身份推断、商业开发或监管套利。
+
+== 上游与下游 ==
+
+* 上游：<code>occupational-work-design/</code>、<code>labor-rights-workplace-protection/</code>、<code>housing-stability-affordability/</code>、<code>transportation-access-mobility/</code>、<code>language-access-plain-communication/</code>。
+* 下游：<code>heat-illness-cold-stress-temperature-exposure-continuity/</code>、<code>pesticide-exposure-household-chemical-safety-continuity/</code>、<code>medicine-access-treatment-continuity/</code>、<code>childcare-family-continuity/</code>、<code>community-resource-navigation/</code>。
+
+== 初始资料线索 ==
+
+* HRSA health center and migrant health public resources。
+* Department of Labor Migrant and Seasonal Agricultural Worker Protection Act resources。
+* CDC/NIOSH agricultural safety, heat, pesticide and occupational health resources。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C5研究域|C5研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c5-ecological-substrate/migrant-seasonal-farmworker-health-housing-continuity/README.md Human Infra 仓库：domains/c5-ecological-substrate/migrant-seasonal-farmworker-health-housing-continuity/README.md]
+
+[[Category:C5研究域]]

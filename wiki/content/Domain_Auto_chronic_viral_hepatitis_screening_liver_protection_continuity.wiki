@@ -1,0 +1,90 @@
+{{研究域
+|域 ID=domain.chronic-viral-hepatitis-screening-liver-protection-continuity
+|C 层级=C2：可能性源体维护层
+|研究对象=Chronic Viral Hepatitis Screening Liver Protection Continuity
+|持续性作用=关键词显示该域主要维护身体、脑、器官、细胞、急性生命风险或衰老损伤控制。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c2-source-maintenance/chronic-viral-hepatitis-screening-liver-protection-continuity
+}}
+
+'''Chronic Viral Hepatitis Screening Liver Protection Continuity'''是 Human Infra 在“生命载体维护”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要维护身体、脑、器官、细胞、急性生命风险或衰老损伤控制。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C2“可能性源体维护层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>chronic-viral-hepatitis-screening-liver-protection-continuity/</code> 研究乙肝、丙肝筛查、确认、治疗连接、肝纤维化/肝癌风险监测和公共卫生消除路径如何影响主体持续性。
+
+<blockquote>核心问题：慢性病毒性肝炎常长期无症状，却可逐步改变肝硬化、肝癌、感染传播、治疗机会和寿命路径。
+</blockquote>
+== 先验位置 ==
+
+<pre>有效永生 / 主体持续性最大化
+  -> 主体依赖肝脏代谢、解毒、凝血和免疫相关功能维持长期状态
+  -> 慢性乙肝/丙肝可在无症状阶段推进纤维化、肝硬化和肝癌风险
+  -> 结果取决于筛查、确认、分期、治疗连接、随访和风险监测连续性
+  -> 因此慢性病毒性肝炎是感染、肝脏清除和癌症预防之间的关键域</pre>
+== 关注对象 ==
+
+* Hepatitis B screening、hepatitis C screening、confirmatory testing、linkage to care、treatment access、fibrosis staging、cirrhosis and liver cancer surveillance, vaccination interface。
+* 与 <code>renal-hepatic-clearance/</code> 的边界：该域关注肝肾清除总机制；本域关注病毒性肝炎筛查和长期风险控制执行链。
+* 与 <code>cancer-screening-early-detection-continuity/</code> 的关系：慢性病毒性肝炎是肝癌风险管理的重要上游条件。
+
+<span id="human-infra-模型链路"></span>
+== Human Infra 模型链路 ==
+
+<pre>慢性病毒性肝炎筛查与治疗连接系统 T
+  -> 改变筛查覆盖、确认率、治疗连接、纤维化分期、随访和肝癌监测变量 X
+  -> 改变肝脏储备、炎症/纤维化、感染传播和癌前风险状态 S
+  -> 改变肝硬化、肝癌、急性失代偿、有效时间损失和死亡风险 λ(t)
+  -> 影响主体长期身体储备、工作能力、照护负担和未来选择权</pre>
+== 非目标 ==
+
+* 不提供个人肝炎检测判读、疫苗建议、抗病毒药物、剂量、监测周期、肝癌筛查安排或临床分诊。
+* 不生成个人感染风险评分、化验解释、家庭传播处理、保险路径或治疗建议。
+* 不收集个案检测、肝功能、病毒载量、影像、药物、性行为、注射暴露或身份资料。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* CDC hepatitis B information: https://www.cdc.gov/hepatitis-b/
+* CDC hepatitis C information: https://www.cdc.gov/hepatitis-c/
+* CDC viral hepatitis screening and testing: https://www.cdc.gov/hepatitis/php/testing/index.html
+* USPSTF hepatitis C screening: https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/hepatitis-c-screening
+
+== 下一步 ==
+
+* 建立 Viral Hepatitis Continuity Card：screening, confirmation, staging, linkage, treatment access, surveillance, prevention。
+* 与 <code>renal-hepatic-clearance/</code>、<code>chronic-infectious-disease-care-continuity/</code> 和 <code>cancer-screening-early-detection-continuity/</code> 建立接口。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C2研究域|C2研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c2-source-maintenance/chronic-viral-hepatitis-screening-liver-protection-continuity/README.md Human Infra 仓库：domains/c2-source-maintenance/chronic-viral-hepatitis-screening-liver-protection-continuity/README.md]
+
+[[Category:C2研究域]]

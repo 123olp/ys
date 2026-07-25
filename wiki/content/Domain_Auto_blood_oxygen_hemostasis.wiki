@@ -1,0 +1,92 @@
+{{研究域
+|域 ID=domain.blood-oxygen-hemostasis
+|C 层级=C2：可能性源体维护层
+|研究对象=Blood Oxygen Hemostasis
+|持续性作用=直接维护身体、脑、器官、衰老、损伤或生命系统这些可能性源体。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c2-source-maintenance/blood-oxygen-hemostasis
+}}
+
+'''Blood Oxygen Hemostasis'''是 Human Infra 在“生命载体维护”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+直接维护身体、脑、器官、衰老、损伤或生命系统这些可能性源体。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C2“可能性源体维护层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+Blood Oxygen Hemostasis 负责整理血液、红细胞、氧气运输、凝血、出血、血栓和输血/血液安全如何影响主体持续性。
+
+核心问题：
+
+<blockquote>循环系统需要血液作为运输介质；血液既承载氧气和营养，也承担止血与风险扩散，失衡会造成缺氧、出血或血栓。
+</blockquote>
+== 先验位置 ==
+
+<pre>有效永生 / 主体持续性最大化
+  -> 主体需要把氧气、营养、免疫细胞和药物输送到全身
+  -> 血液系统负责运输、止血、凝血和部分免疫接口
+  -> 贫血、出血、血栓、凝血异常或血液恶性疾病会直接压缩生存和行动窗口
+  -> 因此血液氧运与止血是身体运行的运输与安全域</pre>
+== 关注对象 ==
+
+* 红细胞、血红蛋白、贫血、氧气运输、铁代谢和组织供氧。
+* 血小板、凝血、出血、血栓、抗凝风险和止血平衡。
+* 血液恶性疾病、输血安全、血液供应、实验室指标和治疗可及性边界。
+* 血液系统与心血管、呼吸、肾肝、免疫、癌症、供应链和极端环境的交叉。
+
+<span id="human-infra-模型链路"></span>
+== Human Infra 模型链路 ==
+
+<pre>血液状态或干预 T
+  -> 改变氧气运输、凝血平衡、出血风险和血栓风险 X
+  -> 改变组织供氧、行动耐力、急性事件和治疗安全状态 S
+  -> 改变缺氧、失血、血栓、器官损伤和死亡风险 λ(t)
+  -> 影响有效时间、恢复能力和未来医疗选择权</pre>
+== 非目标 ==
+
+* 不提供检测解释、输血建议、抗凝/止血用药、剂量、急救或治疗建议。
+* 不把血红蛋白、凝血指标或血栓风险写成个体诊断。
+* 不替代 <code>cardiovascular-resilience/</code>、<code>respiratory-oxygenation/</code>、<code>immune-maintenance/</code> 或 <code>supply-chain-continuity/</code>。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* NHLBI blood diseases: https://www.nhlbi.nih.gov/health-topics/blood-diseases
+* NHLBI anemia: https://www.nhlbi.nih.gov/health/anemia
+* CDC blood disorders: https://www.cdc.gov/ncbddd/blooddisorders/
+
+== 下一步 ==
+
+# 建立血液系统变量表：氧运、凝血、出血、血栓、血液供应和治疗安全。
+# 与 <code>cardiovascular-resilience/</code>、<code>respiratory-oxygenation/</code>、<code>renal-hepatic-clearance/</code> 和 <code>cancer-control/</code> 建立边界。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C2研究域|C2研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c2-source-maintenance/blood-oxygen-hemostasis/README.md Human Infra 仓库：domains/c2-source-maintenance/blood-oxygen-hemostasis/README.md]
+
+[[Category:C2研究域]]

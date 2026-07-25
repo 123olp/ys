@@ -1,0 +1,84 @@
+{{研究域
+|域 ID=domain.compression-garment-lymphedema-venous-continuity
+|C 层级=C6：局部可能性解锁层
+|研究对象=Compression Garment Lymphedema Venous Continuity
+|持续性作用=未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c6-local-unlocking/compression-garment-lymphedema-venous-continuity
+}}
+
+'''Compression Garment Lymphedema Venous Continuity'''是 Human Infra 在“局部阻塞解除”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C6“局部可能性解锁层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>compression-garment-lymphedema-venous-continuity</code> 研究淋巴水肿、静脉回流问题、压迫衣物/绷带、尺寸测量、替换、覆盖、穿脱能力和皮肤监测如何影响肢体功能、疼痛、感染风险、工作和自理连续性。
+
+<blockquote>核心问题：压迫用品不是普通衣物；它把体液回流、皮肤屏障、肢体体积、穿脱能力、费用覆盖和日常坚持连成一个长期维护系统。
+</blockquote>
+== 关注对象 ==
+
+* 压迫袖套、袜、手套、绷带、夜间用品、测量适配、替换周期、洗护、穿脱辅助和备用件。
+* 淋巴水肿、癌症治疗后水肿、慢性静脉问题、皮肤破损、蜂窝织炎风险和疼痛/沉重感。
+* 工作穿着、热环境、残障手功能、肥胖、照护者协助、费用覆盖和供应延迟。
+* 与淋巴清除、慢性伤口、蜂窝织炎、DME、皮肤耗材、职业设计和热稳态的接口。
+
+<span id="human-infra-链路"></span>
+== Human Infra 链路 ==
+
+<pre>压迫用品连续
+  -> 主体能在体液回流受限时维持肢体体积、皮肤边界和可用功能
+  -> 测量、适配、替换、穿脱、费用和洗护断点造成的肿胀/感染/疼痛风险下降
+  -> 工作、自理、移动、睡眠和照护安排更稳定
+  -> 有效时间、肢体功能和未来选择权增强</pre>
+== 非目标 ==
+
+* 不提供淋巴水肿诊断、压迫等级、尺寸测量、绷带技术、治疗方案、产品推荐或覆盖个案建议。
+* 不替代肿瘤团队、淋巴水肿治疗师、血管/伤口团队、Medicare、DME 供应商或临床指南。
+* 不把压迫用品写成所有肿胀、疼痛、感染或血栓风险的自我处理方案。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* NCI Lymphedema: https://www.cancer.gov/about-cancer/treatment/side-effects/lymphedema
+* Medicare Lymphedema Compression Treatment Items: https://www.medicare.gov/coverage/lymphedema-compression-treatment-items
+* MedlinePlus Lymphedema: https://medlineplus.gov/lymphedema.html
+
+== 下一步 ==
+
+* 建立 <code>swelling/venous/lymphedema state -&gt; compression item -&gt; fit/replacement -&gt; function/infection impact</code> 变量表。
+* 区分癌症治疗后、慢性静脉、工作热暴露、手功能受限、照护依赖和低收入覆盖场景。
+* 与 <code>lymphatic-glymphatic-clearance</code>、<code>wound-infection-cellulitis-sepsis-continuity</code> 和 <code>durable-medical-equipment-supplier-repair-continuity</code> 建立边界。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C6研究域|C6研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c6-local-unlocking/compression-garment-lymphedema-venous-continuity/README.md Human Infra 仓库：domains/c6-local-unlocking/compression-garment-lymphedema-venous-continuity/README.md]
+
+[[Category:C6研究域]]

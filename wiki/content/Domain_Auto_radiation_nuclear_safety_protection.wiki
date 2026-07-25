@@ -1,0 +1,88 @@
+{{研究域
+|域 ID=domain.radiation-nuclear-safety-protection
+|C 层级=C2：可能性源体维护层
+|研究对象=Radiation Nuclear Safety Protection
+|持续性作用=关键词显示该域主要维护身体、脑、器官、细胞、急性生命风险或衰老损伤控制。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c2-source-maintenance/radiation-nuclear-safety-protection
+}}
+
+'''Radiation Nuclear Safety Protection'''是 Human Infra 在“生命载体维护”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要维护身体、脑、器官、细胞、急性生命风险或衰老损伤控制。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C2“可能性源体维护层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+辐射、核安全与防护域研究：当主体持续性依赖“电离辐射、核设施、放射性材料和辐射事故风险被监测、限制和响应”时，需要哪些防护、监管、监测、应急和长期环境治理基础设施。
+
+== 对象 ==
+
+* 电离辐射防护、职业/医疗/环境辐射风险和剂量治理。
+* 核设施安全、放射性材料安全、辐射监测和环境监测网络。
+* 辐射应急、风险沟通、长期污染治理和公众防护框架。
+* 医疗、能源、科研、工业和空间场景中的辐射风险边界。
+* 辐射风险与癌症、免疫、造血、神经、胎儿发育和生态系统的接口。
+
+<span id="human-infra-价值"></span>
+== Human Infra 价值 ==
+
+辐射风险具有低频高冲击、不可见、可累积和长期潜伏特征。辐射核安全基础设施把不可感知的能量暴露转化为可测量、可监管、可限制、可响应的风险对象，防止一次事故或慢性暴露截断主体持续性。
+
+<pre>辐射源与核系统存在
+  -> 监测、剂量限制、设施安全和应急治理
+  -> 暴露、污染和长期健康风险下降
+  -> 医疗、能源、科研和环境系统可在安全边界内运行</pre>
+== 边界 ==
+
+本域只整理公开安全标准、监管框架、监测网络、风险类型和非操作性治理资料。
+
+不提供：
+
+* 放射源、核材料、设施、仪器或污染现场的操作、获取、规避、处置或防护步骤。
+* 核设施攻击、规避监管、绕过监测、制造或扩散放射性风险的信息。
+* 个体剂量解释、医疗影像选择、放射治疗建议或辐射事故现场指挥。
+* 避难、撤离、去污、碘剂或个人防护的实时操作建议。
+
+== 上游与下游 ==
+
+* 上游：<code>risk-engineering/</code>、<code>space-extreme-habitation/</code>、<code>cancer-control/</code>、<code>public-health-laboratory-diagnostic-capacity/</code>。
+* 下游：<code>emergency-preparedness-response/</code>、<code>planetary-health-environment/</code>、<code>healthcare-access-continuity/</code>、<code>governance-rights/</code>。
+
+== 初始资料线索 ==
+
+* IAEA radiation protection and nuclear safety resources。
+* U.S. Nuclear Regulatory Commission public resources。
+* EPA RadNet resources。
+* CDC radiation emergencies resources。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C2研究域|C2研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c2-source-maintenance/radiation-nuclear-safety-protection/README.md Human Infra 仓库：domains/c2-source-maintenance/radiation-nuclear-safety-protection/README.md]
+
+[[Category:C2研究域]]

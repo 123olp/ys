@@ -1,0 +1,88 @@
+{{研究域
+|域 ID=domain.driver-license-vehicle-registration-continuity
+|C 层级=C6：局部可能性解锁层
+|研究对象=驾照、车辆登记与个人移动资格连续性
+|持续性作用=未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c6-local-unlocking/driver-license-vehicle-registration-continuity
+}}
+
+'''驾照、车辆登记与个人移动资格连续性'''是 Human Infra 在“局部阻塞解除”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C6“局部可能性解锁层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+本域研究驾驶资格、车辆登记、车牌、title、保险证明和 REAL ID 等移动凭证如何支撑主体跨地点行动。它关注的是移动资格和车辆记录的制度连续性，而不是驾驶、车辆购买、维修、保险或 DMV 办理建议。
+
+== 研究对象 ==
+
+* 驾驶证、州 ID、REAL ID、车辆 title、车辆登记、车牌和地址同步。
+* 驾驶资格、暂停/吊销、医学限制、保险证明、车辆检查和排放要求。
+* 车辆记录与工作、医疗、照护、教育、灾害撤离、投票和身份核验的关系。
+* 车辆召回、事故记录、欠费、罚单和跨州迁移造成的移动资格断点。
+
+== 价值链路 ==
+
+<pre>主体需要跨地点到达资源和任务现场
+  -> 驾照、车辆登记和移动凭证把个人行动权、车辆资产和道路系统连接起来
+  -> 地址同步、title、保险、检查和资格状态决定车辆能否合法持续使用
+  -> 记录错误、吊销、跨州迁移、费用负担或车辆记录断裂会压缩行动半径
+  -> 移动资格连续性把交通能力从物理可行转化为制度可承认的行动能力</pre>
+== 关键问题 ==
+
+* 驾驶资格和车辆记录如何影响工作、医疗、照护、教育、家庭和应急撤离？
+* 车辆 title、登记、保险证明、地址和姓名变更之间有哪些同步断点？
+* 移动凭证丢失、吊销、跨州迁移或费用负担如何改变主体机会空间？
+* 驾驶资格如何与道路安全、残障便利、老龄化、医学条件和公共交通替代方案互动？
+
+== 上游与下游 ==
+
+* 上游：<code>transportation-access-mobility/</code>、<code>road-traffic-injury-prevention-safe-mobility/</code>、<code>digital-identity-security/</code>、<code>address-residency-mail-service-continuity/</code>。
+* 下游：<code>workforce-employment-services/</code>、<code>healthcare-access-continuity/</code>、<code>disaster-recovery-relief-continuity/</code>、<code>road-traffic-injury-prevention-safe-mobility/</code>、<code>product-safety-recall-systems/</code>。
+
+== 非目标 ==
+
+* 不提供 DMV 办理、驾驶、路线、车辆购买、车辆维修、保险、事故责任、罚单、吊销恢复、REAL ID 或法律建议。
+* 不判断个人是否可以驾驶、是否需要报备疾病、是否应买车、是否可跨州登记或是否可逃避罚单。
+* 不协助伪造证件、规避身份核验、规避吊销、规避保险、规避检查、危险驾驶或跟踪车辆。
+
+== 初始资料入口 ==
+
+* USA.gov: Driver's licenses and vehicle registration
+* Department of Homeland Security: REAL ID
+* State DMV / motor vehicle agency official materials
+* NHTSA: Vehicle recalls and safety data
+* AAMVA official standards and reference materials
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C6研究域|C6研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c6-local-unlocking/driver-license-vehicle-registration-continuity/README.md Human Infra 仓库：domains/c6-local-unlocking/driver-license-vehicle-registration-continuity/README.md]
+
+[[Category:C6研究域]]

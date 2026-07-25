@@ -1,0 +1,82 @@
+{{研究域
+|域 ID=domain.ai-impersonation-deepfake-fraud-continuity
+|C 层级=C3：可能性生成引擎层
+|研究对象=AI Impersonation Deepfake Fraud Continuity
+|持续性作用=关键词显示该域主要增强认知、学习、工具、AI、技能或沟通能力。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c3-generation-engine/ai-impersonation-deepfake-fraud-continuity
+}}
+
+'''AI Impersonation Deepfake Fraud Continuity'''是 Human Infra 在“主体能力生成”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要增强认知、学习、工具、AI、技能或沟通能力。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C3“可能性生成引擎层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+AI Impersonation Deepfake Fraud Continuity 关注 AI 语音、视频、文本和身份冒充如何影响主体的金钱、声誉、关系、安全、工作和机构信任。
+
+== 对象 ==
+
+* AI impersonation、deepfake scam、voice cloning、video impersonation、business/government impersonation、family-emergency scam 和 verification workflow。
+* 冒充亲友、同事、雇主、客服、政府、金融机构、医疗机构、律师、媒体或平台支持的社会工程路径。
+* 判断压力、紧急感、权威感、情感勒索、多渠道交叉验证失败和举报恢复链路。
+
+<span id="human-infra-价值"></span>
+== Human Infra 价值 ==
+
+<pre>主体持续性依赖关系和机构信任
+-> AI 冒充降低了伪装声音、面孔、语气和身份的成本
+-> 冒充会把信任、亲情、工作流程、支付和身份核验转成攻击面
+-> 验证流程、延迟决策、官方渠道和举报恢复能降低不可逆损失
+-> 主体更能保护金钱、声誉、关系和行动安全</pre>
+== 边界 ==
+
+* 本域不提供 deepfake 制作、声音克隆、提示词、脚本、社工话术、诈骗流程、检测规避或目标选择方法。
+* 不判断某通话、视频、账号或消息是否诈骗，不替代执法、金融机构、平台或法律服务。
+* 不生成验证脚本、反诈话术、诱捕方案、公开曝光材料或报复方案。
+* 只整理公开警示、冒充模式、验证边界、恢复入口和禁止用途。
+
+== 上下游 ==
+
+* 上游：<code>synthetic-media-watermarking-disclosure-continuity/</code>、<code>voice-call-caller-id-authentication-continuity/</code>、<code>email-domain-authentication-spoofing-continuity/</code>。
+* 下游：<code>fraud-scams-consumer-protection/</code>、<code>reputation-defamation-public-trust-repair-continuity/</code>、<code>data-breach-notification-identity-recovery-continuity/</code>。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* Federal Trade Commission impersonation and AI scam materials.
+* Federal Bureau of Investigation IC3 and public service announcements.
+* Federal Communications Commission caller ID spoofing and robocall materials.
+* NIST AI risk management and synthetic content materials.
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C3研究域|C3研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c3-generation-engine/ai-impersonation-deepfake-fraud-continuity/README.md Human Infra 仓库：domains/c3-generation-engine/ai-impersonation-deepfake-fraud-continuity/README.md]
+
+[[Category:C3研究域]]

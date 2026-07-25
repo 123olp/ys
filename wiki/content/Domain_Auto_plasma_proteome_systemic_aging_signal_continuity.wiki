@@ -1,0 +1,87 @@
+{{研究域
+|域 ID=domain.plasma-proteome-systemic-aging-signal-continuity
+|C 层级=C6：局部可能性解锁层
+|研究对象=Plasma Proteome Systemic Aging Signal Continuity
+|持续性作用=未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c6-local-unlocking/plasma-proteome-systemic-aging-signal-continuity
+}}
+
+'''Plasma Proteome Systemic Aging Signal Continuity'''是 Human Infra 在“局部阻塞解除”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C6“局部可能性解锁层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+Plasma Proteome Systemic Aging Signal Continuity 负责整理血浆蛋白组、循环因子、系统性衰老信号、异时共生线索、血浆置换假设和抗衰误用边界。
+
+核心问题：
+
+<blockquote>血液循环携带来自器官、免疫、代谢和组织损伤的系统性信号；血浆蛋白组可能反映并参与衰老状态，但不能被简化成“年轻血浆能抗衰”的消费叙事。
+</blockquote>
+== 先验位置 ==
+
+<pre>有效永生 / 主体持续性最大化
+  -> 主体需要跨器官信号维持协调、修复和风险反馈
+  -> 血浆蛋白组和循环因子反映免疫、代谢、组织损伤和器官状态
+  -> 系统性信号可能改变再生、炎症、神经、代谢和血管风险
+  -> 若能被可靠测量或安全调节，可能成为生命路径模型变量
+  -> 但证据边界失败会把血浆信号误读为未经证实的抗衰治疗</pre>
+== 关注对象 ==
+
+* plasma proteome、circulating factors、heterochronic parabiosis、therapeutic plasma exchange hypotheses。
+* 血浆蛋白年龄钟、器官来源信号、炎症/凝血/代谢因子、测量偏差和干预安全边界。
+* 与 <code>blood-oxygen-hemostasis/</code> 的关系：血液域关注氧运与止血；本域关注循环信号与系统性衰老信息。
+* 与 <code>biological-age-clocks-biomarker-validation/</code> 的关系：本域提供候选 biomarker 和干预信号，但需要独立验证。
+
+<span id="human-infra-模型链路"></span>
+== Human Infra 模型链路 ==
+
+<pre>血浆蛋白组测量 / 循环因子干预 T
+  -> 改变或观测系统性衰老信号 X
+  -> 改变跨器官协调、炎症、凝血、代谢和修复状态 S
+  -> 改变疾病风险、恢复能力、健康寿命和治疗窗口判断
+  -> 改变主体未来选择权</pre>
+== 非目标 ==
+
+* 不提供年轻血浆、血浆置换、输血、血液制品、检测解读或抗衰治疗建议。
+* 不把异时共生、动物实验或蛋白组相关性写成人体疗效。
+* 不推广未经批准或证据不足的抗衰血浆产品。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* FDA young donor plasma warning: https://www.fda.gov/vaccines-blood-biologics/safety-availability-biologics/update-important-information-about-young-donor-plasma-infusions-offered-profit
+* Looking to Young Blood to Treat the Diseases of Aging: https://pmc.ncbi.nlm.nih.gov/articles/PMC6764071/
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C6研究域|C6研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c6-local-unlocking/plasma-proteome-systemic-aging-signal-continuity/README.md Human Infra 仓库：domains/c6-local-unlocking/plasma-proteome-systemic-aging-signal-continuity/README.md]
+
+[[Category:C6研究域]]

@@ -1,0 +1,80 @@
+{{研究域
+|域 ID=domain.refrigerated-medication-medical-device-power-outage-continuity
+|C 层级=C6：局部可能性解锁层
+|研究对象=Refrigerated Medication Medical Device Power Outage Continuity
+|持续性作用=未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c6-local-unlocking/refrigerated-medication-medical-device-power-outage-continuity
+}}
+
+'''Refrigerated Medication Medical Device Power Outage Continuity'''是 Human Infra 在“局部阻塞解除”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C6“局部可能性解锁层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>refrigerated-medication-medical-device-power-outage-continuity/</code> 研究停电、冷链中断、温控药品、居家医疗设备和电力依赖主体如何影响治疗连续性。
+
+<blockquote>核心问题：停电对健康的影响不只来自照明和通信，更来自药物温控、设备供电、处方替代、供应联络和临床判断无法及时完成。
+</blockquote>
+== 先验位置 ==
+
+<pre>主体要持续被治疗
+  -> 必须让关键药品和医疗设备在停电中保持可用
+  -> 冷链、设备供电、处方信息和临床联络任一断裂都会放大风险
+  -> 因而停电中的药物设备连续性是慢病主体的生命支持接口</pre>
+== 关注对象 ==
+
+* 胰岛素等温控药品、冷藏药物、家庭医疗设备、充电设备、备用电、处方信息、供应商联络和停电时的医疗服务入口。
+* 糖尿病患者、氧疗/呼吸设备用户、透析或输注设备用户、居家照护者、老年人和电力依赖医疗设备用户。
+
+<span id="human-infra-模型链路"></span>
+== Human Infra 模型链路 ==
+
+<pre>药物设备停电连续性系统 T
+  -> 改变药物温控、设备供电、处方资料、供应联络和临床替代变量 X
+  -> 改变主体治疗可执行状态 S
+  -> 改变低/高血糖、呼吸恶化、治疗中断、住院、药物失效和延迟求助风险 λ(t)
+  -> 改变慢病稳定性、有效时间和灾后恢复能力</pre>
+== 非目标 ==
+
+* 不提供药物是否可用判断、冷藏时间、剂量调整、设备接线、备用电配置、处方替代或医疗建议。
+* 不收集诊断、药品名、设备型号、处方、供应商、停电地址、血糖/生命体征或医疗记录。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* FDA emergency preparedness for medicines and medical devices: https://www.fda.gov/drugs/emergency-preparedness-drugs/emergency-preparedness-medicines
+* HHS emPOWER Program materials: https://empowerprogram.hhs.gov/
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C6研究域|C6研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c6-local-unlocking/refrigerated-medication-medical-device-power-outage-continuity/README.md Human Infra 仓库：domains/c6-local-unlocking/refrigerated-medication-medical-device-power-outage-continuity/README.md]
+
+[[Category:C6研究域]]

@@ -1,0 +1,89 @@
+{{研究域
+|域 ID=domain.pesticide-label-exposure-poison-control-continuity
+|C 层级=C6：局部可能性解锁层
+|研究对象=Pesticide Label Exposure Poison Control Continuity
+|持续性作用=未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c6-local-unlocking/pesticide-label-exposure-poison-control-continuity
+}}
+
+'''Pesticide Label Exposure Poison Control Continuity'''是 Human Infra 在“局部阻塞解除”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C6“局部可能性解锁层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>pesticide-label-exposure-poison-control-continuity</code> 研究农药/杀虫剂标签、家庭和职业使用、误用暴露、儿童/宠物风险和毒物控制连接如何影响主体持续性。
+
+<blockquote>核心问题：病媒和虫害治理本身也会制造风险；如果标签、储存、使用边界和中毒连接失败，控制工具会变成新的身体、家庭和环境风险源。
+</blockquote>
+== 先验位置 ==
+
+<pre>有效永生 / 主体持续性最大化
+  -> 主体需要控制害虫和病媒，同时不引入新的化学伤害
+  -> 农药误用、误混、错误储存和过量暴露会造成中毒和室内污染
+  -> 标签理解、储存、儿童/宠物保护、职业边界和毒物中心连接构成工具安全前提
+  -> 若该前提失败，原本的风险控制会反向破坏健康、住房和恢复能力</pre>
+== 关注对象 ==
+
+* 农药/杀虫剂标签、室内外使用、儿童、宠物、职业接触、储存、误混和中毒风险。
+* 毒物中心、EPA 标签制度、NPIC、家庭 pest control、病媒控制和灾后/住房场景。
+* 与 <code>household-cleaning-disinfection-pest-control-continuity/</code> 的边界：家庭卫生域是上位；本域聚焦农药标签和化学暴露控制链。
+
+<span id="human-infra-链路"></span>
+== Human Infra 链路 ==
+
+<pre>农药标签和暴露边界可理解、可执行、可求助
+  -> 误用、误混、儿童/宠物暴露和中毒风险下降
+  -> 害虫治理不再反向破坏居住、健康和恢复环境
+  -> 主体持续性获得更安全的环境控制工具</pre>
+== 非目标 ==
+
+* 不提供农药选择、配方、施用、混合、剂量、解毒、现场清理、法律合规或职业操作建议。
+* 不替代 EPA、NPIC、毒物中心、职业安全、公共卫生、害虫治理、医疗或兽医服务。
+* 不鼓励标签规避、非法施药、危险混合、过量使用或化学品转移储存。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* EPA Pesticide Labels: https://www.epa.gov/pesticide-labels
+* EPA Safe Pest Control: https://www.epa.gov/safepestcontrol
+* National Pesticide Information Center: https://npic.orst.edu/
+* Poison Help: https://www.poisonhelp.org/
+
+== 下一步 ==
+
+* 建立 <code>pest pressure -&gt; pesticide decision -&gt; label comprehension -&gt; exposure event -&gt; poison-control/medical connection</code> 变量表。
+* 区分家庭、学校、职业、农业、灾后、宠物、儿童和多户住宅场景。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C6研究域|C6研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c6-local-unlocking/pesticide-label-exposure-poison-control-continuity/README.md Human Infra 仓库：domains/c6-local-unlocking/pesticide-label-exposure-poison-control-continuity/README.md]
+
+[[Category:C6研究域]]

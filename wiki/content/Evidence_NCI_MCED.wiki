@@ -1,0 +1,16 @@
+{{证据来源
+|来源 ID=evidence.nci.multi-cancer-detection
+|来源类型=美国国家癌症研究所专题页
+|完整引文=National Cancer Institute. What Cancer Screening Tests Check for Cancer?
+|URL 或 DOI=https://www.cancer.gov/about-cancer/screening/screening-tests
+|支持范围=多癌种检测定义、当前监管状态和随机试验证据缺口
+|不支持的推论=不支持现有多癌种检测已证明降低死亡率
+|审查状态=已核对NCI原始页面
+|访问日期=2026-07-25
+}}
+
+== 支持范围 ==
+NCI说明多癌种检测测量体液生物信号，其对无症状筛查是否有效仍需随机试验。
+
+== 不支持的推论 ==
+灵敏度、特异度和癌症检出数量不能单独证明净临床获益。

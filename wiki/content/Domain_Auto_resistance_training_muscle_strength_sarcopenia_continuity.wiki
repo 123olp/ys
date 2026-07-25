@@ -1,0 +1,93 @@
+{{研究域
+|域 ID=domain.resistance-training-muscle-strength-sarcopenia-continuity
+|C 层级=C2：可能性源体维护层
+|研究对象=Resistance Training Muscle Strength Sarcopenia Continuity
+|持续性作用=关键词显示该域主要维护身体、脑、器官、细胞、急性生命风险或衰老损伤控制。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c2-source-maintenance/resistance-training-muscle-strength-sarcopenia-continuity
+}}
+
+'''Resistance Training Muscle Strength Sarcopenia Continuity'''是 Human Infra 在“生命载体维护”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要维护身体、脑、器官、细胞、急性生命风险或衰老损伤控制。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C2“可能性源体维护层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>resistance-training-muscle-strength-sarcopenia-continuity/</code> 研究抗阻训练、肌力、肌肉量、肌少症、虚弱、跌倒风险和功能独立如何进入主体持续性模型。
+
+<blockquote>核心问题：肌肉不是审美变量，而是行动、代谢、跌倒防护、康复储备和晚年独立性的基础执行器。
+</blockquote>
+== 先验位置 ==
+
+<pre>有效永生 / 主体持续性最大化
+  -> 主体必须能移动、搬运、起立、避险、照护自己并完成现实任务
+  -> 年龄相关肌力下降和肌少症会压缩行动范围、恢复能力和独立性
+  -> 抗阻训练可能提高肌力、功能表现、骨骼负荷和代谢储备
+  -> 因此肌力和抗阻训练是有效时间和行动密度的执行层研究域</pre>
+== 关注对象 ==
+
+* resistance training、progressive overload、grip strength、sit-to-stand、gait speed、SPPB、lean mass、dynapenia、sarcopenia 和 frailty。
+* 老年人、慢病人群、康复期、跌倒高风险和久坐人群中的安全、依从性、可及性与效果测量。
+* 与 <code>physical-activity-mobility/</code> 的边界：身体活动域关注行动整体；本域关注力量、肌肉功能和抗阻训练。
+* 与 <code>musculoskeletal-integrity/</code> 的边界：肌骨完整性域关注结构承载；本域关注训练干预和肌力功能储备。
+
+<span id="human-infra-模型链路"></span>
+== Human Infra 模型链路 ==
+
+<pre>抗阻训练 T
+  -> 影响肌力、肌肉量、神经肌肉控制、骨负荷、胰岛素敏感性和功能表现 X
+  -> 改变行动状态 S、跌倒风险、失能风险和恢复储备
+  -> 改变健康寿命、有效时间、照护依赖和未来选择权</pre>
+== 非目标 ==
+
+* 不提供训练计划、重量、动作处方、康复方案、伤病处理或个体运动建议。
+* 不把单一动作、网红训练、肌肉量数字或穿戴设备数据写成长期健康结论。
+* 不替代医生、物理治疗师、运动专业人员或老年照护评估。
+* 不鼓励高风险人群自行开始高强度训练或忽视疼痛、心血管、骨骼和跌倒风险。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* HHS Physical Activity Guidelines for Americans: https://odphp.health.gov/our-work/nutrition-physical-activity/physical-activity-guidelines
+* WHO physical activity and sedentary behaviour guidelines: https://www.who.int/publications/i/item/9789240015128
+* CDC adult physical activity basics: https://www.cdc.gov/physical-activity-basics/guidelines/adults.html
+* NIA exercise types for older adults: https://www.nia.nih.gov/health/exercise-and-physical-activity/three-types-exercise-can-improve-your-health-and-physical
+* Resistance exercise and sarcopenia review: https://pmc.ncbi.nlm.nih.gov/articles/PMC4849483/
+
+== 下一步 ==
+
+# 建立肌力功能变量表：grip strength、chair stand、gait speed、SPPB、fall history、lean mass。
+# 将抗阻训练证据拆成预防、康复、老年虚弱、慢病和高风险禁忌五类。
+# 与 <code>fall-prevention-home-safety-continuity/</code>、<code>musculoskeletal-integrity/</code> 和 <code>rehabilitation-functioning/</code> 建立边界。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C2研究域|C2研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c2-source-maintenance/resistance-training-muscle-strength-sarcopenia-continuity/README.md Human Infra 仓库：domains/c2-source-maintenance/resistance-training-muscle-strength-sarcopenia-continuity/README.md]
+
+[[Category:C2研究域]]

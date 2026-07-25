@@ -1,0 +1,81 @@
+{{研究域
+|域 ID=domain.commercial-surveillance-adtech-profile-continuity
+|C 层级=C6：局部可能性解锁层
+|研究对象=Commercial Surveillance Adtech Profile Continuity
+|持续性作用=未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c6-local-unlocking/commercial-surveillance-adtech-profile-continuity
+}}
+
+'''Commercial Surveillance Adtech Profile Continuity'''是 Human Infra 在“局部阻塞解除”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C6“局部可能性解锁层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+Commercial Surveillance Adtech Profile Continuity 关注商业监控、广告技术、跨站追踪、real-time bidding、profiling、lookalike audience 和预测画像如何改变主体被定位、定价、影响、排除和暴露的风险。
+
+== 对象 ==
+
+* Commercial surveillance、adtech、tracking、cookies、pixels、mobile ad IDs、profile enrichment 和 audience segments。
+* 广告竞价、跨站/跨应用追踪、数据共享、推断兴趣、敏感类别画像和价格/机会差异。
+* 画像进入诈骗、歧视、操控、敏感位置暴露、健康/金融/住房/就业广告和脆弱人群 targeting 的路径。
+
+<span id="human-infra-价值"></span>
+== Human Infra 价值 ==
+
+<pre>主体持续性需要注意力和机会入口不被不可见画像操控
+-> 商业监控把行为、位置、设备和兴趣转化为广告与影响基础设施
+-> 错误或敏感画像会改变主体看到的信息、价格、机会、诈骗暴露和社会评价
+-> 追踪透明度、数据最小化、退出机制和执法边界降低画像外溢风险
+-> 主体更能保留注意力、选择权、隐私和公平接入</pre>
+== 边界 ==
+
+* 本域不提供广告投放策略、画像构建、微定向、规避平台政策、追踪部署、数据购买或影响操控方法。
+* 不判断某广告技术、数据共享或 campaign 是否违法。
+* 不提供绕过 cookie、设备指纹、广告拦截检测、反爬或平台限制的方法。
+* 只整理公开资料、风险变量、权利边界、source signals 和禁止用途。
+
+== 上下游 ==
+
+* 上游：<code>opt-out-preference-signal-consent-revocation-continuity/</code>、<code>data-broker-registry-opt-out-deletion-continuity/</code>、<code>digital-identity-security/</code>。
+* 下游：<code>fraud-scams-consumer-protection/</code>、<code>online-safety-digital-harm-prevention/</code>、<code>consumer-reviews-endorsements-marketplace-trust-continuity/</code>。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* Federal Trade Commission commercial surveillance, dark pattern and adtech enforcement materials.
+* NIST Privacy Framework.
+* CPPA cross-context behavioral advertising and opt-out materials.
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C6研究域|C6研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c6-local-unlocking/commercial-surveillance-adtech-profile-continuity/README.md Human Infra 仓库：domains/c6-local-unlocking/commercial-surveillance-adtech-profile-continuity/README.md]
+
+[[Category:C6研究域]]

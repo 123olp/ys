@@ -1,0 +1,92 @@
+{{研究域
+|域 ID=domain.auditory-processing-listening-effort-continuity
+|C 层级=C2：可能性源体维护层
+|研究对象=Auditory Processing Listening Effort Continuity
+|持续性作用=关键词显示该域主要维护身体、脑、器官、细胞、急性生命风险或衰老损伤控制。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c2-source-maintenance/auditory-processing-listening-effort-continuity
+}}
+
+'''Auditory Processing Listening Effort Continuity'''是 Human Infra 在“生命载体维护”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要维护身体、脑、器官、细胞、急性生命风险或衰老损伤控制。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C2“可能性源体维护层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>auditory-processing-listening-effort-continuity/</code> 负责整理听觉处理、噪声中听懂、听觉努力、课堂/会议参与和认知带宽连续性。
+
+核心问题：
+
+<blockquote>有些听觉问题不是声音能否进入耳朵，而是大脑能否在真实噪声环境中把声音变成可用信息；听觉处理和听觉努力直接消耗注意力、学习和工作带宽。
+</blockquote>
+== 先验位置 ==
+
+<pre>主体持续性最大化
+  -> 主体必须把声音信号转化为可理解、可行动的信息
+  -> 听觉处理困难会在课堂、会议、公共空间和噪声环境中放大理解成本
+  -> 过高听觉努力会挤占注意力、记忆、执行功能和社交参与
+  -> 因此听觉处理与听觉努力连续性是听觉输入转化为认知行动的接口层</pre>
+== 关注对象 ==
+
+* 听觉处理困难、噪声中言语识别、听觉努力、课堂/会议参与和疲劳。
+* 儿童学习、成人工作、老年沟通、辅助听觉策略、声学环境和可访问沟通。
+* 注意力、工作记忆、听觉疲劳、误解、社交回避和有效时间损耗。
+* 与 <code>hearing-auditory-communication-continuity/</code> 的关系：本域聚焦听觉信息加工和认知负担。
+
+<span id="human-infra-模型链路"></span>
+== Human Infra 模型链路 ==
+
+<pre>声学环境 / 沟通适配 / 听觉支持 T
+  -> 改变噪声中理解、听觉努力、注意力占用和沟通疲劳变量 X
+  -> 改变主体课堂、会议、服务沟通和社交参与状态 S
+  -> 改变信息遗漏、学习损失、工作错误和有效时间损耗风险
+  -> 增加认知带宽、任务质量和未来选择权</pre>
+== 非目标 ==
+
+* 不提供听觉处理障碍诊断、测试解释、训练方案、学校便利、设备处方或个体教育建议。
+* 不根据听力、注意力或学习表现判断认知能力、残障资格或工作/学习许可。
+* 不替代听力学、言语语言治疗、教育评估、心理测评或职业康复服务。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* NIDCD Auditory Processing Disorder: https://www.nidcd.nih.gov/health/auditory-processing-disorder
+* NIDCD Assistive Devices: https://www.nidcd.nih.gov/health/assistive-devices-people-hearing-voice-speech-or-language-disorders
+* ASHA Hearing and Balance resources: https://www.asha.org/public/hearing/
+
+== 下一步 ==
+
+* 建立听觉处理 Source Card，区分声音进入、信息加工、认知负担和参与终点。
+* 对接教育、会议沟通、声环境、注意力和无障碍设计域。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C2研究域|C2研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c2-source-maintenance/auditory-processing-listening-effort-continuity/README.md Human Infra 仓库：domains/c2-source-maintenance/auditory-processing-listening-effort-continuity/README.md]
+
+[[Category:C2研究域]]

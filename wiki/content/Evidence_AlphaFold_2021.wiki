@@ -1,0 +1,18 @@
+{{证据来源
+|来源 ID=evidence.nature.alphafold-2021
+|来源类型=同行评审计算研究
+|完整引文=Jumper J, et al. Highly accurate protein structure prediction with AlphaFold. Nature. 2021.
+|URL 或 DOI=https://www.nature.com/articles/s41586-021-03819-2
+|支持范围=AI 显著提高蛋白质结构预测能力
+|不支持的推论=不支持 AI 已自动解决全部生命科学、完成实验验证或实现奇点
+|审查状态=已核对论文全文页面
+|访问日期=2026-07-24
+}}
+
+== 支持范围 ==
+
+用于说明计算模型可以压缩特定科学问题中的预测阶段，并扩大可研究对象规模。
+
+== 不支持的推论 ==
+
+结构预测仍需结合实验、功能、生物环境和临床验证。

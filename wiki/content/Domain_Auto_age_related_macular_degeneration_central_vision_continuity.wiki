@@ -1,0 +1,92 @@
+{{研究域
+|域 ID=domain.age-related-macular-degeneration-central-vision-continuity
+|C 层级=C2：可能性源体维护层
+|研究对象=Age Related Macular Degeneration Central Vision Continuity
+|持续性作用=关键词显示该域主要维护身体、脑、器官、细胞、急性生命风险或衰老损伤控制。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c2-source-maintenance/age-related-macular-degeneration-central-vision-continuity
+}}
+
+'''Age Related Macular Degeneration Central Vision Continuity'''是 Human Infra 在“生命载体维护”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要维护身体、脑、器官、细胞、急性生命风险或衰老损伤控制。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C2“可能性源体维护层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>age-related-macular-degeneration-central-vision-continuity/</code> 负责整理年龄相关性黄斑变性、中央视力、阅读识别、治疗随访和低视力衔接。
+
+核心问题：
+
+<blockquote>AMD 主要压缩中央视觉，使阅读、面孔识别、用药识别、屏幕工作和精细任务变慢或失效；它直接侵蚀主体获取信息和维持独立生活的能力。
+</blockquote>
+== 先验位置 ==
+
+<pre>主体持续性最大化
+  -> 主体必须持续读写、识别细节和处理近距离视觉任务
+  -> 黄斑功能损伤会首先破坏中央视觉和精细识别
+  -> 中央视力下降会降低学习、工作、社交识别、自我管理和独立生活
+  -> 因此 AMD 中央视觉连续性是信息获取和精细行动的基础条件</pre>
+== 关注对象 ==
+
+* 年龄相关性黄斑变性、干性/湿性 AMD、中央视力、阅读速度、面孔识别和精细任务。
+* 监测、治疗随访、注射治疗路径、低视力转介和辅助工具衔接。
+* 老年独立生活、药品标签识别、账单处理、屏幕使用和社交连接。
+* 与 <code>low-vision-rehabilitation-assistive-technology-continuity/</code> 的关系：本域关注 AMD 机制与治疗链，低视力域关注补偿和适配。
+
+<span id="human-infra-模型链路"></span>
+== Human Infra 模型链路 ==
+
+<pre>AMD 监测 / 治疗随访 / 低视力衔接 T
+  -> 改变中央视力、阅读速度、识别能力、治疗延迟和辅助适配变量 X
+  -> 改变主体信息获取、自理、财务/药物管理和社交状态 S
+  -> 改变独立生活下降、任务失败、照护依赖和有效时间损耗风险
+  -> 保护学习入口、日常自理和未来选择权</pre>
+== 非目标 ==
+
+* 不提供 AMD 诊断、影像判读、注射治疗建议、补剂建议、复查间隔或个体预后。
+* 不判断个人能否驾驶、工作、独立生活或使用特定视觉辅助设备。
+* 不把任何治疗或补偿工具写成恢复中央视力的承诺。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* National Eye Institute Age-Related Macular Degeneration: https://www.nei.nih.gov/learn-about-eye-health/eye-conditions-and-diseases/age-related-macular-degeneration
+* CDC Vision Health: https://www.cdc.gov/vision-health/
+* WHO Blindness and visual impairment: https://www.who.int/news-room/fact-sheets/detail/blindness-and-visual-impairment
+
+== 下一步 ==
+
+* 建立 AMD Source Card，区分中央视觉、治疗随访、低视力支持和独立生活终点。
+* 对接老年照护、数字无障碍、用药自理和低视力康复域。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C2研究域|C2研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c2-source-maintenance/age-related-macular-degeneration-central-vision-continuity/README.md Human Infra 仓库：domains/c2-source-maintenance/age-related-macular-degeneration-central-vision-continuity/README.md]
+
+[[Category:C2研究域]]

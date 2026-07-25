@@ -1,0 +1,92 @@
+{{研究域
+|域 ID=domain.predatory-publishing-paper-mill-detection-continuity
+|C 层级=C6：局部可能性解锁层
+|研究对象=Predatory Publishing Paper Mill Detection Continuity
+|持续性作用=未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c6-local-unlocking/predatory-publishing-paper-mill-detection-continuity
+}}
+
+'''Predatory Publishing Paper Mill Detection Continuity'''是 Human Infra 在“局部阻塞解除”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C6“局部可能性解锁层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>predatory-publishing-paper-mill-detection-continuity/</code> 研究掠夺性出版、paper mill、系统性伪造、操控同行评审和异常论文网络如何污染 Human Infra 证据。
+
+<blockquote>核心问题：当低质量出版和 paper mill 把伪造或模板化论文送入检索系统，单纯“有 DOI/有期刊/可检索”不能证明证据可用。
+</blockquote>
+== 先验位置 ==
+
+<pre>有效永生 / 主体持续性最大化
+  -> 需要从海量论文中抽取可靠证据
+  -> 检索系统会混入掠夺性出版、paper mill 和系统性操控产物
+  -> 若不识别异常出版网络，系统综述和模型会放大伪证据
+  -> 因此掠夺性出版与 paper mill 检测是证据污染防火墙</pre>
+== 关注对象 ==
+
+* Predatory journal、paper mill、fake peer review、tortured phrases、image duplication、authorship sale、citation cartel 和 special issue manipulation。
+* 出版商政策、期刊透明度、索引状态、撤稿网络、论文相似性和异常引用模式。
+* 与 <code>publication-reporting-bias-detection-continuity/</code> 的边界：发表偏倚域关注选择性发表和报告；本域关注系统性伪造和出版生态污染。
+* 与 <code>research-misconduct-investigation-correction-continuity/</code> 的边界：不端域关注调查和责任；本域关注筛查信号和证据防火墙。
+
+<span id="human-infra-模型链路"></span>
+== Human Infra 模型链路 ==
+
+<pre>掠夺性出版与 paper mill 检测 T
+  -> 改变 journal_transparency、paper_mill_signal、similarity_signal、review_integrity_signal 变量 X
+  -> 改变论文进入系统综述、雷达和模型输入的过滤状态 S
+  -> 改变伪证据累积、错误技术窗口、资源错配和公众误导风险 λ(t)
+  -> 影响 Human Infra 研究组合、模型可信度和主体持续性判断</pre>
+== 非目标 ==
+
+* 不提供绕过检测、伪造同行评审、论文买卖、引用操控、图片伪造、期刊黑名单服务或指控代写。
+* 不基于单一异常信号断言某论文或作者不端。
+* 不抓取受限稿件、审稿系统或私有数据库。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* COPE paper mills and systematic manipulation resources: https://publicationethics.org/
+* Think. Check. Submit.: https://thinkchecksubmit.org/
+* Directory of Open Access Journals: https://doaj.org/
+* STM Integrity Hub: https://www.stm-assoc.org/stm-integrity-hub/
+* Retraction Watch Database: https://retractiondatabase.org/
+
+== 下一步 ==
+
+* 建立 <code>paper_mill_signal</code> 的分层字段：journal transparency、image duplication signal、text anomaly、authorship anomaly、citation anomaly 和 retraction cluster。
+* 与撤稿、系统综述筛选、引用传播和科研不端调查域建立交叉引用。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C6研究域|C6研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c6-local-unlocking/predatory-publishing-paper-mill-detection-continuity/README.md Human Infra 仓库：domains/c6-local-unlocking/predatory-publishing-paper-mill-detection-continuity/README.md]
+
+[[Category:C6研究域]]

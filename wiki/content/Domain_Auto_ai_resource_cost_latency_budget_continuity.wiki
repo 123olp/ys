@@ -1,0 +1,93 @@
+{{研究域
+|域 ID=domain.ai-resource-cost-latency-budget-continuity
+|C 层级=C3：可能性生成引擎层
+|研究对象=AI Resource Cost Latency Budget Continuity
+|持续性作用=关键词显示该域主要增强认知、学习、工具、AI、技能或沟通能力。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c3-generation-engine/ai-resource-cost-latency-budget-continuity
+}}
+
+'''AI Resource Cost Latency Budget Continuity'''是 Human Infra 在“主体能力生成”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要增强认知、学习、工具、AI、技能或沟通能力。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C3“可能性生成引擎层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>ai-resource-cost-latency-budget-continuity/</code> 研究 AI 的算力、token、延迟、成本、能源、速率限制、可用性和预算治理，如何决定 AI 增强是否能长期稳定、可负担、可预测地服务主体。
+
+<blockquote>核心问题：AI 不是免费认知器官。若成本、延迟、配额和资源消耗不可控，AI 增强会在关键任务中失速、停摆或变成新的稀缺瓶颈。
+</blockquote>
+== 先验位置 ==
+
+<pre>有效永生 / 主体持续性最大化
+  -> 需要 AI 长期扩展学习、研究、自动化和问题求解能力
+  -> AI 能力依赖算力、延迟、token、带宽、能源、费用和服务可用性
+  -> 资源预算失控会导致工具不可持续、响应迟滞、任务中断和机会成本上升
+  -> 因此 AI 资源、成本与延迟预算是 AI 增强能否持续运行的运营约束域</pre>
+== 关注对象 ==
+
+* Token budget、compute budget、latency SLO、rate limit、cache、batching、queue、fallback、cost attribution 和 usage policy。
+* 云成本、模型调用成本、推理延迟、上下文窗口、检索成本、能源影响、降级策略和退出策略。
+* AI 资源如何在研究、写作、编程、监控、agent、可视化和自动化任务之间分配。
+* 与 <code>compute-data-center-ai-infrastructure/</code> 的边界：算力基础设施域关注外部供给；本域关注项目和主体使用 AI 时的预算、延迟和运营约束。
+* 与 <code>time-allocation-effective-time/</code> 的关系：有效时间域关注人的时间；本域关注 AI 延迟和成本如何改变人的有效时间。
+
+<span id="human-infra-模型链路"></span>
+== Human Infra 模型链路 ==
+
+<pre>AI 资源、成本与延迟预算 T
+  -> 改变 token、算力、延迟、费用、配额、缓存和降级变量 X
+  -> 改变 AI 工具可用性、可负担性、响应性和任务连续状态 S
+  -> 改变任务阻塞、成本失控、服务停摆和认知增强失效风险 λ(t)
+  -> 影响主体有效时间、资源复利、技术采用和长期行动能力</pre>
+== 非目标 ==
+
+* 不提供绕过计费、盗用算力、滥用免费额度、规避速率限制或攻击云服务的方法。
+* 不输出云成本、模型选择、采购、投资或生产架构的个案建议。
+* 不把更大模型、更高 token 或更高花费写成更高价值。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* NIST AI RMF Generative AI Profile: https://www.nist.gov/itl/ai-risk-management-framework/generative-artificial-intelligence-profile
+* FinOps Foundation: https://www.finops.org/
+* Green Software Foundation: https://greensoftware.foundation/
+* MLCommons: https://mlcommons.org/
+* Cloud Native Computing Foundation TAG Environmental Sustainability: https://tag-env-sustainability.cncf.io/
+
+== 下一步 ==
+
+* 建立 AI Budget Card 字段：task, model, token budget, latency target, cost ceiling, cache policy, fallback, stop condition。
+* 与 <code>ai-agent-tool-permission-sandbox-continuity/</code>、<code>compute-data-center-ai-infrastructure/</code> 和 <code>time-allocation-effective-time/</code> 建立运行预算接口。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C3研究域|C3研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c3-generation-engine/ai-resource-cost-latency-budget-continuity/README.md Human Infra 仓库：domains/c3-generation-engine/ai-resource-cost-latency-budget-continuity/README.md]
+
+[[Category:C3研究域]]

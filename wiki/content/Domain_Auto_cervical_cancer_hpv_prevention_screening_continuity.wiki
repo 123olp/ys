@@ -1,0 +1,89 @@
+{{研究域
+|域 ID=domain.cervical-cancer-hpv-prevention-screening-continuity
+|C 层级=C2：可能性源体维护层
+|研究对象=Cervical Cancer HPV Prevention Screening Continuity
+|持续性作用=关键词显示该域主要维护身体、脑、器官、细胞、急性生命风险或衰老损伤控制。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c2-source-maintenance/cervical-cancer-hpv-prevention-screening-continuity
+}}
+
+'''Cervical Cancer HPV Prevention Screening Continuity'''是 Human Infra 在“生命载体维护”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要维护身体、脑、器官、细胞、急性生命风险或衰老损伤控制。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C2“可能性源体维护层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>cervical-cancer-hpv-prevention-screening-continuity/</code> 研究宫颈癌 HPV 预防、疫苗接种、筛查、异常结果追踪、阴道镜入口、治疗负担、生殖/性健康和公平可及如何影响主体持续性。
+
+<blockquote>核心问题：宫颈癌是可预防性很强的癌种；主体持续性损失常来自 HPV 预防失败、筛查断线、异常结果失访、污名和生殖健康服务不可及。
+</blockquote>
+== 先验位置 ==
+
+<pre>有效永生 / 主体持续性最大化
+  -> 主体依赖可预防癌种被疫苗、筛查和异常闭环提前控制
+  -> HPV 预防和宫颈筛查改变癌前病变、癌症阶段、治疗强度和死亡风险
+  -> 隐私、污名、性/生殖健康服务和公平可及决定系统是否真正可用
+  -> 因此宫颈癌是癌症连续性中的感染预防与筛查闭环域</pre>
+== 关注对象 ==
+
+* Cervical cancer, HPV vaccination, screening, abnormal result follow-up, colposcopy access, reproductive health, sexual health stigma, equity。
+* 与 <code>sexual-health-sti-prevention-continuity/</code> 的边界：该域关注 STI 预防和性健康；本域关注 HPV 到宫颈癌的预防、筛查和异常闭环。
+* 与 <code>reproductive-fertility-continuity/</code> 和 <code>healthcare-access-continuity/</code> 的关系：宫颈癌连续性强依赖性/生殖健康服务可及。
+
+<span id="human-infra-模型链路"></span>
+== Human Infra 模型链路 ==
+
+<pre>宫颈癌 HPV 预防筛查系统 T
+  -> 改变 HPV 预防、疫苗可及、筛查覆盖、异常追踪、阴道镜入口和隐私保护变量 X
+  -> 改变癌前病变控制、癌症阶段、治疗负担、污名压力和生殖健康状态 S
+  -> 改变死亡、治疗后功能损失、心理负担和有效时间损失 λ(t)
+  -> 影响主体健康寿命、身体自主、关系安全和未来选择权</pre>
+== 非目标 ==
+
+* 不提供 HPV/宫颈筛查结果解释、疫苗个体建议、筛查年龄/频率、阴道镜判断、病理判读、治疗方案、用药、手术或个体建议。
+* 不生成个人宫颈癌筛查推荐器、HPV 结果解释器、疫苗排序、异常结果处理建议或商业检测推广。
+* 不收集个案 HPV、宫颈细胞学、阴道镜、病理、性史、生殖史或治疗资料。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* NCI cervical cancer: https://www.cancer.gov/types/cervical
+* NCI cervical cancer screening: https://www.cancer.gov/types/cervical/screening
+* CDC HPV and cancer: https://www.cdc.gov/hpv/
+
+== 下一步 ==
+
+* 建立 Cervical Cancer Continuity Card：HPV prevention, vaccination access, screening, abnormal follow-up, colposcopy, stigma, reproductive health。
+* 与 <code>sexual-health-sti-prevention-continuity/</code>、<code>reproductive-fertility-continuity/</code> 和 <code>cancer-survivorship-late-effects-continuity/</code> 建立接口。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C2研究域|C2研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c2-source-maintenance/cervical-cancer-hpv-prevention-screening-continuity/README.md Human Infra 仓库：domains/c2-source-maintenance/cervical-cancer-hpv-prevention-screening-continuity/README.md]
+
+[[Category:C2研究域]]

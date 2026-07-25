@@ -1,0 +1,88 @@
+{{研究域
+|域 ID=domain.idiopathic-hypersomnia-excessive-sleepiness-continuity
+|C 层级=C6：局部可能性解锁层
+|研究对象=Idiopathic Hypersomnia Excessive Sleepiness Continuity
+|持续性作用=未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c6-local-unlocking/idiopathic-hypersomnia-excessive-sleepiness-continuity
+}}
+
+'''Idiopathic Hypersomnia Excessive Sleepiness Continuity'''是 Human Infra 在“局部阻塞解除”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C6“局部可能性解锁层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>idiopathic-hypersomnia-excessive-sleepiness-continuity/</code> 研究特发性嗜睡、白天过度嗜睡、醒后困难、睡眠惯性、诊断不确定性和长期功能损耗如何影响主体持续性。
+
+<blockquote>核心问题：特发性嗜睡会让主体拥有足够睡眠时间却仍难以稳定清醒，直接压缩可用行动窗口、任务启动能力和社会解释空间。
+</blockquote>
+== 先验位置 ==
+
+<pre>有效永生 / 主体持续性最大化
+  -> 主体需要可启动、可维持、可解释的清醒状态执行任务
+  -> 特发性嗜睡可造成长睡眠、醒后困难和持续日间嗜睡
+  -> 结果取决于诊断排除、睡眠医学可及、学校/工作支持和污名治理
+  -> 因此特发性嗜睡是有效时间可用性与清醒启动能力的关键研究域</pre>
+== 关注对象 ==
+
+* Idiopathic hypersomnia、excessive daytime sleepiness、sleep inertia、difficulty awakening、long sleep time、diagnostic uncertainty、school / work participation、stigma。
+* 与 <code>narcolepsy-daytime-sleepiness-continuity/</code> 的边界：该域关注发作性睡病、猝倒和睡眠发作；本域关注非发作性睡病的持续嗜睡和醒后困难。
+* 与 <code>chronic-insomnia-cbti-access-continuity/</code> 的关系：失眠域关注睡不着和恢复失败；本域关注睡了仍无法清醒。
+
+<span id="human-infra-模型链路"></span>
+== Human Infra 模型链路 ==
+
+<pre>特发性嗜睡识别与支持系统 T
+  -> 改变日间嗜睡、睡眠惯性、任务启动困难、诊断延迟、解释成本和支持可及变量 X
+  -> 改变有效清醒时间、学习/工作启动、社交参与、交通暴露和心理负担 S
+  -> 改变失误、旷课/缺勤、就业损耗、污名和有效时间损失 λ(t)
+  -> 影响主体行动密度、身份稳定和未来选择权</pre>
+== 非目标 ==
+
+* 不提供个人嗜睡诊断、睡眠检查解释、药物选择、兴奋剂建议、剂量、驾驶限制、学校/工作便利或治疗建议。
+* 不生成个人睡眠评分、请假证明、保险/残障材料、用药方案、作息方案或安全许可判断。
+* 不收集个案睡眠日志、可穿戴数据、用药、病史、驾驶、学校、工作、心理健康或可识别医疗资料。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* MedlinePlus idiopathic hypersomnia: https://medlineplus.gov/ency/article/000803.htm
+* MedlinePlus sleep disorders: https://medlineplus.gov/ency/article/000800.htm
+
+== 下一步 ==
+
+* 建立 Hypersomnia Continuity Card：sleepiness, awakening difficulty, sleep inertia, diagnostic uncertainty, support access, stigma, safety exposure。
+* 与 <code>sleep-circadian-recovery/</code>、<code>narcolepsy-daytime-sleepiness-continuity/</code> 和 <code>attention-executive-control/</code> 建立接口。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C6研究域|C6研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c6-local-unlocking/idiopathic-hypersomnia-excessive-sleepiness-continuity/README.md Human Infra 仓库：domains/c6-local-unlocking/idiopathic-hypersomnia-excessive-sleepiness-continuity/README.md]
+
+[[Category:C6研究域]]

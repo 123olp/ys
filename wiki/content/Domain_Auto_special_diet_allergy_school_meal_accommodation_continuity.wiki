@@ -1,0 +1,82 @@
+{{研究域
+|域 ID=domain.special-diet-allergy-school-meal-accommodation-continuity
+|C 层级=C5：可能性生态承载层
+|研究对象=Special Diet Allergy School Meal Accommodation Continuity
+|持续性作用=关键词显示该域主要承载能源、水、食物、住房、治理、经济、通信、灾害或基础设施环境。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c5-ecological-substrate/special-diet-allergy-school-meal-accommodation-continuity
+}}
+
+'''Special Diet Allergy School Meal Accommodation Continuity'''是 Human Infra 在“外部生态承载”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要承载能源、水、食物、住房、治理、经济、通信、灾害或基础设施环境。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C5“可能性生态承载层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+该域研究学校餐食中的特殊饮食、残障相关饮食便利、食物过敏、乳糖/麸质等饮食限制和有效沟通如何在不增加污名、不替代医疗判断的前提下支撑儿童安全进食与持续到校。
+
+== 核心问题 ==
+
+* 学校餐食系统是否能识别、记录和执行必要饮食便利。
+* 医疗说明、家庭沟通、菜单替代、交叉接触、现场 staff 培训和紧急计划是否形成闭环。
+* 特殊饮食需求是否导致儿童排斥、错餐、饥饿、过敏暴露或家庭额外供餐成本。
+
+== 对象 ==
+
+* 学校餐食特殊饮食安排、食物过敏、残障饮食便利、菜单替代和有效沟通。
+* USDA school meals disability accommodation guidance、Section 504/ADA 交叉、学校健康计划和过敏应急计划。
+* 餐厅 staff、教师、护士、家庭、供应商、菜单标识和交叉接触风险。
+
+<span id="human-infra-价值"></span>
+== Human Infra 价值 ==
+
+特殊饮食便利使儿童不用在“吃饭安全”和“到校参与”之间二选一。它保护营养输入、身体安全、学校归属和家庭时间，并减少因过敏或饮食错误造成的急性风险。
+
+== 边界 ==
+
+* 只整理公开规则、风险变量、服务断点、沟通接口和证据边界。
+* 不提供过敏诊断、饮食处方、菜单替代建议、个案便利申请、急救计划、责任判断或法律建议。
+* 不收集儿童诊断、过敏原、医疗证明、学校记录、照片、餐卡、事故记录或身份资料。
+
+== 上游与下游 ==
+
+* 上游：<code>school-meals-nutrition-access-continuity</code>、<code>special-education-iep-504-accommodation-continuity</code>、<code>school-health-services-chronic-condition-continuity</code>。
+* 下游：<code>anaphylaxis-allergic-emergency-continuity</code>、<code>childcare-family-continuity</code>、<code>school-enrollment-attendance-continuity</code>。
+
+== 初始资料线索 ==
+
+* USDA FNS school meals guidance and resources.
+* USDA FNS accommodating children with disabilities in school meal programs.
+* CDC food allergies in schools materials.
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C5研究域|C5研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c5-ecological-substrate/special-diet-allergy-school-meal-accommodation-continuity/README.md Human Infra 仓库：domains/c5-ecological-substrate/special-diet-allergy-school-meal-accommodation-continuity/README.md]
+
+[[Category:C5研究域]]

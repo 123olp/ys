@@ -1,7 +1,7 @@
 {
   "schemaVersion": "human-infra.life-path-nhats-colectica-capture-packet-validator-validation.v1",
   "validationId": "nhats-r13-r14-colectica-capture-packet-validator-validation-2026-07-04",
-  "generatedAt": "2026-07-10T22:39:17.245868+00:00",
+  "generatedAt": "2026-07-25T00:41:58.329217+00:00",
   "status": "pass",
   "sourceRefs": {
     "testCasesPath": "domains/c1-boundary-rewriting/longevity-evidence/data/manual/life_path_nhats_colectica_capture_packet_validator_test_cases.json",
@@ -106,8 +106,8 @@
       "actualVerdict": "rejected",
       "passed": true,
       "rejectReasons": [
-        "publicAiUpload must be false",
         "aiOnlySignoff must be false",
+        "publicAiUpload must be false",
         "reviewerRole must identify a human reviewer",
         "secondReviewerRole must identify an independent human reviewer",
         "secondReviewerRole must differ from reviewerRole"

@@ -1,0 +1,89 @@
+{{研究域
+|域 ID=domain.mechanical-ventilation-respiratory-failure-continuity
+|C 层级=C2：可能性源体维护层
+|研究对象=Mechanical Ventilation Respiratory Failure Continuity
+|持续性作用=关键词显示该域主要维护身体、脑、器官、细胞、急性生命风险或衰老损伤控制。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c2-source-maintenance/mechanical-ventilation-respiratory-failure-continuity
+}}
+
+'''Mechanical Ventilation Respiratory Failure Continuity'''是 Human Infra 在“生命载体维护”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要维护身体、脑、器官、细胞、急性生命风险或衰老损伤控制。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C2“可能性源体维护层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>mechanical-ventilation-respiratory-failure-continuity/</code> 研究急性呼吸衰竭、氧合/通气失败、机械通气、撤机、呼吸治疗和长期呼吸功能恢复如何影响主体持续性。
+
+<blockquote>核心问题：呼吸失败会在短时间内切断氧供。机械通气是把不可逆缺氧变成可支持、可恢复窗口的核心生命支持技术之一。
+</blockquote>
+== 先验位置 ==
+
+<pre>有效永生 / 主体持续性最大化
+  -> 主体持续性依赖氧合、通气和酸碱平衡
+  -> 肺炎、ARDS、创伤、神经肌肉失败或麻醉可导致急性呼吸衰竭
+  -> 机械通气可暂时代替呼吸功能，但也带来肺损伤、感染、谵妄和撤机风险
+  -> 因此机械通气是呼吸失败进入生命支持模型的核心域</pre>
+== 关注对象 ==
+
+* Acute respiratory failure、ARDS、oxygenation、ventilation、noninvasive/invasive ventilation、ventilator-associated harm、weaning、respiratory therapy、long-term recovery。
+* 与 <code>respiratory-oxygenation/</code> 的边界：呼吸氧合域关注基础生理；本域关注急性失败和设备支持。
+* 与 <code>home-oxygen-respiratory-equipment-supply-continuity/</code> 的关系：后者关注居家设备供应；本域关注急性和 ICU 生命支持。
+
+<span id="human-infra-模型链路"></span>
+== Human Infra 模型链路 ==
+
+<pre>机械通气与呼吸衰竭支持 T
+  -> 改变氧合、通气、设备可用、撤机、感染和肺保护变量 X
+  -> 改变缺氧、二氧化碳潴留、ICU 病程和肺功能恢复状态 S
+  -> 改变急性死亡、脑缺氧、呼吸机相关损伤和长期功能下降风险 λ(t)
+  -> 影响主体存在、认知连续性和恢复能力</pre>
+== 非目标 ==
+
+* 不提供氧疗、呼吸机参数、撤机、气道管理、ARDS 治疗、呼吸训练或个体医疗建议。
+* 不生成设备设置、医院流程、居家呼吸设备操作、急救指导或替代呼吸治疗师的内容。
+* 不收集呼吸机参数、血气、影像、SpO2、病历、设备日志或家庭医疗资料。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* ATS/ESICM/SCCM Mechanical Ventilation Guideline: https://www.thoracic.org/statements/resources/cc/mechanical-ventilation-ards.pdf
+* NIH Respiratory Failure: https://www.nhlbi.nih.gov/health/respiratory-failure
+* CDC Ventilator-associated Event: https://www.cdc.gov/nhsn/psc/vae/index.html
+
+== 下一步 ==
+
+* 建立 Respiratory Support Card：failure type, oxygenation, ventilation, device support, complications, weaning, recovery。
+* 与 <code>respiratory-oxygenation/</code>、<code>intensive-care-organ-support-delirium-continuity/</code> 和 <code>home-oxygen-respiratory-equipment-supply-continuity/</code> 建立接口。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C2研究域|C2研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c2-source-maintenance/mechanical-ventilation-respiratory-failure-continuity/README.md Human Infra 仓库：domains/c2-source-maintenance/mechanical-ventilation-respiratory-failure-continuity/README.md]
+
+[[Category:C2研究域]]

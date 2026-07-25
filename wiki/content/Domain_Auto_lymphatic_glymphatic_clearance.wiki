@@ -1,0 +1,92 @@
+{{研究域
+|域 ID=domain.lymphatic-glymphatic-clearance
+|C 层级=C2：可能性源体维护层
+|研究对象=Lymphatic Glymphatic Clearance
+|持续性作用=直接维护身体、脑、器官、衰老、损伤或生命系统这些可能性源体。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c2-source-maintenance/lymphatic-glymphatic-clearance
+}}
+
+'''Lymphatic Glymphatic Clearance'''是 Human Infra 在“生命载体维护”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+直接维护身体、脑、器官、衰老、损伤或生命系统这些可能性源体。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C2“可能性源体维护层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+Lymphatic Glymphatic Clearance 负责整理淋巴系统、脑淋巴/类淋巴清除、组织液、免疫运输、水肿和脑废物清除如何影响主体持续性。
+
+核心问题：
+
+<blockquote>主体不仅需要输入氧气和营养，也需要把液体、废物、免疫信号和组织损伤产物持续清出；清除网络失效会让恢复系统变慢、变脆弱。
+</blockquote>
+== 先验位置 ==
+
+<pre>有效永生 / 主体持续性最大化
+  -> 主体必须长期维持组织液平衡、免疫运输和代谢废物清除
+  -> 淋巴系统连接免疫、炎症、水肿、脂质吸收和组织修复
+  -> 脑淋巴/类淋巴清除连接睡眠、脑废物、神经退行和认知连续性
+  -> 因此淋巴与脑淋巴清除是恢复和废物管理域</pre>
+== 关注对象 ==
+
+* 淋巴管、淋巴结、组织液、免疫细胞运输、水肿、脂质吸收和炎症清除。
+* 脑膜淋巴、glymphatic clearance、睡眠相关脑废物清除和神经退行风险。
+* 淋巴水肿、感染、癌症转移、术后恢复、慢性炎症和组织修复。
+* 清除网络与睡眠、免疫、神经、肾肝、运动、皮肤、癌症和衰老的交叉。
+
+<span id="human-infra-模型链路"></span>
+== Human Infra 模型链路 ==
+
+<pre>淋巴/脑淋巴状态 T
+  -> 改变组织液平衡、免疫运输、炎症清除和脑废物清除 X
+  -> 改变恢复速度、认知连续性、感染/水肿和组织修复状态 S
+  -> 改变失能、神经退行、感染和长期功能下降风险 λ(t)
+  -> 影响有效时间、恢复能力和学习行动窗口</pre>
+== 非目标 ==
+
+* 不提供淋巴引流、按摩、设备、药物、睡眠处方、癌症治疗或个体康复建议。
+* 不把 glymphatic 假说写成确定的人体治疗路径。
+* 不替代 <code>sleep-circadian-recovery/</code>、<code>immune-maintenance/</code>、<code>neuro-continuity/</code> 或 <code>renal-hepatic-clearance/</code>。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* PMC lymphatic aging review: https://pmc.ncbi.nlm.nih.gov/articles/PMC9026931/
+* PubMed glymphatic system review: https://pubmed.ncbi.nlm.nih.gov/25947369/
+* PMC meningeal lymphatics and brain clearance review: https://pmc.ncbi.nlm.nih.gov/articles/PMC6198085/
+
+== 下一步 ==
+
+# 建立清除网络变量表：组织液、淋巴运输、炎症清除、脑废物清除、睡眠耦合和水肿风险。
+# 与 <code>sleep-circadian-recovery/</code>、<code>immune-maintenance/</code>、<code>neuro-continuity/</code> 和 <code>renal-hepatic-clearance/</code> 建立边界。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C2研究域|C2研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c2-source-maintenance/lymphatic-glymphatic-clearance/README.md Human Infra 仓库：domains/c2-source-maintenance/lymphatic-glymphatic-clearance/README.md]
+
+[[Category:C2研究域]]

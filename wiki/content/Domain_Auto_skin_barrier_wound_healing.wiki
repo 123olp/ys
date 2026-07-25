@@ -1,0 +1,92 @@
+{{研究域
+|域 ID=domain.skin-barrier-wound-healing
+|C 层级=C2：可能性源体维护层
+|研究对象=Skin Barrier Wound Healing
+|持续性作用=直接维护身体、脑、器官、衰老、损伤或生命系统这些可能性源体。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c2-source-maintenance/skin-barrier-wound-healing
+}}
+
+'''Skin Barrier Wound Healing'''是 Human Infra 在“生命载体维护”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+直接维护身体、脑、器官、衰老、损伤或生命系统这些可能性源体。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C2“可能性源体维护层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+Skin Barrier Wound Healing 负责整理皮肤屏障、伤口愈合、压力损伤、感染入口、热调节和触觉边界如何影响主体持续性。
+
+核心问题：
+
+<blockquote>皮肤是主体与外界接触的最大边界；屏障破裂会把环境、感染、疼痛和失能直接接入身体系统。
+</blockquote>
+== 先验位置 ==
+
+<pre>有效永生 / 主体持续性最大化
+  -> 主体必须长期维持与外界之间的保护边界
+  -> 皮肤负责屏障、伤口闭合、温度调节、感觉和部分免疫防御
+  -> 慢性伤口、压力损伤、感染入口或屏障失效会消耗恢复资源并增加死亡/失能风险
+  -> 因此皮肤屏障与伤口愈合是外界接口维护域</pre>
+== 关注对象 ==
+
+* 皮肤屏障、表皮/真皮、伤口愈合阶段、瘢痕、慢性伤口和压力损伤。
+* 感染入口、疼痛、瘙痒、热调节、感觉反馈、行动限制和照护负担。
+* 糖尿病足、血流不足、营养状态、免疫状态、老化皮肤和长期卧床风险。
+* 皮肤系统与感染、代谢、血液、循环、肌骨、康复、照护和极端环境的交叉。
+
+<span id="human-infra-模型链路"></span>
+== Human Infra 模型链路 ==
+
+<pre>皮肤屏障或伤口状态 T
+  -> 改变屏障完整性、愈合速度、感染入口、疼痛和热调节 X
+  -> 改变主体外界防护、行动舒适度和恢复负担 S
+  -> 改变感染、慢性伤口、失能和死亡风险 λ(t)
+  -> 影响有效时间、独立性和长期照护需求</pre>
+== 非目标 ==
+
+* 不提供伤口处理、敷料、药物、手术、压力损伤处理或急救建议。
+* 不把皮肤图像、伤口大小或症状写成诊断。
+* 不替代 <code>immune-maintenance/</code>、<code>cardiovascular-resilience/</code>、<code>nutrition-metabolic-health/</code> 或 <code>rehabilitation-functioning/</code>。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* NCBI wound healing overview: https://www.ncbi.nlm.nih.gov/books/NBK470443/
+* NCBI pressure injuries overview: https://www.ncbi.nlm.nih.gov/books/NBK553107/
+* PMC skin aging and barrier review: https://pmc.ncbi.nlm.nih.gov/articles/PMC3583892/
+
+== 下一步 ==
+
+# 建立皮肤屏障变量表：屏障完整性、愈合能力、感染入口、疼痛、热调节和照护负担。
+# 与 <code>immune-maintenance/</code>、<code>blood-oxygen-hemostasis/</code>、<code>rehabilitation-functioning/</code> 和 <code>resource-social-infra/</code> 建立边界。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C2研究域|C2研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c2-source-maintenance/skin-barrier-wound-healing/README.md Human Infra 仓库：domains/c2-source-maintenance/skin-barrier-wound-healing/README.md]
+
+[[Category:C2研究域]]

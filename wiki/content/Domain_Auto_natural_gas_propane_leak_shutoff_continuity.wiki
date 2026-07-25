@@ -1,0 +1,83 @@
+{{研究域
+|域 ID=domain.natural-gas-propane-leak-shutoff-continuity
+|C 层级=C6：局部可能性解锁层
+|研究对象=Natural Gas Propane Leak Shutoff Continuity
+|持续性作用=未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c6-local-unlocking/natural-gas-propane-leak-shutoff-continuity
+}}
+
+'''Natural Gas Propane Leak Shutoff Continuity'''是 Human Infra 在“局部阻塞解除”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C6“局部可能性解锁层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>natural-gas-propane-leak-shutoff-continuity</code> 研究天然气、丙烷、燃料管线、泄漏识别、报警、撤离、关断责任和恢复检查如何影响家庭安全、供暖、烹饪和居住连续性。
+
+<blockquote>核心问题：燃气是高能量家庭基础设施；它能支撑供暖和烹饪，也会在泄漏、误操作或恢复失败时迅速转化为爆炸、火灾和中毒风险。
+</blockquote>
+== 关注对象 ==
+
+* 天然气、丙烷、燃气表、阀门、软管、炉具、供暖设备、泄漏气味、报警、撤离和恢复检查。
+* 施工破坏、设备老化、灾后返家、租房责任、燃料中断、燃气恢复和公共通知。
+* 与供暖、烹饪、CO 风险、消防、应急通信、管线安全和维修专业人员的接口。
+
+<span id="human-infra-链路"></span>
+== Human Infra 链路 ==
+
+<pre>燃气与丙烷泄漏关断连续
+  -> 高能量燃料使用保持可识别、可撤离、可专业恢复
+  -> 泄漏、爆炸、火灾、CO 和灾后返家风险下降
+  -> 供暖、烹饪和居住任务不被不可见燃料风险切断
+  -> 主体家庭安全边界和恢复能力提高</pre>
+== 非目标 ==
+
+* 不提供关阀操作教程、泄漏判断、设备维修、燃气恢复、管线施工、燃气表操作或现场安全许可。
+* 不替代燃气公司、丙烷供应商、消防部门、911、持证 plumber/HVAC、管线安全机构或房东维修义务。
+* 不把燃气可用性和安全性混为一谈；本域只研究燃料接口的识别、响应、专业恢复和任务连续性。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* PHMSA Pipeline Leak Recognition and What to Do: https://www.phmsa.dot.gov/safety-awareness/pipeline/pipeline-leak-recognition-and-what-do
+* USFA Home Heating Fire Safety: https://www.usfa.fema.gov/prevention/home-fires/prevent-fires/heating/
+* CDC Carbon Monoxide Poisoning Basics: https://www.cdc.gov/carbon-monoxide/about/index.html
+
+== 下一步 ==
+
+* 建立 <code>fuel gas interface -&gt; leak signal -&gt; response boundary -&gt; restoration state -&gt; continuity outcome</code> 变量表。
+* 区分天然气、丙烷、供暖、烹饪、灾后返家、施工破坏、租房责任和燃气恢复。
+* 与 <code>carbon-monoxide-alarm-combustion-appliance-safety-continuity</code>、<code>fuel-thermal-energy-service-continuity</code> 和 <code>home-heating-equipment-chimney-vent-maintenance-continuity</code> 建立边界。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C6研究域|C6研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c6-local-unlocking/natural-gas-propane-leak-shutoff-continuity/README.md Human Infra 仓库：domains/c6-local-unlocking/natural-gas-propane-leak-shutoff-continuity/README.md]
+
+[[Category:C6研究域]]

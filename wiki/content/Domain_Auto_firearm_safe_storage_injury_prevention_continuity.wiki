@@ -1,0 +1,79 @@
+{{研究域
+|域 ID=domain.firearm-safe-storage-injury-prevention-continuity
+|C 层级=C6：局部可能性解锁层
+|研究对象=Firearm Safe Storage Injury Prevention Continuity
+|持续性作用=未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c6-local-unlocking/firearm-safe-storage-injury-prevention-continuity
+}}
+
+'''Firearm Safe Storage Injury Prevention Continuity'''是 Human Infra 在“局部阻塞解除”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C6“局部可能性解锁层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>firearm-safe-storage-injury-prevention-continuity/</code> 研究枪支伤害预防中的安全储存、儿童接触、 suicide risk interface、家庭暴力风险和公共卫生证据边界。
+
+<blockquote>核心问题：枪支伤害预防是高后果风险治理问题；Human Infra 只关心公开证据、储存边界和伤害预防系统，不进入武器操作。
+</blockquote>
+== 先验位置 ==
+
+<pre>主体要持续存在
+  -> 必须降低高致死性工具在危机、儿童探索和冲突中的可及性
+  -> 枪支暴露可把瞬时冲动、误触和暴力冲突转化为不可逆死亡
+  -> 因而安全储存是伤害预防中的高后果风险边界</pre>
+== 关注对象 ==
+
+* 安全储存、儿童接触、青少年自伤、家庭暴力风险、公共卫生监测、政策评估和证据沟通。
+
+<span id="human-infra-模型链路"></span>
+== Human Infra 模型链路 ==
+
+<pre>枪支安全储存与伤害预防 T
+  -> 改变可及性、储存状态、危机窗口、儿童接触、家庭冲突和风险沟通变量 X
+  -> 改变冲动行为、误伤、暴力事件和自伤事件的即时可执行状态 S
+  -> 改变死亡、重伤、创伤后家庭破坏和社区安全风险 λ(t)
+  -> 改变主体持续性、家庭系统和公共信任</pre>
+== 非目标 ==
+
+* 不提供枪支购买、持有、携带、操作、储存实施步骤、锁具选择、战术、自卫、规避安全装置、法律合规或个体风险判断建议。
+* 不收集武器型号、存放位置、家庭成员信息、心理健康个案、暴力事件细节或地址。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* CDC firearm violence prevention: https://www.cdc.gov/firearm-violence/
+* NIH firearm injury prevention research resources: https://www.nichd.nih.gov/research/supported/firearm-injury-prevention
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C6研究域|C6研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c6-local-unlocking/firearm-safe-storage-injury-prevention-continuity/README.md Human Infra 仓库：domains/c6-local-unlocking/firearm-safe-storage-injury-prevention-continuity/README.md]
+
+[[Category:C6研究域]]

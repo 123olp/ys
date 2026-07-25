@@ -1,0 +1,87 @@
+{{研究域
+|域 ID=domain.right-to-repair-parts-manuals-access-continuity
+|C 层级=C6：局部可能性解锁层
+|研究对象=维修权、零件、手册与诊断接入连续性
+|持续性作用=未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c6-local-unlocking/right-to-repair-parts-manuals-access-continuity
+}}
+
+'''维修权、零件、手册与诊断接入连续性'''是 Human Infra 在“局部阻塞解除”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C6“局部可能性解锁层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+本域研究维修权、零件、维修手册、诊断工具、软件锁、独立维修和产品可修复性如何影响设备寿命、资源消耗和主体任务连续性。它关注维修接入作为反浪费和资源恢复基础设施，而不是拆机教程、绕过安全机制或个案维修建议。
+
+== 研究对象 ==
+
+* 维修手册、零件供应、诊断工具、软件配对、固件限制、维修授权和独立维修市场。
+* 手机、电脑、家电、车辆、医疗设备、农业设备和其他关键工具的可修复性边界。
+* 产品寿命、维修成本、停机时间、备件可得性、废弃物和所有权控制。
+* 与保修服务合同、制造维修能力、个人设备生命周期维修、家用电器维修和产品安全召回的边界。
+
+== 价值链路 ==
+
+<pre>主体依赖产品完成任务
+  -> 零件、手册和诊断接入决定产品故障后能否被恢复
+  -> 可修复性延长设备寿命并降低替换、等待和废弃成本
+  -> 软件锁、配件封闭和资料缺失会把故障转化为强制替换
+  -> 维修权连续性把产品所有权从消费许可转化为可维护的行动资产</pre>
+== 关键问题 ==
+
+* 维修资料、零件和诊断工具的可得性如何影响产品寿命和主体任务中断？
+* 保修限制、软件配对和授权维修网络如何改变维修市场与消费者控制权？
+* 维修权如何与安全、隐私、网络安全、知识产权和产品责任边界冲突？
+* 哪些设备属于主体持续性关键工具，故障会放大到医疗、工作、通信或照护风险？
+
+== 上游与下游 ==
+
+* 上游：<code>manufacturing-repair-capacity/</code>、<code>consumer-warranty-service-contract-repair-continuity/</code>、<code>personal-computing-device-lifecycle-repair-continuity/</code>、<code>household-appliance-maintenance-repair-continuity/</code>。
+* 下游：<code>waste-management-hazardous-materials-continuity/</code>、<code>critical-minerals-materials-resilience/</code>、<code>software-update-vulnerability-patch-continuity/</code>、<code>product-safety-recall-systems/</code>。
+
+== 非目标 ==
+
+* 不提供拆机、绕锁、破解、固件修改、DRM 规避、危险电气/燃气/医疗设备维修或个案维修操作。
+* 不判断某个产品是否应维修、某个厂商是否合法、某个维修行为是否安全或某个法律是否适用。
+* 不协助绕过安全锁、访问受保护诊断系统、规避产品安全控制、侵犯知识产权或处理个人设备隐私数据。
+
+== 初始资料入口 ==
+
+* FTC: Nixing the Fix report
+* FTC: Right to repair policy and consumer protection materials
+* U.S. PIRG / iFixit public right-to-repair materials as secondary context
+* State right-to-repair official statutes and agency materials
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C6研究域|C6研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c6-local-unlocking/right-to-repair-parts-manuals-access-continuity/README.md Human Infra 仓库：domains/c6-local-unlocking/right-to-repair-parts-manuals-access-continuity/README.md]
+
+[[Category:C6研究域]]

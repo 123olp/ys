@@ -1,0 +1,97 @@
+{{研究域
+|域 ID=domain.model-cards-ai-audit-documentation
+|C 层级=C4：可能性转换通道层
+|研究对象=Model Cards AI Audit Documentation
+|持续性作用=主要把科学、医疗、数据、制度或技术从潜在能力转成真实可用路径。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c4-conversion-channel/model-cards-ai-audit-documentation
+}}
+
+'''Model Cards AI Audit Documentation'''是 Human Infra 在“路径转换接口”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+主要把科学、医疗、数据、制度或技术从潜在能力转成真实可用路径。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C4“可能性转换通道层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+== 定位 ==
+
+本域研究模型卡、数据集说明、系统卡、AI 审计文档、评估报告和可追溯模型治理，如何让 Human Infra 的预测模型、可视化、仿真和 AI 辅助研究输出可解释、可复核、可限制和可追责。
+
+Human Infra 会持续产生模型、图表、论文页、推导框架和技术评估。如果没有统一文档契约，模型很容易从“研究解释工具”滑向“不可审查的权威判断”。本域负责让每个模型知道自己从哪里来、适用于什么、不适用于什么、失败时如何被发现。
+
+== 先验位置 ==
+
+<pre>有效永生 / 主体持续性最大化
+  -> 需要模型、图表和 AI 系统辅助判断技术路径
+  -> 模型输出若不可解释、不可审计或边界不明，会制造虚假确定性
+  -> 需要模型卡、数据说明、审计报告和用途限制
+  -> model-cards-ai-audit-documentation</pre>
+== 关注对象 ==
+
+* Model Cards、Datasheets for Datasets、System Cards、FactSheets 和模型治理文档。
+* 训练数据、适用对象、任务定义、评估集、性能、校准、偏差、漂移和失效模式。
+* 预测模型、D3 可视化、论文页、Scenario Evaluator 和 Human Infra Web 展示的审计记录。
+* NIST AI RMF 的 govern、map、measure、manage 风险语言。
+* 模型文档如何连接 Source Card、Data Card、Scenario Card 和伦理边界。
+
+<span id="human-infra-模型链路"></span>
+== Human Infra 模型链路 ==
+
+<pre>模型 / 图表 / AI 系统
+  -> 模型卡和审计文档
+  -> 声明数据、任务、评估、边界、风险和禁止用途
+  -> 支撑读者复核、版本追踪、错误纠正和治理门禁
+  -> 防止模型输出被误读为医学建议、寿命承诺或自动化评分</pre>
+== 非目标 ==
+
+* 不把模型卡写成营销材料、合规豁免或可信背书。
+* 不输出个人寿命预测、死亡日期、诊断、治疗建议、保险评分、招聘评分或资格判断。
+* 不掩盖模型失败、数据缺陷、不确定性、适用边界或人群差异。
+* 不替代 <code>uncertainty-quantification-model-calibration/</code>；本域负责文档和审计契约，校准方法由模型校准域负责。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* Model Cards for Model Reporting: https://arxiv.org/abs/1810.03993
+* Datasheets for Datasets: https://arxiv.org/abs/1803.09010
+* NIST AI Risk Management Framework: https://www.nist.gov/itl/ai-risk-management-framework
+* NIST Generative AI Profile: https://www.nist.gov/itl/ai-risk-management-framework/generative-artificial-intelligence
+* OECD AI Principles: https://oecd.ai/en/ai-principles
+
+== 下一步 ==
+
+* 为 Human Infra 建立 <code>MODEL_CARD.md</code> 模板：purpose、data、population、evaluation、calibration、limitations、forbidden uses、review status。
+* 给 <code>/paper/</code> 和新增论文页建立模型/图表审计清单，避免图表被误读为事实预测。
+* 与 <code>knowledge-graph-ontology-semantic-interoperability/</code> 对接，把模型卡字段纳入可查询知识结构。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C4研究域|C4研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c4-conversion-channel/model-cards-ai-audit-documentation/README.md Human Infra 仓库：domains/c4-conversion-channel/model-cards-ai-audit-documentation/README.md]
+
+[[Category:C4研究域]]

@@ -1,0 +1,16 @@
+{{证据来源
+|来源 ID=evidence.nature-medicine.normothermic-kidney-perfusion-2023
+|来源类型=随机对照试验
+|完整引文=Hosgood SA, et al. Normothermic machine perfusion versus static cold storage in donation after circulatory death kidney transplantation. Nature Medicine. 2023.
+|URL 或 DOI=https://www.nature.com/articles/s41591-023-02376-7
+|支持范围=特定供体肾脏机器灌注与静态冷藏的临床比较
+|不支持的推论=不支持所有器官、所有灌注方案或长期器官库已经成熟
+|审查状态=已核对期刊原文页面
+|访问日期=2026-07-25
+}}
+
+== 支持范围 ==
+用于说明机器灌注已进入移植临床试验评价，而非仅为实验室概念。
+
+== 不支持的推论 ==
+具体肾脏和方案结果不能自动外推到心、肝、肺或低温长期保存。

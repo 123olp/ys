@@ -1,0 +1,94 @@
+{{研究域
+|域 ID=domain.care-transitions-discharge-continuity
+|C 层级=C5：可能性生态承载层
+|研究对象=Care Transitions Discharge Continuity
+|持续性作用=关键词显示该域主要承载能源、水、食物、住房、治理、经济、通信、灾害或基础设施环境。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c5-ecological-substrate/care-transitions-discharge-continuity
+}}
+
+'''Care Transitions Discharge Continuity'''是 Human Infra 在“外部生态承载”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要承载能源、水、食物、住房、治理、经济、通信、灾害或基础设施环境。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C5“可能性生态承载层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+照护转移与出院连续性域研究：当主体在医院、急诊、康复、长期照护、家庭、社区和门诊之间移动时，信息、责任、药物、随访和恢复计划如何不断线。
+
+== 对象 ==
+
+* 出院计划、照护转移、交接、复诊、转诊、再入院风险和闭环随访。
+* 用药重整、出院说明、护理摘要、检查结果追踪、警示症状和家庭准备。
+* 急诊到门诊、医院到康复、医院到居家、医院到长期照护和社区服务衔接。
+* 医患沟通、照护者培训、患者门户、交通、语言、费用和行政负担。
+* 照护转移失败对恢复窗口、有效时间、功能状态、死亡风险和未来选择权的影响。
+
+<span id="human-infra-价值"></span>
+== Human Infra 价值 ==
+
+主体从一个照护场景离开时，风险不会自动结束。照护转移是恢复路径中最容易丢失信息、责任和行动能力的断点。
+
+<pre>跨机构照护交接可追踪
+  -> 出院后失联、用药错误、复诊失败和再入院风险下降
+  -> 可修复状态进入持续恢复路径
+  -> 主体恢复窗口和有效时间提高</pre>
+== 边界 ==
+
+本域只整理公开出院计划、照护转移、交接、再入院、患者安全和服务衔接资料。
+
+不提供：
+
+* 个体出院判断、住院/转院/急诊决策、术后护理、警示症状判断或复诊安排。
+* 个体用药、伤口、康复、护理、居家安全或医疗设备操作建议。
+* 医疗纠纷、责任归属、保险索赔、机构选择或投诉策略。
+* 把再入院风险模型写成确定个人预后或医院质量排名。
+
+== 上游与下游 ==
+
+* 上游：<code>healthcare-access-continuity/</code>、<code>patient-data-interoperability/</code>、<code>medicine-access-treatment-continuity/</code>、<code>patient-safety-organizational-learning/</code>。
+* 下游：<code>home-health-hospice-palliative-care-continuity/</code>、<code>caregiving-long-term-care/</code>、<code>rehabilitation-functioning/</code>、<code>community-resource-navigation/</code>。
+
+== 初始资料线索 ==
+
+* AHRQ Care Coordination: https://www.ahrq.gov/ncepcr/care/coordination.html
+* AHRQ care transitions and discharge planning public materials。
+* CMS discharge planning and quality reporting public materials。
+* Public materials on medication reconciliation, readmissions and warm handoffs。
+
+== 下一步 ==
+
+* 建立照护转移变量表：出院资料完整性、药物重整、随访完成、交通可达、照护者可用性和再入院风险。
+* 整理 AHRQ、CMS 和患者安全照护转移 Source Cards。
+* 明确与长期照护、居家医疗、社区资源导航和患者数据互操作的边界。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C5研究域|C5研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c5-ecological-substrate/care-transitions-discharge-continuity/README.md Human Infra 仓库：domains/c5-ecological-substrate/care-transitions-discharge-continuity/README.md]
+
+[[Category:C5研究域]]

@@ -1,0 +1,89 @@
+{{研究域
+|域 ID=domain.prediabetes-diabetes-prevention-continuity
+|C 层级=C2：可能性源体维护层
+|研究对象=Prediabetes Diabetes Prevention Continuity
+|持续性作用=关键词显示该域主要维护身体、脑、器官、细胞、急性生命风险或衰老损伤控制。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c2-source-maintenance/prediabetes-diabetes-prevention-continuity
+}}
+
+'''Prediabetes Diabetes Prevention Continuity'''是 Human Infra 在“生命载体维护”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要维护身体、脑、器官、细胞、急性生命风险或衰老损伤控制。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C2“可能性源体维护层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>prediabetes-diabetes-prevention-continuity/</code> 研究糖尿病前期筛查、2 型糖尿病预防项目、生活方式支持、体重/活动环境、随访和转化为长期照护的过程如何影响主体持续性。
+
+<blockquote>核心问题：糖尿病风险常在多年无症状状态中累积，最终改变血管、肾脏、神经、视网膜和急性代谢危象风险。有效永生需要把糖尿病预防建模为急性危象和慢性并发症之前的概率分布调整器。
+</blockquote>
+== 先验位置 ==
+
+<pre>有效永生 / 主体持续性最大化
+  -> 主体依赖稳定葡萄糖和胰岛素系统维持能量、血管和神经功能
+  -> 糖尿病前期会提高未来糖尿病及并发症风险
+  -> 结果取决于筛查、转介、预防项目、可持续行为环境和随访
+  -> 因此糖尿病预防是代谢危象和慢性并发症的上游执行域</pre>
+== 关注对象 ==
+
+* Prediabetes screening、Diabetes Prevention Program、referral, retention, weight/activity support, social barriers, conversion to chronic diabetes care。
+* 与 <code>nutrition-metabolic-health/</code> 的边界：该域关注营养代谢机制；本域关注糖尿病前期识别和预防项目执行。
+* 与 <code>diabetic-hyperglycemic-hypoglycemic-crisis-continuity/</code> 的关系：本域处理急性危象之前的长期风险转移，后者处理 DKA/HHS/严重低血糖。
+
+<span id="human-infra-模型链路"></span>
+== Human Infra 模型链路 ==
+
+<pre>糖尿病预防系统 T
+  -> 改变筛查、转介、项目保留、体重/活动支持和随访变量 X
+  -> 改变胰岛素抵抗、糖代谢、血管/神经/肾脏风险状态 S
+  -> 改变糖尿病发病、并发症、急性危象和有效时间损失 λ(t)
+  -> 影响主体健康寿命、行动能力和未来选择权</pre>
+== 非目标 ==
+
+* 不提供个人血糖/A1c 解读、诊断、饮食、运动、药物、补剂、减重、设备或个体预防建议。
+* 不生成个人糖尿病风险评分、项目选择、保险申诉、CGM/胰岛素设置或治疗建议。
+* 不收集个案血糖、体重、饮食、活动、用药、病史或诊疗资料。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* USPSTF prediabetes and type 2 diabetes screening: https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/screening-for-prediabetes-and-type-2-diabetes
+* CDC National Diabetes Prevention Program: https://www.cdc.gov/diabetes/prevention/
+* NIDDK diabetes information: https://www.niddk.nih.gov/health-information/diabetes
+
+== 下一步 ==
+
+* 建立 Diabetes Prevention Card：screening, referral, retention, access, behavior support, conversion, complications prevention。
+* 与 <code>nutrition-metabolic-health/</code>、<code>diabetes-insulin-glucose-monitoring-supplies-continuity/</code> 和 <code>diabetic-hyperglycemic-hypoglycemic-crisis-continuity/</code> 建立接口。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C2研究域|C2研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c2-source-maintenance/prediabetes-diabetes-prevention-continuity/README.md Human Infra 仓库：domains/c2-source-maintenance/prediabetes-diabetes-prevention-continuity/README.md]
+
+[[Category:C2研究域]]

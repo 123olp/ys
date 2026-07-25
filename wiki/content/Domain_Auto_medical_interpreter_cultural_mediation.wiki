@@ -1,0 +1,94 @@
+{{研究域
+|域 ID=domain.medical-interpreter-cultural-mediation
+|C 层级=C6：局部可能性解锁层
+|研究对象=Medical Interpreter Cultural Mediation
+|持续性作用=未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c6-local-unlocking/medical-interpreter-cultural-mediation
+}}
+
+'''Medical Interpreter Cultural Mediation'''是 Human Infra 在“局部阻塞解除”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C6“局部可能性解锁层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+医疗解释、语言可达与文化中介域研究：当主体进入临床场景时，语言、文化、听力、认知、健康素养和权力不对称如何影响理解、同意、治疗连续性和安全。
+
+== 对象 ==
+
+* 医疗解释服务、语言协助、Limited English Proficiency、CLAS、文化与语言适宜服务。
+* 知情同意、诊断解释、用药说明、出院说明、随访、风险沟通和紧急沟通。
+* 专业解释员、双语工作人员、翻译材料、远程解释、家庭成员解释的风险边界。
+* 文化中介、信任、污名、偏见、权力不对称、残障沟通和认知可访问性。
+* 语言文化断点对误诊、药物错误、失访、权利失效、有效时间和未来选择权的影响。
+
+<span id="human-infra-价值"></span>
+== Human Infra 价值 ==
+
+医疗技术只有在主体真实理解并能表达问题、偏好和同意时，才会转化为主体持续性收益。解释与文化中介是临床证据进入主体决策的基础接口。
+
+<pre>临床语言和文化中介可用
+  -> 风险、同意、诊断、治疗和随访信息被正确理解
+  -> 误诊、误用药、失访和权利失效下降
+  -> 主体判断能力和服务可及性提高</pre>
+== 边界 ==
+
+本域只整理公开医疗解释、语言服务、CLAS、健康沟通和文化中介资料。
+
+不提供：
+
+* 实时医疗解释、紧急翻译、临床文本权威翻译、同意书法律解释或病历解释。
+* 个体诊断、治疗、用药、出院、保险、移民或法律建议。
+* 文化刻板印象、族群标签化、语言能力推断或排除性筛选。
+* 把机器翻译、AI 总结或非专业解释写成可替代专业医疗解释服务。
+
+== 上游与下游 ==
+
+* 上游：<code>language-access-plain-communication/</code>、<code>health-literacy-navigation/</code>、<code>healthcare-access-continuity/</code>、<code>governance-rights/</code>。
+* 下游：<code>patient-safety-organizational-learning/</code>、<code>patient-advocacy-shared-decision-making/</code>、<code>care-transitions-discharge-continuity/</code>、<code>patient-data-interoperability/</code>。
+
+== 初始资料线索 ==
+
+* HHS National CLAS Standards: https://thinkculturalhealth.hhs.gov/clas
+* LEP.gov: https://www.lep.gov/
+* HHS OCR language access public materials。
+* AHRQ and CDC health literacy / communication materials。
+
+== 下一步 ==
+
+* 建立语言文化中介变量表：首选语言、解释服务可得、材料可读性、同意理解、回教完成和文化安全。
+* 整理 CLAS、LEP、医疗解释和健康沟通 Source Cards。
+* 明确与一般语言可达、健康素养和患者安全的边界。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C6研究域|C6研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c6-local-unlocking/medical-interpreter-cultural-mediation/README.md Human Infra 仓库：domains/c6-local-unlocking/medical-interpreter-cultural-mediation/README.md]
+
+[[Category:C6研究域]]

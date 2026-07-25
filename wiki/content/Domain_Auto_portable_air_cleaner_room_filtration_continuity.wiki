@@ -1,0 +1,84 @@
+{{研究域
+|域 ID=domain.portable-air-cleaner-room-filtration-continuity
+|C 层级=C3：可能性生成引擎层
+|研究对象=Portable Air Cleaner Room Filtration Continuity
+|持续性作用=关键词显示该域主要增强认知、学习、工具、AI、技能或沟通能力。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c3-generation-engine/portable-air-cleaner-room-filtration-continuity
+}}
+
+'''Portable Air Cleaner Room Filtration Continuity'''是 Human Infra 在“主体能力生成”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要增强认知、学习、工具、AI、技能或沟通能力。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C3“可能性生成引擎层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>portable-air-cleaner-room-filtration-continuity</code> 研究便携式空气清洁器、房间级过滤、清洁空气递送、滤芯维护、噪声、电源和房间匹配如何影响睡眠、呼吸恢复、学习工作和照护空间。
+
+<blockquote>核心问题：当建筑通风不足、烟雾进入、过敏原负荷升高或临时暴露发生时，房间级过滤是家庭端最低摩擦的空气恢复接口；但它只有在匹配、维护、供电和可承受时才转化为有效保护。
+</blockquote>
+== 关注对象 ==
+
+* 便携式空气清洁器、HEPA/高效过滤、滤芯寿命、房间面积、空气混合、噪声、夜间使用、耗电和维护提醒。
+* 卧室、儿童房、老人照护房、家庭办公空间、临时清洁空气房和烟雾/污染事件期间的房间级防护。
+* 与 HVAC 滤网、野火烟雾、避难式清洁空气房、室内通风暴发控制和能源韧性的接口。
+* 过滤设备可及性如何影响睡眠、注意力、哮喘/COPD 负荷、家庭照护和灾害等待能力。
+
+<span id="human-infra-链路"></span>
+== Human Infra 链路 ==
+
+<pre>房间级便携过滤连续
+  -> 局部空间颗粒物和空气负荷下降
+  -> 睡眠、呼吸恢复、照护和居家工作学习空间更稳定
+  -> 建筑通风不足或外部空气事件不直接切断家庭行动
+  -> 主体在室内的有效时间和恢复能力提高</pre>
+== 非目标 ==
+
+* 不提供产品推荐、CADR 处方、房间安全认证、设备安装、电气改造、滤芯购买建议、实时灾害安全判断或医疗建议。
+* 不替代 EPA、CDC、ASHRAE、地方公共卫生、消防、建筑专业人员、医生或空气质量专业人员。
+* 不把空气清洁器写成替代撤离、口罩、检测、治疗、源控制或建筑通风的单一方案。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* EPA Air Cleaners and Air Filters in the Home: https://www.epa.gov/indoor-air-quality-iaq/air-cleaners-and-air-filters-home
+* EPA Wildfires and Indoor Air Quality: https://www.epa.gov/indoor-air-quality-iaq/wildfires-and-indoor-air-quality-iaq
+* EPA Indoor Particulate Matter: https://www.epa.gov/indoor-air-quality-iaq/indoor-particulate-matter
+
+== 下一步 ==
+
+* 建立 <code>room filtration state -&gt; clean-air delivery/noise/power -&gt; occupant task -&gt; continuity outcome</code> 变量表。
+* 区分日常过敏原场景、烟雾场景、感染暴发场景、租房场景和停电/备用电场景。
+* 与 <code>shelter-in-place-clean-air-room-indoor-protection-continuity</code>、<code>wildfire-smoke-clean-air-respiratory-continuity</code> 和 <code>indoor-ventilation-filtration-outbreak-control-continuity</code> 建立边界。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C3研究域|C3研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c3-generation-engine/portable-air-cleaner-room-filtration-continuity/README.md Human Infra 仓库：domains/c3-generation-engine/portable-air-cleaner-room-filtration-continuity/README.md]
+
+[[Category:C3研究域]]

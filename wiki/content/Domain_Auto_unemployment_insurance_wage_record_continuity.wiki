@@ -1,0 +1,80 @@
+{{研究域
+|域 ID=domain.unemployment-insurance-wage-record-continuity
+|C 层级=C5：可能性生态承载层
+|研究对象=Unemployment Insurance Wage Record Continuity
+|持续性作用=关键词显示该域主要承载能源、水、食物、住房、治理、经济、通信、灾害或基础设施环境。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c5-ecological-substrate/unemployment-insurance-wage-record-continuity
+}}
+
+'''Unemployment Insurance Wage Record Continuity'''是 Human Infra 在“外部生态承载”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要承载能源、水、食物、住房、治理、经济、通信、灾害或基础设施环境。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C5“可能性生态承载层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+Unemployment Insurance Wage Record Continuity 关注失业保险中的工资记录、基期、雇主报送、资格判定、索赔状态、身份验证、申诉和欺诈防控如何在劳动中断时维持主体收入与服务连续性。
+
+== 对象 ==
+
+* UI wage records、base period、covered employment、employer reports、claims、weekly certification、eligibility determinations、appeals、overpayments 和 fraud controls。
+* 失业保险机构、雇主、工资记录系统、身份验证、跨州数据匹配和就业服务衔接。
+* 失业、裁员、工时减少、再就业、职业训练、福利支付和行政负担之间的关系。
+
+<span id="human-infra-价值"></span>
+== Human Infra 价值 ==
+
+<pre>主体可能遭遇劳动收入突然中断
+-> 失业保险用工资记录和资格判定把过去劳动转化为短期收入稳定
+-> 工资记录错误、身份盗用、申诉困难、支付延迟或系统故障会放大失业冲击
+-> 可核验、可纠错、可申诉、可防欺诈的 UI 记录降低收入断裂和再就业摩擦
+-> 主体在失业窗口保留住房、健康、学习、转岗和未来选择权</pre>
+== 边界 ==
+
+* 本域不提供失业保险申请、资格判断、每周认证、申诉、离职策略、税务、法律、移民或个人福利建议。
+* 不判断任何人的失业资格、给付金额、申诉胜率、overpayment 责任或欺诈风险。
+* 不帮助伪造工资记录、虚假申领、规避身份验证、隐瞒就业、操纵离职事实或绕过州系统。
+* 只整理公开 UI 记录机制、工资数据、资格流程、申诉边界、欺诈防控、服务衔接和行政负担。
+
+== 上游与下游 ==
+
+* 上游：<code>income-payroll-employment-record-continuity/</code>、<code>workforce-employment-services/</code>、<code>labor-rights-workplace-protection/</code>、<code>digital-identity-security/</code>。
+* 下游：<code>social-protection-benefits-delivery/</code>、<code>financial-resilience-access/</code>、<code>education-access-lifelong-learning/</code>、<code>administrative-burden-procedural-friction/</code>。
+
+== 初始资料线索 ==
+
+* U.S. Department of Labor unemployment insurance and Employment and Training Administration resources.
+* State UI wage record, claims, appeals, fraud prevention and reemployment service materials.
+* Worker displacement, income smoothing, UI administration, identity theft and benefit delivery literature.
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C5研究域|C5研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c5-ecological-substrate/unemployment-insurance-wage-record-continuity/README.md Human Infra 仓库：domains/c5-ecological-substrate/unemployment-insurance-wage-record-continuity/README.md]
+
+[[Category:C5研究域]]

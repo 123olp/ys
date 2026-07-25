@@ -1,0 +1,95 @@
+{{研究域
+|域 ID=domain.caloric-restriction-fasting-energy-balance-governance-continuity
+|C 层级=C5：可能性生态承载层
+|研究对象=Caloric Restriction Fasting Energy Balance Governance Continuity
+|持续性作用=关键词显示该域主要承载能源、水、食物、住房、治理、经济、通信、灾害或基础设施环境。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c5-ecological-substrate/caloric-restriction-fasting-energy-balance-governance-continuity
+}}
+
+'''Caloric Restriction Fasting Energy Balance Governance Continuity'''是 Human Infra 在“外部生态承载”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要承载能源、水、食物、住房、治理、经济、通信、灾害或基础设施环境。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C5“可能性生态承载层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>caloric-restriction-fasting-energy-balance-governance-continuity/</code> 研究 caloric restriction、time-restricted eating、intermittent fasting、能量平衡、充足营养、体重变化和饮食干预风险如何进入长寿模型。
+
+<blockquote>核心问题：能量限制不是“少吃就延寿”。它只有在营养充足、风险可控、终点明确、依从性可维护并且不伤害主体功能时，才可能成为寿命模型变量。
+</blockquote>
+== 先验位置 ==
+
+<pre>有效永生 / 主体持续性最大化
+  -> 主体需要降低代谢、炎症、心血管和衰弱风险
+  -> 能量摄入、饮食时间和体重变化会影响代谢状态与分子指标
+  -> 过度限制、营养不良、进食障碍、低体重和特殊人群风险会损害主体持续性
+  -> 因此 CR / fasting 必须作为能量平衡治理域，而不是普适延寿方案</pre>
+== 关注对象 ==
+
+* CALERIE、caloric restriction、dietary restriction、time-restricted eating、intermittent fasting、energy balance、adequate nutrition 和 weight loss confounding。
+* 分子年龄、心代谢风险、免疫炎症、骨量、肌肉、情绪、睡眠、进食障碍风险、孕产儿童风险和长期依从性。
+* 与 <code>nutrition-metabolic-health/</code> 的边界：营养代谢域关注营养和代谢整体；本域关注能量限制/禁食作为高风险干预的审查。
+* 与 <code>eating-disorders-nutrition-body-continuity/</code> 的边界：进食障碍域关注病理状态和功能连续性；本域必须主动避免触发或正当化饮食病理。
+
+<span id="human-infra-模型链路"></span>
+== Human Infra 模型链路 ==
+
+<pre>能量限制 / 禁食 T
+  -> 影响能量摄入、体重、胰岛素敏感性、炎症、分子年龄和营养充足性 X
+  -> 改变代谢状态 S、心血管风险、肌肉骨骼风险和心理风险
+  -> 改变健康寿命、有效时间、恢复能力和未来选择权
+  -> 若营养、心理、安全或依从性失败，则收益被风险抵消</pre>
+== 非目标 ==
+
+* 不提供热量目标、禁食窗口、减重计划、饮食处方、补剂搭配或个体建议。
+* 不把动物寿命、短期 biomarker、体重下降或社交媒体 fasting 趋势写成人体延寿结论。
+* 不面向孕产、儿童青少年、进食障碍、低体重、糖尿病用药或慢病高风险个体提供操作建议。
+* 不替代营养师、医生、心理健康和公共卫生专业判断。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* NIA CALERIE resource: https://www.nia.nih.gov/research/resource/comprehensive-assessment-long-term-effects-reducing-intake-energy-calerie
+* NIA calorie restriction news: https://www.nia.nih.gov/news/cutting-calories-may-slow-pace-aging-healthy-adults
+* CALERIE clinical trial: https://clinicaltrials.gov/study/NCT00427193
+* CALERIE design paper: https://pubmed.ncbi.nlm.nih.gov/21767664/
+* CALERIE cardiometabolic risk paper: https://pubmed.ncbi.nlm.nih.gov/31303390/
+* CALERIE DNA methylation pace paper: https://pubmed.ncbi.nlm.nih.gov/37118425/
+
+== 下一步 ==
+
+# 建立 CR / fasting 证据矩阵：动物寿命、人类 RCT、molecular aging、cardiometabolic endpoints、adverse effects。
+# 建立风险中止条件：低能量可用性、肌少症、骨量、月经/内分泌、进食障碍、药物低血糖和特殊人群。
+# 与 <code>dietary-supplement-nutraceutical-evidence-safety-continuity/</code>、<code>nutrition-metabolic-health/</code> 和 <code>biological-age-clocks-biomarker-validation/</code> 对齐。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C5研究域|C5研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c5-ecological-substrate/caloric-restriction-fasting-energy-balance-governance-continuity/README.md Human Infra 仓库：domains/c5-ecological-substrate/caloric-restriction-fasting-energy-balance-governance-continuity/README.md]
+
+[[Category:C5研究域]]

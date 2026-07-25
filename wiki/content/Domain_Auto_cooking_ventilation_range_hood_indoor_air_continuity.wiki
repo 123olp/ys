@@ -1,0 +1,84 @@
+{{研究域
+|域 ID=domain.cooking-ventilation-range-hood-indoor-air-continuity
+|C 层级=C3：可能性生成引擎层
+|研究对象=Cooking Ventilation Range Hood Indoor Air Continuity
+|持续性作用=关键词显示该域主要增强认知、学习、工具、AI、技能或沟通能力。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c3-generation-engine/cooking-ventilation-range-hood-indoor-air-continuity
+}}
+
+'''Cooking Ventilation Range Hood Indoor Air Continuity'''是 Human Infra 在“主体能力生成”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要增强认知、学习、工具、AI、技能或沟通能力。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C3“可能性生成引擎层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>cooking-ventilation-range-hood-indoor-air-continuity</code> 研究烹饪排风、抽油烟机、燃气/电烹饪排放、颗粒物、氮氧化物、气味、厨房空气和餐食任务如何影响居住恢复与家庭执行连续性。
+
+<blockquote>核心问题：做饭是高频基础任务，但烹饪同时会释放颗粒物、气味和燃烧/加热副产物；如果排风与源控制失败，餐食生产会反向消耗睡眠、呼吸、注意力和居住舒适。
+</blockquote>
+== 关注对象 ==
+
+* 抽油烟机、排风扇、厨房通风、燃气灶、电炉、煎炒油烟、烤箱、厨房颗粒物、NO2、气味和湿热。
+* 家庭餐食准备、儿童/老人照护、开放式厨房、租房、多户住宅、低通风住房和高频烹饪家庭。
+* 与食品安全、厨房火灾、CO 报警、燃气泄漏、VOC/气味源控制和室内空气总域的接口。
+* 烹饪空气负荷如何影响睡眠、呼吸舒适、清洁负担、学习办公和家庭成员共同使用空间。
+
+<span id="human-infra-链路"></span>
+== Human Infra 链路 ==
+
+<pre>烹饪排风连续
+  -> 烹饪产生的颗粒物、燃烧副产物、气味和湿热更可控
+  -> 餐食准备不再把厨房和居住空间转成慢性空气负担
+  -> 家庭营养、照护、学习、工作、睡眠和恢复任务稳定
+  -> 主体日常执行密度和居住可持续性提高</pre>
+== 非目标 ==
+
+* 不提供燃气设备维修、抽油烟机安装、电气改造、管道设计、火灾处置、CO 急救、烹饪教程、产品购买或个案室内空气安全认证。
+* 不替代 EPA、CDC、USFA、地方建筑/消防/住房部门、燃气公司、物业、设备专业人员或医生。
+* 不把排风资料写成替代食品安全、火灾预防、燃气泄漏处置、CO 报警或医学管理的单一方案。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* EPA Indoor Particulate Matter: https://www.epa.gov/indoor-air-quality-iaq/indoor-particulate-matter
+* EPA Combustion Pollutants in Your Home: https://www.epa.gov/indoor-air-quality-iaq/combustion-pollutants-your-home
+* EPA Indoor Air Quality: https://www.epa.gov/indoor-air-quality-iaq
+
+== 下一步 ==
+
+* 建立 <code>cooking source -&gt; ventilation/capture state -&gt; indoor air burden -&gt; meal task -&gt; continuity outcome</code> 变量表。
+* 区分燃气烹饪、电烹饪、高温煎炒、长时烹饪、开放式厨房和低通风住房。
+* 与 <code>cooking-meal-preparation-kitchen-safety-continuity</code>、<code>carbon-monoxide-alarm-combustion-appliance-safety-continuity</code> 和 <code>natural-gas-propane-leak-shutoff-continuity</code> 建立边界。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C3研究域|C3研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c3-generation-engine/cooking-ventilation-range-hood-indoor-air-continuity/README.md Human Infra 仓库：domains/c3-generation-engine/cooking-ventilation-range-hood-indoor-air-continuity/README.md]
+
+[[Category:C3研究域]]

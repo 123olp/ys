@@ -1,0 +1,88 @@
+{{研究域
+|域 ID=domain.occupational-exposure-industrial-hygiene
+|C 层级=C6：局部可能性解锁层
+|研究对象=Occupational Exposure Industrial Hygiene
+|持续性作用=未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c6-local-unlocking/occupational-exposure-industrial-hygiene
+}}
+
+'''Occupational Exposure Industrial Hygiene'''是 Human Infra 在“局部阻塞解除”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C6“局部可能性解锁层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+职业暴露与工业卫生域研究：当主体通过工作获取资源、身份和技能时，化学、物理、生物、噪声、粉尘、热、辐射和人体工效暴露如何决定工作是否消耗未来身体能力。
+
+== 对象 ==
+
+* 工作场所化学品、粉尘、烟雾、气体、噪声、振动、热应激、辐射、生物危害和皮肤暴露。
+* 暴露识别、评估、监测、控制层级、替代、工程控制、行政控制和个人防护边界。
+* 工业卫生、职业病预防、职业暴露限值、工伤风险、承包/零工/弱势劳动者暴露。
+* 工作设计、生产压力、培训、报告、监管、工会/劳动权利和雇主安全责任接口。
+* 职业暴露对健康寿命、有效时间、收入连续性、家庭照护和长期行动能力的影响。
+
+<span id="human-infra-价值"></span>
+== Human Infra 价值 ==
+
+工作不应以消耗未来身体作为当前收入的隐性代价。职业暴露与工业卫生域把“劳动环境是否持续保存身体、感官、呼吸、神经和恢复能力”纳入主体持续性模型，使工作从资源入口扩展为风险控制对象。
+
+<pre>职业暴露被识别、评估和控制
+  -> 工作导致的损伤、疾病和长期能力损耗下降
+  -> 收入、技能、身体功能和家庭连续性更稳定
+  -> 主体可持续劳动与未来选择权提高</pre>
+== 边界 ==
+
+本域只整理工业卫生、职业暴露控制、控制层级、标准、监管和公共资料。
+
+不提供：
+
+* 个体职业病诊断、工伤认定、法律、赔偿、投诉、劳动争议或就业建议。
+* 现场检测、采样、PPE 选择、通风设计、危险作业、清理或事故处置步骤。
+* 化学品、粉尘、辐射、生物危害或高温高噪环境的具体操作规程。
+* 规避 OSHA/监管、篡改监测、隐藏暴露、压制报告或危险生产建议。
+
+== 上游与下游 ==
+
+* 上游：<code>occupational-work-design/</code>、<code>labor-rights-workplace-protection/</code>、<code>chemical-safety-poison-control-toxicology/</code>、<code>air-quality-ventilation-exposure-control/</code>。
+* 下游：<code>respiratory-oxygenation/</code>、<code>sensory-continuity/</code>、<code>skin-barrier-wound-healing/</code>、<code>musculoskeletal-integrity/</code>、<code>risk-engineering/</code>。
+
+== 初始资料线索 ==
+
+* NIOSH hierarchy of controls resources。
+* OSHA industrial hygiene and worker safety resources。
+* ILO occupational safety and health resources。
+* ACGIH industrial hygiene and exposure guideline resources。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C6研究域|C6研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c6-local-unlocking/occupational-exposure-industrial-hygiene/README.md Human Infra 仓库：domains/c6-local-unlocking/occupational-exposure-industrial-hygiene/README.md]
+
+[[Category:C6研究域]]

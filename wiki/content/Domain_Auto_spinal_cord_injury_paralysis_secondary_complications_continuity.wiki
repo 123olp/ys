@@ -1,0 +1,86 @@
+{{研究域
+|域 ID=domain.spinal-cord-injury-paralysis-secondary-complications-continuity
+|C 层级=C6：局部可能性解锁层
+|研究对象=Spinal Cord Injury Paralysis Secondary Complications Continuity
+|持续性作用=未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c6-local-unlocking/spinal-cord-injury-paralysis-secondary-complications-continuity
+}}
+
+'''Spinal Cord Injury Paralysis Secondary Complications Continuity'''是 Human Infra 在“局部阻塞解除”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C6“局部可能性解锁层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>spinal-cord-injury-paralysis-secondary-complications-continuity/</code> 研究脊髓损伤、瘫痪、感觉运动通道断裂、二级并发症、无障碍和长期参与如何影响主体持续性。
+
+<span id="core-question"></span>
+== Core Question ==
+
+当脊髓损伤改变运动、感觉、自主功能和环境需求时，主体如何通过康复、辅助技术、无障碍、照护和并发症预防维持行动与选择权？
+
+== 先验位置 ==
+
+* 与 <code>neuro-continuity/</code> 的关系：SCI 是中枢传导通路损伤，并长期影响身体-环境接口。
+* 与 <code>assistive-technology-access/</code> 的关系：轮椅、设备、住房/交通无障碍和维修决定行动能否恢复。
+* 与 <code>urogenital-continuity/</code>、<code>skin-barrier-wound-healing/</code> 和 <code>autonomic-nervous-system-homeostasis/</code> 的关系：二级并发症是长期持续性的关键。
+
+== 关注对象 ==
+
+* 运动/感觉功能、神经源性膀胱肠道、皮肤压力损伤、疼痛、痉挛、自主神经异常、呼吸、设备、住房、交通和照护。
+* 急性到长期转衔、再入院、社区参与、就业教育、照护者负担和权利可达。
+
+<span id="human-infra-模型链路"></span>
+== Human Infra 模型链路 ==
+
+<pre>脊髓通路损伤
+-> 运动、感觉、自主功能和环境依赖改变
+-> 二级并发症、设备和无障碍需求增加
+-> 行动半径、独立生活和社会参与受限
+-> 主体持续性下降</pre>
+== 非目标 ==
+
+* 不提供 SCI 急救、损伤分级、康复训练、设备选择、皮肤/泌尿/肠道处理、性功能、药物、手术或照护建议。
+* 不输出个体恢复概率、功能等级、住房/交通改造、福利、保险或法律判断。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* NINDS spinal cord injury: https://www.ninds.nih.gov/health-information/disorders/spinal-cord-injury
+
+== 下一步 ==
+
+* 建立 SCI secondary-complications card：把二级并发症、无障碍、设备和社会参与作为核心变量。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C6研究域|C6研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c6-local-unlocking/spinal-cord-injury-paralysis-secondary-complications-continuity/README.md Human Infra 仓库：domains/c6-local-unlocking/spinal-cord-injury-paralysis-secondary-complications-continuity/README.md]
+
+[[Category:C6研究域]]

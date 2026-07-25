@@ -1,0 +1,84 @@
+{{研究域
+|域 ID=domain.household-operating-map-handoff-continuity
+|C 层级=C5：可能性生态承载层
+|研究对象=Household Operating Map Handoff Continuity
+|持续性作用=关键词显示该域主要承载能源、水、食物、住房、治理、经济、通信、灾害或基础设施环境。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c5-ecological-substrate/household-operating-map-handoff-continuity
+}}
+
+'''Household Operating Map Handoff Continuity'''是 Human Infra 在“外部生态承载”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要承载能源、水、食物、住房、治理、经济、通信、灾害或基础设施环境。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C5“可能性生态承载层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>household-operating-map-handoff-continuity</code> 研究家庭运行地图、关键位置、日常流程、照护任务、设备依赖、供应位置、宠物/儿童/老人交接和临时代理说明如何影响家庭从单人掌控转向多人可接手的连续性。
+
+<blockquote>核心问题：很多家庭能运转，是因为一个人记住了“所有东西在哪里、谁负责什么、坏了找谁、什么时候做什么”；当这个人出差、生病、失能、死亡或灾害中断时，家庭任务会因为隐性知识消失而坍塌。
+</blockquote>
+== 关注对象 ==
+
+* 家庭运行地图、关键位置索引、服务联系人、供应品位置、设备依赖、日常例行、宠物/儿童/老人照护交接、药品/医疗设备资料边界和离线备份。
+* 照护者交接、house-sitting、临时离家、住院、灾害撤离、远程家庭管理、共同居住和死亡后事务过渡。
+* 家庭资料如何在隐私、安全和最小必要原则下支持代理执行，而不是变成监控或过度数据收集。
+* 与应急文件、家庭通信计划、服务联系人目录、设备记录、关断位置标识和后死亡交接的接口。
+
+<span id="human-infra-链路"></span>
+== Human Infra 链路 ==
+
+<pre>家庭运行知识显性化
+  -> 日常任务、关键位置、责任入口和照护流程不再依赖单点记忆
+  -> 临时代理、家庭成员、照护者和恢复人员能接手必要任务
+  -> 失能、住院、旅行、灾害、死亡和照护交接造成的家庭系统断裂下降
+  -> 家庭从个人经验系统转化为可交接、可恢复、可协作的基础设施</pre>
+== 非目标 ==
+
+* 不提供家庭监控、定位追踪、儿童/伴侣控制、详细安防资料、门禁共享、医疗处方、法律/遗产建议、个案照护计划或个人资料模板。
+* 不收集家庭成员、住址、门禁、钥匙位置、资产、药品、账户、设备序列号、联系人或照护对象资料。
+* 不替代家庭应急计划、医疗代理、法律文件、物业管理、照护评估、专业社工或应急服务。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* Ready.gov Make a Plan: https://www.ready.gov/plan
+* Ready.gov Financial Preparedness: https://www.ready.gov/financial-preparedness
+* FEMA Emergency Financial First Aid Kit: https://www.fema.gov/emergency-financial-first-aid-kit
+
+== 下一步 ==
+
+* 建立 <code>implicit household knowledge -&gt; operating map -&gt;代理执行/交接 -&gt; continuity outcome</code> 变量表。
+* 区分最小必要资料、敏感资料、离线备份、更新责任、访问权限和销毁/撤权边界。
+* 与 <code>emergency-financial-document-cash-readiness-continuity</code>、<code>family-emergency-communication-reunification-continuity</code>、<code>home-service-provider-emergency-contact-directory-continuity</code> 和 <code>estate-inventory-asset-liability-handoff-continuity</code> 建立边界。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C5研究域|C5研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c5-ecological-substrate/household-operating-map-handoff-continuity/README.md Human Infra 仓库：domains/c5-ecological-substrate/household-operating-map-handoff-continuity/README.md]
+
+[[Category:C5研究域]]

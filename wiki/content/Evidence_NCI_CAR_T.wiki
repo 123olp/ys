@@ -1,0 +1,16 @@
+{{证据来源
+|来源 ID=evidence.nci.car-t
+|来源类型=美国国家癌症研究所专题页
+|完整引文=National Cancer Institute. CAR T Cells: Engineering Immune Cells to Treat Cancer.
+|URL 或 DOI=https://www.cancer.gov/about-cancer/treatment/research/car-t-cells
+|支持范围=CAR-T机制、临床位置、制造与主要挑战
+|不支持的推论=不支持CAR-T适用于所有癌症或无严重毒性
+|审查状态=已核对NCI原始页面
+|访问日期=2026-07-25
+}}
+
+== 支持范围 ==
+用于说明患者T细胞可被工程化成为“活药物”并用于特定癌症。
+
+== 不支持的推论 ==
+血液系统肿瘤结果不能直接外推到实体瘤、预防性使用或一般免疫年轻化。

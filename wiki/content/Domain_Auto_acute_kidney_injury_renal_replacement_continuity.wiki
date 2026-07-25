@@ -1,0 +1,89 @@
+{{研究域
+|域 ID=domain.acute-kidney-injury-renal-replacement-continuity
+|C 层级=C2：可能性源体维护层
+|研究对象=Acute Kidney Injury Renal Replacement Continuity
+|持续性作用=关键词显示该域主要维护身体、脑、器官、细胞、急性生命风险或衰老损伤控制。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c2-source-maintenance/acute-kidney-injury-renal-replacement-continuity
+}}
+
+'''Acute Kidney Injury Renal Replacement Continuity'''是 Human Infra 在“生命载体维护”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要维护身体、脑、器官、细胞、急性生命风险或衰老损伤控制。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C2“可能性源体维护层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>acute-kidney-injury-renal-replacement-continuity/</code> 研究急性肾损伤、体液/电解质/酸碱失衡、透析/肾脏替代治疗、ICU 肾支持和长期肾功能恢复如何影响主体持续性。
+
+<blockquote>核心问题：肾功能失败会让毒素、容量、电解质和酸碱平衡失控。肾脏替代治疗是把内环境崩溃转化为可支持窗口的基础技术。
+</blockquote>
+== 先验位置 ==
+
+<pre>有效永生 / 主体持续性最大化
+  -> 主体需要清除代谢废物并维持体液、电解质和酸碱稳态
+  -> 急性肾损伤可在脓毒症、创伤、药物、手术或休克中迅速出现
+  -> 肾脏替代治疗可争取恢复窗口，但受容量、血流动力学、感染和资源约束
+  -> 因此 AKI 与肾脏替代治疗是内环境失败的急性支持域</pre>
+== 关注对象 ==
+
+* AKI detection、KDIGO staging、fluid balance、electrolytes、acid-base、CRRT/intermittent dialysis、ICU renal support、kidney recovery、CKD transition。
+* 与 <code>renal-hepatic-clearance/</code> 的边界：清除域关注长期器官功能；本域关注急性肾失败与设备支持。
+* 与 <code>sepsis-shock-early-recognition-resuscitation-continuity/</code> 的关系：脓毒症和休克是 AKI 的重要上游。
+
+<span id="human-infra-模型链路"></span>
+== Human Infra 模型链路 ==
+
+<pre>AKI 与肾脏替代支持 T
+  -> 改变毒素、容量、电解质、酸碱、设备可用和肾恢复变量 X
+  -> 改变内环境稳定、ICU 病程、长期肾功能和治疗负担状态 S
+  -> 改变急性死亡、心律风险、脑功能损害、CKD 转化和再住院风险 λ(t)
+  -> 影响主体恢复能力、治疗选择和有效时间</pre>
+== 非目标 ==
+
+* 不提供透析适应证、参数、饮食、补液、用药、实验室解读、肾病治疗或个体医疗建议。
+* 不生成 CRRT/透析设置、医院路径、设备操作、保险或转院建议。
+* 不收集肌酐、电解质、尿量、透析记录、病历、设备日志或保险资料。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* KDIGO Acute Kidney Injury: https://kdigo.org/guidelines/acute-kidney-injury/
+* National Kidney Foundation AKI: https://www.kidney.org/kidney-topics/acute-kidney-injury-aki
+* NIH Kidney Failure Treatment: https://www.niddk.nih.gov/health-information/kidney-disease/kidney-failure/choosing-treatment
+
+== 下一步 ==
+
+* 建立 Renal Support Card：AKI signal, fluid/electrolyte risk, support modality, hemodynamic tolerance, recovery, CKD transition。
+* 与 <code>renal-hepatic-clearance/</code>、<code>fluid-electrolyte-acid-base-homeostasis/</code> 和 <code>intensive-care-organ-support-delirium-continuity/</code> 建立接口。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C2研究域|C2研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c2-source-maintenance/acute-kidney-injury-renal-replacement-continuity/README.md Human Infra 仓库：domains/c2-source-maintenance/acute-kidney-injury-renal-replacement-continuity/README.md]
+
+[[Category:C2研究域]]

@@ -1,0 +1,83 @@
+{{研究域
+|域 ID=domain.unemployment-insurance-claim-appeal-identity-continuity
+|C 层级=C4：可能性转换通道层
+|研究对象=Unemployment Insurance Claim Appeal Identity Continuity
+|持续性作用=关键词显示该域主要处理研究、数据、模型、服务入口、身份记录、转化或治理接口。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c4-conversion-channel/unemployment-insurance-claim-appeal-identity-continuity
+}}
+
+'''Unemployment Insurance Claim Appeal Identity Continuity'''是 Human Infra 在“路径转换接口”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要处理研究、数据、模型、服务入口、身份记录、转化或治理接口。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C4“可能性转换通道层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>unemployment-insurance-claim-appeal-identity-continuity</code> 研究失业保险从 claim intake、身份核验、monetary/non-monetary determination、weekly certification、overpayment、appeal、fraud control 到 payment continuity 的执行链路，以及它如何影响失业后的现金流、求职能力、住房稳定和心理恢复。
+
+== 核心问题 ==
+
+失业保险的主体价值在于把短期收入冲击变成可恢复窗口。若身份核验、雇主分离信息、工资记录、每周认证、申诉或支付失败，主体会在求职、住房、食物、医疗和债务之间快速失去缓冲。
+
+== 对象 ==
+
+* UI claim、initial claim、continued claim/weekly certification、monetary determination、non-monetary determination 和 separation information。
+* identity verification、fraud prevention、overpayment、appeal、payment delay 和 state UI system modernization。
+* 与 <code>unemployment-insurance-wage-record-continuity</code> 的分工：后者关注工资记录底座，本域关注申领、核验、申诉和支付执行。
+
+<span id="human-infra-价值"></span>
+== Human Infra 价值 ==
+
+* 把失业保险建模为失业冲击后的时间购买机制：用现金流保护求职、住房、医疗和家庭稳定。
+* 解释身份核验和申诉摩擦如何把风险转嫁给已经失去收入的主体。
+* 补齐公共福利执行链路中的“收入中断恢复”域。
+
+== 边界 ==
+
+* 不提供 UI 资格判断、claim filing、weekly certification、appeal、overpayment、身份核验、雇主争议、法律、税务或个案建议。
+* 不代写 claim、appeal、certification、separation statement、fraud response 或州级机构沟通材料。
+* 不帮助伪造身份、虚假失业、隐瞒收入、规避 work search、绕过 ID proofing、骗领 UI 或处理欺诈风控。
+* 不收集 SSN、州 UI account、工资记录、雇主信息、身份证件、银行账户、案件号或门户凭证。
+
+== 上游与下游 ==
+
+* 上游：<code>unemployment-insurance-wage-record-continuity</code>、<code>income-payroll-employment-record-continuity</code>、<code>administrative-burden-procedural-friction</code>。
+* 下游：<code>emergency-rental-assistance-arrears-continuity</code>、<code>debt-obligation-collection-relief-continuity</code>、<code>job-search-labor-market-matching-continuity</code>、<code>mental-health-care-access-continuity</code>。
+
+== 初始资料线索 ==
+
+* U.S. Department of Labor Unemployment Insurance: https://oui.doleta.gov/unemploy/
+* U.S. Department of Labor claimant resources: https://oui.doleta.gov/unemploy/claimant.asp
+* U.S. Department of Labor UI modernization: https://www.dol.gov/agencies/eta/ui-modernization
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C4研究域|C4研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c4-conversion-channel/unemployment-insurance-claim-appeal-identity-continuity/README.md Human Infra 仓库：domains/c4-conversion-channel/unemployment-insurance-claim-appeal-identity-continuity/README.md]
+
+[[Category:C4研究域]]

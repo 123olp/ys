@@ -1,0 +1,81 @@
+{{研究域
+|域 ID=domain.social-security-earnings-benefit-record-continuity
+|C 层级=C4：可能性转换通道层
+|研究对象=Social Security Earnings Benefit Record Continuity
+|持续性作用=关键词显示该域主要处理研究、数据、模型、服务入口、身份记录、转化或治理接口。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c4-conversion-channel/social-security-earnings-benefit-record-continuity
+}}
+
+'''Social Security Earnings Benefit Record Continuity'''是 Human Infra 在“路径转换接口”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要处理研究、数据、模型、服务入口、身份记录、转化或治理接口。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C4“可能性转换通道层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+Social Security Earnings Benefit Record Continuity 关注社会保险号或等价身份、工资收入记录、工作 credits、缴费历史、福利声明、退休、残障、遗属和医疗相关权益如何把主体的长期劳动历史转化为未来保障。
+
+== 对象 ==
+
+* Earnings records、work credits、benefit statements、retirement benefits、disability benefits、survivor benefits、Medicare eligibility links 和记录更正流程。
+* 社会保险机构、雇主报送、税务数据、个人账户、身份保护、福利估算和错误修正。
+* 工资、工龄、缴费年限、身份一致性和福利资格之间的长期映射。
+
+<span id="human-infra-价值"></span>
+== Human Infra 价值 ==
+
+<pre>主体的劳动时间需要跨几十年保留下来
+-> 社会保险收入记录把分散工资和缴费历史转化为未来权益计算
+-> 漏报、身份错误、记录不一致或账户不可访问会削弱退休、残障、遗属和医疗相关保障
+-> 长期可访问、可核对、可纠错的收入与福利记录降低老年和失能边界的制度断裂
+-> 主体在能力下降或劳动退出后仍保有资源、医疗入口和生活连续性</pre>
+== 边界 ==
+
+* 本域不提供退休、残障、遗属、Medicare、福利申请、申诉、财务、法律、移民或个人资格建议。
+* 不判断任何人的福利金额、工作 credits、申领时间、残障状态、家庭权益或最优领取策略。
+* 不帮助冒用身份、篡改工资记录、伪造社会保险资料、规避报送或操纵福利资格。
+* 只整理公开记录机制、账户访问、收入核对、纠错流程、身份风险、行政负担和制度边界。
+
+== 上游与下游 ==
+
+* 上游：<code>income-payroll-employment-record-continuity/</code>、<code>tax-administration-filing-record-continuity/</code>、<code>digital-identity-security/</code>、<code>representative-payee-benefits-management-continuity/</code>。
+* 下游：<code>retirement-pension-savings-plan-continuity/</code>、<code>disability-services-independent-living/</code>、<code>home-health-hospice-palliative-care-continuity/</code>、<code>financial-fiduciary-power-of-attorney-continuity/</code>。
+
+== 初始资料线索 ==
+
+* Social Security Statement and earnings record resources.
+* SSA work credits and retirement/disability/survivor benefit planning resources.
+* SSA representative payee and account access resources.
+* Social insurance, earnings record accuracy, benefit administration and old-age income security literature.
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C4研究域|C4研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c4-conversion-channel/social-security-earnings-benefit-record-continuity/README.md Human Infra 仓库：domains/c4-conversion-channel/social-security-earnings-benefit-record-continuity/README.md]
+
+[[Category:C4研究域]]

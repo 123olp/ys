@@ -1,0 +1,92 @@
+{{研究域
+|域 ID=domain.financial-resilience-access
+|C 层级=C5：可能性生态承载层
+|研究对象=Financial Resilience Access
+|持续性作用=主要提供主体展开未来所需的基础环境、资源、治理或基础设施。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c5-ecological-substrate/financial-resilience-access
+}}
+
+'''Financial Resilience Access'''是 Human Infra 在“外部生态承载”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+主要提供主体展开未来所需的基础环境、资源、治理或基础设施。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C5“可能性生态承载层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+Financial Resilience Access 负责整理收入、储蓄、债务、保险、医疗支付能力、财务冲击、资产安全和资源可及性如何进入主体持续性模型。
+
+核心问题：
+
+<blockquote>许多生存、健康、学习和等待未来的路径都需要资源入口；财务断裂会把可修复问题变成不可逆危机，并压缩主体未来选择权。
+</blockquote>
+== 先验位置 ==
+
+<pre>有效永生 / 主体持续性最大化
+  -> 主体必须持续获得医疗、住房、食物、工具、教育、照护和恢复资源
+  -> 这些资源在现实制度中常通过收入、储蓄、信用、保险和资产安全进入
+  -> 财务冲击、债务、欺诈、不可负担医疗或保险断裂会截断恢复路径
+  -> 因此财务韧性与资源可及性是主体持续性的资源入口域</pre>
+== 关注对象 ==
+
+* 收入稳定、储蓄缓冲、债务负担、保险覆盖、医疗负担、金融排斥、诈骗风险和资产安全。
+* 经济不安全如何影响健康行为、医疗延误、心理压力、住房稳定、学习机会和长期计划。
+* 财务系统如何连接数字身份、社会基础设施、治理权利、供应链和时间分配。
+* 与 <code>resource-social-infra/</code> 的边界：本域关注财务入口和经济缓冲；资源社会基础设施关注更广义的食物、水、住房、照护和公共服务。
+
+<span id="human-infra-模型链路"></span>
+== Human Infra 模型链路 ==
+
+<pre>财务韧性因素 T
+  -> 改变收入稳定、储蓄缓冲、债务、保险、支付能力和资产安全变量 X
+  -> 改变主体资源入口状态 S
+  -> 改变医疗延误、住房不稳、心理压力、断供、欺诈和机会损失风险 λ(t)
+  -> 影响恢复能力、有效时间、技术采用能力和未来选择权</pre>
+== 非目标 ==
+
+* 不提供投资、借贷、保险、税务、法律、福利申请、资产配置或个体财务建议。
+* 不提供规避监管、欺诈、套利、黑市、虚假申请或金融攻击方法。
+* 不把财富最大化等同于主体持续性；本域只处理资源可及和冲击缓冲变量。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* CFPB financial well-being: https://www.consumerfinance.gov/data-research/research-reports/financial-well-being/
+* Federal Reserve Economic Well-Being of U.S. Households: https://www.federalreserve.gov/consumerscommunities/shed.htm
+* WHO social determinants of health: https://www.who.int/health-topics/social-determinants-of-health
+
+== 下一步 ==
+
+# 建立财务韧性变量表：收入稳定、储蓄缓冲、债务、保险覆盖、医疗负担、欺诈风险和金融排斥。
+# 与 <code>resource-social-infra/</code>、<code>digital-identity-security/</code>、<code>health-literacy-navigation/</code> 和 <code>governance-rights/</code> 建立交叉边界。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C5研究域|C5研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c5-ecological-substrate/financial-resilience-access/README.md Human Infra 仓库：domains/c5-ecological-substrate/financial-resilience-access/README.md]
+
+[[Category:C5研究域]]

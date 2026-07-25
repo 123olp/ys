@@ -1,0 +1,96 @@
+{{研究域
+|域 ID=domain.implementation-science-adherence-behavior-change
+|C 层级=C4：可能性转换通道层
+|研究对象=Implementation Science Adherence Behavior Change
+|持续性作用=主要把科学、医疗、数据、制度或技术从潜在能力转成真实可用路径。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c4-conversion-channel/implementation-science-adherence-behavior-change
+}}
+
+'''Implementation Science Adherence Behavior Change'''是 Human Infra 在“路径转换接口”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+主要把科学、医疗、数据、制度或技术从潜在能力转成真实可用路径。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C4“可能性转换通道层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+== 定位 ==
+
+本域研究实施科学、依从性、行为改变和服务落地如何决定技术干预是否真的进入主体生命路径。
+
+Human Infra 的模型不能只评估“干预在论文里是否有效”，还要评估它能否被理解、获得、坚持、融入生活、被服务系统支持，并在现实约束下保持效果。
+
+== 先验位置 ==
+
+<pre>有效永生 / 主体持续性最大化
+  -> 技术效果只有进入现实行动才改变生命路径
+  -> 现实中存在可及性、理解、依从性、费用、摩擦和服务碎片化
+  -> 需要实施科学和行为改变框架评估 efficacy 到 effectiveness 的落差
+  -> implementation-science-adherence-behavior-change</pre>
+== 关注对象 ==
+
+* 实施结果：reach、adoption、implementation、maintenance、fidelity 和 sustainment。
+* 依从性、坚持性、行为摩擦、认知负担、行政负担、社会支持和环境约束。
+* COM-B、RE-AIM、CFIR 等实施和行为改变框架。
+* 临床疗效、真实世界效果、服务可及性和长期维护之间的落差。
+* 技术采用、自我升级和加速回报飞轮中的实际执行门槛。
+
+<span id="human-infra-模型链路"></span>
+== Human Infra 模型链路 ==
+
+<pre>技术/干预存在
+  -> 主体必须能知道、理解、获得、支付、开始和持续使用
+  -> 行为、服务和环境摩擦决定真实采用概率
+  -> 实施质量决定论文效果能否转化为现实状态改变
+  -> 现实状态改变才进入风险函数、生存曲线和有效时间模型</pre>
+== 非目标 ==
+
+* 不提供个体行为治疗、心理治疗、成瘾治疗、医疗依从性或生活方式处方。
+* 不提供组织管理压榨、员工监控、操控性 nudging 或强制行为控制策略。
+* 不把个体失败归咎为意志问题；必须同时审查环境、资源和系统约束。
+* 不提供临床服务设计、收费、资格或报销建议。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* RE-AIM framework: https://re-aim.org/
+* Original RE-AIM paper: https://pubmed.ncbi.nlm.nih.gov/10499394/
+* CFIR implementation framework: https://implementationscience.biomedcentral.com/articles/10.1186/1748-5908-4-50
+* COM-B behaviour change model: https://implementationscience.biomedcentral.com/articles/10.1186/1748-5908-6-42
+
+== 下一步 ==
+
+* 给每个干预域增加 <code>efficacy -&gt; effectiveness -&gt; implementation -&gt; maintenance</code> 审查字段。
+* 将 adoption、adherence、fidelity、sustainment 纳入 Human Infra 的概率门。
+* 和 <code>time-allocation-effective-time/</code>、<code>health-literacy-navigation/</code>、<code>community-resource-navigation/</code> 对接，分析摩擦成本。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C4研究域|C4研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c4-conversion-channel/implementation-science-adherence-behavior-change/README.md Human Infra 仓库：domains/c4-conversion-channel/implementation-science-adherence-behavior-change/README.md]
+
+[[Category:C4研究域]]

@@ -1,0 +1,77 @@
+{{研究域
+|域 ID=domain.streetlight-outage-nighttime-visibility-continuity
+|C 层级=C6：局部可能性解锁层
+|研究对象=Streetlight Outage Nighttime Visibility Continuity
+|持续性作用=未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c6-local-unlocking/streetlight-outage-nighttime-visibility-continuity
+}}
+
+'''Streetlight Outage Nighttime Visibility Continuity'''是 Human Infra 在“局部阻塞解除”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C6“局部可能性解锁层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>streetlight-outage-nighttime-visibility-continuity/</code> 研究路灯、夜间可见性、照明故障报告、行人路径感知和夜间公共空间安全如何影响主体在黑暗时段的行动连续性。
+
+== 先验链路 ==
+
+<pre>主体需要在夜间继续出行、照护、工作和求助
+  -> 夜间路径必须可见、可辨认、可被其他道路使用者识别
+  -> 路灯故障、遮挡、照明不足或报告失败会降低路径可读性
+  -> 可见性下降会增加跌倒、交通冲突、恐惧、绕行和时间成本
+  -> 夜间行动半径收缩，服务可达、社交参与和恢复能力下降</pre>
+== 研究对象 ==
+
+* streetlight outage、nighttime visibility、pedestrian lighting、roadway lighting、reporting channel、repair status、dark corridor、transit stop lighting 和视觉可读性。
+
+== 不能做 ==
+
+* 不提供电气维修、灯杆操作、布线、照明设计、安防布控、犯罪风险判断、路线建议、监控或个案安全建议。
+* 不收集、复制或要求精确住址、夜间行程、照片元数据、个人位置、监控画面或执法资料。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* FHWA nighttime visibility: https://highways.dot.gov/safety/other/nighttime-visibility
+* FHWA pedestrian and bicyclist safety: https://highways.dot.gov/safety/pedestrian-bicyclist
+* Illuminating Engineering Society road and pedestrian lighting context: https://www.ies.org/
+* Open311 GeoReport v2: https://wiki.open311.org/GeoReport_v2/
+
+== 上下游关系 ==
+
+* 上游：<code>walking-bicycling-micromobility-continuity/</code>、<code>light-circadian-environment/</code>、<code>municipal-311-service-request-continuity/</code>。
+* 下游：<code>public-transit-service-operations-continuity/</code>、<code>personal-safety-violence-prevention/</code>、<code>fall-risk-prevention-home-safety-continuity/</code>。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C6研究域|C6研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c6-local-unlocking/streetlight-outage-nighttime-visibility-continuity/README.md Human Infra 仓库：domains/c6-local-unlocking/streetlight-outage-nighttime-visibility-continuity/README.md]
+
+[[Category:C6研究域]]

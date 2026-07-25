@@ -1,0 +1,87 @@
+{{研究域
+|域 ID=domain.vital-records-life-event-continuity
+|C 层级=C4：可能性转换通道层
+|研究对象=生命事件与核心民事记录连续性
+|持续性作用=关键词显示该域主要处理研究、数据、模型、服务入口、身份记录、转化或治理接口。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c4-conversion-channel/vital-records-life-event-continuity
+}}
+
+'''生命事件与核心民事记录连续性'''是 Human Infra 在“路径转换接口”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要处理研究、数据、模型、服务入口、身份记录、转化或治理接口。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C4“可能性转换通道层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+本域研究出生、死亡、婚姻、离婚等生命事件记录如何把家庭事实、身份事实和制度事实连接起来。它关注的是主体和家庭在跨机构、跨地区、跨时间的服务系统中能否被持续识别，而不是个体证件办理建议。
+
+== 研究对象 ==
+
+* 出生、死亡、婚姻、离婚等 vital records。
+* 认证副本、记录更正、延迟登记、跨辖区记录请求。
+* 生命统计、民事登记、亲属关系和身份锚点。
+* 生命事件记录与护照、学校、医疗、保险、税务、福利、继承和家庭服务的下游关系。
+
+== 价值链路 ==
+
+<pre>主体和家庭关系需要被制度持续识别
+  -> 出生、死亡、婚姻、离婚等生命事件生成核心民事记录
+  -> 这些记录被福利、学校、税务、保险、护照、继承和医疗系统复用
+  -> 记录缺失、错误、不可访问或跨辖区断裂会让主体失去服务入口
+  -> 生命事件记录连续性把家庭事实转化为可被制度承认的长期身份底座</pre>
+== 关键问题 ==
+
+* 哪些生命事件记录是主体进入制度系统的底层锚点？
+* 记录错误、姓名不一致、亲属关系缺失或无法取得认证副本时，会影响哪些下游服务？
+* 生命事件记录如何与法律身份、家庭关系、福利资格、学校记录、医疗记录和遗产交接互相依赖？
+* 生命统计和民事登记如何从个体记录扩展为公共健康、人口统计和资源分配基础设施？
+
+== 上游与下游 ==
+
+* 上游：<code>legal-identity-civil-registration/</code>、<code>child-protection-family-safety/</code>、<code>maternal-newborn-child-development/</code>、<code>trust-estate-affairs-succession-continuity/</code>。
+* 下游：<code>name-change-identity-record-synchronization-continuity/</code>、<code>household-composition-dependent-eligibility-continuity/</code>、<code>family-law-custody-child-support-continuity/</code>、<code>healthcare-access-continuity/</code>、<code>social-protection-benefits-delivery/</code>。
+
+== 非目标 ==
+
+* 不提供个人出生证、死亡证、婚姻证、离婚记录申请、更正、认证、翻译、认证副本或跨州跨国文件办理建议。
+* 不判断个人亲属关系、婚姻状态、继承资格、移民身份、福利资格、税务身份或法律权利。
+* 不协助伪造、规避、隐藏、篡改、借用或滥用身份文件和民事记录。
+
+== 初始资料入口 ==
+
+* USA.gov: Vital Records
+* CDC/NCHS: Where to Write for Vital Records
+* CDC/NCHS: National Vital Statistics System
+* State, county, and local vital records offices
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C4研究域|C4研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c4-conversion-channel/vital-records-life-event-continuity/README.md Human Infra 仓库：domains/c4-conversion-channel/vital-records-life-event-continuity/README.md]
+
+[[Category:C4研究域]]

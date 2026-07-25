@@ -1,0 +1,87 @@
+{{研究域
+|域 ID=domain.augmentative-alternative-communication-aac-continuity
+|C 层级=C3：可能性生成引擎层
+|研究对象=Augmentative Alternative Communication AAC Continuity
+|持续性作用=关键词显示该域主要增强认知、学习、工具、AI、技能或沟通能力。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c3-generation-engine/augmentative-alternative-communication-aac-continuity
+}}
+
+'''Augmentative Alternative Communication AAC Continuity'''是 Human Infra 在“主体能力生成”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要增强认知、学习、工具、AI、技能或沟通能力。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C3“可能性生成引擎层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+Augmentative alternative communication AAC continuity studies non-speech and speech-supporting communication systems as infrastructure for preference expression, consent, education, work, and care participation.
+
+核心问题：
+
+<blockquote>AAC 不是“说不了话的补丁”，而是当自然言语不足以承载主体意图时，把表达权重新接入世界的沟通基础设施。
+</blockquote>
+== 先验位置 ==
+
+<pre>主体持续性最大化
+  -> 主体必须有至少一个可靠表达通道
+  -> 言语、运动、认知或感官限制可能让自然口语不足
+  -> 低技术、高技术、伙伴支持和环境适配可重建表达接口
+  -> 因而 AAC 是主体表达权从单一口语通道转向多通道冗余的基础设施</pre>
+== 关注对象 ==
+
+* AAC、沟通板、符号、文本、语音生成设备、眼控/开关访问、伙伴训练和环境可达。
+* 医疗、教育、工作、照护、紧急求助、同意表达和身份参与。
+* 与 <code>assistive-technology-access/</code> 的关系：辅助技术域关注广义可及；本域关注表达通道。
+* 与 <code>aphasia-language-access-recovery-continuity/</code> 的关系：失语域关注语言恢复；本域关注替代/增强接口。
+
+<span id="human-infra-模型链路"></span>
+== Human Infra 模型链路 ==
+
+<pre>工具 / 训练 / 伙伴支持 / 环境集成 T
+  -> 改变表达通道冗余、速度、可靠性、可携带性和维修变量 X
+  -> 改变医疗参与、学习、工作、关系和紧急求助状态 S
+  -> 改变无声化、误解、被代理和服务排除风险 λ(t)
+  -> 影响主体自主表达、权利参与和未来选择权</pre>
+== 非目标 ==
+
+* 不提供 AAC 设备处方、访问方法选择、个体评估、训练计划、保险资格或学校服务判断。
+* 不根据个人障碍、运动能力、语言能力或认知能力推荐具体设备。
+* 不替代言语语言治疗、辅助技术、教育、康复、保险或法律服务。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* NIDCD assistive devices for hearing, voice, speech, or language disorders resources。
+* ASHA augmentative and alternative communication practice materials。
+* Accessibility and assistive technology literature as research context。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C3研究域|C3研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c3-generation-engine/augmentative-alternative-communication-aac-continuity/README.md Human Infra 仓库：domains/c3-generation-engine/augmentative-alternative-communication-aac-continuity/README.md]
+
+[[Category:C3研究域]]

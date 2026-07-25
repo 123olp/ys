@@ -1,0 +1,89 @@
+{{研究域
+|域 ID=domain.inflammatory-bowel-disease-digestive-continuity
+|C 层级=C6：局部可能性解锁层
+|研究对象=Inflammatory Bowel Disease Digestive Continuity
+|持续性作用=未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c6-local-unlocking/inflammatory-bowel-disease-digestive-continuity
+}}
+
+'''Inflammatory Bowel Disease Digestive Continuity'''是 Human Infra 在“局部阻塞解除”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C6“局部可能性解锁层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>inflammatory-bowel-disease-digestive-continuity/</code> 研究 Crohn 病、溃疡性结肠炎、消化道炎症、营养吸收、flare、用药监测和长期生活参与如何影响主体持续性。
+
+<blockquote>核心问题：炎症性肠病把免疫炎症、腹痛腹泻、营养损耗、医疗监测、手术风险和污名共同转化为有效时间和行动半径的长期损耗。
+</blockquote>
+== 先验位置 ==
+
+<pre>有效永生 / 主体持续性最大化
+  -> 主体需要稳定吸收营养、维持体力并可预测地参与生活
+  -> IBD 会造成 flare、疼痛、腹泻、疲劳、营养缺口和治疗风险
+  -> 结果取决于早诊、疾病控制、营养支持、药物监测、手术路径和心理社会支持
+  -> 因此 IBD 是消化连续性、免疫稳态和有效时间保护的关键维护域</pre>
+== 关注对象 ==
+
+* Crohn's disease、ulcerative colitis、flare、bowel symptoms、nutrition, anemia, biologics / immunomodulators, surgery pathway, school/work participation。
+* 与 <code>gastrointestinal-barrier-absorption/</code> 的边界：该域关注胃肠屏障和吸收总机制；本域聚焦 IBD 的慢性炎症病程和照护连续性。
+* 与 <code>chronic-pain-functional-restoration-continuity/</code> 的关系：腹痛和疲劳会把 IBD 转化为任务中断与有效时间损耗。
+
+<span id="human-infra-模型链路"></span>
+== Human Infra 模型链路 ==
+
+<pre>IBD 消化连续性照护系统 T
+  -> 改变炎症活动、腹痛腹泻、营养吸收、贫血、用药监测和手术路径变量 X
+  -> 改变体力、学校/工作参与、心理负担、医疗利用和社会活动状态 S
+  -> 改变失能风险、营养风险、感染/治疗风险和有效时间损耗 λ(t)
+  -> 影响主体长期行动能力、恢复能力和未来选择权</pre>
+== 非目标 ==
+
+* 不提供个人 IBD 诊断、内镜/化验判读、饮食、药物、生物制剂、免疫抑制、手术、flare 处理或疫苗建议。
+* 不生成治疗计划、营养计划、用药调整、检查周期、厕所/学校/工作便利或保险建议。
+* 不收集个案症状、内镜、化验、药物、营养、学校/工作或保险资料。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* NIDDK Crohn's disease: https://www.niddk.nih.gov/health-information/digestive-diseases/crohns-disease
+* NIDDK ulcerative colitis: https://www.niddk.nih.gov/health-information/digestive-diseases/ulcerative-colitis
+* CDC IBD information: https://www.cdc.gov/ibd/
+
+== 下一步 ==
+
+* 建立 IBD Continuity Card：disease type, flare burden, nutrition/anemia, medication monitoring, surgery pathway, participation support。
+* 与 <code>gastrointestinal-barrier-absorption/</code>、<code>immune-maintenance/</code> 和 <code>iron-deficiency-anemia-oxygen-carrying-continuity/</code> 建立接口。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C6研究域|C6研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c6-local-unlocking/inflammatory-bowel-disease-digestive-continuity/README.md Human Infra 仓库：domains/c6-local-unlocking/inflammatory-bowel-disease-digestive-continuity/README.md]
+
+[[Category:C6研究域]]

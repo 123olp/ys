@@ -1,0 +1,85 @@
+{{研究域
+|域 ID=domain.api-platform-dependency-runtime-continuity
+|C 层级=C6：局部可能性解锁层
+|研究对象=API Platform Dependency Runtime Continuity
+|持续性作用=未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c6-local-unlocking/api-platform-dependency-runtime-continuity
+}}
+
+'''API Platform Dependency Runtime Continuity'''是 Human Infra 在“局部阻塞解除”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C6“局部可能性解锁层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>api-platform-dependency-runtime-continuity</code> 研究第三方 API、平台 SDK、支付/地图/身份/消息/AI 服务、限流、计费、版本废弃、服务等级、变更公告和运行时降级如何影响主体和组织的工具链是否能继续执行任务。
+
+<blockquote>核心问题：现代软件常把关键能力外包给平台 API；API 中断、废弃或政策变化会直接变成主体任务中断。
+</blockquote>
+== 关注对象 ==
+
+* 支付、地图、身份、消息、搜索、AI、云函数、存储、数据源、通知、分析和自动化平台 API。
+* SLA、速率限制、配额、计费、版本废弃、breaking changes、SDK 生命周期、状态页、降级和替代路径。
+* API 依赖图、超时、重试、缓存、幂等、背压、断路器、模拟环境和退出方案。
+* 服务中断、价格变化、条款变化、账号封禁、接口废弃、供应商故障和隐性集中化风险。
+
+<span id="human-infra-链路"></span>
+== Human Infra 链路 ==
+
+<pre>API 与平台运行时依赖连续
+  -> 外部能力调用、降级和替代路径可审查
+  -> 第三方 API 中断、废弃、限流和政策变化造成的任务失败下降
+  -> 主体和组织工具链保持可运行、可恢复、可迁移
+  -> 数字生产力和长期项目连续性增强</pre>
+== 非目标 ==
+
+* 不提供绕过 API 限制、规避计费、滥用接口、批量抓取、账号规避、破解 SDK 或平台漏洞利用方法。
+* 不替代平台工程、SRE、法律、采购、合规或供应商管理。
+* 不收集 API key、token、账单、私有流量、客户数据、错误日志或平台合同。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* NIST cloud and software resilience references: https://www.nist.gov/
+* CNCF / SRE public guidance for resilience patterns as implementation references.
+* Major platform API status, deprecation and changelog documentation as observable signals.
+* EU Data Act and platform interoperability discussions as governance references.
+
+== 下一步 ==
+
+* 建立 <code>api dependency -&gt; quota -&gt; version -&gt; fallback -&gt; runtime continuity</code> 变量表。
+* 区分个人自动化、创业项目、公共服务、医疗/金融关键工具和 AI 平台依赖。
+* 与 <code>cloud-service-exit-interoperability-continuity</code>、<code>software-supply-chain-dependency-provenance-continuity</code>、<code>compute-data-center-ai-infrastructure</code> 和 <code>model-cards-ai-audit-documentation</code> 建立边界。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C6研究域|C6研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c6-local-unlocking/api-platform-dependency-runtime-continuity/README.md Human Infra 仓库：domains/c6-local-unlocking/api-platform-dependency-runtime-continuity/README.md]
+
+[[Category:C6研究域]]

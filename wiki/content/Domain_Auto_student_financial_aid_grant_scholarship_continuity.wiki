@@ -1,0 +1,85 @@
+{{研究域
+|域 ID=domain.student-financial-aid-grant-scholarship-continuity
+|C 层级=C3：可能性生成引擎层
+|研究对象=Student Financial Aid Grant Scholarship Continuity
+|持续性作用=关键词显示该域主要增强认知、学习、工具、AI、技能或沟通能力。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c3-generation-engine/student-financial-aid-grant-scholarship-continuity
+}}
+
+'''Student Financial Aid Grant Scholarship Continuity'''是 Human Infra 在“主体能力生成”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要增强认知、学习、工具、AI、技能或沟通能力。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C3“可能性生成引擎层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>student-financial-aid-grant-scholarship-continuity</code> 研究 FAFSA、Title IV aid、Pell Grant、federal loans、work-study、州与机构奖助学金、verification、satisfactory academic progress 和资助发放如何影响学生持续学习、生活稳定和债务风险。
+
+<blockquote>核心问题：高等教育机会只有在资金流连续、规则可理解、资格可维护、账单可承受时，才能转化为真实学习窗口；资助断裂会把学习路径迅速变成债务、退学和信用风险。
+</blockquote>
+== 关注对象 ==
+
+* FAFSA、学生援助指数、家庭贡献资料、dependency status、verification、appeal 和特殊情况调整。
+* Pell Grant、Direct Loans、Federal Work-Study、州助学金、机构奖学金、应急助学金、学费减免和外部奖学金。
+* Satisfactory Academic Progress、注册学分、退课、重复课程、停学、返校、退款、overpayment 和 financial hold。
+* 学费、生活费、cost of attendance、net price、债务负担、还款风险和资助通知可理解性。
+
+<span id="human-infra-链路"></span>
+== Human Infra 链路 ==
+
+<pre>学生资助与奖助学金连续
+  -> 学费、生活费和学习材料成本被制度性缓冲
+  -> 因现金流、账单、资格和证明摩擦导致的停学退学下降
+  -> 学习时间、校园参与、健康恢复和职业准备更稳定
+  -> 主体长期能力资本、收入路径和债务风险治理能力增强</pre>
+== 非目标 ==
+
+* 不提供 FAFSA 填报、贷款选择、奖学金申请、债务策略、税务、投资、学校选择、个人资格或法律建议。
+* 不替代 Federal Student Aid、高校 financial aid office、loan servicer、州资助机构、税务专业人士或法律援助。
+* 不收集或处理学生/家庭财务资料、SSN、税务资料、FSA ID、资助账号、移民身份或银行资料。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* Federal Student Aid official student aid and FAFSA resources: https://studentaid.gov/
+* Federal Student Aid partner guidance and handbook materials: https://fsapartners.ed.gov/
+* College Scorecard cost, debt and outcomes data: https://collegescorecard.ed.gov/
+* NCES/IPEDS student financial aid and institutional finance data: https://nces.ed.gov/ipeds/
+
+== 下一步 ==
+
+* 建立 <code>eligibility -&gt; aid offer -&gt; disbursement -&gt; SAP -&gt; persistence -&gt; debt risk</code> 变量表。
+* 区分 grant、loan、work-study、scholarship、emergency aid、waiver、refund、hold 和 repayment。
+* 与 <code>debt-obligation-collection-relief-continuity</code>、<code>financial-resilience-access</code>、<code>social-protection-benefits-delivery</code> 和本轮高教域建立边界。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C3研究域|C3研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c3-generation-engine/student-financial-aid-grant-scholarship-continuity/README.md Human Infra 仓库：domains/c3-generation-engine/student-financial-aid-grant-scholarship-continuity/README.md]
+
+[[Category:C3研究域]]

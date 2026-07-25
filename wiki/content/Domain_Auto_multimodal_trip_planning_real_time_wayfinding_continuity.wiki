@@ -1,0 +1,84 @@
+{{研究域
+|域 ID=domain.multimodal-trip-planning-real-time-wayfinding-continuity
+|C 层级=C6：局部可能性解锁层
+|研究对象=Multimodal Trip Planning Real Time Wayfinding Continuity
+|持续性作用=未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c6-local-unlocking/multimodal-trip-planning-real-time-wayfinding-continuity
+}}
+
+'''Multimodal Trip Planning Real Time Wayfinding Continuity'''是 Human Infra 在“局部阻塞解除”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C6“局部可能性解锁层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>multimodal-trip-planning-real-time-wayfinding-continuity</code> 研究路线规划、实时到站、GTFS/GTFS-Realtime、无障碍路径、服务中断、导航、站内导向和语言可达如何影响主体能否把出行计划转成真实到达。
+
+<blockquote>核心问题：交通选项存在不等于主体能使用；如果路线、时间、换乘、无障碍路径和服务中断信息不可知，主体会在规划、等待、换乘和迷路中消耗有效时间。
+</blockquote>
+== 关注对象 ==
+
+* GTFS、GTFS-Realtime、公交/轨道实时信息、换乘、站点导向、无障碍路径、步行连接、服务中断和多语言信息。
+* 医疗预约、工作通勤、学校接送、夜间出行、游客、认知障碍者、低视力/低听力者和低数字技能人群。
+* 与地理空间导航、公共交通运营、语言可达、无障碍、通知警报和数字包容的接口。
+
+<span id="human-infra-链路"></span>
+== Human Infra 链路 ==
+
+<pre>出行信息连续
+  -> 路线、时间、换乘、无障碍和中断信息可被理解
+  -> 等待、迷路、错过换乘和迟到成本下降
+  -> 多模式交通从抽象网络转化为可执行路径
+  -> 主体有效时间、服务到达率和行动信心增强</pre>
+== 非目标 ==
+
+* 不提供逃票、绕过安检、跟踪他人、抓取私有位置数据、破坏交通数据或规避平台限制方法。
+* 不替代交通运营商、地图平台、应急警报、无障碍服务、旅行安全、医疗或本地服务渠道。
+* 不收集个人位置轨迹、常用路线、家庭地址、工作地址、医疗预约、儿童路线或账号 token。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* GTFS Schedule: https://gtfs.org/schedule/
+* GTFS Realtime: https://gtfs.org/realtime/
+* FTA Transit Data and Mobility resources: https://www.transit.dot.gov/
+* ADA.gov Transportation: https://www.ada.gov/topics/transportation/
+
+== 下一步 ==
+
+* 建立 <code>origin/destination -&gt; route data -&gt; real-time signal -&gt; accessibility path -&gt; arrival outcome</code> 变量表。
+* 区分公共静态数据、实时中断、站内导向、语言可达、无障碍路径和数字排除。
+* 与 <code>geospatial-navigation-location-infrastructure</code>、<code>public-transit-service-operations-continuity</code>、<code>language-access-plain-communication</code> 和 <code>notification-alert-routing-attention-continuity</code> 建立边界。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C6研究域|C6研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c6-local-unlocking/multimodal-trip-planning-real-time-wayfinding-continuity/README.md Human Infra 仓库：domains/c6-local-unlocking/multimodal-trip-planning-real-time-wayfinding-continuity/README.md]
+
+[[Category:C6研究域]]

@@ -1,0 +1,88 @@
+{{研究域
+|域 ID=domain.passport-travel-document-mobility-continuity
+|C 层级=C6：局部可能性解锁层
+|研究对象=护照、旅行证件与跨境移动连续性
+|持续性作用=未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c6-local-unlocking/passport-travel-document-mobility-continuity
+}}
+
+'''护照、旅行证件与跨境移动连续性'''是 Human Infra 在“局部阻塞解除”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C6“局部可能性解锁层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+本域研究护照、旅行证件、签证页、领事服务、旅行警示和证件恢复如何支撑主体跨境移动、撤离、家庭团聚、工作学习和国际服务接入。它关注的是跨境移动资格作为主体选择权的一部分，而不是个人护照、签证或移民建议。
+
+== 研究对象 ==
+
+* 护照、旅行证件、领事服务、紧急证件、证件丢失和证件更新。
+* 旅行警示、领事登记、撤离、跨境家庭关系、身份文件和姓名/性别/地址同步。
+* 签证、入境许可、移民身份和国籍文件作为跨境制度接口。
+* 护照记录与银行、教育、工作、医疗、遗产、家庭法院和人道服务的关系。
+
+== 价值链路 ==
+
+<pre>主体需要在国家边界之间保持行动和服务接入
+  -> 护照和旅行证件把法律身份转化为跨境可承认的移动资格
+  -> 领事服务、紧急证件和旅行警示降低证件丢失、危机和跨境断点风险
+  -> 证件过期、身份错配、冲突灾害、拘留或移民状态不确定会截断跨境选择权
+  -> 旅行证件连续性把国际移动从愿望转化为可执行的未来选项</pre>
+== 关键问题 ==
+
+* 护照和旅行证件如何影响跨境医疗、工作、学习、家庭、撤离和人道保护？
+* 姓名变更、生命事件记录、国籍文件和身份同步如何影响旅行证件连续性？
+* 证件丢失、过期、扣留、战争、灾害或领事服务不可达时，主体有哪些制度性断点？
+* 旅行警示、领事协助和紧急证件如何降低跨境风险但不替代个人安全判断？
+
+== 上游与下游 ==
+
+* 上游：<code>legal-identity-civil-registration/</code>、<code>vital-records-life-event-continuity/</code>、<code>name-change-identity-record-synchronization-continuity/</code>、<code>migration-displacement-humanitarian-continuity/</code>。
+* 下游：<code>space-extreme-habitation/</code>、<code>armed-conflict-civilian-protection-ihl/</code>、<code>disaster-recovery-relief-continuity/</code>、<code>education-access-lifelong-learning/</code>、<code>workforce-employment-services/</code>。
+
+== 非目标 ==
+
+* 不提供护照、签证、入境、移民、庇护、领事案件、旅行安全、撤离、跨境家庭、税务或法律建议。
+* 不判断个人是否能入境、是否应旅行、是否可加急、是否可换发、是否有国籍或签证资格。
+* 不协助伪造、借用、篡改、隐藏、买卖、规避或滥用护照、签证、国籍、旅行或移民文件。
+
+== 初始资料入口 ==
+
+* U.S. Department of State: Passports
+* U.S. Department of State: Travel Advisories
+* U.S. Department of State: U.S. Citizens Services
+* USA.gov: Passports and international travel
+* UNHCR / IOM materials for displacement and travel-document boundary context
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C6研究域|C6研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c6-local-unlocking/passport-travel-document-mobility-continuity/README.md Human Infra 仓库：domains/c6-local-unlocking/passport-travel-document-mobility-continuity/README.md]
+
+[[Category:C6研究域]]

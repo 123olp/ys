@@ -1,0 +1,92 @@
+{{研究域
+|域 ID=domain.disaster-recovery-relief-continuity
+|C 层级=C5：可能性生态承载层
+|研究对象=Disaster Recovery Relief Continuity
+|持续性作用=主要提供主体展开未来所需的基础环境、资源、治理或基础设施。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c5-ecological-substrate/disaster-recovery-relief-continuity
+}}
+
+'''Disaster Recovery Relief Continuity'''是 Human Infra 在“外部生态承载”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+主要提供主体展开未来所需的基础环境、资源、治理或基础设施。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C5“可能性生态承载层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>disaster-recovery-relief-continuity/</code> 研究灾后个人援助、恢复中心、临时安置、灾害贷款、救济服务和家庭恢复路径如何防止一次灾害清零主体长期积累。
+
+<blockquote>核心问题：灾害结束不等于主体恢复；住房、现金、食物、文件、通信、医疗、债务和临时安置断裂，会把一次事件变成长期能力损耗。
+</blockquote>
+== 先验位置 ==
+
+<pre>有效永生 / 主体持续性最大化
+  -> 主体会遭遇灾害、事故、火灾、风暴、洪水和其他低频高冲击事件
+  -> 事件后必须有恢复资金、临时住所、食物、文件、医疗、贷款和服务入口
+  -> 灾后恢复失败会造成长期失能、贫困、迁移、关系断裂和资源损失
+  -> 因此灾后恢复与救济连续性是主体持续性的尾部风险恢复域</pre>
+== 关注对象 ==
+
+* 灾后个人援助、恢复中心、临时安置、开放避难所、灾害贷款、账单/食物支持和官方救济入口。
+* 恢复时间、申请摩擦、文件丢失、身份连续、住房连续、债务压力和跨机构转介。
+* 与 <code>emergency-preparedness-response/</code> 的边界：本域关注事件后的恢复与救济；应急准备与响应关注事前准备和事件中响应。
+
+<span id="human-infra-模型链路"></span>
+== Human Infra 模型链路 ==
+
+<pre>灾后恢复与救济系统 T
+  -> 改变资金、住房、食物、文件、医疗、贷款、安置和服务导航变量 X
+  -> 改变主体灾后恢复状态 S
+  -> 改变无家可归、医疗中断、债务升级、迁移、失业和长期能力损耗风险 λ(t)
+  -> 影响主体恢复窗口、资源复原、家庭连续性和未来选择权</pre>
+== 非目标 ==
+
+* 不提供个体灾害申请、资格判断、理赔、贷款、法律、税务、保险或住房建议。
+* 不承诺避难所实时可用、资金发放、资格结果、灾害认定或恢复时间。
+* 不支持虚假申请、身份冒用、材料伪造、囤积、黑市采购或制度规避。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* USA.gov Disaster Assistance: https://www.usa.gov/disaster-assistance
+* FEMA Disaster Recovery Centers: https://egateway.fema.gov/ESF6/DRCLocator
+* SBA Disaster Assistance: https://www.sba.gov/funding-programs/disaster-assistance
+* Benefits.gov Disaster Relief: https://www.benefits.gov/categories/Disaster%20Relief
+* American Red Cross Open Shelters: https://www.redcross.org/get-help/disaster-relief-and-recovery-services/find-an-open-shelter.html
+* Global Shelter Cluster: https://sheltercluster.org/
+
+== 下一步 ==
+
+* 建立变量表：恢复资金、临时住所、文件恢复、食品援助、医疗连续、债务压力、申请摩擦和服务转介。
+* 与 <code>emergency-alerts-communications/</code>、<code>social-protection-benefits-delivery/</code>、<code>insurance-risk-transfer/</code> 和 <code>housing-built-environment-stability/</code> 建立接口。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C5研究域|C5研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c5-ecological-substrate/disaster-recovery-relief-continuity/README.md Human Infra 仓库：domains/c5-ecological-substrate/disaster-recovery-relief-continuity/README.md]
+
+[[Category:C5研究域]]

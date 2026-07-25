@@ -1,0 +1,87 @@
+{{研究域
+|域 ID=domain.rna-splicing-epitranscriptomic-maintenance-continuity
+|C 层级=C6：局部可能性解锁层
+|研究对象=RNA Splicing Epitranscriptomic Maintenance Continuity
+|持续性作用=未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c6-local-unlocking/rna-splicing-epitranscriptomic-maintenance-continuity
+}}
+
+'''RNA Splicing Epitranscriptomic Maintenance Continuity'''是 Human Infra 在“局部阻塞解除”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C6“局部可能性解锁层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+RNA Splicing Epitranscriptomic Maintenance Continuity 负责整理 RNA 剪接、mRNA 质量控制、RNA 修饰、转录后稳态、RNA imbalance 和衰老中的 RNA 维护问题。
+
+核心问题：
+
+<blockquote>细胞要长期可靠行动，DNA 信息必须被正确转录、剪接、修饰、质控和翻译；RNA 层失衡会把基因组可读性转化为错误执行。
+</blockquote>
+== 先验位置 ==
+
+<pre>有效永生 / 主体持续性最大化
+  -> 基因组信息需要通过 RNA 层转化为可执行分子指令
+  -> 剪接、RNA 修饰、mRNA 监控、稳定性和降解决定指令是否正确
+  -> RNA imbalance 会造成错误 isoform、异常翻译、压力反应和细胞功能漂移
+  -> RNA 层失衡可能改变衰老、神经退行、干细胞状态和组织维护风险
+  -> 因此 RNA 维护是从 DNA 信息到蛋白执行之间的关键条件</pre>
+== 关注对象 ==
+
+* alternative splicing、RNA imbalance、mRNA quality control、nonsense-mediated decay、m6A、epitranscriptomics、RNA stability。
+* 与 <code>genomic-stability-dna-repair/</code> 的关系：基因组域关注 DNA 模板，本域关注 RNA 层表达和质控。
+* 与 <code>ribosome-translation-fidelity-proteome-integrity-continuity/</code> 的关系：本域关注进入翻译前的 RNA 模板质量。
+
+<span id="human-infra-模型链路"></span>
+== Human Infra 模型链路 ==
+
+<pre>RNA 维护观测 / 调节 T
+  -> 改变剪接、RNA 修饰、mRNA 质控、RNA 稳定性和 isoform 分布 X
+  -> 改变转录后信息执行状态 S
+  -> 改变蛋白生成质量、细胞身份、干细胞状态和神经退行风险
+  -> 改变组织维护、认知连续性和有效时间</pre>
+== 非目标 ==
+
+* 不提供 RNA 修饰、剪接调节、基因治疗、药物、补剂、检测解释或临床建议。
+* 不把 RNA-seq、m6A、剪接或 isoform 结果写成个体健康结论。
+* 不提供测序分析、样本处理、细胞实验、动物实验或人体干预协议。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* RNA imbalance as a hallmark of cellular ageing: https://pubmed.ncbi.nlm.nih.gov/42120534/
+* Alternative splicing in aging and longevity: https://pmc.ncbi.nlm.nih.gov/articles/PMC8176884/
+* The function of mRNA quality control in aging and age-related diseases: https://pmc.ncbi.nlm.nih.gov/articles/PMC13066800/
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C6研究域|C6研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c6-local-unlocking/rna-splicing-epitranscriptomic-maintenance-continuity/README.md Human Infra 仓库：domains/c6-local-unlocking/rna-splicing-epitranscriptomic-maintenance-continuity/README.md]
+
+[[Category:C6研究域]]

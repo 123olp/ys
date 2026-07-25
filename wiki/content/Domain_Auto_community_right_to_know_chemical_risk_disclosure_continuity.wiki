@@ -1,0 +1,88 @@
+{{研究域
+|域 ID=domain.community-right-to-know-chemical-risk-disclosure-continuity
+|C 层级=C5：可能性生态承载层
+|研究对象=Community Right To Know Chemical Risk Disclosure Continuity
+|持续性作用=关键词显示该域主要承载能源、水、食物、住房、治理、经济、通信、灾害或基础设施环境。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c5-ecological-substrate/community-right-to-know-chemical-risk-disclosure-continuity
+}}
+
+'''Community Right To Know Chemical Risk Disclosure Continuity'''是 Human Infra 在“外部生态承载”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要承载能源、水、食物、住房、治理、经济、通信、灾害或基础设施环境。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C5“可能性生态承载层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>community-right-to-know-chemical-risk-disclosure-continuity/</code> 研究社区化学风险知情权、设施报告、排放清单、应急规划和风险沟通如何让居民、学校、工人和地方政府提前看见潜在事故边界。
+
+<blockquote>核心问题：危险设施如果只在事故后才被看见，社区就只能被动承受暴露；知情权把隐蔽风险转化为规划、监督、信任和准备能力。
+</blockquote>
+== 先验位置 ==
+
+<pre>有效永生 / 主体持续性最大化
+  -> 主体长期存在依赖对邻近风险的可理解性
+  -> 化学设施、储存和排放可能把地点变成隐性风险函数
+  -> 社区知情权与披露系统把不可见风险转化为可审查、可沟通、可准备的公共信息</pre>
+== 关注对象 ==
+
+* EPCRA、Tier II、TRI、地方应急规划委员会、化学设施披露、公众沟通和环境正义。
+* 信息可达性、语言可达、地图化误读、企业/社区信任、低收入社区和学校邻近风险。
+* 与 <code>chemical-safety-poison-control-toxicology/</code> 的关系：毒理域关注暴露和健康风险；本域关注设施级风险信息能否被公众和机构理解使用。
+
+<span id="human-infra-模型链路"></span>
+== Human Infra 模型链路 ==
+
+<pre>化学风险披露
+  -> 改变社区风险可见性、准备能力、监督能力和应急规划质量
+  -> 改变事故前脆弱性、事故中行动质量和事故后问责恢复能力
+  -> 降低不可见暴露、信任破裂和制度性风险转嫁</pre>
+== 非目标 ==
+
+* 不提供设施攻击、规避报告、敏感位置滥用、企业侦察、抗议战术或法律建议。
+* 不输出个体健康判断、房产建议、投资建议、保险判断或实时事故判断。
+* 不把公开风险资料转化为骚扰、污名化或社区恐慌工具。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* EPA EPCRA: https://www.epa.gov/epcra
+* EPA Toxics Release Inventory: https://www.epa.gov/toxics-release-inventory-tri-program
+* EPA Risk Management Program: https://www.epa.gov/rmp
+* EPA environmental justice screening context: https://www.epa.gov/ejscreen
+
+== 下一步 ==
+
+* 建立 Right-to-Know Card：facility, report type, chemical category, community context, planning interface, equity risk, communication boundary。
+* 与 <code>civic-data-open-government-transparency/</code>、<code>social-determinants-community-vulnerability/</code> 和 <code>environmental-justice-exposure-equity-continuity/</code> 建立接口。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C5研究域|C5研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c5-ecological-substrate/community-right-to-know-chemical-risk-disclosure-continuity/README.md Human Infra 仓库：domains/c5-ecological-substrate/community-right-to-know-chemical-risk-disclosure-continuity/README.md]
+
+[[Category:C5研究域]]

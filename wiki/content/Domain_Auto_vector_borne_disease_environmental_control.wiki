@@ -1,0 +1,88 @@
+{{研究域
+|域 ID=domain.vector-borne-disease-environmental-control
+|C 层级=C6：局部可能性解锁层
+|研究对象=Vector Borne Disease Environmental Control
+|持续性作用=未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c6-local-unlocking/vector-borne-disease-environmental-control
+}}
+
+'''Vector Borne Disease Environmental Control'''是 Human Infra 在“局部阻塞解除”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C6“局部可能性解锁层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+病媒传播疾病与环境控制域研究：当主体持续性依赖稳定的居住、工作、旅行、农业和公共卫生环境时，蚊、蜱、蚤等病媒、气候变化、土地使用、水环境和控制系统如何改变感染风险。
+
+== 对象 ==
+
+* 蚊媒、蜱媒、蚤媒和其他病媒传播疾病风险。
+* 气候、降水、温度、水体、土地使用、城市化、住房质量、动物宿主和迁移旅行。
+* 监测、预警、公共卫生响应、环境管理、病媒控制、疫苗/诊断/治疗可及性和社区沟通。
+* 病媒控制中的农药使用、生态影响、抗药性、职业暴露和公平性问题。
+* 慢性感染、急性感染、暴发、地方性传播、输入性病例和跨境治理。
+
+<span id="human-infra-价值"></span>
+== Human Infra 价值 ==
+
+病媒传播疾病说明，主体持续性不只取决于免疫系统，还取决于环境、动物、气候、住房和公共卫生网络。病媒控制做得不好，居住空间、工作空间和移动自由都会被感染风险重新定价。
+
+<pre>病媒与环境传播风险被监测和控制
+  -> 感染、暴发、慢性后遗症和行动限制下降
+  -> 居住、工作、旅行和农业活动更可持续
+  -> 健康寿命、有效时间和未来选择权提高</pre>
+== 边界 ==
+
+本域只整理病媒传播疾病、环境控制、公共卫生监测、生态治理和风险沟通资料。
+
+不提供：
+
+* 个体诊断、检测、治疗、疫苗选择、药物、旅行医学、暴露后处理或急救建议。
+* 驱虫产品选择、农药配方、喷洒方法、害虫灭杀、现场采样、动物处理、居住/旅行路线或户外活动许可建议。
+* 公共卫生报告规避、检疫规避、病媒释放、生态破坏、违规用药、危险化学品操作或监管规避方法。
+* 把地图、病例数据、气候模型、虫媒监测或 AI 输出写成个体感染风险、旅行安全或资产价值结论。
+
+== 上游与下游 ==
+
+* 上游：<code>animal-health-zoonotic-interface-one-health/</code>、<code>weather-climate-observation-forecasting/</code>、<code>water-resources-hydrology-flood-drought-management/</code>、<code>housing-built-environment-stability/</code>、<code>biodiversity-ecosystem-services-resilience/</code>。
+* 下游：<code>immunization-public-health-surveillance/</code>、<code>chronic-infectious-disease-care-continuity/</code>、<code>healthcare-access-continuity/</code>、<code>occupational-exposure-industrial-hygiene/</code>、<code>migration-displacement-humanitarian-continuity/</code>。
+
+== 初始资料线索 ==
+
+* CDC vector-borne disease resources。
+* WHO vector-borne diseases resources。
+* EPA mosquito control and pesticide resources。
+* One Health, climate and public-health surveillance resources。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C6研究域|C6研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c6-local-unlocking/vector-borne-disease-environmental-control/README.md Human Infra 仓库：domains/c6-local-unlocking/vector-borne-disease-environmental-control/README.md]
+
+[[Category:C6研究域]]

@@ -1,0 +1,93 @@
+{{研究域
+|域 ID=domain.longitudinal-cohort-retention-followup-infrastructure
+|C 层级=C4：可能性转换通道层
+|研究对象=Longitudinal Cohort Retention Followup Infrastructure
+|持续性作用=主要把科学、医疗、数据、制度或技术从潜在能力转成真实可用路径。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c4-conversion-channel/longitudinal-cohort-retention-followup-infrastructure
+}}
+
+'''Longitudinal Cohort Retention Followup Infrastructure'''是 Human Infra 在“路径转换接口”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+主要把科学、医疗、数据、制度或技术从潜在能力转成真实可用路径。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C4“可能性转换通道层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>longitudinal-cohort-retention-followup-infrastructure/</code> 研究纵向队列、长期随访、参与者留存、失访、数据链接、生命历程观测和队列治理，如何支撑寿命、健康寿命和主体持续性模型。
+
+<blockquote>核心问题：有效永生不是短期指标问题，而是生命路径问题。若没有长期队列、稳定随访和失访治理，就无法判断因素、技术和干预如何改变风险函数、生存曲线和未来选择权。
+</blockquote>
+== 先验位置 ==
+
+<pre>有效永生 / 主体持续性最大化
+  -> 需要理解生命路径随时间如何变化
+  -> 生命路径需要纵向队列、重复观测、随访、数据链接和失访控制
+  -> 失访、选择偏差、随访断裂和队列老化会扭曲风险估计
+  -> 因此纵向队列留存与随访基础设施是寿命模型的数据脊梁</pre>
+== 关注对象 ==
+
+* 纵向队列、生命历程研究、随访设计、参与者留存、失访、再联系和数据链接。
+* 队列代表性、选择偏差、幸存者偏差、迁移、死亡链接、健康记录链接和长期数据治理。
+* 寿命、健康寿命、功能状态、暴露变化、干预采用、社会条件和未来选择权的长期观测。
+* 与 <code>survival-analysis-healthspan-risk-modeling/</code> 的边界：生存分析域关注统计模型；本域关注支撑模型的长期观察基础设施。
+* 与 <code>data-quality-missingness-representativeness/</code> 的边界：数据质量域关注一般缺失和代表性；本域聚焦队列随访、留存和生命历程观测。
+
+<span id="human-infra-模型链路"></span>
+== Human Infra 模型链路 ==
+
+<pre>纵向队列留存与随访基础设施 T
+  -> 改变随访频率、留存率、失访机制、数据链接、事件确认和代表性变量 X
+  -> 改变生命路径数据、暴露变化和结局观测的系统状态 S
+  -> 改变选择偏差、幸存者偏差、失访偏差和错误风险估计 λ(t)
+  -> 影响寿命模型、健康寿命模型、干预评估和未来选择权预测可信度</pre>
+== 非目标 ==
+
+* 不提供重新识别参与者、绕过同意、滥用数据链接、压迫参与者留存或规避伦理审查策略。
+* 不把单个队列结果写成所有人群通用结论。
+* 不替代统计建模、IRB、数据治理或参与者社区参与。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* UK Biobank: https://www.ukbiobank.ac.uk/
+* NIH All of Us Research Program: https://www.researchallofus.org/
+* Framingham Heart Study: https://www.framinghamheartstudy.org/
+* CDC National Health and Nutrition Examination Survey: https://www.cdc.gov/nchs/nhanes/
+* NIA Health and Retirement Study: https://hrs.isr.umich.edu/
+
+== 下一步 ==
+
+* 建立队列基础设施变量表：招募、留存、随访频率、失访机制、事件确认、数据链接和代表性。
+* 与 <code>survival-analysis-healthspan-risk-modeling/</code>、<code>causal-inference-target-trial-emulation/</code>、<code>research-participant-consent-community-engagement/</code> 和 <code>registries-real-world-data-governance/</code> 建立接口。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C4研究域|C4研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c4-conversion-channel/longitudinal-cohort-retention-followup-infrastructure/README.md Human Infra 仓库：domains/c4-conversion-channel/longitudinal-cohort-retention-followup-infrastructure/README.md]
+
+[[Category:C4研究域]]

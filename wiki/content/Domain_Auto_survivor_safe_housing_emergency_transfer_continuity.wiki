@@ -1,0 +1,87 @@
+{{研究域
+|域 ID=domain.survivor-safe-housing-emergency-transfer-continuity
+|C 层级=C5：可能性生态承载层
+|研究对象=survivor-safe-housing-emergency-transfer-continuity
+|持续性作用=关键词显示该域主要承载能源、水、食物、住房、治理、经济、通信、灾害或基础设施环境。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c5-ecological-substrate/survivor-safe-housing-emergency-transfer-continuity
+}}
+
+'''survivor-safe-housing-emergency-transfer-continuity'''是 Human Infra 在“外部生态承载”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要承载能源、水、食物、住房、治理、经济、通信、灾害或基础设施环境。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C5“可能性生态承载层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>survivor-safe-housing-emergency-transfer-continuity</code> 研究家庭暴力、性暴力、dating violence、stalking、人身安全威胁和犯罪伤害后，安全住所、confidentiality、emergency transfer、VAWA housing protections、transitional housing 和 shelter referral 如何影响主体逃离危险、保持住房、连接服务和恢复行动。
+
+<span id="scope"></span>
+== Scope ==
+
+* VAWA housing protections、emergency transfer、confidentiality、lease bifurcation、survivor housing stability、transitional housing 和 shelter referral。
+* 地址保密、学校/工作/医疗通信风险、儿童与宠物照护、残障可达、语言可达、移民身份风险。
+* 与 homelessness、灾害避难、家庭法、保护令和受害者服务交叉的公开制度资料。
+
+<span id="continuity-logic"></span>
+== Continuity Logic ==
+
+<pre>安全威胁与住所暴露重叠
+-> 留在原住所可能危险，离开原住所又可能造成无家可归和服务断裂
+-> emergency transfer、保密、住房保护和 transitional housing 成为恢复接口
+-> 住房链失败会把安全事件放大为长期居住、工作、学校和照护断裂</pre>
+<span id="source-spine"></span>
+== Source Spine ==
+
+* HUD VAWA housing protections and emergency transfer plan materials.
+* DOJ OVW transitional housing and victim services materials.
+* OVC victim assistance resources.
+* Homelessness and housing stability public materials where survivor housing is in scope.
+
+<span id="evidence-boundary"></span>
+== Evidence Boundary ==
+
+本域只整理公开 survivor housing、VAWA housing protections、emergency transfer 和 transitional housing 资料。
+
+Do not include:
+
+* 个案逃离路线、庇护所定位、转移申请策略、租约法律建议、保护令策略或安全计划。
+* 可识别住址、庇护所、受害者、儿童、服务人员、施暴者或实时移动的信息。
+* 规避资格、骗取住房服务、骚扰房东/机构、跟踪、定位或报复方法。
+
+<span id="upstream--downstream"></span>
+== Upstream / Downstream ==
+
+* Upstream: <code>domestic-violence-coercive-control-safety-continuity/</code>, <code>stalking-harassment-protection-order-continuity/</code>, <code>housing-built-environment-stability/</code>.
+* Downstream: <code>homelessness-unsheltered-health-continuity/</code>, <code>address-residency-mail-service-continuity/</code>, <code>family-law-custody-child-support-continuity/</code>, <code>pet-disaster-evacuation-sheltering-continuity/</code>.
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C5研究域|C5研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c5-ecological-substrate/survivor-safe-housing-emergency-transfer-continuity/README.md Human Infra 仓库：domains/c5-ecological-substrate/survivor-safe-housing-emergency-transfer-continuity/README.md]
+
+[[Category:C5研究域]]

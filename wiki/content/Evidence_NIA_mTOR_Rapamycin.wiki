@@ -1,0 +1,16 @@
+{{证据来源
+|来源 ID=evidence.nia.mtor-rapamycin
+|来源类型=美国国家老龄研究所项目综述
+|完整引文=National Institute on Aging. January 2021 Director's Status Report: mTOR and rapamycin workshop.
+|URL 或 DOI=https://www.nia.nih.gov/about/naca/january-2021-directors-status-report
+|支持范围=mTOR在生长与能量分配中的作用、模型生物寿命信号和人体证据缺口
+|不支持的推论=不支持健康人自行使用雷帕霉素或其已被证明延长人体寿命
+|审查状态=已核对NIA原始页面
+|访问日期=2026-07-25
+}}
+
+== 支持范围 ==
+NIA指出雷帕霉素可延长多类模型生物寿命，但人体衰老适应证的临床经验有限。
+
+== 不支持的推论 ==
+移植和肿瘤用药经验不能直接确定健康人长期低剂量方案的净收益。

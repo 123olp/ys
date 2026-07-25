@@ -1,0 +1,81 @@
+{{研究域
+|域 ID=domain.pregnant-parenting-youth-family-support-continuity
+|C 层级=C6：局部可能性解锁层
+|研究对象=Pregnant Parenting Youth Family Support Continuity
+|持续性作用=未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c6-local-unlocking/pregnant-parenting-youth-family-support-continuity
+}}
+
+'''Pregnant Parenting Youth Family Support Continuity'''是 Human Infra 在“局部阻塞解除”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C6“局部可能性解锁层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+怀孕与育儿青年家庭支持连续性，关注青少年或过渡年龄青年在怀孕、分娩、育儿、学校、住房、医保、托育、家庭关系、收入和亲职支持之间如何保持学习、健康、照护和未来选择权。
+
+== 对象 ==
+
+* Pregnant and parenting youth
+* School continuity and Title IX boundary
+* Prenatal / postpartum service linkage
+* Childcare and early childhood supports
+* Housing and family support
+* Income and nutrition benefits linkage
+* Fatherhood / co-parenting support
+* Confidentiality and consent boundaries
+
+<span id="human-infra-价值"></span>
+== Human Infra 价值 ==
+
+怀孕和育儿会把青年主体的身体、时间、注意力、收入、学习和关系资源重新分配。该域把“青年能否同时继续成长和照护下一代”建模为学校连续、医疗转接、托育、住房、营养、亲职支持和隐私边界的基础设施。
+
+== 边界 ==
+
+* 不提供怀孕、分娩、育儿、亲子关系、学校权利、福利、托育、住房、医疗、心理、法律或家庭冲突建议。
+* 不判断个人怀孕状态、亲职能力、儿童安全、家庭风险、学校义务或服务资格。
+* 不替代医疗、学校、儿童福利、托育、法律援助、公共福利或危机服务。
+
+== 上游与下游 ==
+
+* 上游：<code>contraception-family-planning-access-continuity/</code>、<code>pregnancy-parental-work-continuity/</code>、<code>maternal-newborn-child-development/</code>。
+* 下游：<code>child-care-availability-affordability-continuity/</code>、<code>wic-benefit-redemption-infant-maternal-nutrition-continuity/</code>、<code>head-start-early-head-start-family-support-continuity/</code>。
+
+== 初始资料线索 ==
+
+* Youth.gov pregnant and parenting young people resources.
+* HHS / ACF family and youth service materials.
+* U.S. Department of Education Title IX pregnancy and parenting student guidance.
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C6研究域|C6研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c6-local-unlocking/pregnant-parenting-youth-family-support-continuity/README.md Human Infra 仓库：domains/c6-local-unlocking/pregnant-parenting-youth-family-support-continuity/README.md]
+
+[[Category:C6研究域]]

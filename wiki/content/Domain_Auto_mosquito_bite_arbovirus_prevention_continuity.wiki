@@ -1,0 +1,88 @@
+{{研究域
+|域 ID=domain.mosquito-bite-arbovirus-prevention-continuity
+|C 层级=C6：局部可能性解锁层
+|研究对象=Mosquito Bite Arbovirus Prevention Continuity
+|持续性作用=未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c6-local-unlocking/mosquito-bite-arbovirus-prevention-continuity
+}}
+
+'''Mosquito Bite Arbovirus Prevention Continuity'''是 Human Infra 在“局部阻塞解除”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C6“局部可能性解锁层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>mosquito-bite-arbovirus-prevention-continuity</code> 研究蚊虫叮咬、蚊媒病毒、居住/户外暴露和社区防蚊行动如何影响主体持续性。
+
+<blockquote>核心问题：蚊媒风险不是“户外不舒服”的小问题；当登革热、西尼罗病毒、寨卡、基孔肯雅热等风险进入居住、旅行、工作和孕产场景时，主体行动窗口会被环境暴露重新约束。
+</blockquote>
+== 先验位置 ==
+
+<pre>有效永生 / 主体持续性最大化
+  -> 主体必须在可居住、可移动、可工作和可休息的环境中持续行动
+  -> 蚊虫叮咬和蚊媒病毒会把普通空间转化为感染暴露空间
+  -> 防蚊、积水治理、屏障、警报和公共卫生控制构成行动前提
+  -> 若该前提失败，旅行、户外劳动、睡眠、孕产安全和社区活动都会被压缩</pre>
+== 关注对象 ==
+
+* 蚊虫叮咬暴露、蚊媒病毒、户外活动、旅行、孕产风险、居住环境和积水治理。
+* 驱避、防护衣物、门窗屏障、社区灭蚊、监测、风险沟通和公共卫生行动。
+* 与 <code>vector-borne-disease-environmental-control/</code> 的边界：上位域关注病媒传播环境控制；本域关注蚊虫叮咬到主体行动约束的执行层。
+
+<span id="human-infra-链路"></span>
+== Human Infra 链路 ==
+
+<pre>蚊媒暴露被识别和控制
+  -> 叮咬、感染和恐惧性行动回避下降
+  -> 居住、睡眠、户外工作、旅行和孕产计划更稳定
+  -> 有效时间、健康寿命和行动选择权被保护</pre>
+== 非目标 ==
+
+* 不提供个体诊断、治疗、旅行医学、孕产医学、驱虫产品推荐、农药配方或现场灭蚊操作。
+* 不替代 CDC、EPA、地方公共卫生、病媒控制、旅行医学或医疗服务。
+* 不把蚊媒地图、病例、气候数据或 AI 输出写成个体感染概率、旅行安全结论或资产价值判断。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* CDC Mosquitoes: https://www.cdc.gov/mosquitoes/
+* CDC Prevent Mosquito Bites: https://www.cdc.gov/mosquitoes/prevention/index.html
+* EPA Mosquito Control: https://www.epa.gov/mosquitocontrol
+
+== 下一步 ==
+
+* 建立 <code>mosquito exposure -&gt; bite prevention -&gt; arbovirus risk -&gt; activity constraint -&gt; continuity cost</code> 变量表。
+* 区分居住、旅行、户外劳动、学校活动、孕产风险和灾后积水场景。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C6研究域|C6研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c6-local-unlocking/mosquito-bite-arbovirus-prevention-continuity/README.md Human Infra 仓库：domains/c6-local-unlocking/mosquito-bite-arbovirus-prevention-continuity/README.md]
+
+[[Category:C6研究域]]

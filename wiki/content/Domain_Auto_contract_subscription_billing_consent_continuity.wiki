@@ -1,0 +1,88 @@
+{{研究域
+|域 ID=domain.contract-subscription-billing-consent-continuity
+|C 层级=C6：局部可能性解锁层
+|研究对象=合同、订阅、账单与持续同意连续性
+|持续性作用=未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c6-local-unlocking/contract-subscription-billing-consent-continuity
+}}
+
+'''合同、订阅、账单与持续同意连续性'''是 Human Infra 在“局部阻塞解除”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C6“局部可能性解锁层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+本域研究合同、服务条款、订阅、自动续费、账单、取消、争议和持续同意如何影响主体时间、金钱和注意力预算。它关注的是交易关系如何长期消耗或支撑主体资源，而不是个人合同、消费、退款或法律建议。
+
+== 研究对象 ==
+
+* 合同、服务条款、订阅、自动续费、trial、negative option 和取消机制。
+* 账单、自动扣款、费用通知、价格变更、服务中断、争议和退款机制。
+* 持续同意、授权撤回、用户可理解性、暗黑模式和行政摩擦。
+* 合同记录与银行账户、信用报告、住房、公用事业、通信、医疗、保险和数字服务的关系。
+
+== 价值链路 ==
+
+<pre>主体需要把交易关系保持在可理解、可控制、可退出状态
+  -> 合同、订阅和账单把服务接入、资金流和持续同意绑定在一起
+  -> 清晰通知、可取消性、争议机制和账单记录降低持续资源泄漏
+  -> 隐性续费、暗黑模式、账单错误、取消摩擦或同意失效会吞噬时间和资金
+  -> 合同账单连续性把交易关系从被动消耗转化为可审查的资源编排</pre>
+== 关键问题 ==
+
+* 订阅和账单摩擦如何通过小额高频消耗改变长期资源预算？
+* 持续同意、价格变更、取消入口和通知可理解性如何影响主体控制权？
+* 银行账户、信用报告、合同记录和消费者投诉如何共同构成交易纠错系统？
+* 哪些服务合同是主体持续性关键入口，如通信、公用事业、保险、医疗、云服务和教育平台？
+
+== 上游与下游 ==
+
+* 上游：<code>banking-deposit-account-access-continuity/</code>、<code>financial-inclusion-payment-systems/</code>、<code>public-service-design-accessibility/</code>、<code>information-integrity-trust/</code>。
+* 下游：<code>utility-affordability-shutoff-protection-continuity/</code>、<code>telecommunications-network-resilience-continuity/</code>、<code>digital-identity-security/</code>、<code>fraud-scams-consumer-protection/</code>、<code>administrative-burden-procedural-friction/</code>。
+
+== 非目标 ==
+
+* 不提供个人合同审查、订阅取消、退款、投诉、诉讼、信用卡争议、服务选择、商业谈判或法律建议。
+* 不判断个人合同是否有效、费用是否应付、是否可退款、是否欺诈或是否应取消。
+* 不协助规避付款、滥用退款、伪造同意、绕过服务条款、批量套利或操控商家系统。
+
+== 初始资料入口 ==
+
+* FTC: Negative option and subscription practices materials
+* FTC: Consumer advice on subscriptions and unwanted charges
+* CFPB: Consumer complaints and payments materials
+* FCC: Consumer billing and communications service materials
+* State consumer protection agencies and attorneys general official materials
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C6研究域|C6研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c6-local-unlocking/contract-subscription-billing-consent-continuity/README.md Human Infra 仓库：domains/c6-local-unlocking/contract-subscription-billing-consent-continuity/README.md]
+
+[[Category:C6研究域]]

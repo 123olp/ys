@@ -1,0 +1,84 @@
+{{研究域
+|域 ID=domain.household-water-treatment-filter-maintenance-continuity
+|C 层级=C5：可能性生态承载层
+|研究对象=Household Water Treatment Filter Maintenance Continuity
+|持续性作用=关键词显示该域主要承载能源、水、食物、住房、治理、经济、通信、灾害或基础设施环境。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c5-ecological-substrate/household-water-treatment-filter-maintenance-continuity
+}}
+
+'''Household Water Treatment Filter Maintenance Continuity'''是 Human Infra 在“外部生态承载”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要承载能源、水、食物、住房、治理、经济、通信、灾害或基础设施环境。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C5“可能性生态承载层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>household-water-treatment-filter-maintenance-continuity</code> 研究家庭滤水器、点用/点入处理设备、滤芯更换、认证声明、维护失败和污染物降低边界如何影响饮水、烹饪和信任。
+
+<blockquote>核心问题：家庭水处理不是一次性安装物，而是需要认证匹配、滤芯更换和维护纪律的运行系统；维护失败时，安全感可能超过真实保护能力。
+</blockquote>
+== 关注对象 ==
+
+* 家庭滤水器、pitcher、龙头式、台下式、全屋式、反渗透、UV、滤芯更换和认证声明。
+* 铅、氯味、微生物、沉积物等不同目标污染物与设备声明的错配。
+* 安装维护、滤芯可得、费用、提醒、使用量、旁路、老年/租房/灾后家庭和低收入负担。
+* 与私人井、铅铜管线、公共饮水、紧急水处理和消费者产品信任的接口。
+
+<span id="human-infra-链路"></span>
+== Human Infra 链路 ==
+
+<pre>家庭水处理维护连续
+  -> 家庭端水质改善能力与目标污染物匹配
+  -> 滤芯、认证、维护和使用记录更可靠
+  -> 饮水、烹饪、婴幼儿照护和风险沟通摩擦下降
+  -> 主体健康风险、时间成本和信任误差下降</pre>
+== 非目标 ==
+
+* 不提供滤水器购买推荐、安装教程、滤芯选择、饮水许可、水质结果判断或污染物处理个案建议。
+* 不替代 EPA、CDC、NSF/ANSI 认证体系、州/地方卫生部门、水处理专业人员或水务通知。
+* 不把过滤器当成所有污染物的通用解决方案；本域只处理家庭水处理的运行连续性和边界。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* CDC Home Water Treatment Systems: https://www.cdc.gov/drinking-water/about/about-home-water-treatment-systems.html
+* CDC Choosing Home Water Filters: https://www.cdc.gov/drinking-water/prevention/about-choosing-home-water-filters.html
+* EPA Certified Filters to Reduce Lead: https://www.epa.gov/water-research/consumer-tool-identifying-point-use-and-pitcher-filters-certified-reduce-lead
+
+== 下一步 ==
+
+* 建立 <code>filter claim -&gt; contaminant target -&gt; maintenance state -&gt; water task -&gt; continuity outcome</code> 变量表。
+* 区分公共水、私人井、铅风险、灾后、租房和婴幼儿家庭场景。
+* 与 <code>private-well-water-testing-treatment-continuity</code>、<code>lead-service-line-lead-copper-drinking-water-continuity</code> 和 <code>emergency-food-water-storage-treatment-continuity</code> 建立边界。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C5研究域|C5研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c5-ecological-substrate/household-water-treatment-filter-maintenance-continuity/README.md Human Infra 仓库：domains/c5-ecological-substrate/household-water-treatment-filter-maintenance-continuity/README.md]
+
+[[Category:C5研究域]]

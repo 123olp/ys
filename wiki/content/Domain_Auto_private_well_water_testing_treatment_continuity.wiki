@@ -1,0 +1,84 @@
+{{研究域
+|域 ID=domain.private-well-water-testing-treatment-continuity
+|C 层级=C5：可能性生态承载层
+|研究对象=Private Well Water Testing Treatment Continuity
+|持续性作用=关键词显示该域主要承载能源、水、食物、住房、治理、经济、通信、灾害或基础设施环境。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c5-ecological-substrate/private-well-water-testing-treatment-continuity
+}}
+
+'''Private Well Water Testing Treatment Continuity'''是 Human Infra 在“外部生态承载”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要承载能源、水、食物、住房、治理、经济、通信、灾害或基础设施环境。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C5“可能性生态承载层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>private-well-water-testing-treatment-continuity</code> 研究私人井水的检测、污染识别、处理、维护、记录和替代水源如何影响家庭饮水、烹饪、清洁、婴幼儿照护和灾害恢复。
+
+<blockquote>核心问题：私人井不是公共水务系统的自然延伸；当检测、处理或维护失败时，饮水安全从公共基础设施问题转成家庭端的持续执行负担。
+</blockquote>
+== 关注对象 ==
+
+* 私人井、地下水、水质检测、细菌/硝酸盐/砷等污染物、井口保护、处理设备和检测记录。
+* 饮水、烹饪、婴幼儿配方、刷牙、清洁、慢病脆弱人群和灾后水源恢复。
+* 井水责任主体、检测频率、实验室可达、结果理解、处理维护、备用水和搬迁/租房信息不对称。
+* 与公共饮水、家庭水处理、食品安全、灾害应急水和住房可持续性的接口。
+
+<span id="human-infra-链路"></span>
+== Human Infra 链路 ==
+
+<pre>私人井水检测与处理连续
+  -> 家庭端饮水风险更早可见并可治理
+  -> 饮水、烹饪、清洁和婴幼儿照护更可靠
+  -> 感染、毒性暴露、灾后断水和信息不对称风险下降
+  -> 健康寿命、有效时间和居住稳定性增强</pre>
+== 非目标 ==
+
+* 不提供水质结果判断、饮水许可、井施工、消毒步骤、药剂配比、设备选购或检测频率个案建议。
+* 不替代 EPA、CDC、州/地方卫生部门、认证实验室、持证井承包商、水处理专业人员或房屋检查。
+* 不把私人井问题合并进公共水务系统；本域只处理家庭自有水源的检测、处理、维护和风险转交。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* EPA Private Drinking Water Wells: https://www.epa.gov/privatewells
+* CDC Guidelines for Testing Well Water: https://www.cdc.gov/drinking-water/safety/guidelines-for-testing-well-water.html
+* EPA Protect Your Home's Water: https://www.epa.gov/privatewells/protect-your-homes-water
+
+== 下一步 ==
+
+* 建立 <code>well state -&gt; test/treatment status -&gt; household water task -&gt; continuity outcome</code> 变量表。
+* 区分常规检测、灾后检测、婴幼儿家庭、租赁住房、低收入维护负担和农村医疗脆弱性场景。
+* 与 <code>water-sanitation-hygiene-continuity</code>、<code>public-drinking-water-hydration-access-continuity</code> 和 <code>emergency-food-water-storage-treatment-continuity</code> 建立边界。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C5研究域|C5研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c5-ecological-substrate/private-well-water-testing-treatment-continuity/README.md Human Infra 仓库：domains/c5-ecological-substrate/private-well-water-testing-treatment-continuity/README.md]
+
+[[Category:C5研究域]]

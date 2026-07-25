@@ -1,0 +1,80 @@
+{{研究域
+|域 ID=domain.representative-payee-benefits-management-continuity
+|C 层级=C4：可能性转换通道层
+|研究对象=Representative Payee Benefits Management Continuity
+|持续性作用=关键词显示该域主要处理研究、数据、模型、服务入口、身份记录、转化或治理接口。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c4-conversion-channel/representative-payee-benefits-management-continuity
+}}
+
+'''Representative Payee Benefits Management Continuity'''是 Human Infra 在“路径转换接口”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要处理研究、数据、模型、服务入口、身份记录、转化或治理接口。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C4“可能性转换通道层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+Representative Payee Benefits Management Continuity 关注 Social Security representative payee、VA fiduciary、公共福利代收代管、记录责任和防滥用机制如何在主体无法管理福利时保持收入和基本生活连续性。
+
+== 对象 ==
+
+* Representative payee、VA fiduciary、benefits management、收入支付、账单、住房、食物、医疗和照护费用。
+* 主体无法管理福利、认知下降、严重疾病、儿童、残障、无家可归或机构照护中的收入断点。
+* 报告义务、资金用途、记录保存、滥用、监督、变更代理和受益人保护。
+
+<span id="human-infra-价值"></span>
+== Human Infra 价值 ==
+
+<pre>主体持续性需要公共收入在能力下降时仍用于主体本身
+-> 福利支付常常承担住房、食物、药物和照护的底线输入
+-> 若主体无法管理资金，收入可能被浪费、挪用、断供或被他人控制
+-> 代表收款人和受托项目把代管、用途限制、报告和监督纳入制度
+-> 福利更可能稳定转化为主体基本生活和照护连续性</pre>
+== 边界 ==
+
+* 本域不提供福利申请、代表收款人申请、资格判断、支付金额、申诉、账户设置、资金使用或个案举报建议。
+* 不判断某人是否需要代表收款人、某代理是否合格或某支出是否合规。
+* 不替代 SSA、VA、福利机构、律师、保护服务、法院或个案管理人员。
+* 只整理公开资料、角色义务、监督结构、风险边界和禁止用途。
+
+== 上游与下游 ==
+
+* 上游：<code>social-protection-benefits-delivery/</code>、<code>financial-inclusion-payment-systems/</code>、<code>disability-services-independent-living/</code>、<code>homelessness-unsheltered-health-continuity/</code>。
+* 下游：<code>financial-fiduciary-power-of-attorney-continuity/</code>、<code>elder-justice-adult-protective-services/</code>、<code>community-resource-navigation/</code>。
+
+== 初始资料线索 ==
+
+* Social Security Administration Representative Payee Program.
+* Social Security Administration Advance Designation.
+* VA Fiduciary Program public materials.
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C4研究域|C4研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c4-conversion-channel/representative-payee-benefits-management-continuity/README.md Human Infra 仓库：domains/c4-conversion-channel/representative-payee-benefits-management-continuity/README.md]
+
+[[Category:C4研究域]]

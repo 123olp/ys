@@ -1,0 +1,92 @@
+{{研究域
+|域 ID=domain.ai-agency-safety
+|C 层级=C3：可能性生成引擎层
+|研究对象=AI Agency Safety
+|持续性作用=主要放大主体学习、认知、工具使用和生成新路径的能力。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c3-generation-engine/ai-agency-safety
+}}
+
+'''AI Agency Safety'''是 Human Infra 在“主体能力生成”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+主要放大主体学习、认知、工具使用和生成新路径的能力。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C3“可能性生成引擎层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+AI Agency Safety 负责整理 AI 代理、工具调用、授权、监督、审计和失效隔离如何影响主体持续性。
+
+核心问题：
+
+<blockquote>AI 会放大主体能力，但当 AI 代表主体行动时，也可能越权、误导、泄露、替代或制造不可逆后果。
+</blockquote>
+== 先验位置 ==
+
+<pre>有效永生 / 主体持续性最大化
+  -> 主体需要用 AI 扩展认知、执行、研究和协作能力
+  -> AI 代理会逐步获得工具、权限、记忆和外部行动接口
+  -> 若代理不可控，主体能力放大会转化为自主性、隐私和安全风险
+  -> 因此 AI 代理安全是认知增强进入长期行动系统的治理域</pre>
+== 关注对象 ==
+
+* AI 代理、工具调用、权限分层、审批、回滚、审计和人类监督。
+* 提示注入、数据泄露、幻觉、越权执行、目标漂移和不可逆行动。
+* 人机协作、任务委托、长期记忆、代理身份、责任归属和失败隔离。
+* AI 风险治理、生成式 AI 风险、评估、监测、事故响应和持续改进。
+
+<span id="human-infra-模型链路"></span>
+== Human Infra 模型链路 ==
+
+<pre>AI 代理安全措施 T
+  -> 改变授权边界、监督质量、审计能力和失效隔离 X
+  -> 改变主体使用 AI 扩展行动的系统状态 S
+  -> 降低代理越权、误导、泄露和不可逆执行风险 λ(t)
+  -> 提高单位时间行动质量并保护主体自主性</pre>
+== 非目标 ==
+
+* 不提供越狱、提示注入攻击、恶意自动化、数据窃取或规避安全控制的方法。
+* 不把 AI 代理当成主体替代物；Human Infra 关注主体能力增强和可撤销委托。
+* 不输出个体医疗、法律、金融或安全决策的自动执行建议。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* NIST AI Risk Management Framework: https://www.nist.gov/itl/ai-risk-management-framework
+* NIST AI RMF Generative AI Profile: https://www.nist.gov/itl/ai-risk-management-framework/ai-risk-management-framework-generative-ai-profile
+* CISA AI resources: https://www.cisa.gov/ai
+
+== 下一步 ==
+
+# 建立 AI 代理权限与失败模式表：observe、suggest、draft、act、commit、recover。
+# 与 <code>cognitive-augmentation/</code>、<code>digital-identity-security/</code>、<code>governance-rights/</code> 建立代理授权和主体权利边界。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C3研究域|C3研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c3-generation-engine/ai-agency-safety/README.md Human Infra 仓库：domains/c3-generation-engine/ai-agency-safety/README.md]
+
+[[Category:C3研究域]]

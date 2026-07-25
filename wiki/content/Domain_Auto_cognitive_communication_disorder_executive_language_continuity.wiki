@@ -1,0 +1,87 @@
+{{研究域
+|域 ID=domain.cognitive-communication-disorder-executive-language-continuity
+|C 层级=C3：可能性生成引擎层
+|研究对象=Cognitive Communication Disorder Executive Language Continuity
+|持续性作用=关键词显示该域主要增强认知、学习、工具、AI、技能或沟通能力。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c3-generation-engine/cognitive-communication-disorder-executive-language-continuity
+}}
+
+'''Cognitive Communication Disorder Executive Language Continuity'''是 Human Infra 在“主体能力生成”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要增强认知、学习、工具、AI、技能或沟通能力。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C3“可能性生成引擎层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+Cognitive communication disorder executive language continuity studies attention, memory, organization, pragmatics, and executive control in communication as constraints on work, care planning, learning, and social participation.
+
+核心问题：
+
+<blockquote>有些沟通失败不是词汇或发音单点坏掉，而是注意、记忆、组织、推理和执行控制不能稳定支持会话；这会让主体“能说”但难以持续完成复杂沟通任务。
+</blockquote>
+== 先验位置 ==
+
+<pre>主体持续性最大化
+  -> 主体必须能在时间展开的对话中维持目标、记忆、顺序和语境
+  -> 注意、记忆、执行功能和推理负荷会影响沟通质量
+  -> 医疗计划、工作协作、学习和关系协商容易断裂
+  -> 因而认知沟通障碍是认知执行资源与语言互动之间的交叉失效模式</pre>
+== 关注对象 ==
+
+* TBI、卒中、痴呆、脑雾或神经疾病相关认知沟通问题、组织表达、话题维持和信息管理。
+* 照护计划、工作协作、教育、会议、家庭沟通和外部记忆支持。
+* 与 <code>attention-executive-control/</code> 的关系：执行控制域关注通用任务资源；本域关注沟通中的执行语言。
+* 与 <code>personal-knowledge-management-cognitive-offloading/</code> 的关系：知识管理域关注外部记忆；本域关注沟通任务支持。
+
+<span id="human-infra-模型链路"></span>
+== Human Infra 模型链路 ==
+
+<pre>识别 / 外部记忆 / 结构化沟通 / 环境支持 T
+  -> 改变注意、记忆、组织、推理和话题维持变量 X
+  -> 改变会议、照护计划、学习、家庭协作和服务导航状态 S
+  -> 改变计划误解、执行失败、关系冲突和机会损失风险 λ(t)
+  -> 影响主体复杂沟通能力、任务执行和未来选择权</pre>
+== 非目标 ==
+
+* 不提供认知沟通障碍诊断、神经病因判断、认知训练、康复计划、工作许可或能力评估。
+* 不根据对话、写作、记忆表现或 AI 记录判断痴呆、TBI、脑雾或法律能力。
+* 不替代神经、言语语言治疗、心理、职业治疗、康复、法律或急诊服务。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* ASHA cognitive-communication disorder practice materials。
+* NIDCD and neurorehabilitation communication resources。
+* TBI, stroke, dementia, and cognitive offloading literature as research context。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C3研究域|C3研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c3-generation-engine/cognitive-communication-disorder-executive-language-continuity/README.md Human Infra 仓库：domains/c3-generation-engine/cognitive-communication-disorder-executive-language-continuity/README.md]
+
+[[Category:C3研究域]]

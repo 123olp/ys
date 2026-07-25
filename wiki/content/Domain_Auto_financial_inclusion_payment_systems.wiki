@@ -1,0 +1,93 @@
+{{研究域
+|域 ID=domain.financial-inclusion-payment-systems
+|C 层级=C5：可能性生态承载层
+|研究对象=Financial Inclusion Payment Systems
+|持续性作用=主要提供主体展开未来所需的基础环境、资源、治理或基础设施。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c5-ecological-substrate/financial-inclusion-payment-systems
+}}
+
+'''Financial Inclusion Payment Systems'''是 Human Infra 在“外部生态承载”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+主要提供主体展开未来所需的基础环境、资源、治理或基础设施。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C5“可能性生态承载层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>financial-inclusion-payment-systems/</code> 研究账户、支付、汇款、数字金融服务、支付系统、消费者金融数据和金融接入如何作为主体资源流动的基础设施。
+
+<blockquote>核心问题：资源不是抽象存在，而是要通过账户、支付、转账、身份、费用、信用记录和消费者保护流动；支付入口失败会让主体无法接收收入、福利、救济、医疗支付和日常服务。
+</blockquote>
+== 先验位置 ==
+
+<pre>有效永生 / 主体持续性最大化
+  -> 主体必须持续接收收入、福利、救济、汇款、支付和交易能力
+  -> 这些资源依赖账户、支付系统、数字金融服务、消费者保护和身份接口
+  -> 金融排斥、支付失败、费用过高、欺诈和消费者保护缺失会截断资源流
+  -> 因此金融包容与支付系统是主体持续性的资源流通域</pre>
+== 关注对象 ==
+
+* 银行账户、无银行账户/弱银行账户、支付系统、数字金融服务、汇款、消费者金融保护和支付统计。
+* 支付失败、账户可及、费用、身份认证、欺诈、投诉、信用信息和福利/救济支付通道。
+* 与 <code>financial-resilience-access/</code> 的边界：本域关注金融入口与支付系统；财务韧性关注家庭缓冲、债务和冲击承受能力。
+
+<span id="human-infra-模型链路"></span>
+== Human Infra 模型链路 ==
+
+<pre>金融包容与支付系统 T
+  -> 改变账户可及、支付成功、交易成本、汇款、欺诈保护和消费者救济变量 X
+  -> 改变主体资源流入、支出、储存和转移状态 S
+  -> 改变收入断线、福利断线、救济延误、费用损耗、欺诈损失和机会损失风险 λ(t)
+  -> 影响资源可及、恢复能力、有效时间和未来选择权</pre>
+== 非目标 ==
+
+* 不提供投资、借贷、信用、税务、保险、福利申请、银行选择、支付应用选择或个体财务建议。
+* 不支持欺诈、洗钱、制裁规避、支付规避、账号绕过、身份冒用或套利方法。
+* 不把金融接入写成消费主义或财富最大化；本域只处理资源流通基础设施。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* World Bank Financial Inclusion: https://www.worldbank.org/en/topic/financialinclusion
+* Global Findex Database: https://www.worldbank.org/en/publication/globalfindex
+* World Bank Digital Financial Services: https://www.worldbank.org/en/topic/financialinclusion/brief/digital-financial-services
+* World Bank Payment Systems: https://www.worldbank.org/en/topic/paymentsystemsremittances
+* FDIC National Survey of Unbanked and Underbanked Households: https://www.fdic.gov/analysis/household-survey
+* CFPB Consumer Complaint Database: https://www.consumerfinance.gov/data-research/consumer-complaints/
+* Federal Reserve Payments Study: https://www.federalreserve.gov/paymentsystems/fr-payments-study.htm
+
+== 下一步 ==
+
+* 建立变量表：账户覆盖、支付可达、交易费用、汇款、欺诈、投诉、身份接口和支付系统可靠性。
+* 与 <code>financial-resilience-access/</code>、<code>social-protection-benefits-delivery/</code>、<code>digital-identity-security/</code> 和 <code>disaster-recovery-relief-continuity/</code> 拆分接口。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C5研究域|C5研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c5-ecological-substrate/financial-inclusion-payment-systems/README.md Human Infra 仓库：domains/c5-ecological-substrate/financial-inclusion-payment-systems/README.md]
+
+[[Category:C5研究域]]

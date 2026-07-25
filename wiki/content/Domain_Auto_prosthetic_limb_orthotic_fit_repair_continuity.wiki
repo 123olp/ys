@@ -1,0 +1,83 @@
+{{研究域
+|域 ID=domain.prosthetic-limb-orthotic-fit-repair-continuity
+|C 层级=C6：局部可能性解锁层
+|研究对象=Prosthetic Limb Orthotic Fit Repair Continuity
+|持续性作用=未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c6-local-unlocking/prosthetic-limb-orthotic-fit-repair-continuity
+}}
+
+'''Prosthetic Limb Orthotic Fit Repair Continuity'''是 Human Infra 在“局部阻塞解除”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C6“局部可能性解锁层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>prosthetic-limb-orthotic-fit-repair-continuity</code> 研究假肢、矫形器、socket/接受腔、支具、衬垫、皮肤接口、维修、替换、成长/体重变化和支付等待如何影响移动、工作、疼痛、皮肤完整性和身份参与。
+
+<blockquote>核心问题：假肢与矫形器不是简单外部零件，而是身体-工具耦合界面；适配、皮肤、维修和替换失败会同时损伤行动能力、疼痛负担和主体身份。
+</blockquote>
+== 关注对象 ==
+
+* 上下肢假肢、矫形器、支具、socket、衬垫、悬吊系统、皮肤接口、维修、替换、再适配和成长变化。
+* 截肢后康复、先天肢体差异、神经肌肉疾病、脊柱/关节支撑和儿童成长场景。
+* 工作、学校、交通、运动、照护、皮肤风险、疼痛、疲劳和社会参与。
+* 与康复、DME/假肢矫形服务、保险支付、伤口/皮肤、行动和身份连续性的接口。
+
+<span id="human-infra-链路"></span>
+== Human Infra 链路 ==
+
+<pre>假肢矫形运行连续
+  -> 主体把身体残余功能与外部支撑结构稳定耦合
+  -> 不合适、皮肤损伤、疼痛、维修等待和替换断点下降
+  -> 移动、工作、学校、运动和社会参与更可持续
+  -> 身体自主、尊严、身份连续和未来选择权增强</pre>
+== 非目标 ==
+
+* 不提供假肢/矫形器处方、socket 调整、康复训练、皮肤处理、品牌推荐、维修步骤、保险申诉或个体覆盖判断。
+* 不替代假肢矫形师、康复医生、物理/作业治疗师、Medicare、MedlinePlus 或制造商说明。
+* 不把设备可得性与身体身份、疼痛、皮肤和社会参与割裂处理。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* Medicare Prosthetic Devices: https://www.medicare.gov/coverage/prosthetic-devices
+* MedlinePlus Artificial Limbs: https://medlineplus.gov/artificiallimbs.html
+
+== 下一步 ==
+
+* 建立 <code>prosthetic/orthotic state -&gt; fit/skin/repair/payment dependency -&gt; mobility/participation task -&gt; continuity outcome</code> 变量表。
+* 区分成人截肢、儿童成长、运动参与、工作要求、长期维护和灾害/旅行断点。
+* 与 <code>rehabilitation-functioning</code>、<code>musculoskeletal-integrity</code>、<code>skin-barrier-wound-healing</code> 和 <code>durable-medical-equipment-supplier-repair-continuity</code> 建立边界。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C6研究域|C6研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c6-local-unlocking/prosthetic-limb-orthotic-fit-repair-continuity/README.md Human Infra 仓库：domains/c6-local-unlocking/prosthetic-limb-orthotic-fit-repair-continuity/README.md]
+
+[[Category:C6研究域]]

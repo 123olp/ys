@@ -1,0 +1,87 @@
+{{研究域
+|域 ID=domain.dysarthria-speech-intelligibility-continuity
+|C 层级=C2：可能性源体维护层
+|研究对象=Dysarthria Speech Intelligibility Continuity
+|持续性作用=关键词显示该域主要维护身体、脑、器官、细胞、急性生命风险或衰老损伤控制。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c2-source-maintenance/dysarthria-speech-intelligibility-continuity
+}}
+
+'''Dysarthria Speech Intelligibility Continuity'''是 Human Infra 在“生命载体维护”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要维护身体、脑、器官、细胞、急性生命风险或衰老损伤控制。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C2“可能性源体维护层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+Dysarthria speech intelligibility continuity studies motor speech weakness, slowness, incoordination, and reduced intelligibility as constraints on interaction speed, safety signaling, and social participation.
+
+核心问题：
+
+<blockquote>构音障碍不是语言知识消失，而是把语言通过肌肉运动清晰输出的执行链受损；说得出但说不清，会让沟通被延迟、误解或替代。
+</blockquote>
+== 先验位置 ==
+
+<pre>主体持续性最大化
+  -> 主体必须能把意图转成可理解的声音输出
+  -> 构音、呼吸、发声、共鸣和韵律运动失调会降低清晰度
+  -> 求助、工作沟通、关系互动和身份表达成本上升
+  -> 因而构音障碍是语言意图到可听输出之间的运动执行失效模式</pre>
+== 关注对象 ==
+
+* 神经系统疾病、脑损伤或运动系统问题相关构音障碍、言语清晰度、疲劳和说话效率。
+* 交谈修复、环境噪声、听者负担、辅助沟通和身份尊严。
+* 与 <code>neuro-continuity/</code> 的关系：神经域关注上游病变；本域关注言语输出可懂度。
+* 与 <code>voice-disorders-phonation-communication-continuity/</code> 的关系：嗓音域关注发声质量；本域关注运动言语清晰度。
+
+<span id="human-infra-模型链路"></span>
+== Human Infra 模型链路 ==
+
+<pre>识别 / 言语支持 / 沟通策略 / 环境适配 T
+  -> 改变清晰度、说话速度、疲劳、听者负担和沟通修复变量 X
+  -> 改变求助、工作、医疗会谈和关系互动状态 S
+  -> 改变误解、被忽视、社会退缩和服务失败风险 λ(t)
+  -> 影响主体表达能力、社会参与和未来选择权</pre>
+== 非目标 ==
+
+* 不提供构音障碍诊断、病因判断、训练动作、治疗方案、设备处方或预后评估。
+* 不根据个人声音或言语样本判断神经疾病、药物副作用或急症。
+* 不替代神经、言语语言治疗、康复、耳鼻喉或急诊服务。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* ASHA dysarthria practice materials。
+* NIDCD speech and language disorder resources。
+* Neurologic motor speech disorder literature as research context。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C2研究域|C2研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c2-source-maintenance/dysarthria-speech-intelligibility-continuity/README.md Human Infra 仓库：domains/c2-source-maintenance/dysarthria-speech-intelligibility-continuity/README.md]
+
+[[Category:C2研究域]]

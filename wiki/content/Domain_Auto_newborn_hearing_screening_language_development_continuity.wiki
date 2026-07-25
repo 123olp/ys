@@ -1,0 +1,92 @@
+{{研究域
+|域 ID=domain.newborn-hearing-screening-language-development-continuity
+|C 层级=C2：可能性源体维护层
+|研究对象=Newborn Hearing Screening Language Development Continuity
+|持续性作用=关键词显示该域主要维护身体、脑、器官、细胞、急性生命风险或衰老损伤控制。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c2-source-maintenance/newborn-hearing-screening-language-development-continuity
+}}
+
+'''Newborn Hearing Screening Language Development Continuity'''是 Human Infra 在“生命载体维护”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要维护身体、脑、器官、细胞、急性生命风险或衰老损伤控制。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C2“可能性源体维护层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>newborn-hearing-screening-language-development-continuity/</code> 负责整理新生儿听力筛查、诊断确认、早期干预、语言发展和家庭服务连续性。
+
+核心问题：
+
+<blockquote>新生儿听力筛查的价值不是一张筛查表，而是“早发现-确认-干预-语言环境”这一整条链是否闭合；任何断点都会影响语言、关系和认知发展窗口。
+</blockquote>
+== 先验位置 ==
+
+<pre>主体持续性最大化
+  -> 主体语言、关系和学习能力依赖早期听觉输入与互动
+  -> 新生儿听力风险如果未被及时发现和确认，会错过早期干预窗口
+  -> 家庭服务、语言环境和随访衔接决定听力差异是否转化为发展损失
+  -> 因此新生儿听力筛查连续性是生命早期语言能力形成基础设施</pre>
+== 关注对象 ==
+
+* 新生儿听力筛查、转诊、诊断确认、早期干预、家庭支持和语言发展。
+* 儿科、听力学、公共卫生筛查项目、保险/服务可及和家庭随访。
+* 语言、认知、社交、亲子互动、学校准备和长期沟通参与。
+* 与 <code>otitis-media-child-hearing-development-continuity/</code> 的关系：本域关注出生后早期筛查和干预链。
+
+<span id="human-infra-模型链路"></span>
+== Human Infra 模型链路 ==
+
+<pre>新生儿筛查 / 诊断确认 / 早期干预 T
+  -> 改变发现时间、确认时间、家庭服务、语言输入和随访变量 X
+  -> 改变儿童语言、关系、学习准备和家庭照护状态 S
+  -> 改变发展机会丢失、服务延迟、家庭负担和长期沟通受限风险
+  -> 增加早期能力形成、教育参与和未来选择权</pre>
+== 非目标 ==
+
+* 不提供婴儿听力诊断、筛查结果解释、设备选择、干预方案、语言路线选择或家庭个体决策。
+* 不根据筛查记录判断儿童预后、学校安排、福利资格或医疗责任。
+* 不替代儿科、听力学、早期干预、言语语言治疗或家庭支持服务。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* NIDCD Your Baby's Hearing Screening and Next Steps: https://www.nidcd.nih.gov/health/your-babys-hearing-screening-and-next-steps
+* CDC Early Hearing Detection and Intervention: https://www.cdc.gov/hearing-loss-children/
+* NIDCD Speech and Language Developmental Milestones: https://www.nidcd.nih.gov/health/speech-and-language
+
+== 下一步 ==
+
+* 建立新生儿听筛 Source Card，区分筛查、确认、干预、家庭服务和语言发展终点。
+* 对接儿童发展、早期教育、语言沟通和医疗可及性域。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C2研究域|C2研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c2-source-maintenance/newborn-hearing-screening-language-development-continuity/README.md Human Infra 仓库：domains/c2-source-maintenance/newborn-hearing-screening-language-development-continuity/README.md]
+
+[[Category:C2研究域]]

@@ -1,0 +1,80 @@
+{{研究域
+|域 ID=domain.pool-spa-barrier-drain-entrapment-safety-continuity
+|C 层级=C6：局部可能性解锁层
+|研究对象=Pool Spa Barrier Drain Entrapment Safety Continuity
+|持续性作用=未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c6-local-unlocking/pool-spa-barrier-drain-entrapment-safety-continuity
+}}
+
+'''Pool Spa Barrier Drain Entrapment Safety Continuity'''是 Human Infra 在“局部阻塞解除”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C6“局部可能性解锁层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>pool-spa-barrier-drain-entrapment-safety-continuity/</code> 研究泳池、水疗池、围栏、门闩、排水口吸附夹陷和产品标准如何影响儿童与家庭水域安全。
+
+<blockquote>核心问题：泳池安全不是“看住孩子”的单点责任，而是屏障、门禁、排水结构、维护责任和标准执行共同构成的防线。
+</blockquote>
+== 先验位置 ==
+
+<pre>主体要避免水域急性中止
+  -> 必须降低无监督入水和排水夹陷暴露
+  -> 泳池/水疗池把家庭空间转化为高风险水域
+  -> 因而屏障和排水安全是水域风险工程的执行层</pre>
+== 关注对象 ==
+
+* 泳池、水疗池、围栏、门、锁扣、警示、排水口、吸附夹陷、公共/私人设施和维护责任。
+* 儿童、不会游泳者、公共泳池使用者、家庭访客和设施管理者。
+
+<span id="human-infra-模型链路"></span>
+== Human Infra 模型链路 ==
+
+<pre>泳池屏障与排水安全 T
+  -> 改变无监督进入、物理屏障、排水吸附、维护、召回和警示变量 X
+  -> 改变儿童和使用者接触水域危险部位的状态 S
+  -> 改变溺水、夹陷、创伤和监护失败风险 λ(t)
+  -> 改变家庭安全、主体持续性和公共设施可信度</pre>
+== 非目标 ==
+
+* 不提供泳池设计、围栏安装、排水改造、设备维修、救援动作、儿童监控、产品推荐、法规合规或个体设施安全建议。
+* 不收集家庭泳池照片、地址、儿童活动记录、设施缺陷照片或设备型号。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* Pool Safely / CPSC: https://www.poolsafely.gov/
+* CPSC Pool Safely safety center: https://www.cpsc.gov/Safety-Education/Safety-Education-Centers/Pool-Safely
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C6研究域|C6研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c6-local-unlocking/pool-spa-barrier-drain-entrapment-safety-continuity/README.md Human Infra 仓库：domains/c6-local-unlocking/pool-spa-barrier-drain-entrapment-safety-continuity/README.md]
+
+[[Category:C6研究域]]

@@ -1,0 +1,16 @@
+{{证据来源
+|来源 ID=evidence.pubmed.human-reconsolidation-2014
+|来源类型=同行评审综述
+|完整引文=Schwabe L, Nader K, Pruessner JC. Human memory reconsolidation: a reactivation and update. Neuroscience and Biobehavioral Reviews. 2014.
+|URL 或 DOI=https://pubmed.ncbi.nlm.nih.gov/24397965/
+|支持范围=人类记忆再激活后可更新及增强或减弱的研究
+|不支持的推论=不支持精确删除、写入任意记忆或身份无风险修改
+|审查状态=已核对PubMed记录
+|访问日期=2026-07-25
+}}
+
+== 支持范围 ==
+综述说明影响再巩固过程可能改变记忆持续性，并讨论人类研究方法。
+
+== 不支持的推论 ==
+再巩固效应存在复现、边界条件和方法限制，不等同科幻式记忆编辑。

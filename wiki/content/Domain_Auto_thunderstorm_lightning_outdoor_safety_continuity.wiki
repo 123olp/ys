@@ -1,0 +1,89 @@
+{{研究域
+|域 ID=domain.thunderstorm-lightning-outdoor-safety-continuity
+|C 层级=C6：局部可能性解锁层
+|研究对象=Thunderstorm Lightning Outdoor Safety Continuity
+|持续性作用=未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c6-local-unlocking/thunderstorm-lightning-outdoor-safety-continuity
+}}
+
+'''Thunderstorm Lightning Outdoor Safety Continuity'''是 Human Infra 在“局部阻塞解除”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C6“局部可能性解锁层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>thunderstorm-lightning-outdoor-safety-continuity/</code> 研究雷暴、闪电、强风、冰雹、户外活动、工作暴露和停电树倒风险如何影响主体持续性。
+
+<blockquote>核心问题：雷暴和闪电常被低估，但它们通过户外暴露、树木/电线、短时强风、冰雹和突然停电直接切断日常任务窗口。
+</blockquote>
+== 先验位置 ==
+
+<pre>有效永生 / 主体持续性最大化
+  -> 主体日常行动大量发生在户外、交通、学校、工作和娱乐场景
+  -> 雷暴闪电会在短时间内制造电击、坠物、交通、电力和通信风险
+  -> 若 watch/warning、避险空间、活动暂停和恢复判断失败，日常任务会被急性 hazard 截断
+  -> 因而雷暴闪电户外安全是低频高后果日常风险执行域</pre>
+== 关注对象 ==
+
+* 雷暴、闪电、强风、冰雹、倒树、停电、户外工作、学校体育、露营、船艇和大型活动。
+* 警报理解、安全室内空间、活动暂停、复工复赛、通信失灵和伤害后急救入口。
+* 与 <code>weather-climate-observation-forecasting/</code> 的边界：该域关注观测与预报；本域关注雷暴警报后的户外行动治理。
+
+<span id="human-infra-模型链路"></span>
+== Human Infra 模型链路 ==
+
+<pre>雷暴闪电户外安全系统 T
+  -> 改变警报接收、活动暂停、避险空间、户外工作安排、树电线暴露和通信变量 X
+  -> 改变主体在短时强对流窗口中的暴露状态 S
+  -> 改变雷击、创伤、停电、交通事故和任务中断风险 λ(t)
+  -> 影响急性生存、有效时间、工作学校连续性和恢复负担</pre>
+== 非目标 ==
+
+* 不提供实时雷暴判断、户外活动许可、赛事/学校停开决策、电线处理、树木处理、船艇航行或医疗急救建议。
+* 不替代 NWS、地方应急管理、学校、雇主、活动组织者、公用事业或公共安全机构。
+* 不鼓励户外冒险、靠近倒线、躲在树下、风暴观测或无授权现场处理。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* NWS Lightning Safety: https://www.weather.gov/safety/lightning
+* NWS Thunderstorm Safety: https://www.weather.gov/safety/thunderstorm
+* Ready.gov Thunderstorms and Lightning: https://www.ready.gov/thunderstorms-lightning
+
+== 下一步 ==
+
+* 建立户外工作、学校体育、活动暂停、船艇/露营和停电树倒 source card。
+* 与 <code>occupational-work-design/</code>、<code>public-transit-service-operations-continuity/</code> 和 <code>boating-life-jacket-watercraft-safety-continuity/</code> 对齐。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C6研究域|C6研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c6-local-unlocking/thunderstorm-lightning-outdoor-safety-continuity/README.md Human Infra 仓库：domains/c6-local-unlocking/thunderstorm-lightning-outdoor-safety-continuity/README.md]
+
+[[Category:C6研究域]]

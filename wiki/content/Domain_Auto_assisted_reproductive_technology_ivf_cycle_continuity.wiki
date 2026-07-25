@@ -1,0 +1,89 @@
+{{研究域
+|域 ID=domain.assisted-reproductive-technology-ivf-cycle-continuity
+|C 层级=C2：可能性源体维护层
+|研究对象=Assisted Reproductive Technology IVF Cycle Continuity
+|持续性作用=关键词显示该域主要维护身体、脑、器官、细胞、急性生命风险或衰老损伤控制。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c2-source-maintenance/assisted-reproductive-technology-ivf-cycle-continuity
+}}
+
+'''Assisted Reproductive Technology IVF Cycle Continuity'''是 Human Infra 在“生命载体维护”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要维护身体、脑、器官、细胞、急性生命风险或衰老损伤控制。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C2“可能性源体维护层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+辅助生殖技术与 IVF 周期连续性，关注 ART、IVF cycle、促排监测、取卵、实验室受精、胚胎培养、移植、周期取消、并发症边界、费用负担、预约节律和数据记录如何影响生育未来选择权。
+
+== 先验位置 ==
+
+<pre>有效永生 / 主体持续性最大化
+  -> 主体持续性不仅包含当前身体存续，也包含未来选择权和代际路径
+  -> 生殖衰老、疾病治疗、结构性不孕和生育窗口会压缩这些选择权
+  -> ART/IVF 把配子、胚胎、实验室流程、临床周期、费用和时间窗口连接起来
+  -> 因此 IVF 周期连续性是生殖未来选择权被工程化维护的执行接口</pre>
+== 关注对象 ==
+
+* ART 定义、IVF 周期、intended retrieval、actual retrieval、embryo transfer 和 live-birth outcome。
+* 促排、监测、取卵、受精、胚胎培养、移植、冷冻、周期取消和多胎风险边界。
+* 诊所预约、实验室任务、药品供应、费用支付、工作时间、交通、语言、隐私和心理负担。
+* 与 <code>reproductive-fertility-continuity/</code> 的边界：上位域关注生殖未来选择权；本域关注 ART/IVF 周期执行链。
+
+<span id="human-infra-模型链路"></span>
+== Human Infra 模型链路 ==
+
+<pre>ART/IVF 周期 T
+  -> 改变取卵机会、受精机会、胚胎可用性、移植机会、费用负担和时间窗口变量 X
+  -> 改变主体的生殖计划、心理负担、资源配置和未来选择权状态 S
+  -> 改变不孕持续、周期中断、并发症、多胎、费用耗尽和选择权丧失风险 lambda(t)
+  -> 影响主体长期计划、有效时间、资源复利和代际路径可选性</pre>
+== 非目标 ==
+
+* 不提供不孕诊断、IVF 方案、促排用药、胚胎移植、周期时机、诊所选择、成功率解释或个体医疗建议。
+* 不把 CDC 成功率、估算器或诊所报告写成个人预后。
+* 不提供保险、融资、法律、跨境医疗、供体、代孕或胚胎处置建议。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* CDC About ART: https://www.cdc.gov/art/about/index.html
+* CDC ART Success Rates: https://www.cdc.gov/art/success-rates/index.html
+* CDC How to Interpret ART Success Rates: https://www.cdc.gov/art/success-rates/interpret.html
+* CDC IVF Success Estimator: https://www.cdc.gov/art/ivf-success-estimator/index.html
+
+== 下一步 ==
+
+# 建立 IVF cycle card：cycle start、retrieval、fertilization、transfer、freeze、cancel、outcome 和 follow-up。
+# 与 <code>art-clinic-success-rate-quality-reporting-continuity/</code>、<code>fertility-preservation-gamete-embryo-cryostorage-continuity/</code> 和 <code>preimplantation-genetic-testing-embryo-selection-governance-continuity/</code> 建立接口。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C2研究域|C2研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c2-source-maintenance/assisted-reproductive-technology-ivf-cycle-continuity/README.md Human Infra 仓库：domains/c2-source-maintenance/assisted-reproductive-technology-ivf-cycle-continuity/README.md]
+
+[[Category:C2研究域]]

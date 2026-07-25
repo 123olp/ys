@@ -1,0 +1,18 @@
+{{证据来源
+|来源 ID=evidence.fda.artificial-pancreas
+|来源类型=监管机构设备说明
+|完整引文=U.S. Food and Drug Administration. What is an artificial pancreas device system?
+|URL 或 DOI=https://www.fda.gov/medical-devices/artificial-pancreas-device-system/what-pancreas-what-artificial-pancreas-device-system
+|支持范围=连续监测、控制算法和输注泵组成生理闭环的现实实现
+|不支持的推论=不支持完整胰腺替代、通用器官替代或最小充分身体已实现
+|审查状态=已核对 FDA 页面
+|访问日期=2026-07-24
+}}
+
+== 支持范围 ==
+
+用于证明某项身体功效可以被拆解为传感、算法和执行器闭环，并由受监管设备部分接管。
+
+== 不支持的推论 ==
+
+不能从血糖闭环推导完整人体功能可被同样方式替代。

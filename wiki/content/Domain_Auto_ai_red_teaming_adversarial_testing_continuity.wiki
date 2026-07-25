@@ -1,0 +1,93 @@
+{{研究域
+|域 ID=domain.ai-red-teaming-adversarial-testing-continuity
+|C 层级=C3：可能性生成引擎层
+|研究对象=AI Red Teaming Adversarial Testing Continuity
+|持续性作用=关键词显示该域主要增强认知、学习、工具、AI、技能或沟通能力。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c3-generation-engine/ai-red-teaming-adversarial-testing-continuity
+}}
+
+'''AI Red Teaming Adversarial Testing Continuity'''是 Human Infra 在“主体能力生成”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要增强认知、学习、工具、AI、技能或沟通能力。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C3“可能性生成引擎层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>ai-red-teaming-adversarial-testing-continuity/</code> 研究 AI 红队、安全测试、对抗性评估、滥用场景枚举、失效触发和缓解验证，如何保护 Human Infra 不把脆弱 AI 系统当成主体增强基础设施。
+
+<blockquote>核心问题：AI 能提高行动密度，也能在边界条件下放大错误、欺骗、越权和滥用。红队不是攻击教程，而是让系统在进入真实任务前暴露失败模式。
+</blockquote>
+== 先验位置 ==
+
+<pre>有效永生 / 主体持续性最大化
+  -> 需要 AI 工具持续参与研究、判断、编排和行动
+  -> 高能力 AI 会带来新的失效、滥用和对抗输入面
+  -> 若这些失败模式未经红队和安全测试暴露，主体会在关键任务中被工具反噬
+  -> 因此 AI 红队与对抗性测试是 AI 可信部署前的失败发现域</pre>
+== 关注对象 ==
+
+* 红队范围、威胁建模、滥用场景、对抗测试、安全评测、缓解措施和回归验证。
+* Prompt injection、工具越权、数据泄露、越狱、欺骗、过度服从、危险能力和社工风险的治理边界。
+* 红队发现如何转化为修复、policy、eval、monitoring、incident response 和 release gate。
+* 与 <code>ai-agent-tool-permission-sandbox-continuity/</code> 的边界：工具权限域关注运行时权限和沙箱；本域关注测试与发现。
+* 与 <code>cybersecurity-resilience-critical-services/</code> 的关系：网络安全域关注关键服务防护；本域只处理 AI 系统红队方法与结果治理。
+
+<span id="human-infra-模型链路"></span>
+== Human Infra 模型链路 ==
+
+<pre>AI 红队与对抗性测试 T
+  -> 改变失效样本、滥用场景、危险能力信号和缓解验证变量 X
+  -> 改变 AI 工具发布、授权、限制和监控状态 S
+  -> 改变越权、泄露、误导、攻击面扩张和关键任务失败风险 λ(t)
+  -> 影响主体安全、任务可靠性、协作信任和未来选择权</pre>
+== 非目标 ==
+
+* 不提供 jailbreak、prompt injection payload、漏洞利用、绕过防护、模型盗取或攻击步骤。
+* 不生成可操作的攻击 playbook、社工话术、恶意自动化或测试规避方法。
+* 不把红队报告写成“系统安全证明”；红队只能发现有限失败面。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* NIST Dioptra: https://pages.nist.gov/dioptra/
+* NIST AI RMF Generative AI Profile: https://www.nist.gov/itl/ai-risk-management-framework/generative-artificial-intelligence-profile
+* MITRE ATLAS: https://atlas.mitre.org/
+* OWASP Top 10 for LLM Applications: https://owasp.org/www-project-top-10-for-large-language-model-applications/
+* CISA AI resources: https://www.cisa.gov/ai
+
+== 下一步 ==
+
+* 建立 Red Team Source Card 字段：scope, threat model, tested capability, failure class, mitigation, retest status, residual risk。
+* 与 <code>ai-incident-reporting-post-deployment-monitoring-continuity/</code> 和 <code>ai-agent-tool-permission-sandbox-continuity/</code> 建立从测试到运行监控的闭环。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C3研究域|C3研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c3-generation-engine/ai-red-teaming-adversarial-testing-continuity/README.md Human Infra 仓库：domains/c3-generation-engine/ai-red-teaming-adversarial-testing-continuity/README.md]
+
+[[Category:C3研究域]]

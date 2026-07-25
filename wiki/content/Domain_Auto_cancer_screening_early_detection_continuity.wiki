@@ -1,0 +1,89 @@
+{{研究域
+|域 ID=domain.cancer-screening-early-detection-continuity
+|C 层级=C2：可能性源体维护层
+|研究对象=Cancer Screening Early Detection Continuity
+|持续性作用=关键词显示该域主要维护身体、脑、器官、细胞、急性生命风险或衰老损伤控制。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c2-source-maintenance/cancer-screening-early-detection-continuity
+}}
+
+'''Cancer Screening Early Detection Continuity'''是 Human Infra 在“生命载体维护”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要维护身体、脑、器官、细胞、急性生命风险或衰老损伤控制。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C2“可能性源体维护层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>cancer-screening-early-detection-continuity/</code> 研究癌症筛查、早期发现、随访闭环、假阳性/假阴性、过度诊断、筛查可及和异常结果追踪如何影响主体持续性。
+
+<blockquote>核心问题：癌症控制不只发生在治疗阶段；筛查和异常结果追踪决定肿瘤是否在可治疗阶段被发现，也决定人群是否承担过度诊断、焦虑和不公平可及的代价。
+</blockquote>
+== 先验位置 ==
+
+<pre>有效永生 / 主体持续性最大化
+  -> 主体依赖恶性增殖风险被早期识别且不过度伤害
+  -> 癌症筛查可改变诊断阶段、治疗负担、死亡风险和过度诊断风险
+  -> 结果取决于对象选择、筛查质量、异常追踪、治疗入口和公平可及
+  -> 因此癌症筛查与早期发现是癌症控制的前端证据执行域</pre>
+== 关注对象 ==
+
+* Cancer screening programs, colorectal/breast/cervical/lung screening signals, abnormal result follow-up, overdiagnosis, false positive / false negative, equity, registry linkage。
+* 与 <code>cancer-control/</code> 的边界：该域关注肿瘤发生、治疗、复发和死亡风险；本域关注筛查、早诊和异常结果闭环。
+* 与 <code>clinical-laboratory-diagnostic-quality/</code> 和 <code>diagnostic-imaging-order-scheduling-report-continuity/</code> 的关系：筛查依赖检测和影像质量。
+
+<span id="human-infra-模型链路"></span>
+== Human Infra 模型链路 ==
+
+<pre>癌症筛查早诊系统 T
+  -> 改变筛查覆盖、质量、异常追踪、诊断阶段、过度诊断和公平变量 X
+  -> 改变癌症分期、治疗负担、心理负担和长期功能状态 S
+  -> 改变癌症死亡、失能、治疗毒性和有效时间损失 λ(t)
+  -> 影响主体健康寿命、资源负担和未来选择权</pre>
+== 非目标 ==
+
+* 不提供个人筛查年龄、频率、检查选择、影像/病理/实验室解读、肿瘤风险、治疗或个体医疗建议。
+* 不生成个人癌症筛查推荐器、保险申诉、机构选择、检查排序或商业检测推广。
+* 不收集个案筛查结果、家族史、遗传信息、影像、病理、症状或诊疗资料。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* USPSTF recommendations: https://www.uspreventiveservicestaskforce.org/
+* NCI cancer screening: https://www.cancer.gov/about-cancer/screening
+* CDC cancer screening: https://www.cdc.gov/cancer/screening/
+
+== 下一步 ==
+
+* 建立 Cancer Screening Card：eligibility boundary, modality, abnormal follow-up, overdiagnosis, false result, equity, registry。
+* 与 <code>cancer-control/</code>、<code>clinical-laboratory-diagnostic-quality/</code> 和 <code>diagnostic-imaging-order-scheduling-report-continuity/</code> 建立接口。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C2研究域|C2研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c2-source-maintenance/cancer-screening-early-detection-continuity/README.md Human Infra 仓库：domains/c2-source-maintenance/cancer-screening-early-detection-continuity/README.md]
+
+[[Category:C2研究域]]

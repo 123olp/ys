@@ -1,0 +1,91 @@
+{{研究域
+|域 ID=domain.migraine-headache-effective-time-burden
+|C 层级=C6：局部可能性解锁层
+|研究对象=Migraine Headache Effective Time Burden
+|持续性作用=未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c6-local-unlocking/migraine-headache-effective-time-burden
+}}
+
+'''Migraine Headache Effective Time Burden'''是 Human Infra 在“局部阻塞解除”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C6“局部可能性解锁层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>migraine-headache-effective-time-burden/</code> 研究偏头痛和头痛障碍如何通过疼痛、感官敏感、认知雾、发作不可预测性和社会功能受限，影响 Human Infra 的有效时间、学习和工作连续性。
+
+<blockquote>核心问题：主体持续性不只看死亡风险。偏头痛等头痛障碍可能长期吞噬有效时间，使主体在“活着但不可行动”的周期中损失学习、工作、关系和恢复窗口。
+</blockquote>
+== 先验位置 ==
+
+<pre>有效永生 / 主体持续性最大化
+  -> 日历寿命必须转化为可行动、可学习、可创造的有效时间
+  -> 偏头痛和头痛障碍会反复制造疼痛、光声敏感、恶心、脑雾和不可预测停摆
+  -> 若发作频率、触发因素、治疗可及、工作学习调整和污名问题被忽略，健康寿命会被高负担低死亡风险疾病侵蚀
+  -> 因此偏头痛和头痛负担是有效时间损耗域</pre>
+== 关注对象 ==
+
+* 偏头痛、紧张型头痛、丛集性头痛、慢性每日头痛、药物过度使用性头痛和头痛相关残疾。
+* 发作频率、严重度、触发因素、感官敏感、认知影响、工作/学习缺勤、照护负担和治疗可及性。
+* 与 <code>pain-suffering-control/</code> 的边界：疼痛域关注痛苦整体；本域关注头痛障碍特有的发作、感官、认知和有效时间损耗机制。
+* 与 <code>occupational-work-design/</code> 的边界：工作域关注组织设计；本域关注偏头痛如何改变任务窗口和合理调整需求。
+
+<span id="human-infra-模型链路"></span>
+== Human Infra 模型链路 ==
+
+<pre>偏头痛与头痛负担 T
+  -> 改变发作频率、疼痛强度、感官敏感、认知雾、治疗可及和环境触发变量 X
+  -> 改变有效时间、工作学习连续性、恢复需求和生活质量状态 S
+  -> 改变失能天数、收入损失、社交退缩、心理压力和药物过度使用风险 λ(t)
+  -> 影响创造密度、长期能力积累和主体持续性</pre>
+== 非目标 ==
+
+* 不提供头痛诊断、药物建议、急症判断、触发因素个体处方或产品推荐。
+* 不替代神经科、疼痛医学、职业健康、学校/工作合理便利或临床指南。
+* 不把头痛日记、可穿戴数据或自测量表写成个人诊断。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* WHO Headache Disorders: https://www.who.int/news-room/fact-sheets/detail/headache-disorders
+* NINDS Migraine: https://www.ninds.nih.gov/health-information/disorders/migraine
+* Global Burden of Disease headache and migraine research: https://www.thelancet.com/gbd
+* American Migraine Foundation: https://americanmigrainefoundation.org/
+
+== 下一步 ==
+
+* 建立头痛有效时间变量表：发作频率、严重度、持续时间、感官敏感、认知影响、缺勤、恢复时间、治疗可及和工作学习调整。
+* 与 <code>pain-suffering-control/</code>、<code>sleep-circadian-recovery/</code>、<code>occupational-work-design/</code>、<code>time-allocation-effective-time/</code> 和 <code>mental-health-affective-stability/</code> 建立接口。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C6研究域|C6研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c6-local-unlocking/migraine-headache-effective-time-burden/README.md Human Infra 仓库：domains/c6-local-unlocking/migraine-headache-effective-time-burden/README.md]
+
+[[Category:C6研究域]]

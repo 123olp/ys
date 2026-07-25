@@ -1,0 +1,85 @@
+{{研究域
+|域 ID=domain.laundry-clothing-footwear-hygiene-continuity
+|C 层级=C6：局部可能性解锁层
+|研究对象=Laundry Clothing Footwear Hygiene Continuity
+|持续性作用=未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c6-local-unlocking/laundry-clothing-footwear-hygiene-continuity
+}}
+
+'''Laundry Clothing Footwear Hygiene Continuity'''是 Human Infra 在“局部阻塞解除”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C6“局部可能性解锁层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>laundry-clothing-footwear-hygiene-continuity</code> 研究衣物、鞋履、洗衣、干燥、个人卫生、工作/学校着装和天气防护如何影响主体尊严、感染控制、出行、工作和恢复连续性。
+
+<blockquote>核心问题：衣物和鞋履不是生活细节；干净、合身、适温、防护和可维护的穿着系统，是外出、工作、学习、照护、睡眠和社会参与的低层条件。
+</blockquote>
+== 关注对象 ==
+
+* 洗衣、干燥、换洗、衣物储存、鞋履、天气防护、制服、工作服、学校着装和个人卫生用品。
+* 清洁衣物可及、洗衣设施、能源/水依赖、污染衣物处理、潮湿霉变、寄生虫/感染暴露和尊严边界。
+* 极端热/冷、雨雪、户外工作、无家可归、灾后恢复、照护场景和残障穿脱可达性。
+* 与 WASH、住房、能源、职业安全、学校、公共福利、家庭应急和无障碍设计的接口。
+
+<span id="human-infra-链路"></span>
+== Human Infra 链路 ==
+
+<pre>衣物鞋履卫生连续
+  -> 主体能保持清洁、适温、防护、尊严和外出可达
+  -> 洗衣、水电、衣物损耗、天气暴露和穿着排除造成的任务摩擦下降
+  -> 学习、工作、照护、社交和恢复不被低层物品短缺反复中断
+  -> 有效时间、社会参与、健康风险控制和未来选择权增强</pre>
+== 非目标 ==
+
+* 不提供个体穿搭、购买推荐、医疗诊断、职业 PPE 配置、感染处理或清洗处置操作建议。
+* 不替代 OSHA/NIOSH、CDC、学校、雇主、本地福利或公共卫生指导。
+* 不把衣着、卫生或外观作为道德评价、资格筛选、阶层污名或监控依据。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* CDC Hygiene: https://www.cdc.gov/hygiene/
+* CDC Cleaning and Disinfecting: https://www.cdc.gov/hygiene/cleaning/
+* Ready.gov Emergency Kit: https://www.ready.gov/kit
+* NIOSH Workplace Safety and Health Topics: https://www.cdc.gov/niosh/topics/
+
+== 下一步 ==
+
+* 建立 <code>clothing item -&gt; task context -&gt; hygiene/protection function -&gt; maintenance dependency -&gt; participation impact</code> 变量表。
+* 区分日常换洗、学校/工作要求、极端天气、灾后、无家可归和照护/残障穿脱场景。
+* 与 <code>water-sanitation-hygiene-continuity</code>、<code>occupational-exposure-industrial-hygiene</code>、<code>housing-built-environment-stability</code> 和 <code>household-cleaning-disinfection-pest-control-continuity</code> 建立边界。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C6研究域|C6研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c6-local-unlocking/laundry-clothing-footwear-hygiene-continuity/README.md Human Infra 仓库：domains/c6-local-unlocking/laundry-clothing-footwear-hygiene-continuity/README.md]
+
+[[Category:C6研究域]]

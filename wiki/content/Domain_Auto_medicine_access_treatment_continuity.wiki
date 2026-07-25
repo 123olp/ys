@@ -1,0 +1,92 @@
+{{研究域
+|域 ID=domain.medicine-access-treatment-continuity
+|C 层级=C4：可能性转换通道层
+|研究对象=Medicine Access Treatment Continuity
+|持续性作用=主要把科学、医疗、数据、制度或技术从潜在能力转成真实可用路径。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c4-conversion-channel/medicine-access-treatment-continuity
+}}
+
+'''Medicine Access Treatment Continuity'''是 Human Infra 在“路径转换接口”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+主要把科学、医疗、数据、制度或技术从潜在能力转成真实可用路径。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C4“可能性转换通道层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>medicine-access-treatment-continuity/</code> 研究药品可及、用药安全、药品信息、短缺、支付覆盖和治疗连续性，负责把“处方能否变成持续、可理解、可负担、不断供的治疗路径”纳入 Human Infra。
+
+<blockquote>核心问题：主体即使获得医疗建议，也可能因为药品短缺、费用、标签不可理解、药房断点、用药错误或覆盖失败而无法持续治疗。
+</blockquote>
+== 先验位置 ==
+
+<pre>有效永生 / 主体持续性最大化
+  -> 可修复风险需要持续干预和治疗执行
+  -> 关键药物必须可得、可负担、可理解且供应不断
+  -> 治疗连续性决定医疗建议能否转化为真实恢复和风险下降</pre>
+== 关注对象 ==
+
+* 基本药物、药品短缺、药品目录、标签说明、患者药品信息和用药安全。
+* 处方覆盖、费用负担、药房可及、供应连续、替代路径和用药错误防护。
+* 药品作为医疗系统、供应链、支付系统和患者理解能力之间的接口。
+* 与 <code>healthcare-access-continuity/</code>、<code>supply-chain-continuity/</code>、<code>health-literacy-navigation/</code> 和 <code>financial-resilience-access/</code> 的交叉。
+
+<span id="human-infra-模型链路"></span>
+== Human Infra 模型链路 ==
+
+<pre>药品与治疗连续性基础设施
+  -> 改变关键药物可得性、可负担性、标签理解、供应稳定和用药安全
+  -> 改变治疗执行状态和可修复风险控制能力
+  -> 降低治疗中断、用药错误、疾病进展和恢复失败风险
+  -> 增强健康寿命、有效时间和未来选择权</pre>
+== 非目标 ==
+
+* 不提供用药建议、剂量、替代药物、停药建议、购药建议或处方解释。
+* 不替代医生、药师、保险计划、监管机构或急救服务。
+* 不把药品目录、短缺信息或标签资料写成个体可用性、保险覆盖或治疗适用性结论。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* WHO Essential Medicines Lists: https://www.who.int/groups/expert-committee-on-selection-and-use-of-essential-medicines/essential-medicines-lists
+* WHO Medication Without Harm: https://www.who.int/initiatives/medication-without-harm
+* FDA Drug Shortages: https://www.fda.gov/drugs/drug-safety-and-availability/drug-shortages
+* DailyMed: https://dailymed.nlm.nih.gov/dailymed/
+* CDC Medication Safety Program: https://www.cdc.gov/medication-safety/
+
+== 下一步 ==
+
+* 建立治疗连续性变量表：可得性、短缺、费用、覆盖、标签、理解、药房接入、错误防护和供应恢复。
+* 将药品供应与 <code>supply-chain-continuity/</code> 的通用供应链问题拆清。
+* 整理基本药物、用药安全、药品短缺和患者药品信息的 Source Cards。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C4研究域|C4研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c4-conversion-channel/medicine-access-treatment-continuity/README.md Human Infra 仓库：domains/c4-conversion-channel/medicine-access-treatment-continuity/README.md]
+
+[[Category:C4研究域]]

@@ -1,0 +1,85 @@
+{{研究域
+|域 ID=domain.reminder-alarm-routine-task-continuity
+|C 层级=C6：局部可能性解锁层
+|研究对象=Reminder Alarm Routine Task Continuity
+|持续性作用=未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c6-local-unlocking/reminder-alarm-routine-task-continuity
+}}
+
+'''Reminder Alarm Routine Task Continuity'''是 Human Infra 在“局部阻塞解除”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C6“局部可能性解锁层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>reminder-alarm-routine-task-continuity</code> 研究提醒、闹钟、重复任务、习惯、例行维护、服药提醒、复查提醒、账单到期和照护例程如何影响主体是否能稳定完成低显著但高累积价值的任务。
+
+<blockquote>核心问题：许多主体持续性风险不是一次灾难，而是由无数小任务遗忘、延迟和中断累积而成。
+</blockquote>
+== 关注对象 ==
+
+* 闹钟、提醒、重复任务、清单、到期日、snooze、确认、失败重试和补救任务。
+* 服药提醒、复查、饮水/进食、设备维护、账单、证件续期、照护交接、运动康复和家庭事务。
+* VTODO、VALARM、任务管理器、家庭共享提醒、可穿戴提醒、智能音箱和低技术纸面备份。
+* 提醒依赖、过载、误设、设备故障、时区错配、通知权限变化和例程断裂。
+
+<span id="human-infra-链路"></span>
+== Human Infra 链路 ==
+
+<pre>提醒与例行任务连续
+  -> 重复任务、到期任务和维护任务可被触发、确认和补救
+  -> 遗忘、延迟、例程断裂和小故障累积下降
+  -> 主体把长期维护需求转化为可执行的日常行动
+  -> 健康、资源、设备、关系和长期项目连续性增强</pre>
+== 非目标 ==
+
+* 不提供具体医疗、用药、剂量、治疗、账单、法律期限或财务操作建议。
+* 不提供绕过应用限制、监控家庭成员、强迫执行、操纵提醒或行为控制方案。
+* 不收集个人提醒、药物清单、账单、照护任务、家庭成员或设备数据。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* IETF RFC 5545 VTODO / VALARM components: https://www.rfc-editor.org/rfc/rfc5545
+* AHRQ medication management and patient safety materials as healthcare-context signals.
+* CDC and NIH public materials for adherence, chronic care and reminder evidence boundaries.
+* Human-computer interaction literature on habit, reminders and task resumption.
+
+== 下一步 ==
+
+* 建立 <code>routine task -&gt; trigger -&gt; acknowledgement -&gt; completion -&gt; missed-task recovery</code> 变量表。
+* 区分健康例程、照护例程、设备维护、行政续期、账单到期和长期项目维护。
+* 与 <code>calendar-scheduling-appointment-continuity</code>、<code>notification-alert-routing-attention-continuity</code>、<code>multimorbidity-polypharmacy-care-coordination</code> 和 <code>contract-subscription-billing-consent-continuity</code> 建立边界。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C6研究域|C6研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c6-local-unlocking/reminder-alarm-routine-task-continuity/README.md Human Infra 仓库：domains/c6-local-unlocking/reminder-alarm-routine-task-continuity/README.md]
+
+[[Category:C6研究域]]

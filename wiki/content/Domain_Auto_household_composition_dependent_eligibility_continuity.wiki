@@ -1,0 +1,87 @@
+{{研究域
+|域 ID=domain.household-composition-dependent-eligibility-continuity
+|C 层级=C4：可能性转换通道层
+|研究对象=家庭组成、受扶养人与资格关系连续性
+|持续性作用=关键词显示该域主要处理研究、数据、模型、服务入口、身份记录、转化或治理接口。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c4-conversion-channel/household-composition-dependent-eligibility-continuity
+}}
+
+'''家庭组成、受扶养人与资格关系连续性'''是 Human Infra 在“路径转换接口”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要处理研究、数据、模型、服务入口、身份记录、转化或治理接口。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C4“可能性转换通道层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+本域研究 household、受扶养人、共同居住、照护关系、亲属关系和申报单位如何影响税务、健康保险、福利、学校、住房、托育和社会服务资格。它关注家庭事实如何被制度建模，不提供个人报税、福利、保险或家庭法建议。
+
+== 研究对象 ==
+
+* household composition、tax dependents、coverage household、benefit household 和服务资格单位。
+* 共同居住、主要照护者、受扶养人、监护安排、共享费用和家庭收入计算。
+* IRS、HealthCare.gov、Medicaid/SNAP/TANF、学校、住房、保险和托育系统中的 household 定义差异。
+* 家庭变化、分居、离婚、再婚、监护变化、寄养、大学生、老年照护和多代同堂场景。
+
+== 价值链路 ==
+
+<pre>资源资格不是只由个人决定
+  -> 许多制度先把人放进 household、受扶养人或照护关系模型
+  -> 家庭组成决定收入计算、责任归属、保险覆盖、福利资格和服务入口
+  -> 家庭事实变化或系统定义不一致会导致错误拒绝、错误支付、覆盖断裂或追缴风险
+  -> 家庭组成连续性把关系事实转化为可审查的资源资格底座</pre>
+== 关键问题 ==
+
+* 不同制度如何定义 household、dependent、coverage family 和 benefit unit？
+* 家庭组成变化如何影响医疗覆盖、税务抵免、公共福利、学校和住房资格？
+* household 变量如何连接资源分配、责任归属、照护角色和行政负担？
+* 如何避免把家庭关系建模简化为个体失败、福利欺诈假设或家庭监控？
+
+== 上游与下游 ==
+
+* 上游：<code>vital-records-life-event-continuity/</code>、<code>family-law-custody-child-support-continuity/</code>、<code>kinship-foster-adoption-care-continuity/</code>、<code>childcare-family-continuity/</code>。
+* 下游：<code>tax-administration-filing-record-continuity/</code>、<code>social-protection-benefits-delivery/</code>、<code>healthcare-access-continuity/</code>、<code>insurance-risk-transfer/</code>、<code>public-benefits-eligibility-automated-decision-continuity/</code>。
+
+== 非目标 ==
+
+* 不提供个人税务申报、dependent claim、健康保险 household、Medicaid/SNAP/TANF、住房、学校或托育资格判断。
+* 不判断谁能申报谁、谁应计入 household、谁有监护权、谁应支付费用或谁应取得福利。
+* 不协助福利欺诈、虚假申报、规避追缴、隐瞒家庭成员、逃避抚养责任或操纵资格规则。
+
+== 初始资料入口 ==
+
+* IRS: Dependents
+* HealthCare.gov: Household size and income
+* Medicaid, SNAP, TANF, school and housing program official rules
+* State/local benefits eligibility official resources
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C4研究域|C4研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c4-conversion-channel/household-composition-dependent-eligibility-continuity/README.md Human Infra 仓库：domains/c4-conversion-channel/household-composition-dependent-eligibility-continuity/README.md]
+
+[[Category:C4研究域]]

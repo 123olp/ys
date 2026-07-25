@@ -1,0 +1,89 @@
+{{研究域
+|域 ID=domain.medication-reconciliation-regimen-adherence-continuity
+|C 层级=C6：局部可能性解锁层
+|研究对象=Medication Reconciliation Regimen Adherence Continuity
+|持续性作用=未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c6-local-unlocking/medication-reconciliation-regimen-adherence-continuity
+}}
+
+'''Medication Reconciliation Regimen Adherence Continuity'''是 Human Infra 在“局部阻塞解除”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C6“局部可能性解锁层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+== 定位 ==
+
+本域研究用药核对、药历一致性、过渡期 medication reconciliation、服药计划、依从性、治疗负担和多药协调如何决定药品是否被主体正确、持续、可承受地使用。
+
+它不是个体用药管理、停药、加药、剂量调整或健康建议入口。
+
+== 先验问题 ==
+
+<pre>药物进入家庭后何以继续有效？
+  -> 用药清单必须准确
+  -> 多个医生、药房和照护者必须共享一致药历
+  -> 主体必须能按计划执行并处理漏服、冲突和副作用信号
+  -> 否则药物可得性会退化为混乱和风险</pre>
+== 研究对象 ==
+
+* Medication reconciliation、处方变更、出院用药、转诊和长期照护交接。
+* 依从性、持药天数、refill gap、pill burden、复杂给药频率。
+* 照护者、药师、电子药历、药盒、提醒和用药教育。
+* 多病共存、多重用药、治疗负担和 deprescribing 研究边界。
+
+== 关键变量 ==
+
+* 药历一致率、用药差错、PDC/MPR、refill gap、漏服率。
+* 过渡期用药冲突、重复治疗、禁忌组合和未说明停药。
+* 治疗负担、日常执行成本、照护者参与和理解度。
+
+== 证据入口 ==
+
+* AHRQ medication reconciliation 与 patient safety 资料。
+* CDC、FDA、ISMP 和药学组织的 medication safety 公开资料。
+* 多病共存、多重用药和依从性研究。
+
+== 非目标 ==
+
+* 不提供具体服药时间、剂量、漏服处理、停药、替换或药物相互作用判断。
+* 不生成个人 medication list、药历、处方核对表或照护计划。
+* 不收集药名、剂量、诊断、处方、药房、医生、照护者或健康数据。
+
+== 上下游 ==
+
+* 上游：<code>retail-pharmacy-prescription-dispensing-continuity/</code>、<code>care-transitions-discharge-continuity/</code>、<code>multimorbidity-polypharmacy-care-coordination/</code>。
+* 下游：<code>patient-safety-organizational-learning/</code>、<code>pharmacovigilance-drug-safety-monitoring/</code>、<code>time-allocation-effective-time/</code>。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C6研究域|C6研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c6-local-unlocking/medication-reconciliation-regimen-adherence-continuity/README.md Human Infra 仓库：domains/c6-local-unlocking/medication-reconciliation-regimen-adherence-continuity/README.md]
+
+[[Category:C6研究域]]

@@ -1,0 +1,88 @@
+{{研究域
+|域 ID=domain.rodent-infestation-hantavirus-plague-continuity
+|C 层级=C6：局部可能性解锁层
+|研究对象=Rodent Infestation Hantavirus Plague Continuity
+|持续性作用=未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c6-local-unlocking/rodent-infestation-hantavirus-plague-continuity
+}}
+
+'''Rodent Infestation Hantavirus Plague Continuity'''是 Human Infra 在“局部阻塞解除”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C6“局部可能性解锁层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>rodent-infestation-hantavirus-plague-continuity</code> 研究啮齿动物侵入、粪尿暴露、汉坦病毒、鼠疫等风险如何影响居住、清理、睡眠和灾后恢复连续性。
+
+<blockquote>核心问题：鼠害不是单纯“卫生差”；它会把住房、储物、清理、灾后返家、露营和粮食储存变成感染、过敏、咬伤和恐惧的复合风险场景。
+</blockquote>
+== 先验位置 ==
+
+<pre>有效永生 / 主体持续性最大化
+  -> 主体需要可睡眠、可储物、可清理和可恢复的居住空间
+  -> 啮齿动物会引入病原、污染、结构破坏和心理压力
+  -> 防侵入、清理边界、公共卫生和专业治理构成住房可用性前提
+  -> 若该前提失败，居住稳定、灾后恢复和健康时间被持续消耗</pre>
+== 关注对象 ==
+
+* 家鼠、野鼠、粪尿污染、咬伤、食物污染、储物空间、露营和灾后返家。
+* 汉坦病毒、鼠疫、钩端螺旋体等啮齿动物相关风险。
+* 房屋封堵、清理边界、害虫治理、公共卫生沟通和租住/公共住房接口。
+
+<span id="human-infra-链路"></span>
+== Human Infra 链路 ==
+
+<pre>啮齿动物侵入和污染被控制
+  -> 感染、过敏、咬伤、食物污染和住房恐惧下降
+  -> 睡眠、储物、清理、灾后返回和居住稳定性提高
+  -> 健康寿命、有效时间和家庭恢复能力增强</pre>
+== 非目标 ==
+
+* 不提供捕杀、毒饵、清理步骤、病原采样、动物处理、个体诊疗或房屋施工方案。
+* 不替代 CDC、EPA、地方公共卫生、害虫治理、住房维修、医疗或兽医服务。
+* 不鼓励危险清理、野生动物接触、非法投药或规避房屋安全/公共卫生报告。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* CDC Hantavirus: https://www.cdc.gov/hantavirus/
+* CDC Plague: https://www.cdc.gov/plague/
+* EPA Rodent Control: https://www.epa.gov/rodenticides
+
+== 下一步 ==
+
+* 建立 <code>rodent signal -&gt; contamination/exposure -&gt; cleaning/control boundary -&gt; housing usability -&gt; continuity cost</code> 变量表。
+* 区分日常住房、灾后返家、露营、仓储、学校、餐饮和租住场景。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C6研究域|C6研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c6-local-unlocking/rodent-infestation-hantavirus-plague-continuity/README.md Human Infra 仓库：domains/c6-local-unlocking/rodent-infestation-hantavirus-plague-continuity/README.md]
+
+[[Category:C6研究域]]

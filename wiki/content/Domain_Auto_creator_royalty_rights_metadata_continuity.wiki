@@ -1,0 +1,87 @@
+{{研究域
+|域 ID=domain.creator-royalty-rights-metadata-continuity
+|C 层级=C4：可能性转换通道层
+|研究对象=Creator Royalty Rights Metadata Continuity
+|持续性作用=关键词显示该域主要处理研究、数据、模型、服务入口、身份记录、转化或治理接口。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c4-conversion-channel/creator-royalty-rights-metadata-continuity
+}}
+
+'''Creator Royalty Rights Metadata Continuity'''是 Human Infra 在“路径转换接口”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要处理研究、数据、模型、服务入口、身份记录、转化或治理接口。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C4“可能性转换通道层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>creator-royalty-rights-metadata-continuity</code> 研究创作者版税、rights metadata、作品标识符、collective management、分账、平台收入记录和授权链如何影响创作收入、职业可持续、作品发现和长期资源复利。
+
+<blockquote>核心问题：创作者的持续性不是只靠灵感；版税、标识符、元数据、分账和可追踪授权链决定作品能否持续产生资源回流。
+</blockquote>
+== 关注对象 ==
+
+* Rights metadata、work identifiers、ISRC、ISWC、ISBN、DOI、ORCID、creator IDs、publisher/label records 和 collective management signals。
+* 音乐、文字、研究、影像、课程、图表、开源项目和平台内容的收益归属记录。
+* 平台收入、版税报表、分账延迟、权利孤儿化、元数据错配、署名错误和再授权断点。
+* 创作职业、研究传播、知识产品、课程产品和社区项目的资源回流机制。
+
+<span id="human-infra-链路"></span>
+== Human Infra 链路 ==
+
+<pre>作品被发布和再利用
+  -> 标识符、权利元数据、分账和授权记录决定收益能否回流
+  -> 创作者资源、声誉、再创作能力和职业稳定性受到影响
+  -> 长期创作项目更容易维持和复利
+  -> 主体创造窗口和社会知识生产能力增强</pre>
+== 非目标 ==
+
+* 不提供 royalty recovery、合同解释、版税计算、平台申诉、收款设置、税务、会计、法律或个案收入建议。
+* 不判断具体作品权属、分账比例、平台欠款、collecting society 资格或合同有效性。
+* 不提供刷量、流媒体操控、元数据冒名、虚假署名、版权洗白或收益劫持方法。
+* 不收集收入报表、合同、作品文件、平台账号、税务资料、付款信息或争议证据。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* U.S. Copyright Office licensing resources: https://www.copyright.gov/licensing/
+* The Mechanical Licensing Collective: https://www.themlc.com/
+* ISBN International Agency: https://www.isbn-international.org/
+* ORCID: https://orcid.org/
+* DOI Foundation: https://www.doi.org/
+
+== 下一步 ==
+
+* 建立 <code>work -&gt; identifier -&gt; rights metadata -&gt; usage report -&gt; royalty/revenue -&gt; creator continuity</code> 变量表。
+* 区分权利元数据、作品标识符、平台收入、集体管理、合同关系和税务/会计边界。
+* 与 <code>copyright-authorship-registration-licensing-continuity</code>、<code>arts-creative-expression-participation-continuity</code>、<code>personal-knowledge-management-cognitive-offloading</code> 和 <code>platform-account-suspension-appeals-continuity</code> 建立边界。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C4研究域|C4研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c4-conversion-channel/creator-royalty-rights-metadata-continuity/README.md Human Infra 仓库：domains/c4-conversion-channel/creator-royalty-rights-metadata-continuity/README.md]
+
+[[Category:C4研究域]]

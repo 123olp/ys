@@ -1,0 +1,84 @@
+{{研究域
+|域 ID=domain.paratransit-nemt-access-continuity
+|C 层级=C6：局部可能性解锁层
+|研究对象=Paratransit NEMT Access Continuity
+|持续性作用=未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c6-local-unlocking/paratransit-nemt-access-continuity
+}}
+
+'''Paratransit NEMT Access Continuity'''是 Human Infra 在“局部阻塞解除”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C6“局部可能性解锁层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>paratransit-nemt-access-continuity</code> 研究 ADA paratransit、非紧急医疗交通 NEMT、预约、资格、等待、上门接送、陪同、报销和取消如何影响残障、慢病、老年和低收入主体能否到达医疗与基本服务。
+
+<blockquote>核心问题：医疗和公共服务存在不等于人能到达；如果 paratransit 和 NEMT 断裂，可治疗、可复诊、可康复的问题会被交通失败转成健康损失。
+</blockquote>
+== 关注对象 ==
+
+* ADA paratransit、NEMT、上门接送、轮椅车辆、陪同、预约窗口、等待时间、取消、no-show、报销和资格更新。
+* 透析、癌症治疗、康复、产检、精神健康、药房、福利办公室和社区服务场景。
+* 与医疗可及、残障独立生活、公共交通、照护、医保/Medicaid 和行政负担的接口。
+
+<span id="human-infra-链路"></span>
+== Human Infra 链路 ==
+
+<pre>辅助交通与医疗交通连续
+  -> 行动受限主体能到达医疗、康复、药品和公共服务
+  -> 预约失败、延误治疗、照护负担和急诊替代风险下降
+  -> 医学可及性从名义覆盖转化为真实到达
+  -> 健康寿命、功能恢复和主体自主性增强</pre>
+== 非目标 ==
+
+* 不提供资格规避、虚假医疗交通申请、报销欺诈、调度攻击、个案申诉策略或医疗建议。
+* 不替代 Medicaid、FTA、交通运营商、医疗机构、照护协调员、保险、法律或本地服务渠道。
+* 不收集病历、残障证明、医保号、预约记录、出行轨迹、接送地址或个人身份资料。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* FTA ADA Paratransit: https://www.transit.dot.gov/regulations-and-guidance/civil-rights-ada/ada-regulations
+* FTA ADA Circular: https://www.transit.dot.gov/regulations-and-guidance/fta-circulars/americans-disabilities-act-guidance
+* Medicaid NEMT: https://www.medicaid.gov/medicaid/benefits/non-emergency-medical-transportation/index.html
+* ADA.gov Transportation: https://www.ada.gov/topics/transportation/
+
+== 下一步 ==
+
+* 建立 <code>eligibility -&gt; trip request -&gt; pickup/dropoff -&gt; service reliability -&gt; care outcome</code> 变量表。
+* 区分 ADA paratransit、Medicaid NEMT、老年服务交通、社区志愿交通和医疗机构交通协调。
+* 与 <code>healthcare-access-continuity</code>、<code>disability-services-independent-living</code>、<code>public-transit-service-operations-continuity</code> 和 <code>administrative-burden-procedural-friction</code> 建立边界。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C6研究域|C6研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c6-local-unlocking/paratransit-nemt-access-continuity/README.md Human Infra 仓库：domains/c6-local-unlocking/paratransit-nemt-access-continuity/README.md]
+
+[[Category:C6研究域]]

@@ -1,0 +1,93 @@
+{{研究域
+|域 ID=domain.patient-data-interoperability
+|C 层级=C4：可能性转换通道层
+|研究对象=Patient Data Interoperability
+|持续性作用=主要把科学、医疗、数据、制度或技术从潜在能力转成真实可用路径。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c4-conversion-channel/patient-data-interoperability
+}}
+
+'''Patient Data Interoperability'''是 Human Infra 在“路径转换接口”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+主要把科学、医疗、数据、制度或技术从潜在能力转成真实可用路径。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C4“可能性转换通道层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>patient-data-interoperability/</code> 研究患者健康记录访问、数据可携带、互操作标准、授权应用和跨机构数据连续性。
+
+<blockquote>核心问题：医疗、保险和照护系统只有在主体本人和授权照护者能够获取、核对、携带和授权使用关键健康数据时，才可能形成连续照护。
+</blockquote>
+== 先验位置 ==
+
+<pre>有效永生 / 主体持续性最大化
+  -> 主体状态必须跨机构、跨时间、跨服务保持可见
+  -> 健康记录、药物清单、检查结果、理赔和转诊信息必须可访问、可核对、可携带
+  -> 数据连续性决定照护连续性、错误减少和未来决策质量</pre>
+== 关注对象 ==
+
+* 患者访问权、电子健康记录、保险数据、互操作标准、授权应用和数据可携带。
+* USCDI、TEFCA、FHIR、SMART App Launch、Blue Button、患者门户和跨机构交换。
+* 数据锁定、记录缺失、重复检查、药物清单断裂、转诊资料丢失和照护者授权。
+* 与 <code>digital-identity-security/</code>、<code>healthcare-access-continuity/</code>、<code>measurement-feedback/</code> 和 <code>governance-rights/</code> 的接口。
+
+<span id="human-infra-模型链路"></span>
+== Human Infra 模型链路 ==
+
+<pre>患者数据互操作基础设施
+  -> 改变记录访问、数据携带、授权共享和跨机构交换能力
+  -> 改变医疗决策、照护交接、风险识别和患者复核状态
+  -> 降低信息断裂、重复检查、用药错误、转诊失败和照护碎片化风险
+  -> 增强医疗连续性、主体自主性和未来选择权</pre>
+== 非目标 ==
+
+* 不解释个人病历、检查结果、理赔记录或医学风险。
+* 不提供绕过授权、破解门户、爬取数据、隐私规避或第三方应用背书。
+* 不把互操作标准写成个体法律权利、保险权益或数据即时可得性的承诺。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* ONC health record access: https://www.healthit.gov/how-to-get-your-health-record/
+* ONC USCDI: https://www.healthit.gov/isp/united-states-core-data-interoperability-uscdi
+* ONC TEFCA: https://www.healthit.gov/topic/interoperability/policy/trusted-exchange-framework-and-common-agreement-tefca
+* CMS Blue Button: https://bluebutton.cms.gov/
+* HL7 FHIR: https://hl7.org/fhir/
+* SMART App Launch: https://hl7.org/fhir/smart-app-launch/
+
+== 下一步 ==
+
+* 建立患者数据连续性变量表：访问、核对、携带、授权、交换、语义一致性、数据质量和撤销。
+* 与 <code>digital-identity-security/</code> 拆分认证/身份恢复边界，与 <code>measurement-feedback/</code> 拆分指标解释边界。
+* 整理 USCDI、TEFCA、FHIR、Blue Button 和 SMART App Launch 的 Source Cards。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C4研究域|C4研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c4-conversion-channel/patient-data-interoperability/README.md Human Infra 仓库：domains/c4-conversion-channel/patient-data-interoperability/README.md]
+
+[[Category:C4研究域]]

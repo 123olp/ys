@@ -1,0 +1,16 @@
+{{证据来源
+|来源 ID=evidence.unesco.neurotechnology-ethics-2025
+|来源类型=国际规范性文件
+|完整引文=UNESCO. Recommendation on the Ethics of Neurotechnology. 2025.
+|URL 或 DOI=https://www.unesco.org/en/legal-affairs/recommendation-ethics-neurotechnology
+|支持范围=神经技术生命周期、人权、同意、精神隐私、神经数据和AI融合治理
+|不支持的推论=不支持任何具体神经技术已安全有效，也不替代适用法律
+|审查状态=已核对UNESCO法律事务页面
+|访问日期=2026-07-25
+}}
+
+== 支持范围 ==
+该建议覆盖神经系统测量、记录、修改、神经数据、精神状态推断以及AI融合带来的自主性和隐私风险。
+
+== 不支持的推论 ==
+规范性原则不是临床有效性证据，也不能消除不同司法辖区的法律差异。

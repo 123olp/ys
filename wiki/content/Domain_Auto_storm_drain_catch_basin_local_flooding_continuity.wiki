@@ -1,0 +1,77 @@
+{{研究域
+|域 ID=domain.storm-drain-catch-basin-local-flooding-continuity
+|C 层级=C5：可能性生态承载层
+|研究对象=Storm Drain Catch Basin Local Flooding Continuity
+|持续性作用=关键词显示该域主要承载能源、水、食物、住房、治理、经济、通信、灾害或基础设施环境。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c5-ecological-substrate/storm-drain-catch-basin-local-flooding-continuity
+}}
+
+'''Storm Drain Catch Basin Local Flooding Continuity'''是 Human Infra 在“外部生态承载”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要承载能源、水、食物、住房、治理、经济、通信、灾害或基础设施环境。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C5“可能性生态承载层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>storm-drain-catch-basin-local-flooding-continuity/</code> 研究雨水口、catch basin、街道积水、局部内涝、落叶垃圾堵塞和雨洪服务请求如何影响邻里出行、住房边界和公共服务可达。
+
+== 先验链路 ==
+
+<pre>主体日常行动依赖街道和入口在降雨后仍可通过
+  -> 雨水口和 catch basin 把降雨从道路和人行道转移出去
+  -> 堵塞、维护延误、低洼积水和局部内涝会切断通行、公交、急救和住房入口
+  -> 水深、污染、车辆溅水、绕行和地下室进水风险增加
+  -> 邻里级排水失败把天气事件转成行动、住房和卫生连续性损伤</pre>
+== 研究对象 ==
+
+* storm drain、catch basin、local flooding、street flooding、stormwater maintenance、debris blockage、green infrastructure、service request 和降雨后通行状态。
+
+== 不能做 ==
+
+* 不提供排水施工、清掏操作、涉水驾驶、洪水救援、污染判断、地下室抽水、保险索赔、法律责任或个案住房建议。
+* 不收集住址、积水照片元数据、车辆信息、保险文件、地下室照片、维修合同或个人位置资料。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* EPA stormwater management: https://www.epa.gov/npdes/npdes-stormwater-program
+* EPA green infrastructure: https://www.epa.gov/green-infrastructure
+* FEMA flood safety: https://www.ready.gov/floods
+* Open311 GeoReport v2: https://wiki.open311.org/GeoReport_v2/
+
+== 上下游关系 ==
+
+* 上游：<code>water-resources-hydrology-drought-planning/</code>、<code>water-wastewater-utility-service-continuity/</code>、<code>green-blue-infrastructure-urban-nature-cooling/</code>。
+* 下游：<code>basement-flooding-sump-pump-moisture-recovery-continuity/</code>、<code>river-flash-flood-warning-evacuation-continuity/</code>、<code>municipal-311-service-request-continuity/</code>。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C5研究域|C5研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c5-ecological-substrate/storm-drain-catch-basin-local-flooding-continuity/README.md Human Infra 仓库：domains/c5-ecological-substrate/storm-drain-catch-basin-local-flooding-continuity/README.md]
+
+[[Category:C5研究域]]

@@ -1,0 +1,91 @@
+{{研究域
+|域 ID=domain.product-safety-recall-systems
+|C 层级=C6：局部可能性解锁层
+|研究对象=Product Safety Recall Systems
+|持续性作用=未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c6-local-unlocking/product-safety-recall-systems
+}}
+
+'''Product Safety Recall Systems'''是 Human Infra 在“局部阻塞解除”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C6“局部可能性解锁层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>product-safety-recall-systems/</code> 研究消费品、食品、药品、医疗器械和车辆出现缺陷后，报告、预警、召回和纠正系统能否及时降低伤害。
+
+<blockquote>核心问题：现代主体持续性依赖大量外部产品；当产品缺陷不能被报告、发现、召回和纠正时，外部工具会反过来变成伤害源。
+</blockquote>
+== 先验位置 ==
+
+<pre>有效永生 / 主体持续性最大化
+  -> 主体依赖食物、药品、医疗器械、车辆、家居、儿童用品和能源设备
+  -> 缺陷报告、不良事件、风险预警、召回通知、纠正措施和替代路径必须可运行
+  -> 产品系统才不会通过隐性缺陷、延迟召回和信息断裂伤害主体</pre>
+== 关注对象 ==
+
+* 消费品、食品、药品、医疗器械、车辆和高风险日用品的安全警报、召回和纠正。
+* 缺陷报告、不良事件、投诉、监管执法、召回覆盖、通知到达、停用/替代连续性和风险沟通。
+* 儿童、老年人、残障者、医疗依赖设备用户和低信息可达群体的召回断点。
+* 与供应链连续性、医疗服务、药品连续性、数字包容、信息完整性和风险工程的接口。
+
+<span id="human-infra-模型链路"></span>
+== Human Infra 模型链路 ==
+
+<pre>产品安全与召回系统
+  -> 缺陷、伤害、不良事件和投诉被报告和聚合
+  -> 监管预警、召回通知、纠正措施和替代路径可达
+  -> 缺陷产品持续使用、医疗中断、交通伤害和家庭风险下降
+  -> 主体持续性获得外部工具安全层的支撑</pre>
+== 非目标 ==
+
+* 不提供个体产品购买、维修、改装、医疗器械使用、药品停用、车辆维修或法律索赔建议。
+* 不替代监管机构、制造商说明、医疗专业人员、召回通知或紧急安全警报。
+* 不输出规避召回、绕过安全装置、修改设备、囤积替代品、恐慌传播或医疗/法律建议。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* CPSC Recalls: https://www.cpsc.gov/Recalls
+* FDA Recalls, Market Withdrawals, and Safety Alerts: https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts
+* NHTSA Recalls: https://www.nhtsa.gov/recalls
+* openFDA Enforcement Reports: https://open.fda.gov/apis/enforcement/
+
+== 下一步 ==
+
+* 建立产品安全变量表：产品类型、缺陷报告、不良事件、召回覆盖、通知到达、纠正、替代路径和高风险人群。
+* 整理 CPSC、FDA、NHTSA、openFDA enforcement、MAUDE 和消费品事故报告 Source Cards。
+* 与 <code>supply-chain-continuity/</code> 明确分工：本域研究产品缺陷发现和召回，供应链域研究关键输入可得和替代路径。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C6研究域|C6研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c6-local-unlocking/product-safety-recall-systems/README.md Human Infra 仓库：domains/c6-local-unlocking/product-safety-recall-systems/README.md]
+
+[[Category:C6研究域]]

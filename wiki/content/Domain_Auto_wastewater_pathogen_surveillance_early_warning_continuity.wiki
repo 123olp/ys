@@ -1,0 +1,88 @@
+{{研究域
+|域 ID=domain.wastewater-pathogen-surveillance-early-warning-continuity
+|C 层级=C5：可能性生态承载层
+|研究对象=Wastewater Pathogen Surveillance Early Warning Continuity
+|持续性作用=关键词显示该域主要承载能源、水、食物、住房、治理、经济、通信、灾害或基础设施环境。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c5-ecological-substrate/wastewater-pathogen-surveillance-early-warning-continuity
+}}
+
+'''Wastewater Pathogen Surveillance Early Warning Continuity'''是 Human Infra 在“外部生态承载”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要承载能源、水、食物、住房、治理、经济、通信、灾害或基础设施环境。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C5“可能性生态承载层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>wastewater-pathogen-surveillance-early-warning-continuity/</code> 研究污水病原体监测、早期预警、趋势解释、地域聚合、隐私边界和公共卫生决策接口如何支撑主体持续性。
+
+<blockquote>核心问题：污水信号把个体无法及时报告的感染变化转化为社区级早期预警，但它必须被正确聚合、解释和治理。
+</blockquote>
+== 先验位置 ==
+
+<pre>有效永生 / 主体持续性最大化
+  -> 暴发早期个体检测和就医信号常常滞后
+  -> 污水监测提供社区级病原体趋势观测
+  -> 早期预警使公共卫生、学校、医疗和家庭系统更早调整风险控制</pre>
+== 关注对象 ==
+
+* NWSS、污水病原体监测、采样网络、趋势信号、社区聚合、隐私边界、结果沟通和公共卫生触发器。
+* 与 <code>water-wastewater-utility-service-continuity/</code> 的关系：水务域关注公用事业服务；本域关注污水作为公共卫生早期预警信号。
+
+<span id="human-infra-模型链路"></span>
+== Human Infra 模型链路 ==
+
+<pre>污水病原体早期预警
+  -> 改变社区级传播趋势观测和预警时滞
+  -> 改变学校、医疗、公共卫生和家庭准备的提前量
+  -> 降低暴发发现过晚、医疗挤兑和过度/不足响应风险
+  -> 增强风险治理、有效行动和主体持续性</pre>
+== 非目标 ==
+
+* 不提供采样教程、设施定位、结果个体化解释、社区点名、污名化、实时恐慌传播或检测规避。
+* 不提供水务设施操作、排污绕行、样本处理、实验室协议或地方政策指挥。
+* 不把社区趋势信号写成个体诊断或确定性预测。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* CDC National Wastewater Surveillance System: https://www.cdc.gov/nwss/
+* CDC wastewater surveillance data: https://www.cdc.gov/nwss/wastewater-surveillance.html
+* WHO wastewater surveillance resources: https://www.who.int/
+* WastewaterSCAN public dashboard: https://data.wastewaterscan.org/
+
+== 下一步 ==
+
+* 建立变量表：采样覆盖、检测目标、趋势变化、报告延迟、地域聚合、隐私边界、触发规则和风险沟通。
+* 与 <code>immunization-public-health-surveillance/</code>、<code>public-health-laboratory-diagnostic-capacity/</code>、<code>water-wastewater-utility-service-continuity/</code> 和 <code>community-testing-screening-access-continuity/</code> 建立接口。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C5研究域|C5研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c5-ecological-substrate/wastewater-pathogen-surveillance-early-warning-continuity/README.md Human Infra 仓库：domains/c5-ecological-substrate/wastewater-pathogen-surveillance-early-warning-continuity/README.md]
+
+[[Category:C5研究域]]

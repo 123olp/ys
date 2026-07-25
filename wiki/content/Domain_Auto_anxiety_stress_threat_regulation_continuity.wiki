@@ -1,0 +1,87 @@
+{{研究域
+|域 ID=domain.anxiety-stress-threat-regulation-continuity
+|C 层级=C6：局部可能性解锁层
+|研究对象=Anxiety Stress Threat Regulation Continuity
+|持续性作用=未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c6-local-unlocking/anxiety-stress-threat-regulation-continuity
+}}
+
+'''Anxiety Stress Threat Regulation Continuity'''是 Human Infra 在“局部阻塞解除”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C6“局部可能性解锁层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+Anxiety Stress Threat Regulation Continuity 研究焦虑、慢性压力、威胁感知、回避行为和生理唤醒如何影响判断、学习、关系、睡眠、身体风险和任务持续性。
+
+<blockquote>核心问题：主体必须能识别风险，但不能被持续威胁系统劫持到无法行动、学习和恢复。
+</blockquote>
+== 研究对象 ==
+
+* 焦虑障碍、广泛性焦虑、恐惧、惊恐、社交焦虑、回避行为、压力负荷和威胁调节。
+* 焦虑压力如何改变注意力偏向、风险判断、睡眠、身体症状、工作学习表现和服务使用。
+* 压力恢复、环境安全、社会支持、工作学校调整、数字环境和不确定性管理。
+
+== 先验链路 ==
+
+<pre>主体持续行动需要风险识别和恢复性安全感
+  -> 焦虑和慢性压力会提高威胁监测、回避、睡眠破坏和认知负荷
+  -> 判断质量、学习效率、关系执行和身体恢复下降
+  -> 有效行动窗口缩短，机会成本和健康风险上升
+  -> 因而焦虑压力调节是主体持续性中的威胁系统治理域</pre>
+== 关键变量 ==
+
+* 威胁感知、担忧、惊恐、回避、身体唤醒、睡眠、注意偏向、决策延迟和社会参与。
+* 不确定性、经济压力、暴力暴露、工作压力、照护压力、数字信息环境和服务可及性。
+* 把合理风险感知病理化，或把焦虑当作绩效管理工具的风险。
+
+== 证据入口 ==
+
+* WHO anxiety disorders fact sheet。
+* NIMH anxiety disorders materials。
+* CDC / NIOSH workplace stress materials。
+* 公开压力、焦虑和功能结局研究。
+
+== 非目标 ==
+
+* 本域不提供诊断、治疗、药物、暴露训练、呼吸练习处方、危机处置或个体心理建议。
+* 不输出个体焦虑评分、工作能力判断、驾驶/临床/高风险任务许可或家庭处置方案。
+* 不收集量表、病历、恐惧对象、位置、家庭冲突、创伤资料或心理咨询资料。
+
+== 上下游 ==
+
+* 上游：<code>mental-health-affective-stability/</code>、<code>risk-engineering/</code>、<code>personal-safety-violence-prevention/</code>。
+* 下游：<code>attention-executive-control/</code>、<code>sleep-circadian-recovery/</code>、<code>situational-awareness-decision-environment-continuity/</code>。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C6研究域|C6研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c6-local-unlocking/anxiety-stress-threat-regulation-continuity/README.md Human Infra 仓库：domains/c6-local-unlocking/anxiety-stress-threat-regulation-continuity/README.md]
+
+[[Category:C6研究域]]

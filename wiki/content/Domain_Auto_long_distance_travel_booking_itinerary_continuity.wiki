@@ -1,0 +1,87 @@
+{{研究域
+|域 ID=domain.long-distance-travel-booking-itinerary-continuity
+|C 层级=C6：局部可能性解锁层
+|研究对象=长距离旅行预订与行程连续性
+|持续性作用=未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c6-local-unlocking/long-distance-travel-booking-itinerary-continuity
+}}
+
+'''长距离旅行预订与行程连续性'''是 Human Infra 在“局部阻塞解除”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C6“局部可能性解锁层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+本域研究长距离出行中的订票、行程记录、改签、取消、通知和跨服务衔接如何保护主体行动窗口。它关注的是离开本地生活圈后的临时操作系统，而不是路线推荐、票价建议或个案旅行安排。
+
+== 研究对象 ==
+
+* 航班、铁路、长途客运、轮渡等长距离出行的订票、确认号、行程单、改签、取消和服务通知。
+* 行程资料如何影响住宿入住、工作学习安排、照护交接、医疗预约、紧急联系人和延误恢复。
+* 平台锁定、动态定价、退款争议、错订、身份不匹配、通知失败和支付失败造成的执行风险。
+* 无智能手机、语言障碍、残障、儿童、老年、低收入和照护责任旅客的额外断点。
+
+== 价值链路 ==
+
+<pre>主体持续性需要跨地点任务可执行
+  -> 长距离旅行把主体从熟悉住所和服务网络中临时移出
+  -> 订票、行程、支付、通知和改签记录成为临时行动脚本
+  -> 若行程记录错误、断线或不可更改，工作、照护、医疗、住宿和回程会连锁失败
+  -> 长距离旅行预订与行程连续性把远距离移动从愿望转化为可恢复的执行链</pre>
+== 关键问题 ==
+
+* 行程记录如何连接交通、住宿、医疗、工作、家庭和紧急联络？
+* 延误、取消、错订、支付失败和服务通知失败如何改变主体有效时间和未来选择权？
+* 哪些资料应作为公共研究变量，而不能变成个人实时行程数据收集？
+* 官方消费者保护、服务条款和投诉入口如何成为证据边界，而不是个案争议策略？
+
+== 上游与下游 ==
+
+* 上游：<code>transportation-access-mobility/</code>、<code>calendar-scheduling-appointment-continuity/</code>、<code>passport-travel-document-mobility-continuity/</code>。
+* 下游：<code>air-passenger-rights-disruption-refund-continuity/</code>、<code>lodging-temporary-accommodation-access-continuity/</code>、<code>travel-advisory-consular-assistance-continuity/</code>。
+
+== 非目标 ==
+
+* 不提供票价套利、刷票、抢票、路线推荐、旅行商业建议、逃票、规避身份检查或退款争议策略。
+* 不判断某个服务商、航班、酒店、车次、保险或交通方式是否适合个人。
+* 不收集票号、护照号、确认号、位置、支付凭证、实时行程状态或个人旅行计划。
+
+== 初始资料入口 ==
+
+* U.S. Department of Transportation: Aviation Consumer Protection
+* USA.gov: Travel and consumer complaints
+* FTC: Travel and vacation-rental consumer materials
+* Public carrier contracts of carriage and terms as contextual materials
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C6研究域|C6研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c6-local-unlocking/long-distance-travel-booking-itinerary-continuity/README.md Human Infra 仓库：domains/c6-local-unlocking/long-distance-travel-booking-itinerary-continuity/README.md]
+
+[[Category:C6研究域]]

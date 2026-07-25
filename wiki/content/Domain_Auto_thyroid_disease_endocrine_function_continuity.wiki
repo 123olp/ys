@@ -1,0 +1,89 @@
+{{研究域
+|域 ID=domain.thyroid-disease-endocrine-function-continuity
+|C 层级=C2：可能性源体维护层
+|研究对象=Thyroid Disease Endocrine Function Continuity
+|持续性作用=关键词显示该域主要维护身体、脑、器官、细胞、急性生命风险或衰老损伤控制。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c2-source-maintenance/thyroid-disease-endocrine-function-continuity
+}}
+
+'''Thyroid Disease Endocrine Function Continuity'''是 Human Infra 在“生命载体维护”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要维护身体、脑、器官、细胞、急性生命风险或衰老损伤控制。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C2“可能性源体维护层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>thyroid-disease-endocrine-function-continuity/</code> 研究甲状腺功能减退、甲状腺功能亢进、甲状腺结节/癌症通路、妊娠/中年阶段和长期内分泌稳定如何影响主体持续性。
+
+<blockquote>核心问题：甲状腺轴把能量、体温、情绪、心率、体重、认知速度和生殖阶段连接起来；失衡会把看似分散的症状转化为长期行动质量损耗。
+</blockquote>
+== 先验位置 ==
+
+<pre>有效永生 / 主体持续性最大化
+  -> 主体需要稳定能量代谢、体温、心血管节律、情绪和认知速度
+  -> 甲状腺疾病会改变疲劳、焦虑、心率、体重、睡眠、生育和骨骼风险
+  -> 结果取决于识别、检测、长期用药/监测、阶段性风险和过度诊疗边界
+  -> 因此甲状腺疾病是内分泌稳定和有效时间密度的关键维护域</pre>
+== 关注对象 ==
+
+* Hypothyroidism、hyperthyroidism、thyroid nodules、thyroid cancer pathway、pregnancy thyroid issues、cardiac/bone effects, fatigue, mood, cognitive speed, monitoring continuity。
+* 与 <code>endocrine-hormonal-regulation/</code> 的边界：该域关注内分泌总机制；本域聚焦甲状腺轴对能量、情绪、心血管和长期功能的影响。
+* 与 <code>perimenopause-menopause-midlife-health-continuity/</code> 的关系：中年阶段症状重叠会造成识别、归因和治疗边界问题。
+
+<span id="human-infra-模型链路"></span>
+== Human Infra 模型链路 ==
+
+<pre>甲状腺疾病识别与监测系统 T
+  -> 改变甲状腺激素状态、心率、体重、情绪、疲劳、骨骼和生育阶段变量 X
+  -> 改变能量、注意力、工作效率、睡眠、心血管负担和长期监测状态 S
+  -> 改变有效时间损耗、心律/骨折/妊娠风险和过度/不足治疗风险 λ(t)
+  -> 影响主体行动质量、恢复能力和未来选择权</pre>
+== 非目标 ==
+
+* 不提供个人甲状腺化验判读、结节分级、用药、剂量、停药、补碘、妊娠、癌症筛查或治疗建议。
+* 不生成个人症状归因、检查排序、药物调整、饮食补充、影像/穿刺或保险判断。
+* 不收集个案化验、影像、用药、妊娠、生育、心律或保险资料。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* NIDDK hypothyroidism: https://www.niddk.nih.gov/health-information/endocrine-diseases/hypothyroidism
+* NIDDK hyperthyroidism: https://www.niddk.nih.gov/health-information/endocrine-diseases/hyperthyroidism
+* NCI thyroid cancer information: https://www.cancer.gov/types/thyroid
+
+== 下一步 ==
+
+* 建立 Thyroid Function Card：hypo/hyper state, monitoring continuity, pregnancy/midlife overlap, cardiac/bone effects, overdiagnosis boundary。
+* 与 <code>endocrine-hormonal-regulation/</code>、<code>perimenopause-menopause-midlife-health-continuity/</code> 和 <code>cardiovascular-resilience/</code> 建立接口。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C2研究域|C2研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c2-source-maintenance/thyroid-disease-endocrine-function-continuity/README.md Human Infra 仓库：domains/c2-source-maintenance/thyroid-disease-endocrine-function-continuity/README.md]
+
+[[Category:C2研究域]]

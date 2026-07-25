@@ -1,0 +1,84 @@
+{{研究域
+|域 ID=domain.residential-solid-waste-collection-bin-sanitation-continuity
+|C 层级=C6：局部可能性解锁层
+|研究对象=Residential Solid Waste Collection Bin Sanitation Continuity
+|持续性作用=未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c6-local-unlocking/residential-solid-waste-collection-bin-sanitation-continuity
+}}
+
+'''Residential Solid Waste Collection Bin Sanitation Continuity'''是 Human Infra 在“局部阻塞解除”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C6“局部可能性解锁层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>residential-solid-waste-collection-bin-sanitation-continuity</code> 研究住宅生活垃圾、回收物、庭院废弃物、垃圾桶、收运频率、错过收运、大件预约和多户住宅垃圾间如何影响家庭卫生、害虫风险、邻里关系和居住恢复。
+
+<blockquote>核心问题：家庭任务结束后会产生残余物；如果日常固废收集、容器管理和收运服务失败，厨房、卫生间、照护、学习和恢复空间会被气味、害虫、堆积和邻里冲突反向占据。
+</blockquote>
+== 关注对象 ==
+
+* 住宅生活垃圾、可回收物、庭院废弃物、垃圾桶、垃圾间、收运频率、错过收运、大件收运和节假日/天气中断。
+* 公寓、多户住宅、行动受限家庭、儿童家庭、照护家庭、无车家庭和高温天气下的垃圾暂存压力。
+* 气味、害虫、泄漏、桶容量、路缘摆放、楼梯/电梯动线、物业规则和市政服务边界。
+* 与家庭清洁、害虫控制、食品储存、公共卫生、非法倾倒和灾后废弃物清理的接口。
+
+<span id="human-infra-链路"></span>
+== Human Infra 链路 ==
+
+<pre>住宅固废收运与垃圾桶卫生连续
+  -> 家庭任务产生的残余物能按类别、容量和时间窗口离开居住空间
+  -> 气味、害虫、泄漏、堆积和邻里摩擦被降低
+  -> 厨房、卫生间、照护、睡眠、学习和恢复空间保持可用
+  -> 主体居住稳定、卫生连续和行动恢复能力提高</pre>
+== 非目标 ==
+
+* 不提供垃圾分类执法规避、非法倾倒、偷倒、焚烧、危险废物混入、隐私资料丢弃、物业纠纷或个案投诉策略。
+* 不替代地方固废部门、物业、房东、市政收运服务、公共卫生部门、代码执法、害虫控制或环境执法渠道。
+* 不把“垃圾越快消失”视为唯一目标；本域关注分类、容量、频率、卫生、可达和服务连续性。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* EPA Recycling Basics and Benefits: https://www.epa.gov/recycle/recycling-basics-and-benefits
+* EPA Facts and Figures about Materials, Waste and Recycling: https://www.epa.gov/facts-and-figures-about-materials-waste-and-recycling
+* EPA Illegal Dumping: https://www.epa.gov/large-scale-residential-demolition/illegal-dumping
+
+== 下一步 ==
+
+* 建立 <code>household waste stream -&gt; container/service state -&gt; sanitation risk -&gt; household task -&gt; continuity outcome</code> 变量表。
+* 区分单户、多户、公寓垃圾间、行动受限者、高温天气、节假日中断和大件收运等待场景。
+* 与 <code>household-cleaning-disinfection-pest-control-continuity</code>、<code>waste-management-hazardous-materials-continuity</code>、<code>illegal-dumping-litter-neighborhood-sanitation-continuity</code> 建立边界。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C6研究域|C6研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c6-local-unlocking/residential-solid-waste-collection-bin-sanitation-continuity/README.md Human Infra 仓库：domains/c6-local-unlocking/residential-solid-waste-collection-bin-sanitation-continuity/README.md]
+
+[[Category:C6研究域]]

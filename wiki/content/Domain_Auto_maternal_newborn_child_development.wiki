@@ -1,0 +1,97 @@
+{{研究域
+|域 ID=domain.maternal-newborn-child-development
+|C 层级=C2：可能性源体维护层
+|研究对象=Maternal Newborn Child Development
+|持续性作用=直接维护身体、脑、器官、衰老、损伤或生命系统这些可能性源体。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c2-source-maintenance/maternal-newborn-child-development
+}}
+
+'''Maternal Newborn Child Development'''是 Human Infra 在“生命载体维护”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+直接维护身体、脑、器官、衰老、损伤或生命系统这些可能性源体。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C2“可能性源体维护层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>maternal-newborn-child-development/</code> 研究孕产健康、新生儿健康、儿童健康、生长标准、早期儿童发展、养育照护和家庭调查资料。
+
+<blockquote>核心问题：主体持续性不是成年后才开始；身体、认知、免疫、学习能力、压力系统和未来选择权从孕产、新生儿和儿童早期就被基础设施塑造。
+</blockquote>
+== 先验位置 ==
+
+<pre>有效永生 / 主体持续性最大化
+  -> 主体能力的形成有早期生命窗口
+  -> 孕产、新生儿、儿童健康、营养、生长、照护和安全环境会改变长期生命路径
+  -> 早期生命基础设施决定未来主体的身体、认知、学习和恢复能力底座</pre>
+== 关注对象 ==
+
+* 孕产健康、孕产死亡率、产前照护、新生儿死亡率、儿童健康、生长标准、早期儿童发展和 nurturing care。
+* PRAMS、DHS、World Bank ECD、Healthy People pregnancy and childbirth 等调查、政策和指标。
+* 与 <code>reproductive-fertility-continuity/</code> 的关系：生殖连续性域关注生育力和生殖自主性；本域关注孕产、新生儿、儿童早期健康与发展。
+* 与 <code>childcare-family-continuity/</code>、<code>nutrition-metabolic-health/</code>、<code>learning-skill-acquisition/</code> 和 <code>social-protection-benefits-delivery/</code> 的接口。
+
+<span id="human-infra-模型链路"></span>
+== Human Infra 模型链路 ==
+
+<pre>母婴儿童早期生命基础设施
+  -> 改变孕产安全、新生儿生存、儿童健康、生长、照护和早期发展条件
+  -> 改变未来主体的身体储备、认知能力、学习能力、压力恢复和社会参与底座
+  -> 降低早期死亡、发育受损、营养不足、照护断裂和代际不平等风险
+  -> 增强长期健康寿命、有效时间、能力形成和未来选择权</pre>
+== 非目标 ==
+
+* 不提供孕产、新生儿、儿童诊断、治疗、喂养、发育评估、疫苗、药物或育儿建议。
+* 不判断家庭、父母、儿童能力、风险等级、福利资格或保险筛选。
+* 不把早期生命数据用于家庭监控、惩罚、排名、歧视或责任转嫁。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* WHO maternal health: https://www.who.int/health-topics/maternal-health
+* WHO maternal mortality: https://www.who.int/news-room/fact-sheets/detail/maternal-mortality
+* WHO antenatal care recommendations: https://www.who.int/publications/i/item/9789241549912
+* WHO newborn mortality: https://www.who.int/news-room/fact-sheets/detail/newborn-mortality
+* WHO child health: https://www.who.int/health-topics/child-health
+* WHO child growth standards: https://www.who.int/tools/child-growth-standards
+* Nurturing Care Framework: https://www.who.int/publications/i/item/9789241514064
+* CDC PRAMS: https://www.cdc.gov/prams/
+* CDC Child Development: https://www.cdc.gov/child-development/
+* World Bank Early Childhood Development: https://www.worldbank.org/en/topic/earlychildhooddevelopment
+
+== 下一步 ==
+
+* 建立早期生命变量表：孕产安全、产前照护、新生儿生存、儿童健康、生长、营养、照护、早期学习、家庭环境和保护边界。
+* 与 <code>childcare-family-continuity/</code> 拆分早期健康发展和托育/家庭运行边界。
+* 整理 WHO maternal/newborn/child health、Nurturing Care、PRAMS、DHS 和 World Bank ECD 的 Source Cards。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C2研究域|C2研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c2-source-maintenance/maternal-newborn-child-development/README.md Human Infra 仓库：domains/c2-source-maintenance/maternal-newborn-child-development/README.md]
+
+[[Category:C2研究域]]

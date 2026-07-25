@@ -1,0 +1,93 @@
+{{研究域
+|域 ID=domain.health-workforce-capacity
+|C 层级=C3：可能性生成引擎层
+|研究对象=Health Workforce Capacity
+|持续性作用=关键词显示该域主要增强认知、学习、工具、AI、技能或沟通能力。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c3-generation-engine/health-workforce-capacity
+}}
+
+'''Health Workforce Capacity'''是 Human Infra 在“主体能力生成”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要增强认知、学习、工具、AI、技能或沟通能力。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C3“可能性生成引擎层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>health-workforce-capacity/</code> 研究医生、护士、公共卫生人员、社区健康工作者、照护人员和辅助专业人员的供给、分布、训练、保留和负荷如何限制医疗系统可达性。
+
+<blockquote>核心问题：医学技术存在不等于主体能获得照护；如果健康劳动力不足、分布不均、流失严重或负荷过高，诊断、治疗、康复、公共卫生和长期照护都会变成排队、延误和质量风险。
+</blockquote>
+== 先验位置 ==
+
+<pre>有效永生 / 主体持续性最大化
+  -> 主体必须持续获得诊断、治疗、预防、康复和照护
+  -> 这些服务依赖足够数量、技能、地域分布和可持续工作的健康劳动力
+  -> 劳动力短缺、错配、倦怠和培训瓶颈会把可修复风险变成不可及风险
+  -> 因此健康劳动力容量是医学收益转化为主体持续性的系统约束域</pre>
+== 关注对象 ==
+
+* 医生、护士、公共卫生人员、药师、康复人员、行为健康人员、社区健康工作者和长期照护劳动力。
+* 劳动力供给、地理分布、短缺区域、培训管线、保留、倦怠、技能组合和任务转移。
+* 卫生人力数据、预测、职业分类、服务可达性和质量之间的关系。
+* 与 <code>healthcare-access-continuity/</code> 的边界：本域关注提供服务的人力容量；医疗可及域关注服务入口、连续性、费用和质量整体。
+* 与 <code>occupational-work-design/</code> 的边界：本域聚焦健康服务劳动力；工作设计域处理更广泛职业环境。
+
+<span id="human-infra-模型链路"></span>
+== Human Infra 模型链路 ==
+
+<pre>健康劳动力容量 T
+  -> 改变供给、分布、技能组合、负荷、保留、培训和团队协作变量 X
+  -> 改变主体获得诊断、治疗、预防、康复和照护的系统状态 S
+  -> 改变等待、延误、误诊、护理失败、公共卫生响应不足和照护断点风险 λ(t)
+  -> 影响可修复风险、健康寿命、恢复能力和未来选择权</pre>
+== 非目标 ==
+
+* 不提供个体择医、职业规划、薪资谈判、移民资格、执照认证、劳动争议或机构排名建议。
+* 不支持用劳动力短缺合理化压榨、过度监控、降低安全标准或削弱专业边界。
+* 不把 AI、自动化或任务转移写成可以无条件替代临床责任和人类照护关系。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* WHO Health Workforce: https://www.who.int/health-topics/health-workforce
+* WHO Global Strategy on Human Resources for Health: https://www.who.int/publications/i/item/9789241511131
+* HRSA Health Workforce: https://bhw.hrsa.gov/
+* HRSA Health Workforce Data: https://data.hrsa.gov/topics/health-workforce
+* BLS Healthcare Occupations: https://www.bls.gov/ooh/healthcare/
+
+== 下一步 ==
+
+* 建立健康劳动力变量表：供给、分布、短缺、技能组合、培训、保留、倦怠、任务转移和服务质量。
+* 与 <code>healthcare-access-continuity/</code>、<code>patient-safety-organizational-learning/</code>、<code>rehabilitation-functioning/</code> 和 <code>caregiving-long-term-care/</code> 建立接口。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C3研究域|C3研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c3-generation-engine/health-workforce-capacity/README.md Human Infra 仓库：domains/c3-generation-engine/health-workforce-capacity/README.md]
+
+[[Category:C3研究域]]

@@ -1,0 +1,38 @@
+{{研究域
+|域 ID=domain.longevity-science
+|C 层级=C1：可能性边界改写层
+|研究对象=衰老机制、健康寿命、死亡风险与干预证据
+|持续性作用=延迟疾病、衰弱、失能和死亡事件
+|证据状态=成熟基础科学与临床研究并存；不存在已证实的永生干预
+|仓库路径=domains/c1-boundary-rewriting/longevity-evidence
+}}
+
+'''长寿科学'''研究衰老如何成为多种慢性疾病和功能下降的共同驱动因素，以及干预这些机制能否延长健康寿命。
+
+== 对 Human Infra 的作用 ==
+
+该域把“活得更久”转换为可测量问题：死亡风险函数、生存曲线、疾病发生时间、失能时间、内在能力和功能能力如何改变。
+
+== 机制或依赖 ==
+
+主要研究对象包括基因组稳定性、端粒、表观遗传、蛋白稳态、营养感知、线粒体、细胞衰老、干细胞、细胞间通讯、炎症和微生物组等衰老标志。<ref>[https://pubmed.ncbi.nlm.nih.gov/36599349/ López-Otín et al., Hallmarks of Aging: An Expanding Universe, Cell, 2023]。</ref>
+
+== 证据与来源 ==
+
+美国国家老龄研究所将 geroscience 定义为研究衰老机制如何驱动老年常见慢性疾病的交叉领域。<ref>[https://www.nia.nih.gov/research/dab/geroscience-intersection-basic-aging-biology-chronic-disease-and-health NIA, Geroscience]，访问于 2026-07-24。</ref>
+
+== 边界、失败条件和未知项 ==
+
+动物寿命、细胞指标和替代终点不能自动外推为人体寿命收益。任何干预必须区分机制合理性、临床结局、长期安全性和个体差异。
+
+== 相关词条与外部链接 ==
+
+* [[生物年龄时钟]]
+* [[衰老细胞清除]]
+* [[部分细胞重编程]]
+* [[长寿逃逸速度]]
+* [https://zh.wikipedia.org/wiki/%E8%A1%B0%E8%80%81 外部 Wikipedia：衰老]
+
+<references />
+
+[[Category:C1研究域]]

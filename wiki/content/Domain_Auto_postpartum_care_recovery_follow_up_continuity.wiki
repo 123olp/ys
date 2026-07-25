@@ -1,0 +1,80 @@
+{{研究域
+|域 ID=domain.postpartum-care-recovery-follow-up-continuity
+|C 层级=C6：局部可能性解锁层
+|研究对象=Postpartum Care Recovery Follow Up Continuity
+|持续性作用=未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c6-local-unlocking/postpartum-care-recovery-follow-up-continuity
+}}
+
+'''Postpartum Care Recovery Follow Up Continuity'''是 Human Infra 在“局部阻塞解除”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C6“局部可能性解锁层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+产后照护、恢复与随访连续性，关注分娩后身体恢复、产后随访、慢病和妊娠并发症延续管理、警示信号教育、医保覆盖、家庭支持、工作/照护压力和转诊闭环。
+
+== 对象 ==
+
+* Postpartum visit and ongoing care
+* Recovery after birth and cesarean boundary
+* Blood pressure, diabetes, infection and pain follow-up
+* Warning signs and urgent referral interface
+* Insurance coverage and appointment continuity
+* Family, work and caregiving load
+* Transition back to primary care
+
+<span id="human-infra-价值"></span>
+== Human Infra 价值 ==
+
+产后阶段会把身体恢复、睡眠、照护负担、医疗随访、心理状态、收入和家庭支持集中到一个高负荷窗口。该域把“分娩之后是否仍有连续照护”建模为避免可预防死亡、失能、心理崩溃和长期健康轨迹恶化的基础设施。
+
+== 边界 ==
+
+* 不提供产后症状判断、用药、伤口处理、哺乳、避孕、运动恢复、复工、急诊判断、心理危机或个体医疗建议。
+* 不判断个人是否恢复正常、是否需要复诊、是否有并发症、是否适合工作或某项活动。
+* 不替代 OB/GYN、midwife、primary care、mental health professional、lactation consultant、保险、雇主或紧急服务。
+
+== 上游与下游 ==
+
+* 上游：<code>prenatal-care-access-risk-screening-continuity/</code>、<code>obstetric-emergency-hemorrhage-hypertension-continuity/</code>、<code>pregnancy-parental-work-continuity/</code>。
+* 下游：<code>perinatal-mental-health-screening-referral-continuity/</code>、<code>lactation-breastfeeding-support-continuity/</code>、<code>maternal-newborn-child-development/</code>。
+
+== 初始资料线索 ==
+
+* ACOG Optimizing Postpartum Care.
+* CDC Hear Her / maternal warning signs and maternal mortality materials.
+* HRSA maternal health and postpartum coverage materials.
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C6研究域|C6研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c6-local-unlocking/postpartum-care-recovery-follow-up-continuity/README.md Human Infra 仓库：domains/c6-local-unlocking/postpartum-care-recovery-follow-up-continuity/README.md]
+
+[[Category:C6研究域]]

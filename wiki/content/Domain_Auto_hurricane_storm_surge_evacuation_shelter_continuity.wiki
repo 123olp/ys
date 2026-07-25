@@ -1,0 +1,89 @@
+{{研究域
+|域 ID=domain.hurricane-storm-surge-evacuation-shelter-continuity
+|C 层级=C5：可能性生态承载层
+|研究对象=Hurricane Storm Surge Evacuation Shelter Continuity
+|持续性作用=关键词显示该域主要承载能源、水、食物、住房、治理、经济、通信、灾害或基础设施环境。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c5-ecological-substrate/hurricane-storm-surge-evacuation-shelter-continuity
+}}
+
+'''Hurricane Storm Surge Evacuation Shelter Continuity'''是 Human Infra 在“外部生态承载”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要承载能源、水、食物、住房、治理、经济、通信、灾害或基础设施环境。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C5“可能性生态承载层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>hurricane-storm-surge-evacuation-shelter-continuity/</code> 研究飓风、风暴潮、强风、降雨、停电、撤离区、避难所和灾后返回如何影响主体持续性。
+
+<blockquote>核心问题：飓风不是单一风雨事件，而是风暴潮、内陆洪水、停电、交通拥堵、医疗中断和住房破坏的组合风险。
+</blockquote>
+== 先验位置 ==
+
+<pre>有效永生 / 主体持续性最大化
+  -> 主体持续性依赖住房、交通、电力、水、通信、医疗和家庭照护
+  -> 飓风会同时破坏这些生命线
+  -> 若撤离区理解、转移交通、避难接纳和返回判断失败，灾害会从急性危险扩展为长期位移
+  -> 因而飓风风暴潮撤离与避难是沿海主体连续性的执行域</pre>
+== 关注对象 ==
+
+* 飓风 watch/warning、风暴潮、强风、内陆洪水、停电、供水中断、医疗设备供能和燃料短缺。
+* 撤离区、撤离命令、交通瓶颈、避难所、宠物/服务动物、无障碍需求和灾后返回。
+* 与 <code>coastal-marine-resilience-blue-economy-continuity/</code> 的边界：该域关注海岸系统长期韧性；本域关注飓风窗口中的撤离、避难和生命线连续性。
+
+<span id="human-infra-模型链路"></span>
+== Human Infra 模型链路 ==
+
+<pre>飓风撤离与避难系统 T
+  -> 改变风暴潮暴露、撤离时间、交通可达、避难接纳、电水通信和医疗供能变量 X
+  -> 改变主体在沿海风暴中的安全与服务状态 S
+  -> 改变溺水、创伤、热/冷暴露、治疗中断、流离和资源耗竭风险 λ(t)
+  -> 影响恢复速度、家庭稳定、有效时间和未来选择权</pre>
+== 非目标 ==
+
+* 不提供实时飓风路径、撤离命令解释、路线选择、避难所推荐、发电机操作、保险或地产建议。
+* 不替代 NHC/NWS、FEMA、州/地方应急管理、交通部门或公共安全机构。
+* 不鼓励等待最后一刻撤离、穿越封闭道路、规避官方命令或传播未核实路径图。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* NWS Hurricane Safety: https://www.weather.gov/safety/hurricane
+* National Hurricane Center: https://www.nhc.noaa.gov/
+* Ready.gov Hurricanes: https://www.ready.gov/hurricanes
+
+== 下一步 ==
+
+* 建立风暴潮、撤离区、避难所、停电生命线、医疗设备供能和灾后返回 source card。
+* 与 <code>backup-power-battery-generator-safety-continuity/</code>、<code>pet-disaster-evacuation-sheltering-continuity/</code> 和 <code>critical-infrastructure-lifeline-interdependency-resilience/</code> 对齐。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C5研究域|C5研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c5-ecological-substrate/hurricane-storm-surge-evacuation-shelter-continuity/README.md Human Infra 仓库：domains/c5-ecological-substrate/hurricane-storm-surge-evacuation-shelter-continuity/README.md]
+
+[[Category:C5研究域]]

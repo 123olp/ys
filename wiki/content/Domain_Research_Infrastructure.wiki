@@ -1,0 +1,29 @@
+{{研究域
+|域 ID=domain.research-infrastructure-open-science-translation
+|C 层级=C4：可能性转换通道层
+|研究对象=开放科学、数据、复现、资助、试验和知识转化
+|持续性作用=提高发现可靠性并缩短技术进入现实应用的路径
+|证据状态=成熟制度与工具并存；执行质量差异大
+|仓库路径=domains/c4-conversion-channel/research-infrastructure-open-science-translation
+}}
+
+'''科研基础设施与开放科学转化'''研究如何让知识、数据、软件、协议和证据可发现、可访问、可复现和可转化。
+
+== 对 Human Infra 的作用 ==
+它决定候选技术能否从论文主张转变为可信、可重复、可监管的能力。
+
+== 机制或依赖 ==
+包括持久标识、数据仓库、预注册、注册报告、开放代码、实验协议、负结果和活证据更新。
+
+== 证据与来源 ==
+Human Infra 使用 Source Card、Claim-Evidence Matrix 和本地Wiki将主张与来源绑定。
+
+== 边界、失败条件和未知项 ==
+开放不等于可信；缺乏方法、数据语境、版本和责任主体的开放材料仍不可复现。
+
+== 相关词条与外部链接 ==
+* [[AI 自动化科研]]
+* [[生存分析与健康寿命风险建模]]
+* [https://zh.wikipedia.org/wiki/%E5%BC%80%E6%94%BE%E7%A7%91%E5%AD%A6 外部 Wikipedia：开放科学]
+
+[[Category:C4研究域]]

@@ -1,0 +1,97 @@
+{{研究域
+|域 ID=domain.data-quality-missingness-representativeness
+|C 层级=C4：可能性转换通道层
+|研究对象=Data Quality Missingness Representativeness
+|持续性作用=主要把科学、医疗、数据、制度或技术从潜在能力转成真实可用路径。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c4-conversion-channel/data-quality-missingness-representativeness
+}}
+
+'''Data Quality Missingness Representativeness'''是 Human Infra 在“路径转换接口”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+主要把科学、医疗、数据、制度或技术从潜在能力转成真实可用路径。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C4“可能性转换通道层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+== 定位 ==
+
+本域研究数据质量、缺失机制、代表性、测量误差和数据治理如何决定 Human Infra 定量模型是否可信。
+
+如果数据本身偏、缺、错、不可迁移，后续因果推断、生存分析、数字孪生和模型校准都会被污染。这个域是所有预测模型进入研究前的数据入口门禁。
+
+== 先验位置 ==
+
+<pre>有效永生 / 主体持续性最大化
+  -> 需要用数据观测主体状态、风险和干预效果
+  -> 数据可能缺失、偏倚、不可代表、测量错误或来源不可追溯
+  -> 需要数据质量、缺失机制和代表性审查
+  -> data-quality-missingness-representativeness</pre>
+== 关注对象 ==
+
+* 缺失数据机制：MCAR、MAR、MNAR，以及失访、删失和选择进入机制。
+* 代表性、抽样偏倚、覆盖偏倚、健康志愿者偏倚、幸存者偏差和外部可推广性。
+* 测量误差、批次效应、设备差异、标签噪声、编码漂移和数据血缘。
+* 公开队列、EHR、wearables、omics、registry、trial、claims 和 survey 数据的适用边界。
+* 数据质量如何进入因果、预测、校准和模型治理。
+
+<span id="human-infra-模型链路"></span>
+== Human Infra 模型链路 ==
+
+<pre>数据源
+  -> 数据质量、缺失机制和代表性审查
+  -> 决定变量是否可进入因果推断或预测模型
+  -> 偏差和缺失传播到风险函数、生存曲线和数字孪生
+  -> 模型输出必须继承数据来源的适用边界和禁止用途</pre>
+== 非目标 ==
+
+* 不收集、存储、清洗或发布个人敏感数据。
+* 不提供数据再识别、隐私规避、爬取、数据买卖、伪造、补全造假或统计操控方法。
+* 不把缺失数据“补完”后伪装成真实观测。
+* 不用代表性不足的数据支撑普遍化个体结论。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* STROBE reporting guidance: https://www.strobe-statement.org/
+* RECORD statement for routinely collected health data: https://www.record-statement.org/
+* All of Us Research Program: https://allofus.nih.gov/
+* UK Biobank: https://www.ukbiobank.ac.uk/
+* GTEx Portal: https://gtexportal.org/
+
+== 下一步 ==
+
+* 建立 Human Infra 数据卡字段：source、population、collection process、missingness、measurement error、representativeness、license、privacy boundary。
+* 为公开队列和数据库建立 Source Card，先审数据入口再进入模型。
+* 与 <code>uncertainty-quantification-model-calibration/</code> 对接，把数据质量风险传递到模型可信度。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C4研究域|C4研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c4-conversion-channel/data-quality-missingness-representativeness/README.md Human Infra 仓库：domains/c4-conversion-channel/data-quality-missingness-representativeness/README.md]
+
+[[Category:C4研究域]]

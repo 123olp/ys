@@ -1,0 +1,84 @@
+{{研究域
+|域 ID=domain.public-drinking-water-hydration-access-continuity
+|C 层级=C4：可能性转换通道层
+|研究对象=Public Drinking Water Hydration Access Continuity
+|持续性作用=关键词显示该域主要处理研究、数据、模型、服务入口、身份记录、转化或治理接口。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c4-conversion-channel/public-drinking-water-hydration-access-continuity
+}}
+
+'''Public Drinking Water Hydration Access Continuity'''是 Human Infra 在“路径转换接口”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要处理研究、数据、模型、服务入口、身份记录、转化或治理接口。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C4“可能性转换通道层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>public-drinking-water-hydration-access-continuity</code> 研究公共饮水点、饮水机、补水站、瓶装水分发、供水安全告警和极端高温补水路径如何影响主体在公共空间、交通、学校、工作和灾害场景中的持续行动能力。
+
+<blockquote>核心问题：补水不是健康建议，而是行动系统的运行条件；当公共饮水不可得或不可信时，热风险、疲劳、医疗风险和公共空间停留成本都会上升。
+</blockquote>
+== 关注对象 ==
+
+* 饮水机、补水站、公共水龙头、瓶装水分发、学校/公园/交通枢纽饮水设施和应急供水点。
+* 水质告警、铅和污染风险、维护状态、季节性关闭、费用、排队、无障碍高度、地图信息和高温期间临时补水。
+* 与 EPA/CDC 饮用水安全、公用事业、学校健康、户外活动、灾害救援、热健康和公共建筑运营的接口。
+
+<span id="human-infra-链路"></span>
+== Human Infra 链路 ==
+
+<pre>公共饮水和补水接入稳定
+  -> 主体离家后的体液和热调节能力更可维持
+  -> 脱水、热应激、疲劳、用药风险和任务中断下降
+  -> 工作、学习、户外活动、排队等待、换乘和灾害避难更可持续
+  -> 主体有效时间、身体韧性和公共生活选择权增强</pre>
+== 非目标 ==
+
+* 不提供供水系统篡改、绕过水质告警、污染制造、设施盗水、非法接管、危机囤货操纵或个案医疗建议。
+* 不替代 EPA、CDC、地方水务、公用事业、学校、设施运营方、应急管理部门或临床医生。
+* 不收集个人饮水记录、实时位置、水务账号、设施安防细节或敏感基础设施信息。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* EPA Drinking Water: https://www.epa.gov/ground-water-and-drinking-water
+* CDC Drinking Water: https://www.cdc.gov/drinking-water/
+* Ready.gov Water: https://www.ready.gov/water
+* EPA Lead in Drinking Water: https://www.epa.gov/ground-water-and-drinking-water/basic-information-about-lead-drinking-water
+
+== 下一步 ==
+
+* 建立 <code>water point -&gt; water safety signal -&gt; access reliability -&gt; heat/dehydration risk -&gt; task continuity</code> 变量表。
+* 区分日常公共饮水、学校饮水、户外补水、交通枢纽补水和灾害应急供水。
+* 与 <code>water-sanitation-hygiene-continuity</code>、<code>water-wastewater-utility-service-continuity</code>、<code>heat-health-thermal-safety-continuity</code>、<code>parks-recreation-green-space-access-continuity</code> 和 <code>emergency-preparedness-response</code> 建立边界。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C4研究域|C4研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c4-conversion-channel/public-drinking-water-hydration-access-continuity/README.md Human Infra 仓库：domains/c4-conversion-channel/public-drinking-water-hydration-access-continuity/README.md]
+
+[[Category:C4研究域]]

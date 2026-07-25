@@ -1,0 +1,90 @@
+{{研究域
+|域 ID=domain.childcare-family-continuity
+|C 层级=C6：局部可能性解锁层
+|研究对象=Childcare Family Continuity
+|持续性作用=未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c6-local-unlocking/childcare-family-continuity
+}}
+
+'''Childcare Family Continuity'''是 Human Infra 在“局部阻塞解除”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C6“局部可能性解锁层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>childcare-family-continuity/</code> 研究托育、早期儿童发展、家庭照护支持和父母工作连续性能否共同支撑儿童主体与照护者主体的长期持续性。
+
+<blockquote>核心问题：托育不是单纯家庭事务，而是同时影响儿童发展、照护者时间、工作收入、心理压力和长期能力积累的基础设施。
+</blockquote>
+== 先验位置 ==
+
+<pre>有效永生 / 主体持续性最大化
+  -> 儿童需要安全照护、早期发展、营养、学习和情感支持
+  -> 照护者需要时间、收入、恢复、工作连续性和社会支持
+  -> 托育和家庭支持系统必须可及、可负担、可信且质量可审查
+  -> 两代主体的健康、能力、有效时间和未来选择权才不会互相牺牲</pre>
+== 关注对象 ==
+
+* 托育可及、托育费用、早期儿童发展、照护质量、父母工作连续性和家庭时间压力。
+* 育儿假、儿童照护补贴、非正式照护、照护者压力、儿童安全和服务导航。
+* 与学习技能、职业设计、财务韧性、社会保护、食品营养和长期照护的接口。
+
+<span id="human-infra-模型链路"></span>
+== Human Infra 模型链路 ==
+
+<pre>托育与家庭连续性
+  -> 儿童获得安全照护、早期发展和稳定支持
+  -> 照护者保留工作、收入、恢复时间和行动能力
+  -> 家庭压力、时间贫困、职业中断和儿童发展风险下降
+  -> 儿童主体与照护者主体的未来选择权同时提高</pre>
+== 非目标 ==
+
+* 不提供个体育儿、教育、医疗、托育机构选择、补贴申请、法律、移民或家庭纠纷建议。
+* 不提供儿童安全处置、心理治疗、医疗处理或危机替代服务。
+* 不把照护责任全部压回家庭或个体，忽视托育供给、工作制度和公共支持。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* World Bank Childcare: https://www.worldbank.org/en/topic/gender/brief/childcare
+* ACF Office of Child Care: https://www.acf.hhs.gov/occ
+* ChildCare.gov: https://childcare.gov/
+
+== 下一步 ==
+
+* 建立托育家庭连续性变量表：可及性、费用、质量、工作连续性、儿童发展、照护者压力、补贴和服务导航。
+* 整理 World Bank childcare、ACF OCC、ChildCare.gov、育儿假、早期儿童发展和家庭工作连续性 Source Cards。
+* 与 <code>caregiving-long-term-care/</code> 明确分工：本域偏儿童和家庭工作连续性，后者偏失能、慢病和长期照护。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C6研究域|C6研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c6-local-unlocking/childcare-family-continuity/README.md Human Infra 仓库：domains/c6-local-unlocking/childcare-family-continuity/README.md]
+
+[[Category:C6研究域]]

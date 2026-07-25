@@ -1,0 +1,87 @@
+{{研究域
+|域 ID=domain.tribal-health-sovereignty-service-access-continuity
+|C 层级=C6：局部可能性解锁层
+|研究对象=Tribal Health Sovereignty Service Access Continuity
+|持续性作用=未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c6-local-unlocking/tribal-health-sovereignty-service-access-continuity
+}}
+
+'''Tribal Health Sovereignty Service Access Continuity'''是 Human Infra 在“局部阻塞解除”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C6“局部可能性解锁层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+部落健康、主权与服务可达连续性域研究：当卫生服务、公共卫生、福利、交通、宽带、文化安全、司法辖区和主权治理交织时，部落社区成员如何持续获得照护、身份承认、服务导航和未来选择权。
+
+== 对象 ==
+
+* 部落卫生系统、Indian Health Service、部落运营健康项目、Urban Indian Organizations 和转诊服务。
+* 主权治理、联邦信托责任、跨辖区协调、数据主权、公共卫生报告和服务责任边界。
+* 农村/边远地理、交通距离、宽带、卫生人力、药品可及、急救窗口和专科转诊。
+* 文化安全、语言、传统照护、历史创伤、机构信任和服务可接受性。
+* 慢病、心理健康、物质使用、母婴健康、老年照护、公共卫生和灾害响应连续性。
+
+<span id="human-infra-价值"></span>
+== Human Infra 价值 ==
+
+主体持续性不能只假设国家公共服务会以同一种方式抵达所有人。部落健康域把主权、地理、文化安全、信任和服务责任边界作为独立变量，解释为什么同样的医疗和公共卫生基础设施在部落社区中需要不同的治理接口。
+
+<pre>部落主权和服务责任边界被结构化治理
+  -> 卫生、公共健康、转诊、数据和文化安全接口更清晰
+  -> 服务缺口不再被误写成个人不配合或单纯地理问题
+  -> 主体持续性、社区韧性和未来选择权提高</pre>
+== 边界 ==
+
+本域只整理公开部落健康、主权治理、服务可达、公共卫生、数据治理和文化安全资料。
+
+不提供：
+
+* 个体医疗、福利、法律、部落身份、登记、血统、服务资格或转诊建议。
+* 部落政府治理、土地、司法辖区、执法、博彩、税务或政治策略建议。
+* 对部落社区的污名化画像、风险定位、商业开发、监控或数据抽取方案。
+* 把文化安全简化为表层翻译、宣传材料或外部机构单向教育。
+
+== 上游与下游 ==
+
+* 上游：<code>rural-health-access-geographic-equity/</code>、<code>healthcare-access-continuity/</code>、<code>public-health-emergency-preparedness/</code>、<code>language-access-plain-communication/</code>、<code>social-determinants-community-vulnerability/</code>。
+* 下游：<code>medicine-access-treatment-continuity/</code>、<code>mental-health-affective-stability/</code>、<code>substance-use-treatment-recovery-continuity/</code>、<code>emergency-medical-services-prehospital-care/</code>、<code>disaster-shelter-mass-care-continuity/</code>。
+
+== 初始资料线索 ==
+
+* Indian Health Service public resources。
+* HHS、CDC 和 HRSA 关于 tribal health、rural health、health centers 和公共卫生能力资料。
+* Tribal data sovereignty、cultural safety、health workforce、referral care 和 emergency preparedness 公开报告。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C6研究域|C6研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c6-local-unlocking/tribal-health-sovereignty-service-access-continuity/README.md Human Infra 仓库：domains/c6-local-unlocking/tribal-health-sovereignty-service-access-continuity/README.md]
+
+[[Category:C6研究域]]

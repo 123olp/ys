@@ -1,0 +1,92 @@
+{{研究域
+|域 ID=domain.pediatric-vision-screening-amblyopia-continuity
+|C 层级=C2：可能性源体维护层
+|研究对象=Pediatric Vision Screening Amblyopia Continuity
+|持续性作用=关键词显示该域主要维护身体、脑、器官、细胞、急性生命风险或衰老损伤控制。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c2-source-maintenance/pediatric-vision-screening-amblyopia-continuity
+}}
+
+'''Pediatric Vision Screening Amblyopia Continuity'''是 Human Infra 在“生命载体维护”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要维护身体、脑、器官、细胞、急性生命风险或衰老损伤控制。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C2“可能性源体维护层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>pediatric-vision-screening-amblyopia-continuity/</code> 负责整理儿童视力筛查、弱视、斜视/屈光风险、学校参与、家庭随访和视觉发育连续性。
+
+核心问题：
+
+<blockquote>儿童视觉不是成人视觉的缩小版；发育窗口内的弱视和未矫正视力问题，会把可处理的输入缺陷转化为学习、运动、自信和长期功能损失。
+</blockquote>
+== 先验位置 ==
+
+<pre>主体持续性最大化
+  -> 主体能力从儿童阶段的感知、学习和运动反馈中逐步形成
+  -> 视觉发育问题若错过筛查和随访窗口，会影响长期输入质量
+  -> 弱视、斜视或未矫正屈光问题会压缩阅读、课堂参与、运动和发展机会
+  -> 因此儿童视觉筛查与弱视连续性是生命历程早期能力形成基础设施</pre>
+== 关注对象 ==
+
+* 儿童视力筛查、弱视、斜视、未矫正屈光问题、转诊和家庭随访。
+* 学校、儿科、眼科、验光、保险/费用、家长理解和依从摩擦。
+* 阅读、课堂参与、运动、发展、社交、自信和长期视觉功能。
+* 与 <code>refractive-error-glasses-contact-lens-continuity/</code> 的关系：本域聚焦儿童发育窗口和弱视风险。
+
+<span id="human-infra-模型链路"></span>
+== Human Infra 模型链路 ==
+
+<pre>儿童视力筛查 / 转诊 / 弱视管理衔接 T
+  -> 改变早期发现、屈光矫正、家庭执行、随访和视觉发育变量 X
+  -> 改变儿童阅读、课堂、运动、社交和能力形成状态 S
+  -> 改变学习损失、发展机会丢失、长期视功能不足和家庭照护负担风险
+  -> 增加早期能力形成、教育参与和未来选择权</pre>
+== 非目标 ==
+
+* 不提供儿童视力诊断、弱视治疗方案、遮盖训练、眼镜度数、斜视手术建议或家长个体决策。
+* 不根据筛查结果判断学校安排、运动资格、发育诊断或家庭责任。
+* 不替代儿科、眼科、验光、学校筛查或特殊教育评估。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* National Eye Institute Amblyopia: https://www.nei.nih.gov/learn-about-eye-health/eye-conditions-and-diseases/amblyopia-lazy-eye
+* CDC Vision Health: https://www.cdc.gov/vision-health/
+* USPSTF Vision Screening in Children: https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/vision-screening-in-children-ages-6-months-to-5-years
+
+== 下一步 ==
+
+* 建立儿童视觉 Source Card，区分筛查、转诊、家庭执行、学校参与和长期能力终点。
+* 对接儿童发展、教育记录、屈光矫正和家庭照护域。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C2研究域|C2研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c2-source-maintenance/pediatric-vision-screening-amblyopia-continuity/README.md Human Infra 仓库：domains/c2-source-maintenance/pediatric-vision-screening-amblyopia-continuity/README.md]
+
+[[Category:C2研究域]]

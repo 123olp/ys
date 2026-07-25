@@ -1,0 +1,16 @@
+{{证据来源
+|来源 ID=evidence.pubmed.xenotransplantation-living-human-2026
+|来源类型=同行评审综述
+|完整引文=Xenotransplantation in living human recipients: Where we stand in 2026.
+|URL 或 DOI=https://pubmed.ncbi.nlm.nih.gov/41935634/
+|支持范围=活体人体受者异种移植的当前进展、前置技术和挑战
+|不支持的推论=不支持异种移植已成为常规治疗或长期风险已经解决
+|审查状态=已核对PubMed记录
+|访问日期=2026-07-25
+}}
+
+== 支持范围 ==
+综述记录基因工程、免疫抑制和围手术管理使少量活体人体受者探索成为可能。
+
+== 不支持的推论 ==
+早期个案不能证明长期存活、规模化供应、跨物种感染安全或成本可接受。

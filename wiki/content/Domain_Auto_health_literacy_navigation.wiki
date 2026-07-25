@@ -1,0 +1,86 @@
+{{研究域
+|域 ID=domain.health-literacy-navigation
+|C 层级=C3：可能性生成引擎层
+|研究对象=Health Literacy Navigation
+|持续性作用=关键词显示该域主要增强认知、学习、工具、AI、技能或沟通能力。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c3-generation-engine/health-literacy-navigation
+}}
+
+'''Health Literacy Navigation'''是 Human Infra 在“主体能力生成”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要增强认知、学习、工具、AI、技能或沟通能力。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C3“可能性生成引擎层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+Health Literacy Navigation 负责整理健康素养、医疗服务导航、可理解信息、共同决策、系统入口和服务使用能力。
+
+核心问题：
+
+<blockquote>医学和公共服务只有在主体能够理解、找到、进入、使用和复核时，才会转化为真实的主体持续性收益。
+</blockquote>
+== 先验位置 ==
+
+<pre>主体持续性最大化
+  -> 主体必须能理解风险、服务、证据和选择
+  -> 医疗和社会系统必须可被导航、可被询问、可被复核
+  -> 健康素养不足会把可用资源变成不可用资源
+  -> 因此可理解性和导航能力是外部基础设施转化为主体收益的接口</pre>
+== 关注对象 ==
+
+* 个人健康素养、组织健康素养、plain language、风险沟通、医疗导航和共同决策。
+* 预约、转诊、保险、药品说明、检查结果、患者门户、语言可达和认知可达。
+* 信息不对称、行政负担、迷宫式服务入口和错误理解风险。
+* 与 <code>resource-social-infra/</code> 的关系：资源域关注服务供给；本域关注服务是否能被理解和实际使用。
+
+<span id="human-infra-模型链路"></span>
+== Human Infra 模型链路 ==
+
+<pre>健康素养 / 导航工具 T
+  -> 改变理解能力、系统入口、风险判断、服务使用和复核能力 X
+  -> 改变主体决策状态 S
+  -> 改变误用、延误、放弃服务、药物错误和资源排除风险
+  -> 增强医疗可及性、有效时间和未来选择权</pre>
+== 非目标 ==
+
+* 不提供医学、法律、保险或福利申请建议。
+* 不伪装专业判断，不替代医生、律师、社工或危机服务。
+* 不提供规避资格审查、欺诈、伪造材料或制度漏洞利用。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* CDC Health Literacy: https://www.cdc.gov/health-literacy/
+* HHS Health Literacy: https://health.gov/our-work/national-health-initiatives/health-literacy
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C3研究域|C3研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c3-generation-engine/health-literacy-navigation/README.md Human Infra 仓库：domains/c3-generation-engine/health-literacy-navigation/README.md]
+
+[[Category:C3研究域]]

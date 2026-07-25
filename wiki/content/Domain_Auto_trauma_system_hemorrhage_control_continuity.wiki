@@ -1,0 +1,89 @@
+{{研究域
+|域 ID=domain.trauma-system-hemorrhage-control-continuity
+|C 层级=C2：可能性源体维护层
+|研究对象=Trauma System Hemorrhage Control Continuity
+|持续性作用=关键词显示该域主要维护身体、脑、器官、细胞、急性生命风险或衰老损伤控制。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c2-source-maintenance/trauma-system-hemorrhage-control-continuity
+}}
+
+'''Trauma System Hemorrhage Control Continuity'''是 Human Infra 在“生命载体维护”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要维护身体、脑、器官、细胞、急性生命风险或衰老损伤控制。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C2“可能性源体维护层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>trauma-system-hemorrhage-control-continuity/</code> 研究创伤系统、院前分诊、止血、创伤中心、影像/手术窗口、出血控制和康复转接如何降低事故导致的突然死亡与失能。
+
+<blockquote>核心问题：创伤不是单个伤口，而是时间、出血、转运、手术、血液供应和康复共同组成的救援系统。
+</blockquote>
+== 先验位置 ==
+
+<pre>有效永生 / 主体持续性最大化
+  -> 主体可能被事故、暴力、跌落和灾害造成的创伤突然终止
+  -> 生存依赖院前响应、止血、分诊、创伤中心、手术和输血协同
+  -> 创伤系统失效会把可救治损伤变成死亡或长期残障
+  -> 因此创伤系统与出血控制是外部事故风险的急性修复域</pre>
+== 关注对象 ==
+
+* Trauma system、prehospital triage、hemorrhage control、tourniquet access、trauma center level、massive transfusion, time-to-definitive care、rehabilitation handoff。
+* 与 <code>road-traffic-injury-prevention-safe-mobility/</code> 的边界：道路安全关注预防；本域关注事故发生后的救援系统。
+* 与 <code>transfusion-blood-management-hemorrhage-continuity/</code> 的关系：严重创伤常依赖血液可得、止血和大量输血。
+
+<span id="human-infra-模型链路"></span>
+== Human Infra 模型链路 ==
+
+<pre>创伤系统与出血控制 T
+  -> 改变院前响应、止血、分诊、转运、创伤中心和输血变量 X
+  -> 改变失血、手术窗口、器官灌注、残障和康复状态 S
+  -> 改变事故死亡、失能和长期功能损失风险 λ(t)
+  -> 影响主体身体连续性、有效时间和行动能力</pre>
+== 非目标 ==
+
+* 不提供止血、急救、战术医疗、武器伤处理、现场处置、手术或转运建议。
+* 不生成创伤中心选择、急诊策略、保险策略、法律责任、事故处置或个体医疗建议。
+* 不收集事故现场、伤情照片、身份、定位、病历、暴力证据或敏感救援资料。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* National Academies trauma care system report: https://nap.nationalacademies.org/catalog/23511/a-national-trauma-care-system-integrating-military-and-civilian-trauma
+* American College of Surgeons Trauma Programs: https://www.facs.org/quality-programs/trauma/
+* WHO Emergency and Trauma Care: https://www.who.int/health-topics/emergency-care
+
+== 下一步 ==
+
+* 建立 Trauma Rescue Card：mechanism, hemorrhage, triage, trauma center access, definitive control, transfusion, rehab handoff。
+* 与 <code>emergency-medical-services-prehospital-care/</code>、<code>surgical-anesthesia-perioperative-safety/</code> 和 <code>transfusion-blood-management-hemorrhage-continuity/</code> 建立接口。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C2研究域|C2研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c2-source-maintenance/trauma-system-hemorrhage-control-continuity/README.md Human Infra 仓库：domains/c2-source-maintenance/trauma-system-hemorrhage-control-continuity/README.md]
+
+[[Category:C2研究域]]

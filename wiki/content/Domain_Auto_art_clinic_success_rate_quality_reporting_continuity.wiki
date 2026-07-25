@@ -1,0 +1,89 @@
+{{研究域
+|域 ID=domain.art-clinic-success-rate-quality-reporting-continuity
+|C 层级=C4：可能性转换通道层
+|研究对象=ART Clinic Success Rate Quality Reporting Continuity
+|持续性作用=关键词显示该域主要处理研究、数据、模型、服务入口、身份记录、转化或治理接口。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c4-conversion-channel/art-clinic-success-rate-quality-reporting-continuity
+}}
+
+'''ART Clinic Success Rate Quality Reporting Continuity'''是 Human Infra 在“路径转换接口”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要处理研究、数据、模型、服务入口、身份记录、转化或治理接口。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C4“可能性转换通道层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+ART 诊所成功率、质量报告与数据可解释连续性，关注 fertility clinic reporting、CDC ART success rates、NASS、数据校验、报告口径、患者构成、分母定义和可解释边界如何影响主体选择和信任。
+
+== 先验位置 ==
+
+<pre>有效永生 / 主体持续性最大化
+  -> 主体需要把复杂技术服务转化为可比较、可审查、可行动的选择
+  -> ART 成功率高度依赖年龄、卵源、周期类型、分母和诊所报告口径
+  -> 如果数据不可解释，主体会在高成本、高情绪负担服务中失去判断能力
+  -> 因此 ART 质量报告是生殖技术选择权的观测与治理接口</pre>
+== 关注对象 ==
+
+* CDC ART Success Rates、National ART Surveillance System、clinic-specific reports、national summary 和 state-specific surveillance。
+* 成功率分母、患者年龄、own eggs / donor eggs、intended retrieval、actual retrieval、transfer、live birth、multiple birth 和数据延迟。
+* 数据校验、discrepancy rate、非报告诊所、隐私保护、患者构成差异和误读风险。
+* 与 <code>assisted-reproductive-technology-ivf-cycle-continuity/</code> 的边界：IVF 域关注周期执行；本域关注周期结果如何被报告、比较和解释。
+
+<span id="human-infra-模型链路"></span>
+== Human Infra 模型链路 ==
+
+<pre>ART 质量报告 T
+  -> 改变成功率口径、诊所可见性、数据质量、风险透明度和选择信息变量 X
+  -> 改变主体对服务路径、费用风险、时间窗口和预期管理状态 S
+  -> 改变误选、过度承诺、机会成本、资源耗尽和信任崩溃风险 lambda(t)
+  -> 影响未来选择权、资源持续性和高成本生殖技术的可审查性</pre>
+== 非目标 ==
+
+* 不提供诊所排名、诊所推荐、成功率个体解释、治疗选择、保险支付或法律建议。
+* 不把 clinic-specific ART success rates 写成个人生育概率。
+* 不使用报告数据进行个人价值判断、群体污名化或商业营销。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* CDC ART Success Rates: https://www.cdc.gov/art/success-rates/index.html
+* CDC National ART Surveillance System: https://www.cdc.gov/art/php/nass/index.html
+* CDC NASS Data Validation: https://www.cdc.gov/art/php/nass/data-validation.html
+* CDC Accessing NASS Data: https://www.cdc.gov/art/php/data-access/index.html
+
+== 下一步 ==
+
+# 建立 ART reporting card：reporting unit、denominator、outcome、lag、validation、privacy 和 interpretation boundary。
+# 与 <code>assisted-reproductive-technology-ivf-cycle-continuity/</code>、<code>uncertainty-quantification-model-calibration/</code> 和 <code>data-quality-missingness-representativeness/</code> 建立接口。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C4研究域|C4研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c4-conversion-channel/art-clinic-success-rate-quality-reporting-continuity/README.md Human Infra 仓库：domains/c4-conversion-channel/art-clinic-success-rate-quality-reporting-continuity/README.md]
+
+[[Category:C4研究域]]

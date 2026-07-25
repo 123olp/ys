@@ -1,0 +1,90 @@
+{{研究域
+|域 ID=domain.large-load-grid-interconnection-transmission-continuity
+|C 层级=C5：可能性生态承载层
+|研究对象=Large Load Grid Interconnection Transmission Continuity
+|持续性作用=关键词显示该域主要承载能源、水、食物、住房、治理、经济、通信、灾害或基础设施环境。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c5-ecological-substrate/large-load-grid-interconnection-transmission-continuity
+}}
+
+'''Large Load Grid Interconnection Transmission Continuity'''是 Human Infra 在“外部生态承载”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要承载能源、水、食物、住房、治理、经济、通信、灾害或基础设施环境。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C5“可能性生态承载层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>large-load-grid-interconnection-transmission-continuity/</code> 研究大型用电负载、数据中心、工业设施、输电扩建、并网队列、互联研究和电网规划如何影响 AI、制造和生命线基础设施的持续扩展。
+
+<blockquote>核心问题：未来技术扩张首先要接上电网。并网排队、输电瓶颈和规划滞后会让算力、制造、医疗和居住韧性卡在“有设备但没有电”的状态。
+</blockquote>
+== 先验位置 ==
+
+<pre>有效永生 / 主体持续性最大化
+  -> 需要 AI、制造、医疗、冷却、交通和居住系统持续供能
+  -> 大型负载扩张依赖输电容量、并网流程和电网规划
+  -> 并网延迟或输电不足会限制技术部署和区域服务可用性
+  -> 因此大型负载并网与输电是技术扩散的电力接入约束域</pre>
+== 关注对象 ==
+
+* Load growth、interconnection queue、transmission planning、grid upgrade、connection study、large load forecasting、capacity adequacy 和 reliability coordination。
+* 数据中心并网、工业电气化、制造用电、输电许可、排队延迟、成本分摊、区域容量和电力服务可得性。
+* 与 <code>electric-grid-reliability-resilience-continuity/</code> 的边界：电网可靠性域关注运行可靠性；本域关注新负载接入、输电扩容和并网排队。
+* 与 <code>ai-resource-cost-latency-budget-continuity/</code> 的关系：AI 预算域关注使用侧；本域关注物理电力接入。
+
+<span id="human-infra-模型链路"></span>
+== Human Infra 模型链路 ==
+
+<pre>大型负载并网与输电 T
+  -> 改变电力接入时间、输电容量、升级成本、区域可用容量和可靠性约束 X
+  -> 改变数据中心、制造、医疗设施和关键服务扩展状态 S
+  -> 改变算力短缺、建设延迟、服务不可达和区域不平等风险 λ(t)
+  -> 影响主体可获得的 AI、制造、医疗、冷却和长期基础服务</pre>
+== 非目标 ==
+
+* 不提供并网申请、项目开发、能源采购、投融资、选址或规避电力监管建议。
+* 不把新增负载写成必然进步，也不把输电扩建写成无成本方案。
+* 不替代电网可靠性、能源可及、数据中心或公用事业可负担性域。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* DOE Interconnection Innovation e-Xchange: https://www.energy.gov/eere/i2x/interconnection-innovation-e-xchange
+* Lawrence Berkeley National Laboratory Interconnection Queue: https://emp.lbl.gov/queues
+* FERC Electric Transmission: https://www.ferc.gov/industries-data/electric
+* NERC Reliability Assessments: https://www.nerc.com/pa/RAPA/Pages/default.aspx
+
+== 下一步 ==
+
+* 建立 Large Load Interconnection Card：load type, requested capacity, queue status, transmission dependency, upgrade risk, reliability impact, equity boundary。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C5研究域|C5研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c5-ecological-substrate/large-load-grid-interconnection-transmission-continuity/README.md Human Infra 仓库：domains/c5-ecological-substrate/large-load-grid-interconnection-transmission-continuity/README.md]
+
+[[Category:C5研究域]]

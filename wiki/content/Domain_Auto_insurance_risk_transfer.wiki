@@ -1,0 +1,89 @@
+{{研究域
+|域 ID=domain.insurance-risk-transfer
+|C 层级=C5：可能性生态承载层
+|研究对象=Insurance Risk Transfer
+|持续性作用=关键词显示该域主要承载能源、水、食物、住房、治理、经济、通信、灾害或基础设施环境。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c5-ecological-substrate/insurance-risk-transfer
+}}
+
+'''Insurance Risk Transfer'''是 Human Infra 在“外部生态承载”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要承载能源、水、食物、住房、治理、经济、通信、灾害或基础设施环境。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C5“可能性生态承载层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>insurance-risk-transfer/</code> 研究疾病、失业、工伤、残障、灾害、银行倒闭、养老金中断等风险能否通过保险和风险转移机制被分摊。
+
+<blockquote>核心问题：主体持续性不只取决于风险是否发生，也取决于风险发生后成本是否由个体独自承担；保险和风险转移机制决定冲击能否被制度性分摊。
+</blockquote>
+== 先验位置 ==
+
+<pre>有效永生 / 主体持续性最大化
+  -> 主体会遭遇低频高成本事件和长期收入/健康冲击
+  -> 风险必须通过保险、互助、担保、赔付和公共风险池被分摊
+  -> 医疗、住房、工作、储蓄、养老金和灾后恢复才不会被单次事件击穿</pre>
+== 关注对象 ==
+
+* 健康保险、失业保险、工伤保险、残障保险、灾害保险、存款保险、养老金担保和风险池。
+* 覆盖缺口、保费负担、免赔额、自付、理赔、拒赔、等待期、排除条款和保险素养。
+* 与财务韧性、医疗接入、职业风险、灾害恢复、公共福利和法律身份的接口。
+
+<span id="human-infra-模型链路"></span>
+== Human Infra 模型链路 ==
+
+<pre>保险与风险转移
+  -> 个体高成本风险被更大风险池分摊
+  -> 医疗、收入、住房、储蓄、养老金和灾后恢复冲击降低
+  -> 破产、失保、延误治疗、住房断裂和未来选择权丧失减少
+  -> 主体持续性获得风险缓冲层</pre>
+== 非目标 ==
+
+* 不提供个体保险选择、投保、理赔、税务、法律、投资、福利或财务规划建议。
+* 不提供保险欺诈、规避、虚假材料、套利或拒赔对抗策略。
+* 不把保险机制写成替代公共服务、风险预防、医疗质量或劳动保护的万能工具。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* NAIC Consumer Resources: https://content.naic.org/consumer
+* USA.gov Health Insurance: https://www.usa.gov/health-insurance
+* FDIC Deposit Insurance: https://www.fdic.gov/resources/deposit-insurance/
+
+== 下一步 ==
+
+* 建立风险转移变量表：覆盖率、保费、自付、免赔额、等待期、理赔成功、排除条款、风险池和保障缺口。
+* 整理 NAIC、USA.gov、FDIC、失业/工伤/残障/养老金保障 Source Cards。
+* 与 <code>financial-resilience-access/</code> 明确分工：本域研究风险池和赔付机制，后者研究家庭财务缓冲和支付能力。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C5研究域|C5研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c5-ecological-substrate/insurance-risk-transfer/README.md Human Infra 仓库：domains/c5-ecological-substrate/insurance-risk-transfer/README.md]
+
+[[Category:C5研究域]]

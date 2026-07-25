@@ -1,0 +1,90 @@
+{{研究域
+|域 ID=domain.grid-scale-energy-storage-flexibility-continuity
+|C 层级=C5：可能性生态承载层
+|研究对象=Grid Scale Energy Storage Flexibility Continuity
+|持续性作用=关键词显示该域主要承载能源、水、食物、住房、治理、经济、通信、灾害或基础设施环境。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c5-ecological-substrate/grid-scale-energy-storage-flexibility-continuity
+}}
+
+'''Grid Scale Energy Storage Flexibility Continuity'''是 Human Infra 在“外部生态承载”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要承载能源、水、食物、住房、治理、经济、通信、灾害或基础设施环境。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C5“可能性生态承载层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>grid-scale-energy-storage-flexibility-continuity/</code> 研究电网级储能、长时储能、需求响应、灵活负荷、备用容量和调度机制如何支撑高比例可再生能源、AI 负载和关键服务连续性。
+
+<blockquote>核心问题：电力系统不仅需要发电，还需要时间上的可调度性。储能和灵活性不足会让能源充足性在关键时刻变成服务中断。
+</blockquote>
+== 先验位置 ==
+
+<pre>有效永生 / 主体持续性最大化
+  -> 需要医疗、通信、AI、冷却、居住和交通系统持续供电
+  -> 高波动负载和可再生能源需要储能、灵活性和调度缓冲
+  -> 缓冲不足会导致价格尖峰、停电、负载削减和关键服务降级
+  -> 因此电网级储能与灵活性是能源连续性的时间缓冲域</pre>
+== 关注对象 ==
+
+* Battery storage、long-duration energy storage、pumped hydro、thermal storage、demand response、virtual power plant、reserve margin 和 grid services。
+* 容量、持续时长、循环寿命、安全、并网、调度、退化、供应链、回收和关键负载保障。
+* 与 <code>energy-access-resilience/</code> 的边界：能源可及域关注用户能否获得能源；本域关注电网尺度时间缓冲和灵活性。
+* 与 <code>large-load-grid-interconnection-transmission-continuity/</code> 的关系：并网域关注接入；本域关注接入后的可调度性。
+
+<span id="human-infra-模型链路"></span>
+== Human Infra 模型链路 ==
+
+<pre>电网储能与灵活性 T
+  -> 改变备用容量、持续时长、负荷转移、频率服务和停电恢复变量 X
+  -> 改变医疗、通信、数据中心、住房和交通供能状态 S
+  -> 改变停电、价格尖峰、关键服务削减和恢复失败风险 λ(t)
+  -> 影响主体安全、工具可用性、环境控制和长期行动能力</pre>
+== 非目标 ==
+
+* 不提供储能系统安装、消防处置、项目投资、交易套利或采购建议。
+* 不把储能写成无风险、无资源约束或万能替代输电的方案。
+* 不替代电网可靠性、能源可及、消防安全或关键材料域。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* DOE Office of Electricity Energy Storage: https://www.energy.gov/oe/energy-storage
+* NREL Energy Storage: https://www.nrel.gov/grid/energy-storage.html
+* IEA Energy Storage: https://www.iea.org/energy-system/electricity/grid-scale-storage
+* Sandia Energy Storage: https://www.sandia.gov/ess-ssl/
+
+== 下一步 ==
+
+* 建立 Storage Flexibility Card：storage class, duration, dispatch role, safety boundary, degradation, supply dependency, critical-service coupling。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C5研究域|C5研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c5-ecological-substrate/grid-scale-energy-storage-flexibility-continuity/README.md Human Infra 仓库：domains/c5-ecological-substrate/grid-scale-energy-storage-flexibility-continuity/README.md]
+
+[[Category:C5研究域]]

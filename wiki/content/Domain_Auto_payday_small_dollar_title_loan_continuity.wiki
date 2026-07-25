@@ -1,0 +1,87 @@
+{{研究域
+|域 ID=domain.payday-small-dollar-title-loan-continuity
+|C 层级=C6：局部可能性解锁层
+|研究对象=发薪日贷款、小额高成本贷款与汽车抵押贷款连续性
+|持续性作用=未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c6-local-unlocking/payday-small-dollar-title-loan-continuity
+}}
+
+'''发薪日贷款、小额高成本贷款与汽车抵押贷款连续性'''是 Human Infra 在“局部阻塞解除”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C6“局部可能性解锁层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+本域研究发薪日贷款、小额高成本贷款、汽车抵押贷款、滚续、费用、银行账户访问、抵押物和债务循环如何影响主体应急现金、账户稳定、车辆移动和未来选择权。它关注短期流动性危机如何转化为高成本跨期约束，而不是借款、续借、规避还款或法律建议。
+
+== 研究对象 ==
+
+* Payday loans、small-dollar loans、title loans、deposit advance、rollover、renewal 和分期式高成本小额贷款。
+* 费用、APR、期限、自动扣款、post-dated check、账户访问、抵押车辆、逾期和收车风险。
+* 债务循环、重复借款、银行透支、催收、信用报告和替代应急资金入口。
+* 与消费贷款、车贷、债务催收、银行账户和反诈骗保护的边界。
+
+== 价值链路 ==
+
+<pre>主体在现金缺口中寻求短期资金
+  -> 高成本小额贷款把应急现金转换成近未来收入和抵押物风险
+  -> 清晰费用、可终止扣款和替代入口降低短期危机扩散
+  -> 滚续、重复借款、账户透支或收车会把一次危机变成长期束缚
+  -> 小额高成本贷款连续性把应急资源桥接纳入债务循环风险治理</pre>
+== 关键问题 ==
+
+* 发薪日贷款、title loan 和一般分期消费贷款的风险结构如何不同？
+* 滚续、自动扣款和账户访问如何放大现金流断裂？
+* 车辆抵押贷款如何把金融失败转化为移动能力失败？
+* 监管披露、费用上限和替代金融入口如何影响主体恢复窗口？
+
+== 上游与下游 ==
+
+* 上游：<code>financial-inclusion-payment-systems/</code>、<code>household-budget-cashflow-continuity/</code>、<code>banking-deposit-account-access-continuity/</code>。
+* 下游：<code>debt-obligation-collection-relief-continuity/</code>、<code>auto-loan-lease-servicing-repossession-continuity/</code>、<code>fraud-scams-consumer-protection/</code>、<code>public-assistance-benefits-continuity/</code>。
+
+== 非目标 ==
+
+* 不提供发薪日贷款、title loan、小额贷款申请、续借、债务谈判、催收应对、收车应对或法律建议。
+* 不判断某个高成本贷款是否合法、是否适合、是否应还款、是否应违约或是否应诉讼。
+* 不协助虚假申请、支票欺诈、隐藏车辆、逃债、规避自动扣款、规避催收、伪造收入、洗钱或贷款欺诈。
+
+== 初始资料入口 ==
+
+* CFPB: Payday loans consumer tools
+* FTC: Payday loans consumer materials
+* CFPB: Small-dollar and high-cost loan materials
+* State attorney general and regulator consumer lending materials
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C6研究域|C6研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c6-local-unlocking/payday-small-dollar-title-loan-continuity/README.md Human Infra 仓库：domains/c6-local-unlocking/payday-small-dollar-title-loan-continuity/README.md]
+
+[[Category:C6研究域]]

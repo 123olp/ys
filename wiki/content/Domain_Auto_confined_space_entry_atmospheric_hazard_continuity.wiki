@@ -1,0 +1,90 @@
+{{研究域
+|域 ID=domain.confined-space-entry-atmospheric-hazard-continuity
+|C 层级=C6：局部可能性解锁层
+|研究对象=Confined Space Entry Atmospheric Hazard Continuity
+|持续性作用=未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c6-local-unlocking/confined-space-entry-atmospheric-hazard-continuity
+}}
+
+'''Confined Space Entry Atmospheric Hazard Continuity'''是 Human Infra 在“局部阻塞解除”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C6“局部可能性解锁层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>confined-space-entry-atmospheric-hazard-continuity/</code> 研究受限空间、缺氧、有毒/易燃气体、入口许可、监护、救援延迟和承包商交接如何影响主体持续性。
+
+核心问题：
+
+<blockquote>有些空间不是因为狭小危险，而是因为进入后空气、逃生、沟通和救援同时变成限制条件；一次进入失败可能造成多名人员连续伤亡。
+</blockquote>
+== 先验位置 ==
+
+<pre>有效永生 / 主体持续性
+  -> 主体需要进入罐体、井道、管廊、坑洞等空间维护基础设施
+  -> 这些空间可能包含缺氧、有毒、易燃或物理困陷风险
+  -> 进入后退出和救援条件受限，旁人救援也可能成为二次伤亡
+  -> 因此受限空间治理是基础设施维护与劳动安全的边界条件</pre>
+== 关注对象 ==
+
+* Confined spaces、permit-required confined spaces、oxygen deficiency、toxic/flammable atmosphere、attendant、entry supervisor、rescue planning。
+* 风险链：空间进入 -&gt; 大气/物理危险 -&gt; 监测/许可/通信失败 -&gt; 倒地/困陷 -&gt; 救援延迟/二次伤亡。
+* 制度链：classification、permit system、atmospheric testing boundary、communication、rescue readiness、contractor coordination。
+
+<span id="human-infra-模型位置"></span>
+== Human Infra 模型位置 ==
+
+<pre>受限空间任务 T
+  -> 改变缺氧/毒性/困陷暴露 X
+  -> 改变生命支持和退出状态 S
+  -> 改变急性死亡/群体伤亡风险 lambda(t)
+  -> 改变基础设施维护能力、工作年限和家庭恢复成本</pre>
+== 非目标 ==
+
+* 不提供进入许可、气体检测、通风、救援、监护、PPE、分类、设备选择、现场程序或合规建议。
+* 不判断个人事故、现场是否安全、救援行动、工伤、责任、OSHA 违规或法律策略。
+* 不帮助冒险进入、规避 permit、隐藏事故、压缩救援准备或绕开专业人员。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* OSHA Confined Spaces: https://www.osha.gov/confined-spaces
+* OSHA Workers: https://www.osha.gov/workers
+
+== 下一步 ==
+
+* 建立 Confined Space Continuity Card：space type、atmospheric hazard、entry control、communication、rescue latency、contractor boundary。
+* 与 <code>chemical-safety-poison-control-toxicology/</code>、<code>industrial-process-safety-management-continuity/</code> 和 <code>emergency-medical-services-prehospital-care/</code> 建立接口。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C6研究域|C6研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c6-local-unlocking/confined-space-entry-atmospheric-hazard-continuity/README.md Human Infra 仓库：domains/c6-local-unlocking/confined-space-entry-atmospheric-hazard-continuity/README.md]
+
+[[Category:C6研究域]]

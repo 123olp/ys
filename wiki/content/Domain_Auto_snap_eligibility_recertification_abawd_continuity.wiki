@@ -1,0 +1,83 @@
+{{研究域
+|域 ID=domain.snap-eligibility-recertification-abawd-continuity
+|C 层级=C4：可能性转换通道层
+|研究对象=SNAP Eligibility Recertification ABAWD Continuity
+|持续性作用=关键词显示该域主要处理研究、数据、模型、服务入口、身份记录、转化或治理接口。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c4-conversion-channel/snap-eligibility-recertification-abawd-continuity
+}}
+
+'''SNAP Eligibility Recertification ABAWD Continuity'''是 Human Infra 在“路径转换接口”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要处理研究、数据、模型、服务入口、身份记录、转化或治理接口。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C4“可能性转换通道层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>snap-eligibility-recertification-abawd-continuity</code> 研究 SNAP 从名义食物援助资格到持续可维护资格的行政链路：收入/家庭组成、认证期、recertification、通知、ABAWD 时间限制、工作要求、E&amp;T 转介和错误恢复如何影响主体的食物输入、现金流缓冲、注意力预算和长期行动窗口。
+
+== 核心问题 ==
+
+SNAP 的价值不只在于“是否有福利”，还在于主体能否持续满足、理解、维护和恢复资格。资格维护失败会把食物风险转化为行政负担、通知错过、证明摩擦、制裁、断粮和家庭预算冲击。
+
+== 对象 ==
+
+* SNAP 资格、认证期、recertification、change reporting、notice 和 hearing 入口。
+* ABAWD time limit、work requirement、豁免、Good Cause、SNAP E&amp;T 和州级执行差异。
+* 家庭组成、收入波动、地址/通信变化、语言可及、数字入口和行政错误。
+* 与 <code>snap-ebt-redemption-retailer-payment-continuity</code> 的分工：本域关注资格维护，后者关注 EBT 支付兑换。
+
+<span id="human-infra-价值"></span>
+== Human Infra 价值 ==
+
+* 把食物援助从一次性资格判断改写为可续期、可通知、可纠错的主体持续性基础设施。
+* 解释行政摩擦如何消耗时间、注意力、交通、文件管理和家庭恢复资源。
+* 为“反稀缺工程”提供一个具体程序域：减少食物输入断点，保护学习、工作、照护和健康执行。
+
+== 边界 ==
+
+* 不提供个人 SNAP 资格判断、申请、续期、听证、ABAWD 豁免、E&amp;T 选择、材料准备或州级操作建议。
+* 不生成规避工作要求、虚假家庭组成、收入隐瞒、身份冒用、福利欺诈、EBT 转售或听证策略内容。
+* 不收集 SSN、收入、住址、家庭成员、移民身份、案件号、EBT 信息或州门户凭证。
+
+== 上游与下游 ==
+
+* 上游：<code>social-protection-benefits-delivery</code>、<code>administrative-burden-procedural-friction</code>、<code>household-composition-dependent-eligibility-continuity</code>。
+* 下游：<code>snap-ebt-redemption-retailer-payment-continuity</code>、<code>grocery-retail-food-store-access-continuity</code>、<code>food-bank-pantry-community-food-distribution-continuity</code>、<code>emergency-food-disaster-feeding-continuity</code>。
+
+== 初始资料线索 ==
+
+* USDA FNS SNAP eligibility: https://www.fns.usda.gov/snap/recipient/eligibility
+* USDA FNS SNAP work requirements: https://www.fns.usda.gov/snap/work-requirements
+* USDA FNS SNAP Employment and Training: https://www.fns.usda.gov/snap/et
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C4研究域|C4研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c4-conversion-channel/snap-eligibility-recertification-abawd-continuity/README.md Human Infra 仓库：domains/c4-conversion-channel/snap-eligibility-recertification-abawd-continuity/README.md]
+
+[[Category:C4研究域]]

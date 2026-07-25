@@ -1,0 +1,81 @@
+{{研究域
+|域 ID=domain.biometric-identifier-template-governance-continuity
+|C 层级=C6：局部可能性解锁层
+|研究对象=Biometric Identifier Template Governance Continuity
+|持续性作用=未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c6-local-unlocking/biometric-identifier-template-governance-continuity
+}}
+
+'''Biometric Identifier Template Governance Continuity'''是 Human Infra 在“局部阻塞解除”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C6“局部可能性解锁层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+Biometric Identifier Template Governance Continuity 关注人脸、指纹、声纹、虹膜、步态、掌纹和其他 biometric template 如何影响身份认证、安全、监控、误识别、不可撤销暴露和主体连续性。
+
+== 对象 ==
+
+* Biometric identifier、biometric template、facial recognition、voiceprint、fingerprint、iris、liveness 和 matching threshold。
+* 误识别、偏差、模板泄露、不可撤销性、身份盗用、访问控制、公共空间监控和供应商治理。
+* 医疗、金融、学校、工作场所、公共安全、旅行、设备解锁和门禁中的生物特征使用。
+
+<span id="human-infra-价值"></span>
+== Human Infra 价值 ==
+
+<pre>主体持续性需要身体特征不被不可逆地变成脆弱凭据
+-> 生物特征把身体、声音和行为转成身份凭据和监控信号
+-> 一旦模板泄露、误识别或被不当复用，主体难以像密码一样重置自己
+-> 模板治理、最小化、准确性审查、替代路径和用途限制降低不可逆身份风险
+-> 主体更能安全进入服务，同时保留退出、纠错和免受错误识别的能力</pre>
+== 边界 ==
+
+* 本域不提供人脸识别部署、绕过生物认证、deepfake、声纹伪造、指纹复制、门禁规避或反识别规避方法。
+* 不判断某 biometric system 是否合规、某次匹配是否准确或某机构是否可以使用生物特征。
+* 不收集、生成、存储或分析真实人脸、声纹、指纹、虹膜、步态或模板数据。
+* 只整理公开资料、治理变量、准确性风险、替代路径和禁止用途。
+
+== 上下游 ==
+
+* 上游：<code>digital-identity-security/</code>、<code>data-breach-notification-identity-recovery-continuity/</code>、<code>health-data-privacy-governance/</code>。
+* 下游：<code>aviation-security-screening-identity-continuity/</code>、<code>workplace-accommodation-return-to-work-continuity/</code>、<code>online-safety-digital-harm-prevention/</code>。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* NIST face recognition and biometric evaluation resources.
+* Federal Trade Commission biometric information and privacy enforcement materials.
+* NIST Privacy Framework and Digital Identity Guidelines.
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C6研究域|C6研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c6-local-unlocking/biometric-identifier-template-governance-continuity/README.md Human Infra 仓库：domains/c6-local-unlocking/biometric-identifier-template-governance-continuity/README.md]
+
+[[Category:C6研究域]]

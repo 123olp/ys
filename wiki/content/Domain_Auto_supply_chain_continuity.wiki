@@ -1,0 +1,92 @@
+{{研究域
+|域 ID=domain.supply-chain-continuity
+|C 层级=C5：可能性生态承载层
+|研究对象=Supply Chain Continuity
+|持续性作用=关键词显示该域主要承载能源、水、食物、住房、治理、经济、通信、灾害或基础设施环境。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c5-ecological-substrate/supply-chain-continuity
+}}
+
+'''Supply Chain Continuity'''是 Human Infra 在“外部生态承载”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要承载能源、水、食物、住房、治理、经济、通信、灾害或基础设施环境。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C5“可能性生态承载层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+Supply Chain Continuity 负责整理药品、能源、食物、设备、通信、芯片、物流和替代路径如何支撑主体持续性。
+
+核心问题：
+
+<blockquote>主体持续性不只取决于身体和技术，也取决于关键输入是否在长期尺度上不断供、可替代、可恢复。
+</blockquote>
+== 先验位置 ==
+
+<pre>有效永生 / 主体持续性最大化
+  -> 主体需要长期依赖药品、食物、水、能源、设备、通信和服务网络
+  -> 这些输入由供应链、库存、物流、生产能力和制度协调支撑
+  -> 断供、单点故障或替代失败会把外部稀缺转化为死亡、失能和行动中断
+  -> 因此供应链连续性是资源基础设施的风险工程域</pre>
+== 关注对象 ==
+
+* 药品、医疗设备、能源、食物、水、通信、芯片、交通和关键零部件。
+* 供应链映射、库存、替代品、冗余、地域集中、物流中断和恢复时间。
+* 医疗连续性、公共服务连续性、关键基础设施和社区韧性。
+* 长期研究项目、生命支持系统、远程医疗和数字基础设施的依赖链。
+
+<span id="human-infra-模型链路"></span>
+== Human Infra 模型链路 ==
+
+<pre>供应链连续性措施 T
+  -> 改变关键输入可获得性、替代能力、冗余和恢复时间 X
+  -> 改变主体外部资源状态 S
+  -> 降低断供、服务中断和基础设施失效导致的风险 λ(t)
+  -> 增加有效时间、恢复能力和长期目标推进能力</pre>
+== 非目标 ==
+
+* 不提供囤积恐慌、黑市采购、制裁规避、非法获取或供应链攻击建议。
+* 不把供应链连续性简化为个人购物清单。
+* 不提供具体医疗用品、药品或设备的采购建议。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* CISA ICT Supply Chain Risk Management: https://www.cisa.gov/topics/critical-infrastructure-security-and-resilience/ict-supply-chain-risk-management
+* FDA Drug Shortages: https://www.fda.gov/drugs/drug-safety-and-availability/drug-shortages
+* WHO Essential Medicines: https://www.who.int/teams/health-product-policy-and-standards/essential-medicines
+
+== 下一步 ==
+
+# 建立关键输入连续性矩阵：输入、依赖链、断供模式、替代路径、恢复时间。
+# 与 <code>resource-social-infra/</code>、<code>risk-engineering/</code>、<code>digital-identity-security/</code> 建立资源和系统入口边界。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C5研究域|C5研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c5-ecological-substrate/supply-chain-continuity/README.md Human Infra 仓库：domains/c5-ecological-substrate/supply-chain-continuity/README.md]
+
+[[Category:C5研究域]]

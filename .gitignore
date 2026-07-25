@@ -30,3 +30,7 @@ build/
 # 环境变量
 .env
 .env.*
+
+# Human Infra Wiki 运行时
+wiki/runtime/
+wiki/.env

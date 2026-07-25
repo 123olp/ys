@@ -1,0 +1,88 @@
+{{研究域
+|域 ID=domain.sterilization-disinfection-infection-control
+|C 层级=C2：可能性源体维护层
+|研究对象=Sterilization Disinfection Infection Control
+|持续性作用=关键词显示该域主要维护身体、脑、器官、细胞、急性生命风险或衰老损伤控制。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c2-source-maintenance/sterilization-disinfection-infection-control
+}}
+
+'''Sterilization Disinfection Infection Control'''是 Human Infra 在“生命载体维护”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+关键词显示该域主要维护身体、脑、器官、细胞、急性生命风险或衰老损伤控制。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C2“可能性源体维护层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+灭菌、消毒与感染控制域研究：当医疗、照护、公共设施和家庭环境需要持续运行时，清洁、消毒、灭菌、再处理和感染预防如何防止可避免感染截断主体持续性。
+
+== 对象 ==
+
+* 医疗机构、长期照护、学校、公共设施、家庭照护和应急环境中的感染预防控制。
+* 清洁、消毒、灭菌、环境感染控制、手卫生、隔离、通风接口和表面/器械再处理。
+* 可复用医疗器械再处理、灭菌失败、清洁流程、HAI、暴发控制和机构安全文化。
+* 感染控制与抗微生物耐药、患者安全、健康劳动力、设备安全和公共卫生监测的交叉。
+* 感染控制对现代医疗、手术、移植、长期照护、康复和公共服务连续性的影响。
+
+<span id="human-infra-价值"></span>
+== Human Infra 价值 ==
+
+现代医疗和照护的很多能力建立在“不会把照护变成感染入口”的前提上。灭菌消毒与感染控制域把清洁、再处理、流程和组织执行力纳入主体持续性模型，使感染风险不只归入药物或免疫问题。
+
+<pre>清洁、消毒、灭菌和再处理体系可靠运行
+  -> 医疗和照护相关感染下降
+  -> 手术、长期照护、康复和公共服务更安全
+  -> 修复能力、有效时间和医疗信任提高</pre>
+== 边界 ==
+
+本域只整理公开感染预防控制、灭菌消毒原则、环境控制、再处理治理和安全文化资料。
+
+不提供：
+
+* 个体消毒方案、浓度配比、灭菌参数、器械再处理、清洁操作或现场感染控制建议。
+* 医疗诊断、治疗、抗菌药物、隔离决策、暴发处置或机构合规操作建议。
+* 规避感染控制、重复使用一次性器械、绕过灭菌验证、掩盖污染或虚假合规方法。
+* 危险化学品混配、消毒剂替代、家庭/机构现场安全承诺或采购建议。
+
+== 上游与下游 ==
+
+* 上游：<code>antimicrobial-resilience/</code>、<code>patient-safety-organizational-learning/</code>、<code>medical-device-equipment-safety-maintenance/</code>、<code>public-health-laboratory-diagnostic-capacity/</code>。
+* 下游：<code>healthcare-access-continuity/</code>、<code>caregiving-long-term-care/</code>、<code>skin-barrier-wound-healing/</code>、<code>immune-maintenance/</code>。
+
+== 初始资料线索 ==
+
+* CDC infection control, disinfection and sterilization resources。
+* WHO infection prevention and control resources。
+* FDA reusable medical device reprocessing resources。
+* CDC healthcare-associated infection resources。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C2研究域|C2研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c2-source-maintenance/sterilization-disinfection-infection-control/README.md Human Infra 仓库：domains/c2-source-maintenance/sterilization-disinfection-infection-control/README.md]
+
+[[Category:C2研究域]]

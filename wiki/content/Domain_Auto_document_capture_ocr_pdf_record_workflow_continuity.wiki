@@ -1,0 +1,85 @@
+{{研究域
+|域 ID=domain.document-capture-ocr-pdf-record-workflow-continuity
+|C 层级=C6：局部可能性解锁层
+|研究对象=Document Capture OCR PDF Record Workflow Continuity
+|持续性作用=未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c6-local-unlocking/document-capture-ocr-pdf-record-workflow-continuity
+}}
+
+'''Document Capture OCR PDF Record Workflow Continuity'''是 Human Infra 在“局部阻塞解除”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C6“局部可能性解锁层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>document-capture-ocr-pdf-record-workflow-continuity</code> 研究扫描、拍照、OCR、PDF、PDF/A、表单、签收、归档、文件命名、元数据和记录工作流如何影响主体把纸面事实转化为可检索、可提交、可保存的数字证据。
+
+<blockquote>核心问题：许多权利、服务、报销、学习和照护任务依赖文件；文件不可读、不可找、不可提交或不可长期保存，会让事实失去效力。
+</blockquote>
+== 关注对象 ==
+
+* 扫描、手机拍照、OCR、PDF/PDF-A、图像质量、文件压缩、表单填写、附件上传和收据/证明留存。
+* 元数据、文件命名、版本、归档、保管期限、长期可读性、可访问 PDF、数字记录交接和备份。
+* 医疗、保险、税务、学校、就业、法律、福利、移民、采购和科研记录工作流。
+* OCR 错误、低质量图像、格式锁定、上传失败、附件丢失、隐私泄露和长期格式失效。
+
+<span id="human-infra-链路"></span>
+== Human Infra 链路 ==
+
+<pre>文件捕获与记录工作流连续
+  -> 纸面事实、证明、表单和附件可被数字化、校验、提交和归档
+  -> 文件丢失、不可读、不可检索、不可提交和长期格式失效下降
+  -> 主体更能完成服务申请、权利证明、照护交接、学习工作和证据保存
+  -> 制度可达性、记忆外化和未来纠错能力增强</pre>
+== 非目标 ==
+
+* 不提供伪造文件、篡改记录、规避审核、破解 DRM、绕过签名、伪造 OCR 或隐私窃取方法。
+* 不替代法律、税务、医疗、学校、雇主或公共机构的正式文件要求。
+* 不收集身份证件、病历、税务文件、法律文件、合同、成绩单或敏感扫描件。
+
+<span id="source-signals"></span>
+== Source Signals ==
+
+* Library of Congress PDF/A format description: https://www.loc.gov/preservation/digital/formats/fdd/fdd000125.shtml
+* NARA electronic records guidance: https://www.archives.gov/records-mgmt
+* Federal Agencies Digital Guidelines Initiative: https://www.digitizationguidelines.gov/
+* PDF Association PDF/A resources: https://pdfa.org/
+
+== 下一步 ==
+
+* 建立 <code>paper fact -&gt; capture -&gt; OCR -&gt; metadata -&gt; submission -&gt; archive -&gt; retrieval</code> 变量表。
+* 区分个人资料、医疗记录、财务/税务文件、教育文件、法律文件、组织记录和科研资料。
+* 与 <code>life-logging-personal-archives-continuity</code>、<code>cloud-backup-file-sync-data-portability-continuity</code>、<code>notary-document-authentication-signature-continuity</code> 和 <code>search-index-discovery-retrieval-continuity</code> 建立边界。
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C6研究域|C6研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c6-local-unlocking/document-capture-ocr-pdf-record-workflow-continuity/README.md Human Infra 仓库：domains/c6-local-unlocking/document-capture-ocr-pdf-record-workflow-continuity/README.md]
+
+[[Category:C6研究域]]

@@ -1,0 +1,16 @@
+{{证据来源
+|来源 ID=evidence.nature.epigenetic-editing-2025
+|来源类型=同行评审综述
+|完整引文=Epigenetic editing: from concept to clinic. Nature Reviews Drug Discovery. 2025.
+|URL 或 DOI=https://www.nature.com/articles/s41573-025-01323-0
+|支持范围=表观遗传编辑的工具谱系、治疗方向和转化挑战
+|不支持的推论=不支持人体全身年轻化或任一表观遗传编辑产品已经普遍可用
+|审查状态=已核对期刊页面
+|访问日期=2026-07-25
+}}
+
+== 支持范围 ==
+用于说明不改变DNA序列而定向调节表达状态的技术路线及其转化位置。
+
+== 不支持的推论 ==
+概念到临床的综述不构成具体疗法的有效性证明。

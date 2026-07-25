@@ -1,0 +1,87 @@
+{{研究域
+|域 ID=domain.missing-persons-unidentified-remains-resolution-continuity
+|C 层级=C6：局部可能性解锁层
+|研究对象=missing-persons-unidentified-remains-resolution-continuity
+|持续性作用=未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|仓库路径=domains/c6-local-unlocking/missing-persons-unidentified-remains-resolution-continuity
+}}
+
+'''missing-persons-unidentified-remains-resolution-continuity'''是 Human Infra 在“局部阻塞解除”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+
+== 对 Human Infra 的作用 ==
+未命中更高层边界、载体、能力、转换或生态规则，暂归为具体场景的局部可能性解锁。
+
+== 机制或依赖 ==
+
+<pre>
+研究域对象
+  -> 影响变量或中间机制
+  -> 改变主体状态、外部条件或路径可达性
+  -> 改变风险、能力、时间成本或资源约束
+  -> 改变有效寿命、有效时间或未来选择权
+</pre>
+
+本域位于 C6“局部可能性解锁层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+
+== 证据与来源 ==
+
+本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+
+== 域研究材料 ==
+
+<code>missing-persons-unidentified-remains-resolution-continuity</code> 研究 missing persons、unidentified persons、unclaimed persons、family reporting、law enforcement interface、forensic data、NamUs、death investigation 和 family notification 如何影响主体身份恢复、家庭持续性、哀悼、法律记录和遗属资源。
+
+<span id="scope"></span>
+== Scope ==
+
+* Missing persons、unidentified remains、unclaimed persons、NamUs、law enforcement reporting、medical examiner / coroner interface、DNA/dental/fingerprint data 和 family assistance。
+* 成年人、儿童、失踪原住民、灾害、迁移、无家可归、认知障碍、拘押和死亡记录交叉风险。
+* 资料质量、隐私、错误身份、家属通知、未成年人、媒体传播和二次伤害边界。
+
+<span id="continuity-logic"></span>
+== Continuity Logic ==
+
+<pre>人员失踪或身份未确认
+-> 主体身份、家庭关系、死亡事实、法律记录和遗属资源悬置
+-> 报告、搜索系统、法医数据、身份确认和家属通知成为恢复接口
+-> 记录断裂会延长不确定性、阻断福利/遗产/哀悼，并增加误认和二次伤害</pre>
+<span id="source-spine"></span>
+== Source Spine ==
+
+* NamUs missing, unidentified, and unclaimed persons public materials.
+* DOJ / NIJ missing persons and forensic identification materials.
+* FBI missing persons public resources where relevant.
+* NCMEC public materials for children, when used only as system context.
+
+<span id="evidence-boundary"></span>
+== Evidence Boundary ==
+
+本域只整理公开失踪人员、无名遗体、无人认领遗体、身份确认和家属通知资料。
+
+Do not include:
+
+* 个案搜索建议、定位、私自调查、线索扩散、公开指认、尸体识别判断、媒体动员或法律建议。
+* 可识别失踪者、家属、儿童、证人、嫌疑人、地址、实时位置、DNA/医疗/法医资料或案件编号。
+* 骚扰家属、嫌疑人、证人、机构人员，传播未经核实线索，或干扰执法/法医工作的内容。
+
+<span id="upstream--downstream"></span>
+== Upstream / Downstream ==
+
+* Upstream: <code>personal-safety-violence-prevention/</code>, <code>disaster-mortality-missing-person-accounting-continuity</code> if added later, <code>cognitive-decline</code> and <code>migration</code> related domains.
+* Downstream: <code>death-certificate-registration-cause-of-death-record-continuity/</code>, <code>survivor-benefits-death-notification-continuity/</code>, <code>cemetery-memorial-remains-location-continuity/</code>, <code>bereavement-leave-grief-support-continuity/</code>.
+
+== 边界、失败条件和未知项 ==
+
+* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
+* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
+* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
+* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+
+== 相关词条与外部链接 ==
+
+* [[研究域全景索引]]
+* [[:Category:C6研究域|C6研究域]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c6-local-unlocking/missing-persons-unidentified-remains-resolution-continuity/README.md Human Infra 仓库：domains/c6-local-unlocking/missing-persons-unidentified-remains-resolution-continuity/README.md]
+
+[[Category:C6研究域]]
