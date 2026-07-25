@@ -81,6 +81,9 @@ fi
 
 docker compose --env-file .env up -d wiki
 docker compose --env-file .env exec -T wiki php maintenance/run.php update --quick
+docker compose --env-file .env exec -T wiki \
+    php maintenance/run.php populateInterwiki \
+    --source "https://zh.wikipedia.org/w/api.php"
 "$wiki_dir/scripts/import-content.sh"
 "$wiki_dir/scripts/smoke-test.sh"
 

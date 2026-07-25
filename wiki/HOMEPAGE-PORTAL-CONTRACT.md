@@ -26,6 +26,11 @@
 
 `MediaWiki:Mainpage` 是首页路由真相源；`首页` 只保留兼容重定向。
 
+Vector 页面壳中的语言入口不是首页内容槽。它必须由官方
+UniversalLanguageSelector、MediaWiki interwiki 表和固定的上游语言链接共同生成；
+`#p-lang-btn`、`.mw-interlanguage-selector` 与语言链接数量属于运行时契约。
+禁止在 Wikitext、TemplateStyles 或 `MediaWiki:Common.css` 中仿制该控件。
+
 ## Portal 页面
 
 `Portal:` 命名空间用于跨对象导航。每个 Portal 必须包含：

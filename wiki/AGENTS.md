@@ -12,7 +12,7 @@ wiki/
 ├── ROUTING-CONTRACT.md       # 科技树节点到内外 Wiki 的跳转契约
 ├── LANGUAGE-EDITION-CONTRACT.md # 语言门户与独立语言版本准入契约
 ├── HOMEPAGE-PORTAL-CONTRACT.md  # 项目首页与专题门户职责契约
-├── Dockerfile                # MediaWiki 与固定版本 Page Forms 镜像
+├── Dockerfile                # MediaWiki 与固定版本 Page Forms、ULS 镜像
 ├── Makefile                  # 常用运维命令入口
 ├── compose.yaml              # MediaWiki 与 MariaDB 服务编排
 ├── env.example               # 非敏感环境变量样例
@@ -30,7 +30,7 @@ wiki/
 │   └── assets/               # 门户资源及 Wiki 只读复用的品牌与科技树图片种子
 ├── homepage-upstream/        # 中文维基首页不可手改的上游模板
 │   ├── UPSTREAM.md           # mp-2012 来源、许可、转换边界和更新流程
-│   └── snapshot/             # 原始 Wikitext、CSS、渲染 HTML 与哈希元数据
+│   └── snapshot/             # 原始 Wikitext、CSS、语言链接、渲染 HTML与哈希元数据
 ├── content/
 │   ├── manifest.tsv          # 种子页面标题与文件映射真相源
 │   ├── Portal_*.wiki         # 原生 MediaWiki 专题导航与证据边界
@@ -45,6 +45,8 @@ wiki/
 │   ├── refresh-wikipedia-homepage.py # 抓取并固定中文维基首页原始资产
 │   ├── build-wikipedia-homepage.py # 从固定快照注入内容槽位并生成首页
 │   ├── run-backstop.sh       # 调用固定 BackstopJS Docker 镜像
+│   ├── check-language-selector.sh # 验证 Vector + ULS V2 原生语言选择器
+│   ├── check-language-selector.js # Playwright 浏览器行为断言
 │   ├── smoke-test.sh         # HTTP、扩展、页面和数据库验证
 │   └── validate-source.sh    # 跟踪配置与内容契约检查
 ├── visual-regression/        # BackstopJS 配置与浏览器稳定化脚本
@@ -64,6 +66,7 @@ wiki/
 - `config/` 只保存可公开的站点策略；MediaWiki 生成的 `LocalSettings.php` 属于运行时。
 - `content/` 是首次安装和可重复导入的页面种子，不是整个 Wiki 数据库的镜像；`import-content.sh` 必须先通过 MediaWiki 原生 `importImages` 导入图片种子，再导入引用它的页面，并在作业队列完成后用 `purgePage` 的标准输入契约刷新项目首页解析缓存。
 - `homepage-upstream/snapshot/` 是中文首页结构与样式真相源；`Human Infra:首页`、页首和样式均由生成器从该快照产生，禁止手工改写生成产物。
+- 首页底部语言入口归 Vector + UniversalLanguageSelector + MediaWiki interwiki 运行时所有；官方语言链接作为固定快照进入生成链，禁止在首页 Wikitext 或 CSS 中复制按钮外观。
 - `visual-regression/` 只保存 BackstopJS 配置、浏览器状态稳定脚本、视觉夹具和受版本控制的官方组件参考图；像素比较、差异图与报告由 BackstopJS 提供，禁止新增自研截图比较器。模板契约套件负责零容差 Gate，实时整页套件只负责诊断有意内容差异；禁止用 `approve` 把本地失败图替换为官方标准。
 - `Template:首页/*` 只替换研究内容，禁止自建平行首页布局；`Portal:` 只做专题导航，不成为并行正文真相源。
 - `Portal_*.wiki` 必须使用 MediaWiki 原生标题、列表、表格和链接，覆盖概览、精选研究、路线、证据边界、开放问题、参与建设和相关门户；禁止在正文重复页面 H1 或通过 `MediaWiki:Common.css` 建立平行门户视觉层。
@@ -80,6 +83,7 @@ wiki/
 cd wiki
 make validate
 make smoke
+make language-selector-check
 make homepage-compare
 ```
 

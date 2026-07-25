@@ -74,7 +74,7 @@ def main() -> None:
         {
             "action": "parse",
             "oldid": str(pages["Wikipedia:首页"]["revid"]),
-            "prop": "text",
+            "prop": "text|langlinks",
             "format": "json",
             "formatversion": "2",
         }
@@ -82,9 +82,15 @@ def main() -> None:
     rendered = parsed["parse"]["text"]
     rendered_filename = "Wikipedia_Home_rendered.html"
     files[rendered_filename] = rendered
+    language_links = parsed["parse"]["langlinks"]
+    language_links_filename = "Wikipedia_Home_language_links.json"
+    language_links_content = (
+        json.dumps(language_links, ensure_ascii=False, indent=2) + "\n"
+    )
+    files[language_links_filename] = language_links_content
 
     metadata = {
-        "schema_version": 1,
+        "schema_version": 2,
         "source": "Chinese Wikipedia",
         "license": "CC BY-SA 4.0",
         "api": API,
@@ -95,6 +101,11 @@ def main() -> None:
             "pageid": parsed["parse"]["pageid"],
             "title": parsed["parse"]["title"],
             "sha256": sha256(rendered),
+        },
+        "language_links": {
+            "filename": language_links_filename,
+            "count": len(language_links),
+            "sha256": sha256(language_links_content),
         },
     }
 

@@ -26,6 +26,12 @@ wfLoadExtension( 'ParserFunctions' );
 wfLoadExtension( 'TemplateStyles' );
 wfLoadExtension( 'VisualEditor' );
 wfLoadExtension( 'PageForms' );
+wfLoadExtension( 'UniversalLanguageSelector' );
+
+// 与 Wikimedia 的 Vector 2022 页面壳一致：语言入口由原生 interlanguage
+// portlet 与 ULS 生成，首页内容不得自行绘制替代控件。
+$wgULSPosition = 'interlanguage';
+$wgULSLanguageSelectorV2Enabled = true;
 
 $wgEnableUploads = true;
 $wgFileExtensions[] = 'pdf';

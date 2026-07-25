@@ -1,6 +1,6 @@
 # Human Infra Wiki
 
-Human Infra Wiki 是科技树节点的知识详情层，也是项目专有概念、研究域和证据来源的可修订知识库。语言入口直接复用 Wikimedia 官方 `www.wikipedia.org` 门户发布物；中文站使用 MediaWiki 1.46、MariaDB 11.8、Vector、VisualEditor 和 Page Forms，保持 Wikipedia 同系阅读与编辑体验。
+Human Infra Wiki 是科技树节点的知识详情层，也是项目专有概念、研究域和证据来源的可修订知识库。语言入口直接复用 Wikimedia 官方 `www.wikipedia.org` 门户发布物；中文站使用 MediaWiki 1.46、MariaDB 11.8、Vector、UniversalLanguageSelector、VisualEditor 和 Page Forms，保持 Wikipedia 同系阅读与编辑体验。
 
 ## 一键部署
 
@@ -48,6 +48,10 @@ Windows 11 可直接访问这些 `localhost` 地址。若端口冲突，在 `.en
 
 中文首页由固定的中文维基百科首页 Wikitext、页首、TemplateStyles 和渲染 HTML 快照生成；`Template:首页/*` 仅维护 Human Infra 内容。生成产物禁止手工修改，上游固定修订、哈希与许可记录在 `homepage-upstream/UPSTREAM.md`。顶级专题使用 `Portal:` 命名空间；Portal 复用 MediaWiki 原生排版，按概览、精选研究、路线、证据边界、开放问题、参与建设和相关门户组织内容，不复制词条正文。全部内容分类必须通过有限父链追溯到 `Category:Human Infra Wiki`。
 
+首页底部语言入口由 Vector、UniversalLanguageSelector、MediaWiki interwiki
+数据和固定的官方跨语言链接共同生成。该入口属于皮肤运行时，不属于首页
+Wikitext；不得用自定义 HTML/CSS 仿制。
+
 Human Infra 品牌标识只有一个受版本控制的源文件：`portal/assets/human-infra-mark.svg`。Compose 将它只读提供给 Vector 皮肤，`make import` 再通过 MediaWiki 原生 `importImages` 导入本地文件仓库供首页模板引用；不得依赖 InstantCommons 上的占位品牌文件。首页“研究图谱”使用 `portal/assets/human-infra-tech-tree.png`，它是 Human Infra 科技树实际页面的渲染截图，通过同一原生图片导入链路发布，不以 CSS 背景或外链图片绕过 MediaWiki 文件系统。
 
 ## 常用命令
@@ -58,6 +62,7 @@ make stop        # 停止
 make logs        # 查看日志
 make import      # 重新导入受治理的种子页面
 make smoke       # 验证 HTTP、数据库、扩展和关键页面
+make language-selector-check # 验证 ULS V2 的 347 语言入口与开关行为
 make backup      # 创建时间戳备份包
 make validate    # 检查源码契约和 Compose 配置
 make homepage-check   # 校验官方首页快照和生成产物未漂移
@@ -85,6 +90,10 @@ make import
 make homepage-reference
 make homepage-compare
 ```
+
+`make language-selector-check` 使用固定的 BackstopJS/Playwright 镜像点击
+Vector 原生语言入口，验证 ULS V2 能展开并呈现 347 个语言条目；截图证据写入
+忽略目录 `runtime/language-selector-open.png`。
 
 首页视觉比较由固定版本 `backstopjs/backstopjs:6.3.25` 执行，不再维护自研像素或 DOM 几何比较器。`homepage-compare` 使用相同标准内容夹具比较模板、样式和响应式结构；`homepage-audit` 保留官方实时内容与本地研究内容的原始差异，用于诊断而不作为合格门禁。两套配置都要求相同尺寸且零像素差异，不能通过提高容差伪造对齐。官方标准化组件参考图保存在 `visual-regression/bitmaps_reference/` 并进入版本控制；只有确认上游修订、模板和浏览器版本均正确后才能运行 `make homepage-reference` 更新参考图。本项目不提供 BackstopJS `approve` 入口，避免把本地失败截图批准成官方标准。
 

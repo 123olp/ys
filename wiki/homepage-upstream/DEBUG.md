@@ -71,3 +71,29 @@ make homepage-compare PASS
 ```
 
 上述历史 `homepage-check` PASS 只证明抽样几何契约，不再作为像素对齐证据。标准化官方组件参考图进入 `visual-regression/bitmaps_reference/`；测试截图、差异图和 HTML 报告写入忽略目录 `runtime/visual-regression/`。当前标准内容组件契约的零容差 Gate 为 PASS；该结论不得扩张为官方实时整页内容逐像素一致。
+
+## 官方语言入口缺失
+
+2026-07-26 对照中文维基百科首页发现，本地页脚缺少 Vector 原生的
+`347种语言` 入口。该入口不属于首页 Wikitext 或 TemplateStyles，而由三部分
+共同产生：
+
+1. Vector 2022 的 `#p-lang-btn` 页面壳契约；
+2. UniversalLanguageSelector 扩展的 `interlanguage` 入口与 V2 交互；
+3. 页面解析结果中的 347 条 interwiki 语言链接。
+
+只复制可见按钮会生成没有语言数据与交互行为的伪控件。正式修复固定安装官方
+UniversalLanguageSelector，使用 MediaWiki 自带 `populateInterwiki` 维护
+interwiki 表，并从固定首页修订的 Action API `langlinks` 生成页面语言链接。
+
+首次浏览器实验错误地用旧版 `.uls-menu` 判断 V2 是否打开。官方 V2 首次点击会
+懒加载 Vue 选择器，正确的可见根节点为 `.uls-rewrite`，语言条目为
+`.uls-rewrite__language-item`。浏览器回归现同时断言：
+
+- `#p-lang-btn-checkbox.mw-interlanguage-selector` 存在；
+- 原始 interlanguage 链接恰为 347 条；
+- 首次点击后 `.uls-rewrite` 可见且包含 347 个唯一语言目标；建议区允许重复
+  展示常用语言，因此当前 DOM 共渲染 348 个条目；
+- 再次点击后选择器关闭。
+
+该行为契约由 `make language-selector-check` 执行，并纳入 `make smoke`。

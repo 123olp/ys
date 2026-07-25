@@ -52,6 +52,8 @@ services:
       args:
         PAGE_FORMS_VERSION: "6.0.9"
         PAGE_FORMS_SHA256: d4c4966169bde055b974eda3d9b79997d08f4a00514021631db6922ff09471cf
+        ULS_COMMIT: 87068f1dc722fbff17346f069a73539737267cc4
+        ULS_SHA256: 564e4836f4e164e7a3b7c70d0ce513aa55801089455959eb2da344574e2dd914
     restart: unless-stopped
     environment:
       WIKI_SERVER: ${WIKI_SERVER}

@@ -49,7 +49,7 @@ grep -Fq '"100":{"id":100,"case":"first-letter","canonical":"Portal"' <<<"$names
 }
 
 extensions="$(curl -fsS "$base_url/api.php?action=query&meta=siteinfo&siprop=extensions&format=json")"
-for extension in Cite ParserFunctions TemplateStyles VisualEditor PageForms; do
+for extension in Cite ParserFunctions TemplateStyles VisualEditor PageForms UniversalLanguageSelector; do
     grep -Fq "\"name\":\"$extension\"" <<<"$extensions" || {
         printf '缺少扩展: %s\n' "$extension" >&2
         exit 1
@@ -123,6 +123,68 @@ for contract in 'id="mp-2012-banner"' 'id="mp-2012-column-left"' 'id="mp-2012-co
         exit 1
     }
 done
+python3 -c '
+from html.parser import HTMLParser
+import sys
+
+
+class LanguageSelectorParser(HTMLParser):
+    def __init__(self):
+        super().__init__()
+        self.in_portlet = False
+        self.depth = 0
+        self.portlet = False
+        self.checkbox = False
+        self.links = 0
+
+    def handle_starttag(self, tag, attrs):
+        attributes = dict(attrs)
+        if attributes.get("id") == "p-lang-btn":
+            self.in_portlet = True
+            self.depth = 1
+            self.portlet = True
+            return
+        if not self.in_portlet:
+            return
+        if tag not in {"area", "base", "br", "col", "embed", "hr", "img",
+                       "input", "link", "meta", "param", "source", "track", "wbr"}:
+            self.depth += 1
+        if attributes.get("id") == "p-lang-btn-checkbox":
+            self.checkbox = "mw-interlanguage-selector" in attributes.get(
+                "class", ""
+            ).split()
+        if tag == "a" and "interlanguage-link-target" in attributes.get(
+            "class", ""
+        ).split():
+            self.links += 1
+
+    def handle_endtag(self, tag):
+        if not self.in_portlet:
+            return
+        self.depth -= 1
+        if self.depth == 0:
+            self.in_portlet = False
+
+
+parser = LanguageSelectorParser()
+parser.feed(sys.stdin.read())
+if not parser.portlet:
+    raise SystemExit("首页缺少 Vector 原生 p-lang-btn 语言入口")
+if not parser.checkbox:
+    raise SystemExit("首页语言入口未绑定 mw-interlanguage-selector")
+if parser.links != 347:
+    raise SystemExit(
+        f"首页语言入口链接数量错误: expected=347, actual={parser.links}"
+    )
+' <<<"$rendered_main_page"
+grep -Fq '"wgULSPosition":"interlanguage"' <<<"$rendered_main_page" || {
+    printf '首页未加载 ULS interlanguage 运行时配置。\n' >&2
+    exit 1
+}
+grep -Fq 'ext.uls.interlanguage' <<<"$rendered_main_page" || {
+    printf '首页未加载 ULS interlanguage ResourceLoader 模块。\n' >&2
+    exit 1
+}
 python3 -c '
 from html.parser import HTMLParser
 import sys
@@ -251,4 +313,5 @@ for form in 研究域 技术节点 证据来源; do
 done
 
 docker compose --env-file .env exec -T db healthcheck.sh --connect --innodb_initialized >/dev/null
+./scripts/check-language-selector.sh
 printf 'Wiki smoke test: PASS\n'

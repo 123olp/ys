@@ -17,6 +17,7 @@ required=(
     homepage-upstream/snapshot/Wikipedia_Home_banner.wiki
     homepage-upstream/snapshot/Wikipedia_Home_styles.css
     homepage-upstream/snapshot/Wikipedia_Home_rendered.html
+    homepage-upstream/snapshot/Wikipedia_Home_language_links.json
     Dockerfile
     compose.yaml
     env.example
@@ -144,6 +145,22 @@ grep -Fq 'resources/assets/licenses/cc-by-sa.png' config/HumanInfraSettings.php 
 }
 grep -Fq 'resources/assets/human-infra-mark.svg' config/HumanInfraSettings.php || {
     printf '站点未配置本地 Human Infra 品牌资源。\n' >&2
+    exit 1
+}
+grep -Fq "wfLoadExtension( 'UniversalLanguageSelector' );" config/HumanInfraSettings.php || {
+    printf '站点未启用 MediaWiki 官方 UniversalLanguageSelector 扩展。\n' >&2
+    exit 1
+}
+grep -Fq "\$wgULSPosition = 'interlanguage';" config/HumanInfraSettings.php || {
+    printf 'UniversalLanguageSelector 未使用官方 interlanguage 入口。\n' >&2
+    exit 1
+}
+grep -Fq 'UniversalLanguageSelector/archive/${ULS_COMMIT}.tar.gz' Dockerfile || {
+    printf 'Wiki 镜像未固定安装官方 UniversalLanguageSelector。\n' >&2
+    exit 1
+}
+grep -Fq 'maintenance/run.php populateInterwiki' scripts/bootstrap.sh || {
+    printf '启动流程未使用 MediaWiki 核心 populateInterwiki 建立语言前缀。\n' >&2
     exit 1
 }
 grep -Fq 'human-infra-mark.svg:/var/www/html/resources/assets/human-infra-mark.svg:ro' compose.yaml || {
@@ -382,6 +399,24 @@ for item in languages:
         raise SystemExit(f"无效语言状态: {item.get('status')}")
     if item.get("status") == "planned" and item.get("origin"):
         raise SystemExit(f"筹备语言不得提供可用 origin: {item.get('code')}")
+
+language_links = json.loads(
+    Path(
+        "homepage-upstream/snapshot/Wikipedia_Home_language_links.json"
+    ).read_text(encoding="utf-8")
+)
+metadata = json.loads(
+    Path("homepage-upstream/snapshot/metadata.json").read_text(encoding="utf-8")
+)
+expected = metadata["language_links"]["count"]
+if len(language_links) != expected:
+    raise SystemExit(
+        f"首页官方语言链接快照不完整: expected={expected}, "
+        f"actual={len(language_links)}"
+    )
+codes = [item["lang"] for item in language_links]
+if len(codes) != len(set(codes)):
+    raise SystemExit("首页官方语言链接快照存在重复语言代码")
 PY
 
 if [[ -f .env ]]; then

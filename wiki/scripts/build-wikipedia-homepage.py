@@ -105,7 +105,10 @@ def verify_snapshot() -> dict:
     if not metadata_path.is_file():
         fail("缺少首页快照 metadata.json，请先运行 refresh-wikipedia-homepage.py --write")
     metadata = json.loads(metadata_path.read_text(encoding="utf-8"))
-    records = list(metadata["pages"].values()) + [metadata["rendered"]]
+    records = list(metadata["pages"].values()) + [
+        metadata["rendered"],
+        metadata["language_links"],
+    ]
     for record in records:
         path = SNAPSHOT_DIR / record["filename"]
         if not path.is_file():
@@ -208,7 +211,21 @@ def build_home() -> str:
     ):
         if source.count(f'id="{content_id}"') != 1:
             fail(f"生成首页缺少或重复官方内容容器: {content_id}")
-    return GENERATED_NOTICE + source
+    language_links = json.loads(
+        (SNAPSHOT_DIR / "Wikipedia_Home_language_links.json").read_text(
+            encoding="utf-8"
+        )
+    )
+    expected_count = verify_snapshot()["language_links"]["count"]
+    if len(language_links) != expected_count:
+        fail(
+            "首页语言链接数量与固定快照不一致: "
+            f"expected={expected_count}, actual={len(language_links)}"
+        )
+    language_wikitext = "\n".join(
+        f"[[{item['lang']}:{item['title']}]]" for item in language_links
+    )
+    return GENERATED_NOTICE + source + "\n" + language_wikitext + "\n"
 
 
 def build_banner() -> str:

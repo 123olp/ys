@@ -1,6 +1,6 @@
 SHELL := /bin/bash
 
-.PHONY: bootstrap up stop logs import backup smoke validate homepage-refresh homepage-build homepage-check homepage-reference homepage-compare homepage-audit-reference homepage-audit
+.PHONY: bootstrap up stop logs import backup smoke language-selector-check validate homepage-refresh homepage-build homepage-check homepage-reference homepage-compare homepage-audit-reference homepage-audit
 
 bootstrap:
 	./scripts/bootstrap.sh
@@ -22,6 +22,9 @@ backup:
 
 smoke:
 	./scripts/smoke-test.sh
+
+language-selector-check:
+	./scripts/check-language-selector.sh
 
 validate:
 	./scripts/validate-source.sh
