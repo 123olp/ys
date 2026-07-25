@@ -23,6 +23,7 @@ $wgLogos = [
 wfLoadSkin( 'Vector' );
 wfLoadExtension( 'Cite' );
 wfLoadExtension( 'ParserFunctions' );
+wfLoadExtension( 'TemplateStyles' );
 wfLoadExtension( 'VisualEditor' );
 wfLoadExtension( 'PageForms' );
 

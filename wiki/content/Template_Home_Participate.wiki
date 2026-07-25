@@ -1,10 +1,4 @@
-<div class="hi-mainpage-panel">
-<h2>参与建设</h2>
-<div class="hi-mainpage-panel-body">
-* [[Special:FormStart/研究域|新建研究域]]
-* [[Special:FormStart/技术节点|新建技术节点]]
-* [[Special:FormStart/证据来源|新建证据来源]]
+'''Human Infra Wiki''' 是可修订的研究知识库。参与者可以[[Special:FormStart/研究域|新建研究域]]、[[Special:FormStart/技术节点|新建技术节点]]或[[Special:FormStart/证据来源|登记证据来源]]。
 
-提交前阅读 [[Human Infra:内容方针|内容方针]]、[[Help:词条录入标准|词条录入标准]]与[[Human Infra:版权|版权说明]]。
-</div>
-</div><noinclude>[[Category:首页模板]]</noinclude>
+提交前应阅读[[Human Infra:内容方针|内容方针]]、[[Help:词条录入标准|词条录入标准]]与[[Human Infra:版权|版权说明]]。
+<div id="column-participate-button">[[Special:FormStart/研究域|<span class="mw-ui-button mw-ui-progressive">开始参与 Human Infra</span>]]</div><noinclude>[[Category:首页模板]]</noinclude>

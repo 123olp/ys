@@ -2,6 +2,10 @@
 
 All notable repository structure changes are recorded here.
 
+## 2026-07-25
+
+- Replaced the custom Chinese Wiki homepage layout with the pinned Chinese Wikipedia `mp-2012` DOM, TemplateStyles stylesheet and WikimediaMessages dark-mode compatibility contract, while retaining Human Infra content and attribution boundaries.
+
 ## 2026-07-24
 
 - Added a reproducible Human Infra MediaWiki stack with MariaDB, Vector, VisualEditor and Page Forms.

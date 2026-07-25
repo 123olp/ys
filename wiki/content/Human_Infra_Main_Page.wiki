@@ -1,17 +1,88 @@
-__NOTOC__
-<div class="hi-mainpage">
+__NOTOC__ __NOEDITSECTION__
+<templatestyles src="首页/styles.css" />
+<div id="mp-2012">
 {{首页/页首}}
-
-<div class="hi-mainpage-grid">
-{{首页/特色研究}}
-{{首页/知识与路线}}
-{{首页/证据动态}}
-{{首页/争议与未知}}
-{{首页/参与建设}}
-{{首页/相关入口}}
+<div id="mp-2012-body">
+<div id="mp-2012-column-left"><div>
+<div id="mp-2012-column-feature-block" class="mp-2012-column-left-block">
+<h2>典范研究</h2>
+<div id="column-feature" class="mp-2012-text">{{首页/特色研究}}</div>
 </div>
-
-<div class="hi-mainpage-notice">
-'''阅读边界：'''本 Wiki 用于组织研究对象、技术路径、证据来源和反证条件。它不提供个体诊断、治疗、用药、寿命日期预测、法律决策或危险实验操作建议。“已实现”只针对词条声明的限定对象；“未来条件”不表示预测年份；“待审查”不能承担疗效或可行性结论。
+<div id="mp-2012-column-dyk-block" class="mp-2012-column-left-block">
+<h2>你知道吗？</h2>
+<div id="column-dyk" class="mp-2012-text">{{首页/知识与路线}}</div>
+</div>
+<div id="mp-2012-column-good-block" class="mp-2012-column-left-block">
+<h2>优良条目</h2>
+<div id="column-good" class="mp-2012-text">{{首页/证据动态}}</div>
+</div>
+<div id="mp-2012-column-featurepic-block" class="mp-2012-column-left-block nomobile">
+<h2>研究图谱</h2>
+<div class="mp-2012-text">
+'''[[历史技术谱系]]'''把现实技术的先后关系与 Human Infra 的未来条件连接起来，用于区分已经发生的技术历史、正在形成的研究路径和尚未满足的目标条件。
+<div class="mp-2012-block-nav-footer">
+[[研究域全景索引|研究域]] · [[技术路线全景索引|技术路线]] · [[证据地图与支持边界|证据地图]]
+</div>
+</div>
+</div>
+</div></div>
+<div id="mp-2012-column-right"><div>
+<div id="mp-2012-column-right-block-a" class="mp-2012-column-right-block">
+<div id="mp-2012-column-itn-block" class="mp-2012-column-right-subblock">
+<h2>研究动态</h2>
+<div id="column-itn" class="mp-2012-text">{{首页/争议与未知}}</div>
+</div>
+<div id="mp-2012-column-otd-block" class="mp-2012-column-right-subblock">
+<h2>历史与前沿</h2>
+<div id="column-otd" class="mp-2012-text">{{首页/相关入口}}</div>
+</div>
+<div id="mp-2012-column-uptrends-block" class="mp-2012-column-right-subblock">
+<h2>当前重点</h2>
+<div id="column-uptrends" class="mp-2012-text">
+[[有效永生与主体持续性]] · [[记忆编辑]] · [[长寿逃逸速度]] · [[AI 自动化科研]]
+</div>
+</div>
+</div>
+<div id="mp-2012-column-right-block-b" class="mp-2012-column-right-block nomobile">
+<div id="mp-2012-column-participate-block" class="mp-2012-column-right-subblock nomobile">
+<h2>参与 Human Infra</h2>
+<div id="column-participate" class="mp-2012-text">{{首页/参与建设}}</div>
+</div>
+</div>
+<div id="mp-2012-column-right-block-c" class="mp-2012-column-right-block nomobile">
+<div id="mp-2012-column-tips-block" class="mp-2012-column-right-subblock nomobile">
+<h2>Human Infra 提醒您</h2>
+<div id="column-tips" class="mp-2012-text">
+本 Wiki 组织研究对象、技术路径、证据来源和反证条件，不提供个体诊断、治疗、用药、寿命日期预测、法律决策或危险实验操作建议。“未来条件”不表示预测年份，“待审查”不能承担疗效或可行性结论。
+</div>
+</div>
+</div>
+</div></div>
+<div id="mp-2012-links" class="nomobile">
+<table><tr>
+<td>
+<h3>站点链接</h3>
+* [[Human Infra:关于|关于]]
+* [[Human Infra:内容方针|内容方针]]
+* [[Human Infra:版权|版权]]
+</td>
+<td>
+<h3>认识 Human Infra</h3>
+* [[Portal:永生与主体持续性|永生与主体持续性]]
+* [[争议、未知与禁止推论|争议与未知]]
+* [[科幻作品中的永生与增强|思想实验]]
+</td>
+<td>
+<h3>常用工具</h3>
+* [[Help:词条录入标准|录入标准]]
+* [[Special:FormStart/研究域|新建研究域]]
+* [[Special:FormStart/证据来源|新建证据来源]]
+</td>
+</tr></table>
+</div>
+<div id="mp-2012-sisters" class="nomobile">
+<div></div>
+<p>Human Infra Wiki 由 tradecatlabs 维护，使用 MediaWiki 与自由内容许可组织可修订的研究知识。</p>
+</div>
 </div>
 </div>

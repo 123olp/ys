@@ -1,14 +1,19 @@
-<div class="hi-mainpage-header">
-<h1>Human Infra</h1>
-<p>'''人类基础设施知识库'''研究使主体能够长期存在、行动、学习、恢复、选择并进入未来所必需的条件。</p>
-<p>当前收录 {{NUMBEROFARTICLES}} 篇内容词条、{{PAGESINCATEGORY:研究域|pages}} 个研究域、{{PAGESINCATEGORY:技术节点|pages}} 个技术节点和 {{PAGESINCATEGORY:证据来源|pages}} 个证据来源。</p>
-<div class="hi-mainpage-nav">
-[[Portal:永生与主体持续性|永生与主体持续性]]
-[[研究域全景索引|研究域]]
-[[技术路线全景索引|技术路线]]
-[[证据地图与支持边界|证据地图]]
-[[历史技术谱系|历史谱系]]
-[[争议、未知与禁止推论|争议与未知]]
-[[Help:词条录入标准|编辑规范]]
-</div>
+<div id="mp-2012-banner" class="nomobile">
+<div id="mp-2012-banner-logo">[[File:MediaWiki logo reworked 2.svg|118px|link=Human Infra:关于|Human Infra Wiki]]</div>
+<div id="mp-2012-banner-title"><div>
+<h1>[[Human Infra:关于|人类基础设施]]</h1>
+<p>Human Infra 知识库<br />研究主体持续性何以可能</p>
+</div></div>
+<div id="mp-2012-banner-intro"><div>
+<p>已有<span class="number-of-articles">[[Special:Statistics|{{NUMBEROFARTICLES}}]]</span>篇内容条目</p>
+<table><tr>
+<td>[[研究域全景索引|研究域]]</td>
+<td>[[技术路线全景索引|技术路线]]</td>
+<td>[[证据地图与支持边界|证据]]</td>
+</tr><tr>
+<td>[[Portal:永生与主体持续性|专题]]</td>
+<td>[[Help:词条录入标准|入门]]</td>
+<td>[[Human Infra:内容方针|方针]]</td>
+</tr></table>
+</div></div>
 </div><noinclude>[[Category:首页模板]]</noinclude>

@@ -45,7 +45,7 @@ Windows 11 可直接访问这些 `localhost` 地址。若端口冲突，在 `.en
 
 录入前阅读 [内容标准](CONTENT-STANDARD.md)。科技树接入遵循 [跳转契约](ROUTING-CONTRACT.md)。
 
-中文首页通过 `Template:首页/*` 模块维护。顶级专题使用 `Portal:` 命名空间，Portal 只组织导航、边界和跨词条关系，不复制词条正文。
+中文首页复用中文维基百科首页的 `mp-2012` DOM、`TemplateStyles` 和栏目结构；`Template:首页/*` 仅维护 Human Infra 内容。上游固定修订与许可记录在 `homepage-upstream/UPSTREAM.md`。顶级专题使用 `Portal:` 命名空间，Portal 只组织导航、边界和跨词条关系，不复制词条正文。
 
 ## 常用命令
 

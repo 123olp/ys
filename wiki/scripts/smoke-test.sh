@@ -49,7 +49,7 @@ grep -Fq '"100":{"id":100,"case":"first-letter","canonical":"Portal"' <<<"$names
 }
 
 extensions="$(curl -fsS "$base_url/api.php?action=query&meta=siteinfo&siprop=extensions&format=json")"
-for extension in Cite ParserFunctions VisualEditor PageForms; do
+for extension in Cite ParserFunctions TemplateStyles VisualEditor PageForms; do
     grep -Fq "\"name\":\"$extension\"" <<<"$extensions" || {
         printf '缺少扩展: %s\n' "$extension" >&2
         exit 1
@@ -68,14 +68,20 @@ fi
 main_page="$(curl -fsS --get "$base_url/index.php" \
     --data-urlencode 'title=Human Infra:首页' \
     --data-urlencode 'action=raw')"
-grep -Fq '{{首页/页首}}' <<<"$main_page" || {
+grep -Fq '<div id="mp-2012">' <<<"$main_page" || {
     printf '首页未加载 Human Infra 种子内容。\n' >&2
     exit 1
 }
 
 rendered_main_page="$(curl -fsS "$base_url/")"
-grep -Fq '特色研究' <<<"$rendered_main_page" || {
-    printf '中文项目首页模块未渲染。\n' >&2
+for contract in 'id="mp-2012-banner"' 'id="mp-2012-column-left"' 'id="mp-2012-column-right"' 'id="mp-2012-links"'; do
+    grep -Fq "$contract" <<<"$rendered_main_page" || {
+        printf '中文项目首页缺少上游 DOM 契约: %s\n' "$contract" >&2
+        exit 1
+    }
+done
+grep -Fq '典范研究' <<<"$rendered_main_page" || {
+    printf '中文项目首页内容未渲染。\n' >&2
     exit 1
 }
 

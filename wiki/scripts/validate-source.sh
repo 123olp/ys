@@ -11,6 +11,7 @@ required=(
     ROUTING-CONTRACT.md
     LANGUAGE-EDITION-CONTRACT.md
     HOMEPAGE-PORTAL-CONTRACT.md
+    homepage-upstream/UPSTREAM.md
     Dockerfile
     compose.yaml
     env.example
@@ -95,6 +96,7 @@ for title in \
     'MediaWiki:Mainpage' \
     'MediaWiki:Common.css' \
     'Human Infra:首页' \
+    'Template:首页/styles.css' \
     'Portal:永生与主体持续性' \
     'Portal:衰老机制与长寿科学' \
     'Portal:身体替代与人体增强' \
@@ -104,6 +106,17 @@ for title in \
     'Portal:治理、风险与公平'; do
     [[ -n "${titles[$title]:-}" ]] || {
         printf '缺少受治理关键页面: %s\n' "$title" >&2
+        exit 1
+    }
+done
+
+grep -Fq '<div id="mp-2012">' content/Human_Infra_Main_Page.wiki || {
+    printf '中文首页缺少中文维基百科 mp-2012 根 DOM 契约。\n' >&2
+    exit 1
+}
+for contract in mp-2012-banner mp-2012-column-left mp-2012-column-right mp-2012-links; do
+    grep -Fq "id=\"$contract\"" content/Human_Infra_Main_Page.wiki content/Template_Home_Header.wiki || {
+        printf '中文首页缺少上游 DOM 契约: %s\n' "$contract" >&2
         exit 1
     }
 done
