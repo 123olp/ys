@@ -25,7 +25,7 @@ human_infra/
 │   └── c6-local-unlocking/         # 局部可能性解锁层
 ├── tools/                # 仓库检查脚本和可复用工程工具
 ├── web/                  # Astro + D3 展示、论文、机器知识与 GEO 发布层
-└── wiki/                 # MediaWiki 词条、模板、表单、版本历史与科技树详情页
+└── wiki/                 # 多语言入口、MediaWiki 首页/门户/词条与科技树详情页
 ```
 
 ## 职责边界
@@ -36,7 +36,7 @@ human_infra/
 - `README.en.md` 是 GitHub 与国际生成式引擎的英文短入口，不复制中文 README 的全部研究账本。
 - `CITATION.cff` 是仓库引用与发布者元数据真相源，作者统一为 `tradecatlabs`。
 - `web/` 是 Astro + D3 正式 Web 应用和 GEO 机器发布层，用于多页科研叙事、论文、预测模型、结构化数据、抓取入口和自动发布审计；它不承载采集脚本、个人预测服务或医学决策逻辑。
-- `wiki/` 是独立的 MediaWiki 知识基础设施，负责内部词条、模板化录入、引用、修订历史和科技树节点详情；仓库只跟踪可复现配置与种子内容，数据库、上传文件、安装配置和密钥只进入 `wiki/runtime/` 与 `wiki/.env`。
+- `wiki/` 是由独立语言门户和中文 MediaWiki 组成的知识基础设施，访问层级为“语言选择 -> 语言版本首页 -> 专题门户 -> 词条”；仓库跟踪门户静态资源、可复现配置、首页模块、门户页与种子内容，数据库、上传文件、安装配置和密钥只进入 `wiki/runtime/` 与 `wiki/.env`。
 - `tools/` 保存仓库维护脚本和可迁移工程工具；其中 arXiv HTML papers 复用工具只负责资源安装、资产校验和 Astro 模板生成，不承载 Human Infra 正文理论；Human Infra 审计器只检查本地研究契约和索引覆盖，不证明外部文献真实性。
 - `docs/` 只放 Human Infra 的上位理论、域边界、伦理原则和原始资料归档，不放具体采集脚本；`docs/reference/human-infra-falsifier-source-card-backfill.json` 只保存论文强主张和优先域反证的 Source Card 来源锚点回填，不替代逐篇 Source Card 精读。
 - `domains/` 的正式研究域必须进入 C1-C6 物理层级目录；每个研究域必须有独立 README 和 AGENTS，明确自身对象、非目标、证据要求和上下游关系。

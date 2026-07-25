@@ -7,6 +7,15 @@ $wgMetaNamespace = 'Human_Infra';
 $wgLanguageCode = 'zh';
 $wgLocaltimezone = 'Asia/Shanghai';
 $wgDefaultSkin = 'vector-2022';
+$wgMainPageIsDomainRoot = true;
+
+// Portal 是受治理的专题导航层，不承载独立证据结论。
+define( 'NS_HUMAN_INFRA_PORTAL', 100 );
+define( 'NS_HUMAN_INFRA_PORTAL_TALK', 101 );
+$wgExtraNamespaces[NS_HUMAN_INFRA_PORTAL] = 'Portal';
+$wgExtraNamespaces[NS_HUMAN_INFRA_PORTAL_TALK] = 'Portal_talk';
+$wgNamespaceAliases['门户'] = NS_HUMAN_INFRA_PORTAL;
+$wgContentNamespaces[] = NS_HUMAN_INFRA_PORTAL;
 $wgLogos = [
     'icon' => "$wgResourceBasePath/resources/assets/mediawiki_compact.svg",
 ];

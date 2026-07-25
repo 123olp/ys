@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Human Infra 多语言知识门户">
+  <title>Human Infra</title>
+  <link rel="icon" href="assets/human-infra-mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="runtime-config.js"></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <main class="portal-shell">
+    <header class="brand" aria-labelledby="portal-title">
+      <img src="assets/human-infra-mark.svg" width="144" height="144" alt="">
+      <div>
+        <h1 id="portal-title">Human Infra</h1>
+        <p>人类基础设施知识库</p>
+      </div>
+    </header>
+
+    <section class="search-area" aria-label="跨语言搜索">
+      <form id="search-form" class="search-form">
+        <label class="visually-hidden" for="search-input">搜索 Human Infra Wiki</label>
+        <input id="search-input" name="search" type="search" autocomplete="off" placeholder="搜索 Human Infra Wiki">
+        <select id="search-language" aria-label="选择搜索语言"></select>
+        <button type="submit">搜索</button>
+      </form>
+    </section>
+
+    <section aria-labelledby="language-heading">
+      <h2 id="language-heading">选择语言</h2>
+      <div id="language-list" class="language-list" aria-live="polite"></div>
+    </section>
+
+    <section class="all-languages" aria-labelledby="all-language-heading">
+      <h2 id="all-language-heading">语言版本</h2>
+      <p>中文版本已经开放。其他语言版本只有在具备独立内容、维护责任和引用审查能力后才会启用。</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>由 tradecatlabs 维护。内容遵循各语言版本标明的授权与证据边界。</p>
+    <nav aria-label="项目链接">
+      <a href="https://github.com/tradecatlabs/human_infra">GitHub</a>
+      <a id="about-link" href="#">关于 Human Infra</a>
+    </nav>
+  </footer>
+
+  <noscript>需要启用 JavaScript 才能根据当前主机路由到本地语言版本。</noscript>
+</body>
+</html>

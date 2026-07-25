@@ -1,0 +1,104 @@
+/* Human Infra 项目首页和 Portal 页面；不改变普通词条的阅读排版。 */
+.hi-mainpage,
+.hi-portal {
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+.hi-mainpage-header {
+  margin-bottom: 1rem;
+  padding: 1.25rem 1.5rem;
+  border: 1px solid #a2a9b1;
+  background: #f8f9fa;
+}
+
+.hi-mainpage-header h1 {
+  margin: 0 0 0.35rem;
+  border: 0;
+  font-size: 2rem;
+}
+
+.hi-mainpage-header p {
+  margin: 0.35rem 0;
+}
+
+.hi-mainpage-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  margin-top: 0.8rem;
+  padding-top: 0.8rem;
+  border-top: 1px solid #c8ccd1;
+}
+
+.hi-mainpage-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 1rem;
+}
+
+.hi-mainpage-panel {
+  min-width: 0;
+  border: 1px solid #a2a9b1;
+  background: #fff;
+}
+
+.hi-mainpage-panel > h2 {
+  margin: 0;
+  padding: 0.55rem 0.8rem;
+  border-bottom: 1px solid #a2a9b1;
+  font-family: sans-serif;
+  font-size: 1.05rem;
+  font-weight: 700;
+  background: #eaecf0;
+}
+
+.hi-mainpage-panel-body {
+  padding: 0.75rem 1rem;
+}
+
+.hi-mainpage-panel-body > :first-child {
+  margin-top: 0;
+}
+
+.hi-mainpage-panel-body > :last-child {
+  margin-bottom: 0;
+}
+
+.hi-mainpage-wide {
+  grid-column: 1 / -1;
+}
+
+.hi-mainpage-notice {
+  margin-top: 1rem;
+  padding: 0.8rem 1rem;
+  border: 1px solid #a2a9b1;
+  border-left: 4px solid #36c;
+  background: #f8f9fa;
+}
+
+.hi-portal-lead {
+  margin-bottom: 1rem;
+  padding: 1rem 1.2rem;
+  border: 1px solid #a2a9b1;
+  background: #f8f9fa;
+}
+
+.hi-portal-links {
+  columns: 2 22rem;
+  column-gap: 2rem;
+}
+
+.hi-portal-links li {
+  break-inside: avoid;
+}
+
+@media (max-width: 850px) {
+  .hi-mainpage-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hi-mainpage-wide {
+    grid-column: auto;
+  }
+}

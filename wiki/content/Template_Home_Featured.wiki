@@ -1,0 +1,10 @@
+<div class="hi-mainpage-panel">
+<h2>特色研究</h2>
+<div class="hi-mainpage-panel-body">
+'''[[有效永生与主体持续性]]'''把永生处理为主体持续性最大化目标：持续存在必须同时保留行动、学习、恢复、选择和进入未来的能力。
+
+* [[Portal:永生与主体持续性|进入专题门户]]
+* [[永生与主体持续性专题|阅读综合研究页]]
+* [[长寿逃逸速度|查看关键条件节点]]
+</div>
+</div><noinclude>[[Category:首页模板]]</noinclude>

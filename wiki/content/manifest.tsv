@@ -1,8 +1,26 @@
 # title	file
 首页	Main_Page.wiki
+MediaWiki:Mainpage	MediaWiki_Mainpage.wiki
+MediaWiki:Common.css	MediaWiki_Common_css.wiki
+Human Infra:首页	Human_Infra_Main_Page.wiki
 Human Infra:关于	Human_Infra_About.wiki
 Human Infra:内容方针	Human_Infra_Content_policy.wiki
 Human Infra:版权	Human_Infra_Copyright.wiki
+Template:首页/页首	Template_Home_Header.wiki
+Template:首页/特色研究	Template_Home_Featured.wiki
+Template:首页/知识与路线	Template_Home_Knowledge_Routes.wiki
+Template:首页/证据动态	Template_Home_Evidence.wiki
+Template:首页/争议与未知	Template_Home_Unknowns.wiki
+Template:首页/参与建设	Template_Home_Participate.wiki
+Template:首页/相关入口	Template_Home_Related.wiki
+Category:专题门户	Category_Portals.wiki
+Portal:永生与主体持续性	Portal_Immortality.wiki
+Portal:衰老机制与长寿科学	Portal_Aging_Longevity.wiki
+Portal:身体替代与人体增强	Portal_Body_Augmentation.wiki
+Portal:脑、记忆与主体连续性	Portal_Brain_Memory.wiki
+Portal:AI与自动化科学	Portal_AI_Science.wiki
+Portal:未来等待	Portal_Future_Waiting.wiki
+Portal:治理、风险与公平	Portal_Governance.wiki
 Help:词条录入标准	Help_Entry_standard.wiki
 Template:研究域	Template_Research_domain.wiki
 Form:研究域	Form_Research_domain.wiki

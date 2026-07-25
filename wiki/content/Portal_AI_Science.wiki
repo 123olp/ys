@@ -1,0 +1,26 @@
+__NOTOC__
+= AI 与自动化科学 =
+<div class="hi-portal">
+<div class="hi-portal-lead">研究 AI、自动实验、蛋白质与材料设计如何压缩技术窗口，以及递归能力增长对主体持续性、可解释性和治理的影响。</div>
+
+== 综合入口 ==
+* [[AI自动化科学与技术加速专题]]
+* [[技术奇点与自动化科研]]
+* [[AI 自动化科研]]
+* [[技术路线全景索引]]
+
+== 关键分支 ==
+<div class="hi-portal-links">
+* [[AI药物发现与蛋白设计]]
+* [[自驱动实验室]]
+* [[技术奇点与自动化科研]]
+* [[Recursive Self-Improvement Intelligence Explosion|递归自我改进与智能爆炸]]
+* [[Accelerating Returns Technology Convergence|加速回报与技术融合]]
+* [[AI Agency Safety|AI 代理安全]]
+* [[治理、风险与公平专题|控制、对齐与治理]]
+</div>
+
+== 评估边界 ==
+任务表现、科学发现速度、自主闭环能力、递归改进能力和通用智能必须分别测量；预测时间表不能替代能力证据。
+</div>
+[[Category:专题门户]]

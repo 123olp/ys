@@ -1,0 +1,11 @@
+<div class="hi-mainpage-panel">
+<h2>知识与技术路线</h2>
+<div class="hi-mainpage-panel-body">
+* [[Portal:衰老机制与长寿科学|衰老机制与长寿科学]]
+* [[Portal:身体替代与人体增强|身体替代与人体增强]]
+* [[Portal:脑、记忆与主体连续性|脑、记忆与主体连续性]]
+* [[Portal:AI与自动化科学|AI 与自动化科学]]
+* [[Portal:未来等待|未来等待]]
+* [[Portal:治理、风险与公平|治理、风险与公平]]
+</div>
+</div><noinclude>[[Category:首页模板]]</noinclude>

@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "project": "Human Infra",
+  "languages": [
+    {
+      "code": "zh",
+      "name": "中文",
+      "localName": "中文",
+      "status": "available",
+      "path": "/",
+      "description": "主体持续性、长寿科学、人体增强与未来技术研究知识库"
+    },
+    {
+      "code": "en",
+      "name": "English",
+      "localName": "English",
+      "status": "planned",
+      "description": "Language edition in preparation"
+    }
+  ]
+}

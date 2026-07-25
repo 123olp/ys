@@ -1,0 +1,9 @@
+<div class="hi-mainpage-panel">
+<h2>相关入口</h2>
+<div class="hi-mainpage-panel-body">
+* [[历史技术谱系]]：现实技术的历史前置条件。
+* [[科幻作品中的永生与增强]]：概念史与思想实验。
+* [https://github.com/tradecatlabs/human_infra Human Infra GitHub 仓库]
+* [[Human Infra:关于|关于本项目]]
+</div>
+</div><noinclude>[[Category:首页模板]]</noinclude>

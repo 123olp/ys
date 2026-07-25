@@ -10,6 +10,14 @@ source .env
 set +a
 
 base_url="${WIKI_SERVER%/}"
+portal_url="${WIKI_PORTAL_URL:-http://localhost:18784}"
+portal_url="${portal_url%/}"
+
+curl -fsS "$portal_url/healthz" | grep -Fq 'ok'
+portal_html="$(curl -fsS "$portal_url/")"
+grep -Fq 'Human Infra' <<<"$portal_html"
+grep -Fq '选择语言' <<<"$portal_html"
+curl -fsS "$portal_url/languages.json" | grep -Fq '"status": "available"'
 
 printf '等待 Wiki HTTP 就绪'
 for _ in $(seq 1 60); do
@@ -23,6 +31,13 @@ done
 
 siteinfo="$(curl -fsS "$base_url/api.php?action=query&meta=siteinfo&format=json")"
 grep -Fq '"sitename":"Human Infra Wiki"' <<<"$siteinfo"
+grep -Fq '"mainpage":"Human Infra:首页"' <<<"$siteinfo"
+
+namespaces="$(curl -fsS "$base_url/api.php?action=query&meta=siteinfo&siprop=namespaces&format=json")"
+grep -Fq '"100":{"id":100,"case":"first-letter","canonical":"Portal"' <<<"$namespaces" || {
+    printf 'Portal 命名空间不可用。\n' >&2
+    exit 1
+}
 
 extensions="$(curl -fsS "$base_url/api.php?action=query&meta=siteinfo&siprop=extensions&format=json")"
 for extension in Cite ParserFunctions VisualEditor PageForms; do
@@ -34,7 +49,7 @@ done
 
 pages="$(curl -fsS --get "$base_url/api.php" \
     --data-urlencode 'action=query' \
-    --data-urlencode 'titles=首页|Form:研究域|Form:技术节点|Form:证据来源' \
+    --data-urlencode 'titles=Human Infra:首页|Portal:永生与主体持续性|Form:研究域|Form:技术节点|Form:证据来源' \
     --data-urlencode 'format=json')"
 if grep -Fq '"missing":true' <<<"$pages"; then
     printf '关键种子页面缺失。\n' >&2
@@ -42,10 +57,16 @@ if grep -Fq '"missing":true' <<<"$pages"; then
 fi
 
 main_page="$(curl -fsS --get "$base_url/index.php" \
-    --data-urlencode 'title=首页' \
+    --data-urlencode 'title=Human Infra:首页' \
     --data-urlencode 'action=raw')"
-grep -Fq '标准录入' <<<"$main_page" || {
+grep -Fq '{{首页/页首}}' <<<"$main_page" || {
     printf '首页未加载 Human Infra 种子内容。\n' >&2
+    exit 1
+}
+
+rendered_main_page="$(curl -fsS "$base_url/")"
+grep -Fq '特色研究' <<<"$rendered_main_page" || {
+    printf '中文项目首页模块未渲染。\n' >&2
     exit 1
 }
 

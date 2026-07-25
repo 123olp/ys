@@ -12,7 +12,7 @@ stop:
 	docker compose --env-file .env stop
 
 logs:
-	docker compose --env-file .env logs -f wiki
+	docker compose --env-file .env logs -f portal wiki
 
 import:
 	./scripts/import-content.sh

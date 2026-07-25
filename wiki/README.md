@@ -1,6 +1,6 @@
 # Human Infra Wiki
 
-Human Infra Wiki 是科技树节点的知识详情层，也是项目专有概念、研究域和证据来源的可修订知识库。它采用 MediaWiki 1.46、MariaDB 11.8、Vector、VisualEditor 和 Page Forms，保持 Wikipedia 同系阅读与编辑体验。
+Human Infra Wiki 是科技树节点的知识详情层，也是项目专有概念、研究域和证据来源的可修订知识库。它采用独立多语言门户与 MediaWiki 语言版本分层架构；中文站使用 MediaWiki 1.46、MariaDB 11.8、Vector、VisualEditor 和 Page Forms，保持 Wikipedia 同系阅读与编辑体验。
 
 ## 一键部署
 
@@ -13,11 +13,25 @@ cd wiki
 
 默认入口：
 
-- Wiki：`http://localhost:18782/`
+- 多语言门户：`http://localhost:18784/`
+- 中文 Wiki：`http://localhost:18782/`
+- 中文项目首页：`http://localhost:18782/index.php?title=Human_Infra:首页`
 - 管理员：`HumanInfraAdmin`
 - 初始密码：仅保存在本机 `wiki/.env`
 
-Windows 11 可直接访问该 `localhost` 地址。若端口冲突，在 `.env` 同步修改 `WIKI_PORT` 与 `WIKI_SERVER` 后重新执行 `./scripts/bootstrap.sh`。
+Windows 11 可直接访问这些 `localhost` 地址。若端口冲突，在 `.env` 同步修改 `WIKI_PORTAL_PORT`、`WIKI_PORT` 与 `WIKI_SERVER` 后重新执行 `./scripts/bootstrap.sh`。
+
+## 信息架构
+
+```text
+多语言门户
+  -> 中文语言版本
+  -> Human Infra:首页
+  -> Portal:专题
+  -> 研究域 / 技术节点 / 证据来源
+```
+
+语言版本准入遵循 [语言版本契约](LANGUAGE-EDITION-CONTRACT.md)，首页和专题层遵循 [首页与专题门户契约](HOMEPAGE-PORTAL-CONTRACT.md)。当前只开放中文版本；英文入口标记为筹备中，不生成空内容版本。
 
 ## 内容入口
 
@@ -30,6 +44,8 @@ Windows 11 可直接访问该 `localhost` 地址。若端口冲突，在 `.env` 
 | 证据来源 | 论文、报告、数据集和权威页面 | 来源 ID、类型、引文、链接、支持边界 |
 
 录入前阅读 [内容标准](CONTENT-STANDARD.md)。科技树接入遵循 [跳转契约](ROUTING-CONTRACT.md)。
+
+中文首页通过 `Template:首页/*` 模块维护。顶级专题使用 `Portal:` 命名空间，Portal 只组织导航、边界和跨词条关系，不复制词条正文。
 
 ## 常用命令
 

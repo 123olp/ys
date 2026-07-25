@@ -1,6 +1,27 @@
 name: human-infra-wiki
 
 services:
+  portal:
+    image: nginx:1.28.1-alpine
+    restart: unless-stopped
+    environment:
+      WIKI_PUBLIC_PORT: ${WIKI_PORT:-18782}
+    ports:
+      - "${WIKI_PORTAL_PORT:-18784}:80"
+    volumes:
+      - ./portal:/usr/share/nginx/html:ro
+      - ./portal/default.conf.template:/etc/nginx/templates/default.conf.template:ro
+    healthcheck:
+      test:
+        - CMD
+        - wget
+        - --quiet
+        - --spider
+        - http://127.0.0.1/healthz
+      interval: 10s
+      timeout: 3s
+      retries: 10
+
   db:
     image: mariadb:11.8
     restart: unless-stopped
