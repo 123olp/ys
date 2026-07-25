@@ -28,8 +28,9 @@ wiki/
 │   ├── LICENSE.wikimedia-portals # Wikimedia portals 上游许可证
 │   ├── default.conf.template # Nginx 健康检查和运行时端口注入
 │   └── assets/               # 官方发布资源与 Human Infra 品牌替换资产
-├── homepage-upstream/        # 中文维基首页上游修订、许可与适配边界
-│   └── UPSTREAM.md           # mp-2012 来源、版本和更新流程
+├── homepage-upstream/        # 中文维基首页不可手改的上游模板
+│   ├── UPSTREAM.md           # mp-2012 来源、许可、转换边界和更新流程
+│   └── snapshot/             # 原始 Wikitext、CSS、渲染 HTML 与哈希元数据
 ├── content/
 │   ├── manifest.tsv          # 种子页面标题与文件映射真相源
 │   └── *.wiki                # 首页、政策、模板、表单和分类种子
@@ -39,6 +40,8 @@ wiki/
 │   ├── backup.sh             # 数据库、上传文件和配置备份
 │   ├── restore.sh            # 显式确认后的完整恢复
 │   ├── refresh-wikipedia-portal.py # 刷新并最小适配官方门户发布物
+│   ├── refresh-wikipedia-homepage.py # 抓取并固定中文维基首页原始资产
+│   ├── build-wikipedia-homepage.py # 从固定快照注入内容槽位并生成首页
 │   ├── smoke-test.sh         # HTTP、扩展、页面和数据库验证
 │   └── validate-source.sh    # 跟踪配置与内容契约检查
 └── runtime/                  # 忽略：数据库、上传、安装配置和备份
@@ -50,7 +53,8 @@ wiki/
 - `portal/` 是语言选择层，视觉、DOM 与通用控件行为归 Wikimedia 官方门户；本项目只维护品牌内容和本地路由适配，禁止新增平行视觉 CSS、存放研究结论或伪造尚未建立的语言版本。
 - `config/` 只保存可公开的站点策略；MediaWiki 生成的 `LocalSettings.php` 属于运行时。
 - `content/` 是首次安装和可重复导入的种子，不是整个 Wiki 数据库的镜像。
-- `Human Infra:首页` 复用中文维基百科 `mp-2012` DOM 与 TemplateStyles；`Template:首页/*` 只替换研究内容，禁止自建平行首页布局；`Portal:` 只做专题导航，不成为并行正文真相源。
+- `homepage-upstream/snapshot/` 是中文首页结构与样式真相源；`Human Infra:首页`、页首和样式均由生成器从该快照产生，禁止手工改写生成产物。
+- `Template:首页/*` 只替换研究内容，禁止自建平行首页布局；`Portal:` 只做专题导航，不成为并行正文真相源。
 - `runtime/` 和 `.env` 不得提交；数据迁移必须使用备份包。
 - 科技树只保存稳定节点 ID、标题和目标路由；词条正文、引用和修订历史归 Wiki。
 - 外部通用概念优先链接公共 Wikipedia；项目专有概念、模型和研究域进入本地 Wiki。

@@ -12,3 +12,6 @@
 *.pdf binary
 *.sqlite binary
 *.db binary
+
+# 固定的外部上游证据必须逐字节保存，不按本仓库空白规范改写。
+wiki/homepage-upstream/snapshot/* -whitespace

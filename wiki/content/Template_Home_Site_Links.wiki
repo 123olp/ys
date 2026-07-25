@@ -1,0 +1,20 @@
+<table><tr>
+<td>
+<h3>站点链接</h3>
+* [[Human Infra:关于|关于]]
+* [[Human Infra:内容方针|内容方针]]
+* [[Human Infra:版权|版权]]
+</td>
+<td>
+<h3>认识 Human Infra</h3>
+* [[Portal:永生与主体持续性|永生与主体持续性]]
+* [[争议、未知与禁止推论|争议与未知]]
+* [[科幻作品中的永生与增强|思想实验]]
+</td>
+<td>
+<h3>常用工具</h3>
+* [[Help:词条录入标准|录入标准]]
+* [[Special:FormStart/研究域|新建研究域]]
+* [[Special:FormStart/证据来源|新建证据来源]]
+</td>
+</tr></table><noinclude>[[Category:首页模板]]</noinclude>

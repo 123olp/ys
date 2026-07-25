@@ -45,7 +45,7 @@ Windows 11 可直接访问这些 `localhost` 地址。若端口冲突，在 `.en
 
 录入前阅读 [内容标准](CONTENT-STANDARD.md)。科技树接入遵循 [跳转契约](ROUTING-CONTRACT.md)。
 
-中文首页复用中文维基百科首页的 `mp-2012` DOM、`TemplateStyles` 和栏目结构；`Template:首页/*` 仅维护 Human Infra 内容。上游固定修订与许可记录在 `homepage-upstream/UPSTREAM.md`。顶级专题使用 `Portal:` 命名空间，Portal 只组织导航、边界和跨词条关系，不复制词条正文。
+中文首页由固定的中文维基百科首页 Wikitext、页首、TemplateStyles 和渲染 HTML 快照生成；`Template:首页/*` 仅维护 Human Infra 内容。生成产物禁止手工修改，上游固定修订、哈希与许可记录在 `homepage-upstream/UPSTREAM.md`。顶级专题使用 `Portal:` 命名空间，Portal 只组织导航、边界和跨词条关系，不复制词条正文。
 
 ## 常用命令
 
@@ -57,6 +57,7 @@ make import      # 重新导入受治理的种子页面
 make smoke       # 验证 HTTP、数据库、扩展和关键页面
 make backup      # 创建时间戳备份包
 make validate    # 检查源码契约和 Compose 配置
+make homepage-check   # 校验官方首页快照和生成产物未漂移
 ```
 
 更新官方语言门户快照：
@@ -65,6 +66,15 @@ make validate    # 检查源码契约和 Compose 配置
 python3 scripts/refresh-wikipedia-portal.py
 make validate
 make smoke
+```
+
+更新中文维基百科首页固定模板：
+
+```bash
+make homepage-refresh
+make homepage-build
+make homepage-check
+make import
 ```
 
 ## 备份与恢复

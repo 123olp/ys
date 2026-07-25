@@ -1,19 +1,27 @@
-<div id="mp-2012-banner" class="nomobile">
-<div id="mp-2012-banner-logo">[[File:MediaWiki logo reworked 2.svg|118px|link=Human Infra:关于|Human Infra Wiki]]</div>
-<div id="mp-2012-banner-title"><div>
-<h1>[[Human Infra:关于|人类基础设施]]</h1>
-<p>Human Infra 知识库<br />研究主体持续性何以可能</p>
-</div></div>
-<div id="mp-2012-banner-intro"><div>
-<p>已有<span class="number-of-articles">[[Special:Statistics|{{NUMBEROFARTICLES}}]]</span>篇内容条目</p>
-<table><tr>
-<td>[[研究域全景索引|研究域]]</td>
-<td>[[技术路线全景索引|技术路线]]</td>
-<td>[[证据地图与支持边界|证据]]</td>
-</tr><tr>
-<td>[[Portal:永生与主体持续性|专题]]</td>
-<td>[[Help:词条录入标准|入门]]</td>
-<td>[[Human Infra:内容方针|方针]]</td>
-</tr></table>
-</div></div>
-</div><noinclude>[[Category:首页模板]]</noinclude>
+<!-- 由 scripts/build-wikipedia-homepage.py 从固定中文维基百科首页快照生成；禁止手工修改布局。 -->
+<noinclude><templatestyles src="首页/styles.css" />
+<div id="mp-2012">
+</noinclude><div id="mp-2012-banner" class="nomobile">
+    <div id="mp-2012-banner-logo">[[File:MediaWiki logo reworked 2.svg|118px|link=Human Infra:关于|Human Infra Wiki]]</div>
+
+    <div id="mp-2012-banner-title"><div>
+        <h1>[[Human Infra:关于|人类基础设施]]</h1>
+        <p>Human Infra 知识库<br />研究主体持续性何以可能</p>
+    </div></div>
+
+    <div id="mp-2012-banner-intro"><div>
+        <p>已有<span class="number-of-articles">[[Special:Statistics|{{NUMBEROFARTICLES}}]]</span>篇内容条目</p>
+
+        <table><tr><!-- ideally this should be an ul with column -->
+            <td>[[研究域全景索引|研究域]]</td>
+            <td>[[技术路线全景索引|技术路线]]</td>
+            <td>[[证据地图与支持边界|证据]]</td>
+        </tr><tr>
+            <td>[[Portal:永生与主体持续性|专题]]</td>
+            <td>[[Help:词条录入标准|入门]]</td>
+            <td>[[Human Infra:内容方针|方针]]</td>
+        </tr></table>
+    </div></div>
+</div><noinclude>
+</div>
+</noinclude>

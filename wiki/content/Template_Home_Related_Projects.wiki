@@ -1,0 +1,2 @@
+<div></div>
+<p>Human Infra Wiki 由 tradecatlabs 维护，使用 MediaWiki 与自由内容许可组织可修订的研究知识。</p><noinclude>[[Category:首页模板]]</noinclude>

@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-07-25
+
+- 将中文 Wiki 首页改为中文维基百科固定快照驱动：保存官方 Wikitext、页首、TemplateStyles、渲染 HTML、修订元数据和 SHA-256，并由确定性生成器仅注入 Human Infra 内容槽位。
+
 All notable repository structure changes are recorded here.
 
 ## 2026-07-25

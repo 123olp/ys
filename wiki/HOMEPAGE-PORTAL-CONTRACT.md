@@ -12,7 +12,7 @@
 
 ## 中文项目首页
 
-`Human Infra:首页` 是中文版本首页。页面结构固定复用中文维基百科首页 `mp-2012` DOM 与 `TemplateStyles` 样式机制；`Template:首页/*` 只承载 Human Infra 内容，不得创建平行布局系统。首页至少包含：
+`Human Infra:首页` 是中文版本首页。页面结构固定复用中文维基百科首页 `mp-2012` DOM 与 `TemplateStyles` 样式机制；官方 Wikitext、页首、CSS 和渲染 HTML 必须作为不可手改的固定快照保存，页面由生成器从快照构建。`Template:首页/*` 只承载 Human Infra 内容，不得创建平行布局系统。首页至少包含：
 
 1. 项目定义、动态词条统计和主要导航。
 2. 特色研究与终极目标入口。
@@ -22,7 +22,7 @@
 6. 标准录入、内容方针和版权入口。
 7. 历史谱系、科幻思想实验和代码仓库入口。
 
-首页上游来源、固定修订、许可证和允许适配范围记录在 `homepage-upstream/UPSTREAM.md`。更新上游前必须比较 DOM 契约、桌面/移动布局和深浅色模式，不得仅凭截图手写仿制。
+首页上游来源、固定修订、许可证和允许适配范围记录在 `homepage-upstream/UPSTREAM.md`。`Human_Infra_Main_Page.wiki`、`Template_Home_Header.wiki` 和 `Template_Home_styles_css.wiki` 是生成产物，任何直接编辑都属于契约违规。更新上游前必须比较 DOM 契约、桌面/移动布局和深浅色模式，不得仅凭截图手写仿制。
 
 `MediaWiki:Mainpage` 是首页路由真相源；`首页` 只保留兼容重定向。
 
@@ -45,3 +45,4 @@ Portal 中出现的强主张必须链接到承担该主张的研究对象或证�
 - 首页统计使用 MediaWiki 魔术字或 API，不手工维护。
 - 删除或重命名词条时检查首页模板和所有 Portal 的入链。
 - 每次导入后通过 smoke test 验证首页路由、Portal 命名空间和关键页面。
+- 每次提交前运行 `make homepage-check`；快照哈希、唯一槽位锚点或生成结果任一漂移均必须阻塞。

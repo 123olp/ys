@@ -12,6 +12,11 @@ required=(
     LANGUAGE-EDITION-CONTRACT.md
     HOMEPAGE-PORTAL-CONTRACT.md
     homepage-upstream/UPSTREAM.md
+    homepage-upstream/snapshot/metadata.json
+    homepage-upstream/snapshot/Wikipedia_Home.wiki
+    homepage-upstream/snapshot/Wikipedia_Home_banner.wiki
+    homepage-upstream/snapshot/Wikipedia_Home_styles.css
+    homepage-upstream/snapshot/Wikipedia_Home_rendered.html
     Dockerfile
     compose.yaml
     env.example
@@ -26,6 +31,8 @@ required=(
     portal/assets/human-infra-mark.svg
     portal/assets/human-infra-wordmark.svg
     scripts/refresh-wikipedia-portal.py
+    scripts/refresh-wikipedia-homepage.py
+    scripts/build-wikipedia-homepage.py
     content/manifest.tsv
 )
 
@@ -35,6 +42,8 @@ for file in "${required[@]}"; do
         exit 1
     }
 done
+
+python3 scripts/build-wikipedia-homepage.py --check
 
 grep -Fq 'class="central-featured"' portal/index.html || {
     printf '语言门户缺少 Wikimedia central-featured DOM 契约。\n' >&2
@@ -117,6 +126,12 @@ grep -Fq '<div id="mp-2012">' content/Human_Infra_Main_Page.wiki || {
 for contract in mp-2012-banner mp-2012-column-left mp-2012-column-right mp-2012-links; do
     grep -Fq "id=\"$contract\"" content/Human_Infra_Main_Page.wiki content/Template_Home_Header.wiki || {
         printf '中文首页缺少上游 DOM 契约: %s\n' "$contract" >&2
+        exit 1
+    }
+done
+for contract in column-feature column-dyk column-good column-itn column-otd column-uptrends column-participate column-tips; do
+    grep -Fq "id=\"$contract\"" content/Human_Infra_Main_Page.wiki || {
+        printf '中文首页缺少官方内容容器契约: %s\n' "$contract" >&2
         exit 1
     }
 done
