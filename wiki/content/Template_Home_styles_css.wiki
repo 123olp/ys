@@ -389,3 +389,26 @@ html.skin-theme-clientpref-night #mp-2012-banner a {
     width: 100% !important;
     box-sizing: border-box;
 }
+
+/*
+ * MediaWiki 1.46 将原始 h1 包装为 .mw-heading1；Wikimedia 生产渲染保留直接 h1。
+ * 这里仅消除包装层的字号放大，使官方 h1 规则得到相同的计算结果。
+ */
+#mp-2012-banner-title .mw-heading1 {
+    border-bottom: none;
+    font-size: 100%;
+    margin: 0;
+}
+
+#mp-2012-banner-title .mw-heading1 h1 {
+    display: flow-root;
+}
+
+/*
+ * 官方移动端的空标志槽高度为 0；本地品牌图只在桌面端占用该槽位。
+ */
+@media all and (max-width: 719px) {
+    #mp-2012-banner-logo {
+        display: none;
+    }
+}

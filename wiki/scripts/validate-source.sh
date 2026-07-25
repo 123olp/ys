@@ -33,6 +33,7 @@ required=(
     scripts/refresh-wikipedia-portal.py
     scripts/refresh-wikipedia-homepage.py
     scripts/build-wikipedia-homepage.py
+    scripts/compare-wikipedia-homepage.py
     content/manifest.tsv
 )
 

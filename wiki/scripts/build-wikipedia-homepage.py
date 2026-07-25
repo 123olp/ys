@@ -25,6 +25,31 @@ CSS_NOTICE = (
     "/* 由 scripts/build-wikipedia-homepage.py 从固定中文维基百科首页样式生成；"
     "禁止手工修改布局。 */\n"
 )
+PARSER_HEADING_COMPAT = """
+
+/*
+ * MediaWiki 1.46 将原始 h1 包装为 .mw-heading1；Wikimedia 生产渲染保留直接 h1。
+ * 这里仅消除包装层的字号放大，使官方 h1 规则得到相同的计算结果。
+ */
+#mp-2012-banner-title .mw-heading1 {
+    border-bottom: none;
+    font-size: 100%;
+    margin: 0;
+}
+
+#mp-2012-banner-title .mw-heading1 h1 {
+    display: flow-root;
+}
+
+/*
+ * 官方移动端的空标志槽高度为 0；本地品牌图只在桌面端占用该槽位。
+ */
+@media all and (max-width: 719px) {
+    #mp-2012-banner-logo {
+        display: none;
+    }
+}
+"""
 
 
 def fail(message: str) -> None:
@@ -228,7 +253,7 @@ def build_styles() -> str:
         '    background-image: url("https://upload.wikimedia.org/wikipedia/commons/0/0a/Zhwp_blue_banner.png");\n',
         "banner 远程 URL 兼容转换",
     )
-    return CSS_NOTICE + source
+    return CSS_NOTICE + source + PARSER_HEADING_COMPAT
 
 
 def write_or_check(path: Path, expected: str, check: bool) -> None:

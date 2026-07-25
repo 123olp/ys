@@ -23,9 +23,31 @@
 3. 因 TemplateStyles 安全策略规范化官方横幅资源 URL，并由页首内容槽位替代上游 Wikipedia 标志背景；所有转换均显式登记。
 4. 将快照哈希和生成产物一致性接入 `make validate`。
 
+## 二次视觉对比
+
+同一 Chromium、Vector 2022 和 1440px / 390px 视口对比发现：
+
+- 本地 Vector 默认字号为 `vector-font-size=0`，官方为标准字号 `1`。
+- MediaWiki 1.46 为页首 `<h1>` 增加 `.mw-heading1` 包装，造成标题二次放大和 banner 高度漂移。
+- 本地品牌图在移动端占用 120px，而官方移动端的空标志槽高度为 0。
+
+修复使用 Vector 官方默认用户选项，仅抵消解析器包装层的额外字号，并在官方 `720px` 断点下隐藏本地品牌图内容槽；不修改上游栏目布局、配色或尺寸规则。
+
 ## 回归条件
 
 - 快照文件必须与 `metadata.json` 中的 SHA-256 一致。
 - 生成器的每个替换锚点必须且只能命中一次。
 - 所有上游静态 `mp-2012*` ID 必须保留。
 - 生成产物与重新构建结果必须逐字节一致。
+- `make homepage-compare` 必须在同一 Chromium 中验证桌面端和移动端的归一化 DOM 几何、计算样式、横向溢出和浏览器错误。
+
+## 回归证据
+
+2026-07-25 在 MediaWiki 1.46、Vector 2022 下执行：
+
+```text
+make homepage-check   PASS
+make homepage-compare PASS
+```
+
+浏览器证据写入忽略目录 `runtime/homepage-compare/`。桌面端确认 `1132px` 根宽度、`120px` banner、`645.23px / 486.75px` 双栏和 `32px / 44px` 标题；移动端确认 `342px` 根宽度、`240px` banner、折叠品牌标志槽和无横向溢出。

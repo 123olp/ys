@@ -58,6 +58,7 @@ make smoke       # 验证 HTTP、数据库、扩展和关键页面
 make backup      # 创建时间戳备份包
 make validate    # 检查源码契约和 Compose 配置
 make homepage-check   # 校验官方首页快照和生成产物未漂移
+make homepage-compare # 同浏览器截图并审计官方/本地首页几何契约
 ```
 
 更新官方语言门户快照：
@@ -75,7 +76,10 @@ make homepage-refresh
 make homepage-build
 make homepage-check
 make import
+make homepage-compare
 ```
+
+`homepage-compare` 需要 Python Playwright 和 Chromium。截图、浏览器错误与结构化对比报告写入忽略目录 `runtime/homepage-compare/`；该检查比较归一化 DOM 几何和计算样式，不比较两站不同的正文长度、实时栏目或中央通知。
 
 ## 备份与恢复
 

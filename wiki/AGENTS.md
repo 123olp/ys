@@ -42,6 +42,7 @@ wiki/
 │   ├── refresh-wikipedia-portal.py # 刷新并最小适配官方门户发布物
 │   ├── refresh-wikipedia-homepage.py # 抓取并固定中文维基首页原始资产
 │   ├── build-wikipedia-homepage.py # 从固定快照注入内容槽位并生成首页
+│   ├── compare-wikipedia-homepage.py # 同浏览器截图并审计首页几何契约
 │   ├── smoke-test.sh         # HTTP、扩展、页面和数据库验证
 │   └── validate-source.sh    # 跟踪配置与内容契约检查
 └── runtime/                  # 忽略：数据库、上传、安装配置和备份
@@ -67,6 +68,7 @@ wiki/
 cd wiki
 make validate
 make smoke
+make homepage-compare
 ```
 
 修改模板或表单后还必须运行 `make import`，并在浏览器中验证创建、编辑、引用和历史页面。

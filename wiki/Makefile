@@ -1,6 +1,6 @@
 SHELL := /bin/bash
 
-.PHONY: bootstrap up stop logs import backup smoke validate homepage-refresh homepage-build homepage-check
+.PHONY: bootstrap up stop logs import backup smoke validate homepage-refresh homepage-build homepage-check homepage-compare
 
 bootstrap:
 	./scripts/bootstrap.sh
@@ -34,3 +34,6 @@ homepage-build:
 
 homepage-check:
 	python3 scripts/build-wikipedia-homepage.py --check
+
+homepage-compare:
+	python3 scripts/compare-wikipedia-homepage.py

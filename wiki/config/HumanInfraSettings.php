@@ -45,6 +45,7 @@ $wgGroupPermissions['sysop']['createclass'] = true;
 $wgGroupPermissions['sysop']['multipageedit'] = true;
 
 $wgDefaultUserOptions['visualeditor-editor'] = 'visualeditor';
+$wgDefaultUserOptions['vector-font-size'] = 1;
 $wgVisualEditorEnableWikitext = true;
 
 $wgRightsPage = 'Human_Infra:版权';
