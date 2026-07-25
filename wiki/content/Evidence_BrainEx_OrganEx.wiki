@@ -1,16 +1,83 @@
 {{证据来源
 |来源 ID=evidence.nih.brainex-organex
-|来源类型=NIH研究解读
+|来源类型=论文
 |完整引文=National Institutes of Health. Restoring cell and organ function after the heart stops.
 |URL 或 DOI=https://www.nih.gov/news-events/nih-research-matters/restoring-cell-organ-function-after-heart-stops
 |支持范围=OrganEx和BrainEx对缺血后细胞、组织与部分器官过程恢复的研究
 |不支持的推论=不支持整体脑功能、意识、人格或死亡逆转已经实现
-|审查状态=已核对NIH原始页面
+|审查状态=已核对摘要
 |访问日期=2026-07-25
 }}
 
-== 支持范围 ==
+'''证据来源：BrainEx与OrganEx'''是稳定证据对象，用于记录来源身份、研究设计、对象、结果、支持边界、禁止外推和审查状态。<ref name="source_77312001634a">[https://www.nih.gov/news-events/nih-research-matters/restoring-cell-organ-function-after-heart-stops 原始来源或永久记录]，访问于 2026-07-25。</ref>
+
+== 完整引文与标识符 ==
+
+{| class="wikitable"
+! 作者或发布机构
+| National Institutes of Health
+|-
+! 年份
+| 页面未注明；未核验
+|-
+! 期刊或发布机构
+| 发布期刊或机构见完整引文与原始页面
+|-
+! DOI、PMID、注册号或永久标识符
+| https://www.nih.gov/news-events/nih-research-matters/restoring-cell-organ-function-after-heart-stops
+|-
+! 原始来源路由
+| [https://www.nih.gov/news-events/nih-research-matters/restoring-cell-organ-function-after-heart-stops 打开原始来源或永久记录]
+|}
+
+'''完整引文：''' National Institutes of Health. Restoring cell and organ function after the heart stops.
+
+== 研究设计与样本或对象 ==
+
+* '''来源类型（详细）：''' NIH研究解读
+* '''研究设计或材料性质：''' NIH研究解读
+* '''样本、研究对象或规范范围：''' 该来源所研究或规范的对象；若原页未明确样本规模，本 Wiki 不作推断，须回到原文核对。
+
+== 核心结果 ==
+
 用于说明传统不可逆损伤边界可能包含可研究的细胞恢复窗口。
 
+结果只能在所列设计、对象、终点、时间窗、版本和分析范围内解释。标题、摘要、监管状态、商业可得性或来源权威不能替代完整方法审查。
+
+== 支持范围 ==
+
+OrganEx和BrainEx对缺血后细胞、组织与部分器官过程恢复的研究
+
 == 不支持的推论 ==
-细胞完整、循环恢复或局部活动不能解释为意识恢复或主体复活。
+
+不支持整体脑功能、意识、人格或死亡逆转已经实现
+
+不得把相关性写成因果性，把机制合理性写成有效性，把体外或动物结果写成人体结果，把早期临床写成已证实疗效，或把预测、思想实验和科幻设定写成现实能力。
+
+== 局限、冲突与审查状态 ==
+
+* '''局限：''' 本页只按所列来源类型和支持范围引用；样本、亚组、统计分析、版本与冲突声明须以原文为准。
+* '''表单审查状态：''' 已核对摘要
+* '''审查说明：''' 已核对书目、摘要或正式记录的核心范围；正文中的详细统计、亚组、附录和利益冲突仍以原始材料为准。
+* '''访问日期：''' 2026-07-25
+* '''登记来源：''' 基线-深化
+* 发现相互冲突的研究时应并列记录对象、设计、终点和结果差异，不凭机制偏好裁决。
+
+== 支持或路由到的页面 ==
+
+* [[神经连续性]]
+* [[脑、记忆与主体连续性专题]]
+* [[脑保存与主体连续性]]
+* [[证据地图与支持边界]]
+* [[连接组学与高分辨脑图谱]]
+
+== 相关索引 ==
+
+* [[研究域全景索引]]
+* [[技术路线全景索引]]
+* [[证据地图与支持边界]]
+* [[争议、未知与禁止推论]]
+
+<references />
+
+[[Category:证据来源]]

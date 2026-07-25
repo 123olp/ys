@@ -1,47 +1,114 @@
 {{研究域
 |域 ID=domain.trustworthy-scientific-communication-peer-review
-|C 层级=C4：可能性转换通道层
+|C 层级=C4
 |研究对象=Trustworthy Scientific Communication Peer Review
 |持续性作用=主要把科学、医疗、数据、制度或技术从潜在能力转成真实可用路径。
-|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|证据状态=部分审查
 |仓库路径=domains/c4-conversion-channel/trustworthy-scientific-communication-peer-review
 }}
 
-'''Trustworthy Scientific Communication Peer Review'''是 Human Infra 在“路径转换接口”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+'''Trustworthy Scientific Communication Peer Review'''是 Human Infra 对“Trustworthy Scientific Communication Peer Review”建立的稳定研究域；其对象边界由仓库材料界定为：trustworthy-scientific-communication-peer-review/ 研究同行评审、预印本、期刊编辑、撤稿、勘误、引用语境、利益冲突和科研传播，如何影响 Human Infra 对证据的理解、传播和纠错能力。<ref name="repository_scope">[[证据来源：Human Infra仓库研究材料]]</ref>
 
-== 对 Human Infra 的作用 ==
-主要把科学、医疗、数据、制度或技术从潜在能力转成真实可用路径。
+== 研究对象与边界 ==
 
-== 机制或依赖 ==
+本页只描述一个稳定对象：'''Trustworthy Scientific Communication Peer Review'''。它不等同于单一产品、个体方案或既成疗效；同名活动若具有不同对象、终点或治理责任，应另建页面而不是合并结论。
+
+* 同行评审、编辑标准、作者责任、利益冲突、勘误、表达关注、撤稿和出版伦理。
+* 预印本、期刊论文、新闻稿、公司公告、综述、媒体传播和社交平台二次传播。
+* 引用语境、主张边界、证据状态、版本状态、撤回信号和二次引用偏差。
+* 与 <code>research-infrastructure-open-science-translation/</code> 的边界：开放科学域关注研究生态和开放转化；本域关注研究结果进入公共认知时的传播、审查和纠错链。
+* 与 <code>source-card-system</code> 的关系：本域为 Source Card 增加 publication status、review status、retraction status、claim scope 和 conflict note 字段。
+
+== C 层级与对主体持续性的作用 ==
+
+本域位于 '''C4：可能性转换通道层'''。把知识、技术、医疗或制度能力转化为可达路径；其价值取决于可靠接口、证据和实际可及性。
+
+原域给出的持续性作用为：主要把科学、医疗、数据、制度或技术从潜在能力转成真实可用路径。。在证据上必须区分直接作用、间接作用和条件保障；除非出现预先定义的生存、功能、风险或连续性终点，不能把过程完成或机制合理性写成“实现有效永生”。
+
+== 关键变量、机制链与状态变化 ==
+
+* 对象变量：同行评审、编辑标准、作者责任、利益冲突、勘误、表达关注、撤稿和出版伦理。
+* 对象变量：预印本、期刊论文、新闻稿、公司公告、综述、媒体传播和社交平台二次传播。
+* 对象变量：引用语境、主张边界、证据状态、版本状态、撤回信号和二次引用偏差。
+* 对象变量：与 <code>research-infrastructure-open-science-translation/</code> 的边界：开放科学域关注研究生态和开放转化；本域关注研究结果进入公共认知时的传播、审查和纠错链。
 
 <pre>
-研究域对象
-  -> 影响变量或中间机制
-  -> 改变主体状态、外部条件或路径可达性
-  -> 改变风险、能力、时间成本或资源约束
-  -> 改变有效寿命、有效时间或未来选择权
+Trustworthy Scientific Communication Peer Review
+  -> 改变上述可测变量与约束
+  -> 改变主体能力、载体状态或外部路径可达性
+  -> 改变失败率、恢复时间、资源消耗或不可逆损失风险
+  -> 只有在适用对象与时间窗内改善最终功能/生存/连续性终点，才支持持续性收益
 </pre>
 
-本域位于 C4“可能性转换通道层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+反向解释同样必要：变量变化可能只是相关、测量偏差或代理终点变化，不能自动归因于该域中的某项干预。
 
-== 证据与来源 ==
+== 主要技术或治理路线 ==
 
-本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+* 定义对象、适用人群、情境和时间窗；
+* 建立可测变量、基线、对照和失败阈值；
+* 比较预防、修复、替代、制度或信息路线，并把副作用与机会成本纳入。
 
-== 域研究材料 ==
+路线比较至少要记录前置依赖、可验证终点、失败阈值、替代路线和退出条件；未来路线一律按“条件性”处理，不写虚假实现年份。
+
+== 上下游依赖与替代路线 ==
+
+'''上游或高层约束：'''
+* [[治理、风险与公平专题]]
+* [[资源与社会基础设施]]
+* [[风险工程]]
+
+'''下游技术或相邻对象：'''
+* [[长期闭环生命支持]]
+* [[科研基础设施与开放科学转化]]
+* [[Model Cards AI Audit Documentation]]
+* [[Research Portfolio Prioritization Funding Governance]]
+* [[Technology Foresight Horizon Scanning]]
+
+若主要路线不能达到最终终点，应比较风险预防、损伤修复、功能替代、流程改造、社会支持或退出/转介等替代方案，而不是以增加复杂度代替证据。
+
+== 当前证据状态与验证终点 ==
+
+2026-07-25 结构化审查完成；登记 5 条 Source Signals，其中 4 条为具体 URL、1 条为首页/搜索/聚合路由。仅核心来源或相应证据页标明“已核验”时，才可承担实质主张。
+
+最低验证要求是：明确适用对象、基线、对照、时间窗、测量误差和预注册终点；同时报告不良结果、失败案例和分布差异。过程指标只能证明过程发生，不能单独证明主体风险下降。
+
+'''反证条件：'''若在合格设计中未改善预设最终终点、净风险上升、效果不能重复、只在不相关模型成立，或依赖不可接受的资源与治理假设，则应降低本域路线的证据等级。
+
+== 失败模式与治理边界 ==
+
+* 对象漂移：把多个不同对象、场景或人群混成一个平均结论。
+* 代理终点替代：把点击、完成率、分子指标、短期性能或局部成功当作长期净收益。
+* 因果越界：把相关性、机制合理性、体外/动物结果、早期临床或预测模型写成已证实的人体效果。
+* 可达性失败：技术存在但人员、成本、供应链、法律、基础设施或维护使其不可用。
+* 风险转移：局部风险下降但把负担转移给其他器官、家庭、群体、时间段或公共系统。
+* 本页不提供个体诊断、治疗、用药、寿命预测、法律决策或危险实验操作建议。
+
+== 开放问题 ==
+
+# 哪个最终终点最能代表本域对主体持续性的真实贡献？
+# 哪些变量是因果中介，哪些只是相关指标或记录偏差？
+# 效果在不同人群、地区、资源水平和长期时间尺度上是否可重复？
+# 何种失败阈值应触发暂停、替代、转介或治理升级？
+# 本域与相邻页面的边界是否足够稳定，是否仍存在需要拆分的对象？
+
+== 仓库研究材料（保留） ==
+
+以下内容来自受治理的 Human Infra 域 README，用于保留项目问题分解和历史语境；其中外部事实仍以证据页为准。<ref name="repo_dce4139686">[https://github.com/tradecatlabs/human_infra/blob/main/domains/c4-conversion-channel/trustworthy-scientific-communication-peer-review/README.md Human Infra 仓库域材料：domains/c4-conversion-channel/trustworthy-scientific-communication-peer-review]（项目研究组织资料，访问于 2026-07-25；不构成外部实证证据）。</ref>
+
+=== 仓库概述 ===
 
 <code>trustworthy-scientific-communication-peer-review/</code> 研究同行评审、预印本、期刊编辑、撤稿、勘误、引用语境、利益冲突和科研传播，如何影响 Human Infra 对证据的理解、传播和纠错能力。
 
 <blockquote>核心问题：未来技术不会只通过实验室出现，也会通过论文、预印本、新闻稿、推文、公司披露和综述进入公共叙事。若传播链不能区分“假说、证据、审查状态和撤回信号”，主体持续性研究会被错误信号牵引。
 </blockquote>
-== 先验位置 ==
+=== 先验位置 ===
 
 <pre>有效永生 / 主体持续性最大化
   -> 需要持续识别哪些技术窗口真实可用
   -> 技术窗口通过论文、预印本、同行评审、媒体和社区传播进入判断系统
   -> 传播链中的夸大、撤稿、引用断章、利益冲突和选择性报道会污染证据状态
   -> 因此可信科研传播与同行评审是证据进入 Human Infra 的语义过滤域</pre>
-== 关注对象 ==
+=== 关注对象 ===
 
 * 同行评审、编辑标准、作者责任、利益冲突、勘误、表达关注、撤稿和出版伦理。
 * 预印本、期刊论文、新闻稿、公司公告、综述、媒体传播和社交平台二次传播。
@@ -50,44 +117,42 @@
 * 与 <code>source-card-system</code> 的关系：本域为 Source Card 增加 publication status、review status、retraction status、claim scope 和 conflict note 字段。
 
 <span id="human-infra-模型链路"></span>
-== Human Infra 模型链路 ==
+=== Human Infra 模型链路 ===
 
 <pre>可信科研传播与同行评审 T
   -> 改变审查状态、引用语境、撤稿信号、利益冲突披露和公众理解变量 X
   -> 改变证据进入模型、README、论文页和传播材料的可信状态 S
   -> 改变错误技术采用、虚假确定性、过度传播和证据污染风险 λ(t)
   -> 影响研究组合优先级、公众理解、技术采用判断和主体持续性路径选择</pre>
-== 非目标 ==
+=== 非目标 ===
 
 * 不提供论文代写、伪造审稿、操控引用、规避撤稿、洗白学术不端或刷影响力策略。
 * 不把预印本、新闻稿、单一公司披露或媒体报道写成已验证结论。
 * 不把同行评审状态写成绝对真理，也不把未评审状态写成必然错误。
 
 <span id="source-signals"></span>
-== Source Signals ==
-
-* ICMJE Recommendations: https://www.icmje.org/recommendations/
-* COPE Core Practices: https://publicationethics.org/core-practices
-* Retraction Watch: https://retractionwatch.com/
-* National Academies Reproducibility and Replicability in Science: https://nap.nationalacademies.org/catalog/25303/reproducibility-and-replicability-in-science
-* Crossref Crossmark: https://www.crossref.org/services/crossmark/
-
-== 下一步 ==
+=== 下一步 ===
 
 * 给 Source Card 增加 publication status、peer review status、correction/retraction status、conflict disclosure 和 citation context 字段。
 * 与 <code>model-cards-ai-audit-documentation/</code>、<code>research-portfolio-prioritization-funding-governance/</code> 和 <code>technology-foresight-horizon-scanning/</code> 建立审查接口。
 
-== 边界、失败条件和未知项 ==
+== 证据路由 ==
 
-* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
-* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
-* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
-* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+* [[证据来源：ICMJE authorship recommendations（e4b672bb）]]：ICMJE Recommendations（证据等级见来源页）<ref name="src_9cf9b6dce642">[https://www.icmje.org/recommendations ICMJE Recommendations]，访问于 2026-07-25；本页未据标题自动推断结论。</ref>
+* [[证据来源：COPE Core Practices（83138ece）]]：COPE Core Practices（证据等级见来源页）<ref name="src_efbd7b744c5c">[https://publicationethics.org/core-practices COPE Core Practices]，访问于 2026-07-25；本页未据标题自动推断结论。</ref>
+* [[证据来源：Retraction Watch（d702ac58）]]：Retraction Watch（原 Source Signals 指向首页、搜索或聚合入口；未作为外部链接导入）
+* [[证据来源：National Academies, Reproducibility and Replicability in Science（3fe146b6）]]：National Academies Reproducibility and Replicability in Science（证据等级见来源页）<ref name="src_0fa4149a9859">[https://nap.nationalacademies.org/catalog/25303/reproducibility-and-replicability-in-science National Academies Reproducibility and Replicability in Science]，访问于 2026-07-25；本页未据标题自动推断结论。</ref>
+* [[证据来源：Crossref Crossmark（98bd8d57）]]：Crossref Crossmark（证据等级见来源页）<ref name="src_e2cc40432bdc">[https://www.crossref.org/services/crossmark Crossref Crossmark]，访问于 2026-07-25；本页未据标题自动推断结论。</ref>
 
-== 相关词条与外部链接 ==
+== 相关词条与外部知识路由 ==
 
 * [[研究域全景索引]]
 * [[:Category:C4研究域|C4研究域]]
-* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c4-conversion-channel/trustworthy-scientific-communication-peer-review/README.md Human Infra 仓库：domains/c4-conversion-channel/trustworthy-scientific-communication-peer-review/README.md]
+* [[技术路线全景索引]]
+* [[证据地图与支持边界]]
+* [[争议、未知与禁止推论]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c4-conversion-channel/trustworthy-scientific-communication-peer-review/README.md Human Infra 仓库：domains/c4-conversion-channel/trustworthy-scientific-communication-peer-review]
+
+<references />
 
 [[Category:C4研究域]]

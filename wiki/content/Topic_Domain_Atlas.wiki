@@ -1,54 +1,1039 @@
-__NOTOC__
 = 研究域全景索引 =
 
-'''研究域全景索引'''是 Human Infra 全部正式研究域的 Wiki 入口。分层表达研究域改写主体未来可能性空间的深度、范围和持续时间，不表达近期可行性、证据成熟度或商业化时间。
-
-{| class="wikitable"
-! 层级
-! 名称
-! 判定
-! 当前域数
-|-
-| [[:Category:C1研究域|C1]]
-| 可能性边界改写层
-| 直接改写寿命、死亡、时间、身份连续性和未来抵达边界
-| 10
-|-
-| [[:Category:C2研究域|C2]]
-| 可能性源体维护层
-| 维护身体、脑、生命系统和衰老或损伤控制
-| 204
-|-
-| [[:Category:C3研究域|C3]]
-| 可能性生成引擎层
-| 提升认知、学习、AI、工具和能力复利
-| 82
-|-
-| [[:Category:C4研究域|C4]]
-| 可能性转换通道层
-| 把潜在可能性转化为真实可用路径
-| 140
-|-
-| [[:Category:C5研究域|C5]]
-| 可能性生态承载层
-| 承载主体展开未来的资源、制度和基础设施环境
-| 225
-|-
-| [[:Category:C6研究域|C6]]
-| 局部可能性解锁层
-| 解除具体场景中的局部阻塞
-| 333
-|}
+本页列出 manifest 中全部 '''996''' 个研究域页面，并按现有 C1—C6 分类展示。C 层级描述对象在可能性空间中的控制位置，不是证据等级、价值排序或成熟度评分。
 
 == 使用方式 ==
 
-# 从终极目标进入 [[永生与主体持续性专题]]。
-# 从 C1-C6 分类浏览全部研究域。
-# 进入具体研究域后，继续查看域对象、持续性作用、机制、来源入口、边界和仓库研究材料。
-# 研究域存在不代表其主张已经成立；证据状态必须在具体技术节点和证据来源页中单独审查。
+* 从 C1 的目标和边界进入，再沿 C2—C6 查找载体、能力、转换、基础设施与局部解锁对象。
+* 每个域页面保留稳定域 ID、仓库路径和证据状态；分类重叠或命名问题不通过删除或合并解决。
+* 仓库分类表与 Wiki 稳定聚合页之间存在少量命名映射差异，详见完成报告；本索引以 Wiki manifest 为导入真相源。
 
-== 边界 ==
+== C1 研究域（11） ==
 
-该索引是研究空间地图，不是干预建议、优先级清单或可行性排名。分类结果来自项目的可能性空间控制力模型，并保留 `heuristic-v0.1` 的复核状态。
+边界重写层：改变“什么可能、什么算成功、主体与世界边界如何定义”。
+
+* [[Accelerating Returns Technology Convergence]] <small><code>domain.accelerating-returns-technology-convergence</code></small>
+* [[Recursive Self-Improvement Intelligence Explosion]] <small><code>domain.recursive-self-improvement-intelligence-explosion</code></small>
+* [[Superhuman Intelligence Threshold]] <small><code>domain.superhuman-intelligence-threshold</code></small>
+* [[技术奇点与自动化科研]] <small><code>domain.singularity-automated-science</code></small>
+* [[有效永生与主体持续性]] <small><code>domain.effective-immortality</code></small>
+* [[未来等待]] <small><code>domain.future-waiting</code></small>
+* [[生物停滞与低温保存]] <small><code>domain.biostasis-cryopreservation</code></small>
+* [[脑保存与主体连续性]] <small><code>domain.brain-preservation-continuity</code></small>
+* [[记忆编辑]] <small><code>domain.memory-editing</code></small>
+* [[身体功效替代与最小充分身体]] <small><code>domain.body-function-substitution-minimal-sufficient-body</code></small>
+* [[长寿科学]] <small><code>domain.longevity-science</code></small>
+== C2 研究域（205） ==
+
+源与载体维护层：维护身体、脑、信息源和主体连续所依赖的载体。
+
+* [[ADHD Executive Function Neurodevelopment Continuity]] <small><code>domain.adhd-executive-function-neurodevelopment-continuity</code></small>
+* [[Acromegaly Growth Hormone Cardiometabolic Continuity]] <small><code>domain.acromegaly-growth-hormone-cardiometabolic-continuity</code></small>
+* [[Acute Coronary Syndrome Reperfusion Continuity]] <small><code>domain.acute-coronary-syndrome-reperfusion-continuity</code></small>
+* [[Acute Gastrointestinal Bleeding Endoscopy Continuity]] <small><code>domain.acute-gastrointestinal-bleeding-endoscopy-continuity</code></small>
+* [[Acute Heart Failure Decompensation Continuity]] <small><code>domain.acute-heart-failure-decompensation-continuity</code></small>
+* [[Acute Kidney Injury Renal Replacement Continuity]] <small><code>domain.acute-kidney-injury-renal-replacement-continuity</code></small>
+* [[Adrenal Insufficiency Cortisol Stress Response Continuity]] <small><code>domain.adrenal-insufficiency-cortisol-stress-response-continuity</code></small>
+* [[Advanced Nuclear Energy Safety Generation Continuity]] <small><code>domain.advanced-nuclear-energy-safety-generation-continuity</code></small>
+* [[Age Related Hearing Loss Hearing Aid Continuity]] <small><code>domain.age-related-hearing-loss-hearing-aid-continuity</code></small>
+* [[Age Related Macular Degeneration Central Vision Continuity]] <small><code>domain.age-related-macular-degeneration-central-vision-continuity</code></small>
+* [[Allergic Atopic Disease Immunologic Burden Continuity]] <small><code>domain.allergic-atopic-disease-immunologic-burden-continuity</code></small>
+* [[Amyotrophic Lateral Sclerosis Motor Neuron Continuity]] <small><code>domain.amyotrophic-lateral-sclerosis-motor-neuron-continuity</code></small>
+* [[Anaphylaxis Allergic Emergency Continuity]] <small><code>domain.anaphylaxis-allergic-emergency-continuity</code></small>
+* [[Antimicrobial Resilience]] <small><code>domain.antimicrobial-resilience</code></small>
+* [[Apraxia Of Speech Motor Planning Continuity]] <small><code>domain.apraxia-of-speech-motor-planning-continuity</code></small>
+* [[Aspiration Pneumonia Airway Protection Continuity]] <small><code>domain.aspiration-pneumonia-airway-protection-continuity</code></small>
+* [[Assisted Reproductive Technology IVF Cycle Continuity]] <small><code>domain.assisted-reproductive-technology-ivf-cycle-continuity</code></small>
+* [[Asthma COPD Exacerbation Airway Continuity]] <small><code>domain.asthma-copd-exacerbation-airway-continuity</code></small>
+* [[Asthma COPD Maintenance Control Continuity]] <small><code>domain.asthma-copd-maintenance-control-continuity</code></small>
+* [[Auditory Processing Listening Effort Continuity]] <small><code>domain.auditory-processing-listening-effort-continuity</code></small>
+* [[Autism Neurodiversity Support Continuity]] <small><code>domain.autism-neurodiversity-support-continuity</code></small>
+* [[Autonomic Nervous System Homeostasis]] <small><code>domain.autonomic-nervous-system-homeostasis</code></small>
+* [[Bilateral Vestibular Hypofunction Gaze Gait Stability Continuity]] <small><code>domain.bilateral-vestibular-hypofunction-gaze-gait-stability-continuity</code></small>
+* [[Biological Age Clocks Biomarker Validation]] <small><code>domain.biological-age-clocks-biomarker-validation</code></small>
+* [[Blood Organ Tissue Biovigilance Transplantation]] <small><code>domain.blood-organ-tissue-biovigilance-transplantation</code></small>
+* [[Blood Oxygen Hemostasis]] <small><code>domain.blood-oxygen-hemostasis</code></small>
+* [[Bloodborne Pathogens Sharps Injury Worker Continuity]] <small><code>domain.bloodborne-pathogens-sharps-injury-worker-continuity</code></small>
+* [[Breast Cancer Screening Treatment Survivorship Continuity]] <small><code>domain.breast-cancer-screening-treatment-survivorship-continuity</code></small>
+* [[Burn Injury Critical Care Rehabilitation Continuity]] <small><code>domain.burn-injury-critical-care-rehabilitation-continuity</code></small>
+* [[Burn Wound Aftercare, Scar and Function Continuity]] <small><code>domain.burn-wound-aftercare-scar-function-continuity</code></small>
+* [[Cancer Screening Early Detection Continuity]] <small><code>domain.cancer-screening-early-detection-continuity</code></small>
+* [[Cancer Survivorship Late Effects Continuity]] <small><code>domain.cancer-survivorship-late-effects-continuity</code></small>
+* [[Cardiorespiratory Fitness VO2max Aerobic Capacity Continuity]] <small><code>domain.cardiorespiratory-fitness-vo2max-aerobic-capacity-continuity</code></small>
+* [[Caregiver Health Burnout Screening Support Continuity]] <small><code>domain.caregiver-health-burnout-screening-support-continuity</code></small>
+* [[Cataract Vision Restoration Continuity]] <small><code>domain.cataract-vision-restoration-continuity</code></small>
+* [[Catheter-Associated UTI and Device Infection Continuity]] <small><code>domain.catheter-associated-uti-device-infection-continuity</code></small>
+* [[Cellular Senescence Clearance]] <small><code>domain.cellular-senescence-clearance</code></small>
+* [[Cerebrovascular Stroke Brain Perfusion Resilience]] <small><code>domain.cerebrovascular-stroke-brain-perfusion-resilience</code></small>
+* [[Cervical Cancer HPV Prevention Screening Continuity]] <small><code>domain.cervical-cancer-hpv-prevention-screening-continuity</code></small>
+* [[Childhood Cancer Treatment Survivorship Continuity]] <small><code>domain.childhood-cancer-treatment-survivorship-continuity</code></small>
+* [[Childhood Immunization Schedule Record Continuity]] <small><code>domain.childhood-immunization-schedule-record-continuity</code></small>
+* [[Choking Foreign Body Airway Risk Continuity]] <small><code>domain.choking-foreign-body-airway-risk-continuity</code></small>
+* [[Chronic Kidney Disease Screening Progression Continuity]] <small><code>domain.chronic-kidney-disease-screening-progression-continuity</code></small>
+* [[Chronic Liver Disease MASLD MASH Continuity]] <small><code>domain.chronic-liver-disease-masld-mash-continuity</code></small>
+* [[Chronic Pain Functional Restoration Continuity]] <small><code>domain.chronic-pain-functional-restoration-continuity</code></small>
+* [[Chronic Viral Hepatitis Screening Liver Protection Continuity]] <small><code>domain.chronic-viral-hepatitis-screening-liver-protection-continuity</code></small>
+* [[Chronic Wound, Venous, Diabetic and Pressure Ulcer Continuity]] <small><code>domain.chronic-wound-venous-diabetic-pressure-ulcer-continuity</code></small>
+* [[Colorectal Cancer Screening Treatment Continuity]] <small><code>domain.colorectal-cancer-screening-treatment-continuity</code></small>
+* [[Contact Lens Hygiene Eye Infection Continuity]] <small><code>domain.contact-lens-hygiene-eye-infection-continuity</code></small>
+* [[Cushing Syndrome Hypercortisolism Metabolic Bone Continuity]] <small><code>domain.cushing-syndrome-hypercortisolism-metabolic-bone-continuity</code></small>
+* [[Cytoskeleton Mechanotransduction Cellular Mechanics Continuity]] <small><code>domain.cytoskeleton-mechanotransduction-cellular-mechanics-continuity</code></small>
+* [[Delirium Acute Cognitive Failure Prevention]] <small><code>domain.delirium-acute-cognitive-failure-prevention</code></small>
+* [[Dental Care Access Insurance Workforce Continuity]] <small><code>domain.dental-care-access-insurance-workforce-continuity</code></small>
+* [[Dental Caries Prevention Restoration Continuity]] <small><code>domain.dental-caries-prevention-restoration-continuity</code></small>
+* [[Dental Pain Emergency Infection Continuity]] <small><code>domain.dental-pain-emergency-infection-continuity</code></small>
+* [[Diabetes Insulin Glucose Monitoring Supplies Continuity]] <small><code>domain.diabetes-insulin-glucose-monitoring-supplies-continuity</code></small>
+* [[Diabetic Foot Ulcer and Amputation Prevention Continuity]] <small><code>domain.diabetic-foot-ulcer-amputation-prevention-continuity</code></small>
+* [[Diabetic Hyperglycemic Hypoglycemic Crisis Continuity]] <small><code>domain.diabetic-hyperglycemic-hypoglycemic-crisis-continuity</code></small>
+* [[Diabetic Retinopathy Screening Treatment Continuity]] <small><code>domain.diabetic-retinopathy-screening-treatment-continuity</code></small>
+* [[Diabetic Therapeutic Footwear Offloading Continuity]] <small><code>domain.diabetic-therapeutic-footwear-offloading-continuity</code></small>
+* [[Dialysis Access, Vascular and Peritoneal Continuity]] <small><code>domain.dialysis-access-vascular-peritoneal-continuity</code></small>
+* [[Disorders Of Consciousness Coma Recovery]] <small><code>domain.disorders-of-consciousness-coma-recovery</code></small>
+* [[Dry Eye Ocular Surface Comfort Continuity]] <small><code>domain.dry-eye-ocular-surface-comfort-continuity</code></small>
+* [[Dysarthria Speech Intelligibility Continuity]] <small><code>domain.dysarthria-speech-intelligibility-continuity</code></small>
+* [[Endocrine Hormonal Regulation]] <small><code>domain.endocrine-hormonal-regulation</code></small>
+* [[Endometriosis Pelvic Pain Fertility Continuity]] <small><code>domain.endometriosis-pelvic-pain-fertility-continuity</code></small>
+* [[Endoplasmic Reticulum Stress UPR Proteostasis Continuity]] <small><code>domain.endoplasmic-reticulum-stress-upr-proteostasis-continuity</code></small>
+* [[Engineered Cell Therapy Regenerative Platforms]] <small><code>domain.engineered-cell-therapy-regenerative-platforms</code></small>
+* [[Epilepsy Seizure Network Stability]] <small><code>domain.epilepsy-seizure-network-stability</code></small>
+* [[Erectile Dysfunction Vascular Sexual Function Continuity]] <small><code>domain.erectile-dysfunction-vascular-sexual-function-continuity</code></small>
+* [[Extracellular Matrix Glycation]] <small><code>domain.extracellular-matrix-glycation</code></small>
+* [[Eye Injury Urgent Vision Protection Continuity]] <small><code>domain.eye-injury-urgent-vision-protection-continuity</code></small>
+* [[Eyeglasses Prescription Repair Replacement Continuity]] <small><code>domain.eyeglasses-prescription-repair-replacement-continuity</code></small>
+* [[Ferroptosis Lipid Peroxidation Membrane Resilience Continuity]] <small><code>domain.ferroptosis-lipid-peroxidation-membrane-resilience-continuity</code></small>
+* [[Fertility Preservation Gamete Embryo Cryostorage Continuity]] <small><code>domain.fertility-preservation-gamete-embryo-cryostorage-continuity</code></small>
+* [[Fluid Electrolyte Acid Base Homeostasis]] <small><code>domain.fluid-electrolyte-acid-base-homeostasis</code></small>
+* [[Gastrointestinal Barrier Absorption]] <small><code>domain.gastrointestinal-barrier-absorption</code></small>
+* [[Geriatric Long Term Care Oral Health Continuity]] <small><code>domain.geriatric-long-term-care-oral-health-continuity</code></small>
+* [[Golgi Secretory Trafficking Organelle Homeostasis Continuity]] <small><code>domain.golgi-secretory-trafficking-organelle-homeostasis-continuity</code></small>
+* [[Hearing Aid Maintenance Battery Access Continuity]] <small><code>domain.hearing-aid-maintenance-battery-access-continuity</code></small>
+* [[Hearing Assistive Devices Alerting Access Continuity]] <small><code>domain.hearing-assistive-devices-alerting-access-continuity</code></small>
+* [[Hearing Auditory Communication Continuity]] <small><code>domain.hearing-auditory-communication-continuity</code></small>
+* [[Home Dialysis Supply and Self-Management Continuity]] <small><code>domain.home-dialysis-supply-self-management-continuity</code></small>
+* [[Home Oxygen Respiratory Equipment Supply Continuity]] <small><code>domain.home-oxygen-respiratory-equipment-supply-continuity</code></small>
+* [[Hot Water Scald Burn Prevention Continuity]] <small><code>domain.hot-water-scald-burn-prevention-continuity</code></small>
+* [[Huntington Disease Genetic Neurodegeneration Continuity]] <small><code>domain.huntington-disease-genetic-neurodegeneration-continuity</code></small>
+* [[Hypertensive Crisis End Organ Risk Continuity]] <small><code>domain.hypertensive-crisis-end-organ-risk-continuity</code></small>
+* [[Hypogonadism Testosterone Sex Hormone Continuity]] <small><code>domain.hypogonadism-testosterone-sex-hormone-continuity</code></small>
+* [[Immune Repertoire Vaccine Response Aging Continuity]] <small><code>domain.immune-repertoire-vaccine-response-aging-continuity</code></small>
+* [[Immunization Public Health Surveillance]] <small><code>domain.immunization-public-health-surveillance</code></small>
+* [[Immunization Record Proof Continuity]] <small><code>domain.immunization-record-proof-continuity</code></small>
+* [[Incontinence-Associated Dermatitis, Moisture and Skin Continuity]] <small><code>domain.incontinence-associated-dermatitis-moisture-skin-continuity</code></small>
+* [[Intensive Care Organ Support Delirium Continuity]] <small><code>domain.intensive-care-organ-support-delirium-continuity</code></small>
+* [[Iron Deficiency Anemia Oxygen Carrying Continuity]] <small><code>domain.iron-deficiency-anemia-oxygen-carrying-continuity</code></small>
+* [[Kidney Stone, Obstruction and Renal Colic Continuity]] <small><code>domain.kidney-stone-obstruction-renal-colic-continuity</code></small>
+* [[Kidney Transplant, Immunosuppression and Graft Continuity]] <small><code>domain.kidney-transplant-immunosuppression-graft-continuity</code></small>
+* [[Lactation Breastfeeding Support Continuity]] <small><code>domain.lactation-breastfeeding-support-continuity</code></small>
+* [[Liver Cancer Cirrhosis Surveillance Treatment Continuity]] <small><code>domain.liver-cancer-cirrhosis-surveillance-treatment-continuity</code></small>
+* [[Long COVID Post-Acute Infection Continuity]] <small><code>domain.long-covid-post-acute-infection-continuity</code></small>
+* [[Low Back Pain Spine Function Continuity]] <small><code>domain.low-back-pain-spine-function-continuity</code></small>
+* [[Low Vision Rehabilitation Assistive Technology Continuity]] <small><code>domain.low-vision-rehabilitation-assistive-technology-continuity</code></small>
+* [[Lung Cancer Screening Treatment Continuity]] <small><code>domain.lung-cancer-screening-treatment-continuity</code></small>
+* [[Lymphatic Glymphatic Clearance]] <small><code>domain.lymphatic-glymphatic-clearance</code></small>
+* [[Lysosomal Flux Lipofuscin Clearance Continuity]] <small><code>domain.lysosomal-flux-lipofuscin-clearance-continuity</code></small>
+* [[Maternal Newborn Child Development]] <small><code>domain.maternal-newborn-child-development</code></small>
+* [[Mechanical Ventilation Respiratory Failure Continuity]] <small><code>domain.mechanical-ventilation-respiratory-failure-continuity</code></small>
+* [[Microbiome Ecology]] <small><code>domain.microbiome-ecology</code></small>
+* [[Mold Dampness Indoor Biological Exposure]] <small><code>domain.mold-dampness-indoor-biological-exposure</code></small>
+* [[Musculoskeletal Integrity]] <small><code>domain.musculoskeletal-integrity</code></small>
+* [[Myasthenia Gravis Neuromuscular Junction Continuity]] <small><code>domain.myasthenia-gravis-neuromuscular-junction-continuity</code></small>
+* [[Neurodegenerative Dysphagia Nutrition Continuity]] <small><code>domain.neurodegenerative-dysphagia-nutrition-continuity</code></small>
+* [[Newborn Hearing Screening Language Development Continuity]] <small><code>domain.newborn-hearing-screening-language-development-continuity</code></small>
+* [[Newborn Screening Result Followup Continuity]] <small><code>domain.newborn-screening-result-followup-continuity</code></small>
+* [[Noise Induced Hearing Loss Prevention Continuity]] <small><code>domain.noise-induced-hearing-loss-prevention-continuity</code></small>
+* [[Nuclear Gateway Nucleocytoplasmic Transport Continuity]] <small><code>domain.nuclear-gateway-nucleocytoplasmic-transport-continuity</code></small>
+* [[Nutrition Metabolic Health]] <small><code>domain.nutrition-metabolic-health</code></small>
+* [[Obesity Adiposity Metabolic Risk Continuity]] <small><code>domain.obesity-adiposity-metabolic-risk-continuity</code></small>
+* [[Oral Cancer Mucosal Lesion Early Detection Continuity]] <small><code>domain.oral-cancer-mucosal-lesion-early-detection-continuity</code></small>
+* [[Oral Health Continuity]] <small><code>domain.oral-health-continuity</code></small>
+* [[Organ Donor Registry Anatomical Gift Continuity]] <small><code>domain.organ-donor-registry-anatomical-gift-continuity</code></small>
+* [[Organelle Contact Sites Intercompartmental Communication Continuity]] <small><code>domain.organelle-contact-sites-intercompartmental-communication-continuity</code></small>
+* [[Oropharyngeal Dysphagia Swallow Safety Continuity]] <small><code>domain.oropharyngeal-dysphagia-swallow-safety-continuity</code></small>
+* [[Osteoporosis Fracture Prevention Bone Health Continuity]] <small><code>domain.osteoporosis-fracture-prevention-bone-health-continuity</code></small>
+* [[Otitis Media Child Hearing Development Continuity]] <small><code>domain.otitis-media-child-hearing-development-continuity</code></small>
+* [[Ovarian Cancer Symptom Detection Treatment Continuity]] <small><code>domain.ovarian-cancer-symptom-detection-treatment-continuity</code></small>
+* [[Pain And Suffering Control]] <small><code>domain.pain-suffering-control</code></small>
+* [[Pancreatic Cancer High Risk Detection Treatment Continuity]] <small><code>domain.pancreatic-cancer-high-risk-detection-treatment-continuity</code></small>
+* [[Patient Safety Organizational Learning]] <small><code>domain.patient-safety-organizational-learning</code></small>
+* [[Pediatric Feeding Swallowing Development Continuity]] <small><code>domain.pediatric-feeding-swallowing-development-continuity</code></small>
+* [[Pediatric Lead Screening Environmental Followup Continuity]] <small><code>domain.pediatric-lead-screening-environmental-followup-continuity</code></small>
+* [[Pediatric Oral Health Development Continuity]] <small><code>domain.pediatric-oral-health-development-continuity</code></small>
+* [[Pediatric Vision Screening Amblyopia Continuity]] <small><code>domain.pediatric-vision-screening-amblyopia-continuity</code></small>
+* [[Peripheral Neuropathy Somatosensory Continuity]] <small><code>domain.peripheral-neuropathy-somatosensory-continuity</code></small>
+* [[Peroxisome Redox Lipid Metabolism Homeostasis Continuity]] <small><code>domain.peroxisome-redox-lipid-metabolism-homeostasis-continuity</code></small>
+* [[Pituitary Disorders Hormone Axis Continuity]] <small><code>domain.pituitary-disorders-hormone-axis-continuity</code></small>
+* [[Pollen Allergen Asthma Outdoor Activity Continuity]] <small><code>domain.pollen-allergen-asthma-outdoor-activity-continuity</code></small>
+* [[Polycystic Ovary Syndrome Metabolic Reproductive Continuity]] <small><code>domain.polycystic-ovary-syndrome-metabolic-reproductive-continuity</code></small>
+* [[Post Stroke Dysphagia Screening Recovery Continuity]] <small><code>domain.post-stroke-dysphagia-screening-recovery-continuity</code></small>
+* [[Prediabetes Diabetes Prevention Continuity]] <small><code>domain.prediabetes-diabetes-prevention-continuity</code></small>
+* [[Pregnancy Loss Stillbirth Bereavement Continuity]] <small><code>domain.pregnancy-loss-stillbirth-bereavement-continuity</code></small>
+* [[Primary Ovarian Insufficiency Hormone Fertility Continuity]] <small><code>domain.primary-ovarian-insufficiency-hormone-fertility-continuity</code></small>
+* [[Prostate Cancer Screening Treatment Continuity]] <small><code>domain.prostate-cancer-screening-treatment-continuity</code></small>
+* [[Psoriasis, Inflammatory Skin and Systemic Burden Continuity]] <small><code>domain.psoriasis-inflammatory-skin-systemic-burden-continuity</code></small>
+* [[Radiation Nuclear Safety Protection]] <small><code>domain.radiation-nuclear-safety-protection</code></small>
+* [[Remote and Hybrid Court Hearing Access Continuity]] <small><code>domain.remote-hybrid-court-hearing-access-continuity</code></small>
+* [[Renal Hepatic Clearance]] <small><code>domain.renal-hepatic-clearance</code></small>
+* [[Reproductive Fertility Continuity]] <small><code>domain.reproductive-fertility-continuity</code></small>
+* [[Reproductive Tissue Donor Screening Traceability Continuity]] <small><code>domain.reproductive-tissue-donor-screening-traceability-continuity</code></small>
+* [[Resistance Training Muscle Strength Sarcopenia Continuity]] <small><code>domain.resistance-training-muscle-strength-sarcopenia-continuity</code></small>
+* [[Respiratory Oxygenation]] <small><code>domain.respiratory-oxygenation</code></small>
+* [[Ribosome Translation Fidelity Proteome Integrity Continuity]] <small><code>domain.ribosome-translation-fidelity-proteome-integrity-continuity</code></small>
+* [[Sepsis Shock Early Recognition Resuscitation Continuity]] <small><code>domain.sepsis-shock-early-recognition-resuscitation-continuity</code></small>
+* [[Skin Barrier Wound Healing]] <small><code>domain.skin-barrier-wound-healing</code></small>
+* [[Skin Cancer UV Protection Early Detection Continuity]] <small><code>domain.skin-cancer-uv-protection-early-detection-continuity</code></small>
+* [[Skin Care Supplies, Dressings and Barrier Products Continuity]] <small><code>domain.skin-care-supplies-dressings-barrier-products-continuity</code></small>
+* [[Smell Taste Chemosensory Continuity]] <small><code>domain.smell-taste-chemosensory-continuity</code></small>
+* [[Speech Language Communication Continuity]] <small><code>domain.speech-language-communication-continuity</code></small>
+* [[Speech Sound Disorder Articulation Phonology Continuity]] <small><code>domain.speech-sound-disorder-articulation-phonology-continuity</code></small>
+* [[Spinal Muscular Atrophy Motor Neuron Continuity]] <small><code>domain.spinal-muscular-atrophy-motor-neuron-continuity</code></small>
+* [[Sterilization Disinfection Infection Control]] <small><code>domain.sterilization-disinfection-infection-control</code></small>
+* [[Substance Exposure Control]] <small><code>domain.substance-exposure-control</code></small>
+* [[Sudden Hearing Loss Urgent Referral Continuity]] <small><code>domain.sudden-hearing-loss-urgent-referral-continuity</code></small>
+* [[Surgical Wound, Dehiscence and Surgical Site Infection Continuity]] <small><code>domain.surgical-wound-dehiscence-ssi-continuity</code></small>
+* [[Swallowing Dysphagia Aspiration Nutrition]] <small><code>domain.swallowing-dysphagia-aspiration-nutrition</code></small>
+* [[Synthetic Biology Biosecurity]] <small><code>domain.synthetic-biology-biosecurity</code></small>
+* [[Synthetic Data Generation Validation Continuity]] <small><code>domain.synthetic-data-generation-validation-continuity</code></small>
+* [[Synthetic Media Watermarking Disclosure Continuity]] <small><code>domain.synthetic-media-watermarking-disclosure-continuity</code></small>
+* [[Temporomandibular Orofacial Pain Jaw Function Continuity]] <small><code>domain.temporomandibular-orofacial-pain-jaw-function-continuity</code></small>
+* [[Thermal Homeostasis Resilience]] <small><code>domain.thermal-homeostasis-resilience</code></small>
+* [[Thyroid Disease Endocrine Function Continuity]] <small><code>domain.thyroid-disease-endocrine-function-continuity</code></small>
+* [[Transfusion Blood Management Hemorrhage Continuity]] <small><code>domain.transfusion-blood-management-hemorrhage-continuity</code></small>
+* [[Trauma PTSD Adversity Recovery Continuity]] <small><code>domain.trauma-ptsd-adversity-recovery-continuity</code></small>
+* [[Trauma System Hemorrhage Control Continuity]] <small><code>domain.trauma-system-hemorrhage-control-continuity</code></small>
+* [[Traumatic Brain Injury Neurotrauma Recovery]] <small><code>domain.traumatic-brain-injury-neurotrauma-recovery</code></small>
+* [[Urinary Tract Infection, Pyelonephritis and Urosepsis Continuity]] <small><code>domain.urinary-tract-infection-pyelonephritis-urosepsis-continuity</code></small>
+* [[Urogenital Continuity]] <small><code>domain.urogenital-continuity</code></small>
+* [[Uterine Fibroids Bleeding Anemia Fertility Continuity]] <small><code>domain.uterine-fibroids-bleeding-anemia-fertility-continuity</code></small>
+* [[Vestibular Balance Spatial Orientation]] <small><code>domain.vestibular-balance-spatial-orientation</code></small>
+* [[Vestibular Migraine Dizziness Sensory Load Continuity]] <small><code>domain.vestibular-migraine-dizziness-sensory-load-continuity</code></small>
+* [[Vestibular Neuritis Labyrinthitis Acute Vertigo Continuity]] <small><code>domain.vestibular-neuritis-labyrinthitis-acute-vertigo-continuity</code></small>
+* [[Vestibular Ototoxicity Medication Chemical Risk Continuity]] <small><code>domain.vestibular-ototoxicity-medication-chemical-risk-continuity</code></small>
+* [[Vestibular Rehabilitation Balance Compensation Continuity]] <small><code>domain.vestibular-rehabilitation-balance-compensation-continuity</code></small>
+* [[Vision Eye Health Continuity]] <small><code>domain.vision-eye-health-continuity</code></small>
+* [[Vulvovaginal Pain Infection Sexual Function Continuity]] <small><code>domain.vulvovaginal-pain-infection-sexual-function-continuity</code></small>
+* [[WIC Benefit Redemption Infant Maternal Nutrition Continuity]] <small><code>domain.wic-benefit-redemption-infant-maternal-nutrition-continuity</code></small>
+* [[Wildfire Smoke Clean Air Respiratory Continuity]] <small><code>domain.wildfire-smoke-clean-air-respiratory-continuity</code></small>
+* [[Wound Infection, Cellulitis and Sepsis Continuity]] <small><code>domain.wound-infection-cellulitis-sepsis-continuity</code></small>
+* [[Xerostomia Salivary Function Oral Medication Continuity]] <small><code>domain.xerostomia-salivary-function-oral-medication-continuity</code></small>
+* [[人体增强与脑机接口]] <small><code>domain.human-augmentation-bci</code></small>
+* [[免疫系统维护]] <small><code>domain.immune-maintenance</code></small>
+* [[再生医学]] <small><code>domain.regenerative-medicine</code></small>
+* [[基因组稳定性与DNA修复]] <small><code>domain.genomic-stability-dna-repair</code></small>
+* [[孕产育儿工作连续性]] <small><code>domain.pregnancy-parental-work-continuity</code></small>
+* [[干细胞储备与组织更新]] <small><code>domain.stem-cell-reserve-renewal</code></small>
+* [[异种移植与生物工程器官]] <small><code>domain.xenotransplantation-bioengineered-organ-replacement</code></small>
+* [[心血管韧性]] <small><code>domain.cardiovascular-resilience</code></small>
+* [[生物计算与活性算力]] <small><code>domain.synthetic-biological-intelligence</code></small>
+* [[癌症控制]] <small><code>domain.cancer-control</code></small>
+* [[神经技术治理]] <small><code>domain.brain-computer-interface-neurotechnology-governance</code></small>
+* [[神经连续性]] <small><code>domain.neuro-continuity</code></small>
+* [[端粒维护]] <small><code>domain.telomere-maintenance</code></small>
+* [[类器官与器官芯片]] <small><code>domain.organoids-organ-on-chip</code></small>
+* [[线粒体生物能量]] <small><code>domain.mitochondrial-bioenergetics</code></small>
+* [[细胞重编程]] <small><code>domain.cellular-reprogramming</code></small>
+* [[蛋白稳态与自噬]] <small><code>domain.proteostasis-autophagy</code></small>
+== C3 研究域（82） ==
+
+能力生成层：产生新的观测、计算、行动、修复或发现能力。
+
+* [[AI Agency Safety]] <small><code>domain.ai-agency-safety</code></small>
+* [[AI Agent Tool Permission Sandbox Continuity]] <small><code>domain.ai-agent-tool-permission-sandbox-continuity</code></small>
+* [[AI Data Provenance Contamination Drift Continuity]] <small><code>domain.ai-data-provenance-contamination-drift-continuity</code></small>
+* [[AI Drug Discovery Protein Design]] <small><code>domain.ai-drug-discovery-protein-design</code></small>
+* [[AI Evaluation Benchmark Validity Continuity]] <small><code>domain.ai-evaluation-benchmark-validity-continuity</code></small>
+* [[AI Hardware Accelerator Performance Continuity]] <small><code>domain.ai-hardware-accelerator-performance-continuity</code></small>
+* [[AI Impersonation Deepfake Fraud Continuity]] <small><code>domain.ai-impersonation-deepfake-fraud-continuity</code></small>
+* [[AI Incident Reporting Post Deployment Monitoring Continuity]] <small><code>domain.ai-incident-reporting-post-deployment-monitoring-continuity</code></small>
+* [[AI Model Supply Chain Provenance Release Continuity]] <small><code>domain.ai-model-supply-chain-provenance-release-continuity</code></small>
+* [[AI Red Teaming Adversarial Testing Continuity]] <small><code>domain.ai-red-teaming-adversarial-testing-continuity</code></small>
+* [[AI Resource Cost Latency Budget Continuity]] <small><code>domain.ai-resource-cost-latency-budget-continuity</code></small>
+* [[AI Training Data Rights Opt-Out Provenance Continuity]] <small><code>domain.ai-training-data-rights-opt-out-provenance-continuity</code></small>
+* [[Air Quality Ventilation Exposure Control]] <small><code>domain.air-quality-ventilation-exposure-control</code></small>
+* [[Aphasia Language Access Recovery Continuity]] <small><code>domain.aphasia-language-access-recovery-continuity</code></small>
+* [[Apprenticeship Work Based Learning Continuity]] <small><code>domain.apprenticeship-work-based-learning-continuity</code></small>
+* [[Assistive Technology Access]] <small><code>domain.assistive-technology-access</code></small>
+* [[Attention Executive Control]] <small><code>domain.attention-executive-control</code></small>
+* [[Augmentative Alternative Communication AAC Continuity]] <small><code>domain.augmentative-alternative-communication-aac-continuity</code></small>
+* [[Automation Bias Mode Confusion Oversight Continuity]] <small><code>domain.automation-bias-mode-confusion-oversight-continuity</code></small>
+* [[Captions Relay Service Communication Access Continuity]] <small><code>domain.captions-relay-service-communication-access-continuity</code></small>
+* [[Caregiver Training Skills Safety Continuity]] <small><code>domain.caregiver-training-skills-safety-continuity</code></small>
+* [[Cochlear Implant Communication Continuity]] <small><code>domain.cochlear-implant-communication-continuity</code></small>
+* [[Cognitive Communication Disorder Executive Language Continuity]] <small><code>domain.cognitive-communication-disorder-executive-language-continuity</code></small>
+* [[Cognitive Load Workload Measurement Continuity]] <small><code>domain.cognitive-load-workload-measurement-continuity</code></small>
+* [[Compute Data Center AI Infrastructure]] <small><code>domain.compute-data-center-ai-infrastructure</code></small>
+* [[Content Provenance Authenticity Credential Continuity]] <small><code>domain.content-provenance-authenticity-credential-continuity</code></small>
+* [[Continuing Education Recertification Continuity]] <small><code>domain.continuing-education-recertification-continuity</code></small>
+* [[Cooking Ventilation Range Hood Indoor Air Continuity]] <small><code>domain.cooking-ventilation-range-hood-indoor-air-continuity</code></small>
+* [[Court Language Access and Interpreter Continuity]] <small><code>domain.court-language-access-interpreter-continuity</code></small>
+* [[Dementia Cognitive Decline Care Continuity]] <small><code>domain.dementia-cognitive-decline-care-continuity</code></small>
+* [[Developmental Language Disorder Child Communication Continuity]] <small><code>domain.developmental-language-disorder-child-communication-continuity</code></small>
+* [[Disability Access Functional Needs Personal Preparedness Continuity]] <small><code>domain.disability-access-functional-needs-personal-preparedness-continuity</code></small>
+* [[Disaster Legal Aid Rights Claims Continuity]] <small><code>domain.disaster-legal-aid-rights-claims-continuity</code></small>
+* [[Education Access Lifelong Learning]] <small><code>domain.education-access-lifelong-learning</code></small>
+* [[Education Record Transcript Verification Continuity]] <small><code>domain.education-record-transcript-verification-continuity</code></small>
+* [[Family Emergency Communication Reunification Continuity]] <small><code>domain.family-emergency-communication-reunification-continuity</code></small>
+* [[Health Literacy Navigation]] <small><code>domain.health-literacy-navigation</code></small>
+* [[Health Workforce Capacity]] <small><code>domain.health-workforce-capacity</code></small>
+* [[Healthcare Language Interpreter Effective Communication Continuity]] <small><code>domain.healthcare-language-interpreter-effective-communication-continuity</code></small>
+* [[Healthcare Personal Representative HIPAA Access Continuity]] <small><code>domain.healthcare-personal-representative-hipaa-access-continuity</code></small>
+* [[Home Care Aide Personal Care Workforce Continuity]] <small><code>domain.home-care-aide-personal-care-workforce-continuity</code></small>
+* [[Home Cooling Heat Pump Air Conditioning Maintenance Continuity]] <small><code>domain.home-cooling-heat-pump-air-conditioning-maintenance-continuity</code></small>
+* [[Home HVAC Filter Maintenance Indoor Air Continuity]] <small><code>domain.home-hvac-filter-maintenance-indoor-air-continuity</code></small>
+* [[Human AI Oversight Handoff Accountability Continuity]] <small><code>domain.human-ai-oversight-handoff-accountability-continuity</code></small>
+* [[Incident Reporting Just Culture Learning Continuity]] <small><code>domain.incident-reporting-just-culture-learning-continuity</code></small>
+* [[Language Access Plain Communication]] <small><code>domain.language-access-plain-communication</code></small>
+* [[Learning Skill Acquisition]] <small><code>domain.learning-skill-acquisition</code></small>
+* [[Life Logging Personal Archives Continuity]] <small><code>domain.life-logging-personal-archives-continuity</code></small>
+* [[MFA Passkey Credential Recovery Continuity]] <small><code>domain.mfa-passkey-credential-recovery-continuity</code></small>
+* [[Media Information Literacy Public Libraries]] <small><code>domain.media-information-literacy-public-libraries</code></small>
+* [[Menstrual Health Cycle Literacy Continuity]] <small><code>domain.menstrual-health-cycle-literacy-continuity</code></small>
+* [[Multiomics Personal Baseline Systems Biology]] <small><code>domain.multiomics-personal-baseline-systems-biology</code></small>
+* [[Mutual Aid Neighbor Support Network Continuity]] <small><code>domain.mutual-aid-neighbor-support-network-continuity</code></small>
+* [[Notification Alert Routing Attention Continuity]] <small><code>domain.notification-alert-routing-attention-continuity</code></small>
+* [[Opportunity Youth Education Employment Pathway Continuity]] <small><code>domain.opportunity-youth-education-employment-pathway-continuity</code></small>
+* [[Out Of School Time Afterschool Summer Learning Continuity]] <small><code>domain.out-of-school-time-afterschool-summer-learning-continuity</code></small>
+* [[Personal Automation Integration Workflow Continuity]] <small><code>domain.personal-automation-integration-workflow-continuity</code></small>
+* [[Personal Computing Device Lifecycle Repair Continuity]] <small><code>domain.personal-computing-device-lifecycle-repair-continuity</code></small>
+* [[Personal Health Record Emergency Summary Continuity]] <small><code>domain.personal-health-record-emergency-summary-continuity</code></small>
+* [[Personal Knowledge Management Cognitive Offloading]] <small><code>domain.personal-knowledge-management-cognitive-offloading</code></small>
+* [[Personal Safety Violence Prevention]] <small><code>domain.personal-safety-violence-prevention</code></small>
+* [[Personal Vehicle Maintenance Recall Repair Continuity]] <small><code>domain.personal-vehicle-maintenance-recall-repair-continuity</code></small>
+* [[Portable Air Cleaner Room Filtration Continuity]] <small><code>domain.portable-air-cleaner-room-filtration-continuity</code></small>
+* [[Robotics Embodied Assistance Care Automation]] <small><code>domain.robotics-embodied-assistance-care-automation</code></small>
+* [[Satellite Communications Spectrum Orbit Continuity]] <small><code>domain.satellite-communications-spectrum-orbit-continuity</code></small>
+* [[Science Communication Evidence Translation Continuity]] <small><code>domain.science-communication-evidence-translation-continuity</code></small>
+* [[Severe Weather Watch Warning Risk Communication Continuity]] <small><code>domain.severe-weather-watch-warning-risk-communication-continuity</code></small>
+* [[Shelter In Place Clean Air Room Indoor Protection Continuity]] <small><code>domain.shelter-in-place-clean-air-room-indoor-protection-continuity</code></small>
+* [[Skills Competency Credentialing Continuity]] <small><code>domain.skills-competency-credentialing-continuity</code></small>
+* [[Social Communication Pragmatic Language Continuity]] <small><code>domain.social-communication-pragmatic-language-continuity</code></small>
+* [[Special Education IEP 504 Accommodation Continuity]] <small><code>domain.special-education-iep-504-accommodation-continuity</code></small>
+* [[Student Financial Aid Grant Scholarship Continuity]] <small><code>domain.student-financial-aid-grant-scholarship-continuity</code></small>
+* [[Time Allocation Effective Time]] <small><code>domain.time-allocation-effective-time</code></small>
+* [[Toxic Plume Air Monitoring Risk Communication Continuity]] <small><code>domain.toxic-plume-air-monitoring-risk-communication-continuity</code></small>
+* [[Verifiable Credential Wallet Interoperability]] <small><code>domain.verifiable-credential-wallet-interoperability</code></small>
+* [[Voice Disorders Phonation Communication Continuity]] <small><code>domain.voice-disorders-phonation-communication-continuity</code></small>
+* [[Wearables Continuous Sensing Personal Informatics]] <small><code>domain.wearables-continuous-sensing-personal-informatics</code></small>
+* [[Weatherization Insulation Air Sealing Thermal Envelope Continuity]] <small><code>domain.weatherization-insulation-air-sealing-thermal-envelope-continuity</code></small>
+* [[个人责任伞形保险与法律防御连续性]] <small><code>domain.personal-liability-umbrella-insurance-defense-continuity</code></small>
+* [[航空旅客权利、中断与退款连续性]] <small><code>domain.air-passenger-rights-disruption-refund-continuity</code></small>
+* [[行李与旅行个人物品连续性]] <small><code>domain.baggage-personal-property-travel-continuity</code></small>
+* [[认知增强]] <small><code>domain.cognitive-augmentation</code></small>
+== C4 研究域（140） ==
+
+可能性转换通道层：把知识、资源、服务和技术转化为主体可用路径。
+
+* [[ART Clinic Success Rate Quality Reporting Continuity]] <small><code>domain.art-clinic-success-rate-quality-reporting-continuity</code></small>
+* [[Access Functional Needs Emergency Registry Continuity]] <small><code>domain.access-functional-needs-emergency-registry-continuity</code></small>
+* [[Administrative Burden Procedural Friction]] <small><code>domain.administrative-burden-procedural-friction</code></small>
+* [[Background Check Record Screening Continuity]] <small><code>domain.background-check-record-screening-continuity</code></small>
+* [[Biobanking Biospecimen Quality Chain Of Custody]] <small><code>domain.biobanking-biospecimen-quality-chain-of-custody</code></small>
+* [[Causal Inference Target Trial Emulation]] <small><code>domain.causal-inference-target-trial-emulation</code></small>
+* [[Children Teen Data Privacy Consent Continuity]] <small><code>domain.children-teen-data-privacy-consent-continuity</code></small>
+* [[Citation Network Claim Propagation Continuity]] <small><code>domain.citation-network-claim-propagation-continuity</code></small>
+* [[Clinical Laboratory Diagnostic Quality]] <small><code>domain.clinical-laboratory-diagnostic-quality</code></small>
+* [[Clinical Trials Regulatory Science Translation]] <small><code>domain.clinical-trials-regulatory-science-translation</code></small>
+* [[Cloud Backup File Sync Data Portability Continuity]] <small><code>domain.cloud-backup-file-sync-data-portability-continuity</code></small>
+* [[Cloud Service Exit Interoperability Continuity]] <small><code>domain.cloud-service-exit-interoperability-continuity</code></small>
+* [[Community Health Workers Peer Support]] <small><code>domain.community-health-workers-peer-support</code></small>
+* [[Community Testing Screening Access Continuity]] <small><code>domain.community-testing-screening-access-continuity</code></small>
+* [[Creator Royalty Rights Metadata Continuity]] <small><code>domain.creator-royalty-rights-metadata-continuity</code></small>
+* [[Cultural Heritage Identity Continuity]] <small><code>domain.cultural-heritage-identity-continuity</code></small>
+* [[Data Breach Notification Identity Recovery Continuity]] <small><code>domain.data-breach-notification-identity-recovery-continuity</code></small>
+* [[Data Broker Registry Opt-Out Deletion Continuity]] <small><code>domain.data-broker-registry-opt-out-deletion-continuity</code></small>
+* [[Data Center Cooling Water Thermal Continuity]] <small><code>domain.data-center-cooling-water-thermal-continuity</code></small>
+* [[Data Quality Missingness Representativeness]] <small><code>domain.data-quality-missingness-representativeness</code></small>
+* [[Developmental Behavioral Screening Referral Continuity]] <small><code>domain.developmental-behavioral-screening-referral-continuity</code></small>
+* [[Dietary Supplement Nutraceutical Evidence Safety Continuity]] <small><code>domain.dietary-supplement-nutraceutical-evidence-safety-continuity</code></small>
+* [[Digital Evidence Preservation Chain Of Custody Continuity]] <small><code>domain.digital-evidence-preservation-chain-of-custody-continuity</code></small>
+* [[Digital Identity Security]] <small><code>domain.digital-identity-security</code></small>
+* [[Digital Legacy Data Succession]] <small><code>domain.digital-legacy-data-succession</code></small>
+* [[Disaster Individual Assistance Benefits Navigation Continuity]] <small><code>domain.disaster-individual-assistance-benefits-navigation-continuity</code></small>
+* [[Employment Algorithmic Hiring Screening Continuity]] <small><code>domain.employment-algorithmic-hiring-screening-continuity</code></small>
+* [[Evidence Certainty, GRADE and Summary of Findings Continuity]] <small><code>domain.evidence-certainty-grade-summary-findings-continuity</code></small>
+* [[Evidence-to-Decision and Guideline Panel Continuity]] <small><code>domain.evidence-to-decision-guideline-panel-continuity</code></small>
+* [[Extreme Heat, Cooling, and Public Health Continuity]] <small><code>domain.extreme-heat-cooling-public-health-continuity</code></small>
+* [[Functioning Quality Of Life Outcomes]] <small><code>domain.functioning-quality-of-life-outcomes</code></small>
+* [[Gait Balance Assessment Fall Screening Continuity]] <small><code>domain.gait-balance-assessment-fall-screening-continuity</code></small>
+* [[Geospatial Navigation Location Infrastructure]] <small><code>domain.geospatial-navigation-location-infrastructure</code></small>
+* [[Geroprotective Drug Repurposing Trial Governance Continuity]] <small><code>domain.geroprotective-drug-repurposing-trial-governance-continuity</code></small>
+* [[Guideline Appraisal, Adaptation and Localization Continuity]] <small><code>domain.guideline-appraisal-adaptation-localization-continuity</code></small>
+* [[HUD Approved Housing Counseling Navigation Continuity]] <small><code>domain.hud-approved-housing-counseling-navigation-continuity</code></small>
+* [[Health Data Privacy Governance]] <small><code>domain.health-data-privacy-governance</code></small>
+* [[Healthcare Access Continuity]] <small><code>domain.healthcare-access-continuity</code></small>
+* [[Healthcare Civil Rights Nondiscrimination Continuity]] <small><code>domain.healthcare-civil-rights-nondiscrimination-continuity</code></small>
+* [[Healthcare Disability Accommodation Accessibility Continuity]] <small><code>domain.healthcare-disability-accommodation-accessibility-continuity</code></small>
+* [[Healthcare Surge Triage Capacity Continuity]] <small><code>domain.healthcare-surge-triage-capacity-continuity</code></small>
+* [[Household Equipment Serial Model Recall Record Continuity]] <small><code>domain.household-equipment-serial-model-recall-record-continuity</code></small>
+* [[Housing Choice Voucher Public Housing Continuity]] <small><code>domain.housing-choice-voucher-public-housing-continuity</code></small>
+* [[Implementation Science Adherence Behavior Change]] <small><code>domain.implementation-science-adherence-behavior-change</code></small>
+* [[Insurance Eligibility Benefits Verification Continuity]] <small><code>domain.insurance-eligibility-benefits-verification-continuity</code></small>
+* [[Intellectual Property Technology Transfer Access]] <small><code>domain.intellectual-property-technology-transfer-access</code></small>
+* [[Journal Editorial Policy Peer Review Integrity Continuity]] <small><code>domain.journal-editorial-policy-peer-review-integrity-continuity</code></small>
+* [[Knowledge Graph Ontology Semantic Interoperability]] <small><code>domain.knowledge-graph-ontology-semantic-interoperability</code></small>
+* [[LGBTQ Health Identity Affirming Service Continuity]] <small><code>domain.lgbtq-health-identity-affirming-service-continuity</code></small>
+* [[Lab Notebook, Protocol and Versioning Continuity]] <small><code>domain.lab-notebook-protocol-versioning-continuity</code></small>
+* [[Lead Heavy Metal Exposure Control]] <small><code>domain.lead-heavy-metal-exposure-control</code></small>
+* [[Living Evidence Surveillance and Update Continuity]] <small><code>domain.living-evidence-surveillance-update-continuity</code></small>
+* [[Longitudinal Cohort Retention Followup Infrastructure]] <small><code>domain.longitudinal-cohort-retention-followup-infrastructure</code></small>
+* [[Measurement And Feedback]] <small><code>domain.measurement-feedback</code></small>
+* [[Medically Tailored Groceries Food Benefit Continuity]] <small><code>domain.medically-tailored-groceries-food-benefit-continuity</code></small>
+* [[Medicine Access Treatment Continuity]] <small><code>domain.medicine-access-treatment-continuity</code></small>
+* [[Meta-Analysis, Effect Size and Heterogeneity Continuity]] <small><code>domain.meta-analysis-effect-size-heterogeneity-continuity</code></small>
+* [[Model Cards AI Audit Documentation]] <small><code>domain.model-cards-ai-audit-documentation</code></small>
+* [[Narrative Identity Life Review Continuity]] <small><code>domain.narrative-identity-life-review-continuity</code></small>
+* [[Nutrition Insecurity Screening Referral Continuity]] <small><code>domain.nutrition-insecurity-screening-referral-continuity</code></small>
+* [[Open Source Software License Compliance Continuity]] <small><code>domain.open-source-software-license-compliance-continuity</code></small>
+* [[Patient Advocacy Shared Decision Making]] <small><code>domain.patient-advocacy-shared-decision-making</code></small>
+* [[Patient Billing Payment Plan Continuity]] <small><code>domain.patient-billing-payment-plan-continuity</code></small>
+* [[Patient Data Interoperability]] <small><code>domain.patient-data-interoperability</code></small>
+* [[Patient Grievance Complaint Ombuds Continuity]] <small><code>domain.patient-grievance-complaint-ombuds-continuity</code></small>
+* [[Patient Medication Labeling Counseling Continuity]] <small><code>domain.patient-medication-labeling-counseling-continuity</code></small>
+* [[Patient Portal Account Message Continuity]] <small><code>domain.patient-portal-account-message-continuity</code></small>
+* [[Perinatal Mental Health Screening Referral Continuity]] <small><code>domain.perinatal-mental-health-screening-referral-continuity</code></small>
+* [[Persistent Identifier, DOI and Citation Metadata Continuity]] <small><code>domain.persistent-identifier-doi-citation-metadata-continuity</code></small>
+* [[Pharmaceutical Quality Supply Integrity]] <small><code>domain.pharmaceutical-quality-supply-integrity</code></small>
+* [[Pharmacovigilance Drug Safety Monitoring]] <small><code>domain.pharmacovigilance-drug-safety-monitoring</code></small>
+* [[Pharmacy Benefit Formulary Prior Authorization Continuity]] <small><code>domain.pharmacy-benefit-formulary-prior-authorization-continuity</code></small>
+* [[Post Quantum Cryptography Long Term Data Security]] <small><code>domain.post-quantum-cryptography-long-term-data-security</code></small>
+* [[Prenatal Care Access Risk Screening Continuity]] <small><code>domain.prenatal-care-access-risk-screening-continuity</code></small>
+* [[Preprint Versioning Public Review Continuity]] <small><code>domain.preprint-versioning-public-review-continuity</code></small>
+* [[Preregistration, Registered Report and Study Plan Continuity]] <small><code>domain.preregistration-registered-report-study-plan-continuity</code></small>
+* [[Privacy Preserving Computation Federated Learning]] <small><code>domain.privacy-preserving-computation-federated-learning</code></small>
+* [[Privacy Rights Access Correction Deletion Continuity]] <small><code>domain.privacy-rights-access-correction-deletion-continuity</code></small>
+* [[Produce Prescription Fruit Vegetable Benefit Continuity]] <small><code>domain.produce-prescription-fruit-vegetable-benefit-continuity</code></small>
+* [[Professional Licensure Certification Continuity]] <small><code>domain.professional-licensure-certification-continuity</code></small>
+* [[Public Accommodation Accessibility Service Continuity]] <small><code>domain.public-accommodation-accessibility-service-continuity</code></small>
+* [[Public Benefits Eligibility Automated Decision Continuity]] <small><code>domain.public-benefits-eligibility-automated-decision-continuity</code></small>
+* [[Public Drinking Water Hydration Access Continuity]] <small><code>domain.public-drinking-water-hydration-access-continuity</code></small>
+* [[Public Health Laboratory Diagnostic Capacity]] <small><code>domain.public-health-laboratory-diagnostic-capacity</code></small>
+* [[Public Library Community Anchor Access Continuity]] <small><code>domain.public-library-community-anchor-access-continuity</code></small>
+* [[Public Procurement Contracting Capacity]] <small><code>domain.public-procurement-contracting-capacity</code></small>
+* [[Public Restroom Sanitation Hygiene Access Continuity]] <small><code>domain.public-restroom-sanitation-hygiene-access-continuity</code></small>
+* [[Public Seating Shade Rest Cooling Access Continuity]] <small><code>domain.public-seating-shade-rest-cooling-access-continuity</code></small>
+* [[Public Wifi Device Charging Connectivity Continuity]] <small><code>domain.public-wifi-device-charging-connectivity-continuity</code></small>
+* [[Public Works Civil Infrastructure Asset Management]] <small><code>domain.public-works-civil-infrastructure-asset-management</code></small>
+* [[Publication and Reporting Bias Detection Continuity]] <small><code>domain.publication-reporting-bias-detection-continuity</code></small>
+* [[Rapid Review and Emergency Evidence Triage Continuity]] <small><code>domain.rapid-review-emergency-evidence-triage-continuity</code></small>
+* [[Registries Real World Data Governance]] <small><code>domain.registries-real-world-data-governance</code></small>
+* [[Representative Payee Benefits Management Continuity]] <small><code>domain.representative-payee-benefits-management-continuity</code></small>
+* [[Reputation Defamation Public Trust Repair Continuity]] <small><code>domain.reputation-defamation-public-trust-repair-continuity</code></small>
+* [[Research Artifact Archive, Retention and Preservation Continuity]] <small><code>domain.research-artifact-archive-retention-preservation-continuity</code></small>
+* [[Research Data Repository and FAIR Sharing Continuity]] <small><code>domain.research-data-repository-fair-sharing-continuity</code></small>
+* [[Research Metrics Incentives Assessment Continuity]] <small><code>domain.research-metrics-incentives-assessment-continuity</code></small>
+* [[Research Misconduct Investigation Correction Continuity]] <small><code>domain.research-misconduct-investigation-correction-continuity</code></small>
+* [[Research Participant Consent Community Engagement]] <small><code>domain.research-participant-consent-community-engagement</code></small>
+* [[Research Portfolio Prioritization Funding Governance]] <small><code>domain.research-portfolio-prioritization-funding-governance</code></small>
+* [[Research Software, Capsule and Computational Reproducibility Continuity]] <small><code>domain.research-software-capsule-reproducibility-continuity</code></small>
+* [[Risk of Bias and Critical Appraisal Continuity]] <small><code>domain.risk-of-bias-critical-appraisal-continuity</code></small>
+* [[SNAP Eligibility Recertification ABAWD Continuity]] <small><code>domain.snap-eligibility-recertification-abawd-continuity</code></small>
+* [[SSI SSDI Disability Review Appeal Continuity]] <small><code>domain.ssi-ssdi-disability-review-appeal-continuity</code></small>
+* [[Safety Critical Software Formal Methods]] <small><code>domain.safety-critical-software-formal-methods</code></small>
+* [[Scholarly Identity, ORCID and Affiliation Continuity]] <small><code>domain.scholarly-identity-orcid-affiliation-continuity</code></small>
+* [[Scientific Instrumentation Sensor Calibration Maintenance]] <small><code>domain.scientific-instrumentation-sensor-calibration-maintenance</code></small>
+* [[Semiconductor Manufacturing Metrology Continuity]] <small><code>domain.semiconductor-manufacturing-metrology-continuity</code></small>
+* [[Sensitive Location Data Exposure Continuity]] <small><code>domain.sensitive-location-data-exposure-continuity</code></small>
+* [[Sensory Continuity]] <small><code>domain.sensory-continuity</code></small>
+* [[Sleep Disordered Breathing Screening Treatment Continuity]] <small><code>domain.sleep-disordered-breathing-screening-treatment-continuity</code></small>
+* [[Social Security Earnings Benefit Record Continuity]] <small><code>domain.social-security-earnings-benefit-record-continuity</code></small>
+* [[Software Supply Chain Dependency Provenance Continuity]] <small><code>domain.software-supply-chain-dependency-provenance-continuity</code></small>
+* [[Software Update Vulnerability Patch Continuity]] <small><code>domain.software-update-vulnerability-patch-continuity</code></small>
+* [[Specialist Referral Authorization Navigation Continuity]] <small><code>domain.specialist-referral-authorization-navigation-continuity</code></small>
+* [[Sports Concussion Return To Play Protocol Continuity]] <small><code>domain.sports-concussion-return-to-play-protocol-continuity</code></small>
+* [[Standards Metrology Quality Infrastructure]] <small><code>domain.standards-metrology-quality-infrastructure</code></small>
+* [[Survivor Benefits Death Notification Continuity]] <small><code>domain.survivor-benefits-death-notification-continuity</code></small>
+* [[Systematic Review Protocol, Search and Screening Continuity]] <small><code>domain.systematic-review-protocol-search-screening-continuity</code></small>
+* [[Technology Foresight Horizon Scanning]] <small><code>domain.technology-foresight-horizon-scanning</code></small>
+* [[Telehealth Remote Monitoring Access]] <small><code>domain.telehealth-remote-monitoring-access</code></small>
+* [[Tenant Screening Rental Access Continuity]] <small><code>domain.tenant-screening-rental-access-continuity</code></small>
+* [[Trademark Brand Identity Rights Continuity]] <small><code>domain.trademark-brand-identity-rights-continuity</code></small>
+* [[Trustworthy Scientific Communication Peer Review]] <small><code>domain.trustworthy-scientific-communication-peer-review</code></small>
+* [[Uncertainty Quantification Model Calibration]] <small><code>domain.uncertainty-quantification-model-calibration</code></small>
+* [[Unemployment Insurance Claim Appeal Identity Continuity]] <small><code>domain.unemployment-insurance-claim-appeal-identity-continuity</code></small>
+* [[Unused Medicine Takeback Disposal Continuity]] <small><code>domain.unused-medicine-takeback-disposal-continuity</code></small>
+* [[Veterans Health Benefits Navigation Continuity]] <small><code>domain.veterans-health-benefits-navigation-continuity</code></small>
+* [[Workers Compensation Occupational Injury Benefit Continuity]] <small><code>domain.workers-compensation-occupational-injury-benefit-continuity</code></small>
+* [[人体数字孪生]] <small><code>domain.human-digital-twin</code></small>
+* [[姓名变更与身份记录同步连续性]] <small><code>domain.name-change-identity-record-synchronization-continuity</code></small>
+* [[家庭组成、受扶养人与资格关系连续性]] <small><code>domain.household-composition-dependent-eligibility-continuity</code></small>
+* [[残障收入、工作能力与福利连续性]] <small><code>domain.disability-income-work-capacity-benefit-continuity</code></small>
+* [[消费者评价、背书与市场信任连续性]] <small><code>domain.consumer-reviews-endorsements-marketplace-trust-continuity</code></small>
+* [[生命事件与核心民事记录连续性]] <small><code>domain.vital-records-life-event-continuity</code></small>
+* [[生存分析与健康寿命风险建模]] <small><code>domain.survival-analysis-healthspan-risk-modeling</code></small>
+* [[科研基础设施与开放科学转化]] <small><code>domain.research-infrastructure-open-science-translation</code></small>
+* [[航空安检、身份核验与筛查连续性]] <small><code>domain.aviation-security-screening-identity-continuity</code></small>
+* [[长期照护保险与福利启动连续性]] <small><code>domain.long-term-care-insurance-benefit-activation-continuity</code></small>
+== C5 研究域（225） ==
+
+生态底座层：维持能源、水、食物、制度、经济、环境与公共基础设施。
+
+* [[Access To Justice Legal Aid]] <small><code>domain.access-to-justice-legal-aid</code></small>
+* [[Adult Day Services Supervision Transport Continuity]] <small><code>domain.adult-day-services-supervision-transport-continuity</code></small>
+* [[Agricultural Production Food System Resilience]] <small><code>domain.agricultural-production-food-system-resilience</code></small>
+* [[Anti Corruption Public Integrity Accountability]] <small><code>domain.anti-corruption-public-integrity-accountability</code></small>
+* [[Armed Conflict Civilian Protection IHL]] <small><code>domain.armed-conflict-civilian-protection-ihl</code></small>
+* [[Asylum Refugee Protection Status Continuity]] <small><code>domain.asylum-refugee-protection-status-continuity</code></small>
+* [[Basement Flooding Sump Pump Moisture Recovery Continuity]] <small><code>domain.basement-flooding-sump-pump-moisture-recovery-continuity</code></small>
+* [[Bed Bug Infestation Sleep Housing Continuity]] <small><code>domain.bed-bug-infestation-sleep-housing-continuity</code></small>
+* [[Biodiversity Ecosystem Services Resilience]] <small><code>domain.biodiversity-ecosystem-services-resilience</code></small>
+* [[Boating Life Jacket Watercraft Safety Continuity]] <small><code>domain.boating-life-jacket-watercraft-safety-continuity</code></small>
+* [[Border Community Cross Border Care Continuity]] <small><code>domain.border-community-cross-border-care-continuity</code></small>
+* [[Built Environment Accessibility Universal Design]] <small><code>domain.built-environment-accessibility-universal-design</code></small>
+* [[CACFP Child And Adult Care Food Program Continuity]] <small><code>domain.cacfp-child-adult-care-food-program-continuity</code></small>
+* [[CPAP PAP Device Mask Supply Power Continuity]] <small><code>domain.cpap-pap-device-mask-supply-power-continuity</code></small>
+* [[Caloric Restriction Fasting Energy Balance Governance Continuity]] <small><code>domain.caloric-restriction-fasting-energy-balance-governance-continuity</code></small>
+* [[Care Transitions Discharge Continuity]] <small><code>domain.care-transitions-discharge-continuity</code></small>
+* [[Charity Care Financial Assistance Medical Debt Continuity]] <small><code>domain.charity-care-financial-assistance-medical-debt-continuity</code></small>
+* [[Child Care Subsidy CCDF Payment Continuity]] <small><code>domain.child-care-subsidy-ccdf-payment-continuity</code></small>
+* [[Chronic Condition Emergency Action Plan Continuity]] <small><code>domain.chronic-condition-emergency-action-plan-continuity</code></small>
+* [[Civic Data Open Government Transparency]] <small><code>domain.civic-data-open-government-transparency</code></small>
+* [[Civic Participation Election Access]] <small><code>domain.civic-participation-election-access</code></small>
+* [[Coastal Flooding Erosion Inundation Continuity]] <small><code>domain.coastal-flooding-erosion-inundation-continuity</code></small>
+* [[Coastal Marine Resilience Blue Economy Continuity]] <small><code>domain.coastal-marine-resilience-blue-economy-continuity</code></small>
+* [[Community Mediation Neighbor Conflict Resolution Continuity]] <small><code>domain.community-mediation-neighbor-conflict-resolution-continuity</code></small>
+* [[Community Resilience Hub Shelter Center Continuity]] <small><code>domain.community-resilience-hub-shelter-center-continuity</code></small>
+* [[Community Resource Navigation]] <small><code>domain.community-resource-navigation</code></small>
+* [[Community Right To Know Chemical Risk Disclosure Continuity]] <small><code>domain.community-right-to-know-chemical-risk-disclosure-continuity</code></small>
+* [[Conflict of Interest, Funding and Disclosure Continuity]] <small><code>domain.conflict-of-interest-funding-disclosure-continuity</code></small>
+* [[Continuity Of Government Public Administration Resilience]] <small><code>domain.continuity-of-government-public-administration-resilience</code></small>
+* [[Correctional Health Reentry Continuity]] <small><code>domain.correctional-health-reentry-continuity</code></small>
+* [[Court Disability Accommodation and Accessibility Continuity]] <small><code>domain.court-disability-accommodation-accessibility-continuity</code></small>
+* [[Court E-Filing and Document Submission Continuity]] <small><code>domain.court-efiling-document-submission-continuity</code></small>
+* [[Court Fees, Fines, and Ability-to-Pay Continuity]] <small><code>domain.court-fees-fines-ability-to-pay-continuity</code></small>
+* [[Court Notice Service Process Default Judgment Continuity]] <small><code>domain.court-notice-service-process-default-judgment-continuity</code></small>
+* [[Critical Infrastructure Lifeline Interdependency Resilience]] <small><code>domain.critical-infrastructure-lifeline-interdependency-resilience</code></small>
+* [[Critical Minerals Materials Resilience]] <small><code>domain.critical-minerals-materials-resilience</code></small>
+* [[Cybersecurity Resilience Critical Services]] <small><code>domain.cybersecurity-resilience-critical-services</code></small>
+* [[Dams Levees Flood Control Infrastructure Safety]] <small><code>domain.dams-levees-flood-control-infrastructure-safety</code></small>
+* [[Digital Inclusion Connectivity]] <small><code>domain.digital-inclusion-connectivity</code></small>
+* [[Disaster Behavioral Health Distress Recovery Continuity]] <small><code>domain.disaster-behavioral-health-distress-recovery-continuity</code></small>
+* [[Disaster Case Management Long Term Recovery Continuity]] <small><code>domain.disaster-case-management-long-term-recovery-continuity</code></small>
+* [[Disaster Debris Waste Sanitation Cleanup Continuity]] <small><code>domain.disaster-debris-waste-sanitation-cleanup-continuity</code></small>
+* [[Disaster Recovery Center Service Access Continuity]] <small><code>domain.disaster-recovery-center-service-access-continuity</code></small>
+* [[Disaster Recovery Relief Continuity]] <small><code>domain.disaster-recovery-relief-continuity</code></small>
+* [[Disaster Temporary Housing Displacement Recovery Continuity]] <small><code>domain.disaster-temporary-housing-displacement-recovery-continuity</code></small>
+* [[Disaster Unemployment Income Disruption Continuity]] <small><code>domain.disaster-unemployment-income-disruption-continuity</code></small>
+* [[Disaster Volunteer Donations Management Continuity]] <small><code>domain.disaster-volunteer-donations-management-continuity</code></small>
+* [[Dog Bite Community Injury Prevention Continuity]] <small><code>domain.dog-bite-community-injury-prevention-continuity</code></small>
+* [[Drought Water Restriction Household Health Continuity]] <small><code>domain.drought-water-restriction-household-health-continuity</code></small>
+* [[Drowning Water Safety Supervision Continuity]] <small><code>domain.drowning-water-safety-supervision-continuity</code></small>
+* [[Earthquake and Seismic Risk Built-Environment Continuity]] <small><code>domain.earthquake-seismic-risk-built-environment-continuity</code></small>
+* [[Elder Justice Adult Protective Services]] <small><code>domain.elder-justice-adult-protective-services</code></small>
+* [[Electric Grid Reliability Resilience Continuity]] <small><code>domain.electric-grid-reliability-resilience-continuity</code></small>
+* [[Emergency Alerts Communications]] <small><code>domain.emergency-alerts-communications</code></small>
+* [[Emergency Contact Next Of Kin Notification Continuity]] <small><code>domain.emergency-contact-next-of-kin-notification-continuity</code></small>
+* [[Emergency Financial Document Cash Readiness Continuity]] <small><code>domain.emergency-financial-document-cash-readiness-continuity</code></small>
+* [[Emergency Food Disaster Feeding Continuity]] <small><code>domain.emergency-food-disaster-feeding-continuity</code></small>
+* [[Emergency Food Water Storage Treatment Continuity]] <small><code>domain.emergency-food-water-storage-treatment-continuity</code></small>
+* [[Emergency Medical Services Prehospital Care]] <small><code>domain.emergency-medical-services-prehospital-care</code></small>
+* [[Emergency Preparedness Response]] <small><code>domain.emergency-preparedness-response</code></small>
+* [[Emergency Rental Assistance Arrears Continuity]] <small><code>domain.emergency-rental-assistance-arrears-continuity</code></small>
+* [[Emergency Supply Kit Go Bag Rotation Continuity]] <small><code>domain.emergency-supply-kit-go-bag-rotation-continuity</code></small>
+* [[Energy Access Resilience]] <small><code>domain.energy-access-resilience</code></small>
+* [[Evacuation Route Transportation Shelter Plan Continuity]] <small><code>domain.evacuation-route-transportation-shelter-plan-continuity</code></small>
+* [[Eviction Prevention Court Diversion Continuity]] <small><code>domain.eviction-prevention-court-diversion-continuity</code></small>
+* [[Fair Housing Discrimination Reasonable Accommodation Continuity]] <small><code>domain.fair-housing-discrimination-reasonable-accommodation-continuity</code></small>
+* [[Fall Detection Emergency Response Device Continuity]] <small><code>domain.fall-detection-emergency-response-device-continuity</code></small>
+* [[Fall Risk Prevention Home Safety Continuity]] <small><code>domain.fall-risk-prevention-home-safety-continuity</code></small>
+* [[Financial Fiduciary Power of Attorney Continuity]] <small><code>domain.financial-fiduciary-power-of-attorney-continuity</code></small>
+* [[Financial Inclusion Payment Systems]] <small><code>domain.financial-inclusion-payment-systems</code></small>
+* [[Financial Resilience Access]] <small><code>domain.financial-resilience-access</code></small>
+* [[Fisheries Aquatic Food Systems Continuity]] <small><code>domain.fisheries-aquatic-food-systems-continuity</code></small>
+* [[Food Bank Pantry Community Food Distribution Continuity]] <small><code>domain.food-bank-pantry-community-food-distribution-continuity</code></small>
+* [[Food Pharmacy Clinic Pantry Integration Continuity]] <small><code>domain.food-pharmacy-clinic-pantry-integration-continuity</code></small>
+* [[Food Safety Contamination Control]] <small><code>domain.food-safety-contamination-control</code></small>
+* [[Food Scrap Composting Pest Odor Continuity]] <small><code>domain.food-scrap-composting-pest-odor-continuity</code></small>
+* [[Food Security Nutrition Access]] <small><code>domain.food-security-nutrition-access</code></small>
+* [[Freight Logistics Port Cold Chain Continuity]] <small><code>domain.freight-logistics-port-cold-chain-continuity</code></small>
+* [[Fuel EV Charging Refueling Access Continuity]] <small><code>domain.fuel-ev-charging-refueling-access-continuity</code></small>
+* [[Fuel Thermal Energy Service Continuity]] <small><code>domain.fuel-thermal-energy-service-continuity</code></small>
+* [[Green Blue Infrastructure Urban Nature Cooling]] <small><code>domain.green-blue-infrastructure-urban-nature-cooling</code></small>
+* [[Grid Scale Energy Storage Flexibility Continuity]] <small><code>domain.grid-scale-energy-storage-flexibility-continuity</code></small>
+* [[Grocery Retail Food Store Access Continuity]] <small><code>domain.grocery-retail-food-store-access-continuity</code></small>
+* [[Harmful Algal Bloom Cyanotoxin Water Recreation Continuity]] <small><code>domain.harmful-algal-bloom-cyanotoxin-water-recreation-continuity</code></small>
+* [[Hazardous Energy Lockout Tagout Continuity]] <small><code>domain.hazardous-energy-lockout-tagout-continuity</code></small>
+* [[Hazardous Materials Transportation ERG Continuity]] <small><code>domain.hazardous-materials-transportation-erg-continuity</code></small>
+* [[Hazmat Incident Command Emergency Response Continuity]] <small><code>domain.hazmat-incident-command-emergency-response-continuity</code></small>
+* [[Health Insurance Enrollment Renewal Continuity]] <small><code>domain.health-insurance-enrollment-renewal-continuity</code></small>
+* [[Home Access Lock Key Entry Continuity]] <small><code>domain.home-access-lock-key-entry-continuity</code></small>
+* [[Home Care Task Coordination Care Plan Continuity]] <small><code>domain.home-care-task-coordination-care-plan-continuity</code></small>
+* [[Home Clutter Pathway Trip Fall Continuity]] <small><code>domain.home-clutter-pathway-trip-fall-continuity</code></small>
+* [[Home Delivered Meals Congregate Nutrition Services Continuity]] <small><code>domain.home-delivered-meals-congregate-nutrition-services-continuity</code></small>
+* [[Home Health Hospice Palliative Care Continuity]] <small><code>domain.home-health-hospice-palliative-care-continuity</code></small>
+* [[Home Heating Equipment Chimney Vent Maintenance Continuity]] <small><code>domain.home-heating-equipment-chimney-vent-maintenance-continuity</code></small>
+* [[Home Humidity Dehumidifier Moisture Control Continuity]] <small><code>domain.home-humidity-dehumidifier-moisture-control-continuity</code></small>
+* [[Home Lighting Nighttime Pathway Visibility Continuity]] <small><code>domain.home-lighting-nighttime-pathway-visibility-continuity</code></small>
+* [[Home Network Router IoT Security Continuity]] <small><code>domain.home-network-router-iot-security-continuity</code></small>
+* [[Home Office Workstation Ergonomics Continuity]] <small><code>domain.home-office-workstation-ergonomics-continuity</code></small>
+* [[Home Refrigeration Food Storage Continuity]] <small><code>domain.home-refrigeration-food-storage-continuity</code></small>
+* [[Home Service Provider Emergency Contact Directory Continuity]] <small><code>domain.home-service-provider-emergency-contact-directory-continuity</code></small>
+* [[Home Sharps Medical Waste Disposal Continuity]] <small><code>domain.home-sharps-medical-waste-disposal-continuity</code></small>
+* [[Home Shelving Cabinet Storage Stability Continuity]] <small><code>domain.home-shelving-cabinet-storage-stability-continuity</code></small>
+* [[Home Utility Shutoff Location Labeling Continuity]] <small><code>domain.home-utility-shutoff-location-labeling-continuity</code></small>
+* [[Home Water Valve Plumbing Labeling Continuity]] <small><code>domain.home-water-valve-plumbing-labeling-continuity</code></small>
+* [[Homelessness Unsheltered Health Continuity]] <small><code>domain.homelessness-unsheltered-health-continuity</code></small>
+* [[Household Appliance Maintenance Repair Continuity]] <small><code>domain.household-appliance-maintenance-repair-continuity</code></small>
+* [[Household Circuit Breaker Panel Labeling Continuity]] <small><code>domain.household-circuit-breaker-panel-labeling-continuity</code></small>
+* [[Household Cleaning Disinfection Pest Control Continuity]] <small><code>domain.household-cleaning-disinfection-pest-control-continuity</code></small>
+* [[Household Cord Cable Trip Entanglement Continuity]] <small><code>domain.household-cord-cable-trip-entanglement-continuity</code></small>
+* [[Household Dust Allergen Source Control Continuity]] <small><code>domain.household-dust-allergen-source-control-continuity</code></small>
+* [[Household Emergency Preparedness Resilience]] <small><code>domain.household-emergency-preparedness-resilience</code></small>
+* [[Household Hazardous Waste Chemical Disposal Continuity]] <small><code>domain.household-hazardous-waste-chemical-disposal-continuity</code></small>
+* [[Household Ladder Step Stool Reach Task Continuity]] <small><code>domain.household-ladder-step-stool-reach-task-continuity</code></small>
+* [[Household Maintenance Repair Contractor Continuity]] <small><code>domain.household-maintenance-repair-contractor-continuity</code></small>
+* [[Household Operating Map Handoff Continuity]] <small><code>domain.household-operating-map-handoff-continuity</code></small>
+* [[Household Poison Storage Child Resistant Packaging Continuity]] <small><code>domain.household-poison-storage-child-resistant-packaging-continuity</code></small>
+* [[Household VOC Fragrance Product Emission Continuity]] <small><code>domain.household-voc-fragrance-product-emission-continuity</code></small>
+* [[Household Water Treatment Filter Maintenance Continuity]] <small><code>domain.household-water-treatment-filter-maintenance-continuity</code></small>
+* [[Housing Built Environment Stability]] <small><code>domain.housing-built-environment-stability</code></small>
+* [[Housing Habitability Inspection Code Enforcement Continuity]] <small><code>domain.housing-habitability-inspection-code-enforcement-continuity</code></small>
+* [[Hurricane Storm Surge Evacuation Shelter Continuity]] <small><code>domain.hurricane-storm-surge-evacuation-shelter-continuity</code></small>
+* [[Incontinence Absorbent Product Supply Dignity Continuity]] <small><code>domain.incontinence-absorbent-product-supply-dignity-continuity</code></small>
+* [[Infant Formula Baby Food Supply Safety Continuity]] <small><code>domain.infant-formula-baby-food-supply-safety-continuity</code></small>
+* [[Insurance Risk Transfer]] <small><code>domain.insurance-risk-transfer</code></small>
+* [[Insurance Underwriting Algorithmic Risk Scoring Continuity]] <small><code>domain.insurance-underwriting-algorithmic-risk-scoring-continuity</code></small>
+* [[Isolation Quarantine Work School Continuity]] <small><code>domain.isolation-quarantine-work-school-continuity</code></small>
+* [[Juvenile Justice Reentry Aftercare Continuity]] <small><code>domain.juvenile-justice-reentry-aftercare-continuity</code></small>
+* [[Labor Rights Workplace Protection]] <small><code>domain.labor-rights-workplace-protection</code></small>
+* [[Landscaping Horticulture Worker Equipment Injury Continuity]] <small><code>domain.landscaping-horticulture-worker-equipment-injury-continuity</code></small>
+* [[Landslide Mudslide Debris Flow Warning Continuity]] <small><code>domain.landslide-mudslide-debris-flow-warning-continuity</code></small>
+* [[Large Load Grid Interconnection Transmission Continuity]] <small><code>domain.large-load-grid-interconnection-transmission-continuity</code></small>
+* [[Lead Service Line Lead Copper Drinking Water Continuity]] <small><code>domain.lead-service-line-lead-copper-drinking-water-continuity</code></small>
+* [[Legal Identity Civil Registration]] <small><code>domain.legal-identity-civil-registration</code></small>
+* [[Lice Scabies School Shelter Infestation Continuity]] <small><code>domain.lice-scabies-school-shelter-infestation-continuity</code></small>
+* [[Life Insurance Beneficiary Claim Continuity]] <small><code>domain.life-insurance-beneficiary-claim-continuity</code></small>
+* [[Long Term Digital Preservation Format Migration]] <small><code>domain.long-term-digital-preservation-format-migration</code></small>
+* [[ME/CFS Post-Exertional Energy Limitation Continuity]] <small><code>domain.me-cfs-post-exertional-energy-limitation-continuity</code></small>
+* [[Macroeconomic Monetary Fiscal Stability]] <small><code>domain.macroeconomic-monetary-fiscal-stability</code></small>
+* [[Manufactured Housing Park Tenure Safety Continuity]] <small><code>domain.manufactured-housing-park-tenure-safety-continuity</code></small>
+* [[Medical ID Allergy Critical Alert Continuity]] <small><code>domain.medical-id-allergy-critical-alert-continuity</code></small>
+* [[Medicare Enrollment Coverage Transition Continuity]] <small><code>domain.medicare-enrollment-coverage-transition-continuity</code></small>
+* [[Medication List Implant Device Emergency Continuity]] <small><code>domain.medication-list-implant-device-emergency-continuity</code></small>
+* [[Migrant Seasonal Farmworker Health Housing Continuity]] <small><code>domain.migrant-seasonal-farmworker-health-housing-continuity</code></small>
+* [[Migration Displacement Humanitarian Continuity]] <small><code>domain.migration-displacement-humanitarian-continuity</code></small>
+* [[Motion Sickness Transport Virtual Environment Tolerance Continuity]] <small><code>domain.motion-sickness-transport-virtual-environment-tolerance-continuity</code></small>
+* [[Mycotoxin Food Crop Storage Safety Continuity]] <small><code>domain.mycotoxin-food-crop-storage-safety-continuity</code></small>
+* [[Obstetric Emergency Hemorrhage Hypertension Continuity]] <small><code>domain.obstetric-emergency-hemorrhage-hypertension-continuity</code></small>
+* [[Occupational Electrical Shock Arc Flash Continuity]] <small><code>domain.occupational-electrical-shock-arc-flash-continuity</code></small>
+* [[Older Adult Caregiver Disaster Preparedness Continuity]] <small><code>domain.older-adult-caregiver-disaster-preparedness-continuity</code></small>
+* [[Peacebuilding Conflict Prevention Social Cohesion]] <small><code>domain.peacebuilding-conflict-prevention-social-cohesion</code></small>
+* [[Pet Disaster Evacuation Sheltering Continuity]] <small><code>domain.pet-disaster-evacuation-sheltering-continuity</code></small>
+* [[Pet Food Medication Supply Safety Continuity]] <small><code>domain.pet-food-medication-supply-safety-continuity</code></small>
+* [[Poisonous Plant Childcare Household Exposure Continuity]] <small><code>domain.poisonous-plant-childcare-household-exposure-continuity</code></small>
+* [[Post Flood Mold Moisture Indoor Recovery Continuity]] <small><code>domain.post-flood-mold-moisture-indoor-recovery-continuity</code></small>
+* [[Prepared Food Restaurant Cafeteria Safety Access Continuity]] <small><code>domain.prepared-food-restaurant-cafeteria-safety-access-continuity</code></small>
+* [[Preterm Birth NICU Discharge Transition Continuity]] <small><code>domain.preterm-birth-nicu-discharge-transition-continuity</code></small>
+* [[Private Well Water Testing Treatment Continuity]] <small><code>domain.private-well-water-testing-treatment-continuity</code></small>
+* [[Psychosis Reality Testing Community Continuity]] <small><code>domain.psychosis-reality-testing-community-continuity</code></small>
+* [[Public Service Design Accessibility]] <small><code>domain.public-service-design-accessibility</code></small>
+* [[Public Transit Service Operations Continuity]] <small><code>domain.public-transit-service-operations-continuity</code></small>
+* [[Recreational Water Illness Beach Lake Access Continuity]] <small><code>domain.recreational-water-illness-beach-lake-access-continuity</code></small>
+* [[Rental Lease Tenancy Rights Continuity]] <small><code>domain.rental-lease-tenancy-rights-continuity</code></small>
+* [[Residential Electrical Wiring Outlet Safety Continuity]] <small><code>domain.residential-electrical-wiring-outlet-safety-continuity</code></small>
+* [[Restorative Justice Repair Accountability Continuity]] <small><code>domain.restorative-justice-repair-accountability-continuity</code></small>
+* [[Ritual Ceremony Life Transition Continuity]] <small><code>domain.ritual-ceremony-life-transition-continuity</code></small>
+* [[River and Flash Flood Warning Evacuation Continuity]] <small><code>domain.river-flash-flood-warning-evacuation-continuity</code></small>
+* [[Runaway Homeless Youth Outreach Shelter Continuity]] <small><code>domain.runaway-homeless-youth-outreach-shelter-continuity</code></small>
+* [[Rural Health Access Geographic Equity]] <small><code>domain.rural-health-access-geographic-equity</code></small>
+* [[SNAP EBT Redemption Retailer Payment Continuity]] <small><code>domain.snap-ebt-redemption-retailer-payment-continuity</code></small>
+* [[School Climate Bullying Violence Prevention Continuity]] <small><code>domain.school-climate-bullying-violence-prevention-continuity</code></small>
+* [[School Discipline Exclusion Restraint Continuity]] <small><code>domain.school-discipline-exclusion-restraint-continuity</code></small>
+* [[School Enrollment Attendance Continuity]] <small><code>domain.school-enrollment-attendance-continuity</code></small>
+* [[School Health Services Chronic Condition Continuity]] <small><code>domain.school-health-services-chronic-condition-continuity</code></small>
+* [[School Meal Debt Unpaid Balance Stigma Continuity]] <small><code>domain.school-meal-debt-unpaid-balance-stigma-continuity</code></small>
+* [[School Meals Nutrition Access Continuity]] <small><code>domain.school-meals-nutrition-access-continuity</code></small>
+* [[School Mental Health Counseling Support Continuity]] <small><code>domain.school-mental-health-counseling-support-continuity</code></small>
+* [[School Transportation Safe Routes Continuity]] <small><code>domain.school-transportation-safe-routes-continuity</code></small>
+* [[School Workplace Outbreak Operations Continuity]] <small><code>domain.school-workplace-outbreak-operations-continuity</code></small>
+* [[Self Represented Litigant Court Self-Help Continuity]] <small><code>domain.self-represented-litigant-court-self-help-continuity</code></small>
+* [[Shellfish Biotoxin Harmful Algal Bloom Food Continuity]] <small><code>domain.shellfish-biotoxin-harmful-algal-bloom-food-continuity</code></small>
+* [[Smoke Alarm Home Fire Escape Readiness Continuity]] <small><code>domain.smoke-alarm-home-fire-escape-readiness-continuity</code></small>
+* [[Social Determinants Community Vulnerability]] <small><code>domain.social-determinants-community-vulnerability</code></small>
+* [[Social Prescribing Community Referral Continuity]] <small><code>domain.social-prescribing-community-referral-continuity</code></small>
+* [[Social Protection Benefits Delivery]] <small><code>domain.social-protection-benefits-delivery</code></small>
+* [[Soil Health Land Degradation Drought Resilience]] <small><code>domain.soil-health-land-degradation-drought-resilience</code></small>
+* [[Space Weather and Geomagnetic Storm Resilience]] <small><code>domain.space-weather-geomagnetic-storm-resilience</code></small>
+* [[Special Diet Allergy School Meal Accommodation Continuity]] <small><code>domain.special-diet-allergy-school-meal-accommodation-continuity</code></small>
+* [[Storm Drain Catch Basin Local Flooding Continuity]] <small><code>domain.storm-drain-catch-basin-local-flooding-continuity</code></small>
+* [[Summer EBT / SUN Bucks School Break Food Continuity]] <small><code>domain.summer-ebt-sun-bucks-school-break-food-continuity</code></small>
+* [[Summer Food Service Program Site Access Continuity]] <small><code>domain.summer-food-service-program-site-access-continuity</code></small>
+* [[Supply Chain Continuity]] <small><code>domain.supply-chain-continuity</code></small>
+* [[Telecommunications Network Resilience Continuity]] <small><code>domain.telecommunications-network-resilience-continuity</code></small>
+* [[Territorial Island Health Infrastructure Access Continuity]] <small><code>domain.territorial-island-health-infrastructure-access-continuity</code></small>
+* [[Third Party Reproduction Surrogacy Donor Legal Ethics Continuity]] <small><code>domain.third-party-reproduction-surrogacy-donor-legal-ethics-continuity</code></small>
+* [[Tornado Warning Safe Room Shelter Continuity]] <small><code>domain.tornado-warning-safe-room-shelter-continuity</code></small>
+* [[Transit Fare Payment Toll Account Continuity]] <small><code>domain.transit-fare-payment-toll-account-continuity</code></small>
+* [[Transition Age Youth Mental Health Service Continuity]] <small><code>domain.transition-age-youth-mental-health-service-continuity</code></small>
+* [[Transportation Access Mobility]] <small><code>domain.transportation-access-mobility</code></small>
+* [[Tsunami Warning and Coastal Evacuation Continuity]] <small><code>domain.tsunami-warning-coastal-evacuation-continuity</code></small>
+* [[Undersea Cable Internet Backbone Continuity]] <small><code>domain.undersea-cable-internet-backbone-continuity</code></small>
+* [[Unemployment Insurance Wage Record Continuity]] <small><code>domain.unemployment-insurance-wage-record-continuity</code></small>
+* [[Urban Planning Land Use Zoning Resilience]] <small><code>domain.urban-planning-land-use-zoning-resilience</code></small>
+* [[Utility Affordability Shutoff Protection Continuity]] <small><code>domain.utility-affordability-shutoff-protection-continuity</code></small>
+* [[Volcanic Ashfall and Geohazard Continuity]] <small><code>domain.volcanic-ashfall-geohazard-continuity</code></small>
+* [[Volunteering Civic Service Participation Continuity]] <small><code>domain.volunteering-civic-service-participation-continuity</code></small>
+* [[Wastewater Pathogen Surveillance Early Warning Continuity]] <small><code>domain.wastewater-pathogen-surveillance-early-warning-continuity</code></small>
+* [[Water Resources Hydrology Flood Drought Management]] <small><code>domain.water-resources-hydrology-flood-drought-management</code></small>
+* [[Water Sanitation Hygiene Continuity]] <small><code>domain.water-sanitation-hygiene-continuity</code></small>
+* [[Water Wastewater Utility Service Continuity]] <small><code>domain.water-wastewater-utility-service-continuity</code></small>
+* [[Weather Climate Observation Forecasting]] <small><code>domain.weather-climate-observation-forecasting</code></small>
+* [[Wildfire Landscape Fire Resilience]] <small><code>domain.wildfire-landscape-fire-resilience</code></small>
+* [[Winter Storm Cold Exposure Power Continuity]] <small><code>domain.winter-storm-cold-exposure-power-continuity</code></small>
+* [[Workforce Employment Services]] <small><code>domain.workforce-employment-services</code></small>
+* [[Workplace Fall Protection Height Safety Continuity]] <small><code>domain.workplace-fall-protection-height-safety-continuity</code></small>
+* [[survivor-safe-housing-emergency-transfer-continuity]] <small><code>domain.survivor-safe-housing-emergency-transfer-continuity</code></small>
+* [[工作场所合理便利与复工连续性]] <small><code>domain.workplace-accommodation-return-to-work-continuity</code></small>
+* [[巨灾风暴野火地震保险与保障缺口连续性]] <small><code>domain.catastrophe-wind-wildfire-earthquake-insurance-continuity</code></small>
+* [[房主租客财产保险与理赔连续性]] <small><code>domain.homeowners-renters-property-insurance-claims-continuity</code></small>
+* [[支付卡争议、错误交易与未授权扣款连续性]] <small><code>domain.payment-card-dispute-unauthorized-charge-continuity</code></small>
+* [[旅行保险、行程保障与理赔连续性]] <small><code>domain.travel-insurance-trip-protection-claims-continuity</code></small>
+* [[残障收入保险与理赔连续性]] <small><code>domain.disability-income-insurance-claim-continuity</code></small>
+* [[汽车保险、责任碰撞与理赔连续性]] <small><code>domain.auto-insurance-liability-collision-claims-continuity</code></small>
+* [[洪水保险、NFIP 与理赔连续性]] <small><code>domain.flood-insurance-nfip-claims-continuity</code></small>
+* [[消费品保修、服务合同与维修连续性]] <small><code>domain.consumer-warranty-service-contract-repair-continuity</code></small>
+* [[银行账户、存款保险与账户访问连续性]] <small><code>domain.banking-deposit-account-access-continuity</code></small>
+== C6 研究域（333） ==
+
+局部可能性解锁层：解除具体疾病、流程、服务、家庭或社区阻塞。
+
+* [[API Platform Dependency Runtime Continuity]] <small><code>domain.api-platform-dependency-runtime-continuity</code></small>
+* [[ATV Off Highway Vehicle Injury Prevention Continuity]] <small><code>domain.atv-off-highway-vehicle-injury-prevention-continuity</code></small>
+* [[Academic Advising Degree Progress Continuity]] <small><code>domain.academic-advising-degree-progress-continuity</code></small>
+* [[Advance Care Planning Medical Decision Continuity]] <small><code>domain.advance-care-planning-medical-decision-continuity</code></small>
+* [[After Hours Urgent Care Triage Continuity]] <small><code>domain.after-hours-urgent-care-triage-continuity</code></small>
+* [[Afterschool Snack Supper Meal Continuity]] <small><code>domain.afterschool-snack-supper-meal-continuity</code></small>
+* [[Alcohol Use Risk Reduction Continuity]] <small><code>domain.alcohol-use-risk-reduction-continuity</code></small>
+* [[Alert Fatigue Interruption Signal Management Continuity]] <small><code>domain.alert-fatigue-interruption-signal-management-continuity</code></small>
+* [[Ambulatory Procedure Surgery Center Continuity]] <small><code>domain.ambulatory-procedure-surgery-center-continuity</code></small>
+* [[Animal Health Zoonotic Interface One Health]] <small><code>domain.animal-health-zoonotic-interface-one-health</code></small>
+* [[Animal Shelter Rescue Rehoming Continuity]] <small><code>domain.animal-shelter-rescue-rehoming-continuity</code></small>
+* [[Animal Welfare Cruelty Reporting Continuity]] <small><code>domain.animal-welfare-cruelty-reporting-continuity</code></small>
+* [[Anxiety Stress Threat Regulation Continuity]] <small><code>domain.anxiety-stress-threat-regulation-continuity</code></small>
+* [[Appointment Availability Wait Time Continuity]] <small><code>domain.appointment-availability-wait-time-continuity</code></small>
+* [[Arts Creative Expression Participation Continuity]] <small><code>domain.arts-creative-expression-participation-continuity</code></small>
+* [[Autoimmune Rheumatic Disease Inflammatory Burden Continuity]] <small><code>domain.autoimmune-rheumatic-disease-inflammatory-burden-continuity</code></small>
+* [[BPPV Positional Vertigo Continuity]] <small><code>domain.bppv-positional-vertigo-continuity</code></small>
+* [[Backup Power Battery Generator Safety Continuity]] <small><code>domain.backup-power-battery-generator-safety-continuity</code></small>
+* [[Bathroom Bathing Toileting Transfer Fall Safety Continuity]] <small><code>domain.bathroom-bathing-toileting-transfer-fall-safety-continuity</code></small>
+* [[Battery Thermal Runaway Fire Hazard Continuity]] <small><code>domain.battery-thermal-runaway-fire-hazard-continuity</code></small>
+* [[Bedroom Bed Transfer Entrapment Safety Continuity]] <small><code>domain.bedroom-bed-transfer-entrapment-safety-continuity</code></small>
+* [[Benign Prostatic Hyperplasia and LUTS Continuity]] <small><code>domain.benign-prostatic-hyperplasia-luts-continuity</code></small>
+* [[Bereavement Leave Grief Support Continuity]] <small><code>domain.bereavement-leave-grief-support-continuity</code></small>
+* [[Bicycle Helmet Wheeled Sports Head Injury Prevention Continuity]] <small><code>domain.bicycle-helmet-wheeled-sports-head-injury-prevention-continuity</code></small>
+* [[Biometric Identifier Template Governance Continuity]] <small><code>domain.biometric-identifier-template-governance-continuity</code></small>
+* [[Biomolecular Condensates Phase Separation Stress Adaptation Continuity]] <small><code>domain.biomolecular-condensates-phase-separation-stress-adaptation-continuity</code></small>
+* [[Bipolar Mood Episode Stability Continuity]] <small><code>domain.bipolar-mood-episode-stability-continuity</code></small>
+* [[Building Fire Life Safety Codes]] <small><code>domain.building-fire-life-safety-codes</code></small>
+* [[Calendar Scheduling Appointment Continuity]] <small><code>domain.calendar-scheduling-appointment-continuity</code></small>
+* [[Campus Basic Needs Student Support Continuity]] <small><code>domain.campus-basic-needs-student-support-continuity</code></small>
+* [[Campus Disability Accommodations Accessibility Continuity]] <small><code>domain.campus-disability-accommodations-accessibility-continuity</code></small>
+* [[Campus Mental Health Crisis Student Support Continuity]] <small><code>domain.campus-mental-health-crisis-student-support-continuity</code></small>
+* [[Campus Safety Title IX Clery Continuity]] <small><code>domain.campus-safety-title-ix-clery-continuity</code></small>
+* [[Carbon Monoxide Alarm Combustion Appliance Safety Continuity]] <small><code>domain.carbon-monoxide-alarm-combustion-appliance-safety-continuity</code></small>
+* [[Cardiac Arrest CPR Defibrillation Continuity]] <small><code>domain.cardiac-arrest-cpr-defibrillation-continuity</code></small>
+* [[Cardiac Arrhythmia Syncope Decompensation Continuity]] <small><code>domain.cardiac-arrhythmia-syncope-decompensation-continuity</code></small>
+* [[Caregiving Long Term Care]] <small><code>domain.caregiving-long-term-care</code></small>
+* [[Cemetery Memorial Remains Location Continuity]] <small><code>domain.cemetery-memorial-remains-location-continuity</code></small>
+* [[Chemical Release Shelter Evacuation Continuity]] <small><code>domain.chemical-release-shelter-evacuation-continuity</code></small>
+* [[Chemical Safety Poison Control Toxicology]] <small><code>domain.chemical-safety-poison-control-toxicology</code></small>
+* [[Child Care Availability Affordability Continuity]] <small><code>domain.child-care-availability-affordability-continuity</code></small>
+* [[Child Care Licensing Health Safety Continuity]] <small><code>domain.child-care-licensing-health-safety-continuity</code></small>
+* [[Child Passenger Safety Car Seat Restraint Continuity]] <small><code>domain.child-passenger-safety-car-seat-restraint-continuity</code></small>
+* [[Child Protection Family Safety]] <small><code>domain.child-protection-family-safety</code></small>
+* [[Child Stealth Advertising Influencer Marketing Continuity]] <small><code>domain.child-stealth-advertising-influencer-marketing-continuity</code></small>
+* [[Childcare Family Continuity]] <small><code>domain.childcare-family-continuity</code></small>
+* [[Children Youth Special Health Care Needs Care Coordination Continuity]] <small><code>domain.children-youth-special-health-care-needs-care-coordination-continuity</code></small>
+* [[Chip Design EDA Verification IP Continuity]] <small><code>domain.chip-design-eda-verification-ip-continuity</code></small>
+* [[Chronic Infectious Disease Care Continuity]] <small><code>domain.chronic-infectious-disease-care-continuity</code></small>
+* [[Chronic Insomnia CBTI Access Continuity]] <small><code>domain.chronic-insomnia-cbti-access-continuity</code></small>
+* [[Circadian Rhythm Sleep Wake Disorder Continuity]] <small><code>domain.circadian-rhythm-sleep-wake-disorder-continuity</code></small>
+* [[Citizenship Nationality Statelessness Continuity]] <small><code>domain.citizenship-nationality-statelessness-continuity</code></small>
+* [[Civil Commitment Involuntary Treatment Rights Continuity]] <small><code>domain.civil-commitment-involuntary-treatment-rights-continuity</code></small>
+* [[Claims Adjudication EOB Denial Continuity]] <small><code>domain.claims-adjudication-eob-denial-continuity</code></small>
+* [[Clinical Results Notification Followup Continuity]] <small><code>domain.clinical-results-notification-followup-continuity</code></small>
+* [[Clonal Hematopoiesis CHIP Inflammatory Risk Continuity]] <small><code>domain.clonal-hematopoiesis-chip-inflammatory-risk-continuity</code></small>
+* [[Collaborative Document Permission Version Continuity]] <small><code>domain.collaborative-document-permission-version-continuity</code></small>
+* [[Commercial Surveillance Adtech Profile Continuity]] <small><code>domain.commercial-surveillance-adtech-profile-continuity</code></small>
+* [[Compression Garment Lymphedema Venous Continuity]] <small><code>domain.compression-garment-lymphedema-venous-continuity</code></small>
+* [[Confined Space Entry Atmospheric Hazard Continuity]] <small><code>domain.confined-space-entry-atmospheric-hazard-continuity</code></small>
+* [[Contraception Family Planning Access Continuity]] <small><code>domain.contraception-family-planning-access-continuity</code></small>
+* [[Contributor Role, Authorship and Attribution Continuity]] <small><code>domain.contributor-role-authorship-attribution-continuity</code></small>
+* [[Cooking Meal Preparation Kitchen Safety Continuity]] <small><code>domain.cooking-meal-preparation-kitchen-safety-continuity</code></small>
+* [[Copyright Authorship Registration Licensing Continuity]] <small><code>domain.copyright-authorship-registration-licensing-continuity</code></small>
+* [[Crane Derrick Hoist Rigging Suspended Load Continuity]] <small><code>domain.crane-derrick-hoist-rigging-suspended-load-continuity</code></small>
+* [[Creative Commons Open Content License Continuity]] <small><code>domain.creative-commons-open-content-license-continuity</code></small>
+* [[Credit Consumer Reporting Access Continuity]] <small><code>domain.credit-consumer-reporting-access-continuity</code></small>
+* [[Criminal Record Relief Collateral Consequences Continuity]] <small><code>domain.criminal-record-relief-collateral-consequences-continuity</code></small>
+* [[Cyberbullying Online Harassment Reporting Continuity]] <small><code>domain.cyberbullying-online-harassment-reporting-continuity</code></small>
+* [[DMCA Notice Counter Notice Platform Removal Continuity]] <small><code>domain.dmca-notice-counter-notice-platform-removal-continuity</code></small>
+* [[Death Certificate Registration Cause Of Death Record Continuity]] <small><code>domain.death-certificate-registration-cause-of-death-record-continuity</code></small>
+* [[Decontamination Exposure Triage Continuity]] <small><code>domain.decontamination-exposure-triage-continuity</code></small>
+* [[Demolition Structural Collapse Debris Continuity]] <small><code>domain.demolition-structural-collapse-debris-continuity</code></small>
+* [[Depression Mood Disorder Functioning Continuity]] <small><code>domain.depression-mood-disorder-functioning-continuity</code></small>
+* [[Detention Custody Confinement Status Continuity]] <small><code>domain.detention-custody-confinement-status-continuity</code></small>
+* [[Diagnostic Imaging Order Scheduling Report Continuity]] <small><code>domain.diagnostic-imaging-order-scheduling-report-continuity</code></small>
+* [[Dignity Personhood Respect Continuity]] <small><code>domain.dignity-personhood-respect-continuity</code></small>
+* [[Disability Services Independent Living]] <small><code>domain.disability-services-independent-living</code></small>
+* [[Document Capture OCR PDF Record Workflow Continuity]] <small><code>domain.document-capture-ocr-pdf-record-workflow-continuity</code></small>
+* [[Domain DNS Web Presence Continuity]] <small><code>domain.domain-dns-web-presence-continuity</code></small>
+* [[Durable Medical Equipment Supplier Repair Continuity]] <small><code>domain.durable-medical-equipment-supplier-repair-continuity</code></small>
+* [[E Waste Battery Recycling Disposal Continuity]] <small><code>domain.e-waste-battery-recycling-disposal-continuity</code></small>
+* [[ECMO Extracorporeal Life Support Continuity]] <small><code>domain.ecmo-extracorporeal-life-support-continuity</code></small>
+* [[Early Intervention IDEA Part C Developmental Services Continuity]] <small><code>domain.early-intervention-idea-part-c-developmental-services-continuity</code></small>
+* [[Eating Disorders Nutrition Body Continuity]] <small><code>domain.eating-disorders-nutrition-body-continuity</code></small>
+* [[Eczema, Atopic Dermatitis, Itch and Sleep Continuity]] <small><code>domain.eczema-atopic-dermatitis-itch-sleep-continuity</code></small>
+* [[Email Account Recovery Continuity]] <small><code>domain.email-account-recovery-continuity</code></small>
+* [[Email Domain Authentication Spoofing Continuity]] <small><code>domain.email-domain-authentication-spoofing-continuity</code></small>
+* [[Enteral Feeding Tube Nutrition Continuity]] <small><code>domain.enteral-feeding-tube-nutrition-continuity</code></small>
+* [[Epigenetic Editing Gene Regulation Therapeutics]] <small><code>domain.epigenetic-editing-gene-regulation-therapeutics</code></small>
+* [[Esophageal Dysphagia Motility Obstruction Continuity]] <small><code>domain.esophageal-dysphagia-motility-obstruction-continuity</code></small>
+* [[Estate Inventory Asset Liability Handoff Continuity]] <small><code>domain.estate-inventory-asset-liability-handoff-continuity</code></small>
+* [[Extracellular Vesicle SASP Intercellular Aging Continuity]] <small><code>domain.extracellular-vesicle-sasp-intercellular-aging-continuity</code></small>
+* [[Fatigue Risk Alertness Continuity]] <small><code>domain.fatigue-risk-alertness-continuity</code></small>
+* [[Feeding Assistance Mealtime Dignity Continuity]] <small><code>domain.feeding-assistance-mealtime-dignity-continuity</code></small>
+* [[Firearm Safe Storage Injury Prevention Continuity]] <small><code>domain.firearm-safe-storage-injury-prevention-continuity</code></small>
+* [[Foster Care Aging Out Independent Living Continuity]] <small><code>domain.foster-care-aging-out-independent-living-continuity</code></small>
+* [[Fraud Scams Consumer Protection]] <small><code>domain.fraud-scams-consumer-protection</code></small>
+* [[Funeral Cremation Burial Disposition Continuity]] <small><code>domain.funeral-cremation-burial-disposition-continuity</code></small>
+* [[Furniture TV Tip Over Anchoring Child Safety Continuity]] <small><code>domain.furniture-tv-tip-over-anchoring-child-safety-continuity</code></small>
+* [[Gaming Loot Box Inapp Purchase Dark Pattern Continuity]] <small><code>domain.gaming-loot-box-inapp-purchase-dark-pattern-continuity</code></small>
+* [[Gene Therapy Genome Editing Delivery Safety]] <small><code>domain.gene-therapy-genome-editing-delivery-safety</code></small>
+* [[Glaucoma Visual Field Protection Continuity]] <small><code>domain.glaucoma-visual-field-protection-continuity</code></small>
+* [[Governance And Rights]] <small><code>domain.governance-rights</code></small>
+* [[HAZWOPER Responder PPE Safety Continuity]] <small><code>domain.hazwoper-responder-ppe-safety-continuity</code></small>
+* [[HIV Testing PrEP Prevention Continuity]] <small><code>domain.hiv-testing-prep-prevention-continuity</code></small>
+* [[Handoff Checklist Procedure Reliability Continuity]] <small><code>domain.handoff-checklist-procedure-reliability-continuity</code></small>
+* [[Head Start Early Head Start Family Support Continuity]] <small><code>domain.head-start-early-head-start-family-support-continuity</code></small>
+* [[Health Economics Value Assessment]] <small><code>domain.health-economics-value-assessment</code></small>
+* [[Human Animal Bond Companion Care Continuity]] <small><code>domain.human-animal-bond-companion-care-continuity</code></small>
+* [[Human Factors Ergonomics Task System Continuity]] <small><code>domain.human-factors-ergonomics-task-system-continuity</code></small>
+* [[Hypertension Detection Control Continuity]] <small><code>domain.hypertension-detection-control-continuity</code></small>
+* [[Idiopathic Hypersomnia Excessive Sleepiness Continuity]] <small><code>domain.idiopathic-hypersomnia-excessive-sleepiness-continuity</code></small>
+* [[Illegal Dumping Litter Neighborhood Sanitation Continuity]] <small><code>domain.illegal-dumping-litter-neighborhood-sanitation-continuity</code></small>
+* [[Immigration Status Residency Work Authorization Continuity]] <small><code>domain.immigration-status-residency-work-authorization-continuity</code></small>
+* [[Income Payroll Employment Record Continuity]] <small><code>domain.income-payroll-employment-record-continuity</code></small>
+* [[Indoor Ventilation Filtration Outbreak Control Continuity]] <small><code>domain.indoor-ventilation-filtration-outbreak-control-continuity</code></small>
+* [[Industrial Process Safety Management Continuity]] <small><code>domain.industrial-process-safety-management-continuity</code></small>
+* [[Infant Safe Sleep SUID Risk Reduction Continuity]] <small><code>domain.infant-safe-sleep-suid-risk-reduction-continuity</code></small>
+* [[Inflammaging Chronic Low Grade Inflammation Continuity]] <small><code>domain.inflammaging-chronic-low-grade-inflammation-continuity</code></small>
+* [[Inflammatory Bowel Disease Digestive Continuity]] <small><code>domain.inflammatory-bowel-disease-digestive-continuity</code></small>
+* [[Information Integrity Trust]] <small><code>domain.information-integrity-trust</code></small>
+* [[Informed Consent Refusal Shared Decision Continuity]] <small><code>domain.informed-consent-refusal-shared-decision-continuity</code></small>
+* [[International Student SEVIS Status Continuity]] <small><code>domain.international-student-sevis-status-continuity</code></small>
+* [[Invasive Species Human Health Access Continuity]] <small><code>domain.invasive-species-human-health-access-continuity</code></small>
+* [[Jury Service, Summons, and Hardship Continuity]] <small><code>domain.jury-service-summons-hardship-continuity</code></small>
+* [[Laundry Clothing Footwear Hygiene Continuity]] <small><code>domain.laundry-clothing-footwear-hygiene-continuity</code></small>
+* [[Leisure Recreation Restorative Activity Continuity]] <small><code>domain.leisure-recreation-restorative-activity-continuity</code></small>
+* [[Light Exposure Circadian Environment Continuity]] <small><code>domain.light-exposure-circadian-environment-continuity</code></small>
+* [[Lipid Atherosclerosis Risk Management Continuity]] <small><code>domain.lipid-atherosclerosis-risk-management-continuity</code></small>
+* [[Loneliness Social Isolation Risk Continuity]] <small><code>domain.loneliness-social-isolation-risk-continuity</code></small>
+* [[Machine Guarding Amputation Prevention Continuity]] <small><code>domain.machine-guarding-amputation-prevention-continuity</code></small>
+* [[Male Factor Infertility Sperm Health Continuity]] <small><code>domain.male-factor-infertility-sperm-health-continuity</code></small>
+* [[Manufacturing Repair Capacity]] <small><code>domain.manufacturing-repair-capacity</code></small>
+* [[Mask Respirator Source Control Fit Access Continuity]] <small><code>domain.mask-respirator-source-control-fit-access-continuity</code></small>
+* [[Medicaid CHIP Renewal Redetermination Continuity]] <small><code>domain.medicaid-chip-renewal-redetermination-continuity</code></small>
+* [[Medical Countermeasure Stockpile Distribution Continuity]] <small><code>domain.medical-countermeasure-stockpile-distribution-continuity</code></small>
+* [[Medical Device Equipment Safety Maintenance]] <small><code>domain.medical-device-equipment-safety-maintenance</code></small>
+* [[Medical Interpreter Cultural Mediation]] <small><code>domain.medical-interpreter-cultural-mediation</code></small>
+* [[Medical Nutrition Therapy Dietitian Access Continuity]] <small><code>domain.medical-nutrition-therapy-dietitian-access-continuity</code></small>
+* [[Medical Record Access Amendment Release Continuity]] <small><code>domain.medical-record-access-amendment-release-continuity</code></small>
+* [[Medical Service Prior Authorization Utilization Management Continuity]] <small><code>domain.medical-service-prior-authorization-utilization-management-continuity</code></small>
+* [[Medically Tailored Meals Chronic Care Continuity]] <small><code>domain.medically-tailored-meals-chronic-care-continuity</code></small>
+* [[Medication Reconciliation Regimen Adherence Continuity]] <small><code>domain.medication-reconciliation-regimen-adherence-continuity</code></small>
+* [[Meeting Video Conferencing Remote Collaboration Continuity]] <small><code>domain.meeting-video-conferencing-remote-collaboration-continuity</code></small>
+* [[Meniere's Disease Episodic Vertigo Continuity]] <small><code>domain.menieres-disease-episodic-vertigo-continuity</code></small>
+* [[Menstrual Product Access Safety Continuity]] <small><code>domain.menstrual-product-access-safety-continuity</code></small>
+* [[Mental Health And Affective Stability]] <small><code>domain.mental-health-affective-stability</code></small>
+* [[Messaging Contact Graph Portability Continuity]] <small><code>domain.messaging-contact-graph-portability-continuity</code></small>
+* [[Migraine Headache Effective Time Burden]] <small><code>domain.migraine-headache-effective-time-burden</code></small>
+* [[Mosquito Bite Arbovirus Prevention Continuity]] <small><code>domain.mosquito-bite-arbovirus-prevention-continuity</code></small>
+* [[Multimodal Trip Planning Real Time Wayfinding Continuity]] <small><code>domain.multimodal-trip-planning-real-time-wayfinding-continuity</code></small>
+* [[Multimorbidity Polypharmacy Care Coordination]] <small><code>domain.multimorbidity-polypharmacy-care-coordination</code></small>
+* [[Multiple Sclerosis Demyelination Function Continuity]] <small><code>domain.multiple-sclerosis-demyelination-function-continuity</code></small>
+* [[Municipal 311 Service Request Continuity]] <small><code>domain.municipal-311-service-request-continuity</code></small>
+* [[Muscular Dystrophy Progressive Weakness Continuity]] <small><code>domain.muscular-dystrophy-progressive-weakness-continuity</code></small>
+* [[Nanomedicine Targeted Delivery Molecular Repair]] <small><code>domain.nanomedicine-targeted-delivery-molecular-repair</code></small>
+* [[Narcolepsy Daytime Sleepiness Continuity]] <small><code>domain.narcolepsy-daytime-sleepiness-continuity</code></small>
+* [[Natural Gas Propane Leak Shutoff Continuity]] <small><code>domain.natural-gas-propane-leak-shutoff-continuity</code></small>
+* [[Noise Exposure Acoustic Environment Continuity]] <small><code>domain.noise-exposure-acoustic-environment-continuity</code></small>
+* [[Occupational Exposure Industrial Hygiene]] <small><code>domain.occupational-exposure-industrial-hygiene</code></small>
+* [[Occupational Work Design]] <small><code>domain.occupational-work-design</code></small>
+* [[Official Web Domain Brand Impersonation Continuity]] <small><code>domain.official-web-domain-brand-impersonation-continuity</code></small>
+* [[Oil Spill Hazardous Release Response Recovery Continuity]] <small><code>domain.oil-spill-hazardous-release-response-recovery-continuity</code></small>
+* [[Online Child Sexual Exploitation Sextortion Reporting Continuity]] <small><code>domain.online-child-sexual-exploitation-sextortion-reporting-continuity</code></small>
+* [[Online Safety Digital Harm Prevention]] <small><code>domain.online-safety-digital-harm-prevention</code></small>
+* [[Open Source Maintainer Sustainability Continuity]] <small><code>domain.open-source-maintainer-sustainability-continuity</code></small>
+* [[Opt-Out Preference Signal Consent Revocation Continuity]] <small><code>domain.opt-out-preference-signal-consent-revocation-continuity</code></small>
+* [[Osteoarthritis Joint Function Continuity]] <small><code>domain.osteoarthritis-joint-function-continuity</code></small>
+* [[Outbreak Case Investigation Contact Tracing Continuity]] <small><code>domain.outbreak-case-investigation-contact-tracing-continuity</code></small>
+* [[Outpatient Laboratory Specimen Result Routing Continuity]] <small><code>domain.outpatient-laboratory-specimen-result-routing-continuity</code></small>
+* [[Overactive Bladder, Nocturia and Sleep Continuity]] <small><code>domain.overactive-bladder-nocturia-sleep-continuity</code></small>
+* [[Overdose Poisoning Reversal Toxicology Continuity]] <small><code>domain.overdose-poisoning-reversal-toxicology-continuity</code></small>
+* [[PKI Certificate Cryptographic Trust Continuity]] <small><code>domain.pki-certificate-cryptographic-trust-continuity</code></small>
+* [[Parasomnia Sleepwalking Behavior Safety Continuity]] <small><code>domain.parasomnia-sleepwalking-behavior-safety-continuity</code></small>
+* [[Paratransit NEMT Access Continuity]] <small><code>domain.paratransit-nemt-access-continuity</code></small>
+* [[Parking Curb Access Towing Impound Continuity]] <small><code>domain.parking-curb-access-towing-impound-continuity</code></small>
+* [[Parkinson's Disease Movement Control Continuity]] <small><code>domain.parkinsons-disease-movement-control-continuity</code></small>
+* [[Parks Recreation Green Space Access Continuity]] <small><code>domain.parks-recreation-green-space-access-continuity</code></small>
+* [[Password Manager Secret Vault Continuity]] <small><code>domain.password-manager-secret-vault-continuity</code></small>
+* [[Patent Invention Disclosure Maintenance Continuity]] <small><code>domain.patent-invention-disclosure-maintenance-continuity</code></small>
+* [[Pelvic Floor Continence Function Continuity]] <small><code>domain.pelvic-floor-continence-function-continuity</code></small>
+* [[Perimenopause Menopause Midlife Health Continuity]] <small><code>domain.perimenopause-menopause-midlife-health-continuity</code></small>
+* [[Periodontal Disease Systemic Inflammation Continuity]] <small><code>domain.periodontal-disease-systemic-inflammation-continuity</code></small>
+* [[Persistent Postural Perceptual Dizziness Continuity]] <small><code>domain.persistent-postural-perceptual-dizziness-continuity</code></small>
+* [[Pesticide Label Exposure Poison Control Continuity]] <small><code>domain.pesticide-label-exposure-poison-control-continuity</code></small>
+* [[Pet Identification Microchip Reunification Continuity]] <small><code>domain.pet-identification-microchip-reunification-continuity</code></small>
+* [[Phone Number SIM Portability Account Security Continuity]] <small><code>domain.phone-number-sim-portability-account-security-continuity</code></small>
+* [[Physical Activity Mobility]] <small><code>domain.physical-activity-mobility</code></small>
+* [[Planetary Defense and Near-Earth Object Risk]] <small><code>domain.planetary-defense-near-earth-object-risk</code></small>
+* [[Planetary Health And Environment]] <small><code>domain.planetary-health-environment</code></small>
+* [[Plasma Proteome Systemic Aging Signal Continuity]] <small><code>domain.plasma-proteome-systemic-aging-signal-continuity</code></small>
+* [[Platform Account Suspension Appeals Continuity]] <small><code>domain.platform-account-suspension-appeals-continuity</code></small>
+* [[Platform Content Moderation Notice Appeal Continuity]] <small><code>domain.platform-content-moderation-notice-appeal-continuity</code></small>
+* [[Playground Surface Equipment Fall Injury Prevention Continuity]] <small><code>domain.playground-surface-equipment-fall-injury-prevention-continuity</code></small>
+* [[Poison Ivy Oak Sumac Urushiol Exposure Continuity]] <small><code>domain.poison-ivy-oak-sumac-urushiol-exposure-continuity</code></small>
+* [[Pool Spa Barrier Drain Entrapment Safety Continuity]] <small><code>domain.pool-spa-barrier-drain-entrapment-safety-continuity</code></small>
+* [[Post Death Account Closure Service Cancellation Continuity]] <small><code>domain.post-death-account-closure-service-cancellation-continuity</code></small>
+* [[Postal Parcel Delivery Pickup Continuity]] <small><code>domain.postal-parcel-delivery-pickup-continuity</code></small>
+* [[Postpartum Care Recovery Follow Up Continuity]] <small><code>domain.postpartum-care-recovery-follow-up-continuity</code></small>
+* [[Postsecondary Admissions Transfer Articulation Continuity]] <small><code>domain.postsecondary-admissions-transfer-articulation-continuity</code></small>
+* [[Powered Industrial Truck Forklift Safety Continuity]] <small><code>domain.powered-industrial-truck-forklift-safety-continuity</code></small>
+* [[Predatory Publishing Paper Mill Detection Continuity]] <small><code>domain.predatory-publishing-paper-mill-detection-continuity</code></small>
+* [[Pregnant Parenting Youth Family Support Continuity]] <small><code>domain.pregnant-parenting-youth-family-support-continuity</code></small>
+* [[Preimplantation Genetic Testing Embryo Selection Governance Continuity]] <small><code>domain.preimplantation-genetic-testing-embryo-selection-governance-continuity</code></small>
+* [[Premise Plumbing Backflow Cross Connection Continuity]] <small><code>domain.premise-plumbing-backflow-cross-connection-continuity</code></small>
+* [[Pressure Injury Prevention, Repositioning and Support Surface Continuity]] <small><code>domain.pressure-injury-prevention-repositioning-support-surface-continuity</code></small>
+* [[Price Transparency Good Faith Estimate Continuity]] <small><code>domain.price-transparency-good-faith-estimate-continuity</code></small>
+* [[Primary Care Panel Appointment Access Continuity]] <small><code>domain.primary-care-panel-appointment-access-continuity</code></small>
+* [[Product Safety Recall Systems]] <small><code>domain.product-safety-recall-systems</code></small>
+* [[Prosthetic Limb Orthotic Fit Repair Continuity]] <small><code>domain.prosthetic-limb-orthotic-fit-repair-continuity</code></small>
+* [[Provider Directory Network Adequacy Continuity]] <small><code>domain.provider-directory-network-adequacy-continuity</code></small>
+* [[Purpose Meaning Existential Continuity]] <small><code>domain.purpose-meaning-existential-continuity</code></small>
+* [[RNA Splicing Epitranscriptomic Maintenance Continuity]] <small><code>domain.rna-splicing-epitranscriptomic-maintenance-continuity</code></small>
+* [[Rabies Exposure Bite PEP Continuity]] <small><code>domain.rabies-exposure-bite-pep-continuity</code></small>
+* [[Radon Asbestos Indoor Hazard Continuity]] <small><code>domain.radon-asbestos-indoor-hazard-continuity</code></small>
+* [[Rare Disease Diagnostic Odyssey Care Coordination]] <small><code>domain.rare-disease-diagnostic-odyssey-care-coordination</code></small>
+* [[References Vouching Recommendation Social Capital Continuity]] <small><code>domain.references-vouching-recommendation-social-capital-continuity</code></small>
+* [[Refractive Error Glasses Contact Lens Continuity]] <small><code>domain.refractive-error-glasses-contact-lens-continuity</code></small>
+* [[Refrigerated Medication Medical Device Power Outage Continuity]] <small><code>domain.refrigerated-medication-medical-device-power-outage-continuity</code></small>
+* [[Rehabilitation And Functioning]] <small><code>domain.rehabilitation-functioning</code></small>
+* [[Reminder Alarm Routine Task Continuity]] <small><code>domain.reminder-alarm-routine-task-continuity</code></small>
+* [[Replication Reproducibility Many Labs Continuity]] <small><code>domain.replication-reproducibility-many-labs-continuity</code></small>
+* [[Reptile Amphibian Backyard Poultry Salmonella Continuity]] <small><code>domain.reptile-amphibian-backyard-poultry-salmonella-continuity</code></small>
+* [[Residential Solid Waste Collection Bin Sanitation Continuity]] <small><code>domain.residential-solid-waste-collection-bin-sanitation-continuity</code></small>
+* [[Respirable Crystalline Silica Dust Worker Continuity]] <small><code>domain.respirable-crystalline-silica-dust-worker-continuity</code></small>
+* [[Respite Care Provider Capacity Scheduling Continuity]] <small><code>domain.respite-care-provider-capacity-scheduling-continuity</code></small>
+* [[Restless Legs Periodic Limb Movement Sleep Continuity]] <small><code>domain.restless-legs-periodic-limb-movement-sleep-continuity</code></small>
+* [[Retail Pharmacy Prescription Dispensing Continuity]] <small><code>domain.retail-pharmacy-prescription-dispensing-continuity</code></small>
+* [[Retinal Detachment Urgent Referral Continuity]] <small><code>domain.retinal-detachment-urgent-referral-continuity</code></small>
+* [[Retirement Pension Savings Plan Continuity]] <small><code>domain.retirement-pension-savings-plan-continuity</code></small>
+* [[Retraction Expression Concern Correction Continuity]] <small><code>domain.retraction-expression-concern-correction-continuity</code></small>
+* [[Road Traffic Injury Prevention Safe Mobility]] <small><code>domain.road-traffic-injury-prevention-safe-mobility</code></small>
+* [[Rodent Infestation Hantavirus Plague Continuity]] <small><code>domain.rodent-infestation-hantavirus-plague-continuity</code></small>
+* [[Search Index Discovery Retrieval Continuity]] <small><code>domain.search-index-discovery-retrieval-continuity</code></small>
+* [[Semiconductor Advanced Packaging Continuity]] <small><code>domain.semiconductor-advanced-packaging-continuity</code></small>
+* [[Septic System Maintenance Sewage Backup Continuity]] <small><code>domain.septic-system-maintenance-sewage-backup-continuity</code></small>
+* [[Service Animal Disability Access Continuity]] <small><code>domain.service-animal-disability-access-continuity</code></small>
+* [[Sexual Health STI Prevention Continuity]] <small><code>domain.sexual-health-sti-prevention-continuity</code></small>
+* [[Shift Work Long Hours Fatigue Continuity]] <small><code>domain.shift-work-long-hours-fatigue-continuity</code></small>
+* [[Sidewalk Curb Ramp Maintenance Access Continuity]] <small><code>domain.sidewalk-curb-ramp-maintenance-access-continuity</code></small>
+* [[Situational Awareness Decision Environment Continuity]] <small><code>domain.situational-awareness-decision-environment-continuity</code></small>
+* [[Sleep Circadian And Recovery]] <small><code>domain.sleep-circadian-recovery</code></small>
+* [[Small Claims and Civil Dispute Resolution Continuity]] <small><code>domain.small-claims-civil-dispute-resolution-continuity</code></small>
+* [[Snow Ice Sidewalk Winter Access Continuity]] <small><code>domain.snow-ice-sidewalk-winter-access-continuity</code></small>
+* [[Social Connection Relational Infra]] <small><code>domain.social-connection-relational-infra</code></small>
+* [[Space Extreme Habitation]] <small><code>domain.space-extreme-habitation</code></small>
+* [[Spinal Cord Injury Paralysis Secondary Complications Continuity]] <small><code>domain.spinal-cord-injury-paralysis-secondary-complications-continuity</code></small>
+* [[Spiritual Care Religious Practice Continuity]] <small><code>domain.spiritual-care-religious-practice-continuity</code></small>
+* [[Stairs Steps Handrail Threshold Fall Safety Continuity]] <small><code>domain.stairs-steps-handrail-threshold-fall-safety-continuity</code></small>
+* [[Street Tree Branch Hazard Shade Maintenance Continuity]] <small><code>domain.street-tree-branch-hazard-shade-maintenance-continuity</code></small>
+* [[Streetlight Outage Nighttime Visibility Continuity]] <small><code>domain.streetlight-outage-nighttime-visibility-continuity</code></small>
+* [[Stuttering Fluency Participation Continuity]] <small><code>domain.stuttering-fluency-participation-continuity</code></small>
+* [[Substance Use Treatment Recovery Continuity]] <small><code>domain.substance-use-treatment-recovery-continuity</code></small>
+* [[Suicide Crisis Response Continuity]] <small><code>domain.suicide-crisis-response-continuity</code></small>
+* [[Supported Decision Making Guardianship Rights]] <small><code>domain.supported-decision-making-guardianship-rights</code></small>
+* [[Surgical Anesthesia Perioperative Safety]] <small><code>domain.surgical-anesthesia-perioperative-safety</code></small>
+* [[Surprise Billing Balance Bill Protection Continuity]] <small><code>domain.surprise-billing-balance-bill-protection-continuity</code></small>
+* [[TANF Cash Assistance Work Support Continuity]] <small><code>domain.tanf-cash-assistance-work-support-continuity</code></small>
+* [[Tax Administration Filing Record Continuity]] <small><code>domain.tax-administration-filing-record-continuity</code></small>
+* [[Taxi Rideshare Demand Response Mobility Continuity]] <small><code>domain.taxi-rideshare-demand-response-mobility-continuity</code></small>
+* [[Texture Modified Diet Thickened Liquid Continuity]] <small><code>domain.texture-modified-diet-thickened-liquid-continuity</code></small>
+* [[Thermal Stress Sauna Cold Exposure Hormesis Governance Continuity]] <small><code>domain.thermal-stress-sauna-cold-exposure-hormesis-governance-continuity</code></small>
+* [[Thermostat Temperature Control Thermal Comfort Continuity]] <small><code>domain.thermostat-temperature-control-thermal-comfort-continuity</code></small>
+* [[Third Place Belonging Social Participation Continuity]] <small><code>domain.third-place-belonging-social-participation-continuity</code></small>
+* [[Thunderstorm Lightning Outdoor Safety Continuity]] <small><code>domain.thunderstorm-lightning-outdoor-safety-continuity</code></small>
+* [[Thymic Involution Naive T Cell Output Continuity]] <small><code>domain.thymic-involution-naive-t-cell-output-continuity</code></small>
+* [[Tick Bite Lyme Rickettsial Prevention Continuity]] <small><code>domain.tick-bite-lyme-rickettsial-prevention-continuity</code></small>
+* [[Tinnitus Sound Tolerance Sleep Continuity]] <small><code>domain.tinnitus-sound-tolerance-sleep-continuity</code></small>
+* [[Tobacco Nicotine Cessation Continuity]] <small><code>domain.tobacco-nicotine-cessation-continuity</code></small>
+* [[Tooth Loss Prosthodontic Chewing Continuity]] <small><code>domain.tooth-loss-prosthodontic-chewing-continuity</code></small>
+* [[Toxic Mushroom Foraging Poisoning Continuity]] <small><code>domain.toxic-mushroom-foraging-poisoning-continuity</code></small>
+* [[Toy Small Parts Choking Ingestion Continuity]] <small><code>domain.toy-small-parts-choking-ingestion-continuity</code></small>
+* [[Trenching Excavation Cave-In Worker Continuity]] <small><code>domain.trenching-excavation-cave-in-worker-continuity</code></small>
+* [[Tribal Health Sovereignty Service Access Continuity]] <small><code>domain.tribal-health-sovereignty-service-access-continuity</code></small>
+* [[Trust Estate Affairs Succession Continuity]] <small><code>domain.trust-estate-affairs-succession-continuity</code></small>
+* [[Ubiquitin Proteasome Protein Turnover Continuity]] <small><code>domain.ubiquitin-proteasome-protein-turnover-continuity</code></small>
+* [[Urinary Diversion, Urostomy and Supplies Continuity]] <small><code>domain.urinary-diversion-urostomy-supplies-continuity</code></small>
+* [[Urinary Retention and Bladder Emptying Continuity]] <small><code>domain.urinary-retention-bladder-emptying-continuity</code></small>
+* [[Vaccination Campaign Booster Delivery Continuity]] <small><code>domain.vaccination-campaign-booster-delivery-continuity</code></small>
+* [[Vector Borne Disease Environmental Control]] <small><code>domain.vector-borne-disease-environmental-control</code></small>
+* [[Venomous Bites Stings Envenomation Continuity]] <small><code>domain.venomous-bites-stings-envenomation-continuity</code></small>
+* [[Venous Thromboembolism Pulmonary Embolism Continuity]] <small><code>domain.venous-thromboembolism-pulmonary-embolism-continuity</code></small>
+* [[Veterinary Care Access Cost Continuity]] <small><code>domain.veterinary-care-access-cost-continuity</code></small>
+* [[Voice Call Caller ID Authentication Continuity]] <small><code>domain.voice-call-caller-id-authentication-continuity</code></small>
+* [[Walker Cane Crutch Fit Maintenance Continuity]] <small><code>domain.walker-cane-crutch-fit-maintenance-continuity</code></small>
+* [[Walking Bicycling Micromobility Continuity]] <small><code>domain.walking-bicycling-micromobility-continuity</code></small>
+* [[Waste Management Hazardous Materials Continuity]] <small><code>domain.waste-management-hazardous-materials-continuity</code></small>
+* [[Welding Cutting Brazing Fume Fire Continuity]] <small><code>domain.welding-cutting-brazing-fume-fire-continuity</code></small>
+* [[Well Child Visit Preventive Care Continuity]] <small><code>domain.well-child-visit-preventive-care-continuity</code></small>
+* [[Wheelchair Scooter Battery Repair Access Continuity]] <small><code>domain.wheelchair-scooter-battery-repair-access-continuity</code></small>
+* [[Window Covering Cord Strangulation Child Safety Continuity]] <small><code>domain.window-covering-cord-strangulation-child-safety-continuity</code></small>
+* [[Youth Online Safety By Design Platform Governance Continuity]] <small><code>domain.youth-online-safety-by-design-platform-governance-continuity</code></small>
+* [[Youth Social Media Mental Health Continuity]] <small><code>domain.youth-social-media-mental-health-continuity</code></small>
+* [[crime-victim-compensation-restitution-continuity]] <small><code>domain.crime-victim-compensation-restitution-continuity</code></small>
+* [[domestic-violence-coercive-control-safety-continuity]] <small><code>domain.domestic-violence-coercive-control-safety-continuity</code></small>
+* [[human-trafficking-victim-identification-services-continuity]] <small><code>domain.human-trafficking-victim-identification-services-continuity</code></small>
+* [[missing-persons-unidentified-remains-resolution-continuity]] <small><code>domain.missing-persons-unidentified-remains-resolution-continuity</code></small>
+* [[sexual-assault-forensic-exam-advocacy-continuity]] <small><code>domain.sexual-assault-forensic-exam-advocacy-continuity</code></small>
+* [[stalking-harassment-protection-order-continuity]] <small><code>domain.stalking-harassment-protection-order-continuity</code></small>
+* [[victim-witness-rights-notification-continuity]] <small><code>domain.victim-witness-rights-notification-continuity</code></small>
+* [[不动产权属、地契与土地记录连续性]] <small><code>domain.real-property-title-deed-record-continuity</code></small>
+* [[临时住宿与住宿接入连续性]] <small><code>domain.lodging-temporary-accommodation-access-continuity</code></small>
+* [[亲属照护、寄养、收养与儿童安置连续性]] <small><code>domain.kinship-foster-adoption-care-continuity</code></small>
+* [[价格、费用披露与垃圾费用连续性]] <small><code>domain.price-fee-disclosure-junk-fee-continuity</code></small>
+* [[信用卡循环信用、成本与还款连续性]] <small><code>domain.credit-card-revolving-credit-cost-continuity</code></small>
+* [[债务义务、催收与债务救济连续性]] <small><code>domain.debt-obligation-collection-relief-continuity</code></small>
+* [[先买后付、分期融资与平台授信连续性]] <small><code>domain.buy-now-pay-later-installment-financing-continuity</code></small>
+* [[公证、文件认证与签名连续性]] <small><code>domain.notary-document-authentication-signature-continuity</code></small>
+* [[发薪日贷款、小额高成本贷款与汽车抵押贷款连续性]] <small><code>domain.payday-small-dollar-title-loan-continuity</code></small>
+* [[合同、订阅、账单与持续同意连续性]] <small><code>domain.contract-subscription-billing-consent-continuity</code></small>
+* [[在线零售订单、发货与履约连续性]] <small><code>domain.online-retail-order-shipping-fulfillment-continuity</code></small>
+* [[地址、居住地与邮件服务连续性]] <small><code>domain.address-residency-mail-service-continuity</code></small>
+* [[学生贷款服务、还款与减免连续性]] <small><code>domain.student-loan-servicing-repayment-forgiveness-continuity</code></small>
+* [[家庭医疗假与岗位保护连续性]] <small><code>domain.family-medical-leave-job-protection-continuity</code></small>
+* [[家庭法、监护权与子女抚养连续性]] <small><code>domain.family-law-custody-child-support-continuity</code></small>
+* [[家庭照护者、喘息服务与工作连续性]] <small><code>domain.family-caregiver-respite-work-continuity</code></small>
+* [[带薪病假、家庭假与工资替代连续性]] <small><code>domain.paid-sick-family-leave-wage-replacement-continuity</code></small>
+* [[房贷发放、服务、止赎与住房连续性]] <small><code>domain.mortgage-origination-servicing-foreclosure-continuity</code></small>
+* [[护照、旅行证件与跨境移动连续性]] <small><code>domain.passport-travel-document-mobility-continuity</code></small>
+* [[旅行健康准备连续性]] <small><code>domain.travel-health-preparedness-continuity</code></small>
+* [[旅行警示与领事协助连续性]] <small><code>domain.travel-advisory-consular-assistance-continuity</code></small>
+* [[汇款、跨境转账与费用汇率披露连续性]] <small><code>domain.remittance-money-transfer-disclosure-continuity</code></small>
+* [[海关、边境入境与申报连续性]] <small><code>domain.customs-border-entry-declaration-continuity</code></small>
+* [[消费者退货、退款与争议解决连续性]] <small><code>domain.consumer-return-refund-dispute-resolution-continuity</code></small>
+* [[消费贷款发放、APR 披露与还款义务连续性]] <small><code>domain.consumer-loan-origination-apr-disclosure-continuity</code></small>
+* [[礼品卡、预付卡与储值余额连续性]] <small><code>domain.gift-card-prepaid-stored-value-continuity</code></small>
+* [[维修权、零件、手册与诊断接入连续性]] <small><code>domain.right-to-repair-parts-manuals-access-continuity</code></small>
+* [[资源与社会基础设施]] <small><code>domain.resource-social-infrastructure</code></small>
+* [[车贷、租赁、服务与收车连续性]] <small><code>domain.auto-loan-lease-servicing-repossession-continuity</code></small>
+* [[长距离旅行预订与行程连续性]] <small><code>domain.long-distance-travel-booking-itinerary-continuity</code></small>
+* [[风险工程]] <small><code>domain.risk-engineering</code></small>
+* [[驾照、车辆登记与个人移动资格连续性]] <small><code>domain.driver-license-vehicle-registration-continuity</code></small>
+
+== 跨索引 ==
+
+* [[技术路线全景索引]]
+* [[证据地图与支持边界]]
+* [[历史技术谱系]]
+* [[争议、未知与禁止推论]]
 
 [[Category:专题]]

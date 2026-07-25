@@ -1,0 +1,81 @@
+{{证据来源
+|来源 ID=evidence.web.511f3478d691
+|来源类型=标准
+|完整引文=U.S. Food and Drug Administration. FDA Recalls. Web resource. https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts. Accessed 2026-07-25.
+|URL 或 DOI=https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts
+|支持范围=支持把该来源作为对应研究域的背景、定义、标准、数据、研究或监管核验入口；具体主张必须以原文、研究设计与证据等级为准。
+|不支持的推论=不支持仅凭标题或 URL 推断因果、疗效、安全性、适用人群、法律效力、工程成熟度或未来实现时间。
+|审查状态=待审查
+|访问日期=2026-07-25
+}}
+
+'''证据来源：FDA Recalls（511f3478）'''是稳定证据对象，用于记录来源身份、研究设计、对象、结果、支持边界、禁止外推和审查状态。<ref name="source_fb91570ab666">[https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts 原始来源或永久记录]，访问于 2026-07-25。</ref>
+
+== 完整引文与标识符 ==
+
+{| class="wikitable"
+! 作者或发布机构
+| U.S. Food and Drug Administration
+|-
+! 年份
+| 页面未注明；未核验
+|-
+! 期刊或发布机构
+| U.S. Food and Drug Administration
+|-
+! DOI、PMID、注册号或永久标识符
+| https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts
+|-
+! 原始来源路由
+| [https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts 打开原始来源或永久记录]
+|}
+
+'''完整引文：''' U.S. Food and Drug Administration. FDA Recalls. Web resource. https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts. Accessed 2026-07-25.
+
+== 研究设计与样本或对象 ==
+
+* '''来源类型（详细）：''' 政府、国际组织或大学官方资料
+* '''研究设计或材料性质：''' 未从标题和 URL 单独确认研究设计；必须查阅原始页面或全文。
+* '''样本、研究对象或规范范围：''' 未从 Source Signals 摘要核验；不得自动补写样本、人群、模型或数据规模。
+
+== 核心结果 ==
+
+该来源已作为仓库 Source Signals 的外部核验路由登记；本轮未把标题自动转换为研究结论。
+
+结果只能在所列设计、对象、终点、时间窗、版本和分析范围内解释。标题、摘要、监管状态、商业可得性或来源权威不能替代完整方法审查。
+
+== 支持范围 ==
+
+支持把该来源作为对应研究域的背景、定义、标准、数据、研究或监管核验入口；具体主张必须以原文、研究设计与证据等级为准。
+
+== 不支持的推论 ==
+
+不支持仅凭标题或 URL 推断因果、疗效、安全性、适用人群、法律效力、工程成熟度或未来实现时间。
+
+不得把相关性写成因果性，把机制合理性写成有效性，把体外或动物结果写成人体结果，把早期临床写成已证实疗效，或把预测、思想实验和科幻设定写成现实能力。
+
+== 局限、冲突与审查状态 ==
+
+* '''局限：''' 未逐条完成全文、版本、撤稿/更正、利益冲突、样本、统计和外部有效性审查。
+* '''表单审查状态：''' 待审查
+* '''审查说明：''' 该对象已完成去重、URL、发布者和标题级登记，但未逐条全文精读；不得据标题自动生成研究结论。
+* '''访问日期：''' 2026-07-25
+* '''登记来源：''' 新增-Source Signals登记
+* 发现相互冲突的研究时应并列记录对象、设计、终点和结果差异，不凭机制偏好裁决。
+
+== 支持或路由到的页面 ==
+
+* [[Infant Formula Baby Food Supply Safety Continuity]]
+* [[Product Safety Recall Systems]]
+* [[证据地图与支持边界]]
+
+== 相关索引 ==
+
+* [[研究域全景索引]]
+* [[技术路线全景索引]]
+* [[证据地图与支持边界]]
+* [[争议、未知与禁止推论]]
+
+<references />
+
+[[Category:证据来源]]

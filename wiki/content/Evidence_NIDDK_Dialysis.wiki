@@ -1,16 +1,88 @@
 {{证据来源
 |来源 ID=evidence.niddk.hemodialysis
-|来源类型=美国国家糖尿病、消化与肾脏疾病研究所患者资料
+|来源类型=论文
 |完整引文=National Institute of Diabetes and Digestive and Kidney Diseases. Hemodialysis.
 |URL 或 DOI=https://www.niddk.nih.gov/health-information/kidney-disease/kidney-failure/hemodialysis
 |支持范围=血液透析的作用、实施方式与功能边界
 |不支持的推论=不支持透析治愈肾衰竭或复制肾脏全部功能
-|审查状态=已核对NIDDK原始页面
+|审查状态=已核对摘要
 |访问日期=2026-07-25
 }}
 
-== 支持范围 ==
+'''证据来源：NIDDK透析'''是稳定证据对象，用于记录来源身份、研究设计、对象、结果、支持边界、禁止外推和审查状态。<ref name="source_8151fd380385">[https://www.niddk.nih.gov/health-information/kidney-disease/kidney-failure/hemodialysis 原始来源或永久记录]，访问于 2026-07-25。</ref>
+
+== 完整引文与标识符 ==
+
+{| class="wikitable"
+! 作者或发布机构
+| National Institute of Diabetes and Digestive and Kidney Diseases
+|-
+! 年份
+| 页面未注明；未核验
+|-
+! 期刊或发布机构
+| 发布期刊或机构见完整引文与原始页面
+|-
+! DOI、PMID、注册号或永久标识符
+| https://www.niddk.nih.gov/health-information/kidney-disease/kidney-failure/hemodialysis
+|-
+! 原始来源路由
+| [https://www.niddk.nih.gov/health-information/kidney-disease/kidney-failure/hemodialysis 打开原始来源或永久记录]
+|}
+
+'''完整引文：''' National Institute of Diabetes and Digestive and Kidney Diseases. Hemodialysis.
+
+== 研究设计与样本或对象 ==
+
+* '''来源类型（详细）：''' 美国国家糖尿病、消化与肾脏疾病研究所患者资料
+* '''研究设计或材料性质：''' 美国国家糖尿病、消化与肾脏疾病研究所患者资料
+* '''样本、研究对象或规范范围：''' 该来源所研究或规范的对象；若原页未明确样本规模，本 Wiki 不作推断，须回到原文核对。
+
+== 核心结果 ==
+
 NIDDK说明透析可帮助肾衰竭患者改善状态和延长生存，但不是治愈。
 
+结果只能在所列设计、对象、终点、时间窗、版本和分析范围内解释。标题、摘要、监管状态、商业可得性或来源权威不能替代完整方法审查。
+
+== 支持范围 ==
+
+血液透析的作用、实施方式与功能边界
+
 == 不支持的推论 ==
-血液清除功能不能代表肾脏的全部内分泌、代谢和稳态作用。
+
+不支持透析治愈肾衰竭或复制肾脏全部功能
+
+不得把相关性写成因果性，把机制合理性写成有效性，把体外或动物结果写成人体结果，把早期临床写成已证实疗效，或把预测、思想实验和科幻设定写成现实能力。
+
+== 局限、冲突与审查状态 ==
+
+* '''局限：''' 本页只按所列来源类型和支持范围引用；样本、亚组、统计分析、版本与冲突声明须以原文为准。
+* '''表单审查状态：''' 已核对摘要
+* '''审查说明：''' 已核对书目、摘要或正式记录的核心范围；正文中的详细统计、亚组、附录和利益冲突仍以原始材料为准。
+* '''访问日期：''' 2026-07-25
+* '''登记来源：''' 基线-深化
+* 发现相互冲突的研究时应并列记录对象、设计、终点和结果差异，不凭机制偏好裁决。
+
+== 支持或路由到的页面 ==
+
+* [[人体增强与扩展心智专题]]
+* [[未来等待与生物停滞专题]]
+* [[永生与主体持续性专题]]
+* [[治理、风险与公平专题]]
+* [[证据地图与支持边界]]
+* [[身体功效替代]]
+* [[身体功效替代与最小充分身体]]
+* [[身体功效替代与最小充分身体专题]]
+* [[透析与人工肾]]
+* [[长期闭环生命支持]]
+
+== 相关索引 ==
+
+* [[研究域全景索引]]
+* [[技术路线全景索引]]
+* [[证据地图与支持边界]]
+* [[争议、未知与禁止推论]]
+
+<references />
+
+[[Category:证据来源]]

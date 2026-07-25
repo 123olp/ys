@@ -1,39 +1,105 @@
 {{研究域
 |域 ID=domain.housing-habitability-inspection-code-enforcement-continuity
-|C 层级=C5：可能性生态承载层
+|C 层级=C5
 |研究对象=Housing Habitability Inspection Code Enforcement Continuity
 |持续性作用=关键词显示该域主要承载能源、水、食物、住房、治理、经济、通信、灾害或基础设施环境。
-|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|证据状态=待审查
 |仓库路径=domains/c5-ecological-substrate/housing-habitability-inspection-code-enforcement-continuity
 }}
 
-'''Housing Habitability Inspection Code Enforcement Continuity'''是 Human Infra 在“外部生态承载”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+'''Housing Habitability Inspection Code Enforcement Continuity'''是 Human Infra 对“Housing Habitability Inspection Code Enforcement Continuity”建立的稳定研究域；其对象边界由仓库材料界定为：住房可居住性、检查与 code enforcement 连续性域研究“住所是否能持续提供安全、卫生、热、通风、防霉、防害虫、结构安全和基本设施，从而不把家变成慢性损耗源”。<ref name="repository_scope">[[证据来源：Human Infra仓库研究材料]]</ref>
 
-== 对 Human Infra 的作用 ==
-关键词显示该域主要承载能源、水、食物、住房、治理、经济、通信、灾害或基础设施环境。
+== 研究对象与边界 ==
 
-== 机制或依赖 ==
+本页只描述一个稳定对象：'''Housing Habitability Inspection Code Enforcement Continuity'''。它不等同于单一产品、个体方案或既成疗效；同名活动若具有不同对象、终点或治理责任，应另建页面而不是合并结论。
+
+* habitability、housing quality standards、NSPIRE、inspection 和 code enforcement。
+* heating/cooling、plumbing、electrical、sanitation、pest、mold/dampness、lead、smoke/CO alarms 和 overcrowding。
+* repair request、inspection response、landlord/owner responsibility 和 remediation timeline。
+* 公共住房、补贴住房、私人租赁和地方 code enforcement 的结构差异。
+
+== C 层级与对主体持续性的作用 ==
+
+本域位于 '''C5：可能性生态承载层'''。提供能源、食物、水、治理、经济、通信与基础设施底座；属于主体持续性的条件保障。
+
+原域给出的持续性作用为：关键词显示该域主要承载能源、水、食物、住房、治理、经济、通信、灾害或基础设施环境。。在证据上必须区分直接作用、间接作用和条件保障；除非出现预先定义的生存、功能、风险或连续性终点，不能把过程完成或机制合理性写成“实现有效永生”。
+
+== 关键变量、机制链与状态变化 ==
+
+* 对象变量：habitability、housing quality standards、NSPIRE、inspection 和 code enforcement。
+* 对象变量：heating/cooling、plumbing、electrical、sanitation、pest、mold/dampness、lead、smoke/CO alarms 和 overcrowding。
+* 对象变量：repair request、inspection response、landlord/owner responsibility 和 remediation timeline。
+* 对象变量：公共住房、补贴住房、私人租赁和地方 code enforcement 的结构差异。
 
 <pre>
-研究域对象
-  -> 影响变量或中间机制
-  -> 改变主体状态、外部条件或路径可达性
-  -> 改变风险、能力、时间成本或资源约束
-  -> 改变有效寿命、有效时间或未来选择权
+Housing Habitability Inspection Code Enforcement Continuity
+  -> 改变上述可测变量与约束
+  -> 改变主体能力、载体状态或外部路径可达性
+  -> 改变失败率、恢复时间、资源消耗或不可逆损失风险
+  -> 只有在适用对象与时间窗内改善最终功能/生存/连续性终点，才支持持续性收益
 </pre>
 
-本域位于 C5“可能性生态承载层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+反向解释同样必要：变量变化可能只是相关、测量偏差或代理终点变化，不能自动归因于该域中的某项干预。
 
-== 证据与来源 ==
+== 主要技术或治理路线 ==
 
-本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+* 定义对象、适用人群、情境和时间窗；
+* 建立可测变量、基线、对照和失败阈值；
+* 比较预防、修复、替代、制度或信息路线，并把副作用与机会成本纳入。
 
-== 域研究材料 ==
+路线比较至少要记录前置依赖、可验证终点、失败阈值、替代路线和退出条件；未来路线一律按“条件性”处理，不写虚假实现年份。
+
+== 上下游依赖与替代路线 ==
+
+'''上游或高层约束：'''
+* [[治理、风险与公平专题]]
+* [[资源与社会基础设施]]
+* [[风险工程]]
+
+'''下游技术或相邻对象：'''
+* [[长期闭环生命支持]]
+* [[Housing Built Environment Stability]]
+* [[Disaster Temporary Housing Displacement Recovery Continuity]]
+* [[Manufactured Housing Park Tenure Safety Continuity]]
+* [[Migrant Seasonal Farmworker Health Housing Continuity]]
+
+若主要路线不能达到最终终点，应比较风险预防、损伤修复、功能替代、流程改造、社会支持或退出/转介等替代方案，而不是以增加复杂度代替证据。
+
+== 当前证据状态与验证终点 ==
+
+2026-07-25 结构化审查完成；原域材料没有外部 Source Signals。当前只有仓库对象定义和问题分解，科学、医学、工程、法律或社会效果均属证据不足。
+
+最低验证要求是：明确适用对象、基线、对照、时间窗、测量误差和预注册终点；同时报告不良结果、失败案例和分布差异。过程指标只能证明过程发生，不能单独证明主体风险下降。
+
+'''反证条件：'''若在合格设计中未改善预设最终终点、净风险上升、效果不能重复、只在不相关模型成立，或依赖不可接受的资源与治理假设，则应降低本域路线的证据等级。
+
+== 失败模式与治理边界 ==
+
+* 对象漂移：把多个不同对象、场景或人群混成一个平均结论。
+* 代理终点替代：把点击、完成率、分子指标、短期性能或局部成功当作长期净收益。
+* 因果越界：把相关性、机制合理性、体外/动物结果、早期临床或预测模型写成已证实的人体效果。
+* 可达性失败：技术存在但人员、成本、供应链、法律、基础设施或维护使其不可用。
+* 风险转移：局部风险下降但把负担转移给其他器官、家庭、群体、时间段或公共系统。
+* 本页不提供个体诊断、治疗、用药、寿命预测、法律决策或危险实验操作建议。
+
+== 开放问题 ==
+
+# 哪个最终终点最能代表本域对主体持续性的真实贡献？
+# 哪些变量是因果中介，哪些只是相关指标或记录偏差？
+# 效果在不同人群、地区、资源水平和长期时间尺度上是否可重复？
+# 何种失败阈值应触发暂停、替代、转介或治理升级？
+# 本域与相邻页面的边界是否足够稳定，是否仍存在需要拆分的对象？
+
+== 仓库研究材料（保留） ==
+
+以下内容来自受治理的 Human Infra 域 README，用于保留项目问题分解和历史语境；其中外部事实仍以证据页为准。<ref name="repo_af97507f8e">[https://github.com/tradecatlabs/human_infra/blob/main/domains/c5-ecological-substrate/housing-habitability-inspection-code-enforcement-continuity/README.md Human Infra 仓库域材料：domains/c5-ecological-substrate/housing-habitability-inspection-code-enforcement-continuity]（项目研究组织资料，访问于 2026-07-25；不构成外部实证证据）。</ref>
+
+=== 仓库概述 ===
 
 住房可居住性、检查与 code enforcement 连续性域研究“住所是否能持续提供安全、卫生、热、通风、防霉、防害虫、结构安全和基本设施，从而不把家变成慢性损耗源”。
 
 <span id="human-infra-价值"></span>
-== Human Infra 价值 ==
+=== Human Infra 价值 ===
 
 人类持续性依赖可恢复的居住空间。漏水、霉菌、铅、害虫、供热失败、结构危险、过度拥挤和电气风险会把住房从恢复场所变成疾病、压力、睡眠剥夺和财产损失来源。
 
@@ -41,41 +107,35 @@
   -> habitability / inspection / code enforcement
   -> exposure, injury, sleep, repairability
   -> effective time and health continuity</pre>
-== 关注对象 ==
+=== 关注对象 ===
 
 * habitability、housing quality standards、NSPIRE、inspection 和 code enforcement。
 * heating/cooling、plumbing、electrical、sanitation、pest、mold/dampness、lead、smoke/CO alarms 和 overcrowding。
 * repair request、inspection response、landlord/owner responsibility 和 remediation timeline。
 * 公共住房、补贴住房、私人租赁和地方 code enforcement 的结构差异。
-
-== 不做什么 ==
+=== 不做什么 ===
 
 * 不提供个体检测解释、维修建议、施工方案、法律索赔、扣租、拒付、投诉策略或现场处置。
 * 不提供危险改装、绕过检查、隐藏缺陷、报复、破坏、假报告或施工安全规避。
 * 不判断任何住所是否违反代码或是否适合居住。
-
-== 证据与来源 ==
-
-* HUD NSPIRE and housing quality standards.
-* HUD Healthy Homes resources.
-* EPA lead, mold and indoor hazard materials where relevant.
-
-== 上下游关系 ==
+=== 上下游关系 ===
 
 * 上游：<code>housing-built-environment-stability</code>、<code>mold-dampness-indoor-biological-exposure</code>、<code>lead-heavy-metal-exposure-control</code>。
 * 下游：<code>rental-lease-tenancy-rights-continuity</code>、<code>healthcare-access-continuity</code>、<code>public-health-laboratory-diagnostic-capacity</code>。
 
-== 边界、失败条件和未知项 ==
+== 证据路由 ==
 
-* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
-* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
-* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
-* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+* [[证据来源：Human Infra仓库研究材料]]：只支持对象定义与仓库溯源；外部证据缺失。<ref name="repo_af97507f8e" />
 
-== 相关词条与外部链接 ==
+== 相关词条与外部知识路由 ==
 
 * [[研究域全景索引]]
 * [[:Category:C5研究域|C5研究域]]
-* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c5-ecological-substrate/housing-habitability-inspection-code-enforcement-continuity/README.md Human Infra 仓库：domains/c5-ecological-substrate/housing-habitability-inspection-code-enforcement-continuity/README.md]
+* [[技术路线全景索引]]
+* [[证据地图与支持边界]]
+* [[争议、未知与禁止推论]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c5-ecological-substrate/housing-habitability-inspection-code-enforcement-continuity/README.md Human Infra 仓库：domains/c5-ecological-substrate/housing-habitability-inspection-code-enforcement-continuity]
+
+<references />
 
 [[Category:C5研究域]]

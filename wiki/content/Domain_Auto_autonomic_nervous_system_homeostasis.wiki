@@ -1,47 +1,113 @@
 {{研究域
 |域 ID=domain.autonomic-nervous-system-homeostasis
-|C 层级=C2：可能性源体维护层
+|C 层级=C2
 |研究对象=Autonomic Nervous System Homeostasis
 |持续性作用=直接维护身体、脑、器官、衰老、损伤或生命系统这些可能性源体。
-|证据状态=heuristic-v0.1；域材料已同步，外部主张仍须逐项绑定证据
+|证据状态=部分审查
 |仓库路径=domains/c2-source-maintenance/autonomic-nervous-system-homeostasis
 }}
 
-'''Autonomic Nervous System Homeostasis'''是 Human Infra 在“生命载体维护”控制轴下维护的独立研究域。该词条同步项目研究材料，并将其放入主体持续性和可能性空间框架审查。
+'''Autonomic Nervous System Homeostasis'''是 Human Infra 对“Autonomic Nervous System Homeostasis”建立的稳定研究域；其对象边界由仓库材料界定为：autonomic-nervous-system-homeostasis/ 研究自主神经系统、交感/副交感平衡、心率变异性、体位性耐受、消化排尿调控、出汗和压力恢复，如何影响 Human Infra 的内环境稳定和有效时间。<ref name="repository_scope">[[证据来源：Human Infra仓库研究材料]]</ref>
 
-== 对 Human Infra 的作用 ==
-直接维护身体、脑、器官、衰老、损伤或生命系统这些可能性源体。
+== 研究对象与边界 ==
 
-== 机制或依赖 ==
+本页只描述一个稳定对象：'''Autonomic Nervous System Homeostasis'''。它不等同于单一产品、个体方案或既成疗效；同名活动若具有不同对象、终点或治理责任，应另建页面而不是合并结论。
+
+* 自主神经系统、交感/副交感调节、心率变异性、体位性低血压、POTS、晕厥、汗液调节和压力恢复。
+* 长 COVID、糖尿病自主神经病变、神经退行、睡眠、体温、胃肠、泌尿和慢性疲劳相关调节问题。
+* 与 <code>endocrine-hormonal-regulation/</code> 的边界：内分泌域关注激素反馈；本域关注神经性自动调节。
+* 与 <code>cardiovascular-resilience/</code> 的边界：心血管域关注心血管结构和疾病；本域关注神经调控下的动态适应。
+
+== C 层级与对主体持续性的作用 ==
+
+本域位于 '''C2：可能性源体维护层'''。通过降低身体、脑、器官、细胞或损伤失效速率间接延长可用时间，是主体持续性的载体维护层。
+
+原域给出的持续性作用为：直接维护身体、脑、器官、衰老、损伤或生命系统这些可能性源体。。在证据上必须区分直接作用、间接作用和条件保障；除非出现预先定义的生存、功能、风险或连续性终点，不能把过程完成或机制合理性写成“实现有效永生”。
+
+== 关键变量、机制链与状态变化 ==
+
+* 对象变量：自主神经系统、交感/副交感调节、心率变异性、体位性低血压、POTS、晕厥、汗液调节和压力恢复。
+* 对象变量：长 COVID、糖尿病自主神经病变、神经退行、睡眠、体温、胃肠、泌尿和慢性疲劳相关调节问题。
+* 对象变量：与 <code>endocrine-hormonal-regulation/</code> 的边界：内分泌域关注激素反馈；本域关注神经性自动调节。
+* 对象变量：与 <code>cardiovascular-resilience/</code> 的边界：心血管域关注心血管结构和疾病；本域关注神经调控下的动态适应。
 
 <pre>
-研究域对象
-  -> 影响变量或中间机制
-  -> 改变主体状态、外部条件或路径可达性
-  -> 改变风险、能力、时间成本或资源约束
-  -> 改变有效寿命、有效时间或未来选择权
+Autonomic Nervous System Homeostasis
+  -> 改变上述可测变量与约束
+  -> 改变主体能力、载体状态或外部路径可达性
+  -> 改变失败率、恢复时间、资源消耗或不可逆损失风险
+  -> 只有在适用对象与时间窗内改善最终功能/生存/连续性终点，才支持持续性收益
 </pre>
 
-本域位于 C2“可能性源体维护层”。其具体上下游依赖以项目分类表和下列域研究材料为准。
+反向解释同样必要：变量变化可能只是相关、测量偏差或代理终点变化，不能自动归因于该域中的某项干预。
 
-== 证据与来源 ==
+== 主要技术或治理路线 ==
 
-本页面的分类、对象与研究边界来自 Human Infra 仓库的受治理域 README；README 是研究组织资料，不自动构成科学、医学、法律或工程事实证据。正文中的外部主张必须继续绑定论文原文、官方标准、监管文件、数据库或权威报告。
+* 定义对象、适用人群、情境和时间窗；
+* 建立可测变量、基线、对照和失败阈值；
+* 比较预防、修复、替代、制度或信息路线，并把副作用与机会成本纳入。
 
-== 域研究材料 ==
+路线比较至少要记录前置依赖、可验证终点、失败阈值、替代路线和退出条件；未来路线一律按“条件性”处理，不写虚假实现年份。
+
+== 上下游依赖与替代路线 ==
+
+'''上游或高层约束：'''
+* [[衰老机制与长寿干预专题]]
+* [[长寿科学]]
+* [[风险工程]]
+
+'''下游技术或相邻对象：'''
+* [[生物年龄时钟]]
+* [[Endocrine Hormonal Regulation]]
+* [[心血管韧性]]
+* [[Sleep Circadian And Recovery]]
+* [[Gastrointestinal Barrier Absorption]]
+
+若主要路线不能达到最终终点，应比较风险预防、损伤修复、功能替代、流程改造、社会支持或退出/转介等替代方案，而不是以增加复杂度代替证据。
+
+== 当前证据状态与验证终点 ==
+
+2026-07-25 结构化审查完成；登记 4 条 Source Signals，其中 4 条为具体 URL、0 条为首页/搜索/聚合路由。仅核心来源或相应证据页标明“已核验”时，才可承担实质主张。
+
+最低验证要求是：明确适用对象、基线、对照、时间窗、测量误差和预注册终点；同时报告不良结果、失败案例和分布差异。过程指标只能证明过程发生，不能单独证明主体风险下降。
+
+'''反证条件：'''若在合格设计中未改善预设最终终点、净风险上升、效果不能重复、只在不相关模型成立，或依赖不可接受的资源与治理假设，则应降低本域路线的证据等级。
+
+== 失败模式与治理边界 ==
+
+* 对象漂移：把多个不同对象、场景或人群混成一个平均结论。
+* 代理终点替代：把点击、完成率、分子指标、短期性能或局部成功当作长期净收益。
+* 因果越界：把相关性、机制合理性、体外/动物结果、早期临床或预测模型写成已证实的人体效果。
+* 可达性失败：技术存在但人员、成本、供应链、法律、基础设施或维护使其不可用。
+* 风险转移：局部风险下降但把负担转移给其他器官、家庭、群体、时间段或公共系统。
+* 本页不提供个体诊断、治疗、用药、寿命预测、法律决策或危险实验操作建议。
+
+== 开放问题 ==
+
+# 哪个最终终点最能代表本域对主体持续性的真实贡献？
+# 哪些变量是因果中介，哪些只是相关指标或记录偏差？
+# 效果在不同人群、地区、资源水平和长期时间尺度上是否可重复？
+# 何种失败阈值应触发暂停、替代、转介或治理升级？
+# 本域与相邻页面的边界是否足够稳定，是否仍存在需要拆分的对象？
+
+== 仓库研究材料（保留） ==
+
+以下内容来自受治理的 Human Infra 域 README，用于保留项目问题分解和历史语境；其中外部事实仍以证据页为准。<ref name="repo_b04a0bb507">[https://github.com/tradecatlabs/human_infra/blob/main/domains/c2-source-maintenance/autonomic-nervous-system-homeostasis/README.md Human Infra 仓库域材料：domains/c2-source-maintenance/autonomic-nervous-system-homeostasis]（项目研究组织资料，访问于 2026-07-25；不构成外部实证证据）。</ref>
+
+=== 仓库概述 ===
 
 <code>autonomic-nervous-system-homeostasis/</code> 研究自主神经系统、交感/副交感平衡、心率变异性、体位性耐受、消化排尿调控、出汗和压力恢复，如何影响 Human Infra 的内环境稳定和有效时间。
 
 <blockquote>核心问题：主体能否持续行动，不只取决于意识和肌肉，还取决于血压、心率、温度、消化、排尿、出汗和压力恢复这些自动调节是否稳定。自主神经失衡会把站立、进食、睡眠、工作和恢复都变成成本。
 </blockquote>
-== 先验位置 ==
+=== 先验位置 ===
 
 <pre>有效永生 / 主体持续性最大化
   -> 主体行动依赖身体自动调节血压、心率、体温、消化、排尿、出汗和压力反应
   -> 自主神经失衡会造成晕厥、疲劳、脑雾、胃肠问题、热不耐受和恢复失败
   -> 若这些隐性调节失败被忽略，主体会在“没有明显器官衰竭”的情况下失去有效时间
   -> 因此自主神经稳态是连接神经、循环、内分泌、睡眠和恢复的调节域</pre>
-== 关注对象 ==
+=== 关注对象 ===
 
 * 自主神经系统、交感/副交感调节、心率变异性、体位性低血压、POTS、晕厥、汗液调节和压力恢复。
 * 长 COVID、糖尿病自主神经病变、神经退行、睡眠、体温、胃肠、泌尿和慢性疲劳相关调节问题。
@@ -49,43 +115,41 @@
 * 与 <code>cardiovascular-resilience/</code> 的边界：心血管域关注心血管结构和疾病；本域关注神经调控下的动态适应。
 
 <span id="human-infra-模型链路"></span>
-== Human Infra 模型链路 ==
+=== Human Infra 模型链路 ===
 
 <pre>自主神经稳态 T
   -> 改变心率、血压调节、体位耐受、温度调节、胃肠/泌尿功能、压力恢复和睡眠变量 X
   -> 改变站立、工作、学习、运动、恢复和日常活动耐受状态 S
   -> 改变晕厥、疲劳、脑雾、跌倒、失能、焦虑误判和有效时间损耗风险 λ(t)
   -> 影响行动密度、恢复能力、长期照护需求和主体持续性</pre>
-== 非目标 ==
+=== 非目标 ===
 
 * 不提供 POTS、晕厥、自主神经病变、HRV、补液、用盐、药物或运动处方建议。
 * 不替代神经科、心脏科、内分泌科、康复医学或临床自主神经测试。
 * 不把可穿戴 HRV、心率或血压读数写成个人诊断。
 
 <span id="source-signals"></span>
-== Source Signals ==
-
-* NINDS Dysautonomia: https://www.ninds.nih.gov/health-information/disorders/dysautonomia
-* MedlinePlus Autonomic Disorders: https://medlineplus.gov/autonomicnervoussystemdisorders.html
-* NIH POTS resources: https://www.nhlbi.nih.gov/health/postural-orthostatic-tachycardia-syndrome
-* Heart Rhythm Society consensus on POTS and syncope: https://www.hrsonline.org/guidance/clinical-resources/2015-heart-rhythm-society-expert-consensus-statement-diagnosis-and-treatment-postural-tachycardia
-
-== 下一步 ==
+=== 下一步 ===
 
 * 建立自主神经变量表：心率、血压、体位耐受、HRV、出汗、胃肠、泌尿、睡眠、压力恢复、跌倒和有效时间。
 * 与 <code>cardiovascular-resilience/</code>、<code>endocrine-hormonal-regulation/</code>、<code>sleep-circadian-recovery/</code>、<code>gastrointestinal-barrier-absorption/</code> 和 <code>thermal-homeostasis-resilience/</code> 建立接口。
 
-== 边界、失败条件和未知项 ==
+== 证据路由 ==
 
-* 本域是研究与建模单元，不提供个体医疗、法律、金融、工程、教育或安全操作建议。
-* `review_status=heuristic-v0.1` 表示分类仍处于启发式复核阶段，不代表研究结论成立。
-* 若缺少来源、适用对象、证据等级或反证条件，应把相关主张视为待核验，而不是事实。
-* 域的存在不等于技术可行、干预有效、风险可接受或主体连续性得到证明。
+* [[证据来源：NINDS Dysautonomia（18b2b7fb）]]：NINDS Dysautonomia（证据等级见来源页）<ref name="src_f1e6844b6a7e">[https://www.ninds.nih.gov/health-information/disorders/dysautonomia NINDS Dysautonomia]，访问于 2026-07-25；本页未据标题自动推断结论。</ref>
+* [[证据来源：MedlinePlus Autonomic Disorders（0aa41958）]]：MedlinePlus Autonomic Disorders（证据等级见来源页）<ref name="src_0303facb76ef">[https://medlineplus.gov/autonomicnervoussystemdisorders.html MedlinePlus Autonomic Disorders]，访问于 2026-07-25；本页未据标题自动推断结论。</ref>
+* [[证据来源：NIH POTS resources（9f11169b）]]：NIH POTS resources（证据等级见来源页）<ref name="src_877db8343dee">[https://www.nhlbi.nih.gov/health/postural-orthostatic-tachycardia-syndrome NIH POTS resources]，访问于 2026-07-25；本页未据标题自动推断结论。</ref>
+* [[证据来源：Heart Rhythm Society consensus on POTS and syncope（96b3e06f）]]：Heart Rhythm Society consensus on POTS and syncope（证据等级见来源页）<ref name="src_2da616b2e471">[https://www.hrsonline.org/guidance/clinical-resources/2015-heart-rhythm-society-expert-consensus-statement-diagnosis-and-treatment-postural-tachycardia Heart Rhythm Society consensus on POTS and syncope]，访问于 2026-07-25；本页未据标题自动推断结论。</ref>
 
-== 相关词条与外部链接 ==
+== 相关词条与外部知识路由 ==
 
 * [[研究域全景索引]]
 * [[:Category:C2研究域|C2研究域]]
-* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c2-source-maintenance/autonomic-nervous-system-homeostasis/README.md Human Infra 仓库：domains/c2-source-maintenance/autonomic-nervous-system-homeostasis/README.md]
+* [[技术路线全景索引]]
+* [[证据地图与支持边界]]
+* [[争议、未知与禁止推论]]
+* [https://github.com/tradecatlabs/human_infra/blob/main/domains/c2-source-maintenance/autonomic-nervous-system-homeostasis/README.md Human Infra 仓库：domains/c2-source-maintenance/autonomic-nervous-system-homeostasis]
+
+<references />
 
 [[Category:C2研究域]]
