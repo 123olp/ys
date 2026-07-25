@@ -42,9 +42,16 @@ wiki/
 │   ├── refresh-wikipedia-portal.py # 刷新并最小适配官方门户发布物
 │   ├── refresh-wikipedia-homepage.py # 抓取并固定中文维基首页原始资产
 │   ├── build-wikipedia-homepage.py # 从固定快照注入内容槽位并生成首页
-│   ├── compare-wikipedia-homepage.py # 同浏览器截图并审计首页几何契约
+│   ├── run-backstop.sh       # 调用固定 BackstopJS Docker 镜像
 │   ├── smoke-test.sh         # HTTP、扩展、页面和数据库验证
 │   └── validate-source.sh    # 跟踪配置与内容契约检查
+├── visual-regression/        # BackstopJS 配置与浏览器稳定化脚本
+│   ├── backstop.contract.json # 标准内容夹具下的模板零容差门禁
+│   ├── backstop.wikipedia.json # 官方实时页面对本地页面的原始审计
+│   ├── bitmaps_reference/    # 受版本控制的官方标准化组件参考图
+│   └── engine_scripts/
+│       ├── onReady.js        # 等待字体/图片并关闭动画
+│       └── onReadyContract.js # 使用相同内容夹具隔离模板差异
 └── runtime/                  # 忽略：数据库、上传、安装配置和备份
 ```
 
@@ -55,6 +62,7 @@ wiki/
 - `config/` 只保存可公开的站点策略；MediaWiki 生成的 `LocalSettings.php` 属于运行时。
 - `content/` 是首次安装和可重复导入的种子，不是整个 Wiki 数据库的镜像。
 - `homepage-upstream/snapshot/` 是中文首页结构与样式真相源；`Human Infra:首页`、页首和样式均由生成器从该快照产生，禁止手工改写生成产物。
+- `visual-regression/` 只保存 BackstopJS 配置、浏览器状态稳定脚本、视觉夹具和受版本控制的官方组件参考图；像素比较、差异图与报告由 BackstopJS 提供，禁止新增自研截图比较器。模板契约套件负责零容差 Gate，实时整页套件只负责诊断有意内容差异；禁止用 `approve` 把本地失败图替换为官方标准。
 - `Template:首页/*` 只替换研究内容，禁止自建平行首页布局；`Portal:` 只做专题导航，不成为并行正文真相源。
 - `runtime/` 和 `.env` 不得提交；数据迁移必须使用备份包。
 - 科技树只保存稳定节点 ID、标题和目标路由；词条正文、引用和修订历史归 Wiki。

@@ -58,7 +58,10 @@ make smoke       # 验证 HTTP、数据库、扩展和关键页面
 make backup      # 创建时间戳备份包
 make validate    # 检查源码契约和 Compose 配置
 make homepage-check   # 校验官方首页快照和生成产物未漂移
-make homepage-compare # 同浏览器截图并审计官方/本地首页几何契约
+make homepage-reference # 生成标准化模板契约参考图
+make homepage-compare   # 对模板契约执行零容差像素门禁
+make homepage-audit-reference # 生成未经标准化的官方整页参考图
+make homepage-audit     # 诊断官方整页与本地内容页的全部可见差异
 ```
 
 更新官方语言门户快照：
@@ -76,10 +79,18 @@ make homepage-refresh
 make homepage-build
 make homepage-check
 make import
+make homepage-reference
 make homepage-compare
 ```
 
-`homepage-compare` 需要 Python Playwright 和 Chromium。截图、浏览器错误与结构化对比报告写入忽略目录 `runtime/homepage-compare/`；该检查比较归一化 DOM 几何和计算样式，不比较两站不同的正文长度、实时栏目或中央通知。
+首页视觉比较由固定版本 `backstopjs/backstopjs:6.3.25` 执行，不再维护自研像素或 DOM 几何比较器。`homepage-compare` 使用相同标准内容夹具比较模板、样式和响应式结构；`homepage-audit` 保留官方实时内容与本地研究内容的原始差异，用于诊断而不作为合格门禁。两套配置都要求相同尺寸且零像素差异，不能通过提高容差伪造对齐。官方标准化组件参考图保存在 `visual-regression/bitmaps_reference/` 并进入版本控制；只有确认上游修订、模板和浏览器版本均正确后才能运行 `make homepage-reference` 更新参考图。本项目不提供 BackstopJS `approve` 入口，避免把本地失败截图批准成官方标准。
+
+HTML 报告入口：
+
+```text
+模板契约：wiki/runtime/visual-regression/contract/html_report/index.html
+原始审计：wiki/runtime/visual-regression/html_report/index.html
+```
 
 ## 备份与恢复
 

@@ -1,0 +1,63 @@
+{
+  "id": "human_infra_wikipedia_homepage_contract",
+  "viewports": [
+    {
+      "label": "desktop-1440",
+      "width": 1440,
+      "height": 1000
+    },
+    {
+      "label": "mobile-390",
+      "width": 390,
+      "height": 844
+    }
+  ],
+  "onReadyScript": "onReadyContract.js",
+  "scenarios": [
+    {
+      "label": "Wikipedia 首页组件契约",
+      "referenceUrl": "https://zh.wikipedia.org/wiki/Wikipedia:%E9%A6%96%E9%A1%B5",
+      "url": "http://127.0.0.1:18782/",
+      "readySelector": "#mp-2012",
+      "selectors": [
+        "#mp-2012-banner",
+        "#mp-2012-column-feature-block",
+        "#mp-2012-column-dyk-block",
+        "#mp-2012-column-good-block",
+        "#mp-2012-column-featurepic-block",
+        "#mp-2012-column-right-block-a",
+        "#mp-2012-column-right-block-b",
+        "#mp-2012-column-right-block-c",
+        "#mp-2012-links",
+        "#mp-2012-sisters"
+      ],
+      "delay": 500,
+      "misMatchThreshold": 0,
+      "requireSameDimensions": true
+    }
+  ],
+  "paths": {
+    "bitmaps_reference": "visual-regression/bitmaps_reference",
+    "bitmaps_test": "runtime/visual-regression/contract/bitmaps_test",
+    "engine_scripts": "visual-regression/engine_scripts",
+    "html_report": "runtime/visual-regression/contract/html_report",
+    "ci_report": "runtime/visual-regression/contract/ci_report"
+  },
+  "report": [
+    "browser",
+    "CI"
+  ],
+  "engine": "playwright",
+  "engineOptions": {
+    "browser": "chromium",
+    "args": [
+      "--no-sandbox"
+    ]
+  },
+  "asyncCaptureLimit": 1,
+  "asyncCompareLimit": 4,
+  "debug": false,
+  "debugWindow": false,
+  "archiveReport": true,
+  "scenarioLogsInReports": true
+}

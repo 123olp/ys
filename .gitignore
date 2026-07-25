@@ -33,4 +33,5 @@ build/
 
 # Human Infra Wiki 运行时
 wiki/runtime/
+wiki/backstop_data/
 wiki/.env

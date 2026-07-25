@@ -33,7 +33,11 @@ required=(
     scripts/refresh-wikipedia-portal.py
     scripts/refresh-wikipedia-homepage.py
     scripts/build-wikipedia-homepage.py
-    scripts/compare-wikipedia-homepage.py
+    scripts/run-backstop.sh
+    visual-regression/backstop.contract.json
+    visual-regression/backstop.wikipedia.json
+    visual-regression/engine_scripts/onReady.js
+    visual-regression/engine_scripts/onReadyContract.js
     content/manifest.tsv
 )
 
@@ -43,6 +47,48 @@ for file in "${required[@]}"; do
         exit 1
     }
 done
+
+python3 - <<'PY'
+import json
+from pathlib import Path
+
+for filename in ("backstop.contract.json", "backstop.wikipedia.json"):
+    config = json.loads(
+        Path("visual-regression", filename).read_text(encoding="utf-8")
+    )
+    if config.get("engine") != "playwright":
+        raise SystemExit(f"{filename}: BackstopJS 必须使用 Playwright 引擎")
+    if config.get("report") != ["browser", "CI"]:
+        raise SystemExit(f"{filename}: 必须同时生成浏览器与 CI 报告")
+    if not config.get("scenarios"):
+        raise SystemExit(f"{filename}: 缺少视觉回归场景")
+    for scenario in config["scenarios"]:
+        if scenario.get("misMatchThreshold") != 0:
+            raise SystemExit(
+                f"{filename}: 场景未使用零像素差异阈值: {scenario.get('label')}"
+            )
+        if scenario.get("requireSameDimensions") is not True:
+            raise SystemExit(
+                f"{filename}: 场景未要求相同尺寸: {scenario.get('label')}"
+            )
+
+contract = json.loads(
+    Path("visual-regression/backstop.contract.json").read_text(encoding="utf-8")
+)
+reference_path = contract.get("paths", {}).get("bitmaps_reference")
+if reference_path != "visual-regression/bitmaps_reference":
+    raise SystemExit("模板契约参考图必须保存在受版本控制的 visual-regression 目录")
+
+expected_references = len(contract["viewports"]) * sum(
+    len(scenario["selectors"]) for scenario in contract["scenarios"]
+)
+actual_references = len(list(Path(reference_path).glob("*.png")))
+if actual_references != expected_references:
+    raise SystemExit(
+        f"模板契约参考图不完整: expected={expected_references}, "
+        f"actual={actual_references}"
+    )
+PY
 
 python3 scripts/build-wikipedia-homepage.py --check
 
