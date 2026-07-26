@@ -1,7 +1,7 @@
 const WIKI_ORIGIN = "https://human-infra-wiki.pages.dev";
 
 let snapshotPromise;
-let shellPromise;
+const shellPromises = new Map();
 
 function normalizeTitle(value) {
 	return decodeURIComponent(value)
@@ -41,18 +41,19 @@ async function loadSnapshot(env, requestUrl) {
 	return snapshotPromise;
 }
 
-async function loadShell(env, requestUrl) {
-	if (!shellPromise) {
-		shellPromise = env.ASSETS
-			.fetch(new URL("/snapshot/shell.html", requestUrl))
+async function loadShell(env, requestUrl, shellName) {
+	if (!shellPromises.has(shellName)) {
+		const promise = env.ASSETS
+			.fetch(new URL(`/snapshot/${shellName}`, requestUrl))
 			.then(async (response) => {
 				if (!response.ok) {
 					throw new Error(`Wiki 快照模板不可用: ${response.status}`);
 				}
 				return response.text();
 			});
+		shellPromises.set(shellName, promise);
 	}
-	return shellPromise;
+	return shellPromises.get(shellName);
 }
 
 function requestedTitle(url, mainPage) {
@@ -106,7 +107,6 @@ function searchBody(query, pages) {
 async function renderPage(request, env) {
 	const url = new URL(request.url);
 	const index = await loadSnapshot(env, request.url);
-	const shell = await loadShell(env, request.url);
 	const title = requestedTitle(url, index.mainPage);
 	if (title === null) {
 		return env.ASSETS.fetch(request);
@@ -114,6 +114,7 @@ async function renderPage(request, env) {
 
 	const normalized = normalizeTitle(title);
 	if (normalized === normalizeTitle("Special:Search")) {
+		const shell = await loadShell(env, request.url, "article-shell.html");
 		const query = url.searchParams.get("search") || "";
 		const page = searchBody(query, index.pages);
 		return new Response(
@@ -131,6 +132,7 @@ async function renderPage(request, env) {
 
 	const entry = index.byTitle.get(normalized);
 	if (!entry) {
+		const shell = await loadShell(env, request.url, "article-shell.html");
 		const body = {
 			title: "页面不存在",
 			displayTitle: "页面不存在",
@@ -151,6 +153,10 @@ async function renderPage(request, env) {
 		return new Response("Wiki 页面快照不可用", { status: 503 });
 	}
 	const page = await pageResponse.json();
+	const shellName = normalizeTitle(page.title) === normalizeTitle(index.mainPage)
+		? "main-shell.html"
+		: "article-shell.html";
+	const shell = await loadShell(env, request.url, shellName);
 	const canonical = `${WIKI_ORIGIN}/index.php/${encodeURIComponent(page.title.replaceAll(" ", "_"))}`;
 	return new Response(renderShell(shell, page, canonical), {
 		headers: {

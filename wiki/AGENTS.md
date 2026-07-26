@@ -50,7 +50,7 @@ wiki/
 │   ├── check-language-selector.js # Playwright 浏览器行为断言
 │   ├── smoke-test.sh         # HTTP、扩展、页面和数据库验证
 │   ├── validate-source.sh    # 跟踪配置与内容契约检查
-│   ├── export-pages-snapshot.py # 导出 MediaWiki 只读页面快照
+│   ├── export-pages-snapshot.py # 导出 MediaWiki 双外壳只读页面快照与引用资源
 │   ├── build-pages-release.sh # 生成门户与 Wiki Pages 产物
 │   ├── deploy-pages-release.sh # 发布两个 Pages 项目
 │   └── smoke-pages-release.sh # 验证三个 pages.dev 公开入口
@@ -72,7 +72,7 @@ wiki/
 - `portal/` 是语言选择层，视觉、DOM 与通用控件行为归 Wikimedia 官方门户；本项目只维护品牌内容和本地路由适配，禁止新增平行视觉 CSS、存放研究结论或伪造尚未建立的语言版本。`human-infra-mark.svg` 同时作为 Wiki 皮肤图标和 MediaWiki 本地文件仓库的受治理品牌种子；`human-infra-tech-tree.png` 是首页“研究图谱”槽位使用的项目科技树渲染证据，二者都必须通过 `importImages` 进入本地文件仓库。
 - 门户到 Wiki 的公开路由由 `WIKI_PUBLIC_URL` 注入；未设置时才回退到同主机加 `WIKI_PUBLIC_PORT` 的本地开发地址。不得在门户 HTML 中硬编码部署域名。
 - 公开环境只允许使用 `human-infra.pages.dev`、`human-infra-wiki.pages.dev` 和 `human-infra-tech-tree.pages.dev`。语言门户和 Wiki 由 Cloudflare Pages 发布，科技树由其独立 Pages 项目发布；禁止恢复自定义域名、Cloudflare Tunnel 或退役的 Research Narrative。
-- 本地 MediaWiki 是可编辑真相源；公开 Wiki 是只读快照。`pages/wiki-worker.js` 只负责兼容 MediaWiki 阅读路由、注入已导出的正文和标题搜索，不得接入数据库、开放登录编辑或成为第二内容真相源。
+- 本地 MediaWiki 是可编辑真相源；公开 Wiki 是只读快照。`pages/wiki-worker.js` 只负责兼容 MediaWiki 阅读路由、按页面类型选择首页/文章外壳、注入已导出的正文和标题搜索，不得接入数据库、开放登录编辑或成为第二内容真相源。
 - `runtime/pages/` 是忽略的确定性发布产物；必须由 `make pages-build` 重建，禁止手工维护。发布与回滚遵循 `PAGES-PUBLISHING-CONTRACT.md`。
 - `config/` 只保存可公开的站点策略；MediaWiki 生成的 `LocalSettings.php` 属于运行时。
 - `content/` 是首次安装和可重复导入的页面种子，不是整个 Wiki 数据库的镜像；`import-content.sh` 必须先通过 MediaWiki 原生 `importImages` 导入图片种子，再导入引用它的页面，并在作业队列完成后用 `purgePage` 的标准输入契约刷新项目首页解析缓存。

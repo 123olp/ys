@@ -35,7 +35,7 @@ make pages-deploy
 make pages-smoke
 ```
 
-`pages-build` 从本地 MediaWiki API 枚举全部非讨论命名空间，以 8 路有界并发导出页面正文，并复用一份 MediaWiki 原生皮肤壳和静态资源。`pages-deploy` 只创建或更新 `human-infra` 与 `human-infra-wiki` 两个 Pages 项目，不修改科技树项目。`pages-smoke` 必须验证三个固定入口、Wiki 首页 DOM、普通词条、标题搜索和科技树产品标识。
+`pages-build` 从本地 MediaWiki API 枚举全部非讨论命名空间，以 8 路有界并发导出页面正文，并分别复用 MediaWiki 首页外壳与普通文章外壳。CSS 引用资源以及 HTML `src` / `srcset` 引用的同源资源必须一并本地化。`pages-deploy` 只创建或更新 `human-infra` 与 `human-infra-wiki` 两个 Pages 项目，不修改科技树项目。`pages-smoke` 必须验证三个固定入口、Wiki 首页 DOM、普通词条、标题搜索、页脚资源和科技树产品标识。
 
 ## 发布门禁
 
@@ -43,8 +43,9 @@ make pages-smoke
 2. 页面索引数必须与导出成功数一致，任何页面失败都终止构建。
 3. 发布产物不得包含 `tradecat.org`。
 4. Wiki 首页必须保留 `mp-2012` DOM，门户必须保留 `www-wikipedia-org` DOM。
-5. Pages Worker 只负责快照路由、模板注入和只读标题搜索，不承载内容编辑、医学模型或数据库。
-6. 远端 smoke 全部通过后，才能把发布视为完成。
+5. Wiki 首页必须使用 `page-Main_Page` 外壳且不得继承普通文章目录；页脚许可证和 MediaWiki 徽标必须返回成功。
+6. Pages Worker 只负责快照路由、模板注入和只读标题搜索，不承载内容编辑、医学模型或数据库。
+7. 远端 smoke 全部通过后，才能把发布视为完成。
 
 ## 回滚
 

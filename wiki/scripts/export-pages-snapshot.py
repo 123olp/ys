@@ -192,14 +192,49 @@ def localize_css(
     return ASSET_URL_PATTERN.sub(replace, css_text)
 
 
+def copy_document_assets(
+    session: requests.Session,
+    base_url: str,
+    soup: BeautifulSoup,
+    output_dir: Path,
+) -> None:
+    """复制页面 HTML 直接引用的同源资源，保持 MediaWiki 原始 URL。"""
+
+    base = urlparse(base_url)
+    values: set[str] = set()
+    for node in soup.select("img[src]"):
+        values.add(node["src"])
+    for node in soup.select("source[srcset]"):
+        values.update(
+            item.strip().split()[0]
+            for item in node["srcset"].split(",")
+            if item.strip()
+        )
+
+    for value in values:
+        asset_url = urljoin(base_url, value)
+        parsed = urlparse(asset_url)
+        if parsed.netloc != base.netloc or not parsed.path.startswith("/resources/"):
+            continue
+        target = output_dir / parsed.path.lstrip("/")
+        target.parent.mkdir(parents=True, exist_ok=True)
+        if target.exists():
+            continue
+        response = session.get(asset_url, timeout=REQUEST_TIMEOUT)
+        response.raise_for_status()
+        target.write_bytes(response.content)
+
+
 def build_shell(
     session: requests.Session,
     base_url: str,
     output_dir: Path,
+    source_page: str,
+    shell_name: str,
 ) -> None:
     response = session.get(
         f"{base_url}/index.php",
-        params={"title": SHELL_PAGE},
+        params={"title": source_page},
         timeout=REQUEST_TIMEOUT,
     )
     response.raise_for_status()
@@ -222,6 +257,8 @@ def build_shell(
         "link[type='application/atom+xml'], link[rel='search']"
     ):
         link.decompose()
+
+    copy_document_assets(session, base_url, soup, output_dir)
 
     stylesheets: list[str] = []
     for link in soup.select("link[rel~='stylesheet'][href]"):
@@ -286,7 +323,7 @@ def build_shell(
         "__HI_CANONICAL__",
     ):
         shell = shell.replace(html.escape(token), token)
-    output_dir.joinpath("snapshot", "shell.html").write_text(
+    output_dir.joinpath("snapshot", shell_name).write_text(
         shell,
         encoding="utf-8",
     )
@@ -330,7 +367,20 @@ def export_snapshot(base_url: str, output_dir: Path, workers: int) -> None:
     if MAIN_PAGE not in titles:
         raise RuntimeError(f"缺少项目首页: {MAIN_PAGE}")
 
-    build_shell(session, base_url, output_dir)
+    build_shell(
+        session,
+        base_url,
+        output_dir,
+        SHELL_PAGE,
+        "article-shell.html",
+    )
+    build_shell(
+        session,
+        base_url,
+        output_dir,
+        MAIN_PAGE,
+        "main-shell.html",
+    )
     pages_dir = output_dir / "snapshot" / "pages"
     pages_dir.mkdir(parents=True)
     index_by_title: dict[str, dict[str, Any]] = {}

@@ -15,6 +15,17 @@ wiki="$(curl -fsSL "$wiki_url/")"
 grep -Fq 'Human Infra Wiki' <<<"$wiki"
 grep -Fq 'id="mp-2012"' <<<"$wiki"
 grep -Fq '只读公开快照' <<<"$wiki"
+grep -Fq 'page-Main_Page' <<<"$wiki"
+if grep -Fq 'id="vector-toc-pinned-container"' <<<"$wiki"; then
+    printf 'Wiki 首页错误继承了普通文章目录外壳。\n' >&2
+    exit 1
+fi
+for asset in \
+    /resources/assets/licenses/cc-by-sa.png \
+    /resources/assets/poweredby_mediawiki.svg \
+    /resources/assets/mediawiki_compact.svg; do
+    curl -fsSL "$wiki_url$asset" >/dev/null
+done
 
 article="$(curl -fsSL --get "$wiki_url/index.php" \
     --data-urlencode 'title=有效永生与主体持续性')"

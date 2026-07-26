@@ -30,6 +30,24 @@ python3 "$wiki_dir/scripts/export-pages-snapshot.py" \
     --base-url "$wiki_local_url" \
     --output "$wiki_output_dir"
 
+for file in \
+    snapshot/main-shell.html \
+    snapshot/article-shell.html \
+    resources/assets/licenses/cc-by-sa.png \
+    resources/assets/poweredby_mediawiki.svg \
+    resources/assets/mediawiki_compact.svg; do
+    [[ -s "$wiki_output_dir/$file" ]] || {
+        printf 'Wiki Pages 发布产物缺失: %s\n' "$file" >&2
+        exit 1
+    }
+done
+grep -Fq 'page-Main_Page' "$wiki_output_dir/snapshot/main-shell.html"
+if grep -Fq 'id="vector-toc-pinned-container"' \
+    "$wiki_output_dir/snapshot/main-shell.html"; then
+    printf 'Wiki Pages 首页外壳错误继承普通文章目录。\n' >&2
+    exit 1
+fi
+
 printf 'Pages 发布产物完成:\n'
 printf '  portal: %s\n' "$portal_dir"
 printf '  wiki:   %s\n' "$wiki_output_dir"

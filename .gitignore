@@ -17,6 +17,7 @@ node_modules/
 .next/
 dist/
 .astro/
+.wrangler/
 .observablehq/
 **/.observablehq/
 
