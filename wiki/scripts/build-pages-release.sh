@@ -12,6 +12,7 @@ rm -rf "$portal_dir"
 mkdir -p "$portal_dir"
 
 cp "$wiki_dir/portal/index.html" "$portal_dir/"
+cp "$wiki_dir/portal/index.html" "$portal_dir/404.html"
 cp "$wiki_dir/portal/adapter.js" "$portal_dir/"
 cp "$wiki_dir/portal/languages.json" "$portal_dir/"
 cp "$wiki_dir/portal/LICENSE.wikimedia-portals" "$portal_dir/"

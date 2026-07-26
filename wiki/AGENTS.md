@@ -73,7 +73,7 @@ wiki/
 - 门户到 Wiki 的公开路由由 `WIKI_PUBLIC_URL` 注入；未设置时才回退到同主机加 `WIKI_PUBLIC_PORT` 的本地开发地址。不得在门户 HTML 中硬编码部署域名。
 - 公开环境只允许使用 `human-infra.pages.dev`、`human-infra-wiki.pages.dev` 和 `human-infra-tech-tree.pages.dev`。语言门户和 Wiki 由 Cloudflare Pages 发布，科技树由其独立 Pages 项目发布；禁止恢复自定义域名、Cloudflare Tunnel 或退役的 Research Narrative。
 - 本地 MediaWiki 是可编辑真相源；公开 Wiki 是只读快照。`pages/wiki-worker.js` 只负责兼容 MediaWiki 阅读路由、按页面类型选择首页/文章外壳、注入已导出的正文、该页面自身的原生 Vector 目录、页面类、标题、链接、修订上下文和标题搜索，不得接入数据库、开放登录编辑或成为第二内容真相源。快照移除 ResourceLoader 后，只允许补回 Vector 原生控件所需的最小无脚本状态规则，不得建立平行视觉层。
-- `runtime/pages/` 是忽略的确定性发布产物；必须由 `make pages-build` 重建，禁止手工维护。发布与回滚遵循 `PAGES-PUBLISHING-CONTRACT.md`。
+- `runtime/pages/` 是忽略的确定性发布产物；必须由 `make pages-build` 重建，禁止手工维护。门户产物必须包含 Pages 原生 `404.html`，防止未知路径退化为首页软 404。发布与回滚遵循 `PAGES-PUBLISHING-CONTRACT.md`。
 - `config/` 只保存可公开的站点策略；MediaWiki 生成的 `LocalSettings.php` 属于运行时。
 - `content/` 是首次安装和可重复导入的页面种子，不是整个 Wiki 数据库的镜像；`import-content.sh` 必须先通过 MediaWiki 原生 `importImages` 导入图片种子，再导入引用它的页面，并在作业队列完成后用 `purgePage` 的标准输入契约刷新项目首页解析缓存。
 - `homepage-upstream/snapshot/` 是中文首页结构与样式真相源；`Human Infra:首页`、页首和样式均由生成器从该快照产生，禁止手工改写生成产物。

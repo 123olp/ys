@@ -9,6 +9,15 @@ portal="$(curl -fsSL "$portal_url/")"
 grep -Fq 'id="www-wikipedia-org"' <<<"$portal"
 grep -Fq 'Human Infra' <<<"$portal"
 grep -Fq 'class="banner banner-bottom' <<<"$portal"
+portal_missing_status="$(
+    curl -sS -o /dev/null -w '%{http_code}' \
+        "$portal_url/__human_infra_missing_route__"
+)"
+[[ "$portal_missing_status" == "404" ]] || {
+    printf '门户未知路径必须返回 404，实际为 %s。\n' \
+        "$portal_missing_status" >&2
+    exit 1
+}
 curl -fsSL "$portal_url/runtime-config.js" \
     | grep -Fq 'https://human-infra-wiki.pages.dev'
 
