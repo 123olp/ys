@@ -91,6 +91,14 @@ Cloudflare Dashboard 把所有静态资产请求计入 Workers 免费额度。
 - Result：构建阶段仍使用内存中的页面数据和临时模板完成预渲染，发布阶段删除正文 JSON 与模板；最终发布包约 161 MB、2,835 个文件，公开索引只保留 `title`、`normalized`、`aliases` 和 `urlPath`。
 - Status：confirmed
 
+### E6：生产部署回归
+
+- Hypothesis：相同纯静态发布物部署到正式 Pages 项目后，公开路由保持完整。
+- Command：部署 `human-infra` 与 `human-infra-wiki`，再执行 `bash wiki/scripts/smoke-pages-release.sh`。
+- Result：门户、Wiki、科技树三站公开 smoke 全部通过；Wiki 首页、词条、搜索、随机入口、GEO 入口、真实 404 与旧路径重定向均符合契约。
+- Status：confirmed
+- Boundary：Dashboard 中已经产生的 Workers 当日历史用量不会倒退；应从本次部署之后观察增量，并在 UTC 午夜额度重置后确认静态访问不再消耗 Workers 请求。
+
 ## Root Cause
 
 Wiki 把本可在构建期完成的模板渲染放进 Pages `_worker.js`，错误地将静态知识站升级为请求时计算应用，导致所有 Wiki 请求进入 Workers 配额与 CPU 计费面。
