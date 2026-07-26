@@ -26,7 +26,15 @@ search="$(curl -fsSL --get "$wiki_url/index.php" \
 grep -Fq '只读快照中的标题搜索结果' <<<"$search"
 
 tech_tree="$(curl -fsSL "$tech_tree_url/")"
-grep -Fq 'HUMAN INFRA TECH TREE' <<<"$tech_tree"
+grep -Fq '<title>Historical Tech Tree</title>' <<<"$tech_tree"
+tech_tree_chunk="$(
+    grep -oE 'src="[^"]*app/page-[^"]+\.js"' <<<"$tech_tree" \
+        | head -1 \
+        | cut -d'"' -f2
+)"
+[[ -n "$tech_tree_chunk" ]]
+curl -fsSL "$tech_tree_url$tech_tree_chunk" \
+    | grep -Fq 'HUMAN INFRA TECH TREE'
 
 printf 'Pages 公开入口验证通过:\n'
 printf '  %s\n  %s\n  %s\n' "$portal_url" "$wiki_url" "$tech_tree_url"
