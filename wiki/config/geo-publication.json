@@ -1,0 +1,33 @@
+{
+  "publisher": {
+    "name": "tradecatlabs",
+    "url": "https://github.com/tradecatlabs"
+  },
+  "project": {
+    "name": "Human Infra",
+    "alternateName": [
+      "人类基础设施",
+      "Human Infrastructure"
+    ],
+    "description": "Human Infra 研究维持、延展和升级主体持续性的必要条件，连接生命、认知、技术、资源、环境与协作基础设施。",
+    "repository": "https://github.com/tradecatlabs/human_infra",
+    "community": "https://t.me/human_infra"
+  },
+  "products": {
+    "portal": {
+      "name": "Human Infra",
+      "url": "https://human-infra.pages.dev/",
+      "description": "Human Infra 多语言入口：连接主体持续性研究 Wiki、证据资料与目标导向科技树。"
+    },
+    "wiki": {
+      "name": "Human Infra Wiki",
+      "url": "https://human-infra-wiki.pages.dev/",
+      "description": "Human Infra Wiki 是关于主体持续性、有效永生、长寿科学、人类增强和相关基础设施的证据治理知识库。"
+    },
+    "technologyTree": {
+      "name": "Human Infra Tech Tree",
+      "url": "https://human-infra-tech-tree.pages.dev/",
+      "description": "以有效永生和主体持续性为目标，连接历史技术、当前能力、未来条件与证据词条的交互式科技树。"
+    }
+  }
+}

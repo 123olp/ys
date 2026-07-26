@@ -27,7 +27,7 @@ Windows 11 可直接访问这些 `localhost` 地址。若端口冲突，在 `.en
 - 中文 Wiki：<https://human-infra-wiki.pages.dev/>
 - 科技树：<https://human-infra-tech-tree.pages.dev/>
 
-公开入口只使用 Cloudflare Pages，不绑定自定义域名，也不通过 Tunnel 暴露本地容器。语言门户是 Wikimedia 官方门户快照；中文 Wiki 是本地 MediaWiki 在发布时生成的只读快照，保留原生 Vector 阅读结构、内部链接、分类和标题搜索。登录、编辑、历史、实时 API、VisualEditor 与 Page Forms 只在本地 MediaWiki 可用。完整边界和回滚方式见 [Pages 发布契约](PAGES-PUBLISHING-CONTRACT.md)。
+公开入口只使用 Cloudflare Pages，不绑定自定义域名，也不通过 Tunnel 暴露本地容器。语言门户是 Wikimedia 官方门户快照；中文 Wiki 是本地 MediaWiki 在发布时预渲染的纯静态只读快照，保留原生 Vector 阅读结构、内部链接、分类和浏览器端标题搜索。发布产物禁止包含 Pages Worker 或 Functions，因此正常页面和静态资源请求不消耗 Workers 函数配额。登录、编辑、历史、实时 API、VisualEditor 与 Page Forms 只在本地 MediaWiki 可用。完整边界和回滚方式见 [Pages 发布契约](PAGES-PUBLISHING-CONTRACT.md)。
 
 ## 信息架构
 

@@ -40,7 +40,6 @@ required=(
     scripts/build-pages-release.sh
     scripts/deploy-pages-release.sh
     scripts/smoke-pages-release.sh
-    pages/wiki-worker.js
     scripts/run-backstop.sh
     visual-regression/backstop.contract.json
     visual-regression/backstop.wikipedia.json

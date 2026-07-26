@@ -8,8 +8,11 @@
 	const wikiBase = config.wikiBase || window.location.protocol + '//' + host + port;
 
 	function wikiUrl( title, language ) {
-		const url = new URL( wikiBase + '/index.php' );
-		url.searchParams.set( 'title', title );
+		const path = title === 'Human Infra:首页'
+			? '/'
+			: '/wiki/' + title.replaceAll( ' ', '_' ).split( '/' )
+				.map( encodeURIComponent ).join( '/' ) + '/';
+		const url = new URL( path, wikiBase );
 		if ( language ) {
 			url.searchParams.set( 'uselang', language );
 		}
@@ -35,7 +38,10 @@
 			const query = document.getElementById( 'searchInput' ).value.trim();
 			const language = document.getElementById( 'searchLanguage' ).value;
 			if ( query ) {
-				window.location.assign( wikiUrl( 'Special:Search', language ) + '&search=' + encodeURIComponent( query ) );
+				const url = new URL( '/search/', wikiBase );
+				url.searchParams.set( 'q', query );
+				url.searchParams.set( 'uselang', language );
+				window.location.assign( url.toString() );
 			}
 		} );
 	}

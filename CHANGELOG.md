@@ -3,7 +3,9 @@
 ## 2026-07-26
 
 - Migrated all public products to Cloudflare `pages.dev`: the official Wikimedia-derived language portal, a MediaWiki-generated read-only Wiki snapshot, and the Human Infra technology tree; retired custom domains and the persistent public Tunnel.
-- Added a reproducible Pages publishing contract, bounded-concurrency Wiki snapshot exporter, Pages routing Worker, deployment workflow and three-product public smoke test.
+- Added a reproducible Pages publishing contract, bounded-concurrency Wiki snapshot exporter, static Pages routing rules, deployment workflow and three-product public smoke test.
+- Removed the Wiki Pages Advanced Mode Worker and pre-rendered all 2,730 canonical pages at build time, so public Wiki traffic stays on Cloudflare's free static-asset path instead of consuming Workers request quota.
+- Added a machine-readable GEO publication layer for the portal and Wiki, including canonical metadata, JSON-LD, robots, sitemap, `llms.txt`, entity data, page records and build-time consistency gates.
 - Fixed the Pages Wiki snapshot to preserve distinct MediaWiki homepage/article DOM shells and package HTML-referenced footer assets, with build and remote smoke gates preventing stale article TOCs and broken badges on the homepage.
 - Permanently retired the Astro Research Narrative site, deleted its Cloudflare Pages project, removed all active deployment paths, archived its source and publication workflow, and added repository checks that prevent the retired surface from returning.
 

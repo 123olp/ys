@@ -19,7 +19,7 @@ Historical Tech Tree 风格前端只负责关系、阶段和状态展示。点�
 
 `knowledgeTarget.kind` 只允许：
 
-- `internal-wiki`：项目专有词条，生成 `/index.php?title=<encoded title>`；
+- `internal-wiki`：项目专有词条；本地编辑环境生成 `/index.php?title=<encoded title>`，公开只读环境生成 `/wiki/<encoded title>/`；
 - `external-wikipedia`：公共通用词条，必须保存完整 HTTPS URL；
 - `unresolved`：尚无合格词条，前端不得伪造跳转。
 
@@ -40,4 +40,11 @@ internal-wiki
   -> http://localhost:18782/index.php?title=%E9%83%A8%E5%88%86%E7%BB%86%E8%83%9E%E9%87%8D%E7%BC%96%E7%A8%8B
 ```
 
-生产部署时只替换基址，不改变节点 ID、目标类型或页面标题。
+公开只读入口：
+
+```text
+internal-wiki
+  -> https://human-infra-wiki.pages.dev/wiki/%E9%83%A8%E5%88%86%E7%BB%86%E8%83%9E%E9%87%8D%E7%BC%96%E7%A8%8B/
+```
+
+生产解析器必须同时替换基址和路由形式，但不得改变节点 ID、目标类型或页面标题。历史 `/index.php/<title>` 由 Pages 静态重定向兼容；不得用 Worker 维持旧路由。
