@@ -11,6 +11,7 @@ required=(
     ROUTING-CONTRACT.md
     LANGUAGE-EDITION-CONTRACT.md
     HOMEPAGE-PORTAL-CONTRACT.md
+    PAGES-PUBLISHING-CONTRACT.md
     homepage-upstream/UPSTREAM.md
     homepage-upstream/snapshot/metadata.json
     homepage-upstream/snapshot/Wikipedia_Home.wiki
@@ -35,6 +36,11 @@ required=(
     scripts/refresh-wikipedia-portal.py
     scripts/refresh-wikipedia-homepage.py
     scripts/build-wikipedia-homepage.py
+    scripts/export-pages-snapshot.py
+    scripts/build-pages-release.sh
+    scripts/deploy-pages-release.sh
+    scripts/smoke-pages-release.sh
+    pages/wiki-worker.js
     scripts/run-backstop.sh
     visual-regression/backstop.contract.json
     visual-regression/backstop.wikipedia.json

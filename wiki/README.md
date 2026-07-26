@@ -23,14 +23,11 @@ Windows 11 可直接访问这些 `localhost` 地址。若端口冲突，在 `.en
 
 生产入口：
 
-- 多语言门户：<https://human-infra.tradecat.org/>
-- 中文 Wiki：<https://wiki.tradecat.org/>
-- 科技树：<https://tech-tree.tradecat.org/>
+- 多语言门户：<https://human-infra.pages.dev/>
+- 中文 Wiki：<https://human-infra-wiki.pages.dev/>
+- 科技树：<https://human-infra-tech-tree.pages.dev/>
 
-语言门户与 MediaWiki 通过 Cloudflare Tunnel 连接本地持久化容器；科技树是
-独立的 Cloudflare Pages 静态发布物，不经过该 Tunnel。公开部署时，将
-`WIKI_SERVER` 和 `WIKI_PUBLIC_URL` 设为 MediaWiki 的公开 HTTPS 地址。
-门户通过运行时配置生成跨主机 Wiki 链接，本地端口只负责容器映射。
+公开入口只使用 Cloudflare Pages，不绑定自定义域名，也不通过 Tunnel 暴露本地容器。语言门户是 Wikimedia 官方门户快照；中文 Wiki 是本地 MediaWiki 在发布时生成的只读快照，保留原生 Vector 阅读结构、内部链接、分类和标题搜索。登录、编辑、历史、实时 API、VisualEditor 与 Page Forms 只在本地 MediaWiki 可用。完整边界和回滚方式见 [Pages 发布契约](PAGES-PUBLISHING-CONTRACT.md)。
 
 ## 信息架构
 
@@ -81,6 +78,9 @@ make homepage-reference # 生成标准化模板契约参考图
 make homepage-compare   # 对模板契约执行零容差像素门禁
 make homepage-audit-reference # 生成未经标准化的官方整页参考图
 make homepage-audit     # 诊断官方整页与本地内容页的全部可见差异
+make pages-build        # 生成门户与 Wiki Pages 发布产物
+make pages-deploy       # 发布 human-infra 与 human-infra-wiki
+make pages-smoke        # 验证三个 pages.dev 公开入口
 ```
 
 更新官方语言门户快照：

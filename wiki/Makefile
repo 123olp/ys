@@ -1,6 +1,6 @@
 SHELL := /bin/bash
 
-.PHONY: bootstrap up stop logs import backup smoke language-selector-check validate homepage-refresh homepage-build homepage-check homepage-reference homepage-compare homepage-audit-reference homepage-audit
+.PHONY: bootstrap up stop logs import backup smoke language-selector-check validate homepage-refresh homepage-build homepage-check homepage-reference homepage-compare homepage-audit-reference homepage-audit pages-build pages-deploy pages-smoke
 
 bootstrap:
 	./scripts/bootstrap.sh
@@ -49,3 +49,12 @@ homepage-audit-reference:
 
 homepage-audit:
 	./scripts/run-backstop.sh test audit
+
+pages-build:
+	./scripts/build-pages-release.sh
+
+pages-deploy:
+	./scripts/deploy-pages-release.sh
+
+pages-smoke:
+	./scripts/smoke-pages-release.sh
