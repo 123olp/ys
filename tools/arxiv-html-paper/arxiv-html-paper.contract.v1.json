@@ -20,8 +20,8 @@
   "default_targets": {
     "source_mirror": ".research/arxiv-html/2606.26689v1/wget",
     "public_dir": "web/public",
-    "layout_target": "web/src/layouts/PaperReaderLayout.astro",
-    "page_target": "web/src/pages/paper.astro"
+    "layout_target": "build/arxiv-html-paper-preview/src/layouts/PaperReaderLayout.astro",
+    "page_target": "build/arxiv-html-paper-preview/src/pages/paper.astro"
   },
   "templates": {
     "layout": "templates/PaperReaderLayout.astro",

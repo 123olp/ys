@@ -16,7 +16,7 @@
   "papers": [
     {
       "paperId": "human-infra-main-paper",
-      "path": "web/src/pages/paper.astro",
+      "path": "archive/retired-research-narrative-site/web/src/pages/paper.astro",
       "paperType": "arxiv-style-working-paper",
       "arxivId": "human-infra/working-paper.0001",
       "sourceDataPaths": [],
@@ -92,7 +92,7 @@
     },
     {
       "paperId": "effective-immortality-flywheel-paper",
-      "path": "web/src/pages/papers/effective-immortality-flywheel.astro",
+      "path": "archive/retired-research-narrative-site/web/src/pages/papers/effective-immortality-flywheel.astro",
       "paperType": "arxiv-style-working-paper",
       "arxivId": "human-infra/working-paper.0002",
       "sourceDataPaths": [],
@@ -167,7 +167,7 @@
     },
     {
       "paperId": "metric-redshift-recursive-waiting-paper",
-      "path": "web/src/pages/papers/metric-redshift-recursive-waiting.astro",
+      "path": "archive/retired-research-narrative-site/web/src/pages/papers/metric-redshift-recursive-waiting.astro",
       "paperType": "arxiv-style-working-paper",
       "arxivId": "human-infra/working-paper.0003",
       "sourceDataPaths": [],
@@ -243,7 +243,7 @@
     },
     {
       "paperId": "proper-time-differential-waiting-paper",
-      "path": "web/src/pages/papers/proper-time-differential-waiting-hypothesis.astro",
+      "path": "archive/retired-research-narrative-site/web/src/pages/papers/proper-time-differential-waiting-hypothesis.astro",
       "paperType": "arxiv-style-working-paper",
       "arxivId": "human-infra/working-paper.0004",
       "sourceDataPaths": [],
@@ -318,7 +318,7 @@
     },
     {
       "paperId": "controllable-metric-waiting-room-paper",
-      "path": "web/src/pages/papers/controllable-metric-waiting-room-hypothesis.astro",
+      "path": "archive/retired-research-narrative-site/web/src/pages/papers/controllable-metric-waiting-room-hypothesis.astro",
       "paperType": "arxiv-style-working-paper",
       "arxivId": "human-infra/working-paper.0005",
       "sourceDataPaths": [

@@ -16,8 +16,8 @@ DEFAULT_SOURCE = Path(".research/arxiv-html/2606.26689v1/wget")
 DEFAULT_TEMPLATE_DIR = Path(__file__).resolve().with_name("arxiv-html-paper") / "templates"
 DEFAULT_FALLBACK_ASSET_DIR = Path(__file__).resolve().with_name("arxiv-html-paper") / "assets"
 DEFAULT_PUBLIC_DIR = Path("web/public")
-DEFAULT_LAYOUT_TARGET = Path("web/src/layouts/PaperReaderLayout.astro")
-DEFAULT_PAGE_TARGET = Path("web/src/pages/paper.astro")
+DEFAULT_LAYOUT_TARGET = Path("build/arxiv-html-paper-preview/src/layouts/PaperReaderLayout.astro")
+DEFAULT_PAGE_TARGET = Path("build/arxiv-html-paper-preview/src/pages/paper.astro")
 
 DEFAULT_PAPER_URL = "https://arxiv.org/html/2606.26689v1"
 

@@ -2,6 +2,8 @@
 
 ## 2026-07-26
 
+- Permanently retired the Astro Research Narrative site, deleted its Cloudflare Pages project, removed all active deployment paths, archived its source and publication workflow, and added repository checks that prevent the retired surface from returning.
+
 - Expanded all seven Human Infra topic portals with native MediaWiki semantic sections for overview, selected research, routes, evidence boundaries, open questions, participation and related navigation, removing the custom portal CSS layer.
 - Added a single-root Wiki category graph under `Category:Human Infra Wiki`, governed homepage and infobox template categories, runtime red-link/category gates, and duplicate-title regression checks.
 
@@ -247,10 +249,10 @@ All notable repository structure changes are recorded here.
 - Expanded the effective immortality flywheel Source Cards to v0.3 with technology-family evidence cards for AI tools, medical interventions, wearables, knowledge externalization, automation, and resource/environment interventions.
 - Upgraded the effective immortality flywheel working paper and Web paper page to v0.4 with a running example, formal objective function, threat model, and conclusion section.
 - Added `web/src/data/effective-immortality-evidence.json` as the structured Evidence Matrix data source and connected the Web paper page to render evidence edges, classes, and technology families from data.
-- Added `web/src/scripts/evidence-graph.js` and connected the working paper page to render a D3 Evidence Matrix graph from the same structured data.
+- Added `archive/retired-research-narrative-site/web/src/scripts/evidence-graph.js` and connected the working paper page to render a D3 Evidence Matrix graph from the same structured data.
 - Added a Claim Register to the effective immortality flywheel paper and Evidence Matrix data so conceptual, methodological, empirical, governance, and prohibited claims are explicitly separated.
 - Added a partial citation audit note and normalized key AI productivity and target-trial references in the Web paper and Source Cards.
-- Added an independent arXiv-style Web paper page at `web/src/pages/papers/effective-immortality-flywheel.astro` so the effective immortality flywheel paper does not overwrite the existing `/paper/` page.
+- Added an independent arXiv-style Web paper page at `archive/retired-research-narrative-site/web/src/pages/papers/effective-immortality-flywheel.astro` so the effective immortality flywheel paper does not overwrite the existing `/paper/` page.
 - Upgraded the effective immortality flywheel data source to schema v0.3 with a variable dictionary, model contract, and derivation map for the quantitative research layer.
 - Upgraded the effective immortality flywheel working paper to v0.6 and Evidence Matrix to v0.4 with structured threats to validity and reproducibility anchors.
 - Upgraded the effective immortality flywheel working paper to v0.7 and evidence data to schema v0.5 with a Citation Context Register covering 12 critical source groups.

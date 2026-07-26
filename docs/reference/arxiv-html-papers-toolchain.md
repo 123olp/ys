@@ -173,7 +173,7 @@ tools/arxiv-html-paper/
 当前项目校验命令：
 
 ```bash
-python3 tools/arxiv_html_paper_tool.py verify-assets --public-dir web/public
+python3 tools/arxiv_html_paper_tool.py verify-assets --public-dir build/arxiv-html-paper-preview/public
 ```
 
 注意：`verify-assets` 只检查 CSS、JS、图标和字体等静态资源是否存在，不检查阅读器控件是否可用。凡是修改 layout、目录 slot、HTML 注入、post-process 或本地静态预览生成，必须追加浏览器级断言：

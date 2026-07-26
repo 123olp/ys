@@ -83,7 +83,6 @@ REQUIRED_INDEX_LINKS = {
     "tools/AGENTS.md": SCRIPT_LINK,
     "web/README.md": "human-infra-quantitative-capability-ladder-validation.json",
     "web/AGENTS.md": "human-infra-quantitative-capability-ladder-validation.json",
-    "web/package.json": "export:quantitative-capability-ladder-validation",
 }
 
 

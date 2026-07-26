@@ -24,18 +24,20 @@ human_infra/
 │   ├── c5-ecological-substrate/    # 可能性生态承载层
 │   └── c6-local-unlocking/         # 局部可能性解锁层
 ├── tools/                # 仓库检查脚本和可复用工程工具
-├── web/                  # Astro + D3 展示、论文、机器知识与 GEO 发布层
-└── wiki/                 # 多语言入口、MediaWiki 首页/门户/词条与科技树详情页
+├── web/                  # 研究数据与论文审计中间资产，禁止部署
+├── wiki/                 # 多语言入口、MediaWiki 首页/门户/词条与科技树详情页
+└── archive/              # 永久退役实现，只读追溯
 ```
 
 ## 职责边界
 
 - `.github/` 只放 GitHub 协作模板和远程质量门禁，不放长期知识正文。
 - `human-infra-dashboard.html` 是根目录静态展示入口，只承载可直接打开的模型看板，不承载数据采集、个人预测或生产服务逻辑。
-- `singularity-human-infra.html` 是根目录专项展示入口，用于把《奇点更近》学习资料转译为 Human Infra 的价值展示、预测模型和 D3 可视化，不作为事实核验或医学建议。
+- `archive/retired-research-narrative-site/singularity-human-infra.html` 是已永久退役的历史静态页，只允许追溯，禁止恢复、构建、复用或部署。
 - `README.en.md` 是 GitHub 与国际生成式引擎的英文短入口，不复制中文 README 的全部研究账本。
 - `CITATION.cff` 是仓库引用与发布者元数据真相源，作者统一为 `tradecatlabs`。
-- `web/` 是 Astro + D3 正式 Web 应用和 GEO 机器发布层，用于多页科研叙事、论文、预测模型、结构化数据、抓取入口和自动发布审计；它不承载采集脚本、个人预测服务或医学决策逻辑。
+- `web/` 只保存结构化研究数据和论文审计脚本，不再是 Web 应用，不得包含页面、路由、Astro、Wrangler、静态构建产物或部署入口。
+- `archive/retired-research-narrative-site/` 保存已永久退役的 Astro Research Narrative 网站，仅供追溯；禁止构建、复用和部署。
 - `wiki/` 是由 Wikimedia 官方门户发布物的本地适配层和中文 MediaWiki 组成的知识基础设施，访问层级为“语言选择 -> 语言版本首页 -> 专题门户 -> 词条”；门户视觉不得另造，仓库只跟踪上游快照、最小路由适配、可复现配置、首页模块、门户页与种子内容。
 - `tools/` 保存仓库维护脚本和可迁移工程工具；其中 arXiv HTML papers 复用工具只负责资源安装、资产校验和 Astro 模板生成，不承载 Human Infra 正文理论；Human Infra 审计器只检查本地研究契约和索引覆盖，不证明外部文献真实性。
 - `docs/` 只放 Human Infra 的上位理论、域边界、伦理原则和原始资料归档，不放具体采集脚本；`docs/reference/human-infra-falsifier-source-card-backfill.json` 只保存论文强主张和优先域反证的 Source Card 来源锚点回填，不替代逐篇 Source Card 精读。
@@ -379,7 +381,7 @@ human_infra/
 - 子域新增数据或脚本前，先确认它是否属于现有子域；若不属于，先更新 `docs/reference/domain-map.md` 再建目录。
 - 不把远期研究域伪装成当前可执行产品。
 - 不把 AI 总结当作事实源；公开结论必须能回到原始资料或公开数据库。
-- 应用框架只允许用于明确产品形态和验证路径的展示层；当前正式 Web 展示统一收敛到 `web/` 的 Observable Framework 结构。
+- 公开展示只允许进入科技树或 Wiki 的正式产品边界；`web/` 不再承担展示或发布职责，退役站点不得恢复。
 
 ## 变更日志
 
@@ -408,7 +410,7 @@ human_infra/
 - 2026-06-26：新增 `web/` Observable Framework 应用，作为科研叙事、书籍转译、预测模型和交互图表的正式 Web 入口。
 - 2026-06-27：新增 `tools/arxiv_html_paper_tool.py` 与 `tools/arxiv-html-paper/`，把 arXiv HTML papers 前端框架沉淀为可复用 Astro 工具链。
 - 2026-06-29：新增可控度规等待室假设 working paper 入口和审计账本，把黑洞等待室收敛为固有时差分、退出采用、风险扣减和递归等待的可审查模型。
-- 2026-07-02：新增 Web LEV 路线模型页和结构化导出链路，把主流长寿逃逸路线、概率门、二阶/多阶效应和飞轮图接入 `web/src/pages/lev.astro`。
+- 2026-07-02：新增 Web LEV 路线模型页和结构化导出链路，把主流长寿逃逸路线、概率门、二阶/多阶效应和飞轮图接入 `archive/retired-research-narrative-site/web/src/pages/lev.astro`。
 - 2026-07-01：新增第 115 波长期照护执行连续性域，覆盖成人日间服务、居家照护人员、喘息容量、照护者训练、照护者健康和居家照护任务协调。
 - 2026-07-01：新增第 116 波人口与地域可达性连续性域，覆盖部落健康主权服务、退伍军人福利导航、迁徙季节性农业工人健康住房、属地岛屿健康基础设施、边境跨境照护和 LGBTQ 身份承认服务。
 - 2026-07-01：新增第 117 波青少年到成年转变连续性域，覆盖离家无家可归青年外展庇护、寄养出离独立生活、少年司法重返 aftercare、过渡年龄青年心理健康、机会青年教育就业和怀孕育儿青年家庭支持。

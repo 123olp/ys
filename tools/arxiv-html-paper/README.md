@@ -32,7 +32,7 @@
 从 Human Infra 仓库根目录执行：
 
 ```bash
-python3 tools/arxiv_html_paper_tool.py verify-assets --public-dir web/public
+python3 tools/arxiv_html_paper_tool.py verify-assets --public-dir build/arxiv-html-paper-preview/public
 ```
 
 `verify-assets` 只证明资源齐全，不证明阅读器控件可用。涉及 layout、TOC、HTML 注入、post-process 或静态预览时，还必须做浏览器级断言：`.ltx_page_navbar > nav.ltx_TOC` 存在、目录项存在、`.ltx_document` / `.ltx_abstract` / `.ltx_bibliography` 存在、点击目录按钮后 `data-toc-display` 会变化。
@@ -51,14 +51,14 @@ python3 tools/arxiv_html_paper_tool.py scaffold \
 ```bash
 python3 tools/arxiv_html_paper_tool.py install-assets \
   --source .research/arxiv-html/2606.26689v1/wget \
-  --public-dir web/public
+  --public-dir build/arxiv-html-paper-preview/public
 ```
 
 只写布局：
 
 ```bash
 python3 tools/arxiv_html_paper_tool.py write-layout \
-  --target web/src/layouts/PaperReaderLayout.astro \
+  --target build/arxiv-html-paper-preview/src/layouts/PaperReaderLayout.astro \
   --force
 ```
 
@@ -66,8 +66,8 @@ python3 tools/arxiv_html_paper_tool.py write-layout \
 
 ```bash
 python3 tools/arxiv_html_paper_tool.py write-page \
-  --target web/src/pages/paper.astro \
-  --layout-target web/src/layouts/PaperReaderLayout.astro \
+  --target build/arxiv-html-paper-preview/src/pages/paper.astro \
+  --layout-target build/arxiv-html-paper-preview/src/layouts/PaperReaderLayout.astro \
   --title "My Research Paper" \
   --author "Local Research Notes" \
   --force

@@ -13,7 +13,7 @@
   },
   "auditedInputHashes": {
     "web/src/data/controllable-metric-waiting-room-hypothesis.json": "sha256:67e3b4dd1eec8ff3ffb2b705a5d3a1087b0dc0d21252b0a6c461d6f673474dac",
-    "web/src/pages/papers/controllable-metric-waiting-room-hypothesis.astro": "sha256:c13a501d63e3abe3983bdb2861981ae51372badc2d51286a7ab800282145aac4",
+    "archive/retired-research-narrative-site/web/src/pages/papers/controllable-metric-waiting-room-hypothesis.astro": "sha256:c13a501d63e3abe3983bdb2861981ae51372badc2d51286a7ab800282145aac4",
     "web/src/data/controllable-metric-waiting-room-hypothesis/REFERENCE_VERIFICATION.json": "sha256:d00ca1a0c1e8c45524f714057dd7bb0757753a06e81a29a6c7d7bc54c5df227b",
     "web/src/data/controllable-metric-waiting-room-hypothesis/CITATION_CONTEXT_REVIEW_PACKET.json": "sha256:0cbc5d64580fc66248278516d48b4c3fa2e3dda2b297539a13e71c6dcce65d5b",
     "web/src/data/controllable-metric-waiting-room-hypothesis/CITATION_CONTEXT_LOCAL_REVIEW.json": "sha256:d47fd84dd64b00481731e173bec88d3e9f8451212a1bb41f325d0c563834109f"

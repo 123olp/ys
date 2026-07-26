@@ -1,8 +1,10 @@
 # 有效永生带来的主体持续性加速回报飞轮
 
 Status: working paper v0.25  
-Audience: Human Infra 初学者、研究协作者、后续 Web 论文页作者  
+Audience: Human Infra 初学者、研究协作者
 Scope: 概念模型、变量定义、问题形式化、研究问题、证据计划和最小建模路线
+
+> 退役边界：本文曾对应的 Research Narrative / Astro 页面、构建命令和页面审计脚本已经永久归档。归档文件只用于追溯历史，不得构建、预览、复用或部署；本文与 `web/src/data/` 中的研究数据是继续维护的研究资产。
 
 ## Abstract
 
@@ -720,7 +722,7 @@ AI 辅助科研中最危险的问题往往不是“看起来不专业”，而�
 | 产物 | 路径 | 职责 | 检查方式 |
 | --- | --- | --- | --- |
 | Working paper | `docs/explanations/effective-immortality-acceleration-flywheel.md` | 论文主叙事、变量定义、模型契约和研究路线 | 人工审阅章节结构，并运行 `make check` |
-| Web paper page | `web/src/pages/papers/effective-immortality-flywheel.astro` | arXiv-style 阅读页面，消费结构化数据并展示表格和 D3 图 | `npm run build`；`curl` 页面确认 v0.25、schema 2.0、Citation Context Review Packet v0.1、Citation Context Risk Triage v0.1、High-Risk Citation Context Review v0.1、Citation Context Local Review v0.1、Fresh Reviewer Citation Audit Protocol v0.1、Fresh Reviewer Citation Results Audit v0.1、Claim Context Audit v0.1、Reference Verification v0.1、Pre-Submission Review v0.1、Search Execution Register v0.1、Candidate Source Verification v0.1、Candidate Source Extraction v0.1、Estimand Registry v0.1、Analysis Plan Registry v0.1、AI Research Failure Mode Audit v0.1、AI Task Evidence Register v0.3、AI Task Method Audit、Research Declarations、Claim Evidence Map、Reference Registry 和 `U_t` 门禁 |
+| Retired Web paper snapshot | `archive/retired-research-narrative-site/web/src/pages/papers/effective-immortality-flywheel.astro` | 已退役的历史页面快照，只用于追溯当时的表达与数据消费方式 | 禁止运行原 `npm` 构建、页面审计、预览或部署命令；当前验证只针对 working paper 与结构化研究数据 |
 | Structured evidence data | `web/src/data/effective-immortality-evidence.json` | Claim Register、Claim Evidence Map、AI Task Evidence Register、Reference Registry、变量字典、模型契约、证据边、技术族、威胁和可复现锚点的单一数据源 | Node JSON smoke：schemaVersion、变量数、A -> Q 任务证据、证据等级、效应估计、证据边、主张映射、failure mode audit、参考文献注册表和必需字段 |
 | Reference BibTeX | `web/src/data/effective-immortality-flywheel/references.bib` | 由 Reference Registry 生成的 BibTeX 风格参考文献文件 | `npm run export:references`；确认条目数等于 `referenceRegistry.length`，且 QJE DOI 为 `10.1093/qje/qjae044` |
 | Citation Audit JSON | `web/src/data/effective-immortality-flywheel/CITATION_AUDIT.json` | 由 Reference Registry 生成的机器可读引用审计账本 | `npm run export:references`；Node 检查 verdict、total_entries、hashes 和 assurance limitations |
@@ -749,7 +751,7 @@ AI 辅助科研中最危险的问题往往不是“看起来不专业”，而�
 | Coverage Audit Markdown | `web/src/data/effective-immortality-flywheel/COVERAGE_AUDIT.md` | 人类可读覆盖审计报告 | 确认 54 个 alias、4 个 AI task reference key、14 个 AI task 必填字段、7 个 method-audit 字段、8 个 research declarations、9 个 estimand rows、9 个 analysis plan rows、7 个 failure mode rows、47 张 Source Card、53 条 Reference Registry 无断链 |
 | Evidence Matrix | `docs/source-notes/2026-06-28-effective-immortality-flywheel-evidence-matrix.md` | 可检验边、证据角色、断裂条件、模型任务和数据契约说明 | 与 JSON 字段逐项同步，禁止陈旧符号 |
 | Derivation package | `docs/source-notes/2026-06-28-effective-immortality-flywheel-derivation-package.md` | 冻结不变量、假设、符号、推导图、主公式、非主张和开放风险 | 确认不变量稳定，定义、近似、方法和边界分开标注 |
-| D3 evidence graph | `web/src/scripts/evidence-graph.js` | 从嵌入 JSON 生成主链、反哺路径、风险通道和因果门禁图 | 脚本查找 `U_t -> causal claim`，页面嵌入 JSON 后可渲染 |
+| Retired D3 evidence graph | `archive/retired-research-narrative-site/web/src/scripts/evidence-graph.js` | 已退役的历史图形实现，只用于追溯 | 禁止执行或迁回活动路径 |
 
 ## 18. 研究路线
 
@@ -789,7 +791,7 @@ AI 辅助科研中最危险的问题往往不是“看起来不专业”，而�
 | 声明 | 内容 | 对应产物 |
 | --- | --- | --- |
 | Data availability | 本文当前不使用受限个人数据、临床个体数据或未公开实验数据。结构化证据、引用注册表、coverage audit 和 citation audit 均随仓库文本文件公开维护。 | `web/src/data/effective-immortality-evidence.json`; `web/src/data/effective-immortality-flywheel/` |
-| Code availability | Web 论文页、D3 证据图、引用导出脚本和覆盖审计脚本保存在仓库中，可用 `npm` scripts 和 `make check` 复现当前静态页面与审计产物。 | `web/src/pages/papers/effective-immortality-flywheel.astro`; `web/src/scripts/evidence-graph.js`; `web/scripts/` |
+| Code availability | Web 论文页、D3 证据图、引用导出脚本和覆盖审计脚本保存在仓库中，可用 `npm` scripts 和 `make check` 复现当前静态页面与审计产物。 | `archive/retired-research-narrative-site/web/src/pages/papers/effective-immortality-flywheel.astro`; `archive/retired-research-narrative-site/web/src/scripts/evidence-graph.js`; `web/scripts/` |
 | Ethics and safety | 本文是概念模型、证据矩阵和科研叙事草案，不招募人类受试者，不输出个人死亡日期，不提供医学、法律、投资或政策建议。所有医学、神经、AI 和增强技术叙述均受证据等级、风险、同意、权利和主体连续性约束。 | `modelContract.constraints`; `claimRegister CL7`; `threatsToValidity` |
 | AI assistance disclosure | 本文和 Web 页面由 Human Infra maintainers 使用 AI 辅助进行资料整理、结构化写作、代码生成、审计脚本和页面构建。AI 输出不作为事实源；可发表主张必须回到 Reference Registry、Source Cards、原文 PDF、官方标准或机器审计产物。 | `docs/source-notes/2026-06-28-effective-immortality-flywheel-automated-research-run.md` |
 | Competing interests | 当前仓库未记录与本文主张相关的商业资助、产品推广或受雇利益。后续若引入机构、资助、产品或商业合作，应在本字段和论文声明中更新。 | `researchDeclarations` |

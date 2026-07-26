@@ -147,8 +147,8 @@ Typekit 字体在安装阶段归一化为本地 `.woff2` 文件。运行时不�
 ## 验收标准
 
 ```bash
-python3 tools/arxiv_html_paper_tool.py verify-assets --public-dir web/public
-python3 tools/arxiv_html_paper_tool.py verify-assets --public-dir web/public --json
+python3 tools/arxiv_html_paper_tool.py verify-assets --public-dir build/arxiv-html-paper-preview/public
+python3 tools/arxiv_html_paper_tool.py verify-assets --public-dir build/arxiv-html-paper-preview/public --json
 ```
 
 `verify-assets` 只能证明 CSS、JS、字体和图标齐全，不能证明阅读器控件可用。在项目级交付前，还应运行目标仓库自己的构建或检查命令；涉及页面生成、layout 改造、post-process 或静态预览时，必须追加浏览器级断言：

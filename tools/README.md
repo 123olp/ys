@@ -21,9 +21,7 @@
 - `audit_human_infra_l4_validation_calibration_reporting_contract.py`: verifies that the L4 validation/calibration reporting contract binds L4WO-05 to required report sections, calibration diagnostics, TRIPOD+AI / PROBAST+AI-style reporting and zero-packet blocked-state boundaries.
 - `audit_human_infra_research_standards_source_anchor_register.py`: verifies that the external research-standards anchor register covers reporting, bias, certainty, causal-emulation, RWE and model-transparency routes while keeping model admission, individual prediction, medical advice and longevity escape velocity claims blocked.
 - `audit_human_infra_l4_validation_calibration_report_execution_register.py`: verifies that the L4 validation/calibration report execution register keeps all 12 report sections and 5 L4WO-05 slots pending real report packets, writes the Web validation summary, and preserves L4/public/calibrated/individual-use blocks.
-- `audit_human_infra_page_claim_consistency.py`: verifies that major README, Web and paper pages keep required Human Infra Claim IDs, claim-spine labels and prohibited-use boundary phrases from `docs/reference/human-infra-page-claim-consistency.json`.
 - `audit_human_infra_audience_claim_map.py`: verifies that value clarity has audience-specific Claim ID entry points and adjacent-project boundary distinctions from `docs/reference/human-infra-audience-claim-map.json`.
-- `audit_human_infra_paper_claim_register.py`: verifies that every arXiv-style paper page has paper-specific strong claims, core Claim IDs, falsifiers, downgrade actions, registered source data paths and prohibited-use boundaries from `docs/reference/human-infra-paper-claim-register.json`.
 - `audit_human_infra_domain_falsifier_coverage.py`: verifies that C1 and the current 20 priority C2 research domains keep falsifier, downgrade-condition, variable-interface and prohibited-use scaffolding from `docs/reference/human-infra-domain-falsifier-coverage.json`.
 - `audit_human_infra_domain_claim_evidence_matrix.py`: verifies that the current 30 priority research domains are joined to domain claims, variable-contract sources, falsifier sources and extracted Source Card IDs from `docs/reference/human-infra-domain-claim-evidence-matrix.json`.
 - `audit_human_infra_domain_source_card_field_extraction.py`: verifies that each current domain matrix seed row has endpoint candidates, source IDs, population-boundary slots, uncertainty-channel slots, transfer-boundary slots and next field-extraction actions from `docs/reference/human-infra-domain-source-card-field-extraction.json`.
@@ -177,9 +175,7 @@ python3 tools/audit_human_infra_model_admission_contract.py
 python3 tools/audit_human_infra_model_admission_candidate_registry.py
 python3 tools/audit_human_infra_brain_body_interface_protocol_register.py
 python3 tools/audit_human_infra_minimal_sufficient_body_claim_evidence_matrix.py
-python3 tools/audit_human_infra_page_claim_consistency.py
 python3 tools/audit_human_infra_audience_claim_map.py
-python3 tools/audit_human_infra_paper_claim_register.py
 python3 tools/audit_human_infra_domain_falsifier_coverage.py
 python3 tools/audit_human_infra_domain_claim_evidence_matrix.py
 python3 tools/audit_human_infra_domain_source_card_field_extraction.py
@@ -201,7 +197,7 @@ python3 tools/audit_human_infra_independent_fresh_review_verdict_register.py
 python3 tools/audit_human_infra_falsifier_source_card_backfill.py
 python3 tools/audit_human_infra_falsifier_source_card_extraction.py
 python3 tools/update_domain_doc_contracts.py
-python3 tools/arxiv_html_paper_tool.py verify-assets --public-dir web/public
+python3 tools/arxiv_html_paper_tool.py verify-assets --public-dir build/arxiv-html-paper-preview/public
 make claim-matrix-audit
 make maturity-gap-audit
 make model-admission-contract-audit
@@ -217,9 +213,7 @@ make l4-evidence-packet-validator-audit
 make l4-validation-calibration-reporting-contract-audit
 make research-standards-source-anchor-audit
 make l4-validation-calibration-report-execution-register-audit
-make page-claim-audit
 make audience-claim-map-audit
-make paper-claim-audit
 make domain-falsifier-audit
 make domain-claim-matrix-audit
 make domain-field-extraction-audit

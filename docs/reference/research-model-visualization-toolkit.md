@@ -2,11 +2,13 @@
 
 本文档沉淀 Human Infra 定量模型与 Web 可视化的科研化方法：如何读论文、选工具、建模型、画图、审查和迭代。
 
-它服务于两个页面和三类文档：
+> 状态说明：原 Research Narrative / Astro 站点已永久退役。本文提及归档页面时只是在记录历史实现，不构成构建、复用或部署许可；公开产品只允许使用科技树与 Wiki 的正式源码。
 
-- `singularity-human-infra.html`：面向传播和学习的专项展示页。
+它服务于一个活动看板和三类文档：
+
+- `archive/retired-research-narrative-site/singularity-human-infra.html`：已永久退役的历史专项展示页，仅供追溯。
 - `human-infra-dashboard.html`：生命路径预测模型的交互看板。
-- `web/`：基于 Astro + D3 的正式多页科研叙事与交互模型应用。
+- `web/src/data/`：结构化研究数据，不是网站。
 - `docs/explanations/life-path-prediction-model.md`、`docs/reference/life-path-prediction-model-contract.md`、`docs/reference/life-path-prediction-model-governance.md`：模型说明、契约和治理。
 
 ## 1. 工作目标
@@ -282,7 +284,7 @@ Known threats:
 | 研究模型页 | 贡献者、审查者 | 展示目标试验、模型族、验证指标和敏感性 |
 | 数据审查页 | 维护者 | 来源、变量、证据等级、偏差风险和更新状态 |
 
-`singularity-human-infra.html` 属于专项传播页。正式科研叙事、预测模型和交互图表应进入 `web/` 的 Astro + D3 应用。
+历史 `singularity-human-infra.html` 与原 `web/` Astro 站点均已永久退役；两者不得作为正式科研叙事、预测模型或交互图表的发布入口。
 
 ### 6.3 主图与审查图分离
 
@@ -460,7 +462,7 @@ Human Infra 页面约束：
 
 Human Infra 页面约束：
 
-- `singularity-human-infra.html` 只做专项展示，正式多页研究产品放在 `web/`。
+- 退役静态页与原 Astro 多页站点只保留为历史证据，不进入任何活动产品或发布流程。
 - 后续真实研究页应把模型、数据、图表和来源拆成可追踪资产。
 - 如果新增数据，必须记录字段定义、数据来源、更新时间、转换脚本和不可用边界。
 
@@ -485,16 +487,18 @@ Human Infra 页面约束：
 - 可视化默认展示群体/模型层面的路径位移，不输出个人死亡日期。
 - 页面要明确哪些是书内观点、哪些是 Human Infra 转译、哪些是未来建模方向。
 
-### 9.5 当前 Web 的采用清单
+### 9.5 已退役 Web 的历史采用清单
+
+下表只记录旧实现曾采用的模式，不得作为新站模板或复用入口。
 
 | 标杆模式 | 已采用位置 | 实现方式 |
 | --- | --- | --- |
-| 模板市场卡片 | `web/src/pages/index.astro` 页面入口和卡片导航 | Astro 组件 + CSS grid |
-| 约束侧栏 | `web/src/pages/model.astro` 控制台和禁止用途说明 | Astro layout + D3 model script |
-| 科研解释结构 | `web/src/pages/book.astro`、`web/src/pages/research-standards.astro` | Astro longform |
-| 可复现图表入口 | `web/src/pages/model.astro` | D3 |
+| 模板市场卡片 | `archive/retired-research-narrative-site/web/src/pages/index.astro` 页面入口和卡片导航 | Astro 组件 + CSS grid |
+| 约束侧栏 | `archive/retired-research-narrative-site/web/src/pages/model.astro` 控制台和禁止用途说明 | Astro layout + D3 model script |
+| 科研解释结构 | `archive/retired-research-narrative-site/web/src/pages/book.astro`、`archive/retired-research-narrative-site/web/src/pages/research-standards.astro` | Astro longform |
+| 可复现图表入口 | `archive/retired-research-narrative-site/web/src/pages/model.astro` | D3 |
 | 证据产品入口 | 资料组织层、工具包文档 | Markdown source traceability |
-| 传播型主张 | `web/src/pages/index.astro` Hero 和机制图 | narrative copy + D3 map |
+| 传播型主张 | `archive/retired-research-narrative-site/web/src/pages/index.astro` Hero 和机制图 | narrative copy + D3 map |
 
 ## 10. Source Traceability
 

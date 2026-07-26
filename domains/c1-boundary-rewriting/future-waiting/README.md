@@ -79,11 +79,9 @@ Future Waiting 是 Human Infra 中负责“以较少主观时间抵达更远未�
 
 - `paths/black-hole-waiting-room.md`：度规红移固有时差分路径，传播名“黑洞等待室”，基于强引力时空中的度规红移因子压缩主体固有时的未来等待思想实验。
 
-## 论文页
+## 历史页面快照
 
-- `web/src/pages/papers/metric-redshift-recursive-waiting.astro`：度规红移递归等待假设，提出可控强红移等待区、等待倍率和等待-升级递归循环的条件性模型。
-- `web/src/pages/papers/proper-time-differential-waiting-hypothesis.astro`：度规红移固有时差分路径专项论文页，把“黑洞等待室”收敛为可审查的未来等待假设。
-- `web/src/pages/papers/controllable-metric-waiting-room-hypothesis.astro`：可控度规等待室假设，提出“等待室 -> 技术升级 -> 退出采用 -> 再等待”的递归未来等待模型。
+旧 Research Narrative 中曾包含三份相关页面快照，现统一保存在 `archive/retired-research-narrative-site/web/src/pages/papers/`。这些文件只用于历史追溯，禁止构建、维护、复用或部署；本域的研究真相源是当前目录文档与 `web/src/data/` 中的结构化研究数据。
 
 ## 与其他子域的关系
 

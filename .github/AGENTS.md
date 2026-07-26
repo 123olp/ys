@@ -14,14 +14,13 @@
 │   └── research-note.yml     # 研究资料补充模板
 ├── PULL_REQUEST_TEMPLATE.md  # PR 描述、验证和风险模板
 └── workflows/
-    ├── check.yml             # 仓库结构、Web 构建与 GEO 门禁
-    └── pages.yml             # GitHub Pages 构建、审计与部署
+    └── check.yml             # 仓库结构与研究契约门禁
 ```
 
 ## 职责边界
 
 - `ISSUE_TEMPLATE/` 只定义协作入口，不承载长期知识结论。
 - `PULL_REQUEST_TEMPLATE.md` 负责让变更说明包含范围、验证和风险。
-- `workflows/check.yml` 并行运行 `make check` 与 `web/npm run audit:geo`，同时守住仓库结构和 Web 发布契约。
-- `workflows/pages.yml` 只在 Web、分级真相源、成熟度账本或证据图消费的四个来源注册表变化时构建；部署前必须通过 GEO 审计，发布产物只来自 `web/dist/`。
+- `workflows/check.yml` 运行 `make check`，并阻止已退役的 Research Narrative 页面、Astro 配置、Wrangler 配置和 Pages 工作流返回活动路径。
+- Research Narrative 的历史 Pages 工作流已移入 `archive/retired-research-narrative-site/pages.yml`，禁止恢复或执行。
 - 新增远程自动化时，优先复用 `Makefile` 或 `tools/` 中的本地命令，避免本地和 CI 出现两套真相。

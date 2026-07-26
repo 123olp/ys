@@ -1,0 +1,3 @@
+name = "human-infra"
+pages_build_output_dir = "./dist"
+compatibility_date = "2026-07-26"

@@ -5,8 +5,8 @@
 ## 日常检查
 
 ```bash
-python3 tools/arxiv_html_paper_tool.py verify-assets --public-dir web/public
-python3 tools/arxiv_html_paper_tool.py verify-assets --public-dir web/public --json
+python3 tools/arxiv_html_paper_tool.py verify-assets --public-dir build/arxiv-html-paper-preview/public
+python3 tools/arxiv_html_paper_tool.py verify-assets --public-dir build/arxiv-html-paper-preview/public --json
 ```
 
 如果 JSON 中 `ok` 为 `false`，先补资源，不要改页面样式。
@@ -40,7 +40,7 @@ monolith  -> 单文件快照，用于视觉对照和离线归档
 ```bash
 python3 tools/arxiv_html_paper_tool.py install-assets \
   --source .research/arxiv-html/2606.26689v1/wget \
-  --public-dir web/public
+  --public-dir build/arxiv-html-paper-preview/public
 ```
 
 安装会做三件事：
@@ -54,7 +54,7 @@ python3 tools/arxiv_html_paper_tool.py install-assets \
 安装后必须验证：
 
 ```bash
-python3 tools/arxiv_html_paper_tool.py verify-assets --public-dir web/public
+python3 tools/arxiv_html_paper_tool.py verify-assets --public-dir build/arxiv-html-paper-preview/public
 ```
 
 ## 更新模板
@@ -70,7 +70,7 @@ tools/arxiv-html-paper/templates/paper.astro
 
 ```bash
 python3 tools/arxiv_html_paper_tool.py write-layout \
-  --target web/src/layouts/PaperReaderLayout.astro \
+  --target build/arxiv-html-paper-preview/src/layouts/PaperReaderLayout.astro \
   --force
 ```
 
@@ -78,8 +78,8 @@ python3 tools/arxiv_html_paper_tool.py write-layout \
 
 ```bash
 python3 tools/arxiv_html_paper_tool.py write-page \
-  --target web/src/pages/paper.astro \
-  --layout-target web/src/layouts/PaperReaderLayout.astro \
+  --target build/arxiv-html-paper-preview/src/pages/paper.astro \
+  --layout-target build/arxiv-html-paper-preview/src/layouts/PaperReaderLayout.astro \
   --title "Research Paper Title" \
   --author "Research Group" \
   --force
@@ -149,7 +149,7 @@ missing required paths:
 ```bash
 python3 tools/arxiv_html_paper_tool.py install-assets \
   --source .research/arxiv-html/2606.26689v1/wget \
-  --public-dir web/public
+  --public-dir build/arxiv-html-paper-preview/public
 ```
 
 如果仍失败，说明 `wget` 镜像没有下载 Typekit `af/` 目录，需要重新下载镜像。
@@ -159,7 +159,7 @@ python3 tools/arxiv_html_paper_tool.py install-assets \
 运行时不应请求 `p.typekit.net`。重新安装资源后检查：
 
 ```text
-web/public/use.typekit.net/utz6mli.css
+build/arxiv-html-paper-preview/public/use.typekit.net/utz6mli.css
 ```
 
 其中字体路径应为：
@@ -197,7 +197,7 @@ font-files/<name>.woff2
 ## 发布验证
 
 ```bash
-python3 tools/arxiv_html_paper_tool.py verify-assets --public-dir web/public
+python3 tools/arxiv_html_paper_tool.py verify-assets --public-dir build/arxiv-html-paper-preview/public
 git diff --check
 make check
 ```

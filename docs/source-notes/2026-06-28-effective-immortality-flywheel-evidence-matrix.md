@@ -5,6 +5,8 @@ Related paper: [Effective Immortality Acceleration Flywheel](../explanations/eff
 Related cards: [Source Cards v0.5](2026-06-28-effective-immortality-flywheel-source-cards.md)
 Web data mirror: [`web/src/data/effective-immortality-evidence.json`](../../web/src/data/effective-immortality-evidence.json)
 
+> 退役边界：本文中的旧 Web 页面、`web/scripts/` 与 `npm run ...` 命令记录的是当时的研究过程，现已永久归档且不可执行。后续工作只维护 Markdown 研究正文与 `web/src/data/` 结构化数据。
+
 ## Purpose
 
 本文件不作为文献列表使用；它把“有效永生带来的主体持续性加速回报飞轮”拆成可验证的边。每一行都回答：
@@ -267,7 +269,7 @@ Analysis Plan Registry 是 Estimand Registry 的下一层：每条边必须有�
 | 产物 | 路径 | 职责 | 检查方式 |
 | --- | --- | --- | --- |
 | Working paper | `docs/explanations/effective-immortality-acceleration-flywheel.md` | 论文主叙事、变量定义、模型契约和研究路线 | 人工审阅章节结构，并运行 `make check` |
-| Web paper page | `web/src/pages/papers/effective-immortality-flywheel.astro` | arXiv-style 阅读页面，消费结构化数据并展示表格和 D3 图 | `npm run build`；`curl` 页面确认 v0.25、schema 2.0、Citation Context Review Packet v0.1、Citation Context Risk Triage v0.1、High-Risk Citation Context Review v0.1、Citation Context Local Review v0.1、Fresh Reviewer Citation Audit Protocol v0.1、Fresh Reviewer Citation Results Audit v0.1、Claim Context Audit v0.1、Reference Verification v0.1、Pre-Submission Review v0.1、Search Execution Register v0.1、Candidate Source Verification v0.1、Candidate Source Extraction v0.1、Estimand Registry v0.1、Analysis Plan Registry v0.1、AI Research Failure Mode Audit v0.1、AI Task Evidence Register v0.3、AI Task Method Audit、Research Declarations、Claim Evidence Map、Reference Registry 和 `U_t` 门禁 |
+| Retired Web paper snapshot | `archive/retired-research-narrative-site/web/src/pages/papers/effective-immortality-flywheel.astro` | 已退役的历史页面快照 | 禁止构建、预览、审计或部署 |
 | Structured evidence data | `web/src/data/effective-immortality-evidence.json` | Claim Register、Claim Evidence Map、AI Task Evidence Register、Reference Registry、变量字典、模型契约、证据边、技术族、威胁和可复现锚点的单一数据源 | Node JSON smoke：schemaVersion、变量数、A -> Q 任务证据、证据等级、效应估计、证据边、主张映射、Estimand Registry、Analysis Plan Registry、AI research failure mode audit、参考文献注册表和必需字段 |
 | Reference BibTeX | `web/src/data/effective-immortality-flywheel/references.bib` | 由 Reference Registry 生成的 BibTeX 风格参考文献文件 | `npm run export:references`；确认条目数等于 `referenceRegistry.length`，且 QJE DOI 为 `10.1093/qje/qjae044` |
 | Citation Audit JSON | `web/src/data/effective-immortality-flywheel/CITATION_AUDIT.json` | 由 Reference Registry 生成的机器可读引用审计账本 | `npm run export:references`；Node 检查 verdict、total_entries、hashes 和 assurance limitations |
@@ -296,7 +298,7 @@ Analysis Plan Registry 是 Estimand Registry 的下一层：每条边必须有�
 | Coverage Audit Markdown | `web/src/data/effective-immortality-flywheel/COVERAGE_AUDIT.md` | 人类可读覆盖审计报告 | 确认 54 个 alias、4 个 AI task reference key、14 个 AI task 必填字段、7 个 method-audit 字段、8 个 research declarations、9 个 estimand rows、9 个 analysis plan rows、7 个 failure mode rows、47 张 Source Card、53 条 Reference Registry 无断链 |
 | Evidence Matrix | `docs/source-notes/2026-06-28-effective-immortality-flywheel-evidence-matrix.md` | 可检验边、证据角色、断裂条件、模型任务和数据契约说明 | 与 JSON 字段逐项同步，禁止陈旧符号 |
 | Derivation package | `docs/source-notes/2026-06-28-effective-immortality-flywheel-derivation-package.md` | 冻结不变量、假设、符号、推导图、主公式、非主张和开放风险 | 确认不变量稳定，定义、近似、方法和边界分开标注 |
-| D3 evidence graph | `web/src/scripts/evidence-graph.js` | 从嵌入 JSON 生成主链、反哺路径、风险通道和因果门禁图 | 脚本查找 `U_t -> causal claim`，页面嵌入 JSON 后可渲染 |
+| Retired D3 evidence graph | `archive/retired-research-narrative-site/web/src/scripts/evidence-graph.js` | 已退役的历史图形实现 | 禁止执行或迁回活动路径 |
 
 ## Evidence Classes
 

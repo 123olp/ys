@@ -1,14 +1,13 @@
 # Human Infra
 
 [![Check](https://github.com/tradecatlabs/human_infra/actions/workflows/check.yml/badge.svg)](https://github.com/tradecatlabs/human_infra/actions/workflows/check.yml)
-[![Pages](https://github.com/tradecatlabs/human_infra/actions/workflows/pages.yml/badge.svg)](https://github.com/tradecatlabs/human_infra/actions/workflows/pages.yml)
 [![Docs as Code](https://img.shields.io/badge/docs-as--code-2f6f6d)](docs/reference/repository-standards.md)
 [![Knowledge Base](https://img.shields.io/badge/type-knowledge--base-6b7280)](docs/README.md)
 [![License](https://img.shields.io/badge/license-pending-lightgrey)](LICENSE.md)
 [![Safety Boundaries](https://img.shields.io/badge/safety-boundaries-critical-b91c1c)](docs/reference/ethics-and-safety-boundaries.md)
 [![Community](https://img.shields.io/badge/community-Telegram-229ED9)](https://t.me/human_infra)
 
-[English](README.en.md) · [Web](https://tradecatlabs.github.io/human_infra/) · [研究域地图](https://tradecatlabs.github.io/human_infra/research-map/) · [证据图](https://tradecatlabs.github.io/human_infra/evidence-map/) · [AI 入口](https://tradecatlabs.github.io/human_infra/llms.txt) · [机器知识索引](https://tradecatlabs.github.io/human_infra/knowledge-index.json)
+[English](README.en.md) · [本地 Wiki](wiki/README.md) · [研究域](domains/README.md) · [证据资料](docs/reference/README.md)
 
 Human Infra 是一个研究“能够继续做事的主体”如何被维护、延展和升级的基础设施知识仓库。
 
@@ -16,20 +15,16 @@ Human Infra 是一个研究“能够继续做事的主体”如何被维护、�
 
 > Human Infra 的本质，是对主体持续性进行工程化建设。
 
-## 公开与机器入口
+## 展示入口
 
-| 入口 | 用途 |
+| 入口 | 状态与用途 |
 | --- | --- |
-| [关于 Human Infra](https://tradecatlabs.github.io/human_infra/about/) | 规范定义、项目事实、方法、作者与边界 |
-| [研究域地图](https://tradecatlabs.github.io/human_infra/research-map/) | C1-C6 分级和 994 个研究域的公开路由 |
-| [证据地图](https://tradecatlabs.github.io/human_infra/evidence-map/) | 30 条优先域主张、21 个来源锚点、反证条件和迁移边界 |
-| [llms.txt](https://tradecatlabs.github.io/human_infra/llms.txt) | 生成式引擎与智能体的简明项目上下文 |
-| [llms-full.txt](https://tradecatlabs.github.io/human_infra/llms-full.txt) | 完整定义、边界、页面和域上下文 |
-| [knowledge-index.json](https://tradecatlabs.github.io/human_infra/knowledge-index.json) | 项目实体、C1-C6、研究域和仓库来源关系 |
-| [evidence-graph.json](https://tradecatlabs.github.io/human_infra/evidence-graph.json) | 可机读 Fact Cards、来源、端点、反证和有界关系图 |
-| [GEO 发布契约](web/GEO.md) | 生成式引擎优化的方法、门禁、指标和监测规则 |
+| [Human Infra Wiki](wiki/README.md) | 活动知识产品；采用“语言入口 -> 中文首页 -> 专题门户 -> 词条”的 MediaWiki 结构 |
+| Human Infra 科技树 | 活动展示产品；只允许使用科技树正式源码和证据节点数据 |
+| [研究发布中间资产](web/README.md) | 只保存研究数据与审计脚本，不是网站，禁止部署 |
+| [Research Narrative 退役记录](archive/retired-research-narrative-site/README.md) | 永久冻结的历史实现，禁止构建、复用或部署 |
 
-发布者：`tradecatlabs`。站点与机器入口只发布仓库已经存在的事实，不把研究域登记、合成模型或条件性假设外推为临床效果、个体预测或工程可行性。
+发布者：`tradecatlabs`。公开部署对象只允许是科技树与 Wiki；已退役的 Research Narrative 不再属于项目产品。
 
 ## 本地 Wiki
 
@@ -356,14 +351,13 @@ flowchart LR
 | 查看域到模型桥接 | [桥接契约](docs/reference/human-infra-domain-to-model-bridge-contract.json) / [桥接注册表](docs/reference/human-infra-domain-to-model-bridge-register.json) / [桥接 gate](web/src/data/human-infra-domain-to-model-bridge-validation.json) | C1-C6 研究域只能先进入 Q2/L2 候选变量和模型位置说明，不直接变成系数、因果效应、校准预测、医学建议、干预排序或个人死亡日期输出 |
 | 查看定量预测模型 | [模型说明](docs/explanations/life-path-prediction-model.md) / [模型契约](docs/reference/life-path-prediction-model-contract.md) / [定量能力分层](docs/reference/human-infra-quantitative-capability-ladder.json) / [能力分层 gate](web/src/data/human-infra-quantitative-capability-ladder-validation.json) / [模型准入契约](docs/reference/human-infra-model-admission-contract.json) / [准入候选注册表](docs/reference/human-infra-model-admission-candidate-registry.json) / [L4 阻塞矩阵](docs/reference/human-infra-l4-model-readiness-blocker-matrix.json) / [L4 执行计划](docs/reference/human-infra-l4-unblock-execution-plan.json) / [L4 证据 intake](docs/reference/human-infra-l4-evidence-intake-register.json) / [L4 证据包审查 playbook](docs/reference/human-infra-l4-evidence-packet-review-playbook.md) / [L4 证据包 validator cases](docs/reference/human-infra-l4-evidence-packet-validator-test-cases.json) / [L4 证据包 validator gate](web/src/data/life-path-l4-evidence-packet-validator-validation.json) / [L4 验证校准报告契约](docs/reference/human-infra-l4-validation-calibration-reporting-contract.json) / [L4 验证校准报告执行寄存器](docs/reference/human-infra-l4-validation-calibration-report-execution-register.json) / [L4 验证校准执行 gate](web/src/data/life-path-l4-validation-calibration-report-execution-validation.json) / [合成验证校准报告 dry-run](web/src/data/life-path-synthetic-validation-calibration-report.json) / [L4 合成证据包 dry-run](web/src/data/life-path-l4-synthetic-evidence-packet-dry-run.json) / [NHANES public implementation review template gate](web/src/data/life-path-nhanes-public-lmf-public-output-implementation-review-template-validation.json) / [NHANES public implementation review execution gate](web/src/data/life-path-nhanes-public-lmf-public-output-implementation-review-execution-validation.json) / [NHANES public release gate](web/src/data/life-path-nhanes-public-lmf-public-release-gate-validation.json) / [模型治理](docs/reference/life-path-prediction-model-governance.md) / [科研工具包](docs/reference/research-model-visualization-toolkit.md) | 如何量化判断技术、因素和干预对寿命、有效时间、主观时间、相对时间和未来选择权的影响，并明确当前最高只到 Q3/L3 synthetic life-path model，Q4 聚合校准研究模型、Q5 个体决策支持和个人死亡日期输出仍被阻塞；同时说明哪些证据仍阻止 L4 校准模型准入、哪些 work orders 必须先完成、哪些证据槽位和 evidence packet 仍为空、验证/校准报告包和 L4 证据包目前都只有合成 dry-run 而无真实报告或真实证据，以及未来证据包如何先经过 validator 判定为 rejected、cannot-evaluate 或 reviewable-but-still-blocked 而不打开 L4 |
 | 整理论文、书籍、工具和案例 | [资料卡片制度](docs/reference/source-card-system.md) / [资料卡片模板](docs/templates/research-card.md) | 把外部资料转成可复用语料、模型变量和 Web 展示材料 |
-| 打开正式 Web 应用 | [web/README.md](web/README.md) / [首页源文件](web/src/pages/index.astro) | Astro + D3 多页应用，承载书籍转译、科研叙事、预测模型和交互图表 |
-| 查看长寿逃逸速度路线页 | [页面源文件](web/src/pages/lev.astro) / [模型数据](web/src/data/lev-model.json) / [路线卡 TSV](domains/c1-boundary-rewriting/longevity-evidence/data/manual/lev_route_cards.tsv) | 展示 R1-R9 主流路线、概率门、二阶/多阶效应、正向飞轮和负向反噬链路 |
+| 查看研究发布中间资产 | [web/README.md](web/README.md) | 只保存结构化数据和审计脚本，不提供 Web 页面或部署能力 |
+| 查看长寿逃逸速度模型数据 | [模型数据](web/src/data/lev-model.json) / [路线卡 TSV](domains/c1-boundary-rewriting/longevity-evidence/data/manual/lev_route_cards.tsv) | R1-R9 主流路线、概率门、二阶/多阶效应、正向飞轮和负向反噬链路的结构化研究资产 |
 | 复用 arXiv 论文页框架 | [工具说明](tools/arxiv-html-paper/README.md) / [消费契约](tools/arxiv-html-paper/CONTRACT.md) / [消费指南](tools/arxiv-html-paper/CONSUMER_GUIDE.md) / [工具链分析](docs/reference/arxiv-html-papers-toolchain.md) | 把 arXiv HTML papers 的 CSS、JS、字体、控件和 Astro 模板沉淀成可复制、可治理、可迁移的工具链 |
-| 查看有效永生飞轮论文页 | [页面源文件](web/src/pages/papers/effective-immortality-flywheel.astro) / [论文草案](docs/explanations/effective-immortality-acceleration-flywheel.md) | 独立 arXiv-style 页面，不覆盖旧 `/paper/`，用于展示有效永生飞轮的变量、假设、证据脊梁和研究路线 |
-| 查看度规红移递归等待论文页 | [页面源文件](web/src/pages/papers/metric-redshift-recursive-waiting.astro) | 独立 arXiv-style 页面，提出可控强红移等待区、固有时差分和等待-升级递归循环假设 |
-| 查看可控度规等待室假设论文页 | [页面源文件](web/src/pages/papers/controllable-metric-waiting-room-hypothesis.astro) / [收口记录](docs/source-notes/2026-06-29-controllable-metric-waiting-room-hypothesis-revision-notes.md) | 独立 arXiv-style 页面，提出可控度规等待室、固有时差分、退出采用、递归等待和净主体持续性增益模型 |
+| 查看有效永生飞轮论文草案 | [论文草案](docs/explanations/effective-immortality-acceleration-flywheel.md) | 有效永生飞轮的变量、假设、证据脊梁和研究路线 |
+| 查看退役论文页面实现 | [退役记录](archive/retired-research-narrative-site/README.md) | 仅供历史追溯，禁止构建、复用或部署 |
 | 打开 Web 看板 | [human-infra-dashboard.html](human-infra-dashboard.html) | 静态三块布局看板，用于演示生命路径预测模型、参数控件和治理门禁 |
-| 查看奇点专项展示 | [singularity-human-infra.html](singularity-human-infra.html) | 将《奇点更近》学习资料转译为 Human Infra 的价值展示、预测模型和 D3 可视化 |
+| 查看退役站点记录 | [Research Narrative 退役记录](archive/retired-research-narrative-site/README.md) | 仅用于历史追溯；禁止构建、复用或部署 |
 | 查看真实应用与文献 | [docs/reference/applications-and-literature.md](docs/reference/applications-and-literature.md) | 真实项目、机构资料、论文和数据源索引，覆盖个体、家庭、社区、医疗、公共服务、环境和高风险技术 |
 | 分享项目 | [docs/how-to/share-human-infra.md](docs/how-to/share-human-infra.md) | 对外介绍 Human Infra 的标题、主线、短推文模板和边界 |
 | 贡献文档 | [docs/how-to/contribute-docs.md](docs/how-to/contribute-docs.md) | 文档贡献流程 |
@@ -2314,7 +2308,8 @@ human_infra/
 │   ├── c5-ecological-substrate/    # 可能性生态承载层
 │   └── c6-local-unlocking/         # 局部可能性解锁层
 ├── tools/                # 仓库检查脚本和可复用工程工具
-├── web/                  # Web 展示、论文页和交互叙事应用
+├── web/                  # 研究数据与论文审计中间资产，禁止部署
+├── archive/              # 永久退役实现，只读追溯
 ├── AGENTS.md             # 仓库级代理维护说明
 └── README.md             # 项目入口
 ```

@@ -89,14 +89,14 @@ web/
 ```bash
 python3 tools/arxiv_html_paper_tool.py install-assets \
   --source .research/arxiv-html/2606.26689v1/wget \
-  --public-dir web/public
+  --public-dir build/arxiv-html-paper-preview/public
 ```
 
 只写布局：
 
 ```bash
 python3 tools/arxiv_html_paper_tool.py write-layout \
-  --target web/src/layouts/PaperReaderLayout.astro \
+  --target build/arxiv-html-paper-preview/src/layouts/PaperReaderLayout.astro \
   --force
 ```
 
@@ -104,8 +104,8 @@ python3 tools/arxiv_html_paper_tool.py write-layout \
 
 ```bash
 python3 tools/arxiv_html_paper_tool.py write-page \
-  --target web/src/pages/paper.astro \
-  --layout-target web/src/layouts/PaperReaderLayout.astro \
+  --target build/arxiv-html-paper-preview/src/pages/paper.astro \
+  --layout-target build/arxiv-html-paper-preview/src/layouts/PaperReaderLayout.astro \
   --title "Research Paper Title" \
   --author "Research Group" \
   --arxiv-id "local.paper.0001" \
@@ -118,13 +118,13 @@ python3 tools/arxiv_html_paper_tool.py write-page \
 安装后执行：
 
 ```bash
-python3 tools/arxiv_html_paper_tool.py verify-assets --public-dir web/public
+python3 tools/arxiv_html_paper_tool.py verify-assets --public-dir build/arxiv-html-paper-preview/public
 ```
 
 需要给 CI 或其他脚本消费时：
 
 ```bash
-python3 tools/arxiv_html_paper_tool.py verify-assets --public-dir web/public --json
+python3 tools/arxiv_html_paper_tool.py verify-assets --public-dir build/arxiv-html-paper-preview/public --json
 ```
 
 成功条件：
@@ -153,7 +153,7 @@ DOM 中没有重复 class 属性
 目标项目只维护正文内容：
 
 ```text
-web/src/pages/paper.astro
+build/arxiv-html-paper-preview/src/pages/paper.astro
 ```
 
 建议保留 `ltx_*` 语义类，以便后续承接 LaTeXML、Pandoc 或其他论文转换工具。不要把 Human Infra 的正文复制进模板；模板只做结构，正文属于消费项目。
@@ -177,7 +177,7 @@ web/src/pages/paper.astro
 检查目标项目是否从 `public/` 根路径服务资源，并运行：
 
 ```bash
-python3 tools/arxiv_html_paper_tool.py verify-assets --public-dir web/public
+python3 tools/arxiv_html_paper_tool.py verify-assets --public-dir build/arxiv-html-paper-preview/public
 ```
 
 ### Typekit 或字体出现 404

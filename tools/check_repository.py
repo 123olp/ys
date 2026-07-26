@@ -36,8 +36,6 @@ REQUIRED_FILES = [
     "tools/README.md",
     "tools/audit_core_claim_evidence_matrix.py",
     "tools/audit_human_infra_maturity_gap_register.py",
-    "tools/audit_human_infra_page_claim_consistency.py",
-    "tools/audit_human_infra_paper_claim_register.py",
     "tools/audit_human_infra_domain_falsifier_coverage.py",
     "tools/audit_human_infra_domain_claim_evidence_matrix.py",
     "tools/audit_human_infra_domain_source_card_field_extraction.py",
@@ -53,19 +51,16 @@ REQUIRED_FILES = [
     "tools/arxiv-html-paper/assets/static/browse/0.3.4/images/icons/safari-pinned-tab.svg",
     "tools/arxiv-html-paper/templates/PaperReaderLayout.astro",
     "tools/arxiv-html-paper/templates/paper.astro",
+    "archive/AGENTS.md",
+    "archive/retired-research-narrative-site/AGENTS.md",
+    "archive/retired-research-narrative-site/README.md",
+    "archive/retired-research-narrative-site/pages.yml",
+    "archive/retired-research-narrative-site/singularity-human-infra.html",
+    "archive/retired-research-narrative-site/web/research-scripts/audit_human_infra_page_claim_consistency.py",
+    "archive/retired-research-narrative-site/web/research-scripts/audit_human_infra_paper_claim_register.py",
+    "archive/retired-research-narrative-site/web/src/pages/index.astro",
     "web/AGENTS.md",
     "web/README.md",
-    "web/package.json",
-    "web/astro.config.mjs",
-    "web/src/layouts/PaperReaderLayout.astro",
-    "web/src/layouts/ResearchLayout.astro",
-    "web/src/pages/paper.astro",
-    "web/src/pages/index.astro",
-    "web/src/pages/book.astro",
-    "web/src/pages/model.astro",
-    "web/src/pages/research-standards.astro",
-    "web/src/styles/global.css",
-    "web/src/scripts/model-charts.js",
     "web/src/data/book-signals.json",
     "docs/README.md",
     "docs/AGENTS.md",
@@ -3264,14 +3259,29 @@ REQUIRED_DIRS = [
     "tools/arxiv-html-paper/assets/static/browse/0.3.4/images/icons",
     "tools/arxiv-html-paper/templates",
     "web",
-    "web/public",
     "web/src",
-    "web/src/components",
     "web/src/data",
+    "archive",
+    "archive/retired-research-narrative-site",
+]
+
+FORBIDDEN_ACTIVE_PATHS = [
+    ".github/workflows/pages.yml",
+    "singularity-human-infra.html",
+    "tools/audit_human_infra_page_claim_consistency.py",
+    "tools/audit_human_infra_paper_claim_register.py",
+    "web/astro.config.mjs",
+    "web/wrangler.toml",
+    "web/CLOUDFLARE.md",
+    "web/dist",
+    "web/public",
+    "web/src/components",
     "web/src/layouts",
     "web/src/pages",
-    "web/src/scripts",
     "web/src/styles",
+    "web/scripts",
+    "web/package.json",
+    "web/package-lock.json",
 ]
 
 FORBIDDEN_NAME_PARTS = [
@@ -3287,6 +3297,7 @@ IGNORED_LINK_PREFIXES = (
 )
 
 IGNORED_PATH_PREFIXES = (
+    "archive/",
     ".history/",
     ".runtime/",
     "node_modules/",
@@ -3350,6 +3361,15 @@ def main() -> int:
         path = ROOT / name
         if not path.is_dir():
             errors.append(f"missing directory: {name}")
+
+    for name in FORBIDDEN_ACTIVE_PATHS:
+        if (ROOT / name).exists():
+            errors.append(f"retired Research Narrative surface restored in active path: {name}")
+
+    for astro_path in (ROOT / "web").rglob("*.astro"):
+        errors.append(
+            f"retired Research Narrative Astro source restored: {relative(astro_path)}"
+        )
 
     for path in ROOT.rglob("*"):
         rel = relative(path)

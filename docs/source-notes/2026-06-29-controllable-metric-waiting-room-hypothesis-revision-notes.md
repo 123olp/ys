@@ -69,7 +69,7 @@ NCG = B_wait * P_access - R_total
 
 ## 本轮产物
 
-- 论文页：`web/src/pages/papers/controllable-metric-waiting-room-hypothesis.astro`
+- 论文页：`archive/retired-research-narrative-site/web/src/pages/papers/controllable-metric-waiting-room-hypothesis.astro`
 - 结构化数据源：`web/src/data/controllable-metric-waiting-room-hypothesis.json`
 - 工具 seed：`web/src/data/controllable-metric-waiting-room-hypothesis/TOOL_GENERATED_PAGE_SEED.astro`
 - 推导包：`web/src/data/controllable-metric-waiting-room-hypothesis/DERIVATION_PACKAGE.md`

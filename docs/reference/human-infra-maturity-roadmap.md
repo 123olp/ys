@@ -76,11 +76,11 @@ NHANES public-use LMF public release gate 见 [`life-path-nhanes-public-lmf-publ
 
 NHANES public-use LMF public Web data no-real-values gate 见 [`life-path-nhanes-public-lmf-public-web-data-no-real-values-validation.json`](../../web/src/data/life-path-nhanes-public-lmf-public-web-data-no-real-values-validation.json)，由 `make nhanes-public-lmf-public-web-data-no-real-values-audit` 扫描 `web/src/data/life-path-nhanes-public-lmf-*.json`，阻止真实 weighted rates、standard errors、confidence intervals、行级字段、个体预测字段和越界 release/calibration flags 进入公开前端数据层。该门是发布层回归护栏，不替代人工 disclosure review、public output implementation review 或 suppression / reliability review。
 
-页面级主张一致性账本见 [`human-infra-page-claim-consistency.json`](human-infra-page-claim-consistency.json)，由 `make page-claim-audit` 检查 README、Web 首页、论文页和关键 reference 页面是否都保留同一组 Claim ID 与禁止用途边界。
+页面级主张一致性账本 [`human-infra-page-claim-consistency.json`](human-infra-page-claim-consistency.json) 现仅保留为退役站点历史证据；原页面审计已从活动工具链和 `make check` 撤出，禁止恢复。
 
 受众-主张映射账本见 [`human-infra-audience-claim-map.json`](human-infra-audience-claim-map.json)，由 `make audience-claim-map-audit` 检查研究者、构建者、长寿读者、基础设施读者、治理审查者和模型开发者是否都通过同一 Claim spine 理解项目，并保留邻近项目边界与禁止误读。
 
-论文页强主张账本见 [`human-infra-paper-claim-register.json`](human-infra-paper-claim-register.json)，由 `make paper-claim-audit` 检查每个 arXiv-style 论文页是否注册了论文级强主张、核心 Claim ID、反证条件、降级动作和禁止用途边界。
+论文页强主张账本 [`human-infra-paper-claim-register.json`](human-infra-paper-claim-register.json) 现仅作为历史研究索引供非页面型证据审计引用；原论文页面审计已永久退役，禁止构建或运行归档页面。
 
 域级反证覆盖账本见 [`human-infra-domain-falsifier-coverage.json`](human-infra-domain-falsifier-coverage.json)，由 `make domain-falsifier-audit` 检查 C1 全域和优先 C2 域是否具备强主张、变量接口、反证条件、降级动作和禁止用途脚手架。
 

@@ -13,7 +13,7 @@
   },
   "auditedInputHashes": {
     "web/src/data/proper-time-differential-waiting-hypothesis.json": "sha256:1df3dce98c1eef5487e9afc9ca7cbcbe2d8c9d6dcd7ecd0cba7a9a5527be5bab",
-    "web/src/pages/papers/proper-time-differential-waiting-hypothesis.astro": "sha256:37dd99291a51b4012a393c2759cf796a6fb9a0588a656c0b909ec773fea8462e",
+    "archive/retired-research-narrative-site/web/src/pages/papers/proper-time-differential-waiting-hypothesis.astro": "sha256:37dd99291a51b4012a393c2759cf796a6fb9a0588a656c0b909ec773fea8462e",
     "web/src/data/proper-time-differential-waiting-hypothesis/REFERENCE_VERIFICATION.json": "sha256:2853a8131355bb2da0ff2ca038b04ba78e99adfac942a901d2cb4e9871d5b8b9",
     "web/src/data/proper-time-differential-waiting-hypothesis/CITATION_CONTEXT_REVIEW_PACKET.json": "sha256:2d3a557c08dcf8228c520801f2999ef20b4c7eb3dd05242600ef910384d956b1",
     "web/src/data/proper-time-differential-waiting-hypothesis/CITATION_CONTEXT_LOCAL_REVIEW.json": "sha256:ced88c824e8be17425774b310d464ede594816f636f14e10d090e2aefb90db7c"

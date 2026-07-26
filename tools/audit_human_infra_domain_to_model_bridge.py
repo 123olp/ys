@@ -109,7 +109,6 @@ REQUIRED_INDEX_LINKS = {
     "tools/AGENTS.md": "audit_human_infra_domain_to_model_bridge.py",
     "web/README.md": "human-infra-domain-to-model-bridge-validation.json",
     "web/AGENTS.md": "human-infra-domain-to-model-bridge-validation.json",
-    "web/package.json": "export:domain-to-model-bridge-validation",
 }
 
 

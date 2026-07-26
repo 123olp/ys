@@ -3054,8 +3054,8 @@
     },
     {
       "declaration": "Code availability",
-      "statement": "Web 论文页、D3 证据图、引用导出脚本和覆盖审计脚本保存在仓库中，可用 npm scripts 和 make check 复现当前静态页面与审计产物。",
-      "artifact": "web/src/pages/papers/effective-immortality-flywheel.astro; web/src/scripts/evidence-graph.js; web/scripts/"
+      "statement": "Web 论文页、D3 证据图和页面脚本已永久归档，仅作为历史证据保留；禁止构建、执行、复用或部署。",
+      "artifact": "archive/retired-research-narrative-site/"
     },
     {
       "declaration": "Ethics and safety",
@@ -3097,9 +3097,9 @@
     },
     {
       "artifact": "Web paper page",
-      "path": "web/src/pages/papers/effective-immortality-flywheel.astro",
-      "role": "arXiv-style 阅读页面，消费结构化数据并展示表格和 D3 图。",
-      "check": "npm run build；curl 页面确认 v0.25、schema 2.0、Citation Context Review Packet v0.1、Citation Context Risk Triage v0.1、High-Risk Citation Context Review v0.1、Citation Context Local Review v0.1、Fresh Reviewer Citation Audit Protocol v0.1、Fresh Reviewer Citation Results Audit v0.1、Claim Context Audit v0.1、Reference Verification v0.1、Pre-Submission Review v0.1、Search Execution Register v0.1、Candidate Source Verification v0.1、Candidate Source Extraction v0.1、Estimand Registry v0.1、Analysis Plan Registry v0.1、AI Research Failure Mode Audit v0.1、AI Task Evidence Register v0.3、AI Task Method Audit、Research Declarations、Claim Evidence Map、Reference Registry 和 U_t 门禁。"
+      "path": "archive/retired-research-narrative-site/web/src/pages/papers/effective-immortality-flywheel.astro",
+      "role": "已退役的历史页面快照，只用于追溯。",
+      "check": "该 Web 页面已永久退役；禁止构建、预览、审计或部署。当前只校验结构化研究数据与 Markdown working paper。"
     },
     {
       "artifact": "Structured evidence data",
@@ -3271,9 +3271,9 @@
     },
     {
       "artifact": "D3 evidence graph",
-      "path": "web/src/scripts/evidence-graph.js",
-      "role": "从嵌入 JSON 生成主链、反哺路径、风险通道和因果门禁图。",
-      "check": "脚本查找 U_t -> causal claim，页面嵌入 JSON 后可渲染。"
+      "path": "archive/retired-research-narrative-site/web/src/scripts/evidence-graph.js",
+      "role": "已退役的历史图形实现，只用于追溯。",
+      "check": "禁止执行或迁回活动路径。"
     }
   ]
 }

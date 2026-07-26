@@ -3,7 +3,7 @@
 Status: citation context, claim alignment, local claim-context audit, reference metadata, primary-source reference verification, AI task method-audit, declaration coverage, estimand protocol coverage, analysis-plan coverage, and AI research failure-mode coverage v1.1  
 Date: 2026-06-28  
 Target paper: [Effective Immortality Acceleration Flywheel](../explanations/effective-immortality-acceleration-flywheel.md)  
-Web page: [`web/src/pages/papers/effective-immortality-flywheel.astro`](../../web/src/pages/papers/effective-immortality-flywheel.astro)
+Web page: [`archive/retired-research-narrative-site/web/src/pages/papers/effective-immortality-flywheel.astro`](../../archive/retired-research-narrative-site/web/src/pages/papers/effective-immortality-flywheel.astro)
 
 ## Scope
 

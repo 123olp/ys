@@ -1,11 +1,17 @@
+const origin = (
+  import.meta.env.PUBLIC_SITE_ORIGIN ||
+  "https://human-infra.pages.dev"
+).replace(/\/$/, "");
+const basePath = (import.meta.env.BASE_URL || "/").replace(/^\/$/, "").replace(/\/$/, "");
+
 export const SITE = {
   name: "Human Infra",
   alternateName: "人类基础设施",
   publisher: "tradecatlabs",
   language: ["zh-CN", "en"],
-  origin: "https://tradecatlabs.github.io",
-  basePath: "/human_infra",
-  publicUrl: "https://tradecatlabs.github.io/human_infra/",
+  origin,
+  basePath,
+  publicUrl: `${origin}${basePath}/`,
   repository: "https://github.com/tradecatlabs/human_infra",
   community: "https://t.me/human_infra",
   license: "https://github.com/tradecatlabs/human_infra/blob/main/LICENSE.md",

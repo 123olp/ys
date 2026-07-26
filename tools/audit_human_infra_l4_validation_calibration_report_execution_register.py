@@ -88,7 +88,6 @@ REQUIRED_INDEX_LINKS = {
     "tools/AGENTS.md": SCRIPT_LINK,
     "web/README.md": "life-path-l4-validation-calibration-report-execution-validation.json",
     "web/AGENTS.md": "life-path-l4-validation-calibration-report-execution-validation.json",
-    "web/package.json": "export:life-path-l4-validation-calibration-report-execution-validation",
 }
 
 

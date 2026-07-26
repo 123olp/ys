@@ -8,7 +8,7 @@ version: "0.1.0"
 date-released: "2026-06-20"
 abstract: "A knowledge-first repository for human runtime infrastructure, longevity evidence, disembodied central nervous system concepts, and memory editing safety boundaries."
 repository-code: "https://github.com/tradecatlabs/human_infra"
-url: "https://tradecatlabs.github.io/human_infra/"
+url: "https://github.com/tradecatlabs/human_infra"
 keywords:
   - "Human Infra"
   - "subject continuity"

@@ -16,7 +16,7 @@
   "audited_input_hashes": {
     "web/src/data/effective-immortality-evidence.json": "sha256:998866fea2f08fe27ad21ffa46f540543955ec3c49e1e2aaef78638e2db33d64",
     "docs/explanations/effective-immortality-acceleration-flywheel.md": "sha256:d7b1462da25d4597af7044b1d588bce701d2fa3beaadf71f99ffea4d2c1b4239",
-    "web/src/pages/papers/effective-immortality-flywheel.astro": "sha256:947fb1f4711b2b55f8c57e0810b88599e07c69dd88bd796973d0dc7379624bc7",
+    "archive/retired-research-narrative-site/web/src/pages/papers/effective-immortality-flywheel.astro": "sha256:947fb1f4711b2b55f8c57e0810b88599e07c69dd88bd796973d0dc7379624bc7",
     "docs/source-notes/2026-06-28-effective-immortality-flywheel-evidence-matrix.md": "sha256:6117d964b046faac42c2959e296ebe0541822be13312fabdc5c715d4686f0bd2",
     "docs/source-notes/2026-06-28-effective-immortality-flywheel-derivation-package.md": "sha256:74695a858507f580b99f9bf0c486dcc204072e95adc25051c207ce5b253eeba8",
     "docs/source-notes/2026-06-28-effective-immortality-flywheel-automated-research-run.md": "sha256:531f7a5f9c18971d6c5968de6d6106d82ee7da3a317c36c389e0ab76cba73724",

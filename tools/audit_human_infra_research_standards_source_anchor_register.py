@@ -90,7 +90,6 @@ REQUIRED_INDEX_LINKS = {
     "tools/AGENTS.md": SCRIPT_LINK,
     "web/README.md": VALIDATION_LINK,
     "web/AGENTS.md": VALIDATION_LINK,
-    "web/package.json": "export:research-standards-source-anchor-validation",
 }
 
 

@@ -174,8 +174,8 @@
       "sourceRefs": [
         "domains/c1-boundary-rewriting/future-waiting/README.md",
         "domains/c1-boundary-rewriting/future-waiting/paths/black-hole-waiting-room.md",
-        "web/src/pages/papers/metric-redshift-recursive-waiting.astro",
-        "web/src/pages/papers/controllable-metric-waiting-room-hypothesis.astro"
+        "archive/retired-research-narrative-site/web/src/pages/papers/metric-redshift-recursive-waiting.astro",
+        "archive/retired-research-narrative-site/web/src/pages/papers/controllable-metric-waiting-room-hypothesis.astro"
       ],
       "modelAdmissionDecision": "blocked-pending-route-scenario-cards-and-calibration"
     },

@@ -5,8 +5,14 @@ import process from "node:process";
 const root = resolve(import.meta.dirname, "..");
 const dist = resolve(root, "dist");
 const baseArgumentIndex = process.argv.indexOf("--base");
-const base = (baseArgumentIndex >= 0 ? process.argv[baseArgumentIndex + 1] : "/human_infra").replace(/\/$/, "");
-const publicOrigin = "https://tradecatlabs.github.io";
+const originArgumentIndex = process.argv.indexOf("--origin");
+const rawBase = baseArgumentIndex >= 0 ? process.argv[baseArgumentIndex + 1] : "/human_infra";
+const base = rawBase === "/" ? "" : rawBase.replace(/\/$/, "");
+const publicOrigin = (
+  originArgumentIndex >= 0
+    ? process.argv[originArgumentIndex + 1]
+    : process.env.PUBLIC_SITE_ORIGIN || process.env.CF_PAGES_URL || "https://human-infra.pages.dev"
+).replace(/\/$/, "");
 const expectedDomainCount = 994;
 const expectedBoundedClaimCount = 30;
 const expectedSourceAnchorCount = 21;
@@ -269,8 +275,10 @@ for (const page of knowledge.entry_points ?? []) {
   );
   record(
     `page:${pageId}:project-base`,
-    !/(?:href|src)="\/(?!human_infra\/)/.test(html),
-    "no project-internal asset or navigation URL escapes the GitHub Pages base"
+    base === "" || !new RegExp(`(?:href|src)="/(?!${base.slice(1)}/)`).test(html),
+    base === ""
+      ? "root deployment does not require a path prefix"
+      : `no project-internal asset or navigation URL escapes ${base}`
   );
   record(
     `page:${pageId}:file-url-suffix`,
@@ -294,6 +302,7 @@ const failed = checks.length - passed;
 const report = {
   schema_version: "human-infra-geo-readiness-audit.v1",
   generated_at: new Date().toISOString(),
+  public_origin: publicOrigin,
   build_base: base,
   summary: {
     status: failed === 0 ? "pass" : "fail",

@@ -1,9 +1,8 @@
 # Human Infra
 
 [![Check](https://github.com/tradecatlabs/human_infra/actions/workflows/check.yml/badge.svg)](https://github.com/tradecatlabs/human_infra/actions/workflows/check.yml)
-[![Pages](https://github.com/tradecatlabs/human_infra/actions/workflows/pages.yml/badge.svg)](https://github.com/tradecatlabs/human_infra/actions/workflows/pages.yml)
 
-[中文](README.md) · [Website](https://tradecatlabs.github.io/human_infra/) · [Research map](https://tradecatlabs.github.io/human_infra/research-map/) · [Evidence map](https://tradecatlabs.github.io/human_infra/evidence-map/) · [LLM entry](https://tradecatlabs.github.io/human_infra/llms.txt) · [Machine knowledge index](https://tradecatlabs.github.io/human_infra/knowledge-index.json)
+[中文](README.md) · [Local Wiki](wiki/README.md) · [Research domains](domains/README.md) · [Evidence references](docs/reference/README.md)
 
 Human Infra is an evidence-governed research knowledge base for engineering **subject continuity**: the conditions that let a human continue to exist, perceive, act, learn, recover, choose, and reach the future.
 
@@ -39,7 +38,8 @@ C0 subject continuity
 - `domains/` contains the physical C1-C6 research-domain tree.
 - `domains/_possibility-space-control/classification.tsv` is the tier and path source of truth.
 - `docs/reference/` contains project boundaries, evidence policy, claim-evidence matrices, and review registers.
-- `web/` publishes research narratives, working papers, synthetic models, and machine-readable knowledge.
+- `web/` contains research data and audit scripts only. It is not a website and must not be deployed.
+- `archive/retired-research-narrative-site/` is a permanently retired historical implementation.
 - `tools/` contains repository and evidence-governance auditors.
 
 ## Evidence boundary
@@ -52,24 +52,17 @@ Strong claims must be traceable to a source, context, evidence role, transfer bo
 - [Evidence policy](docs/reference/evidence-policy.md)
 - [Ethics and safety boundaries](docs/reference/ethics-and-safety-boundaries.md)
 - [Core claim-evidence matrix](docs/reference/human-infra-core-claim-evidence-matrix.md)
-- [GEO publication contract](web/GEO.md)
+- [Local Wiki](wiki/README.md)
+- [Retired site record](archive/retired-research-narrative-site/README.md)
 
-## Machine access
+## Public products
 
-- [`llms.txt`](https://tradecatlabs.github.io/human_infra/llms.txt): concise canonical context.
-- [`llms-full.txt`](https://tradecatlabs.github.io/human_infra/llms-full.txt): full project and domain context.
-- [`knowledge-index.json`](https://tradecatlabs.github.io/human_infra/knowledge-index.json): project, tier, domain, source-path, and boundary entities.
-- [`evidence-graph.json`](https://tradecatlabs.github.io/human_infra/evidence-graph.json): bounded claim, source-anchor, endpoint, falsifier, and transfer-boundary relations.
-- [`geo-metrics.json`](https://tradecatlabs.github.io/human_infra/geo-metrics.json): measurement and attribution contract.
-- [`geo-prompt-bank.json`](https://tradecatlabs.github.io/human_infra/geo-prompt-bank.json): reproducible external AI sampling prompts.
+Only the Human Infra technology tree and Wiki are eligible for public deployment. The retired Research Narrative site is excluded from all build and deployment paths.
 
 ## Local verification
 
 ```bash
 make check
-cd web
-npm ci
-npm run audit:geo
 ```
 
 Publisher: **tradecatlabs**. Community: [Telegram](https://t.me/human_infra).

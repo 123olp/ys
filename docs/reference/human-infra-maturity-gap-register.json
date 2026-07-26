@@ -26,8 +26,8 @@
         "docs/reference/human-infra-audience-claim-map.json",
         "tools/audit_human_infra_audience_claim_map.py",
         "docs/reference/human-infra-maturity-roadmap.md",
-        "web/src/pages/index.astro",
-        "web/src/pages/paper.astro"
+        "archive/retired-research-narrative-site/web/src/pages/index.astro",
+        "archive/retired-research-narrative-site/web/src/pages/paper.astro"
       ],
       "gates": [
         {
@@ -62,8 +62,8 @@
             "README.md",
             "docs/reference/human-infra-audience-claim-map.json",
             "tools/audit_human_infra_audience_claim_map.py",
-            "web/src/pages/index.astro",
-            "web/src/pages/research-standards.astro"
+            "archive/retired-research-narrative-site/web/src/pages/index.astro",
+            "archive/retired-research-narrative-site/web/src/pages/research-standards.astro"
           ],
           "missingEvidence": [],
           "nextAction": "Keep audience-specific entry paths aligned through make audience-claim-map-audit when public narrative pages change.",
@@ -103,10 +103,10 @@
             "README.md",
             "docs/reference/human-infra-core-claim-evidence-matrix.md",
             "docs/reference/human-infra-page-claim-consistency.json",
-            "tools/audit_human_infra_page_claim_consistency.py"
+            "archive/retired-research-narrative-site/web/research-scripts/audit_human_infra_page_claim_consistency.py"
           ],
           "missingEvidence": [],
-          "nextAction": "Keep major pages aligned through make page-claim-audit before broadening the audit into audience-specific pages.",
+          "nextAction": "The former Web and paper page audits are permanently retired with the Research Narrative site; preserve this row as historical evidence only.",
           "blocks100Percent": false
         }
       ]
@@ -855,8 +855,8 @@
             "tools/audit_human_infra_domain_source_specific_extraction_queue.py",
             "tools/audit_human_infra_falsifier_source_card_backfill.py",
             "tools/audit_human_infra_falsifier_source_card_extraction.py",
-            "tools/audit_human_infra_page_claim_consistency.py",
-            "tools/audit_human_infra_paper_claim_register.py",
+            "archive/retired-research-narrative-site/web/research-scripts/audit_human_infra_page_claim_consistency.py",
+            "archive/retired-research-narrative-site/web/research-scripts/audit_human_infra_paper_claim_register.py",
             "docs/reference/human-infra-domain-source-specific-extraction-register.json",
             "tools/audit_human_infra_domain_source_specific_extraction_register.py",
             "docs/reference/human-infra-domain-source-card-promotion-queue.json",

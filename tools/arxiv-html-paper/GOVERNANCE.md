@@ -21,8 +21,8 @@ tools/arxiv-html-paper/arxiv-html-paper.contract.v1.json
 页面实现真相源：
 
 ```text
-web/src/layouts/PaperReaderLayout.astro
-web/src/pages/paper.astro
+build/arxiv-html-paper-preview/src/layouts/PaperReaderLayout.astro
+build/arxiv-html-paper-preview/src/pages/paper.astro
 ```
 
 `web/` 中的实现是消费样例，不是工具包模板本身。模板变更必须先进入 `tools/arxiv-html-paper/templates/`，再由 CLI 写入目标项目。
@@ -88,7 +88,7 @@ post-process 生成重复 class 属性
 每次修改后至少运行：
 
 ```bash
-python3 tools/arxiv_html_paper_tool.py verify-assets --public-dir web/public
+python3 tools/arxiv_html_paper_tool.py verify-assets --public-dir build/arxiv-html-paper-preview/public
 git diff --check
 make check
 ```

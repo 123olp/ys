@@ -10,7 +10,7 @@
 
 ## 本轮产物
 
-- 论文页：`web/src/pages/papers/proper-time-differential-waiting-hypothesis.astro`
+- 论文页：`archive/retired-research-narrative-site/web/src/pages/papers/proper-time-differential-waiting-hypothesis.astro`
 - 结构化数据源：`web/src/data/proper-time-differential-waiting-hypothesis.json`
 - 工具 seed：`web/src/data/proper-time-differential-waiting-hypothesis/TOOL_GENERATED_PAGE_SEED.astro`
 - Citation context 导出脚本：`web/scripts/export-proper-time-differential-citation-context-review-packet.mjs`

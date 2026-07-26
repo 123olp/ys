@@ -70,7 +70,7 @@ future-waiting/
 
 - `README.md`：说明本子域的核心定位、当前路径、上下游关系和安全边界。
 - `paths/black-hole-waiting-room.md`：记录“度规红移固有时差分路径”，并保留“黑洞等待室”作为传播名；重点维护定义、理论基础、路径对比、难点和证据边界。
-- 相关 Web 论文页维护在 `web/src/pages/papers/`：`metric-redshift-recursive-waiting.astro`、`proper-time-differential-waiting-hypothesis.astro` 和 `controllable-metric-waiting-room-hypothesis.astro`，正文必须保持 arXiv HTML Paper Reuse Kit 的 DOM 契约。
+- 旧 Web 论文页已永久冻结在 `archive/retired-research-narrative-site/web/src/pages/papers/`，只允许历史追溯；禁止维护、构建、迁回活动路径或部署。当前研究资产只在本域文档与 `web/src/data/` 中维护。
 
 ## 上下游关系
 

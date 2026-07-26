@@ -2,9 +2,11 @@
 
 日期：2026-06-29
 
+> 退役边界：本文记录的 Astro 页面、`web/scripts/` 和 `npm run ...` 命令均属于已永久归档的历史实现，不再是正式路由或可执行工作流。后续研究只维护结构化数据、论文正文和证据边界。
+
 ## 目标
 
-使用 auto-research 工具链的论文结构、方案细化、可视化和引用审查原则，对 `web/src/pages/papers/metric-redshift-recursive-waiting.astro` 进行第一轮科研化扩写。
+使用 auto-research 工具链的论文结构、方案细化、可视化和引用审查原则，对 `archive/retired-research-narrative-site/web/src/pages/papers/metric-redshift-recursive-waiting.astro` 进行第一轮科研化扩写。
 
 ## 使用的工具原则
 
@@ -102,7 +104,7 @@ Malament-Hogarth 和时间旅行哲学文献只能提供极限时空与概念边
 本轮按 arXiv HTML Paper Reuse Kit 的正式消费路径补齐页面创建证据：
 
 - 调用 `python3 tools/arxiv_html_paper_tool.py write-page` 生成 `web/src/data/metric-redshift-recursive-waiting/TOOL_GENERATED_PAGE_SEED.astro`，作为该论文页的工具生成 seed。
-- 正式路由继续使用 `web/src/pages/papers/metric-redshift-recursive-waiting.astro`，只在工具模板契约允许的正文层扩展论文内容，不修改 arXiv CSS、JS、字体或阅读器控件。
+- 历史页面快照保存在 `archive/retired-research-narrative-site/web/src/pages/papers/metric-redshift-recursive-waiting.astro`，只允许追溯，不得继续扩展、构建、预览或部署。
 - `web/scripts/audit-metric-redshift-paper.mjs` 已升级为同时检查工具 seed、Paper Plan、Figure Plan、Citation Context Register、S1-S16 章节和页面必需字符串。
 - 页面新增 `图表计划与引用预审`，把 figure-designer 与 citation-audit 的本地预审结果写成可执行研究队列。
 
@@ -469,7 +471,7 @@ K 是固有时压缩代理变量
 实现位置：
 
 - `web/src/data/metric-redshift-recursive-waiting.json` 新增 `ncgFormulaDecompositionFigure`。
-- `web/src/pages/papers/metric-redshift-recursive-waiting.astro` 在 S7 最小模型中渲染 `Figure 4`。
+- `archive/retired-research-narrative-site/web/src/pages/papers/metric-redshift-recursive-waiting.astro` 在 S7 最小模型中渲染 `Figure 4`。
 - `F4.status` 从 `planned` 改为 `implemented as data-backed formula decomposition figure`。
 
 专项审计新增检查：
