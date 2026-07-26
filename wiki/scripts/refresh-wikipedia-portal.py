@@ -190,13 +190,6 @@ def adapt(html: str) -> tuple[str, dict[str, str]]:
         'data-jsl10n="portal.language-button-text">Read Wikipedia in your language ',
         ">使用你的语言访问 Human Infra Wiki ",
     )
-    html = re.sub(
-        r'<div class="banner banner-bottom".*?</dialog>',
-        "",
-        html,
-        count=1,
-        flags=re.DOTALL,
-    )
     html = replace_once(
         html,
         r'<footer class="footer".*?</footer>',

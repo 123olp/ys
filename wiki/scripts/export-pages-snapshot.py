@@ -15,7 +15,7 @@ import threading
 import time
 from pathlib import Path
 from typing import Any
-from urllib.parse import unquote, urljoin, urlparse
+from urllib.parse import quote, unquote, urljoin, urlparse
 
 import requests
 from bs4 import BeautifulSoup
@@ -29,6 +29,11 @@ ASSET_URL_PATTERN = re.compile(r"url\((?P<value>[^)]+)\)")
 SKIPPED_NAMESPACES = {-2, -1}
 REQUEST_TIMEOUT = 30
 THREAD_LOCAL = threading.local()
+STATIC_NOJS_CSS = """
+.client-nojs .mw-portlet-lang .vector-dropdown-content{display:none}
+.client-nojs .mw-portlet-lang .vector-dropdown-checkbox:checked~.vector-dropdown-content{display:block}
+.client-nojs #p-lang-btn .vector-dropdown-content{left:auto;right:0;box-sizing:border-box;max-width:calc(100vw - 48px)}
+"""
 
 
 def request_json(
@@ -124,11 +129,21 @@ def fetch_page(
         },
     )
     parsed = payload["parse"]
+    page_response = session.get(
+        api_url.removesuffix("/api.php") + "/index.php",
+        params={"title": parsed["title"]},
+        timeout=REQUEST_TIMEOUT,
+    )
+    page_response.raise_for_status()
+    page_soup = BeautifulSoup(page_response.text, "lxml")
+    toc = page_soup.select_one("#vector-toc-pinned-container")
     return {
         "sourceTitle": title,
         "title": parsed["title"],
         "displayTitle": parsed.get("displaytitle") or html.escape(parsed["title"]),
         "body": parsed["text"],
+        "bodyClass": " ".join(page_soup.body.get("class", [])),
+        "toc": str(toc) if toc else "",
         "categories": parsed.get("categorieshtml", ""),
         "revision": parsed.get("revid"),
     }
@@ -273,13 +288,26 @@ def build_shell(
         link.decompose()
     style_link = soup.new_tag("link", rel="stylesheet", href="/assets/mediawiki.css")
     soup.head.append(style_link)
+    if not soup.select_one("link[rel~='icon']"):
+        icon_link = soup.new_tag(
+            "link",
+            rel="icon",
+            href="/resources/assets/human-infra-mark.svg",
+            type="image/svg+xml",
+        )
+        soup.head.append(icon_link)
 
     if soup.title:
         soup.title.string = "__HI_DOCUMENT_TITLE__"
+    if soup.body:
+        soup.body["class"] = "__HI_BODY_CLASS__"
     heading = soup.select_one("#firstHeading")
     if heading:
         heading.clear()
         heading.append("__HI_DISPLAY_TITLE__")
+    toc = soup.select_one("#vector-toc-pinned-container")
+    if toc:
+        toc.replace_with("__HI_TOC__")
     content = soup.select_one("#mw-content-text")
     if content is None:
         raise RuntimeError("MediaWiki 页面缺少 #mw-content-text")
@@ -306,7 +334,7 @@ def build_shell(
 
     output_dir.joinpath("assets").mkdir(parents=True, exist_ok=True)
     output_dir.joinpath("assets", "mediawiki.css").write_text(
-        "\n".join(stylesheets),
+        "\n".join([*stylesheets, STATIC_NOJS_CSS]),
         encoding="utf-8",
     )
     output_dir.joinpath("snapshot", "shell.html").parent.mkdir(
@@ -314,9 +342,20 @@ def build_shell(
         exist_ok=True,
     )
     shell = str(soup)
+    encoded_source = quote(source_page.replace(" ", "_"), safe="")
+    shell = shell.replace(encoded_source, "__HI_PAGE_TITLE_ENCODED__")
+    shell = shell.replace(source_page.replace(" ", "_"), "__HI_PAGE_CLASS__")
+    shell = shell.replace(source_page, "__HI_PAGE_TITLE__")
+    shell = re.sub(r"(?<=oldid=)\d+", "__HI_REVISION_ID__", shell)
     for token in (
         "__HI_DOCUMENT_TITLE__",
         "__HI_DISPLAY_TITLE__",
+        "__HI_BODY_CLASS__",
+        "__HI_PAGE_TITLE__",
+        "__HI_PAGE_TITLE_ENCODED__",
+        "__HI_PAGE_CLASS__",
+        "__HI_REVISION_ID__",
+        "__HI_TOC__",
         "__HI_CONTENT__",
         "__HI_CATEGORIES__",
         "__HI_REVISION__",

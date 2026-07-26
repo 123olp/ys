@@ -35,7 +35,7 @@ make pages-deploy
 make pages-smoke
 ```
 
-`pages-build` 从本地 MediaWiki API 枚举全部非讨论命名空间，以 8 路有界并发导出页面正文，并分别复用 MediaWiki 首页外壳与普通文章外壳。CSS 引用资源以及 HTML `src` / `srcset` 引用的同源资源必须一并本地化。`pages-deploy` 只创建或更新 `human-infra` 与 `human-infra-wiki` 两个 Pages 项目，不修改科技树项目。`pages-smoke` 必须验证三个固定入口、Wiki 首页 DOM、普通词条、标题搜索、页脚资源和科技树产品标识。
+`pages-build` 从本地 MediaWiki API 枚举全部非讨论命名空间，以 8 路有界并发导出页面正文，并分别复用 MediaWiki 首页外壳与普通文章外壳。每篇普通文章必须从同一修订的 MediaWiki 渲染页携带其原生 Vector 目录和完整 `body` 页面类，禁止复用模板文章目录或命名空间状态。外壳中的粘性标题、内部页面链接、登录回跳和修订链接必须绑定当前词条，禁止泄漏外壳来源页面的上下文。CSS 引用资源以及 HTML `src` / `srcset` 引用的同源资源必须一并本地化。`pages-deploy` 只创建或更新 `human-infra` 与 `human-infra-wiki` 两个 Pages 项目，不修改科技树项目。`pages-smoke` 必须验证三个固定入口、Wiki 首页 DOM、普通词条目录一致性、标题搜索、页脚资源和科技树产品标识。
 
 ## 发布门禁
 
@@ -44,8 +44,12 @@ make pages-smoke
 3. 发布产物不得包含 `tradecat.org`。
 4. Wiki 首页必须保留 `mp-2012` DOM，门户必须保留 `www-wikipedia-org` DOM。
 5. Wiki 首页必须使用 `page-Main_Page` 外壳且不得继承普通文章目录；页脚许可证和 MediaWiki 徽标必须返回成功。
-6. Pages Worker 只负责快照路由、模板注入和只读标题搜索，不承载内容编辑、医学模型或数据库。
-7. 远端 smoke 全部通过后，才能把发布视为完成。
+6. 普通词条目录必须来自该词条自身的 MediaWiki Vector 渲染结果；不得把外壳来源页面的目录传播给其他词条。
+7. 门户必须保留其上游脚本依赖的 DOM 契约；不得在保留脚本时删除对应节点并制造浏览器异常。
+8. 普通词条的页面类、粘性标题、内部链接、登录回跳与修订链接必须指向当前词条和当前修订。
+9. 静态快照必须保留 Vector 语言菜单的无脚本开合状态，不得让关闭的下拉内容造成移动端横向溢出。
+10. Pages Worker 只负责快照路由、模板注入和只读标题搜索，不承载内容编辑、医学模型或数据库。
+11. 远端 smoke 全部通过后，才能把发布视为完成。
 
 ## 回滚
 

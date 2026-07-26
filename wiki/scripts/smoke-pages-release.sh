@@ -8,6 +8,7 @@ tech_tree_url="${TECH_TREE_PAGES_URL:-https://human-infra-tech-tree.pages.dev}"
 portal="$(curl -fsSL "$portal_url/")"
 grep -Fq 'id="www-wikipedia-org"' <<<"$portal"
 grep -Fq 'Human Infra' <<<"$portal"
+grep -Fq 'class="banner banner-bottom' <<<"$portal"
 curl -fsSL "$portal_url/runtime-config.js" \
     | grep -Fq 'https://human-infra-wiki.pages.dev'
 
@@ -28,8 +29,16 @@ for asset in \
 done
 
 article="$(curl -fsSL --get "$wiki_url/index.php" \
-    --data-urlencode 'title=有效永生与主体持续性')"
-grep -Fq '有效永生与主体持续性' <<<"$article"
+    --data-urlencode 'title=长寿逃逸速度')"
+grep -Fq '长寿逃逸速度' <<<"$article"
+grep -Fq 'page-长寿逃逸速度 rootpage-长寿逃逸速度' <<<"$article"
+grep -Fq 'returnto=%E9%95%BF%E5%AF%BF%E9%80%83%E9%80%B8%E9%80%9F%E5%BA%A6' <<<"$article"
+grep -Fq 'title=%E9%95%BF%E5%AF%BF%E9%80%83%E9%80%B8%E9%80%9F%E5%BA%A6&amp;oldid=' <<<"$article"
+grep -Fq 'href="#稳定对象、阶段与状态"' <<<"$article"
+if grep -Fq 'href="#研究对象与作用边界"' <<<"$article"; then
+    printf 'Wiki 普通词条错误继承了模板文章目录。\n' >&2
+    exit 1
+fi
 
 search="$(curl -fsSL --get "$wiki_url/index.php" \
     --data-urlencode 'title=Special:Search' \
@@ -37,7 +46,11 @@ search="$(curl -fsSL --get "$wiki_url/index.php" \
 grep -Fq '只读快照中的标题搜索结果' <<<"$search"
 
 tech_tree="$(curl -fsSL "$tech_tree_url/")"
-grep -Fq '<title>Historical Tech Tree</title>' <<<"$tech_tree"
+grep -Fq '<title>Human Infra Tech Tree</title>' <<<"$tech_tree"
+if grep -Fq '/_vercel/insights/' <<<"$tech_tree"; then
+    printf '科技树公开页面仍包含 Vercel 专属遥测。\n' >&2
+    exit 1
+fi
 tech_tree_chunk="$(
     grep -oE 'src="[^"]*app/page-[^"]+\.js"' <<<"$tech_tree" \
         | head -1 \

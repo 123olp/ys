@@ -72,9 +72,20 @@ function renderShell(shell, page, canonicalUrl) {
 	const revision = page.revision
 		? `只读公开快照，源修订 ID：${page.revision}。`
 		: "只读公开快照。";
+	const pageTitle = escapeHtml(page.title);
+	const pageClass = escapeHtml(page.title.replaceAll(" ", "_"));
+	const bodyClass = escapeHtml(page.bodyClass || "");
+	const encodedTitle = encodeURIComponent(page.title.replaceAll(" ", "_"));
+	const revisionId = page.revision ? String(page.revision) : "";
 	return shell
 		.replaceAll("__HI_DOCUMENT_TITLE__", `${escapeHtml(page.title)} - Human Infra Wiki`)
 		.replaceAll("__HI_DISPLAY_TITLE__", page.displayTitle)
+		.replaceAll("__HI_BODY_CLASS__", bodyClass)
+		.replaceAll("__HI_PAGE_TITLE__", pageTitle)
+		.replaceAll("__HI_PAGE_TITLE_ENCODED__", encodedTitle)
+		.replaceAll("__HI_PAGE_CLASS__", pageClass)
+		.replaceAll("__HI_REVISION_ID__", revisionId)
+		.replaceAll("__HI_TOC__", page.toc || "")
 		.replaceAll("__HI_CONTENT__", page.body)
 		.replaceAll("__HI_CATEGORIES__", page.categories || "")
 		.replaceAll("__HI_REVISION__", revision)
@@ -99,6 +110,7 @@ function searchBody(query, pages) {
 		title: `搜索：${query}`,
 		displayTitle: `搜索：${escapeHtml(query)}`,
 		body: `<div class="mw-parser-output"><p>只读快照中的标题搜索结果：</p>${result}</div>`,
+		bodyClass: "skin--responsive skin-vector skin-vector-search-vue mediawiki ltr sitedir-ltr mw-hide-empty-elt ns--1 ns-special page-Special_Search rootpage-Special_Search skin-vector-2022 action-view",
 		categories: "",
 		revision: null,
 	};
@@ -137,6 +149,7 @@ async function renderPage(request, env) {
 			title: "页面不存在",
 			displayTitle: "页面不存在",
 			body: `<div class="mw-parser-output"><p>该页面不在当前公开快照中。</p><p><a href="/">返回首页</a></p></div>`,
+			bodyClass: "skin--responsive skin-vector skin-vector-search-vue mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-页面不存在 rootpage-页面不存在 skin-vector-2022 action-view",
 			categories: "",
 			revision: null,
 		};

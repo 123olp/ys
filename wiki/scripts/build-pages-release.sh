@@ -41,7 +41,7 @@ for file in \
         exit 1
     }
 done
-grep -Fq 'page-Main_Page' "$wiki_output_dir/snapshot/main-shell.html"
+grep -Fq '__HI_BODY_CLASS__' "$wiki_output_dir/snapshot/main-shell.html"
 if grep -Fq 'id="vector-toc-pinned-container"' \
     "$wiki_output_dir/snapshot/main-shell.html"; then
     printf 'Wiki Pages 首页外壳错误继承普通文章目录。\n' >&2
