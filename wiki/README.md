@@ -21,6 +21,17 @@ cd wiki
 
 Windows 11 可直接访问这些 `localhost` 地址。若端口冲突，在 `.env` 同步修改 `WIKI_PORTAL_PORT`、`WIKI_PORT` 与 `WIKI_SERVER` 后重新执行 `./scripts/bootstrap.sh`。
 
+生产入口：
+
+- 多语言门户：<https://human-infra.tradecat.org/>
+- 中文 Wiki：<https://wiki.tradecat.org/>
+- 科技树：<https://tech-tree.tradecat.org/>
+
+语言门户与 MediaWiki 通过 Cloudflare Tunnel 连接本地持久化容器；科技树是
+独立的 Cloudflare Pages 静态发布物，不经过该 Tunnel。公开部署时，将
+`WIKI_SERVER` 和 `WIKI_PUBLIC_URL` 设为 MediaWiki 的公开 HTTPS 地址。
+门户通过运行时配置生成跨主机 Wiki 链接，本地端口只负责容器映射。
+
 ## 信息架构
 
 ```text

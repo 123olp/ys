@@ -26,7 +26,7 @@ wiki/
 │   ├── adapter.js            # 本地 Wiki 路由与搜索胶水
 │   ├── UPSTREAM.md           # 官方来源、版本、许可证和刷新流程
 │   ├── LICENSE.wikimedia-portals # Wikimedia portals 上游许可证
-│   ├── default.conf.template # Nginx 健康检查和运行时端口注入
+│   ├── default.conf.template # Nginx 健康检查和 Wiki 公开基址注入
 │   └── assets/               # 门户资源及 Wiki 只读复用的品牌与科技树图片种子
 ├── homepage-upstream/        # 中文维基首页不可手改的上游模板
 │   ├── UPSTREAM.md           # mp-2012 来源、许可、转换边界和更新流程
@@ -63,6 +63,8 @@ wiki/
 
 - `compose.yaml` 和 `Dockerfile` 固定可复现基础设施；不得把密码写入其中。
 - `portal/` 是语言选择层，视觉、DOM 与通用控件行为归 Wikimedia 官方门户；本项目只维护品牌内容和本地路由适配，禁止新增平行视觉 CSS、存放研究结论或伪造尚未建立的语言版本。`human-infra-mark.svg` 同时作为 Wiki 皮肤图标和 MediaWiki 本地文件仓库的受治理品牌种子；`human-infra-tech-tree.png` 是首页“研究图谱”槽位使用的项目科技树渲染证据，二者都必须通过 `importImages` 进入本地文件仓库。
+- 门户到 Wiki 的公开路由由 `WIKI_PUBLIC_URL` 注入；未设置时才回退到同主机加 `WIKI_PUBLIC_PORT` 的本地开发地址。不得在门户 HTML 中硬编码部署域名。
+- 生产环境中，语言门户与 MediaWiki 由 Cloudflare Tunnel 暴露本地持久化服务；科技树由 Cloudflare Pages 独立发布。不得把科技树重新接入 Wiki Tunnel，也不得从退役的 Research Narrative 恢复公开入口。
 - `config/` 只保存可公开的站点策略；MediaWiki 生成的 `LocalSettings.php` 属于运行时。
 - `content/` 是首次安装和可重复导入的页面种子，不是整个 Wiki 数据库的镜像；`import-content.sh` 必须先通过 MediaWiki 原生 `importImages` 导入图片种子，再导入引用它的页面，并在作业队列完成后用 `purgePage` 的标准输入契约刷新项目首页解析缓存。
 - `homepage-upstream/snapshot/` 是中文首页结构与样式真相源；`Human Infra:首页`、页首和样式均由生成器从该快照产生，禁止手工改写生成产物。

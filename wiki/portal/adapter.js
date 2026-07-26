@@ -5,7 +5,7 @@
 	const config = window.HUMAN_INFRA_PORTAL || { wikiPort: '18782' };
 	const host = window.location.hostname || 'localhost';
 	const port = config.wikiPort ? ':' + config.wikiPort : '';
-	const wikiBase = window.location.protocol + '//' + host + port;
+	const wikiBase = config.wikiBase || window.location.protocol + '//' + host + port;
 
 	function wikiUrl( title, language ) {
 		const url = new URL( wikiBase + '/index.php' );

@@ -7,7 +7,7 @@ server {
     location = /runtime-config.js {
         default_type application/javascript;
         add_header Cache-Control "no-store";
-        return 200 'window.HUMAN_INFRA_PORTAL={wikiPort:"${WIKI_PUBLIC_PORT}"};';
+        return 200 'window.HUMAN_INFRA_PORTAL={wikiPort:"${WIKI_PUBLIC_PORT}",wikiBase:"${WIKI_PUBLIC_URL}"};';
     }
 
     location = /healthz {

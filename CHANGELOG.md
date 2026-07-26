@@ -2,6 +2,7 @@
 
 ## 2026-07-26
 
+- Published the Human Infra language portal and MediaWiki through a persistent Cloudflare Tunnel, published the Human Infra technology tree as a Cloudflare Pages static export, and made the three production URLs the repository's only active public entry points.
 - Permanently retired the Astro Research Narrative site, deleted its Cloudflare Pages project, removed all active deployment paths, archived its source and publication workflow, and added repository checks that prevent the retired surface from returning.
 
 - Expanded all seven Human Infra topic portals with native MediaWiki semantic sections for overview, selected research, routes, evidence boundaries, open questions, participation and related navigation, removing the custom portal CSS layer.

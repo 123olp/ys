@@ -6,6 +6,7 @@ services:
     restart: unless-stopped
     environment:
       WIKI_PUBLIC_PORT: ${WIKI_PORT:-18782}
+      WIKI_PUBLIC_URL: ${WIKI_PUBLIC_URL:-}
     ports:
       - "${WIKI_PORTAL_PORT:-18784}:80"
     volumes:
