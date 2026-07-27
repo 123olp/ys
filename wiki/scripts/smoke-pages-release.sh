@@ -61,6 +61,34 @@ grep -Fq 'src="/assets/vector-client-preferences.js"' <<<"$wiki"
 fetch_contains \
     "$wiki_url/assets/vector-client-preferences.js" \
     'vector-feature-custom-font-size'
+for forbidden_id in \
+    ca-talk \
+    ca-viewsource \
+    n-recentchanges \
+    n-specialpages \
+    p-variants \
+    pt-login-2 \
+    t-info \
+    t-permalink \
+    vector-sticky-header \
+    vector-user-links-dropdown-checkbox; do
+    if grep -Fq "id=\"$forbidden_id\"" <<<"$wiki"; then
+        printf 'Wiki 公开首页保留不可用操作控件: %s。\n' \
+            "$forbidden_id" >&2
+        exit 1
+    fi
+done
+if grep -Fq 'href="#"' <<<"$wiki"; then
+    printf 'Wiki 公开首页仍包含无目标链接。\n' >&2
+    exit 1
+fi
+main_page_alias="$(
+    curl -fsSL "$wiki_url/wiki/Main_Page/"
+)"
+if grep -Fq 'action="/index.php/' <<<"$main_page_alias"; then
+    printf 'Wiki 首页别名仍包含依赖 MediaWiki 后端的表单。\n' >&2
+    exit 1
+fi
 if grep -Fq 'id="vector-toc-pinned-container"' <<<"$wiki"; then
     printf 'Wiki 首页错误继承了普通文章目录外壳。\n' >&2
     exit 1
@@ -88,8 +116,21 @@ grep -Fq 'name="description"' <<<"$article"
 grep -Fq 'property="og:type"' <<<"$article"
 grep -Fq 'content="article"' <<<"$article"
 grep -Fq 'application/ld+json' <<<"$article"
+if grep -Fq 'class="mw-editsection"' <<<"$article"; then
+    printf 'Wiki 公开词条仍暴露不可用编辑入口。\n' >&2
+    exit 1
+fi
 if grep -Fq 'href="#研究对象与作用边界"' <<<"$article"; then
     printf 'Wiki 普通词条错误继承了模板文章目录。\n' >&2
+    exit 1
+fi
+
+historical="$(
+    curl -fsSL \
+        "$wiki_url/wiki/%E5%8E%86%E5%8F%B2%E6%8A%80%E6%9C%AF%E8%B0%B1%E7%B3%BB/"
+)"
+if grep -Eq 'class="[^"]*\\bsortable\\b' <<<"$historical"; then
+    printf 'Wiki 公开词条仍声明不存在的表格排序能力。\n' >&2
     exit 1
 fi
 

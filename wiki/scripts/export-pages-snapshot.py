@@ -40,7 +40,7 @@ STATIC_NOJS_CSS = """
 .client-nojs .mw-portlet-lang .vector-dropdown-content{display:none}
 .client-nojs .mw-portlet-lang .vector-dropdown-checkbox:checked~.vector-dropdown-content{display:block}
 .client-nojs #p-lang-btn .vector-dropdown-content{left:auto;right:0;box-sizing:border-box;max-width:calc(100vw - 48px)}
-.client-nojs.vector-feature-appearance-pinned-clientpref-1 .vector-column-end .vector-appearance-landmark{display:block}
+@media screen and (min-width:1120px){.client-nojs.vector-feature-appearance-pinned-clientpref-1 .vector-column-end .vector-appearance-landmark{display:block}}
 """
 
 
@@ -600,6 +600,8 @@ def static_href_from_mediawiki(href: str) -> str | None:
         return None
 
     normalized = normalize_title(title).casefold()
+    if normalized == normalize_title("首页").casefold():
+        return "/"
     if normalized == normalize_title("Special:Search").casefold():
         search = query.get("search", "")
         return f"/search/?q={quote(search)}" if search else "/search/"
@@ -610,12 +612,76 @@ def static_href_from_mediawiki(href: str) -> str | None:
     return f"/wiki/{title_url_path(title)}/"
 
 
-def rewrite_static_document(document: str) -> str:
+def rewrite_static_document(
+    document: str,
+    route_overrides: dict[str, str] | None = None,
+) -> str:
     soup = BeautifulSoup(document, "lxml")
+
+    # 公开快照没有 MediaWiki 后端或 Vector ResourceLoader。移除无法在
+    # 纯静态环境成立的操作容器，避免保留看似可用但实际无效的控件。
+    for form in list(soup.select("form[action]")):
+        action = form.get("action", "")
+        if action.startswith("/index.php/"):
+            form.decompose()
+    for selector in (
+        "#p-variants",
+        "#t-permalink",
+        "#vector-sticky-header",
+    ):
+        for node in soup.select(selector):
+            node.decompose()
+    for toggle_selector in (
+        "#vector-user-links-dropdown-checkbox",
+        "#vector-variants-dropdown-checkbox",
+    ):
+        dropdown_toggle = soup.select_one(toggle_selector)
+        if not dropdown_toggle:
+            continue
+        dropdown = dropdown_toggle.find_parent(
+            class_="vector-dropdown"
+        )
+        if dropdown:
+            dropdown.decompose()
+
+    for node in soup.select(".mw-editsection, .mw-collapsible-toggle"):
+        node.decompose()
+    for node in soup.select(
+        ".sortable, .mw-collapsible, .mw-collapsed, .mw-made-collapsible"
+    ):
+        classes = [
+            value
+            for value in node.get("class", [])
+            if value not in {
+                "sortable",
+                "mw-collapsible",
+                "mw-collapsed",
+                "mw-made-collapsible",
+            }
+        ]
+        if classes:
+            node["class"] = classes
+        elif node.has_attr("class"):
+            del node["class"]
+
     for link in soup.select("a[href], link[href]"):
         rewritten = static_href_from_mediawiki(link.get("href", ""))
         if rewritten is not None:
             link["href"] = rewritten
+        if route_overrides and link.get("href") in route_overrides:
+            link["href"] = route_overrides[link["href"]]
+    for link in list(soup.select('a[href="#"]')):
+        if "vector-toc-link" in link.get("class", []):
+            continue
+        list_item = link.find_parent("li", class_="mw-list-item")
+        if list_item:
+            list_item.decompose()
+        else:
+            link.unwrap()
+    for portlet in soup.select("#p-cactions"):
+        if not portlet.select_one("a[href]"):
+            portlet.decompose()
+
     for form in soup.select("form[action='/index.php']"):
         form["action"] = "/search/"
         form["method"] = "get"
@@ -662,7 +728,15 @@ def write_static_search(output_dir: Path, shell: str, public_origin: str) -> Non
         public_origin,
         MAIN_PAGE,
     )
-    soup = BeautifulSoup(rewrite_static_document(document), "lxml")
+    soup = BeautifulSoup(
+        rewrite_static_document(
+            document,
+            {
+                f"/wiki/{title_url_path('搜索')}/": "/search/",
+            },
+        ),
+        "lxml",
+    )
     script = soup.new_tag("script", src="/assets/wiki-search.js", defer=True)
     soup.body.append(script)
     target.write_text(str(soup), encoding="utf-8")
@@ -752,7 +826,15 @@ def write_static_compatibility(output_dir: Path, shell: str, public_origin: str)
         public_origin,
         MAIN_PAGE,
     )
-    soup = BeautifulSoup(rewrite_static_document(document), "lxml")
+    soup = BeautifulSoup(
+        rewrite_static_document(
+            document,
+            {
+                f"/wiki/{title_url_path('页面不存在')}/": "/404.html",
+            },
+        ),
+        "lxml",
+    )
     robots = soup.select_one("meta[name='robots']")
     if robots:
         robots["content"] = "noindex,follow"

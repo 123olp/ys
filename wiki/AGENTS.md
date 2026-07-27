@@ -54,6 +54,7 @@ wiki/
 │   ├── smoke-test.sh         # HTTP、扩展、页面和数据库验证
 │   ├── validate-source.sh    # 跟踪配置与内容契约检查
 │   ├── export-pages-snapshot.py # 导出逐页目录与页面上下文的 MediaWiki 双外壳只读快照
+│   ├── audit-static-runtime-contract.py # 拒绝静态快照中的伪操作入口与失效动态类
 │   ├── vector-client-preferences-static.js # 静态页到 Vector 偏好类的最小适配
 │   ├── build-pages-release.sh # 预渲染门户与 Wiki 纯静态 Pages 产物
 │   ├── deploy-pages-release.sh # 发布两个 Pages 项目
@@ -75,11 +76,12 @@ wiki/
 - 门户到 Wiki 的公开路由由 `WIKI_PUBLIC_URL` 注入；未设置时才回退到同主机加 `WIKI_PUBLIC_PORT` 的本地开发地址。不得在门户 HTML 中硬编码部署域名。
 - 公开环境只允许使用 `human-infra.pages.dev`、`human-infra-wiki.pages.dev` 和 `human-infra-tech-tree.pages.dev`。语言门户和 Wiki 由 Cloudflare Pages 发布，科技树由其独立 Pages 项目发布；禁止恢复自定义域名、Cloudflare Tunnel 或退役的 Research Narrative。
 - 本地 MediaWiki 是可编辑真相源；公开 Wiki 是构建期预渲染的只读纯静态快照。导出器按页面类型选择首页/文章外壳，在构建期注入正文、原生 Vector 目录、页面类、标题、链接和修订上下文；标题搜索只读取静态索引。生产发布物禁止包含 `_worker.js`、`_routes.json` 或 `functions/`，不得为了路由、搜索或模板注入恢复请求时计算层。快照移除 ResourceLoader 后，只允许补回 Vector 原生控件所需的最小无脚本状态规则，不得建立平行视觉层。
+- 公开快照采用静态能力白名单：保留正文导航、搜索、语言选择、页内目录、打印和已提供明确静态适配器的 Vector 外观偏好；登录、编辑、讨论、历史、特殊页面、变体切换、永久修订链接、可折叠内容与表格排序等依赖后端或 ResourceLoader 的能力必须移除或展开为只读内容，禁止留下 `href="#"`、空菜单或伪可用控件。
 - `runtime/pages/` 是忽略的确定性发布产物；必须由 `make pages-build` 重建，禁止手工维护。门户和 Wiki 产物必须包含 Pages 原生 `404.html`，防止未知路径退化为首页软 404。发布与回滚遵循 `PAGES-PUBLISHING-CONTRACT.md`。
 - `config/` 只保存可公开的站点策略；MediaWiki 生成的 `LocalSettings.php` 属于运行时。
 - `content/` 是首次安装和可重复导入的页面种子，不是整个 Wiki 数据库的镜像；`import-content.sh` 必须先通过 MediaWiki 原生 `importImages` 导入图片种子，再导入引用它的页面，并在作业队列完成后用 `purgePage` 的标准输入契约刷新项目首页解析缓存。
 - `homepage-upstream/snapshot/` 是中文首页结构与样式真相源；`Human Infra:首页`、页首和样式均由生成器从该快照产生，禁止手工改写生成产物。
-- `vector-upstream/` 固定浏览器执行 Vector 原生模块后生成的外观组件 DOM；Pages 构建只能注入该快照并复用 Vector 原生 CSS 类。静态偏好适配器只允许切换 Vector 已定义的字号、宽度和颜色状态类，不得绘制平行控件或新增视觉语义。
+- `vector-upstream/` 固定浏览器执行 Vector 原生模块后生成的外观组件 DOM；Pages 构建只能注入该快照并复用 Vector 原生 CSS 类。静态偏好适配器只允许切换 Vector 已定义的字号、宽度和颜色状态类，不得绘制平行控件或新增视觉语义；钉住面板必须遵循 Vector 原生 `1120px` 桌面网格断点，禁止在移动端进入正文流。
 - 首页底部语言入口归 Vector + UniversalLanguageSelector + MediaWiki interwiki 运行时所有；官方语言链接作为固定快照进入生成链，禁止在首页 Wikitext 或 CSS 中复制按钮外观。
 - `visual-regression/` 只保存 BackstopJS 配置、浏览器状态稳定脚本、视觉夹具和受版本控制的官方组件参考图；像素比较、差异图与报告由 BackstopJS 提供，禁止新增自研截图比较器。模板契约套件负责零容差 Gate，实时整页套件只负责诊断有意内容差异；禁止用 `approve` 把本地失败图替换为官方标准。
 - `Template:首页/*` 只替换研究内容，禁止自建平行首页布局；`Portal:` 只做专题导航，不成为并行正文真相源。

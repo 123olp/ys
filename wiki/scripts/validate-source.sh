@@ -38,6 +38,7 @@ required=(
     scripts/refresh-wikipedia-portal.py
     scripts/refresh-wikipedia-homepage.py
     scripts/build-wikipedia-homepage.py
+    scripts/audit-static-runtime-contract.py
     scripts/export-pages-snapshot.py
     scripts/vector-client-preferences-static.js
     scripts/build-pages-release.sh
@@ -59,6 +60,9 @@ for file in "${required[@]}"; do
 done
 
 node --check scripts/vector-client-preferences-static.js
+python3 -m py_compile \
+    scripts/audit-static-runtime-contract.py \
+    scripts/export-pages-snapshot.py
 python3 - <<'PY'
 from bs4 import BeautifulSoup
 from pathlib import Path

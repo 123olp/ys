@@ -50,6 +50,8 @@ done
 python3 "$wiki_dir/scripts/audit-geo-publication.py" \
     --portal-dir "$portal_dir" \
     --wiki-dir "$wiki_output_dir"
+python3 "$wiki_dir/scripts/audit-static-runtime-contract.py" \
+    --output "$wiki_output_dir"
 if grep -Fq 'id="vector-toc-pinned-container"' \
     "$wiki_output_dir/index.html"; then
     printf 'Wiki Pages 首页外壳错误继承普通文章目录。\n' >&2
