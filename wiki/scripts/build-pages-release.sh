@@ -57,22 +57,7 @@ if grep -Fq 'id="vector-toc-pinned-container"' \
     printf 'Wiki Pages 首页外壳错误继承普通文章目录。\n' >&2
     exit 1
 fi
-appearance_control_count="$(
-    grep -o 'id="skin-client-pref-[^"]*-value-[^"]*"' \
-        "$wiki_output_dir/index.html" \
-        | sort -u \
-        | wc -l
-)"
-[[ "$appearance_control_count" -eq 8 ]] || {
-    printf 'Wiki Pages 外观面板控件不完整，实际为 %s/8。\n' \
-        "$appearance_control_count" >&2
-    exit 1
-}
-grep -Fq 'src="/assets/vector-client-preferences.js"' \
-    "$wiki_output_dir/index.html" || {
-    printf 'Wiki Pages 缺少 Vector 静态偏好适配器。\n' >&2
-    exit 1
-}
+python3 "$wiki_dir/scripts/check-mediawiki-native-ui.py"
 
 printf 'Pages 发布产物完成:\n'
 printf '  portal: %s\n' "$portal_dir"

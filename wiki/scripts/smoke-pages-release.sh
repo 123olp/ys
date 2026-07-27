@@ -50,20 +50,14 @@ grep -Fq 'page-Main_Page' <<<"$wiki"
 grep -Fq 'name="description"' <<<"$wiki"
 grep -Fq 'property="og:title"' <<<"$wiki"
 grep -Fq 'application/ld+json' <<<"$wiki"
-appearance_control_count="$(
-    grep -o 'id="skin-client-pref-[^"]*-value-[^"]*"' <<<"$wiki" \
-        | sort -u \
-        | wc -l
-)"
-[[ "$appearance_control_count" -eq 8 ]] || {
-    printf 'Wiki 公开首页外观面板控件不完整，实际为 %s/8。\n' \
-        "$appearance_control_count" >&2
+if grep -Fq 'id="vector-appearance"' <<<"$wiki" ||
+    grep -Fq 'src="/assets/vector-client-preferences.js"' <<<"$wiki"; then
+    printf 'Wiki 静态首页伪装了需要 ResourceLoader 的外观交互。\n' >&2
     exit 1
-}
-grep -Fq 'src="/assets/vector-client-preferences.js"' <<<"$wiki"
-fetch_contains \
-    "$wiki_url/assets/vector-client-preferences.js" \
-    'vector-feature-custom-font-size'
+fi
+grep -Fq \
+    'vector-feature-appearance-pinned-clientpref-0' \
+    <<<"$wiki"
 for forbidden_id in \
     ca-talk \
     ca-viewsource \

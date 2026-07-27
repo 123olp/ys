@@ -1,5 +1,8 @@
 {
   "schema_version": "1.0",
+  "status": "superseded",
+  "superseded_by": "wiki/REGRESSION_EVIDENCE-mediawiki-native-ui.json",
+  "supersession_reason": "历史版本曾用静态适配器模拟 Vector 外观；当前契约禁止转移 MediaWiki UI 所有权，静态发布物必须移除该能力。",
   "subject": "wiki-static-runtime-capability-contract",
   "bug": "MediaWiki/Vector 运行时被剥离后，静态快照仍暴露依赖后端或 ResourceLoader 的伪交互能力，并在移动端错误显示桌面外观面板",
   "red": [

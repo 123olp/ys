@@ -24,12 +24,6 @@ from bs4 import BeautifulSoup
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_OUTPUT = ROOT / "runtime" / "pages" / "wiki"
 GEO_CONFIG = ROOT / "config" / "geo-publication.json"
-VECTOR_APPEARANCE_CONTROLS = (
-    ROOT / "vector-upstream" / "appearance-controls.html"
-)
-VECTOR_CLIENT_PREFERENCES_SCRIPT = (
-    ROOT / "scripts" / "vector-client-preferences-static.js"
-)
 MAIN_PAGE = "Human Infra:首页"
 SHELL_PAGE = "有效永生与主体持续性"
 ASSET_URL_PATTERN = re.compile(r"url\((?P<value>[^)]+)\)")
@@ -40,8 +34,6 @@ STATIC_NOJS_CSS = """
 .client-nojs .mw-portlet-lang .vector-dropdown-content{display:none}
 .client-nojs .mw-portlet-lang .vector-dropdown-checkbox:checked~.vector-dropdown-content{display:block}
 .client-nojs #p-lang-btn .vector-dropdown-content{left:auto;right:0;box-sizing:border-box;max-width:calc(100vw - 48px)}
-.client-nojs.vector-feature-appearance-pinned-clientpref-0 .vector-user-links .vector-appearance-landmark{display:block}
-@media screen and (min-width:1120px){.client-nojs.vector-feature-appearance-pinned-clientpref-1 .vector-column-end .vector-appearance-landmark{display:block}.client-nojs #vector-appearance .vector-pinnable-header-unpinned .vector-pinnable-header-pin-button,.client-nojs #vector-appearance .vector-pinnable-header-pinned .vector-pinnable-header-unpin-button{display:inline-block}}
 """
 
 
@@ -273,41 +265,6 @@ def copy_document_assets(
         target.write_bytes(response.content)
 
 
-def install_static_vector_appearance(
-    soup: BeautifulSoup,
-    output_dir: Path,
-) -> None:
-    """冻结 Vector 客户端生成的原生外观控件并安装静态偏好适配器。"""
-
-    appearance = soup.select_one("#vector-appearance")
-    if appearance is None:
-        raise RuntimeError("Vector 页面外壳缺少 #vector-appearance")
-    controls_document = BeautifulSoup(
-        VECTOR_APPEARANCE_CONTROLS.read_text(encoding="utf-8"),
-        "lxml",
-    )
-    controls = controls_document.select_one("#vector-appearance-controls")
-    if controls is None:
-        raise RuntimeError("Vector 外观控件快照缺少根节点")
-    if len(controls.select("input[type='radio']")) != 8:
-        raise RuntimeError("Vector 外观控件快照必须包含 8 个单选项")
-    for child in list(controls.children):
-        appearance.append(child.extract())
-
-    assets_dir = output_dir / "assets"
-    assets_dir.mkdir(parents=True, exist_ok=True)
-    shutil.copy2(
-        VECTOR_CLIENT_PREFERENCES_SCRIPT,
-        assets_dir / "vector-client-preferences.js",
-    )
-    script = soup.new_tag(
-        "script",
-        src="/assets/vector-client-preferences.js",
-        defer=True,
-    )
-    soup.body.append(script)
-
-
 def build_shell(
     session: requests.Session,
     base_url: str,
@@ -342,8 +299,6 @@ def build_shell(
         link.decompose()
 
     copy_document_assets(session, base_url, soup, output_dir)
-    install_static_vector_appearance(soup, output_dir)
-
     stylesheets: list[str] = []
     for link in soup.select("link[rel~='stylesheet'][href]"):
         stylesheet_url = urljoin(base_url, link["href"])
@@ -355,20 +310,6 @@ def build_shell(
             output_dir,
         ))
         link.decompose()
-    client_preferences_url = (
-        f"{base_url}/load.php?lang=zh&modules="
-        "skins.vector.clientPreferences&only=styles&skin=vector-2022"
-    )
-    client_preferences_stylesheet, _ = fetch_text(
-        session,
-        client_preferences_url,
-    )
-    stylesheets.append(localize_css(
-        session,
-        client_preferences_url,
-        client_preferences_stylesheet,
-        output_dir,
-    ))
     style_link = soup.new_tag("link", rel="stylesheet", href="/assets/mediawiki.css")
     soup.head.append(style_link)
     if not soup.select_one("link[rel~='icon']"):
@@ -629,9 +570,26 @@ def rewrite_static_document(
         "#p-variants",
         "#t-permalink",
         "#vector-sticky-header",
+        ".vector-appearance-landmark",
     ):
         for node in soup.select(selector):
             node.decompose()
+
+    html_element = soup.select_one("html")
+    if html_element is not None:
+        classes = list(html_element.get("class", []))
+        classes = [
+            value
+            for value in classes
+            if value
+            not in {
+                "vector-feature-appearance-pinned-clientpref-1",
+                "vector-feature-appearance-pinned-enabled",
+            }
+        ]
+        if "vector-feature-appearance-pinned-clientpref-0" not in classes:
+            classes.append("vector-feature-appearance-pinned-clientpref-0")
+        html_element["class"] = classes
     for toggle_selector in (
         "#vector-user-links-dropdown-checkbox",
         "#vector-variants-dropdown-checkbox",

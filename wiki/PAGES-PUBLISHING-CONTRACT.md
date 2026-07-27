@@ -23,7 +23,7 @@ Human Infra 的公开 Web 面只使用 Cloudflare `pages.dev` 域名。
 
 ## 能力边界
 
-公开 Wiki 是发布时点的只读纯静态快照，保留 MediaWiki Vector 阅读结构、内部词条链接、分类、静态标题搜索、语言选择、页内目录、打印和具有明确静态适配器的外观偏好。登录、编辑、讨论、历史浏览、变体切换、特殊页面、实时 API、VisualEditor、Page Forms 和数据库写入只在本地 MediaWiki 可用。公开快照不得伪装为可编辑站点，也不得成为新的内容真相源。
+公开 Wiki 是发布时点的只读纯静态快照，保留 MediaWiki Vector 阅读结构、内部词条链接、分类、静态标题搜索、语言选择、页内目录和打印。登录、编辑、讨论、历史浏览、变体切换、特殊页面、实时 API、VisualEditor、Page Forms、Vector 外观偏好和数据库写入只在本地 MediaWiki 可用。公开快照不得伪装为可编辑站点，也不得成为新的内容真相源。
 
 静态发布采用能力白名单，而不是按已知缺陷维护控件黑名单。任何控件要进入公开快照，必须能够证明其目标路由、状态变化和用户反馈在无 MediaWiki 后端、无 ResourceLoader 的条件下仍真实成立；否则必须删除操作外观，或将内容降级为可直接阅读的普通文本。`href="#"`、空菜单、不可操作的编辑链接、失效的折叠按钮和未加载 tablesorter 却保留的 `sortable` 类均属于发布阻断问题。
 
@@ -55,7 +55,7 @@ make pages-smoke
 11. 公开发布物必须是纯静态资产，禁止包含 `_worker.js`、`_routes.json`、`functions/` 或其他请求时计算入口；模板注入、词条路由索引和 GEO 元数据必须在构建期完成。
 12. 静态词条 HTML 数必须与快照索引数严格相等；每个索引项必须有唯一 `urlPath` 和对应静态文件。
 13. Wrangler Pages 本地验证必须报告 `No Functions`，远端 smoke 全部通过后才能把发布视为完成。
-14. 静态快照必须保留 Vector 外观面板的 8 个原生选择项，并能切换字号、页面宽度和颜色状态；不得只保留空的 `#vector-appearance` 容器，也不得为其建立平行视觉组件。钉住面板只允许在 Vector 原生 `1120px` 桌面网格断点以上显示，移动端不得把侧栏插入正文流。
+14. Vector 外观偏好只能由完整 MediaWiki ResourceLoader 的 `skins.vector.js` 与 `skins.vector.clientPreferences` 提供。静态快照必须移除外观入口和控件，声明原生 `appearance-pinned-clientpref-0` 无脚本状态；禁止冻结浏览器增强 DOM、复制上游模块片段、加载自写适配器或模拟 pinnable 状态机。
 15. `audit-static-runtime-contract.py` 必须全量扫描静态 HTML，拒绝无目标链接、缺少目标文件的内部 Wiki 路由、非搜索表单 action、运行时操作 ID、ResourceLoader 资源以及失效的折叠和排序标记；构建期审计与线上抽样 smoke 均通过后才能发布。
 
 ## 回滚

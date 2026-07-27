@@ -12,7 +12,7 @@ required=(
     LANGUAGE-EDITION-CONTRACT.md
     HOMEPAGE-PORTAL-CONTRACT.md
     PAGES-PUBLISHING-CONTRACT.md
-    REGRESSION_EVIDENCE-vector-appearance-pinning.json
+    REGRESSION_EVIDENCE-mediawiki-native-ui.json
     homepage-upstream/UPSTREAM.md
     homepage-upstream/snapshot/metadata.json
     homepage-upstream/snapshot/Wikipedia_Home.wiki
@@ -20,8 +20,6 @@ required=(
     homepage-upstream/snapshot/Wikipedia_Home_styles.css
     homepage-upstream/snapshot/Wikipedia_Home_rendered.html
     homepage-upstream/snapshot/Wikipedia_Home_language_links.json
-    vector-upstream/UPSTREAM.md
-    vector-upstream/appearance-controls.html
     Dockerfile
     compose.yaml
     env.example
@@ -43,11 +41,11 @@ required=(
     scripts/audit-geo-publication.py
     scripts/audit-static-runtime-contract.py
     scripts/export-pages-snapshot.py
-    scripts/vector-client-preferences-static.js
+    scripts/check-mediawiki-native-ui.py
     scripts/check-portal-search.js
     scripts/check-portal-search.sh
-    scripts/check-vector-appearance.js
-    scripts/check-vector-appearance.sh
+    scripts/check-mediawiki-native-runtime.js
+    scripts/check-mediawiki-native-runtime.sh
     scripts/build-pages-release.sh
     scripts/deploy-pages-release.sh
     scripts/smoke-pages-release.sh
@@ -66,37 +64,16 @@ for file in "${required[@]}"; do
     }
 done
 
-node --check scripts/vector-client-preferences-static.js
 node --check scripts/check-portal-search.js
-node --check scripts/check-vector-appearance.js
+node --check scripts/check-mediawiki-native-runtime.js
 python3 -m py_compile \
     scripts/audit-geo-publication.py \
     scripts/audit-static-runtime-contract.py \
     scripts/build-portal-release.py \
+    scripts/check-mediawiki-native-ui.py \
     scripts/refresh-wikipedia-portal.py \
     scripts/export-pages-snapshot.py
-python3 - <<'PY'
-from bs4 import BeautifulSoup
-from pathlib import Path
-
-soup = BeautifulSoup(
-    Path("vector-upstream/appearance-controls.html").read_text(encoding="utf-8"),
-    "lxml",
-)
-controls = soup.select("#vector-appearance-controls input[type='radio']")
-if len(controls) != 8:
-    raise SystemExit(
-        f"Vector 外观上游快照必须包含 8 个单选控件，实际为 {len(controls)}"
-    )
-groups = {
-    control.get("name")
-    for control in controls
-}
-if len(groups) != 3:
-    raise SystemExit(
-        f"Vector 外观上游快照必须包含 3 组偏好，实际为 {len(groups)}"
-    )
-PY
+python3 scripts/check-mediawiki-native-ui.py
 
 python3 - <<'PY'
 import json

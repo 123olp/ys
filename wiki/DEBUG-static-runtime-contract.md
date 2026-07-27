@@ -1,5 +1,9 @@
 # Wiki 静态快照伪交互能力专项排查
 
+> 状态：部分结论已由
+> `REGRESSION_EVIDENCE-mediawiki-native-ui.json` 取代。本文保留历史 RED/GREEN
+> 证据；当前 Vector 外观能力边界以 MediaWiki 原生 UI 所有权契约为准。
+
 ## Bug
 
 - 标题：静态导出删除 MediaWiki 运行时后仍暴露不可用操作入口
@@ -21,12 +25,12 @@
 
 ## Observations
 
-- O1：导出器无条件删除所有 `<script>`，公开快照只保留两个明确的静态适配能力：搜索和 Vector 外观偏好。
+- O1：导出器无条件删除所有 `<script>`，公开快照只保留无需 MediaWiki ResourceLoader 的静态阅读能力；搜索由独立静态索引提供。
 - O2：`static_href_from_mediawiki()` 将特殊页和带 `action` 的链接改写为 `#`，但没有移除其交互外观。
 - O3：首页包含登录、讨论、源代码、历史、特殊页面和页面工具等 10 组不可用入口；普通词条还包含多个“编辑源代码”入口。
 - O4：`历史技术谱系` 保留 `sortable` 类，但 `mediawiki.page.ready` 已被删除，表格无法排序。
-- O5：主菜单、语言选择、页内目录和外观偏好具有静态 CSS 或明确适配器，属于应保留能力。
-- O6：原静态补丁无条件显示右侧外观面板，导致小于 Vector `1120px` 网格断点时面板进入普通文档流并占据正文首屏；原生 Vector 移动端会隐藏该钉住面板。
+- O5：主菜单、语言选择和页内目录可在无脚本快照中作为普通导航保留；Vector 外观偏好由 ResourceLoader 动态生成，不属于静态发布能力。
+- O6：历史静态补丁通过冻结增强后 DOM 和自写适配器模拟外观面板，既转移了上游 UI 所有权，也无法完整复现 Vector 的响应式、偏好持久化和 pinnable 状态机。
 
 ## Hypotheses
 
@@ -46,7 +50,7 @@
 
 - Supports：本地 MediaWiki 中这些控件可用。
 - Conflicts：公开架构契约明确要求纯静态、只读、无 Pages Functions；登录、编辑、历史等能力需要后端，不能由前端脚本恢复。
-- Test：按能力依赖分类，确认仅搜索、语言选择、目录和外观偏好可在静态端真实保留。
+- Test：按能力依赖分类，确认搜索、语言选择和目录可在静态端真实保留；外观偏好必须由完整 MediaWiki ResourceLoader 提供。
 
 ## Experiments
 
@@ -92,7 +96,7 @@
 
 ## Fix
 
-- 将公开发布边界改为静态能力白名单：移除依赖后端或 ResourceLoader 的操作容器和编辑入口；将无目标正文链接降级为文本；展开折叠内容；将 `sortable` 表格降级为普通表格；保留搜索、语言选择、页内目录、打印和 Vector 外观偏好。外观面板仅在 Vector 原生 `1120px` 桌面网格断点以上显示，移动端保持隐藏。
+- 将公开发布边界改为静态能力白名单：移除依赖后端或 ResourceLoader 的操作容器和编辑入口；将无目标正文链接降级为文本；展开折叠内容；将 `sortable` 表格降级为普通表格；保留搜索、语言选择、页内目录和打印。静态快照移除 Vector 外观入口和增强控件，并声明原生未钉住的无脚本状态；完整外观偏好只由动态 MediaWiki 的 ResourceLoader 提供。
 
 ## Regression Evidence
 
@@ -104,7 +108,7 @@
 - 内部路由 RED：加入目标文件存在性审计后，中间发布物返回 exit 1，发现 5 个缺失静态路由，其中两个固定页脚入口影响 2733 个页面。
 - GREEN：`make pages-build` 完成 2732 个词条页面与 2737 个发布 HTML 检查，结果为 `dead_links=0 internal_routes=0 form_actions=0 dynamic_markers=0 operational_controls=0`。
 - Source GREEN：`make validate` 通过 Wikipedia 首页快照、生成契约和 Wiki source contract。
-- Browser GREEN：Chrome 1440×1000 与 390×844 分别检查首页、普通词条和历史技术谱系；8 个外观选项均存在，桌面可见、移动端隐藏，禁止控件、死链接、动态类和横向溢出均为 0；普通词条目录存在。
+- Browser GREEN：动态 MediaWiki 由 `skins.vector.js` 与 `skins.vector.clientPreferences` 原生生成 8 个外观选项，并验证偏好持久化、钉住状态和 `1120px` 断点；静态快照不含外观入口、增强控件或自写适配器。
 - Counterfactual sensitivity：同一审计器能够同时拒绝修复前的大规模伪控件发布物和缺少响应式断点的中间版本，不是只对最终输出硬编码 PASS。
 - 备注：审计器是发布边界的机器 Gate，浏览器矩阵用于验证 CSS 可见性和响应式行为。
 
@@ -117,7 +121,7 @@
 ## Frozen Nodes
 
 - MediaWiki、Vector、Wikimedia 首页模板和官方样式
-- 搜索、语言选择、目录与外观偏好现有静态能力
+- 搜索、语言选择与目录现有静态能力
 - Wiki 正文研究内容与用户并行改动
 
 ## Reverification Required
