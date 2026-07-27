@@ -10,7 +10,18 @@ const wikiUrl = process.env.WIKI_TEST_URL ||
 const query = "长寿逃逸速度";
 
 async function main() {
-    const browser = await chromium.launch({ headless: true });
+    const portalHostname = new URL(portalUrl).hostname;
+    const proxyServer = process.env.HTTPS_PROXY ||
+        process.env.https_proxy ||
+        process.env.HTTP_PROXY ||
+        process.env.http_proxy;
+    const launchOptions = { headless: true };
+    if (proxyServer &&
+        portalHostname !== "localhost" &&
+        portalHostname !== "127.0.0.1") {
+        launchOptions.proxy = { server: proxyServer };
+    }
+    const browser = await chromium.launch(launchOptions);
     const page = await browser.newPage({
         viewport: { width: 1280, height: 900 },
         extraHTTPHeaders: { DNT: "1" },

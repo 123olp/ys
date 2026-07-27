@@ -275,4 +275,39 @@ actual=//www.wikipedia.org/search-redirect.php
 
 ### Production Reverification
 
-- 待部署后填写正式别名、不可变部署地址、源提交和桌面端/移动端浏览器结果。
+- 源提交：`0fd46441`。
+- 门户部署：`8da8f967.human-infra.pages.dev`，正式入口 `human-infra.pages.dev`。
+- 不可变部署和正式入口的搜索 action、方法和参数名均符合本地 Wiki 契约。
+- 生产搜索返回目标词条，输入期间外部 Wikipedia 请求为 0，`UPSTREAM.md` 与 `healthz` 均返回 `200`。
+- 三站公开 smoke 和桌面端/移动端浏览器矩阵结果见本轮最终巡检记录。
+
+### Test Gate Proxy Failure
+
+生产行为通过后，固定 BackstopJS Docker 门禁在代理环境中访问门户超时。容器没有继承宿主代理变量，容器内 Chromium 也没有取得显式 proxy 配置，造成 CI-only 假失败。
+
+修复内容：
+
+- shell 门禁仅转发宿主已存在的大小写代理变量，不记录或输出代理值。
+- Playwright 对非本地门户显式使用代理；`localhost` 与 `127.0.0.1` 回归保持直连。
+- 修复前固定容器在 30 秒后超时，修复后约 3 秒完成；恢复旧脚本后再次超时。
+- 结构化证据入口：`REGRESSION_EVIDENCE-portal-search-proxy.json`。
+
+### Final Patrol Result
+
+- 门户、Wiki 首页、代表词条和科技树的桌面端/移动端矩阵为 `8/8 PASS`。
+- 八个页面均返回 `200`；控制台问题、失败请求、坏图、重复 ID 和横向溢出均为 0。
+- `make portal-search-check`、三站公开 smoke、GEO 发布审计、源码验证和 2737 页静态运行时审计全部通过。
+- 门户与 Wiki 发布包没有 `_worker.js`、`_routes.json` 或 `functions/`，本轮变更没有恢复 Workers 请求链路。
+
+### Audit Case Sampling
+
+- 门户复用上游 DOM 后保留越界能力的根因已由全局 `CASE-0011 static-export-runtime-affordance-drift` 覆盖。
+- 固定容器未继承执行环境的根因已由全局 `CASE-0007 optional-dependency-runtime-parity-drift` 的环境一致性问题覆盖。
+- 本轮新增了项目级机械门禁和结构化回归证据；没有新增平行 audit case，原因是现有案例的审计问题、证据要求和 Gate 建议已经覆盖复发机制。
+
+### Retrospective
+
+- 做对了什么：先捕获网络请求和公开链接状态，再修改适配层；RED、GREEN、反事实、固定容器和生产矩阵共同证明行为变化。
+- 做错了什么：初版固定容器没有继承代理环境，首次生产门禁产生 30 秒假超时；提交前只验证直接 Playwright，漏掉了容器运行环境。
+- 重新执行时：在提交测试门禁前同时运行宿主和固定容器两种入口，并把代理、DNS、证书和本地直连视为环境契约。
+- 经验有效期：自 2026-07-27 生效，2026-10-27 复查；当门户上游快照、Playwright 镜像、代理策略或 Cloudflare Pages 网络路径变化时立即失效并重新验证。

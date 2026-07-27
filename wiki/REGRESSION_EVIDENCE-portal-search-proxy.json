@@ -1,0 +1,13 @@
+{
+  "schema_version": "1.0",
+  "task_type": "ci-only",
+  "mode": "executed",
+  "red_result": "wiki/runtime/regression/portal-search-proxy/red.json",
+  "green_result": "wiki/runtime/regression/portal-search-proxy/green.json",
+  "counterfactual": {
+    "method": "unfixed-tree-replay",
+    "result": "wiki/runtime/regression/portal-search-proxy/counterfactual.json"
+  },
+  "flaky_policy": null,
+  "red_exception": null
+}
