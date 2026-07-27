@@ -15,9 +15,11 @@ wiki/
 ├── PAGES-PUBLISHING-CONTRACT.md # pages.dev 唯一公开发布与只读边界
 ├── DEBUG-content-import-cache.md # CLI 导入与 Web 缓存一致性根因和回归边界
 ├── DEBUG-native-content-heading.md # 正文重复页面 H1 的根因和回归边界
+├── DEBUG-portal-tech-tree-link.md # 语言门户缺少独立科技树入口的根因和回归边界
 ├── REGRESSION_EVIDENCE-homepage-duplicate-id.json # 首页 DOM ID 回归证据入口
 ├── REGRESSION_EVIDENCE-mediawiki-native-ui.json # Vector 原生 UI 所有权回归证据
 ├── REGRESSION_EVIDENCE-native-content-heading.json # 原生页面标题唯一性回归证据
+├── REGRESSION_EVIDENCE-portal-tech-tree-link.json # 门户科技树入口 RED/GREEN/反事实证据
 ├── Dockerfile                # MediaWiki 与固定版本 Page Forms、ULS 镜像
 ├── Makefile                  # 常用运维命令入口
 ├── compose.yaml              # MediaWiki 与 MariaDB 服务编排

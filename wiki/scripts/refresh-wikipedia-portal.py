@@ -12,6 +12,7 @@ from urllib.parse import urljoin, urlparse
 ROOT = Path(__file__).resolve().parents[1]
 PORTAL_DIR = ROOT / "portal"
 UPSTREAM_URL = "https://www.wikipedia.org/"
+TECH_TREE_URL = "https://human-infra-tech-tree.pages.dev/"
 LANGUAGES = [
     ("zh", "中文", "界面语言"),
     ("en", "English", "Interface language"),
@@ -85,6 +86,20 @@ def portal_footer() -> str:
             "</a>\n"
             "</div>"
         )
+        if title == "Human Infra:首页":
+            entries.append(
+                '<div class="other-project">\n'
+                f'<a class="other-project-link" href="{TECH_TREE_URL}">\n'
+                '<div class="other-project-icon">\n'
+                '<img src="assets/human-infra-mark.svg" width="42" height="42" alt="">\n'
+                "</div>\n"
+                '<div class="other-project-text">\n'
+                '<span class="other-project-title">科技树</span>\n'
+                '<span class="other-project-tagline">目标、依赖与证据路线</span>\n'
+                "</div>\n"
+                "</a>\n"
+                "</div>"
+            )
     return (
         '<footer class="footer" data-el-section="other projects">\n'
         '<div class="footer-sidebar">\n'
@@ -109,7 +124,7 @@ def portal_footer() -> str:
         "</div>\n"
         "</div>\n"
         "</div>\n"
-        '<nav aria-label="Human Infra Wiki 入口" class="other-projects">\n'
+        '<nav aria-label="Human Infra 入口" class="other-projects">\n'
         + "\n".join(entries)
         + "\n</nav>\n"
         "<hr>\n"

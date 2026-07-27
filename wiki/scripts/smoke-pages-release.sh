@@ -22,6 +22,9 @@ portal="$(curl -fsSL "$portal_url/")"
 grep -Fq 'id="www-wikipedia-org"' <<<"$portal"
 grep -Fq 'Human Infra' <<<"$portal"
 grep -Fq 'class="banner banner-bottom' <<<"$portal"
+grep -Fq \
+    'href="https://human-infra-tech-tree.pages.dev/"' \
+    <<<"$portal"
 portal_missing_status="$(
     curl -sS -o /dev/null -w '%{http_code}' \
         "$portal_url/__human_infra_missing_route__"

@@ -67,6 +67,11 @@ for file in "${required[@]}"; do
     }
 done
 
+grep -Fq 'href="https://human-infra-tech-tree.pages.dev/"' portal/index.html || {
+    printf '语言门户缺少使用 Wikimedia other-projects 结构的科技树入口。\n' >&2
+    exit 1
+}
+
 node --check scripts/check-portal-search.js
 node --check scripts/check-mediawiki-native-runtime.js
 python3 -m py_compile \
