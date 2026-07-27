@@ -37,6 +37,7 @@
 3. MediaWiki 1.46 会给原始 `<h1>` 增加 `.mw-heading1` 包装，而 Wikimedia 生产渲染中的首页标题仍是直接 `<h1>`；生成 CSS 只抵消该包装层的额外字号放大，使页首恢复官方 120px 几何契约。
 4. 官方移动端的空标志槽高度为 0；本地品牌图只在 `720px` 及以上视口显示，使移动端页首继续遵守上游 240px 几何契约。
 5. 页面底部语言入口不属于首页 Wikitext；它由 Vector、UniversalLanguageSelector 和页面的跨语言链接共同生成。本地固定保存同一修订的官方语言链接，并通过 MediaWiki 原生 interlanguage portlet 渲染，禁止在首页模板内手绘按钮。
+6. 上游多个栏目复用 `id="column-feature-more"`。Human Infra 内容槽位使用同名 class，并由生成器追加等价 class 选择器，避免静态发布物产生重复 DOM ID；上游快照与原始 ID 选择器保持不变。
 
 任何新增结构或样式适配都必须先进入生成器并具备唯一锚点断言，不得直接修改生成产物。
 

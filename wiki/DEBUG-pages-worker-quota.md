@@ -179,3 +179,48 @@ Wiki 把本可在构建期完成的模板渲染放进 Pages `_worker.js`，错�
 ### Delivery Risk
 
 科技树源码位于独立本地仓库，当前没有配置远程仓库，且存在此前已部署的竖向布局改造与尚未上线的 GEO 改动。源码提交、线上部署和主仓库证据并非同一原子事务；发布时必须记录实际构建输入，禁止把“Pages 已部署”误写成“源码已推送远程”。
+
+## 2026-07-27 Wiki 首页重复 DOM ID
+
+### Observation
+
+- 生产首页和本地静态快照各有两个可见元素使用 `id="column-feature-more"`。
+- 浏览器没有报错，但重复 ID 违反 DOM 唯一性，可能使 `getElementById()`、片段定位、可访问性映射和后续客户端脚本只命中第一个模块。
+- 全部 2737 个静态 HTML 中，仅首页 `index.html` 及其别名页受影响。
+
+### Root Cause
+
+中文维基百科上游首页在多个栏目复用 `#column-feature-more` 作为样式钩子。本地 `Template:首页/特色研究` 与 `Template:首页/证据动态` 复制了该 ID，随后同时进入 Human Infra 首页，形成重复 DOM ID。静态运行时审计此前只检查不可用控件、死链接和动态标记，没有检查 ID 唯一性。
+
+### RED
+
+命令：
+
+```bash
+python3 wiki/scripts/audit-static-runtime-contract.py \
+  --output wiki/runtime/pages/wiki
+```
+
+结果：
+
+```text
+Wiki 静态运行时契约失败: issues=2 pages=2737
+- index.html: DOM id 重复 #column-feature-more count=2
+- wiki/Human_Infra:首页/index.html: DOM id 重复 #column-feature-more count=2
+```
+
+### Fix
+
+- 两个 Human Infra 内容槽位改用 `class="column-feature-more"`。
+- 首页生成器追加与上游 ID 规则等价的 class 选择器；固定上游快照和原始 ID 选择器保持不变。
+- 静态运行时审计对每个 HTML 建立 ID 计数，任一重复 ID 都阻止发布。
+
+### GREEN And Counterfactual
+
+- 重建结果：`pages=2737`，`duplicate_ids=0`。
+- 将修复后的首页临时恢复为两个同名 ID 后，同一审计重新失败；恢复 class 后再次通过。
+- 结构化证据入口：`REGRESSION_EVIDENCE-homepage-duplicate-id.json`。
+
+### Conclusion
+
+根因属于“把上游样式 ID 当成可复用 class”的 DOM 契约错误。修复保持 Wikimedia 快照不变，并把唯一性要求提升为覆盖全站静态 HTML 的发布门禁。

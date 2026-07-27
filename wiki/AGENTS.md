@@ -13,6 +13,7 @@ wiki/
 ├── LANGUAGE-EDITION-CONTRACT.md # 语言门户与独立语言版本准入契约
 ├── HOMEPAGE-PORTAL-CONTRACT.md  # 项目首页与专题门户职责契约
 ├── PAGES-PUBLISHING-CONTRACT.md # pages.dev 唯一公开发布与只读边界
+├── REGRESSION_EVIDENCE-homepage-duplicate-id.json # 首页 DOM ID 回归证据入口
 ├── Dockerfile                # MediaWiki 与固定版本 Page Forms、ULS 镜像
 ├── Makefile                  # 常用运维命令入口
 ├── compose.yaml              # MediaWiki 与 MariaDB 服务编排
@@ -54,7 +55,7 @@ wiki/
 │   ├── smoke-test.sh         # HTTP、扩展、页面和数据库验证
 │   ├── validate-source.sh    # 跟踪配置与内容契约检查
 │   ├── export-pages-snapshot.py # 导出逐页目录与页面上下文的 MediaWiki 双外壳只读快照
-│   ├── audit-static-runtime-contract.py # 拒绝静态快照中的伪操作入口与失效动态类
+│   ├── audit-static-runtime-contract.py # 拒绝伪操作入口、失效动态类与重复 DOM ID
 │   ├── vector-client-preferences-static.js # 静态页到 Vector 偏好类的最小适配
 │   ├── build-pages-release.sh # 预渲染门户与 Wiki 纯静态 Pages 产物
 │   ├── deploy-pages-release.sh # 发布两个 Pages 项目

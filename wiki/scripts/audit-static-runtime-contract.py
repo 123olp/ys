@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import argparse
 import sys
+from collections import Counter
 from pathlib import Path
 from urllib.parse import unquote, urlparse
 
@@ -65,7 +66,13 @@ def audit_document(path: Path, root: Path) -> list[str]:
     issues: list[str] = []
     label = relative(path, root)
 
-    for node in document.xpath("//*[@id]"):
+    identified_nodes = document.xpath("//*[@id]")
+    id_counts = Counter(node.get("id") for node in identified_nodes)
+    for node_id, count in sorted(id_counts.items()):
+        if count > 1:
+            issues.append(f"{label}: DOM id 重复 #{node_id} count={count}")
+
+    for node in identified_nodes:
         node_id = node.get("id")
         if node_id in FORBIDDEN_OPERATIONAL_IDS:
             issues.append(f"{label}: 保留了不可用操作控件 #{node_id}")
@@ -222,7 +229,7 @@ def main() -> int:
     print(
         f"Wiki 静态运行时契约通过: pages={len(html_files)} "
         "dead_links=0 internal_routes=0 form_actions=0 "
-        "dynamic_markers=0 operational_controls=0"
+        "dynamic_markers=0 operational_controls=0 duplicate_ids=0"
     )
     return 0
 

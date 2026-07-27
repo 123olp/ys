@@ -48,6 +48,41 @@ PARSER_HEADING_COMPAT = """
     }
 }
 """
+LOCAL_CONTENT_CLASS_COMPAT = """
+
+/*
+ * 上游首页在多个栏目复用 #column-feature-more。本地内容槽位改用 class，
+ * 避免静态页面出现重复 DOM id，同时保持上游几何与配色。
+ */
+.column-feature-more .column-feature-more-header a {
+    font-weight: bold;
+    color: #474747;
+}
+
+html.skin-theme-clientpref-night .column-feature-more .column-feature-more-header a {
+    color: #b8b8b8;
+}
+@media (prefers-color-scheme: dark) {
+    html.skin-theme-clientpref-os .column-feature-more .column-feature-more-header a {
+        color: #b8b8b8;
+    }
+}
+
+.column-feature-more {
+    margin-top: 1.2em;
+    clear: left;
+}
+
+.column-feature-more ul {
+    list-style: none;
+    margin-left: 0;
+}
+
+.column-feature-more li {
+    font-size: .9em;
+    color: #474747;
+}
+"""
 
 
 def fail(message: str) -> None:
@@ -268,7 +303,12 @@ def build_styles() -> str:
         '    background-image: url("https://upload.wikimedia.org/wikipedia/commons/0/0a/Zhwp_blue_banner.png");\n',
         "banner 远程 URL 兼容转换",
     )
-    return CSS_NOTICE + source + PARSER_HEADING_COMPAT
+    return (
+        CSS_NOTICE
+        + source
+        + PARSER_HEADING_COMPAT
+        + LOCAL_CONTENT_CLASS_COMPAT
+    )
 
 
 def write_or_check(path: Path, expected: str, check: bool) -> None:

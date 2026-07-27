@@ -2,7 +2,7 @@
 
 这个目标把身体维护、认知与记忆连续性、技术加速、社会支持、资源可及和风险治理放入同一条件网络。它的研究对象不是单一延寿变量，而是各种干预如何改变主体生命路径、有效时间与未来选择权。
 
-<div id="column-feature-more">
+<div class="column-feature-more">
 * <span class="column-feature-more-header">其他核心入口</span>：[[Portal:永生与主体持续性]]、[[永生与主体持续性专题]]、[[长寿逃逸速度]]
 </div>
 <div class="mp-2012-block-nav-footer">
