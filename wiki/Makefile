@@ -1,6 +1,6 @@
 SHELL := /bin/bash
 
-.PHONY: bootstrap up stop logs import backup smoke language-selector-check portal-search-check validate homepage-refresh homepage-build homepage-check homepage-reference homepage-compare homepage-audit-reference homepage-audit pages-build pages-deploy pages-smoke
+.PHONY: bootstrap up stop logs import backup smoke language-selector-check portal-search-check vector-appearance-check validate homepage-refresh homepage-build homepage-check homepage-reference homepage-compare homepage-audit-reference homepage-audit pages-build pages-deploy pages-smoke
 
 bootstrap:
 	./scripts/bootstrap.sh
@@ -28,6 +28,9 @@ language-selector-check:
 
 portal-search-check:
 	./scripts/check-portal-search.sh
+
+vector-appearance-check:
+	./scripts/check-vector-appearance.sh
 
 validate:
 	./scripts/validate-source.sh

@@ -3,6 +3,8 @@
 
   const root = document.documentElement;
   const storagePrefix = "human-infra-vector-clientpref-";
+  const appearancePinnedFeature = "appearance-pinned";
+  const appearanceBreakpoint = window.matchMedia("(min-width: 1120px)");
   const preferences = {
     "vector-feature-custom-font-size": {
       options: [ "0", "1", "2" ],
@@ -51,6 +53,54 @@
     window.dispatchEvent(new Event("resize"));
   }
 
+  function applyAppearancePinned(desiredPinned, persist) {
+    const appearance = document.getElementById("vector-appearance");
+    const header = appearance?.querySelector(".vector-pinnable-header");
+    const pinnedContainer = document.getElementById(
+      "vector-appearance-pinned-container"
+    );
+    const unpinnedContainer = document.getElementById(
+      "vector-appearance-unpinned-container"
+    );
+    if (!appearance || !header || !pinnedContainer || !unpinnedContainer) {
+      return;
+    }
+
+    const actualPinned = desiredPinned && appearanceBreakpoint.matches;
+    const target = actualPinned ? pinnedContainer : unpinnedContainer;
+    if (appearance.parentElement !== target) {
+      target.append(appearance);
+    }
+    root.classList.remove(
+      "vector-feature-appearance-pinned-clientpref-0",
+      "vector-feature-appearance-pinned-clientpref-1"
+    );
+    root.classList.add(
+      `vector-feature-appearance-pinned-clientpref-${actualPinned ? "1" : "0"}`
+    );
+    header.classList.remove(
+      "vector-pinnable-header-pinned",
+      "vector-pinnable-header-unpinned"
+    );
+    header.classList.add(
+      actualPinned
+        ? "vector-pinnable-header-pinned"
+        : "vector-pinnable-header-unpinned"
+    );
+    header.dataset.savedPinnedState = String(desiredPinned);
+    if (persist) {
+      try {
+        localStorage.setItem(
+          storagePrefix + appearancePinnedFeature,
+          desiredPinned ? "1" : "0"
+        );
+      } catch (_error) {
+        // The fixed state still applies for this page when storage is unavailable.
+      }
+    }
+    window.dispatchEvent(new Event("resize"));
+  }
+
   for (const [feature, config] of Object.entries(preferences)) {
     const value = storedValue(feature, config.options)
       || classValue(feature, config.options)
@@ -62,7 +112,48 @@
     if (input) input.checked = true;
   }
 
-  document.getElementById("vector-appearance")?.addEventListener(
+  const appearance = document.getElementById("vector-appearance");
+  const pinButton = appearance?.querySelector(
+    ".vector-pinnable-header-pin-button"
+  );
+  const unpinButton = appearance?.querySelector(
+    ".vector-pinnable-header-unpin-button"
+  );
+  if (pinButton instanceof HTMLButtonElement) {
+    pinButton.type = "button";
+    pinButton.setAttribute("aria-label", "将外观移至侧栏");
+  }
+  if (unpinButton instanceof HTMLButtonElement) {
+    unpinButton.type = "button";
+    unpinButton.setAttribute("aria-label", "隐藏外观");
+  }
+
+  let desiredPinned = storedValue(
+    appearancePinnedFeature,
+    [ "0", "1" ]
+  );
+  desiredPinned = desiredPinned === null
+    ? classValue(appearancePinnedFeature, [ "0", "1" ]) !== "0"
+    : desiredPinned === "1";
+  applyAppearancePinned(desiredPinned, false);
+
+  pinButton?.addEventListener("click", () => {
+    desiredPinned = true;
+    const dropdown = document.getElementById(
+      "vector-appearance-dropdown-checkbox"
+    );
+    if (dropdown instanceof HTMLInputElement) dropdown.checked = false;
+    applyAppearancePinned(desiredPinned, true);
+  });
+  unpinButton?.addEventListener("click", () => {
+    desiredPinned = false;
+    applyAppearancePinned(desiredPinned, true);
+  });
+  appearanceBreakpoint.addEventListener("change", () => {
+    applyAppearancePinned(desiredPinned, false);
+  });
+
+  appearance?.addEventListener(
     "change",
     (event) => {
       const input = event.target;

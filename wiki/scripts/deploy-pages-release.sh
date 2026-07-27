@@ -91,6 +91,8 @@ deploy_project() {
     exit 1
 }
 
+"$wiki_dir/scripts/check-vector-appearance.sh"
+
 ensure_project human-infra
 ensure_project human-infra-wiki
 

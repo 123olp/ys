@@ -40,7 +40,8 @@ STATIC_NOJS_CSS = """
 .client-nojs .mw-portlet-lang .vector-dropdown-content{display:none}
 .client-nojs .mw-portlet-lang .vector-dropdown-checkbox:checked~.vector-dropdown-content{display:block}
 .client-nojs #p-lang-btn .vector-dropdown-content{left:auto;right:0;box-sizing:border-box;max-width:calc(100vw - 48px)}
-@media screen and (min-width:1120px){.client-nojs.vector-feature-appearance-pinned-clientpref-1 .vector-column-end .vector-appearance-landmark{display:block}}
+.client-nojs.vector-feature-appearance-pinned-clientpref-0 .vector-user-links .vector-appearance-landmark{display:block}
+@media screen and (min-width:1120px){.client-nojs.vector-feature-appearance-pinned-clientpref-1 .vector-column-end .vector-appearance-landmark{display:block}.client-nojs #vector-appearance .vector-pinnable-header-unpinned .vector-pinnable-header-pin-button,.client-nojs #vector-appearance .vector-pinnable-header-pinned .vector-pinnable-header-unpin-button{display:inline-block}}
 """
 
 

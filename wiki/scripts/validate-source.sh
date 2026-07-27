@@ -12,6 +12,7 @@ required=(
     LANGUAGE-EDITION-CONTRACT.md
     HOMEPAGE-PORTAL-CONTRACT.md
     PAGES-PUBLISHING-CONTRACT.md
+    REGRESSION_EVIDENCE-vector-appearance-pinning.json
     homepage-upstream/UPSTREAM.md
     homepage-upstream/snapshot/metadata.json
     homepage-upstream/snapshot/Wikipedia_Home.wiki
@@ -45,6 +46,8 @@ required=(
     scripts/vector-client-preferences-static.js
     scripts/check-portal-search.js
     scripts/check-portal-search.sh
+    scripts/check-vector-appearance.js
+    scripts/check-vector-appearance.sh
     scripts/build-pages-release.sh
     scripts/deploy-pages-release.sh
     scripts/smoke-pages-release.sh
@@ -65,6 +68,7 @@ done
 
 node --check scripts/vector-client-preferences-static.js
 node --check scripts/check-portal-search.js
+node --check scripts/check-vector-appearance.js
 python3 -m py_compile \
     scripts/audit-geo-publication.py \
     scripts/audit-static-runtime-contract.py \

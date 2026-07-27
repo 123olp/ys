@@ -106,17 +106,23 @@ def audit_document(path: Path, root: Path) -> list[str]:
 def audit_required_contracts(root: Path) -> list[str]:
     issues: list[str] = []
     stylesheet = root / "assets" / "mediawiki.css"
-    responsive_appearance_rule = (
-        "@media screen and (min-width:1120px){"
+    appearance_rules = (
+        ".client-nojs.vector-feature-appearance-pinned-clientpref-0 "
+        ".vector-user-links .vector-appearance-landmark{display:block}",
         ".client-nojs.vector-feature-appearance-pinned-clientpref-1 "
-        ".vector-column-end .vector-appearance-landmark{display:block}}"
+        ".vector-column-end .vector-appearance-landmark{display:block}",
+        ".client-nojs #vector-appearance .vector-pinnable-header-unpinned "
+        ".vector-pinnable-header-pin-button",
+        ".client-nojs #vector-appearance .vector-pinnable-header-pinned "
+        ".vector-pinnable-header-unpin-button",
     )
     if not stylesheet.is_file():
         issues.append("发布物缺少 assets/mediawiki.css")
-    elif responsive_appearance_rule not in stylesheet.read_text(
-        encoding="utf-8"
-    ):
-        issues.append("Vector 外观面板未限定在原生 1120px 桌面断点")
+    else:
+        stylesheet_text = stylesheet.read_text(encoding="utf-8")
+        for rule in appearance_rules:
+            if rule not in stylesheet_text:
+                issues.append(f"Vector 外观状态规则缺失: {rule}")
 
     samples = {
         "首页": root / "index.html",
@@ -137,6 +143,50 @@ def audit_required_contracts(root: Path) -> list[str]:
         )
         if len(adapter) != 1:
             issues.append(f"{label}: Vector 静态偏好适配器数量为 {len(adapter)}")
+        appearance = document.xpath('//*[@id="vector-appearance"]')
+        pinned = document.xpath(
+            '//*[@id="vector-appearance-pinned-container"]'
+        )
+        unpinned = document.xpath(
+            '//*[@id="vector-appearance-unpinned-container"]'
+        )
+        header = document.xpath(
+            '//*[@id="vector-appearance"]'
+            '//*[contains(concat(" ", normalize-space(@class), " "), '
+            '" vector-pinnable-header ")]'
+        )
+        pin_button = document.xpath(
+            '//*[@id="vector-appearance"]'
+            '//button[contains(concat(" ", normalize-space(@class), " "), '
+            '" vector-pinnable-header-pin-button ")]'
+        )
+        unpin_button = document.xpath(
+            '//*[@id="vector-appearance"]'
+            '//button[contains(concat(" ", normalize-space(@class), " "), '
+            '" vector-pinnable-header-unpin-button ")]'
+        )
+        if not (
+            len(appearance) == len(pinned) == len(unpinned)
+            == len(header) == len(pin_button) == len(unpin_button) == 1
+        ):
+            issues.append(f"{label}: Vector 外观固定状态 DOM 不完整")
+        elif (
+            appearance[0].getparent().get("id")
+            != "vector-appearance-pinned-container"
+        ):
+            issues.append(f"{label}: Vector 外观初始节点不在 pinned container")
+        elif any(
+            header[0].get(attribute) != expected
+            for attribute, expected in {
+                "data-feature-name": "appearance-pinned",
+                "data-pinnable-element-id": "vector-appearance",
+                "data-pinned-container-id":
+                    "vector-appearance-pinned-container",
+                "data-unpinned-container-id":
+                    "vector-appearance-unpinned-container",
+            }.items()
+        ):
+            issues.append(f"{label}: Vector 外观 pinnable data contract 不完整")
         root_element = document.getroottree().getroot()
         if "client-nojs" not in class_tokens(root_element):
             issues.append(f"{label}: html 未保持 client-nojs 静态能力声明")

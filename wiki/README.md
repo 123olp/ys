@@ -74,6 +74,7 @@ make import      # 重新导入受治理的种子页面
 make smoke       # 验证 HTTP、数据库、扩展和关键页面
 make language-selector-check # 验证 ULS V2 的 347 语言入口与开关行为
 make portal-search-check # 验证生产门户只查询 Human Infra Wiki
+make vector-appearance-check # 自启临时静态服务，验证外观面板固定、隐藏、断点与持久化
 make backup      # 创建时间戳备份包
 make validate    # 检查源码契约和 Compose 配置
 make homepage-check   # 校验官方首页快照和生成产物未漂移

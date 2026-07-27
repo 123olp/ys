@@ -4,6 +4,9 @@ set -euo pipefail
 portal_url="${PORTAL_PAGES_URL:-https://human-infra.pages.dev}"
 wiki_url="${WIKI_PAGES_URL:-https://human-infra-wiki.pages.dev}"
 tech_tree_url="${TECH_TREE_PAGES_URL:-https://human-infra-tech-tree.pages.dev}"
+portal_url="${portal_url%/}"
+wiki_url="${wiki_url%/}"
+tech_tree_url="${tech_tree_url%/}"
 temp_dir="$(mktemp -d)"
 trap 'rm -rf "$temp_dir"' EXIT
 
