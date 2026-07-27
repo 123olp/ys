@@ -47,6 +47,20 @@ grep -Fq 'page-Main_Page' <<<"$wiki"
 grep -Fq 'name="description"' <<<"$wiki"
 grep -Fq 'property="og:title"' <<<"$wiki"
 grep -Fq 'application/ld+json' <<<"$wiki"
+appearance_control_count="$(
+    grep -o 'id="skin-client-pref-[^"]*-value-[^"]*"' <<<"$wiki" \
+        | sort -u \
+        | wc -l
+)"
+[[ "$appearance_control_count" -eq 8 ]] || {
+    printf 'Wiki 公开首页外观面板控件不完整，实际为 %s/8。\n' \
+        "$appearance_control_count" >&2
+    exit 1
+}
+grep -Fq 'src="/assets/vector-client-preferences.js"' <<<"$wiki"
+fetch_contains \
+    "$wiki_url/assets/vector-client-preferences.js" \
+    'vector-feature-custom-font-size'
 if grep -Fq 'id="vector-toc-pinned-container"' <<<"$wiki"; then
     printf 'Wiki 首页错误继承了普通文章目录外壳。\n' >&2
     exit 1

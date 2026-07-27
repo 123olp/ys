@@ -29,6 +29,8 @@ Windows 11 可直接访问这些 `localhost` 地址。若端口冲突，在 `.en
 
 公开入口只使用 Cloudflare Pages，不绑定自定义域名，也不通过 Tunnel 暴露本地容器。语言门户是 Wikimedia 官方门户快照；中文 Wiki 是本地 MediaWiki 在发布时预渲染的纯静态只读快照，保留原生 Vector 阅读结构、内部链接、分类和浏览器端标题搜索。发布产物禁止包含 Pages Worker 或 Functions，因此正常页面和静态资源请求不消耗 Workers 函数配额。登录、编辑、历史、实时 API、VisualEditor 与 Page Forms 只在本地 MediaWiki 可用。完整边界和回滚方式见 [Pages 发布契约](PAGES-PUBLISHING-CONTRACT.md)。
 
+静态快照同时冻结 Vector 2022 原生外观面板，提供文本大小、页面宽度和颜色模式。控件 DOM 与样式来自固定的 Vector/Wikipedia 上游快照，静态适配器只把选择映射到 Vector 已定义的 document classes，并在当前浏览器保存匿名偏好；它不建立独立设置系统。
+
 ## 信息架构
 
 ```text

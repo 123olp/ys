@@ -32,6 +32,9 @@ wiki/
 ├── homepage-upstream/        # 中文维基首页不可手改的上游模板
 │   ├── UPSTREAM.md           # mp-2012 来源、许可、转换边界和更新流程
 │   └── snapshot/             # 原始 Wikitext、CSS、语言链接、渲染 HTML与哈希元数据
+├── vector-upstream/          # Vector 客户端组件的固定上游快照
+│   ├── UPSTREAM.md           # 组件来源、许可和静态适配边界
+│   └── appearance-controls.html # 官方中文外观面板原生 DOM
 ├── content/
 │   ├── manifest.tsv          # 种子页面标题与文件映射真相源
 │   ├── Portal_*.wiki         # 原生 MediaWiki 专题导航与证据边界
@@ -51,6 +54,7 @@ wiki/
 │   ├── smoke-test.sh         # HTTP、扩展、页面和数据库验证
 │   ├── validate-source.sh    # 跟踪配置与内容契约检查
 │   ├── export-pages-snapshot.py # 导出逐页目录与页面上下文的 MediaWiki 双外壳只读快照
+│   ├── vector-client-preferences-static.js # 静态页到 Vector 偏好类的最小适配
 │   ├── build-pages-release.sh # 预渲染门户与 Wiki 纯静态 Pages 产物
 │   ├── deploy-pages-release.sh # 发布两个 Pages 项目
 │   └── smoke-pages-release.sh # 验证三个 pages.dev 公开入口
@@ -75,6 +79,7 @@ wiki/
 - `config/` 只保存可公开的站点策略；MediaWiki 生成的 `LocalSettings.php` 属于运行时。
 - `content/` 是首次安装和可重复导入的页面种子，不是整个 Wiki 数据库的镜像；`import-content.sh` 必须先通过 MediaWiki 原生 `importImages` 导入图片种子，再导入引用它的页面，并在作业队列完成后用 `purgePage` 的标准输入契约刷新项目首页解析缓存。
 - `homepage-upstream/snapshot/` 是中文首页结构与样式真相源；`Human Infra:首页`、页首和样式均由生成器从该快照产生，禁止手工改写生成产物。
+- `vector-upstream/` 固定浏览器执行 Vector 原生模块后生成的外观组件 DOM；Pages 构建只能注入该快照并复用 Vector 原生 CSS 类。静态偏好适配器只允许切换 Vector 已定义的字号、宽度和颜色状态类，不得绘制平行控件或新增视觉语义。
 - 首页底部语言入口归 Vector + UniversalLanguageSelector + MediaWiki interwiki 运行时所有；官方语言链接作为固定快照进入生成链，禁止在首页 Wikitext 或 CSS 中复制按钮外观。
 - `visual-regression/` 只保存 BackstopJS 配置、浏览器状态稳定脚本、视觉夹具和受版本控制的官方组件参考图；像素比较、差异图与报告由 BackstopJS 提供，禁止新增自研截图比较器。模板契约套件负责零容差 Gate，实时整页套件只负责诊断有意内容差异；禁止用 `approve` 把本地失败图替换为官方标准。
 - `Template:首页/*` 只替换研究内容，禁止自建平行首页布局；`Portal:` 只做专题导航，不成为并行正文真相源。

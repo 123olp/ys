@@ -19,6 +19,8 @@ required=(
     homepage-upstream/snapshot/Wikipedia_Home_styles.css
     homepage-upstream/snapshot/Wikipedia_Home_rendered.html
     homepage-upstream/snapshot/Wikipedia_Home_language_links.json
+    vector-upstream/UPSTREAM.md
+    vector-upstream/appearance-controls.html
     Dockerfile
     compose.yaml
     env.example
@@ -37,6 +39,7 @@ required=(
     scripts/refresh-wikipedia-homepage.py
     scripts/build-wikipedia-homepage.py
     scripts/export-pages-snapshot.py
+    scripts/vector-client-preferences-static.js
     scripts/build-pages-release.sh
     scripts/deploy-pages-release.sh
     scripts/smoke-pages-release.sh
@@ -54,6 +57,30 @@ for file in "${required[@]}"; do
         exit 1
     }
 done
+
+node --check scripts/vector-client-preferences-static.js
+python3 - <<'PY'
+from bs4 import BeautifulSoup
+from pathlib import Path
+
+soup = BeautifulSoup(
+    Path("vector-upstream/appearance-controls.html").read_text(encoding="utf-8"),
+    "lxml",
+)
+controls = soup.select("#vector-appearance-controls input[type='radio']")
+if len(controls) != 8:
+    raise SystemExit(
+        f"Vector 外观上游快照必须包含 8 个单选控件，实际为 {len(controls)}"
+    )
+groups = {
+    control.get("name")
+    for control in controls
+}
+if len(groups) != 3:
+    raise SystemExit(
+        f"Vector 外观上游快照必须包含 3 组偏好，实际为 {len(groups)}"
+    )
+PY
 
 python3 - <<'PY'
 import json

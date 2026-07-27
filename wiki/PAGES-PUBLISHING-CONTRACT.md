@@ -53,6 +53,7 @@ make pages-smoke
 11. 公开发布物必须是纯静态资产，禁止包含 `_worker.js`、`_routes.json`、`functions/` 或其他请求时计算入口；模板注入、词条路由索引和 GEO 元数据必须在构建期完成。
 12. 静态词条 HTML 数必须与快照索引数严格相等；每个索引项必须有唯一 `urlPath` 和对应静态文件。
 13. Wrangler Pages 本地验证必须报告 `No Functions`，远端 smoke 全部通过后才能把发布视为完成。
+14. 静态快照必须保留 Vector 外观面板的 8 个原生选择项，并能切换字号、页面宽度和颜色状态；不得只保留空的 `#vector-appearance` 容器，也不得为其建立平行视觉组件。
 
 ## 回滚
 
