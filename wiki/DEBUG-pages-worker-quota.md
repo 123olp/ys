@@ -224,3 +224,12 @@ Wiki 静态运行时契约失败: issues=2 pages=2737
 ### Conclusion
 
 根因属于“把上游样式 ID 当成可复用 class”的 DOM 契约错误。修复保持 Wikimedia 快照不变，并把唯一性要求提升为覆盖全站静态 HTML 的发布门禁。
+
+### Production Reverification
+
+- 源提交：`eeeab980`。
+- Wiki 部署：`8e6afbc4.human-infra-wiki.pages.dev`，正式入口 `human-infra-wiki.pages.dev`。
+- 桌面端与移动端：重复 ID 为 0，内容槽位为 2，控制台问题、失败请求和横向溢出均为 0。
+- 页脚 CC BY-SA 与 MediaWiki 标志滚动进入视口后均完成加载和解码。
+- 未知路由返回真实 `404`。
+- `bash wiki/scripts/smoke-pages-release.sh`：三个 pages.dev 公开入口全部通过。
