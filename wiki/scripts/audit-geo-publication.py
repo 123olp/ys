@@ -46,8 +46,29 @@ def audit_html(path: Path, *, placeholders: bool = False) -> None:
 
 def audit_portal(directory: Path) -> None:
     audit_html(directory / "index.html")
-    for filename in ("robots.txt", "sitemap.xml", "llms.txt", "entity.jsonld"):
+    for filename in (
+        "robots.txt",
+        "sitemap.xml",
+        "llms.txt",
+        "entity.jsonld",
+        "UPSTREAM.md",
+    ):
         require((directory / filename).is_file(), f"门户缺少 {filename}")
+    soup = BeautifulSoup(
+        (directory / "index.html").read_text(encoding="utf-8"),
+        "lxml",
+    )
+    search_form = soup.select_one("#search-form")
+    search_input = soup.select_one("#searchInput")
+    require(search_form is not None, "门户缺少搜索表单")
+    require(search_input is not None, "门户缺少搜索输入框")
+    require(
+        search_form.get("action")
+        == "https://human-infra-wiki.pages.dev/search/",
+        "门户搜索回退 action 未指向本地 Wiki",
+    )
+    require(search_form.get("method") == "get", "门户搜索必须使用 GET")
+    require(search_input.get("name") == "q", "门户搜索参数必须为 q")
     ET.parse(directory / "sitemap.xml")
     json.loads((directory / "entity.jsonld").read_text(encoding="utf-8"))
     require(

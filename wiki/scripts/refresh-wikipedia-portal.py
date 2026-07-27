@@ -178,8 +178,9 @@ def adapt(html: str) -> tuple[str, dict[str, str]]:
         + language_ring()
         + "\n</nav>",
     )
-    html = html.replace(
-        'action="https://www.wikipedia.org/search-redirect.php"',
+    html = replace_once(
+        html,
+        r'action="(?:https:)?//www\.wikipedia\.org/search-redirect\.php"',
         'action="#"',
     )
     html = html.replace(

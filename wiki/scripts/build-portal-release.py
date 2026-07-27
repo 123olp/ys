@@ -46,7 +46,12 @@ def build_portal(output_dir: Path) -> None:
         shutil.rmtree(output_dir)
     output_dir.mkdir(parents=True)
     shutil.copytree(ROOT / "portal" / "assets", output_dir / "assets")
-    for filename in ("adapter.js", "languages.json", "LICENSE.wikimedia-portals"):
+    for filename in (
+        "adapter.js",
+        "languages.json",
+        "LICENSE.wikimedia-portals",
+        "UPSTREAM.md",
+    ):
         shutil.copy2(ROOT / "portal" / filename, output_dir / filename)
 
     soup = BeautifulSoup(
@@ -55,6 +60,13 @@ def build_portal(output_dir: Path) -> None:
     )
     soup.html["lang"] = "mul"
     soup.title.string = portal["name"]
+    search_form = soup.select_one("#search-form")
+    search_input = soup.select_one("#searchInput")
+    if search_form is None or search_input is None:
+        raise RuntimeError("门户缺少上游搜索表单契约")
+    search_form["action"] = f"{wiki['url']}search/"
+    search_form["method"] = "get"
+    search_input["name"] = "q"
     upsert_meta(soup, name="description", content=portal["description"])
     upsert_meta(soup, name="robots", content="index,follow,max-image-preview:large")
     upsert_meta(soup, prop="og:title", content=portal["name"])

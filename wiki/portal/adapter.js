@@ -33,12 +33,22 @@
 
 	const searchForm = document.getElementById( 'search-form' );
 	if ( searchForm ) {
+		const searchInput = document.getElementById( 'searchInput' );
+		const localSearchInput = searchInput && searchInput.cloneNode( true );
+		const searchUrl = new URL( '/search/', wikiBase );
+
+		searchForm.action = searchUrl.toString();
+		searchForm.method = 'get';
+		if ( localSearchInput ) {
+			localSearchInput.name = 'q';
+			searchInput.replaceWith( localSearchInput );
+		}
 		searchForm.addEventListener( 'submit', ( event ) => {
 			event.preventDefault();
-			const query = document.getElementById( 'searchInput' ).value.trim();
+			const query = localSearchInput ? localSearchInput.value.trim() : '';
 			const language = document.getElementById( 'searchLanguage' ).value;
 			if ( query ) {
-				const url = new URL( '/search/', wikiBase );
+				const url = new URL( searchUrl );
 				url.searchParams.set( 'q', query );
 				url.searchParams.set( 'uselang', language );
 				window.location.assign( url.toString() );

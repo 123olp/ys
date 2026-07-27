@@ -52,6 +52,8 @@ wiki/
 │   ├── run-backstop.sh       # 调用固定 BackstopJS Docker 镜像
 │   ├── check-language-selector.sh # 验证 Vector + ULS V2 原生语言选择器
 │   ├── check-language-selector.js # Playwright 浏览器行为断言
+│   ├── check-portal-search.sh # 调用固定 Playwright 镜像验证 Pages 门户搜索
+│   ├── check-portal-search.js # 门户本地搜索、外部请求与上游说明行为断言
 │   ├── smoke-test.sh         # HTTP、扩展、页面和数据库验证
 │   ├── validate-source.sh    # 跟踪配置与内容契约检查
 │   ├── export-pages-snapshot.py # 导出逐页目录与页面上下文的 MediaWiki 双外壳只读快照
@@ -75,6 +77,7 @@ wiki/
 - `compose.yaml` 和 `Dockerfile` 固定可复现基础设施；不得把密码写入其中。
 - `portal/` 是语言选择层，视觉、DOM 与通用控件行为归 Wikimedia 官方门户；本项目只维护品牌内容和本地路由适配，禁止新增平行视觉 CSS、存放研究结论或伪造尚未建立的语言版本。保留上游脚本时必须同时保留其依赖的官方 DOM，即使对应组件默认隐藏；不得裁掉节点后留下空指针脚本。`human-infra-mark.svg` 同时作为 Wiki 皮肤图标和 MediaWiki 本地文件仓库的受治理品牌种子；`human-infra-tech-tree.png` 是首页“研究图谱”槽位使用的项目科技树渲染证据，二者都必须通过 `importImages` 进入本地文件仓库。
 - 门户到 Wiki 的公开路由由 `WIKI_PUBLIC_URL` 注入；未设置时才回退到同主机加 `WIKI_PUBLIC_PORT` 的本地开发地址。不得在门户 HTML 中硬编码部署域名。
+- 门户搜索只允许提交到 Human Infra Wiki 的静态标题搜索；输入阶段不得调用 Wikipedia 或其他第三方联想接口。Pages 发布物必须为无脚本回退写入同一本地 action，并公开上游来源说明。
 - 公开环境只允许使用 `human-infra.pages.dev`、`human-infra-wiki.pages.dev` 和 `human-infra-tech-tree.pages.dev`。语言门户和 Wiki 由 Cloudflare Pages 发布，科技树由其独立 Pages 项目发布；禁止恢复自定义域名、Cloudflare Tunnel 或退役的 Research Narrative。
 - 本地 MediaWiki 是可编辑真相源；公开 Wiki 是构建期预渲染的只读纯静态快照。导出器按页面类型选择首页/文章外壳，在构建期注入正文、原生 Vector 目录、页面类、标题、链接和修订上下文；标题搜索只读取静态索引。生产发布物禁止包含 `_worker.js`、`_routes.json` 或 `functions/`，不得为了路由、搜索或模板注入恢复请求时计算层。快照移除 ResourceLoader 后，只允许补回 Vector 原生控件所需的最小无脚本状态规则，不得建立平行视觉层。
 - 公开快照采用静态能力白名单：保留正文导航、搜索、语言选择、页内目录、打印和已提供明确静态适配器的 Vector 外观偏好；登录、编辑、讨论、历史、特殊页面、变体切换、永久修订链接、可折叠内容与表格排序等依赖后端或 ResourceLoader 的能力必须移除或展开为只读内容，禁止留下 `href="#"`、空菜单或伪可用控件。

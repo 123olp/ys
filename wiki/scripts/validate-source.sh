@@ -38,9 +38,13 @@ required=(
     scripts/refresh-wikipedia-portal.py
     scripts/refresh-wikipedia-homepage.py
     scripts/build-wikipedia-homepage.py
+    scripts/build-portal-release.py
+    scripts/audit-geo-publication.py
     scripts/audit-static-runtime-contract.py
     scripts/export-pages-snapshot.py
     scripts/vector-client-preferences-static.js
+    scripts/check-portal-search.js
+    scripts/check-portal-search.sh
     scripts/build-pages-release.sh
     scripts/deploy-pages-release.sh
     scripts/smoke-pages-release.sh
@@ -60,8 +64,12 @@ for file in "${required[@]}"; do
 done
 
 node --check scripts/vector-client-preferences-static.js
+node --check scripts/check-portal-search.js
 python3 -m py_compile \
+    scripts/audit-geo-publication.py \
     scripts/audit-static-runtime-contract.py \
+    scripts/build-portal-release.py \
+    scripts/refresh-wikipedia-portal.py \
     scripts/export-pages-snapshot.py
 python3 - <<'PY'
 from bs4 import BeautifulSoup
@@ -226,6 +234,14 @@ grep -Fq 'class="search-container"' portal/index.html || {
 }
 grep -Fq 'data-hi-language="zh"' portal/index.html || {
     printf '语言门户缺少中文路由锚点。\n' >&2
+    exit 1
+}
+grep -Fq 'id="search-form" action="#"' portal/index.html || {
+    printf '语言门户源码搜索回退 action 未被本地适配层接管。\n' >&2
+    exit 1
+}
+grep -Fq 'searchInput.cloneNode( true )' portal/adapter.js || {
+    printf '语言门户未隔离上游 Wikipedia 搜索联想监听。\n' >&2
     exit 1
 }
 [[ ! -e portal/styles.css ]] || {

@@ -233,3 +233,46 @@ Wiki 静态运行时契约失败: issues=2 pages=2737
 - 页脚 CC BY-SA 与 MediaWiki 标志滚动进入视口后均完成加载和解码。
 - 未知路由返回真实 `404`。
 - `bash wiki/scripts/smoke-pages-release.sh`：三个 pages.dev 公开入口全部通过。
+
+## 2026-07-27 门户搜索越界与上游说明 404
+
+### Observation
+
+- 语言门户搜索表单的源码 action 仍指向 `//www.wikipedia.org/search-redirect.php`。
+- 用户输入查询词时，上游搜索脚本会请求 `en.wikipedia.org/w/api.php`，将本地 Wiki 查询发送给第三方服务。
+- 门户页公开了 `/UPSTREAM.md` 链接，Pages 发布包没有复制该文件，生产请求返回 `404`。
+- 本地适配器会在提交阶段重定向到 Human Infra Wiki，因此只验证最终落点无法发现输入阶段的外部请求。
+
+### Root Cause
+
+门户复用 Wikimedia 官方页面时保留了上游搜索 action 和联想事件监听，同时构建脚本只复制运行资源，遗漏了页面可见的上游来源说明。现有 smoke 只检查根入口和最终页面，没有约束搜索输入期间的网络边界，也没有遍历该公开文档链接。
+
+### RED
+
+同一 Playwright 检查对未修复门户执行后失败：
+
+```text
+门户搜索 action 错误:
+expected=https://human-infra-wiki.pages.dev/search/
+actual=//www.wikipedia.org/search-redirect.php
+```
+
+手工网络观测同时记录到 `en.wikipedia.org/w/api.php` 查询请求，`/UPSTREAM.md` 返回 `404`。
+
+### Fix
+
+- 门户源码快照将上游 action 固定为无操作占位，发布构建再写入 Human Infra Wiki 的静态搜索地址。
+- 适配器克隆搜索输入节点，移除上游附着的联想监听，仅保留本地提交行为。
+- Pages 发布包复制 `UPSTREAM.md`。
+- GEO 发布审计新增搜索 action、方法、参数名和上游说明文件断言。
+- 新增 `make portal-search-check`，以固定 Playwright 容器验证外部请求为零、本地查询成功和上游说明可访问。
+
+### GREEN And Counterfactual
+
+- 修复后的本地 Pages 发布物：本地搜索返回目标词条，外部 Wikipedia 请求为 0，`UPSTREAM.md` 返回 `200`。
+- 将相同固定路径恢复为未修复首页和适配器后，同一检查再次因外部 action 失败。
+- 结构化证据入口：`REGRESSION_EVIDENCE-portal-search-routing.json`。
+
+### Production Reverification
+
+- 待部署后填写正式别名、不可变部署地址、源提交和桌面端/移动端浏览器结果。
