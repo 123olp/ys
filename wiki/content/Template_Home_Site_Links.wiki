@@ -6,6 +6,7 @@
 * [[Human Infra:版权|版权]]
 * [[Special:Statistics|站点统计]]
 * [https://github.com/tradecatlabs/human_infra GitHub 仓库]
+* [https://github.com/tradecatlabs 交易猫实验室（tradecatlabs）]
 </td>
 <td>
 <h3>认识 Human Infra</h3>

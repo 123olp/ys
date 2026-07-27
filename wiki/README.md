@@ -70,7 +70,7 @@ Human Infra 品牌标识只有一个受版本控制的源文件：`portal/assets
 make up          # 启动
 make stop        # 停止
 make logs        # 查看日志
-make import      # 重新导入受治理的种子页面
+make import      # 重新导入种子页，刷新原生缓存并重启本地 Wiki Web 进程
 make smoke       # 验证 HTTP、数据库、扩展和关键页面
 make language-selector-check # 验证 ULS V2 的 347 语言入口与开关行为
 make portal-search-check # 验证生产门户只查询 Human Infra Wiki

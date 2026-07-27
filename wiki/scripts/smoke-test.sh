@@ -251,6 +251,33 @@ grep -Fq '典范研究' <<<"$rendered_main_page" || {
     printf '中文项目首页内容未渲染。\n' >&2
     exit 1
 }
+funding_statement='Human Infra Wiki 由交易猫实验室（tradecatlabs）资助并维护'
+grep -Fq "$funding_statement" <<<"$rendered_main_page" || {
+    printf '中文项目首页缺少交易猫实验室资助与维护声明。\n' >&2
+    exit 1
+}
+for external_link in \
+    'href="https://github.com/tradecatlabs/human_infra"' \
+    'href="https://github.com/tradecatlabs"'; do
+    grep -Fq "$external_link" <<<"$rendered_main_page" || {
+        printf '中文项目首页缺少受治理外链: %s\n' "$external_link" >&2
+        exit 1
+    }
+done
+rendered_about_page="$(curl -fsSL --get "$base_url/index.php" \
+    --data-urlencode 'title=Human Infra:关于')"
+grep -Fq "$funding_statement" <<<"$rendered_about_page" || {
+    printf '项目说明页缺少交易猫实验室资助与维护声明。\n' >&2
+    exit 1
+}
+for external_link in \
+    'href="https://github.com/tradecatlabs/human_infra"' \
+    'href="https://github.com/tradecatlabs"'; do
+    grep -Fq "$external_link" <<<"$rendered_about_page" || {
+        printf '项目说明页缺少受治理外链: %s\n' "$external_link" >&2
+        exit 1
+    }
+done
 grep -Fq '请按' <<<"$rendered_main_page" || {
     printf '中文项目首页仍在使用过期模板解析缓存。\n' >&2
     exit 1

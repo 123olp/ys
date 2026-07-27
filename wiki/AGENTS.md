@@ -13,6 +13,7 @@ wiki/
 ├── LANGUAGE-EDITION-CONTRACT.md # 语言门户与独立语言版本准入契约
 ├── HOMEPAGE-PORTAL-CONTRACT.md  # 项目首页与专题门户职责契约
 ├── PAGES-PUBLISHING-CONTRACT.md # pages.dev 唯一公开发布与只读边界
+├── DEBUG-content-import-cache.md # CLI 导入与 Web 缓存一致性根因和回归边界
 ├── REGRESSION_EVIDENCE-homepage-duplicate-id.json # 首页 DOM ID 回归证据入口
 ├── REGRESSION_EVIDENCE-mediawiki-native-ui.json # Vector 原生 UI 所有权回归证据
 ├── Dockerfile                # MediaWiki 与固定版本 Page Forms、ULS 镜像
@@ -85,6 +86,7 @@ wiki/
 - `runtime/pages/` 是忽略的确定性发布产物；必须由 `make pages-build` 重建，禁止手工维护。门户和 Wiki 产物必须包含 Pages 原生 `404.html`，防止未知路径退化为首页软 404。发布与回滚遵循 `PAGES-PUBLISHING-CONTRACT.md`。
 - `config/` 只保存可公开的站点策略；MediaWiki 生成的 `LocalSettings.php` 属于运行时。
 - `content/` 是首次安装和可重复导入的页面种子，不是整个 Wiki 数据库的镜像；`import-content.sh` 必须先通过 MediaWiki 原生 `importImages` 导入图片种子，再导入引用它的页面，并在作业队列完成后用 `purgePage` 的标准输入契约刷新项目首页解析缓存。
+- CLI 种子导入与 Wiki Web 进程使用不同缓存上下文；`import-content.sh` 必须在页面写入后清空作业队列，调用 MediaWiki 原生消息与 parser cache 维护命令，重启 Wiki Web 服务并等待 API 就绪。禁止只凭数据库修订或模板直读结果宣称首页和 `MediaWiki:Sidebar` 已生效。
 - `homepage-upstream/snapshot/` 是中文首页结构与样式真相源；`Human Infra:首页`、页首和样式均由生成器从该快照产生，禁止手工改写生成产物。
 - MediaWiki 与 Vector 的 UI 行为所有权不可转移：完整交互只允许由安装版本的 ResourceLoader、`skins.vector.js`、`skins.vector.clientPreferences` 和原生 pinnable 机制实现。禁止冻结浏览器增强 DOM、复制上游模块片段、编写静态替代状态机、重新绑定原生按钮或用自定义 CSS 暴露原本由 `client-nojs` 隐藏的控件。静态发布能力不足时必须移除操作入口并保留原生无脚本阅读状态，不能模拟框架行为。
 - 首页底部语言入口归 Vector + UniversalLanguageSelector + MediaWiki interwiki 运行时所有；官方语言链接作为固定快照进入生成链，禁止在首页 Wikitext 或 CSS 中复制按钮外观。

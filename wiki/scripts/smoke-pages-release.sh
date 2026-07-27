@@ -46,6 +46,15 @@ wiki="$(curl -fsSL "$wiki_url/")"
 grep -Fq 'Human Infra Wiki' <<<"$wiki"
 grep -Fq 'id="mp-2012"' <<<"$wiki"
 grep -Fq '只读公开快照' <<<"$wiki"
+grep -Fq \
+    'Human Infra Wiki 由交易猫实验室（tradecatlabs）资助并维护' \
+    <<<"$wiki"
+grep -Fq \
+    'href="https://github.com/tradecatlabs/human_infra"' \
+    <<<"$wiki"
+grep -Fq \
+    'href="https://github.com/tradecatlabs"' \
+    <<<"$wiki"
 grep -Fq 'page-Main_Page' <<<"$wiki"
 grep -Fq 'name="description"' <<<"$wiki"
 grep -Fq 'property="og:title"' <<<"$wiki"
@@ -134,6 +143,20 @@ fi
 search="$(curl -fsSL "$wiki_url/search/?q=%E9%95%BF%E5%AF%BF")"
 grep -Fq 'id="hi-static-search"' <<<"$search"
 fetch_contains "$wiki_url/assets/wiki-search.js" 'snapshot/index.json'
+
+about="$(
+    curl -fsSL \
+        "$wiki_url/wiki/Human_Infra:%E5%85%B3%E4%BA%8E/"
+)"
+grep -Fq \
+    'Human Infra Wiki 由交易猫实验室（tradecatlabs）资助并维护' \
+    <<<"$about"
+grep -Fq \
+    'href="https://github.com/tradecatlabs/human_infra"' \
+    <<<"$about"
+grep -Fq \
+    'href="https://github.com/tradecatlabs"' \
+    <<<"$about"
 
 legacy_status="$(
     curl -sS -o /dev/null -w '%{http_code}' \

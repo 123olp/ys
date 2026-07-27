@@ -5,3 +5,12 @@ Human Infra 研究“能够继续做事的主体”如何被维护、延展和�
 其核心命题是：一切价值、目标与创造，都预设一个仍能感知、判断、行动、学习和修正的主体。
 
 本 Wiki 承担项目专有词条、研究域、技术节点、证据来源、引用和修订历史；科技树承担目标、依赖、阶段和状态的交互展示。
+
+== 资助与维护 ==
+
+'''Human Infra Wiki 由交易猫实验室（tradecatlabs）资助并维护。'''实验室为本项目的知识整理、研究基础设施、技术路线与公开发布提供持续支持。
+
+* [https://github.com/tradecatlabs/human_infra Human Infra GitHub 仓库]
+* [https://github.com/tradecatlabs 交易猫实验室（tradecatlabs）]
+
+资助与维护关系不替代证据审查。Wiki 中的研究主张仍须遵守[[Human Infra:内容方针|内容方针]]，明确来源、支持边界、争议和反证条件。

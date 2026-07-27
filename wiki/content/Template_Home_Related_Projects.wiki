@@ -1,5 +1,5 @@
 <div>[[File:Human-Infra-mark.svg|45px|center|link=Human Infra:关于|Human Infra]]</div>
-<p style="text-align:center;">'''Human Infra Wiki''' 由 tradecatlabs 维护，并与以下研究入口共同组织主体持续性知识：</p>
+<p style="text-align:center;">'''Human Infra Wiki 由交易猫实验室（tradecatlabs）资助并维护'''，并与以下研究入口共同组织主体持续性知识：[https://github.com/tradecatlabs/human_infra GitHub 仓库] · [https://github.com/tradecatlabs 实验室主页]</p>
 {| class="plainlinks noresize" align="center" cellpadding="2" style="width:90%; background-color:transparent; color:var(--color-placeholder,#777); font-size:95%;"
 | style="text-align:center; padding:4px;" | [[File:Human-Infra-mark.svg|center|35px|link=研究域全景索引|研究域]]
 | style="width:27%; padding:4px;" | [[研究域全景索引|'''研究域''']]<br /><span style="font-size:small;">C1-C6 可能性空间</span>

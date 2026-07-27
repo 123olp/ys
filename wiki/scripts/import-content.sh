@@ -39,7 +39,26 @@ while IFS=$'\t' read -r title file; do
     printf '已导入: %s\n' "$title"
 done < content/manifest.tsv
 
-docker compose --env-file .env exec -T wiki php maintenance/run.php runJobs --maxjobs=100 >/dev/null
+docker compose --env-file .env exec -T wiki php maintenance/run.php runJobs >/dev/null
+docker compose --env-file .env exec -T wiki \
+    php maintenance/run.php rebuildmessages >/dev/null
+docker compose --env-file .env exec -T wiki \
+    php maintenance/run.php purgeParserCache --age 0 >/dev/null
+docker compose --env-file .env restart wiki >/dev/null
+
+printf '等待 Wiki Web 进程重新加载缓存'
+for _ in $(seq 1 60); do
+    if curl -fsS "$WIKI_SERVER/api.php?action=query&meta=siteinfo&format=json" \
+        >/dev/null 2>&1; then
+        printf '\n'
+        break
+    fi
+    printf '.'
+    sleep 2
+done
+curl -fsS "$WIKI_SERVER/api.php?action=query&meta=siteinfo&format=json" \
+    >/dev/null
+
 printf '%s\n' 'Human Infra:首页' | docker compose --env-file .env exec -T wiki \
     php maintenance/run.php purgePage >/dev/null
 printf '已刷新: Human Infra:首页\n'

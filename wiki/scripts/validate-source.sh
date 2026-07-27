@@ -12,6 +12,7 @@ required=(
     LANGUAGE-EDITION-CONTRACT.md
     HOMEPAGE-PORTAL-CONTRACT.md
     PAGES-PUBLISHING-CONTRACT.md
+    DEBUG-content-import-cache.md
     REGRESSION_EVIDENCE-mediawiki-native-ui.json
     homepage-upstream/UPSTREAM.md
     homepage-upstream/snapshot/metadata.json
@@ -162,6 +163,32 @@ if sum(
     for line in templates["site_links"].splitlines()
 ) < 15:
     raise SystemExit("首页站点链接未达到上游三列十五项结构")
+
+required_identity = "Human Infra Wiki 由交易猫实验室（tradecatlabs）资助并维护"
+for name, path in {
+    "participate": "content/Template_Home_Participate.wiki",
+    "related_projects": "content/Template_Home_Related_Projects.wiki",
+    "about": "content/Human_Infra_About.wiki",
+}.items():
+    source = Path(path).read_text(encoding="utf-8")
+    if required_identity not in source:
+        raise SystemExit(f"{name} 缺少交易猫实验室资助与维护声明")
+
+required_links = (
+    "https://github.com/tradecatlabs/human_infra",
+    "https://github.com/tradecatlabs",
+)
+for path in (
+    "content/Template_Home_Participate.wiki",
+    "content/Template_Home_Site_Links.wiki",
+    "content/Template_Home_Related_Projects.wiki",
+    "content/Human_Infra_About.wiki",
+    "content/MediaWiki_Sidebar.wiki",
+):
+    source = Path(path).read_text(encoding="utf-8")
+    missing = [url for url in required_links if url not in source]
+    if missing:
+        raise SystemExit(f"{path} 缺少项目或实验室链接: {missing}")
 PY
 
 grep -Fq 'resources/assets/licenses/cc-by-sa.png' config/HumanInfraSettings.php || {
