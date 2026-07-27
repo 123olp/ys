@@ -13,7 +13,9 @@ required=(
     HOMEPAGE-PORTAL-CONTRACT.md
     PAGES-PUBLISHING-CONTRACT.md
     DEBUG-content-import-cache.md
+    DEBUG-native-content-heading.md
     REGRESSION_EVIDENCE-mediawiki-native-ui.json
+    REGRESSION_EVIDENCE-native-content-heading.json
     homepage-upstream/UPSTREAM.md
     homepage-upstream/snapshot/metadata.json
     homepage-upstream/snapshot/Wikipedia_Home.wiki
@@ -333,6 +335,15 @@ manifest_entries = {
     )
 }
 manifest_titles = set(manifest_entries)
+
+for title, filename in manifest_entries.items():
+    source = (content_dir / filename).read_text(encoding="utf-8")
+    for line_number, line in enumerate(source.splitlines(), start=1):
+        if re.fullmatch(r"=\s*[^=].*?\s*=", line):
+            raise SystemExit(
+                f"词条正文不得声明 MediaWiki 页面一级标题: "
+                f"{title} ({filename}:{line_number})"
+            )
 
 category_parents = {}
 for title, filename in manifest_entries.items():

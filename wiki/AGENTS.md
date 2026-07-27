@@ -14,8 +14,10 @@ wiki/
 ├── HOMEPAGE-PORTAL-CONTRACT.md  # 项目首页与专题门户职责契约
 ├── PAGES-PUBLISHING-CONTRACT.md # pages.dev 唯一公开发布与只读边界
 ├── DEBUG-content-import-cache.md # CLI 导入与 Web 缓存一致性根因和回归边界
+├── DEBUG-native-content-heading.md # 正文重复页面 H1 的根因和回归边界
 ├── REGRESSION_EVIDENCE-homepage-duplicate-id.json # 首页 DOM ID 回归证据入口
 ├── REGRESSION_EVIDENCE-mediawiki-native-ui.json # Vector 原生 UI 所有权回归证据
+├── REGRESSION_EVIDENCE-native-content-heading.json # 原生页面标题唯一性回归证据
 ├── Dockerfile                # MediaWiki 与固定版本 Page Forms、ULS 镜像
 ├── Makefile                  # 常用运维命令入口
 ├── compose.yaml              # MediaWiki 与 MariaDB 服务编排
@@ -92,6 +94,7 @@ wiki/
 - 首页底部语言入口归 Vector + UniversalLanguageSelector + MediaWiki interwiki 运行时所有；官方语言链接作为固定快照进入生成链，禁止在首页 Wikitext 或 CSS 中复制按钮外观。
 - `visual-regression/` 只保存 BackstopJS 配置、浏览器状态稳定脚本、视觉夹具和受版本控制的官方组件参考图；像素比较、差异图与报告由 BackstopJS 提供，禁止新增自研截图比较器。模板契约套件负责零容差 Gate，实时整页套件只负责诊断有意内容差异；禁止用 `approve` 把本地失败图替换为官方标准。
 - `Template:首页/*` 只替换研究内容，禁止自建平行首页布局；`Portal:` 只做专题导航，不成为并行正文真相源。
+- MediaWiki/Vector 生成的页面标题是普通词条的唯一 `H1`；受治理正文必须从导语或二级标题开始，禁止用 `= 页面标题 =` 重复原生页面标题。
 - `Portal_*.wiki` 必须使用 MediaWiki 原生标题、列表、表格和链接，覆盖概览、精选研究、路线、证据边界、开放问题、参与建设和相关门户；禁止在正文重复页面 H1 或通过 `MediaWiki:Common.css` 建立平行门户视觉层。
 - `Category:Human Infra Wiki` 是分类图唯一根；新增分类必须能沿父分类有限追溯到该根。模板维护分类只写入模板的 `<noinclude>`，不得污染调用页面。
 - `runtime/` 和 `.env` 不得提交；数据迁移必须使用备份包。
