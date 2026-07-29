@@ -17,6 +17,10 @@ python3 "$wiki_dir/scripts/build-mediawiki-main-domain-release.py" \
 
 printf 'ok\n' >"$output_dir/healthz"
 cat >"$output_dir/_headers" <<'EOF'
+/
+  Cache-Control: public, max-age=0, must-revalidate, no-transform
+/404.html
+  Cache-Control: public, max-age=0, must-revalidate, no-transform
 /assets/*
   Cache-Control: public, max-age=31536000, immutable
 /images/*

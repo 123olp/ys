@@ -39,8 +39,8 @@ grep -Fq "href=\"$technology_tree_url/\"" <<<"$main_html"
 grep -Fq 'content="MediaWiki ' <<<"$main_html"
 grep -Fq 'skin-vector-2022' <<<"$main_html"
 grep -Fq 'href="/assets/mediawiki.css"' <<<"$main_html"
-if grep -Eq 'adapter\\.js|runtime-config\\.js|_worker\\.js' <<<"$main_html"; then
-    printf '主域名包含禁止的自写前端或运行时入口。\n' >&2
+if grep -Eq 'adapter\\.js|runtime-config\\.js|_worker\\.js|cloudflareinsights|data-cf-beacon' <<<"$main_html"; then
+    printf '主域名包含禁止的自写前端、运行时入口或边缘注入脚本。\n' >&2
     exit 1
 fi
 

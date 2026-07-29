@@ -390,6 +390,14 @@ def main() -> None:
         in (directory / "robots.txt").read_text(encoding="utf-8"),
         "主域名 robots.txt 未声明正式 sitemap",
     )
+    headers = (directory / "_headers").read_text(encoding="utf-8")
+    require(
+        headers.count(
+            "Cache-Control: public, max-age=0, must-revalidate, no-transform"
+        )
+        == 2,
+        "主域名 HTML 未禁止 Cloudflare 等边缘层修改 MediaWiki 页面",
+    )
     structured_data = json.loads(
         (directory / "entity.jsonld").read_text(encoding="utf-8")
     )

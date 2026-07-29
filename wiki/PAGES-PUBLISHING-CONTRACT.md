@@ -63,7 +63,7 @@ make main-domain-smoke
 13. Wrangler Pages 本地验证必须报告 `No Functions`，远端 smoke 全部通过后才能把发布视为完成。
 14. Vector 外观偏好只能由完整 MediaWiki ResourceLoader 的 `skins.vector.js` 与 `skins.vector.clientPreferences` 提供。静态快照必须移除外观入口和控件，声明原生 `appearance-pinned-clientpref-0` 无脚本状态；禁止冻结浏览器增强 DOM、复制上游模块片段、加载自写适配器或模拟 pinnable 状态机。
 15. `audit-static-runtime-contract.py` 必须全量扫描静态 HTML，拒绝无目标链接、缺少目标文件的内部 Wiki 路由、非搜索表单 action、运行时操作 ID、ResourceLoader 资源以及失效的折叠和排序标记；构建期审计与线上抽样 smoke 均通过后才能发布。
-16. 主域名必须通过 `check-main-domain-release.py`：`generator` 必须来自 MediaWiki，Vector 关键 DOM 必须存在，标签/ID/class、TemplateStyles、脚本和样式表引用必须与 Wiki 首页完全一致，`assets/`、`images/`、`resources/` 必须逐文件哈希一致；任何自写 UI、CSS、适配器、`_worker.js`、`_routes.json` 或 `functions/` 都必须阻塞发布。
+16. 主域名必须通过 `check-main-domain-release.py`：`generator` 必须来自 MediaWiki，Vector 关键 DOM 必须存在，标签/ID/class、TemplateStyles、脚本和样式表引用必须与 Wiki 首页完全一致，`assets/`、`images/`、`resources/` 必须逐文件哈希一致；HTML 响应必须声明 `Cache-Control: no-transform`，防止 Cloudflare Web Analytics 或其他边缘服务注入非 MediaWiki 脚本；任何自写 UI、CSS、适配器、边缘注入脚本、`_worker.js`、`_routes.json` 或 `functions/` 都必须阻塞发布。
 17. `tradecatlabs.com` 上线不得删除、重定向或禁用 `human-infra.pages.dev`、`human-infra-wiki.pages.dev` 与 `human-infra-tech-tree.pages.dev`。
 
 ## 回滚
