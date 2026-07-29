@@ -7,7 +7,29 @@ technology_tree_url="${TECH_TREE_PUBLIC_URL:-https://human-infra-tech-tree.pages
 legacy_portal_url="${LEGACY_PORTAL_URL:-https://human-infra.pages.dev}"
 
 fetch() {
-    curl --fail --silent --show-error --location --max-time 30 "$1"
+    curl \
+        --fail \
+        --silent \
+        --show-error \
+        --location \
+        --max-time 30 \
+        --retry 5 \
+        --retry-all-errors \
+        --retry-delay 2 \
+        "$1"
+}
+
+head_check() {
+    curl \
+        --fail \
+        --silent \
+        --show-error \
+        --head \
+        --max-time 30 \
+        --retry 5 \
+        --retry-all-errors \
+        --retry-delay 2 \
+        "$1" >/dev/null
 }
 
 main_html="$(fetch "$main_url/")"
@@ -26,12 +48,11 @@ for asset in \
     assets/mediawiki.css \
     resources/assets/human-infra-mark.svg \
     resources/assets/mediawiki_compact.svg; do
-    curl --fail --silent --show-error --head --max-time 30 \
-        "$main_url/$asset" >/dev/null
+    head_check "$main_url/$asset"
 done
 
 for url in "$legacy_portal_url/" "$wiki_url/" "$technology_tree_url/"; do
-    curl --fail --silent --show-error --head --max-time 30 "$url" >/dev/null
+    head_check "$url"
 done
 
 printf '主域名与三个 pages.dev 入口 smoke 通过。\n'
