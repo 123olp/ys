@@ -43,6 +43,7 @@ required=(
     scripts/refresh-wikipedia-homepage.py
     scripts/build-wikipedia-homepage.py
     scripts/build-portal-release.py
+    scripts/build-mediawiki-main-domain-release.py
     scripts/build-main-domain-release.sh
     scripts/check-main-domain-release.py
     scripts/audit-geo-publication.py
@@ -82,6 +83,7 @@ node --check scripts/check-mediawiki-native-runtime.js
 python3 -m py_compile \
     scripts/audit-geo-publication.py \
     scripts/audit-static-runtime-contract.py \
+    scripts/build-mediawiki-main-domain-release.py \
     scripts/build-portal-release.py \
     scripts/check-main-domain-release.py \
     scripts/check-mediawiki-native-ui.py \

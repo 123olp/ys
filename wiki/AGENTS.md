@@ -69,8 +69,9 @@ wiki/
 │   ├── build-pages-release.sh # 预渲染门户与 Wiki 纯静态 Pages 产物
 │   ├── deploy-pages-release.sh # 发布两个 Pages 项目
 │   ├── smoke-pages-release.sh # 验证三个 pages.dev 公开入口
-│   ├── build-main-domain-release.sh # 生成主域名纯静态门户
-│   ├── check-main-domain-release.py # 校验主域名路由与静态契约
+│   ├── build-mediawiki-main-domain-release.py # 从 MediaWiki 首页生成主域名
+│   ├── build-main-domain-release.sh # 编排主域名纯静态发布物
+│   ├── check-main-domain-release.py # 校验 MediaWiki 来源、DOM、资源与路由
 │   └── smoke-main-domain-release.sh # 验证主域名和旧入口共存
 ├── visual-regression/        # BackstopJS 配置与浏览器稳定化脚本
 │   ├── backstop.contract.json # 标准内容夹具下的模板零容差门禁
@@ -89,6 +90,7 @@ wiki/
 - 门户到 Wiki 的公开路由由 `WIKI_PUBLIC_URL` 注入；未设置时才回退到同主机加 `WIKI_PUBLIC_PORT` 的本地开发地址。不得在门户 HTML 中硬编码部署域名。
 - 门户搜索只允许提交到 Human Infra Wiki 的静态标题搜索；输入阶段不得调用 Wikipedia 或其他第三方联想接口。Pages 发布物必须为无脚本回退写入同一本地 action，并公开上游来源说明。
 - `https://tradecatlabs.com/` 是 Human Infra 品牌主入口，分别路由至 `human-infra-wiki.pages.dev` 和 `human-infra-tech-tree.pages.dev`；`human-infra.pages.dev` 继续作为门户回退与开发入口。主域名和三个 `pages.dev` 入口必须同步存在，禁止把旧入口重定向、关闭或用跨账户反向代理接管。全部入口均由 Cloudflare Pages 静态资产层发布；禁止恢复 Cloudflare Tunnel、Pages Functions、Worker 代理或退役的 Research Narrative。
+- 主域名首页必须直接消费 `runtime/pages/wiki/index.html` 及其 MediaWiki/Vector 静态资源，只允许改写 canonical、结构化元数据、搜索 action 与产品链接。输出的标签、ID、class、TemplateStyles、脚本来源、样式表引用和资源文件哈希必须与 MediaWiki 源发布物一致；禁止为主域名新增 HTML 组件、CSS、客户端框架、视觉适配器或模拟 MediaWiki 控件。
 - 本地 MediaWiki 是可编辑真相源；公开 Wiki 是构建期预渲染的只读纯静态快照。导出器按页面类型选择首页/文章外壳，在构建期注入正文、原生 Vector 目录、页面类、标题、链接和修订上下文；标题搜索只读取静态索引。生产发布物禁止包含 `_worker.js`、`_routes.json` 或 `functions/`，不得为了路由、搜索或模板注入恢复请求时计算层。
 - 公开快照采用静态能力白名单：保留正文导航、搜索、语言选择、页内目录和打印；登录、编辑、讨论、历史、特殊页面、变体切换、永久修订链接、Vector 外观偏好、可折叠内容与表格排序等依赖后端或 ResourceLoader 的能力必须移除或展开为只读内容，禁止留下 `href="#"`、空菜单或伪可用控件。
 - `runtime/pages/` 是忽略的确定性发布产物；必须由 `make pages-build` 重建，禁止手工维护。门户和 Wiki 产物必须包含 Pages 原生 `404.html`，防止未知路径退化为首页软 404。发布与回滚遵循 `PAGES-PUBLISHING-CONTRACT.md`。

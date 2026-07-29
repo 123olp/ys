@@ -6,7 +6,7 @@ Human Infra 使用一个品牌主入口与三个持续可用的 `pages.dev` 入�
 
 | 产品 | 账户 / Pages 项目 | 主入口 | 持续可用入口 | 发布对象 |
 | --- | --- | --- | --- | --- |
-| 品牌主入口 | 第二 Cloudflare 账户 / `human-infra-main` | <https://tradecatlabs.com/> | `human-infra-main.pages.dev` | Wikimedia 官方门户快照、Wiki 与科技树路由 |
+| 品牌主入口 | 第二 Cloudflare 账户 / `human-infra-main` | <https://tradecatlabs.com/> | `human-infra-main.pages.dev` | MediaWiki 原生首页静态快照、Wiki 与科技树路由 |
 | 语言门户回退 | 原 Cloudflare 账户 / `human-infra` | 同上 | <https://human-infra.pages.dev/> | 同一门户的开发与故障回退入口 |
 | Wiki | 原 Cloudflare 账户 / `human-infra-wiki` | <https://human-infra-wiki.pages.dev/> | 同左 | 本地 MediaWiki 生成的只读快照 |
 | 科技树 | 原 Cloudflare 账户 / `human-infra-tech-tree` | <https://human-infra-tech-tree.pages.dev/> | 同左 | Historical Tech Tree 派生的 Human Infra 科技树 |
@@ -44,7 +44,7 @@ make main-domain-smoke
 
 `pages-build` 从本地 MediaWiki API 枚举全部非讨论命名空间，以 8 路有界并发导出页面正文，并分别复用 MediaWiki 首页外壳与普通文章外壳。每篇普通文章必须从同一修订的 MediaWiki 渲染页携带其原生 Vector 目录和完整 `body` 页面类，禁止复用模板文章目录或命名空间状态。外壳中的粘性标题、内部页面链接和修订上下文必须在构建期绑定当前词条，内部链接必须改写为 `/wiki/<title>/` 静态路径。CSS 引用资源以及 HTML `src` / `srcset` 引用的同源资源必须一并本地化。标题搜索在浏览器端读取静态索引；旧 `/index.php` 路由只允许使用 Pages 原生 `_redirects` 和静态兼容页。`pages-deploy` 只创建或更新 `human-infra` 与 `human-infra-wiki` 两个 Pages 项目，不修改科技树项目。`pages-smoke` 必须验证三个固定入口、Wiki 首页 DOM、普通词条目录一致性、标题搜索、真实 404、页脚资源和科技树产品标识。
 
-`main-domain-build` 只生成 `runtime/pages/main-domain/`，其 canonical 为 `tradecatlabs.com`，搜索和语言入口指向正式 Wiki，科技树入口指向正式科技树。该产物独立部署到第二账户的 `human-infra-main`，不得触发 Wiki 导出、科技树构建或旧账户发布。主域名上线后，`main-domain-smoke` 必须同时验证主域名与三个旧 `pages.dev` 入口，证明它们并存。
+`main-domain-build` 只从已通过 Wiki 发布门禁的 `runtime/pages/wiki/index.html`、`404.html`、`assets/`、`images/` 与 `resources/` 生成 `runtime/pages/main-domain/`。它不得消费 Wikimedia 语言门户 HTML，不得编写新页面框架，只允许把 canonical 改为 `tradecatlabs.com`，把 Wiki 内链与搜索路由到正式 Wiki，并把 MediaWiki 首页中的“历史技术谱系”入口路由到正式科技树。该产物独立部署到第二账户的 `human-infra-main`，不得触发科技树构建或旧账户发布。主域名上线后，`main-domain-smoke` 必须同时验证主域名与三个旧 `pages.dev` 入口，证明它们并存。
 
 ## 发布门禁
 
@@ -63,7 +63,7 @@ make main-domain-smoke
 13. Wrangler Pages 本地验证必须报告 `No Functions`，远端 smoke 全部通过后才能把发布视为完成。
 14. Vector 外观偏好只能由完整 MediaWiki ResourceLoader 的 `skins.vector.js` 与 `skins.vector.clientPreferences` 提供。静态快照必须移除外观入口和控件，声明原生 `appearance-pinned-clientpref-0` 无脚本状态；禁止冻结浏览器增强 DOM、复制上游模块片段、加载自写适配器或模拟 pinnable 状态机。
 15. `audit-static-runtime-contract.py` 必须全量扫描静态 HTML，拒绝无目标链接、缺少目标文件的内部 Wiki 路由、非搜索表单 action、运行时操作 ID、ResourceLoader 资源以及失效的折叠和排序标记；构建期审计与线上抽样 smoke 均通过后才能发布。
-16. 主域名门户必须通过 `check-main-domain-release.py`，且不得包含 `_worker.js`、`_routes.json` 或 `functions/`；其 Wiki 与科技树入口必须直接指向现有静态产品，不得经过 Worker。
+16. 主域名必须通过 `check-main-domain-release.py`：`generator` 必须来自 MediaWiki，Vector 关键 DOM 必须存在，标签/ID/class、TemplateStyles、脚本和样式表引用必须与 Wiki 首页完全一致，`assets/`、`images/`、`resources/` 必须逐文件哈希一致；任何自写 UI、CSS、适配器、`_worker.js`、`_routes.json` 或 `functions/` 都必须阻塞发布。
 17. `tradecatlabs.com` 上线不得删除、重定向或禁用 `human-infra.pages.dev`、`human-infra-wiki.pages.dev` 与 `human-infra-tech-tree.pages.dev`。
 
 ## 回滚

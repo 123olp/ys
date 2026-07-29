@@ -35,7 +35,7 @@ Wiki 还必须为每个词条生成：
 
 ## 静态发布与成本边界
 
-主域名门户、Wiki 和科技树的公开版本均应由 Cloudflare Pages 静态资产层直接响应。主域名只链接现有产品，不使用跨账户 Worker 代理。Wiki 必须在构建期完成页面外壳注入、内部链接改写、canonical、结构化数据、sitemap 和机器索引生成；标题搜索只能在浏览器端读取仅含标题、别名和 URL 的静态索引。逐页正文 JSON 与模板外壳不得在预渲染后继续发布。任何 `_worker.js`、`_routes.json`、`functions/` 或等价请求时计算入口都属于发布阻塞项，因为它会把静态访问和爬虫抓取错误计入 Workers 请求与 CPU 配额。
+主域名、Wiki 和科技树的公开版本均应由 Cloudflare Pages 静态资产层直接响应。主域名必须复用 MediaWiki 导出的首页、Vector DOM 与原生静态资源，只允许改写 canonical、机器元数据和产品路由，不使用自写前端或跨账户 Worker 代理。Wiki 必须在构建期完成页面外壳注入、内部链接改写、canonical、结构化数据、sitemap 和机器索引生成；标题搜索只能在浏览器端读取仅含标题、别名和 URL 的静态索引。逐页正文 JSON 与模板外壳不得在预渲染后继续发布。任何 `_worker.js`、`_routes.json`、`functions/` 或等价请求时计算入口都属于发布阻塞项，因为它会把静态访问和爬虫抓取错误计入 Workers 请求与 CPU 配额。
 
 ## 问题覆盖
 
