@@ -8,12 +8,12 @@ Human Infra 的生成式引擎优化以“可发现、可解析、可引用、�
 
 | 实体 | 唯一公开入口 | 机器职责 |
 | --- | --- | --- |
-| Human Infra | <https://human-infra.pages.dev/> | 项目规范名称、别名、发布者与产品关系的根实体 |
+| Human Infra | <https://tradecatlabs.com/> | 项目规范名称、别名、发布者与产品关系的根实体 |
 | Human Infra Wiki | <https://human-infra-wiki.pages.dev/> | 可引用定义、研究边界、证据来源和交叉链接 |
 | Human Infra Tech Tree | <https://human-infra-tech-tree.pages.dev/> | 历史技术、当前能力、未来条件与目标依赖关系 |
 | 源码仓库 | <https://github.com/tradecatlabs/human_infra> | 研究域、证据登记、治理契约与可复现工具 |
 
-`wiki/config/geo-publication.json` 是前三个公开实体的名称、描述、URL、发布者和关系真相源。门户与 Wiki 构建过程消费该配置；科技树是独立源码仓库，必须通过构建门禁保持同一实体名称和 URL。
+`wiki/config/geo-publication.json` 是前三个公开实体的名称、描述、URL、发布者和关系真相源。`human-infra.pages.dev` 是主入口的持续可用回退地址，不是第二个 canonical。门户与 Wiki 构建过程消费该配置；科技树是独立源码仓库，必须通过构建门禁保持同一实体名称和 URL。
 
 ## 发布契约
 
@@ -35,7 +35,7 @@ Wiki 还必须为每个词条生成：
 
 ## 静态发布与成本边界
 
-门户、Wiki 和科技树的公开版本均应由 Cloudflare Pages 静态资产层直接响应。Wiki 必须在构建期完成页面外壳注入、内部链接改写、canonical、结构化数据、sitemap 和机器索引生成；标题搜索只能在浏览器端读取仅含标题、别名和 URL 的静态索引。逐页正文 JSON 与模板外壳不得在预渲染后继续发布。任何 `_worker.js`、`_routes.json`、`functions/` 或等价请求时计算入口都属于发布阻塞项，因为它会把静态访问和爬虫抓取错误计入 Workers 请求与 CPU 配额。
+主域名门户、Wiki 和科技树的公开版本均应由 Cloudflare Pages 静态资产层直接响应。主域名只链接现有产品，不使用跨账户 Worker 代理。Wiki 必须在构建期完成页面外壳注入、内部链接改写、canonical、结构化数据、sitemap 和机器索引生成；标题搜索只能在浏览器端读取仅含标题、别名和 URL 的静态索引。逐页正文 JSON 与模板外壳不得在预渲染后继续发布。任何 `_worker.js`、`_routes.json`、`functions/` 或等价请求时计算入口都属于发布阻塞项，因为它会把静态访问和爬虫抓取错误计入 Workers 请求与 CPU 配额。
 
 ## 问题覆盖
 
@@ -63,9 +63,11 @@ python3 scripts/audit-geo-publication.py \
   --portal-dir runtime/pages/portal \
   --wiki-dir runtime/pages/wiki
 make pages-smoke
+make main-domain-build
+make main-domain-smoke
 ```
 
-科技树独立执行 `npm run build:local`，并验证 canonical、JSON-LD、`robots.txt`、`sitemap.xml`、`llms.txt` 和 `entity.jsonld` 全部指向 `human-infra-tech-tree.pages.dev`。
+科技树独立执行 `npm run build:local`，并验证 canonical、JSON-LD、`robots.txt`、`sitemap.xml`、`llms.txt` 和 `entity.jsonld` 全部指向 `human-infra-tech-tree.pages.dev`。主域名门户必须把 Human Infra 根实体 canonical 设为 `tradecatlabs.com`，同时保留三个 `pages.dev` 产品入口的可达性。
 
 ## 来源方法
 

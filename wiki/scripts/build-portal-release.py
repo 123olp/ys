@@ -34,18 +34,38 @@ def upsert_meta(
     node["content"] = content
 
 
-def build_portal(output_dir: Path) -> None:
+def normalize_public_url(value: str) -> str:
+    return value.rstrip("/") + "/"
+
+
+def build_portal(
+    output_dir: Path,
+    *,
+    portal_url: str | None = None,
+    wiki_url: str | None = None,
+    technology_tree_url: str | None = None,
+) -> None:
     config = json.loads(CONFIG_PATH.read_text(encoding="utf-8"))
     project = config["project"]
     portal = config["products"]["portal"]
     wiki = config["products"]["wiki"]
     tree = config["products"]["technologyTree"]
     publisher = config["publisher"]
+    if portal_url:
+        portal["url"] = normalize_public_url(portal_url)
+    if wiki_url:
+        wiki["url"] = normalize_public_url(wiki_url)
+    if technology_tree_url:
+        tree["url"] = normalize_public_url(technology_tree_url)
 
     if output_dir.exists():
         shutil.rmtree(output_dir)
     output_dir.mkdir(parents=True)
     shutil.copytree(ROOT / "portal" / "assets", output_dir / "assets")
+    shutil.copytree(
+        ROOT / "portal" / "portal",
+        output_dir / "portal",
+    )
     for filename in (
         "adapter.js",
         "languages.json",
@@ -67,6 +87,12 @@ def build_portal(output_dir: Path) -> None:
     search_form["action"] = f"{wiki['url']}search/"
     search_form["method"] = "get"
     search_input["name"] = "q"
+    tree_link = soup.select_one(
+        "a.other-project-link[href*='human-infra-tech-tree']"
+    )
+    if tree_link is None:
+        raise RuntimeError("门户缺少科技树入口契约")
+    tree_link["href"] = tree["url"]
     upsert_meta(soup, name="description", content=portal["description"])
     upsert_meta(soup, name="robots", content="index,follow,max-image-preview:large")
     upsert_meta(soup, prop="og:title", content=portal["name"])
@@ -161,8 +187,16 @@ def build_portal(output_dir: Path) -> None:
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--output", type=Path, required=True)
+    parser.add_argument("--portal-url")
+    parser.add_argument("--wiki-url")
+    parser.add_argument("--technology-tree-url")
     args = parser.parse_args()
-    build_portal(args.output.resolve())
+    build_portal(
+        args.output.resolve(),
+        portal_url=args.portal_url,
+        wiki_url=args.wiki_url,
+        technology_tree_url=args.technology_tree_url,
+    )
 
 
 if __name__ == "__main__":

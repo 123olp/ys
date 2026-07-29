@@ -1,6 +1,6 @@
 SHELL := /bin/bash
 
-.PHONY: bootstrap up stop logs import backup smoke language-selector-check portal-search-check mediawiki-native-ui-check validate homepage-refresh homepage-build homepage-check homepage-reference homepage-compare homepage-audit-reference homepage-audit pages-build pages-deploy pages-smoke
+.PHONY: bootstrap up stop logs import backup smoke language-selector-check portal-search-check mediawiki-native-ui-check validate homepage-refresh homepage-build homepage-check homepage-reference homepage-compare homepage-audit-reference homepage-audit pages-build pages-deploy pages-smoke main-domain-build main-domain-smoke
 
 bootstrap:
 	./scripts/bootstrap.sh
@@ -65,3 +65,9 @@ pages-deploy:
 
 pages-smoke:
 	./scripts/smoke-pages-release.sh
+
+main-domain-build:
+	./scripts/build-main-domain-release.sh
+
+main-domain-smoke:
+	./scripts/smoke-main-domain-release.sh

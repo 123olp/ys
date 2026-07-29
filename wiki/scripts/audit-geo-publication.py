@@ -11,6 +11,7 @@ from pathlib import Path
 from bs4 import BeautifulSoup
 
 
+CONFIG_PATH = Path(__file__).resolve().parents[1] / "config" / "geo-publication.json"
 REQUIRED_META = (
     ("name", "description"),
     ("name", "robots"),
@@ -45,6 +46,9 @@ def audit_html(path: Path, *, placeholders: bool = False) -> None:
 
 
 def audit_portal(directory: Path) -> None:
+    config = json.loads(CONFIG_PATH.read_text(encoding="utf-8"))
+    portal_url = config["products"]["portal"]["url"]
+    wiki_url = config["products"]["wiki"]["url"]
     audit_html(directory / "index.html")
     for filename in (
         "robots.txt",
@@ -64,7 +68,7 @@ def audit_portal(directory: Path) -> None:
     require(search_input is not None, "门户缺少搜索输入框")
     require(
         search_form.get("action")
-        == "https://human-infra-wiki.pages.dev/search/",
+        == f"{wiki_url}search/",
         "门户搜索回退 action 未指向本地 Wiki",
     )
     require(search_form.get("method") == "get", "门户搜索必须使用 GET")
@@ -72,7 +76,7 @@ def audit_portal(directory: Path) -> None:
     ET.parse(directory / "sitemap.xml")
     json.loads((directory / "entity.jsonld").read_text(encoding="utf-8"))
     require(
-        "Sitemap: https://human-infra.pages.dev/sitemap.xml"
+        f"Sitemap: {portal_url}sitemap.xml"
         in (directory / "robots.txt").read_text(encoding="utf-8"),
         "门户 robots.txt 缺少正式 sitemap",
     )

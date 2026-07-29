@@ -2,15 +2,16 @@
 
 ## 目标
 
-Human Infra 的公开 Web 面只使用 Cloudflare `pages.dev` 域名。
+Human Infra 使用一个品牌主入口与三个持续可用的 `pages.dev` 入口。主域名只负责静态导航，不代理、复制或接管 Wiki 与科技树请求。
 
-| 产品 | Pages 项目 | 固定入口 | 发布对象 |
-| --- | --- | --- | --- |
-| 语言门户 | `human-infra` | <https://human-infra.pages.dev/> | Wikimedia 官方门户快照与最小路由适配 |
-| Wiki | `human-infra-wiki` | <https://human-infra-wiki.pages.dev/> | 本地 MediaWiki 生成的只读快照 |
-| 科技树 | `human-infra-tech-tree` | <https://human-infra-tech-tree.pages.dev/> | Historical Tech Tree 派生的 Human Infra 科技树 |
+| 产品 | 账户 / Pages 项目 | 主入口 | 持续可用入口 | 发布对象 |
+| --- | --- | --- | --- | --- |
+| 品牌主入口 | 第二 Cloudflare 账户 / `human-infra-main` | <https://tradecatlabs.com/> | `human-infra-main.pages.dev` | Wikimedia 官方门户快照、Wiki 与科技树路由 |
+| 语言门户回退 | 原 Cloudflare 账户 / `human-infra` | 同上 | <https://human-infra.pages.dev/> | 同一门户的开发与故障回退入口 |
+| Wiki | 原 Cloudflare 账户 / `human-infra-wiki` | <https://human-infra-wiki.pages.dev/> | 同左 | 本地 MediaWiki 生成的只读快照 |
+| 科技树 | 原 Cloudflare 账户 / `human-infra-tech-tree` | <https://human-infra-tech-tree.pages.dev/> | 同左 | Historical Tech Tree 派生的 Human Infra 科技树 |
 
-禁止为这三个产品绑定 `tradecat.org` 或其他自定义域名，禁止恢复 Cloudflare Tunnel 作为公开发布路径，禁止把已退役的 Research Narrative 部署到任一 Pages 项目。
+`tradecatlabs.com` 的 Zone 与 `human-infra-main` 必须位于同一 Cloudflare 账户。禁止绑定 `tradecat.org`，禁止把 Wiki 或科技树流量经 Worker/Functions 反向代理到另一个账户，禁止恢复 Cloudflare Tunnel 作为公开发布路径，禁止把已退役的 Research Narrative 部署到任一 Pages 项目。
 
 ## 真相源
 
@@ -18,6 +19,7 @@ Human Infra 的公开 Web 面只使用 Cloudflare `pages.dev` 域名。
 - `wiki/content/` 是可重复导入的受治理种子，不等于完整数据库。
 - `wiki/portal/` 是语言门户源码，视觉和 DOM 归 Wikimedia 官方门户发布物。
 - `wiki/runtime/pages/` 是忽略的构建产物，不能手工修改或提交。
+- `wiki/config/geo-publication.json` 中的门户 URL 是主域名 canonical；`fallbackUrl` 记录持续存在的 `pages.dev` 回退入口。回退入口不得反向覆盖 canonical。
 - 逐页正文 JSON 和模板外壳只属于构建期中间状态，不得进入公开发布物；公开搜索索引只保留标题、别名和静态 URL。
 - 科技树由其正式源码仓库独立构建和部署，Wiki 不复制科技树运行时。
 
@@ -36,9 +38,13 @@ make smoke
 make pages-build
 make pages-deploy
 make pages-smoke
+make main-domain-build
+make main-domain-smoke
 ```
 
 `pages-build` 从本地 MediaWiki API 枚举全部非讨论命名空间，以 8 路有界并发导出页面正文，并分别复用 MediaWiki 首页外壳与普通文章外壳。每篇普通文章必须从同一修订的 MediaWiki 渲染页携带其原生 Vector 目录和完整 `body` 页面类，禁止复用模板文章目录或命名空间状态。外壳中的粘性标题、内部页面链接和修订上下文必须在构建期绑定当前词条，内部链接必须改写为 `/wiki/<title>/` 静态路径。CSS 引用资源以及 HTML `src` / `srcset` 引用的同源资源必须一并本地化。标题搜索在浏览器端读取静态索引；旧 `/index.php` 路由只允许使用 Pages 原生 `_redirects` 和静态兼容页。`pages-deploy` 只创建或更新 `human-infra` 与 `human-infra-wiki` 两个 Pages 项目，不修改科技树项目。`pages-smoke` 必须验证三个固定入口、Wiki 首页 DOM、普通词条目录一致性、标题搜索、真实 404、页脚资源和科技树产品标识。
+
+`main-domain-build` 只生成 `runtime/pages/main-domain/`，其 canonical 为 `tradecatlabs.com`，搜索和语言入口指向正式 Wiki，科技树入口指向正式科技树。该产物独立部署到第二账户的 `human-infra-main`，不得触发 Wiki 导出、科技树构建或旧账户发布。主域名上线后，`main-domain-smoke` 必须同时验证主域名与三个旧 `pages.dev` 入口，证明它们并存。
 
 ## 发布门禁
 
@@ -57,7 +63,9 @@ make pages-smoke
 13. Wrangler Pages 本地验证必须报告 `No Functions`，远端 smoke 全部通过后才能把发布视为完成。
 14. Vector 外观偏好只能由完整 MediaWiki ResourceLoader 的 `skins.vector.js` 与 `skins.vector.clientPreferences` 提供。静态快照必须移除外观入口和控件，声明原生 `appearance-pinned-clientpref-0` 无脚本状态；禁止冻结浏览器增强 DOM、复制上游模块片段、加载自写适配器或模拟 pinnable 状态机。
 15. `audit-static-runtime-contract.py` 必须全量扫描静态 HTML，拒绝无目标链接、缺少目标文件的内部 Wiki 路由、非搜索表单 action、运行时操作 ID、ResourceLoader 资源以及失效的折叠和排序标记；构建期审计与线上抽样 smoke 均通过后才能发布。
+16. 主域名门户必须通过 `check-main-domain-release.py`，且不得包含 `_worker.js`、`_routes.json` 或 `functions/`；其 Wiki 与科技树入口必须直接指向现有静态产品，不得经过 Worker。
+17. `tradecatlabs.com` 上线不得删除、重定向或禁用 `human-infra.pages.dev`、`human-infra-wiki.pages.dev` 与 `human-infra-tech-tree.pages.dev`。
 
 ## 回滚
 
-Cloudflare Pages 保留历史 deployment。需要回滚时使用 Pages 控制台或 Wrangler 将上一个已验证 deployment 提升为 production；本地 MediaWiki 数据不随静态发布回滚。若构建失败，继续保留上一版公开快照，不得重新开放 Tunnel 绕过门禁。
+Cloudflare Pages 保留历史 deployment。需要回滚主域名时，先从 `human-infra-main` 移除 `tradecatlabs.com` 的自定义域名绑定，再保留三个原有 `pages.dev` 入口作为服务面；需要回滚内容时使用 Pages 控制台或 Wrangler 将上一个已验证 deployment 提升为 production。本地 MediaWiki 数据不随静态发布回滚。若构建失败，继续保留上一版公开快照，不得重新开放 Tunnel 或 Worker 代理绕过门禁。

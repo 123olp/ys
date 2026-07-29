@@ -37,10 +37,14 @@ required=(
     portal/assets/human-infra-mark.svg
     portal/assets/human-infra-wordmark.svg
     portal/assets/human-infra-tech-tree.png
+    portal/portal/wikipedia.org/assets/l10n/zh-hans-f8b41854.json
+    portal/portal/wikipedia.org/assets/l10n/zh-hant-f8b41854.json
     scripts/refresh-wikipedia-portal.py
     scripts/refresh-wikipedia-homepage.py
     scripts/build-wikipedia-homepage.py
     scripts/build-portal-release.py
+    scripts/build-main-domain-release.sh
+    scripts/check-main-domain-release.py
     scripts/audit-geo-publication.py
     scripts/audit-static-runtime-contract.py
     scripts/export-pages-snapshot.py
@@ -52,6 +56,7 @@ required=(
     scripts/build-pages-release.sh
     scripts/deploy-pages-release.sh
     scripts/smoke-pages-release.sh
+    scripts/smoke-main-domain-release.sh
     scripts/run-backstop.sh
     visual-regression/backstop.contract.json
     visual-regression/backstop.wikipedia.json
@@ -78,6 +83,7 @@ python3 -m py_compile \
     scripts/audit-geo-publication.py \
     scripts/audit-static-runtime-contract.py \
     scripts/build-portal-release.py \
+    scripts/check-main-domain-release.py \
     scripts/check-mediawiki-native-ui.py \
     scripts/refresh-wikipedia-portal.py \
     scripts/export-pages-snapshot.py

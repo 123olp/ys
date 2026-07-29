@@ -14,6 +14,11 @@ The upstream script owns the language-list interaction. `adapter.js` is limited
 to local Wiki routing and local search submission. It must not add or override
 visual CSS.
 
+The snapshot also preserves the upstream Simplified and Traditional Chinese
+localization payloads under `portal/wikipedia.org/assets/l10n/`. Their
+filenames are bound to the `translationsHash` embedded in `index.html`; a
+portal refresh must update the HTML and localization payloads atomically.
+
 Refresh with:
 
 ```bash
