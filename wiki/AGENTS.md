@@ -12,7 +12,7 @@ wiki/
 ├── ROUTING-CONTRACT.md       # 科技树节点到内外 Wiki 的跳转契约
 ├── LANGUAGE-EDITION-CONTRACT.md # 语言门户与独立语言版本准入契约
 ├── HOMEPAGE-PORTAL-CONTRACT.md  # 项目首页与专题门户职责契约
-├── PAGES-PUBLISHING-CONTRACT.md # 主域名与 pages.dev 双入口发布边界
+├── PAGES-PUBLISHING-CONTRACT.md # 产品子域名与 pages.dev 双入口发布边界
 ├── DEBUG-content-import-cache.md # CLI 导入与 Web 缓存一致性根因和回归边界
 ├── DEBUG-native-content-heading.md # 正文重复页面 H1 的根因和回归边界
 ├── DEBUG-portal-tech-tree-link.md # 语言门户缺少独立科技树入口的根因和回归边界
@@ -61,18 +61,14 @@ wiki/
 │   ├── check-mediawiki-native-runtime.sh # 调用固定 Playwright 镜像验证原生 ResourceLoader
 │   ├── check-mediawiki-native-runtime.js # Vector 控件、偏好、固定与断点行为断言
 │   ├── check-mediawiki-native-ui.py # 禁止静态发布物接管 MediaWiki UI 所有权
-│   ├── smoke-pages-release.sh # 验证三组 Pages 生产入口并正规化 URL
+│   ├── smoke-pages-release.sh # 验证产品子域名与 pages.dev 回退入口
 │   ├── smoke-test.sh         # HTTP、扩展、页面和数据库验证
 │   ├── validate-source.sh    # 跟踪配置与内容契约检查
 │   ├── export-pages-snapshot.py # 导出逐页目录与页面上下文的 MediaWiki 双外壳只读快照
 │   ├── audit-static-runtime-contract.py # 拒绝伪操作入口、失效动态类与重复 DOM ID
 │   ├── build-pages-release.sh # 预渲染门户与 Wiki 纯静态 Pages 产物
-│   ├── deploy-pages-release.sh # 发布两个 Pages 项目
-│   ├── smoke-pages-release.sh # 验证三个 pages.dev 公开入口
-│   ├── build-mediawiki-main-domain-release.py # 从 MediaWiki 首页生成主域名
-│   ├── build-main-domain-release.sh # 编排主域名纯静态发布物
-│   ├── check-main-domain-release.py # 校验 MediaWiki 来源、DOM、资源与路由
-│   └── smoke-main-domain-release.sh # 验证主域名和旧入口共存
+│   ├── deploy-pages-release.sh # 发布当前账户的 Wiki Pages 项目
+│   └── smoke-pages-release.sh # 验证公开产品入口
 ├── visual-regression/        # BackstopJS 配置与浏览器稳定化脚本
 │   ├── backstop.contract.json # 标准内容夹具下的模板零容差门禁
 │   ├── backstop.wikipedia.json # 官方实时页面对本地页面的原始审计
@@ -89,8 +85,8 @@ wiki/
 - `portal/` 是语言选择层，视觉、DOM 与通用控件行为归 Wikimedia 官方门户；本项目只维护品牌内容和本地路由适配，禁止新增平行视觉 CSS、存放研究结论或伪造尚未建立的语言版本。保留上游脚本时必须同时保留其依赖的官方 DOM 和按 `translationsHash` 命名的本地化 JSON，即使对应组件默认隐藏或资源只在特定浏览器语言下请求；不得裁掉节点后留下空指针脚本或运行时 404。`human-infra-mark.svg` 同时作为 Wiki 皮肤图标和 MediaWiki 本地文件仓库的受治理品牌种子；`human-infra-tech-tree.png` 是首页“研究图谱”槽位使用的项目科技树渲染证据，二者都必须通过 `importImages` 进入本地文件仓库。
 - 门户到 Wiki 的公开路由由 `WIKI_PUBLIC_URL` 注入；未设置时才回退到同主机加 `WIKI_PUBLIC_PORT` 的本地开发地址。不得在门户 HTML 中硬编码部署域名。
 - 门户搜索只允许提交到 Human Infra Wiki 的静态标题搜索；输入阶段不得调用 Wikipedia 或其他第三方联想接口。Pages 发布物必须为无脚本回退写入同一本地 action，并公开上游来源说明。
-- `https://tradecatlabs.com/` 是 Human Infra 品牌主入口，分别路由至 `human-infra-wiki.pages.dev` 和 `human-infra-tech-tree.pages.dev`；`human-infra.pages.dev` 继续作为门户回退与开发入口。主域名和三个 `pages.dev` 入口必须同步存在，禁止把旧入口重定向、关闭或用跨账户反向代理接管。全部入口均由 Cloudflare Pages 静态资产层发布；禁止恢复 Cloudflare Tunnel、Pages Functions、Worker 代理或退役的 Research Narrative。
-- 主域名首页必须直接消费 `runtime/pages/wiki/index.html` 及其 MediaWiki/Vector 静态资源，只允许改写 canonical、结构化元数据、搜索 action 与产品链接。输出的标签、ID、class、TemplateStyles、脚本来源、样式表引用和资源文件哈希必须与 MediaWiki 源发布物一致；禁止为主域名新增 HTML 组件、CSS、客户端框架、视觉适配器或模拟 MediaWiki 控件。
+- `https://tradecatlabs.com/` 是实验室主站，由独立 `tradecatlabs` 仓库和 Pages 项目维护。Human Infra 仓库不得生成、校验、部署或绑定该根域名，也不得引用 `human-infra-main` 作为发布目标。
+- `https://wiki.tradecatlabs.com/` 与 `https://tree.tradecatlabs.com/` 分别是 Wiki 和科技树 canonical；历史入口 `human-infra-wiki.pages.dev`、`human-infra-tech-tree.pages.dev` 与当前账户镜像 `human-infra-wiki-public.pages.dev`、`human-infra-tech-tree-public.pages.dev` 必须继续独立可用。`human-infra.pages.dev` 是多语言门户。禁止通过 Worker、Functions、Tunnel 或反向代理拼接这些产品。
 - 本地 MediaWiki 是可编辑真相源；公开 Wiki 是构建期预渲染的只读纯静态快照。导出器按页面类型选择首页/文章外壳，在构建期注入正文、原生 Vector 目录、页面类、标题、链接和修订上下文；标题搜索只读取静态索引。生产发布物禁止包含 `_worker.js`、`_routes.json` 或 `functions/`，不得为了路由、搜索或模板注入恢复请求时计算层。
 - 公开快照采用静态能力白名单：保留正文导航、搜索、语言选择、页内目录和打印；登录、编辑、讨论、历史、特殊页面、变体切换、永久修订链接、Vector 外观偏好、可折叠内容与表格排序等依赖后端或 ResourceLoader 的能力必须移除或展开为只读内容，禁止留下 `href="#"`、空菜单或伪可用控件。
 - `runtime/pages/` 是忽略的确定性发布产物；必须由 `make pages-build` 重建，禁止手工维护。门户和 Wiki 产物必须包含 Pages 原生 `404.html`，防止未知路径退化为首页软 404。发布与回滚遵循 `PAGES-PUBLISHING-CONTRACT.md`。
@@ -120,7 +116,7 @@ make smoke
 make language-selector-check
 make homepage-compare
 make pages-build
-make pages-deploy
+make pages-deploy # 仅发布 WIKI_PAGES_PROJECT，默认 human-infra-wiki-public
 make pages-smoke
 ```
 

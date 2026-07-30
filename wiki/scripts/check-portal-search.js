@@ -6,7 +6,7 @@ const { chromium } = require(
 const portalUrl = process.env.PORTAL_TEST_URL ||
     "https://human-infra.pages.dev/";
 const wikiUrl = process.env.WIKI_TEST_URL ||
-    "https://human-infra-wiki.pages.dev/";
+    "https://wiki.tradecatlabs.com/";
 const query = "长寿逃逸速度";
 
 async function main() {

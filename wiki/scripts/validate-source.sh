@@ -43,9 +43,6 @@ required=(
     scripts/refresh-wikipedia-homepage.py
     scripts/build-wikipedia-homepage.py
     scripts/build-portal-release.py
-    scripts/build-mediawiki-main-domain-release.py
-    scripts/build-main-domain-release.sh
-    scripts/check-main-domain-release.py
     scripts/audit-geo-publication.py
     scripts/audit-static-runtime-contract.py
     scripts/export-pages-snapshot.py
@@ -57,7 +54,6 @@ required=(
     scripts/build-pages-release.sh
     scripts/deploy-pages-release.sh
     scripts/smoke-pages-release.sh
-    scripts/smoke-main-domain-release.sh
     scripts/run-backstop.sh
     visual-regression/backstop.contract.json
     visual-regression/backstop.wikipedia.json
@@ -73,7 +69,7 @@ for file in "${required[@]}"; do
     }
 done
 
-grep -Fq 'href="https://human-infra-tech-tree.pages.dev/"' portal/index.html || {
+grep -Fq 'href="https://tree.tradecatlabs.com/"' portal/index.html || {
     printf '语言门户缺少使用 Wikimedia other-projects 结构的科技树入口。\n' >&2
     exit 1
 }
@@ -83,13 +79,62 @@ node --check scripts/check-mediawiki-native-runtime.js
 python3 -m py_compile \
     scripts/audit-geo-publication.py \
     scripts/audit-static-runtime-contract.py \
-    scripts/build-mediawiki-main-domain-release.py \
     scripts/build-portal-release.py \
-    scripts/check-main-domain-release.py \
     scripts/check-mediawiki-native-ui.py \
     scripts/refresh-wikipedia-portal.py \
     scripts/export-pages-snapshot.py
 python3 scripts/check-mediawiki-native-ui.py
+
+for forbidden in \
+    scripts/build-mediawiki-main-domain-release.py \
+    scripts/build-main-domain-release.sh \
+    scripts/check-main-domain-release.py \
+    scripts/smoke-main-domain-release.sh; do
+    if [[ -e "$forbidden" ]]; then
+        printf 'Human Infra 禁止重新引入实验室根域名发布脚本: %s\n' \
+            "$forbidden" >&2
+        exit 1
+    fi
+done
+if grep -REq \
+    --exclude='validate-source.sh' \
+    'main-domain-(build|smoke)|human-infra-main' \
+    Makefile scripts; then
+    printf 'Human Infra 禁止构建或部署实验室主站。\n' >&2
+    exit 1
+fi
+python3 - <<'PY'
+import json
+from pathlib import Path
+
+config = json.loads(
+    Path("config/geo-publication.json").read_text(encoding="utf-8")
+)
+products = config["products"]
+expected = {
+    "portal": (
+        "https://human-infra.pages.dev/",
+        None,
+    ),
+    "wiki": (
+        "https://wiki.tradecatlabs.com/",
+        "https://human-infra-wiki.pages.dev/",
+    ),
+    "technologyTree": (
+        "https://tree.tradecatlabs.com/",
+        "https://human-infra-tech-tree.pages.dev/",
+    ),
+}
+for name, (url, fallback) in expected.items():
+    product = products[name]
+    if product.get("url") != url:
+        raise SystemExit(f"{name}: canonical 错误: {product.get('url')}")
+    if fallback is None:
+        if "fallbackUrl" in product:
+            raise SystemExit(f"{name}: 不应声明重复 fallbackUrl")
+    elif product.get("fallbackUrl") != fallback:
+        raise SystemExit(f"{name}: fallbackUrl 错误")
+PY
 
 python3 - <<'PY'
 import json

@@ -23,12 +23,14 @@ Windows 11 可直接访问这些 `localhost` 地址。若端口冲突，在 `.en
 
 生产入口：
 
-- 品牌主入口：<https://tradecatlabs.com/>
+- 实验室主站：<https://tradecatlabs.com/>（由独立 `tradecatlabs` 主站仓库维护）
 - 多语言门户：<https://human-infra.pages.dev/>
-- 中文 Wiki：<https://human-infra-wiki.pages.dev/>
-- 科技树：<https://human-infra-tech-tree.pages.dev/>
+- 中文 Wiki：<https://wiki.tradecatlabs.com/>
+- 中文 Wiki 回退：<https://human-infra-wiki.pages.dev/>、<https://human-infra-wiki-public.pages.dev/>
+- 科技树：<https://tree.tradecatlabs.com/>
+- 科技树回退：<https://human-infra-tech-tree.pages.dev/>、<https://human-infra-tech-tree-public.pages.dev/>
 
-全部公开入口均使用 Cloudflare Pages 静态资产层，不通过 Tunnel、Worker 代理或 Functions 暴露本地容器。`tradecatlabs.com` 是品牌主入口，其页面直接来自本地 MediaWiki 首页的静态导出，只做 canonical 与产品路由改写，不存在独立设计的前端框架；三个 `pages.dev` 地址保持独立可用，作为开发、回退和产品直达入口。语言门户是 Wikimedia 官方门户快照；中文 Wiki 是本地 MediaWiki 在发布时预渲染的纯静态只读快照，保留原生 Vector 阅读结构、内部链接、分类和浏览器端标题搜索。发布产物禁止包含 Pages Worker 或 Functions，因此正常页面和静态资源请求不消耗 Workers 函数配额。登录、编辑、讨论、历史、变体切换、特殊页面、实时 API、VisualEditor、Page Forms 和 Vector 外观偏好只在本地 MediaWiki 可用；公开快照会移除这些操作入口，并由静态运行时契约审计器阻止无目标链接和失效动态控件进入发布物。完整边界和回滚方式见 [Pages 发布契约](PAGES-PUBLISHING-CONTRACT.md)。
+全部公开入口均使用 Cloudflare Pages 静态资产层，不通过 Tunnel、Worker 代理或 Functions 暴露本地容器。实验室主站独立维护，Human Infra 仓库不得构建或部署 `tradecatlabs.com` 和 `human-infra-main`。Wiki 与科技树分别以 `wiki.tradecatlabs.com` 和 `tree.tradecatlabs.com` 为 canonical；两个原有 `pages.dev` 地址保持独立可用，作为故障回退和产品直达入口。语言门户继续使用 `human-infra.pages.dev`。中文 Wiki 是本地 MediaWiki 在发布时预渲染的纯静态只读快照，保留原生 Vector 阅读结构、内部链接、分类和浏览器端标题搜索。发布产物禁止包含 Pages Worker 或 Functions，因此正常页面和静态资源请求不消耗 Workers 函数配额。登录、编辑、讨论、历史、变体切换、特殊页面、实时 API、VisualEditor、Page Forms 和 Vector 外观偏好只在本地 MediaWiki 可用；公开快照会移除这些操作入口，并由静态运行时契约审计器阻止无目标链接和失效动态控件进入发布物。完整边界和回滚方式见 [Pages 发布契约](PAGES-PUBLISHING-CONTRACT.md)。
 
 Vector 2022 的字号、页面宽度、颜色和侧栏固定行为必须由 MediaWiki ResourceLoader 原生模块 `skins.vector.js` 与 `skins.vector.clientPreferences` 运行。项目禁止冻结其运行后 DOM、复制上游模块片段或编写替代状态机。纯静态 Pages 不具备 `load.php`、`mw.loader`、`mw.user.clientPrefs` 和 MediaWiki API，因此采用 Vector 原生无脚本阅读降级并移除外观操作入口；需要完整原生效果时使用本地 MediaWiki。
 
@@ -84,10 +86,8 @@ make homepage-compare   # 对模板契约执行零容差像素门禁
 make homepage-audit-reference # 生成未经标准化的官方整页参考图
 make homepage-audit     # 诊断官方整页与本地内容页的全部可见差异
 make pages-build        # 生成门户与 Wiki Pages 发布产物
-make pages-deploy       # 发布 human-infra 与 human-infra-wiki
-make pages-smoke        # 验证三个 pages.dev 公开入口
-make main-domain-build  # 从 MediaWiki 首页生成 tradecatlabs.com 静态产物
-make main-domain-smoke  # 验证主域名与三个 pages.dev 入口并存
+make pages-deploy       # 仅发布 Wiki；WIKI_PAGES_PROJECT 默认 human-infra-wiki-public
+make pages-smoke        # 验证自定义子域名与 pages.dev 回退入口并存
 ```
 
 更新官方语言门户快照：

@@ -2,11 +2,19 @@
 set -euo pipefail
 
 portal_url="${PORTAL_PAGES_URL:-https://human-infra.pages.dev}"
-wiki_url="${WIKI_PAGES_URL:-https://human-infra-wiki.pages.dev}"
-tech_tree_url="${TECH_TREE_PAGES_URL:-https://human-infra-tech-tree.pages.dev}"
+wiki_url="${WIKI_PUBLIC_URL:-https://wiki.tradecatlabs.com}"
+wiki_fallback_url="${WIKI_PAGES_URL:-https://human-infra-wiki.pages.dev}"
+wiki_current_pages_url="${WIKI_CURRENT_PAGES_URL:-https://human-infra-wiki-public.pages.dev}"
+tech_tree_url="${TECH_TREE_PUBLIC_URL:-https://tree.tradecatlabs.com}"
+tech_tree_fallback_url="${TECH_TREE_PAGES_URL:-https://human-infra-tech-tree.pages.dev}"
+tech_tree_current_pages_url="${TECH_TREE_CURRENT_PAGES_URL:-https://human-infra-tech-tree-public.pages.dev}"
 portal_url="${portal_url%/}"
 wiki_url="${wiki_url%/}"
+wiki_fallback_url="${wiki_fallback_url%/}"
+wiki_current_pages_url="${wiki_current_pages_url%/}"
 tech_tree_url="${tech_tree_url%/}"
+tech_tree_fallback_url="${tech_tree_fallback_url%/}"
+tech_tree_current_pages_url="${tech_tree_current_pages_url%/}"
 temp_dir="$(mktemp -d)"
 trap 'rm -rf "$temp_dir"' EXIT
 
@@ -23,7 +31,7 @@ grep -Fq 'id="www-wikipedia-org"' <<<"$portal"
 grep -Fq 'Human Infra' <<<"$portal"
 grep -Fq 'class="banner banner-bottom' <<<"$portal"
 grep -Fq \
-    'href="https://human-infra-tech-tree.pages.dev/"' \
+    'href="https://tree.tradecatlabs.com/"' \
     <<<"$portal"
 portal_missing_status="$(
     curl -sS -o /dev/null -w '%{http_code}' \
@@ -36,7 +44,7 @@ portal_missing_status="$(
 }
 fetch_contains \
     "$portal_url/runtime-config.js" \
-    'https://human-infra-wiki.pages.dev'
+    'https://wiki.tradecatlabs.com'
 portal_robots="$(curl -fsSL "$portal_url/robots.txt")"
 grep -Fq "Sitemap: $portal_url/sitemap.xml" <<<"$portal_robots"
 fetch_contains "$portal_url/sitemap.xml" "<loc>$portal_url/</loc>"
@@ -198,5 +206,16 @@ tech_tree_chunk="$(
 [[ -n "$tech_tree_chunk" ]]
 fetch_contains "$tech_tree_url$tech_tree_chunk" 'HUMAN INFRA TECH TREE'
 
+fetch_contains "$wiki_fallback_url/" 'Human Infra Wiki'
+fetch_contains "$wiki_current_pages_url/" 'Human Infra Wiki'
+fetch_contains "$tech_tree_fallback_url/" '<title>Human Infra Tech Tree</title>'
+fetch_contains "$tech_tree_current_pages_url/" '<title>Human Infra Tech Tree</title>'
+
 printf 'Pages 公开入口验证通过:\n'
-printf '  %s\n  %s\n  %s\n' "$portal_url" "$wiki_url" "$tech_tree_url"
+printf '  portal:       %s\n' "$portal_url"
+printf '  wiki:         %s\n' "$wiki_url"
+printf '  wiki fallback:%s\n' "$wiki_fallback_url"
+printf '  wiki current: %s\n' "$wiki_current_pages_url"
+printf '  tree:         %s\n' "$tech_tree_url"
+printf '  tree fallback:%s\n' "$tech_tree_fallback_url"
+printf '  tree current: %s\n' "$tech_tree_current_pages_url"

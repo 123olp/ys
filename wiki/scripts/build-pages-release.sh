@@ -5,7 +5,7 @@ wiki_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 runtime_dir="$wiki_dir/runtime/pages"
 portal_dir="$runtime_dir/portal"
 wiki_output_dir="$runtime_dir/wiki"
-wiki_public_url="${WIKI_PAGES_URL:-https://human-infra-wiki.pages.dev}"
+wiki_public_url="${WIKI_PUBLIC_URL:-https://wiki.tradecatlabs.com}"
 wiki_local_url="${WIKI_LOCAL_URL:-http://127.0.0.1:18782}"
 
 python3 "$wiki_dir/scripts/build-portal-release.py" \

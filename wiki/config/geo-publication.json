@@ -16,18 +16,19 @@
   "products": {
     "portal": {
       "name": "Human Infra",
-      "url": "https://tradecatlabs.com/",
-      "fallbackUrl": "https://human-infra.pages.dev/",
+      "url": "https://human-infra.pages.dev/",
       "description": "Human Infra 多语言入口：连接主体持续性研究 Wiki、证据资料与目标导向科技树。"
     },
     "wiki": {
       "name": "Human Infra Wiki",
-      "url": "https://human-infra-wiki.pages.dev/",
+      "url": "https://wiki.tradecatlabs.com/",
+      "fallbackUrl": "https://human-infra-wiki.pages.dev/",
       "description": "Human Infra Wiki 是关于主体持续性、有效永生、长寿科学、人类增强和相关基础设施的证据治理知识库。"
     },
     "technologyTree": {
       "name": "Human Infra Tech Tree",
-      "url": "https://human-infra-tech-tree.pages.dev/",
+      "url": "https://tree.tradecatlabs.com/",
+      "fallbackUrl": "https://human-infra-tech-tree.pages.dev/",
       "description": "以有效永生和主体持续性为目标，连接历史技术、当前能力、未来条件与证据词条的交互式科技树。"
     }
   }

@@ -87,8 +87,15 @@ def build_portal(
     search_form["action"] = f"{wiki['url']}search/"
     search_form["method"] = "get"
     search_input["name"] = "q"
-    tree_link = soup.select_one(
-        "a.other-project-link[href*='human-infra-tech-tree']"
+    tree_title = soup.find(
+        "span",
+        class_="other-project-title",
+        string="科技树",
+    )
+    tree_link = (
+        tree_title.find_parent("a", class_="other-project-link")
+        if tree_title is not None
+        else None
     )
     if tree_link is None:
         raise RuntimeError("门户缺少科技树入口契约")

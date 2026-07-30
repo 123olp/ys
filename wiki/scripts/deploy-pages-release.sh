@@ -82,10 +82,6 @@ deploy_project() {
         --commit-message "$message"
 }
 
-[[ -s "$runtime_dir/portal/index.html" ]] || {
-    printf '缺少门户发布产物，请先运行 make pages-build。\n' >&2
-    exit 1
-}
 [[ -s "$runtime_dir/wiki/snapshot/index.json" ]] || {
     printf '缺少 Wiki 发布产物，请先运行 make pages-build。\n' >&2
     exit 1
@@ -94,14 +90,10 @@ deploy_project() {
 python3 "$wiki_dir/scripts/check-mediawiki-native-ui.py"
 "$wiki_dir/scripts/check-mediawiki-native-runtime.sh"
 
-ensure_project human-infra
-ensure_project human-infra-wiki
+wiki_project="${WIKI_PAGES_PROJECT:-human-infra-wiki-public}"
+ensure_project "$wiki_project"
 
 deploy_project \
-    "$runtime_dir/portal" \
-    human-infra \
-    "Deploy Human Infra language portal"
-deploy_project \
     "$runtime_dir/wiki" \
-    human-infra-wiki \
+    "$wiki_project" \
     "Deploy Human Infra Wiki read-only snapshot"

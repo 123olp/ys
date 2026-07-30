@@ -44,7 +44,7 @@ internal-wiki
 
 ```text
 internal-wiki
-  -> https://human-infra-wiki.pages.dev/wiki/%E9%83%A8%E5%88%86%E7%BB%86%E8%83%9E%E9%87%8D%E7%BC%96%E7%A8%8B/
+  -> https://wiki.tradecatlabs.com/wiki/%E9%83%A8%E5%88%86%E7%BB%86%E8%83%9E%E9%87%8D%E7%BC%96%E7%A8%8B/
 ```
 
-生产解析器必须同时替换基址和路由形式，但不得改变节点 ID、目标类型或页面标题。历史 `/index.php/<title>` 由 Pages 静态重定向兼容；不得用 Worker 维持旧路由。
+生产解析器必须同时替换基址和路由形式，但不得改变节点 ID、目标类型或页面标题。`human-infra-wiki.pages.dev` 保留相同静态路径作为回退入口；历史 `/index.php/<title>` 由 Pages 静态重定向兼容，不得用 Worker 维持旧路由。

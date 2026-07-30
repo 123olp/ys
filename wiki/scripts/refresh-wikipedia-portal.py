@@ -12,7 +12,7 @@ from urllib.parse import urljoin, urlparse
 ROOT = Path(__file__).resolve().parents[1]
 PORTAL_DIR = ROOT / "portal"
 UPSTREAM_URL = "https://www.wikipedia.org/"
-TECH_TREE_URL = "https://human-infra-tech-tree.pages.dev/"
+TECH_TREE_URL = "https://tree.tradecatlabs.com/"
 LANGUAGES = [
     ("zh", "中文", "界面语言"),
     ("en", "English", "Interface language"),
