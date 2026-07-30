@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-portal_url="${PORTAL_PAGES_URL:-https://human-infra.pages.dev}"
+portal_url="${PORTAL_PAGES_URL:-https://human-infra-portal-public.pages.dev}"
+portal_fallback_url="${PORTAL_FALLBACK_PAGES_URL:-https://human-infra.pages.dev}"
 wiki_url="${WIKI_PUBLIC_URL:-https://wiki.tradecatlabs.com}"
 wiki_fallback_url="${WIKI_PAGES_URL:-https://human-infra-wiki.pages.dev}"
 wiki_current_pages_url="${WIKI_CURRENT_PAGES_URL:-https://human-infra-wiki-public.pages.dev}"
@@ -9,6 +10,7 @@ tech_tree_url="${TECH_TREE_PUBLIC_URL:-https://tree.tradecatlabs.com}"
 tech_tree_fallback_url="${TECH_TREE_PAGES_URL:-https://human-infra-tech-tree.pages.dev}"
 tech_tree_current_pages_url="${TECH_TREE_CURRENT_PAGES_URL:-https://human-infra-tech-tree-public.pages.dev}"
 portal_url="${portal_url%/}"
+portal_fallback_url="${portal_fallback_url%/}"
 wiki_url="${wiki_url%/}"
 wiki_fallback_url="${wiki_fallback_url%/}"
 wiki_current_pages_url="${wiki_current_pages_url%/}"
@@ -49,9 +51,12 @@ portal_robots="$(curl -fsSL "$portal_url/robots.txt")"
 grep -Fq "Sitemap: $portal_url/sitemap.xml" <<<"$portal_robots"
 fetch_contains "$portal_url/sitemap.xml" "<loc>$portal_url/</loc>"
 fetch_contains "$portal_url/llms.txt" 'Human Infra Wiki'
-grep -Fq '<link href="https://human-infra.pages.dev/" rel="canonical"' <<<"$portal"
+grep -Fq \
+    '<link href="https://human-infra-portal-public.pages.dev/" rel="canonical"' \
+    <<<"$portal"
 grep -Fq 'property="og:title"' <<<"$portal"
 grep -Fq 'application/ld+json' <<<"$portal"
+fetch_contains "$portal_fallback_url/" 'Human Infra'
 
 wiki="$(curl -fsSL "$wiki_url/")"
 grep -Fq 'Human Infra Wiki' <<<"$wiki"
@@ -204,6 +209,7 @@ tech_tree_chunk="$(
         | cut -d'"' -f2
 )"
 [[ -n "$tech_tree_chunk" ]]
+tech_tree_chunk="/${tech_tree_chunk#/}"
 fetch_contains "$tech_tree_url$tech_tree_chunk" 'HUMAN INFRA TECH TREE'
 
 fetch_contains "$wiki_fallback_url/" 'Human Infra Wiki'
@@ -213,6 +219,7 @@ fetch_contains "$tech_tree_current_pages_url/" '<title>Human Infra Tech Tree</ti
 
 printf 'Pages 公开入口验证通过:\n'
 printf '  portal:       %s\n' "$portal_url"
+printf '  portal legacy:%s\n' "$portal_fallback_url"
 printf '  wiki:         %s\n' "$wiki_url"
 printf '  wiki fallback:%s\n' "$wiki_fallback_url"
 printf '  wiki current: %s\n' "$wiki_current_pages_url"

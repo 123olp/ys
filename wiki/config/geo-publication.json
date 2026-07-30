@@ -16,7 +16,8 @@
   "products": {
     "portal": {
       "name": "Human Infra",
-      "url": "https://human-infra.pages.dev/",
+      "url": "https://human-infra-portal-public.pages.dev/",
+      "fallbackUrl": "https://human-infra.pages.dev/",
       "description": "Human Infra 多语言入口：连接主体持续性研究 Wiki、证据资料与目标导向科技树。"
     },
     "wiki": {

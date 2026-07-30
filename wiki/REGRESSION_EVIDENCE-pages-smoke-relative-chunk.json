@@ -1,0 +1,13 @@
+{
+  "schema_version": "1.0",
+  "task_type": "bugfix",
+  "mode": "executed",
+  "red_result": "runtime/regression/pages-smoke-relative-chunk-red.json",
+  "green_result": "runtime/regression/pages-smoke-relative-chunk-green.json",
+  "counterfactual": {
+    "method": "unfixed-tree-replay",
+    "result": "runtime/regression/pages-smoke-relative-chunk-counterfactual.json"
+  },
+  "flaky_policy": null,
+  "red_exception": null
+}

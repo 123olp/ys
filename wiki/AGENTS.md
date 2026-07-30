@@ -86,7 +86,7 @@ wiki/
 - 门户到 Wiki 的公开路由由 `WIKI_PUBLIC_URL` 注入；未设置时才回退到同主机加 `WIKI_PUBLIC_PORT` 的本地开发地址。不得在门户 HTML 中硬编码部署域名。
 - 门户搜索只允许提交到 Human Infra Wiki 的静态标题搜索；输入阶段不得调用 Wikipedia 或其他第三方联想接口。Pages 发布物必须为无脚本回退写入同一本地 action，并公开上游来源说明。
 - `https://tradecatlabs.com/` 是实验室主站，由独立 `tradecatlabs` 仓库和 Pages 项目维护。Human Infra 仓库不得生成、校验、部署或绑定该根域名，也不得引用 `human-infra-main` 作为发布目标。
-- `https://wiki.tradecatlabs.com/` 与 `https://tree.tradecatlabs.com/` 分别是 Wiki 和科技树 canonical；历史入口 `human-infra-wiki.pages.dev`、`human-infra-tech-tree.pages.dev` 与当前账户镜像 `human-infra-wiki-public.pages.dev`、`human-infra-tech-tree-public.pages.dev` 必须继续独立可用。`human-infra.pages.dev` 是多语言门户。禁止通过 Worker、Functions、Tunnel 或反向代理拼接这些产品。
+- `https://wiki.tradecatlabs.com/` 与 `https://tree.tradecatlabs.com/` 分别是 Wiki 和科技树 canonical；历史入口 `human-infra-wiki.pages.dev`、`human-infra-tech-tree.pages.dev` 与当前账户镜像 `human-infra-wiki-public.pages.dev`、`human-infra-tech-tree-public.pages.dev` 必须继续独立可用。`human-infra-portal-public.pages.dev` 是多语言门户 canonical，历史 `human-infra.pages.dev` 只作为回退入口。禁止通过 Worker、Functions、Tunnel 或反向代理拼接这些产品。
 - 本地 MediaWiki 是可编辑真相源；公开 Wiki 是构建期预渲染的只读纯静态快照。导出器按页面类型选择首页/文章外壳，在构建期注入正文、原生 Vector 目录、页面类、标题、链接和修订上下文；标题搜索只读取静态索引。生产发布物禁止包含 `_worker.js`、`_routes.json` 或 `functions/`，不得为了路由、搜索或模板注入恢复请求时计算层。
 - 公开快照采用静态能力白名单：保留正文导航、搜索、语言选择、页内目录和打印；登录、编辑、讨论、历史、特殊页面、变体切换、永久修订链接、Vector 外观偏好、可折叠内容与表格排序等依赖后端或 ResourceLoader 的能力必须移除或展开为只读内容，禁止留下 `href="#"`、空菜单或伪可用控件。
 - `runtime/pages/` 是忽略的确定性发布产物；必须由 `make pages-build` 重建，禁止手工维护。门户和 Wiki 产物必须包含 Pages 原生 `404.html`，防止未知路径退化为首页软 404。发布与回滚遵循 `PAGES-PUBLISHING-CONTRACT.md`。

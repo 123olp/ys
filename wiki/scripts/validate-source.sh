@@ -113,8 +113,8 @@ config = json.loads(
 products = config["products"]
 expected = {
     "portal": (
+        "https://human-infra-portal-public.pages.dev/",
         "https://human-infra.pages.dev/",
-        None,
     ),
     "wiki": (
         "https://wiki.tradecatlabs.com/",

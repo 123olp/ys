@@ -7,7 +7,7 @@
 | 产品 | 所有者 / Pages 项目 | canonical | 持续可用入口 | 发布对象 |
 | --- | --- | --- | --- | --- |
 | 实验室主站 | `tradecatlabs` 仓库 / `human-infra-main` | <https://tradecatlabs.com/> | <https://human-infra-main.pages.dev/> | Academic Pages 实验室站点 |
-| Human Infra 门户 | 本仓库 / `human-infra` | <https://human-infra.pages.dev/> | 同左 | Wikimedia 语言门户适配发布物 |
+| Human Infra 门户 | 本仓库 / `human-infra-portal-public` | <https://human-infra-portal-public.pages.dev/> | <https://human-infra.pages.dev/> | Wikimedia 语言门户适配发布物 |
 | Human Infra Wiki | 本仓库 / `human-infra-wiki-public` | <https://wiki.tradecatlabs.com/> | `human-infra-wiki.pages.dev`、`human-infra-wiki-public.pages.dev` | MediaWiki 只读静态快照 |
 | Human Infra 科技树 | 科技树源码仓库 / `human-infra-tech-tree-public` | <https://tree.tradecatlabs.com/> | `human-infra-tech-tree.pages.dev`、`human-infra-tech-tree-public.pages.dev` | Historical Tech Tree 派生科技树 |
 
@@ -43,7 +43,7 @@ make pages-smoke
 
 `pages-build` 从本地 MediaWiki API 枚举全部非讨论命名空间，以有界并发导出页面正文，并分别复用 MediaWiki 首页外壳与普通文章外壳。普通文章必须携带其自身 Vector 目录和完整页面类，内部链接改写为 `/wiki/<title>/` 静态路径，同源资源必须本地化。标题搜索只读取静态索引；旧 `/index.php` 路由只允许使用 Pages 原生 `_redirects` 和静态兼容页。
 
-`pages-deploy` 只创建或更新 `WIKI_PAGES_PROJECT` 指定的 Wiki 项目，默认是第二账户的 `human-infra-wiki-public`；它不得部署门户、科技树或实验室主站。科技树由其源码仓库独立部署。自定义域名绑定属于 Cloudflare 发布控制面，不得通过修改页面内容模拟。
+`pages-deploy` 只创建或更新本仓库拥有的两个发布对象：`PORTAL_PAGES_PROJECT` 指定的门户项目（默认 `human-infra-portal-public`）与 `WIKI_PAGES_PROJECT` 指定的 Wiki 项目（默认 `human-infra-wiki-public`）。它不得部署科技树或实验室主站。科技树由其源码仓库独立部署。自定义域名绑定属于 Cloudflare 发布控制面，不得通过修改页面内容模拟。
 
 ## DNS 控制面前提
 

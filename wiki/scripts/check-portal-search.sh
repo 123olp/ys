@@ -15,7 +15,7 @@ docker run --rm \
     --network host \
     --volume "$wiki_dir/scripts/check-portal-search.js:/work/check-portal-search.js:ro" \
     "${proxy_env[@]}" \
-    --env PORTAL_TEST_URL="${PORTAL_TEST_URL:-https://human-infra.pages.dev/}" \
+    --env PORTAL_TEST_URL="${PORTAL_TEST_URL:-https://human-infra-portal-public.pages.dev/}" \
     --env WIKI_TEST_URL="${WIKI_TEST_URL:-https://wiki.tradecatlabs.com/}" \
     --entrypoint node \
     backstopjs/backstopjs:6.3.25 \
