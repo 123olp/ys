@@ -355,6 +355,7 @@ def render_preview(timelinejs: dict) -> str:
     scope_table = html.escape(scope_table)
     status_table = html.escape(status_table)
     reviewed_table = html.escape(build_reviewed_table(timelinejs["events"]))
+    event_table = html.escape(build_event_table(timelinejs["events"]))
     return (
         PREVIEW_TEMPLATE
         .replace("__EVENT_COUNT__", str(len(timelinejs["events"])))
@@ -368,6 +369,7 @@ def render_preview(timelinejs: dict) -> str:
         .replace("__SCOPE_TABLE__", scope_table)
         .replace("__STATUS_TABLE__", status_table)
         .replace("__REVIEWED_TABLE__", reviewed_table)
+        .replace("__EVENT_TABLE__", event_table)
     )
 
 
@@ -437,7 +439,7 @@ PREVIEW_TEMPLATE = r"""<!doctype html>
   </form>
   <noscript><p>筛选和图表需要 JavaScript。核心数据仍可直接读取 <a href="timeline.json">timeline.json</a>、<a href="sources.json">sources.json</a> 与 <a href="timeline-events.psql.txt">timeline-events.psql.txt</a>。</p></noscript>
 
-  <details>
+  <details open>
     <summary>资料聚合与整理</summary>
     <p>从神话、宗教与炼金术，到老年科学、健康寿命和生物技术产业的严肃历史年表。时间轴为增强视图，psql 表格和原始 JSON 是资料事实来源。</p>
 
@@ -467,7 +469,9 @@ PREVIEW_TEMPLATE = r"""<!doctype html>
 
     <h3>本地已复核事件</h3>
     <pre><code>__REVIEWED_TABLE__</code></pre>
-    <p><a href="timeline-events.psql.txt">下载/查看完整事件明细（__EVENT_COUNT__ 行）</a></p>
+
+    <h3>完整事件明细（__EVENT_COUNT__ 条）</h3>
+    <pre><code>__EVENT_TABLE__</code></pre>
   </details>
 
   <script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
