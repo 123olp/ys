@@ -33,7 +33,7 @@ raw_timeline（全部资料）
 
 每档都必须显示 `evidence_grade`、`verification_status`、`event_id` 和来源链接，避免把未复核资料误读为出版结论。
 
-预览页遵循 `Design.md` 的零美化语义界面：默认浏览器渲染、psql ASCII 文本表格作为资料事实来源、ECharts 只作为增强视图。`preview.js` 按需加载 `timelinejs.light.json`，提供按路径族散点、年代密度、时间窗口、事件阅读器与图表双向联动、事件 ID/序号跳转和随筛选更新的聚合表，事件完整正文在初始化时并行预载 `timelinejs.detail.json` 并直接显示；`preview-core.js` 承载核心纯函数，`echarts.min.js` 本地化运行，避免外部 CDN 依赖。路径族展示使用中文标签，但 `timeline.json` 仍保留英文机器值。
+预览页遵循 `Design.md` 的零美化语义界面：默认浏览器渲染、psql ASCII 文本表格作为资料事实来源、ECharts 只作为增强视图。`preview.js` 按需加载 `timelinejs.light.json`，提供按路径族散点、年代密度、时间窗口、事件阅读器与图表双向联动、事件 ID/序号跳转和随筛选更新的聚合表，事件完整正文在初始化时并行预载 `timelinejs.detail.json` 并直接显示；`preview-core.js` 承载核心纯函数，`echarts.common.min.js` 本地化运行，避免外部 CDN 依赖。路径族展示使用中文标签，但 `timeline.json` 仍保留英文机器值。
 
 页面布局把事件阅读器置于最上方，时间轴图表紧随其后，查询条件放在图表下方；路径族概览、事件类型聚合、范围与复核状态、资料说明、已复核事件列表和完整事件明细直接展示，并随筛选条件实时更新。
 

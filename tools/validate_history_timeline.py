@@ -41,7 +41,7 @@ REQUIRED_FILES = [
     "docs/reference/history-timeline/PUBLICATION.md",
     "docs/reference/history-timeline/preview.js",
     "docs/reference/history-timeline/preview-core.js",
-    "docs/reference/history-timeline/echarts.min.js",
+    "docs/reference/history-timeline/echarts.common.min.js",
     "docs/reference/history-timeline/timeline-events.psql.txt",
     "docs/reference/history-timeline/timelinejs.json",
     "docs/reference/history-timeline/timelinejs.light.json",
@@ -460,7 +460,7 @@ def main() -> None:
     actual_preview = (ROOT / "docs/reference/history-timeline/preview.html").read_text(encoding="utf-8")
     require(actual_preview == expected_preview, "stale_preview_html")
     require(
-        'src="echarts.min.js"' in actual_preview and "cdn.jsdelivr.net/npm/echarts" not in actual_preview,
+        'src="echarts.common.min.js"' in actual_preview and "cdn.jsdelivr.net/npm/echarts" not in actual_preview,
         "preview_must_use_local_echarts",
     )
     require(

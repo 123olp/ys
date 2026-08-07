@@ -3,7 +3,7 @@ kind: HistoryTimelineContract
 metadata:
   id: HT-GOV-001
   title: 永生史严肃历史年表治理契约
-  version: 1.0.2
+  version: 1.0.3
   owner: tradecatlabs
   created: 2026-08-06
   last_reviewed: 2026-08-07
@@ -27,7 +27,7 @@ spec:
     publication_architecture: docs/reference/history-timeline/PUBLICATION.md
     preview_script: docs/reference/history-timeline/preview.js
     preview_core: docs/reference/history-timeline/preview-core.js
-    echarts_runtime: docs/reference/history-timeline/echarts.min.js
+    echarts_runtime: docs/reference/history-timeline/echarts.common.min.js
     event_table: docs/reference/history-timeline/timeline-events.psql.txt
     timelinejs_data: docs/reference/history-timeline/timelinejs.json
     timelinejs_light_data: docs/reference/history-timeline/timelinejs.light.json
@@ -57,7 +57,7 @@ spec:
     - docs/reference/history-timeline/PUBLICATION.md
     - docs/reference/history-timeline/preview.js
     - docs/reference/history-timeline/preview-core.js
-    - docs/reference/history-timeline/echarts.min.js
+    - docs/reference/history-timeline/echarts.common.min.js
     - docs/reference/history-timeline/timeline-events.psql.txt
     - docs/reference/history-timeline/timeline.json
     - docs/reference/history-timeline/sources.json

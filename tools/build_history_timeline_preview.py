@@ -549,7 +549,7 @@ PREVIEW_TEMPLATE = r"""<!doctype html>
 
   __AGGREGATE_BLOCKS__
 
-  <script src="echarts.min.js"></script>
+  <script src="echarts.common.min.js"></script>
   <script src="preview-core.js"></script>
   <script src="preview.js"></script>
 </body>
