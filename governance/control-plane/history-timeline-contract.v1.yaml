@@ -71,6 +71,7 @@ spec:
   commands:
     validate: make history-timeline-gate
     core_test: make history-timeline-core-test
+    quality_audit: make history-timeline-quality-audit
     validator: python3 tools/validate_history_timeline.py
     preview: make history-timeline-preview
     browser_gate: make history-timeline-browser-gate

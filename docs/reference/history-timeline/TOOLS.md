@@ -79,6 +79,14 @@ make history-timeline-core-test
 
 该命令用 Node 直接测试 `renderPsqlTable`、`eventRow`、`matchesEvent` 和日期格式化等核心纯函数，避免大数据量交互逻辑回归。
 
+数据质量审计：
+
+```bash
+make history-timeline-quality-audit
+```
+
+该命令检查空标题、空摘要、空 Claim、缺失来源、来源引用失效等硬错误，并输出重复标题和未精确到日期的精确事件作为警告。
+
 浏览器行为门禁：
 
 ```bash
