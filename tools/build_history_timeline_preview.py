@@ -165,22 +165,60 @@ def build_timelinejs() -> dict:
 
 def build_path_summary_table(timelinejs: dict) -> str:
     path_stats: dict[str, list[int]] = defaultdict(lambda: [0, 0, 0])
+    totals = [0, 0, 0]
     for event in timelinejs["events"]:
         meta = event.get("meta", {})
         path = meta.get("path_family", "")
         path_stats[path][0] += 1
+        totals[0] += 1
         if meta.get("publication_status") == "selected":
             path_stats[path][1] += 1
+            totals[1] += 1
         if meta.get("verification_status") == "locally_reviewed":
             path_stats[path][2] += 1
+            totals[2] += 1
     rows = [
         [PATH_LABELS_ZH.get(path, path), counts[0], counts[1], counts[2]]
         for path, counts in path_stats.items()
     ]
     rows.sort(key=lambda row: -row[1])
+    rows.append(["合计", totals[0], totals[1], totals[2]])
     return tabulate(
         rows,
         headers=["路径族", "全部资料", "作品子集", "本地已复核"],
+        tablefmt="psql",
+        missingval="",
+    )
+
+
+def build_type_summary_table(timelinejs: dict) -> str:
+    type_stats: dict[str, list[int]] = defaultdict(lambda: [0, 0, 0])
+    totals = [0, 0, 0]
+    for event in timelinejs["events"]:
+        meta = event.get("meta", {})
+        event_type = meta.get("event_type", "")
+        type_stats[event_type][0] += 1
+        totals[0] += 1
+        if meta.get("publication_status") == "selected":
+            type_stats[event_type][1] += 1
+            totals[1] += 1
+        if meta.get("verification_status") == "locally_reviewed":
+            type_stats[event_type][2] += 1
+            totals[2] += 1
+    rows = [
+        [
+            EVENT_TYPE_LABELS_ZH.get(event_type, event_type),
+            counts[0],
+            counts[1],
+            counts[2],
+        ]
+        for event_type, counts in type_stats.items()
+    ]
+    rows.sort(key=lambda row: -row[1])
+    rows.append(["合计", totals[0], totals[1], totals[2]])
+    return tabulate(
+        rows,
+        headers=["事件类型", "全部资料", "作品子集", "本地已复核"],
         tablefmt="psql",
         missingval="",
     )
@@ -312,6 +350,7 @@ def render_preview(timelinejs: dict) -> str:
         "docs/reference/history-timeline/publication-manifest.v1.json"
     ).get("created_at", "2026-08-07T00:00:00Z")
     path_table = html.escape(build_path_summary_table(timelinejs))
+    type_table = html.escape(build_type_summary_table(timelinejs))
     scope_table, status_table = build_scope_status_tables(timelinejs)
     scope_table = html.escape(scope_table)
     status_table = html.escape(status_table)
@@ -325,6 +364,7 @@ def render_preview(timelinejs: dict) -> str:
         .replace("__REVIEWED_COUNT__", str(reviewed_count))
         .replace("__GENERATED_AT__", generated_at)
         .replace("__PATH_TABLE__", path_table)
+        .replace("__TYPE_TABLE__", type_table)
         .replace("__SCOPE_TABLE__", scope_table)
         .replace("__STATUS_TABLE__", status_table)
         .replace("__REVIEWED_TABLE__", reviewed_table)
@@ -398,19 +438,20 @@ PREVIEW_TEMPLATE = r"""<!doctype html>
   <noscript><p>筛选和图表需要 JavaScript。核心数据仍可直接读取 <a href="timeline.json">timeline.json</a>、<a href="sources.json">sources.json</a> 与 <a href="timeline-events.psql.txt">timeline-events.psql.txt</a>。</p></noscript>
 
   <details>
-    <summary>路径族概览</summary>
-    <pre><code>__PATH_TABLE__</code></pre>
-  </details>
+    <summary>资料聚合与整理</summary>
+    <p>从神话、宗教与炼金术，到老年科学、健康寿命和生物技术产业的严肃历史年表。时间轴为增强视图，psql 表格和原始 JSON 是资料事实来源。</p>
 
-  <details>
-    <summary>范围与复核状态</summary>
+    <h3>路径族与范围聚合</h3>
+    <pre><code>__PATH_TABLE__</code></pre>
+
+    <h3>事件类型与范围聚合</h3>
+    <pre><code>__TYPE_TABLE__</code></pre>
+
+    <h3>范围与复核状态</h3>
     <pre><code>__SCOPE_TABLE__</code></pre>
     <pre><code>__STATUS_TABLE__</code></pre>
-  </details>
 
-  <details>
-    <summary>资料说明</summary>
-    <p>从神话、宗教与炼金术，到老年科学、健康寿命和生物技术产业的严肃历史年表。时间轴为增强视图，psql 表格和原始 JSON 是资料事实来源。</p>
+    <h3>资料与出版</h3>
     <dl>
       <dt>数据范围</dt>
       <dd>__EVENT_COUNT__ 条事件 / __SOURCE_COUNT__ 个来源 / __PERIOD_COUNT__ 个时期</dd>
@@ -423,10 +464,8 @@ PREVIEW_TEMPLATE = r"""<!doctype html>
       <dt>出版契约</dt>
       <dd><a href="publication-manifest.v1.json">publication-manifest.v1.json</a> · <a href="PUBLICATION.md">PUBLICATION.md</a></dd>
     </dl>
-  </details>
 
-  <details>
-    <summary>本地已复核事件</summary>
+    <h3>本地已复核事件</h3>
     <pre><code>__REVIEWED_TABLE__</code></pre>
     <p><a href="timeline-events.psql.txt">下载/查看完整事件明细（__EVENT_COUNT__ 行）</a></p>
   </details>

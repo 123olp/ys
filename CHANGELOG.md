@@ -8,6 +8,7 @@
 - Added a publication manifest and display architecture for the history timeline: three scopes (all, works subset, locally reviewed) plus a publication gate for narrative works.
 - Optimized the history timeline viewer: preview HTML is now lightweight and loads `timelinejs.json` on demand, adds path-family scatter and century density modes, time-window filters, a single-row psql event reader above the chart, and a separate full psql event table.
 - Reordered the history timeline page so the event reader is at the top, followed by the chart and query form; overview tables, metadata, and reviewed events remain collapsible lower sections.
+- Aggregated the timeline's lower sections into one collapsible block with path-family and event-type summary tables, review status, source metadata, and reviewed events.
 
 ## 2026-07-27
 
