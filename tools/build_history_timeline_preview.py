@@ -490,7 +490,7 @@ PREVIEW_TEMPLATE = r"""<!doctype html>
     <pre><code>__REVIEWED_TABLE__</code></pre>
   </details>
 
-  <details open>
+  <details>
     <summary>完整事件明细（__EVENT_COUNT__ 条）</summary>
     <pre><code>__EVENT_TABLE__</code></pre>
   </details>
