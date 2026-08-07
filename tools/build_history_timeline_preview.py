@@ -439,26 +439,24 @@ PREVIEW_TEMPLATE = r"""<!doctype html>
   </form>
   <noscript><p>筛选和图表需要 JavaScript。核心数据仍可直接读取 <a href="timeline.json">timeline.json</a>、<a href="sources.json">sources.json</a> 与 <a href="timeline-events.psql.txt">timeline-events.psql.txt</a>。</p></noscript>
 
-  <h2>资料聚合与整理</h2>
-
   <details>
-    <summary>路径族与范围聚合</summary>
+    <summary><h2>路径族与范围聚合</h2></summary>
     <pre><code>__PATH_TABLE__</code></pre>
   </details>
 
   <details>
-    <summary>事件类型与范围聚合</summary>
+    <summary><h2>事件类型与范围聚合</h2></summary>
     <pre><code>__TYPE_TABLE__</code></pre>
   </details>
 
   <details>
-    <summary>范围与复核状态</summary>
+    <summary><h2>范围与复核状态</h2></summary>
     <pre><code>__SCOPE_TABLE__</code></pre>
     <pre><code>__STATUS_TABLE__</code></pre>
   </details>
 
   <details>
-    <summary>资料与出版</summary>
+    <summary><h2>资料与出版</h2></summary>
     <table>
       <tbody>
         <tr>
@@ -486,12 +484,12 @@ PREVIEW_TEMPLATE = r"""<!doctype html>
   </details>
 
   <details>
-    <summary>本地已复核事件</summary>
+    <summary><h2>本地已复核事件</h2></summary>
     <pre><code>__REVIEWED_TABLE__</code></pre>
   </details>
 
   <details>
-    <summary>完整事件明细（__EVENT_COUNT__ 条）</summary>
+    <summary><h2>完整事件明细（__EVENT_COUNT__ 条）</h2></summary>
     <pre><code>__EVENT_TABLE__</code></pre>
   </details>
 
