@@ -124,6 +124,8 @@ philosophical      哲学判据
 cross_path         跨路径
 ```
 
+`timeline.json` 的 `path_family` 必须保存英文机器值；中文标签只用于展示层映射。禁止把中文标签写回 `path_family` 字段。
+
 ## 8. 禁止用途
 
 - 禁止把神话、文学或思想事件写成已验证史实。

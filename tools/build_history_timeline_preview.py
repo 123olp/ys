@@ -1,16 +1,43 @@
 #!/usr/bin/env python3
-"""Build timeline publication JSON and an ECharts standalone preview."""
+"""Build timeline publication JSON and a zero-styling semantic preview."""
 
 from __future__ import annotations
 
 import html
 import json
 import re
+from collections import Counter, defaultdict
 from pathlib import Path
+
+from tabulate import tabulate
 
 
 ROOT = Path(__file__).resolve().parents[1]
 PACKAGE = ROOT / "docs" / "reference" / "history-timeline"
+
+PATH_LABELS_ZH = {
+    "maintenance": "生物维护",
+    "reconstruction": "生物重建",
+    "suspension": "生物暂停",
+    "digital_migration": "数字迁移",
+    "cognitive_extension": "认知外延",
+    "social_composite": "社会复合",
+    "philosophical": "哲学判据",
+    "cross_path": "跨路径",
+}
+
+EVENT_TYPE_LABELS_ZH = {
+    "myth": "神话与宗教",
+    "religious": "宗教",
+    "thought": "思想与概念",
+    "practice": "实践与方法",
+    "technology": "技术与工程",
+    "institution": "制度与机构",
+    "literature": "文学与作品",
+    "failure": "失败与教训",
+    "demographic": "人口与统计",
+    "policy": "政策与治理",
+}
 
 
 def load_json(relative_path: str):
@@ -31,7 +58,10 @@ def source_links(source_registry: dict[str, dict], refs: list[str]) -> str:
         source = source_registry.get(ref, {})
         label = source.get("label", ref)
         url = source.get("url", "#")
-        parts.append(f'<a href="{html.escape(url, quote=True)}" target="_blank" rel="noopener">{html.escape(ref)}</a>')
+        parts.append(
+            f'<a href="{html.escape(url, quote=True)}" target="_blank" rel="noopener">'
+            f"{html.escape(ref)}</a>"
+        )
     return " · ".join(parts)
 
 
@@ -51,19 +81,27 @@ def event_to_timelinejs(
             start_date["day"] = int(month_match.group(2))
 
     period = period_registry.get(event.get("period_id", ""), {})
-    period_label = period.get("label_en", event.get("period_id", ""))
+    period_label = period.get("label_zh") or period.get("label_en") or event.get("period_id", "")
     event_id = event.get("event_id", "")
+    path_family = event.get("path_family", "")
+    event_type = event.get("event_type", "")
+    path_family_label = PATH_LABELS_ZH.get(path_family, path_family)
+    event_type_label = EVENT_TYPE_LABELS_ZH.get(event_type, event_type)
     publication_status = "selected" if event_id in works_ids else "candidate"
-    links = source_links(source_registry, event.get("sources", []))
+    source_refs = event.get("sources", [])
+    links = source_links(source_registry, source_refs)
     body_parts = [
         html.escape(event.get("summary", "")),
         "",
-        "<strong>Claim</strong>: " + html.escape(event.get("claim", "")),
+        "Claim: " + html.escape(event.get("claim", "")),
         "",
-        f"<strong>Period</strong>: {html.escape(period_label)}",
-        f"<strong>Evidence</strong>: {html.escape(event.get('evidence_grade', ''))} / {html.escape(event.get('verification_status', ''))}",
+        f"时期: {html.escape(period_label)}",
+        f"路径: {html.escape(path_family_label)}",
+        f"类型: {html.escape(event_type_label)}",
+        f"证据: {html.escape(event.get('evidence_grade', ''))} / "
+        f"{html.escape(event.get('verification_status', ''))}",
         "",
-        "Sources: " + links,
+        "来源: " + links,
     ]
     item = {
         "start_date": start_date,
@@ -77,11 +115,14 @@ def event_to_timelinejs(
             "period_id": event.get("period_id", ""),
             "period_label": period_label,
             "chapter": event.get("chapter", ""),
-            "path_family": event.get("path_family", ""),
-            "event_type": event.get("event_type", ""),
+            "path_family": path_family,
+            "path_family_label": path_family_label,
+            "event_type": event_type,
+            "event_type_label": event_type_label,
             "evidence_grade": event.get("evidence_grade", ""),
             "verification_status": event.get("verification_status", ""),
             "publication_status": publication_status,
+            "source_refs": source_refs,
             "source_links": links,
             "status": event.get("status", ""),
             "date_start": event.get("date_start", ""),
@@ -122,176 +163,224 @@ def build_timelinejs() -> dict:
     }
 
 
+def build_path_summary_table(timelinejs: dict) -> str:
+    path_stats: dict[str, list[int]] = defaultdict(lambda: [0, 0, 0])
+    for event in timelinejs["events"]:
+        meta = event.get("meta", {})
+        path = meta.get("path_family", "")
+        path_stats[path][0] += 1
+        if meta.get("publication_status") == "selected":
+            path_stats[path][1] += 1
+        if meta.get("verification_status") == "locally_reviewed":
+            path_stats[path][2] += 1
+    rows = [
+        [PATH_LABELS_ZH.get(path, path), counts[0], counts[1], counts[2]]
+        for path, counts in path_stats.items()
+    ]
+    rows.sort(key=lambda row: -row[1])
+    return tabulate(
+        rows,
+        headers=["路径族", "全部资料", "作品子集", "本地已复核"],
+        tablefmt="psql",
+        missingval="",
+    )
+
+
+def build_scope_status_tables(timelinejs: dict) -> tuple[str, str]:
+    events = timelinejs["events"]
+    verification_counts = Counter(
+        event.get("meta", {}).get("verification_status", "") for event in events
+    )
+    works_count = sum(
+        1
+        for event in events
+        if event.get("meta", {}).get("publication_status") == "selected"
+    )
+    reviewed_count = verification_counts.get("locally_reviewed", 0)
+    scope_table = tabulate(
+        [
+            ["全部资料", len(events)],
+            ["作品子集", works_count],
+            ["本地已复核", reviewed_count],
+        ],
+        headers=["范围", "事件数"],
+        tablefmt="psql",
+        missingval="",
+    )
+    status_table = tabulate(
+        sorted(verification_counts.items()),
+        headers=["复核状态", "事件数"],
+        tablefmt="psql",
+        missingval="",
+    )
+    return scope_table, status_table
+
+
+def build_event_table(events: list[dict]) -> str:
+    rows = []
+    for event in events:
+        meta = event.get("meta", {})
+        start_date = event.get("start_date", {})
+        rows.append(
+            [
+                meta.get("event_id", ""),
+                start_date.get("year", ""),
+                meta.get("period_label", ""),
+                meta.get("path_family_label", ""),
+                meta.get("event_type_label", ""),
+                meta.get("evidence_grade", ""),
+                meta.get("verification_status", ""),
+                event.get("text", {}).get("headline", ""),
+                ", ".join(meta.get("source_refs", [])),
+            ]
+        )
+    return tabulate(
+        rows,
+        headers=[
+            "event_id",
+            "year",
+            "period",
+            "path",
+            "type",
+            "evidence",
+            "status",
+            "title",
+            "sources",
+        ],
+        tablefmt="psql",
+        missingval="",
+    )
+
+
 def render_preview(timelinejs: dict) -> str:
     payload = json.dumps(
         timelinejs,
         ensure_ascii=False,
         separators=(",", ":"),
     ).replace("</", "<\\/")
-    return PREVIEW_TEMPLATE.replace("__PAYLOAD__", payload)
+    source_count = len(load_json("docs/reference/history-timeline/sources.json")["sources"])
+    period_count = len(load_json("docs/reference/history-timeline/periods.json")["periods"])
+    works_count = sum(
+        1
+        for event in timelinejs["events"]
+        if event.get("meta", {}).get("publication_status") == "selected"
+    )
+    reviewed_count = sum(
+        1
+        for event in timelinejs["events"]
+        if event.get("meta", {}).get("verification_status") == "locally_reviewed"
+    )
+    generated_at = load_json(
+        "docs/reference/history-timeline/publication-manifest.v1.json"
+    ).get("created_at", "2026-08-07T00:00:00Z")
+    path_table = html.escape(build_path_summary_table(timelinejs))
+    scope_table, status_table = build_scope_status_tables(timelinejs)
+    scope_table = html.escape(scope_table)
+    status_table = html.escape(status_table)
+    event_table = html.escape(build_event_table(timelinejs["events"]))
+    return (
+        PREVIEW_TEMPLATE
+        .replace("__PAYLOAD__", payload)
+        .replace("__PATH_LABELS_JSON__", json.dumps(PATH_LABELS_ZH, ensure_ascii=False))
+        .replace("__EVENT_TYPE_LABELS_JSON__", json.dumps(EVENT_TYPE_LABELS_ZH, ensure_ascii=False))
+        .replace("__EVENT_COUNT__", str(len(timelinejs["events"])))
+        .replace("__SOURCE_COUNT__", str(source_count))
+        .replace("__PERIOD_COUNT__", str(period_count))
+        .replace("__WORKS_COUNT__", str(works_count))
+        .replace("__REVIEWED_COUNT__", str(reviewed_count))
+        .replace("__GENERATED_AT__", generated_at)
+        .replace("__PATH_TABLE__", path_table)
+        .replace("__SCOPE_TABLE__", scope_table)
+        .replace("__STATUS_TABLE__", status_table)
+        .replace("__EVENT_TABLE__", event_table)
+    )
 
 
-PREVIEW_TEMPLATE = r"""<!DOCTYPE html>
+PREVIEW_TEMPLATE = r"""<!doctype html>
 <html lang="zh-CN">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Human Infra 永生史</title>
-  <style>
-    :root {
-      --bg: #f6f7f8;
-      --panel: #ffffff;
-      --line: #d8dde2;
-      --ink: #182026;
-      --muted: #5f6b76;
-      --accent: #1f6f8f;
-    }
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      background: var(--bg);
-      color: var(--ink);
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "PingFang SC", "Microsoft YaHei", sans-serif;
-      line-height: 1.55;
-    }
-    header {
-      padding: 28px 24px 20px;
-      border-bottom: 1px solid var(--line);
-      background: var(--panel);
-    }
-    .wrap {
-      max-width: 1280px;
-      margin: 0 auto;
-    }
-    h1 {
-      margin: 0 0 8px;
-      font-size: 28px;
-      font-weight: 650;
-      letter-spacing: 0;
-    }
-    .subtitle {
-      margin: 0 0 14px;
-      color: var(--muted);
-      font-size: 14px;
-    }
-    .stats {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px 18px;
-      font-size: 13px;
-      color: var(--muted);
-    }
-    .stats strong { color: var(--ink); font-weight: 650; }
-    .toolbar {
-      position: sticky;
-      top: 0;
-      z-index: 10;
-      padding: 12px 0;
-      background: rgba(246, 247, 248, 0.96);
-      backdrop-filter: blur(6px);
-      border-bottom: 1px solid var(--line);
-    }
-    .controls {
-      display: grid;
-      grid-template-columns: minmax(220px, 1.6fr) repeat(5, minmax(130px, 0.8fr));
-      gap: 10px;
-    }
-    input, select {
-      width: 100%;
-      height: 38px;
-      padding: 0 10px;
-      border: 1px solid var(--line);
-      border-radius: 6px;
-      background: var(--panel);
-      color: var(--ink);
-      font: inherit;
-      font-size: 13px;
-      outline: none;
-    }
-    input:focus, select:focus { border-color: var(--accent); }
-    .result-line {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 12px;
-      padding: 12px 0 8px;
-      color: var(--muted);
-      font-size: 13px;
-    }
-    #chart {
-      height: 74vh;
-      min-height: 520px;
-      margin-bottom: 30px;
-      border: 1px solid var(--line);
-      border-radius: 8px;
-      background: var(--panel);
-    }
-    .empty {
-      padding: 36px 0;
-      text-align: center;
-      color: var(--muted);
-    }
-    footer {
-      padding: 20px 0 36px;
-      color: var(--muted);
-      font-size: 12px;
-    }
-    @media (max-width: 900px) {
-      .controls { grid-template-columns: 1fr 1fr; }
-      header { padding: 22px 16px 16px; }
-    }
-    @media (max-width: 600px) {
-      .controls { grid-template-columns: 1fr; }
-      .wrap { padding: 0 12px; }
-    }
-  </style>
 </head>
 <body>
-  <header>
-    <div class="wrap">
-      <h1>Human Infra 永生史</h1>
-      <p class="subtitle" id="page-subtitle"></p>
-      <div class="stats" id="stats"></div>
-    </div>
-  </header>
-  <div class="toolbar">
-    <div class="wrap">
-      <div class="controls">
-        <input id="q" type="search" placeholder="搜索标题、摘要、证据或来源">
-        <select id="scope">
+  <h1>Human Infra 永生史</h1>
+  <p>从神话、宗教与炼金术，到老年科学、健康寿命和生物技术产业的严肃历史年表。时间轴为增强视图，psql 表格和原始 JSON 是资料事实来源。</p>
+
+  <dl>
+    <dt>数据范围</dt>
+    <dd>__EVENT_COUNT__ 条事件 / __SOURCE_COUNT__ 个来源 / __PERIOD_COUNT__ 个时期</dd>
+    <dt>作品化</dt>
+    <dd>__WORKS_COUNT__ 条作品子集；__REVIEWED_COUNT__ 条本地已复核</dd>
+    <dt>生成时间</dt>
+    <dd><time datetime="__GENERATED_AT__">__GENERATED_AT__</time></dd>
+    <dt>原始数据</dt>
+    <dd><a href="timeline.json">timeline.json</a> · <a href="sources.json">sources.json</a> · <a href="periods.json">periods.json</a> · <a href="timelinejs.json">timelinejs.json</a></dd>
+    <dt>出版契约</dt>
+    <dd><a href="publication-manifest.v1.json">publication-manifest.v1.json</a> · <a href="PUBLICATION.md">PUBLICATION.md</a></dd>
+  </dl>
+
+  <h2>查询条件</h2>
+  <form method="get" action="preview.html" id="filter-form">
+    <fieldset>
+      <legend>筛选</legend>
+      <p><label for="q">搜索</label> <input id="q" name="q" type="search" placeholder="标题、摘要、证据或来源"></p>
+      <p>
+        <label for="scope">范围</label>
+        <select id="scope" name="scope">
           <option value="all">全部资料</option>
-          <option value="works">作品子集 400</option>
+          <option value="works">作品子集</option>
           <option value="reviewed">本地已复核</option>
         </select>
-        <select id="period"><option value="">全部时期</option></select>
-        <select id="path"><option value="">全部路径</option></select>
-        <select id="type"><option value="">全部类型</option></select>
-        <select id="evidence"><option value="">全部证据等级</option></select>
-      </div>
-    </div>
-  </div>
-  <main class="wrap">
-    <div class="result-line">
-      <span id="result-count"></span>
-      <span>ECharts 图表模式 · 可缩放年份</span>
-    </div>
-    <div id="chart"></div>
-    <div class="empty" id="empty" hidden>没有匹配的事件</div>
-  </main>
-  <footer class="wrap">数据来源为公开 Crossref/DOI 元数据；<span id="footer-note"></span></footer>
+      </p>
+      <p><label for="period">时期</label> <select id="period" name="period"><option value="">全部时期</option></select></p>
+      <p><label for="path">路径</label> <select id="path" name="path"><option value="">全部路径</option></select></p>
+      <p><label for="type">类型</label> <select id="type" name="type"><option value="">全部类型</option></select></p>
+      <p><label for="evidence">证据等级</label> <select id="evidence" name="evidence"><option value="">全部证据等级</option></select></p>
+      <p><button type="submit">查询</button></p>
+    </fieldset>
+  </form>
+  <noscript><p>筛选和图表需要 JavaScript。核心数据仍可直接读取 <a href="timeline.json">timeline.json</a> 与 <a href="sources.json">sources.json</a>。</p></noscript>
+
+  <h2>路径族概览</h2>
+  <pre><code>__PATH_TABLE__</code></pre>
+
+  <h2>范围与复核状态</h2>
+  <pre><code>__SCOPE_TABLE__</code></pre>
+  <pre><code>__STATUS_TABLE__</code></pre>
+
+  <h2>时间轴图表</h2>
+  <div id="chart"></div>
+  <p id="chart-status">图表为增强视图；核心数据见下方事件明细与原始 JSON。</p>
+
+  <h2>事件明细</h2>
+  <details open>
+    <summary>事件明细（__EVENT_COUNT__ 行）</summary>
+    <pre><code>__EVENT_TABLE__</code></pre>
+  </details>
+
   <script id="timeline-data" type="application/json">__PAYLOAD__</script>
   <script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
   <script>
     (function () {
       const data = JSON.parse(document.getElementById('timeline-data').textContent);
       const events = data.events || [];
-      const state = { q: '', scope: 'all', period: '', path: '', type: '', evidence: '' };
+      const PATH_LABELS = __PATH_LABELS_JSON__;
+      const EVENT_TYPE_LABELS = __EVENT_TYPE_LABELS_JSON__;
+      const params = new URLSearchParams(window.location.search);
+      const state = {
+        q: params.get('q') || '',
+        scope: params.get('scope') || 'all',
+        period: params.get('period') || '',
+        path: params.get('path') || '',
+        type: params.get('type') || '',
+        evidence: params.get('evidence') || ''
+      };
       const countEl = document.getElementById('result-count');
       const emptyEl = document.getElementById('empty');
       const chartEl = document.getElementById('chart');
+      const chartStatusEl = document.getElementById('chart-status');
       let chart = null;
-
-      document.getElementById('page-subtitle').textContent = data.title && data.title.text ? data.title.text.text : '';
 
       function esc(value) {
         return String(value == null ? '' : value).replace(/[&<>"']/g, function (ch) {
@@ -311,9 +400,9 @@ PREVIEW_TEMPLATE = r"""<!DOCTYPE html>
         return Array.from(new Set(values.filter(Boolean))).sort();
       }
 
-      function fillSelect(select, values, label) {
+      function fillSelect(select, values, label, display) {
         select.innerHTML = '<option value="">' + label + '</option>' + values.map(function (v) {
-          return '<option value="' + esc(v) + '">' + esc(v) + '</option>';
+          return '<option value="' + esc(v) + '">' + esc(display ? display(v) : v) + '</option>';
         }).join('');
       }
 
@@ -322,33 +411,20 @@ PREVIEW_TEMPLATE = r"""<!DOCTYPE html>
       })), '全部时期');
       fillSelect(document.getElementById('path'), unique(events.map(function (e) {
         return e.meta && e.meta.path_family;
-      })), '全部路径');
+      })), '全部路径', function (v) { return PATH_LABELS[v] || v; });
       fillSelect(document.getElementById('type'), unique(events.map(function (e) {
         return e.meta && e.meta.event_type;
-      })), '全部类型');
+      })), '全部类型', function (v) { return EVENT_TYPE_LABELS[v] || v; });
       fillSelect(document.getElementById('evidence'), unique(events.map(function (e) {
         return e.meta && e.meta.evidence_grade;
       })), '全部证据等级');
 
-      const periodCount = unique(events.map(function (e) { return e.meta && e.meta.period_label; })).length;
-      const pathCount = unique(events.map(function (e) { return e.meta && e.meta.path_family; })).length;
-      const worksCount = events.filter(function (e) {
-        return e.meta && e.meta.publication_status === 'selected';
-      }).length;
-      const reviewedCount = events.filter(function (e) {
-        return e.meta && e.meta.verification_status === 'locally_reviewed';
-      }).length;
-      const exactDateCount = events.filter(function (e) {
-        return e.start_date && e.start_date.month != null;
-      }).length;
-      document.getElementById('stats').innerHTML =
-        '<span><strong>' + events.length + '</strong> 条原始资料</span>' +
-        '<span><strong>' + worksCount + '</strong> 条作品子集</span>' +
-        '<span><strong>' + reviewedCount + '</strong> 条本地已复核</span>' +
-        '<span><strong>' + periodCount + '</strong> 个时期</span>' +
-        '<span><strong>' + pathCount + '</strong> 条路径族</span>' +
-        '<span><strong>' + exactDateCount + '</strong> 条含年月日</span>' +
-        '<span>作品化状态 <strong>随 scope 筛选</strong></span>';
+      document.getElementById('q').value = state.q;
+      document.getElementById('scope').value = state.scope;
+      document.getElementById('period').value = state.period;
+      document.getElementById('path').value = state.path;
+      document.getElementById('type').value = state.type;
+      document.getElementById('evidence').value = state.evidence;
 
       function plainText(e) {
         const meta = e.meta || {};
@@ -387,41 +463,32 @@ PREVIEW_TEMPLATE = r"""<!DOCTYPE html>
 
       function render() {
         const filtered = filteredEvents();
-        countEl.textContent = filtered.length + ' 条匹配';
         const scopeLabels = {
           all: '当前显示全部资料，只用于巡检和检索。',
-          works: '当前显示作品子集 400，只表示进入作品化评审范围。',
+          works: '当前显示作品子集，只表示进入作品化评审范围。',
           reviewed: '当前显示本地已复核资料，可支撑时间轴发布，但仍需 fresh review 才能进入叙事正文。'
         };
-        document.getElementById('footer-note').textContent = scopeLabels[state.scope] || '';
-        emptyEl.hidden = filtered.length !== 0;
+        chartStatusEl.textContent = scopeLabels[state.scope] + ' 图表为增强视图；核心数据见下方事件明细与原始 JSON。';
         if (typeof window.echarts === 'undefined') {
-          chartEl.innerHTML = '<div class="empty">ECharts 未加载，请检查网络后刷新。</div>';
+          chartEl.replaceChildren(document.createTextNode('ECharts 未加载，请检查网络后刷新；核心数据仍可直接读取下方表格。'));
           return;
         }
-        if (!chart) chart = window.echarts.init(chartEl);
+        if (!chart) {
+          chart = window.echarts.init(chartEl, null, {
+            width: Math.max(900, Math.min(window.innerWidth - 40, 1400)),
+            height: 560
+          });
+        }
         const pathLabels = unique(filtered.map(function (e) {
-          return e.meta && e.meta.path_family;
+          return e.meta && e.meta.path_family_label;
         }));
         const pathIndex = {};
         pathLabels.forEach(function (p, i) { pathIndex[p] = i; });
-        const typeColors = {
-          myth: '#7b5e7b',
-          religious: '#7b5e7b',
-          thought: '#1f6f8f',
-          practice: '#2f7d4f',
-          technology: '#b05f3a',
-          institution: '#5b6bb0',
-          literature: '#5f6b76',
-          failure: '#a23b3b',
-          demographic: '#3a8f8f',
-          policy: '#8a6d3b'
-        };
         const points = filtered.map(function (e) {
           const meta = e.meta || {};
           const year = e.start_date && e.start_date.year != null ? e.start_date.year : 0;
           return {
-            value: [year, pathIndex[meta.path_family] || 0],
+            value: [year, pathIndex[meta.path_family_label] || 0],
             title: e.text && e.text.headline ? e.text.headline : '',
             dateLabel: dateLabel(e),
             meta: meta
@@ -436,14 +503,15 @@ PREVIEW_TEMPLATE = r"""<!DOCTYPE html>
               const meta = item.meta || {};
               return '<strong>' + esc(item.title || '') + '</strong><br>' +
                 '日期：' + esc(item.dateLabel || (params.value ? params.value[0] : '?')) + '<br>' +
-                '路径：' + esc(meta.path_family || '') + '<br>' +
-                '类型：' + esc(meta.event_type || '') + '<br>' +
+                '时期：' + esc(meta.period_label || '') + '<br>' +
+                '路径：' + esc(meta.path_family_label || meta.path_family || '') + '<br>' +
+                '类型：' + esc(meta.event_type_label || meta.event_type || '') + '<br>' +
                 '证据：' + esc(meta.evidence_grade || '') + ' / ' + esc(meta.verification_status || '') + '<br>' +
                 '编号：' + esc(meta.event_id || '') + '<br>' +
                 '来源：' + (meta.source_links || '无');
             }
           },
-          grid: { left: 130, right: 40, top: 40, bottom: 80 },
+          grid: { left: 140, right: 40, top: 40, bottom: 80 },
           xAxis: {
             type: 'value',
             name: '年份',
@@ -463,14 +531,7 @@ PREVIEW_TEMPLATE = r"""<!DOCTYPE html>
           series: [{
             type: 'scatter',
             symbolSize: 7,
-            data: points,
-            itemStyle: {
-              color: function (params) {
-                const meta = params.data && params.data.meta || {};
-                return typeColors[meta.event_type] || '#5f6b76';
-              },
-              opacity: 0.72
-            }
+            data: points
           }]
         });
         chart.resize();

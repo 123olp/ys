@@ -23,7 +23,7 @@ raw_timeline（全部资料）
 
 ## 2. 时间轴展示方式
 
-当前采用 ECharts 图表模式作为核心展示层，不再回退到 TimelineJS 全量叙事渲染。
+当前采用 ECharts 图表作为增强展示层，psql ASCII 表格作为核心资料层，不再回退到 TimelineJS 全量叙事渲染。
 
 `preview.html` 提供三档范围：
 
@@ -32,6 +32,8 @@ raw_timeline（全部资料）
 3. `本地已复核`：只显示 `verification_status=locally_reviewed` 的事件，用于审阅推进。
 
 每档都必须显示 `evidence_grade`、`verification_status`、`event_id` 和来源链接，避免把未复核资料误读为出版结论。
+
+预览页遵循 `Design.md` 的零美化语义界面：默认浏览器渲染、psql ASCII 文本表格作为资料事实来源、ECharts 只作为增强视图。路径族展示使用中文标签，但 `timeline.json` 仍保留英文机器值。
 
 ## 3. 出版物入口
 
