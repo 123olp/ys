@@ -568,7 +568,7 @@ PREVIEW_TEMPLATE = r"""<!doctype html>
 def main() -> None:
     timelinejs = build_timelinejs()
     (PACKAGE / "timelinejs.json").write_text(
-        json.dumps(timelinejs, ensure_ascii=False, indent=2) + "\n",
+        json.dumps(timelinejs, ensure_ascii=False, separators=(",", ":")) + "\n",
         encoding="utf-8",
     )
     (PACKAGE / "timelinejs.light.json").write_text(

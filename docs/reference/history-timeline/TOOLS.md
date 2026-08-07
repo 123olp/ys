@@ -69,7 +69,7 @@ make history-timeline-preview
 ```
 
 该命令从 `timeline.json` / `sources.json` / `periods.json` 生成 `timelinejs.json`、`timelinejs.light.json`、`timelinejs.detail.json`、`preview.html` 与 `timeline-events.psql.txt`。生成物属于机器派生数据，不能手工单独修改。
-当前 `preview.html` 使用零美化语义界面：psql ASCII 表格承载核心数据，ECharts 图表作为增强视图，`preview.js` 按需加载 `timelinejs.light.json`，事件完整正文在初始化时并行预载 `timelinejs.detail.json` 并直接显示；`preview-core.js` 提供浏览器与 Node 共用的核心纯函数与中文标签映射，`echarts.common.min.js` 为本地化运行时，不依赖外部 CDN。`timelinejs.json` 继续保留 TimelineJS JSON 兼容结构，便于未来切换叙事型发布层。路径族在展示层使用中文标签，机器数据字段保持英文，light 数据不冗余保存中文标签。
+当前 `preview.html` 使用零美化语义界面：psql ASCII 表格承载核心数据，ECharts 图表作为增强视图，`preview.js` 按需加载 `timelinejs.light.json`，事件完整正文在初始化时并行预载 `timelinejs.detail.json` 并直接显示；`preview-core.js` 提供浏览器与 Node 共用的核心纯函数与中文标签映射，`echarts.common.min.js` 为本地化运行时，不依赖外部 CDN。`timelinejs.json`、`timelinejs.light.json` 与 `timelinejs.detail.json` 均为紧凑格式，`timelinejs.json` 继续保留 TimelineJS JSON 兼容结构，便于未来切换叙事型发布层。路径族在展示层使用中文标签，机器数据字段保持英文，light 数据不冗余保存中文标签。
 
 核心函数单测：
 

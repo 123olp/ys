@@ -440,6 +440,8 @@ def main() -> None:
     expected_timelinejs = build_timelinejs()
     actual_timelinejs = load_json("docs/reference/history-timeline/timelinejs.json")
     require(actual_timelinejs == expected_timelinejs, "stale_timelinejs_preview")
+    timelinejs_text = (ROOT / "docs/reference/history-timeline/timelinejs.json").read_text(encoding="utf-8")
+    require(timelinejs_text.count("\n") == 1, "timelinejs_must_be_compact")
     expected_light = build_timelinejs_light(expected_timelinejs)
     actual_light = load_json("docs/reference/history-timeline/timelinejs.light.json")
     require(actual_light == expected_light, "stale_timelinejs_light_preview")

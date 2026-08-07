@@ -30,7 +30,7 @@ preview.js      图表交互与事件阅读增强脚本
 preview-core.js 核心纯函数（浏览器与 Node 共用，可单测）
 echarts.common.min.js  本地化 ECharts 图表运行时，覆盖散点、柱状与缩放（第三方资产）
 timeline-events.psql.txt  完整事件明细 psql 表格（生成物）
-timelinejs.json  图表发布数据，保留 TimelineJS JSON 兼容结构（生成物）
+timelinejs.json  图表发布数据，保留 TimelineJS JSON 兼容结构，紧凑格式（生成物）
 timelinejs.light.json  图表与筛选用轻量发布数据，不含完整正文、来源链接与冗余中文标签（生成物）
 timelinejs.detail.json  事件阅读器专用紧凑正文数据（生成物）
 preview.html     ECharts 图表模式预览页（生成物）
