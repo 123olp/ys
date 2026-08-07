@@ -340,20 +340,11 @@ PREVIEW_TEMPLATE = r"""<!doctype html>
 </head>
 <body>
   <h1>Human Infra 永生史</h1>
-  <p>从神话、宗教与炼金术，到老年科学、健康寿命和生物技术产业的严肃历史年表。时间轴为增强视图，psql 表格和原始 JSON 是资料事实来源。</p>
 
-  <dl>
-    <dt>数据范围</dt>
-    <dd>__EVENT_COUNT__ 条事件 / __SOURCE_COUNT__ 个来源 / __PERIOD_COUNT__ 个时期</dd>
-    <dt>作品化</dt>
-    <dd>__WORKS_COUNT__ 条作品子集；__REVIEWED_COUNT__ 条本地已复核</dd>
-    <dt>生成时间</dt>
-    <dd><time datetime="__GENERATED_AT__">__GENERATED_AT__</time></dd>
-    <dt>原始数据</dt>
-    <dd><a href="timeline.json">timeline.json</a> · <a href="sources.json">sources.json</a> · <a href="periods.json">periods.json</a> · <a href="timelinejs.json">timelinejs.json</a> · <a href="timeline-events.psql.txt">timeline-events.psql.txt</a></dd>
-    <dt>出版契约</dt>
-    <dd><a href="publication-manifest.v1.json">publication-manifest.v1.json</a> · <a href="PUBLICATION.md">PUBLICATION.md</a></dd>
-  </dl>
+  <h2>时间轴图表</h2>
+  <p id="result-count"></p>
+  <div id="chart"></div>
+  <p id="chart-status">图表为增强视图；核心资料与查询入口在下方。</p>
 
   <h2>查询条件</h2>
   <form method="get" action="preview.html" id="filter-form">
@@ -396,31 +387,51 @@ PREVIEW_TEMPLATE = r"""<!doctype html>
   </form>
   <noscript><p>筛选和图表需要 JavaScript。核心数据仍可直接读取 <a href="timeline.json">timeline.json</a>、<a href="sources.json">sources.json</a> 与 <a href="timeline-events.psql.txt">timeline-events.psql.txt</a>。</p></noscript>
 
-  <h2>路径族概览</h2>
-  <pre><code>__PATH_TABLE__</code></pre>
+  <details>
+    <summary>事件阅读器</summary>
+    <p>
+      <button id="prev-event" type="button" aria-label="前一条事件">前一条</button>
+      <span id="event-nav-index"></span>
+      <button id="next-event" type="button" aria-label="后一条事件">后一条</button>
+    </p>
+    <p id="event-detail-empty" hidden>点击图表中的事件，或用前一条/后一条浏览当前筛选结果。</p>
+    <pre id="event-detail-table"><code id="event-detail-table-code"></code></pre>
+    <pre id="event-detail-text"></pre>
+  </details>
 
-  <h2>范围与复核状态</h2>
-  <pre><code>__SCOPE_TABLE__</code></pre>
-  <pre><code>__STATUS_TABLE__</code></pre>
+  <details>
+    <summary>路径族概览</summary>
+    <pre><code>__PATH_TABLE__</code></pre>
+  </details>
 
-  <h2>事件阅读器</h2>
-  <p>
-    <button id="prev-event" type="button" aria-label="前一条事件">前一条</button>
-    <span id="event-nav-index"></span>
-    <button id="next-event" type="button" aria-label="后一条事件">后一条</button>
-  </p>
-  <p id="event-detail-empty" hidden>点击图表中的事件，或用前一条/后一条浏览当前筛选结果。</p>
-  <pre id="event-detail-table"><code id="event-detail-table-code"></code></pre>
-  <pre id="event-detail-text"></pre>
+  <details>
+    <summary>范围与复核状态</summary>
+    <pre><code>__SCOPE_TABLE__</code></pre>
+    <pre><code>__STATUS_TABLE__</code></pre>
+  </details>
 
-  <h2>时间轴图表</h2>
-  <p id="result-count"></p>
-  <div id="chart"></div>
-  <p id="chart-status">图表为增强视图；核心数据见下方事件明细与原始 JSON。</p>
+  <details>
+    <summary>资料说明</summary>
+    <p>从神话、宗教与炼金术，到老年科学、健康寿命和生物技术产业的严肃历史年表。时间轴为增强视图，psql 表格和原始 JSON 是资料事实来源。</p>
+    <dl>
+      <dt>数据范围</dt>
+      <dd>__EVENT_COUNT__ 条事件 / __SOURCE_COUNT__ 个来源 / __PERIOD_COUNT__ 个时期</dd>
+      <dt>作品化</dt>
+      <dd>__WORKS_COUNT__ 条作品子集；__REVIEWED_COUNT__ 条本地已复核</dd>
+      <dt>生成时间</dt>
+      <dd><time datetime="__GENERATED_AT__">__GENERATED_AT__</time></dd>
+      <dt>原始数据</dt>
+      <dd><a href="timeline.json">timeline.json</a> · <a href="sources.json">sources.json</a> · <a href="periods.json">periods.json</a> · <a href="timelinejs.json">timelinejs.json</a> · <a href="timeline-events.psql.txt">timeline-events.psql.txt</a></dd>
+      <dt>出版契约</dt>
+      <dd><a href="publication-manifest.v1.json">publication-manifest.v1.json</a> · <a href="PUBLICATION.md">PUBLICATION.md</a></dd>
+    </dl>
+  </details>
 
-  <h2>本地已复核事件</h2>
-  <pre><code>__REVIEWED_TABLE__</code></pre>
-  <p><a href="timeline-events.psql.txt">下载/查看完整事件明细（__EVENT_COUNT__ 行）</a></p>
+  <details>
+    <summary>本地已复核事件</summary>
+    <pre><code>__REVIEWED_TABLE__</code></pre>
+    <p><a href="timeline-events.psql.txt">下载/查看完整事件明细（__EVENT_COUNT__ 行）</a></p>
+  </details>
 
   <script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
   <script src="preview.js"></script>

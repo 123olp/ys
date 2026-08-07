@@ -18,3 +18,4 @@ review_cycle: P90D
 - 完成首批本地复核：31/400 条作品子集事件标记为 `locally_reviewed`，同步修正 McCay、Klass、Hayflick、HeLa、Dolly、CRISPR 2016 与日本 iPS 监管报道等来源/证据问题。
 - 新增展示与出版层：`publication-manifest.v1.json` 与 `PUBLICATION.md` 定义原始资料、作品子集、复核登记和出版物四层关系；时间轴预览增加“全部资料 / 作品子集 / 本地已复核”三档范围。
 - 优化时间轴查看与阅读：`preview.html` 不再内嵌全量数据，改为按需加载 `timelinejs.json`；新增按路径族散点、年代密度、时间窗口、事件详情、图表上方的单行 psql 事件阅读器，并生成独立 `timeline-events.psql.txt` 全量表格。
+- 调整时间轴页面布局：图表置顶，查询条件紧随其后，事件阅读器、路径族概览、范围与复核状态、资料说明和已复核事件列表折叠在下方。
