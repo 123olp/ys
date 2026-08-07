@@ -79,7 +79,6 @@
   const detailTextEl = document.getElementById("event-detail-text");
   const navIndexEl = document.getElementById("event-nav-index");
   const fullEventTableCodeEl = document.getElementById("full-event-table-code");
-  const loadFullEventBtn = document.getElementById("load-full-event");
 
   function fillSelect(select, values, label, display) {
     select.innerHTML = "<option value=\"\">" + label + "</option>" + values.map(function (v) {
@@ -167,19 +166,16 @@
     if (!event) return;
     if (event.text && event.text.text) {
       detailTextEl.innerHTML = event.text.text;
-      loadFullEventBtn.hidden = true;
       return;
     }
-    detailTextEl.textContent = "正在加载完整事件…";
+    detailTextEl.textContent = "正在加载完整正文…";
     ensureFullEvents().then(function (byId) {
       if (currentIndex !== index) return;
       const full = byId.get(filtered[index].meta.event_id);
       detailTextEl.innerHTML = full && full.text && full.text.text ? full.text.text : "";
-      loadFullEventBtn.hidden = true;
     }).catch(function (error) {
       if (currentIndex !== index) return;
-      detailTextEl.textContent = "完整事件加载失败：" + error.message;
-      loadFullEventBtn.hidden = false;
+      detailTextEl.textContent = "完整正文加载失败：" + error.message;
     });
   }
 
@@ -426,7 +422,6 @@
       detailTableCodeEl.textContent = "";
       detailTextEl.replaceChildren();
       navIndexEl.textContent = "";
-      loadFullEventBtn.hidden = true;
       chartEl.setAttribute("aria-label", "永生年表事件时间轴图表");
       clearChartHighlight();
       return;
@@ -447,10 +442,9 @@
     );
     if (event.text && event.text.text) {
       detailTextEl.innerHTML = event.text.text;
-      loadFullEventBtn.hidden = true;
     } else {
-      detailTextEl.textContent = "";
-      loadFullEventBtn.hidden = false;
+      detailTextEl.textContent = "正在加载完整正文…";
+      loadFullDetail(index);
     }
     syncChartHighlight();
   }
@@ -686,9 +680,6 @@
     document.getElementById("jump-event").addEventListener("click", jumpToEvent);
     document.getElementById("event-jump").addEventListener("keydown", function (event) {
       if (event.key === "Enter") jumpToEvent();
-    });
-    loadFullEventBtn.addEventListener("click", function () {
-      loadFullDetail(currentIndex);
     });
     document.addEventListener("keydown", function (event) {
       const tag = event.target && event.target.tagName;

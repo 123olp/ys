@@ -60,11 +60,12 @@ def main() -> None:
             initial = " ".join(tooltip_texts(page))
             require("HIT-TEC-001" in initial, "missing_initial_tooltip")
 
-            require(page.locator("#load-full-event").is_visible(), "full_event_button_not_visible")
-            page.click("#load-full-event")
-            page.locator("#load-full-event").wait_for(state="hidden", timeout=10000)
+            page.wait_for_function(
+                "document.getElementById('event-detail-text').innerText.indexOf('Claim:') >= 0",
+                timeout=10000,
+            )
             full_text = page.locator("#event-detail-text").inner_text()
-            require("Claim:" in full_text, "lazy_full_event_not_loaded")
+            require("Claim:" in full_text, "auto_full_event_not_loaded")
 
             page.click("#next-event")
             page.wait_for_timeout(300)

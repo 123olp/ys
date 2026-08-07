@@ -453,6 +453,10 @@ def main() -> None:
         'aria-label="永生年表事件时间轴图表"' in actual_preview,
         "preview_must_use_immortality_chronology_label",
     )
+    require(
+        'id="load-full-event"' not in actual_preview,
+        "preview_must_not_use_full_event_button",
+    )
 
     contract_text = CONTRACT.read_text(encoding="utf-8")
     for relative_path in REQUIRED_FILES:

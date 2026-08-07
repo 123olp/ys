@@ -81,7 +81,7 @@ make history-timeline-core-test
 - 复核：全部事件仍为 `unreviewed` / `draft`，尚未进入本地复核或独立审阅。
 - 作品子集：`works-subset.v1.json` 已登记 400 条第一版作品事件，覆盖全部时期、8 个路径族、10 类事件类型和 5 类证据等级；当前 `reviewed_event_count=31`。
 - 本地复核：首批 31 条事件已登记为 `locally_reviewed`，来源 URL/DOI 可达并完成标题匹配；独立 fresh review 尚未开始。
-- 可视化：已生成图表发布数据与可浏览原型，当前预览遵循零美化语义界面规范，psql ASCII 表格承载核心数据，ECharts 图表作为增强视图；支持搜索、筛选、年份缩放、事件阅读器与图表双向联动、事件 ID/序号跳转、动态聚合表，以及“全部资料 / 作品子集 / 本地已复核”三档范围；完整正文按需懒加载，ECharts 本地化运行，预览文件为 `timelinejs.json`、`timelinejs.light.json`、`preview.html`、`preview-core.js` 和 `echarts.min.js`。
+- 可视化：已生成图表发布数据与可浏览原型，当前预览遵循零美化语义界面规范，psql ASCII 表格承载核心数据，ECharts 图表作为增强视图；支持搜索、筛选、年份缩放、事件阅读器与图表双向联动、事件 ID/序号跳转、动态聚合表，以及“全部资料 / 作品子集 / 本地已复核”三档范围；完整正文自动加载并直接显示，ECharts 本地化运行，预览文件为 `timelinejs.json`、`timelinejs.light.json`、`preview.html`、`preview-core.js` 和 `echarts.min.js`。
 - 出版层：`publication-manifest.v1.json` 定义时间轴、永生史正文、健康手册和永生指南四类出版入口及各自 `review_gate`；说明见 `PUBLICATION.md`。
 
 第二轮补录来源：`docs/publications/history-of-immortality.md` 与
