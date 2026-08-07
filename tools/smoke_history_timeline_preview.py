@@ -120,7 +120,7 @@ def main() -> None:
             page.select_option("#scope", "works")
             page.wait_for_timeout(500)
             scope_table = page.locator("#scope-summary-table").inner_text()
-            require("全部资料" in scope_table and "400" in scope_table, "scope_aggregate_not_updated")
+            require("全部资料" in scope_table and "399" in scope_table, "scope_aggregate_not_updated")
 
             browser.close()
     finally:

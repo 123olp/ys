@@ -1,9 +1,9 @@
 {
   "timeline_id": "HITL-EIMM-001",
   "title": "Human Infra 永生史严肃历史年表",
-  "version": "2.400.5",
-  "description": "从《人类永生研究：大历史重要事件一览》与公共永生史转成的结构化年表；2592 条事件、2595 个来源卡片、31 个时期定义。",
-  "updated_at": "2026-08-07T12:30:00Z",
+  "version": "2.401.0",
+  "description": "从《人类永生研究：大历史重要事件一览》与公共永生史转成的结构化年表；2584 条事件、2594 个来源卡片、31 个时期定义。",
+  "updated_at": "2026-08-07T15:52:34Z",
   "events": [
     {
       "event_id": "HIT-MTH-001",
@@ -168,7 +168,7 @@
       "event_id": "HIT-PRA-001",
       "title": "秦始皇遣徐福入海求不死之药",
       "date_start": "-219",
-      "date_type": "exact",
+      "date_type": "approx",
       "period_id": "period-qin-dynasty",
       "civilization": "China",
       "region": "Eastern China / East China Sea",
@@ -186,7 +186,8 @@
       "uncertainty": "徐福后来到达何处的说法多属后世传说，本事件只确认《史记》记载的入海求药行动。",
       "cross_links": [],
       "chapter": "神话、来世与灵魂不朽",
-      "notes": "draft，等待来源语境复核。"
+      "notes": "draft，等待来源语境复核。",
+      "updated_at": "2026-08-07T15:52:34Z"
     },
     {
       "event_id": "HIT-PRA-002",
@@ -431,7 +432,7 @@
       "event_id": "HIT-THT-006",
       "title": "培根《生命与死亡史》出版",
       "date_start": "1623",
-      "date_type": "exact",
+      "date_type": "approx",
       "period_id": "period-early-modern-europe",
       "civilization": "England",
       "region": "England",
@@ -451,13 +452,14 @@
         "HIT-THT-007"
       ],
       "chapter": "从长生术到近代延寿思想",
-      "notes": "draft，等待来源语境复核。"
+      "notes": "draft，等待来源语境复核。",
+      "updated_at": "2026-08-07T15:52:34Z"
     },
     {
       "event_id": "HIT-LIT-003",
       "title": "斯威夫特《格列佛游记》出版",
       "date_start": "1726",
-      "date_type": "exact",
+      "date_type": "approx",
       "period_id": "period-early-modern-europe",
       "civilization": "Britain",
       "region": "Britain",
@@ -477,13 +479,14 @@
         "HIT-LIT-004"
       ],
       "chapter": "从长生术到近代延寿思想",
-      "notes": "draft，等待来源语境复核。"
+      "notes": "draft，等待来源语境复核。",
+      "updated_at": "2026-08-07T15:52:34Z"
     },
     {
       "event_id": "HIT-THT-007",
       "title": "孔多塞《人类精神进步史表纲要》出版",
       "date_start": "1795",
-      "date_type": "exact",
+      "date_type": "approx",
       "period_id": "period-enlightenment",
       "civilization": "France",
       "region": "France",
@@ -503,13 +506,14 @@
         "HIT-THT-006"
       ],
       "chapter": "从长生术到近代延寿思想",
-      "notes": "draft，等待来源语境复核。"
+      "notes": "draft，等待来源语境复核。",
+      "updated_at": "2026-08-07T15:52:34Z"
     },
     {
       "event_id": "HIT-PRA-006",
       "title": "胡费兰《长寿学》出版",
       "date_start": "1796",
-      "date_type": "exact",
+      "date_type": "approx",
       "period_id": "period-enlightenment",
       "civilization": "Germany",
       "region": "Germany",
@@ -527,13 +531,14 @@
       "uncertainty": "书名以多种语言传播，具体版本差异需要单独核对。",
       "cross_links": [],
       "chapter": "从长生术到近代延寿思想",
-      "notes": "draft，等待来源语境复核。"
+      "notes": "draft，等待来源语境复核。",
+      "updated_at": "2026-08-07T15:52:34Z"
     },
     {
       "event_id": "HIT-DEM-001",
       "title": "冈珀茨发表成人死亡率指数增长模型",
       "date_start": "1825",
-      "date_type": "exact",
+      "date_type": "approx",
       "period_id": "period-19th-century",
       "civilization": "Britain",
       "region": "Britain",
@@ -553,13 +558,14 @@
         "HIT-DEM-002"
       ],
       "chapter": "从长生术到近代延寿思想",
-      "notes": "draft，等待来源语境复核。"
+      "notes": "draft，等待来源语境复核。",
+      "updated_at": "2026-08-07T15:52:34Z"
     },
     {
       "event_id": "HIT-LIT-004",
       "title": "玛丽·雪莱发表《凡人不死者》",
       "date_start": "1833",
-      "date_type": "exact",
+      "date_type": "approx",
       "period_id": "period-19th-century",
       "civilization": "Britain",
       "region": "Britain",
@@ -579,7 +585,8 @@
         "HIT-LIT-003"
       ],
       "chapter": "从长生术到近代延寿思想",
-      "notes": "draft，等待来源语境复核。"
+      "notes": "draft，等待来源语境复核。",
+      "updated_at": "2026-08-07T15:52:34Z"
     },
     {
       "event_id": "HIT-THT-008",
@@ -612,7 +619,7 @@
       "event_id": "HIT-FAI-001",
       "title": "布朗—塞卡尔动物睾丸提取物自我实验",
       "date_start": "1889",
-      "date_type": "exact",
+      "date_type": "approx",
       "period_id": "period-19th-century",
       "civilization": "France",
       "region": "France",
@@ -632,13 +639,14 @@
         "HIT-SCI-001"
       ],
       "chapter": "从长生术到近代延寿思想",
-      "notes": "draft，等待来源语境复核。"
+      "notes": "draft，等待来源语境复核。",
+      "updated_at": "2026-08-07T15:52:34Z"
     },
     {
       "event_id": "HIT-LIT-005",
       "title": "王尔德《道林·格雷的画像》首次发表",
       "date_start": "1890",
-      "date_type": "exact",
+      "date_type": "approx",
       "period_id": "period-19th-century",
       "civilization": "Britain",
       "region": "Britain",
@@ -658,7 +666,8 @@
         "HIT-LIT-004"
       ],
       "chapter": "从长生术到近代延寿思想",
-      "notes": "draft，等待来源语境复核。"
+      "notes": "draft，等待来源语境复核。",
+      "updated_at": "2026-08-07T15:52:34Z"
     },
     {
       "event_id": "HIT-THT-009",
@@ -690,7 +699,7 @@
       "event_id": "HIT-THT-010",
       "title": "纳舍提出“老年医学”一词",
       "date_start": "1909",
-      "date_type": "exact",
+      "date_type": "approx",
       "period_id": "period-20th-century",
       "civilization": "United States",
       "region": "North America",
@@ -710,7 +719,8 @@
         "HIT-THT-009"
       ],
       "chapter": "老年学、进化论与细胞寿命",
-      "notes": "draft，等待来源语境复核。"
+      "notes": "draft，等待来源语境复核。",
+      "updated_at": "2026-08-07T15:52:34Z"
     },
     {
       "event_id": "HIT-TEC-001",
@@ -742,7 +752,7 @@
       "event_id": "HIT-LIT-006",
       "title": "恰佩克《马克洛普洛斯秘方》首演",
       "date_start": "1922",
-      "date_type": "exact",
+      "date_type": "approx",
       "period_id": "period-20th-century",
       "civilization": "Czechoslovakia",
       "region": "Central Europe",
@@ -762,13 +772,14 @@
         "HIT-LIT-004"
       ],
       "chapter": "老年学、进化论与细胞寿命",
-      "notes": "draft，等待来源语境复核。"
+      "notes": "draft，等待来源语境复核。",
+      "updated_at": "2026-08-07T15:52:34Z"
     },
     {
       "event_id": "HIT-SCI-001",
       "title": "麦凯报告限制热量摄入延长大鼠寿命",
       "date_start": "1935",
-      "date_type": "exact",
+      "date_type": "approx",
       "period_id": "period-20th-century",
       "civilization": "United States",
       "region": "North America",
@@ -790,13 +801,14 @@
       "chapter": "老年学、进化论与细胞寿命",
       "notes": "本地复核完成：来源 URL/DOI 可达，标题与事件主张匹配，证据等级和日期未发现过度推断；尚未独立 fresh review。",
       "last_reviewed": "2026-08-07",
-      "reviewer": "tradecatlabs"
+      "reviewer": "tradecatlabs",
+      "updated_at": "2026-08-07T15:52:34Z"
     },
     {
       "event_id": "HIT-TEC-002",
       "title": "HeLa 细胞系建立",
       "date_start": "1951",
-      "date_type": "exact",
+      "date_type": "approx",
       "period_id": "period-20th-century",
       "civilization": "United States",
       "region": "North America",
@@ -818,13 +830,14 @@
       "chapter": "老年学、进化论与细胞寿命",
       "notes": "来源纠偏：原 NIH 页面 403，改用可访问的 HeLa 二手百科来源。本地复核完成：来源 URL/DOI 可达，标题与事件主张匹配，证据等级和日期未发现过度推断；尚未独立 fresh review。",
       "last_reviewed": "2026-08-07",
-      "reviewer": "tradecatlabs"
+      "reviewer": "tradecatlabs",
+      "updated_at": "2026-08-07T15:52:34Z"
     },
     {
       "event_id": "HIT-THT-011",
       "title": "梅达沃提出突变积累理论",
       "date_start": "1952",
-      "date_type": "exact",
+      "date_type": "approx",
       "period_id": "period-20th-century",
       "civilization": "Britain",
       "region": "Britain",
@@ -844,13 +857,14 @@
         "HIT-THT-012"
       ],
       "chapter": "老年学、进化论与细胞寿命",
-      "notes": "draft，等待来源语境复核。"
+      "notes": "draft，等待来源语境复核。",
+      "updated_at": "2026-08-07T15:52:34Z"
     },
     {
       "event_id": "HIT-SCI-002",
       "title": "哈曼提出衰老自由基理论",
       "date_start": "1956",
-      "date_type": "exact",
+      "date_type": "approx",
       "period_id": "period-20th-century",
       "civilization": "United States",
       "region": "North America",
@@ -870,13 +884,14 @@
         "HIT-SCI-003"
       ],
       "chapter": "老年学、进化论与细胞寿命",
-      "notes": "draft，等待来源语境复核。"
+      "notes": "draft，等待来源语境复核。",
+      "updated_at": "2026-08-07T15:52:34Z"
     },
     {
       "event_id": "HIT-THT-012",
       "title": "威廉斯提出拮抗性多效性理论",
       "date_start": "1957",
-      "date_type": "exact",
+      "date_type": "approx",
       "period_id": "period-20th-century",
       "civilization": "United States",
       "region": "North America",
@@ -896,13 +911,14 @@
         "HIT-THT-011"
       ],
       "chapter": "老年学、进化论与细胞寿命",
-      "notes": "draft，等待来源语境复核。"
+      "notes": "draft，等待来源语境复核。",
+      "updated_at": "2026-08-07T15:52:34Z"
     },
     {
       "event_id": "HIT-THT-013",
       "title": "赫胥黎使用“超人类主义”一词",
       "date_start": "1957",
-      "date_type": "exact",
+      "date_type": "approx",
       "period_id": "period-20th-century",
       "civilization": "Britain",
       "region": "Britain",
@@ -922,13 +938,14 @@
         "HIT-THT-014"
       ],
       "chapter": "老年学、进化论与细胞寿命",
-      "notes": "draft，等待来源语境复核。"
+      "notes": "draft，等待来源语境复核。",
+      "updated_at": "2026-08-07T15:52:34Z"
     },
     {
       "event_id": "HIT-SCI-003",
       "title": "Hayflick 极限发表",
       "date_start": "1961",
-      "date_type": "exact",
+      "date_type": "approx",
       "period_id": "period-20th-century",
       "civilization": "United States",
       "region": "North America",
@@ -951,7 +968,8 @@
       "chapter": "老年学、进化论与细胞寿命",
       "notes": "来源纠偏：改用 Hayflick & Moorhead 1961 原始论文。本地复核完成：来源 URL/DOI 可达，标题与事件主张匹配，证据等级和日期未发现过度推断；尚未独立 fresh review。",
       "last_reviewed": "2026-08-07",
-      "reviewer": "tradecatlabs"
+      "reviewer": "tradecatlabs",
+      "updated_at": "2026-08-07T15:52:34Z"
     },
     {
       "event_id": "HIT-PRA-007",
@@ -984,7 +1002,7 @@
       "event_id": "HIT-TEC-003",
       "title": "贝德福德接受人体冷冻保存",
       "date_start": "1967",
-      "date_type": "exact",
+      "date_type": "approx",
       "period_id": "period-20th-century",
       "civilization": "United States",
       "region": "California",
@@ -1004,13 +1022,14 @@
         "HIT-PRA-007"
       ],
       "chapter": "低温保存、分子机制与数字永生",
-      "notes": "draft，等待来源语境复核。"
+      "notes": "draft，等待来源语境复核。",
+      "updated_at": "2026-08-07T15:52:34Z"
     },
     {
       "event_id": "HIT-INS-001",
       "title": "美国国会设立国家老龄研究所",
       "date_start": "1974",
-      "date_type": "exact",
+      "date_type": "approx",
       "period_id": "period-20th-century",
       "civilization": "United States",
       "region": "United States",
@@ -1030,13 +1049,14 @@
         "HIT-INS-003"
       ],
       "chapter": "低温保存、分子机制与数字永生",
-      "notes": "draft，等待来源语境复核。"
+      "notes": "draft，等待来源语境复核。",
+      "updated_at": "2026-08-07T15:52:34Z"
     },
     {
       "event_id": "HIT-SCI-004",
       "title": "秀丽隐杆线虫长寿突变株被发现",
       "date_start": "1983",
-      "date_type": "exact",
+      "date_type": "approx",
       "period_id": "period-20th-century",
       "civilization": "International",
       "region": "Laboratory",
@@ -1058,13 +1078,14 @@
       "chapter": "低温保存、分子机制与数字永生",
       "notes": "本地复核完成：来源 URL/DOI 可达，标题与事件主张匹配，证据等级和日期未发现过度推断；尚未独立 fresh review。",
       "last_reviewed": "2026-08-07",
-      "reviewer": "tradecatlabs"
+      "reviewer": "tradecatlabs",
+      "updated_at": "2026-08-07T15:52:34Z"
     },
     {
       "event_id": "HIT-SCI-005",
       "title": "格雷德与布莱克本发现端粒酶活性",
       "date_start": "1984",
-      "date_type": "exact",
+      "date_type": "approx",
       "period_id": "period-20th-century",
       "civilization": "United States",
       "region": "Laboratory",
@@ -1085,13 +1106,14 @@
         "HIT-INS-002"
       ],
       "chapter": "低温保存、分子机制与数字永生",
-      "notes": "draft，等待来源语境复核。"
+      "notes": "draft，等待来源语境复核。",
+      "updated_at": "2026-08-07T15:52:34Z"
     },
     {
       "event_id": "HIT-THT-014",
       "title": "莫拉维克出版《心智儿童》",
       "date_start": "1988",
-      "date_type": "exact",
+      "date_type": "approx",
       "period_id": "period-20th-century",
       "civilization": "United States",
       "region": "United States",
@@ -1111,13 +1133,14 @@
         "HIT-THT-013"
       ],
       "chapter": "低温保存、分子机制与数字永生",
-      "notes": "draft，等待来源语境复核。"
+      "notes": "draft，等待来源语境复核。",
+      "updated_at": "2026-08-07T15:52:34Z"
     },
     {
       "event_id": "HIT-SCI-006",
       "title": "凯尼恩团队发现 daf-2 调控线虫寿命",
       "date_start": "1993",
-      "date_type": "exact",
+      "date_type": "approx",
       "period_id": "period-20th-century",
       "civilization": "United States",
       "region": "Laboratory",
@@ -1137,13 +1160,14 @@
         "HIT-SCI-004"
       ],
       "chapter": "低温保存、分子机制与数字永生",
-      "notes": "draft，等待来源语境复核。"
+      "notes": "draft，等待来源语境复核。",
+      "updated_at": "2026-08-07T15:52:34Z"
     },
     {
       "event_id": "HIT-DEM-002",
       "title": "卡尔芒创下验证性最长寿命纪录",
       "date_start": "1997",
-      "date_type": "exact",
+      "date_type": "approx",
       "period_id": "period-20th-century",
       "civilization": "France",
       "region": "France",
@@ -1164,13 +1188,14 @@
         "HIT-SCI-013"
       ],
       "chapter": "低温保存、分子机制与数字永生",
-      "notes": "draft，等待来源语境复核。"
+      "notes": "draft，等待来源语境复核。",
+      "updated_at": "2026-08-07T15:52:34Z"
     },
     {
       "event_id": "HIT-SCI-007",
       "title": "山中伸弥团队建立诱导多能干细胞",
       "date_start": "2006",
-      "date_type": "exact",
+      "date_type": "approx",
       "period_id": "period-21st-century",
       "civilization": "Japan",
       "region": "Laboratory",
@@ -1192,13 +1217,14 @@
       "chapter": "低温保存、分子机制与数字永生",
       "notes": "本地复核完成：来源 URL/DOI 可达，标题与事件主张匹配，证据等级和日期未发现过度推断；尚未独立 fresh review。",
       "last_reviewed": "2026-08-07",
-      "reviewer": "tradecatlabs"
+      "reviewer": "tradecatlabs",
+      "updated_at": "2026-08-07T15:52:34Z"
     },
     {
       "event_id": "HIT-SCI-008",
       "title": "雷帕霉素延长小鼠寿命研究发表",
       "date_start": "2009",
-      "date_type": "exact",
+      "date_type": "approx",
       "period_id": "period-21st-century",
       "civilization": "United States",
       "region": "Laboratory",
@@ -1218,13 +1244,14 @@
         "HIT-SCI-012"
       ],
       "chapter": "低温保存、分子机制与数字永生",
-      "notes": "draft，等待来源语境复核。"
+      "notes": "draft，等待来源语境复核。",
+      "updated_at": "2026-08-07T15:52:34Z"
     },
     {
       "event_id": "HIT-INS-002",
       "title": "端粒及端粒酶研究获诺贝尔奖",
       "date_start": "2009",
-      "date_type": "exact",
+      "date_type": "approx",
       "period_id": "period-21st-century",
       "civilization": "Sweden",
       "region": "Stockholm",
@@ -1244,13 +1271,14 @@
         "HIT-SCI-005"
       ],
       "chapter": "低温保存、分子机制与数字永生",
-      "notes": "draft，等待来源语境复核。"
+      "notes": "draft，等待来源语境复核。",
+      "updated_at": "2026-08-07T15:52:34Z"
     },
     {
       "event_id": "HIT-INS-003",
       "title": "NIH 建立跨研究所老年科学兴趣组",
       "date_start": "2012",
-      "date_type": "exact",
+      "date_type": "approx",
       "period_id": "period-21st-century",
       "civilization": "United States",
       "region": "United States",
@@ -1270,13 +1298,14 @@
         "HIT-INS-004"
       ],
       "chapter": "老年科学、健康寿命与生物技术产业",
-      "notes": "draft，等待来源语境复核。"
+      "notes": "draft，等待来源语境复核。",
+      "updated_at": "2026-08-07T15:52:34Z"
     },
     {
       "event_id": "HIT-INS-004",
       "title": "首届 NIH 老年科学峰会举行",
       "date_start": "2013",
-      "date_type": "exact",
+      "date_type": "approx",
       "period_id": "period-21st-century",
       "civilization": "United States",
       "region": "United States",
@@ -1296,13 +1325,14 @@
         "HIT-INS-003"
       ],
       "chapter": "老年科学、健康寿命与生物技术产业",
-      "notes": "draft，等待来源语境复核。"
+      "notes": "draft，等待来源语境复核。",
+      "updated_at": "2026-08-07T15:52:34Z"
     },
     {
       "event_id": "HIT-THT-015",
       "title": "《衰老的标志》提出九项统一框架",
       "date_start": "2013",
-      "date_type": "exact",
+      "date_type": "approx",
       "period_id": "period-21st-century",
       "civilization": "International",
       "region": "Biogerontology",
@@ -1324,13 +1354,14 @@
       "chapter": "老年科学、健康寿命与生物技术产业",
       "notes": "本地复核完成：来源 URL/DOI 可达，标题与事件主张匹配，证据等级和日期未发现过度推断；尚未独立 fresh review。",
       "last_reviewed": "2026-08-07",
-      "reviewer": "tradecatlabs"
+      "reviewer": "tradecatlabs",
+      "updated_at": "2026-08-07T15:52:34Z"
     },
     {
       "event_id": "HIT-SCI-009",
       "title": "霍瓦特发表 DNA 甲基化表观遗传时钟",
       "date_start": "2013",
-      "date_type": "exact",
+      "date_type": "approx",
       "period_id": "period-21st-century",
       "civilization": "United States",
       "region": "Laboratory",
@@ -1350,13 +1381,14 @@
         "HIT-SCI-014"
       ],
       "chapter": "老年科学、健康寿命与生物技术产业",
-      "notes": "draft，等待来源语境复核。"
+      "notes": "draft，等待来源语境复核。",
+      "updated_at": "2026-08-07T15:52:34Z"
     },
     {
       "event_id": "HIT-SCI-010",
       "title": "达沙替尼与槲皮素清除衰老细胞研究发表",
       "date_start": "2015",
-      "date_type": "exact",
+      "date_type": "approx",
       "period_id": "period-21st-century",
       "civilization": "International",
       "region": "Laboratory",
@@ -1376,13 +1408,14 @@
         "HIT-SCI-012"
       ],
       "chapter": "老年科学、健康寿命与生物技术产业",
-      "notes": "draft，等待来源语境复核。"
+      "notes": "draft，等待来源语境复核。",
+      "updated_at": "2026-08-07T15:52:34Z"
     },
     {
       "event_id": "HIT-POL-001",
       "title": "WHO 发布《世界老龄化与健康报告》",
       "date_start": "2015",
-      "date_type": "exact",
+      "date_type": "approx",
       "period_id": "period-21st-century",
       "civilization": "Global",
       "region": "Global",
@@ -1402,13 +1435,14 @@
         "HIT-POL-002"
       ],
       "chapter": "老年科学、健康寿命与生物技术产业",
-      "notes": "draft，等待来源语境复核。"
+      "notes": "draft，等待来源语境复核。",
+      "updated_at": "2026-08-07T15:52:34Z"
     },
     {
       "event_id": "HIT-SCI-011",
       "title": "周期性部分山中因子重编程改善早衰小鼠",
       "date_start": "2016",
-      "date_type": "exact",
+      "date_type": "approx",
       "period_id": "period-21st-century",
       "civilization": "International",
       "region": "Laboratory",
@@ -1428,13 +1462,14 @@
         "HIT-SCI-007"
       ],
       "chapter": "老年科学、健康寿命与生物技术产业",
-      "notes": "draft，等待来源语境复核。"
+      "notes": "draft，等待来源语境复核。",
+      "updated_at": "2026-08-07T15:52:34Z"
     },
     {
       "event_id": "HIT-POL-002",
       "title": "联合国健康老龄化十年启动",
       "date_start": "2021",
-      "date_type": "exact",
+      "date_type": "approx",
       "period_id": "period-21st-century",
       "civilization": "Global",
       "region": "Global",
@@ -1454,13 +1489,14 @@
         "HIT-POL-001"
       ],
       "chapter": "老年科学、健康寿命与生物技术产业",
-      "notes": "draft，等待来源语境复核。"
+      "notes": "draft，等待来源语境复核。",
+      "updated_at": "2026-08-07T15:52:34Z"
     },
     {
       "event_id": "HIT-INS-005",
       "title": "Altos Labs 正式启动",
       "date_start": "2022",
-      "date_type": "exact",
+      "date_type": "approx",
       "period_id": "period-21st-century",
       "civilization": "International",
       "region": "Global",
@@ -1480,13 +1516,14 @@
         "HIT-SCI-011"
       ],
       "chapter": "老年科学、健康寿命与生物技术产业",
-      "notes": "draft，等待来源语境复核。"
+      "notes": "draft，等待来源语境复核。",
+      "updated_at": "2026-08-07T15:52:34Z"
     },
     {
       "event_id": "HIT-THT-016",
       "title": "《衰老的标志》扩展为十二项",
       "date_start": "2023",
-      "date_type": "exact",
+      "date_type": "approx",
       "period_id": "period-21st-century",
       "civilization": "International",
       "region": "Biogerontology",
@@ -1506,13 +1543,14 @@
         "HIT-THT-015"
       ],
       "chapter": "老年科学、健康寿命与生物技术产业",
-      "notes": "draft，等待来源语境复核。"
+      "notes": "draft，等待来源语境复核。",
+      "updated_at": "2026-08-07T15:52:34Z"
     },
     {
       "event_id": "HIT-SCI-012",
       "title": "抑制 IL-11 信号延长老龄小鼠健康寿命",
       "date_start": "2024",
-      "date_type": "exact",
+      "date_type": "approx",
       "period_id": "period-21st-century",
       "civilization": "International",
       "region": "Laboratory",
@@ -1533,13 +1571,14 @@
         "HIT-SCI-010"
       ],
       "chapter": "老年科学、健康寿命与生物技术产业",
-      "notes": "draft，等待来源语境复核。"
+      "notes": "draft，等待来源语境复核。",
+      "updated_at": "2026-08-07T15:52:34Z"
     },
     {
       "event_id": "HIT-SCI-013",
       "title": "人口学分析质疑本世纪激进寿命延长",
       "date_start": "2024",
-      "date_type": "exact",
+      "date_type": "approx",
       "period_id": "period-21st-century",
       "civilization": "International",
       "region": "Global",
@@ -1559,13 +1598,14 @@
         "HIT-DEM-002"
       ],
       "chapter": "老年科学、健康寿命与生物技术产业",
-      "notes": "draft，等待来源语境复核。"
+      "notes": "draft，等待来源语境复核。",
+      "updated_at": "2026-08-07T15:52:34Z"
     },
     {
       "event_id": "HIT-SCI-014",
       "title": "跨物种哺乳动物衰老与死亡风险转录特征发表",
       "date_start": "2026",
-      "date_type": "exact",
+      "date_type": "approx",
       "period_id": "period-21st-century",
       "civilization": "International",
       "region": "Laboratory",
@@ -1585,7 +1625,8 @@
         "HIT-SCI-009"
       ],
       "chapter": "老年科学、健康寿命与生物技术产业",
-      "notes": "draft，等待来源语境复核。"
+      "notes": "draft，等待来源语境复核。",
+      "updated_at": "2026-08-07T15:52:34Z"
     },
     {
       "event_id": "HIT-DEM-003",
@@ -1733,7 +1774,7 @@
       "event_id": "HIT-THT-018",
       "title": "贝尔纳提出内环境概念",
       "date_start": "1865",
-      "date_type": "exact",
+      "date_type": "approx",
       "period_id": "period-19th-century",
       "civilization": "France",
       "region": "Western Europe",
@@ -1755,7 +1796,7 @@
       "chapter": "从长生术到近代延寿思想",
       "notes": "draft，等待来源语境复核。",
       "created_at": "2026-08-06T09:30:00Z",
-      "updated_at": "2026-08-06T09:30:00Z"
+      "updated_at": "2026-08-07T15:52:34Z"
     },
     {
       "event_id": "HIT-THT-019",
@@ -1820,7 +1861,7 @@
       "event_id": "HIT-TEC-004",
       "title": "人类基因组计划完成",
       "date_start": "2003",
-      "date_type": "exact",
+      "date_type": "approx",
       "period_id": "period-21st-century",
       "civilization": "International",
       "region": "Global",
@@ -1843,7 +1884,7 @@
       "chapter": "老年科学、健康寿命与生物技术产业",
       "notes": "draft，等待来源语境复核。",
       "created_at": "2026-08-06T09:30:00Z",
-      "updated_at": "2026-08-06T09:30:00Z"
+      "updated_at": "2026-08-07T15:52:34Z"
     },
     {
       "event_id": "HIT-TEC-005",
@@ -1881,7 +1922,7 @@
       "event_id": "HIT-TEC-006",
       "title": "BrainEx 恢复离体猪脑部分循环与细胞功能",
       "date_start": "2019",
-      "date_type": "exact",
+      "date_type": "approx",
       "period_id": "period-21st-century",
       "civilization": "United States",
       "region": "Laboratory",
@@ -1903,13 +1944,13 @@
       "chapter": "老年科学、健康寿命与生物技术产业",
       "notes": "draft，等待来源语境复核。",
       "created_at": "2026-08-06T09:30:00Z",
-      "updated_at": "2026-08-06T09:30:00Z"
+      "updated_at": "2026-08-07T15:52:34Z"
     },
     {
       "event_id": "HIT-TEC-007",
       "title": "记忆印迹可被识别并被光遗传激活",
       "date_start": "2012",
-      "date_type": "exact",
+      "date_type": "approx",
       "period_id": "period-21st-century",
       "civilization": "United States",
       "region": "Laboratory",
@@ -1931,13 +1972,13 @@
       "chapter": "低温保存、分子机制与数字永生",
       "notes": "draft，等待来源语境复核。",
       "created_at": "2026-08-06T09:30:00Z",
-      "updated_at": "2026-08-06T09:30:00Z"
+      "updated_at": "2026-08-07T15:52:34Z"
     },
     {
       "event_id": "HIT-TEC-008",
       "title": "DishBrain 体外神经元在模拟游戏中学习",
       "date_start": "2022",
-      "date_type": "exact",
+      "date_type": "approx",
       "period_id": "period-21st-century",
       "civilization": "Australia",
       "region": "Laboratory",
@@ -1959,13 +2000,13 @@
       "chapter": "低温保存、分子机制与数字永生",
       "notes": "draft，等待来源语境复核。",
       "created_at": "2026-08-06T09:30:00Z",
-      "updated_at": "2026-08-06T09:30:00Z"
+      "updated_at": "2026-08-07T15:52:34Z"
     },
     {
       "event_id": "HIT-THT-021",
       "title": "类器官智能路线正式提出",
       "date_start": "2023",
-      "date_type": "exact",
+      "date_type": "approx",
       "period_id": "period-21st-century",
       "civilization": "International",
       "region": "Global",
@@ -1987,13 +2028,13 @@
       "chapter": "低温保存、分子机制与数字永生",
       "notes": "draft，等待来源语境复核。",
       "created_at": "2026-08-06T09:30:00Z",
-      "updated_at": "2026-08-06T09:30:00Z"
+      "updated_at": "2026-08-07T15:52:34Z"
     },
     {
       "event_id": "HIT-TEC-009",
       "title": "基因编辑猪心脏首次移植人体",
       "date_start": "2022",
-      "date_type": "exact",
+      "date_type": "approx",
       "period_id": "period-21st-century",
       "civilization": "United States",
       "region": "Maryland",
@@ -2015,7 +2056,7 @@
       "chapter": "老年科学、健康寿命与生物技术产业",
       "notes": "draft，等待来源语境复核。",
       "created_at": "2026-08-06T09:30:00Z",
-      "updated_at": "2026-08-06T09:30:00Z"
+      "updated_at": "2026-08-07T15:52:34Z"
     },
     {
       "event_id": "HIT-TEC-010",
@@ -2050,7 +2091,7 @@
       "event_id": "HIT-TEC-011",
       "title": "侵入式脑机接口进入人体植入试验",
       "date_start": "2024",
-      "date_type": "exact",
+      "date_type": "approx",
       "period_id": "period-21st-century",
       "civilization": "United States",
       "region": "Clinical trial",
@@ -2073,7 +2114,7 @@
       "chapter": "低温保存、分子机制与数字永生",
       "notes": "draft，等待来源语境复核。",
       "created_at": "2026-08-06T09:30:00Z",
-      "updated_at": "2026-08-06T09:30:00Z"
+      "updated_at": "2026-08-07T15:52:34Z"
     },
     {
       "event_id": "HIT-TEC-012",
@@ -2196,7 +2237,7 @@
       "event_id": "HIT-INS-006",
       "title": "世界超人类主义协会成立",
       "date_start": "1998",
-      "date_type": "exact",
+      "date_type": "approx",
       "period_id": "period-20th-century",
       "civilization": "International",
       "region": "Global",
@@ -2218,13 +2259,13 @@
       "chapter": "低温保存、分子机制与数字永生",
       "notes": "draft，等待来源语境复核。",
       "created_at": "2026-08-06T09:30:00Z",
-      "updated_at": "2026-08-06T09:30:00Z"
+      "updated_at": "2026-08-07T15:52:34Z"
     },
     {
       "event_id": "HIT-INS-007",
       "title": "永生研究所成立",
       "date_start": "2002",
-      "date_type": "exact",
+      "date_type": "approx",
       "period_id": "period-21st-century",
       "civilization": "International",
       "region": "Global",
@@ -2246,13 +2287,13 @@
       "chapter": "低温保存、分子机制与数字永生",
       "notes": "draft，等待来源语境复核。",
       "created_at": "2026-08-06T09:30:00Z",
-      "updated_at": "2026-08-06T09:30:00Z"
+      "updated_at": "2026-08-07T15:52:34Z"
     },
     {
       "event_id": "HIT-THT-023",
       "title": "德格雷系统提出衰老工程修复与长寿逃逸速度",
       "date_start": "2007",
-      "date_type": "exact",
+      "date_type": "approx",
       "period_id": "period-21st-century",
       "civilization": "United Kingdom / United States",
       "region": "Global",
@@ -2275,13 +2316,13 @@
       "chapter": "低温保存、分子机制与数字永生",
       "notes": "draft，等待来源语境复核。",
       "created_at": "2026-08-06T09:30:00Z",
-      "updated_at": "2026-08-06T09:30:00Z"
+      "updated_at": "2026-08-07T15:52:34Z"
     },
     {
       "event_id": "HIT-THT-024",
       "title": "库兹韦尔出版《奇点临近》",
       "date_start": "2005",
-      "date_type": "exact",
+      "date_type": "approx",
       "period_id": "period-21st-century",
       "civilization": "United States",
       "region": "Global",
@@ -2304,13 +2345,13 @@
       "chapter": "低温保存、分子机制与数字永生",
       "notes": "draft，等待来源语境复核。",
       "created_at": "2026-08-06T09:30:00Z",
-      "updated_at": "2026-08-06T09:30:00Z"
+      "updated_at": "2026-08-07T15:52:34Z"
     },
     {
       "event_id": "HIT-PRA-008",
       "title": "Blueprint 启动个人量化长寿工程",
       "date_start": "2021",
-      "date_type": "exact",
+      "date_type": "approx",
       "period_id": "period-21st-century",
       "civilization": "United States",
       "region": "Global",
@@ -2333,7 +2374,7 @@
       "chapter": "老年科学、健康寿命与生物技术产业",
       "notes": "draft，等待来源语境复核。",
       "created_at": "2026-08-06T09:30:00Z",
-      "updated_at": "2026-08-06T09:30:00Z"
+      "updated_at": "2026-08-07T15:52:34Z"
     },
     {
       "event_id": "HIT-FAI-002",
@@ -2429,7 +2470,7 @@
       "event_id": "HIT-FAI-005",
       "title": "“人头移植”宣称引发科学与伦理争议",
       "date_start": "2017",
-      "date_type": "exact",
+      "date_type": "approx",
       "period_id": "period-21st-century",
       "civilization": "China / Italy",
       "region": "Harbin / Turin",
@@ -2452,13 +2493,13 @@
       "chapter": "失败与教训",
       "notes": "draft，等待来源语境复核。",
       "created_at": "2026-08-06T09:30:00Z",
-      "updated_at": "2026-08-06T09:30:00Z"
+      "updated_at": "2026-08-07T15:52:34Z"
     },
     {
       "event_id": "HIT-FAI-006",
       "title": "FDA 警告年轻血浆抗衰商业化",
       "date_start": "2019",
-      "date_type": "exact",
+      "date_type": "approx",
       "period_id": "period-21st-century",
       "civilization": "United States",
       "region": "North America",
@@ -2481,13 +2522,13 @@
       "chapter": "失败与教训",
       "notes": "draft，等待来源语境复核。",
       "created_at": "2026-08-06T09:30:00Z",
-      "updated_at": "2026-08-06T09:30:00Z"
+      "updated_at": "2026-08-07T15:52:34Z"
     },
     {
       "event_id": "HIT-INS-008",
       "title": "XPRIZE Healthspan 全球竞赛启动",
       "date_start": "2023-11",
-      "date_type": "exact",
+      "date_type": "approx",
       "period_id": "period-21st-century",
       "civilization": "Global / United States",
       "region": "Global / New York",
@@ -2511,7 +2552,7 @@
       "chapter": "老年科学、健康寿命与生物技术产业",
       "notes": "本地复核完成：来源 URL/DOI 可达，标题与事件主张匹配，证据等级和日期未发现过度推断；尚未独立 fresh review。",
       "created_at": "2026-08-06T10:12:24.981046Z",
-      "updated_at": "2026-08-06T10:12:24.981046Z",
+      "updated_at": "2026-08-07T15:52:34Z",
       "last_reviewed": "2026-08-07",
       "reviewer": "tradecatlabs"
     },
@@ -2519,7 +2560,7 @@
       "event_id": "HIT-INS-009",
       "title": "Hevolution 基金会成立",
       "date_start": "2021",
-      "date_type": "exact",
+      "date_type": "approx",
       "period_id": "period-21st-century",
       "civilization": "Saudi Arabia / Global",
       "region": "Riyadh / Global",
@@ -2543,7 +2584,7 @@
       "chapter": "老年科学、健康寿命与生物技术产业",
       "notes": "draft，等待来源语境复核。本轮已做官方关于页可达性核验。",
       "created_at": "2026-08-06T10:12:24.981046Z",
-      "updated_at": "2026-08-06T10:12:24.981046Z"
+      "updated_at": "2026-08-07T15:52:34Z"
     },
     {
       "event_id": "HIT-INS-010",
@@ -2635,7 +2676,7 @@
       "chapter": "老年科学、健康寿命与生物技术产业",
       "notes": "draft，等待来源语境复核。本轮已做 PMC 协议摘要可达性核验。",
       "created_at": "2026-08-06T10:12:24.981046Z",
-      "updated_at": "2026-08-06T10:12:24.981046Z"
+      "updated_at": "2026-08-07T15:52:34Z"
     },
     {
       "event_id": "HIT-SCI-019",
@@ -3127,12 +3168,13 @@
       "significance": "major",
       "uncertainty": "升尺度体积仍在实验阶段，未证明可保存完整人体器官并恢复功能。",
       "cross_links": [
-        "HIT-TEC-019"
+        "HIT-TEC-019",
+        "HIT-SCI-113"
       ],
       "chapter": "低温保存、分子机制与数字永生",
       "notes": "draft，等待来源语境复核。本轮已做 Nature Communications 页面和 PubMed 元数据核验。",
       "created_at": "2026-08-06T10:28:19.319324Z",
-      "updated_at": "2026-08-06T10:28:19.319324Z"
+      "updated_at": "2026-08-07T15:52:34Z"
     },
     {
       "event_id": "HIT-THT-027",
@@ -3284,7 +3326,7 @@
       "event_id": "HIT-INS-012",
       "title": "Longevity Fund 成立",
       "date_start": "2011",
-      "date_type": "exact",
+      "date_type": "approx",
       "period_id": "period-21st-century",
       "civilization": "United States",
       "region": "Global",
@@ -3307,7 +3349,7 @@
       "chapter": "老年科学、健康寿命与生物技术产业",
       "notes": "draft，等待来源语境复核。本轮已做官方页面可达性核验。",
       "created_at": "2026-08-06T10:31:41.228037Z",
-      "updated_at": "2026-08-06T10:31:41.228037Z"
+      "updated_at": "2026-08-07T15:52:34Z"
     },
     {
       "event_id": "HIT-POL-004",
@@ -3476,12 +3518,14 @@
       "uncertainty": "IIa 期结果不代表获批药物，也未证明可延寿。",
       "cross_links": [
         "HIT-TEC-013",
-        "HIT-SCI-023"
+        "HIT-SCI-023",
+        "HIT-SCI-112",
+        "HIT-PRA-017"
       ],
       "chapter": "老年科学、健康寿命与生物技术产业",
       "notes": "draft，等待来源语境复核。本轮已做 PMC 页面和 PubMed 元数据核验。",
       "created_at": "2026-08-06T10:35:38.745574Z",
-      "updated_at": "2026-08-06T10:35:38.745574Z"
+      "updated_at": "2026-08-07T15:52:34Z"
     },
     {
       "event_id": "HIT-THT-029",
@@ -3545,7 +3589,7 @@
       "event_id": "HIT-THT-030",
       "title": "洛克《人类理解论》讨论记忆与人格同一性",
       "date_start": "1689",
-      "date_type": "exact",
+      "date_type": "approx",
       "period_id": "period-early-modern-europe",
       "civilization": "England",
       "region": "Europe",
@@ -3568,13 +3612,13 @@
       "chapter": "从长生术到近代延寿思想",
       "notes": "draft，等待来源语境复核。本轮已做 Project Gutenberg 公版书可达性核验。",
       "created_at": "2026-08-06T10:39:17.349356Z",
-      "updated_at": "2026-08-06T10:39:17.349356Z"
+      "updated_at": "2026-08-07T15:52:34Z"
     },
     {
       "event_id": "HIT-THT-031",
       "title": "休谟《人性论》提出自我是知觉束",
       "date_start": "1739",
-      "date_type": "exact",
+      "date_type": "approx",
       "period_id": "period-enlightenment",
       "civilization": "Scotland",
       "region": "Europe",
@@ -3597,13 +3641,13 @@
       "chapter": "从长生术到近代延寿思想",
       "notes": "draft，等待来源语境复核。本轮已做 Project Gutenberg 公版书可达性核验。",
       "created_at": "2026-08-06T10:39:17.349356Z",
-      "updated_at": "2026-08-06T10:39:17.349356Z"
+      "updated_at": "2026-08-07T15:52:34Z"
     },
     {
       "event_id": "HIT-THT-032",
       "title": "康德《纯粹理性批判》重构时间与自我条件",
       "date_start": "1781",
-      "date_type": "exact",
+      "date_type": "approx",
       "period_id": "period-enlightenment",
       "civilization": "Germany",
       "region": "Europe",
@@ -3626,13 +3670,13 @@
       "chapter": "从长生术到近代延寿思想",
       "notes": "draft，等待来源语境复核。本轮已做 Project Gutenberg 公版书可达性核验。",
       "created_at": "2026-08-06T10:39:17.349356Z",
-      "updated_at": "2026-08-06T10:39:17.349356Z"
+      "updated_at": "2026-08-07T15:52:34Z"
     },
     {
       "event_id": "HIT-LIT-007",
       "title": "托尔斯泰《伊凡·伊里奇之死》把死亡意识文学化",
       "date_start": "1886",
-      "date_type": "exact",
+      "date_type": "approx",
       "period_id": "period-19th-century",
       "civilization": "Russia",
       "region": "Europe",
@@ -3655,13 +3699,13 @@
       "chapter": "从长生术到近代延寿思想",
       "notes": "draft，等待来源语境复核。本轮已做 Internet Archive 数字档案可达性核验。",
       "created_at": "2026-08-06T10:39:17.349356Z",
-      "updated_at": "2026-08-06T10:39:17.349356Z"
+      "updated_at": "2026-08-07T15:52:34Z"
     },
     {
       "event_id": "HIT-LIT-008",
       "title": "博尔赫斯《永生》重写永生与记忆困境",
       "date_start": "1949",
-      "date_type": "exact",
+      "date_type": "approx",
       "period_id": "period-20th-century",
       "civilization": "Argentina",
       "region": "Latin America",
@@ -3684,7 +3728,7 @@
       "chapter": "从长生术到近代延寿思想",
       "notes": "draft，等待来源语境复核。本轮已做 Internet Archive 英文合集可达性核验。",
       "created_at": "2026-08-06T10:39:17.349356Z",
-      "updated_at": "2026-08-06T10:39:17.349356Z"
+      "updated_at": "2026-08-07T15:52:34Z"
     },
     {
       "event_id": "HIT-THT-033",
@@ -3835,7 +3879,7 @@
       "event_id": "HIT-THT-036",
       "title": "尼采提出永恒轮回与超人生命观",
       "date_start": "1882",
-      "date_type": "exact",
+      "date_type": "approx",
       "period_id": "period-19th-century",
       "civilization": "Germany",
       "region": "Europe",
@@ -3858,7 +3902,7 @@
       "chapter": "从长生术到近代延寿思想",
       "notes": "draft，等待来源语境复核。本轮已做 Internet Archive 英译本可达性核验。",
       "created_at": "2026-08-06T18:50:00Z",
-      "updated_at": "2026-08-06T18:50:00Z"
+      "updated_at": "2026-08-07T15:52:34Z"
     },
     {
       "event_id": "HIT-SCI-025",
@@ -3923,7 +3967,7 @@
       "event_id": "HIT-PRA-011",
       "title": "罗吉尔·培根《老年治疗与青春保存》英译本出版",
       "date_start": "1683",
-      "date_type": "exact",
+      "date_type": "approx",
       "period_id": "period-early-modern-europe",
       "civilization": "England",
       "region": "England / Europe",
@@ -3946,13 +3990,13 @@
       "chapter": "炼丹、药物与身体转化",
       "notes": "draft，等待来源语境复核。本轮已做 Internet Archive 早期英文书影印可达性核验。",
       "created_at": "2026-08-06T19:10:00Z",
-      "updated_at": "2026-08-06T19:10:00Z"
+      "updated_at": "2026-08-07T15:52:34Z"
     },
     {
       "event_id": "HIT-THT-038",
       "title": "乌纳穆诺《生命的悲剧意识》提出永生意愿与理性冲突",
       "date_start": "1913",
-      "date_type": "exact",
+      "date_type": "approx",
       "period_id": "period-20th-century",
       "civilization": "Spain",
       "region": "Europe",
@@ -3975,13 +4019,13 @@
       "chapter": "从长生术到近代延寿思想",
       "notes": "draft，等待来源语境复核。本轮已做 Internet Archive 英译本可达性核验。",
       "created_at": "2026-08-06T19:10:00Z",
-      "updated_at": "2026-08-06T19:10:00Z"
+      "updated_at": "2026-08-07T15:52:34Z"
     },
     {
       "event_id": "HIT-THT-039",
       "title": "哈林顿《不朽主义者》把永生工程化",
       "date_start": "1969",
-      "date_type": "exact",
+      "date_type": "approx",
       "period_id": "period-20th-century",
       "civilization": "United States",
       "region": "North America",
@@ -4004,13 +4048,13 @@
       "chapter": "低温保存、分子机制与数字永生",
       "notes": "draft，等待来源语境复核。本轮已做 Internet Archive 数字档案可达性核验。",
       "created_at": "2026-08-06T19:10:00Z",
-      "updated_at": "2026-08-06T19:10:00Z"
+      "updated_at": "2026-08-07T15:52:34Z"
     },
     {
       "event_id": "HIT-DEM-004",
       "title": "人类死亡率数据库建立",
       "date_start": "2002",
-      "date_type": "exact",
+      "date_type": "approx",
       "period_id": "period-21st-century",
       "civilization": "International",
       "region": "Global",
@@ -4033,7 +4077,7 @@
       "chapter": "人口统计、死亡率与健康寿命",
       "notes": "draft，等待来源语境复核。本轮已做 HMD 官方站点可达性核验。",
       "created_at": "2026-08-06T19:30:00Z",
-      "updated_at": "2026-08-06T19:30:00Z"
+      "updated_at": "2026-08-07T15:52:34Z"
     },
     {
       "event_id": "HIT-TEC-025",
@@ -4128,7 +4172,7 @@
       "event_id": "HIT-THT-040",
       "title": "《追求长寿红利》把延长健康寿命定义为科学议程",
       "date_start": "2006",
-      "date_type": "exact",
+      "date_type": "approx",
       "period_id": "period-21st-century",
       "civilization": "United States / Global",
       "region": "Global",
@@ -4151,7 +4195,7 @@
       "chapter": "老年科学、健康寿命与生物技术产业",
       "notes": "draft，等待来源语境复核。本轮已做 PubMed 元数据可达性核验。",
       "created_at": "2026-08-06T19:30:00Z",
-      "updated_at": "2026-08-06T19:30:00Z"
+      "updated_at": "2026-08-07T15:52:34Z"
     },
     {
       "event_id": "HIT-SCI-027",
@@ -4397,7 +4441,7 @@
       "event_id": "HIT-INS-018",
       "title": "SENS Research Foundation 成立",
       "date_start": "2009",
-      "date_type": "exact",
+      "date_type": "approx",
       "period_id": "period-21st-century",
       "civilization": "United States / Global",
       "region": "California / Global",
@@ -4420,7 +4464,7 @@
       "chapter": "老年科学、健康寿命与生物技术产业",
       "notes": "draft，等待来源语境复核。本轮已做 Wikipedia 与 SENS 历史页面交叉核验。",
       "created_at": "2026-08-06T20:30:00Z",
-      "updated_at": "2026-08-06T20:30:00Z"
+      "updated_at": "2026-08-07T15:52:34Z"
     },
     {
       "event_id": "HIT-INS-019",
@@ -4455,7 +4499,7 @@
       "event_id": "HIT-INS-020",
       "title": "UK Biobank 主研究启动",
       "date_start": "2007-04",
-      "date_type": "exact",
+      "date_type": "approx",
       "period_id": "period-21st-century",
       "civilization": "United Kingdom",
       "region": "United Kingdom",
@@ -4478,13 +4522,13 @@
       "chapter": "老年科学、健康寿命与生物技术产业",
       "notes": "draft，等待来源语境复核。本轮已做 Wikipedia 与官方关于页交叉核验。",
       "created_at": "2026-08-06T20:30:00Z",
-      "updated_at": "2026-08-06T20:30:00Z"
+      "updated_at": "2026-08-07T15:52:34Z"
     },
     {
       "event_id": "HIT-THT-041",
       "title": "恩格尔巴特提出人类智能增强框架",
       "date_start": "1962-10",
-      "date_type": "exact",
+      "date_type": "approx",
       "period_id": "period-20th-century",
       "civilization": "United States",
       "region": "California / North America",
@@ -4507,13 +4551,13 @@
       "chapter": "认知外延、智能增强与数字身份",
       "notes": "draft，等待来源语境复核。本轮已做 Doug Engelbart Institute 原文页可达性核验。",
       "created_at": "2026-08-06T20:50:00Z",
-      "updated_at": "2026-08-06T20:50:00Z"
+      "updated_at": "2026-08-07T15:52:34Z"
     },
     {
       "event_id": "HIT-THT-042",
       "title": "帕菲特《理与人》系统讨论人格同一性",
       "date_start": "1984",
-      "date_type": "exact",
+      "date_type": "approx",
       "period_id": "period-20th-century",
       "civilization": "United Kingdom",
       "region": "Europe",
@@ -4536,13 +4580,13 @@
       "chapter": "认知外延、智能增强与数字身份",
       "notes": "draft，等待来源语境复核。本轮已做 Wikipedia 词条核验。",
       "created_at": "2026-08-06T20:50:00Z",
-      "updated_at": "2026-08-06T20:50:00Z"
+      "updated_at": "2026-08-07T15:52:34Z"
     },
     {
       "event_id": "HIT-THT-043",
       "title": "克拉克与查默斯提出扩展心智",
       "date_start": "1998",
-      "date_type": "exact",
+      "date_type": "approx",
       "period_id": "period-20th-century",
       "civilization": "United Kingdom / Australia",
       "region": "Global",
@@ -4565,13 +4609,13 @@
       "chapter": "认知外延、智能增强与数字身份",
       "notes": "draft，等待来源语境复核。本轮已做作者原文页可达性核验。",
       "created_at": "2026-08-06T20:50:00Z",
-      "updated_at": "2026-08-06T20:50:00Z"
+      "updated_at": "2026-08-07T15:52:34Z"
     },
     {
       "event_id": "HIT-THT-044",
       "title": "查默斯对技术奇点做系统哲学分析",
       "date_start": "2010",
-      "date_type": "exact",
+      "date_type": "approx",
       "period_id": "period-21st-century",
       "civilization": "Australia / Global",
       "region": "Global",
@@ -4594,7 +4638,7 @@
       "chapter": "认知外延、智能增强与数字身份",
       "notes": "draft，等待来源语境复核。本轮已做作者论文 PDF 可达性核验。",
       "created_at": "2026-08-06T20:50:00Z",
-      "updated_at": "2026-08-06T20:50:00Z"
+      "updated_at": "2026-08-07T15:52:34Z"
     },
     {
       "event_id": "HIT-THT-045",
@@ -4658,7 +4702,7 @@
       "event_id": "HIT-LIT-009",
       "title": "但丁完成《神曲》",
       "date_start": "1321",
-      "date_type": "exact",
+      "date_type": "approx",
       "period_id": "period-latin-medieval",
       "civilization": "Italy",
       "region": "Italy / Europe",
@@ -4681,13 +4725,13 @@
       "chapter": "神话、来世与灵魂不朽",
       "notes": "draft，等待来源语境复核。本轮已做 Project Gutenberg 公版书可达性核验。",
       "created_at": "2026-08-06T21:10:00Z",
-      "updated_at": "2026-08-06T21:10:00Z"
+      "updated_at": "2026-08-07T15:52:34Z"
     },
     {
       "event_id": "HIT-THT-046",
       "title": "弗洛伊德《超越快乐原则》提出死亡本能",
       "date_start": "1920",
-      "date_type": "exact",
+      "date_type": "approx",
       "period_id": "period-20th-century",
       "civilization": "Austria",
       "region": "Europe",
@@ -4710,13 +4754,13 @@
       "chapter": "从长生术到近代延寿思想",
       "notes": "draft，等待来源语境复核。本轮已做 Internet Archive 译本可达性核验。",
       "created_at": "2026-08-06T21:10:00Z",
-      "updated_at": "2026-08-06T21:10:00Z"
+      "updated_at": "2026-08-07T15:52:34Z"
     },
     {
       "event_id": "HIT-THT-047",
       "title": "加缪《西西弗神话》提出死亡与意义问题",
       "date_start": "1942",
-      "date_type": "exact",
+      "date_type": "approx",
       "period_id": "period-20th-century",
       "civilization": "France",
       "region": "Europe",
@@ -4739,13 +4783,13 @@
       "chapter": "从长生术到近代延寿思想",
       "notes": "draft，等待来源语境复核。本轮已做 Internet Archive 英译本可达性核验。",
       "created_at": "2026-08-06T21:10:00Z",
-      "updated_at": "2026-08-06T21:10:00Z"
+      "updated_at": "2026-08-07T15:52:34Z"
     },
     {
       "event_id": "HIT-THT-048",
       "title": "贝克尔《拒斥死亡》把死亡恐惧放入人类动机核心",
       "date_start": "1973",
-      "date_type": "exact",
+      "date_type": "approx",
       "period_id": "period-20th-century",
       "civilization": "United States",
       "region": "North America",
@@ -4768,7 +4812,7 @@
       "chapter": "从长生术到近代延寿思想",
       "notes": "draft，等待来源语境复核。本轮已做 Internet Archive 数字档案可达性核验。",
       "created_at": "2026-08-06T21:10:00Z",
-      "updated_at": "2026-08-06T21:10:00Z"
+      "updated_at": "2026-08-07T15:52:34Z"
     },
     {
       "event_id": "HIT-SCI-032",
@@ -5249,7 +5293,7 @@
       "event_id": "HIT-THT-052",
       "title": "库兹韦尔与格罗斯曼出版《奇妙之旅》",
       "date_start": "2004",
-      "date_type": "exact",
+      "date_type": "approx",
       "period_id": "period-21st-century",
       "civilization": "United States",
       "region": "North America / Global",
@@ -5272,7 +5316,7 @@
       "chapter": "从长生术到近代延寿思想",
       "notes": "draft，等待来源语境复核。本轮已做 Internet Archive 数字档案可达性核验。",
       "created_at": "2026-08-06T22:30:00Z",
-      "updated_at": "2026-08-06T22:30:00Z"
+      "updated_at": "2026-08-07T15:52:34Z"
     },
     {
       "event_id": "HIT-POL-007",
@@ -5570,7 +5614,7 @@
       "event_id": "HIT-THT-053",
       "title": "桑德伯格与博斯特罗姆发表《全脑仿真路线图》",
       "date_start": "2008",
-      "date_type": "exact",
+      "date_type": "approx",
       "period_id": "period-21st-century",
       "civilization": "United Kingdom",
       "region": "Oxford / Global",
@@ -5593,13 +5637,13 @@
       "chapter": "认知外延、智能增强与数字身份",
       "notes": "draft，等待来源语境复核。本轮已做 ORA 官方存档可达性核验。",
       "created_at": "2026-08-06T23:30:00Z",
-      "updated_at": "2026-08-06T23:30:00Z"
+      "updated_at": "2026-08-07T15:52:34Z"
     },
     {
       "event_id": "HIT-TEC-035",
       "title": "线虫完整神经连接组发表",
       "date_start": "1986-11",
-      "date_type": "exact",
+      "date_type": "approx",
       "period_id": "period-20th-century",
       "civilization": "United Kingdom",
       "region": "Cambridge / Europe",
@@ -5622,13 +5666,13 @@
       "chapter": "认知外延、智能增强与数字身份",
       "notes": "draft，等待来源语境复核。本轮已做 PubMed 元数据核验。",
       "created_at": "2026-08-06T23:30:00Z",
-      "updated_at": "2026-08-06T23:30:00Z"
+      "updated_at": "2026-08-07T15:52:34Z"
     },
     {
       "event_id": "HIT-INS-024",
       "title": "艾伦脑科学研究所成立",
       "date_start": "2003",
-      "date_type": "exact",
+      "date_type": "approx",
       "period_id": "period-21st-century",
       "civilization": "United States",
       "region": "Seattle / North America",
@@ -5651,7 +5695,7 @@
       "chapter": "认知外延、智能增强与数字身份",
       "notes": "draft，等待来源语境复核。本轮已做 Wikipedia 与官方页面交叉核验。",
       "created_at": "2026-08-06T23:30:00Z",
-      "updated_at": "2026-08-06T23:30:00Z"
+      "updated_at": "2026-08-07T15:52:34Z"
     },
     {
       "event_id": "HIT-INS-025",
@@ -5928,7 +5972,7 @@
       "event_id": "HIT-LIT-013",
       "title": "伊根出版《置换城市》",
       "date_start": "1994",
-      "date_type": "exact",
+      "date_type": "approx",
       "period_id": "period-20th-century",
       "civilization": "Australia",
       "region": "Australia / Global",
@@ -5952,7 +5996,7 @@
       "chapter": "低温保存、分子机制与数字永生",
       "notes": "draft，等待来源语境复核。本轮已做 Wikipedia 词条核验。",
       "created_at": "2026-08-06T23:55:00Z",
-      "updated_at": "2026-08-06T23:55:00Z"
+      "updated_at": "2026-08-07T15:52:34Z"
     },
     {
       "event_id": "HIT-THT-056",
@@ -6287,7 +6331,7 @@
       "event_id": "HIT-INS-031",
       "title": "圣书之龛建成",
       "date_start": "1965",
-      "date_type": "exact",
+      "date_type": "approx",
       "period_id": "period-20th-century",
       "civilization": "Israel",
       "region": "Jerusalem / Israel",
@@ -6310,7 +6354,7 @@
       "chapter": "神话、来世与灵魂不朽",
       "notes": "draft，等待来源语境复核。本轮已做 Wikipedia 词条核验。",
       "created_at": "2026-08-07T00:05:00Z",
-      "updated_at": "2026-08-07T00:05:00Z"
+      "updated_at": "2026-08-07T15:52:34Z"
     },
     {
       "event_id": "HIT-THT-057",
@@ -6345,7 +6389,7 @@
       "event_id": "HIT-THT-058",
       "title": "德雷克斯勒出版《创造的引擎》",
       "date_start": "1986",
-      "date_type": "exact",
+      "date_type": "approx",
       "period_id": "period-20th-century",
       "civilization": "United States",
       "region": "United States / Global",
@@ -6369,13 +6413,13 @@
       "chapter": "低温保存、分子机制与数字永生",
       "notes": "draft，等待来源语境复核。本轮已做 Wikipedia 词条核验。",
       "created_at": "2026-08-07T00:10:00Z",
-      "updated_at": "2026-08-07T00:10:00Z"
+      "updated_at": "2026-08-07T15:52:34Z"
     },
     {
       "event_id": "HIT-THT-059",
       "title": "德雷克斯勒出版《纳米系统》",
       "date_start": "1992",
-      "date_type": "exact",
+      "date_type": "approx",
       "period_id": "period-20th-century",
       "civilization": "United States",
       "region": "United States / Global",
@@ -6399,13 +6443,13 @@
       "chapter": "低温保存、分子机制与数字永生",
       "notes": "draft，等待来源语境复核。本轮已做 Wikipedia 词条核验。",
       "created_at": "2026-08-07T00:10:00Z",
-      "updated_at": "2026-08-07T00:10:00Z"
+      "updated_at": "2026-08-07T15:52:34Z"
     },
     {
       "event_id": "HIT-THT-060",
       "title": "弗雷塔斯出版《纳米医学》第一卷",
       "date_start": "1999",
-      "date_type": "exact",
+      "date_type": "approx",
       "period_id": "period-20th-century",
       "civilization": "United States",
       "region": "United States / Global",
@@ -6429,13 +6473,13 @@
       "chapter": "低温保存、分子机制与数字永生",
       "notes": "draft，等待来源语境复核。本轮已做官方目录页核验。",
       "created_at": "2026-08-07T00:10:00Z",
-      "updated_at": "2026-08-07T00:10:00Z"
+      "updated_at": "2026-08-07T15:52:34Z"
     },
     {
       "event_id": "HIT-THT-061",
       "title": "德雷克斯勒出版《富足激进》",
       "date_start": "2013",
-      "date_type": "exact",
+      "date_type": "approx",
       "period_id": "period-21st-century",
       "civilization": "United States",
       "region": "United States / Global",
@@ -6459,7 +6503,7 @@
       "chapter": "低温保存、分子机制与数字永生",
       "notes": "draft，等待来源语境复核。本轮已做出版方页面核验。",
       "created_at": "2026-08-07T00:10:00Z",
-      "updated_at": "2026-08-07T00:10:00Z"
+      "updated_at": "2026-08-07T15:52:34Z"
     },
     {
       "event_id": "HIT-SCI-037",
@@ -6644,7 +6688,7 @@
       "event_id": "HIT-THT-065",
       "title": "哈拉维发表《赛博格宣言》",
       "date_start": "1985",
-      "date_type": "exact",
+      "date_type": "approx",
       "period_id": "period-20th-century",
       "civilization": "United States",
       "region": "United States / Global",
@@ -6667,7 +6711,7 @@
       "chapter": "认知外延、智能增强与数字身份",
       "notes": "draft，等待来源语境复核。本轮已做 Wikipedia 词条核验。",
       "created_at": "2026-08-07T00:20:00Z",
-      "updated_at": "2026-08-07T00:20:00Z"
+      "updated_at": "2026-08-07T15:52:34Z"
     },
     {
       "event_id": "HIT-THT-066",
@@ -7119,7 +7163,7 @@
       "event_id": "HIT-LIT-022",
       "title": "迪克出版《仿生人会梦见电子羊吗？》",
       "date_start": "1968",
-      "date_type": "exact",
+      "date_type": "approx",
       "period_id": "period-20th-century",
       "civilization": "United States",
       "region": "North America / Global",
@@ -7143,7 +7187,7 @@
       "chapter": "神话、死亡意识与身份连续性",
       "notes": "draft，等待来源语境复核。本轮已做 Wikipedia 词条核验。",
       "created_at": "2026-08-07T01:00:00Z",
-      "updated_at": "2026-08-07T01:00:00Z"
+      "updated_at": "2026-08-07T15:52:34Z"
     },
     {
       "event_id": "HIT-LIT-023",
@@ -7209,7 +7253,7 @@
       "event_id": "HIT-INS-037",
       "title": "Life Extension Foundation 成立",
       "date_start": "1980",
-      "date_type": "exact",
+      "date_type": "approx",
       "period_id": "period-20th-century",
       "civilization": "United States",
       "region": "North America / Global",
@@ -7232,13 +7276,13 @@
       "chapter": "老年科学、健康寿命与生物技术产业",
       "notes": "draft，等待来源语境复核。本轮已做 Wikipedia 词条核验。",
       "created_at": "2026-08-07T02:00:00Z",
-      "updated_at": "2026-08-07T02:00:00Z"
+      "updated_at": "2026-08-07T15:52:34Z"
     },
     {
       "event_id": "HIT-INS-038",
       "title": "Methuselah Mouse Prize 建立",
       "date_start": "2003",
-      "date_type": "exact",
+      "date_type": "approx",
       "period_id": "period-21st-century",
       "civilization": "United States",
       "region": "North America / Global",
@@ -7261,13 +7305,13 @@
       "chapter": "老年科学、健康寿命与生物技术产业",
       "notes": "draft，等待来源语境复核。本轮已做 Wayback Machine 存档页核验。",
       "created_at": "2026-08-07T02:00:00Z",
-      "updated_at": "2026-08-07T02:00:00Z"
+      "updated_at": "2026-08-07T15:52:34Z"
     },
     {
       "event_id": "HIT-INS-039",
       "title": "Rejuvenate Bio 成立并进入犬类基因治疗试验",
       "date_start": "2018",
-      "date_type": "exact",
+      "date_type": "approx",
       "period_id": "period-21st-century",
       "civilization": "United States",
       "region": "North America / Global",
@@ -7291,13 +7335,13 @@
       "chapter": "老年科学、健康寿命与生物技术产业",
       "notes": "draft，等待来源语境复核。本轮已做 Wayback Machine 官方存档核验。",
       "created_at": "2026-08-07T02:00:00Z",
-      "updated_at": "2026-08-07T02:00:00Z"
+      "updated_at": "2026-08-07T15:52:34Z"
     },
     {
       "event_id": "HIT-INS-040",
       "title": "Cambrian Biopharma 与 Novartis 达成 mTOR 抑制剂许可",
       "date_start": "2022-02",
-      "date_type": "exact",
+      "date_type": "approx",
       "period_id": "period-21st-century",
       "civilization": "United States / Switzerland",
       "region": "North America / Europe / Global",
@@ -7321,13 +7365,13 @@
       "chapter": "老年科学、健康寿命与生物技术产业",
       "notes": "draft，等待来源语境复核。本轮已做 Wikipedia Novartis 词条交叉核验。",
       "created_at": "2026-08-07T02:00:00Z",
-      "updated_at": "2026-08-07T02:00:00Z"
+      "updated_at": "2026-08-07T15:52:34Z"
     },
     {
       "event_id": "HIT-INS-041",
       "title": "Juvena Therapeutics 完成 3350 万美元 B 轮融资",
       "date_start": "2026-01",
-      "date_type": "exact",
+      "date_type": "approx",
       "period_id": "period-21st-century",
       "civilization": "United States",
       "region": "North America / Global",
@@ -7351,13 +7395,13 @@
       "chapter": "老年科学、健康寿命与生物技术产业",
       "notes": "draft，等待来源语境复核。本轮已做公司官方新闻页核验。",
       "created_at": "2026-08-07T02:00:00Z",
-      "updated_at": "2026-08-07T02:00:00Z"
+      "updated_at": "2026-08-07T15:52:34Z"
     },
     {
       "event_id": "HIT-SCI-042",
       "title": "长时程增强机制首次被系统发表",
       "date_start": "1973-07",
-      "date_type": "exact",
+      "date_type": "approx",
       "period_id": "period-20th-century",
       "civilization": "United Kingdom / Norway",
       "region": "Europe / Global",
@@ -7381,7 +7425,7 @@
       "chapter": "神经计算、记忆与数字迁移",
       "notes": "draft，等待来源语境复核。本轮已做 PubMed 元数据核验。",
       "created_at": "2026-08-07T03:00:00Z",
-      "updated_at": "2026-08-07T03:00:00Z"
+      "updated_at": "2026-08-07T15:52:34Z"
     },
     {
       "event_id": "HIT-TEC-036",
@@ -7417,7 +7461,7 @@
       "event_id": "HIT-TEC-037",
       "title": "IBM 发布 TrueNorth 神经形态芯片",
       "date_start": "2014",
-      "date_type": "exact",
+      "date_type": "approx",
       "period_id": "period-21st-century",
       "civilization": "United States",
       "region": "North America / Global",
@@ -7441,13 +7485,13 @@
       "chapter": "神经计算、记忆与数字迁移",
       "notes": "draft，等待来源语境复核。本轮已做 Wikipedia Cognitive computer 词条核验。",
       "created_at": "2026-08-07T03:00:00Z",
-      "updated_at": "2026-08-07T03:00:00Z"
+      "updated_at": "2026-08-07T15:52:34Z"
     },
     {
       "event_id": "HIT-TEC-038",
       "title": "Intel 发布 Loihi 神经形态研究芯片",
       "date_start": "2017",
-      "date_type": "exact",
+      "date_type": "approx",
       "period_id": "period-21st-century",
       "civilization": "United States",
       "region": "North America / Global",
@@ -7471,7 +7515,7 @@
       "chapter": "神经计算、记忆与数字迁移",
       "notes": "draft，等待来源语境复核。本轮已做 Wikipedia Neuromorphic computing 词条核验。",
       "created_at": "2026-08-07T03:00:00Z",
-      "updated_at": "2026-08-07T03:00:00Z"
+      "updated_at": "2026-08-07T15:52:34Z"
     },
     {
       "event_id": "HIT-TEC-039",
@@ -7988,7 +8032,7 @@
       "event_id": "HIT-INS-042",
       "title": "Neurorights Initiative 进入国际议程",
       "date_start": "2019",
-      "date_type": "exact",
+      "date_type": "approx",
       "period_id": "period-21st-century",
       "civilization": "United States / International",
       "region": "Global",
@@ -8012,7 +8056,7 @@
       "chapter": "失败教训、监管边界与反证",
       "notes": "draft，等待来源语境复核。本轮已做 Wikipedia 词条核验。",
       "created_at": "2026-08-07T07:00:00Z",
-      "updated_at": "2026-08-07T07:00:00Z"
+      "updated_at": "2026-08-07T15:52:34Z"
     },
     {
       "event_id": "HIT-POL-015",
@@ -8108,7 +8152,7 @@
       "event_id": "HIT-TEC-040",
       "title": "Facebook 建立纪念账户机制",
       "date_start": "2009",
-      "date_type": "exact",
+      "date_type": "approx",
       "period_id": "period-21st-century",
       "civilization": "United States",
       "region": "Global",
@@ -8132,7 +8176,7 @@
       "chapter": "数字迁移、身份连续与数字遗产",
       "notes": "draft，等待来源语境复核。本轮已做 Wikipedia Online mourning 词条核验。",
       "created_at": "2026-08-07T08:00:00Z",
-      "updated_at": "2026-08-07T08:00:00Z"
+      "updated_at": "2026-08-07T15:52:34Z"
     },
     {
       "event_id": "HIT-TEC-041",
@@ -8258,7 +8302,7 @@
       "event_id": "HIT-THT-075",
       "title": "巴特勒批评洛克记忆判准",
       "date_start": "1736",
-      "date_type": "exact",
+      "date_type": "approx",
       "period_id": "period-early-modern-europe",
       "civilization": "United Kingdom",
       "region": "Europe",
@@ -8282,13 +8326,13 @@
       "chapter": "神话、死亡意识与身份连续性",
       "notes": "draft，等待来源语境复核。本轮已做 Internet Archive 文本核验。",
       "created_at": "2026-08-07T09:00:00Z",
-      "updated_at": "2026-08-07T09:00:00Z"
+      "updated_at": "2026-08-07T15:52:34Z"
     },
     {
       "event_id": "HIT-THT-076",
       "title": "里德提出勇敢军官反例",
       "date_start": "1785",
-      "date_type": "exact",
+      "date_type": "approx",
       "period_id": "period-early-modern-europe",
       "civilization": "United Kingdom",
       "region": "Europe",
@@ -8312,13 +8356,13 @@
       "chapter": "神话、死亡意识与身份连续性",
       "notes": "draft，等待来源语境复核。本轮已做 Internet Archive 文本核验。",
       "created_at": "2026-08-07T09:00:00Z",
-      "updated_at": "2026-08-07T09:00:00Z"
+      "updated_at": "2026-08-07T15:52:34Z"
     },
     {
       "event_id": "HIT-THT-077",
       "title": "威廉斯提出自我与未来问题",
       "date_start": "1970",
-      "date_type": "exact",
+      "date_type": "approx",
       "period_id": "period-20th-century",
       "civilization": "United Kingdom",
       "region": "Europe / Global",
@@ -8342,13 +8386,13 @@
       "chapter": "神话、死亡意识与身份连续性",
       "notes": "draft，等待来源语境复核。本轮已做 SEP Personal Identity 词条交叉核验。",
       "created_at": "2026-08-07T09:00:00Z",
-      "updated_at": "2026-08-07T09:00:00Z"
+      "updated_at": "2026-08-07T15:52:34Z"
     },
     {
       "event_id": "HIT-THT-078",
       "title": "舒梅克与斯温伯恩出版《人格同一性》",
       "date_start": "1984",
-      "date_type": "exact",
+      "date_type": "approx",
       "period_id": "period-20th-century",
       "civilization": "United Kingdom / United States",
       "region": "Europe / North America / Global",
@@ -8372,7 +8416,7 @@
       "chapter": "神话、死亡意识与身份连续性",
       "notes": "draft，等待来源语境复核。本轮已做 Internet Archive 文本核验。",
       "created_at": "2026-08-07T09:00:00Z",
-      "updated_at": "2026-08-07T09:00:00Z"
+      "updated_at": "2026-08-07T15:52:34Z"
     },
     {
       "event_id": "HIT-THT-079",
@@ -8408,7 +8452,7 @@
       "event_id": "HIT-THT-080",
       "title": "Mollaret 与 Goulon 提出 coma dépassé 概念",
       "date_start": "1959-07",
-      "date_type": "exact",
+      "date_type": "approx",
       "period_id": "period-20th-century",
       "civilization": "France",
       "region": "Europe / Global",
@@ -8431,7 +8475,7 @@
       "chapter": "死亡判定与生命延续制度",
       "notes": "draft，等待来源语境复核。本轮已做 PubMed 元数据核验。",
       "created_at": "2026-08-07T09:00:00Z",
-      "updated_at": "2026-08-07T09:00:00Z"
+      "updated_at": "2026-08-07T15:52:34Z"
     },
     {
       "event_id": "HIT-SCI-053",
@@ -8466,7 +8510,7 @@
       "event_id": "HIT-POL-018",
       "title": "美国通过《统一死亡判定法》",
       "date_start": "1981",
-      "date_type": "exact",
+      "date_type": "approx",
       "period_id": "period-20th-century",
       "civilization": "United States",
       "region": "North America",
@@ -8489,7 +8533,7 @@
       "chapter": "死亡判定与生命延续制度",
       "notes": "draft，等待来源语境复核。本轮已做 Uniform Law Commission 官方页面与 Wikipedia 交叉核验。",
       "created_at": "2026-08-07T09:00:00Z",
-      "updated_at": "2026-08-07T09:00:00Z"
+      "updated_at": "2026-08-07T15:52:34Z"
     },
     {
       "event_id": "HIT-SCI-054",
@@ -8845,7 +8889,7 @@
       "event_id": "HIT-INS-043",
       "title": "体外生命支持组织成立",
       "date_start": "1989",
-      "date_type": "exact",
+      "date_type": "approx",
       "period_id": "period-20th-century",
       "civilization": "International",
       "region": "Global",
@@ -8869,7 +8913,7 @@
       "chapter": "死亡判定与生命延续制度",
       "notes": "draft，等待来源语境复核。本轮已做 Wikipedia 词条核验。",
       "created_at": "2026-08-07T12:00:00Z",
-      "updated_at": "2026-08-07T12:00:00Z"
+      "updated_at": "2026-08-07T15:52:34Z"
     },
     {
       "event_id": "HIT-SCI-057",
@@ -9198,7 +9242,7 @@
       "event_id": "HIT-THT-081",
       "title": "Maastricht 非心跳捐献者分类提出",
       "date_start": "1995-10",
-      "date_type": "exact",
+      "date_type": "approx",
       "period_id": "period-20th-century",
       "civilization": "Netherlands / International",
       "region": "Europe / Global",
@@ -9222,7 +9266,7 @@
       "chapter": "死亡判定与生命延续制度",
       "notes": "draft，等待来源语境复核。本轮已做 PubMed 元数据核验。",
       "created_at": "2026-08-07T14:00:00Z",
-      "updated_at": "2026-08-07T14:00:00Z"
+      "updated_at": "2026-08-07T15:52:34Z"
     },
     {
       "event_id": "HIT-TEC-050",
@@ -9677,7 +9721,7 @@
       "event_id": "HIT-POL-030",
       "title": "WHO 发布积极老龄化政策框架",
       "date_start": "2002",
-      "date_type": "exact",
+      "date_type": "approx",
       "period_id": "period-21st-century",
       "civilization": "Global",
       "region": "Global",
@@ -9700,7 +9744,7 @@
       "chapter": "老年科学、健康寿命与生物技术产业",
       "notes": "draft，等待来源语境复核。本轮已用 WHO IRIS 官方记录核验。",
       "created_at": "2026-08-07T17:00:00Z",
-      "updated_at": "2026-08-07T17:00:00Z"
+      "updated_at": "2026-08-07T15:52:34Z"
     },
     {
       "event_id": "HIT-POL-031",
@@ -9715,7 +9759,7 @@
       "claim": "2017 年 1 月 2 日，WHO 发布《Global strategy and action plan on ageing and health》，提出 2016-2020 年最大化功能能力、发展年龄友好环境、整合长期照护和建立健康老龄化测量系统。",
       "summary": "该战略把健康老龄化从概念转化为可执行的多部门行动框架。",
       "sources": [
-        "SRC-339"
+        "SRC-1785"
       ],
       "evidence_grade": "S",
       "verification_status": "unreviewed",
@@ -9730,7 +9774,7 @@
       "chapter": "老年科学、健康寿命与生物技术产业",
       "notes": "draft，等待来源语境复核。本轮已用 WHO 官方出版物页面核验。",
       "created_at": "2026-08-07T17:00:00Z",
-      "updated_at": "2026-08-07T17:00:00Z"
+      "updated_at": "2026-08-07T15:52:34Z"
     },
     {
       "event_id": "HIT-INS-044",
@@ -10478,7 +10522,7 @@
       "event_id": "HIT-INS-058",
       "title": "Human Longevity 成立",
       "date_start": "2013",
-      "date_type": "exact",
+      "date_type": "approx",
       "period_id": "period-21st-century",
       "civilization": "United States",
       "region": "North America / Global",
@@ -10502,13 +10546,13 @@
       "chapter": "老年科学、健康寿命与生物技术产业",
       "notes": "draft，等待来源语境复核。本轮已做 Wikipedia 词条核验。",
       "created_at": "2026-08-06T14:10:00Z",
-      "updated_at": "2026-08-06T14:10:00Z"
+      "updated_at": "2026-08-07T15:52:34Z"
     },
     {
       "event_id": "HIT-INS-059",
       "title": "Life Biosciences 成立",
       "date_start": "2017",
-      "date_type": "exact",
+      "date_type": "approx",
       "period_id": "period-21st-century",
       "civilization": "United States",
       "region": "North America / Global",
@@ -10531,7 +10575,7 @@
       "chapter": "老年科学、健康寿命与生物技术产业",
       "notes": "draft，等待来源语境复核。本轮已做 Wikipedia 词条核验。",
       "created_at": "2026-08-06T14:10:00Z",
-      "updated_at": "2026-08-06T14:10:00Z"
+      "updated_at": "2026-08-07T15:52:34Z"
     },
     {
       "event_id": "HIT-INS-060",
@@ -12200,7 +12244,7 @@
       "chapter": "细胞重编程、表观遗传年轻化与再生医学",
       "notes": "draft，等待来源语境复核。本轮已用 PubMed/Crossref/DOI 元数据核验。",
       "created_at": "2026-08-06T15:24:43Z",
-      "updated_at": "2026-08-06T15:24:43Z"
+      "updated_at": "2026-08-07T15:52:34Z"
     },
     {
       "event_id": "HIT-SCI-087",
@@ -14288,35 +14332,6 @@
       "updated_at": "2026-08-07T10:09:23Z"
     },
     {
-      "event_id": "HIT-SCI-111",
-      "title": "生成式 AI 发现的 TNIK 抑制剂 IIa 期结果发表",
-      "date_start": "2025-06-03",
-      "date_type": "exact",
-      "period_id": "period-21st-century",
-      "civilization": "China",
-      "region": "Global",
-      "path_family": "reconstruction",
-      "event_type": "technology",
-      "claim": "《Nature Medicine》发表 rentosertib（ISM001-055）治疗特发性肺纤维化的随机安慰剂对照 IIa 期结果。",
-      "summary": "作为首批由生成式 AI 设计并进入临床验证的候选药之一，该结果提供了“AI 设计到人体安全性/疗效信号”的实证锚点。",
-      "sources": [
-        "SRC-496"
-      ],
-      "evidence_grade": "S",
-      "verification_status": "unreviewed",
-      "status": "draft",
-      "significance": "major",
-      "uncertainty": "IIa 期样本有限，主要终点是安全耐受性，疗效信号仍需更大规模 III 期验证。",
-      "cross_links": [
-        "HIT-SCI-112",
-        "HIT-PRA-017"
-      ],
-      "chapter": "AI 药物发现与临床转化",
-      "notes": "PubMed/Crossref/DOI 元数据核验。 本轮已用官方页面/PubMed/Crossref/DOI 元数据核验。；日期补齐：Crossref 2025-06-03",
-      "created_at": "2026-08-06T16:11:30Z",
-      "updated_at": "2026-08-07T10:09:23Z"
-    },
-    {
       "event_id": "HIT-PRA-017",
       "title": "Rentosertib 吸入溶液获 CDE 临床批件",
       "date_start": "2026-04-28",
@@ -14337,13 +14352,13 @@
       "significance": "medium",
       "uncertainty": "批件只允许开展临床研究，吸入制剂的药代、安全和疗效尚未验证。",
       "cross_links": [
-        "HIT-SCI-111",
+        "HIT-TEC-024",
         "HIT-PRA-018"
       ],
       "chapter": "AI 药物发现与临床转化",
       "notes": "Insilico 官方新闻核验。 本轮已用官方页面/PubMed/Crossref/DOI 元数据核验。",
       "created_at": "2026-08-06T16:11:30Z",
-      "updated_at": "2026-08-06T16:11:30Z"
+      "updated_at": "2026-08-07T15:52:34Z"
     },
     {
       "event_id": "HIT-PRA-018",
@@ -14366,13 +14381,13 @@
       "significance": "turning_point",
       "uncertainty": "III 期启动不保证成功；试验设计、入组、疗效和监管决定都可能改变结论。",
       "cross_links": [
-        "HIT-SCI-111",
+        "HIT-TEC-024",
         "HIT-PRA-017"
       ],
       "chapter": "AI 药物发现与临床转化",
       "notes": "Insilico 官方新闻核验。 本轮已用官方页面/PubMed/Crossref/DOI 元数据核验。",
       "created_at": "2026-08-06T16:11:30Z",
-      "updated_at": "2026-08-06T16:11:30Z"
+      "updated_at": "2026-08-07T15:52:34Z"
     },
     {
       "event_id": "HIT-THT-111",
@@ -14395,12 +14410,12 @@
       "significance": "medium",
       "uncertainty": "综述是观点性证据整合，不代表具体药物临床结果。",
       "cross_links": [
-        "HIT-SCI-111"
+        "HIT-TEC-024"
       ],
       "chapter": "AI 药物发现与临床转化",
       "notes": "Crossref/DOI 元数据核验。 本轮已用官方页面/PubMed/Crossref/DOI 元数据核验。",
       "created_at": "2026-08-06T16:11:30Z",
-      "updated_at": "2026-08-06T16:11:30Z"
+      "updated_at": "2026-08-07T15:52:34Z"
     },
     {
       "event_id": "HIT-THT-112",
@@ -14423,13 +14438,13 @@
       "significance": "medium",
       "uncertainty": "该事件来自行业分析报告，非官方登记表；不同机构对“AI 设计”的定义可能不同。",
       "cross_links": [
-        "HIT-SCI-111",
+        "HIT-TEC-024",
         "HIT-PRA-018"
       ],
       "chapter": "AI 药物发现与临床转化",
       "notes": "二手行业报告核验，明确标注为统计口径需复核。 本轮已用官方页面/PubMed/Crossref/DOI 元数据核验。",
       "created_at": "2026-08-06T16:11:30Z",
-      "updated_at": "2026-08-06T16:11:30Z"
+      "updated_at": "2026-08-07T15:52:34Z"
     },
     {
       "event_id": "HIT-TEC-089",
@@ -14509,12 +14524,12 @@
       "uncertainty": "综述依赖现有临床随访，样本量、复苏率和长期生殖结局仍有限。",
       "cross_links": [
         "HIT-SCI-113",
-        "HIT-SCI-114"
+        "HIT-TEC-021"
       ],
       "chapter": "低温保存、3D 生物打印与再生",
       "notes": "PubMed/DOI 元数据核验。 本轮已用官方页面/PubMed/Crossref/DOI 元数据核验。",
       "created_at": "2026-08-06T16:11:30Z",
-      "updated_at": "2026-08-06T16:11:30Z"
+      "updated_at": "2026-08-07T15:52:34Z"
     },
     {
       "event_id": "HIT-SCI-113",
@@ -14538,34 +14553,6 @@
       "uncertainty": "综述为转化框架，临床数据有限，不能证明子宫冷冻保存已可常规应用。",
       "cross_links": [
         "HIT-SCI-112"
-      ],
-      "chapter": "低温保存、3D 生物打印与再生",
-      "notes": "PubMed/DOI 元数据核验。 本轮已用官方页面/PubMed/Crossref/DOI 元数据核验。",
-      "created_at": "2026-08-06T16:11:30Z",
-      "updated_at": "2026-08-06T16:11:30Z"
-    },
-    {
-      "event_id": "HIT-SCI-114",
-      "title": "公升级冷冻保护剂体积物理玻璃化与纳米复温研究发表",
-      "date_start": "2025-09-26",
-      "date_type": "exact",
-      "period_id": "period-21st-century",
-      "civilization": "International",
-      "region": "Global",
-      "path_family": "suspension",
-      "event_type": "technology",
-      "claim": "2025 年 9 月 26 日，《Nature Communications》报道公升级冷冻保护剂体积物理玻璃化和纳米复温。",
-      "summary": "该研究把玻璃化保存从毫升级推进到接近器官尺寸的体积，是器官冷冻保存工程化的关键规模里程碑。",
-      "sources": [
-        "SRC-505"
-      ],
-      "evidence_grade": "S",
-      "verification_status": "unreviewed",
-      "status": "draft",
-      "significance": "turning_point",
-      "uncertainty": "公升级体积接近器官尺度，但完整器官灌注、均匀复温和移植结局仍需验证。",
-      "cross_links": [
-        "HIT-SCI-113"
       ],
       "chapter": "低温保存、3D 生物打印与再生",
       "notes": "PubMed/DOI 元数据核验。 本轮已用官方页面/PubMed/Crossref/DOI 元数据核验。",
@@ -14623,32 +14610,6 @@
       "notes": "第 83-87 轮精选批次：Crossref/DOI 核验；待本地复核。；日期补齐：Crossref 2026-01-03",
       "created_at": "2026-08-06T16:17:48Z",
       "updated_at": "2026-08-07T10:09:23Z"
-    },
-    {
-      "event_id": "HIT-TEC-091",
-      "title": "短暂重编程实现内皮细胞衰老功能恢复研究发表",
-      "date_start": "2026-06-26",
-      "date_type": "exact",
-      "period_id": "period-21st-century",
-      "civilization": "International",
-      "region": "Global",
-      "path_family": "maintenance",
-      "event_type": "technology",
-      "claim": "该研究显示短暂重编程可恢复衰老内皮细胞的功能。",
-      "summary": "内皮细胞功能恢复为重编程从细胞状态转向心血管功能维护提供实验证据。",
-      "sources": [
-        "SRC-508"
-      ],
-      "evidence_grade": "S",
-      "verification_status": "unreviewed",
-      "status": "draft",
-      "significance": "major",
-      "uncertainty": "本记录基于期刊元数据和论文标题，尚未完成全文语境复核。",
-      "cross_links": [],
-      "chapter": "细胞重编程与年轻化",
-      "notes": "第 83-87 轮精选批次：Crossref/DOI 核验；待本地复核。",
-      "created_at": "2026-08-06T16:17:48Z",
-      "updated_at": "2026-08-06T16:17:48Z"
     },
     {
       "event_id": "HIT-FAI-012",
@@ -17066,7 +17027,7 @@
       "chapter": "脑保存与连接组",
       "notes": "第 101-110 轮精选批次：Crossref/DOI 核验；待本地复核。；日期补齐：Crossref 2025-12-30",
       "created_at": "2026-08-06T16:26:13Z",
-      "updated_at": "2026-08-07T10:09:23Z"
+      "updated_at": "2026-08-07T15:52:34Z"
     },
     {
       "event_id": "HIT-TEC-120",
@@ -17586,7 +17547,7 @@
       "chapter": "数字孪生与个体建模",
       "notes": "第 101-110 轮精选批次：Crossref/DOI 核验；待本地复核。；日期补齐：Crossref 2026-03-06",
       "created_at": "2026-08-06T16:26:13Z",
-      "updated_at": "2026-08-07T10:09:23Z"
+      "updated_at": "2026-08-07T15:52:34Z"
     },
     {
       "event_id": "HIT-THT-186",
@@ -21749,32 +21710,6 @@
       "updated_at": "2026-08-07T10:09:23Z"
     },
     {
-      "event_id": "HIT-TEC-221",
-      "title": "《Patient-Centric Digital Twin Framework with Hybrid Knowledge Distillation for Federated Class-Incremental Learning in Precision Medicine》论文发表",
-      "date_start": "2026-03-06",
-      "date_type": "exact",
-      "period_id": "period-21st-century",
-      "civilization": "International",
-      "region": "Global",
-      "path_family": "cognitive_extension",
-      "event_type": "technology",
-      "claim": "该研究围绕数字孪生与个体化健康建模报告面向精准医学的患者中心数字孪生框架。",
-      "summary": "该节点将患者中心数字孪生纳入个性化健康建模路径。",
-      "sources": [
-        "SRC-782"
-      ],
-      "evidence_grade": "S",
-      "verification_status": "unreviewed",
-      "status": "draft",
-      "significance": "major",
-      "uncertainty": "本记录基于期刊元数据和论文标题，尚未完成全文语境复核。",
-      "cross_links": [],
-      "chapter": "数字孪生、个体建模与预测医学",
-      "notes": "第 138 轮补录：数字孪生与个体化健康建模；待本地复核。；日期补齐：Crossref 2026-03-06",
-      "created_at": "2026-08-06T16:49:46Z",
-      "updated_at": "2026-08-07T10:09:23Z"
-    },
-    {
       "event_id": "HIT-TEC-222",
       "title": "《Digital twin for personalized medicine development》论文发表",
       "date_start": "2025-08-07",
@@ -23361,32 +23296,6 @@
       "updated_at": "2026-08-07T10:09:23Z"
     },
     {
-      "event_id": "HIT-TEC-278",
-      "title": "《Proteomic comparison of human brain tissue preservation methods》论文发表",
-      "date_start": "2025-12-30",
-      "date_type": "exact",
-      "period_id": "period-21st-century",
-      "civilization": "International",
-      "region": "Global",
-      "path_family": "suspension",
-      "event_type": "technology",
-      "claim": "该研究围绕脑保存与连接组比较人体脑组织保存方法的蛋白质组效果。",
-      "summary": "该节点将脑组织蛋白质组保存评估纳入脑保存路径。",
-      "sources": [
-        "SRC-844"
-      ],
-      "evidence_grade": "S",
-      "verification_status": "unreviewed",
-      "status": "draft",
-      "significance": "major",
-      "uncertainty": "本记录基于期刊元数据和论文标题，尚未完成全文语境复核。",
-      "cross_links": [],
-      "chapter": "脑保存、连接组与数字迁移",
-      "notes": "第 150 轮补录：脑保存与连接组；待本地复核。；日期补齐：Crossref 2025-12-30",
-      "created_at": "2026-08-06T16:49:47Z",
-      "updated_at": "2026-08-07T10:09:23Z"
-    },
-    {
       "event_id": "HIT-TEC-279",
       "title": "《Optimization of Brain Tissue Preservation for Nucleic Acid Stability》论文发表",
       "date_start": "2026-01-05",
@@ -24424,7 +24333,7 @@
       "chapter": "老年权利、健康老龄化与公共政策",
       "notes": "第 158 轮补录：老年权利与健康老龄化政策；待本地复核。；日期补齐：Crossref 2024-01-03",
       "created_at": "2026-08-06T16:56:56Z",
-      "updated_at": "2026-08-07T10:09:23Z"
+      "updated_at": "2026-08-07T15:52:34Z"
     },
     {
       "event_id": "HIT-THT-277",
@@ -24995,32 +24904,6 @@
       "cross_links": [],
       "chapter": "健康老龄化、失能压缩与治理",
       "notes": "第 163 轮补录：健康老龄化治理与失能压缩；待本地复核。；日期补齐：Crossref 2025-05-30",
-      "created_at": "2026-08-06T16:56:57Z",
-      "updated_at": "2026-08-07T10:09:23Z"
-    },
-    {
-      "event_id": "HIT-THT-284",
-      "title": "《The Decade of Healthy Ageing: progress and challenges ahead》论文发表",
-      "date_start": "2024-01-03",
-      "date_type": "exact",
-      "period_id": "period-21st-century",
-      "civilization": "International",
-      "region": "Global",
-      "path_family": "social_composite",
-      "event_type": "thought",
-      "claim": "该文献围绕健康老龄化治理与失能压缩评估健康老龄化十年进展与挑战。",
-      "summary": "该节点将健康老龄化十年评估纳入治理路径。",
-      "sources": [
-        "SRC-907"
-      ],
-      "evidence_grade": "I",
-      "verification_status": "unreviewed",
-      "status": "draft",
-      "significance": "major",
-      "uncertainty": "本记录基于期刊元数据和论文标题，尚未完成全文语境复核。",
-      "cross_links": [],
-      "chapter": "健康老龄化、失能压缩与治理",
-      "notes": "第 163 轮补录：健康老龄化治理与失能压缩；待本地复核。；日期补齐：Crossref 2024-01-03",
       "created_at": "2026-08-06T16:56:57Z",
       "updated_at": "2026-08-07T10:09:23Z"
     },
@@ -34277,32 +34160,6 @@
       "cross_links": [],
       "chapter": "寿命干预、临床试验设计与健康寿命终点",
       "notes": "第 234 轮补录：寿命临床试验设计；待本地复核。；日期补齐：Crossref 2025-07-09",
-      "created_at": "2026-08-07T05:03:42Z",
-      "updated_at": "2026-08-07T10:09:23Z"
-    },
-    {
-      "event_id": "HIT-THT-371",
-      "title": "《TARGETING AGING WITH METFORMIN (TAME)》论文发表",
-      "date_start": "2017-07-01",
-      "date_type": "exact",
-      "period_id": "period-21st-century",
-      "civilization": "International",
-      "region": "Global",
-      "path_family": "maintenance",
-      "event_type": "thought",
-      "claim": "该文献围绕寿命临床试验设计报告或讨论可复核的学术证据。",
-      "summary": "该节点将寿命临床试验设计的最新证据纳入有效永生研究年表。",
-      "sources": [
-        "SRC-1264"
-      ],
-      "evidence_grade": "S",
-      "verification_status": "unreviewed",
-      "status": "draft",
-      "significance": "major",
-      "uncertainty": "本记录基于期刊元数据和论文标题，尚未完成全文语境复核。",
-      "cross_links": [],
-      "chapter": "寿命干预、临床试验设计与健康寿命终点",
-      "notes": "第 234 轮补录：寿命临床试验设计；待本地复核。；日期补齐：Crossref 2017-07-01",
       "created_at": "2026-08-07T05:03:42Z",
       "updated_at": "2026-08-07T10:09:23Z"
     },
@@ -47825,32 +47682,6 @@
       "notes": "第 338 轮补录：全球健康与老龄化政策；待本地复核。；日期补齐：Crossref 2015-11-03",
       "created_at": "2026-08-07T07:37:34Z",
       "updated_at": "2026-08-07T10:09:23Z"
-    },
-    {
-      "event_id": "HIT-POL-071",
-      "title": "《Global Strategy and Action Plan on Ageing and Health》论文发表",
-      "date_start": "2017",
-      "date_type": "approx",
-      "period_id": "period-21st-century",
-      "civilization": "International",
-      "region": "Global",
-      "path_family": "social_composite",
-      "event_type": "policy",
-      "claim": "该文献围绕全球健康与老龄化政策报告或讨论可复核的学术证据。",
-      "summary": "该节点将全球健康与老龄化政策的最新证据纳入有效永生研究年表。",
-      "sources": [
-        "SRC-1785"
-      ],
-      "evidence_grade": "I",
-      "verification_status": "unreviewed",
-      "status": "draft",
-      "significance": "major",
-      "uncertainty": "本记录基于期刊元数据和论文标题，尚未完成全文语境复核。",
-      "cross_links": [],
-      "chapter": "认知扩展、数字主体与智能治理",
-      "notes": "第 338 轮补录：全球健康与老龄化政策；待本地复核。",
-      "created_at": "2026-08-07T07:37:34Z",
-      "updated_at": "2026-08-07T07:37:34Z"
     },
     {
       "event_id": "HIT-THT-423",

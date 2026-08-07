@@ -27,8 +27,8 @@ raw_timeline（全部资料）
 
 `preview.html` 提供三档范围：
 
-1. `全部资料`：显示 `timeline.json` 中全部 2592 条事件，用于资料巡检。
-2. `作品子集`：只显示 `works-subset.v1.json` 中 400 条候选事件，用于作品编辑。
+1. `全部资料`：显示 `timeline.json` 中全部 2584 条事件，用于资料巡检。
+2. `作品子集`：只显示 `works-subset.v1.json` 中 399 条候选事件，用于作品编辑。
 3. `本地已复核`：只显示 `verification_status=locally_reviewed` 的事件，用于审阅推进。
 
 每档都必须显示 `evidence_grade`、`verification_status`、`event_id` 和来源链接，避免把未复核资料误读为出版结论。
@@ -56,6 +56,6 @@ raw_timeline（全部资料）
 
 ## 4. 当前缺口
 
-- `works-subset.v1.json` 400 条中仅 31 条完成本地复核。
+- `works-subset.v1.json` 399 条中仅 31 条完成本地复核。
 - `fresh_reviewed` 尚未开放，因此 `pub-history-narrative` 还不能视为可发布正文。
 - 后续应继续推进本地复核，并在独立 fresh review 后把事件状态推进到 `fresh_reviewed`，再更新叙事正文。

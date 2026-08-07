@@ -1,6 +1,6 @@
 {
   "timeline_id": "HITL-EIMM-001",
-  "version": "2.400.4",
+  "version": "2.401.0",
   "sources": [
     {
       "source_id": "SRC-001",
@@ -2827,15 +2827,6 @@
       "note": "来源卡由预览 URL 重建；待本地复核。"
     },
     {
-      "source_id": "SRC-339",
-      "source_type": "secondary",
-      "label": "https://www.who.int/publications/i/item/9789241513500",
-      "url": "https://www.who.int/publications/i/item/9789241513500",
-      "doi": null,
-      "access_date": "2026-08-07",
-      "note": "来源卡由预览 URL 重建；待本地复核。"
-    },
-    {
       "source_id": "SRC-340",
       "source_type": "secondary",
       "label": "https://apps.who.int/gb/ebwha/pdf_files/WHA73/A73(12)-en.pdf",
@@ -4240,15 +4231,6 @@
       "note": "The Lancet Healthy Longevity；Crossref/DOI 元数据核验。"
     },
     {
-      "source_id": "SRC-496",
-      "source_type": "primary",
-      "label": "A generative AI-discovered TNIK inhibitor for idiopathic pulmonary fibrosis: a randomized phase 2a trial",
-      "url": "https://doi.org/10.1038/s41591-025-03743-2",
-      "doi": "10.1038/s41591-025-03743-2",
-      "access_date": "2026-08-07",
-      "note": "Nature Medicine；Crossref/DOI 元数据核验。"
-    },
-    {
       "source_id": "SRC-497",
       "source_type": "secondary",
       "label": "https://insilico.com/news/pdmncgky51-insilicos-rentosertib-inhalation-solutio",
@@ -4321,15 +4303,6 @@
       "note": "Cureus；Crossref/DOI 元数据核验。"
     },
     {
-      "source_id": "SRC-505",
-      "source_type": "primary",
-      "label": "Physical vitrification and nanowarming at liter-scale CPA volumes: toward organ cryopreservation",
-      "url": "https://doi.org/10.1038/s41467-025-63483-2",
-      "doi": "10.1038/s41467-025-63483-2",
-      "access_date": "2026-08-07",
-      "note": "Nature Communications；Crossref/DOI 元数据核验。"
-    },
-    {
       "source_id": "SRC-506",
       "source_type": "primary",
       "label": "From Cell Reprogramming to Tissue Rejuvenation: Countering Aging by Targeting a Gerozyme",
@@ -4346,15 +4319,6 @@
       "doi": "10.1016/j.arr.2026.103009",
       "access_date": "2026-08-07",
       "note": "Ageing Research Reviews；Crossref/DOI 元数据核验。"
-    },
-    {
-      "source_id": "SRC-508",
-      "source_type": "primary",
-      "label": "Functional rejuvenation of endothelial cell aging by transient reprogramming",
-      "url": "https://doi.org/10.1007/s00395-026-01192-7",
-      "doi": "10.1007/s00395-026-01192-7",
-      "access_date": "2026-08-07",
-      "note": "Basic Research in Cardiology；Crossref/DOI 元数据核验。"
     },
     {
       "source_id": "SRC-509",
@@ -6814,15 +6778,6 @@
       "note": "Nature Biomedical Engineering；Crossref/DOI 元数据核验。"
     },
     {
-      "source_id": "SRC-782",
-      "source_type": "primary",
-      "label": "Patient-Centric Digital Twin Framework with Hybrid Knowledge Distillation for Federated Class-Incremental Learning in Precision Medicine",
-      "url": "https://doi.org/10.1109/jbhi.2026.3671307",
-      "doi": "10.1109/jbhi.2026.3671307",
-      "access_date": "2026-08-07",
-      "note": "IEEE Journal of Biomedical and Health Informatics；Crossref/DOI 元数据核验。"
-    },
-    {
       "source_id": "SRC-783",
       "source_type": "primary",
       "label": "Digital twin for personalized medicine development",
@@ -7370,15 +7325,6 @@
       "doi": "10.1038/s41586-025-08634-7",
       "access_date": "2026-08-07",
       "note": "Nature；Crossref/DOI 元数据核验。"
-    },
-    {
-      "source_id": "SRC-844",
-      "source_type": "primary",
-      "label": "Proteomic comparison of human brain tissue preservation methods",
-      "url": "https://doi.org/10.1016/j.jprot.2025.105589",
-      "doi": "10.1016/j.jprot.2025.105589",
-      "access_date": "2026-08-07",
-      "note": "Journal of Proteomics；Crossref/DOI 元数据核验。"
     },
     {
       "source_id": "SRC-845",
@@ -7937,15 +7883,6 @@
       "doi": "10.1038/s43587-025-00903-4",
       "access_date": "2026-08-07",
       "note": "Nature Aging；Crossref/DOI 元数据核验。"
-    },
-    {
-      "source_id": "SRC-907",
-      "source_type": "primary",
-      "label": "The Decade of Healthy Ageing: progress and challenges ahead",
-      "url": "https://doi.org/10.1016/s2666-7568(23)00271-4",
-      "doi": "10.1016/s2666-7568(23)00271-4",
-      "access_date": "2026-08-07",
-      "note": "The Lancet Healthy Longevity；Crossref/DOI 元数据核验。"
     },
     {
       "source_id": "SRC-908",
@@ -11150,15 +11087,6 @@
       "doi": "10.1038/s41591-025-03798-1",
       "access_date": "2026-08-07",
       "note": "Nature Medicine；Crossref/DOI 元数据核验。"
-    },
-    {
-      "source_id": "SRC-1264",
-      "source_type": "primary",
-      "label": "TARGETING AGING WITH METFORMIN (TAME)",
-      "url": "https://doi.org/10.1093/geroni/igx004.2682",
-      "doi": "10.1093/geroni/igx004.2682",
-      "access_date": "2026-08-07",
-      "note": "Innovation in Aging；Crossref/DOI 元数据核验。"
     },
     {
       "source_id": "SRC-1265",
@@ -23201,5 +23129,5 @@
       "note": "原 NIH ACD 页面返回 403；使用可访问的二手百科作为背景，后续可补一手档案。"
     }
   ],
-  "updated_at": "2026-08-07T12:20:00Z"
+  "updated_at": "2026-08-07T15:52:34Z"
 }
