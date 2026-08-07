@@ -454,18 +454,30 @@ PREVIEW_TEMPLATE = r"""<!doctype html>
     <pre><code>__STATUS_TABLE__</code></pre>
 
     <h3>资料与出版</h3>
-    <dl>
-      <dt>数据范围</dt>
-      <dd>__EVENT_COUNT__ 条事件 / __SOURCE_COUNT__ 个来源 / __PERIOD_COUNT__ 个时期</dd>
-      <dt>作品化</dt>
-      <dd>__WORKS_COUNT__ 条作品子集；__REVIEWED_COUNT__ 条本地已复核</dd>
-      <dt>生成时间</dt>
-      <dd><time datetime="__GENERATED_AT__">__GENERATED_AT__</time></dd>
-      <dt>原始数据</dt>
-      <dd><a href="timeline.json">timeline.json</a> · <a href="sources.json">sources.json</a> · <a href="periods.json">periods.json</a> · <a href="timelinejs.json">timelinejs.json</a> · <a href="timeline-events.psql.txt">timeline-events.psql.txt</a></dd>
-      <dt>出版契约</dt>
-      <dd><a href="publication-manifest.v1.json">publication-manifest.v1.json</a> · <a href="PUBLICATION.md">PUBLICATION.md</a></dd>
-    </dl>
+    <table>
+      <tbody>
+        <tr>
+          <th scope="row">数据范围</th>
+          <td>__EVENT_COUNT__ 条事件 / __SOURCE_COUNT__ 个来源 / __PERIOD_COUNT__ 个时期</td>
+        </tr>
+        <tr>
+          <th scope="row">作品化</th>
+          <td>__WORKS_COUNT__ 条作品子集；__REVIEWED_COUNT__ 条本地已复核</td>
+        </tr>
+        <tr>
+          <th scope="row">生成时间</th>
+          <td><time datetime="__GENERATED_AT__">__GENERATED_AT__</time></td>
+        </tr>
+        <tr>
+          <th scope="row">原始数据</th>
+          <td><a href="timeline.json">timeline.json</a> · <a href="sources.json">sources.json</a> · <a href="periods.json">periods.json</a> · <a href="timelinejs.json">timelinejs.json</a> · <a href="timeline-events.psql.txt">timeline-events.psql.txt</a></td>
+        </tr>
+        <tr>
+          <th scope="row">出版契约</th>
+          <td><a href="publication-manifest.v1.json">publication-manifest.v1.json</a> · <a href="PUBLICATION.md">PUBLICATION.md</a></td>
+        </tr>
+      </tbody>
+    </table>
 
     <h3>本地已复核事件</h3>
     <pre><code>__REVIEWED_TABLE__</code></pre>
