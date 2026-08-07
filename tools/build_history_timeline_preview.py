@@ -154,7 +154,7 @@ def build_timelinejs() -> dict:
     return {
         "title": {
             "text": {
-                "headline": "Human Infra 永生史",
+                "headline": "永生年表",
                 "text": "从神话、宗教与炼金术，到老年科学、健康寿命和生物技术产业的严肃历史年表。",
             }
         },
@@ -476,11 +476,11 @@ PREVIEW_TEMPLATE = r"""<!doctype html>
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Human Infra 永生史</title>
+  <title>永生年表</title>
   <style>pre { overflow-x: auto; }</style>
 </head>
 <body>
-  <h1>Human Infra 永生史</h1>
+  <h1>永生年表</h1>
 
   <h2>事件阅读器</h2>
   <p>
