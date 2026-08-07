@@ -248,6 +248,7 @@ flowchart LR
 | 查看研究范围 | [研究范围](#研究范围) | 哪些领域属于主体持续性工程，以及为什么属于 |
 | 从多视角理解项目价值 | [多视角价值解析](#多视角价值解析) / [完整文档](docs/explanations/value-lenses.md) | 主体持续性、通用资源预算增量和反稀缺工程视角 |
 | 理解有效永生的复利效应 | [有效永生的加速回报飞轮](#有效永生的加速回报飞轮) / [论文草案](docs/explanations/effective-immortality-acceleration-flywheel.md) / [证据矩阵](docs/source-notes/2026-06-28-effective-immortality-flywheel-evidence-matrix.md) | 主体持续时间、能力升级、技术采用和可能性空间如何互相强化 |
+| 把有效永生转成实践闭环 | [实践指导系统](docs/how-to/effective-immortality-guidance-system.md) | 从目标、条件和证据进入决策、行动、验收、纠错与迭代；不承诺永生，不提供个体医疗建议 |
 | 先理解项目全貌 | [docs/README.md](docs/README.md) | 文档系统入口与推荐阅读顺序 |
 | 查看领域边界 | [docs/reference/domain-map.md](docs/reference/domain-map.md) | Human Infra 的子域地图和拆分原因 |
 | 查看先验追问域索引 | [docs/reference/transcendental-domain-index.md](docs/reference/transcendental-domain-index.md) | 从“有效永生何以可能”进入 A-K 主干研究域 |
@@ -361,6 +362,7 @@ flowchart LR
 | 查看退役站点记录 | [Research Narrative 退役记录](archive/retired-research-narrative-site/README.md) | 仅用于历史追溯；禁止构建、复用或部署 |
 | 查看真实应用与文献 | [docs/reference/applications-and-literature.md](docs/reference/applications-and-literature.md) | 真实项目、机构资料、论文和数据源索引，覆盖个体、家庭、社区、医疗、公共服务、环境和高风险技术 |
 | 分享项目 | [docs/how-to/share-human-infra.md](docs/how-to/share-human-infra.md) | 对外介绍 Human Infra 的标题、主线、短推文模板和边界 |
+| 建立有效永生实践闭环 | [docs/how-to/effective-immortality-guidance-system.md](docs/how-to/effective-immortality-guidance-system.md) | 一页式目标、判断、行动、检查、纠错与迭代指南 |
 | 贡献文档 | [docs/how-to/contribute-docs.md](docs/how-to/contribute-docs.md) | 文档贡献流程 |
 | 加入社区 | [Telegram](https://t.me/human_infra) | 讨论 Human Infra、长寿证据、未来等待路径和研究资料 |
 | 运行质量检查 | [docs/how-to/run-quality-checks.md](docs/how-to/run-quality-checks.md) | 本地和 CI 的检查命令 |

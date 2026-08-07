@@ -1,0 +1,604 @@
+{
+  "rounds": [
+    {
+      "round": 221,
+      "topic": "器官灌注保存与移植前修复",
+      "query": "machine perfusion organ preservation",
+      "queries": [
+        "machine perfusion organ preservation",
+        "machine perfusion organ preservation"
+      ],
+      "min_year": 2000,
+      "chapter": "器官灌注、离体保存与移植前修复",
+      "path_family": "suspension",
+      "event_type": "technology",
+      "evidence_grade": "S",
+      "significance": "major",
+      "keywords": [
+        "machine",
+        "perfusion",
+        "organ",
+        "preservation",
+        "transplant",
+        "repair"
+      ],
+      "required_terms": [
+        "machine",
+        "perfusion"
+      ],
+      "claim_template": "该文献围绕{topic}报告或讨论可复核的学术证据。",
+      "summary_template": "该节点将{topic}的最新证据纳入有效永生研究年表。",
+      "uncertainty": "本记录基于期刊元数据和论文标题，尚未完成全文语境复核。"
+    },
+    {
+      "round": 222,
+      "topic": "深低温保存与玻璃化",
+      "query": "cryopreservation vitrification tissue",
+      "queries": [
+        "cryopreservation vitrification tissue",
+        "cryopreservation vitrification tissue"
+      ],
+      "min_year": 2000,
+      "chapter": "深低温保存、玻璃化与组织停滞",
+      "path_family": "suspension",
+      "event_type": "technology",
+      "evidence_grade": "S",
+      "significance": "major",
+      "keywords": [
+        "cryopreservation",
+        "vitrification",
+        "tissue",
+        "organ",
+        "ice",
+        "freezing"
+      ],
+      "required_terms": [
+        "cryopreservation",
+        "vitrification"
+      ],
+      "claim_template": "该文献围绕{topic}报告或讨论可复核的学术证据。",
+      "summary_template": "该节点将{topic}的最新证据纳入有效永生研究年表。",
+      "uncertainty": "本记录基于期刊元数据和论文标题，尚未完成全文语境复核。"
+    },
+    {
+      "round": 223,
+      "topic": "冷冻复苏与生物停滞",
+      "query": "cryonics revival biostasis",
+      "queries": [
+        "cryonics revival biostasis",
+        "cryonics revival biostasis"
+      ],
+      "min_year": 2000,
+      "chapter": "冷冻复苏、生物停滞与未来选择权",
+      "path_family": "suspension",
+      "event_type": "technology",
+      "evidence_grade": "S",
+      "significance": "major",
+      "keywords": [
+        "cryonics",
+        "revival",
+        "biostasis",
+        "preservation",
+        "future",
+        "resuscitation"
+      ],
+      "required_terms": [
+        "cryonics",
+        "revival"
+      ],
+      "claim_template": "该文献围绕{topic}报告或讨论可复核的学术证据。",
+      "summary_template": "该节点将{topic}的最新证据纳入有效永生研究年表。",
+      "uncertainty": "本记录基于期刊元数据和论文标题，尚未完成全文语境复核。"
+    },
+    {
+      "round": 224,
+      "topic": "纳米医学与靶向药物递送",
+      "query": "nanomedicine targeted drug delivery",
+      "queries": [
+        "nanomedicine targeted drug delivery",
+        "nanomedicine targeted drug delivery"
+      ],
+      "min_year": 2000,
+      "chapter": "纳米医学、靶向递送与分子级修复",
+      "path_family": "maintenance",
+      "event_type": "technology",
+      "evidence_grade": "S",
+      "significance": "major",
+      "keywords": [
+        "nanomedicine",
+        "targeted",
+        "drug",
+        "delivery",
+        "nanoparticle",
+        "therapy"
+      ],
+      "required_terms": [
+        "nanomedicine",
+        "targeted"
+      ],
+      "claim_template": "该文献围绕{topic}报告或讨论可复核的学术证据。",
+      "summary_template": "该节点将{topic}的最新证据纳入有效永生研究年表。",
+      "uncertainty": "本记录基于期刊元数据和论文标题，尚未完成全文语境复核。"
+    },
+    {
+      "round": 225,
+      "topic": "纳米机器人生物医学",
+      "query": "nanorobot molecular machine biomedical",
+      "queries": [
+        "nanorobot molecular machine biomedical",
+        "nanorobot molecular machine biomedical"
+      ],
+      "min_year": 2000,
+      "chapter": "纳米机器人、分子机器与体内诊断修复",
+      "path_family": "maintenance",
+      "event_type": "technology",
+      "evidence_grade": "S",
+      "significance": "major",
+      "keywords": [
+        "nanorobot",
+        "nanobot",
+        "molecular",
+        "machine",
+        "biomedical",
+        "diagnosis"
+      ],
+      "required_terms": [
+        "nanorobot",
+        "biomedical"
+      ],
+      "claim_template": "该文献围绕{topic}报告或讨论可复核的学术证据。",
+      "summary_template": "该节点将{topic}的最新证据纳入有效永生研究年表。",
+      "uncertainty": "本记录基于期刊元数据和论文标题，尚未完成全文语境复核。"
+    },
+    {
+      "round": 226,
+      "topic": "分子机器与DNA纳米技术",
+      "query": "dna nanotechnology molecular machine",
+      "queries": [
+        "dna nanotechnology molecular machine",
+        "dna nanotechnology molecular machine"
+      ],
+      "min_year": 2000,
+      "chapter": "DNA纳米技术、分子机器与可编程材料",
+      "path_family": "maintenance",
+      "event_type": "technology",
+      "evidence_grade": "S",
+      "significance": "major",
+      "keywords": [
+        "dna",
+        "nanotechnology",
+        "molecular",
+        "machine",
+        "nanostructure",
+        "programmable"
+      ],
+      "required_terms": [
+        "dna",
+        "nanotechnology"
+      ],
+      "claim_template": "该文献围绕{topic}报告或讨论可复核的学术证据。",
+      "summary_template": "该节点将{topic}的最新证据纳入有效永生研究年表。",
+      "uncertainty": "本记录基于期刊元数据和论文标题，尚未完成全文语境复核。"
+    },
+    {
+      "round": 227,
+      "topic": "合成生物学与细胞编程",
+      "query": "synthetic biology cell programming",
+      "queries": [
+        "synthetic biology cell programming",
+        "synthetic biology cell programming"
+      ],
+      "min_year": 2000,
+      "chapter": "合成生物学、细胞编程与生命系统重构",
+      "path_family": "reconstruction",
+      "event_type": "technology",
+      "evidence_grade": "S",
+      "significance": "major",
+      "keywords": [
+        "synthetic",
+        "biology",
+        "cell",
+        "programming",
+        "genome",
+        "circuit"
+      ],
+      "required_terms": [
+        "synthetic",
+        "biology"
+      ],
+      "claim_template": "该文献围绕{topic}报告或讨论可复核的学术证据。",
+      "summary_template": "该节点将{topic}的最新证据纳入有效永生研究年表。",
+      "uncertainty": "本记录基于期刊元数据和论文标题，尚未完成全文语境复核。"
+    },
+    {
+      "round": 228,
+      "topic": "基因编辑与表观基因组编辑",
+      "query": "epigenome editing gene expression",
+      "queries": [
+        "epigenome editing gene expression",
+        "epigenome editing gene expression"
+      ],
+      "min_year": 2000,
+      "chapter": "基因编辑、表观基因组编辑与生命状态重写",
+      "path_family": "maintenance",
+      "event_type": "technology",
+      "evidence_grade": "S",
+      "significance": "major",
+      "keywords": [
+        "epigenome",
+        "editing",
+        "crispr",
+        "gene",
+        "expression",
+        "therapy"
+      ],
+      "required_terms": [
+        "epigenome",
+        "editing"
+      ],
+      "claim_template": "该文献围绕{topic}报告或讨论可复核的学术证据。",
+      "summary_template": "该节点将{topic}的最新证据纳入有效永生研究年表。",
+      "uncertainty": "本记录基于期刊元数据和论文标题，尚未完成全文语境复核。"
+    },
+    {
+      "round": 229,
+      "topic": "线粒体移植与能量医学",
+      "query": "mitochondrial transfer cell therapy",
+      "queries": [
+        "mitochondrial transfer cell therapy",
+        "mitochondrial transfer cell therapy"
+      ],
+      "min_year": 2000,
+      "chapter": "线粒体移植、能量医学与细胞供能修复",
+      "path_family": "maintenance",
+      "event_type": "technology",
+      "evidence_grade": "S",
+      "significance": "major",
+      "keywords": [
+        "mitochondrial",
+        "transfer",
+        "transplantation",
+        "energy",
+        "cell",
+        "therapy"
+      ],
+      "required_terms": [
+        "mitochondrial",
+        "transfer"
+      ],
+      "claim_template": "该文献围绕{topic}报告或讨论可复核的学术证据。",
+      "summary_template": "该节点将{topic}的最新证据纳入有效永生研究年表。",
+      "uncertainty": "本记录基于期刊元数据和论文标题，尚未完成全文语境复核。"
+    },
+    {
+      "round": 230,
+      "topic": "炎症衰老与慢性炎症",
+      "query": "inflammaging chronic inflammation",
+      "queries": [
+        "inflammaging chronic inflammation",
+        "inflammaging chronic inflammation"
+      ],
+      "min_year": 2000,
+      "chapter": "炎症衰老、慢性炎症与免疫代谢维护",
+      "path_family": "maintenance",
+      "event_type": "technology",
+      "evidence_grade": "S",
+      "significance": "major",
+      "keywords": [
+        "inflammaging",
+        "chronic",
+        "inflammation",
+        "aging",
+        "immune",
+        "senescence"
+      ],
+      "required_terms": [
+        "inflammaging",
+        "aging"
+      ],
+      "claim_template": "该文献围绕{topic}报告或讨论可复核的学术证据。",
+      "summary_template": "该节点将{topic}的最新证据纳入有效永生研究年表。",
+      "uncertainty": "本记录基于期刊元数据和论文标题，尚未完成全文语境复核。"
+    },
+    {
+      "round": 231,
+      "topic": "巨噬细胞与组织修复",
+      "query": "macrophage tissue repair regeneration",
+      "queries": [
+        "macrophage tissue repair regeneration",
+        "macrophage tissue repair regeneration"
+      ],
+      "min_year": 2000,
+      "chapter": "巨噬细胞、组织修复与免疫再生界面",
+      "path_family": "maintenance",
+      "event_type": "technology",
+      "evidence_grade": "S",
+      "significance": "major",
+      "keywords": [
+        "macrophage",
+        "tissue",
+        "repair",
+        "regeneration",
+        "fibrosis",
+        "immune"
+      ],
+      "required_terms": [
+        "macrophage",
+        "repair"
+      ],
+      "claim_template": "该文献围绕{topic}报告或讨论可复核的学术证据。",
+      "summary_template": "该节点将{topic}的最新证据纳入有效永生研究年表。",
+      "uncertainty": "本记录基于期刊元数据和论文标题，尚未完成全文语境复核。"
+    },
+    {
+      "round": 232,
+      "topic": "细胞外囊泡与外泌体治疗",
+      "query": "extracellular vesicles exosome therapy",
+      "queries": [
+        "extracellular vesicles exosome therapy",
+        "extracellular vesicles exosome therapy"
+      ],
+      "min_year": 2000,
+      "chapter": "细胞外囊泡、外泌体与无细胞再生治疗",
+      "path_family": "maintenance",
+      "event_type": "technology",
+      "evidence_grade": "S",
+      "significance": "major",
+      "keywords": [
+        "extracellular",
+        "vesicles",
+        "exosome",
+        "therapy",
+        "repair",
+        "regenerative"
+      ],
+      "required_terms": [
+        "extracellular",
+        "vesicles"
+      ],
+      "claim_template": "该文献围绕{topic}报告或讨论可复核的学术证据。",
+      "summary_template": "该节点将{topic}的最新证据纳入有效永生研究年表。",
+      "uncertainty": "本记录基于期刊元数据和论文标题，尚未完成全文语境复核。"
+    },
+    {
+      "round": 233,
+      "topic": "生物年龄时钟与干预反馈",
+      "query": "biological age clock intervention",
+      "queries": [
+        "biological age clock intervention",
+        "biological age clock intervention"
+      ],
+      "min_year": 2000,
+      "chapter": "生物年龄、时钟模型与干预反馈测量",
+      "path_family": "maintenance",
+      "event_type": "technology",
+      "evidence_grade": "S",
+      "significance": "major",
+      "keywords": [
+        "biological",
+        "age",
+        "clock",
+        "intervention",
+        "methylation",
+        "aging"
+      ],
+      "required_terms": [
+        "biological",
+        "age"
+      ],
+      "claim_template": "该文献围绕{topic}报告或讨论可复核的学术证据。",
+      "summary_template": "该节点将{topic}的最新证据纳入有效永生研究年表。",
+      "uncertainty": "本记录基于期刊元数据和论文标题，尚未完成全文语境复核。"
+    },
+    {
+      "round": 234,
+      "topic": "寿命临床试验设计",
+      "query": "longevity clinical trial healthspan",
+      "queries": [
+        "longevity clinical trial healthspan",
+        "longevity clinical trial healthspan"
+      ],
+      "min_year": 2000,
+      "chapter": "寿命干预、临床试验设计与健康寿命终点",
+      "path_family": "maintenance",
+      "event_type": "thought",
+      "evidence_grade": "S",
+      "significance": "major",
+      "keywords": [
+        "longevity",
+        "clinical",
+        "trial",
+        "healthspan",
+        "intervention",
+        "design"
+      ],
+      "required_terms": [
+        "longevity",
+        "clinical"
+      ],
+      "claim_template": "该文献围绕{topic}报告或讨论可复核的学术证据。",
+      "summary_template": "该节点将{topic}的最新证据纳入有效永生研究年表。",
+      "uncertainty": "本记录基于期刊元数据和论文标题，尚未完成全文语境复核。"
+    },
+    {
+      "round": 235,
+      "topic": "雷帕霉素与长寿药物",
+      "query": "rapamycin mtor aging longevity",
+      "queries": [
+        "rapamycin mtor aging longevity",
+        "rapamycin mtor aging longevity"
+      ],
+      "min_year": 2000,
+      "chapter": "雷帕霉素、mTOR信号与长寿干预",
+      "path_family": "maintenance",
+      "event_type": "technology",
+      "evidence_grade": "S",
+      "significance": "major",
+      "keywords": [
+        "rapamycin",
+        "mtor",
+        "aging",
+        "longevity",
+        "intervention",
+        "healthspan"
+      ],
+      "required_terms": [
+        "rapamycin",
+        "longevity"
+      ],
+      "claim_template": "该文献围绕{topic}报告或讨论可复核的学术证据。",
+      "summary_template": "该节点将{topic}的最新证据纳入有效永生研究年表。",
+      "uncertainty": "本记录基于期刊元数据和论文标题，尚未完成全文语境复核。"
+    },
+    {
+      "round": 236,
+      "topic": "二甲双胍与TAME试验",
+      "query": "metformin tame aging trial",
+      "queries": [
+        "metformin tame aging trial",
+        "metformin tame aging trial"
+      ],
+      "min_year": 2000,
+      "chapter": "二甲双胍、TAME试验与老年病预防",
+      "path_family": "maintenance",
+      "event_type": "policy",
+      "evidence_grade": "S",
+      "significance": "major",
+      "keywords": [
+        "metformin",
+        "tame",
+        "aging",
+        "clinical",
+        "trial",
+        "geroscience"
+      ],
+      "required_terms": [
+        "metformin",
+        "aging"
+      ],
+      "claim_template": "该文献围绕{topic}报告或讨论可复核的学术证据。",
+      "summary_template": "该节点将{topic}的最新证据纳入有效永生研究年表。",
+      "uncertainty": "本记录基于期刊元数据和论文标题，尚未完成全文语境复核。"
+    },
+    {
+      "round": 237,
+      "topic": "衰老细胞清除",
+      "query": "senolytics senescent cell clearance",
+      "queries": [
+        "senolytics senescent cell clearance",
+        "senolytics senescent cell clearance"
+      ],
+      "min_year": 2000,
+      "chapter": "衰老细胞、senolytics与组织年轻化",
+      "path_family": "maintenance",
+      "event_type": "technology",
+      "evidence_grade": "S",
+      "significance": "major",
+      "keywords": [
+        "senolytics",
+        "senescent",
+        "cell",
+        "clearance",
+        "aging",
+        "therapy"
+      ],
+      "required_terms": [
+        "senolytics",
+        "senescent"
+      ],
+      "claim_template": "该文献围绕{topic}报告或讨论可复核的学术证据。",
+      "summary_template": "该节点将{topic}的最新证据纳入有效永生研究年表。",
+      "uncertainty": "本记录基于期刊元数据和论文标题，尚未完成全文语境复核。"
+    },
+    {
+      "round": 238,
+      "topic": "端粒与染色体稳定性",
+      "query": "telomere telomerase chromosome stability",
+      "queries": [
+        "telomere telomerase chromosome stability",
+        "telomere telomerase chromosome stability"
+      ],
+      "min_year": 2000,
+      "chapter": "端粒、染色体稳定性与复制寿命",
+      "path_family": "maintenance",
+      "event_type": "technology",
+      "evidence_grade": "S",
+      "significance": "major",
+      "keywords": [
+        "telomere",
+        "telomerase",
+        "chromosome",
+        "stability",
+        "replicative",
+        "senescence"
+      ],
+      "required_terms": [
+        "telomere",
+        "stability"
+      ],
+      "claim_template": "该文献围绕{topic}报告或讨论可复核的学术证据。",
+      "summary_template": "该节点将{topic}的最新证据纳入有效永生研究年表。",
+      "uncertainty": "本记录基于期刊元数据和论文标题，尚未完成全文语境复核。"
+    },
+    {
+      "round": 239,
+      "topic": "蛋白稳态与自噬",
+      "query": "proteostasis autophagy quality control",
+      "queries": [
+        "proteostasis autophagy quality control",
+        "proteostasis autophagy quality control"
+      ],
+      "min_year": 2000,
+      "chapter": "蛋白稳态、自噬与细胞质量控制",
+      "path_family": "maintenance",
+      "event_type": "technology",
+      "evidence_grade": "S",
+      "significance": "major",
+      "keywords": [
+        "proteostasis",
+        "autophagy",
+        "protein",
+        "quality",
+        "control",
+        "aging"
+      ],
+      "required_terms": [
+        "proteostasis",
+        "autophagy"
+      ],
+      "claim_template": "该文献围绕{topic}报告或讨论可复核的学术证据。",
+      "summary_template": "该节点将{topic}的最新证据纳入有效永生研究年表。",
+      "uncertainty": "本记录基于期刊元数据和论文标题，尚未完成全文语境复核。"
+    },
+    {
+      "round": 240,
+      "topic": "神经退行性疾病干预",
+      "query": "neurodegenerative disease aging therapy",
+      "queries": [
+        "neurodegenerative disease aging therapy",
+        "neurodegenerative disease aging therapy"
+      ],
+      "min_year": 2000,
+      "chapter": "神经退行性疾病、衰老与神经保护干预",
+      "path_family": "maintenance",
+      "event_type": "technology",
+      "evidence_grade": "S",
+      "significance": "major",
+      "keywords": [
+        "neurodegenerative",
+        "disease",
+        "alzheimer",
+        "parkinson",
+        "therapy",
+        "aging"
+      ],
+      "required_terms": [
+        "neurodegenerative",
+        "therapy"
+      ],
+      "claim_template": "该文献围绕{topic}报告或讨论可复核的学术证据。",
+      "summary_template": "该节点将{topic}的最新证据纳入有效永生研究年表。",
+      "uncertainty": "本记录基于期刊元数据和论文标题，尚未完成全文语境复核。"
+    }
+  ]
+}

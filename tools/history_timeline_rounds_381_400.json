@@ -1,0 +1,604 @@
+{
+  "rounds": [
+    {
+      "round": 381,
+      "topic": "器官芯片与药物评价",
+      "query": "organ chip drug evaluation",
+      "queries": [
+        "organ chip drug evaluation",
+        "organ chip drug evaluation"
+      ],
+      "min_year": 1990,
+      "chapter": "健康工程、转化医学与总体基础设施",
+      "path_family": "maintenance",
+      "event_type": "technology",
+      "evidence_grade": "S",
+      "significance": "major",
+      "keywords": [
+        "organ",
+        "chip",
+        "drug",
+        "evaluation",
+        "microphysiological",
+        "safety"
+      ],
+      "required_terms": [
+        "organ",
+        "chip"
+      ],
+      "claim_template": "该文献围绕{topic}报告或讨论可复核的学术证据。",
+      "summary_template": "该节点将{topic}的最新证据纳入有效永生研究年表。",
+      "uncertainty": "本记录基于期刊元数据和论文标题，尚未完成全文语境复核。"
+    },
+    {
+      "round": 382,
+      "topic": "类器官与疾病建模",
+      "query": "organoid disease modeling",
+      "queries": [
+        "organoid disease modeling",
+        "organoid disease modeling"
+      ],
+      "min_year": 1990,
+      "chapter": "健康工程、转化医学与总体基础设施",
+      "path_family": "reconstruction",
+      "event_type": "technology",
+      "evidence_grade": "S",
+      "significance": "major",
+      "keywords": [
+        "organoid",
+        "disease",
+        "modeling",
+        "stem",
+        "tissue",
+        "therapy"
+      ],
+      "required_terms": [
+        "organoid",
+        "disease"
+      ],
+      "claim_template": "该文献围绕{topic}报告或讨论可复核的学术证据。",
+      "summary_template": "该节点将{topic}的最新证据纳入有效永生研究年表。",
+      "uncertainty": "本记录基于期刊元数据和论文标题，尚未完成全文语境复核。"
+    },
+    {
+      "round": 383,
+      "topic": "3D生物打印与器官制造",
+      "query": "3d bioprinting organ manufacturing",
+      "queries": [
+        "3d bioprinting organ manufacturing",
+        "3d bioprinting organ manufacturing"
+      ],
+      "min_year": 1990,
+      "chapter": "健康工程、转化医学与总体基础设施",
+      "path_family": "reconstruction",
+      "event_type": "technology",
+      "evidence_grade": "S",
+      "significance": "major",
+      "keywords": [
+        "3d",
+        "bioprinting",
+        "organ",
+        "manufacturing",
+        "tissue",
+        "scaffold"
+      ],
+      "required_terms": [
+        "bioprinting",
+        "organ"
+      ],
+      "claim_template": "该文献围绕{topic}报告或讨论可复核的学术证据。",
+      "summary_template": "该节点将{topic}的最新证据纳入有效永生研究年表。",
+      "uncertainty": "本记录基于期刊元数据和论文标题，尚未完成全文语境复核。"
+    },
+    {
+      "round": 384,
+      "topic": "细胞治疗与再生医学",
+      "query": "cell therapy regenerative medicine",
+      "queries": [
+        "cell therapy regenerative medicine",
+        "cell therapy regenerative medicine"
+      ],
+      "min_year": 1990,
+      "chapter": "健康工程、转化医学与总体基础设施",
+      "path_family": "reconstruction",
+      "event_type": "technology",
+      "evidence_grade": "S",
+      "significance": "major",
+      "keywords": [
+        "cell",
+        "therapy",
+        "regenerative",
+        "medicine",
+        "stem",
+        "repair"
+      ],
+      "required_terms": [
+        "cell",
+        "therapy"
+      ],
+      "claim_template": "该文献围绕{topic}报告或讨论可复核的学术证据。",
+      "summary_template": "该节点将{topic}的最新证据纳入有效永生研究年表。",
+      "uncertainty": "本记录基于期刊元数据和论文标题，尚未完成全文语境复核。"
+    },
+    {
+      "round": 385,
+      "topic": "基因治疗与体内编辑",
+      "query": "gene therapy in vivo editing",
+      "queries": [
+        "gene therapy in vivo editing",
+        "gene therapy in vivo editing"
+      ],
+      "min_year": 1990,
+      "chapter": "健康工程、转化医学与总体基础设施",
+      "path_family": "reconstruction",
+      "event_type": "technology",
+      "evidence_grade": "S",
+      "significance": "major",
+      "keywords": [
+        "gene",
+        "therapy",
+        "in vivo",
+        "editing",
+        "delivery",
+        "crispr"
+      ],
+      "required_terms": [
+        "gene",
+        "therapy"
+      ],
+      "claim_template": "该文献围绕{topic}报告或讨论可复核的学术证据。",
+      "summary_template": "该节点将{topic}的最新证据纳入有效永生研究年表。",
+      "uncertainty": "本记录基于期刊元数据和论文标题，尚未完成全文语境复核。"
+    },
+    {
+      "round": 386,
+      "topic": "蛋白质工程与设计",
+      "query": "protein engineering design",
+      "queries": [
+        "protein engineering design",
+        "protein engineering design"
+      ],
+      "min_year": 1990,
+      "chapter": "健康工程、转化医学与总体基础设施",
+      "path_family": "reconstruction",
+      "event_type": "technology",
+      "evidence_grade": "S",
+      "significance": "major",
+      "keywords": [
+        "protein",
+        "engineering",
+        "design",
+        "structure",
+        "prediction",
+        "function"
+      ],
+      "required_terms": [
+        "protein",
+        "engineering"
+      ],
+      "claim_template": "该文献围绕{topic}报告或讨论可复核的学术证据。",
+      "summary_template": "该节点将{topic}的最新证据纳入有效永生研究年表。",
+      "uncertainty": "本记录基于期刊元数据和论文标题，尚未完成全文语境复核。"
+    },
+    {
+      "round": 387,
+      "topic": "RNA治疗与mRNA医学",
+      "query": "rna therapy mrna medicine",
+      "queries": [
+        "rna therapy mrna medicine",
+        "rna therapy mrna medicine"
+      ],
+      "min_year": 1990,
+      "chapter": "健康工程、转化医学与总体基础设施",
+      "path_family": "reconstruction",
+      "event_type": "technology",
+      "evidence_grade": "S",
+      "significance": "major",
+      "keywords": [
+        "rna",
+        "therapy",
+        "mrna",
+        "medicine",
+        "delivery",
+        "translation"
+      ],
+      "required_terms": [
+        "rna",
+        "therapy"
+      ],
+      "claim_template": "该文献围绕{topic}报告或讨论可复核的学术证据。",
+      "summary_template": "该节点将{topic}的最新证据纳入有效永生研究年表。",
+      "uncertainty": "本记录基于期刊元数据和论文标题，尚未完成全文语境复核。"
+    },
+    {
+      "round": 388,
+      "topic": "精准医疗与个体化",
+      "query": "precision medicine personalized treatment",
+      "queries": [
+        "precision medicine personalized treatment",
+        "precision medicine personalized treatment"
+      ],
+      "min_year": 1990,
+      "chapter": "健康工程、转化医学与总体基础设施",
+      "path_family": "maintenance",
+      "event_type": "technology",
+      "evidence_grade": "S",
+      "significance": "major",
+      "keywords": [
+        "precision",
+        "medicine",
+        "personalized",
+        "treatment",
+        "genomics",
+        "biomarker"
+      ],
+      "required_terms": [
+        "precision",
+        "medicine"
+      ],
+      "claim_template": "该文献围绕{topic}报告或讨论可复核的学术证据。",
+      "summary_template": "该节点将{topic}的最新证据纳入有效永生研究年表。",
+      "uncertainty": "本记录基于期刊元数据和论文标题，尚未完成全文语境复核。"
+    },
+    {
+      "round": 389,
+      "topic": "生物标志物与寿命预测",
+      "query": "biomarker lifespan prediction",
+      "queries": [
+        "biomarker lifespan prediction",
+        "biomarker lifespan prediction"
+      ],
+      "min_year": 1990,
+      "chapter": "健康工程、转化医学与总体基础设施",
+      "path_family": "maintenance",
+      "event_type": "technology",
+      "evidence_grade": "S",
+      "significance": "major",
+      "keywords": [
+        "biomarker",
+        "lifespan",
+        "prediction",
+        "aging",
+        "proteomic",
+        "genomic"
+      ],
+      "required_terms": [
+        "biomarker",
+        "prediction"
+      ],
+      "claim_template": "该文献围绕{topic}报告或讨论可复核的学术证据。",
+      "summary_template": "该节点将{topic}的最新证据纳入有效永生研究年表。",
+      "uncertainty": "本记录基于期刊元数据和论文标题，尚未完成全文语境复核。"
+    },
+    {
+      "round": 390,
+      "topic": "影像诊断与健康监测",
+      "query": "imaging diagnosis health monitoring",
+      "queries": [
+        "imaging diagnosis health monitoring",
+        "imaging diagnosis health monitoring"
+      ],
+      "min_year": 1990,
+      "chapter": "健康工程、转化医学与总体基础设施",
+      "path_family": "maintenance",
+      "event_type": "technology",
+      "evidence_grade": "S",
+      "significance": "major",
+      "keywords": [
+        "imaging",
+        "diagnosis",
+        "health",
+        "monitoring",
+        "ai",
+        "radiology"
+      ],
+      "required_terms": [
+        "imaging",
+        "diagnosis"
+      ],
+      "claim_template": "该文献围绕{topic}报告或讨论可复核的学术证据。",
+      "summary_template": "该节点将{topic}的最新证据纳入有效永生研究年表。",
+      "uncertainty": "本记录基于期刊元数据和论文标题，尚未完成全文语境复核。"
+    },
+    {
+      "round": 391,
+      "topic": "可穿戴设备与连续监测",
+      "query": "wearable continuous monitoring health",
+      "queries": [
+        "wearable continuous monitoring health",
+        "wearable continuous monitoring health"
+      ],
+      "min_year": 1990,
+      "chapter": "健康工程、转化医学与总体基础设施",
+      "path_family": "maintenance",
+      "event_type": "technology",
+      "evidence_grade": "S",
+      "significance": "major",
+      "keywords": [
+        "wearable",
+        "continuous",
+        "monitoring",
+        "health",
+        "sensor",
+        "remote"
+      ],
+      "required_terms": [
+        "wearable",
+        "monitoring"
+      ],
+      "claim_template": "该文献围绕{topic}报告或讨论可复核的学术证据。",
+      "summary_template": "该节点将{topic}的最新证据纳入有效永生研究年表。",
+      "uncertainty": "本记录基于期刊元数据和论文标题，尚未完成全文语境复核。"
+    },
+    {
+      "round": 392,
+      "topic": "远程医疗与数字照护",
+      "query": "telemedicine digital care",
+      "queries": [
+        "telemedicine digital care",
+        "telemedicine digital care"
+      ],
+      "min_year": 1990,
+      "chapter": "健康工程、转化医学与总体基础设施",
+      "path_family": "social_composite",
+      "event_type": "technology",
+      "evidence_grade": "S",
+      "significance": "major",
+      "keywords": [
+        "telemedicine",
+        "digital",
+        "care",
+        "remote",
+        "health",
+        "access"
+      ],
+      "required_terms": [
+        "telemedicine",
+        "digital"
+      ],
+      "claim_template": "该文献围绕{topic}报告或讨论可复核的学术证据。",
+      "summary_template": "该节点将{topic}的最新证据纳入有效永生研究年表。",
+      "uncertainty": "本记录基于期刊元数据和论文标题，尚未完成全文语境复核。"
+    },
+    {
+      "round": 393,
+      "topic": "健康数据互操作",
+      "query": "health data interoperability standards",
+      "queries": [
+        "health data interoperability standards",
+        "health data interoperability standards"
+      ],
+      "min_year": 1990,
+      "chapter": "健康工程、转化医学与总体基础设施",
+      "path_family": "social_composite",
+      "event_type": "policy",
+      "evidence_grade": "I",
+      "significance": "major",
+      "keywords": [
+        "health",
+        "data",
+        "interoperability",
+        "standards",
+        "exchange",
+        "records"
+      ],
+      "required_terms": [
+        "health",
+        "data"
+      ],
+      "claim_template": "该文献围绕{topic}报告或讨论可复核的学术证据。",
+      "summary_template": "该节点将{topic}的最新证据纳入有效永生研究年表。",
+      "uncertainty": "本记录基于期刊元数据和论文标题，尚未完成全文语境复核。"
+    },
+    {
+      "round": 394,
+      "topic": "健康经济学与价值",
+      "query": "health economics value assessment",
+      "queries": [
+        "health economics value assessment",
+        "health economics value assessment"
+      ],
+      "min_year": 1990,
+      "chapter": "健康工程、转化医学与总体基础设施",
+      "path_family": "social_composite",
+      "event_type": "thought",
+      "evidence_grade": "I",
+      "significance": "major",
+      "keywords": [
+        "health",
+        "economics",
+        "value",
+        "assessment",
+        "cost",
+        "effectiveness"
+      ],
+      "required_terms": [
+        "health",
+        "economics"
+      ],
+      "claim_template": "该文献围绕{topic}报告或讨论可复核的学术证据。",
+      "summary_template": "该节点将{topic}的最新证据纳入有效永生研究年表。",
+      "uncertainty": "本记录基于期刊元数据和论文标题，尚未完成全文语境复核。"
+    },
+    {
+      "round": 395,
+      "topic": "老龄化社会与制度",
+      "query": "aging society institutions",
+      "queries": [
+        "aging society institutions",
+        "aging society institutions"
+      ],
+      "min_year": 1990,
+      "chapter": "健康工程、转化医学与总体基础设施",
+      "path_family": "social_composite",
+      "event_type": "thought",
+      "evidence_grade": "I",
+      "significance": "major",
+      "keywords": [
+        "aging",
+        "society",
+        "institutions",
+        "demographics",
+        "policy",
+        "work"
+      ],
+      "required_terms": [
+        "aging",
+        "society"
+      ],
+      "claim_template": "该文献围绕{topic}报告或讨论可复核的学术证据。",
+      "summary_template": "该节点将{topic}的最新证据纳入有效永生研究年表。",
+      "uncertainty": "本记录基于期刊元数据和论文标题，尚未完成全文语境复核。"
+    },
+    {
+      "round": 396,
+      "topic": "长期护理与照护体系",
+      "query": "long-term care systems",
+      "queries": [
+        "long-term care systems",
+        "long-term care systems"
+      ],
+      "min_year": 1990,
+      "chapter": "健康工程、转化医学与总体基础设施",
+      "path_family": "social_composite",
+      "event_type": "thought",
+      "evidence_grade": "I",
+      "significance": "major",
+      "keywords": [
+        "long-term",
+        "care",
+        "systems",
+        "aging",
+        "support",
+        "quality"
+      ],
+      "required_terms": [
+        "long-term",
+        "care"
+      ],
+      "claim_template": "该文献围绕{topic}报告或讨论可复核的学术证据。",
+      "summary_template": "该节点将{topic}的最新证据纳入有效永生研究年表。",
+      "uncertainty": "本记录基于期刊元数据和论文标题，尚未完成全文语境复核。"
+    },
+    {
+      "round": 397,
+      "topic": "临终关怀与死亡文化",
+      "query": "end of life care death culture",
+      "queries": [
+        "end of life care death culture",
+        "end of life care death culture"
+      ],
+      "min_year": 1990,
+      "chapter": "健康工程、转化医学与总体基础设施",
+      "path_family": "philosophical",
+      "event_type": "thought",
+      "evidence_grade": "I",
+      "significance": "major",
+      "keywords": [
+        "end-of-life",
+        "care",
+        "death",
+        "culture",
+        "dignity",
+        "meaning"
+      ],
+      "required_terms": [
+        "end-of-life",
+        "death"
+      ],
+      "claim_template": "该文献围绕{topic}报告或讨论可复核的学术证据。",
+      "summary_template": "该节点将{topic}的最新证据纳入有效永生研究年表。",
+      "uncertainty": "本记录基于期刊元数据和论文标题，尚未完成全文语境复核。"
+    },
+    {
+      "round": 398,
+      "topic": "永生哲学与意义",
+      "query": "immortality philosophy meaning",
+      "queries": [
+        "immortality philosophy meaning",
+        "immortality philosophy meaning"
+      ],
+      "min_year": 1990,
+      "chapter": "健康工程、转化医学与总体基础设施",
+      "path_family": "philosophical",
+      "event_type": "thought",
+      "evidence_grade": "I",
+      "significance": "major",
+      "keywords": [
+        "immortality",
+        "philosophy",
+        "meaning",
+        "death",
+        "personal",
+        "identity"
+      ],
+      "required_terms": [
+        "immortality",
+        "philosophy"
+      ],
+      "claim_template": "该文献围绕{topic}报告或讨论可复核的学术证据。",
+      "summary_template": "该节点将{topic}的最新证据纳入有效永生研究年表。",
+      "uncertainty": "本记录基于期刊元数据和论文标题，尚未完成全文语境复核。"
+    },
+    {
+      "round": 399,
+      "topic": "未来文明愿景",
+      "query": "future civilization vision",
+      "queries": [
+        "future civilization vision",
+        "future civilization vision"
+      ],
+      "min_year": 1990,
+      "chapter": "健康工程、转化医学与总体基础设施",
+      "path_family": "philosophical",
+      "event_type": "thought",
+      "evidence_grade": "I",
+      "significance": "major",
+      "keywords": [
+        "future",
+        "civilization",
+        "vision",
+        "longevity",
+        "technology",
+        "human"
+      ],
+      "required_terms": [
+        "future",
+        "civilization"
+      ],
+      "claim_template": "该文献围绕{topic}报告或讨论可复核的学术证据。",
+      "summary_template": "该节点将{topic}的最新证据纳入有效永生研究年表。",
+      "uncertainty": "本记录基于期刊元数据和论文标题，尚未完成全文语境复核。"
+    },
+    {
+      "round": 400,
+      "topic": "人类基础设施总体评估",
+      "query": "human infrastructure overall assessment",
+      "queries": [
+        "human infrastructure overall assessment",
+        "human infrastructure overall assessment"
+      ],
+      "min_year": 1990,
+      "chapter": "健康工程、转化医学与总体基础设施",
+      "path_family": "social_composite",
+      "event_type": "thought",
+      "evidence_grade": "I",
+      "significance": "major",
+      "keywords": [
+        "human",
+        "infrastructure",
+        "overall",
+        "assessment",
+        "longevity",
+        "system"
+      ],
+      "required_terms": [
+        "human",
+        "infrastructure"
+      ],
+      "claim_template": "该文献围绕{topic}报告或讨论可复核的学术证据。",
+      "summary_template": "该节点将{topic}的最新证据纳入有效永生研究年表。",
+      "uncertainty": "本记录基于期刊元数据和论文标题，尚未完成全文语境复核。"
+    }
+  ]
+}

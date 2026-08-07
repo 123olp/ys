@@ -9,5 +9,6 @@ Use these templates when creating new durable documents:
 - `research-card.md`: a paper, book, tool, case, standard, or dataset card used before material enters stable docs or quantitative models.
 - `source-note.md`: raw or lightly processed source input.
 - `reference-doc.md`: stable lookup material under `docs/reference/`.
+- `history-event.md`: a new historical event for the 永生史 structured timeline.
 
 Templates are starting points. Remove sections that do not apply, but do not remove safety, evidence, or ownership boundaries when the topic is high risk.

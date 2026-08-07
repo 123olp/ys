@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-07-27
+
+- Added an effective-immortality practice guidance system that turns the existing research model into a bounded goal, condition, decision, action, verification, correction, and iteration loop while preserving medical, evidence, identity, consent, and high-risk research boundaries.
+
 ## 2026-07-26
 
 - Migrated all public products to Cloudflare `pages.dev`: the official Wikimedia-derived language portal, a MediaWiki-generated read-only Wiki snapshot, and the Human Infra technology tree; retired custom domains and the persistent public Tunnel.

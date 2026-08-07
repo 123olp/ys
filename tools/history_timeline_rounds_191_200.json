@@ -1,0 +1,304 @@
+{
+  "rounds": [
+    {
+      "round": 191,
+      "topic": "脑机接口运动重建",
+      "query": "brain computer interface motor decoding",
+      "queries": [
+        "brain computer interface motor decoding",
+        "neural prosthetic arm movement",
+        "intracortical motor brain machine interface"
+      ],
+      "chapter": "脑机接口、言语解码与运动重建",
+      "path_family": "cognitive_extension",
+      "event_type": "technology",
+      "evidence_grade": "S",
+      "significance": "major",
+      "keywords": [
+        "brain-computer",
+        "motor",
+        "decoding",
+        "prosthetic",
+        "movement",
+        "neural"
+      ],
+      "required_terms": [
+        "brain-computer",
+        "motor"
+      ],
+      "claim_template": "该文献围绕{topic}报告或讨论可复核的学术证据。",
+      "summary_template": "该节点将{topic}的最新证据纳入有效永生研究年表。",
+      "uncertainty": "本记录基于期刊元数据和论文标题，尚未完成全文语境复核。"
+    },
+    {
+      "round": 192,
+      "topic": "脑保存与意识伦理",
+      "query": "brain preservation consciousness ethics",
+      "queries": [
+        "brain preservation consciousness ethics",
+        "cryonics ethics identity",
+        "neural preservation revival"
+      ],
+      "chapter": "脑保存、意识恢复与未来伦理",
+      "path_family": "suspension",
+      "event_type": "thought",
+      "evidence_grade": "I",
+      "significance": "major",
+      "keywords": [
+        "brain",
+        "preservation",
+        "consciousness",
+        "ethics",
+        "cryonics",
+        "identity"
+      ],
+      "required_terms": [
+        "brain",
+        "preservation"
+      ],
+      "claim_template": "该文献围绕{topic}报告或讨论可复核的学术证据。",
+      "summary_template": "该节点将{topic}的最新证据纳入有效永生研究年表。",
+      "uncertainty": "本记录基于期刊元数据和论文标题，尚未完成全文语境复核。"
+    },
+    {
+      "round": 193,
+      "topic": "数字孪生预测医学",
+      "query": "digital twin disease prediction",
+      "queries": [
+        "digital twin disease prediction",
+        "medical digital twin patient outcome",
+        "digital twin personalized treatment"
+      ],
+      "chapter": "数字孪生、预测医学与个体决策",
+      "path_family": "cognitive_extension",
+      "event_type": "technology",
+      "evidence_grade": "S",
+      "significance": "major",
+      "keywords": [
+        "digital twin",
+        "prediction",
+        "patient",
+        "medical",
+        "treatment",
+        "outcome"
+      ],
+      "required_terms": [
+        "digital twin",
+        "prediction"
+      ],
+      "claim_template": "该文献围绕{topic}报告或讨论可复核的学术证据。",
+      "summary_template": "该节点将{topic}的最新证据纳入有效永生研究年表。",
+      "uncertainty": "本记录基于期刊元数据和论文标题，尚未完成全文语境复核。"
+    },
+    {
+      "round": 194,
+      "topic": "细胞衰老组织特异性",
+      "query": "cellular senescence tissue specificity",
+      "queries": [
+        "cellular senescence tissue specificity",
+        "senescence organ aging",
+        "senescent cell tissue"
+      ],
+      "chapter": "细胞衰老、组织特异性与器官维护",
+      "path_family": "maintenance",
+      "event_type": "technology",
+      "evidence_grade": "S",
+      "significance": "major",
+      "keywords": [
+        "senescence",
+        "tissue",
+        "aging",
+        "organ",
+        "cell",
+        "specific"
+      ],
+      "required_terms": [
+        "senescence",
+        "tissue"
+      ],
+      "claim_template": "该文献围绕{topic}报告或讨论可复核的学术证据。",
+      "summary_template": "该节点将{topic}的最新证据纳入有效永生研究年表。",
+      "uncertainty": "本记录基于期刊元数据和论文标题，尚未完成全文语境复核。"
+    },
+    {
+      "round": 195,
+      "topic": "线粒体生物能量学",
+      "query": "mitochondrial bioenergetics aging",
+      "queries": [
+        "mitochondrial bioenergetics aging",
+        "mitochondrial function longevity",
+        "energy metabolism aging cells"
+      ],
+      "chapter": "线粒体、生物能量学与能量韧性",
+      "path_family": "maintenance",
+      "event_type": "technology",
+      "evidence_grade": "S",
+      "significance": "major",
+      "keywords": [
+        "mitochondrial",
+        "bioenergetics",
+        "aging",
+        "energy",
+        "longevity",
+        "metabolism"
+      ],
+      "required_terms": [
+        "mitochondrial",
+        "bioenergetics"
+      ],
+      "claim_template": "该文献围绕{topic}报告或讨论可复核的学术证据。",
+      "summary_template": "该节点将{topic}的最新证据纳入有效永生研究年表。",
+      "uncertainty": "本记录基于期刊元数据和论文标题，尚未完成全文语境复核。"
+    },
+    {
+      "round": 196,
+      "topic": "免疫代谢疫苗",
+      "query": "immunometabolism vaccine aging",
+      "queries": [
+        "immunometabolism vaccine aging",
+        "metabolic regulation immune response",
+        "vaccine immunity older adults"
+      ],
+      "chapter": "免疫代谢、疫苗与免疫韧性",
+      "path_family": "maintenance",
+      "event_type": "technology",
+      "evidence_grade": "S",
+      "significance": "major",
+      "keywords": [
+        "immunometabolism",
+        "vaccine",
+        "immune",
+        "aging",
+        "metabolic",
+        "response"
+      ],
+      "required_terms": [
+        "immunometabolism",
+        "vaccine"
+      ],
+      "claim_template": "该文献围绕{topic}报告或讨论可复核的学术证据。",
+      "summary_template": "该节点将{topic}的最新证据纳入有效永生研究年表。",
+      "uncertainty": "本记录基于期刊元数据和论文标题，尚未完成全文语境复核。"
+    },
+    {
+      "round": 197,
+      "topic": "蛋白质稳态蛋白病",
+      "query": "proteostasis proteinopathy aging",
+      "queries": [
+        "proteostasis proteinopathy aging",
+        "protein aggregation disease aging",
+        "unfolded protein response aging"
+      ],
+      "chapter": "蛋白质稳态、蛋白病与细胞质量控制",
+      "path_family": "maintenance",
+      "event_type": "technology",
+      "evidence_grade": "S",
+      "significance": "major",
+      "keywords": [
+        "proteostasis",
+        "protein",
+        "aggregation",
+        "aging",
+        "disease",
+        "unfolded"
+      ],
+      "required_terms": [
+        "proteostasis",
+        "protein"
+      ],
+      "claim_template": "该文献围绕{topic}报告或讨论可复核的学术证据。",
+      "summary_template": "该节点将{topic}的最新证据纳入有效永生研究年表。",
+      "uncertainty": "本记录基于期刊元数据和论文标题，尚未完成全文语境复核。"
+    },
+    {
+      "round": 198,
+      "topic": "干细胞组织修复",
+      "query": "stem cell tissue repair regeneration",
+      "queries": [
+        "stem cell tissue repair regeneration",
+        "endogenous stem cell aging",
+        "tissue regeneration stem cell therapy"
+      ],
+      "chapter": "干细胞、组织修复与内源再生",
+      "path_family": "reconstruction",
+      "event_type": "technology",
+      "evidence_grade": "S",
+      "significance": "major",
+      "keywords": [
+        "stem cell",
+        "tissue",
+        "repair",
+        "regeneration",
+        "aging",
+        "therapy"
+      ],
+      "required_terms": [
+        "stem cell",
+        "tissue"
+      ],
+      "claim_template": "该文献围绕{topic}报告或讨论可复核的学术证据。",
+      "summary_template": "该节点将{topic}的最新证据纳入有效永生研究年表。",
+      "uncertainty": "本记录基于期刊元数据和论文标题，尚未完成全文语境复核。"
+    },
+    {
+      "round": 199,
+      "topic": "器官芯片疾病模型",
+      "query": "organ on chip disease model",
+      "queries": [
+        "organ on chip disease model",
+        "microphysiological system drug",
+        "organ chip aging"
+      ],
+      "chapter": "器官芯片、微生理系统与疾病模型",
+      "path_family": "reconstruction",
+      "event_type": "technology",
+      "evidence_grade": "S",
+      "significance": "major",
+      "keywords": [
+        "organ-on-chip",
+        "disease",
+        "model",
+        "microphysiological",
+        "aging",
+        "drug"
+      ],
+      "required_terms": [
+        "organ-on-chip",
+        "disease"
+      ],
+      "claim_template": "该文献围绕{topic}报告或讨论可复核的学术证据。",
+      "summary_template": "该节点将{topic}的最新证据纳入有效永生研究年表。",
+      "uncertainty": "本记录基于期刊元数据和论文标题，尚未完成全文语境复核。"
+    },
+    {
+      "round": 200,
+      "topic": "综合证据治理与门禁",
+      "query": "evidence governance research reproducibility",
+      "queries": [
+        "evidence governance research reproducibility",
+        "research data governance validation",
+        "aging research evidence standards"
+      ],
+      "chapter": "综合证据治理、复现性与时间线门禁",
+      "path_family": "social_composite",
+      "event_type": "thought",
+      "evidence_grade": "I",
+      "significance": "major",
+      "keywords": [
+        "evidence",
+        "governance",
+        "research",
+        "reproducibility",
+        "data",
+        "standards"
+      ],
+      "required_terms": [
+        "evidence",
+        "governance"
+      ],
+      "claim_template": "该文献围绕{topic}报告或讨论可复核的学术证据。",
+      "summary_template": "该节点将{topic}的最新证据纳入有效永生研究年表。",
+      "uncertainty": "本记录基于期刊元数据和论文标题，尚未完成全文语境复核。"
+    }
+  ]
+}

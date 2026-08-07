@@ -168,6 +168,7 @@ docs/
 │   ├── add-domain.md
 │   ├── add-source-note.md
 │   ├── contribute-docs.md
+│   ├── effective-immortality-guidance-system.md
 │   ├── run-quality-checks.md
 │   └── share-human-infra.md
 ├── reference/
@@ -178,6 +179,7 @@ docs/
 │   ├── evidence-policy.md
 │   ├── ethics-and-safety-boundaries.md
 │   ├── glossary.md
+│   ├── history-timeline/
 │   ├── human-infra-core-claim-evidence-matrix.md
 │   ├── human-infra-maturity-roadmap.md
 │   ├── life-path-prediction-model-contract.md
@@ -194,6 +196,7 @@ docs/
 │   └── writing-style-guide.md
 ├── source-notes/
 │   ├── core-literature/
+│   ├── 2026-08-06-human-immortality-research-major-events-timeline.md
 │   ├── 2026-06-28-effective-immortality-flywheel-automated-research-run.md
 │   ├── 2026-06-28-effective-immortality-flywheel-derivation-package.md
 │   ├── 2026-06-28-effective-immortality-flywheel-evidence-matrix.md
@@ -225,10 +228,14 @@ docs/
 9. Read `explanations/noah-ark-genealogy.md`.
 10. Read `explanations/value-lenses.md`.
 11. Read `explanations/effective-immortality-acceleration-flywheel.md`.
+11a. Read `how-to/effective-immortality-guidance-system.md` when turning the effective-immortality model into bounded decisions, actions, checks, correction, and iteration.
 12. Read `source-notes/2026-06-28-effective-immortality-flywheel-evidence-matrix.md`.
 13. Read `source-notes/2026-06-28-effective-immortality-flywheel-derivation-package.md`.
 14. Read `reference/applications-and-literature.md`.
 15. Read `source-notes/core-literature/README.md`.
+15a. Read `source-notes/2026-08-06-human-immortality-research-major-events-timeline.md` when working on the 永生史 detailed timeline.
+15b. Read `reference/history-timeline/README.md` when converting the 永生史 detailed timeline into structured event data.
+15c. Run `make history-timeline-preview` after changing `reference/history-timeline/timeline.json`, `sources.json`, or `periods.json` to regenerate `timelinejs.json` and `preview.html`.
 16. Read `reference/review-checklists.md`.
 17. Read `explanations/human-runtime-infrastructure.md`.
 18. Read `source-notes/2026-06-29-controllable-metric-waiting-room-hypothesis-revision-notes.md` if you are working on Future Waiting.

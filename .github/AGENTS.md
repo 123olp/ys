@@ -21,6 +21,6 @@
 
 - `ISSUE_TEMPLATE/` 只定义协作入口，不承载长期知识结论。
 - `PULL_REQUEST_TEMPLATE.md` 负责让变更说明包含范围、验证和风险。
-- `workflows/check.yml` 运行 `make check`，并阻止已退役的 Research Narrative 页面、Astro 配置、Wrangler 配置和 Pages 工作流返回活动路径。
+- `workflows/check.yml` 先运行 `make history-timeline-gate` 校验历史年表机器契约，再运行 `make check`；同时阻止已退役的 Research Narrative 页面、Astro 配置、Wrangler 配置和 Pages 工作流返回活动路径。
 - Research Narrative 的历史 Pages 工作流已移入 `archive/retired-research-narrative-site/pages.yml`，禁止恢复或执行。
 - 新增远程自动化时，优先复用 `Makefile` 或 `tools/` 中的本地命令，避免本地和 CI 出现两套真相。

@@ -1,0 +1,304 @@
+{
+  "rounds": [
+    {
+      "round": 241,
+      "topic": "认知增强与工作记忆",
+      "query": "cognitive enhancement working memory",
+      "queries": [
+        "cognitive enhancement working memory",
+        "cognitive enhancement working memory"
+      ],
+      "min_year": 2000,
+      "chapter": "认知增强、工作记忆与执行功能扩展",
+      "path_family": "cognitive_extension",
+      "event_type": "technology",
+      "evidence_grade": "S",
+      "significance": "major",
+      "keywords": [
+        "cognitive",
+        "enhancement",
+        "working",
+        "memory",
+        "executive",
+        "training"
+      ],
+      "required_terms": [
+        "cognitive",
+        "working"
+      ],
+      "claim_template": "该文献围绕{topic}报告或讨论可复核的学术证据。",
+      "summary_template": "该节点将{topic}的最新证据纳入有效永生研究年表。",
+      "uncertainty": "本记录基于期刊元数据和论文标题，尚未完成全文语境复核。"
+    },
+    {
+      "round": 242,
+      "topic": "睡眠与大脑清洁",
+      "query": "sleep glymphatic brain clearance",
+      "queries": [
+        "sleep glymphatic brain clearance",
+        "sleep glymphatic brain clearance"
+      ],
+      "min_year": 2000,
+      "chapter": "睡眠、类淋巴系统与大脑清洁",
+      "path_family": "maintenance",
+      "event_type": "technology",
+      "evidence_grade": "S",
+      "significance": "major",
+      "keywords": [
+        "sleep",
+        "glymphatic",
+        "brain",
+        "clearance",
+        "memory",
+        "restoration"
+      ],
+      "required_terms": [
+        "sleep",
+        "glymphatic"
+      ],
+      "claim_template": "该文献围绕{topic}报告或讨论可复核的学术证据。",
+      "summary_template": "该节点将{topic}的最新证据纳入有效永生研究年表。",
+      "uncertainty": "本记录基于期刊元数据和论文标题，尚未完成全文语境复核。"
+    },
+    {
+      "round": 243,
+      "topic": "脑机接口语音解码",
+      "query": "brain computer interface speech decoding",
+      "queries": [
+        "brain computer interface speech decoding",
+        "brain computer interface speech decoding"
+      ],
+      "min_year": 2000,
+      "chapter": "脑机接口、语音解码与沟通能力重建",
+      "path_family": "cognitive_extension",
+      "event_type": "technology",
+      "evidence_grade": "S",
+      "significance": "major",
+      "keywords": [
+        "brain",
+        "computer",
+        "speech",
+        "decoding",
+        "communication",
+        "neural"
+      ],
+      "required_terms": [
+        "brain",
+        "computer"
+      ],
+      "claim_template": "该文献围绕{topic}报告或讨论可复核的学术证据。",
+      "summary_template": "该节点将{topic}的最新证据纳入有效永生研究年表。",
+      "uncertainty": "本记录基于期刊元数据和论文标题，尚未完成全文语境复核。"
+    },
+    {
+      "round": 244,
+      "topic": "记忆编辑与创伤后应激",
+      "query": "memory editing ptsd reconsolidation",
+      "queries": [
+        "memory editing ptsd reconsolidation",
+        "memory editing ptsd reconsolidation"
+      ],
+      "min_year": 2000,
+      "chapter": "记忆编辑、创伤后应激与身份连续性",
+      "path_family": "cognitive_extension",
+      "event_type": "thought",
+      "evidence_grade": "S",
+      "significance": "major",
+      "keywords": [
+        "memory",
+        "editing",
+        "ptsd",
+        "reconsolidation",
+        "trauma",
+        "intervention"
+      ],
+      "required_terms": [
+        "memory",
+        "ptsd"
+      ],
+      "claim_template": "该文献围绕{topic}报告或讨论可复核的学术证据。",
+      "summary_template": "该节点将{topic}的最新证据纳入有效永生研究年表。",
+      "uncertainty": "本记录基于期刊元数据和论文标题，尚未完成全文语境复核。"
+    },
+    {
+      "round": 245,
+      "topic": "数字孪生与个性化健康",
+      "query": "digital twin personalized health",
+      "queries": [
+        "digital twin personalized health",
+        "digital twin personalized health"
+      ],
+      "min_year": 2000,
+      "chapter": "数字孪生、个性化健康与预测医学",
+      "path_family": "cognitive_extension",
+      "event_type": "technology",
+      "evidence_grade": "S",
+      "significance": "major",
+      "keywords": [
+        "digital",
+        "twin",
+        "personalized",
+        "health",
+        "prediction",
+        "model"
+      ],
+      "required_terms": [
+        "digital",
+        "twin"
+      ],
+      "claim_template": "该文献围绕{topic}报告或讨论可复核的学术证据。",
+      "summary_template": "该节点将{topic}的最新证据纳入有效永生研究年表。",
+      "uncertainty": "本记录基于期刊元数据和论文标题，尚未完成全文语境复核。"
+    },
+    {
+      "round": 246,
+      "topic": "AI药物发现与临床试验",
+      "query": "artificial intelligence drug discovery clinical trial",
+      "queries": [
+        "artificial intelligence drug discovery clinical trial",
+        "artificial intelligence drug discovery clinical trial"
+      ],
+      "min_year": 2000,
+      "chapter": "AI药物发现、临床试验与生物医学加速",
+      "path_family": "cognitive_extension",
+      "event_type": "technology",
+      "evidence_grade": "S",
+      "significance": "major",
+      "keywords": [
+        "artificial",
+        "intelligence",
+        "drug",
+        "discovery",
+        "clinical",
+        "trial"
+      ],
+      "required_terms": [
+        "artificial",
+        "intelligence"
+      ],
+      "claim_template": "该文献围绕{topic}报告或讨论可复核的学术证据。",
+      "summary_template": "该节点将{topic}的最新证据纳入有效永生研究年表。",
+      "uncertainty": "本记录基于期刊元数据和论文标题，尚未完成全文语境复核。"
+    },
+    {
+      "round": 247,
+      "topic": "生成式AI与科学自动化",
+      "query": "generative ai autonomous laboratory",
+      "queries": [
+        "generative ai autonomous laboratory",
+        "generative ai autonomous laboratory"
+      ],
+      "min_year": 2000,
+      "chapter": "生成式AI、自主实验室与科研自动化",
+      "path_family": "cognitive_extension",
+      "event_type": "technology",
+      "evidence_grade": "S",
+      "significance": "major",
+      "keywords": [
+        "generative",
+        "ai",
+        "autonomous",
+        "laboratory",
+        "scientific",
+        "automation"
+      ],
+      "required_terms": [
+        "generative",
+        "ai"
+      ],
+      "claim_template": "该文献围绕{topic}报告或讨论可复核的学术证据。",
+      "summary_template": "该节点将{topic}的最新证据纳入有效永生研究年表。",
+      "uncertainty": "本记录基于期刊元数据和论文标题，尚未完成全文语境复核。"
+    },
+    {
+      "round": 248,
+      "topic": "长寿逃逸速度理论与建模",
+      "query": "longevity escape velocity life expectancy",
+      "queries": [
+        "longevity escape velocity life expectancy",
+        "longevity escape velocity life expectancy"
+      ],
+      "min_year": 2000,
+      "chapter": "长寿逃逸速度、寿命延展与健康寿命建模",
+      "path_family": "philosophical",
+      "event_type": "thought",
+      "evidence_grade": "I",
+      "significance": "major",
+      "keywords": [
+        "longevity",
+        "escape",
+        "velocity",
+        "life",
+        "expectancy",
+        "modeling"
+      ],
+      "required_terms": [
+        "longevity",
+        "escape"
+      ],
+      "claim_template": "该文献围绕{topic}报告或讨论可复核的学术证据。",
+      "summary_template": "该节点将{topic}的最新证据纳入有效永生研究年表。",
+      "uncertainty": "本记录基于期刊元数据和论文标题，尚未完成全文语境复核。"
+    },
+    {
+      "round": 249,
+      "topic": "主体持续性建模",
+      "query": "personal identity continuity life course",
+      "queries": [
+        "personal identity continuity life course",
+        "personal identity continuity life course"
+      ],
+      "min_year": 2000,
+      "chapter": "主体持续性、生命路径与未来选择权建模",
+      "path_family": "philosophical",
+      "event_type": "thought",
+      "evidence_grade": "I",
+      "significance": "major",
+      "keywords": [
+        "personal",
+        "identity",
+        "continuity",
+        "life",
+        "course",
+        "modeling"
+      ],
+      "required_terms": [
+        "personal",
+        "identity"
+      ],
+      "claim_template": "该文献围绕{topic}报告或讨论可复核的学术证据。",
+      "summary_template": "该节点将{topic}的最新证据纳入有效永生研究年表。",
+      "uncertainty": "本记录基于期刊元数据和论文标题，尚未完成全文语境复核。"
+    },
+    {
+      "round": 250,
+      "topic": "风险治理与全球合作",
+      "query": "global governance technology risk",
+      "queries": [
+        "global governance technology risk",
+        "global governance technology risk"
+      ],
+      "min_year": 2000,
+      "chapter": "技术风险、全球治理与长期安全合作",
+      "path_family": "social_composite",
+      "event_type": "policy",
+      "evidence_grade": "I",
+      "significance": "major",
+      "keywords": [
+        "global",
+        "governance",
+        "technology",
+        "risk",
+        "catastrophic",
+        "cooperation"
+      ],
+      "required_terms": [
+        "global",
+        "governance"
+      ],
+      "claim_template": "该文献围绕{topic}报告或讨论可复核的学术证据。",
+      "summary_template": "该节点将{topic}的最新证据纳入有效永生研究年表。",
+      "uncertainty": "本记录基于期刊元数据和论文标题，尚未完成全文语境复核。"
+    }
+  ]
+}

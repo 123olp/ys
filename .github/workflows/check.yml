@@ -21,5 +21,8 @@ jobs:
         with:
           python-version: "3.x"
 
+      - name: Run history timeline gate
+        run: make history-timeline-gate
+
       - name: Run local checks
         run: make check

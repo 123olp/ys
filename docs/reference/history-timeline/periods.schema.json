@@ -1,0 +1,76 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://human-infra.local/docs/reference/history-timeline/periods.schema.json",
+  "title": "Human Infra History Timeline Period Registry",
+  "description": "Human Infra 永生史年表的时期定义机器契约，记录本地时期 ID 与 PeriodO 映射状态。",
+  "type": "object",
+  "required": [
+    "timeline_id",
+    "version",
+    "periods"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "timeline_id": {
+      "type": "string",
+      "pattern": "^HITL-[A-Z0-9-]+$"
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+    },
+    "updated_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "periods": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/period"
+      }
+    }
+  },
+  "$defs": {
+    "period": {
+      "type": "object",
+      "required": [
+        "period_id",
+        "label_zh",
+        "label_en",
+        "mapping_status"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "period_id": {
+          "type": "string",
+          "pattern": "^period-[a-z0-9-]+$"
+        },
+        "label_zh": {
+          "type": "string",
+          "minLength": 1
+        },
+        "label_en": {
+          "type": "string",
+          "minLength": 1
+        },
+        "periodo_uri": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "uri"
+        },
+        "mapping_status": {
+          "type": "string",
+          "enum": [
+            "matched",
+            "pending"
+          ]
+        },
+        "note": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,75 @@
+apiVersion: governance.human-infra/v1
+kind: HistoryTimelineContract
+metadata:
+  id: HT-GOV-001
+  title: 永生史严肃历史年表治理契约
+  version: 1.0.0
+  owner: tradecatlabs
+  created: 2026-08-06
+  last_reviewed: 2026-08-06
+  review_cycle: P90D
+  status: active
+spec:
+  source_of_truth:
+    schema: docs/reference/history-timeline/timeline.schema.json
+    sources_schema: docs/reference/history-timeline/sources.schema.json
+    periods_schema: docs/reference/history-timeline/periods.schema.json
+    example: docs/reference/history-timeline/example-events.json
+    timeline_data: docs/reference/history-timeline/timeline.json
+    source_registry: docs/reference/history-timeline/sources.json
+    period_registry: docs/reference/history-timeline/periods.json
+    timelinejs_data: docs/reference/history-timeline/timelinejs.json
+    preview: docs/reference/history-timeline/preview.html
+    contract: docs/reference/history-timeline/CONTRACT.md
+    governance: docs/reference/history-timeline/GOVERNANCE.md
+    tools: docs/reference/history-timeline/TOOLS.md
+    event_template: docs/templates/history-event.md
+    source_note: docs/source-notes/2026-08-06-human-immortality-research-major-events-timeline.md
+    decision: governance/decisions/adr/ADR-0001-历史年表采用可复核数据管线与成熟发布工具组合.md
+  required_files:
+    - docs/reference/history-timeline/README.md
+    - docs/reference/history-timeline/CONTRACT.md
+    - docs/reference/history-timeline/GOVERNANCE.md
+    - docs/reference/history-timeline/TOOLS.md
+    - docs/reference/history-timeline/timeline.schema.json
+    - docs/reference/history-timeline/sources.schema.json
+    - docs/reference/history-timeline/periods.schema.json
+    - docs/reference/history-timeline/example-events.json
+    - docs/reference/history-timeline/timeline.json
+    - docs/reference/history-timeline/sources.json
+    - docs/reference/history-timeline/periods.json
+    - docs/templates/history-event.md
+    - docs/reference/history-timeline/timelinejs.json
+    - docs/reference/history-timeline/preview.html
+  commands:
+    validate: make history-timeline-gate
+    validator: python3 tools/validate_history_timeline.py
+    preview: make history-timeline-preview
+  gates:
+    - id: GATE-0002
+      severity: BLOCK
+      detectability: automated
+      purpose: 年表必须通过机器契约校验
+    - id: GATE-0003
+      severity: BLOCK
+      detectability: manual
+      purpose: 年表事件必须完成来源与审阅连续性
+  identity:
+    event_id_pattern: "^HIT-[A-Z]{3}-[0-9]{3,}$"
+    source_id_pattern: "^SRC-[0-9]{3,}$"
+    timeline_id_pattern: "^HITL-[A-Z0-9-]+$"
+  lifecycle:
+    - draft
+    - locally_reviewed
+    - fresh_reviewed
+    - published
+    - needs_revision
+    - blocked
+    - superseded
+    - archived
+  prohibited_uses:
+    - 把神话、文学或思想事件写成已验证史实
+    - 把动物实验、细胞实验或远期预测写成人体有效结论
+    - 把年表事件直接作为医疗、投资、法律或政策建议
+    - 删除来源、隐藏争议或把待考证升级为已证明
+    - 使用未复核事件进入公共永生史正文

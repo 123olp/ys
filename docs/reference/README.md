@@ -4,6 +4,7 @@ Reference documents are stable lookup materials: maps, rules, glossaries, standa
 
 Current documents:
 
+- `history-timeline/`: 永生史严肃历史年表工程包，包含年表 Schema、2592 条事件、2595 个来源卡、31 个时期定义、契约、治理、ECharts 图表预览与指导文献。
 - `geo-publication-governance.md`: GEO entity graph, machine publication contract, question coverage, observable metrics, attribution boundaries, and release verification for the portal, Wiki, and technology tree.
 - `tech-tree-web-candidates/README.md`: 目标科技树的视觉、依赖、证据、成熟度与实现候选参考包。
 - `applications-and-literature.md`: real-world application cases and literature spine for Human Infra.

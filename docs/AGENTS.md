@@ -354,6 +354,7 @@ docs/
 
 - `explanations/human-runtime-infrastructure.md`：定义 Human Infra 的核心模型、七层结构、诊断框架和 Human SRE 类比。
 - `explanations/effective-immortality-acceleration-flywheel.md`：新建有效永生飞轮 working paper，定义主体持续时间、有效时间、学习轮次、积累资本、技术采用、行动质量和可能性空间之间的研究链路。
+- `how-to/effective-immortality-guidance-system.md`：把有效永生目标编排成“目标、原理、条件、决策、行动、验证、纠错、迭代”实践闭环；只拥有指导流程，不复制证据账本，不提供个体医疗或高风险操作建议。
 - `explanations/life-path-prediction-model.md`：解释定量生命路径预测层的概念、时间类型、模型族和边界。
 - `explanations/noah-ark-genealogy.md`：定义“诺亚方舟”作为 Human Infra 主隐喻的叙事谱系、理论谱系、映射、使用场景和传播边界。
 - `explanations/value-lenses.md`：定义 Human Infra 的多视角价值理解，补充“寿命延长和逃逸路径带来的通用资源预算增量”视角但不替代主体持续性主线。
@@ -644,13 +645,21 @@ docs/
 - `reference/document-lifecycle.md`：定义文档从 source 到 stable、superseded、archived 的生命周期。
 - `reference/repository-standards.md`：记录本仓库采用的标准结构、根文件和调研来源。
 - `reference/review-checklists.md`：提供文档、证据、安全、域边界和数据脚本审查清单。
+- `reference/history-timeline/README.md`：永生史严肃历史年表工程包入口，说明年表定位、文件职责、使用方式与落地顺序。
+- `reference/history-timeline/CONTRACT.md`：定义年表事件标识、必填字段、日期、来源、路径族和禁止用途。
+- `reference/history-timeline/GOVERNANCE.md`：定义年表审阅、生命周期、质量门禁、冲突处理、更新与回滚规则。
+- `reference/history-timeline/TOOLS.md`：沉淀成熟开源工具、标准与历史方法论/数字人文指导文献。
+- `reference/history-timeline/timeline.schema.json`：年表事件 JSON Schema 机器契约。
+- `templates/history-event.md`：新增《永生史》历史事件的统一模板。
 - `how-to/add-domain.md`：说明新增子域的步骤和停止条件。
 - `how-to/add-source-note.md`：说明新增 source note 的步骤和规则。
+- `how-to/effective-immortality-guidance-system.md`：用一页式结构说明如何从当前最大短板进入判断、最小行动、验证、纠错与下一轮迭代。
 - `how-to/run-quality-checks.md`：说明如何运行本地质量检查。
 - `how-to/share-human-infra.md`：说明如何对外介绍 Human Infra、复用短推文模板并保持传播边界。
 - `source-notes/`：保存最新资料原文或轻整理版本，供后续提炼，不直接作为产品说明入口。
 - `source-notes/README.md`：说明原始资料归档的文件职责和使用规则。
 - `source-notes/core-literature/`：保存 Human Infra 谱系论文集的下载清单、核心 Source Card 草案、论文解读报告和缓存边界说明；原文缓存留在 `.research/literature/`。
+- `source-notes/2026-08-06-human-immortality-research-major-events-timeline.md`：保存人类永生研究大历史事件一览，含六个阶段的详细年表、58 条来源链接和考证问题，作为《永生史》的详细底稿。
 - `source-notes/2026-06-28-effective-immortality-flywheel-automated-research-run.md`：记录有效永生飞轮第一轮自动化科研流程、文献脊梁、发现和下一步任务。
 - `source-notes/2026-06-28-effective-immortality-flywheel-derivation-package.md`：保存有效永生飞轮公式推导包，冻结不变量、假设、符号、推导图、主公式、边界和开放风险。
 - `source-notes/2026-06-28-effective-immortality-flywheel-evidence-matrix.md`：保存有效永生飞轮证据矩阵，把主链路拆成可检验边，并记录候选来源、证据角色、断裂条件和下一步模型任务。

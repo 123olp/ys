@@ -1,0 +1,604 @@
+{
+  "rounds": [
+    {
+      "round": 301,
+      "topic": "端粒酶激活与染色体端粒维持",
+      "query": "telomerase activation telomere maintenance",
+      "queries": [
+        "telomerase activation telomere maintenance",
+        "telomerase activation telomere maintenance"
+      ],
+      "min_year": 1990,
+      "chapter": "细胞维护、再生医学与生物停滞",
+      "path_family": "maintenance",
+      "event_type": "technology",
+      "evidence_grade": "S",
+      "significance": "major",
+      "keywords": [
+        "telomerase",
+        "activation",
+        "telomere",
+        "maintenance",
+        "aging",
+        "chromosome"
+      ],
+      "required_terms": [
+        "telomerase",
+        "telomere"
+      ],
+      "claim_template": "该文献围绕{topic}报告或讨论可复核的学术证据。",
+      "summary_template": "该节点将{topic}的最新证据纳入有效永生研究年表。",
+      "uncertainty": "本记录基于期刊元数据和论文标题，尚未完成全文语境复核。"
+    },
+    {
+      "round": 302,
+      "topic": "DNA损伤修复与基因组稳定",
+      "query": "DNA damage repair genomic stability",
+      "queries": [
+        "DNA damage repair genomic stability",
+        "DNA damage repair genomic stability"
+      ],
+      "min_year": 1990,
+      "chapter": "细胞维护、再生医学与生物停滞",
+      "path_family": "maintenance",
+      "event_type": "technology",
+      "evidence_grade": "S",
+      "significance": "major",
+      "keywords": [
+        "dna",
+        "damage",
+        "repair",
+        "genomic",
+        "stability",
+        "aging"
+      ],
+      "required_terms": [
+        "dna",
+        "repair"
+      ],
+      "claim_template": "该文献围绕{topic}报告或讨论可复核的学术证据。",
+      "summary_template": "该节点将{topic}的最新证据纳入有效永生研究年表。",
+      "uncertainty": "本记录基于期刊元数据和论文标题，尚未完成全文语境复核。"
+    },
+    {
+      "round": 303,
+      "topic": "表观遗传时钟与干预",
+      "query": "epigenetic clock intervention aging",
+      "queries": [
+        "epigenetic clock intervention aging",
+        "epigenetic clock intervention aging"
+      ],
+      "min_year": 1990,
+      "chapter": "细胞维护、再生医学与生物停滞",
+      "path_family": "maintenance",
+      "event_type": "technology",
+      "evidence_grade": "S",
+      "significance": "major",
+      "keywords": [
+        "epigenetic",
+        "clock",
+        "intervention",
+        "aging",
+        "methylation",
+        "biomarker"
+      ],
+      "required_terms": [
+        "epigenetic",
+        "clock"
+      ],
+      "claim_template": "该文献围绕{topic}报告或讨论可复核的学术证据。",
+      "summary_template": "该节点将{topic}的最新证据纳入有效永生研究年表。",
+      "uncertainty": "本记录基于期刊元数据和论文标题，尚未完成全文语境复核。"
+    },
+    {
+      "round": 304,
+      "topic": "衰老细胞清除与组织年轻化",
+      "query": "senescent cell clearance tissue rejuvenation",
+      "queries": [
+        "senescent cell clearance tissue rejuvenation",
+        "senescent cell clearance tissue rejuvenation"
+      ],
+      "min_year": 1990,
+      "chapter": "细胞维护、再生医学与生物停滞",
+      "path_family": "maintenance",
+      "event_type": "technology",
+      "evidence_grade": "S",
+      "significance": "major",
+      "keywords": [
+        "senescent",
+        "cell",
+        "clearance",
+        "tissue",
+        "rejuvenation",
+        "senolytic"
+      ],
+      "required_terms": [
+        "senescent",
+        "clearance"
+      ],
+      "claim_template": "该文献围绕{topic}报告或讨论可复核的学术证据。",
+      "summary_template": "该节点将{topic}的最新证据纳入有效永生研究年表。",
+      "uncertainty": "本记录基于期刊元数据和论文标题，尚未完成全文语境复核。"
+    },
+    {
+      "round": 305,
+      "topic": "干细胞耗竭与再生",
+      "query": "stem cell exhaustion regeneration aging",
+      "queries": [
+        "stem cell exhaustion regeneration aging",
+        "stem cell exhaustion regeneration aging"
+      ],
+      "min_year": 1990,
+      "chapter": "细胞维护、再生医学与生物停滞",
+      "path_family": "maintenance",
+      "event_type": "technology",
+      "evidence_grade": "S",
+      "significance": "major",
+      "keywords": [
+        "stem",
+        "cell",
+        "exhaustion",
+        "regeneration",
+        "aging",
+        "renewal"
+      ],
+      "required_terms": [
+        "stem",
+        "cell"
+      ],
+      "claim_template": "该文献围绕{topic}报告或讨论可复核的学术证据。",
+      "summary_template": "该节点将{topic}的最新证据纳入有效永生研究年表。",
+      "uncertainty": "本记录基于期刊元数据和论文标题，尚未完成全文语境复核。"
+    },
+    {
+      "round": 306,
+      "topic": "蛋白稳态与分子伴侣",
+      "query": "proteostasis molecular chaperone aging",
+      "queries": [
+        "proteostasis molecular chaperone aging",
+        "proteostasis molecular chaperone aging"
+      ],
+      "min_year": 1990,
+      "chapter": "细胞维护、再生医学与生物停滞",
+      "path_family": "maintenance",
+      "event_type": "technology",
+      "evidence_grade": "S",
+      "significance": "major",
+      "keywords": [
+        "proteostasis",
+        "chaperone",
+        "protein",
+        "folding",
+        "aging",
+        "stress"
+      ],
+      "required_terms": [
+        "proteostasis",
+        "chaperone"
+      ],
+      "claim_template": "该文献围绕{topic}报告或讨论可复核的学术证据。",
+      "summary_template": "该节点将{topic}的最新证据纳入有效永生研究年表。",
+      "uncertainty": "本记录基于期刊元数据和论文标题，尚未完成全文语境复核。"
+    },
+    {
+      "round": 307,
+      "topic": "线粒体功能与能量代谢",
+      "query": "mitochondrial function energy metabolism",
+      "queries": [
+        "mitochondrial function energy metabolism",
+        "mitochondrial function energy metabolism"
+      ],
+      "min_year": 1990,
+      "chapter": "细胞维护、再生医学与生物停滞",
+      "path_family": "maintenance",
+      "event_type": "technology",
+      "evidence_grade": "S",
+      "significance": "major",
+      "keywords": [
+        "mitochondrial",
+        "function",
+        "energy",
+        "metabolism",
+        "aging",
+        "homeostasis"
+      ],
+      "required_terms": [
+        "mitochondrial",
+        "energy"
+      ],
+      "claim_template": "该文献围绕{topic}报告或讨论可复核的学术证据。",
+      "summary_template": "该节点将{topic}的最新证据纳入有效永生研究年表。",
+      "uncertainty": "本记录基于期刊元数据和论文标题，尚未完成全文语境复核。"
+    },
+    {
+      "round": 308,
+      "topic": "细胞自噬与溶酶体",
+      "query": "autophagy lysosome cellular homeostasis",
+      "queries": [
+        "autophagy lysosome cellular homeostasis",
+        "autophagy lysosome cellular homeostasis"
+      ],
+      "min_year": 1990,
+      "chapter": "细胞维护、再生医学与生物停滞",
+      "path_family": "maintenance",
+      "event_type": "technology",
+      "evidence_grade": "S",
+      "significance": "major",
+      "keywords": [
+        "autophagy",
+        "lysosome",
+        "cellular",
+        "homeostasis",
+        "aging",
+        "clearance"
+      ],
+      "required_terms": [
+        "autophagy",
+        "lysosome"
+      ],
+      "claim_template": "该文献围绕{topic}报告或讨论可复核的学术证据。",
+      "summary_template": "该节点将{topic}的最新证据纳入有效永生研究年表。",
+      "uncertainty": "本记录基于期刊元数据和论文标题，尚未完成全文语境复核。"
+    },
+    {
+      "round": 309,
+      "topic": "炎症衰老与免疫",
+      "query": "inflammaging immune aging",
+      "queries": [
+        "inflammaging immune aging",
+        "inflammaging immune aging"
+      ],
+      "min_year": 1990,
+      "chapter": "细胞维护、再生医学与生物停滞",
+      "path_family": "maintenance",
+      "event_type": "technology",
+      "evidence_grade": "S",
+      "significance": "major",
+      "keywords": [
+        "inflammaging",
+        "immune",
+        "aging",
+        "inflammation",
+        "chronic",
+        "senescence"
+      ],
+      "required_terms": [
+        "inflammaging",
+        "aging"
+      ],
+      "claim_template": "该文献围绕{topic}报告或讨论可复核的学术证据。",
+      "summary_template": "该节点将{topic}的最新证据纳入有效永生研究年表。",
+      "uncertainty": "本记录基于期刊元数据和论文标题，尚未完成全文语境复核。"
+    },
+    {
+      "round": 310,
+      "topic": "微生物组与健康长寿",
+      "query": "microbiome healthy longevity",
+      "queries": [
+        "microbiome healthy longevity",
+        "microbiome healthy longevity"
+      ],
+      "min_year": 1990,
+      "chapter": "细胞维护、再生医学与生物停滞",
+      "path_family": "maintenance",
+      "event_type": "technology",
+      "evidence_grade": "S",
+      "significance": "major",
+      "keywords": [
+        "microbiome",
+        "gut",
+        "longevity",
+        "health",
+        "aging",
+        "microbiota"
+      ],
+      "required_terms": [
+        "microbiome",
+        "longevity"
+      ],
+      "claim_template": "该文献围绕{topic}报告或讨论可复核的学术证据。",
+      "summary_template": "该节点将{topic}的最新证据纳入有效永生研究年表。",
+      "uncertainty": "本记录基于期刊元数据和论文标题，尚未完成全文语境复核。"
+    },
+    {
+      "round": 311,
+      "topic": "神经退行性疾病与衰老",
+      "query": "neurodegenerative disease aging intervention",
+      "queries": [
+        "neurodegenerative disease aging intervention",
+        "neurodegenerative disease aging intervention"
+      ],
+      "min_year": 1990,
+      "chapter": "细胞维护、再生医学与生物停滞",
+      "path_family": "maintenance",
+      "event_type": "technology",
+      "evidence_grade": "S",
+      "significance": "major",
+      "keywords": [
+        "neurodegenerative",
+        "disease",
+        "aging",
+        "intervention",
+        "therapy",
+        "brain"
+      ],
+      "required_terms": [
+        "neurodegenerative",
+        "aging"
+      ],
+      "claim_template": "该文献围绕{topic}报告或讨论可复核的学术证据。",
+      "summary_template": "该节点将{topic}的最新证据纳入有效永生研究年表。",
+      "uncertainty": "本记录基于期刊元数据和论文标题，尚未完成全文语境复核。"
+    },
+    {
+      "round": 312,
+      "topic": "心血管衰老与动脉韧性",
+      "query": "cardiovascular aging arterial resilience",
+      "queries": [
+        "cardiovascular aging arterial resilience",
+        "cardiovascular aging arterial resilience"
+      ],
+      "min_year": 1990,
+      "chapter": "细胞维护、再生医学与生物停滞",
+      "path_family": "maintenance",
+      "event_type": "technology",
+      "evidence_grade": "S",
+      "significance": "major",
+      "keywords": [
+        "cardiovascular",
+        "aging",
+        "arterial",
+        "resilience",
+        "heart",
+        "vascular"
+      ],
+      "required_terms": [
+        "cardiovascular",
+        "aging"
+      ],
+      "claim_template": "该文献围绕{topic}报告或讨论可复核的学术证据。",
+      "summary_template": "该节点将{topic}的最新证据纳入有效永生研究年表。",
+      "uncertainty": "本记录基于期刊元数据和论文标题，尚未完成全文语境复核。"
+    },
+    {
+      "round": 313,
+      "topic": "代谢综合征与长寿",
+      "query": "metabolic syndrome longevity health",
+      "queries": [
+        "metabolic syndrome longevity health",
+        "metabolic syndrome longevity health"
+      ],
+      "min_year": 1990,
+      "chapter": "细胞维护、再生医学与生物停滞",
+      "path_family": "maintenance",
+      "event_type": "technology",
+      "evidence_grade": "S",
+      "significance": "major",
+      "keywords": [
+        "metabolic",
+        "syndrome",
+        "longevity",
+        "health",
+        "insulin",
+        "obesity"
+      ],
+      "required_terms": [
+        "metabolic",
+        "longevity"
+      ],
+      "claim_template": "该文献围绕{topic}报告或讨论可复核的学术证据。",
+      "summary_template": "该节点将{topic}的最新证据纳入有效永生研究年表。",
+      "uncertainty": "本记录基于期刊元数据和论文标题，尚未完成全文语境复核。"
+    },
+    {
+      "round": 314,
+      "topic": "肌肉骨骼健康与功能",
+      "query": "musculoskeletal health function aging",
+      "queries": [
+        "musculoskeletal health function aging",
+        "musculoskeletal health function aging"
+      ],
+      "min_year": 1990,
+      "chapter": "细胞维护、再生医学与生物停滞",
+      "path_family": "maintenance",
+      "event_type": "technology",
+      "evidence_grade": "S",
+      "significance": "major",
+      "keywords": [
+        "musculoskeletal",
+        "health",
+        "function",
+        "aging",
+        "bone",
+        "muscle"
+      ],
+      "required_terms": [
+        "musculoskeletal",
+        "aging"
+      ],
+      "claim_template": "该文献围绕{topic}报告或讨论可复核的学术证据。",
+      "summary_template": "该节点将{topic}的最新证据纳入有效永生研究年表。",
+      "uncertainty": "本记录基于期刊元数据和论文标题，尚未完成全文语境复核。"
+    },
+    {
+      "round": 315,
+      "topic": "生殖健康与未来选择权",
+      "query": "reproductive health fertility preservation",
+      "queries": [
+        "reproductive health fertility preservation",
+        "reproductive health fertility preservation"
+      ],
+      "min_year": 1990,
+      "chapter": "细胞维护、再生医学与生物停滞",
+      "path_family": "maintenance",
+      "event_type": "technology",
+      "evidence_grade": "S",
+      "significance": "major",
+      "keywords": [
+        "reproductive",
+        "health",
+        "fertility",
+        "preservation",
+        "aging",
+        "future"
+      ],
+      "required_terms": [
+        "reproductive",
+        "fertility"
+      ],
+      "claim_template": "该文献围绕{topic}报告或讨论可复核的学术证据。",
+      "summary_template": "该节点将{topic}的最新证据纳入有效永生研究年表。",
+      "uncertainty": "本记录基于期刊元数据和论文标题，尚未完成全文语境复核。"
+    },
+    {
+      "round": 316,
+      "topic": "皮肤屏障与组织修复",
+      "query": "skin barrier tissue repair",
+      "queries": [
+        "skin barrier tissue repair",
+        "skin barrier tissue repair"
+      ],
+      "min_year": 1990,
+      "chapter": "细胞维护、再生医学与生物停滞",
+      "path_family": "maintenance",
+      "event_type": "technology",
+      "evidence_grade": "S",
+      "significance": "major",
+      "keywords": [
+        "skin",
+        "barrier",
+        "tissue",
+        "repair",
+        "regeneration",
+        "aging"
+      ],
+      "required_terms": [
+        "skin",
+        "barrier"
+      ],
+      "claim_template": "该文献围绕{topic}报告或讨论可复核的学术证据。",
+      "summary_template": "该节点将{topic}的最新证据纳入有效永生研究年表。",
+      "uncertainty": "本记录基于期刊元数据和论文标题，尚未完成全文语境复核。"
+    },
+    {
+      "round": 317,
+      "topic": "器官衰竭与替代疗法",
+      "query": "organ failure replacement therapy",
+      "queries": [
+        "organ failure replacement therapy",
+        "organ failure replacement therapy"
+      ],
+      "min_year": 1990,
+      "chapter": "细胞维护、再生医学与生物停滞",
+      "path_family": "reconstruction",
+      "event_type": "technology",
+      "evidence_grade": "S",
+      "significance": "major",
+      "keywords": [
+        "organ",
+        "failure",
+        "replacement",
+        "therapy",
+        "transplant",
+        "regenerative"
+      ],
+      "required_terms": [
+        "organ",
+        "replacement"
+      ],
+      "claim_template": "该文献围绕{topic}报告或讨论可复核的学术证据。",
+      "summary_template": "该节点将{topic}的最新证据纳入有效永生研究年表。",
+      "uncertainty": "本记录基于期刊元数据和论文标题，尚未完成全文语境复核。"
+    },
+    {
+      "round": 318,
+      "topic": "异种移植与器官工程",
+      "query": "xenotransplantation organ engineering",
+      "queries": [
+        "xenotransplantation organ engineering",
+        "xenotransplantation organ engineering"
+      ],
+      "min_year": 1990,
+      "chapter": "细胞维护、再生医学与生物停滞",
+      "path_family": "reconstruction",
+      "event_type": "technology",
+      "evidence_grade": "S",
+      "significance": "major",
+      "keywords": [
+        "xenotransplantation",
+        "organ",
+        "engineering",
+        "pig",
+        "transplant",
+        "clinical"
+      ],
+      "required_terms": [
+        "xenotransplantation",
+        "organ"
+      ],
+      "claim_template": "该文献围绕{topic}报告或讨论可复核的学术证据。",
+      "summary_template": "该节点将{topic}的最新证据纳入有效永生研究年表。",
+      "uncertainty": "本记录基于期刊元数据和论文标题，尚未完成全文语境复核。"
+    },
+    {
+      "round": 319,
+      "topic": "冷冻保存与生物停滞",
+      "query": "cryopreservation biostasis preservation",
+      "queries": [
+        "cryopreservation biostasis preservation",
+        "cryopreservation biostasis preservation"
+      ],
+      "min_year": 1990,
+      "chapter": "细胞维护、再生医学与生物停滞",
+      "path_family": "suspension",
+      "event_type": "technology",
+      "evidence_grade": "S",
+      "significance": "major",
+      "keywords": [
+        "cryopreservation",
+        "biostasis",
+        "preservation",
+        "organ",
+        "tissue",
+        "revival"
+      ],
+      "required_terms": [
+        "cryopreservation",
+        "biostasis"
+      ],
+      "claim_template": "该文献围绕{topic}报告或讨论可复核的学术证据。",
+      "summary_template": "该节点将{topic}的最新证据纳入有效永生研究年表。",
+      "uncertainty": "本记录基于期刊元数据和论文标题，尚未完成全文语境复核。"
+    },
+    {
+      "round": 320,
+      "topic": "数字永生与意识上传",
+      "query": "digital immortality mind uploading",
+      "queries": [
+        "digital immortality mind uploading",
+        "digital immortality mind uploading"
+      ],
+      "min_year": 1990,
+      "chapter": "细胞维护、再生医学与生物停滞",
+      "path_family": "digital_migration",
+      "event_type": "thought",
+      "evidence_grade": "I",
+      "significance": "major",
+      "keywords": [
+        "digital",
+        "immortality",
+        "mind",
+        "uploading",
+        "consciousness",
+        "identity"
+      ],
+      "required_terms": [
+        "digital",
+        "immortality"
+      ],
+      "claim_template": "该文献围绕{topic}报告或讨论可复核的学术证据。",
+      "summary_template": "该节点将{topic}的最新证据纳入有效永生研究年表。",
+      "uncertainty": "本记录基于期刊元数据和论文标题，尚未完成全文语境复核。"
+    }
+  ]
+}

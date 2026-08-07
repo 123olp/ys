@@ -25,6 +25,7 @@
 - `human-runtime-infrastructure-learning-note.md`：人类运行基础设施的学习与应用整理。
 - `disembodied-cns-interface-architecture.md`：具身半自主生命系统与去具身外部维持型中枢生命系统的接口架构对照。
 - `disembodied-cns-and-memory-editing-brief.md`：去具身中枢生命系统与记忆编辑的极简目标表述。
+- `2026-08-06-human-immortality-research-major-events-timeline.md`：人类永生研究大历史事件一览，按神话来世、炼丹药物、近代延寿、老年学、低温保存、老年科学与生物技术产业六个阶段整理，并保留 58 条来源链接和考证问题；用于《永生史》正文的详细年表底稿，工程契约见 `docs/reference/history-timeline/`。
 
 ## 使用规则
 

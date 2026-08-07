@@ -1,0 +1,604 @@
+{
+  "rounds": [
+    {
+      "round": 251,
+      "topic": "神经干细胞疗法",
+      "query": "neural stem cell therapy brain repair",
+      "queries": [
+        "neural stem cell therapy brain repair",
+        "neural stem cell therapy brain repair"
+      ],
+      "min_year": 1990,
+      "chapter": "神经干细胞、脑修复与神经再生治疗",
+      "path_family": "reconstruction",
+      "event_type": "technology",
+      "evidence_grade": "S",
+      "significance": "major",
+      "keywords": [
+        "neural",
+        "stem",
+        "cell",
+        "brain",
+        "repair",
+        "therapy"
+      ],
+      "required_terms": [
+        "neural",
+        "stem"
+      ],
+      "claim_template": "该文献围绕{topic}报告或讨论可复核的学术证据。",
+      "summary_template": "该节点将{topic}的最新证据纳入有效永生研究年表。",
+      "uncertainty": "本记录基于期刊元数据和论文标题，尚未完成全文语境复核。"
+    },
+    {
+      "round": 252,
+      "topic": "少突胶质细胞与髓鞘再生",
+      "query": "oligodendrocyte remyelination regeneration",
+      "queries": [
+        "oligodendrocyte remyelination regeneration",
+        "oligodendrocyte remyelination regeneration"
+      ],
+      "min_year": 1990,
+      "chapter": "少突胶质细胞、髓鞘再生与白质修复",
+      "path_family": "reconstruction",
+      "event_type": "technology",
+      "evidence_grade": "S",
+      "significance": "major",
+      "keywords": [
+        "oligodendrocyte",
+        "remyelination",
+        "myelin",
+        "regeneration",
+        "white matter",
+        "repair"
+      ],
+      "required_terms": [
+        "oligodendrocyte",
+        "remyelination"
+      ],
+      "claim_template": "该文献围绕{topic}报告或讨论可复核的学术证据。",
+      "summary_template": "该节点将{topic}的最新证据纳入有效永生研究年表。",
+      "uncertainty": "本记录基于期刊元数据和论文标题，尚未完成全文语境复核。"
+    },
+    {
+      "round": 253,
+      "topic": "星形胶质细胞与脑修复",
+      "query": "astrocyte brain repair reactivity",
+      "queries": [
+        "astrocyte brain repair reactivity",
+        "astrocyte brain repair reactivity"
+      ],
+      "min_year": 1990,
+      "chapter": "星形胶质细胞、反应性胶质与脑修复",
+      "path_family": "reconstruction",
+      "event_type": "technology",
+      "evidence_grade": "S",
+      "significance": "major",
+      "keywords": [
+        "astrocyte",
+        "brain",
+        "repair",
+        "reactivity",
+        "gliosis",
+        "recovery"
+      ],
+      "required_terms": [
+        "astrocyte",
+        "brain"
+      ],
+      "claim_template": "该文献围绕{topic}报告或讨论可复核的学术证据。",
+      "summary_template": "该节点将{topic}的最新证据纳入有效永生研究年表。",
+      "uncertainty": "本记录基于期刊元数据和论文标题，尚未完成全文语境复核。"
+    },
+    {
+      "round": 254,
+      "topic": "小胶质细胞与神经免疫",
+      "query": "microglia neuroimmune aging",
+      "queries": [
+        "microglia neuroimmune aging",
+        "microglia neuroimmune aging"
+      ],
+      "min_year": 1990,
+      "chapter": "小胶质细胞、神经免疫与脑稳态",
+      "path_family": "maintenance",
+      "event_type": "technology",
+      "evidence_grade": "S",
+      "significance": "major",
+      "keywords": [
+        "microglia",
+        "neuroimmune",
+        "aging",
+        "brain",
+        "inflammation",
+        "homeostasis"
+      ],
+      "required_terms": [
+        "microglia",
+        "brain"
+      ],
+      "claim_template": "该文献围绕{topic}报告或讨论可复核的学术证据。",
+      "summary_template": "该节点将{topic}的最新证据纳入有效永生研究年表。",
+      "uncertainty": "本记录基于期刊元数据和论文标题，尚未完成全文语境复核。"
+    },
+    {
+      "round": 255,
+      "topic": "血脑屏障与神经血管单元",
+      "query": "blood brain barrier neurovascular unit",
+      "queries": [
+        "blood brain barrier neurovascular unit",
+        "blood brain barrier neurovascular unit"
+      ],
+      "min_year": 1990,
+      "chapter": "血脑屏障、神经血管单元与脑灌注",
+      "path_family": "maintenance",
+      "event_type": "technology",
+      "evidence_grade": "S",
+      "significance": "major",
+      "keywords": [
+        "blood-brain",
+        "barrier",
+        "neurovascular",
+        "unit",
+        "brain",
+        "perfusion"
+      ],
+      "required_terms": [
+        "blood-brain",
+        "barrier"
+      ],
+      "claim_template": "该文献围绕{topic}报告或讨论可复核的学术证据。",
+      "summary_template": "该节点将{topic}的最新证据纳入有效永生研究年表。",
+      "uncertainty": "本记录基于期刊元数据和论文标题，尚未完成全文语境复核。"
+    },
+    {
+      "round": 256,
+      "topic": "神经炎症与认知保护",
+      "query": "neuroinflammation cognitive decline protection",
+      "queries": [
+        "neuroinflammation cognitive decline protection",
+        "neuroinflammation cognitive decline protection"
+      ],
+      "min_year": 1990,
+      "chapter": "神经炎症、认知衰退与神经保护",
+      "path_family": "maintenance",
+      "event_type": "technology",
+      "evidence_grade": "S",
+      "significance": "major",
+      "keywords": [
+        "neuroinflammation",
+        "cognitive",
+        "decline",
+        "protection",
+        "aging",
+        "therapy"
+      ],
+      "required_terms": [
+        "neuroinflammation",
+        "cognitive"
+      ],
+      "claim_template": "该文献围绕{topic}报告或讨论可复核的学术证据。",
+      "summary_template": "该节点将{topic}的最新证据纳入有效永生研究年表。",
+      "uncertainty": "本记录基于期刊元数据和论文标题，尚未完成全文语境复核。"
+    },
+    {
+      "round": 257,
+      "topic": "脑类器官与神经发育",
+      "query": "brain organoid neurodevelopment model",
+      "queries": [
+        "brain organoid neurodevelopment model",
+        "brain organoid neurodevelopment model"
+      ],
+      "min_year": 1990,
+      "chapter": "脑类器官、神经发育与疾病建模",
+      "path_family": "reconstruction",
+      "event_type": "technology",
+      "evidence_grade": "S",
+      "significance": "major",
+      "keywords": [
+        "brain",
+        "organoid",
+        "neurodevelopment",
+        "model",
+        "disease",
+        "stem"
+      ],
+      "required_terms": [
+        "brain",
+        "organoid"
+      ],
+      "claim_template": "该文献围绕{topic}报告或讨论可复核的学术证据。",
+      "summary_template": "该节点将{topic}的最新证据纳入有效永生研究年表。",
+      "uncertainty": "本记录基于期刊元数据和论文标题，尚未完成全文语境复核。"
+    },
+    {
+      "round": 258,
+      "topic": "全脑连接组图谱",
+      "query": "whole brain connectome map",
+      "queries": [
+        "whole brain connectome map",
+        "whole brain connectome map"
+      ],
+      "min_year": 1990,
+      "chapter": "全脑连接组、神经图谱与脑基础设施",
+      "path_family": "cognitive_extension",
+      "event_type": "technology",
+      "evidence_grade": "S",
+      "significance": "major",
+      "keywords": [
+        "connectome",
+        "whole",
+        "brain",
+        "map",
+        "neural",
+        "circuit"
+      ],
+      "required_terms": [
+        "connectome",
+        "brain"
+      ],
+      "claim_template": "该文献围绕{topic}报告或讨论可复核的学术证据。",
+      "summary_template": "该节点将{topic}的最新证据纳入有效永生研究年表。",
+      "uncertainty": "本记录基于期刊元数据和论文标题，尚未完成全文语境复核。"
+    },
+    {
+      "round": 259,
+      "topic": "脑机接口运动解码",
+      "query": "brain computer interface motor decoding",
+      "queries": [
+        "brain computer interface motor decoding",
+        "brain computer interface motor decoding"
+      ],
+      "min_year": 1990,
+      "chapter": "脑机接口、运动解码与运动功能重建",
+      "path_family": "cognitive_extension",
+      "event_type": "technology",
+      "evidence_grade": "S",
+      "significance": "major",
+      "keywords": [
+        "brain",
+        "computer",
+        "motor",
+        "decoding",
+        "neural",
+        "movement"
+      ],
+      "required_terms": [
+        "brain",
+        "computer"
+      ],
+      "claim_template": "该文献围绕{topic}报告或讨论可复核的学术证据。",
+      "summary_template": "该节点将{topic}的最新证据纳入有效永生研究年表。",
+      "uncertainty": "本记录基于期刊元数据和论文标题，尚未完成全文语境复核。"
+    },
+    {
+      "round": 260,
+      "topic": "脑机接口感觉反馈",
+      "query": "brain computer interface somatosensory feedback",
+      "queries": [
+        "brain computer interface somatosensory feedback",
+        "brain computer interface somatosensory feedback"
+      ],
+      "min_year": 1990,
+      "chapter": "脑机接口、体感反馈与闭环控制",
+      "path_family": "cognitive_extension",
+      "event_type": "technology",
+      "evidence_grade": "S",
+      "significance": "major",
+      "keywords": [
+        "brain",
+        "computer",
+        "somatosensory",
+        "feedback",
+        "sensory",
+        "neural"
+      ],
+      "required_terms": [
+        "brain",
+        "computer"
+      ],
+      "claim_template": "该文献围绕{topic}报告或讨论可复核的学术证据。",
+      "summary_template": "该节点将{topic}的最新证据纳入有效永生研究年表。",
+      "uncertainty": "本记录基于期刊元数据和论文标题，尚未完成全文语境复核。"
+    },
+    {
+      "round": 261,
+      "topic": "神经假体与人工感官",
+      "query": "neuroprosthetic artificial sensory restoration",
+      "queries": [
+        "neuroprosthetic artificial sensory restoration",
+        "neuroprosthetic artificial sensory restoration"
+      ],
+      "min_year": 1990,
+      "chapter": "神经假体、人工感官与感觉恢复",
+      "path_family": "cognitive_extension",
+      "event_type": "technology",
+      "evidence_grade": "S",
+      "significance": "major",
+      "keywords": [
+        "neuroprosthetic",
+        "artificial",
+        "sensory",
+        "restoration",
+        "implant",
+        "neural"
+      ],
+      "required_terms": [
+        "neuroprosthetic",
+        "sensory"
+      ],
+      "claim_template": "该文献围绕{topic}报告或讨论可复核的学术证据。",
+      "summary_template": "该节点将{topic}的最新证据纳入有效永生研究年表。",
+      "uncertainty": "本记录基于期刊元数据和论文标题，尚未完成全文语境复核。"
+    },
+    {
+      "round": 262,
+      "topic": "记忆巩固与睡眠依赖",
+      "query": "memory consolidation sleep",
+      "queries": [
+        "memory consolidation sleep",
+        "memory consolidation sleep"
+      ],
+      "min_year": 1990,
+      "chapter": "记忆巩固、睡眠依赖与长期记忆维护",
+      "path_family": "cognitive_extension",
+      "event_type": "technology",
+      "evidence_grade": "S",
+      "significance": "major",
+      "keywords": [
+        "memory",
+        "consolidation",
+        "sleep",
+        "hippocampus",
+        "learning",
+        "retention"
+      ],
+      "required_terms": [
+        "memory",
+        "consolidation"
+      ],
+      "claim_template": "该文献围绕{topic}报告或讨论可复核的学术证据。",
+      "summary_template": "该节点将{topic}的最新证据纳入有效永生研究年表。",
+      "uncertainty": "本记录基于期刊元数据和论文标题，尚未完成全文语境复核。"
+    },
+    {
+      "round": 263,
+      "topic": "突触可塑性与学习",
+      "query": "synaptic plasticity learning memory",
+      "queries": [
+        "synaptic plasticity learning memory",
+        "synaptic plasticity learning memory"
+      ],
+      "min_year": 1990,
+      "chapter": "突触可塑性、学习与记忆机制",
+      "path_family": "cognitive_extension",
+      "event_type": "technology",
+      "evidence_grade": "S",
+      "significance": "major",
+      "keywords": [
+        "synaptic",
+        "plasticity",
+        "learning",
+        "memory",
+        "long-term",
+        "potentiation"
+      ],
+      "required_terms": [
+        "synaptic",
+        "plasticity"
+      ],
+      "claim_template": "该文献围绕{topic}报告或讨论可复核的学术证据。",
+      "summary_template": "该节点将{topic}的最新证据纳入有效永生研究年表。",
+      "uncertainty": "本记录基于期刊元数据和论文标题，尚未完成全文语境复核。"
+    },
+    {
+      "round": 264,
+      "topic": "神经再生药物",
+      "query": "neuroregeneration pharmacological therapy",
+      "queries": [
+        "neuroregeneration pharmacological therapy",
+        "neuroregeneration pharmacological therapy"
+      ],
+      "min_year": 1990,
+      "chapter": "神经再生、药理学干预与功能恢复",
+      "path_family": "reconstruction",
+      "event_type": "technology",
+      "evidence_grade": "S",
+      "significance": "major",
+      "keywords": [
+        "neuroregeneration",
+        "pharmacological",
+        "therapy",
+        "axon",
+        "recovery",
+        "drug"
+      ],
+      "required_terms": [
+        "neuroregeneration",
+        "therapy"
+      ],
+      "claim_template": "该文献围绕{topic}报告或讨论可复核的学术证据。",
+      "summary_template": "该节点将{topic}的最新证据纳入有效永生研究年表。",
+      "uncertainty": "本记录基于期刊元数据和论文标题，尚未完成全文语境复核。"
+    },
+    {
+      "round": 265,
+      "topic": "脑衰老与认知储备",
+      "query": "brain aging cognitive reserve",
+      "queries": [
+        "brain aging cognitive reserve",
+        "brain aging cognitive reserve"
+      ],
+      "min_year": 1990,
+      "chapter": "脑衰老、认知储备与脑韧性",
+      "path_family": "maintenance",
+      "event_type": "technology",
+      "evidence_grade": "S",
+      "significance": "major",
+      "keywords": [
+        "brain",
+        "aging",
+        "cognitive",
+        "reserve",
+        "dementia",
+        "resilience"
+      ],
+      "required_terms": [
+        "brain",
+        "aging"
+      ],
+      "claim_template": "该文献围绕{topic}报告或讨论可复核的学术证据。",
+      "summary_template": "该节点将{topic}的最新证据纳入有效永生研究年表。",
+      "uncertainty": "本记录基于期刊元数据和论文标题，尚未完成全文语境复核。"
+    },
+    {
+      "round": 266,
+      "topic": "心血管衰老与动脉硬化逆转",
+      "query": "vascular aging atherosclerosis reversal",
+      "queries": [
+        "vascular aging atherosclerosis reversal",
+        "vascular aging atherosclerosis reversal"
+      ],
+      "min_year": 1990,
+      "chapter": "心血管衰老、动脉硬化与血管韧性",
+      "path_family": "maintenance",
+      "event_type": "technology",
+      "evidence_grade": "S",
+      "significance": "major",
+      "keywords": [
+        "vascular",
+        "aging",
+        "atherosclerosis",
+        "reversal",
+        "artery",
+        "inflammation"
+      ],
+      "required_terms": [
+        "vascular",
+        "aging"
+      ],
+      "claim_template": "该文献围绕{topic}报告或讨论可复核的学术证据。",
+      "summary_template": "该节点将{topic}的最新证据纳入有效永生研究年表。",
+      "uncertainty": "本记录基于期刊元数据和论文标题，尚未完成全文语境复核。"
+    },
+    {
+      "round": 267,
+      "topic": "血管新生与组织灌注",
+      "query": "angiogenesis tissue perfusion regeneration",
+      "queries": [
+        "angiogenesis tissue perfusion regeneration",
+        "angiogenesis tissue perfusion regeneration"
+      ],
+      "min_year": 1990,
+      "chapter": "血管新生、组织灌注与缺血修复",
+      "path_family": "maintenance",
+      "event_type": "technology",
+      "evidence_grade": "S",
+      "significance": "major",
+      "keywords": [
+        "angiogenesis",
+        "tissue",
+        "perfusion",
+        "ischemia",
+        "repair",
+        "vessel"
+      ],
+      "required_terms": [
+        "angiogenesis",
+        "perfusion"
+      ],
+      "claim_template": "该文献围绕{topic}报告或讨论可复核的学术证据。",
+      "summary_template": "该节点将{topic}的最新证据纳入有效永生研究年表。",
+      "uncertainty": "本记录基于期刊元数据和论文标题，尚未完成全文语境复核。"
+    },
+    {
+      "round": 268,
+      "topic": "淋巴系统与免疫运输",
+      "query": "lymphatic system immune trafficking",
+      "queries": [
+        "lymphatic system immune trafficking",
+        "lymphatic system immune trafficking"
+      ],
+      "min_year": 1990,
+      "chapter": "淋巴系统、免疫运输与组织稳态",
+      "path_family": "maintenance",
+      "event_type": "technology",
+      "evidence_grade": "S",
+      "significance": "major",
+      "keywords": [
+        "lymphatic",
+        "system",
+        "immune",
+        "trafficking",
+        "clearance",
+        "tissue"
+      ],
+      "required_terms": [
+        "lymphatic",
+        "immune"
+      ],
+      "claim_template": "该文献围绕{topic}报告或讨论可复核的学术证据。",
+      "summary_template": "该节点将{topic}的最新证据纳入有效永生研究年表。",
+      "uncertainty": "本记录基于期刊元数据和论文标题，尚未完成全文语境复核。"
+    },
+    {
+      "round": 269,
+      "topic": "免疫衰老与疫苗反应",
+      "query": "immunosenescence vaccine response",
+      "queries": [
+        "immunosenescence vaccine response",
+        "immunosenescence vaccine response"
+      ],
+      "min_year": 1990,
+      "chapter": "免疫衰老、疫苗反应与免疫韧性",
+      "path_family": "maintenance",
+      "event_type": "technology",
+      "evidence_grade": "S",
+      "significance": "major",
+      "keywords": [
+        "immunosenescence",
+        "vaccine",
+        "response",
+        "aging",
+        "immune",
+        "protection"
+      ],
+      "required_terms": [
+        "immunosenescence",
+        "vaccine"
+      ],
+      "claim_template": "该文献围绕{topic}报告或讨论可复核的学术证据。",
+      "summary_template": "该节点将{topic}的最新证据纳入有效永生研究年表。",
+      "uncertainty": "本记录基于期刊元数据和论文标题，尚未完成全文语境复核。"
+    },
+    {
+      "round": 270,
+      "topic": "胸腺再生与T细胞库",
+      "query": "thymus regeneration T cell repertoire",
+      "queries": [
+        "thymus regeneration T cell repertoire",
+        "thymus regeneration T cell repertoire"
+      ],
+      "min_year": 1990,
+      "chapter": "胸腺再生、T细胞库与免疫重建",
+      "path_family": "maintenance",
+      "event_type": "technology",
+      "evidence_grade": "S",
+      "significance": "major",
+      "keywords": [
+        "thymus",
+        "regeneration",
+        "T cell",
+        "repertoire",
+        "immune",
+        "reconstitution"
+      ],
+      "required_terms": [
+        "thymus",
+        "T cell"
+      ],
+      "claim_template": "该文献围绕{topic}报告或讨论可复核的学术证据。",
+      "summary_template": "该节点将{topic}的最新证据纳入有效永生研究年表。",
+      "uncertainty": "本记录基于期刊元数据和论文标题，尚未完成全文语境复核。"
+    }
+  ]
+}
