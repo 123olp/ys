@@ -1,0 +1,83 @@
+{
+  "manifest_id": "HITL-PUB-V1",
+  "version": "1.0.0",
+  "created_at": "2026-08-07T13:00:00Z",
+  "display_policy": {
+    "timeline_core": "echarts_chart",
+    "allowed_scopes": [
+      "all",
+      "works",
+      "reviewed"
+    ],
+    "evidence_visibility": "时间轴必须持续显示 verification_status、evidence_grade、event_id 和来源链接，禁止把未复核事件伪装成已发布结论。",
+    "publication_gate": "叙事出版物只能引用达到自身 review_gate 的事件；当前 fresh_reviewed 尚未开放。"
+  },
+  "data_layers": [
+    {
+      "layer_id": "raw_timeline",
+      "source": "docs/reference/history-timeline/timeline.json",
+      "role": "全部原始年表资料，用于检索、复核和扩充。",
+      "access": "reference-only"
+    },
+    {
+      "layer_id": "works_subset",
+      "source": "docs/reference/history-timeline/works-subset.v1.json",
+      "role": "第一版出版物候选事件，只登记入选范围，不表示复核通过。",
+      "access": "publication-candidate"
+    },
+    {
+      "layer_id": "local_review",
+      "source": "docs/reference/history-timeline/works-review-register.v1.json",
+      "role": "本地复核登记，记录来源可达性、DOI/标题匹配和事件状态。",
+      "access": "reviewed"
+    },
+    {
+      "layer_id": "narrative_drafts",
+      "source": "docs/publications/",
+      "role": "叙事出版物草稿，必须先由 review_gate 控制引用。",
+      "access": "publication-candidate"
+    }
+  ],
+  "publications": [
+    {
+      "publication_id": "pub-history-timeline",
+      "title": "永生史交互时间轴",
+      "kind": "interactive_timeline",
+      "status": "working_draft",
+      "review_gate": "locally_reviewed",
+      "display_mode": "echarts_chart",
+      "subset_id": "HITL-WS-V1",
+      "source_html": "docs/reference/history-timeline/preview.html"
+    },
+    {
+      "publication_id": "pub-history-narrative",
+      "title": "永生史：人类追求永生的全部历程",
+      "kind": "narrative",
+      "status": "working_draft",
+      "review_gate": "fresh_reviewed",
+      "display_mode": "markdown_article",
+      "subset_id": "HITL-WS-V1",
+      "source_md": "docs/publications/history-of-immortality.md"
+    },
+    {
+      "publication_id": "pub-health-handbook",
+      "title": "有效永生健康手册",
+      "kind": "handbook",
+      "status": "working_draft",
+      "review_gate": "none",
+      "display_mode": "markdown_handbook",
+      "subset_id": null,
+      "source_md": "docs/publications/health-handbook.md"
+    },
+    {
+      "publication_id": "pub-effective-immortality-guide",
+      "title": "有效永生指南",
+      "kind": "guide",
+      "status": "working_draft",
+      "review_gate": "none",
+      "display_mode": "markdown_guide",
+      "subset_id": null,
+      "source_md": "docs/publications/effective-immortality-guide.md"
+    }
+  ]
+}

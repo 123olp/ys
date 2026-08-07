@@ -236,6 +236,7 @@ docs/
 15a. Read `source-notes/2026-08-06-human-immortality-research-major-events-timeline.md` when working on the 永生史 detailed timeline.
 15b. Read `reference/history-timeline/README.md` when converting the 永生史 detailed timeline into structured event data.
 15c. Run `make history-timeline-preview` after changing `reference/history-timeline/timeline.json`, `sources.json`, or `periods.json` to regenerate `timelinejs.json` and `preview.html`.
+15d. Read `reference/history-timeline/PUBLICATION.md` when deciding how to display the timeline or publish narrative works.
 16. Read `reference/review-checklists.md`.
 17. Read `explanations/human-runtime-infrastructure.md`.
 18. Read `source-notes/2026-06-29-controllable-metric-waiting-room-hypothesis-revision-notes.md` if you are working on Future Waiting.

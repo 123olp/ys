@@ -650,6 +650,7 @@ docs/
 - `reference/history-timeline/GOVERNANCE.md`：定义年表审阅、生命周期、质量门禁、冲突处理、更新与回滚规则。
 - `reference/history-timeline/TOOLS.md`：沉淀成熟开源工具、标准与历史方法论/数字人文指导文献。
 - `reference/history-timeline/timeline.schema.json`：年表事件 JSON Schema 机器契约。
+- `reference/history-timeline/PUBLICATION.md`：定义永生史资料分层、时间轴展示范围与出版物 `review_gate` 的展示出版架构。
 - `templates/history-event.md`：新增《永生史》历史事件的统一模板。
 - `how-to/add-domain.md`：说明新增子域的步骤和停止条件。
 - `how-to/add-source-note.md`：说明新增 source note 的步骤和规则。

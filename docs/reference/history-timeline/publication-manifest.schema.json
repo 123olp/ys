@@ -1,0 +1,161 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://human-infra.local/docs/reference/history-timeline/publication-manifest.schema.json",
+  "title": "Human Infra History Timeline Publication Manifest",
+  "description": "永生史资料整理、时间轴展示与出版物入口的机器契约。",
+  "type": "object",
+  "required": [
+    "manifest_id",
+    "version",
+    "created_at",
+    "display_policy",
+    "data_layers",
+    "publications"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "manifest_id": {
+      "type": "string",
+      "pattern": "^HITL-PUB-V[0-9]+$"
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "display_policy": {
+      "type": "object",
+      "required": [
+        "timeline_core",
+        "allowed_scopes",
+        "evidence_visibility",
+        "publication_gate"
+      ],
+      "properties": {
+        "timeline_core": {
+          "type": "string",
+          "enum": [
+            "echarts_chart"
+          ]
+        },
+        "allowed_scopes": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "all",
+              "works",
+              "reviewed"
+            ]
+          }
+        },
+        "evidence_visibility": {
+          "type": "string"
+        },
+        "publication_gate": {
+          "type": "string"
+        }
+      }
+    },
+    "data_layers": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "layer_id",
+          "source",
+          "role",
+          "access"
+        ],
+        "properties": {
+          "layer_id": {
+            "type": "string"
+          },
+          "source": {
+            "type": "string"
+          },
+          "role": {
+            "type": "string"
+          },
+          "access": {
+            "type": "string",
+            "enum": [
+              "reference-only",
+              "publication-candidate",
+              "reviewed",
+              "public"
+            ]
+          }
+        }
+      }
+    },
+    "publications": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "publication_id",
+          "title",
+          "kind",
+          "status",
+          "review_gate",
+          "display_mode",
+          "subset_id"
+        ],
+        "properties": {
+          "publication_id": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "kind": {
+            "type": "string",
+            "enum": [
+              "interactive_timeline",
+              "narrative",
+              "handbook",
+              "guide"
+            ]
+          },
+          "status": {
+            "type": "string"
+          },
+          "review_gate": {
+            "type": "string",
+            "enum": [
+              "locally_reviewed",
+              "fresh_reviewed",
+              "none"
+            ]
+          },
+          "display_mode": {
+            "type": "string",
+            "enum": [
+              "echarts_chart",
+              "markdown_article",
+              "markdown_handbook",
+              "markdown_guide"
+            ]
+          },
+          "subset_id": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "pattern": "^HITL-WS-V[0-9]+$"
+          },
+          "source_html": {
+            "type": "string"
+          },
+          "source_md": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

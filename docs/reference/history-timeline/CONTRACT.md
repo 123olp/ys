@@ -23,6 +23,9 @@ works-subset.schema.json  作品子集 Schema
 works-subset.v1.json  第一版作品子集登记
 works-review-register.schema.json  本地复核登记 Schema
 works-review-register.v1.json  首批本地复核登记
+publication-manifest.schema.json  展示与出版清单 Schema
+publication-manifest.v1.json  展示与出版机器契约
+PUBLICATION.md  展示与出版架构说明
 timelinejs.json  图表发布数据，保留 TimelineJS JSON 兼容结构（生成物）
 preview.html     ECharts 图表模式预览页（生成物）
 ```
@@ -33,6 +36,8 @@ preview.html     ECharts 图表模式预览页（生成物）
 `works-subset.v1.json` 只登记“进入作品化评审”的事件 ID，不表示复核通过；事件仍必须经历 `locally_reviewed` 和 `fresh_reviewed` 后才能进入 `published`。
 
 `works-review-register.v1.json` 记录本地复核结论，必须与 `timeline.json` 的 `verification_status`、`works-subset.v1.json` 的计数保持一致。
+
+`publication-manifest.v1.json` 定义展示与出版入口。时间轴展示可以包含全部资料，但必须持续显示复核状态；叙事出版物只能引用达到自身 `review_gate` 的事件。
 
 ## 3. 事件标识
 

@@ -31,6 +31,9 @@ REQUIRED_FILES = [
     "docs/reference/history-timeline/works-subset.v1.json",
     "docs/reference/history-timeline/works-review-register.schema.json",
     "docs/reference/history-timeline/works-review-register.v1.json",
+    "docs/reference/history-timeline/publication-manifest.schema.json",
+    "docs/reference/history-timeline/publication-manifest.v1.json",
+    "docs/reference/history-timeline/PUBLICATION.md",
     "docs/reference/history-timeline/timelinejs.json",
     "docs/reference/history-timeline/preview.html",
     "docs/templates/history-event.md",
@@ -326,6 +329,55 @@ def validate_works_review_register(
     )
 
 
+def validate_publication_manifest(
+    relative_path: str,
+    works_subset_ids: set[str],
+) -> None:
+    data = load_json(relative_path)
+    require(isinstance(data, dict), f"invalid_publication_manifest {relative_path}")
+    require(
+        re.fullmatch(r"HITL-PUB-V[0-9]+", data.get("manifest_id", "")),
+        f"invalid_manifest_id {relative_path}",
+    )
+    require(
+        re.fullmatch(r"[0-9]+\.[0-9]+\.[0-9]+", data.get("version", "")),
+        f"invalid_manifest_version {relative_path}",
+    )
+    policy = data.get("display_policy", {})
+    require(
+        policy.get("timeline_core") == "echarts_chart",
+        f"invalid_display_policy {relative_path}",
+    )
+    allowed = policy.get("allowed_scopes", [])
+    require({"all", "works", "reviewed"}.issubset(set(allowed)), f"invalid_allowed_scopes {relative_path}")
+
+    layers = data.get("data_layers", [])
+    require(isinstance(layers, list) and layers, f"invalid_data_layers {relative_path}")
+    for layer in layers:
+        source = layer.get("source", "")
+        if source and source != "docs/publications/":
+            require((ROOT / source).is_file(), f"missing_manifest_layer_source {source}")
+
+    publications = data.get("publications", [])
+    require(isinstance(publications, list) and publications, f"invalid_publications {relative_path}")
+    seen_publication_ids: set[str] = set()
+    for publication in publications:
+        publication_id = publication.get("publication_id", "")
+        require(publication_id, f"empty_publication_id {relative_path}")
+        require(publication_id not in seen_publication_ids, f"duplicate_publication_id {publication_id}")
+        seen_publication_ids.add(publication_id)
+        subset_id = publication.get("subset_id")
+        if subset_id:
+            require(subset_id == "HITL-WS-V1", f"unknown_publication_subset {publication_id}")
+        source_html = publication.get("source_html", "")
+        source_md = publication.get("source_md", "")
+        require(bool(source_html) != bool(source_md), f"publication_source_shape {publication_id}")
+        if source_html:
+            require((ROOT / source_html).is_file(), f"missing_publication_html {source_html}")
+        if source_md:
+            require((ROOT / source_md).is_file(), f"missing_publication_md {source_md}")
+
+
 def main() -> None:
     for relative_path in REQUIRED_FILES:
         require((ROOT / relative_path).is_file(), f"missing_required_file path={relative_path}")
@@ -359,6 +411,10 @@ def main() -> None:
         source_registry,
         timeline_by_id,
         works_subset,
+    )
+    validate_publication_manifest(
+        "docs/reference/history-timeline/publication-manifest.v1.json",
+        set(works_subset["event_ids"]),
     )
 
     # The example file remains a compact, reviewable illustration and must use the same reference model.

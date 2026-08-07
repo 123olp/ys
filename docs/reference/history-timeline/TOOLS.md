@@ -87,6 +87,14 @@ make history-timeline-works-subset
 
 该命令从 `timeline.json` / `sources.json` 生成 `works-subset.v1.json`，选择约 400 条覆盖全部时期、路径族和证据等级的候选事件；它只登记作品化评审范围，不自动提升复核状态。
 
+展示与出版契约：
+
+```bash
+python3 tools/validate_history_timeline.py
+```
+
+该门禁会同时校验 `timeline.json`、`works-subset.v1.json`、`works-review-register.v1.json` 和 `publication-manifest.v1.json`，保证资料分层、复核状态和出版入口一致。
+
 ## 3. 指导文献
 
 ### 历史方法论

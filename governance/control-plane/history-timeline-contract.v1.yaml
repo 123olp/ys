@@ -22,6 +22,9 @@ spec:
     works_subset: docs/reference/history-timeline/works-subset.v1.json
     works_review_register_schema: docs/reference/history-timeline/works-review-register.schema.json
     works_review_register: docs/reference/history-timeline/works-review-register.v1.json
+    publication_manifest_schema: docs/reference/history-timeline/publication-manifest.schema.json
+    publication_manifest: docs/reference/history-timeline/publication-manifest.v1.json
+    publication_architecture: docs/reference/history-timeline/PUBLICATION.md
     timelinejs_data: docs/reference/history-timeline/timelinejs.json
     preview: docs/reference/history-timeline/preview.html
     contract: docs/reference/history-timeline/CONTRACT.md
@@ -43,6 +46,9 @@ spec:
     - docs/reference/history-timeline/works-subset.v1.json
     - docs/reference/history-timeline/works-review-register.schema.json
     - docs/reference/history-timeline/works-review-register.v1.json
+    - docs/reference/history-timeline/publication-manifest.schema.json
+    - docs/reference/history-timeline/publication-manifest.v1.json
+    - docs/reference/history-timeline/PUBLICATION.md
     - docs/reference/history-timeline/timeline.json
     - docs/reference/history-timeline/sources.json
     - docs/reference/history-timeline/periods.json

@@ -39,6 +39,7 @@ def event_to_timelinejs(
     event: dict,
     source_registry: dict[str, dict],
     period_registry: dict[str, dict],
+    works_ids: set[str],
 ) -> dict:
     start_year = parse_year(event.get("date_start", "")) or 0
     end_year = parse_year(event.get("date_end", "")) if event.get("date_end") else None
@@ -51,6 +52,9 @@ def event_to_timelinejs(
 
     period = period_registry.get(event.get("period_id", ""), {})
     period_label = period.get("label_en", event.get("period_id", ""))
+    event_id = event.get("event_id", "")
+    publication_status = "selected" if event_id in works_ids else "candidate"
+    links = source_links(source_registry, event.get("sources", []))
     body_parts = [
         html.escape(event.get("summary", "")),
         "",
@@ -59,7 +63,7 @@ def event_to_timelinejs(
         f"<strong>Period</strong>: {html.escape(period_label)}",
         f"<strong>Evidence</strong>: {html.escape(event.get('evidence_grade', ''))} / {html.escape(event.get('verification_status', ''))}",
         "",
-        "Sources: " + source_links(source_registry, event.get("sources", [])),
+        "Sources: " + links,
     ]
     item = {
         "start_date": start_date,
@@ -69,7 +73,7 @@ def event_to_timelinejs(
         },
         "group": event.get("chapter", "未分组"),
         "meta": {
-            "event_id": event.get("event_id", ""),
+            "event_id": event_id,
             "period_id": event.get("period_id", ""),
             "period_label": period_label,
             "chapter": event.get("chapter", ""),
@@ -77,6 +81,8 @@ def event_to_timelinejs(
             "event_type": event.get("event_type", ""),
             "evidence_grade": event.get("evidence_grade", ""),
             "verification_status": event.get("verification_status", ""),
+            "publication_status": publication_status,
+            "source_links": links,
             "status": event.get("status", ""),
             "date_start": event.get("date_start", ""),
         },
@@ -96,8 +102,11 @@ def build_timelinejs() -> dict:
         period["period_id"]: period
         for period in load_json("docs/reference/history-timeline/periods.json")["periods"]
     }
+    works_ids = set(
+        load_json("docs/reference/history-timeline/works-subset.v1.json")["event_ids"]
+    )
     events = [
-        event_to_timelinejs(event, source_registry, period_registry)
+        event_to_timelinejs(event, source_registry, period_registry, works_ids)
         for event in timeline["events"]
     ]
     events.sort(key=lambda item: item["start_date"]["year"])
@@ -184,7 +193,7 @@ PREVIEW_TEMPLATE = r"""<!DOCTYPE html>
     }
     .controls {
       display: grid;
-      grid-template-columns: minmax(220px, 1.6fr) repeat(4, minmax(130px, 0.8fr));
+      grid-template-columns: minmax(220px, 1.6fr) repeat(5, minmax(130px, 0.8fr));
       gap: 10px;
     }
     input, select {
@@ -249,6 +258,11 @@ PREVIEW_TEMPLATE = r"""<!DOCTYPE html>
     <div class="wrap">
       <div class="controls">
         <input id="q" type="search" placeholder="搜索标题、摘要、证据或来源">
+        <select id="scope">
+          <option value="all">全部资料</option>
+          <option value="works">作品子集 400</option>
+          <option value="reviewed">本地已复核</option>
+        </select>
         <select id="period"><option value="">全部时期</option></select>
         <select id="path"><option value="">全部路径</option></select>
         <select id="type"><option value="">全部类型</option></select>
@@ -264,14 +278,14 @@ PREVIEW_TEMPLATE = r"""<!DOCTYPE html>
     <div id="chart"></div>
     <div class="empty" id="empty" hidden>没有匹配的事件</div>
   </main>
-  <footer class="wrap">数据来源为公开 Crossref/DOI 元数据；当前事件均为 draft / unreviewed，需本地复核后才可作为正式证据。</footer>
+  <footer class="wrap">数据来源为公开 Crossref/DOI 元数据；<span id="footer-note"></span></footer>
   <script id="timeline-data" type="application/json">__PAYLOAD__</script>
   <script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
   <script>
     (function () {
       const data = JSON.parse(document.getElementById('timeline-data').textContent);
       const events = data.events || [];
-      const state = { q: '', period: '', path: '', type: '', evidence: '' };
+      const state = { q: '', scope: 'all', period: '', path: '', type: '', evidence: '' };
       const countEl = document.getElementById('result-count');
       const emptyEl = document.getElementById('empty');
       const chartEl = document.getElementById('chart');
@@ -318,15 +332,23 @@ PREVIEW_TEMPLATE = r"""<!DOCTYPE html>
 
       const periodCount = unique(events.map(function (e) { return e.meta && e.meta.period_label; })).length;
       const pathCount = unique(events.map(function (e) { return e.meta && e.meta.path_family; })).length;
+      const worksCount = events.filter(function (e) {
+        return e.meta && e.meta.publication_status === 'selected';
+      }).length;
+      const reviewedCount = events.filter(function (e) {
+        return e.meta && e.meta.verification_status === 'locally_reviewed';
+      }).length;
       const exactDateCount = events.filter(function (e) {
         return e.start_date && e.start_date.month != null;
       }).length;
       document.getElementById('stats').innerHTML =
-        '<span><strong>' + events.length + '</strong> 条事件</span>' +
+        '<span><strong>' + events.length + '</strong> 条原始资料</span>' +
+        '<span><strong>' + worksCount + '</strong> 条作品子集</span>' +
+        '<span><strong>' + reviewedCount + '</strong> 条本地已复核</span>' +
         '<span><strong>' + periodCount + '</strong> 个时期</span>' +
         '<span><strong>' + pathCount + '</strong> 条路径族</span>' +
         '<span><strong>' + exactDateCount + '</strong> 条含年月日</span>' +
-        '<span>全部为 <strong>draft / unreviewed</strong></span>';
+        '<span>作品化状态 <strong>随 scope 筛选</strong></span>';
 
       function plainText(e) {
         const meta = e.meta || {};
@@ -343,6 +365,8 @@ PREVIEW_TEMPLATE = r"""<!DOCTYPE html>
 
       function matches(e) {
         const meta = e.meta || {};
+        if (state.scope === 'works' && meta.publication_status !== 'selected') return false;
+        if (state.scope === 'reviewed' && meta.verification_status !== 'locally_reviewed') return false;
         if (state.period && meta.period_label !== state.period) return false;
         if (state.path && meta.path_family !== state.path) return false;
         if (state.type && meta.event_type !== state.type) return false;
@@ -364,6 +388,12 @@ PREVIEW_TEMPLATE = r"""<!DOCTYPE html>
       function render() {
         const filtered = filteredEvents();
         countEl.textContent = filtered.length + ' 条匹配';
+        const scopeLabels = {
+          all: '当前显示全部资料，只用于巡检和检索。',
+          works: '当前显示作品子集 400，只表示进入作品化评审范围。',
+          reviewed: '当前显示本地已复核资料，可支撑时间轴发布，但仍需 fresh review 才能进入叙事正文。'
+        };
+        document.getElementById('footer-note').textContent = scopeLabels[state.scope] || '';
         emptyEl.hidden = filtered.length !== 0;
         if (typeof window.echarts === 'undefined') {
           chartEl.innerHTML = '<div class="empty">ECharts 未加载，请检查网络后刷新。</div>';
@@ -409,7 +439,8 @@ PREVIEW_TEMPLATE = r"""<!DOCTYPE html>
                 '路径：' + esc(meta.path_family || '') + '<br>' +
                 '类型：' + esc(meta.event_type || '') + '<br>' +
                 '证据：' + esc(meta.evidence_grade || '') + ' / ' + esc(meta.verification_status || '') + '<br>' +
-                '编号：' + esc(meta.event_id || '');
+                '编号：' + esc(meta.event_id || '') + '<br>' +
+                '来源：' + (meta.source_links || '无');
             }
           },
           grid: { left: 130, right: 40, top: 40, bottom: 80 },
@@ -447,6 +478,10 @@ PREVIEW_TEMPLATE = r"""<!DOCTYPE html>
 
       document.getElementById('q').addEventListener('input', function (e) {
         state.q = e.target.value;
+        render();
+      });
+      document.getElementById('scope').addEventListener('change', function (e) {
+        state.scope = e.target.value;
         render();
       });
       document.getElementById('period').addEventListener('change', function (e) {

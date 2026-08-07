@@ -80,6 +80,15 @@ event_id 唯一
 无禁止用途触发
 ```
 
+展示与出版门禁：
+
+```text
+时间轴可以显示全部资料
+  -> 但必须显示 evidence_grade / verification_status / event_id / 来源
+  -> 叙事正文只能引用达到自身 review_gate 的事件
+  -> publication-manifest.v1.json 与 timeline / works-subset / review-register 保持一致
+```
+
 机器门禁：
 
 ```bash
