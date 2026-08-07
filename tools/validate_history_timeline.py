@@ -8,7 +8,7 @@ import re
 import sys
 from pathlib import Path
 
-from build_history_timeline_preview import build_timelinejs, render_preview
+from build_history_timeline_preview import build_timelinejs, build_timelinejs_light, render_preview
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -37,6 +37,7 @@ REQUIRED_FILES = [
     "docs/reference/history-timeline/preview.js",
     "docs/reference/history-timeline/timeline-events.psql.txt",
     "docs/reference/history-timeline/timelinejs.json",
+    "docs/reference/history-timeline/timelinejs.light.json",
     "docs/reference/history-timeline/preview.html",
     "docs/templates/history-event.md",
 ]
@@ -430,6 +431,9 @@ def main() -> None:
     expected_timelinejs = build_timelinejs()
     actual_timelinejs = load_json("docs/reference/history-timeline/timelinejs.json")
     require(actual_timelinejs == expected_timelinejs, "stale_timelinejs_preview")
+    expected_light = build_timelinejs_light(expected_timelinejs)
+    actual_light = load_json("docs/reference/history-timeline/timelinejs.light.json")
+    require(actual_light == expected_light, "stale_timelinejs_light_preview")
     expected_preview = render_preview(expected_timelinejs)
     actual_preview = (ROOT / "docs/reference/history-timeline/preview.html").read_text(encoding="utf-8")
     require(actual_preview == expected_preview, "stale_preview_html")

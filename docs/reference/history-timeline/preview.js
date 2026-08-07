@@ -25,6 +25,14 @@
     policy: "政策与治理"
   };
 
+  const EVIDENCE_COLORS = {
+    T: "#2f7d4f",
+    I: "#4c6fbf",
+    M: "#b0763b",
+    S: "#8a6d3b",
+    L: "#7b4f9e"
+  };
+
   const TIME_WINDOWS = {
     all: null,
     ancient: [-4000, -1],
@@ -55,6 +63,7 @@
   let currentEventId = params.get("event") || "";
   let highlightedDataIndex = -1;
   let chart = null;
+  let fullEventsPromise = null;
 
   const chartEl = document.getElementById("chart");
   const chartStatusEl = document.getElementById("chart-status");
@@ -63,6 +72,7 @@
   const detailTableCodeEl = document.getElementById("event-detail-table-code");
   const detailTextEl = document.getElementById("event-detail-text");
   const navIndexEl = document.getElementById("event-nav-index");
+  const fullEventTableCodeEl = document.getElementById("full-event-table-code");
 
   function esc(value) {
     return String(value == null ? "" : value).replace(/[&<>"']/g, function (ch) {
@@ -126,6 +136,45 @@
       renderRow(rows[0] || []),
       border
     ].join("\n");
+  }
+
+  function renderPsqlTable(headers, rows) {
+    if (!rows.length) return "";
+    const widths = headers.map(function (header, index) {
+      let width = displayWidth(header);
+      rows.forEach(function (row) {
+        width = Math.max(width, displayWidth(row[index]));
+      });
+      return width;
+    });
+    const border = "+" + widths.map(function (width) {
+      return "-".repeat(width + 2);
+    }).join("+") + "+";
+    function renderRow(row) {
+      return "| " + widths.map(function (width, index) {
+        return padEnd(row[index], width);
+      }).join(" | ") + " |";
+    }
+    return [
+      border,
+      renderRow(headers),
+      border
+    ].concat(rows.map(renderRow), [border]).join("\n");
+  }
+
+  function eventRow(event) {
+    const meta = event.meta || {};
+    return [
+      event.text && event.text.headline ? event.text.headline : "",
+      meta.event_id || "",
+      dateLabel(event),
+      meta.period_label || "",
+      meta.path_family_label || meta.path_family || "",
+      meta.event_type_label || meta.event_type || "",
+      (meta.evidence_grade || "") + " / " + (meta.verification_status || ""),
+      meta.publication_status === "selected" ? "作品子集" : "候选资料",
+      (meta.source_refs || []).join(", ")
+    ];
   }
 
   function unique(values) {
@@ -223,6 +272,70 @@
     }
   }
 
+  function ensureFullEvents() {
+    if (!fullEventsPromise) {
+      fullEventsPromise = fetch("timelinejs.json").then(function (response) {
+        if (!response.ok) throw new Error("HTTP " + response.status);
+        return response.json();
+      }).then(function (data) {
+        const byId = new Map();
+        (data.events || []).forEach(function (event) {
+          byId.set(event.meta && event.meta.event_id, event);
+        });
+        return byId;
+      });
+    }
+    return fullEventsPromise;
+  }
+
+  function loadFullDetail(index) {
+    const event = filtered[index];
+    if (!event) return;
+    if (event.text && event.text.text) {
+      detailTextEl.innerHTML = event.text.text;
+      return;
+    }
+    detailTextEl.textContent = "正在加载完整事件…";
+    ensureFullEvents().then(function (byId) {
+      if (currentIndex !== index) return;
+      const full = byId.get(filtered[index].meta.event_id);
+      detailTextEl.innerHTML = full && full.text && full.text.text ? full.text.text : "";
+    }).catch(function (error) {
+      if (currentIndex !== index) return;
+      detailTextEl.textContent = "完整事件加载失败：" + error.message;
+    });
+  }
+
+  function ensureCurrentPointVisible() {
+    if (!chart || state.mode !== "path" || currentIndex < 0 || filtered.length < 2) return;
+    const zoom = chart.getOption().dataZoom && chart.getOption().dataZoom[0];
+    if (!zoom || (zoom.start <= 0 && zoom.end >= 100)) return;
+    const year = filtered[currentIndex].start_date && filtered[currentIndex].start_date.year;
+    if (year == null) return;
+    const minYear = filtered[0].start_date && filtered[0].start_date.year != null
+      ? filtered[0].start_date.year
+      : 0;
+    const maxYear = filtered[filtered.length - 1].start_date && filtered[filtered.length - 1].start_date.year != null
+      ? filtered[filtered.length - 1].start_date.year
+      : 0;
+    const span = maxYear - minYear || 1;
+    const center = (year - minYear) / span * 100;
+    let windowSize = zoom.end - zoom.start;
+    if (!windowSize || windowSize <= 0) windowSize = 20;
+    let start = center - windowSize / 2;
+    let end = center + windowSize / 2;
+    if (start < 0) {
+      end -= start;
+      start = 0;
+    }
+    if (end > 100) {
+      start -= end - 100;
+      end = 100;
+    }
+    if (start < 0) start = 0;
+    chart.dispatchAction({ type: "dataZoom", dataZoomIndex: 0, start: start, end: end });
+  }
+
   function clearChartHighlight() {
     if (!chart || state.mode !== "path" || highlightedDataIndex < 0) return;
     chart.dispatchAction({ type: "downplay", seriesIndex: 0, dataIndex: highlightedDataIndex });
@@ -231,10 +344,19 @@
   }
 
   function syncChartHighlight() {
-    if (!chart || state.mode !== "path" || currentIndex < 0) return;
+    if (!chart) return;
+    if (state.mode === "density") {
+      chart.setOption(densityOption(), false);
+      return;
+    }
+    if (currentIndex < 0) {
+      clearChartHighlight();
+      return;
+    }
     if (highlightedDataIndex >= 0 && highlightedDataIndex !== currentIndex) {
       chart.dispatchAction({ type: "downplay", seriesIndex: 0, dataIndex: highlightedDataIndex });
     }
+    ensureCurrentPointVisible();
     chart.dispatchAction({ type: "highlight", seriesIndex: 0, dataIndex: currentIndex });
     chart.dispatchAction({
       type: "showTip",
@@ -262,19 +384,32 @@
     const maxYear = Math.ceil(Math.max.apply(null, years) / binSize) * binSize;
     const bins = [];
     const counts = {};
+    const binIndices = {};
     for (let start = minYear; start < maxYear; start += binSize) {
       const key = start;
       bins.push(key);
       counts[key] = 0;
+      binIndices[key] = [];
     }
-    years.forEach(function (year) {
+    years.forEach(function (year, index) {
       const key = Math.floor(year / binSize) * binSize;
-      if (counts[key] != null) counts[key] += 1;
+      if (counts[key] != null) {
+        counts[key] += 1;
+        binIndices[key].push(index);
+      }
     });
+    let currentBinIndex = -1;
+    if (currentIndex >= 0 && filtered[currentIndex].start_date) {
+      const currentYear = filtered[currentIndex].start_date.year;
+      if (currentYear != null) {
+        currentBinIndex = bins.indexOf(Math.floor(currentYear / binSize) * binSize);
+      }
+    }
     return {
       animation: false,
       tooltip: {
         trigger: "axis",
+        confine: true,
         formatter: function (params) {
           const item = params[0] || {};
           const key = item.value != null ? bins[item.dataIndex] : null;
@@ -300,9 +435,19 @@
         data: bins.map(function (key) {
           return {
             value: counts[key],
-            label: key + "~" + (key + binSize)
+            label: key + "~" + (key + binSize),
+            _indices: binIndices[key]
           };
-        })
+        }),
+        markLine: currentBinIndex >= 0 ? {
+          symbol: "none",
+          label: {
+            formatter: "当前事件",
+            position: "insideEndTop"
+          },
+          lineStyle: { color: "#c0392b" },
+          data: [{ xAxis: currentBinIndex }]
+        } : undefined
       }]
     };
   }
@@ -329,6 +474,7 @@
       animation: false,
       tooltip: {
         trigger: "item",
+        confine: true,
         formatter: function (params) {
           const item = params.data || {};
           const meta = item.meta || {};
@@ -339,7 +485,7 @@
             "类型：" + esc(meta.event_type_label || meta.event_type || "") + "<br>" +
             "证据：" + esc(meta.evidence_grade || "") + " / " + esc(meta.verification_status || "") + "<br>" +
             "编号：" + esc(meta.event_id || "") + "<br>" +
-            "来源：" + (meta.source_links || "无");
+            "来源：" + esc((meta.source_refs || []).join(", ") || "无");
         }
       },
       grid: { left: 140, right: 40, top: 40, bottom: 90 },
@@ -359,6 +505,12 @@
       series: [{
         type: "scatter",
         progressive: 1000,
+        itemStyle: {
+          color: function (params) {
+            const grade = params.data && params.data.meta && params.data.meta.evidence_grade;
+            return EVIDENCE_COLORS[grade] || "#5470c6";
+          }
+        },
         data: points
       }]
     };
@@ -372,6 +524,7 @@
       detailTableCodeEl.textContent = "";
       detailTextEl.replaceChildren();
       navIndexEl.textContent = "";
+      chartEl.setAttribute("aria-label", "永生史事件时间轴图表");
       clearChartHighlight();
       return;
     }
@@ -382,20 +535,14 @@
     detailEmptyEl.hidden = true;
     detailTableCodeEl.textContent = psqlTable(
       ["标题", "编号", "日期", "时期", "路径", "类型", "证据", "作品化", "来源"],
-      [[
-        event.text && event.text.headline ? event.text.headline : "",
-        meta.event_id || "",
-        dateLabel(event),
-        meta.period_label || "",
-        meta.path_family_label || meta.path_family || "",
-        meta.event_type_label || meta.event_type || "",
-        (meta.evidence_grade || "") + " / " + (meta.verification_status || ""),
-        meta.publication_status === "selected" ? "作品子集" : "候选资料",
-        (meta.source_refs || []).join(", ")
-      ]]
+      [eventRow(event)]
     );
-    detailTextEl.innerHTML = event.text && event.text.text ? event.text.text : "";
     navIndexEl.textContent = (index + 1) + " / " + filtered.length;
+    chartEl.setAttribute(
+      "aria-label",
+      "永生史事件时间轴图表，当前事件：" + (event.text && event.text.headline || meta.event_id || "")
+    );
+    loadFullDetail(index);
     syncChartHighlight();
   }
 
@@ -407,7 +554,129 @@
       currentIndex = (currentIndex + delta + filtered.length) % filtered.length;
     }
     showDetail(currentIndex);
-    syncUrl("push");
+    syncUrl("replace");
+  }
+
+  function setCodeText(id, text) {
+    const element = document.getElementById(id);
+    if (element && element.firstElementChild) {
+      element.firstElementChild.textContent = text;
+    }
+  }
+
+  function updateAggregates() {
+    const pathStats = {};
+    const typeStats = {};
+    const statusCounts = {};
+    let worksCount = 0;
+    let reviewedCount = 0;
+    filtered.forEach(function (event) {
+      const meta = event.meta || {};
+      const path = meta.path_family || "unknown";
+      const type = meta.event_type || "unknown";
+      const status = meta.verification_status || "unknown";
+      if (!pathStats[path]) pathStats[path] = [0, 0, 0];
+      if (!typeStats[type]) typeStats[type] = [0, 0, 0];
+      pathStats[path][0] += 1;
+      typeStats[type][0] += 1;
+      statusCounts[status] = (statusCounts[status] || 0) + 1;
+      if (meta.publication_status === "selected") {
+        pathStats[path][1] += 1;
+        typeStats[type][1] += 1;
+        worksCount += 1;
+      }
+      if (meta.verification_status === "locally_reviewed") {
+        pathStats[path][2] += 1;
+        typeStats[type][2] += 1;
+        reviewedCount += 1;
+      }
+    });
+
+    const pathRows = Object.keys(pathStats).map(function (path) {
+      return [PATH_LABELS[path] || path].concat(pathStats[path]);
+    });
+    pathRows.sort(function (a, b) { return b[1] - a[1]; });
+    pathRows.push(["合计", filtered.length, worksCount, reviewedCount]);
+    setCodeText(
+      "path-summary-table",
+      renderPsqlTable(["路径族", "全部资料", "作品子集", "本地已复核"], pathRows)
+    );
+
+    const typeRows = Object.keys(typeStats).map(function (type) {
+      return [EVENT_TYPE_LABELS[type] || type].concat(typeStats[type]);
+    });
+    typeRows.sort(function (a, b) { return b[1] - a[1]; });
+    typeRows.push(["合计", filtered.length, worksCount, reviewedCount]);
+    setCodeText(
+      "type-summary-table",
+      renderPsqlTable(["事件类型", "全部资料", "作品子集", "本地已复核"], typeRows)
+    );
+
+    setCodeText(
+      "scope-summary-table",
+      renderPsqlTable(
+        ["范围", "事件数"],
+        [
+          ["全部资料", filtered.length],
+          ["作品子集", worksCount],
+          ["本地已复核", reviewedCount]
+        ]
+      )
+    );
+    const statusRows = Object.keys(statusCounts).sort(function (a, b) {
+      return statusCounts[b] - statusCounts[a];
+    }).map(function (status) {
+      return [status, statusCounts[status]];
+    });
+    setCodeText(
+      "status-summary-table",
+      renderPsqlTable(["复核状态", "事件数"], statusRows)
+    );
+
+    const reviewedRows = filtered.filter(function (event) {
+      return event.meta && event.meta.verification_status === "locally_reviewed";
+    }).map(eventRow);
+    setCodeText("reviewed-summary-table", renderPsqlTable(
+      ["标题", "编号", "日期", "时期", "路径", "类型", "证据", "作品化", "来源"],
+      reviewedRows
+    ));
+
+    if (fullEventTableCodeEl) {
+      fullEventTableCodeEl.textContent = renderPsqlTable(
+        ["标题", "编号", "日期", "时期", "路径", "类型", "证据", "作品化", "来源"],
+        filtered.map(eventRow)
+      );
+    }
+  }
+
+  function jumpToEvent() {
+    const value = String(document.getElementById("event-jump").value || "").trim();
+    if (!value) return;
+    let index = -1;
+    if (/^\d+$/.test(value)) {
+      index = Number(value) - 1;
+    } else if (value.toUpperCase().indexOf("HIT-") === 0) {
+      const needle = value.toUpperCase();
+      index = filtered.findIndex(function (event) {
+        return (event.meta && event.meta.event_id || "").toUpperCase() === needle;
+      });
+      if (index < 0) {
+        index = filtered.findIndex(function (event) {
+          return (event.meta && event.meta.event_id || "").toUpperCase().indexOf(needle) === 0;
+        });
+      }
+    } else {
+      const needle = value.toLowerCase();
+      index = filtered.findIndex(function (event) {
+        return (event.text && event.text.headline || "").toLowerCase().indexOf(needle) >= 0;
+      });
+    }
+    if (index >= 0 && index < filtered.length) {
+      showDetail(index);
+      syncUrl("replace");
+    } else {
+      navIndexEl.textContent = "未找到：" + value;
+    }
   }
 
   function resolveCurrentIndex() {
@@ -434,6 +703,7 @@
     filtered = filteredEvents();
     resolveCurrentIndex();
     updateCountAndStatus();
+    updateAggregates();
     if (!filtered.length) {
       if (chart) chart.setOption({ series: [] }, true);
       showDetail(-1);
@@ -446,13 +716,17 @@
     }
     if (!chart) {
       chart = window.echarts.init(chartEl, null, {
-        width: Math.max(900, Math.min(window.innerWidth - 40, 1400)),
+        width: Math.max(320, chartEl.clientWidth || window.innerWidth - 40),
         height: 560
       });
       chart.on("click", function (params) {
-        if (params.data && typeof params.data._idx === "number") {
-          showDetail(params.data._idx);
-          syncUrl("push");
+        const data = params.data || {};
+        if (typeof data._idx === "number") {
+          showDetail(data._idx);
+          syncUrl("replace");
+        } else if (data._indices && data._indices.length) {
+          showDetail(data._indices[0]);
+          syncUrl("replace");
         }
       });
     }
@@ -476,7 +750,7 @@
       clearTimeout(qTimer);
       qTimer = setTimeout(function () {
         render();
-        syncUrl("push");
+        syncUrl("replace");
       }, 300);
     });
     bind("scope", "scope", "change");
@@ -492,6 +766,10 @@
     document.getElementById("next-event").addEventListener("click", function () {
       moveEvent(1);
     });
+    document.getElementById("jump-event").addEventListener("click", jumpToEvent);
+    document.getElementById("event-jump").addEventListener("keydown", function (event) {
+      if (event.key === "Enter") jumpToEvent();
+    });
     document.addEventListener("keydown", function (event) {
       const tag = event.target && event.target.tagName;
       if (tag === "INPUT" || tag === "SELECT" || tag === "TEXTAREA") return;
@@ -499,6 +777,7 @@
       if (event.key === "ArrowRight") moveEvent(1);
     });
     window.addEventListener("popstate", function () {
+      clearTimeout(qTimer);
       const nextParams = new URLSearchParams(window.location.search);
       state.q = nextParams.get("q") || "";
       state.scope = nextParams.get("scope") || "all";
@@ -509,13 +788,23 @@
       state.mode = nextParams.get("mode") || "path";
       state.window = nextParams.get("window") || "all";
       currentEventId = nextParams.get("event") || "";
-      document.getElementById("q").value = state.q;
-      initSelects();
+      applyControlValues();
       render();
     });
     window.addEventListener("resize", function () {
       if (chart) chart.resize();
     });
+  }
+
+  function applyControlValues() {
+    document.getElementById("q").value = state.q;
+    document.getElementById("scope").value = state.scope;
+    document.getElementById("period").value = state.period;
+    document.getElementById("path").value = state.path;
+    document.getElementById("type").value = state.type;
+    document.getElementById("evidence").value = state.evidence;
+    document.getElementById("mode").value = state.mode;
+    document.getElementById("window").value = state.window;
   }
 
   function initSelects() {
@@ -546,20 +835,13 @@
       "全部证据等级"
     );
 
-    document.getElementById("q").value = state.q;
-    document.getElementById("scope").value = state.scope;
-    document.getElementById("period").value = state.period;
-    document.getElementById("path").value = state.path;
-    document.getElementById("type").value = state.type;
-    document.getElementById("evidence").value = state.evidence;
-    document.getElementById("mode").value = state.mode;
-    document.getElementById("window").value = state.window;
+    applyControlValues();
   }
 
   async function load() {
-    chartStatusEl.textContent = "正在加载 timelinejs.json ...";
+    chartStatusEl.textContent = "正在加载 timelinejs.light.json ...";
     try {
-      const response = await fetch("timelinejs.json");
+      const response = await fetch("timelinejs.light.json");
       if (!response.ok) throw new Error("HTTP " + response.status);
       const data = await response.json();
       events = data.events || [];

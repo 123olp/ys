@@ -68,8 +68,16 @@ Zotero/Tropy 采集
 make history-timeline-preview
 ```
 
-该命令从 `timeline.json` / `sources.json` / `periods.json` 生成 `timelinejs.json`、`preview.html` 与 `timeline-events.psql.txt`。生成物属于机器派生数据，不能手工单独修改。
-当前 `preview.html` 使用零美化语义界面：psql ASCII 表格承载核心数据，ECharts 图表作为增强视图，`preview.js` 按需加载 `timelinejs.json`；`timelinejs.json` 继续保留 TimelineJS JSON 兼容结构，便于未来切换叙事型发布层。路径族在展示层使用中文标签，机器数据字段保持英文。
+该命令从 `timeline.json` / `sources.json` / `periods.json` 生成 `timelinejs.json`、`timelinejs.light.json`、`preview.html` 与 `timeline-events.psql.txt`。生成物属于机器派生数据，不能手工单独修改。
+当前 `preview.html` 使用零美化语义界面：psql ASCII 表格承载核心数据，ECharts 图表作为增强视图，`preview.js` 按需加载 `timelinejs.light.json`，事件完整正文从 `timelinejs.json` 懒加载；`timelinejs.json` 继续保留 TimelineJS JSON 兼容结构，便于未来切换叙事型发布层。路径族在展示层使用中文标签，机器数据字段保持英文。
+
+浏览器行为门禁：
+
+```bash
+make history-timeline-browser-gate
+```
+
+该命令用 Playwright 启动本地静态预览，检查事件阅读器与图表 tooltip 双向联动、URL 事件同步、事件 ID 跳转、完整事件表格渲染、密度视图和筛选聚合更新。
 
 日期补齐命令：
 

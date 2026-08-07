@@ -28,6 +28,7 @@ spec:
     preview_script: docs/reference/history-timeline/preview.js
     event_table: docs/reference/history-timeline/timeline-events.psql.txt
     timelinejs_data: docs/reference/history-timeline/timelinejs.json
+    timelinejs_light_data: docs/reference/history-timeline/timelinejs.light.json
     preview: docs/reference/history-timeline/preview.html
     contract: docs/reference/history-timeline/CONTRACT.md
     governance: docs/reference/history-timeline/GOVERNANCE.md
@@ -58,11 +59,13 @@ spec:
     - docs/reference/history-timeline/periods.json
     - docs/templates/history-event.md
     - docs/reference/history-timeline/timelinejs.json
+    - docs/reference/history-timeline/timelinejs.light.json
     - docs/reference/history-timeline/preview.html
   commands:
     validate: make history-timeline-gate
     validator: python3 tools/validate_history_timeline.py
     preview: make history-timeline-preview
+    browser_gate: make history-timeline-browser-gate
   gates:
     - id: GATE-0002
       severity: BLOCK

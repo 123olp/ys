@@ -163,6 +163,28 @@ def build_timelinejs() -> dict:
     }
 
 
+def build_timelinejs_light(timelinejs: dict) -> dict:
+    events = []
+    for event in timelinejs["events"]:
+        meta = dict(event.get("meta", {}))
+        meta.pop("source_links", None)
+        light_event = {
+            "start_date": event.get("start_date", {}),
+            "text": {
+                "headline": event.get("text", {}).get("headline", ""),
+            },
+            "meta": meta,
+        }
+        if "end_date" in event:
+            light_event["end_date"] = event["end_date"]
+        events.append(light_event)
+    return {
+        "title": timelinejs.get("title", {}),
+        "scale": timelinejs.get("scale", "human"),
+        "events": events,
+    }
+
+
 def build_path_summary_table(timelinejs: dict) -> str:
     path_stats: dict[str, list[int]] = defaultdict(lambda: [0, 0, 0])
     totals = [0, 0, 0]
@@ -375,20 +397,31 @@ def build_aggregate_blocks(
     publication_table: str,
     reviewed_table: str,
     event_count: int,
-    event_table: str,
 ) -> str:
     blocks = [
-        ("路径族与范围聚合", f"<pre><code>{path_table}</code></pre>"),
-        ("事件类型与范围聚合", f"<pre><code>{type_table}</code></pre>"),
+        (
+            "路径族与范围聚合",
+            f'<pre id="path-summary-table"><code>{path_table}</code></pre>',
+        ),
+        (
+            "事件类型与范围聚合",
+            f'<pre id="type-summary-table"><code>{type_table}</code></pre>',
+        ),
         (
             "范围与复核状态",
-            f"<pre><code>{scope_table}</code></pre>\n<pre><code>{status_table}</code></pre>",
+            (
+                f'<pre id="scope-summary-table"><code>{scope_table}</code></pre>\n'
+                f'<pre id="status-summary-table"><code>{status_table}</code></pre>'
+            ),
         ),
         ("资料与出版", publication_table),
-        ("本地已复核事件", f"<pre><code>{reviewed_table}</code></pre>"),
+        (
+            "本地已复核事件",
+            f'<pre id="reviewed-summary-table"><code>{reviewed_table}</code></pre>',
+        ),
         (
             f"完整事件明细（{event_count} 条）",
-            f"<pre><code>{event_table}</code></pre>",
+            '<pre id="full-event-table"><code id="full-event-table-code"></code></pre>',
         ),
     ]
     return "\n\n".join(
@@ -418,7 +451,6 @@ def render_preview(timelinejs: dict) -> str:
     scope_table = html.escape(scope_table)
     status_table = html.escape(status_table)
     reviewed_table = html.escape(build_reviewed_table(timelinejs["events"]))
-    event_table = html.escape(build_event_table(timelinejs["events"]))
     publication_table = build_publication_table(
         len(timelinejs["events"]),
         source_count,
@@ -435,7 +467,6 @@ def render_preview(timelinejs: dict) -> str:
         publication_table,
         reviewed_table,
         len(timelinejs["events"]),
-        event_table,
     )
     return PREVIEW_TEMPLATE.replace("__AGGREGATE_BLOCKS__", aggregate_blocks)
 
@@ -446,6 +477,7 @@ PREVIEW_TEMPLATE = r"""<!doctype html>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Human Infra 永生史</title>
+  <style>pre { overflow-x: auto; }</style>
 </head>
 <body>
   <h1>Human Infra 永生史</h1>
@@ -453,8 +485,11 @@ PREVIEW_TEMPLATE = r"""<!doctype html>
   <h2>事件阅读器</h2>
   <p>
     <button id="prev-event" type="button" aria-label="前一条事件">前一条</button>
-    <span id="event-nav-index"></span>
+    <span id="event-nav-index" aria-live="polite"></span>
     <button id="next-event" type="button" aria-label="后一条事件">后一条</button>
+    <label for="event-jump">跳转</label>
+    <input id="event-jump" type="text" placeholder="编号或序号">
+    <button id="jump-event" type="button">跳转</button>
   </p>
   <p id="event-detail-empty" hidden>点击图表中的事件，或用前一条/后一条浏览当前筛选结果。</p>
   <pre id="event-detail-table"><code id="event-detail-table-code"></code></pre>
@@ -462,7 +497,7 @@ PREVIEW_TEMPLATE = r"""<!doctype html>
 
   <h2>时间轴图表</h2>
   <p id="result-count"></p>
-  <div id="chart"></div>
+  <div id="chart" role="img" aria-label="永生史事件时间轴图表"></div>
   <p id="chart-status">图表为增强视图；核心资料与查询入口在下方。</p>
 
   <h2>查询条件</h2>
@@ -521,6 +556,10 @@ def main() -> None:
         json.dumps(timelinejs, ensure_ascii=False, indent=2) + "\n",
         encoding="utf-8",
     )
+    (PACKAGE / "timelinejs.light.json").write_text(
+        json.dumps(build_timelinejs_light(timelinejs), ensure_ascii=False, indent=2) + "\n",
+        encoding="utf-8",
+    )
     (PACKAGE / "preview.html").write_text(render_preview(timelinejs), encoding="utf-8")
     (PACKAGE / "timeline-events.psql.txt").write_text(
         build_event_table(timelinejs["events"]) + "\n",
@@ -528,7 +567,7 @@ def main() -> None:
     )
     print(
         f"status=OK preview_events={len(timelinejs['events'])} "
-        "files=timelinejs.json,preview.html,timeline-events.psql.txt"
+        "files=timelinejs.json,timelinejs.light.json,preview.html,timeline-events.psql.txt"
     )
 
 
