@@ -333,6 +333,69 @@ def build_reviewed_table(events: list[dict]) -> str:
     )
 
 
+def build_publication_table(
+    event_count: int,
+    source_count: int,
+    period_count: int,
+    works_count: int,
+    reviewed_count: int,
+    generated_at: str,
+) -> str:
+    return f"""<table>
+      <tbody>
+        <tr>
+          <th scope="row">数据范围</th>
+          <td>{event_count} 条事件 / {source_count} 个来源 / {period_count} 个时期</td>
+        </tr>
+        <tr>
+          <th scope="row">作品化</th>
+          <td>{works_count} 条作品子集；{reviewed_count} 条本地已复核</td>
+        </tr>
+        <tr>
+          <th scope="row">生成时间</th>
+          <td><time datetime="{generated_at}">{generated_at}</time></td>
+        </tr>
+        <tr>
+          <th scope="row">原始数据</th>
+          <td><a href="timeline.json">timeline.json</a> · <a href="sources.json">sources.json</a> · <a href="periods.json">periods.json</a> · <a href="timelinejs.json">timelinejs.json</a> · <a href="timeline-events.psql.txt">timeline-events.psql.txt</a></td>
+        </tr>
+        <tr>
+          <th scope="row">出版契约</th>
+          <td><a href="publication-manifest.v1.json">publication-manifest.v1.json</a> · <a href="PUBLICATION.md">PUBLICATION.md</a></td>
+        </tr>
+      </tbody>
+    </table>"""
+
+
+def build_aggregate_blocks(
+    path_table: str,
+    type_table: str,
+    scope_table: str,
+    status_table: str,
+    publication_table: str,
+    reviewed_table: str,
+    event_count: int,
+    event_table: str,
+) -> str:
+    blocks = [
+        ("路径族与范围聚合", f"<pre><code>{path_table}</code></pre>"),
+        ("事件类型与范围聚合", f"<pre><code>{type_table}</code></pre>"),
+        (
+            "范围与复核状态",
+            f"<pre><code>{scope_table}</code></pre>\n<pre><code>{status_table}</code></pre>",
+        ),
+        ("资料与出版", publication_table),
+        ("本地已复核事件", f"<pre><code>{reviewed_table}</code></pre>"),
+        (
+            f"完整事件明细（{event_count} 条）",
+            f"<pre><code>{event_table}</code></pre>",
+        ),
+    ]
+    return "\n\n".join(
+        f"<h2>{html.escape(title)}</h2>\n{body}" for title, body in blocks
+    )
+
+
 def render_preview(timelinejs: dict) -> str:
     source_count = len(load_json("docs/reference/history-timeline/sources.json")["sources"])
     period_count = len(load_json("docs/reference/history-timeline/periods.json")["periods"])
@@ -356,21 +419,25 @@ def render_preview(timelinejs: dict) -> str:
     status_table = html.escape(status_table)
     reviewed_table = html.escape(build_reviewed_table(timelinejs["events"]))
     event_table = html.escape(build_event_table(timelinejs["events"]))
-    return (
-        PREVIEW_TEMPLATE
-        .replace("__EVENT_COUNT__", str(len(timelinejs["events"])))
-        .replace("__SOURCE_COUNT__", str(source_count))
-        .replace("__PERIOD_COUNT__", str(period_count))
-        .replace("__WORKS_COUNT__", str(works_count))
-        .replace("__REVIEWED_COUNT__", str(reviewed_count))
-        .replace("__GENERATED_AT__", generated_at)
-        .replace("__PATH_TABLE__", path_table)
-        .replace("__TYPE_TABLE__", type_table)
-        .replace("__SCOPE_TABLE__", scope_table)
-        .replace("__STATUS_TABLE__", status_table)
-        .replace("__REVIEWED_TABLE__", reviewed_table)
-        .replace("__EVENT_TABLE__", event_table)
+    publication_table = build_publication_table(
+        len(timelinejs["events"]),
+        source_count,
+        period_count,
+        works_count,
+        reviewed_count,
+        generated_at,
     )
+    aggregate_blocks = build_aggregate_blocks(
+        path_table,
+        type_table,
+        scope_table,
+        status_table,
+        publication_table,
+        reviewed_table,
+        len(timelinejs["events"]),
+        event_table,
+    )
+    return PREVIEW_TEMPLATE.replace("__AGGREGATE_BLOCKS__", aggregate_blocks)
 
 
 PREVIEW_TEMPLATE = r"""<!doctype html>
@@ -379,7 +446,6 @@ PREVIEW_TEMPLATE = r"""<!doctype html>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Human Infra 永生史</title>
-  <style>summary h2 { display: inline; margin: 0; }</style>
 </head>
 <body>
   <h1>Human Infra 永生史</h1>
@@ -440,59 +506,7 @@ PREVIEW_TEMPLATE = r"""<!doctype html>
   </form>
   <noscript><p>筛选和图表需要 JavaScript。核心数据仍可直接读取 <a href="timeline.json">timeline.json</a>、<a href="sources.json">sources.json</a> 与 <a href="timeline-events.psql.txt">timeline-events.psql.txt</a>。</p></noscript>
 
-  <details>
-    <summary><h2>路径族与范围聚合</h2></summary>
-    <pre><code>__PATH_TABLE__</code></pre>
-  </details>
-
-  <details>
-    <summary><h2>事件类型与范围聚合</h2></summary>
-    <pre><code>__TYPE_TABLE__</code></pre>
-  </details>
-
-  <details>
-    <summary><h2>范围与复核状态</h2></summary>
-    <pre><code>__SCOPE_TABLE__</code></pre>
-    <pre><code>__STATUS_TABLE__</code></pre>
-  </details>
-
-  <details>
-    <summary><h2>资料与出版</h2></summary>
-    <table>
-      <tbody>
-        <tr>
-          <th scope="row">数据范围</th>
-          <td>__EVENT_COUNT__ 条事件 / __SOURCE_COUNT__ 个来源 / __PERIOD_COUNT__ 个时期</td>
-        </tr>
-        <tr>
-          <th scope="row">作品化</th>
-          <td>__WORKS_COUNT__ 条作品子集；__REVIEWED_COUNT__ 条本地已复核</td>
-        </tr>
-        <tr>
-          <th scope="row">生成时间</th>
-          <td><time datetime="__GENERATED_AT__">__GENERATED_AT__</time></td>
-        </tr>
-        <tr>
-          <th scope="row">原始数据</th>
-          <td><a href="timeline.json">timeline.json</a> · <a href="sources.json">sources.json</a> · <a href="periods.json">periods.json</a> · <a href="timelinejs.json">timelinejs.json</a> · <a href="timeline-events.psql.txt">timeline-events.psql.txt</a></td>
-        </tr>
-        <tr>
-          <th scope="row">出版契约</th>
-          <td><a href="publication-manifest.v1.json">publication-manifest.v1.json</a> · <a href="PUBLICATION.md">PUBLICATION.md</a></td>
-        </tr>
-      </tbody>
-    </table>
-  </details>
-
-  <details>
-    <summary><h2>本地已复核事件</h2></summary>
-    <pre><code>__REVIEWED_TABLE__</code></pre>
-  </details>
-
-  <details>
-    <summary><h2>完整事件明细（__EVENT_COUNT__ 条）</h2></summary>
-    <pre><code>__EVENT_TABLE__</code></pre>
-  </details>
+  __AGGREGATE_BLOCKS__
 
   <script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
   <script src="preview.js"></script>
