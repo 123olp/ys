@@ -4,6 +4,8 @@
   const Core = window.HumanInfraTimelineCore;
   const {
     TIME_WINDOWS,
+    PATH_LABELS,
+    EVENT_TYPE_LABELS,
     esc,
     dateLabel,
     displayWidth,
@@ -15,30 +17,6 @@
     matchesEvent
   } = Core;
 
-  const PATH_LABELS = {
-    maintenance: "生物维护",
-    reconstruction: "生物重建",
-    suspension: "生物暂停",
-    digital_migration: "数字迁移",
-    cognitive_extension: "认知外延",
-    social_composite: "社会复合",
-    philosophical: "哲学判据",
-    cross_path: "跨路径"
-  };
-
-  const EVENT_TYPE_LABELS = {
-    myth: "神话与宗教",
-    religious: "宗教",
-    thought: "思想与概念",
-    practice: "实践与方法",
-    technology: "技术与工程",
-    institution: "制度与机构",
-    literature: "文学与作品",
-    failure: "失败与教训",
-    demographic: "人口与统计",
-    policy: "政策与治理"
-  };
-
   const EVIDENCE_COLORS = {
     T: "#2f7d4f",
     I: "#4c6fbf",
@@ -46,6 +24,16 @@
     S: "#8a6d3b",
     L: "#7b4f9e"
   };
+
+  function pathLabel(event) {
+    const meta = event.meta || {};
+    return PATH_LABELS[meta.path_family] || meta.path_family || "未分类";
+  }
+
+  function typeLabel(event) {
+    const meta = event.meta || {};
+    return EVENT_TYPE_LABELS[meta.event_type] || meta.event_type || "未分类";
+  }
 
   const PREFERRED_EVENT_ID = "HIT-TEC-001";
 
@@ -336,7 +324,7 @@
 
   function scatterOption() {
     const pathLabels = unique(filtered.map(function (event) {
-      return event.meta && event.meta.path_family_label;
+      return pathLabel(event);
     }));
     const pathIndex = {};
     pathLabels.forEach(function (label, index) { pathIndex[label] = index; });
@@ -344,7 +332,7 @@
       const meta = event.meta || {};
       const year = event.start_date && event.start_date.year != null ? event.start_date.year : 0;
       return {
-        value: [year, pathIndex[meta.path_family_label] || 0],
+        value: [year, pathIndex[pathLabel(event)] || 0],
         title: event.text && event.text.headline ? event.text.headline : "",
         dateLabel: dateLabel(event),
         meta: meta,
@@ -363,8 +351,8 @@
           return "<strong>" + esc(item.title || "") + "</strong><br>" +
             "日期：" + esc(item.dateLabel || (params.value ? params.value[0] : "?")) + "<br>" +
             "时期：" + esc(meta.period_label || "") + "<br>" +
-            "路径：" + esc(meta.path_family_label || meta.path_family || "") + "<br>" +
-            "类型：" + esc(meta.event_type_label || meta.event_type || "") + "<br>" +
+            "路径：" + esc(PATH_LABELS[meta.path_family] || meta.path_family || "") + "<br>" +
+            "类型：" + esc(EVENT_TYPE_LABELS[meta.event_type] || meta.event_type || "") + "<br>" +
             "证据：" + esc(meta.evidence_grade || "") + " / " + esc(meta.verification_status || "") + "<br>" +
             "编号：" + esc(meta.event_id || "") + "<br>" +
             "来源：" + esc((meta.source_refs || []).join(", ") || "无");
@@ -756,9 +744,9 @@
       meta.event_id,
       meta.period_label,
       meta.path_family,
-      meta.path_family_label,
+      PATH_LABELS[meta.path_family] || meta.path_family,
       meta.event_type,
-      meta.event_type_label,
+      EVENT_TYPE_LABELS[meta.event_type] || meta.event_type,
       meta.evidence_grade,
       meta.verification_status,
       meta.publication_status,

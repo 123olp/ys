@@ -443,6 +443,14 @@ def main() -> None:
     expected_light = build_timelinejs_light(expected_timelinejs)
     actual_light = load_json("docs/reference/history-timeline/timelinejs.light.json")
     require(actual_light == expected_light, "stale_timelinejs_light_preview")
+    require(
+        all(
+            "path_family_label" not in event.get("meta", {})
+            and "event_type_label" not in event.get("meta", {})
+            for event in actual_light["events"]
+        ),
+        "light_meta_must_derive_labels",
+    )
     expected_detail = build_timelinejs_detail(expected_timelinejs)
     actual_detail = load_json("docs/reference/history-timeline/timelinejs.detail.json")
     require(actual_detail == expected_detail, "stale_timelinejs_detail_preview")

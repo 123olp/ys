@@ -159,7 +159,15 @@ def build_timelinejs_light(timelinejs: dict) -> dict:
     events = []
     for event in timelinejs["events"]:
         meta = dict(event.get("meta", {}))
-        for key in ("period_id", "chapter", "date_start", "status", "source_links"):
+        for key in (
+            "period_id",
+            "chapter",
+            "date_start",
+            "status",
+            "source_links",
+            "path_family_label",
+            "event_type_label",
+        ):
             meta.pop(key, None)
         light_event = {
             "start_date": event.get("start_date", {}),

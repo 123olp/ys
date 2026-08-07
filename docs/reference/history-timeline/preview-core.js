@@ -17,6 +17,30 @@
     twentyfirst: [2001, 2100]
   };
 
+  const PATH_LABELS = {
+    maintenance: "生物维护",
+    reconstruction: "生物重建",
+    suspension: "生物暂停",
+    digital_migration: "数字迁移",
+    cognitive_extension: "认知外延",
+    social_composite: "社会复合",
+    philosophical: "哲学判据",
+    cross_path: "跨路径"
+  };
+
+  const EVENT_TYPE_LABELS = {
+    myth: "神话与宗教",
+    religious: "宗教",
+    thought: "思想与概念",
+    practice: "实践与方法",
+    technology: "技术与工程",
+    institution: "制度与机构",
+    literature: "文学与作品",
+    failure: "失败与教训",
+    demographic: "人口与统计",
+    policy: "政策与治理"
+  };
+
   function esc(value) {
     return String(value == null ? "" : value).replace(/[&<>"']/g, function (ch) {
       return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[ch];
@@ -121,8 +145,8 @@
       meta.event_id || "",
       dateLabel(event),
       meta.period_label || "",
-      meta.path_family_label || meta.path_family || "",
-      meta.event_type_label || meta.event_type || "",
+      PATH_LABELS[meta.path_family] || meta.path_family || "",
+      EVENT_TYPE_LABELS[meta.event_type] || meta.event_type || "",
       (meta.evidence_grade || "") + " / " + (meta.verification_status || ""),
       meta.publication_status === "selected" ? "作品子集" : "候选资料",
       (meta.source_refs || []).join(", ")
@@ -169,6 +193,8 @@
 
   return {
     TIME_WINDOWS,
+    PATH_LABELS,
+    EVENT_TYPE_LABELS,
     esc,
     dateLabel,
     displayWidth,
