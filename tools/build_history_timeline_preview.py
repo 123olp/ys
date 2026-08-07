@@ -94,14 +94,6 @@ def event_to_timelinejs(
         html.escape(event.get("summary", "")),
         "",
         "Claim: " + html.escape(event.get("claim", "")),
-        "",
-        f"时期: {html.escape(period_label)}",
-        f"路径: {html.escape(path_family_label)}",
-        f"类型: {html.escape(event_type_label)}",
-        f"证据: {html.escape(event.get('evidence_grade', ''))} / "
-        f"{html.escape(event.get('verification_status', ''))}",
-        "",
-        "来源: " + links,
     ]
     item = {
         "start_date": start_date,

@@ -446,6 +446,16 @@ def main() -> None:
     expected_detail = build_timelinejs_detail(expected_timelinejs)
     actual_detail = load_json("docs/reference/history-timeline/timelinejs.detail.json")
     require(actual_detail == expected_detail, "stale_timelinejs_detail_preview")
+    require(
+        all(
+            not any(
+                line.strip().startswith(("时期:", "路径:", "类型:", "证据:", "来源:"))
+                for line in event["text"].split("<br>")
+            )
+            for event in actual_detail["events"]
+        ),
+        "detail_text_must_not_duplicate_metadata",
+    )
     expected_preview = render_preview(expected_timelinejs)
     actual_preview = (ROOT / "docs/reference/history-timeline/preview.html").read_text(encoding="utf-8")
     require(actual_preview == expected_preview, "stale_preview_html")

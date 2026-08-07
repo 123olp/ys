@@ -68,6 +68,10 @@ def main() -> None:
             )
             full_text = page.locator("#event-detail-text").inner_text()
             require("Claim:" in full_text, "auto_full_event_not_loaded")
+            require(
+                not any(line.strip().startswith(("时期:", "路径:", "类型:", "证据:", "来源:")) for line in full_text.splitlines()),
+                "detail_text_contains_duplicate_metadata",
+            )
             require(any("timelinejs.detail.json" in item for item in requested), "detail_data_not_loaded")
             require(not any("timelinejs.json" in item and "detail" not in item for item in requested), "full_data_should_not_load_for_preview")
 
