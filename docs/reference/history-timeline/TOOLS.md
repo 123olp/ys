@@ -85,7 +85,7 @@ make history-timeline-core-test
 make history-timeline-browser-gate
 ```
 
-该命令用 Playwright 启动本地静态预览，检查 ECharts 本地加载、证据等级图例、事件阅读器与图表 tooltip 双向联动、完整正文自动加载、URL 事件同步、事件 ID 跳转、完整事件表格渲染、密度视图和筛选聚合更新；服务器使用 `try/finally` 确保任何失败路径都会关闭。
+该命令用 Playwright 启动本地静态预览，检查 ECharts 本地加载、证据等级图例、事件阅读器与图表 tooltip 双向联动、完整正文自动加载、URL 事件同步、事件 ID 跳转、完整事件表格渲染、密度视图、筛选聚合更新和资源体积预算；服务器使用 `try/finally` 确保任何失败路径都会关闭。
 
 日期补齐命令：
 

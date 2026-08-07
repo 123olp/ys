@@ -16,6 +16,13 @@ from playwright.sync_api import sync_playwright
 ROOT = Path(__file__).resolve().parents[1]
 PACKAGE = ROOT / "docs" / "reference" / "history-timeline"
 
+RESOURCE_BUDGETS = {
+    "echarts.common.min.js": 700_000,
+    "timelinejs.light.json": 1_100_000,
+    "timelinejs.detail.json": 750_000,
+}
+TOTAL_RESOURCE_BUDGET = 2_600_000
+
 
 def fail(message: str) -> None:
     print(f"status=FAIL reason={message}")
@@ -33,6 +40,14 @@ def tooltip_texts(page) -> list[str]:
           .filter(function (el) { return el.innerText && el.innerText.indexOf('编号：') >= 0; })
           .map(function (el) { return el.innerText; })"""
     )
+
+
+def resource_transfers(page) -> dict[str, int]:
+    entries = page.evaluate("performance.getEntriesByType('resource')")
+    return {
+        str(entry["name"].rsplit("/", 1)[-1]): int(entry["transferSize"] or 0)
+        for entry in entries
+    }
 
 
 def main() -> None:
@@ -75,6 +90,12 @@ def main() -> None:
             )
             require(any("timelinejs.detail.json" in item for item in requested), "detail_data_not_loaded")
             require(not any("timelinejs.json" in item and "detail" not in item for item in requested), "full_data_should_not_load_for_preview")
+            transfers = resource_transfers(page)
+            for resource, budget in RESOURCE_BUDGETS.items():
+                require(resource in transfers, f"missing_resource {resource}")
+                require(transfers[resource] <= budget, f"resource_over_budget {resource}={transfers[resource]}")
+            total_transfer = sum(transfers.values())
+            require(total_transfer <= TOTAL_RESOURCE_BUDGET, f"total_over_budget {total_transfer}")
 
             page.click("#next-event")
             page.wait_for_timeout(300)
