@@ -167,7 +167,8 @@ def build_timelinejs_light(timelinejs: dict) -> dict:
     events = []
     for event in timelinejs["events"]:
         meta = dict(event.get("meta", {}))
-        meta.pop("source_links", None)
+        for key in ("period_id", "chapter", "date_start", "status", "source_links"):
+            meta.pop(key, None)
         light_event = {
             "start_date": event.get("start_date", {}),
             "text": {
@@ -494,10 +495,12 @@ PREVIEW_TEMPLATE = r"""<!doctype html>
   <p id="event-detail-empty" hidden>点击图表中的事件，或用前一条/后一条浏览当前筛选结果。</p>
   <pre id="event-detail-table"><code id="event-detail-table-code"></code></pre>
   <pre id="event-detail-text"></pre>
+  <p><button id="load-full-event" type="button" hidden>加载完整正文</button></p>
 
   <h2>时间轴图表</h2>
   <p id="result-count"></p>
-  <div id="chart" role="img" aria-label="永生史事件时间轴图表"></div>
+  <div id="chart" role="img" aria-label="永生年表事件时间轴图表"></div>
+  <p id="evidence-legend">证据等级图例：T · I · M · S · L</p>
   <p id="chart-status">图表为增强视图；核心资料与查询入口在下方。</p>
 
   <h2>查询条件</h2>
@@ -543,7 +546,8 @@ PREVIEW_TEMPLATE = r"""<!doctype html>
 
   __AGGREGATE_BLOCKS__
 
-  <script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
+  <script src="echarts.min.js"></script>
+  <script src="preview-core.js"></script>
   <script src="preview.js"></script>
 </body>
 </html>

@@ -1,6 +1,20 @@
 (function () {
   "use strict";
 
+  const Core = window.HumanInfraTimelineCore;
+  const {
+    TIME_WINDOWS,
+    esc,
+    dateLabel,
+    displayWidth,
+    padEnd,
+    psqlTable,
+    renderPsqlTable,
+    eventRow,
+    unique,
+    matchesEvent
+  } = Core;
+
   const PATH_LABELS = {
     maintenance: "生物维护",
     reconstruction: "生物重建",
@@ -33,16 +47,6 @@
     L: "#7b4f9e"
   };
 
-  const TIME_WINDOWS = {
-    all: null,
-    ancient: [-4000, -1],
-    classical: [0, 500],
-    medieval: [501, 1500],
-    modern: [1501, 1900],
-    twentieth: [1901, 2000],
-    twentyfirst: [2001, 2100]
-  };
-
   const PREFERRED_EVENT_ID = "HIT-TEC-001";
 
   const params = new URLSearchParams(window.location.search);
@@ -64,6 +68,8 @@
   let highlightedDataIndex = -1;
   let chart = null;
   let fullEventsPromise = null;
+  let fullTableRenderToken = 0;
+  let densityCache = null;
 
   const chartEl = document.getElementById("chart");
   const chartStatusEl = document.getElementById("chart-status");
@@ -73,115 +79,7 @@
   const detailTextEl = document.getElementById("event-detail-text");
   const navIndexEl = document.getElementById("event-nav-index");
   const fullEventTableCodeEl = document.getElementById("full-event-table-code");
-
-  function esc(value) {
-    return String(value == null ? "" : value).replace(/[&<>"']/g, function (ch) {
-      return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[ch];
-    });
-  }
-
-  function dateLabel(event) {
-    const start = event.start_date || {};
-    let label = start.year != null ? String(start.year) : "";
-    if (start.month != null) label += "-" + String(start.month).padStart(2, "0");
-    if (start.day != null) label += "-" + String(start.day).padStart(2, "0");
-    return label;
-  }
-
-  function displayWidth(value) {
-    return Array.from(String(value == null ? "" : value)).reduce(function (width, ch) {
-      const code = ch.codePointAt(0);
-      if (
-        (code >= 0x1100 && code <= 0x115f) ||
-        (code >= 0x2e80 && code <= 0xa4cf) ||
-        (code >= 0xac00 && code <= 0xd7a3) ||
-        (code >= 0xf900 && code <= 0xfaff) ||
-        (code >= 0xfe30 && code <= 0xfe4f) ||
-        (code >= 0xff00 && code <= 0xff60) ||
-        (code >= 0xffe0 && code <= 0xffe6)
-      ) {
-        return width + 2;
-      }
-      return width + 1;
-    }, 0);
-  }
-
-  function padEnd(value, width) {
-    let text = String(value == null ? "" : value).replace(/\s+/g, " ");
-    const gap = width - displayWidth(text);
-    if (gap > 0) text += " ".repeat(gap);
-    return text;
-  }
-
-  function psqlTable(headers, rows) {
-    const widths = headers.map(function (header, index) {
-      let width = displayWidth(header);
-      rows.forEach(function (row) {
-        width = Math.max(width, displayWidth(row[index]));
-      });
-      return width;
-    });
-    const border = "+" + widths.map(function (width) {
-      return "-".repeat(width + 2);
-    }).join("+") + "+";
-    function renderRow(row) {
-      return "| " + widths.map(function (width, index) {
-        return padEnd(row[index], width);
-      }).join(" | ") + " |";
-    }
-    return [
-      border,
-      renderRow(headers),
-      border,
-      renderRow(rows[0] || []),
-      border
-    ].join("\n");
-  }
-
-  function renderPsqlTable(headers, rows) {
-    if (!rows.length) return "";
-    const widths = headers.map(function (header, index) {
-      let width = displayWidth(header);
-      rows.forEach(function (row) {
-        width = Math.max(width, displayWidth(row[index]));
-      });
-      return width;
-    });
-    const border = "+" + widths.map(function (width) {
-      return "-".repeat(width + 2);
-    }).join("+") + "+";
-    function renderRow(row) {
-      return "| " + widths.map(function (width, index) {
-        return padEnd(row[index], width);
-      }).join(" | ") + " |";
-    }
-    return [
-      border,
-      renderRow(headers),
-      border
-    ].concat(rows.map(renderRow), [border]).join("\n");
-  }
-
-  function eventRow(event) {
-    const meta = event.meta || {};
-    return [
-      event.text && event.text.headline ? event.text.headline : "",
-      meta.event_id || "",
-      dateLabel(event),
-      meta.period_label || "",
-      meta.path_family_label || meta.path_family || "",
-      meta.event_type_label || meta.event_type || "",
-      (meta.evidence_grade || "") + " / " + (meta.verification_status || ""),
-      meta.publication_status === "selected" ? "作品子集" : "候选资料",
-      (meta.source_refs || []).join(", ")
-    ];
-  }
-
-  function unique(values) {
-    return Array.from(new Set(values.filter(Boolean))).sort(function (a, b) {
-      return String(a).localeCompare(String(b), "zh-Hans-CN");
-    });
-  }
+  const loadFullEventBtn = document.getElementById("load-full-event");
 
   function fillSelect(select, values, label, display) {
     select.innerHTML = "<option value=\"\">" + label + "</option>" + values.map(function (v) {
@@ -195,33 +93,9 @@
     }).join("");
   }
 
-  function plainText(event) {
-    const meta = event.meta || {};
-    return [
-      event.text && event.text.headline,
-      event.text && event.text.text ? event.text.text.replace(/<[^>]*>/g, " ") : "",
-      meta.event_id,
-      meta.period_label,
-      meta.path_family,
-      meta.event_type,
-      meta.evidence_grade
-    ].join(" ").toLowerCase();
-  }
-
-  function matches(event) {
-    const meta = event.meta || {};
-    const year = event.start_date && event.start_date.year != null ? event.start_date.year : 0;
-    const windowRange = TIME_WINDOWS[state.window] || null;
-    if (windowRange && (year < windowRange[0] || year > windowRange[1])) return false;
-    if (state.scope === "works" && meta.publication_status !== "selected") return false;
-    if (state.scope === "reviewed" && meta.verification_status !== "locally_reviewed") return false;
-    if (state.period && meta.period_label !== state.period) return false;
-    if (state.path && meta.path_family !== state.path) return false;
-    if (state.type && meta.event_type !== state.type) return false;
-    if (state.evidence && meta.evidence_grade !== state.evidence) return false;
-    if (state.q && plainText(event).indexOf(state.q) < 0) return false;
-    return true;
-  }
+  const matches = function (event) {
+    return matchesEvent(event, state);
+  };
 
   function filteredEvents() {
     const result = events.filter(matches).slice();
@@ -293,6 +167,7 @@
     if (!event) return;
     if (event.text && event.text.text) {
       detailTextEl.innerHTML = event.text.text;
+      loadFullEventBtn.hidden = true;
       return;
     }
     detailTextEl.textContent = "正在加载完整事件…";
@@ -300,9 +175,11 @@
       if (currentIndex !== index) return;
       const full = byId.get(filtered[index].meta.event_id);
       detailTextEl.innerHTML = full && full.text && full.text.text ? full.text.text : "";
+      loadFullEventBtn.hidden = true;
     }).catch(function (error) {
       if (currentIndex !== index) return;
       detailTextEl.textContent = "完整事件加载失败：" + error.message;
+      loadFullEventBtn.hidden = false;
     });
   }
 
@@ -367,19 +244,13 @@
     highlightedDataIndex = currentIndex;
   }
 
-  function densityOption() {
+  function getDensityCache() {
+    if (densityCache && densityCache.filtered === filtered) return densityCache;
     const binSize = 100;
     const years = filtered.map(function (event) {
       return event.start_date && event.start_date.year != null ? event.start_date.year : 0;
     });
-    if (!years.length) {
-      return {
-        animation: false,
-        xAxis: { type: "category", data: [] },
-        yAxis: { type: "value", name: "事件数" },
-        series: [{ type: "bar", data: [] }]
-      };
-    }
+    if (!years.length) return null;
     const minYear = Math.floor(Math.min.apply(null, years) / binSize) * binSize;
     const maxYear = Math.ceil(Math.max.apply(null, years) / binSize) * binSize;
     const bins = [];
@@ -398,6 +269,21 @@
         binIndices[key].push(index);
       }
     });
+    densityCache = { filtered, binSize, minYear, maxYear, bins, counts, binIndices };
+    return densityCache;
+  }
+
+  function densityOption() {
+    const cache = getDensityCache();
+    if (!cache) {
+      return {
+        animation: false,
+        xAxis: { type: "category", data: [] },
+        yAxis: { type: "value", name: "事件数" },
+        series: [{ type: "bar", data: [] }]
+      };
+    }
+    const { binSize, bins, counts, binIndices } = cache;
     let currentBinIndex = -1;
     if (currentIndex >= 0 && filtered[currentIndex].start_date) {
       const currentYear = filtered[currentIndex].start_date.year;
@@ -502,17 +388,33 @@
         { type: "inside", xAxisIndex: 0, start: 0, end: 100 },
         { type: "slider", xAxisIndex: 0, bottom: 16, start: 0, end: 100 }
       ],
-      series: [{
-        type: "scatter",
-        progressive: 1000,
-        itemStyle: {
-          color: function (params) {
-            const grade = params.data && params.data.meta && params.data.meta.evidence_grade;
-            return EVIDENCE_COLORS[grade] || "#5470c6";
-          }
+      series: [
+        {
+          type: "scatter",
+          progressive: 1000,
+          z: 2,
+          itemStyle: {
+            color: function (params) {
+              const grade = params.data && params.data.meta && params.data.meta.evidence_grade;
+              return EVIDENCE_COLORS[grade] || "#5470c6";
+            }
+          },
+          data: points
         },
-        data: points
-      }]
+        currentIndex >= 0 ? {
+          type: "scatter",
+          symbolSize: 24,
+          silent: true,
+          z: 3,
+          tooltip: { show: false },
+          itemStyle: {
+            color: "transparent",
+            borderColor: "#c0392b",
+            borderWidth: 2
+          },
+          data: [points[currentIndex]]
+        } : undefined
+      ].filter(Boolean)
     };
   }
 
@@ -524,7 +426,8 @@
       detailTableCodeEl.textContent = "";
       detailTextEl.replaceChildren();
       navIndexEl.textContent = "";
-      chartEl.setAttribute("aria-label", "永生史事件时间轴图表");
+      loadFullEventBtn.hidden = true;
+      chartEl.setAttribute("aria-label", "永生年表事件时间轴图表");
       clearChartHighlight();
       return;
     }
@@ -540,9 +443,15 @@
     navIndexEl.textContent = (index + 1) + " / " + filtered.length;
     chartEl.setAttribute(
       "aria-label",
-      "永生史事件时间轴图表，当前事件：" + (event.text && event.text.headline || meta.event_id || "")
+      "永生年表事件时间轴图表，当前事件：" + (event.text && event.text.headline || meta.event_id || "")
     );
-    loadFullDetail(index);
+    if (event.text && event.text.text) {
+      detailTextEl.innerHTML = event.text.text;
+      loadFullEventBtn.hidden = true;
+    } else {
+      detailTextEl.textContent = "";
+      loadFullEventBtn.hidden = false;
+    }
     syncChartHighlight();
   }
 
@@ -642,10 +551,18 @@
     ));
 
     if (fullEventTableCodeEl) {
-      fullEventTableCodeEl.textContent = renderPsqlTable(
-        ["标题", "编号", "日期", "时期", "路径", "类型", "证据", "作品化", "来源"],
-        filtered.map(eventRow)
-      );
+      const token = ++fullTableRenderToken;
+      fullEventTableCodeEl.textContent = "正在生成完整事件明细…";
+      const scheduleIdle = window.requestIdleCallback || function (callback) {
+        setTimeout(callback, 0);
+      };
+      scheduleIdle(function () {
+        if (token !== fullTableRenderToken) return;
+        fullEventTableCodeEl.textContent = renderPsqlTable(
+          ["标题", "编号", "日期", "时期", "路径", "类型", "证据", "作品化", "来源"],
+          filtered.map(eventRow)
+        );
+      });
     }
   }
 
@@ -710,7 +627,7 @@
       return;
     }
     if (typeof window.echarts === "undefined") {
-      chartEl.replaceChildren(document.createTextNode("ECharts 未加载，请检查网络后刷新；核心数据仍可直接读取下方表格和原始 JSON。"));
+      chartEl.replaceChildren(document.createTextNode("ECharts 未加载，请确认 echarts.min.js 已随预览目录发布；核心数据仍可直接读取下方表格和原始 JSON。"));
       showDetail(-1);
       return;
     }
@@ -769,6 +686,9 @@
     document.getElementById("jump-event").addEventListener("click", jumpToEvent);
     document.getElementById("event-jump").addEventListener("keydown", function (event) {
       if (event.key === "Enter") jumpToEvent();
+    });
+    loadFullEventBtn.addEventListener("click", function () {
+      loadFullDetail(currentIndex);
     });
     document.addEventListener("keydown", function (event) {
       const tag = event.target && event.target.tagName;
@@ -838,6 +758,23 @@
     applyControlValues();
   }
 
+  function buildSearchText(event) {
+    const meta = event.meta || {};
+    return [
+      event.text && event.text.headline,
+      meta.event_id,
+      meta.period_label,
+      meta.path_family,
+      meta.path_family_label,
+      meta.event_type,
+      meta.event_type_label,
+      meta.evidence_grade,
+      meta.verification_status,
+      meta.publication_status,
+      (meta.source_refs || []).join(" ")
+    ].join(" ").toLowerCase();
+  }
+
   async function load() {
     chartStatusEl.textContent = "正在加载 timelinejs.light.json ...";
     try {
@@ -845,12 +782,15 @@
       if (!response.ok) throw new Error("HTTP " + response.status);
       const data = await response.json();
       events = data.events || [];
+      events.forEach(function (event) {
+        event._searchText = buildSearchText(event);
+      });
       initSelects();
       bindControls();
       render();
       syncUrl("replace");
     } catch (error) {
-      chartStatusEl.textContent = "无法加载 timelinejs.json：" + error.message +
+      chartStatusEl.textContent = "无法加载 timelinejs.light.json：" + error.message +
         "；可直接打开 timeline.json 或 timeline-events.psql.txt 阅读原始资料。";
     }
   }

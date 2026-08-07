@@ -3,10 +3,10 @@ kind: HistoryTimelineContract
 metadata:
   id: HT-GOV-001
   title: 永生史严肃历史年表治理契约
-  version: 1.0.0
+  version: 1.0.1
   owner: tradecatlabs
   created: 2026-08-06
-  last_reviewed: 2026-08-06
+  last_reviewed: 2026-08-07
   review_cycle: P90D
   status: active
 spec:
@@ -26,6 +26,8 @@ spec:
     publication_manifest: docs/reference/history-timeline/publication-manifest.v1.json
     publication_architecture: docs/reference/history-timeline/PUBLICATION.md
     preview_script: docs/reference/history-timeline/preview.js
+    preview_core: docs/reference/history-timeline/preview-core.js
+    echarts_runtime: docs/reference/history-timeline/echarts.min.js
     event_table: docs/reference/history-timeline/timeline-events.psql.txt
     timelinejs_data: docs/reference/history-timeline/timelinejs.json
     timelinejs_light_data: docs/reference/history-timeline/timelinejs.light.json
@@ -53,6 +55,8 @@ spec:
     - docs/reference/history-timeline/publication-manifest.v1.json
     - docs/reference/history-timeline/PUBLICATION.md
     - docs/reference/history-timeline/preview.js
+    - docs/reference/history-timeline/preview-core.js
+    - docs/reference/history-timeline/echarts.min.js
     - docs/reference/history-timeline/timeline-events.psql.txt
     - docs/reference/history-timeline/timeline.json
     - docs/reference/history-timeline/sources.json
@@ -61,8 +65,10 @@ spec:
     - docs/reference/history-timeline/timelinejs.json
     - docs/reference/history-timeline/timelinejs.light.json
     - docs/reference/history-timeline/preview.html
+    - tools/test_history_timeline_core.js
   commands:
     validate: make history-timeline-gate
+    core_test: make history-timeline-core-test
     validator: python3 tools/validate_history_timeline.py
     preview: make history-timeline-preview
     browser_gate: make history-timeline-browser-gate

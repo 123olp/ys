@@ -35,11 +35,14 @@ REQUIRED_FILES = [
     "docs/reference/history-timeline/publication-manifest.v1.json",
     "docs/reference/history-timeline/PUBLICATION.md",
     "docs/reference/history-timeline/preview.js",
+    "docs/reference/history-timeline/preview-core.js",
+    "docs/reference/history-timeline/echarts.min.js",
     "docs/reference/history-timeline/timeline-events.psql.txt",
     "docs/reference/history-timeline/timelinejs.json",
     "docs/reference/history-timeline/timelinejs.light.json",
     "docs/reference/history-timeline/preview.html",
     "docs/templates/history-event.md",
+    "tools/test_history_timeline_core.js",
 ]
 
 DATE_TYPES = {"exact", "approx", "range", "long_process", "era", "undated"}
@@ -437,6 +440,19 @@ def main() -> None:
     expected_preview = render_preview(expected_timelinejs)
     actual_preview = (ROOT / "docs/reference/history-timeline/preview.html").read_text(encoding="utf-8")
     require(actual_preview == expected_preview, "stale_preview_html")
+    require(
+        'src="echarts.min.js"' in actual_preview and "cdn.jsdelivr.net/npm/echarts" not in actual_preview,
+        "preview_must_use_local_echarts",
+    )
+    require(
+        'src="preview-core.js"' in actual_preview
+        and actual_preview.index('src="preview-core.js"') < actual_preview.index('src="preview.js"'),
+        "preview_must_load_core_before_main",
+    )
+    require(
+        'aria-label="永生年表事件时间轴图表"' in actual_preview,
+        "preview_must_use_immortality_chronology_label",
+    )
 
     contract_text = CONTRACT.read_text(encoding="utf-8")
     for relative_path in REQUIRED_FILES:

@@ -95,6 +95,12 @@ event_id 唯一
 make history-timeline-gate
 ```
 
+核心函数单测：
+
+```bash
+make history-timeline-core-test
+```
+
 CI 已接入 `.github/workflows/check.yml`，每次 push 和 pull_request 都会先运行该门禁。
 
 ## 6. 更新周期

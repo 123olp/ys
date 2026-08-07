@@ -36,6 +36,8 @@
 | `publication-manifest.v1.json` | 展示与出版机器契约 |
 | `PUBLICATION.md` | 展示与出版架构说明 |
 | `preview.js` | 时间轴图表与事件阅读交互脚本 |
+| `preview-core.js` | 核心纯函数模块，浏览器与 Node 共用，可单测 |
+| `echarts.min.js` | 本地化 ECharts 运行时，预览不依赖外部 CDN |
 | `timeline-events.psql.txt` | 完整事件明细 psql 表格（由 `make history-timeline-preview` 生成） |
 | `timelinejs.json` | 图表发布数据，保留 TimelineJS JSON 兼容结构（由 `make history-timeline-preview` 生成） |
 | `timelinejs.light.json` | 图表与筛选用轻量发布数据，不含完整正文与来源链接（由 `make history-timeline-preview` 生成） |
@@ -64,6 +66,12 @@ make history-timeline-works-subset
 make history-timeline-preview
 ```
 
+核心函数单测：
+
+```bash
+make history-timeline-core-test
+```
+
 ## 当前进度
 
 - 来源卡：2602 个来源已注册，包含重复引用和疑似错源标注。
@@ -73,7 +81,7 @@ make history-timeline-preview
 - 复核：全部事件仍为 `unreviewed` / `draft`，尚未进入本地复核或独立审阅。
 - 作品子集：`works-subset.v1.json` 已登记 400 条第一版作品事件，覆盖全部时期、8 个路径族、10 类事件类型和 5 类证据等级；当前 `reviewed_event_count=31`。
 - 本地复核：首批 31 条事件已登记为 `locally_reviewed`，来源 URL/DOI 可达并完成标题匹配；独立 fresh review 尚未开始。
-- 可视化：已生成图表发布数据与可浏览原型，当前预览遵循零美化语义界面规范，psql ASCII 表格承载核心数据，ECharts 图表作为增强视图；支持搜索、筛选、年份缩放、事件阅读器与图表双向联动、事件 ID/序号跳转、动态聚合表，以及“全部资料 / 作品子集 / 本地已复核”三档范围；预览文件为 `timelinejs.json`、`timelinejs.light.json` 和 `preview.html`。
+- 可视化：已生成图表发布数据与可浏览原型，当前预览遵循零美化语义界面规范，psql ASCII 表格承载核心数据，ECharts 图表作为增强视图；支持搜索、筛选、年份缩放、事件阅读器与图表双向联动、事件 ID/序号跳转、动态聚合表，以及“全部资料 / 作品子集 / 本地已复核”三档范围；完整正文按需懒加载，ECharts 本地化运行，预览文件为 `timelinejs.json`、`timelinejs.light.json`、`preview.html`、`preview-core.js` 和 `echarts.min.js`。
 - 出版层：`publication-manifest.v1.json` 定义时间轴、永生史正文、健康手册和永生指南四类出版入口及各自 `review_gate`；说明见 `PUBLICATION.md`。
 
 第二轮补录来源：`docs/publications/history-of-immortality.md` 与
