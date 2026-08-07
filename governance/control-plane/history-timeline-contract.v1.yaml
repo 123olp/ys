@@ -25,6 +25,8 @@ spec:
     publication_manifest_schema: docs/reference/history-timeline/publication-manifest.schema.json
     publication_manifest: docs/reference/history-timeline/publication-manifest.v1.json
     publication_architecture: docs/reference/history-timeline/PUBLICATION.md
+    preview_script: docs/reference/history-timeline/preview.js
+    event_table: docs/reference/history-timeline/timeline-events.psql.txt
     timelinejs_data: docs/reference/history-timeline/timelinejs.json
     preview: docs/reference/history-timeline/preview.html
     contract: docs/reference/history-timeline/CONTRACT.md
@@ -49,6 +51,8 @@ spec:
     - docs/reference/history-timeline/publication-manifest.schema.json
     - docs/reference/history-timeline/publication-manifest.v1.json
     - docs/reference/history-timeline/PUBLICATION.md
+    - docs/reference/history-timeline/preview.js
+    - docs/reference/history-timeline/timeline-events.psql.txt
     - docs/reference/history-timeline/timeline.json
     - docs/reference/history-timeline/sources.json
     - docs/reference/history-timeline/periods.json

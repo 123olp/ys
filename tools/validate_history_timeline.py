@@ -34,6 +34,8 @@ REQUIRED_FILES = [
     "docs/reference/history-timeline/publication-manifest.schema.json",
     "docs/reference/history-timeline/publication-manifest.v1.json",
     "docs/reference/history-timeline/PUBLICATION.md",
+    "docs/reference/history-timeline/preview.js",
+    "docs/reference/history-timeline/timeline-events.psql.txt",
     "docs/reference/history-timeline/timelinejs.json",
     "docs/reference/history-timeline/preview.html",
     "docs/templates/history-event.md",

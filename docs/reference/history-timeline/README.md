@@ -35,6 +35,8 @@
 | `publication-manifest.schema.json` | 展示与出版清单 Schema |
 | `publication-manifest.v1.json` | 展示与出版机器契约 |
 | `PUBLICATION.md` | 展示与出版架构说明 |
+| `preview.js` | 时间轴图表与事件阅读交互脚本 |
+| `timeline-events.psql.txt` | 完整事件明细 psql 表格（由 `make history-timeline-preview` 生成） |
 | `timelinejs.json` | 图表发布数据，保留 TimelineJS JSON 兼容结构（由 `make history-timeline-preview` 生成） |
 | `preview.html` | 可直接打开的 ECharts 图表模式预览（由 `make history-timeline-preview` 生成） |
 

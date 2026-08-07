@@ -26,6 +26,8 @@ works-review-register.v1.json  首批本地复核登记
 publication-manifest.schema.json  展示与出版清单 Schema
 publication-manifest.v1.json  展示与出版机器契约
 PUBLICATION.md  展示与出版架构说明
+preview.js      图表交互与事件阅读增强脚本
+timeline-events.psql.txt  完整事件明细 psql 表格（生成物）
 timelinejs.json  图表发布数据，保留 TimelineJS JSON 兼容结构（生成物）
 preview.html     ECharts 图表模式预览页（生成物）
 ```

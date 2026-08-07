@@ -77,6 +77,8 @@ REQUIRED_FILES = [
     "docs/reference/history-timeline/publication-manifest.schema.json",
     "docs/reference/history-timeline/publication-manifest.v1.json",
     "docs/reference/history-timeline/PUBLICATION.md",
+    "docs/reference/history-timeline/preview.js",
+    "docs/reference/history-timeline/timeline-events.psql.txt",
     "docs/AGENTS.md",
     "docs/decisions/README.md",
     "docs/decisions/0001-adopt-docs-as-code-knowledge-base-structure.md",

@@ -68,8 +68,8 @@ Zotero/Tropy 采集
 make history-timeline-preview
 ```
 
-该命令从 `timeline.json` / `sources.json` / `periods.json` 生成 `timelinejs.json` 与 `preview.html`。生成物属于机器派生数据，不能手工单独修改。
-当前 `preview.html` 使用零美化语义界面：psql ASCII 表格承载核心数据，ECharts 图表作为增强视图；`timelinejs.json` 继续保留 TimelineJS JSON 兼容结构，便于未来切换叙事型发布层。路径族在展示层使用中文标签，机器数据字段保持英文。
+该命令从 `timeline.json` / `sources.json` / `periods.json` 生成 `timelinejs.json`、`preview.html` 与 `timeline-events.psql.txt`。生成物属于机器派生数据，不能手工单独修改。
+当前 `preview.html` 使用零美化语义界面：psql ASCII 表格承载核心数据，ECharts 图表作为增强视图，`preview.js` 按需加载 `timelinejs.json`；`timelinejs.json` 继续保留 TimelineJS JSON 兼容结构，便于未来切换叙事型发布层。路径族在展示层使用中文标签，机器数据字段保持英文。
 
 日期补齐命令：
 
