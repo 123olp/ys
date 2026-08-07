@@ -35,7 +35,7 @@
     twentyfirst: [2001, 2100]
   };
 
-  const PREFERRED_EVENT_ID = "HIT-THT-032";
+  const PREFERRED_EVENT_ID = "HIT-TEC-001";
 
   const params = new URLSearchParams(window.location.search);
   const state = {
@@ -59,8 +59,6 @@
   const countEl = document.getElementById("result-count");
   const detailEmptyEl = document.getElementById("event-detail-empty");
   const detailTableCodeEl = document.getElementById("event-detail-table-code");
-  const detailFullEl = document.getElementById("event-detail-full");
-  const detailMetaEl = document.getElementById("event-detail-meta");
   const detailTextEl = document.getElementById("event-detail-text");
   const navIndexEl = document.getElementById("event-nav-index");
 
@@ -322,8 +320,6 @@
       currentIndex = -1;
       detailEmptyEl.hidden = false;
       detailTableCodeEl.textContent = "";
-      detailFullEl.open = false;
-      detailMetaEl.replaceChildren();
       detailTextEl.replaceChildren();
       navIndexEl.textContent = "";
       return;
@@ -346,16 +342,6 @@
         (meta.source_refs || []).join(", ")
       ]]
     );
-    detailMetaEl.innerHTML =
-      "<dt>标题</dt><dd>" + esc(event.text && event.text.headline) + "</dd>" +
-      "<dt>编号</dt><dd>" + esc(meta.event_id || "") + "</dd>" +
-      "<dt>日期</dt><dd>" + esc(dateLabel(event)) + "</dd>" +
-      "<dt>时期</dt><dd>" + esc(meta.period_label || "") + "</dd>" +
-      "<dt>路径</dt><dd>" + esc(meta.path_family_label || meta.path_family || "") + "</dd>" +
-      "<dt>类型</dt><dd>" + esc(meta.event_type_label || meta.event_type || "") + "</dd>" +
-      "<dt>证据</dt><dd>" + esc(meta.evidence_grade || "") + " / " + esc(meta.verification_status || "") + "</dd>" +
-      "<dt>作品化</dt><dd>" + (meta.publication_status === "selected" ? "作品子集" : "候选资料") + "</dd>" +
-      "<dt>来源</dt><dd>" + (meta.source_links || "无") + "</dd>";
     detailTextEl.innerHTML = event.text && event.text.text ? event.text.text : "";
     navIndexEl.textContent = (index + 1) + " / " + filtered.length;
   }

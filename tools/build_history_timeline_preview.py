@@ -411,11 +411,7 @@ PREVIEW_TEMPLATE = r"""<!doctype html>
   </p>
   <p id="event-detail-empty" hidden>点击图表中的事件，或用前一条/后一条浏览当前筛选结果。</p>
   <pre id="event-detail-table"><code id="event-detail-table-code"></code></pre>
-  <details id="event-detail-full">
-    <summary>事件正文与来源详情</summary>
-    <dl id="event-detail-meta"></dl>
-    <pre id="event-detail-text"></pre>
-  </details>
+  <pre id="event-detail-text"></pre>
 
   <h2>时间轴图表</h2>
   <p id="result-count"></p>
