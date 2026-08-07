@@ -35,6 +35,8 @@
     twentyfirst: [2001, 2100]
   };
 
+  const PREFERRED_EVENT_ID = "HIT-THT-032";
+
   const params = new URLSearchParams(window.location.search);
   const state = {
     q: params.get("q") || "",
@@ -56,6 +58,8 @@
   const chartStatusEl = document.getElementById("chart-status");
   const countEl = document.getElementById("result-count");
   const detailEmptyEl = document.getElementById("event-detail-empty");
+  const detailTableCodeEl = document.getElementById("event-detail-table-code");
+  const detailFullEl = document.getElementById("event-detail-full");
   const detailMetaEl = document.getElementById("event-detail-meta");
   const detailTextEl = document.getElementById("event-detail-text");
   const navIndexEl = document.getElementById("event-nav-index");
@@ -72,6 +76,56 @@
     if (start.month != null) label += "-" + String(start.month).padStart(2, "0");
     if (start.day != null) label += "-" + String(start.day).padStart(2, "0");
     return label;
+  }
+
+  function displayWidth(value) {
+    return Array.from(String(value == null ? "" : value)).reduce(function (width, ch) {
+      const code = ch.codePointAt(0);
+      if (
+        (code >= 0x1100 && code <= 0x115f) ||
+        (code >= 0x2e80 && code <= 0xa4cf) ||
+        (code >= 0xac00 && code <= 0xd7a3) ||
+        (code >= 0xf900 && code <= 0xfaff) ||
+        (code >= 0xfe30 && code <= 0xfe4f) ||
+        (code >= 0xff00 && code <= 0xff60) ||
+        (code >= 0xffe0 && code <= 0xffe6)
+      ) {
+        return width + 2;
+      }
+      return width + 1;
+    }, 0);
+  }
+
+  function padEnd(value, width) {
+    let text = String(value == null ? "" : value).replace(/\s+/g, " ");
+    const gap = width - displayWidth(text);
+    if (gap > 0) text += " ".repeat(gap);
+    return text;
+  }
+
+  function psqlTable(headers, rows) {
+    const widths = headers.map(function (header, index) {
+      let width = displayWidth(header);
+      rows.forEach(function (row) {
+        width = Math.max(width, displayWidth(row[index]));
+      });
+      return width;
+    });
+    const border = "+" + widths.map(function (width) {
+      return "-".repeat(width + 2);
+    }).join("+") + "+";
+    function renderRow(row) {
+      return "| " + widths.map(function (width, index) {
+        return padEnd(row[index], width);
+      }).join(" | ") + " |";
+    }
+    return [
+      border,
+      renderRow(headers),
+      border,
+      renderRow(rows[0] || []),
+      border
+    ].join("\n");
   }
 
   function unique(values) {
@@ -267,6 +321,8 @@
     if (!filtered.length || index < 0 || index >= filtered.length) {
       currentIndex = -1;
       detailEmptyEl.hidden = false;
+      detailTableCodeEl.textContent = "";
+      detailFullEl.open = false;
       detailMetaEl.replaceChildren();
       detailTextEl.replaceChildren();
       navIndexEl.textContent = "";
@@ -276,6 +332,20 @@
     const event = filtered[index];
     const meta = event.meta || {};
     detailEmptyEl.hidden = true;
+    detailTableCodeEl.textContent = psqlTable(
+      ["标题", "编号", "日期", "时期", "路径", "类型", "证据", "作品化", "来源"],
+      [[
+        event.text && event.text.headline ? event.text.headline : "",
+        meta.event_id || "",
+        dateLabel(event),
+        meta.period_label || "",
+        meta.path_family_label || meta.path_family || "",
+        meta.event_type_label || meta.event_type || "",
+        (meta.evidence_grade || "") + " / " + (meta.verification_status || ""),
+        meta.publication_status === "selected" ? "作品子集" : "候选资料",
+        (meta.source_refs || []).join(", ")
+      ]]
+    );
     detailMetaEl.innerHTML =
       "<dt>标题</dt><dd>" + esc(event.text && event.text.headline) + "</dd>" +
       "<dt>编号</dt><dd>" + esc(meta.event_id || "") + "</dd>" +
@@ -327,7 +397,10 @@
     chart.setOption(state.mode === "density" ? densityOption() : scatterOption(), true);
     chart.resize();
     if (currentIndex < 0 || !filtered[currentIndex]) {
-      showDetail(filtered.length ? 0 : -1);
+      const preferredIndex = filtered.findIndex(function (event) {
+        return event.meta && event.meta.event_id === PREFERRED_EVENT_ID;
+      });
+      showDetail(preferredIndex >= 0 ? preferredIndex : (filtered.length ? 0 : -1));
     } else {
       showDetail(currentIndex);
     }
