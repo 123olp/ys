@@ -55,7 +55,6 @@
   const chartEl = document.getElementById("chart");
   const chartStatusEl = document.getElementById("chart-status");
   const countEl = document.getElementById("result-count");
-  const detailEl = document.getElementById("event-detail");
   const detailEmptyEl = document.getElementById("event-detail-empty");
   const detailMetaEl = document.getElementById("event-detail-meta");
   const detailTextEl = document.getElementById("event-detail-text");

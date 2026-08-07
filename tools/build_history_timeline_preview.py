@@ -403,22 +403,20 @@ PREVIEW_TEMPLATE = r"""<!doctype html>
   <pre><code>__SCOPE_TABLE__</code></pre>
   <pre><code>__STATUS_TABLE__</code></pre>
 
+  <h2>事件阅读器</h2>
+  <p>
+    <button id="prev-event" type="button" aria-label="前一条事件">前一条</button>
+    <span id="event-nav-index"></span>
+    <button id="next-event" type="button" aria-label="后一条事件">后一条</button>
+  </p>
+  <p id="event-detail-empty" hidden>点击图表中的事件，或用前一条/后一条浏览当前筛选结果。</p>
+  <dl id="event-detail-meta"></dl>
+  <pre id="event-detail-text"></pre>
+
   <h2>时间轴图表</h2>
   <p id="result-count"></p>
   <div id="chart"></div>
   <p id="chart-status">图表为增强视图；核心数据见下方事件明细与原始 JSON。</p>
-
-  <h2>事件阅读器</h2>
-  <p>
-    <button id="prev-event" type="button" aria-label="前一条事件">← 前一条</button>
-    <span id="event-nav-index"></span>
-    <button id="next-event" type="button" aria-label="后一条事件">后一条 →</button>
-  </p>
-  <div id="event-detail">
-    <p id="event-detail-empty">点击图表中的事件，或用上一条/下一条浏览当前筛选结果。</p>
-    <dl id="event-detail-meta"></dl>
-    <pre id="event-detail-text"></pre>
-  </div>
 
   <h2>本地已复核事件</h2>
   <pre><code>__REVIEWED_TABLE__</code></pre>
