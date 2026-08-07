@@ -460,11 +460,15 @@ def main() -> None:
         all(
             not any(
                 line.strip().startswith(("时期:", "路径:", "类型:", "证据:", "来源:"))
-                for line in event["text"].split("<br>")
+                for line in event["text"].splitlines()
             )
             for event in actual_detail["events"]
         ),
         "detail_text_must_not_duplicate_metadata",
+    )
+    require(
+        all("<br>" not in event["text"] for event in actual_detail["events"]),
+        "detail_text_must_be_plain",
     )
     expected_preview = render_preview(expected_timelinejs)
     actual_preview = (ROOT / "docs/reference/history-timeline/preview.html").read_text(encoding="utf-8")

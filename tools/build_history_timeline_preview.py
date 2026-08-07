@@ -187,11 +187,17 @@ def build_timelinejs_light(timelinejs: dict) -> dict:
 
 
 def build_timelinejs_detail(timelinejs: dict) -> dict:
+    timeline = load_json("docs/reference/history-timeline/timeline.json")
+    raw_by_id = {event["event_id"]: event for event in timeline["events"]}
     return {
         "events": [
             {
                 "event_id": event.get("meta", {}).get("event_id", ""),
-                "text": event.get("text", {}).get("text", ""),
+                "text": (
+                    raw_by_id.get(event.get("meta", {}).get("event_id", ""), {}).get("summary", "")
+                    + "\n\nClaim: "
+                    + raw_by_id.get(event.get("meta", {}).get("event_id", ""), {}).get("claim", "")
+                ),
             }
             for event in timelinejs["events"]
         ]

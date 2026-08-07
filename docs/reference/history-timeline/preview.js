@@ -153,14 +153,14 @@
     const event = filtered[index];
     if (!event) return;
     if (event.text && event.text.text) {
-      detailTextEl.innerHTML = event.text.text;
+      detailTextEl.textContent = event.text.text;
       return;
     }
     detailTextEl.textContent = "正在加载完整正文…";
     ensureFullEvents().then(function (byId) {
       if (currentIndex !== index) return;
       const detail = byId.get(filtered[index].meta.event_id);
-      detailTextEl.innerHTML = detail && detail.text ? detail.text : "";
+      detailTextEl.textContent = detail && detail.text ? detail.text : "";
     }).catch(function (error) {
       if (currentIndex !== index) return;
       detailTextEl.textContent = "完整正文加载失败：" + error.message;
@@ -429,7 +429,7 @@
       "永生年表事件时间轴图表，当前事件：" + (event.text && event.text.headline || meta.event_id || "")
     );
     if (event.text && event.text.text) {
-      detailTextEl.innerHTML = event.text.text;
+      detailTextEl.textContent = event.text.text;
     } else {
       detailTextEl.textContent = "正在加载完整正文…";
       loadFullDetail(index);

@@ -68,6 +68,7 @@ def main() -> None:
             )
             full_text = page.locator("#event-detail-text").inner_text()
             require("Claim:" in full_text, "auto_full_event_not_loaded")
+            require("<br>" not in full_text, "detail_text_is_not_plain")
             require(
                 not any(line.strip().startswith(("时期:", "路径:", "类型:", "证据:", "来源:")) for line in full_text.splitlines()),
                 "detail_text_contains_duplicate_metadata",

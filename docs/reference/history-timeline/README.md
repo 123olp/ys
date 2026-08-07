@@ -41,7 +41,7 @@
 | `timeline-events.psql.txt` | 完整事件明细 psql 表格（由 `make history-timeline-preview` 生成） |
 | `timelinejs.json` | 图表发布数据，保留 TimelineJS JSON 兼容结构，紧凑格式（由 `make history-timeline-preview` 生成） |
 | `timelinejs.light.json` | 图表与筛选用轻量发布数据，不含完整正文、来源链接与冗余中文标签（由 `make history-timeline-preview` 生成） |
-| `timelinejs.detail.json` | 事件阅读器专用紧凑正文数据（由 `make history-timeline-preview` 生成） |
+| `timelinejs.detail.json` | 事件阅读器专用纯文本正文数据（由 `make history-timeline-preview` 生成） |
 | `preview.html` | 可直接打开的 ECharts 图表模式预览（由 `make history-timeline-preview` 生成） |
 
 事件录入模板位于 `docs/templates/history-event.md`。
