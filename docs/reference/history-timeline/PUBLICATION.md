@@ -33,7 +33,7 @@ raw_timeline（全部资料）
 
 每档都必须显示 `evidence_grade`、`verification_status`、`event_id` 和来源链接，避免把未复核资料误读为出版结论。
 
-预览页遵循 `Design.md` 的零美化语义界面：默认浏览器渲染、psql ASCII 文本表格作为资料事实来源、ECharts 只作为增强视图。`preview.js` 按需加载 `timelinejs.json`，提供按路径族散点、年代密度、时间窗口、事件详情和上一条/下一条阅读导航。路径族展示使用中文标签，但 `timeline.json` 仍保留英文机器值。
+预览页遵循 `Design.md` 的零美化语义界面：默认浏览器渲染、psql ASCII 文本表格作为资料事实来源、ECharts 只作为增强视图。`preview.js` 按需加载 `timelinejs.json`，提供按路径族散点、年代密度、时间窗口、事件详情和左右箭头阅读器。路径族展示使用中文标签，但 `timeline.json` 仍保留英文机器值。
 
 ## 3. 出版物入口
 

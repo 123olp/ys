@@ -6,7 +6,7 @@
 - Corrected known source mismatches for McCay 1935, Klass 1983, Hayflick 1961, HeLa, Dolly, and the 2016 Nature CRISPR human-trial report, and fixed the Japanese iPSC regulatory-report evidence grade.
 - Switched the history timeline preview to ECharts chart mode and added machine gates that keep timeline data, works subset, review register, and governance contract synchronized.
 - Added a publication manifest and display architecture for the history timeline: three scopes (all, works subset, locally reviewed) plus a publication gate for narrative works.
-- Optimized the history timeline viewer: preview HTML is now lightweight and loads `timelinejs.json` on demand, adds path-family scatter and century density modes, time-window filters, event detail reading, prev/next navigation, and a separate full psql event table.
+- Optimized the history timeline viewer: preview HTML is now lightweight and loads `timelinejs.json` on demand, adds path-family scatter and century density modes, time-window filters, a left/right arrow event reader, and a separate full psql event table.
 
 ## 2026-07-27
 

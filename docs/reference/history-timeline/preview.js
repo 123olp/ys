@@ -328,7 +328,7 @@
     chart.setOption(state.mode === "density" ? densityOption() : scatterOption(), true);
     chart.resize();
     if (currentIndex < 0 || !filtered[currentIndex]) {
-      showDetail(-1);
+      showDetail(filtered.length ? 0 : -1);
     } else {
       showDetail(currentIndex);
     }
