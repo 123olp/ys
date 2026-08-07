@@ -1,6 +1,6 @@
 {
   "timeline_id": "HITL-EIMM-001",
-  "version": "2.401.0",
+  "version": "2.401.2",
   "sources": [
     {
       "source_id": "SRC-001",
@@ -6884,15 +6884,6 @@
       "doi": "10.1016/j.jnha.2025.100637",
       "access_date": "2026-08-07",
       "note": "The Journal of Nutrition, Health and Aging；Crossref/DOI 元数据核验。"
-    },
-    {
-      "source_id": "SRC-795",
-      "source_type": "primary",
-      "label": "Revisiting metformin as a geroprotector",
-      "url": "https://doi.org/10.1016/j.archger.2026.106208",
-      "doi": "10.1016/j.archger.2026.106208",
-      "access_date": "2026-08-07",
-      "note": "Archives of Gerontology and Geriatrics；Crossref/DOI 元数据核验。"
     },
     {
       "source_id": "SRC-796",
@@ -23129,5 +23120,5 @@
       "note": "原 NIH ACD 页面返回 403；使用可访问的二手百科作为背景，后续可补一手档案。"
     }
   ],
-  "updated_at": "2026-08-07T15:52:34Z"
+  "updated_at": "2026-08-07T16:05:00Z"
 }

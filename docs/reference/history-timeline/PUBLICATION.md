@@ -27,7 +27,7 @@ raw_timeline（全部资料）
 
 `preview.html` 提供三档范围：
 
-1. `全部资料`：显示 `timeline.json` 中全部 2584 条事件，用于资料巡检。
+1. `全部资料`：显示 `timeline.json` 中全部 2583 条事件，用于资料巡检。
 2. `作品子集`：只显示 `works-subset.v1.json` 中 399 条候选事件，用于作品编辑。
 3. `本地已复核`：只显示 `verification_status=locally_reviewed` 的事件，用于审阅推进。
 

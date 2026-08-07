@@ -1,9 +1,9 @@
 {
   "timeline_id": "HITL-EIMM-001",
   "title": "Human Infra 永生史严肃历史年表",
-  "version": "2.401.0",
-  "description": "从《人类永生研究：大历史重要事件一览》与公共永生史转成的结构化年表；2584 条事件、2594 个来源卡片、31 个时期定义。",
-  "updated_at": "2026-08-07T15:52:34Z",
+  "version": "2.401.2",
+  "description": "从《人类永生研究：大历史重要事件一览》与公共永生史转成的结构化年表；2583 条事件、2593 个来源卡片、31 个时期定义。",
+  "updated_at": "2026-08-07T16:05:00Z",
   "events": [
     {
       "event_id": "HIT-MTH-001",
@@ -15290,7 +15290,7 @@
     {
       "event_id": "HIT-THT-132",
       "title": "重新审视二甲双胍作为 geroprotector 综述发表",
-      "date_start": "2026-07-10",
+      "date_start": "2026-03-09",
       "date_type": "exact",
       "period_id": "period-21st-century",
       "civilization": "International",
@@ -15300,7 +15300,7 @@
       "claim": "该综述重新评估二甲双胍作为衰老保护药物的证据与边界。",
       "summary": "对二甲双胍证据的反复审查是长寿药理学避免单一药物叙事的关键。",
       "sources": [
-        "SRC-552"
+        "SRC-535"
       ],
       "evidence_grade": "I",
       "verification_status": "unreviewed",
@@ -15309,9 +15309,9 @@
       "uncertainty": "本记录基于期刊元数据和论文标题，尚未完成全文语境复核。",
       "cross_links": [],
       "chapter": "长寿药理学与老年医学试验",
-      "notes": "第 88-92 轮精选批次：Crossref/DOI 核验；待本地复核。；日期补齐：Crossref 2026-07-10",
+      "notes": "第 88-92 轮精选批次：Crossref/DOI 核验；2026-08-07 修正来源交叉错绑：真实 DOI 为 10.1016/j.archger.2026.106208，Crossref 日期 2026-03-09；合并后补重复事件 HIT-THT-257。",
       "created_at": "2026-08-06T16:21:15Z",
-      "updated_at": "2026-08-07T10:09:23Z"
+      "updated_at": "2026-08-07T16:05:00Z"
     },
     {
       "event_id": "HIT-THT-133",
@@ -15742,7 +15742,7 @@
       "claim": "该范围综述分析西班牙饮食与营养社会决定因素对健康老龄化的影响。",
       "summary": "营养健康不能只作为个体行为，必须纳入食物环境和社会支持。",
       "sources": [
-        "SRC-535"
+        "SRC-552"
       ],
       "evidence_grade": "I",
       "verification_status": "unreviewed",
@@ -15751,9 +15751,9 @@
       "uncertainty": "本记录基于期刊元数据和论文标题，尚未完成全文语境复核。",
       "cross_links": [],
       "chapter": "健康老龄化、公平与治理",
-      "notes": "第 88-92 轮精选批次：Crossref/DOI 核验；待本地复核。",
+      "notes": "第 88-92 轮精选批次：Crossref/DOI 核验；2026-08-07 修正来源交叉错绑：真实 DOI 为 10.1007/s12062-026-09578-0，来源卡复用 SRC-552。",
       "created_at": "2026-08-06T16:21:15Z",
-      "updated_at": "2026-08-06T16:21:15Z"
+      "updated_at": "2026-08-07T16:05:00Z"
     },
     {
       "event_id": "HIT-THT-146",
@@ -22018,32 +22018,6 @@
       "cross_links": [],
       "chapter": "健康寿命、衰老测量与长寿医学监管",
       "notes": "第 140 轮补录：长寿医学监管与终点设计；待本地复核。；日期补齐：Crossref 2025-07-23",
-      "created_at": "2026-08-06T16:49:46Z",
-      "updated_at": "2026-08-07T10:09:23Z"
-    },
-    {
-      "event_id": "HIT-THT-257",
-      "title": "《Revisiting metformin as a geroprotector》论文发表",
-      "date_start": "2026-03-09",
-      "date_type": "exact",
-      "period_id": "period-21st-century",
-      "civilization": "International",
-      "region": "Global",
-      "path_family": "social_composite",
-      "event_type": "thought",
-      "claim": "该文献围绕长寿医学监管与终点设计重新评估二甲双胍作为老年保护剂的证据。",
-      "summary": "该节点将二甲双胍老年保护证据纳入长寿干预评估路径。",
-      "sources": [
-        "SRC-795"
-      ],
-      "evidence_grade": "I",
-      "verification_status": "unreviewed",
-      "status": "draft",
-      "significance": "major",
-      "uncertainty": "本记录基于期刊元数据和论文标题，尚未完成全文语境复核。",
-      "cross_links": [],
-      "chapter": "健康寿命、衰老测量与长寿医学监管",
-      "notes": "第 140 轮补录：长寿医学监管与终点设计；待本地复核。；日期补齐：Crossref 2026-03-09",
       "created_at": "2026-08-06T16:49:46Z",
       "updated_at": "2026-08-07T10:09:23Z"
     },
