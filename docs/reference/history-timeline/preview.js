@@ -226,6 +226,7 @@
   function clearChartHighlight() {
     if (!chart || state.mode !== "path" || highlightedDataIndex < 0) return;
     chart.dispatchAction({ type: "downplay", seriesIndex: 0, dataIndex: highlightedDataIndex });
+    chart.dispatchAction({ type: "hideTip" });
     highlightedDataIndex = -1;
   }
 
@@ -235,6 +236,12 @@
       chart.dispatchAction({ type: "downplay", seriesIndex: 0, dataIndex: highlightedDataIndex });
     }
     chart.dispatchAction({ type: "highlight", seriesIndex: 0, dataIndex: currentIndex });
+    chart.dispatchAction({
+      type: "showTip",
+      seriesIndex: 0,
+      dataIndex: currentIndex,
+      name: currentEventId
+    });
     highlightedDataIndex = currentIndex;
   }
 
@@ -445,7 +452,6 @@
       chart.on("click", function (params) {
         if (params.data && typeof params.data._idx === "number") {
           showDetail(params.data._idx);
-          chart.dispatchAction({ type: "showTip", seriesIndex: 0, dataIndex: currentIndex });
           syncUrl("push");
         }
       });
