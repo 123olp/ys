@@ -52,6 +52,8 @@
   let events = [];
   let filtered = [];
   let currentIndex = -1;
+  let currentEventId = params.get("event") || "";
+  let highlightedDataIndex = -1;
   let chart = null;
 
   const chartEl = document.getElementById("chart");
@@ -197,6 +199,45 @@
       "；图表为增强视图，核心数据见表格和原始 JSON。";
   }
 
+  function urlParams() {
+    const next = new URLSearchParams();
+    if (state.q) next.set("q", state.q);
+    if (state.scope && state.scope !== "all") next.set("scope", state.scope);
+    if (state.period) next.set("period", state.period);
+    if (state.path) next.set("path", state.path);
+    if (state.type) next.set("type", state.type);
+    if (state.evidence) next.set("evidence", state.evidence);
+    if (state.mode && state.mode !== "path") next.set("mode", state.mode);
+    if (state.window && state.window !== "all") next.set("window", state.window);
+    if (currentEventId) next.set("event", currentEventId);
+    return next;
+  }
+
+  function syncUrl(mode) {
+    const query = urlParams().toString();
+    const url = "preview.html" + (query ? "?" + query : "");
+    if (mode === "replace") {
+      history.replaceState(null, "", url);
+    } else {
+      history.pushState(null, "", url);
+    }
+  }
+
+  function clearChartHighlight() {
+    if (!chart || state.mode !== "path" || highlightedDataIndex < 0) return;
+    chart.dispatchAction({ type: "downplay", seriesIndex: 0, dataIndex: highlightedDataIndex });
+    highlightedDataIndex = -1;
+  }
+
+  function syncChartHighlight() {
+    if (!chart || state.mode !== "path" || currentIndex < 0) return;
+    if (highlightedDataIndex >= 0 && highlightedDataIndex !== currentIndex) {
+      chart.dispatchAction({ type: "downplay", seriesIndex: 0, dataIndex: highlightedDataIndex });
+    }
+    chart.dispatchAction({ type: "highlight", seriesIndex: 0, dataIndex: currentIndex });
+    highlightedDataIndex = currentIndex;
+  }
+
   function densityOption() {
     const binSize = 100;
     const years = filtered.map(function (event) {
@@ -273,7 +314,8 @@
         title: event.text && event.text.headline ? event.text.headline : "",
         dateLabel: dateLabel(event),
         meta: meta,
-        _idx: index
+        _idx: index,
+        symbolSize: index === currentIndex ? 14 : 7
       };
     });
     return {
@@ -309,7 +351,7 @@
       ],
       series: [{
         type: "scatter",
-        symbolSize: 7,
+        progressive: 1000,
         data: points
       }]
     };
@@ -318,15 +360,18 @@
   function showDetail(index) {
     if (!filtered.length || index < 0 || index >= filtered.length) {
       currentIndex = -1;
+      currentEventId = "";
       detailEmptyEl.hidden = false;
       detailTableCodeEl.textContent = "";
       detailTextEl.replaceChildren();
       navIndexEl.textContent = "";
+      clearChartHighlight();
       return;
     }
     currentIndex = index;
     const event = filtered[index];
     const meta = event.meta || {};
+    currentEventId = meta.event_id || "";
     detailEmptyEl.hidden = true;
     detailTableCodeEl.textContent = psqlTable(
       ["标题", "编号", "日期", "时期", "路径", "类型", "证据", "作品化", "来源"],
@@ -344,6 +389,7 @@
     );
     detailTextEl.innerHTML = event.text && event.text.text ? event.text.text : "";
     navIndexEl.textContent = (index + 1) + " / " + filtered.length;
+    syncChartHighlight();
   }
 
   function moveEvent(delta) {
@@ -354,10 +400,32 @@
       currentIndex = (currentIndex + delta + filtered.length) % filtered.length;
     }
     showDetail(currentIndex);
+    syncUrl("push");
+  }
+
+  function resolveCurrentIndex() {
+    if (!filtered.length) {
+      currentIndex = -1;
+      return;
+    }
+    if (currentEventId) {
+      const index = filtered.findIndex(function (event) {
+        return event.meta && event.meta.event_id === currentEventId;
+      });
+      if (index >= 0) {
+        currentIndex = index;
+        return;
+      }
+    }
+    const preferredIndex = filtered.findIndex(function (event) {
+      return event.meta && event.meta.event_id === PREFERRED_EVENT_ID;
+    });
+    currentIndex = preferredIndex >= 0 ? preferredIndex : 0;
   }
 
   function render() {
     filtered = filteredEvents();
+    resolveCurrentIndex();
     updateCountAndStatus();
     if (!filtered.length) {
       if (chart) chart.setOption({ series: [] }, true);
@@ -377,19 +445,15 @@
       chart.on("click", function (params) {
         if (params.data && typeof params.data._idx === "number") {
           showDetail(params.data._idx);
+          chart.dispatchAction({ type: "showTip", seriesIndex: 0, dataIndex: currentIndex });
+          syncUrl("push");
         }
       });
     }
     chart.setOption(state.mode === "density" ? densityOption() : scatterOption(), true);
     chart.resize();
-    if (currentIndex < 0 || !filtered[currentIndex]) {
-      const preferredIndex = filtered.findIndex(function (event) {
-        return event.meta && event.meta.event_id === PREFERRED_EVENT_ID;
-      });
-      showDetail(preferredIndex >= 0 ? preferredIndex : (filtered.length ? 0 : -1));
-    } else {
-      showDetail(currentIndex);
-    }
+    highlightedDataIndex = -1;
+    showDetail(currentIndex);
   }
 
   function bindControls() {
@@ -397,11 +461,17 @@
       document.getElementById(id).addEventListener(eventName, function (event) {
         state[key] = event.target.value;
         render();
+        syncUrl("push");
       });
     }
+    let qTimer = null;
     document.getElementById("q").addEventListener("input", function (event) {
       state.q = event.target.value;
-      render();
+      clearTimeout(qTimer);
+      qTimer = setTimeout(function () {
+        render();
+        syncUrl("push");
+      }, 300);
     });
     bind("scope", "scope", "change");
     bind("period", "period", "change");
@@ -421,6 +491,21 @@
       if (tag === "INPUT" || tag === "SELECT" || tag === "TEXTAREA") return;
       if (event.key === "ArrowLeft") moveEvent(-1);
       if (event.key === "ArrowRight") moveEvent(1);
+    });
+    window.addEventListener("popstate", function () {
+      const nextParams = new URLSearchParams(window.location.search);
+      state.q = nextParams.get("q") || "";
+      state.scope = nextParams.get("scope") || "all";
+      state.period = nextParams.get("period") || "";
+      state.path = nextParams.get("path") || "";
+      state.type = nextParams.get("type") || "";
+      state.evidence = nextParams.get("evidence") || "";
+      state.mode = nextParams.get("mode") || "path";
+      state.window = nextParams.get("window") || "all";
+      currentEventId = nextParams.get("event") || "";
+      document.getElementById("q").value = state.q;
+      initSelects();
+      render();
     });
     window.addEventListener("resize", function () {
       if (chart) chart.resize();
@@ -475,6 +560,7 @@
       initSelects();
       bindControls();
       render();
+      syncUrl("replace");
     } catch (error) {
       chartStatusEl.textContent = "无法加载 timelinejs.json：" + error.message +
         "；可直接打开 timeline.json 或 timeline-events.psql.txt 阅读原始资料。";
