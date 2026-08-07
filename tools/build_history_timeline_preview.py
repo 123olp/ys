@@ -440,7 +440,6 @@ PREVIEW_TEMPLATE = r"""<!doctype html>
   <noscript><p>筛选和图表需要 JavaScript。核心数据仍可直接读取 <a href="timeline.json">timeline.json</a>、<a href="sources.json">sources.json</a> 与 <a href="timeline-events.psql.txt">timeline-events.psql.txt</a>。</p></noscript>
 
   <h2>资料聚合与整理</h2>
-  <p>从神话、宗教与炼金术，到老年科学、健康寿命和生物技术产业的严肃历史年表。时间轴为增强视图，psql 表格和原始 JSON 是资料事实来源。</p>
 
   <details>
     <summary>路径族与范围聚合</summary>
