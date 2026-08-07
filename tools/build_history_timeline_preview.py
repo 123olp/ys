@@ -439,21 +439,27 @@ PREVIEW_TEMPLATE = r"""<!doctype html>
   </form>
   <noscript><p>筛选和图表需要 JavaScript。核心数据仍可直接读取 <a href="timeline.json">timeline.json</a>、<a href="sources.json">sources.json</a> 与 <a href="timeline-events.psql.txt">timeline-events.psql.txt</a>。</p></noscript>
 
-  <details open>
-    <summary>资料聚合与整理</summary>
-    <p>从神话、宗教与炼金术，到老年科学、健康寿命和生物技术产业的严肃历史年表。时间轴为增强视图，psql 表格和原始 JSON 是资料事实来源。</p>
+  <h2>资料聚合与整理</h2>
+  <p>从神话、宗教与炼金术，到老年科学、健康寿命和生物技术产业的严肃历史年表。时间轴为增强视图，psql 表格和原始 JSON 是资料事实来源。</p>
 
-    <h3>路径族与范围聚合</h3>
+  <details>
+    <summary>路径族与范围聚合</summary>
     <pre><code>__PATH_TABLE__</code></pre>
+  </details>
 
-    <h3>事件类型与范围聚合</h3>
+  <details>
+    <summary>事件类型与范围聚合</summary>
     <pre><code>__TYPE_TABLE__</code></pre>
+  </details>
 
-    <h3>范围与复核状态</h3>
+  <details>
+    <summary>范围与复核状态</summary>
     <pre><code>__SCOPE_TABLE__</code></pre>
     <pre><code>__STATUS_TABLE__</code></pre>
+  </details>
 
-    <h3>资料与出版</h3>
+  <details>
+    <summary>资料与出版</summary>
     <table>
       <tbody>
         <tr>
@@ -478,11 +484,15 @@ PREVIEW_TEMPLATE = r"""<!doctype html>
         </tr>
       </tbody>
     </table>
+  </details>
 
-    <h3>本地已复核事件</h3>
+  <details>
+    <summary>本地已复核事件</summary>
     <pre><code>__REVIEWED_TABLE__</code></pre>
+  </details>
 
-    <h3>完整事件明细（__EVENT_COUNT__ 条）</h3>
+  <details open>
+    <summary>完整事件明细（__EVENT_COUNT__ 条）</summary>
     <pre><code>__EVENT_TABLE__</code></pre>
   </details>
 
