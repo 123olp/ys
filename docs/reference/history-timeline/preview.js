@@ -147,13 +147,13 @@
 
   function ensureFullEvents() {
     if (!fullEventsPromise) {
-      fullEventsPromise = fetch("timelinejs.json").then(function (response) {
+      fullEventsPromise = fetch("timelinejs.detail.json").then(function (response) {
         if (!response.ok) throw new Error("HTTP " + response.status);
         return response.json();
       }).then(function (data) {
         const byId = new Map();
         (data.events || []).forEach(function (event) {
-          byId.set(event.meta && event.meta.event_id, event);
+          byId.set(event.event_id, event);
         });
         return byId;
       });
@@ -171,8 +171,8 @@
     detailTextEl.textContent = "正在加载完整正文…";
     ensureFullEvents().then(function (byId) {
       if (currentIndex !== index) return;
-      const full = byId.get(filtered[index].meta.event_id);
-      detailTextEl.innerHTML = full && full.text && full.text.text ? full.text.text : "";
+      const detail = byId.get(filtered[index].meta.event_id);
+      detailTextEl.innerHTML = detail && detail.text ? detail.text : "";
     }).catch(function (error) {
       if (currentIndex !== index) return;
       detailTextEl.textContent = "完整正文加载失败：" + error.message;
@@ -767,7 +767,11 @@
   }
 
   async function load() {
-    chartStatusEl.textContent = "正在加载 timelinejs.light.json ...";
+    const detailPromise = ensureFullEvents();
+    detailPromise.catch(function () {
+      return null;
+    });
+    chartStatusEl.textContent = "正在加载年表数据与完整正文 ...";
     try {
       const response = await fetch("timelinejs.light.json");
       if (!response.ok) throw new Error("HTTP " + response.status);

@@ -32,11 +32,12 @@ echarts.min.js  本地化 ECharts 图表运行时（第三方资产）
 timeline-events.psql.txt  完整事件明细 psql 表格（生成物）
 timelinejs.json  图表发布数据，保留 TimelineJS JSON 兼容结构（生成物）
 timelinejs.light.json  图表与筛选用轻量发布数据，不含完整正文与来源链接（生成物）
+timelinejs.detail.json  事件阅读器专用紧凑正文数据（生成物）
 preview.html     ECharts 图表模式预览页（生成物）
 ```
 
 事件不得内嵌完整来源对象，必须通过 `sources` 数组引用 `sources.json` 中的 `source_id`。
-`timelinejs.json`、`timelinejs.light.json` 和 `preview.html` 是发布生成物，任何事件数据变化后都必须通过 `make history-timeline-preview` 重新生成，并保持门禁一致。当前预览只使用图表模式，不再回退到 TimelineJS 全量叙事渲染；`preview.js` 先加载轻量数据用于图表、筛选和聚合，事件完整正文在初始化时自动从 `timelinejs.json` 加载并直接显示；核心纯函数从 `preview-core.js` 导入，ECharts 使用本地 `echarts.min.js`，不依赖外部 CDN。
+`timelinejs.json`、`timelinejs.light.json`、`timelinejs.detail.json` 和 `preview.html` 是发布生成物，任何事件数据变化后都必须通过 `make history-timeline-preview` 重新生成，并保持门禁一致。当前预览只使用图表模式，不再回退到 TimelineJS 全量叙事渲染；`preview.js` 先加载轻量数据用于图表、筛选和聚合，事件完整正文在初始化时并行预载 `timelinejs.detail.json` 并直接显示；核心纯函数从 `preview-core.js` 导入，ECharts 使用本地 `echarts.min.js`，不依赖外部 CDN。
 
 `works-subset.v1.json` 只登记“进入作品化评审”的事件 ID，不表示复核通过；事件仍必须经历 `locally_reviewed` 和 `fresh_reviewed` 后才能进入 `published`。
 

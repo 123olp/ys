@@ -186,6 +186,18 @@ def build_timelinejs_light(timelinejs: dict) -> dict:
     }
 
 
+def build_timelinejs_detail(timelinejs: dict) -> dict:
+    return {
+        "events": [
+            {
+                "event_id": event.get("meta", {}).get("event_id", ""),
+                "text": event.get("text", {}).get("text", ""),
+            }
+            for event in timelinejs["events"]
+        ]
+    }
+
+
 def build_path_summary_table(timelinejs: dict) -> str:
     path_stats: dict[str, list[int]] = defaultdict(lambda: [0, 0, 0])
     totals = [0, 0, 0]
@@ -560,7 +572,19 @@ def main() -> None:
         encoding="utf-8",
     )
     (PACKAGE / "timelinejs.light.json").write_text(
-        json.dumps(build_timelinejs_light(timelinejs), ensure_ascii=False, indent=2) + "\n",
+        json.dumps(
+            build_timelinejs_light(timelinejs),
+            ensure_ascii=False,
+            separators=(",", ":"),
+        ) + "\n",
+        encoding="utf-8",
+    )
+    (PACKAGE / "timelinejs.detail.json").write_text(
+        json.dumps(
+            build_timelinejs_detail(timelinejs),
+            ensure_ascii=False,
+            separators=(",", ":"),
+        ) + "\n",
         encoding="utf-8",
     )
     (PACKAGE / "preview.html").write_text(render_preview(timelinejs), encoding="utf-8")
@@ -570,7 +594,7 @@ def main() -> None:
     )
     print(
         f"status=OK preview_events={len(timelinejs['events'])} "
-        "files=timelinejs.json,timelinejs.light.json,preview.html,timeline-events.psql.txt"
+        "files=timelinejs.json,timelinejs.light.json,timelinejs.detail.json,preview.html,timeline-events.psql.txt"
     )
 
 

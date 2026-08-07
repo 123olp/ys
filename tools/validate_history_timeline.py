@@ -8,7 +8,12 @@ import re
 import sys
 from pathlib import Path
 
-from build_history_timeline_preview import build_timelinejs, build_timelinejs_light, render_preview
+from build_history_timeline_preview import (
+    build_timelinejs,
+    build_timelinejs_detail,
+    build_timelinejs_light,
+    render_preview,
+)
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -40,6 +45,7 @@ REQUIRED_FILES = [
     "docs/reference/history-timeline/timeline-events.psql.txt",
     "docs/reference/history-timeline/timelinejs.json",
     "docs/reference/history-timeline/timelinejs.light.json",
+    "docs/reference/history-timeline/timelinejs.detail.json",
     "docs/reference/history-timeline/preview.html",
     "docs/templates/history-event.md",
     "tools/test_history_timeline_core.js",
@@ -437,6 +443,9 @@ def main() -> None:
     expected_light = build_timelinejs_light(expected_timelinejs)
     actual_light = load_json("docs/reference/history-timeline/timelinejs.light.json")
     require(actual_light == expected_light, "stale_timelinejs_light_preview")
+    expected_detail = build_timelinejs_detail(expected_timelinejs)
+    actual_detail = load_json("docs/reference/history-timeline/timelinejs.detail.json")
+    require(actual_detail == expected_detail, "stale_timelinejs_detail_preview")
     expected_preview = render_preview(expected_timelinejs)
     actual_preview = (ROOT / "docs/reference/history-timeline/preview.html").read_text(encoding="utf-8")
     require(actual_preview == expected_preview, "stale_preview_html")
@@ -456,6 +465,15 @@ def main() -> None:
     require(
         'id="load-full-event"' not in actual_preview,
         "preview_must_not_use_full_event_button",
+    )
+    preview_script = (ROOT / "docs/reference/history-timeline/preview.js").read_text(encoding="utf-8")
+    require(
+        'fetch("timelinejs.detail.json")' in preview_script,
+        "preview_must_load_detail_data",
+    )
+    require(
+        'fetch("timelinejs.json")' not in preview_script,
+        "preview_must_not_load_full_timelinejs",
     )
 
     contract_text = CONTRACT.read_text(encoding="utf-8")
