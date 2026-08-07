@@ -19,12 +19,20 @@
 timeline.json   事件
 sources.json    来源卡
 periods.json    时期定义与 PeriodO 映射
+works-subset.schema.json  作品子集 Schema
+works-subset.v1.json  第一版作品子集登记
+works-review-register.schema.json  本地复核登记 Schema
+works-review-register.v1.json  首批本地复核登记
 timelinejs.json  图表发布数据，保留 TimelineJS JSON 兼容结构（生成物）
 preview.html     ECharts 图表模式预览页（生成物）
 ```
 
 事件不得内嵌完整来源对象，必须通过 `sources` 数组引用 `sources.json` 中的 `source_id`。
 `timelinejs.json` 和 `preview.html` 是发布生成物，任何事件数据变化后都必须通过 `make history-timeline-preview` 重新生成，并保持门禁一致。当前预览只使用图表模式，不再回退到 TimelineJS 全量叙事渲染。
+
+`works-subset.v1.json` 只登记“进入作品化评审”的事件 ID，不表示复核通过；事件仍必须经历 `locally_reviewed` 和 `fresh_reviewed` 后才能进入 `published`。
+
+`works-review-register.v1.json` 记录本地复核结论，必须与 `timeline.json` 的 `verification_status`、`works-subset.v1.json` 的计数保持一致。
 
 ## 3. 事件标识
 

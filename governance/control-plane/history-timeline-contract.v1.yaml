@@ -18,6 +18,10 @@ spec:
     timeline_data: docs/reference/history-timeline/timeline.json
     source_registry: docs/reference/history-timeline/sources.json
     period_registry: docs/reference/history-timeline/periods.json
+    works_subset_schema: docs/reference/history-timeline/works-subset.schema.json
+    works_subset: docs/reference/history-timeline/works-subset.v1.json
+    works_review_register_schema: docs/reference/history-timeline/works-review-register.schema.json
+    works_review_register: docs/reference/history-timeline/works-review-register.v1.json
     timelinejs_data: docs/reference/history-timeline/timelinejs.json
     preview: docs/reference/history-timeline/preview.html
     contract: docs/reference/history-timeline/CONTRACT.md
@@ -35,6 +39,10 @@ spec:
     - docs/reference/history-timeline/sources.schema.json
     - docs/reference/history-timeline/periods.schema.json
     - docs/reference/history-timeline/example-events.json
+    - docs/reference/history-timeline/works-subset.schema.json
+    - docs/reference/history-timeline/works-subset.v1.json
+    - docs/reference/history-timeline/works-review-register.schema.json
+    - docs/reference/history-timeline/works-review-register.v1.json
     - docs/reference/history-timeline/timeline.json
     - docs/reference/history-timeline/sources.json
     - docs/reference/history-timeline/periods.json

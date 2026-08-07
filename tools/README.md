@@ -151,6 +151,7 @@
 - `audit_human_infra_falsifier_source_card_extraction.py`: verifies that all current source anchors from `docs/reference/human-infra-falsifier-source-card-extraction.json` map to exact source identity, Human Infra domains, paper claims, model positions, transfer boundaries and the human-readable source-note pack.
 - `check_repository.py`: verifies required files, required directories, temporary filename cleanup, Python cache cleanup, and local Markdown links.
 - `validate_history_timeline.py`: validates the 永生史 history timeline machine contract, including required files, JSON Schema shape, event/source uniqueness, enum values, and governance contract path alignment.
+- `select_history_timeline_works_subset.py`: generates the first-edition works subset from the history timeline, balancing periods, path families, event types, evidence grades, and turning-point priority without changing review status.
 - `update_domain_doc_contracts.py`: regenerates standard README/AGENTS metadata, research-skeleton, maintenance-contract, and agent-workflow blocks for every formal research domain from the possibility-space classification table.
 
 Reusable tool package:
@@ -203,6 +204,7 @@ python3 tools/arxiv_html_paper_tool.py verify-assets --public-dir build/arxiv-ht
 make claim-matrix-audit
 make history-timeline-gate
 make history-timeline-preview
+make history-timeline-works-subset
 make maturity-gap-audit
 make model-admission-contract-audit
 make model-admission-candidate-registry-audit

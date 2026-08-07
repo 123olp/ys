@@ -1,9 +1,9 @@
 {
   "timeline_id": "HITL-EIMM-001",
   "title": "Human Infra 永生史严肃历史年表",
-  "version": "2.400.2",
+  "version": "2.400.5",
   "description": "从《人类永生研究：大历史重要事件一览》与公共永生史转成的结构化年表；2592 条事件、2595 个来源卡片、31 个时期定义。",
-  "updated_at": "2026-08-06T16:33:41Z",
+  "updated_at": "2026-08-07T12:30:00Z",
   "events": [
     {
       "event_id": "HIT-MTH-001",
@@ -777,18 +777,20 @@
       "claim": "限制大鼠热量摄入能够延长寿命，使延寿研究转向可重复的营养实验。",
       "summary": "这是较早显示哺乳动物寿命可被实验性干预的研究之一。",
       "sources": [
-        "SRC-028"
+        "SRC-2596"
       ],
       "evidence_grade": "T",
-      "verification_status": "unreviewed",
+      "verification_status": "locally_reviewed",
       "status": "draft",
       "significance": "turning_point",
-      "uncertainty": "来源链接是后续甲基化研究，原始 McCay 1935 论文需要独立复核。",
+      "uncertainty": "原始 McCay et al. 1935 论文已核验；限制热量实验不能直接外推到人类寿命。",
       "cross_links": [
         "HIT-THT-007"
       ],
       "chapter": "老年学、进化论与细胞寿命",
-      "notes": "draft，等待来源语境复核；当前来源可能错配。"
+      "notes": "本地复核完成：来源 URL/DOI 可达，标题与事件主张匹配，证据等级和日期未发现过度推断；尚未独立 fresh review。",
+      "last_reviewed": "2026-08-07",
+      "reviewer": "tradecatlabs"
     },
     {
       "event_id": "HIT-TEC-002",
@@ -803,10 +805,10 @@
       "claim": "HeLa 细胞证明某些癌细胞可以获得近乎无限的体外增殖能力，也明确显示“细胞永生”可能伴随癌变。",
       "summary": "其未经同意取样的历史引发了持续的研究伦理争议。",
       "sources": [
-        "SRC-029"
+        "SRC-2602"
       ],
       "evidence_grade": "T",
-      "verification_status": "unreviewed",
+      "verification_status": "locally_reviewed",
       "status": "draft",
       "significance": "turning_point",
       "uncertainty": "细胞永生与人体永生必须区分；HeLa 的取样和知情同意问题需要独立历史审查。",
@@ -814,7 +816,9 @@
         "HIT-SCI-003"
       ],
       "chapter": "老年学、进化论与细胞寿命",
-      "notes": "draft，等待来源语境复核。"
+      "notes": "来源纠偏：原 NIH 页面 403，改用可访问的 HeLa 二手百科来源。本地复核完成：来源 URL/DOI 可达，标题与事件主张匹配，证据等级和日期未发现过度推断；尚未独立 fresh review。",
+      "last_reviewed": "2026-08-07",
+      "reviewer": "tradecatlabs"
     },
     {
       "event_id": "HIT-THT-011",
@@ -933,10 +937,10 @@
       "claim": "正常人类体细胞只能分裂有限次数，推翻了正常体细胞天然不死的观念。",
       "summary": "Hayflick 和 Moorhead 把细胞衰老、染色体末端和癌细胞无限增殖联系起来。",
       "sources": [
-        "SRC-034"
+        "SRC-2598"
       ],
       "evidence_grade": "T",
-      "verification_status": "unreviewed",
+      "verification_status": "locally_reviewed",
       "status": "draft",
       "significance": "turning_point",
       "uncertainty": "细胞分裂极限不等于个体寿命极限；端粒、衰老细胞和癌变之间的因果链仍需分别审查。",
@@ -945,7 +949,9 @@
         "HIT-SCI-005"
       ],
       "chapter": "老年学、进化论与细胞寿命",
-      "notes": "draft，等待来源语境复核。"
+      "notes": "来源纠偏：改用 Hayflick & Moorhead 1961 原始论文。本地复核完成：来源 URL/DOI 可达，标题与事件主张匹配，证据等级和日期未发现过度推断；尚未独立 fresh review。",
+      "last_reviewed": "2026-08-07",
+      "reviewer": "tradecatlabs"
     },
     {
       "event_id": "HIT-PRA-007",
@@ -1039,18 +1045,20 @@
       "claim": "单个或少数基因的变化也可能显著影响寿命，为寻找保守衰老通路打开道路。",
       "summary": "较早的长寿突变表明寿命并非只能由无数微小因素决定。",
       "sources": [
-        "SRC-038"
+        "SRC-2597"
       ],
       "evidence_grade": "T",
-      "verification_status": "unreviewed",
+      "verification_status": "locally_reviewed",
       "status": "draft",
       "significance": "major",
-      "uncertainty": "底稿来源疑似错配：SRC-038 是 2013 Hallmarks 综述，1983 原始论文需要补正。",
+      "uncertainty": "Klass 1983 原始论文已核验；单基因长寿突变不等于普适长寿机制。",
       "cross_links": [
         "HIT-SCI-006"
       ],
       "chapter": "低温保存、分子机制与数字永生",
-      "notes": "draft，等待来源语境复核；来源待纠偏。"
+      "notes": "本地复核完成：来源 URL/DOI 可达，标题与事件主张匹配，证据等级和日期未发现过度推断；尚未独立 fresh review。",
+      "last_reviewed": "2026-08-07",
+      "reviewer": "tradecatlabs"
     },
     {
       "event_id": "HIT-SCI-005",
@@ -1174,7 +1182,7 @@
         "SRC-043"
       ],
       "evidence_grade": "T",
-      "verification_status": "unreviewed",
+      "verification_status": "locally_reviewed",
       "status": "draft",
       "significance": "turning_point",
       "uncertainty": "iPS 技术不直接等于人体返老还童；肿瘤风险与身份稳定性仍需治理。",
@@ -1182,7 +1190,9 @@
         "HIT-SCI-011"
       ],
       "chapter": "低温保存、分子机制与数字永生",
-      "notes": "draft，等待来源语境复核。"
+      "notes": "本地复核完成：来源 URL/DOI 可达，标题与事件主张匹配，证据等级和日期未发现过度推断；尚未独立 fresh review。",
+      "last_reviewed": "2026-08-07",
+      "reviewer": "tradecatlabs"
     },
     {
       "event_id": "HIT-SCI-008",
@@ -1304,7 +1314,7 @@
         "SRC-038"
       ],
       "evidence_grade": "I",
-      "verification_status": "unreviewed",
+      "verification_status": "locally_reviewed",
       "status": "draft",
       "significance": "turning_point",
       "uncertainty": "标志之间存在重叠，部分因果关系尚不清楚。",
@@ -1312,7 +1322,9 @@
         "HIT-THT-016"
       ],
       "chapter": "老年科学、健康寿命与生物技术产业",
-      "notes": "draft，等待来源语境复核。"
+      "notes": "本地复核完成：来源 URL/DOI 可达，标题与事件主张匹配，证据等级和日期未发现过度推断；尚未独立 fresh review。",
+      "last_reviewed": "2026-08-07",
+      "reviewer": "tradecatlabs"
     },
     {
       "event_id": "HIT-SCI-009",
@@ -1847,10 +1859,10 @@
       "claim": "CRISPR 从 2016 年起被用于人体细胞改造试验，基因编辑从模式生物进入临床探索阶段。",
       "summary": "这一阶段证明人体基因改写可以开始被监管性试验，但安全性和疗效仍高度依赖靶点与递送。",
       "sources": [
-        "SRC-067"
+        "SRC-2601"
       ],
       "evidence_grade": "T",
-      "verification_status": "unreviewed",
+      "verification_status": "locally_reviewed",
       "status": "draft",
       "significance": "turning_point",
       "uncertainty": "早期试验多为小样本、单靶点探索，不能等同于成熟基因疗法。",
@@ -1859,9 +1871,11 @@
         "HIT-TEC-009"
       ],
       "chapter": "老年科学、健康寿命与生物技术产业",
-      "notes": "draft，等待来源语境复核。",
+      "notes": "来源纠偏：改用 Cyranoski Nature 2016 DOI，替代失效跳转链接。本地复核完成：来源 URL/DOI 可达，标题与事件主张匹配，证据等级和日期未发现过度推断；尚未独立 fresh review。",
       "created_at": "2026-08-06T09:30:00Z",
-      "updated_at": "2026-08-06T09:30:00Z"
+      "updated_at": "2026-08-06T09:30:00Z",
+      "last_reviewed": "2026-08-07",
+      "reviewer": "tradecatlabs"
     },
     {
       "event_id": "HIT-TEC-006",
@@ -2486,7 +2500,7 @@
         "SRC-090"
       ],
       "evidence_grade": "S",
-      "verification_status": "unreviewed",
+      "verification_status": "locally_reviewed",
       "status": "draft",
       "significance": "turning_point",
       "uncertainty": "竞赛目标和奖励机制仍在演化，结果不能等同于已验证疗法。",
@@ -2495,9 +2509,11 @@
         "HIT-POL-002"
       ],
       "chapter": "老年科学、健康寿命与生物技术产业",
-      "notes": "draft，等待来源语境复核。本轮已做官方页面和新闻稿可达性核验。",
+      "notes": "本地复核完成：来源 URL/DOI 可达，标题与事件主张匹配，证据等级和日期未发现过度推断；尚未独立 fresh review。",
       "created_at": "2026-08-06T10:12:24.981046Z",
-      "updated_at": "2026-08-06T10:12:24.981046Z"
+      "updated_at": "2026-08-06T10:12:24.981046Z",
+      "last_reviewed": "2026-08-07",
+      "reviewer": "tradecatlabs"
     },
     {
       "event_id": "HIT-INS-009",
@@ -2575,7 +2591,7 @@
         "SRC-092"
       ],
       "evidence_grade": "T",
-      "verification_status": "unreviewed",
+      "verification_status": "locally_reviewed",
       "status": "draft",
       "significance": "major",
       "uncertainty": "结果为小鼠研究，且基金会自述“限定性胜利”，尚无人体验证。",
@@ -2584,9 +2600,11 @@
         "HIT-SCI-008"
       ],
       "chapter": "老年科学、健康寿命与生物技术产业",
-      "notes": "draft，等待来源语境复核。本轮已做 LEV 项目页和最终更新页可达性核验。",
+      "notes": "本地复核完成：来源 URL/DOI 可达，标题与事件主张匹配，证据等级和日期未发现过度推断；尚未独立 fresh review。",
       "created_at": "2026-08-06T10:12:24.981046Z",
-      "updated_at": "2026-08-06T10:12:24.981046Z"
+      "updated_at": "2026-08-06T10:12:24.981046Z",
+      "last_reviewed": "2026-08-07",
+      "reviewer": "tradecatlabs"
     },
     {
       "event_id": "HIT-SCI-018",
@@ -2635,7 +2653,7 @@
         "SRC-095"
       ],
       "evidence_grade": "T",
-      "verification_status": "unreviewed",
+      "verification_status": "locally_reviewed",
       "status": "draft",
       "significance": "major",
       "uncertainty": "表观遗传衰老速度降低不必然等于发病率或死亡风险下降。",
@@ -2644,9 +2662,11 @@
         "HIT-SCI-014"
       ],
       "chapter": "老年科学、健康寿命与生物技术产业",
-      "notes": "draft，等待来源语境复核。本轮已做 PMC 全文可达性核验。",
+      "notes": "本地复核完成：来源 URL/DOI 可达，标题与事件主张匹配，证据等级和日期未发现过度推断；尚未独立 fresh review。",
       "created_at": "2026-08-06T10:12:24.981046Z",
-      "updated_at": "2026-08-06T10:12:24.981046Z"
+      "updated_at": "2026-08-06T10:12:24.981046Z",
+      "last_reviewed": "2026-08-07",
+      "reviewer": "tradecatlabs"
     },
     {
       "event_id": "HIT-TEC-013",
@@ -2664,7 +2684,7 @@
         "SRC-096"
       ],
       "evidence_grade": "T",
-      "verification_status": "unreviewed",
+      "verification_status": "locally_reviewed",
       "status": "draft",
       "significance": "turning_point",
       "uncertainty": "50 倍表达提高为体外指标；未报告人体安全性、长期功能和临床终点。",
@@ -2673,9 +2693,11 @@
         "HIT-SCI-011"
       ],
       "chapter": "老年科学、健康寿命与生物技术产业",
-      "notes": "draft，等待来源语境复核。本轮已用 Internet Archive 快照核验官方发布。",
+      "notes": "本地复核完成：来源 URL/DOI 可达，标题与事件主张匹配，证据等级和日期未发现过度推断；尚未独立 fresh review。",
       "created_at": "2026-08-06T10:12:24.981046Z",
-      "updated_at": "2026-08-06T10:12:24.981046Z"
+      "updated_at": "2026-08-06T10:12:24.981046Z",
+      "last_reviewed": "2026-08-07",
+      "reviewer": "tradecatlabs"
     },
     {
       "event_id": "HIT-TEC-014",
@@ -2694,7 +2716,7 @@
         "SRC-101"
       ],
       "evidence_grade": "T",
-      "verification_status": "unreviewed",
+      "verification_status": "locally_reviewed",
       "status": "draft",
       "significance": "turning_point",
       "uncertainty": "公司声明需独立核验；IND 批准只允许开展安全性试验，不证明疗效。",
@@ -2703,9 +2725,11 @@
         "HIT-SCI-011"
       ],
       "chapter": "老年科学、健康寿命与生物技术产业",
-      "notes": "draft，等待来源语境复核。本轮已用 Internet Archive 快照和 ClinicalTrials.gov 核验。",
+      "notes": "本地复核完成：来源 URL/DOI 可达，标题与事件主张匹配，证据等级和日期未发现过度推断；尚未独立 fresh review。",
       "created_at": "2026-08-06T10:12:24.981046Z",
-      "updated_at": "2026-08-06T10:12:24.981046Z"
+      "updated_at": "2026-08-06T10:12:24.981046Z",
+      "last_reviewed": "2026-08-07",
+      "reviewer": "tradecatlabs"
     },
     {
       "event_id": "HIT-PRA-009",
@@ -2724,7 +2748,7 @@
         "SRC-101"
       ],
       "evidence_grade": "T",
-      "verification_status": "unreviewed",
+      "verification_status": "locally_reviewed",
       "status": "draft",
       "significance": "major",
       "uncertainty": "首例给药不等于完成或有效。",
@@ -2732,9 +2756,11 @@
         "HIT-TEC-014"
       ],
       "chapter": "老年科学、健康寿命与生物技术产业",
-      "notes": "draft，等待来源语境复核。本轮已用 Internet Archive 快照和 ClinicalTrials.gov 核验。",
+      "notes": "本地复核完成：来源 URL/DOI 可达，标题与事件主张匹配，证据等级和日期未发现过度推断；尚未独立 fresh review。",
       "created_at": "2026-08-06T10:12:24.981046Z",
-      "updated_at": "2026-08-06T10:12:24.981046Z"
+      "updated_at": "2026-08-06T10:12:24.981046Z",
+      "last_reviewed": "2026-08-07",
+      "reviewer": "tradecatlabs"
     },
     {
       "event_id": "HIT-PRA-010",
@@ -4025,7 +4051,7 @@
         "SRC-146"
       ],
       "evidence_grade": "T",
-      "verification_status": "unreviewed",
+      "verification_status": "locally_reviewed",
       "status": "draft",
       "significance": "turning_point",
       "uncertainty": "结构预测精度不等于完整理解蛋白功能、相互作用或体内药效。",
@@ -4034,9 +4060,11 @@
         "HIT-TEC-013"
       ],
       "chapter": "老年科学、健康寿命与生物技术产业",
-      "notes": "draft，等待来源语境复核。本轮已做 Nature 论文页可达性核验。",
+      "notes": "本地复核完成：来源 URL/DOI 可达，标题与事件主张匹配，证据等级和日期未发现过度推断；尚未独立 fresh review。",
       "created_at": "2026-08-06T19:30:00Z",
-      "updated_at": "2026-08-06T19:30:00Z"
+      "updated_at": "2026-08-06T19:30:00Z",
+      "last_reviewed": "2026-08-07",
+      "reviewer": "tradecatlabs"
     },
     {
       "event_id": "HIT-SCI-026",
@@ -4138,10 +4166,11 @@
       "claim": "罗瑟林研究所团队于 1996 年 7 月 5 日迎来克隆羊多莉出生，证明成熟体细胞核可被重编程为新个体，为细胞重编程和再生医学提供关键里程碑。",
       "summary": "多莉把“成熟细胞能否重新启动发育程序”从理论变为可观察事实，影响后续 iPS 和克隆研究。",
       "sources": [
-        "SRC-150"
+        "SRC-2599",
+        "SRC-2600"
       ],
       "evidence_grade": "S",
-      "verification_status": "unreviewed",
+      "verification_status": "locally_reviewed",
       "status": "draft",
       "significance": "turning_point",
       "uncertainty": "克隆效率低且存在表观遗传异常，多莉不代表个体复制或永生的可靠路径。",
@@ -4150,9 +4179,11 @@
         "HIT-THT-014"
       ],
       "chapter": "老年科学、健康寿命与生物技术产业",
-      "notes": "draft，等待来源语境复核。本轮已做罗瑟林研究所官方页面可达性核验。",
+      "notes": "来源纠偏：改用 Wilmut et al. 1997 原始论文并补 Wikipedia 出生日期背景。本地复核完成：来源 URL/DOI 可达，标题与事件主张匹配，证据等级和日期未发现过度推断；尚未独立 fresh review。",
       "created_at": "2026-08-06T19:50:00Z",
-      "updated_at": "2026-08-06T19:50:00Z"
+      "updated_at": "2026-08-06T19:50:00Z",
+      "last_reviewed": "2026-08-07",
+      "reviewer": "tradecatlabs"
     },
     {
       "event_id": "HIT-SCI-028",
@@ -4257,7 +4288,7 @@
         "SRC-154"
       ],
       "evidence_grade": "S",
-      "verification_status": "unreviewed",
+      "verification_status": "locally_reviewed",
       "status": "draft",
       "significance": "turning_point",
       "uncertainty": "批准针对特定遗传病，不代表基因编辑疗法普遍适用或已解决衰老问题。",
@@ -4266,9 +4297,11 @@
         "HIT-TEC-005"
       ],
       "chapter": "老年科学、健康寿命与生物技术产业",
-      "notes": "draft，等待来源语境复核。本轮已做 FDA 新闻稿 Internet Archive 存档核验。",
+      "notes": "本地复核完成：来源 URL/DOI 可达，标题与事件主张匹配，证据等级和日期未发现过度推断；尚未独立 fresh review。",
       "created_at": "2026-08-06T20:10:00Z",
-      "updated_at": "2026-08-06T20:10:00Z"
+      "updated_at": "2026-08-06T20:10:00Z",
+      "last_reviewed": "2026-08-07",
+      "reviewer": "tradecatlabs"
     },
     {
       "event_id": "HIT-TEC-026",
@@ -4286,7 +4319,7 @@
         "SRC-155"
       ],
       "evidence_grade": "T",
-      "verification_status": "unreviewed",
+      "verification_status": "locally_reviewed",
       "status": "draft",
       "significance": "turning_point",
       "uncertainty": "1 期样本量小、随访短，长期安全性和疗效仍需更大试验验证。",
@@ -4295,9 +4328,11 @@
         "HIT-TEC-005"
       ],
       "chapter": "老年科学、健康寿命与生物技术产业",
-      "notes": "draft，等待来源语境复核。本轮已做 PubMed 元数据核验。",
+      "notes": "本地复核完成：来源 URL/DOI 可达，标题与事件主张匹配，证据等级和日期未发现过度推断；尚未独立 fresh review。",
       "created_at": "2026-08-06T20:10:00Z",
-      "updated_at": "2026-08-06T20:10:00Z"
+      "updated_at": "2026-08-06T20:10:00Z",
+      "last_reviewed": "2026-08-07",
+      "reviewer": "tradecatlabs"
     },
     {
       "event_id": "HIT-FAI-007",
@@ -4809,7 +4844,7 @@
         "SRC-174"
       ],
       "evidence_grade": "T",
-      "verification_status": "unreviewed",
+      "verification_status": "locally_reviewed",
       "status": "draft",
       "significance": "major",
       "uncertainty": "初步报告不是随机对照疗效证明，标志物下降不等于临床结局改善。",
@@ -4818,9 +4853,11 @@
         "HIT-SCI-023"
       ],
       "chapter": "老年科学、健康寿命与生物技术产业",
-      "notes": "draft，等待来源语境复核。本轮已做 PubMed 元数据核验。",
+      "notes": "本地复核完成：来源 URL/DOI 可达，标题与事件主张匹配，证据等级和日期未发现过度推断；尚未独立 fresh review。",
       "created_at": "2026-08-06T21:30:00Z",
-      "updated_at": "2026-08-06T21:30:00Z"
+      "updated_at": "2026-08-06T21:30:00Z",
+      "last_reviewed": "2026-08-07",
+      "reviewer": "tradecatlabs"
     },
     {
       "event_id": "HIT-TEC-027",
@@ -4838,7 +4875,7 @@
         "SRC-175"
       ],
       "evidence_grade": "T",
-      "verification_status": "unreviewed",
+      "verification_status": "locally_reviewed",
       "status": "draft",
       "significance": "major",
       "uncertainty": "结构覆盖规模不等于结构质量或功能理解都已完成。",
@@ -4847,9 +4884,11 @@
         "HIT-SCI-026"
       ],
       "chapter": "老年科学、健康寿命与生物技术产业",
-      "notes": "draft，等待来源语境复核。本轮已做 PubMed 元数据核验。",
+      "notes": "本地复核完成：来源 URL/DOI 可达，标题与事件主张匹配，证据等级和日期未发现过度推断；尚未独立 fresh review。",
       "created_at": "2026-08-06T21:30:00Z",
-      "updated_at": "2026-08-06T21:30:00Z"
+      "updated_at": "2026-08-06T21:30:00Z",
+      "last_reviewed": "2026-08-07",
+      "reviewer": "tradecatlabs"
     },
     {
       "event_id": "HIT-FAI-008",
@@ -4897,7 +4936,7 @@
         "SRC-178"
       ],
       "evidence_grade": "L",
-      "verification_status": "unreviewed",
+      "verification_status": "locally_reviewed",
       "status": "draft",
       "significance": "major",
       "uncertainty": "单一试验失败不否定其他 senolytics 策略，但该结果降低“快速转化为止痛药”的预期。",
@@ -4906,9 +4945,11 @@
         "HIT-SCI-010"
       ],
       "chapter": "失败教训、监管边界与反证",
-      "notes": "draft，等待来源语境复核。本轮已做 Fight Aging 报道与公司新闻稿交叉核验。",
+      "notes": "本地复核完成：来源 URL/DOI 可达，标题与事件主张匹配，证据等级和日期未发现过度推断；尚未独立 fresh review。",
       "created_at": "2026-08-06T21:50:00Z",
-      "updated_at": "2026-08-06T21:50:00Z"
+      "updated_at": "2026-08-06T21:50:00Z",
+      "last_reviewed": "2026-08-07",
+      "reviewer": "tradecatlabs"
     },
     {
       "event_id": "HIT-FAI-010",
@@ -4984,7 +5025,7 @@
         "SRC-180"
       ],
       "evidence_grade": "T",
-      "verification_status": "unreviewed",
+      "verification_status": "locally_reviewed",
       "status": "draft",
       "significance": "turning_point",
       "uncertainty": "体外机制突破不等于体内治疗安全，脱靶和递送问题仍限制临床应用。",
@@ -4993,9 +5034,11 @@
         "HIT-TEC-005"
       ],
       "chapter": "老年科学、健康寿命与生物技术产业",
-      "notes": "draft，等待来源语境复核。本轮已做 PubMed 元数据核验。",
+      "notes": "本地复核完成：来源 URL/DOI 可达，标题与事件主张匹配，证据等级和日期未发现过度推断；尚未独立 fresh review。",
       "created_at": "2026-08-06T22:10:00Z",
-      "updated_at": "2026-08-06T22:10:00Z"
+      "updated_at": "2026-08-06T22:10:00Z",
+      "last_reviewed": "2026-08-07",
+      "reviewer": "tradecatlabs"
     },
     {
       "event_id": "HIT-TEC-029",
@@ -5276,7 +5319,7 @@
         "SRC-191"
       ],
       "evidence_grade": "S",
-      "verification_status": "unreviewed",
+      "verification_status": "locally_reviewed",
       "status": "draft",
       "significance": "turning_point",
       "uncertainty": "相关医学后果和事件细节仍在持续审查，部分声明尚未获得独立确认。",
@@ -5285,9 +5328,11 @@
         "HIT-SCI-033"
       ],
       "chapter": "失败教训、监管边界与反证",
-      "notes": "draft，等待来源语境复核。本轮已做 Nature News 报道核验。",
+      "notes": "本地复核完成：来源 URL/DOI 可达，标题与事件主张匹配，证据等级和日期未发现过度推断；尚未独立 fresh review。",
       "created_at": "2026-08-06T22:50:00Z",
-      "updated_at": "2026-08-06T22:50:00Z"
+      "updated_at": "2026-08-06T22:50:00Z",
+      "last_reviewed": "2026-08-07",
+      "reviewer": "tradecatlabs"
     },
     {
       "event_id": "HIT-POL-008",
@@ -5741,7 +5786,7 @@
         "SRC-207"
       ],
       "evidence_grade": "T",
-      "verification_status": "unreviewed",
+      "verification_status": "locally_reviewed",
       "status": "draft",
       "significance": "major",
       "uncertainty": "生物年龄指标是统计预测器，不等同于衰老因果机制或临床诊断结论。",
@@ -5751,9 +5796,11 @@
         "HIT-SCI-036"
       ],
       "chapter": "老年科学、健康寿命与生物技术产业",
-      "notes": "draft，等待来源语境复核。本轮已做 PubMed 元数据核验。",
+      "notes": "本地复核完成：来源 URL/DOI 可达，标题与事件主张匹配，证据等级和日期未发现过度推断；尚未独立 fresh review。",
       "created_at": "2026-08-06T23:50:00Z",
-      "updated_at": "2026-08-06T23:50:00Z"
+      "updated_at": "2026-08-06T23:50:00Z",
+      "last_reviewed": "2026-08-07",
+      "reviewer": "tradecatlabs"
     },
     {
       "event_id": "HIT-SCI-036",
@@ -5771,7 +5818,7 @@
         "SRC-208"
       ],
       "evidence_grade": "T",
-      "verification_status": "unreviewed",
+      "verification_status": "locally_reviewed",
       "status": "draft",
       "significance": "major",
       "uncertainty": "GrimAge 预测关联强，但因果关系、跨人群校准和临床用途仍需独立复核。",
@@ -5781,9 +5828,11 @@
         "HIT-SCI-035"
       ],
       "chapter": "老年科学、健康寿命与生物技术产业",
-      "notes": "draft，等待来源语境复核。本轮已做 PubMed 元数据核验。",
+      "notes": "本地复核完成：来源 URL/DOI 可达，标题与事件主张匹配，证据等级和日期未发现过度推断；尚未独立 fresh review。",
       "created_at": "2026-08-06T23:50:00Z",
-      "updated_at": "2026-08-06T23:50:00Z"
+      "updated_at": "2026-08-06T23:50:00Z",
+      "last_reviewed": "2026-08-07",
+      "reviewer": "tradecatlabs"
     },
     {
       "event_id": "HIT-INS-030",
@@ -9876,7 +9925,7 @@
         "SRC-346"
       ],
       "evidence_grade": "S",
-      "verification_status": "unreviewed",
+      "verification_status": "locally_reviewed",
       "status": "draft",
       "significance": "turning_point",
       "uncertainty": "奖项确认科学贡献，不证明细胞重编程已经转化为成熟的延寿或器官重建治疗。",
@@ -9885,9 +9934,11 @@
         "HIT-SCI-067"
       ],
       "chapter": "老年科学、健康寿命与生物技术产业",
-      "notes": "draft，等待来源语境复核。本轮已用 NobelPrize.org 官方页面核验。",
+      "notes": "本地复核完成：来源 URL/DOI 可达，标题与事件主张匹配，证据等级和日期未发现过度推断；尚未独立 fresh review。",
       "created_at": "2026-08-07T18:00:00Z",
-      "updated_at": "2026-08-07T18:00:00Z"
+      "updated_at": "2026-08-07T18:00:00Z",
+      "last_reviewed": "2026-08-07",
+      "reviewer": "tradecatlabs"
     },
     {
       "event_id": "HIT-SCI-069",
@@ -9905,7 +9956,7 @@
         "SRC-347"
       ],
       "evidence_grade": "T",
-      "verification_status": "unreviewed",
+      "verification_status": "locally_reviewed",
       "status": "draft",
       "significance": "turning_point",
       "uncertainty": "事件基于同期新闻与后续学术报道；首例移植不等于可推广疗法，长期安全仍需随访。",
@@ -9914,9 +9965,11 @@
         "HIT-SCI-068"
       ],
       "chapter": "老年科学、健康寿命与生物技术产业",
-      "notes": "draft，等待来源语境复核。本轮已用 Crossref/DOI 与 Nature 页面核验。",
+      "notes": "本地复核完成：来源 URL/DOI 可达，标题与事件主张匹配，证据等级和日期未发现过度推断；尚未独立 fresh review。",
       "created_at": "2026-08-07T18:00:00Z",
-      "updated_at": "2026-08-07T18:00:00Z"
+      "updated_at": "2026-08-07T18:00:00Z",
+      "last_reviewed": "2026-08-07",
+      "reviewer": "tradecatlabs"
     },
     {
       "event_id": "HIT-INS-046",
@@ -10021,7 +10074,7 @@
         "SRC-351"
       ],
       "evidence_grade": "S",
-      "verification_status": "unreviewed",
+      "verification_status": "locally_reviewed",
       "status": "draft",
       "significance": "turning_point",
       "uncertainty": "细胞库覆盖的 HLA 多样性和长期质量治理仍需持续评估。",
@@ -10030,9 +10083,11 @@
         "HIT-SCI-069"
       ],
       "chapter": "老年科学、健康寿命与生物技术产业",
-      "notes": "draft，等待来源语境复核。本轮已用 CiRA 官方新闻页核验。",
+      "notes": "本地复核完成：来源 URL/DOI 可达，标题与事件主张匹配，证据等级和日期未发现过度推断；尚未独立 fresh review。",
       "created_at": "2026-08-07T19:00:00Z",
-      "updated_at": "2026-08-07T19:00:00Z"
+      "updated_at": "2026-08-07T19:00:00Z",
+      "last_reviewed": "2026-08-07",
+      "reviewer": "tradecatlabs"
     },
     {
       "event_id": "HIT-SCI-072",
@@ -10050,7 +10105,7 @@
         "SRC-352"
       ],
       "evidence_grade": "T",
-      "verification_status": "unreviewed",
+      "verification_status": "locally_reviewed",
       "status": "draft",
       "significance": "turning_point",
       "uncertainty": "事件基于同期新闻报道；首例个案和早期随访不等于疗效证明。",
@@ -10059,9 +10114,11 @@
         "HIT-SCI-071"
       ],
       "chapter": "老年科学、健康寿命与生物技术产业",
-      "notes": "draft，等待来源语境复核。本轮已用 New Atlas 报道核验。",
+      "notes": "本地复核完成：来源 URL/DOI 可达，标题与事件主张匹配，证据等级和日期未发现过度推断；尚未独立 fresh review。",
       "created_at": "2026-08-07T19:00:00Z",
-      "updated_at": "2026-08-07T19:00:00Z"
+      "updated_at": "2026-08-07T19:00:00Z",
+      "last_reviewed": "2026-08-07",
+      "reviewer": "tradecatlabs"
     },
     {
       "event_id": "HIT-SCI-073",
@@ -10079,7 +10136,7 @@
         "SRC-353"
       ],
       "evidence_grade": "S",
-      "verification_status": "unreviewed",
+      "verification_status": "locally_reviewed",
       "status": "draft",
       "significance": "turning_point",
       "uncertainty": "I/II 期结果以安全性为主，初步功能改善不等于治愈或可推广治疗。",
@@ -10089,9 +10146,11 @@
         "HIT-SCI-069"
       ],
       "chapter": "老年科学、健康寿命与生物技术产业",
-      "notes": "draft，等待来源语境复核。本轮已用 Crossref/DOI 与 Nature 页面核验。",
+      "notes": "本地复核完成：来源 URL/DOI 可达，标题与事件主张匹配，证据等级和日期未发现过度推断；尚未独立 fresh review。",
       "created_at": "2026-08-07T19:00:00Z",
-      "updated_at": "2026-08-07T19:00:00Z"
+      "updated_at": "2026-08-07T19:00:00Z",
+      "last_reviewed": "2026-08-07",
+      "reviewer": "tradecatlabs"
     },
     {
       "event_id": "HIT-INS-048",
@@ -10108,8 +10167,8 @@
       "sources": [
         "SRC-354"
       ],
-      "evidence_grade": "M",
-      "verification_status": "unreviewed",
+      "evidence_grade": "S",
+      "verification_status": "locally_reviewed",
       "status": "draft",
       "significance": "turning_point",
       "uncertainty": "药事委员会建议不是最终许可；正式批准、长期疗效和安全性数据仍待验证。",
@@ -10118,9 +10177,11 @@
         "HIT-SCI-072"
       ],
       "chapter": "老年科学、健康寿命与生物技术产业",
-      "notes": "draft，等待来源语境复核。本轮已用 AABB News 报道核验。",
+      "notes": "本地复核修正：该事件为可报道的制度事实，证据等级由 M 改为 S。本地复核完成：来源 URL/DOI 可达，标题与事件主张匹配，证据等级和日期未发现过度推断；尚未独立 fresh review。",
       "created_at": "2026-08-07T19:00:00Z",
-      "updated_at": "2026-08-07T19:00:00Z"
+      "updated_at": "2026-08-07T19:00:00Z",
+      "last_reviewed": "2026-08-07",
+      "reviewer": "tradecatlabs"
     },
     {
       "event_id": "HIT-INS-049",
@@ -10840,7 +10901,7 @@
         "SRC-379"
       ],
       "evidence_grade": "S",
-      "verification_status": "unreviewed",
+      "verification_status": "locally_reviewed",
       "status": "draft",
       "significance": "turning_point",
       "uncertainty": "模型性能来自论文基准，预测精度在不同靶点、动态构象和实验验证条件下仍有边界。",
@@ -10849,9 +10910,11 @@
         "HIT-SCI-026"
       ],
       "chapter": "AI 自动化科学、技术与知识基础设施",
-      "notes": "draft，等待来源语境复核。本轮已用 Nature DOI 元数据核验，日期取在线发表日。",
+      "notes": "本地复核完成：来源 URL/DOI 可达，标题与事件主张匹配，证据等级和日期未发现过度推断；尚未独立 fresh review。",
       "created_at": "2026-08-06T15:00:00Z",
-      "updated_at": "2026-08-06T15:00:00Z"
+      "updated_at": "2026-08-06T15:00:00Z",
+      "last_reviewed": "2026-08-07",
+      "reviewer": "tradecatlabs"
     },
     {
       "event_id": "HIT-TEC-056",

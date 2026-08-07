@@ -42,3 +42,4 @@
 - TP-04 骨架落盘：2026-08-04
 - 内容制作：进行中（任务容器：`governance/tasks/0001-effective-immortality-works-collection/`）
 - 永生史详细年表底稿：`docs/source-notes/2026-08-06-human-immortality-research-major-events-timeline.md`
+- 永生史作品化：`docs/reference/history-timeline/works-subset.v1.json` 已登记 400 条；首批 31 条完成本地复核，独立 fresh review 尚未开始。

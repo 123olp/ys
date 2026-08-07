@@ -1,9 +1,9 @@
 # Task Status
-- Overall Status: `Done`
+- Overall Status: `In Progress`
 
 # Next Executable Leaves
 
-- 全部叶子已完成（TP-01/02/03/04），待整体自审
+- 三件套初版已完成；当前进入永生史作品化与证据复核阶段
 
 # Task Package Status Table
 
@@ -28,3 +28,4 @@
 - 采集：323 元数据 / 88 全文 / 14 维度全覆盖
 - 科研定位：P1 Scoping → P2 Literature Mapping（scoping review 前期 → 卡片化精细阶段）
 - 阶段：BUILD + TEST/REVIEW 进行中（内容自审 + 证据回接）
+- 作品化：`works-subset.v1.json` 400 条；`works-review-register.v1.json` 31/400 条 `locally_reviewed`

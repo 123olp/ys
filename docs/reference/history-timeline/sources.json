@@ -1,6 +1,6 @@
 {
   "timeline_id": "HITL-EIMM-001",
-  "version": "2.400.2",
+  "version": "2.400.4",
   "sources": [
     {
       "source_id": "SRC-001",
@@ -199,14 +199,15 @@
       "label": "Nature Communications: Caloric restriction delays age-related methylation drift",
       "url": "https://www.nature.com/articles/s41467-017-00607-3",
       "access_date": "2026-08-06",
-      "note": "该链接是后续甲基化研究；底稿用它支持 1935 McCay 限制热量实验，事件主张需以原始论文复核。"
+      "note": "该链接是后续甲基化研究；不再作为 1935 McCay 原始实验的直接证据，仅作背景来源保留。"
     },
     {
       "source_id": "SRC-029",
       "source_type": "secondary",
       "label": "NIH Advisory Committee to the Director: HeLa Genome Data Access Working Group",
       "url": "https://acd.od.nih.gov/working-groups/hlgda.html",
-      "access_date": "2026-08-06"
+      "access_date": "2026-08-06",
+      "note": "该页面当前返回 403，不再作为 HeLa 事件可复核来源；事件改用 SRC-2602。"
     },
     {
       "source_id": "SRC-030",
@@ -241,7 +242,8 @@
       "source_type": "primary",
       "label": "Hayflick & Moorhead, The serial cultivation of human diploid cell strains, 1961",
       "url": "https://www.nature.com/articles/35036093",
-      "access_date": "2026-08-06"
+      "access_date": "2026-08-06",
+      "note": "该链接是后来的 Hayflick 综述，不再作为 1961 原论文直接证据；原论文已改用 SRC-2598。"
     },
     {
       "source_id": "SRC-035",
@@ -270,7 +272,7 @@
       "label": "Lopez-Otin et al., The Hallmarks of Aging, 2013",
       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3836174/",
       "access_date": "2026-08-06",
-      "note": "底稿将该链接用于 1983 线虫长寿突变与 2013 Hallmarks 两处；1983 线虫事件是否应使用此链接需复核。"
+      "note": "该链接用于 2013 《衰老的标志》统一框架事件；1983 线虫长寿突变株事件已改用原始论文。"
     },
     {
       "source_id": "SRC-039",
@@ -476,7 +478,8 @@
       "source_type": "secondary",
       "label": "Nature News: Chinese team to be first to pioneer CRISPR gene editing",
       "url": "https://www.nature.com/news/chinese-team-to-be-first-to-pioneer-crispr-gene-editing-1.20910",
-      "access_date": "2026-08-06"
+      "access_date": "2026-08-06",
+      "note": "该 URL 当前跳转到无关 Nature 文章，不再作为 CRISPR 2016 人体试验探索来源；事件改用 SRC-2601。"
     },
     {
       "source_id": "SRC-068",
@@ -1129,7 +1132,7 @@
       "url": "https://www.roslin.ed.ac.uk/about-us/famous-animals/dolly-the-sheep/",
       "doi": null,
       "access_date": "2026-08-07",
-      "note": "来源卡由预览 URL 重建；待本地复核。"
+      "note": "该路径当前跳转到 Roslin 主页，不再作为多莉事件直接来源；事件改用 SRC-2599/SRC-2600。"
     },
     {
       "source_id": "SRC-151",
@@ -23135,6 +23138,68 @@
       "doi": "10.1126/science.280.5362.395",
       "access_date": "2026-08-07",
       "note": "Science；Crossref/DOI 元数据核验。"
+    },
+    {
+      "source_id": "SRC-2596",
+      "source_type": "primary",
+      "label": "McCay, Crowell & Maynard, The Effect of Retarded Growth Upon the Length of Life Span and Upon the Ultimate Body Size, 1935",
+      "url": "https://doi.org/10.1093/jn/10.1.63",
+      "doi": "10.1093/jn/10.1.63",
+      "access_date": "2026-08-07",
+      "note": "Crossref 元数据核验；作为 1935 McCay 限制热量实验事件的一手来源。"
+    },
+    {
+      "source_id": "SRC-2597",
+      "source_type": "primary",
+      "label": "Klass, A method for the isolation of longevity mutants in the nematode Caenorhabditis elegans and initial results, 1983",
+      "url": "https://doi.org/10.1016/0047-6374(83)90082-9",
+      "doi": "10.1016/0047-6374(83)90082-9",
+      "access_date": "2026-08-07",
+      "note": "Crossref 元数据核验；作为 1983 线虫长寿突变株事件的一手来源。"
+    },
+    {
+      "source_id": "SRC-2598",
+      "source_type": "primary",
+      "label": "Hayflick & Moorhead, The serial cultivation of human diploid cell strains, Experimental Cell Research, 1961",
+      "url": "https://doi.org/10.1016/0014-4827(61)90192-6",
+      "doi": "10.1016/0014-4827(61)90192-6",
+      "access_date": "2026-08-07",
+      "note": "Crossref 元数据核验；作为 Hayflick 极限事件的一手来源。"
+    },
+    {
+      "source_id": "SRC-2599",
+      "source_type": "primary",
+      "label": "Wilmut et al., Viable offspring derived from fetal and adult mammalian cells, Nature, 1997",
+      "url": "https://doi.org/10.1038/385810a0",
+      "doi": "10.1038/385810a0",
+      "access_date": "2026-08-07",
+      "note": "Crossref 元数据核验；作为克隆羊多莉的分子与细胞机制一手来源。"
+    },
+    {
+      "source_id": "SRC-2600",
+      "source_type": "secondary",
+      "label": "Wikipedia: Dolly (sheep)",
+      "url": "https://en.wikipedia.org/wiki/Dolly_(sheep)",
+      "access_date": "2026-08-07",
+      "note": "用于出生日期和事件背景；核心机制以 Wilmut et al. 1997 一手论文为准。"
+    },
+    {
+      "source_id": "SRC-2601",
+      "source_type": "secondary",
+      "label": "Cyranoski, Chinese scientists to pioneer first human CRISPR trial, Nature, 2016",
+      "url": "https://doi.org/10.1038/nature.2016.20302",
+      "doi": "10.1038/nature.2016.20302",
+      "access_date": "2026-08-07",
+      "note": "Crossref 元数据核验；替代已失效且跳转到无关文章的旧 Nature News URL。"
+    },
+    {
+      "source_id": "SRC-2602",
+      "source_type": "secondary",
+      "label": "Wikipedia: HeLa",
+      "url": "https://en.wikipedia.org/wiki/HeLa",
+      "access_date": "2026-08-07",
+      "note": "原 NIH ACD 页面返回 403；使用可访问的二手百科作为背景，后续可补一手档案。"
     }
-  ]
+  ],
+  "updated_at": "2026-08-07T12:20:00Z"
 }

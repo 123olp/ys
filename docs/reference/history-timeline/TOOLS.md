@@ -79,6 +79,14 @@ python3 tools/backfill_history_timeline_dates.py --workers 4
 
 该命令从 Crossref 拉取缺失的完整出版日期，写回 `timeline.json`，并把已核验的 DOI-日期映射缓存到 `date-backfill-cache.json`，支持断点续跑。
 
+作品子集命令：
+
+```bash
+make history-timeline-works-subset
+```
+
+该命令从 `timeline.json` / `sources.json` 生成 `works-subset.v1.json`，选择约 400 条覆盖全部时期、路径族和证据等级的候选事件；它只登记作品化评审范围，不自动提升复核状态。
+
 ## 3. 指导文献
 
 ### 历史方法论

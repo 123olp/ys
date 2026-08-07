@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-08-07
+
+- Added a first-edition history-timeline works subset (`works-subset.v1.json`, 400 events) and a local review register (`works-review-register.v1.json`, 31/400 events locally reviewed).
+- Corrected known source mismatches for McCay 1935, Klass 1983, Hayflick 1961, HeLa, Dolly, and the 2016 Nature CRISPR human-trial report, and fixed the Japanese iPSC regulatory-report evidence grade.
+- Switched the history timeline preview to ECharts chart mode and added machine gates that keep timeline data, works subset, review register, and governance contract synchronized.
+
 ## 2026-07-27
 
 - Added an effective-immortality practice guidance system that turns the existing research model into a bounded goal, condition, decision, action, verification, correction, and iteration loop while preserving medical, evidence, identity, consent, and high-risk research boundaries.

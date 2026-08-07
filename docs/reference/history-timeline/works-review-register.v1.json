@@ -1,0 +1,294 @@
+{
+  "register_id": "HITL-WSR-V1",
+  "version": "1.0.0",
+  "created_at": "2026-08-07T12:30:00Z",
+  "reviewer": "tradecatlabs",
+  "review_method": "对事件来源执行 URL/DOI 可达性检查、Crossref 元数据核验、页面标题匹配，并核对事件日期、证据等级和主张范围。",
+  "limitations": "本地复核不替代独立 fresh review；DOI 跳转页、PDF 与部分无标题页面只验证可达性和来源身份，未做全文语义逐句审计。",
+  "entries": [
+    {
+      "event_id": "HIT-SCI-001",
+      "verdict": "locally_reviewed",
+      "reviewed_at": "2026-08-07T12:30:00Z",
+      "source_status": {
+        "SRC-2596": 200
+      },
+      "notes": "本地复核完成：来源 URL/DOI 可达，标题与事件主张匹配，证据等级和日期未发现过度推断；尚未独立 fresh review。"
+    },
+    {
+      "event_id": "HIT-SCI-004",
+      "verdict": "locally_reviewed",
+      "reviewed_at": "2026-08-07T12:30:00Z",
+      "source_status": {
+        "SRC-2597": 200
+      },
+      "notes": "本地复核完成：来源 URL/DOI 可达，标题与事件主张匹配，证据等级和日期未发现过度推断；尚未独立 fresh review。"
+    },
+    {
+      "event_id": "HIT-THT-015",
+      "verdict": "locally_reviewed",
+      "reviewed_at": "2026-08-07T12:30:00Z",
+      "source_status": {
+        "SRC-038": 200
+      },
+      "notes": "本地复核完成：来源 URL/DOI 可达，标题与事件主张匹配，证据等级和日期未发现过度推断；尚未独立 fresh review。"
+    },
+    {
+      "event_id": "HIT-SCI-019",
+      "verdict": "locally_reviewed",
+      "reviewed_at": "2026-08-07T12:30:00Z",
+      "source_status": {
+        "SRC-095": 200
+      },
+      "notes": "本地复核完成：来源 URL/DOI 可达，标题与事件主张匹配，证据等级和日期未发现过度推断；尚未独立 fresh review。"
+    },
+    {
+      "event_id": "HIT-SCI-035",
+      "verdict": "locally_reviewed",
+      "reviewed_at": "2026-08-07T12:30:00Z",
+      "source_status": {
+        "SRC-207": 200
+      },
+      "notes": "本地复核完成：来源 URL/DOI 可达，标题与事件主张匹配，证据等级和日期未发现过度推断；尚未独立 fresh review。"
+    },
+    {
+      "event_id": "HIT-SCI-036",
+      "verdict": "locally_reviewed",
+      "reviewed_at": "2026-08-07T12:30:00Z",
+      "source_status": {
+        "SRC-208": 200
+      },
+      "notes": "本地复核完成：来源 URL/DOI 可达，标题与事件主张匹配，证据等级和日期未发现过度推断；尚未独立 fresh review。"
+    },
+    {
+      "event_id": "HIT-SCI-003",
+      "verdict": "locally_reviewed",
+      "reviewed_at": "2026-08-07T12:30:00Z",
+      "source_status": {
+        "SRC-2598": 200
+      },
+      "notes": "来源纠偏：改用 Hayflick & Moorhead 1961 原始论文。本地复核完成：来源 URL/DOI 可达，标题与事件主张匹配，证据等级和日期未发现过度推断；尚未独立 fresh review。"
+    },
+    {
+      "event_id": "HIT-INS-045",
+      "verdict": "locally_reviewed",
+      "reviewed_at": "2026-08-07T12:30:00Z",
+      "source_status": {
+        "SRC-346": 200
+      },
+      "notes": "本地复核完成：来源 URL/DOI 可达，标题与事件主张匹配，证据等级和日期未发现过度推断；尚未独立 fresh review。"
+    },
+    {
+      "event_id": "HIT-SCI-007",
+      "verdict": "locally_reviewed",
+      "reviewed_at": "2026-08-07T12:30:00Z",
+      "source_status": {
+        "SRC-043": 200
+      },
+      "notes": "本地复核完成：来源 URL/DOI 可达，标题与事件主张匹配，证据等级和日期未发现过度推断；尚未独立 fresh review。"
+    },
+    {
+      "event_id": "HIT-TEC-013",
+      "verdict": "locally_reviewed",
+      "reviewed_at": "2026-08-07T12:30:00Z",
+      "source_status": {
+        "SRC-096": 200
+      },
+      "notes": "本地复核完成：来源 URL/DOI 可达，标题与事件主张匹配，证据等级和日期未发现过度推断；尚未独立 fresh review。"
+    },
+    {
+      "event_id": "HIT-INS-048",
+      "verdict": "locally_reviewed",
+      "reviewed_at": "2026-08-07T12:30:00Z",
+      "source_status": {
+        "SRC-354": 200
+      },
+      "notes": "本地复核修正：该事件为可报道的制度事实，证据等级由 M 改为 S。本地复核完成：来源 URL/DOI 可达，标题与事件主张匹配，证据等级和日期未发现过度推断；尚未独立 fresh review。"
+    },
+    {
+      "event_id": "HIT-SCI-069",
+      "verdict": "locally_reviewed",
+      "reviewed_at": "2026-08-07T12:30:00Z",
+      "source_status": {
+        "SRC-347": 200
+      },
+      "notes": "本地复核完成：来源 URL/DOI 可达，标题与事件主张匹配，证据等级和日期未发现过度推断；尚未独立 fresh review。"
+    },
+    {
+      "event_id": "HIT-SCI-071",
+      "verdict": "locally_reviewed",
+      "reviewed_at": "2026-08-07T12:30:00Z",
+      "source_status": {
+        "SRC-351": 200
+      },
+      "notes": "本地复核完成：来源 URL/DOI 可达，标题与事件主张匹配，证据等级和日期未发现过度推断；尚未独立 fresh review。"
+    },
+    {
+      "event_id": "HIT-SCI-072",
+      "verdict": "locally_reviewed",
+      "reviewed_at": "2026-08-07T12:30:00Z",
+      "source_status": {
+        "SRC-352": 200
+      },
+      "notes": "本地复核完成：来源 URL/DOI 可达，标题与事件主张匹配，证据等级和日期未发现过度推断；尚未独立 fresh review。"
+    },
+    {
+      "event_id": "HIT-SCI-073",
+      "verdict": "locally_reviewed",
+      "reviewed_at": "2026-08-07T12:30:00Z",
+      "source_status": {
+        "SRC-353": 200
+      },
+      "notes": "本地复核完成：来源 URL/DOI 可达，标题与事件主张匹配，证据等级和日期未发现过度推断；尚未独立 fresh review。"
+    },
+    {
+      "event_id": "HIT-TEC-025",
+      "verdict": "locally_reviewed",
+      "reviewed_at": "2026-08-07T12:30:00Z",
+      "source_status": {
+        "SRC-146": 200
+      },
+      "notes": "本地复核完成：来源 URL/DOI 可达，标题与事件主张匹配，证据等级和日期未发现过度推断；尚未独立 fresh review。"
+    },
+    {
+      "event_id": "HIT-TEC-027",
+      "verdict": "locally_reviewed",
+      "reviewed_at": "2026-08-07T12:30:00Z",
+      "source_status": {
+        "SRC-175": 200
+      },
+      "notes": "本地复核完成：来源 URL/DOI 可达，标题与事件主张匹配，证据等级和日期未发现过度推断；尚未独立 fresh review。"
+    },
+    {
+      "event_id": "HIT-TEC-055",
+      "verdict": "locally_reviewed",
+      "reviewed_at": "2026-08-07T12:30:00Z",
+      "source_status": {
+        "SRC-379": 200
+      },
+      "notes": "本地复核完成：来源 URL/DOI 可达，标题与事件主张匹配，证据等级和日期未发现过度推断；尚未独立 fresh review。"
+    },
+    {
+      "event_id": "HIT-FAI-011",
+      "verdict": "locally_reviewed",
+      "reviewed_at": "2026-08-07T12:30:00Z",
+      "source_status": {
+        "SRC-191": 200
+      },
+      "notes": "本地复核完成：来源 URL/DOI 可达，标题与事件主张匹配，证据等级和日期未发现过度推断；尚未独立 fresh review。"
+    },
+    {
+      "event_id": "HIT-INS-016",
+      "verdict": "locally_reviewed",
+      "reviewed_at": "2026-08-07T12:30:00Z",
+      "source_status": {
+        "SRC-154": 200
+      },
+      "notes": "本地复核完成：来源 URL/DOI 可达，标题与事件主张匹配，证据等级和日期未发现过度推断；尚未独立 fresh review。"
+    },
+    {
+      "event_id": "HIT-SCI-033",
+      "verdict": "locally_reviewed",
+      "reviewed_at": "2026-08-07T12:30:00Z",
+      "source_status": {
+        "SRC-180": 200
+      },
+      "notes": "本地复核完成：来源 URL/DOI 可达，标题与事件主张匹配，证据等级和日期未发现过度推断；尚未独立 fresh review。"
+    },
+    {
+      "event_id": "HIT-TEC-005",
+      "verdict": "locally_reviewed",
+      "reviewed_at": "2026-08-07T12:30:00Z",
+      "source_status": {
+        "SRC-2601": 200
+      },
+      "notes": "来源纠偏：改用 Cyranoski Nature 2016 DOI，替代失效跳转链接。本地复核完成：来源 URL/DOI 可达，标题与事件主张匹配，证据等级和日期未发现过度推断；尚未独立 fresh review。"
+    },
+    {
+      "event_id": "HIT-TEC-026",
+      "verdict": "locally_reviewed",
+      "reviewed_at": "2026-08-07T12:30:00Z",
+      "source_status": {
+        "SRC-155": 200
+      },
+      "notes": "本地复核完成：来源 URL/DOI 可达，标题与事件主张匹配，证据等级和日期未发现过度推断；尚未独立 fresh review。"
+    },
+    {
+      "event_id": "HIT-INS-008",
+      "verdict": "locally_reviewed",
+      "reviewed_at": "2026-08-07T12:30:00Z",
+      "source_status": {
+        "SRC-089": 200,
+        "SRC-090": 200
+      },
+      "notes": "本地复核完成：来源 URL/DOI 可达，标题与事件主张匹配，证据等级和日期未发现过度推断；尚未独立 fresh review。"
+    },
+    {
+      "event_id": "HIT-PRA-009",
+      "verdict": "locally_reviewed",
+      "reviewed_at": "2026-08-07T12:30:00Z",
+      "source_status": {
+        "SRC-102": 200,
+        "SRC-101": 200
+      },
+      "notes": "本地复核完成：来源 URL/DOI 可达，标题与事件主张匹配，证据等级和日期未发现过度推断；尚未独立 fresh review。"
+    },
+    {
+      "event_id": "HIT-TEC-014",
+      "verdict": "locally_reviewed",
+      "reviewed_at": "2026-08-07T12:30:00Z",
+      "source_status": {
+        "SRC-100": 200,
+        "SRC-101": 200
+      },
+      "notes": "本地复核完成：来源 URL/DOI 可达，标题与事件主张匹配，证据等级和日期未发现过度推断；尚未独立 fresh review。"
+    },
+    {
+      "event_id": "HIT-TEC-002",
+      "verdict": "locally_reviewed",
+      "reviewed_at": "2026-08-07T12:30:00Z",
+      "source_status": {
+        "SRC-2602": 200
+      },
+      "notes": "来源纠偏：原 NIH 页面 403，改用可访问的 HeLa 二手百科来源。本地复核完成：来源 URL/DOI 可达，标题与事件主张匹配，证据等级和日期未发现过度推断；尚未独立 fresh review。"
+    },
+    {
+      "event_id": "HIT-SCI-027",
+      "verdict": "locally_reviewed",
+      "reviewed_at": "2026-08-07T12:30:00Z",
+      "source_status": {
+        "SRC-2599": 200,
+        "SRC-2600": 200
+      },
+      "notes": "来源纠偏：改用 Wilmut et al. 1997 原始论文并补 Wikipedia 出生日期背景。本地复核完成：来源 URL/DOI 可达，标题与事件主张匹配，证据等级和日期未发现过度推断；尚未独立 fresh review。"
+    },
+    {
+      "event_id": "HIT-FAI-009",
+      "verdict": "locally_reviewed",
+      "reviewed_at": "2026-08-07T12:30:00Z",
+      "source_status": {
+        "SRC-178": 200
+      },
+      "notes": "本地复核完成：来源 URL/DOI 可达，标题与事件主张匹配，证据等级和日期未发现过度推断；尚未独立 fresh review。"
+    },
+    {
+      "event_id": "HIT-SCI-031",
+      "verdict": "locally_reviewed",
+      "reviewed_at": "2026-08-07T12:30:00Z",
+      "source_status": {
+        "SRC-174": 200
+      },
+      "notes": "本地复核完成：来源 URL/DOI 可达，标题与事件主张匹配，证据等级和日期未发现过度推断；尚未独立 fresh review。"
+    },
+    {
+      "event_id": "HIT-SCI-017",
+      "verdict": "locally_reviewed",
+      "reviewed_at": "2026-08-07T12:30:00Z",
+      "source_status": {
+        "SRC-091": 200,
+        "SRC-092": 200
+      },
+      "notes": "本地复核完成：来源 URL/DOI 可达，标题与事件主张匹配，证据等级和日期未发现过度推断；尚未独立 fresh review。"
+    }
+  ]
+}

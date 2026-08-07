@@ -1547,7 +1547,7 @@
       },
       "text": {
         "headline": "麦凯报告限制热量摄入延长大鼠寿命",
-        "text": "这是较早显示哺乳动物寿命可被实验性干预的研究之一。<br><br><strong>Claim</strong>: 限制大鼠热量摄入能够延长寿命，使延寿研究转向可重复的营养实验。<br><br><strong>Period</strong>: Twentieth Century<br><strong>Evidence</strong>: T / unreviewed<br><br>Sources: <a href=\"https://www.nature.com/articles/s41467-017-00607-3\" target=\"_blank\" rel=\"noopener\">SRC-028</a>"
+        "text": "这是较早显示哺乳动物寿命可被实验性干预的研究之一。<br><br><strong>Claim</strong>: 限制大鼠热量摄入能够延长寿命，使延寿研究转向可重复的营养实验。<br><br><strong>Period</strong>: Twentieth Century<br><strong>Evidence</strong>: T / locally_reviewed<br><br>Sources: <a href=\"https://doi.org/10.1093/jn/10.1.63\" target=\"_blank\" rel=\"noopener\">SRC-2596</a>"
       },
       "group": "老年学、进化论与细胞寿命",
       "meta": {
@@ -1558,7 +1558,7 @@
         "path_family": "maintenance",
         "event_type": "technology",
         "evidence_grade": "T",
-        "verification_status": "unreviewed",
+        "verification_status": "locally_reviewed",
         "status": "draft",
         "date_start": "1935"
       }
@@ -1684,7 +1684,7 @@
       },
       "text": {
         "headline": "HeLa 细胞系建立",
-        "text": "其未经同意取样的历史引发了持续的研究伦理争议。<br><br><strong>Claim</strong>: HeLa 细胞证明某些癌细胞可以获得近乎无限的体外增殖能力，也明确显示“细胞永生”可能伴随癌变。<br><br><strong>Period</strong>: Twentieth Century<br><strong>Evidence</strong>: T / unreviewed<br><br>Sources: <a href=\"https://acd.od.nih.gov/working-groups/hlgda.html\" target=\"_blank\" rel=\"noopener\">SRC-029</a>"
+        "text": "其未经同意取样的历史引发了持续的研究伦理争议。<br><br><strong>Claim</strong>: HeLa 细胞证明某些癌细胞可以获得近乎无限的体外增殖能力，也明确显示“细胞永生”可能伴随癌变。<br><br><strong>Period</strong>: Twentieth Century<br><strong>Evidence</strong>: T / locally_reviewed<br><br>Sources: <a href=\"https://en.wikipedia.org/wiki/HeLa\" target=\"_blank\" rel=\"noopener\">SRC-2602</a>"
       },
       "group": "老年学、进化论与细胞寿命",
       "meta": {
@@ -1695,7 +1695,7 @@
         "path_family": "reconstruction",
         "event_type": "technology",
         "evidence_grade": "T",
-        "verification_status": "unreviewed",
+        "verification_status": "locally_reviewed",
         "status": "draft",
         "date_start": "1951"
       }
@@ -1956,7 +1956,7 @@
       },
       "text": {
         "headline": "Hayflick 极限发表",
-        "text": "Hayflick 和 Moorhead 把细胞衰老、染色体末端和癌细胞无限增殖联系起来。<br><br><strong>Claim</strong>: 正常人类体细胞只能分裂有限次数，推翻了正常体细胞天然不死的观念。<br><br><strong>Period</strong>: Twentieth Century<br><strong>Evidence</strong>: T / unreviewed<br><br>Sources: <a href=\"https://www.nature.com/articles/35036093\" target=\"_blank\" rel=\"noopener\">SRC-034</a>"
+        "text": "Hayflick 和 Moorhead 把细胞衰老、染色体末端和癌细胞无限增殖联系起来。<br><br><strong>Claim</strong>: 正常人类体细胞只能分裂有限次数，推翻了正常体细胞天然不死的观念。<br><br><strong>Period</strong>: Twentieth Century<br><strong>Evidence</strong>: T / locally_reviewed<br><br>Sources: <a href=\"https://doi.org/10.1016/0014-4827(61)90192-6\" target=\"_blank\" rel=\"noopener\">SRC-2598</a>"
       },
       "group": "老年学、进化论与细胞寿命",
       "meta": {
@@ -1967,7 +1967,7 @@
         "path_family": "maintenance",
         "event_type": "technology",
         "evidence_grade": "T",
-        "verification_status": "unreviewed",
+        "verification_status": "locally_reviewed",
         "status": "draft",
         "date_start": "1961"
       }
@@ -2626,7 +2626,7 @@
       },
       "text": {
         "headline": "秀丽隐杆线虫长寿突变株被发现",
-        "text": "较早的长寿突变表明寿命并非只能由无数微小因素决定。<br><br><strong>Claim</strong>: 单个或少数基因的变化也可能显著影响寿命，为寻找保守衰老通路打开道路。<br><br><strong>Period</strong>: Twentieth Century<br><strong>Evidence</strong>: T / unreviewed<br><br>Sources: <a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC3836174/\" target=\"_blank\" rel=\"noopener\">SRC-038</a>"
+        "text": "较早的长寿突变表明寿命并非只能由无数微小因素决定。<br><br><strong>Claim</strong>: 单个或少数基因的变化也可能显著影响寿命，为寻找保守衰老通路打开道路。<br><br><strong>Period</strong>: Twentieth Century<br><strong>Evidence</strong>: T / locally_reviewed<br><br>Sources: <a href=\"https://doi.org/10.1016/0047-6374(83)90082-9\" target=\"_blank\" rel=\"noopener\">SRC-2597</a>"
       },
       "group": "低温保存、分子机制与数字永生",
       "meta": {
@@ -2637,7 +2637,7 @@
         "path_family": "maintenance",
         "event_type": "technology",
         "evidence_grade": "T",
-        "verification_status": "unreviewed",
+        "verification_status": "locally_reviewed",
         "status": "draft",
         "date_start": "1983"
       }
@@ -3509,7 +3509,7 @@
       },
       "text": {
         "headline": "克隆羊多莉出生，证明体细胞可重编程为新个体",
-        "text": "多莉把“成熟细胞能否重新启动发育程序”从理论变为可观察事实，影响后续 iPS 和克隆研究。<br><br><strong>Claim</strong>: 罗瑟林研究所团队于 1996 年 7 月 5 日迎来克隆羊多莉出生，证明成熟体细胞核可被重编程为新个体，为细胞重编程和再生医学提供关键里程碑。<br><br><strong>Period</strong>: Twentieth Century<br><strong>Evidence</strong>: S / unreviewed<br><br>Sources: <a href=\"https://www.roslin.ed.ac.uk/about-us/famous-animals/dolly-the-sheep/\" target=\"_blank\" rel=\"noopener\">SRC-150</a>"
+        "text": "多莉把“成熟细胞能否重新启动发育程序”从理论变为可观察事实，影响后续 iPS 和克隆研究。<br><br><strong>Claim</strong>: 罗瑟林研究所团队于 1996 年 7 月 5 日迎来克隆羊多莉出生，证明成熟体细胞核可被重编程为新个体，为细胞重编程和再生医学提供关键里程碑。<br><br><strong>Period</strong>: Twentieth Century<br><strong>Evidence</strong>: S / locally_reviewed<br><br>Sources: <a href=\"https://doi.org/10.1038/385810a0\" target=\"_blank\" rel=\"noopener\">SRC-2599</a> · <a href=\"https://en.wikipedia.org/wiki/Dolly_(sheep)\" target=\"_blank\" rel=\"noopener\">SRC-2600</a>"
       },
       "group": "老年科学、健康寿命与生物技术产业",
       "meta": {
@@ -3520,7 +3520,7 @@
         "path_family": "reconstruction",
         "event_type": "technology",
         "evidence_grade": "S",
-        "verification_status": "unreviewed",
+        "verification_status": "locally_reviewed",
         "status": "draft",
         "date_start": "1996-07-05"
       }
@@ -7030,7 +7030,7 @@
       },
       "text": {
         "headline": "山中伸弥团队建立诱导多能干细胞",
-        "text": "该技术成为“细胞年轻化”和部分重编程研究的重要基础。<br><br><strong>Claim</strong>: 成熟小鼠体细胞可被重编程为诱导多能干细胞，说明细胞身份和部分年龄相关表观遗传状态具有可逆性。<br><br><strong>Period</strong>: Twenty-First Century<br><strong>Evidence</strong>: T / unreviewed<br><br>Sources: <a href=\"https://www.nobelprize.org/uploads/2018/06/advanced-medicineprize2012.pdf\" target=\"_blank\" rel=\"noopener\">SRC-043</a>"
+        "text": "该技术成为“细胞年轻化”和部分重编程研究的重要基础。<br><br><strong>Claim</strong>: 成熟小鼠体细胞可被重编程为诱导多能干细胞，说明细胞身份和部分年龄相关表观遗传状态具有可逆性。<br><br><strong>Period</strong>: Twenty-First Century<br><strong>Evidence</strong>: T / locally_reviewed<br><br>Sources: <a href=\"https://www.nobelprize.org/uploads/2018/06/advanced-medicineprize2012.pdf\" target=\"_blank\" rel=\"noopener\">SRC-043</a>"
       },
       "group": "低温保存、分子机制与数字永生",
       "meta": {
@@ -7041,7 +7041,7 @@
         "path_family": "reconstruction",
         "event_type": "technology",
         "evidence_grade": "T",
-        "verification_status": "unreviewed",
+        "verification_status": "locally_reviewed",
         "status": "draft",
         "date_start": "2006"
       }
@@ -11964,7 +11964,7 @@
       },
       "text": {
         "headline": "CRISPR-Cas9 可编程基因编辑论文发表",
-        "text": "该论文让基因组编辑从复杂蛋白工程简化为可编程 RNA 引导系统，直接支撑后续基因治疗和抗衰研究。<br><br><strong>Claim</strong>: Jinek 等人在 2012 年 6 月 28 日于 Science 报告，Cas9 可由双 RNA 引导进行可编程 DNA 切割，为 CRISPR 基因编辑时代奠定方法基础。<br><br><strong>Period</strong>: Twenty-First Century<br><strong>Evidence</strong>: T / unreviewed<br><br>Sources: <a href=\"https://pubmed.ncbi.nlm.nih.gov/22745249/\" target=\"_blank\" rel=\"noopener\">SRC-180</a>"
+        "text": "该论文让基因组编辑从复杂蛋白工程简化为可编程 RNA 引导系统，直接支撑后续基因治疗和抗衰研究。<br><br><strong>Claim</strong>: Jinek 等人在 2012 年 6 月 28 日于 Science 报告，Cas9 可由双 RNA 引导进行可编程 DNA 切割，为 CRISPR 基因编辑时代奠定方法基础。<br><br><strong>Period</strong>: Twenty-First Century<br><strong>Evidence</strong>: T / locally_reviewed<br><br>Sources: <a href=\"https://pubmed.ncbi.nlm.nih.gov/22745249/\" target=\"_blank\" rel=\"noopener\">SRC-180</a>"
       },
       "group": "老年科学、健康寿命与生物技术产业",
       "meta": {
@@ -11975,7 +11975,7 @@
         "path_family": "reconstruction",
         "event_type": "technology",
         "evidence_grade": "T",
-        "verification_status": "unreviewed",
+        "verification_status": "locally_reviewed",
         "status": "draft",
         "date_start": "2012-06-28"
       }
@@ -12012,7 +12012,7 @@
       },
       "text": {
         "headline": "山中伸弥与格登获诺贝尔生理学或医学奖",
-        "text": "该奖项把细胞重编程确立为生命科学和再生医学的主流研究纲领。<br><br><strong>Claim</strong>: 2012 年 10 月 8 日，诺贝尔奖委员会宣布将生理学或医学奖授予 John Gurdon 与 Shinya Yamanaka，表彰其发现成熟细胞可被重编程为多能状态。<br><br><strong>Period</strong>: Twenty-First Century<br><strong>Evidence</strong>: S / unreviewed<br><br>Sources: <a href=\"https://www.nobelprize.org/prizes/medicine/2012/summary/\" target=\"_blank\" rel=\"noopener\">SRC-346</a>"
+        "text": "该奖项把细胞重编程确立为生命科学和再生医学的主流研究纲领。<br><br><strong>Claim</strong>: 2012 年 10 月 8 日，诺贝尔奖委员会宣布将生理学或医学奖授予 John Gurdon 与 Shinya Yamanaka，表彰其发现成熟细胞可被重编程为多能状态。<br><br><strong>Period</strong>: Twenty-First Century<br><strong>Evidence</strong>: S / locally_reviewed<br><br>Sources: <a href=\"https://www.nobelprize.org/prizes/medicine/2012/summary/\" target=\"_blank\" rel=\"noopener\">SRC-346</a>"
       },
       "group": "老年科学、健康寿命与生物技术产业",
       "meta": {
@@ -12023,7 +12023,7 @@
         "path_family": "reconstruction",
         "event_type": "institution",
         "evidence_grade": "S",
-        "verification_status": "unreviewed",
+        "verification_status": "locally_reviewed",
         "status": "draft",
         "date_start": "2012-10-08"
       }
@@ -12968,7 +12968,7 @@
       },
       "text": {
         "headline": "《衰老的标志》提出九项统一框架",
-        "text": "该框架包含基因组不稳定、端粒、表观遗传、蛋白稳态、营养感知、线粒体、细胞衰老、干细胞和通讯改变。<br><br><strong>Claim</strong>: 九项衰老标志为高度分散的衰老机制建立统一框架，成为研究、投资和药物开发的重要路线图。<br><br><strong>Period</strong>: Twenty-First Century<br><strong>Evidence</strong>: I / unreviewed<br><br>Sources: <a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC3836174/\" target=\"_blank\" rel=\"noopener\">SRC-038</a>"
+        "text": "该框架包含基因组不稳定、端粒、表观遗传、蛋白稳态、营养感知、线粒体、细胞衰老、干细胞和通讯改变。<br><br><strong>Claim</strong>: 九项衰老标志为高度分散的衰老机制建立统一框架，成为研究、投资和药物开发的重要路线图。<br><br><strong>Period</strong>: Twenty-First Century<br><strong>Evidence</strong>: I / locally_reviewed<br><br>Sources: <a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC3836174/\" target=\"_blank\" rel=\"noopener\">SRC-038</a>"
       },
       "group": "老年科学、健康寿命与生物技术产业",
       "meta": {
@@ -12979,7 +12979,7 @@
         "path_family": "maintenance",
         "event_type": "thought",
         "evidence_grade": "I",
-        "verification_status": "unreviewed",
+        "verification_status": "locally_reviewed",
         "status": "draft",
         "date_start": "2013"
       }
@@ -14108,7 +14108,7 @@
       },
       "text": {
         "headline": "日本实施首例 iPS 细胞来源视网膜色素上皮移植",
-        "text": "该事件把 iPS 从实验室细胞推进到人体组织移植，同时暴露监管、伦理和长期随访挑战。<br><br><strong>Claim</strong>: 2014 年 9 月 12 日，Nature 新闻报道日本患者接受 iPS 细胞来源视网膜色素上皮细胞移植，成为全球首例 iPS 细胞来源组织的人体移植。<br><br><strong>Period</strong>: Twenty-First Century<br><strong>Evidence</strong>: T / unreviewed<br><br>Sources: <a href=\"https://doi.org/10.1038/nature.2014.15915\" target=\"_blank\" rel=\"noopener\">SRC-347</a>"
+        "text": "该事件把 iPS 从实验室细胞推进到人体组织移植，同时暴露监管、伦理和长期随访挑战。<br><br><strong>Claim</strong>: 2014 年 9 月 12 日，Nature 新闻报道日本患者接受 iPS 细胞来源视网膜色素上皮细胞移植，成为全球首例 iPS 细胞来源组织的人体移植。<br><br><strong>Period</strong>: Twenty-First Century<br><strong>Evidence</strong>: T / locally_reviewed<br><br>Sources: <a href=\"https://doi.org/10.1038/nature.2014.15915\" target=\"_blank\" rel=\"noopener\">SRC-347</a>"
       },
       "group": "老年科学、健康寿命与生物技术产业",
       "meta": {
@@ -14119,7 +14119,7 @@
         "path_family": "reconstruction",
         "event_type": "technology",
         "evidence_grade": "T",
-        "verification_status": "unreviewed",
+        "verification_status": "locally_reviewed",
         "status": "draft",
         "date_start": "2014-09-12"
       }
@@ -15422,7 +15422,7 @@
       },
       "text": {
         "headline": "CiRA 开始分发临床级 iPS 细胞储备",
-        "text": "临床级 iPS 细胞储备把 iPS 技术从个体定制转向可规模化的异体细胞供给。<br><br><strong>Claim</strong>: CiRA 自 2013 年起推进 iPS Cell Stock 项目，并于 2015 年 8 月开始向医疗和科研机构分发临床级 iPS 细胞，为异体再生医学建立可复用的细胞库基础设施。<br><br><strong>Period</strong>: Twenty-First Century<br><strong>Evidence</strong>: S / unreviewed<br><br>Sources: <a href=\"https://www.cira.kyoto-u.ac.jp/e/pressrelease/news/181221-170000.html\" target=\"_blank\" rel=\"noopener\">SRC-351</a>"
+        "text": "临床级 iPS 细胞储备把 iPS 技术从个体定制转向可规模化的异体细胞供给。<br><br><strong>Claim</strong>: CiRA 自 2013 年起推进 iPS Cell Stock 项目，并于 2015 年 8 月开始向医疗和科研机构分发临床级 iPS 细胞，为异体再生医学建立可复用的细胞库基础设施。<br><br><strong>Period</strong>: Twenty-First Century<br><strong>Evidence</strong>: S / locally_reviewed<br><br>Sources: <a href=\"https://www.cira.kyoto-u.ac.jp/e/pressrelease/news/181221-170000.html\" target=\"_blank\" rel=\"noopener\">SRC-351</a>"
       },
       "group": "老年科学、健康寿命与生物技术产业",
       "meta": {
@@ -15433,7 +15433,7 @@
         "path_family": "reconstruction",
         "event_type": "technology",
         "evidence_grade": "S",
-        "verification_status": "unreviewed",
+        "verification_status": "locally_reviewed",
         "status": "draft",
         "date_start": "2015-08"
       }
@@ -16690,7 +16690,7 @@
       },
       "text": {
         "headline": "CRISPR 基因编辑进入人体临床试验探索",
-        "text": "这一阶段证明人体基因改写可以开始被监管性试验，但安全性和疗效仍高度依赖靶点与递送。<br><br><strong>Claim</strong>: CRISPR 从 2016 年起被用于人体细胞改造试验，基因编辑从模式生物进入临床探索阶段。<br><br><strong>Period</strong>: Twenty-First Century<br><strong>Evidence</strong>: T / unreviewed<br><br>Sources: <a href=\"https://www.nature.com/news/chinese-team-to-be-first-to-pioneer-crispr-gene-editing-1.20910\" target=\"_blank\" rel=\"noopener\">SRC-067</a>"
+        "text": "这一阶段证明人体基因改写可以开始被监管性试验，但安全性和疗效仍高度依赖靶点与递送。<br><br><strong>Claim</strong>: CRISPR 从 2016 年起被用于人体细胞改造试验，基因编辑从模式生物进入临床探索阶段。<br><br><strong>Period</strong>: Twenty-First Century<br><strong>Evidence</strong>: T / locally_reviewed<br><br>Sources: <a href=\"https://doi.org/10.1038/nature.2016.20302\" target=\"_blank\" rel=\"noopener\">SRC-2601</a>"
       },
       "group": "老年科学、健康寿命与生物技术产业",
       "meta": {
@@ -16701,7 +16701,7 @@
         "path_family": "reconstruction",
         "event_type": "technology",
         "evidence_grade": "T",
-        "verification_status": "unreviewed",
+        "verification_status": "locally_reviewed",
         "status": "draft",
         "date_start": "2016"
       },
@@ -20083,7 +20083,7 @@
       },
       "text": {
         "headline": "贺建奎 CRISPR 婴儿事件引发全球伦理争议",
-        "text": "该事件成为人类生殖系基因编辑最重要的反证，推动监管收紧和国际共识强化。<br><br><strong>Claim</strong>: 2018 年 11 月 26 日，贺建奎宣称通过 CRISPR 编辑人类胚胎基因并导致双胞胎出生，引发关于知情同意、生殖系编辑和科学伦理的全球危机。<br><br><strong>Period</strong>: Twenty-First Century<br><strong>Evidence</strong>: S / unreviewed<br><br>Sources: <a href=\"https://www.nature.com/articles/d41586-018-07545-0\" target=\"_blank\" rel=\"noopener\">SRC-191</a>"
+        "text": "该事件成为人类生殖系基因编辑最重要的反证，推动监管收紧和国际共识强化。<br><br><strong>Claim</strong>: 2018 年 11 月 26 日，贺建奎宣称通过 CRISPR 编辑人类胚胎基因并导致双胞胎出生，引发关于知情同意、生殖系编辑和科学伦理的全球危机。<br><br><strong>Period</strong>: Twenty-First Century<br><strong>Evidence</strong>: S / locally_reviewed<br><br>Sources: <a href=\"https://www.nature.com/articles/d41586-018-07545-0\" target=\"_blank\" rel=\"noopener\">SRC-191</a>"
       },
       "group": "失败教训、监管边界与反证",
       "meta": {
@@ -20094,7 +20094,7 @@
         "path_family": "reconstruction",
         "event_type": "failure",
         "evidence_grade": "S",
-        "verification_status": "unreviewed",
+        "verification_status": "locally_reviewed",
         "status": "draft",
         "date_start": "2018-11-26"
       }
@@ -20107,7 +20107,7 @@
       },
       "text": {
         "headline": "PhenoAge 表观遗传年龄标志物发表",
-        "text": "PhenoAge 把生物年龄从“时间刻度”扩展为可检验的死亡与健康风险指标。<br><br><strong>Claim</strong>: Levine 等人在 2018 年发表 PhenoAge，用 DNA 甲基化与临床表型构建可预测寿命和健康寿命的表观遗传年龄标志物。<br><br><strong>Period</strong>: Twenty-First Century<br><strong>Evidence</strong>: T / unreviewed<br><br>Sources: <a href=\"https://pubmed.ncbi.nlm.nih.gov/29676998/\" target=\"_blank\" rel=\"noopener\">SRC-207</a>"
+        "text": "PhenoAge 把生物年龄从“时间刻度”扩展为可检验的死亡与健康风险指标。<br><br><strong>Claim</strong>: Levine 等人在 2018 年发表 PhenoAge，用 DNA 甲基化与临床表型构建可预测寿命和健康寿命的表观遗传年龄标志物。<br><br><strong>Period</strong>: Twenty-First Century<br><strong>Evidence</strong>: T / locally_reviewed<br><br>Sources: <a href=\"https://pubmed.ncbi.nlm.nih.gov/29676998/\" target=\"_blank\" rel=\"noopener\">SRC-207</a>"
       },
       "group": "老年科学、健康寿命与生物技术产业",
       "meta": {
@@ -20118,7 +20118,7 @@
         "path_family": "maintenance",
         "event_type": "technology",
         "evidence_grade": "T",
-        "verification_status": "unreviewed",
+        "verification_status": "locally_reviewed",
         "status": "draft",
         "date_start": "2018-04-18"
       }
@@ -21895,7 +21895,7 @@
       },
       "text": {
         "headline": "首个人体 senolytics 临床报告发表",
-        "text": "该报告把清除衰老细胞从动物实验推进到人体探索，但样本量小且机制仍需确认。<br><br><strong>Claim</strong>: Hickson 等人在 2019 年 9 月 18 日于 EBioMedicine 报告达沙替尼加槲皮素的人体初步试验，显示糖尿病肾病个体中衰老细胞标志物下降，是 senolytics 早期人体证据。<br><br><strong>Period</strong>: Twenty-First Century<br><strong>Evidence</strong>: T / unreviewed<br><br>Sources: <a href=\"https://pubmed.ncbi.nlm.nih.gov/31542391/\" target=\"_blank\" rel=\"noopener\">SRC-174</a>"
+        "text": "该报告把清除衰老细胞从动物实验推进到人体探索，但样本量小且机制仍需确认。<br><br><strong>Claim</strong>: Hickson 等人在 2019 年 9 月 18 日于 EBioMedicine 报告达沙替尼加槲皮素的人体初步试验，显示糖尿病肾病个体中衰老细胞标志物下降，是 senolytics 早期人体证据。<br><br><strong>Period</strong>: Twenty-First Century<br><strong>Evidence</strong>: T / locally_reviewed<br><br>Sources: <a href=\"https://pubmed.ncbi.nlm.nih.gov/31542391/\" target=\"_blank\" rel=\"noopener\">SRC-174</a>"
       },
       "group": "老年科学、健康寿命与生物技术产业",
       "meta": {
@@ -21906,7 +21906,7 @@
         "path_family": "maintenance",
         "event_type": "technology",
         "evidence_grade": "T",
-        "verification_status": "unreviewed",
+        "verification_status": "locally_reviewed",
         "status": "draft",
         "date_start": "2019-09-18"
       }
@@ -21919,7 +21919,7 @@
       },
       "text": {
         "headline": "GrimAge 寿命与健康寿命预测标志物发表",
-        "text": "GrimAge 成为健康寿命研究中常用的表观遗传风险指标。<br><br><strong>Claim</strong>: Lu 等人在 2019 年发表 GrimAge，利用 DNA 甲基化替代指标预测 lifespan 和 healthspan，强化死亡风险与生物年龄的可测量连接。<br><br><strong>Period</strong>: Twenty-First Century<br><strong>Evidence</strong>: T / unreviewed<br><br>Sources: <a href=\"https://pubmed.ncbi.nlm.nih.gov/30669119/\" target=\"_blank\" rel=\"noopener\">SRC-208</a>"
+        "text": "GrimAge 成为健康寿命研究中常用的表观遗传风险指标。<br><br><strong>Claim</strong>: Lu 等人在 2019 年发表 GrimAge，利用 DNA 甲基化替代指标预测 lifespan 和 healthspan，强化死亡风险与生物年龄的可测量连接。<br><br><strong>Period</strong>: Twenty-First Century<br><strong>Evidence</strong>: T / locally_reviewed<br><br>Sources: <a href=\"https://pubmed.ncbi.nlm.nih.gov/30669119/\" target=\"_blank\" rel=\"noopener\">SRC-208</a>"
       },
       "group": "老年科学、健康寿命与生物技术产业",
       "meta": {
@@ -21930,7 +21930,7 @@
         "path_family": "maintenance",
         "event_type": "technology",
         "evidence_grade": "T",
-        "verification_status": "unreviewed",
+        "verification_status": "locally_reviewed",
         "status": "draft",
         "date_start": "2019-01-21"
       }
@@ -24097,7 +24097,7 @@
       },
       "text": {
         "headline": "UBX0101 senolytics II 期试验失败",
-        "text": "这是首个进入 II 期的局部 senolytics 重大失败，说明清除衰老细胞概念仍需更好的靶点、剂型和终点。<br><br><strong>Claim</strong>: Unity Biotechnology 于 2020 年 8 月 17 日公布 UBX0101 II 期 12 周结果，膝骨关节炎疼痛主要终点未达到统计学显著差异，公司不再推进该药进入关键研究。<br><br><strong>Period</strong>: Twenty-First Century<br><strong>Evidence</strong>: L / unreviewed<br><br>Sources: <a href=\"https://www.fightaging.org/archives/2020/08/unity-biotechnology-fails-phase-ii-trial-of-localized-senolytics-for-knee-osteoarthritis/\" target=\"_blank\" rel=\"noopener\">SRC-178</a>"
+        "text": "这是首个进入 II 期的局部 senolytics 重大失败，说明清除衰老细胞概念仍需更好的靶点、剂型和终点。<br><br><strong>Claim</strong>: Unity Biotechnology 于 2020 年 8 月 17 日公布 UBX0101 II 期 12 周结果，膝骨关节炎疼痛主要终点未达到统计学显著差异，公司不再推进该药进入关键研究。<br><br><strong>Period</strong>: Twenty-First Century<br><strong>Evidence</strong>: L / locally_reviewed<br><br>Sources: <a href=\"https://www.fightaging.org/archives/2020/08/unity-biotechnology-fails-phase-ii-trial-of-localized-senolytics-for-knee-osteoarthritis/\" target=\"_blank\" rel=\"noopener\">SRC-178</a>"
       },
       "group": "失败教训、监管边界与反证",
       "meta": {
@@ -24108,7 +24108,7 @@
         "path_family": "maintenance",
         "event_type": "failure",
         "evidence_grade": "L",
-        "verification_status": "unreviewed",
+        "verification_status": "locally_reviewed",
         "status": "draft",
         "date_start": "2020-08-17"
       }
@@ -24313,7 +24313,7 @@
       },
       "text": {
         "headline": "首例 iPS 细胞来源心肌细胞片移植进入人体",
-        "text": "该手术把 iPS 细胞从视网膜和神经方向扩展到心脏组织修复，是细胞治疗器官化的重要节点。<br><br><strong>Claim</strong>: 2020 年 1 月 30 日，报道显示大阪大学团队将 iPS 细胞来源心肌细胞片移植给一名心脏病患者，成为 iPS 细胞来源心肌组织进入人体的首个临床案例。<br><br><strong>Period</strong>: Twenty-First Century<br><strong>Evidence</strong>: T / unreviewed<br><br>Sources: <a href=\"https://newatlas.com/medical/lab-grown-heart-cells-human-first/\" target=\"_blank\" rel=\"noopener\">SRC-352</a>"
+        "text": "该手术把 iPS 细胞从视网膜和神经方向扩展到心脏组织修复，是细胞治疗器官化的重要节点。<br><br><strong>Claim</strong>: 2020 年 1 月 30 日，报道显示大阪大学团队将 iPS 细胞来源心肌细胞片移植给一名心脏病患者，成为 iPS 细胞来源心肌组织进入人体的首个临床案例。<br><br><strong>Period</strong>: Twenty-First Century<br><strong>Evidence</strong>: T / locally_reviewed<br><br>Sources: <a href=\"https://newatlas.com/medical/lab-grown-heart-cells-human-first/\" target=\"_blank\" rel=\"noopener\">SRC-352</a>"
       },
       "group": "老年科学、健康寿命与生物技术产业",
       "meta": {
@@ -24324,7 +24324,7 @@
         "path_family": "reconstruction",
         "event_type": "technology",
         "evidence_grade": "T",
-        "verification_status": "unreviewed",
+        "verification_status": "locally_reviewed",
         "status": "draft",
         "date_start": "2020-01-30"
       }
@@ -26821,7 +26821,7 @@
       },
       "text": {
         "headline": "AlphaFold 2 实现高精度蛋白质结构预测",
-        "text": "AlphaFold 2 是 AI 加速生命科学和疾病研究的代表性节点，也改变了蛋白质相关衰老与修复研究的工具基础。<br><br><strong>Claim</strong>: Jumper 等人在 2021 年 7 月 15 日于 Nature 报告 AlphaFold 2，以接近实验精度预测蛋白质三维结构，把生物学从人工解析推向可扩展的计算模拟。<br><br><strong>Period</strong>: Twenty-First Century<br><strong>Evidence</strong>: T / unreviewed<br><br>Sources: <a href=\"https://www.nature.com/articles/s41586-021-03819-2\" target=\"_blank\" rel=\"noopener\">SRC-146</a>"
+        "text": "AlphaFold 2 是 AI 加速生命科学和疾病研究的代表性节点，也改变了蛋白质相关衰老与修复研究的工具基础。<br><br><strong>Claim</strong>: Jumper 等人在 2021 年 7 月 15 日于 Nature 报告 AlphaFold 2，以接近实验精度预测蛋白质三维结构，把生物学从人工解析推向可扩展的计算模拟。<br><br><strong>Period</strong>: Twenty-First Century<br><strong>Evidence</strong>: T / locally_reviewed<br><br>Sources: <a href=\"https://www.nature.com/articles/s41586-021-03819-2\" target=\"_blank\" rel=\"noopener\">SRC-146</a>"
       },
       "group": "老年科学、健康寿命与生物技术产业",
       "meta": {
@@ -26832,7 +26832,7 @@
         "path_family": "maintenance",
         "event_type": "technology",
         "evidence_grade": "T",
-        "verification_status": "unreviewed",
+        "verification_status": "locally_reviewed",
         "status": "draft",
         "date_start": "2021-07-15"
       }
@@ -26845,7 +26845,7 @@
       },
       "text": {
         "headline": "首个体内 CRISPR 基因编辑临床数据发表",
-        "text": "该数据是体内 CRISPR 治疗从概念进入人体可测量的关键早期证据。<br><br><strong>Claim</strong>: Gillmore 等人在 2021 年 6 月 26 日于 NEJM 报告 NTLA-2001 的 1 期数据，显示 CRISPR-Cas9 可在人体内编辑肝细胞靶基因并降低血清转甲状腺素蛋白水平。<br><br><strong>Period</strong>: Twenty-First Century<br><strong>Evidence</strong>: T / unreviewed<br><br>Sources: <a href=\"https://pubmed.ncbi.nlm.nih.gov/34215024/\" target=\"_blank\" rel=\"noopener\">SRC-155</a>"
+        "text": "该数据是体内 CRISPR 治疗从概念进入人体可测量的关键早期证据。<br><br><strong>Claim</strong>: Gillmore 等人在 2021 年 6 月 26 日于 NEJM 报告 NTLA-2001 的 1 期数据，显示 CRISPR-Cas9 可在人体内编辑肝细胞靶基因并降低血清转甲状腺素蛋白水平。<br><br><strong>Period</strong>: Twenty-First Century<br><strong>Evidence</strong>: T / locally_reviewed<br><br>Sources: <a href=\"https://pubmed.ncbi.nlm.nih.gov/34215024/\" target=\"_blank\" rel=\"noopener\">SRC-155</a>"
       },
       "group": "老年科学、健康寿命与生物技术产业",
       "meta": {
@@ -26856,7 +26856,7 @@
         "path_family": "reconstruction",
         "event_type": "technology",
         "evidence_grade": "T",
-        "verification_status": "unreviewed",
+        "verification_status": "locally_reviewed",
         "status": "draft",
         "date_start": "2021-06-26"
       }
@@ -29331,7 +29331,7 @@
       },
       "text": {
         "headline": "DunedinPACE 衰老速度表观遗传标志物发表",
-        "text": "DunedinPACE 成为健康寿命研究中的重要反馈指标，但属于预测关联工具，不能单独证明干预延寿。<br><br><strong>Claim</strong>: Belsky 等人 2022 年 1 月 14 日在 eLife 发表 DunedinPACE，从血液 DNA 甲基化估算衰老速度，提供比静态年龄更接近干预反馈的健康风险指标。<br><br><strong>Period</strong>: Twenty-First Century<br><strong>Evidence</strong>: T / unreviewed<br><br>Sources: <a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC8853656/\" target=\"_blank\" rel=\"noopener\">SRC-095</a>"
+        "text": "DunedinPACE 成为健康寿命研究中的重要反馈指标，但属于预测关联工具，不能单独证明干预延寿。<br><br><strong>Claim</strong>: Belsky 等人 2022 年 1 月 14 日在 eLife 发表 DunedinPACE，从血液 DNA 甲基化估算衰老速度，提供比静态年龄更接近干预反馈的健康风险指标。<br><br><strong>Period</strong>: Twenty-First Century<br><strong>Evidence</strong>: T / locally_reviewed<br><br>Sources: <a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC8853656/\" target=\"_blank\" rel=\"noopener\">SRC-095</a>"
       },
       "group": "老年科学、健康寿命与生物技术产业",
       "meta": {
@@ -29342,7 +29342,7 @@
         "path_family": "maintenance",
         "event_type": "technology",
         "evidence_grade": "T",
-        "verification_status": "unreviewed",
+        "verification_status": "locally_reviewed",
         "status": "draft",
         "date_start": "2022-01-14"
       }
@@ -32344,7 +32344,7 @@
       },
       "text": {
         "headline": "XPRIZE Healthspan 全球竞赛启动",
-        "text": "该竞赛把健康寿命恢复能力转化为全球性可测量挑战，并吸引 Hevolution 等机构共同资助。<br><br><strong>Claim</strong>: XPRIZE 于 2023 年 11 月启动 1.01 亿美元、为期 7 年的 Healthspan 竞赛，要求参赛者开发可恢复 50—80 岁人群肌肉、认知和免疫功能至少 10 年、目标 20 年的治疗，以缩短寿命与健康寿命之间的差距。<br><br><strong>Period</strong>: Twenty-First Century<br><strong>Evidence</strong>: S / unreviewed<br><br>Sources: <a href=\"https://www.xprize.org/news/101m-xprize-healthspan-awards-first-milestone-winners-driving-toward-revolutionary-healthy-aging-advances\" target=\"_blank\" rel=\"noopener\">SRC-089</a> · <a href=\"https://www.xprize.org/competitions/healthspan\" target=\"_blank\" rel=\"noopener\">SRC-090</a>"
+        "text": "该竞赛把健康寿命恢复能力转化为全球性可测量挑战，并吸引 Hevolution 等机构共同资助。<br><br><strong>Claim</strong>: XPRIZE 于 2023 年 11 月启动 1.01 亿美元、为期 7 年的 Healthspan 竞赛，要求参赛者开发可恢复 50—80 岁人群肌肉、认知和免疫功能至少 10 年、目标 20 年的治疗，以缩短寿命与健康寿命之间的差距。<br><br><strong>Period</strong>: Twenty-First Century<br><strong>Evidence</strong>: S / locally_reviewed<br><br>Sources: <a href=\"https://www.xprize.org/news/101m-xprize-healthspan-awards-first-milestone-winners-driving-toward-revolutionary-healthy-aging-advances\" target=\"_blank\" rel=\"noopener\">SRC-089</a> · <a href=\"https://www.xprize.org/competitions/healthspan\" target=\"_blank\" rel=\"noopener\">SRC-090</a>"
       },
       "group": "老年科学、健康寿命与生物技术产业",
       "meta": {
@@ -32355,7 +32355,7 @@
         "path_family": "maintenance",
         "event_type": "institution",
         "evidence_grade": "S",
-        "verification_status": "unreviewed",
+        "verification_status": "locally_reviewed",
         "status": "draft",
         "date_start": "2023-11"
       }
@@ -32464,7 +32464,7 @@
       },
       "text": {
         "headline": "FDA 批准首个 CRISPR 基因疗法 Casgevy",
-        "text": "该批准标志可编程基因组编辑从实验工具进入正式监管治疗路径。<br><br><strong>Claim</strong>: FDA 于 2023 年 12 月 8 日批准 Casgevy，成为首个获批的 CRISPR-Cas9 基因编辑疗法，用于治疗镰状细胞病相关复发血管闭塞危象。<br><br><strong>Period</strong>: Twenty-First Century<br><strong>Evidence</strong>: S / unreviewed<br><br>Sources: <a href=\"https://web.archive.org/web/20231208165916/https://www.fda.gov/news-events/press-announcements/fda-approves-first-gene-therapies-treat-patients-sickle-cell-disease\" target=\"_blank\" rel=\"noopener\">SRC-154</a>"
+        "text": "该批准标志可编程基因组编辑从实验工具进入正式监管治疗路径。<br><br><strong>Claim</strong>: FDA 于 2023 年 12 月 8 日批准 Casgevy，成为首个获批的 CRISPR-Cas9 基因编辑疗法，用于治疗镰状细胞病相关复发血管闭塞危象。<br><br><strong>Period</strong>: Twenty-First Century<br><strong>Evidence</strong>: S / locally_reviewed<br><br>Sources: <a href=\"https://web.archive.org/web/20231208165916/https://www.fda.gov/news-events/press-announcements/fda-approves-first-gene-therapies-treat-patients-sickle-cell-disease\" target=\"_blank\" rel=\"noopener\">SRC-154</a>"
       },
       "group": "老年科学、健康寿命与生物技术产业",
       "meta": {
@@ -32475,7 +32475,7 @@
         "path_family": "reconstruction",
         "event_type": "institution",
         "evidence_grade": "S",
-        "verification_status": "unreviewed",
+        "verification_status": "locally_reviewed",
         "status": "draft",
         "date_start": "2023-12-08"
       }
@@ -37180,7 +37180,7 @@
       },
       "text": {
         "headline": "AlphaFold 蛋白质结构数据库覆盖 2.14 亿序列",
-        "text": "大规模结构数据库把蛋白质结构从逐条实验解析转变为可扩展计算资源，支撑衰老和疾病研究基础设施。<br><br><strong>Claim</strong>: Varadi 等人在 2024 年 1 月 1 日于 Nucleic Acids Research 报告 AlphaFold Protein Structure Database 提供超过 2.14 亿条蛋白质序列的结构覆盖。<br><br><strong>Period</strong>: Twenty-First Century<br><strong>Evidence</strong>: T / unreviewed<br><br>Sources: <a href=\"https://pubmed.ncbi.nlm.nih.gov/37933859/\" target=\"_blank\" rel=\"noopener\">SRC-175</a>"
+        "text": "大规模结构数据库把蛋白质结构从逐条实验解析转变为可扩展计算资源，支撑衰老和疾病研究基础设施。<br><br><strong>Claim</strong>: Varadi 等人在 2024 年 1 月 1 日于 Nucleic Acids Research 报告 AlphaFold Protein Structure Database 提供超过 2.14 亿条蛋白质序列的结构覆盖。<br><br><strong>Period</strong>: Twenty-First Century<br><strong>Evidence</strong>: T / locally_reviewed<br><br>Sources: <a href=\"https://pubmed.ncbi.nlm.nih.gov/37933859/\" target=\"_blank\" rel=\"noopener\">SRC-175</a>"
       },
       "group": "老年科学、健康寿命与生物技术产业",
       "meta": {
@@ -37191,7 +37191,7 @@
         "path_family": "maintenance",
         "event_type": "technology",
         "evidence_grade": "T",
-        "verification_status": "unreviewed",
+        "verification_status": "locally_reviewed",
         "status": "draft",
         "date_start": "2024-01-01"
       }
@@ -37490,7 +37490,7 @@
       },
       "text": {
         "headline": "AlphaFold 3 实现生物分子复合物统一结构预测",
-        "text": "AlphaFold 3 把结构预测从蛋白质单体扩展到广泛生物分子空间，为药物设计、蛋白工程和分子医学提供统一计算接口。<br><br><strong>Claim</strong>: 2024 年 5 月 8 日，Nature 在线发表 AlphaFold 3，报告统一预测蛋白质、核酸、小分子、离子和修饰残基复合物结构，并在蛋白-配体和抗体-抗原预测上显著提升精度。<br><br><strong>Period</strong>: Twenty-First Century<br><strong>Evidence</strong>: S / unreviewed<br><br>Sources: <a href=\"https://www.nature.com/articles/s41586-024-07487-w\" target=\"_blank\" rel=\"noopener\">SRC-379</a>"
+        "text": "AlphaFold 3 把结构预测从蛋白质单体扩展到广泛生物分子空间，为药物设计、蛋白工程和分子医学提供统一计算接口。<br><br><strong>Claim</strong>: 2024 年 5 月 8 日，Nature 在线发表 AlphaFold 3，报告统一预测蛋白质、核酸、小分子、离子和修饰残基复合物结构，并在蛋白-配体和抗体-抗原预测上显著提升精度。<br><br><strong>Period</strong>: Twenty-First Century<br><strong>Evidence</strong>: S / locally_reviewed<br><br>Sources: <a href=\"https://www.nature.com/articles/s41586-024-07487-w\" target=\"_blank\" rel=\"noopener\">SRC-379</a>"
       },
       "group": "AI 自动化科学、技术与知识基础设施",
       "meta": {
@@ -37501,7 +37501,7 @@
         "path_family": "cognitive_extension",
         "event_type": "technology",
         "evidence_grade": "S",
-        "verification_status": "unreviewed",
+        "verification_status": "locally_reviewed",
         "status": "draft",
         "date_start": "2024-05-08"
       }
@@ -43153,7 +43153,7 @@
       },
       "text": {
         "headline": "LEV 基金会 Robust Mouse Rejuvenation 首轮研究公布最终结果",
-        "text": "这是以组合干预测试衰老可塑性的重要公开项目节点，也显示单一组合研究需要与热量限制等基线比较。<br><br><strong>Claim</strong>: LEV 基金会于 2025 年 5 月 31 日发布首轮 Robust Mouse Rejuvenation 最终更新：最后一只小鼠于 2025 年 2 月 12 日死亡，研究从 2023 年初开始，结果显示损伤修复类处理对中年起始小鼠寿命具有可叠加影响，但幅度与热量限制及模拟物相当，被称为“限定性胜利”。<br><br><strong>Period</strong>: Twenty-First Century<br><strong>Evidence</strong>: T / unreviewed<br><br>Sources: <a href=\"https://www.levf.org/projects/robust-mouse-rejuvenation-study-1\" target=\"_blank\" rel=\"noopener\">SRC-091</a> · <a href=\"https://www.levf.org/projects/robust-mouse-rejuvenation-study-1/study-updates/may-31st-2025\" target=\"_blank\" rel=\"noopener\">SRC-092</a>"
+        "text": "这是以组合干预测试衰老可塑性的重要公开项目节点，也显示单一组合研究需要与热量限制等基线比较。<br><br><strong>Claim</strong>: LEV 基金会于 2025 年 5 月 31 日发布首轮 Robust Mouse Rejuvenation 最终更新：最后一只小鼠于 2025 年 2 月 12 日死亡，研究从 2023 年初开始，结果显示损伤修复类处理对中年起始小鼠寿命具有可叠加影响，但幅度与热量限制及模拟物相当，被称为“限定性胜利”。<br><br><strong>Period</strong>: Twenty-First Century<br><strong>Evidence</strong>: T / locally_reviewed<br><br>Sources: <a href=\"https://www.levf.org/projects/robust-mouse-rejuvenation-study-1\" target=\"_blank\" rel=\"noopener\">SRC-091</a> · <a href=\"https://www.levf.org/projects/robust-mouse-rejuvenation-study-1/study-updates/may-31st-2025\" target=\"_blank\" rel=\"noopener\">SRC-092</a>"
       },
       "group": "老年科学、健康寿命与生物技术产业",
       "meta": {
@@ -43164,7 +43164,7 @@
         "path_family": "reconstruction",
         "event_type": "practice",
         "evidence_grade": "T",
-        "verification_status": "unreviewed",
+        "verification_status": "locally_reviewed",
         "status": "draft",
         "date_start": "2025-05-31"
       }
@@ -43177,7 +43177,7 @@
       },
       "text": {
         "headline": "OpenAI 与 Retro Biosciences 公布 AI 设计增强版山中因子",
-        "text": "该事件显示 AI 开始参与重编程因子设计，但它仍是体外研究，不构成人体重编程疗效。<br><br><strong>Claim</strong>: OpenAI 于 2025 年 8 月 22 日公布与 Retro Biosciences 的合作：GPT-4b micro 重设计 SOX2 和 KLF4，在体外将干细胞重编程标志物表达提高 50 倍以上，并增强 DNA 损伤修复。<br><br><strong>Period</strong>: Twenty-First Century<br><strong>Evidence</strong>: T / unreviewed<br><br>Sources: <a href=\"https://web.archive.org/web/20260723222800/https://openai.com/index/accelerating-life-sciences-research-with-retro-biosciences/\" target=\"_blank\" rel=\"noopener\">SRC-096</a>"
+        "text": "该事件显示 AI 开始参与重编程因子设计，但它仍是体外研究，不构成人体重编程疗效。<br><br><strong>Claim</strong>: OpenAI 于 2025 年 8 月 22 日公布与 Retro Biosciences 的合作：GPT-4b micro 重设计 SOX2 和 KLF4，在体外将干细胞重编程标志物表达提高 50 倍以上，并增强 DNA 损伤修复。<br><br><strong>Period</strong>: Twenty-First Century<br><strong>Evidence</strong>: T / locally_reviewed<br><br>Sources: <a href=\"https://web.archive.org/web/20260723222800/https://openai.com/index/accelerating-life-sciences-research-with-retro-biosciences/\" target=\"_blank\" rel=\"noopener\">SRC-096</a>"
       },
       "group": "老年科学、健康寿命与生物技术产业",
       "meta": {
@@ -43188,7 +43188,7 @@
         "path_family": "reconstruction",
         "event_type": "technology",
         "evidence_grade": "T",
-        "verification_status": "unreviewed",
+        "verification_status": "locally_reviewed",
         "status": "draft",
         "date_start": "2025-08-22"
       }
@@ -43391,7 +43391,7 @@
       },
       "text": {
         "headline": "iPS 细胞来源多巴胺能细胞治疗帕金森病 I/II 期结果发表",
-        "text": "该试验把 iPS 细胞疗法推进到神经系统疾病的人体验证，但小样本和早期随访限制结论强度。<br><br><strong>Claim</strong>: 2025 年 4 月 16 日，Nature 发表 iPS 细胞来源多巴胺能细胞治疗帕金森病的 I/II 期试验，报告异体 iPS 细胞来源多巴胺能前体细胞移植的安全性和初步功能信号。<br><br><strong>Period</strong>: Twenty-First Century<br><strong>Evidence</strong>: S / unreviewed<br><br>Sources: <a href=\"https://doi.org/10.1038/s41586-025-08700-0\" target=\"_blank\" rel=\"noopener\">SRC-353</a>"
+        "text": "该试验把 iPS 细胞疗法推进到神经系统疾病的人体验证，但小样本和早期随访限制结论强度。<br><br><strong>Claim</strong>: 2025 年 4 月 16 日，Nature 发表 iPS 细胞来源多巴胺能细胞治疗帕金森病的 I/II 期试验，报告异体 iPS 细胞来源多巴胺能前体细胞移植的安全性和初步功能信号。<br><br><strong>Period</strong>: Twenty-First Century<br><strong>Evidence</strong>: S / locally_reviewed<br><br>Sources: <a href=\"https://doi.org/10.1038/s41586-025-08700-0\" target=\"_blank\" rel=\"noopener\">SRC-353</a>"
       },
       "group": "老年科学、健康寿命与生物技术产业",
       "meta": {
@@ -43402,7 +43402,7 @@
         "path_family": "reconstruction",
         "event_type": "technology",
         "evidence_grade": "S",
-        "verification_status": "unreviewed",
+        "verification_status": "locally_reviewed",
         "status": "draft",
         "date_start": "2025-04-16"
       }
@@ -51643,7 +51643,7 @@
       },
       "text": {
         "headline": "Life Biosciences ER-100 获 FDA IND 批准",
-        "text": "ER-100 进入 Phase 1，标志山中因子谱系从细胞和动物研究进入人体安全性验证阶段。<br><br><strong>Claim</strong>: Life Biosciences 宣布 FDA 于 2026 年 1 月 28 日批准 ER-100 的 IND 申请；公司称这是首个使用部分表观遗传重编程进入人体临床的细胞年轻化疗法，拟用于青光眼和 NAION 等视神经病。<br><br><strong>Period</strong>: Twenty-First Century<br><strong>Evidence</strong>: T / unreviewed<br><br>Sources: <a href=\"https://web.archive.org/web/20260708222514/https://www.lifebiosciences.com/life-biosciences-announces-fda-clearance-of-ind-application-for-er-100-in-optic-neuropathies/\" target=\"_blank\" rel=\"noopener\">SRC-100</a> · <a href=\"https://clinicaltrials.gov/study/NCT07290244\" target=\"_blank\" rel=\"noopener\">SRC-101</a>"
+        "text": "ER-100 进入 Phase 1，标志山中因子谱系从细胞和动物研究进入人体安全性验证阶段。<br><br><strong>Claim</strong>: Life Biosciences 宣布 FDA 于 2026 年 1 月 28 日批准 ER-100 的 IND 申请；公司称这是首个使用部分表观遗传重编程进入人体临床的细胞年轻化疗法，拟用于青光眼和 NAION 等视神经病。<br><br><strong>Period</strong>: Twenty-First Century<br><strong>Evidence</strong>: T / locally_reviewed<br><br>Sources: <a href=\"https://web.archive.org/web/20260708222514/https://www.lifebiosciences.com/life-biosciences-announces-fda-clearance-of-ind-application-for-er-100-in-optic-neuropathies/\" target=\"_blank\" rel=\"noopener\">SRC-100</a> · <a href=\"https://clinicaltrials.gov/study/NCT07290244\" target=\"_blank\" rel=\"noopener\">SRC-101</a>"
       },
       "group": "老年科学、健康寿命与生物技术产业",
       "meta": {
@@ -51654,7 +51654,7 @@
         "path_family": "reconstruction",
         "event_type": "technology",
         "evidence_grade": "T",
-        "verification_status": "unreviewed",
+        "verification_status": "locally_reviewed",
         "status": "draft",
         "date_start": "2026-01-28"
       }
@@ -51667,7 +51667,7 @@
       },
       "text": {
         "headline": "ER-100 完成首例受试者给药",
-        "text": "这是人体一期试验的执行节点，仍需长期随访和结果公布。<br><br><strong>Claim</strong>: Life Biosciences 宣布 ER-100 Phase 1 完成首例受试者给药，评估其在开角型青光眼和 NAION 中的安全性、耐受性和视觉功能终点。<br><br><strong>Period</strong>: Twenty-First Century<br><strong>Evidence</strong>: T / unreviewed<br><br>Sources: <a href=\"https://web.archive.org/web/20260803191758/https://www.lifebiosciences.com/life-biosciences-announces-first-patient-dosed-in-phase-1-trial-of-er-100-for-optic-neuropathies/\" target=\"_blank\" rel=\"noopener\">SRC-102</a> · <a href=\"https://clinicaltrials.gov/study/NCT07290244\" target=\"_blank\" rel=\"noopener\">SRC-101</a>"
+        "text": "这是人体一期试验的执行节点，仍需长期随访和结果公布。<br><br><strong>Claim</strong>: Life Biosciences 宣布 ER-100 Phase 1 完成首例受试者给药，评估其在开角型青光眼和 NAION 中的安全性、耐受性和视觉功能终点。<br><br><strong>Period</strong>: Twenty-First Century<br><strong>Evidence</strong>: T / locally_reviewed<br><br>Sources: <a href=\"https://web.archive.org/web/20260803191758/https://www.lifebiosciences.com/life-biosciences-announces-first-patient-dosed-in-phase-1-trial-of-er-100-for-optic-neuropathies/\" target=\"_blank\" rel=\"noopener\">SRC-102</a> · <a href=\"https://clinicaltrials.gov/study/NCT07290244\" target=\"_blank\" rel=\"noopener\">SRC-101</a>"
       },
       "group": "老年科学、健康寿命与生物技术产业",
       "meta": {
@@ -51678,7 +51678,7 @@
         "path_family": "reconstruction",
         "event_type": "practice",
         "evidence_grade": "T",
-        "verification_status": "unreviewed",
+        "verification_status": "locally_reviewed",
         "status": "draft",
         "date_start": "2026-06-09"
       }
@@ -51833,7 +51833,7 @@
       },
       "text": {
         "headline": "日本药事委员会建议推进首个异体 iPS 细胞产品审批",
-        "text": "该建议若转化为正式许可，将标志 iPS 细胞疗法从试验转向条件性监管商品化。<br><br><strong>Claim</strong>: 2026 年 2 月 24 日，AABB News 报道日本药事委员会建议推进 Amchepry（帕金森病）与 ReHeart（严重心衰）两个异体 iPS 细胞产品的条件性批准程序。<br><br><strong>Period</strong>: Twenty-First Century<br><strong>Evidence</strong>: M / unreviewed<br><br>Sources: <a href=\"https://www.aabb.org/news-resources/news/article/2026/02/24/japanese-regulatory-panel-recommends-advancing-world-s-first-ipsc-based-therapies\" target=\"_blank\" rel=\"noopener\">SRC-354</a>"
+        "text": "该建议若转化为正式许可，将标志 iPS 细胞疗法从试验转向条件性监管商品化。<br><br><strong>Claim</strong>: 2026 年 2 月 24 日，AABB News 报道日本药事委员会建议推进 Amchepry（帕金森病）与 ReHeart（严重心衰）两个异体 iPS 细胞产品的条件性批准程序。<br><br><strong>Period</strong>: Twenty-First Century<br><strong>Evidence</strong>: S / locally_reviewed<br><br>Sources: <a href=\"https://www.aabb.org/news-resources/news/article/2026/02/24/japanese-regulatory-panel-recommends-advancing-world-s-first-ipsc-based-therapies\" target=\"_blank\" rel=\"noopener\">SRC-354</a>"
       },
       "group": "老年科学、健康寿命与生物技术产业",
       "meta": {
@@ -51843,8 +51843,8 @@
         "chapter": "老年科学、健康寿命与生物技术产业",
         "path_family": "reconstruction",
         "event_type": "institution",
-        "evidence_grade": "M",
-        "verification_status": "unreviewed",
+        "evidence_grade": "S",
+        "verification_status": "locally_reviewed",
         "status": "draft",
         "date_start": "2026-02-24"
       }

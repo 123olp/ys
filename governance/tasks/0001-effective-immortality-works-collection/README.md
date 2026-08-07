@@ -2,7 +2,7 @@
 - Task ID: `0001`
 - Slug: `effective-immortality-works-collection`
 - Objective: `搭建公共作品集三件套：永生史（过去）、健康手册（现在）、永生指南（未来），服务于有效永生目标`
-- Status: `PLANNING`
+- Status: `EXECUTION`
 
 ## In Scope
 
@@ -49,6 +49,13 @@ TP-04 骨架与索引（结构、交叉引用、项目资产衔接）
 - 约束：物理规律为唯一约束，治理规则不约束内容形态——已确认
 - 第一原理：体验-记忆-选择连续性——已确立
 - 待确认：A1 手册粒度 / A2 指南组织 / A3 起步形态 / A4 物理落点
+
+## 当前推进
+
+- 永生史结构化年表：`docs/reference/history-timeline/`，2592 条事件、2602 个来源卡、31 个时期。
+- 第一版作品子集：`works-subset.v1.json` 登记 400 条事件，覆盖全部时期、路径族和证据等级。
+- 首批本地复核：`works-review-register.v1.json` 登记 31 条 `locally_reviewed` 事件。
+- 下一阶段：继续按子集推进本地复核，再进入独立 fresh review，最后才能写入公共《永生史》。
 
 ## Task Package Overview
 

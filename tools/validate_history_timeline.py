@@ -27,6 +27,10 @@ REQUIRED_FILES = [
     "docs/reference/history-timeline/sources.json",
     "docs/reference/history-timeline/periods.json",
     "docs/reference/history-timeline/example-events.json",
+    "docs/reference/history-timeline/works-subset.schema.json",
+    "docs/reference/history-timeline/works-subset.v1.json",
+    "docs/reference/history-timeline/works-review-register.schema.json",
+    "docs/reference/history-timeline/works-review-register.v1.json",
     "docs/reference/history-timeline/timelinejs.json",
     "docs/reference/history-timeline/preview.html",
     "docs/templates/history-event.md",
@@ -249,6 +253,79 @@ def validate_timeline_file(
     return sorted(event_ids)
 
 
+def validate_works_subset(relative_path: str, event_ids: set[str]) -> None:
+    data = load_json(relative_path)
+    require(isinstance(data, dict), f"invalid_works_subset path={relative_path}")
+    subset_id = data.get("subset_id", "")
+    require(
+        re.fullmatch(r"HITL-WS-V[0-9]+", subset_id),
+        f"invalid_subset_id path={relative_path} value={subset_id}",
+    )
+    require(
+        re.fullmatch(r"[0-9]+\.[0-9]+\.[0-9]+", data.get("version", "")),
+        f"invalid_subset_version path={relative_path}",
+    )
+    ids = data.get("event_ids")
+    require(isinstance(ids, list) and len(set(ids)) == len(ids), f"invalid_subset_ids {relative_path}")
+    require(len(ids) > 0, f"empty_subset {relative_path}")
+    for event_id in ids:
+        require(event_id in event_ids, f"unknown_subset_event {relative_path} event_id={event_id}")
+    require(data.get("reviewed_event_count", 0) >= 0, f"invalid_reviewed_count {relative_path}")
+    require(data.get("fresh_reviewed_event_count", 0) >= 0, f"invalid_fresh_reviewed_count {relative_path}")
+
+
+def validate_works_review_register(
+    relative_path: str,
+    event_ids: set[str],
+    subset_ids: set[str],
+    source_registry: dict[str, dict],
+    timeline_by_id: dict[str, dict],
+    works_subset: dict,
+) -> None:
+    data = load_json(relative_path)
+    require(isinstance(data, dict), f"invalid_works_review_register {relative_path}")
+    require(
+        re.fullmatch(r"HITL-WSR-V[0-9]+", data.get("register_id", "")),
+        f"invalid_register_id {relative_path}",
+    )
+    require(
+        re.fullmatch(r"[0-9]+\.[0-9]+\.[0-9]+", data.get("version", "")),
+        f"invalid_register_version {relative_path}",
+    )
+    entries = data.get("entries")
+    require(isinstance(entries, list) and entries, f"invalid_register_entries {relative_path}")
+
+    reviewed_ids: set[str] = set()
+    for index, entry in enumerate(entries):
+        prefix = f"register[{index}]"
+        require(isinstance(entry, dict), f"invalid_register_entry {prefix}")
+        event_id = entry.get("event_id", "")
+        require(event_id in event_ids, f"unknown_review_event {prefix} event_id={event_id}")
+        require(event_id in subset_ids, f"review_event_not_in_subset {prefix} event_id={event_id}")
+        verdict = entry.get("verdict")
+        require(verdict in {"locally_reviewed", "needs_revision", "blocked"}, f"invalid_verdict {prefix}")
+        require(event_id not in reviewed_ids, f"duplicate_review_event {prefix} event_id={event_id}")
+        reviewed_ids.add(event_id)
+        source_status = entry.get("source_status", {})
+        require(isinstance(source_status, dict), f"invalid_source_status {prefix}")
+        for source_ref in source_status:
+            require(source_ref in source_registry, f"unknown_review_source {prefix} source_id={source_ref}")
+
+        if verdict == "locally_reviewed":
+            require(
+                timeline_by_id[event_id].get("verification_status") == "locally_reviewed",
+                f"verdict_not_synced {prefix} event_id={event_id}",
+            )
+
+    timeline_reviewed = sum(
+        1 for event in timeline_by_id.values() if event.get("verification_status") == "locally_reviewed"
+    )
+    require(
+        timeline_reviewed == works_subset.get("reviewed_event_count", 0),
+        "reviewed_count_mismatch",
+    )
+
+
 def main() -> None:
     for relative_path in REQUIRED_FILES:
         require((ROOT / relative_path).is_file(), f"missing_required_file path={relative_path}")
@@ -268,6 +345,20 @@ def main() -> None:
         "docs/reference/history-timeline/timeline.json",
         source_registry,
         period_registry,
+    )
+    validate_works_subset(
+        "docs/reference/history-timeline/works-subset.v1.json",
+        set(event_ids),
+    )
+    works_subset = load_json("docs/reference/history-timeline/works-subset.v1.json")
+    timeline_by_id = {event["event_id"]: event for event in load_json("docs/reference/history-timeline/timeline.json")["events"]}
+    validate_works_review_register(
+        "docs/reference/history-timeline/works-review-register.v1.json",
+        set(event_ids),
+        set(works_subset["event_ids"]),
+        source_registry,
+        timeline_by_id,
+        works_subset,
     )
 
     # The example file remains a compact, reviewable illustration and must use the same reference model.

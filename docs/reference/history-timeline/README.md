@@ -25,9 +25,13 @@
 | `sources.schema.json` | 来源卡 Schema |
 | `periods.schema.json` | 时期定义 Schema |
 | `timeline.json` | 正式年表数据：2592 条事件 |
-| `sources.json` | 正式来源卡：2595 个来源 |
+| `sources.json` | 正式来源卡：2602 个来源 |
 | `periods.json` | 时期定义与 PeriodO 映射状态：31 个时期 |
 | `example-events.json` | 引用式数据示例 |
+| `works-subset.schema.json` | 作品子集 Schema |
+| `works-subset.v1.json` | 第一版作品子集：400 条事件入选，待逐条复核 |
+| `works-review-register.schema.json` | 本地复核登记 Schema |
+| `works-review-register.v1.json` | 首批 31 条事件本地复核登记 |
 | `timelinejs.json` | 图表发布数据，保留 TimelineJS JSON 兼容结构（由 `make history-timeline-preview` 生成） |
 | `preview.html` | 可直接打开的 ECharts 图表模式预览（由 `make history-timeline-preview` 生成） |
 
@@ -42,6 +46,12 @@
 5. 来源必须可追溯，证据等级必须显式标注。
 6. 审阅通过后，才能在 `docs/publications/history-of-immortality.md` 中引用。
 
+作品化入口：
+
+```bash
+make history-timeline-works-subset
+```
+
 重新生成发布原型：
 
 ```bash
@@ -50,11 +60,13 @@ make history-timeline-preview
 
 ## 当前进度
 
-- 来源卡：2595 个来源已注册，包含重复引用和疑似错源标注。
+- 来源卡：2602 个来源已注册，包含重复引用和疑似错源标注。
 - 事件：2592 条事件已转为结构化 JSON，覆盖神话、思想、技术、制度、实践和失败教训。
 - 日期：使用 EDTF 风格字符串表达约数、区间和长时段。
 - 时期：31 个本地时期定义，16 个已匹配 PeriodO URI，15 个标记为 `pending`。
 - 复核：全部事件仍为 `unreviewed` / `draft`，尚未进入本地复核或独立审阅。
+- 作品子集：`works-subset.v1.json` 已登记 400 条第一版作品事件，覆盖全部时期、8 个路径族、10 类事件类型和 5 类证据等级；当前 `reviewed_event_count=31`。
+- 本地复核：首批 31 条事件已登记为 `locally_reviewed`，来源 URL/DOI 可达并完成标题匹配；独立 fresh review 尚未开始。
 - 可视化：已生成图表发布数据与可浏览原型，当前预览为 ECharts 图表模式，支持搜索、筛选和年份缩放；预览文件为 `timelinejs.json` 和 `preview.html`。
 
 第二轮补录来源：`docs/publications/history-of-immortality.md` 与

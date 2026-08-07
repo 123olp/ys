@@ -18,6 +18,7 @@
 
 ```text
 draft
+  -> 作品子集登记（works-subset.v1.json）
   -> locally_reviewed
   -> fresh_reviewed
   -> published
