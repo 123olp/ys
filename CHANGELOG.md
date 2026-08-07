@@ -7,7 +7,7 @@
 - Switched the history timeline preview to ECharts chart mode and added machine gates that keep timeline data, works subset, review register, and governance contract synchronized.
 - Added a publication manifest and display architecture for the history timeline: three scopes (all, works subset, locally reviewed) plus a publication gate for narrative works.
 - Optimized the history timeline viewer: preview HTML is now lightweight and loads `timelinejs.json` on demand, adds path-family scatter and century density modes, time-window filters, a single-row psql event reader above the chart, and a separate full psql event table.
-- Reordered the history timeline page so the chart is at the top, the query form sits below it, and the event reader, overview tables, metadata, and reviewed events are collapsible lower sections.
+- Reordered the history timeline page so the event reader is at the top, followed by the chart and query form; overview tables, metadata, and reviewed events remain collapsible lower sections.
 
 ## 2026-07-27
 
