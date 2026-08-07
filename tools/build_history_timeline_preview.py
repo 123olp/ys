@@ -379,6 +379,7 @@ PREVIEW_TEMPLATE = r"""<!doctype html>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Human Infra 永生史</title>
+  <style>summary h2 { display: inline; margin: 0; }</style>
 </head>
 <body>
   <h1>Human Infra 永生史</h1>
