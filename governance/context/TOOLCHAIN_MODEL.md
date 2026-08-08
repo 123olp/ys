@@ -24,12 +24,11 @@ review_cycle: P90D
 |---|---|---|
 | 安装依赖 | 按各工具 `README.md` 安装 | 仓库没有统一全局依赖锁文件 |
 | 测试 | `make check` | 全量结构、契约与审计门禁 |
-| 历史年表门禁 | `make history-timeline-gate` | 年表机器契约 |
-| 年表发布原型 | `make history-timeline-preview` | 从三份真相源生成 TimelineJS 数据与原型 |
+| 产品源码边界 | `make public-product-boundary` | 阻止私有产品源码回流公开仓库 |
 | 类型检查 | 按具体模块 README 执行 | 无统一类型系统 |
 | lint / format | `git diff --check` | 文档和代码空白规范 |
 | JSON 校验 | `python3 -m json.tool <file>` | 机器契约语法检查 |
-| 构建 | 按 `web/`、`wiki/` 各自 README | 年表本身无需构建 |
+| 构建 | 按 `web/README.md` | 公开仓库不构建 Wiki、科技树或永生年表 |
 | 本地运行 | 静态文件可用本地 HTTP 服务预览 | 不替代生产发布 |
 | 发布 | 按 `.github/` 和 Cloudflare 平台配置 | 年表只进 CI，不直接发布 |
 | 回滚 | `git revert` / `git checkout <commit> -- <path>` | 只回滚明确授权的变更 |

@@ -179,7 +179,6 @@ docs/
 │   ├── evidence-policy.md
 │   ├── ethics-and-safety-boundaries.md
 │   ├── glossary.md
-│   ├── history-timeline/
 │   ├── human-infra-core-claim-evidence-matrix.md
 │   ├── human-infra-maturity-roadmap.md
 │   ├── life-path-prediction-model-contract.md
@@ -196,7 +195,6 @@ docs/
 │   └── writing-style-guide.md
 ├── source-notes/
 │   ├── core-literature/
-│   ├── 2026-08-06-human-immortality-research-major-events-timeline.md
 │   ├── 2026-06-28-effective-immortality-flywheel-automated-research-run.md
 │   ├── 2026-06-28-effective-immortality-flywheel-derivation-package.md
 │   ├── 2026-06-28-effective-immortality-flywheel-evidence-matrix.md
@@ -233,10 +231,7 @@ docs/
 13. Read `source-notes/2026-06-28-effective-immortality-flywheel-derivation-package.md`.
 14. Read `reference/applications-and-literature.md`.
 15. Read `source-notes/core-literature/README.md`.
-15a. Read `source-notes/2026-08-06-human-immortality-research-major-events-timeline.md` when working on the 永生史 detailed timeline.
-15b. Read `reference/history-timeline/README.md` when converting the 永生史 detailed timeline into structured event data.
-15c. Run `make history-timeline-preview` after changing `reference/history-timeline/timeline.json`, `sources.json`, or `periods.json` to regenerate `timelinejs.json` and `preview.html`.
-15d. Read `reference/history-timeline/PUBLICATION.md` when deciding how to display the timeline or publish narrative works.
+15a. Wiki、科技树与永生年表的产品源码由独立私有产品仓库维护；本公开文档仓库只保留公开研究摘要和稳定产品入口。
 16. Read `reference/review-checklists.md`.
 17. Read `explanations/human-runtime-infrastructure.md`.
 18. Read `source-notes/2026-06-29-controllable-metric-waiting-room-hypothesis-revision-notes.md` if you are working on Future Waiting.

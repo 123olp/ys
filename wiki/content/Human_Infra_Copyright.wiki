@@ -1,3 +1,0 @@
-除非页面另有明确说明，Human Infra Wiki 的原创内容采用 [https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans CC BY-SA 4.0]。
-
-引用论文、标准、图片、数据和外部词条时，原作者、原许可和合理使用边界保持不变。不得将仅可引用的材料整篇复制到本 Wiki。

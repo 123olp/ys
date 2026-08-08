@@ -1,3 +1,0 @@
-本分类收录 Human Infra Wiki 使用的内容模板。模板文档与维护分类只作用于模板页，不应把调用模板的普通词条误归入模板分类。
-
-[[Category:Human Infra Wiki]]

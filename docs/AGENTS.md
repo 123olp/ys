@@ -645,13 +645,7 @@ docs/
 - `reference/document-lifecycle.md`：定义文档从 source 到 stable、superseded、archived 的生命周期。
 - `reference/repository-standards.md`：记录本仓库采用的标准结构、根文件和调研来源。
 - `reference/review-checklists.md`：提供文档、证据、安全、域边界和数据脚本审查清单。
-- `reference/history-timeline/README.md`：永生史严肃历史年表工程包入口，说明年表定位、文件职责、使用方式与落地顺序。
-- `reference/history-timeline/CONTRACT.md`：定义年表事件标识、必填字段、日期、来源、路径族和禁止用途。
-- `reference/history-timeline/GOVERNANCE.md`：定义年表审阅、生命周期、质量门禁、冲突处理、更新与回滚规则。
-- `reference/history-timeline/TOOLS.md`：沉淀成熟开源工具、标准与历史方法论/数字人文指导文献。
-- `reference/history-timeline/timeline.schema.json`：年表事件 JSON Schema 机器契约。
-- `reference/history-timeline/PUBLICATION.md`：定义永生史资料分层、时间轴展示范围与出版物 `review_gate` 的展示出版架构。
-- `templates/history-event.md`：新增《永生史》历史事件的统一模板。
+- Wiki、科技树与永生年表的产品源码、模板、数据和发布工具归独立私有产品仓库；本目录不得重新建立其副本。
 - `how-to/add-domain.md`：说明新增子域的步骤和停止条件。
 - `how-to/add-source-note.md`：说明新增 source note 的步骤和规则。
 - `how-to/effective-immortality-guidance-system.md`：用一页式结构说明如何从当前最大短板进入判断、最小行动、验证、纠错与下一轮迭代。

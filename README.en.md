@@ -2,7 +2,7 @@
 
 [![Check](https://github.com/tradecatlabs/human_infra/actions/workflows/check.yml/badge.svg)](https://github.com/tradecatlabs/human_infra/actions/workflows/check.yml)
 
-[中文](README.md) · [Local Wiki](wiki/README.md) · [Research domains](domains/README.md) · [Evidence references](docs/reference/README.md)
+[中文](README.md) · [Public Wiki](https://wiki.tradecatlabs.com/) · [Research domains](domains/README.md) · [Evidence references](docs/reference/README.md)
 
 Human Infra is an evidence-governed research knowledge base for engineering **subject continuity**: the conditions that let a human continue to exist, perceive, act, learn, recover, choose, and reach the future.
 
@@ -52,12 +52,12 @@ Strong claims must be traceable to a source, context, evidence role, transfer bo
 - [Evidence policy](docs/reference/evidence-policy.md)
 - [Ethics and safety boundaries](docs/reference/ethics-and-safety-boundaries.md)
 - [Core claim-evidence matrix](docs/reference/human-infra-core-claim-evidence-matrix.md)
-- [Local Wiki](wiki/README.md)
+- [Public Wiki](https://wiki.tradecatlabs.com/)
 - [Retired site record](archive/retired-research-narrative-site/README.md)
 
 ## Public products
 
-Only the Human Infra technology tree and Wiki are eligible for public deployment. The retired Research Narrative site is excluded from all build and deployment paths.
+The Wiki, technology tree, and immortality timeline are built from a separate private product-source repository and published as static products. This public research repository must not contain their source or runtime data. The retired Research Narrative site is excluded from all build and deployment paths.
 
 ## Local verification
 

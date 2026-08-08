@@ -22,14 +22,11 @@ Human Infra 是一个研究“能够继续做事的主体”如何被维护、�
 | [Human Infra 语言门户](https://human-infra.pages.dev/) | 公开语言选择入口；进入对应语言界面和 Wiki 内容层 |
 | [Human Infra Wiki](https://wiki.tradecatlabs.com/) | MediaWiki 生成的只读公开快照；采用“语言入口 -> 中文首页 -> 专题门户 -> 词条”的结构 |
 | [Human Infra 科技树](https://tree.tradecatlabs.com/) | 活动展示产品；只允许使用科技树正式源码和证据节点数据 |
+| [永生年表](https://tradecatlabs.com/publication/human-immortality-timeline) | 以事件、来源、时期和复核状态组织永生研究历史；产品源码由私有产品仓库维护 |
 | [研究发布中间资产](web/README.md) | 只保存研究数据与审计脚本，不是网站，禁止部署 |
 | [Research Narrative 退役记录](archive/retired-research-narrative-site/README.md) | 永久冻结的历史实现，禁止构建、复用或部署 |
 
-发布者：`tradecatlabs`。公开部署对象只允许是科技树与 Wiki；已退役的 Research Narrative 不再属于项目产品。
-
-## 本地 Wiki
-
-`wiki/` 提供 Human Infra 的多语言知识入口与独立 MediaWiki；语言入口直接复用 Wikimedia 官方 `www.wikipedia.org` 门户发布物，不维护仿制视觉层。公开访问链为：[语言门户](https://human-infra.pages.dev/) -> [中文 Wiki 首页](https://wiki.tradecatlabs.com/) -> 专题门户 -> 具体词条；本地默认访问链为 `http://localhost:18784/` -> `http://localhost:18782/`。公开层只使用 Pages，Wiki 以只读快照发布；原有 `pages.dev` 地址继续作为静态回退入口。首次部署、页面分层、录入规范和科技树跳转契约见 [Wiki 使用说明](wiki/README.md)。
+发布者：`tradecatlabs`。Wiki、科技树与永生年表由独立私有产品仓库构建并公开静态发布；本仓库不得承载其源码或运行时数据。已退役的 Research Narrative 不再属于项目产品。
 
 ## 实现持续性主线
 

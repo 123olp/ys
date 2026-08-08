@@ -20,4 +20,4 @@ review_cycle: P90D
 2. 再读 `context/AGENT-ENTRY.md`。
 3. 按 `context/CONTEXT-ROUTER.md` 选择最小上下文。
 4. 需要模块事实时，通过 `context/CONTEXT-MAP.md` 找到对应 module context。
-5. 涉及永生史年表时，读取 `control-plane/history-timeline-contract.v1.yaml` 并运行 `make history-timeline-gate`。
+5. 涉及 Wiki、科技树或永生年表时，只维护公开摘要与稳定入口，并运行 `make public-product-boundary` 防止私有产品源码回流。

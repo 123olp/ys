@@ -26,10 +26,10 @@ Human Infra 以“主体持续性和有效永生”为目标，把身体、认�
 ## 技术模型
 
 - 主要运行形态：文档知识库 + 结构化研究域 + 静态/交互发布 + CI 门禁。
-- 核心模块：`docs/`、`domains/`、`governance/`、`tools/`、`wiki/`、`web/`。
+- 核心模块：`docs/`、`domains/`、`governance/`、`tools/`、`web/`。
 - 数据事实源：根 `README.md`、`docs/reference/`、`governance/`、`domains/` 和机器可读 JSON/YAML 契约。
 - 外部依赖：GitHub Actions、Cloudflare Pages/Wrangler、公开学术数据库与工具官网。
-- 主要验证入口：`make check`、`make history-timeline-gate`、`python3 tools/check_repository.py`。
+- 主要验证入口：`make check`、`make public-product-boundary`、`python3 tools/check_repository.py`。
 
 ## 工具链模型
 
@@ -44,7 +44,7 @@ Human Infra 以“主体持续性和有效永生”为目标，把身体、认�
 最短摘要：
 
 - 构建：静态站点和展示物按各自 `README.md` 构建；年表本身不需要构建。
-- 测试：`make check`、`make history-timeline-gate`。
+- 测试：`make check`、`make public-product-boundary`。
 - 类型检查：按具体模块 README 执行；年表门禁以 JSON Schema 校验替代。
 - 格式 / lint：`git diff --check`、JSON `python3 -m json.tool`。
 - 发布 / 回滚：发布入口由 `.github/` 或平台配置管理；代码回滚使用 Git 版本控制。
@@ -58,7 +58,7 @@ Human Infra 以“主体持续性和有效永生”为目标，把身体、认�
 | 工程流程 | `governance/processes/DOCUMENT_DRIVEN_DEVELOPMENT.md` | 文档先行和文档回填规则 |
 | 工具链边界 | `governance/context/TOOLCHAIN_MODEL.md` | 成熟工具、项目脚本和禁用做法 |
 | 机器契约 | `governance/context/project_operating_model_contract.v1.yaml` | 脚本和 agent 可读取的契约 |
-| 历史年表契约 | `governance/control-plane/history-timeline-contract.v1.yaml` | 永生史年表机器门禁契约 |
+| 产品源码边界 | `tools/audit_public_product_boundary.py` | 阻止 Wiki、科技树和永生年表源码回流公开仓库 |
 | 架构决策 | `governance/decisions/adr/` | 不可逆或高影响决策 |
 | 任务证据 | `governance/tasks/` | 执行计划、状态、验收、closeout |
 

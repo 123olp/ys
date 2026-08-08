@@ -4,7 +4,7 @@
 
 ## Current Tools
 
-- `tech-tree-reference-capture/`: orchestrates candidate WARC capture plus a Windows-native Historical Tech Tree pipeline using public graph APIs, Chrome/CDP discovery, aria2, offline interaction gates, SHA-256 manifests, and ZIP archives; third-party outputs stay outside Git.
+- `audit_public_product_boundary.py`: rejects Wiki, technology-tree, and immortality-timeline product sources that re-enter this public repository.
 - `arxiv_html_paper_tool.py`: installs, verifies, and scaffolds the reusable arXiv HTML papers reader framework for Astro projects.
 - `audit_core_claim_evidence_matrix.py`: verifies that the core Human Infra Claim-Evidence Matrix keeps required source anchors, claim IDs, evidence gates, prohibited-use boundaries, method URLs, and index links.
 - `audit_human_infra_maturity_gap_register.py`: verifies that the 100% maturity gap register keeps value, research-framework, and quantitative-model gates aligned with the maturity roadmap, local evidence paths, and blocked-state boundaries.
@@ -152,7 +152,6 @@
 - `check_repository.py`: verifies required files, required directories, temporary filename cleanup, Python cache cleanup, and local Markdown links.
 - `audit_repository_privacy.py`: scans Git-tracked files for local user paths, hostnames, sensitive filenames, private-key markers, and high-confidence credential formats without printing matched values.
 - `validate_history_timeline.py`: validates the 永生史 history timeline machine contract, including required files, JSON Schema shape, event/source uniqueness, enum values, and governance contract path alignment.
-- `select_history_timeline_works_subset.py`: generates the first-edition works subset from the history timeline, balancing periods, path families, event types, evidence grades, and turning-point priority without changing review status.
 - `update_domain_doc_contracts.py`: regenerates standard README/AGENTS metadata, research-skeleton, maintenance-contract, and agent-workflow blocks for every formal research domain from the possibility-space classification table.
 
 Reusable tool package:
@@ -173,7 +172,7 @@ From the repository root:
 ```bash
 python3 tools/check_repository.py
 python3 tools/audit_repository_privacy.py
-python3 tools/validate_history_timeline.py
+python3 tools/audit_public_product_boundary.py
 python3 tools/audit_core_claim_evidence_matrix.py
 python3 tools/audit_human_infra_maturity_gap_register.py
 python3 tools/audit_human_infra_model_admission_contract.py
@@ -204,9 +203,7 @@ python3 tools/audit_human_infra_falsifier_source_card_extraction.py
 python3 tools/update_domain_doc_contracts.py
 python3 tools/arxiv_html_paper_tool.py verify-assets --public-dir build/arxiv-html-paper-preview/public
 make claim-matrix-audit
-make history-timeline-gate
-make history-timeline-preview
-make history-timeline-works-subset
+make public-product-boundary
 make maturity-gap-audit
 make model-admission-contract-audit
 make model-admission-candidate-registry-audit

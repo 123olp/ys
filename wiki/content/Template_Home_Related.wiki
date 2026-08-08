@@ -1,9 +1,0 @@
-; 历史谱系
-: [[历史技术谱系]]追踪医学、计算、生命科学和自动化技术的现实前置条件。
-; 思想实验
-: [[科幻作品中的永生与增强]]记录概念史、传播语汇及其与科学证据的边界。
-; 开放研究
-: [https://github.com/tradecatlabs/human_infra Human Infra GitHub 仓库]保存受版本控制的研究域、契约和工具。
-<div class="mp-2012-block-nav-footer">
-[[Human Infra:关于|关于]] · [[Human Infra:版权|版权]]
-</div><noinclude>[[Category:首页模板]]</noinclude>

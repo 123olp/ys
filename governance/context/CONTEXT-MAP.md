@@ -17,7 +17,6 @@ review_cycle: P90D
 | 项目根 | `.` | `context/PROJECT-TOPOLOGY.md` | `decisions/adr/INDEX.md` | governance strict validate |
 | 治理包 | `governance/` | `context/AGENT-ENTRY.md` | `decisions/adr/INDEX.md` | governance health report |
 | 任务容器 | `governance/tasks/` | `tasks/INDEX.md` | `decisions/adr/INDEX.md` | task tree validation |
-| 历史年表 | `docs/reference/history-timeline/` | `control-plane/history-timeline-contract.v1.yaml` | `decisions/adr/ADR-0001-历史年表采用可复核数据管线与成熟发布工具组合.md` | `make history-timeline-gate` / `make history-timeline-preview` |
 
 ## 维护规则
 

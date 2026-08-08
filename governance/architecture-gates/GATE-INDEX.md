@@ -12,6 +12,5 @@ last_reviewed: 2026-08-08
 |---|---|---|---|---|---|---|
 | `GATE-0000` | BLOCK | 新增所有权面必须证明存在必要性 | agent+script+manual | STD-PONYTAIL-LADDER | active | `GATE-0000-PONYTAIL-OWNERSHIP-SURFACE.md` |
 | `GATE-0001` | BLOCK | 非平凡方案不得主动降级成短期补丁 | agent+script+manual | STD-FUTURE-OPTIMAL | active | `GATE-0001-FUTURE-OPTIMAL-NO-DOWNGRADE.md` |
-| `GATE-0002` | BLOCK | 历史年表必须通过机器契约校验 | automated | manual | active | `GATE-0002-历史年表必须通过机器契约校验.md` |
-| `GATE-0003` | BLOCK | 历史年表事件必须完成来源与审阅连续性 | manual | manual | active | `GATE-0003-历史年表事件必须完成来源与审阅连续性.md` |
 | `GATE-0004` | BLOCK | 仓库与 CI 不得泄露隐私 | script+review | STD-REPOSITORY-CI-PRIVACY | active | `GATE-0004-仓库与CI不得泄露隐私.md` |
+| `GATE-0005` | BLOCK | 公开仓库不得承载私有产品源码 | script+review | ADR-private-product-source-separation | active | `GATE-0005-公开仓库不得承载私有产品源码.md` |

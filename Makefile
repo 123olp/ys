@@ -3,11 +3,12 @@
 .PHONY: nhanes-public-lmf-weighted-domain-output-local-run-audit nhanes-public-lmf-local-disclosure-review-packet-audit nhanes-public-lmf-public-output-implementation-review-template-audit nhanes-public-lmf-public-output-implementation-review-execution-audit life-path-synthetic-validation-calibration-report-audit life-path-l4-synthetic-evidence-packet-dry-run-audit life-path-toy-model-audit l4-evidence-packet-validator-audit l4-validation-calibration-report-execution-register-audit research-standards-source-anchor-audit quantitative-capability-ladder-audit domain-to-model-bridge-audit brain-body-interface-protocol-audit minimal-sufficient-body-claim-matrix-audit nhats-registration-evidence-packet-validator-audit nhats-colectica-capture-packet-validator-audit nhats-colectica-capture-packet-draft-audit nhats-colectica-capture-packet-review-handoff-audit nhats-colectica-capture-packet-review-execution-audit nhats-route-value-crosswalk-assembly-audit nhats-route-value-crosswalk-entry-validator-audit nhats-route-value-crosswalk-entry-draft-audit nhats-route-value-crosswalk-entry-review-handoff-audit nhats-route-classifier-synthetic-dry-run-audit c2-longtail-ninth-batch-promotion-audit c2-longtail-ninth-batch-source-extraction-audit c2-longtail-ninth-batch-source-extraction-register-audit c2-longtail-ninth-batch-local-review-audit c2-longtail-ninth-batch-source-resolution-audit c2-longtail-ninth-batch-manual-fulltext-extraction-audit c2-longtail-ninth-batch-manual-fulltext-fresh-review-verdict-audit c2-longtail-ninth-batch-manual-fulltext-reviewed-card-artifact-audit c2-longtail-tenth-batch-promotion-audit c2-longtail-tenth-batch-source-extraction-audit c2-longtail-tenth-batch-source-extraction-register-audit c2-longtail-tenth-batch-local-review-audit c2-longtail-tenth-batch-independent-fresh-review-protocol-audit c2-longtail-tenth-batch-independent-fresh-review-verdict-audit c2-longtail-tenth-batch-reviewed-card-artifact-audit
 .PHONY: c2-longtail-eleventh-batch-promotion-audit c2-longtail-eleventh-batch-source-extraction-audit c2-longtail-eleventh-batch-source-extraction-register-audit c2-longtail-eleventh-batch-local-review-audit c2-longtail-eleventh-batch-independent-fresh-review-protocol-audit c2-longtail-eleventh-batch-independent-fresh-review-verdict-audit c2-longtail-eleventh-batch-reviewed-card-artifact-audit c2-longtail-twelfth-batch-promotion-audit c2-longtail-twelfth-batch-source-extraction-audit c2-longtail-twelfth-batch-source-extraction-register-audit c2-longtail-twelfth-batch-local-review-audit c2-longtail-twelfth-batch-independent-fresh-review-protocol-audit c2-longtail-twelfth-batch-independent-fresh-review-verdict-audit c2-longtail-twelfth-batch-reviewed-card-artifact-audit c2-longtail-thirteenth-batch-promotion-audit c2-longtail-thirteenth-batch-source-extraction-audit c2-longtail-thirteenth-batch-source-extraction-register-audit c2-longtail-thirteenth-batch-local-review-audit c2-longtail-thirteenth-batch-source-resolution-audit c2-longtail-thirteenth-batch-corrected-source-reextraction-queue-audit c2-longtail-thirteenth-batch-corrected-source-reextraction-register-audit c2-longtail-thirteenth-batch-corrected-source-fresh-review-verdict-audit c2-longtail-fourteenth-batch-promotion-audit c2-longtail-fourteenth-batch-source-extraction-audit c2-longtail-fourteenth-batch-source-extraction-register-audit c2-longtail-fourteenth-batch-local-review-audit
 .PHONY: history-timeline-preview history-timeline-works-subset
+.PHONY: public-product-boundary
 
 check:
 	$(MAKE) clean
 	$(MAKE) privacy-audit
-	$(MAKE) history-timeline-gate
+	$(MAKE) public-product-boundary
 	$(MAKE) structure
 	$(MAKE) claim-matrix-audit
 	$(MAKE) maturity-gap-audit
@@ -210,29 +211,9 @@ privacy-audit:
 	python3 tools/test_repository_privacy.py
 	python3 tools/audit_repository_privacy.py --scope current
 
-history-timeline-core-test:
-	node tools/test_history_timeline_core.js
-
-history-timeline-date-test:
-	PYTHONDONTWRITEBYTECODE=1 python3 tools/test_history_timeline_dates.py
-
-history-timeline-quality-audit:
-	PYTHONDONTWRITEBYTECODE=1 python3 tools/audit_history_timeline_quality.py
-
-history-timeline-gate:
-	$(MAKE) history-timeline-core-test
-	$(MAKE) history-timeline-date-test
-	$(MAKE) history-timeline-quality-audit
-	PYTHONDONTWRITEBYTECODE=1 python3 tools/validate_history_timeline.py
-
-history-timeline-preview:
-	PYTHONDONTWRITEBYTECODE=1 python3 tools/build_history_timeline_preview.py
-
-history-timeline-browser-gate:
-	PYTHONDONTWRITEBYTECODE=1 python3 tools/smoke_history_timeline_preview.py
-
-history-timeline-works-subset:
-	PYTHONDONTWRITEBYTECODE=1 python3 tools/select_history_timeline_works_subset.py
+public-product-boundary:
+	python3 tools/test_public_product_boundary.py
+	python3 tools/audit_public_product_boundary.py
 
 claim-matrix-audit:
 	python3 tools/audit_core_claim_evidence_matrix.py
@@ -968,6 +949,8 @@ tools/audit_human_infra_domain_source_specific_extraction_queue.py \
 		tools/audit_human_infra_falsifier_source_card_backfill.py \
 		tools/audit_human_infra_falsifier_source_card_extraction.py \
 	tools/arxiv_html_paper_tool.py \
+	tools/audit_public_product_boundary.py \
+	tools/test_public_product_boundary.py \
 	tools/audit_repository_privacy.py \
 	tools/test_repository_privacy.py \
 	tools/check_repository.py \
@@ -1035,4 +1018,4 @@ tools/audit_human_infra_domain_source_specific_extraction_queue.py \
 		domains/c1-boundary-rewriting/longevity-evidence/scripts/audit_life_path_toy_model.py
 
 clean:
-	find . -path ./wiki/runtime -prune -o -type d \( -name __pycache__ -o -name .pytest_cache \) -prune -exec rm -rf {} +
+	find . -type d \( -name __pycache__ -o -name .pytest_cache \) -prune -exec rm -rf {} +
