@@ -1,6 +1,6 @@
 # How To Run Quality Checks
 
-Human Infra keeps local checks intentionally small. The repository is documentation-first, so checks focus on structure, links, and lightweight script validity.
+Human Infra keeps local checks reproducible. The repository is documentation-first, so checks focus on privacy, structure, links, research contracts, and lightweight script validity.
 
 ## Full Check
 
@@ -12,11 +12,27 @@ make check
 
 This performs:
 
-1. cache cleanup;
-2. repository structure check;
-3. Python compilation for maintenance and data scripts;
-4. cache cleanup again;
-5. final repository structure check.
+1. privacy regression tests and current tracked-tree scan;
+2. cache cleanup and repository structure checks;
+3. history-timeline and research-contract gates;
+4. Python compilation for maintenance and data scripts;
+5. final cleanup and structure check.
+
+## Privacy Checks
+
+Run the local gate with relative locations:
+
+```bash
+make privacy-audit
+```
+
+Run the full reachable-history and commit-identity gate with CI-safe output:
+
+```bash
+python3 tools/audit_repository_privacy.py --scope all --revision HEAD --report-mode ci
+```
+
+CI-safe failures contain only a rule name, finding count, and irreversible `location_id`; they never echo the matched value, path, commit message, author identity, or environment variable.
 
 ## Structure Only
 
@@ -57,7 +73,7 @@ Do not run network data collection unless you intentionally want to refresh gene
 
 ## Remote Check
 
-GitHub Actions runs the same command on pushes and pull requests:
+GitHub Actions first checks out complete history without persisted credentials and runs the standard-library privacy preflight before installing project dependencies. It then runs the same local command on pushes and pull requests:
 
 ```bash
 make check

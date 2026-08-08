@@ -40,7 +40,7 @@ human_infra/
 - `web/` 只保存结构化研究数据和论文审计脚本，不再是 Web 应用，不得包含页面、路由、Astro、Wrangler、静态构建产物或部署入口。
 - `archive/retired-research-narrative-site/` 保存已永久退役的 Astro Research Narrative 网站，仅供追溯；禁止构建、复用和部署。
 - `wiki/` 是由 Wikimedia 官方门户发布物的本地适配层和中文 MediaWiki 组成的知识基础设施，访问层级为“语言选择 -> 语言版本首页 -> 专题门户 -> 词条”；门户视觉不得另造，仓库只跟踪上游快照、最小路由适配、可复现配置、首页模块、门户页与种子内容。
-- `tools/` 保存仓库维护脚本和可迁移工程工具；其中 arXiv HTML papers 复用工具只负责资源安装、资产校验和 Astro 模板生成，不承载 Human Infra 正文理论；Human Infra 审计器只检查本地研究契约和索引覆盖，不证明外部文献真实性。
+- `tools/` 保存仓库维护脚本和可迁移工程工具；其中 arXiv HTML papers 复用工具只负责资源安装、资产校验和 Astro 模板生成，不承载 Human Infra 正文理论；Human Infra 研究审计器只检查本地研究契约和索引覆盖，不证明外部文献真实性；`audit_repository_privacy.py` 与 `test_repository_privacy.py` 独立负责当前树、历史、提交身份、工作流策略和 CI 日志脱敏门禁。
 - `docs/` 只放 Human Infra 的上位理论、域边界、伦理原则和原始资料归档，不放具体采集脚本；`docs/reference/human-infra-falsifier-source-card-backfill.json` 只保存论文强主张和优先域反证的 Source Card 来源锚点回填，不替代逐篇 Source Card 精读。
 - `domains/` 的正式研究域必须进入 C1-C6 物理层级目录；每个研究域必须有独立 README 和 AGENTS，明确自身对象、非目标、证据要求和上下游关系。
 - `domains/_possibility-space-control/` 是研究域分级控制面，按可能性空间控制力维护 C1-C6 根本性层级、全域分类表和统计摘要；它不是普通研究域。

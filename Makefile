@@ -207,7 +207,8 @@ structure:
 	python3 tools/check_repository.py
 
 privacy-audit:
-	python3 tools/audit_repository_privacy.py
+	python3 tools/test_repository_privacy.py
+	python3 tools/audit_repository_privacy.py --scope current
 
 history-timeline-core-test:
 	node tools/test_history_timeline_core.js
@@ -968,6 +969,7 @@ tools/audit_human_infra_domain_source_specific_extraction_queue.py \
 		tools/audit_human_infra_falsifier_source_card_extraction.py \
 	tools/arxiv_html_paper_tool.py \
 	tools/audit_repository_privacy.py \
+	tools/test_repository_privacy.py \
 	tools/check_repository.py \
 		tools/update_domain_doc_contracts.py \
 		domains/c1-boundary-rewriting/longevity-evidence/scripts/collect_mvp_data.py \

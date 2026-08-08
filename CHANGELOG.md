@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-08-08
+
+- Added a fail-closed repository and CI privacy gate covering tracked files, reachable Git history, commit identity, sensitive filenames, and workflow trust policy.
+- Hardened GitHub Actions with read-only permissions, immutable Action commits, full-history checkout, disabled credential persistence, dependency-installation ordering, and redacted location fingerprints.
+- Added regression tests proving that current secrets, removed historical secrets, private commit identities, mutable Actions, and workflow secret references are detected without being echoed to CI logs.
+
 ## 2026-08-07
 
 - Added a first-edition history-timeline works subset (`works-subset.v1.json`, 400 events) and a local review register (`works-review-register.v1.json`, 31/400 events locally reviewed).
