@@ -1,1 +1,1 @@
-tabulate[widechars]==0.9.0
+tabulate[widechars]==0.10.0
