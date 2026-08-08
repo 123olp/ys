@@ -212,8 +212,8 @@ privacy-audit:
 	python3 tools/audit_repository_privacy.py --scope current
 
 public-product-boundary:
-	python3 tools/test_public_product_boundary.py
-	python3 tools/audit_public_product_boundary.py
+	PYTHONDONTWRITEBYTECODE=1 python3 tools/test_public_product_boundary.py
+	PYTHONDONTWRITEBYTECODE=1 python3 tools/audit_public_product_boundary.py
 
 claim-matrix-audit:
 	python3 tools/audit_core_claim_evidence_matrix.py
