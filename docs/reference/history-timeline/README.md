@@ -24,8 +24,8 @@
 | `timeline.schema.json` | 年表 JSON Schema 机器契约 |
 | `sources.schema.json` | 来源卡 Schema |
 | `periods.schema.json` | 时期定义 Schema |
-| `timeline.json` | 正式年表数据：2583 条事件 |
-| `sources.json` | 正式来源卡：2593 个来源 |
+| `timeline.json` | 正式年表数据：2571 条事件 |
+| `sources.json` | 正式来源卡：2581 个来源 |
 | `periods.json` | 时期定义与 PeriodO 映射状态：31 个时期 |
 | `example-events.json` | 引用式数据示例 |
 | `works-subset.schema.json` | 作品子集 Schema |
@@ -75,14 +75,14 @@ make history-timeline-core-test
 
 ## 当前进度
 
-- 来源卡：2593 个来源已注册，包含重复引用和疑似错源标注。
-- 事件：2583 条事件已转为结构化 JSON，覆盖神话、思想、技术、制度、实践和失败教训。
+- 来源卡：2581 个来源已注册，包含重复引用和疑似错源标注。
+- 事件：2571 条事件已转为结构化 JSON，覆盖神话、思想、技术、制度、实践和失败教训。
 - 日期：使用 EDTF 风格字符串表达约数、区间和长时段。
 - 时期：31 个本地时期定义，16 个已匹配 PeriodO URI，15 个标记为 `pending`。
 - 复核：全部事件仍为 `unreviewed` / `draft`，尚未进入本地复核或独立审阅。
 - 作品子集：`works-subset.v1.json` 已登记 399 条第一版作品事件，覆盖全部时期、8 个路径族、10 类事件类型和 5 类证据等级；当前 `reviewed_event_count=31`。
 - 质量：日期粒度已按 `exact` / `approx` 契约修正；同源重复与来源交叉错绑已全部收口，当前无待复核同源警告。
-- 日期债务：已阻止 Crossref `created` 元数据时间继续进入精确出版日期；历史上 1990 条旧缓存补齐记录尚无字段 provenance，必须重新抓取或降级后才能视为可信精确日期。
+- 日期治理：1988 条 Crossref 日期缓存已全部迁移到 `crossref-publication-date-v3`，记录出版字段与日期粒度；1280 条日粒度事件为 `exact`，708 条年/月粒度事件为 `approx`。12 条晚于 2026-08-08 快照的未来计划或预定出版事件已从严肃历史数据中移除。
 - 本地复核：首批 31 条事件已登记为 `locally_reviewed`，来源 URL/DOI 可达并完成标题匹配；独立 fresh review 尚未开始。
 - 可视化：已生成图表发布数据与可浏览原型，当前预览遵循零美化语义界面规范，psql ASCII 表格承载核心数据，ECharts 图表作为增强视图；支持搜索、筛选、年份缩放、事件阅读器与图表双向联动、事件 ID/序号跳转、动态聚合表，以及“全部资料 / 作品子集 / 本地已复核”三档范围；完整正文通过 `timelinejs.detail.json` 并行预载并直接显示，ECharts 本地化运行，预览文件为 `timelinejs.json`、`timelinejs.light.json`、`timelinejs.detail.json`、`preview.html`、`preview-core.js` 和 `echarts.common.min.js`。
 - 出版层：`publication-manifest.v1.json` 定义时间轴、永生史正文、健康手册和永生指南四类出版入口及各自 `review_gate`；说明见 `PUBLICATION.md`。

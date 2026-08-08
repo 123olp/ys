@@ -1,6 +1,6 @@
 {
   "timeline_id": "HITL-EIMM-001",
-  "version": "2.401.2",
+  "version": "2.402.0",
   "sources": [
     {
       "source_id": "SRC-001",
@@ -4123,15 +4123,6 @@
       "note": "来源卡由预览 URL 重建；待本地复核。"
     },
     {
-      "source_id": "SRC-484",
-      "source_type": "secondary",
-      "label": "https://ageingasiaconf2026.org/",
-      "url": "https://ageingasiaconf2026.org/",
-      "doi": null,
-      "access_date": "2026-08-07",
-      "note": "来源卡由预览 URL 重建；待本地复核。"
-    },
-    {
       "source_id": "SRC-485",
       "source_type": "secondary",
       "label": "https://unece.org/info/Population/pub/415087",
@@ -4537,15 +4528,6 @@
       "note": "Aging；Crossref/DOI 元数据核验。"
     },
     {
-      "source_id": "SRC-533",
-      "source_type": "primary",
-      "label": "Metformin: A Promising Candidate for Slowing the Progression of Cardiovascular Aging",
-      "url": "https://doi.org/10.14336/ad.2025.1308",
-      "doi": "10.14336/ad.2025.1308",
-      "access_date": "2026-08-07",
-      "note": "Aging and Disease；Crossref/DOI 元数据核验。"
-    },
-    {
       "source_id": "SRC-534",
       "source_type": "primary",
       "label": "Protocol for a pilot clinical trial of the senolytic drug combination Dasatinib Plus Quercetin to mitigate age-related health and cognitive decline in mental disorders",
@@ -4949,15 +4931,6 @@
       "doi": "10.3389/fragi.2026.1776669",
       "access_date": "2026-08-07",
       "note": "Frontiers in Aging；Crossref/DOI 元数据核验。"
-    },
-    {
-      "source_id": "SRC-579",
-      "source_type": "primary",
-      "label": "Intrinsic capacity: Making health the core outcome of Healthspan research",
-      "url": "https://doi.org/10.1016/j.tjfa.2026.100175",
-      "doi": "10.1016/j.tjfa.2026.100175",
-      "access_date": "2026-08-07",
-      "note": "The Journal of Frailty &amp; Aging；Crossref/DOI 元数据核验。"
     },
     {
       "source_id": "SRC-580",
@@ -5437,15 +5410,6 @@
       "note": "Expert Opinion on Drug Delivery；Crossref/DOI 元数据核验。"
     },
     {
-      "source_id": "SRC-633",
-      "source_type": "primary",
-      "label": "Lipid nanoparticles as a platform technology for translational nanomedicine",
-      "url": "https://doi.org/10.1016/j.jddst.2026.108587",
-      "doi": "10.1016/j.jddst.2026.108587",
-      "access_date": "2026-08-07",
-      "note": "Journal of Drug Delivery Science and Technology；Crossref/DOI 元数据核验。"
-    },
-    {
       "source_id": "SRC-634",
       "source_type": "primary",
       "label": "Overcoming the blood‒brain barrier: nanomedicine strategies for targeted delivery and multimodal therapy in Alzheimer's disease",
@@ -5635,15 +5599,6 @@
       "note": "Cellular Reprogramming；Crossref/DOI 元数据核验。"
     },
     {
-      "source_id": "SRC-655",
-      "source_type": "primary",
-      "label": "Smart response food-derived polysaccharide hydrogels: reprogramming the microenvironment for skin rejuvenation",
-      "url": "https://doi.org/10.1016/j.matdes.2026.116738",
-      "doi": "10.1016/j.matdes.2026.116738",
-      "access_date": "2026-08-07",
-      "note": "Materials &amp; Design；Crossref/DOI 元数据核验。"
-    },
-    {
       "source_id": "SRC-656",
       "source_type": "primary",
       "label": "Patient-Centric Organ-on-Chip Models (OoCs): A Novel Framework for Drug Discovery and Disease Simulation",
@@ -5739,15 +5694,6 @@
       "label": "An interpretable machine learning approach to predicting depression and diabetes",
       "url": "https://doi.org/10.1016/j.health.2026.100454",
       "doi": "10.1016/j.health.2026.100454",
-      "access_date": "2026-08-07",
-      "note": "Healthcare Analytics；Crossref/DOI 元数据核验。"
-    },
-    {
-      "source_id": "SRC-667",
-      "source_type": "primary",
-      "label": "An Interpretable Machine Learning Framework for Pediatric Appendicitis and Peritonitis Diagnosis",
-      "url": "https://doi.org/10.1016/j.health.2026.100483",
-      "doi": "10.1016/j.health.2026.100483",
       "access_date": "2026-08-07",
       "note": "Healthcare Analytics；Crossref/DOI 元数据核验。"
     },
@@ -6524,15 +6470,6 @@
       "doi": "10.3389/fnagi.2023.1281581",
       "access_date": "2026-08-07",
       "note": "Frontiers in Aging Neuroscience；Crossref/DOI 元数据核验。"
-    },
-    {
-      "source_id": "SRC-754",
-      "source_type": "primary",
-      "label": "DeepPLL: Synchronization of non-invasive brain stimulation to deep brain stimulation",
-      "url": "https://doi.org/10.1016/j.brs.2026.103159",
-      "doi": "10.1016/j.brs.2026.103159",
-      "access_date": "2026-08-07",
-      "note": "Brain Stimulation；Crossref/DOI 元数据核验。"
     },
     {
       "source_id": "SRC-755",
@@ -9262,15 +9199,6 @@
       "note": "aging and disease；Crossref/DOI 元数据核验。"
     },
     {
-      "source_id": "SRC-1062",
-      "source_type": "primary",
-      "label": "Hydrogel-based senomorphic approaches to modulate cellular senescence and promote tissue rejuvenation",
-      "url": "https://doi.org/10.1016/j.jconrel.2026.115125",
-      "doi": "10.1016/j.jconrel.2026.115125",
-      "access_date": "2026-08-07",
-      "note": "Journal of Controlled Release；Crossref/DOI 元数据核验。"
-    },
-    {
       "source_id": "SRC-1063",
       "source_type": "primary",
       "label": "Hypertension and cellular senescence",
@@ -10126,15 +10054,6 @@
       "note": "Nature Communications；Crossref/DOI 元数据核验。"
     },
     {
-      "source_id": "SRC-1158",
-      "source_type": "primary",
-      "label": "Dopamine-modified Ti3C2Tx MXene promotes supporting cell pluripotency and hair cell regeneration in cochlear organoid culture",
-      "url": "https://doi.org/10.1016/j.biomaterials.2026.124344",
-      "doi": "10.1016/j.biomaterials.2026.124344",
-      "access_date": "2026-08-07",
-      "note": "Biomaterials；Crossref/DOI 元数据核验。"
-    },
-    {
       "source_id": "SRC-1159",
       "source_type": "primary",
       "label": "Notch Inhibition Induces Cochlear Hair Cell Regeneration and Recovery of Hearing after Acoustic Trauma",
@@ -10403,15 +10322,6 @@
       "doi": "10.1126/science.1188302",
       "access_date": "2026-08-07",
       "note": "Science；Crossref/DOI 元数据核验。"
-    },
-    {
-      "source_id": "SRC-1189",
-      "source_type": "primary",
-      "label": "Microphysiological (“organ-on-a-chip”) models of pulmonary infections for developing novel anti-infectives",
-      "url": "https://doi.org/10.1016/j.addr.2026.115917",
-      "doi": "10.1016/j.addr.2026.115917",
-      "access_date": "2026-08-07",
-      "note": "Advanced Drug Delivery Reviews；Crossref/DOI 元数据核验。"
     },
     {
       "source_id": "SRC-1190",
@@ -12014,15 +11924,6 @@
       "doi": "10.1002/adhm.202202638",
       "access_date": "2026-08-07",
       "note": "Advanced Healthcare Materials；Crossref/DOI 元数据核验。"
-    },
-    {
-      "source_id": "SRC-1369",
-      "source_type": "primary",
-      "label": "Neurovascular unit senescence as a driver of blood–brain barrier dysfunction in Alzheimer’s disease：Mechanisms, consequences, and therapeutic implications",
-      "url": "https://doi.org/10.1016/j.arr.2026.103260",
-      "doi": "10.1016/j.arr.2026.103260",
-      "access_date": "2026-08-07",
-      "note": "Ageing Research Reviews；Crossref/DOI 元数据核验。"
     },
     {
       "source_id": "SRC-1370",
@@ -14363,15 +14264,6 @@
       "doi": "10.18632/aging.101051",
       "access_date": "2026-08-07",
       "note": "Aging；Crossref/DOI 元数据核验。"
-    },
-    {
-      "source_id": "SRC-1630",
-      "source_type": "primary",
-      "label": "MitoNEET in cardiac mitochondria: Linking mitochondrial function and cardiac disease",
-      "url": "https://doi.org/10.1016/j.metabol.2026.156669",
-      "doi": "10.1016/j.metabol.2026.156669",
-      "access_date": "2026-08-07",
-      "note": "Metabolism；Crossref/DOI 元数据核验。"
     },
     {
       "source_id": "SRC-1631",
@@ -23120,5 +23012,5 @@
       "note": "原 NIH ACD 页面返回 403；使用可访问的二手百科作为背景，后续可补一手档案。"
     }
   ],
-  "updated_at": "2026-08-07T16:05:00Z"
+  "updated_at": "2026-08-08T06:22:43Z"
 }

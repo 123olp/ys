@@ -85,7 +85,7 @@ make history-timeline-core-test
 make history-timeline-quality-audit
 ```
 
-该命令检查空标题、空摘要、空 Claim、缺失来源、来源引用失效等硬错误，并按同一 DOI/URL 识别同源重复；同时输出未精确到日期的精确事件和待复核的同源来源作为警告。不同论文使用相同标题不再被误报为重复。
+该命令检查空标题、空摘要、空 Claim、缺失来源、来源引用失效、晚于年表快照的未来事件和无可信 Crossref provenance 的日期等硬错误，并按同一 DOI/URL 识别同源重复；同时输出未精确到日期的精确事件和待复核的同源来源作为警告。不同论文使用相同标题不再被误报为重复。
 
 浏览器行为门禁：
 
@@ -102,7 +102,15 @@ python3 tools/backfill_history_timeline_dates.py --workers 4
 ```
 
 该命令从 Crossref 拉取缺失的完整出版日期，写回 `timeline.json`，并把已核验的 DOI-日期映射缓存到 `date-backfill-cache.json`，支持断点续跑。
-脚本只接受出版相关字段中的完整年月日，不使用 Crossref `created` 元数据记录时间；缓存条目必须带 `crossref-publication-date-v2` provenance，旧字符串缓存会被视为不可信并重新抓取。
+脚本只接受出版相关字段，不使用 Crossref `created` 元数据记录时间；在线发表优先于纸刊、issued 和 published，缓存条目必须带 `crossref-publication-date-v3` provenance，旧字符串或旧 provenance 缓存会被视为不可信并重新抓取。
+
+旧缓存迁移：
+
+```bash
+python3 tools/backfill_history_timeline_dates.py --refresh-legacy --workers 4
+```
+
+迁移会重新抓取旧字符串、旧 provenance 或旧版“日期补齐：Crossref”标记对应的事件，并保留 Crossref 实际提供的年、月或日粒度；只有日粒度写为 `exact`，年/月粒度统一写为 `approx`。已符合当前 provenance、字段、粒度和备注契约的事件不会被重复改写或触发无意义版本升级。
 
 作品子集命令：
 

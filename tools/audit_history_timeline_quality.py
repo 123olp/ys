@@ -9,6 +9,8 @@ import sys
 from collections import defaultdict
 from pathlib import Path
 
+from backfill_history_timeline_dates import LEGACY_NOTE_MARKER, trusted_cache_record
+
 
 ROOT = Path(__file__).resolve().parents[1]
 PACKAGE = ROOT / "docs" / "reference" / "history-timeline"
@@ -18,11 +20,46 @@ def load_json(name: str):
     return json.loads((PACKAGE / name).read_text(encoding="utf-8"))
 
 
+def event_is_future(date_start: str, snapshot_date: str) -> bool:
+    """Return whether a positive-era event begins after the corpus snapshot."""
+    if not re.fullmatch(r"\d{4}(?:-\d{2})?(?:-\d{2})?", date_start):
+        return False
+    normalized_date = date_start + (
+        "-01-01" if len(date_start) == 4 else "-01" if len(date_start) == 7 else ""
+    )
+    return bool(snapshot_date and normalized_date > snapshot_date)
+
+
+def event_has_untrusted_crossref_date(
+    event: dict,
+    source_by_id: dict[str, dict],
+    date_cache: dict,
+) -> bool:
+    """Reject referenced legacy cache records and ungrounded backfill notes."""
+    dois = [
+        source_by_id.get(ref, {}).get("doi")
+        for ref in event.get("sources", [])
+        if source_by_id.get(ref, {}).get("doi")
+    ]
+    if not dois:
+        return LEGACY_NOTE_MARKER in str(event.get("notes", ""))
+    primary_doi = dois[0]
+    cache_entry = date_cache.get(primary_doi)
+    if cache_entry is not None and not trusted_cache_record(cache_entry):
+        return True
+    if LEGACY_NOTE_MARKER in str(event.get("notes", "")):
+        return not trusted_cache_record(cache_entry)
+    return False
+
+
 def main() -> None:
-    timeline = load_json("timeline.json")["events"]
+    timeline_data = load_json("timeline.json")
+    timeline = timeline_data["events"]
     sources = load_json("sources.json")["sources"]
+    date_cache = load_json("date-backfill-cache.json")
     source_ids = {source["source_id"] for source in sources}
     source_by_id = {source["source_id"]: source for source in sources}
+    snapshot_date = str(timeline_data.get("updated_at", ""))[:10]
 
     issues: dict[str, list[str]] = defaultdict(list)
     for event in timeline:
@@ -44,6 +81,10 @@ def main() -> None:
             r"-\d{1,2}-\d{1,2}$", str(event.get("date_start", ""))
         ):
             issues["exact_without_day"].append(event_id)
+        if event_is_future(str(event.get("date_start", "")), snapshot_date):
+            issues["future_after_snapshot"].append(event_id)
+        if event_has_untrusted_crossref_date(event, source_by_id, date_cache):
+            issues["untrusted_crossref_date"].append(event_id)
 
     def canonical_source_key(source: dict) -> str | None:
         return source.get("doi") or source.get("url")
@@ -85,7 +126,15 @@ def main() -> None:
         key for key, source_ids_in_group in source_key_groups.items()
         if len(source_ids_in_group) > 1
     ]
-    hard_error_keys = ("empty_title", "empty_summary", "empty_claim", "no_sources", "missing_source_ref")
+    hard_error_keys = (
+        "empty_title",
+        "empty_summary",
+        "empty_claim",
+        "no_sources",
+        "missing_source_ref",
+        "future_after_snapshot",
+        "untrusted_crossref_date",
+    )
     hard_errors = sum(len(issues[key]) for key in hard_error_keys)
     warnings = (
         len(issues["exact_without_day"])
@@ -99,7 +148,9 @@ def main() -> None:
         f"duplicate_title_same_source={len(duplicate_title_same_source)} "
         f"same_title_different_source={same_title_different_source} "
         f"duplicate_source_identity={len(duplicate_source_identity)} "
-        f"exact_without_day={len(issues['exact_without_day'])}"
+        f"exact_without_day={len(issues['exact_without_day'])} "
+        f"future_after_snapshot={len(issues['future_after_snapshot'])} "
+        f"untrusted_crossref_date={len(issues['untrusted_crossref_date'])}"
     )
     if hard_errors:
         for key in hard_error_keys:

@@ -105,6 +105,7 @@ status
 - 无法精确断年时，使用 `date_type=approx`、`range` 或 `long_process`，不得伪造精确年份。
 - `era` 用于长期文明阶段，例如“中世纪”“近现代”。
 - 日期含义必须绑定事件本身的解释，不把文学传说写成史实。
+- 严肃历史事件日期不得晚于 `timeline.json.updated_at` 的快照日期；尚未发生的会议、预定纸刊期次或未来计划不得伪装成已发生事件。
 
 ## 6. 来源规则
 
@@ -154,7 +155,7 @@ python3 -m json.tool docs/reference/history-timeline/example-events.json >/dev/n
 make history-timeline-gate
 ```
 
-日期补齐只允许使用 Crossref 的 `published-print`、`published-online`、`issued` 或 `published` 完整年月日；`created` 是元数据记录创建时间，禁止作为出版日期。日期缓存必须带 `crossref-publication-date-v2` provenance，旧字符串缓存不得直接提升事件为 `date_type=exact`。
+日期补齐只允许使用 Crossref 的 `published-online`、`published-print`、`issued` 或 `published` 字段；`created` 是元数据记录创建时间，禁止作为出版日期。字段优先级按在线发表、纸刊发表、issued、published 排列，后续字段更高的日期精度不得覆盖更早的在线发表阶段。日期缓存必须保存 `date`、`precision`、`field` 和 `crossref-publication-date-v3` provenance。只有日粒度可写为 `date_type=exact`，年/月粒度必须写为 `approx`；旧字符串或旧 provenance 缓存不得直接提升事件日期精度。
 
 正式数据接入后，应使用 JSON Schema validator 检查：
 
