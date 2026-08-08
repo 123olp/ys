@@ -1,6 +1,6 @@
 # Repo Evidence
 
-- 项目：Human Infra（`<local-home>/.projects/human_infra`）
+- 项目：Human Infra（`$PROJECT_ROOT`）
 - 上游资产：990+ 研究域（`domains/`，C1-C6 物理分级）、docs 理论层、1386 个 reviewed artifacts、证据制度（Source Card → fresh review → artifact）
 - 第一原理工作底稿：`docs/reference/transcendental-domain-index.md`（A-K 主干）、`docs/explanations/effective-immortality-acceleration-flywheel.md`（T/E/R/C/A/Q/O 七变量）
 - 哲学思辨底稿：对话中已确立"体验-记忆-选择连续性"为终极第一原理，并产出 15 条引经据典候选表与作品清单

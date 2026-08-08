@@ -1,6 +1,6 @@
 # SBI/OI Literature Review
 
-Source draft: `<windows-home>\Downloads\sbi_oi_literature_review_draft.md`.
+Source draft: `<local-intake>/sbi_oi_literature_review_draft.md`.
 
 This review summarizes the local Cortical Labs / SBI / OI literature packet as a Human Infra research-domain artifact. It is not a fact of engineering maturity, a claim of consciousness, or an experimental protocol.
 

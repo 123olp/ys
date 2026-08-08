@@ -20,7 +20,7 @@ Human Infra 的 arXiv-style 页面应直接复用已下载的 arXiv HTML papers 
 ## 已核验来源
 
 - 远端页面：`https://arxiv.org/html/2606.26689v1`
-- 本地 SingleFile 快照：`<windows-home>/Downloads/An algebraic study of ideals of weak graph homomorphisms (2026_6_27 02：58：35).html`
+- 本地 SingleFile 快照：`<local-intake>/An algebraic study of ideals of weak graph homomorphisms.html`
 - LaTeXML 官方站点：`https://dlmf.nist.gov/LaTeXML/`
 
 目标页面头部包含生成信息：

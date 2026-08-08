@@ -40,7 +40,7 @@ python3 tools/tech-tree-reference-capture/import_workflow_reference.py
 
 ```powershell
 powershell -ExecutionPolicy Bypass -File `
-  "<wsl-home>\.projects\human_infra\tools\tech-tree-reference-capture\capture-historical-tech-tree.ps1"
+  "<windows-accessible-project-root>\tools\tech-tree-reference-capture\capture-historical-tech-tree.ps1"
 ```
 
 抓取器默认输出到：

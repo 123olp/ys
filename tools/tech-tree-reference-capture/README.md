@@ -48,7 +48,7 @@ python3 tools/tech-tree-reference-capture/build_standalone_viewer.py
 
 ```powershell
 powershell -ExecutionPolicy Bypass -File `
-  "<wsl-home>\.projects\human_infra\tools\tech-tree-reference-capture\capture-historical-tech-tree.ps1"
+  "<windows-accessible-project-root>\tools\tech-tree-reference-capture\capture-historical-tech-tree.ps1"
 ```
 
 默认输出：

@@ -4,6 +4,7 @@
 .vscode/
 .history/
 .research/
+nul
 
 # Python
 __pycache__/

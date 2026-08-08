@@ -30,3 +30,4 @@ If this repository is made public, add a private security contact here. Until th
 - Minimize exposure.
 - Remove secrets or private data immediately after confirming scope.
 - Document the root cause and prevention rule in the appropriate `docs/` or `domains/*/AGENTS.md` file when it has long-term value.
+- Run `make privacy-audit` before committing public changes. The gate scans only Git-tracked files and reports rule, path, and line number without echoing a matched credential.

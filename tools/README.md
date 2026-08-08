@@ -150,6 +150,7 @@
 - `audit_human_infra_falsifier_source_card_backfill.py`: verifies that current paper strong claims and C1/C2 priority-domain falsifier rows have Source Card anchor backfill, evidence roles, supported-use boundaries and transfer boundaries from `docs/reference/human-infra-falsifier-source-card-backfill.json`.
 - `audit_human_infra_falsifier_source_card_extraction.py`: verifies that all current source anchors from `docs/reference/human-infra-falsifier-source-card-extraction.json` map to exact source identity, Human Infra domains, paper claims, model positions, transfer boundaries and the human-readable source-note pack.
 - `check_repository.py`: verifies required files, required directories, temporary filename cleanup, Python cache cleanup, and local Markdown links.
+- `audit_repository_privacy.py`: scans Git-tracked files for local user paths, hostnames, sensitive filenames, private-key markers, and high-confidence credential formats without printing matched values.
 - `validate_history_timeline.py`: validates the 永生史 history timeline machine contract, including required files, JSON Schema shape, event/source uniqueness, enum values, and governance contract path alignment.
 - `select_history_timeline_works_subset.py`: generates the first-edition works subset from the history timeline, balancing periods, path families, event types, evidence grades, and turning-point priority without changing review status.
 - `update_domain_doc_contracts.py`: regenerates standard README/AGENTS metadata, research-skeleton, maintenance-contract, and agent-workflow blocks for every formal research domain from the possibility-space classification table.
@@ -171,6 +172,7 @@ From the repository root:
 
 ```bash
 python3 tools/check_repository.py
+python3 tools/audit_repository_privacy.py
 python3 tools/validate_history_timeline.py
 python3 tools/audit_core_claim_evidence_matrix.py
 python3 tools/audit_human_infra_maturity_gap_register.py

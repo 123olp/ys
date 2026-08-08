@@ -49,8 +49,8 @@ The domain also carries a dedicated claim-evidence matrix for active-compute sca
 
 ## Source Signals
 
-- Local draft: `<windows-home>\Downloads\sbi_oi_literature_review_draft.md`
-- Local paper packet: `<windows-home>\Downloads\cortical-labs-research-papers`
+- Imported draft: `<local-intake>/sbi_oi_literature_review_draft.md`
+- Imported paper packet: `<local-intake>/cortical-labs-research-papers`
 - DOI: https://doi.org/10.48550/arXiv.2602.11632
 - DOI: https://doi.org/10.1016/j.neuron.2022.09.001
 - DOI: https://doi.org/10.1038/s41467-023-41020-3

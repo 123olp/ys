@@ -4,7 +4,7 @@
 
 ## 方法来源
 
-本轮方法主要复用 `<local-home>/.projects/geo` 中的 `yao-geo-skills` 与 `geo-citation-lab`：
+本轮方法主要复用 `<local-geo-knowledge-base>` 中的 `yao-geo-skills` 与 `geo-citation-lab`：
 
 - `panorama-audit`：全景审计与 10 维实施完整性；
 - `page-audit`：页面可抓取、语义结构、引用块和技术健康；
