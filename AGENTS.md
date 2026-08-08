@@ -12,6 +12,7 @@ human_infra/
 ├── README.en.md          # 英文短入口、研究边界与机器发布路由
 ├── CITATION.cff          # tradecatlabs 署名与仓库引用元数据
 ├── CHANGELOG.md          # 变更记录
+├── requirements-ci.txt   # GitHub Actions 检查所需的固定 Python 依赖
 ├── docs/                 # 上位理论、域地图、伦理边界和资料归档
 ├── domains/              # 按可能性空间控制力物理分级的研究域
 │   ├── AGENTS.md         # domains 目录维护规则
