@@ -154,6 +154,8 @@ python3 -m json.tool docs/reference/history-timeline/example-events.json >/dev/n
 make history-timeline-gate
 ```
 
+日期补齐只允许使用 Crossref 的 `published-print`、`published-online`、`issued` 或 `published` 完整年月日；`created` 是元数据记录创建时间，禁止作为出版日期。日期缓存必须带 `crossref-publication-date-v2` provenance，旧字符串缓存不得直接提升事件为 `date_type=exact`。
+
 正式数据接入后，应使用 JSON Schema validator 检查：
 
 ```text

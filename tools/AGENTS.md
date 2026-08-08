@@ -113,6 +113,8 @@ tools/
 ├── audit_human_infra_falsifier_source_card_extraction.py # 反证 Source Card 字段级抽取审计器
 ├── arxiv_html_paper_tool.py          # arXiv HTML papers 复用 CLI
 ├── check_repository.py               # 仓库结构和 Markdown 链接检查
+├── backfill_history_timeline_dates.py # Crossref 出版日期补齐与带 provenance 的缓存管理
+├── test_history_timeline_dates.py     # 日期字段选择和缓存可信边界回归测试
 ├── update_domain_doc_contracts.py     # 研究域 README/AGENTS 标准块、研究骨架和代理流程生成器
 └── arxiv-html-paper/
     ├── AGENTS.md                     # arXiv 复用工具包说明

@@ -102,6 +102,7 @@ python3 tools/backfill_history_timeline_dates.py --workers 4
 ```
 
 该命令从 Crossref 拉取缺失的完整出版日期，写回 `timeline.json`，并把已核验的 DOI-日期映射缓存到 `date-backfill-cache.json`，支持断点续跑。
+脚本只接受出版相关字段中的完整年月日，不使用 Crossref `created` 元数据记录时间；缓存条目必须带 `crossref-publication-date-v2` provenance，旧字符串缓存会被视为不可信并重新抓取。
 
 作品子集命令：
 

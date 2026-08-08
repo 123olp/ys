@@ -3,7 +3,7 @@ id: IDX-RELEASE-INDEX
 type: index
 status: current
 owner: engineering
-last_reviewed: 2026-08-06
+last_reviewed: 2026-08-08
 ---
 
 # RELEASE Index

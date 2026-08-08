@@ -19,6 +19,8 @@ PACKAGE = ROOT / "docs" / "reference" / "history-timeline"
 CACHE = PACKAGE / "date-backfill-cache.json"
 MAILTO = "human-infra@tradecatlabs.com"
 FULL_DATE_RE = re.compile(r"^-?\d{4}-\d{2}-\d{2}$")
+PUBLICATION_DATE_FIELDS = ("published-print", "published-online", "issued", "published")
+CACHE_PROVENANCE = "crossref-publication-date-v2"
 
 
 def now_iso() -> str:
@@ -40,7 +42,7 @@ def bump_patch(version: str) -> str:
 
 
 def choose_date(work: dict) -> str | None:
-    for key in ("published-print", "published-online", "issued", "created", "published"):
+    for key in PUBLICATION_DATE_FIELDS:
         date_parts = (work.get(key) or {}).get("date-parts") or []
         if not date_parts:
             continue
@@ -48,6 +50,17 @@ def choose_date(work: dict) -> str | None:
         if len(parts) >= 3 and parts[0] and parts[1] and parts[2]:
             return f"{int(parts[0]):04d}-{int(parts[1]):02d}-{int(parts[2]):02d}"
     return None
+
+
+def trusted_cache_date(entry: object) -> str | None:
+    if not isinstance(entry, dict):
+        return None
+    if entry.get("provenance") != CACHE_PROVENANCE:
+        return None
+    date = entry.get("date")
+    if not isinstance(date, str) or not FULL_DATE_RE.match(date):
+        return None
+    return date
 
 
 def fetch_doi(doi: str, timeout: int = 45) -> str | None:
@@ -103,11 +116,16 @@ def main() -> None:
             continue
         missing_dois.setdefault(doi, []).append(event["event_id"])
 
-    print(f"status=scope missing_events={sum(len(v) for v in missing_dois.values())} unique_dois={len(missing_dois)} cached={len(cache)}")
+    trusted_cached = sum(1 for doi in missing_dois if trusted_cache_date(cache.get(doi)))
+    print(
+        f"status=scope missing_events={sum(len(v) for v in missing_dois.values())} "
+        f"unique_dois={len(missing_dois)} trusted_cached={trusted_cached} "
+        f"legacy_or_invalid_cached={len(cache) - trusted_cached}"
+    )
     if args.dry_run:
         return
 
-    todos = [doi for doi in missing_dois if doi not in cache]
+    todos = [doi for doi in missing_dois if not trusted_cache_date(cache.get(doi))]
     if args.limit:
         todos = todos[: args.limit]
     if not todos:
@@ -120,7 +138,7 @@ def main() -> None:
                 doi = futures[future]
                 date = future.result()
                 if date:
-                    cache[doi] = date
+                    cache[doi] = {"date": date, "provenance": CACHE_PROVENANCE}
                 fetched += 1
                 if fetched % 50 == 0:
                     dump_json(args.cache, cache)
@@ -141,7 +159,7 @@ def main() -> None:
                 break
         if not doi:
             continue
-        date = cache.get(doi)
+        date = trusted_cache_date(cache.get(doi))
         if not date or not FULL_DATE_RE.match(date):
             continue
         event["date_start"] = date

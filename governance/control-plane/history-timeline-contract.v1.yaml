@@ -3,10 +3,10 @@ kind: HistoryTimelineContract
 metadata:
   id: HT-GOV-001
   title: 永生史严肃历史年表治理契约
-  version: 1.0.3
+  version: 1.0.4
   owner: tradecatlabs
   created: 2026-08-06
-  last_reviewed: 2026-08-07
+  last_reviewed: 2026-08-08
   review_cycle: P90D
   status: active
 spec:
@@ -68,9 +68,11 @@ spec:
     - docs/reference/history-timeline/timelinejs.detail.json
     - docs/reference/history-timeline/preview.html
     - tools/test_history_timeline_core.js
+    - tools/test_history_timeline_dates.py
   commands:
     validate: make history-timeline-gate
     core_test: make history-timeline-core-test
+    date_test: make history-timeline-date-test
     quality_audit: make history-timeline-quality-audit
     validator: python3 tools/validate_history_timeline.py
     preview: make history-timeline-preview

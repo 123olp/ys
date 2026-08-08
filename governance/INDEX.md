@@ -3,7 +3,7 @@ id: GOV-INDEX
 type: index
 status: current
 owner: engineering
-last_reviewed: 2026-08-06
+last_reviewed: 2026-08-08
 ---
 
 # 治理包索引
